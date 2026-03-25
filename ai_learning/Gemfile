@@ -43,11 +43,14 @@ end
 
 
 gem "devise"
-gem "pundit"
-gem "redis"
+gem "devise-jwt"
 gem "rack-cors"
-gem "jwt"
+gem "rack-attack"
+gem "jsonapi-serializer"
 gem "anthropic"
+gem "redis", ">= 4.0.1"
+gem "sidekiq"
+gem "kaminari"
 
 group :development, :test do
   gem "rspec-rails"

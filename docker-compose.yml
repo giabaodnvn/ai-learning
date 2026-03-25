@@ -46,6 +46,29 @@ services:
     ports:
       - "${REDIS_PORT:-6380}:6379"
 
+  sidekiq:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    volumes:
+      - .:/workspace
+      - bundle_data:/usr/local/bundle
+    working_dir: /workspace
+    environment:
+      APP_NAME: ${APP_NAME:-ai_learning}
+      RAILS_ENV: development
+      DB_HOST: db
+      DB_USERNAME: root
+      DB_PASSWORD: ${DB_PASSWORD:-password}
+      DATABASE_URL: mysql2://root:${DB_PASSWORD:-password}@db/${DB_NAME:-ai_learning_development}
+      REDIS_URL: redis://redis:6379/0
+    command: bash -lc "cd \"$APP_NAME\" && (bundle check || bundle install) && bundle exec sidekiq"
+    depends_on:
+      db:
+        condition: service_healthy
+      redis:
+        condition: service_started
+
   frontend:
     build:
       context: .
