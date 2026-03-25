@@ -1,0 +1,8 @@
+.env
+.git
+my_app/.git
+*/log/*
+*/tmp/*
+*/tmp/**/*
+*/node_modules
+mysql_data
