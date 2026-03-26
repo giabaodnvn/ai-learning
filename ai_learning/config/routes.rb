@@ -37,6 +37,15 @@ Rails.application.routes.draw do
       # Vocabulary by ID (SSE explain for flashcard AI panel)
       get  "vocabularies/:id/explain",          to: "vocabulary#explain_by_id"
 
+      # Grammar points CRUD + AI actions
+      resources :grammar_points, only: [:index, :show] do
+        member do
+          post :check_sentence
+          post :generate_exercise
+          post :ask
+        end
+      end
+
       # Flashcard / SRS
       get  "flashcards/due",                    to: "flashcards#due"
       get  "flashcards/new",                    to: "flashcards#new_cards"
