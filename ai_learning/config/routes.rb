@@ -34,7 +34,8 @@ Rails.application.routes.draw do
       get  "review/queue",        to: "review#queue"
       post "review/submit",       to: "review#submit"
 
-      # Vocabulary by ID (SSE explain for flashcard AI panel)
+      # Vocabulary list + SSE explain
+      get  "vocabularies",                      to: "vocabulary#index"
       get  "vocabularies/:id/explain",          to: "vocabulary#explain_by_id"
 
       # Grammar points CRUD + AI actions
@@ -46,10 +47,17 @@ Rails.application.routes.draw do
         end
       end
 
-      # Flashcard / SRS
+      # Flashcard / SRS  (universal — vocabulary + kanji + grammar_point)
       get  "flashcards/due",                    to: "flashcards#due"
       get  "flashcards/new",                    to: "flashcards#new_cards"
-      post "flashcards/:vocab_id/review",       to: "flashcards#review"
+      post "flashcards/review",                 to: "flashcards#review"
+      post "flashcards/:vocab_id/review",       to: "flashcards#review_legacy"
+
+      # Flashcard — Learn mode (random pick + quiz)
+      get  "flashcards/random",                 to: "flashcards#random"
+      post "flashcards/quiz",                   to: "flashcards#generate_quiz"
+      post "flashcards/status",                 to: "flashcards#update_status"
+      post "flashcards/status/bulk",            to: "flashcards#bulk_update_status"
     end
   end
 end

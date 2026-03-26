@@ -13,6 +13,8 @@ class User < ApplicationRecord
   has_many :user_vocabulary_progresses, dependent: :destroy
   has_many :vocabularies, through: :user_vocabulary_progresses
   has_many :conversation_sessions, dependent: :destroy
+  has_many :user_card_progresses, dependent: :destroy
+  has_many :user_card_statuses,   dependent: :destroy
 
   validates :name, presence: true, length: { maximum: 100 }
   validates :jlpt_level, inclusion: { in: JLPT_LEVELS }

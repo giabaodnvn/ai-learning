@@ -4,10 +4,10 @@ import { useEffect, useRef } from "react";
 import { useSession } from "next-auth/react";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { api } from "@/lib/api";
-import {
-  useFlashcardStore,
-  type ReviewCard,
-} from "@/lib/stores/flashcardStore";
+import { mapApiCard } from "@/lib/flashcard-utils";
+import type { FlashCard } from "@/lib/flashcard-utils";
+import { useFlashcardStore } from "@/lib/stores/flashcardStore";
+import type { SessionConfig } from "@/lib/stores/flashcardStore";
 import { FlashcardFront } from "./FlashcardFront";
 import { FlashcardBack } from "./FlashcardBack";
 import { GradeButtons } from "./GradeButtons";
@@ -15,7 +15,7 @@ import { SessionSummary } from "./SessionSummary";
 
 const BASE_URL = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:3003";
 
-// Buffer a full SSE explain stream into a string (used for background prefetch).
+// Background prefetch: buffer a vocabulary SSE explain stream.
 async function fetchVocabExplainBuffered(
   vocabId: number,
   token: string
@@ -32,25 +32,24 @@ async function fetchVocabExplainBuffered(
   outer: while (true) {
     const { done, value } = await reader.read();
     if (done) break;
-
     const text = decoder.decode(value, { stream: true });
     for (const line of text.split("\n")) {
       if (!line.startsWith("data: ")) continue;
       let payload: { delta?: string; done?: boolean; error?: string };
-      try {
-        payload = JSON.parse(line.slice(6));
-      } catch {
-        continue;
-      }
+      try { payload = JSON.parse(line.slice(6)); } catch { continue; }
       if (payload.error || payload.done) break outer;
       result += payload.delta ?? "";
     }
   }
-
   return result;
 }
 
-export function FlashcardDeck() {
+interface Props {
+  config: SessionConfig;
+  onBack: () => void;
+}
+
+export function FlashcardDeck({ config, onBack }: Props) {
   const { data: session } = useSession();
   const queryClient = useQueryClient();
   const submittingRef = useRef(false);
@@ -66,38 +65,71 @@ export function FlashcardDeck() {
     reset,
   } = useFlashcardStore();
 
-  // ── Fetch due cards ───────────────────────────────────────────────────────
-  const { data, isLoading, error, refetch } = useQuery<{
-    cards: ReviewCard[];
-    total_due: number;
-  }>({
-    queryKey: ["flashcards-due"],
+  // Build query params from session config
+  const apiType = config.mode === "daily" ? "all" : config.mode;
+  const queryKey = ["flashcards-session", apiType, config.level ?? "all"];
+
+  // ── Fetch due + new cards in parallel ────────────────────────────────────
+  const params = new URLSearchParams({ type: apiType });
+  if (config.level) params.set("level", config.level);
+  const paramStr = params.toString();
+
+  const dueQuery = useQuery<{ cards: FlashCard[]; total_due: number }>({
+    queryKey: [...queryKey, "due"],
     queryFn: async () => {
-      const res = await api.get("/api/v1/flashcards/due");
-      return res.data;
+      const res = await api.get(`/api/v1/flashcards/due?${paramStr}`);
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      const raw = res.data as { total_due: number; cards: any[] };
+      return { total_due: raw.total_due, cards: raw.cards.map(mapApiCard) };
     },
   });
 
-  // Init session when data arrives (only when queue is empty = fresh start)
-  useEffect(() => {
-    if (data?.cards && data.cards.length > 0 && queue.length === 0) {
-      initSession(data.cards);
-    }
-  }, [data, queue.length]); // eslint-disable-line react-hooks/exhaustive-deps
+  const newQuery = useQuery<{ cards: FlashCard[]; total_new: number }>({
+    queryKey: [...queryKey, "new"],
+    queryFn: async () => {
+      const res = await api.get(`/api/v1/flashcards/new?${paramStr}`);
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      const raw = res.data as { total_new: number; cards: any[] };
+      return { total_new: raw.total_new, cards: raw.cards.map(mapApiCard) };
+    },
+  });
 
-  // ── Prefetch AI explain for next 5 cards ─────────────────────────────────
+  const isLoading = dueQuery.isLoading || newQuery.isLoading;
+  const error = dueQuery.error ?? newQuery.error;
+
+  // Merge: due cards first, then new cards
+  const allCards: FlashCard[] = [
+    ...(dueQuery.data?.cards ?? []),
+    ...(newQuery.data?.cards ?? []),
+  ];
+  const totalCards = allCards.length;
+
+  function refetch() {
+    dueQuery.refetch();
+    newQuery.refetch();
+  }
+
+  // Init session when both queries resolve and queue is empty (fresh start)
+  useEffect(() => {
+    if (!dueQuery.isLoading && !newQuery.isLoading && allCards.length > 0 && queue.length === 0) {
+      initSession(allCards);
+    }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [dueQuery.isLoading, newQuery.isLoading, totalCards, queue.length]);
+
+  // ── Prefetch AI explain for upcoming vocabulary cards ─────────────────────
   useEffect(() => {
     if (!session?.accessToken || queue.length === 0) return;
-
     const upcoming = queue.slice(currentIndex + 1, currentIndex + 6);
-    upcoming.forEach((card) => {
-      queryClient.prefetchQuery({
-        queryKey: ["vocab-explain", card.vocabulary.id],
-        queryFn: () =>
-          fetchVocabExplainBuffered(card.vocabulary.id, session.accessToken),
-        staleTime: 30 * 60 * 1000, // 30 min — matches Redis TTL
+    upcoming
+      .filter((c): c is Extract<FlashCard, { cardType: "vocabulary" }> => c.cardType === "vocabulary")
+      .forEach((card) => {
+        queryClient.prefetchQuery({
+          queryKey: ["vocab-explain", card.cardId],
+          queryFn: () => fetchVocabExplainBuffered(card.cardId, session.accessToken),
+          staleTime: 30 * 60 * 1000,
+        });
       });
-    });
   }, [currentIndex, queue, session?.accessToken]); // eslint-disable-line react-hooks/exhaustive-deps
 
   // ── Grade handler ─────────────────────────────────────────────────────────
@@ -107,7 +139,9 @@ export function FlashcardDeck() {
 
     const card = queue[currentIndex];
     try {
-      await api.post(`/api/v1/flashcards/${card.vocabulary.id}/review`, {
+      await api.post("/api/v1/flashcards/review", {
+        card_type: card.cardType,
+        card_id:   card.cardId,
         grade,
       });
     } catch {
@@ -121,7 +155,13 @@ export function FlashcardDeck() {
 
   function handleRestart() {
     reset();
+    queryClient.invalidateQueries({ queryKey });
     refetch();
+  }
+
+  function handleBack() {
+    reset();
+    onBack();
   }
 
   // ── Loading / error states ────────────────────────────────────────────────
@@ -144,23 +184,31 @@ export function FlashcardDeck() {
   // ── Session complete / no cards ───────────────────────────────────────────
   const isDone = currentIndex >= queue.length;
 
-  if (isDone || (data && data.cards.length === 0)) {
+  if (isDone || (!isLoading && totalCards === 0)) {
     if (sessionStats.grades.length > 0) {
-      return <SessionSummary onRestart={handleRestart} />;
+      return <SessionSummary onRestart={handleRestart} onBack={handleBack} />;
     }
     return (
       <div className="rounded-2xl border border-zinc-200 bg-white p-10 text-center space-y-3">
         <p className="text-4xl">🎉</p>
-        <p className="font-bold text-zinc-900">Không có thẻ nào cần ôn hôm nay!</p>
+        <p className="font-bold text-zinc-900">Không có thẻ nào hôm nay!</p>
         <p className="text-sm text-zinc-500">
-          Tổng số thẻ đến hạn: {data?.total_due ?? 0}
+          Tất cả thẻ đã học — hãy quay lại vào ngày mai.
         </p>
-        <button
-          onClick={handleRestart}
-          className="mt-2 rounded-lg border border-zinc-300 px-4 py-2 text-sm font-medium text-zinc-700 hover:bg-zinc-50 transition-colors"
-        >
-          Tải lại
-        </button>
+        <div className="flex gap-2 justify-center">
+          <button
+            onClick={handleBack}
+            className="rounded-lg border border-zinc-300 px-4 py-2 text-sm font-medium text-zinc-700 hover:bg-zinc-50 transition-colors"
+          >
+            Quay lại
+          </button>
+          <button
+            onClick={() => { reset(); refetch(); }}
+            className="rounded-lg border border-zinc-300 px-4 py-2 text-sm font-medium text-zinc-700 hover:bg-zinc-50 transition-colors"
+          >
+            Tải lại
+          </button>
+        </div>
       </div>
     );
   }
@@ -169,13 +217,30 @@ export function FlashcardDeck() {
   const card = queue[currentIndex];
   const progress = (currentIndex / queue.length) * 100;
 
+  const modeLabel =
+    config.mode === "daily"         ? "Hằng ngày" :
+    config.mode === "vocabulary"    ? "Từ vựng" :
+    config.mode === "kanji"         ? "Kanji" :
+    "Ngữ pháp";
+
   return (
     <div className="space-y-4">
+      {/* Header row */}
+      <div className="flex items-center justify-between">
+        <button
+          onClick={handleBack}
+          className="flex items-center gap-1 text-xs text-zinc-400 hover:text-zinc-600 transition-colors"
+        >
+          ← Đổi chế độ
+        </button>
+        <span className="rounded-full bg-zinc-100 px-2.5 py-0.5 text-xs text-zinc-500">
+          {modeLabel}{config.level ? ` · ${config.level.toUpperCase()}` : ""}
+        </span>
+      </div>
+
       {/* Progress bar */}
       <div className="flex items-center justify-between text-xs text-zinc-500">
-        <span>
-          {currentIndex + 1} / {queue.length} thẻ
-        </span>
+        <span>{currentIndex + 1} / {queue.length} thẻ</span>
         <span>{queue.length - currentIndex - 1} còn lại</span>
       </div>
       <div className="h-1.5 w-full rounded-full bg-zinc-100">
@@ -187,13 +252,13 @@ export function FlashcardDeck() {
 
       {/* Front / Back */}
       {!revealed ? (
-        <FlashcardFront vocabulary={card.vocabulary} onFlip={flip} />
+        <FlashcardFront card={card} onFlip={flip} />
       ) : (
         <FlashcardBack card={card} />
       )}
 
       {/* Grade buttons (after reveal) */}
-      {revealed && <GradeButtons onGrade={handleGrade} />}
+      {revealed && <GradeButtons cardType={card.cardType} onGrade={handleGrade} />}
 
       {/* Flip button (before reveal) */}
       {!revealed && (

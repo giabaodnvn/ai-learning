@@ -1,32 +1,26 @@
 import { create } from "zustand";
+import type { FlashCard, SessionMode } from "@/lib/flashcard-utils";
 
-export interface ReviewCard {
-  id: number; // UserVocabularyProgress id
-  vocabulary: {
-    id: number;
-    word: string;
-    reading: string;
-    meaning_vi: string;
-    part_of_speech: string | null;
-    jlpt_level: string;
-  };
-  due_date: string;
-  repetitions: number;
-  interval: number;
-  ease_factor: number;
-}
+export type { FlashCard };
 
 interface SessionStats {
   grades: number[]; // 0-3 per reviewed card, in order
 }
 
+export interface SessionConfig {
+  mode: SessionMode;
+  level?: string;
+}
+
 interface FlashcardState {
-  queue: ReviewCard[];
+  queue: FlashCard[];
   currentIndex: number;
   revealed: boolean;
   sessionStats: SessionStats;
+  sessionConfig: SessionConfig | null;
 
-  initSession: (cards: ReviewCard[]) => void;
+  setSessionConfig: (config: SessionConfig) => void;
+  initSession: (cards: FlashCard[]) => void;
   flip: () => void;
   recordAndAdvance: (grade: number) => void;
   reset: () => void;
@@ -37,6 +31,9 @@ export const useFlashcardStore = create<FlashcardState>((set) => ({
   currentIndex: 0,
   revealed: false,
   sessionStats: { grades: [] },
+  sessionConfig: null,
+
+  setSessionConfig: (config) => set({ sessionConfig: config }),
 
   initSession: (cards) =>
     set({
@@ -61,5 +58,6 @@ export const useFlashcardStore = create<FlashcardState>((set) => ({
       currentIndex: 0,
       revealed: false,
       sessionStats: { grades: [] },
+      sessionConfig: null,
     }),
 }));

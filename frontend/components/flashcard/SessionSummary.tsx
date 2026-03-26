@@ -5,6 +5,7 @@ import { useFlashcardStore } from "@/lib/stores/flashcardStore";
 
 interface Props {
   onRestart: () => void;
+  onBack?: () => void;
 }
 
 const GRADE_LABELS = [
@@ -14,7 +15,7 @@ const GRADE_LABELS = [
   { label: "Dễ",   color: "bg-green-50 text-green-700", grade: 3 },
 ] as const;
 
-export function SessionSummary({ onRestart }: Props) {
+export function SessionSummary({ onRestart, onBack }: Props) {
   const queryClient = useQueryClient();
   const { sessionStats } = useFlashcardStore();
 
@@ -54,12 +55,22 @@ export function SessionSummary({ onRestart }: Props) {
         ))}
       </div>
 
-      <button
-        onClick={handleRestart}
-        className="w-full rounded-lg bg-zinc-900 px-4 py-2.5 text-sm font-medium text-white hover:bg-zinc-700 transition-colors"
-      >
-        Ôn tập tiếp
-      </button>
+      <div className="flex gap-2">
+        {onBack && (
+          <button
+            onClick={onBack}
+            className="flex-1 rounded-lg border border-zinc-300 px-4 py-2.5 text-sm font-medium text-zinc-700 hover:bg-zinc-50 transition-colors"
+          >
+            Đổi chế độ
+          </button>
+        )}
+        <button
+          onClick={handleRestart}
+          className="flex-1 rounded-lg bg-zinc-900 px-4 py-2.5 text-sm font-medium text-white hover:bg-zinc-700 transition-colors"
+        >
+          Ôn tập tiếp
+        </button>
+      </div>
     </div>
   );
 }

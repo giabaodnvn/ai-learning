@@ -5,6 +5,29 @@ module Api
     class VocabularyController < BaseController
       include Api::V1::Concerns::SseStreamable
 
+      # GET /api/v1/vocabularies?level=n5&page=1&per_page=30&search=たべる
+      def index
+        level  = params[:level].presence&.downcase
+        search = params[:search].presence
+        page   = [(params[:page].presence || 1).to_i, 1].max
+        per    = [[(params[:per_page].presence || 30).to_i, 1].max, 100].min
+
+        scope = Vocabulary.all
+        scope = scope.by_level(level) if level
+        if search
+          like = "%#{search}%"
+          scope = scope.where("word LIKE ? OR reading LIKE ? OR meaning_vi LIKE ?", like, like, like)
+        end
+
+        total  = scope.count
+        vocabs = scope.order(:word).offset((page - 1) * per).limit(per)
+
+        render json: {
+          data: VocabularySerializer.new(vocabs).serializable_hash[:data],
+          meta: { total: total, page: page, per_page: per, pages: (total.to_f / per).ceil }
+        }
+      end
+
       # POST /api/v1/vocabulary/explain
       def explain
         word       = params.require(:word)
