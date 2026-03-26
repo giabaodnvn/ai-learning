@@ -27,6 +27,25 @@ module Api
       def current_user
         @current_user
       end
+
+      # Gemini often wraps JSON in markdown code fences or adds preamble text.
+      # Try multiple strategies to extract valid JSON.
+      def parse_ai_json(raw)
+        text = raw.to_s
+
+        # Strategy 1: extract from ```json ... ``` or ``` ... ```
+        if (m = text.match(/```(?:json)?\s*([\s\S]*?)\s*```/i))
+          return JSON.parse(m[1].strip)
+        end
+
+        # Strategy 2: find outermost { ... } block
+        start  = text.index("{")
+        finish = text.rindex("}")
+        return JSON.parse(text[start..finish]) if start && finish
+
+        # Strategy 3: parse as-is
+        JSON.parse(text.strip)
+      end
     end
   end
 end

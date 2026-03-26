@@ -25,6 +25,14 @@ Rails.application.routes.draw do
         get "me", to: "profiles#show"
         post "sign_out", to: "sessions#destroy"
       end
+
+      # AI features
+      post "vocabulary/explain",  to: "vocabulary#explain"
+      post "grammar/check",       to: "grammar#check"
+      post "conversation/chat",   to: "conversation#chat"
+      post "reading/generate",    to: "reading#generate"
+      get  "review/queue",        to: "review#queue"
+      post "review/submit",       to: "review#submit"
     end
   end
 end
