@@ -58,6 +58,7 @@ export default async function DashboardPage() {
             { label: "Hội thoại AI", href: "/app/conversation", emoji: "🤖" },
             { label: "Đọc hiểu", href: "/app/reading", emoji: "📰" },
             { label: "Luyện tập SRS", href: "/app/review", emoji: "🔁" },
+            { label: "Flashcard", href: "/app/study/flashcard", emoji: "🃏" },
           ].map((item) => (
             <a
               key={item.href}

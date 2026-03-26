@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.2].define(version: 2026_03_25_000006) do
+ActiveRecord::Schema[7.2].define(version: 2026_03_26_000001) do
   create_table "conversation_sessions", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.bigint "user_id", null: false
     t.string "role", null: false
@@ -33,6 +33,20 @@ ActiveRecord::Schema[7.2].define(version: 2026_03_25_000006) do
     t.datetime "updated_at", null: false
     t.index ["jlpt_level"], name: "index_grammar_points_on_jlpt_level"
     t.index ["pattern"], name: "index_grammar_points_on_pattern"
+  end
+
+  create_table "kanjis", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+    t.string "character", null: false
+    t.json "onyomi"
+    t.json "kunyomi"
+    t.string "meaning_vi", null: false
+    t.string "jlpt_level", default: "n5", null: false
+    t.integer "stroke_count"
+    t.json "vocab_examples"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["character"], name: "index_kanjis_on_character", unique: true
+    t.index ["jlpt_level"], name: "index_kanjis_on_jlpt_level"
   end
 
   create_table "reading_passages", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|

@@ -33,6 +33,14 @@ Rails.application.routes.draw do
       post "reading/generate",    to: "reading#generate"
       get  "review/queue",        to: "review#queue"
       post "review/submit",       to: "review#submit"
+
+      # Vocabulary by ID (SSE explain for flashcard AI panel)
+      get  "vocabularies/:id/explain",          to: "vocabulary#explain_by_id"
+
+      # Flashcard / SRS
+      get  "flashcards/due",                    to: "flashcards#due"
+      get  "flashcards/new",                    to: "flashcards#new_cards"
+      post "flashcards/:vocab_id/review",       to: "flashcards#review"
     end
   end
 end
