@@ -1,11 +1,7 @@
 class ApplicationController < ActionController::API
-  before_action :authenticate_user!
+  include Devise::Controllers::Helpers
 
   private
-
-  def current_user
-    super
-  end
 
   def render_unauthorized
     render json: { error: "Unauthorized" }, status: :unauthorized

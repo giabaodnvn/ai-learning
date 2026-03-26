@@ -1,29 +1,30 @@
 require "sidekiq/web"
 
 Rails.application.routes.draw do
-  # Sidekiq Web UI (admin only in production)
   mount Sidekiq::Web => "/sidekiq"
 
-  # Health check
   get "up" => "rails/health#show", as: :rails_health_check
 
-  # Auth routes (JWT-based)
-  devise_for :users,
-    path: "api/v1",
-    path_names: {
-      sign_in: "users/sign_in",
-      sign_out: "users/sign_out",
-      registration: "users/sign_up"
-    },
-    controllers: {
-      sessions: "api/v1/users/sessions",
-      registrations: "api/v1/users/registrations"
-    }
-
-  # API v1
   namespace :api do
     namespace :v1 do
-      # Add resources here
+      # Auth
+      devise_for :users,
+        path: "auth",
+        path_names: {
+          sign_in: "sign_in",
+          sign_out: "sign_out",
+          registration: "sign_up"
+        },
+        controllers: {
+          sessions: "api/v1/auth/sessions",
+          registrations: "api/v1/auth/registrations"
+        },
+        defaults: { format: :json }
+
+      namespace :auth do
+        get "me", to: "profiles#show"
+        post "sign_out", to: "sessions#destroy"
+      end
     end
   end
 end

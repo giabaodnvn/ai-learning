@@ -8,13 +8,16 @@ services:
       - bundle_data:/usr/local/bundle
     working_dir: /workspace
     environment:
-      APP_NAME: ${APP_NAME:-my_app}
+      APP_NAME: ${APP_NAME:-ai_learning}
       RAILS_ENV: development
       DB_HOST: db
       DB_USERNAME: root
       DB_PASSWORD: ${DB_PASSWORD:-password}
-      DATABASE_URL: mysql2://root:${DB_PASSWORD:-password}@db/${DB_NAME:-my_app_development}
+      DATABASE_URL: mysql2://root:${DB_PASSWORD:-password}@db/${DB_NAME:-ai_learning_development}
       REDIS_URL: redis://redis:6379/0
+      SECRET_KEY_BASE: ${SECRET_KEY_BASE}
+      DEVISE_JWT_SECRET_KEY: ${DEVISE_JWT_SECRET_KEY}
+      FRONTEND_URL: ${FRONTEND_URL:-http://localhost:3000}
     command: bash -lc "cd \"$APP_NAME\" && (bundle check || bundle install) && bin/rails db:prepare && bin/rails server -b 0.0.0.0"
     depends_on:
       db:
@@ -77,7 +80,12 @@ services:
       - ./frontend:/app
       - frontend_node_modules:/app/node_modules
     environment:
-      NEXT_PUBLIC_API_URL: http://localhost:${APP_PORT:-3003}
+      NEXT_PUBLIC_API_URL: ${NEXT_PUBLIC_API_URL:-http://localhost:3003}
+      INTERNAL_API_URL: http://app:3000
+      NEXTAUTH_URL: ${NEXTAUTH_URL:-http://localhost:3000}
+      NEXTAUTH_SECRET: ${NEXTAUTH_SECRET}
+      GOOGLE_CLIENT_ID: ${GOOGLE_CLIENT_ID}
+      GOOGLE_CLIENT_SECRET: ${GOOGLE_CLIENT_SECRET}
     ports:
       - "${FRONTEND_PORT:-3000}:3000"
     depends_on:
