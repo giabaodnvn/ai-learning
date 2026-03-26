@@ -110,7 +110,8 @@ module Api
           ease_factor:      result[:new_ease_factor],
           repetitions:      result[:new_repetitions],
           due_date:         result[:due_date],
-          last_reviewed_at: Time.current
+          last_reviewed_at: Time.current,
+          learned:          grade >= 2 ? true : progress.learned  # grade 2-3 marks as learned; 0-1 leaves unchanged
         )
         progress.save!
 
@@ -153,10 +154,9 @@ module Api
         grammar_cards = GrammarPoint.by_level(level).order("RAND()").limit(g_count)
 
         # Build learned lookup: "type:id" → true/false
-        learned_set = current_user.user_card_statuses
-          .where(jlpt_level: level)
-          .learned
-          .each_with_object(Set.new) { |s, set| set << "#{s.card_type}:#{s.card_id}" }
+        learned_set = current_user.user_card_progresses
+          .where(jlpt_level: level, learned: true)
+          .each_with_object(Set.new) { |p, set| set << "#{p.card_type}:#{p.card_id}" }
 
         cards = [
           *vocab_cards.map   { |c| random_card_json("vocabulary",    c, learned_set) },
@@ -212,7 +212,7 @@ module Api
 
       # POST /api/v1/flashcards/status
       # body: { card_type, card_id, learned: true/false }
-      # Creates or updates learned status for a card.
+      # Updates the learned flag on an existing progress row, or creates one if absent.
       def update_status
         card_type = params.require(:card_type).to_s
         card_id   = params.require(:card_id).to_i
@@ -225,18 +225,20 @@ module Api
         card = source_model(card_type).find_by(id: card_id)
         return render json: { error: "#{card_type} not found" }, status: :not_found unless card
 
-        status = current_user.user_card_statuses.find_or_initialize_by(
+        progress = current_user.user_card_progresses.find_or_initialize_by(
           card_type: card_type, card_id: card_id
         )
-        status.assign_attributes(jlpt_level: card.jlpt_level, learned: learned)
-        status.save!
+        if progress.new_record?
+          progress.assign_attributes(SrsService.initial_state.merge(jlpt_level: card.jlpt_level))
+        end
+        progress.update!(learned: learned)
 
-        render json: { learned: status.learned }
+        render json: { learned: progress.learned }
       end
 
       # POST /api/v1/flashcards/status/bulk
       # body: { results: [{card_type, card_id, learned}, ...] }
-      # Bulk-updates status after a quiz session.
+      # Bulk-updates the learned flag after a quiz session.
       def bulk_update_status
         results = params.require(:results)
 
@@ -249,12 +251,14 @@ module Api
           card = source_model(ct).find_by(id: cid)
           next unless card
 
-          status = current_user.user_card_statuses.find_or_initialize_by(
+          progress = current_user.user_card_progresses.find_or_initialize_by(
             card_type: ct, card_id: cid
           )
-          status.assign_attributes(jlpt_level: card.jlpt_level, learned: learned)
-          status.save!
-          { card_type: ct, card_id: cid, learned: status.learned }
+          if progress.new_record?
+            progress.assign_attributes(SrsService.initial_state.merge(jlpt_level: card.jlpt_level))
+          end
+          progress.update!(learned: learned)
+          { card_type: ct, card_id: cid, learned: progress.learned }
         end
 
         render json: { updated: updated.size, results: updated }

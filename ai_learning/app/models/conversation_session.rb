@@ -1,6 +1,7 @@
 class ConversationSession < ApplicationRecord
-  JLPT_LEVELS = %w[n5 n4 n3 n2 n1].freeze
-  ROLES = %w[free_talk interview debate story shopping travel].freeze
+  JLPT_LEVELS   = %w[n5 n4 n3 n2 n1].freeze
+  ROLES         = %w[free_talk interview debate story shopping travel].freeze
+  MAX_MESSAGES  = 50  # keep last 50 turns (~25 user + 25 AI) per session
 
   belongs_to :user
 
@@ -12,12 +13,13 @@ class ConversationSession < ApplicationRecord
   validates :jlpt_level, presence: true, inclusion: { in: JLPT_LEVELS }
   validates :messages,   presence: false
 
-  scope :recent,     -> { order(created_at: :desc) }
-  scope :by_level,   ->(level) { where(jlpt_level: level) }
-  scope :by_role,    ->(role)  { where(role: role) }
+  scope :recent,   -> { order(created_at: :desc) }
+  scope :by_level, ->(level) { where(jlpt_level: level) }
+  scope :by_role,  ->(role)  { where(role: role) }
 
   def add_message(role:, content:)
     messages << { role: role, content: content, timestamp: Time.current.iso8601 }
+    messages.shift while messages.size > MAX_MESSAGES
     save!
   end
 end

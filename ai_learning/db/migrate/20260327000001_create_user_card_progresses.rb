@@ -9,6 +9,7 @@ class CreateUserCardProgresses < ActiveRecord::Migration[7.2]
       t.decimal    :ease_factor, null: false, default: "2.5", precision: 4, scale: 2
       t.integer    :repetitions, null: false, default: 0
       t.date       :due_date,    null: false
+      t.boolean    :learned,     null: false, default: false
       t.datetime   :last_reviewed_at
       t.timestamps
     end
