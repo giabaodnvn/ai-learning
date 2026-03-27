@@ -29,10 +29,17 @@ Rails.application.routes.draw do
       # AI features
       post "vocabulary/explain",  to: "vocabulary#explain"
       post "grammar/check",       to: "grammar#check"
-      post "conversation/chat",   to: "conversation#chat"
+      post "conversation/chat",   to: "conversation#chat"   # legacy stateless endpoint
       post "reading/generate",    to: "reading#generate"
       get  "review/queue",        to: "review#queue"
       post "review/submit",       to: "review#submit"
+
+      # Conversation sessions (REST + SSE)
+      resources :conversations, only: [:index, :create, :show, :destroy] do
+        member do
+          post :send_message
+        end
+      end
 
       # Vocabulary list + SSE explain
       get  "vocabularies",                      to: "vocabulary#index"
