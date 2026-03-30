@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.2].define(version: 2026_03_27_000001) do
+ActiveRecord::Schema[7.2].define(version: 2026_03_28_000003) do
   create_table "conversation_sessions", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.bigint "user_id", null: false
     t.string "role", null: false
@@ -57,9 +57,22 @@ ActiveRecord::Schema[7.2].define(version: 2026_03_27_000001) do
     t.boolean "ai_generated", default: false, null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "title"
+    t.json "vocabulary_highlights"
     t.index ["ai_generated"], name: "index_reading_passages_on_ai_generated"
     t.index ["jlpt_level", "topic"], name: "index_reading_passages_on_jlpt_level_and_topic"
     t.index ["jlpt_level"], name: "index_reading_passages_on_jlpt_level"
+  end
+
+  create_table "study_logs", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.date "studied_on", null: false
+    t.integer "cards_reviewed", default: 0, null: false
+    t.integer "correct_count", default: 0, null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["studied_on"], name: "index_study_logs_on_studied_on"
+    t.index ["user_id", "studied_on"], name: "index_study_logs_on_user_id_and_studied_on", unique: true
   end
 
   create_table "user_card_progresses", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
@@ -111,6 +124,8 @@ ActiveRecord::Schema[7.2].define(version: 2026_03_27_000001) do
     t.string "jlpt_level", default: "n5", null: false
     t.integer "streak_count", default: 0, null: false
     t.datetime "last_studied_at"
+    t.text "latest_weekly_report"
+    t.datetime "weekly_report_generated_at"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["jlpt_level"], name: "index_users_on_jlpt_level"
     t.index ["jti"], name: "index_users_on_jti", unique: true
@@ -133,6 +148,7 @@ ActiveRecord::Schema[7.2].define(version: 2026_03_27_000001) do
   end
 
   add_foreign_key "conversation_sessions", "users"
+  add_foreign_key "study_logs", "users"
   add_foreign_key "user_card_progresses", "users"
   add_foreign_key "user_vocabulary_progresses", "users"
   add_foreign_key "user_vocabulary_progresses", "vocabularies"

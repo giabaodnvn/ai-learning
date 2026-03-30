@@ -14,8 +14,20 @@ class User < ApplicationRecord
   has_many :vocabularies, through: :user_vocabulary_progresses
   has_many :conversation_sessions, dependent: :destroy
   has_many :user_card_progresses, dependent: :destroy
+  has_many :study_logs, dependent: :destroy
 
   validates :name, presence: true, length: { maximum: 100 }
   validates :jlpt_level, inclusion: { in: JLPT_LEVELS }
   validates :streak_count, numericality: { greater_than_or_equal_to: 0 }
+
+  # Call on first review of the day to maintain streak.
+  # Idempotent: safe to call multiple times in one day.
+  def record_study_session!
+    today = Date.current
+    return if last_studied_at&.to_date == today
+
+    yesterday   = today - 1
+    new_streak  = last_studied_at&.to_date == yesterday ? streak_count + 1 : 1
+    update_columns(streak_count: new_streak, last_studied_at: Time.current)
+  end
 end

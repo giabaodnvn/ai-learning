@@ -50,6 +50,7 @@ gem "jsonapi-serializer"
 gem "anthropic"
 gem "redis", ">= 4.0.1"
 gem "sidekiq"
+gem "sidekiq-cron"
 gem "kaminari"
 
 group :development, :test do

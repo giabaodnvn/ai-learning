@@ -115,6 +115,11 @@ module Api
         )
         progress.save!
 
+        # Track daily activity & streak
+        correct = grade >= 2
+        StudyLog.record!(user_id: current_user.id, correct: correct)
+        current_user.record_study_session!
+
         cards_remaining = current_user.user_card_progresses
                                       .where("due_date <= ?", Date.current)
                                       .where.not(id: progress.id)

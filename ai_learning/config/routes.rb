@@ -31,6 +31,22 @@ Rails.application.routes.draw do
       post "grammar/check",       to: "grammar#check"
       post "conversation/chat",   to: "conversation#chat"   # legacy stateless endpoint
       post "reading/generate",    to: "reading#generate"
+
+      # Reading passages (REST + cache-first + word lookup)
+      resources :reading_passages, only: [:index, :show] do
+        collection do
+          post :generate
+        end
+        member do
+          post :answer
+          get  :word_lookup
+        end
+      end
+
+      # Dashboard + gamification
+      get  "dashboard",               to: "dashboard#index"
+      get  "dashboard/weekly_report", to: "dashboard#weekly_report"
+
       get  "review/queue",        to: "review#queue"
       post "review/submit",       to: "review#submit"
 

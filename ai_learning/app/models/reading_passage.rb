@@ -3,7 +3,10 @@ class ReadingPassage < ApplicationRecord
 
   enum :jlpt_level, { n5: "n5", n4: "n4", n3: "n3", n2: "n2", n1: "n1" }
 
-  after_initialize { self.questions ||= [] }
+  after_initialize do
+    self.questions             ||= []
+    self.vocabulary_highlights ||= []
+  end
 
   validates :content,    presence: true
   validates :jlpt_level, presence: true, inclusion: { in: JLPT_LEVELS }
