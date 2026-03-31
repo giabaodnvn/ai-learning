@@ -1,9 +1,36 @@
 require "sidekiq/web"
 
+# Protect Sidekiq Web UI — only admin users (verified via JWT cookie/header)
+# For simplicity in API-only mode: use HTTP Basic Auth backed by env vars.
+Sidekiq::Web.use(Rack::Auth::Basic, "Sidekiq") do |user, pass|
+  expected_user = ENV.fetch("SIDEKIQ_WEB_USER", "admin")
+  expected_pass = ENV.fetch("SIDEKIQ_WEB_PASSWORD", "changeme")
+  ActiveSupport::SecurityUtils.secure_compare(user, expected_user) &&
+    ActiveSupport::SecurityUtils.secure_compare(pass, expected_pass)
+end
+
 Rails.application.routes.draw do
   mount Sidekiq::Web => "/sidekiq"
 
   get "up" => "rails/health#show", as: :rails_health_check
+
+  # ── Admin panel (browser-based, session auth) ──────────────────────────
+  namespace :admin do
+    get    "login",  to: "sessions#new",     as: :login
+    post   "login",  to: "sessions#create"
+    delete "logout", to: "sessions#destroy", as: :logout
+
+    root to: "dashboard#index"
+
+    resources :users, only: [:index, :show, :update] do
+      member do
+        patch  :toggle_block
+        delete :reset_vip
+      end
+    end
+
+    get "ai_costs", to: "ai_costs#index", as: :ai_costs
+  end
 
   namespace :api do
     namespace :v1 do
@@ -24,6 +51,11 @@ Rails.application.routes.draw do
       namespace :auth do
         get "me", to: "profiles#show"
         post "sign_out", to: "sessions#destroy"
+      end
+
+      # Admin endpoints (require admin role)
+      namespace :admin do
+        get "ai_costs", to: "ai_costs#index"
       end
 
       # AI features

@@ -1,12 +1,13 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { api } from "@/lib/api";
 import { StreakBadge }      from "@/components/dashboard/StreakBadge";
 import { VocabStats }       from "@/components/dashboard/VocabStats";
 import { ActivityHeatmap }  from "@/components/dashboard/ActivityHeatmap";
 import { JLPTProgressBar }  from "@/components/dashboard/JLPTProgressBar";
 import { WeeklyReport }     from "@/components/dashboard/WeeklyReport";
+import { ErrorBoundary }    from "@/components/ErrorBoundary";
 
 interface DashboardData {
   streak_count:     number;
@@ -91,12 +92,20 @@ export function DashboardStats() {
       {/* JLPT progress */}
       <JLPTProgressBar progress={stats.jlpt_progress} />
 
-      {/* Weekly report */}
-      <WeeklyReport
-        report={report?.report ?? null}
-        generatedAt={report?.generated_at ?? null}
-        studiedDays={studiedDaysThisWeek}
-      />
+      {/* Weekly report — wrapped in ErrorBoundary since it renders AI markdown */}
+      <ErrorBoundary
+        fallback={
+          <div className="rounded-xl border border-amber-200 bg-amber-50 p-4 text-sm text-amber-700">
+            Không thể tải báo cáo tuần. Vui lòng tải lại trang.
+          </div>
+        }
+      >
+        <WeeklyReport
+          report={report?.report ?? null}
+          generatedAt={report?.generated_at ?? null}
+          studiedDays={studiedDaysThisWeek}
+        />
+      </ErrorBoundary>
     </div>
   );
 }

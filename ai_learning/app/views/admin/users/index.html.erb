@@ -1,0 +1,93 @@
+<% content_for :page_title, "Quản lý người dùng" %>
+
+<%# ── Filters ────────────────────────────────────────────────────────────── %>
+<div class="bg-white rounded-xl border border-gray-200 p-4 mb-4 flex flex-wrap gap-3 items-end">
+  <%= form_with url: admin_users_path, method: :get, local: true, class: "flex flex-wrap gap-3 items-end w-full" do |f| %>
+    <div class="flex-1 min-w-48">
+      <%= f.search_field :q, value: @q, placeholder: "Tìm email, tên...",
+            class: "w-full rounded-lg border border-gray-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500" %>
+    </div>
+    <div>
+      <%= f.select :role, [["Tất cả role", ""], ["Admin", "admin"], ["Student", "student"]],
+            { selected: @role },
+            class: "rounded-lg border border-gray-300 px-3 py-2 text-sm focus:outline-none" %>
+    </div>
+    <div>
+      <%= f.select :vip, [["Tất cả", ""], ["VIP", "vip"], ["Bị khóa", "blocked"]],
+            { selected: @vip },
+            class: "rounded-lg border border-gray-300 px-3 py-2 text-sm focus:outline-none" %>
+    </div>
+    <%= f.submit "Tìm kiếm", class: "rounded-lg bg-blue-600 px-4 py-2 text-sm font-medium text-white hover:bg-blue-700 transition cursor-pointer" %>
+    <%= link_to "Reset", admin_users_path, class: "text-sm text-gray-500 hover:text-gray-700 underline py-2" %>
+  <% end %>
+</div>
+
+<%# ── Results header ──────────────────────────────────────────────────────── %>
+<div class="flex items-center justify-between mb-3">
+  <p class="text-sm text-gray-500">
+    Tìm thấy <strong><%= @total %></strong> người dùng
+    <% if @q.present? %> cho "<%= @q %>"<% end %>
+  </p>
+  <p class="text-sm text-gray-400">Trang <%= @page %>/<%= @pages %></p>
+</div>
+
+<%# ── Table ──────────────────────────────────────────────────────────────── %>
+<div class="bg-white rounded-xl border border-gray-200 overflow-hidden">
+  <table class="w-full text-sm">
+    <thead class="bg-gray-50 text-xs text-gray-500 uppercase">
+      <tr>
+        <th class="px-5 py-3 text-left">Email</th>
+        <th class="px-5 py-3 text-left">Tên</th>
+        <th class="px-5 py-3 text-left">JLPT</th>
+        <th class="px-5 py-3 text-left">Role</th>
+        <th class="px-5 py-3 text-left">VIP</th>
+        <th class="px-5 py-3 text-left">Streak</th>
+        <th class="px-5 py-3 text-left">Trạng thái</th>
+        <th class="px-5 py-3 text-left">Đăng ký</th>
+        <th class="px-5 py-3"></th>
+      </tr>
+    </thead>
+    <tbody class="divide-y divide-gray-100">
+      <% @users.each do |u| %>
+        <tr class="hover:bg-gray-50 transition <%= 'opacity-50' if u.blocked %>">
+          <td class="px-5 py-3">
+            <%= link_to u.email, admin_user_path(u), class: "text-blue-600 hover:underline font-medium" %>
+          </td>
+          <td class="px-5 py-3 text-gray-600"><%= u.name.presence || "—" %></td>
+          <td class="px-5 py-3">
+            <span class="font-mono uppercase text-xs bg-gray-100 px-2 py-0.5 rounded"><%= u.jlpt_level %></span>
+          </td>
+          <td class="px-5 py-3"><%= role_badge(u.role) %></td>
+          <td class="px-5 py-3"><%= vip_badge(u.vip_level) %></td>
+          <td class="px-5 py-3">
+            <span class="text-orange-500 font-semibold">🔥 <%= u.streak_count %></span>
+          </td>
+          <td class="px-5 py-3">
+            <% if u.blocked %>
+              <span class="inline-flex items-center rounded-full bg-red-100 px-2 py-0.5 text-xs font-medium text-red-700">Khóa</span>
+            <% else %>
+              <span class="inline-flex items-center rounded-full bg-green-100 px-2 py-0.5 text-xs font-medium text-green-700">Hoạt động</span>
+            <% end %>
+          </td>
+          <td class="px-5 py-3 text-gray-400 text-xs"><%= u.created_at.strftime("%d/%m/%Y") %></td>
+          <td class="px-5 py-3">
+            <%= link_to "Chi tiết", admin_user_path(u), class: "text-xs text-blue-600 hover:underline" %>
+          </td>
+        </tr>
+      <% end %>
+      <% if @users.empty? %>
+        <tr><td colspan="9" class="px-5 py-10 text-center text-gray-400">Không tìm thấy người dùng nào.</td></tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
+
+<%# ── Pagination ──────────────────────────────────────────────────────────── %>
+<% if @pages > 1 %>
+  <div class="flex justify-center gap-2 mt-4">
+    <% ([1, @page - 1].max..[@pages, @page + 1].min).each do |p| %>
+      <%= link_to p, admin_users_path(q: @q, role: @role, vip: @vip, page: p),
+            class: "rounded-lg px-3 py-1.5 text-sm border #{p == @page ? 'bg-blue-600 text-white border-blue-600' : 'bg-white text-gray-600 border-gray-300 hover:bg-gray-50'}" %>
+    <% end %>
+  </div>
+<% end %>

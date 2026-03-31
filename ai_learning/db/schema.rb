@@ -10,7 +10,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.2].define(version: 2026_03_28_000003) do
+ActiveRecord::Schema[7.2].define(version: 2026_03_30_000003) do
+  create_table "ai_usage_logs", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+    t.bigint "user_id"
+    t.string "feature", null: false
+    t.string "model", null: false
+    t.integer "input_tokens", default: 0, null: false
+    t.integer "output_tokens", default: 0, null: false
+    t.boolean "cached", default: false, null: false
+    t.datetime "created_at", null: false
+    t.index ["created_at"], name: "index_ai_usage_logs_on_created_at"
+    t.index ["feature", "created_at"], name: "idx_ai_logs_feature_date"
+    t.index ["feature"], name: "index_ai_usage_logs_on_feature"
+    t.index ["user_id"], name: "index_ai_usage_logs_on_user_id"
+  end
+
   create_table "conversation_sessions", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.bigint "user_id", null: false
     t.string "role", null: false
@@ -73,6 +87,7 @@ ActiveRecord::Schema[7.2].define(version: 2026_03_28_000003) do
     t.datetime "updated_at", null: false
     t.index ["studied_on"], name: "index_study_logs_on_studied_on"
     t.index ["user_id", "studied_on"], name: "index_study_logs_on_user_id_and_studied_on", unique: true
+    t.index ["user_id"], name: "idx_study_logs_user_id"
   end
 
   create_table "user_card_progresses", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
@@ -91,6 +106,8 @@ ActiveRecord::Schema[7.2].define(version: 2026_03_28_000003) do
     t.index ["user_id", "card_type", "card_id"], name: "uq_user_card", unique: true
     t.index ["user_id", "card_type", "jlpt_level"], name: "idx_user_type_level"
     t.index ["user_id", "due_date"], name: "idx_user_due"
+    t.index ["user_id", "learned", "jlpt_level"], name: "idx_ucp_user_learned_level"
+    t.index ["user_id", "learned"], name: "idx_ucp_user_learned"
     t.index ["user_id"], name: "index_user_card_progresses_on_user_id"
   end
 
@@ -126,10 +143,16 @@ ActiveRecord::Schema[7.2].define(version: 2026_03_28_000003) do
     t.datetime "last_studied_at"
     t.text "latest_weekly_report"
     t.datetime "weekly_report_generated_at"
+    t.integer "vip_level", default: 0, null: false
+    t.decimal "balance", precision: 10, scale: 2, default: "0.0", null: false
+    t.datetime "vip_expires_at"
+    t.boolean "blocked", default: false, null: false
+    t.index ["blocked"], name: "index_users_on_blocked"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["jlpt_level"], name: "index_users_on_jlpt_level"
     t.index ["jti"], name: "index_users_on_jti", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
+    t.index ["vip_level"], name: "index_users_on_vip_level"
   end
 
   create_table "vocabularies", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
@@ -142,6 +165,7 @@ ActiveRecord::Schema[7.2].define(version: 2026_03_28_000003) do
     t.json "tags"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["jlpt_level", "word"], name: "idx_vocabularies_level_word"
     t.index ["jlpt_level"], name: "index_vocabularies_on_jlpt_level"
     t.index ["part_of_speech"], name: "index_vocabularies_on_part_of_speech"
     t.index ["word"], name: "index_vocabularies_on_word"

@@ -1,0 +1,93 @@
+<% content_for :page_title, "Chi phí AI" %>
+
+<%# ── Range selector ──────────────────────────────────────────────────────── %>
+<div class="flex gap-2 mb-5">
+  <%= link_to "7 ngày", admin_ai_costs_path(range: "week"),
+        class: "rounded-lg px-4 py-2 text-sm font-medium border transition #{@range == 'week' ? 'bg-blue-600 text-white border-blue-600' : 'bg-white text-gray-600 border-gray-300 hover:bg-gray-50'}" %>
+  <%= link_to "30 ngày", admin_ai_costs_path(range: "month"),
+        class: "rounded-lg px-4 py-2 text-sm font-medium border transition #{@range == 'month' ? 'bg-blue-600 text-white border-blue-600' : 'bg-white text-gray-600 border-gray-300 hover:bg-gray-50'}" %>
+</div>
+
+<%# ── Totals ───────────────────────────────────────────────────────────────── %>
+<div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-5">
+  <div class="bg-white rounded-xl border border-gray-200 p-5">
+    <p class="text-xs text-gray-500 mb-1">Tổng requests</p>
+    <p class="text-2xl font-bold text-blue-600"><%= number_with_delimiter(@totals[:requests]) %></p>
+  </div>
+  <div class="bg-white rounded-xl border border-gray-200 p-5">
+    <p class="text-xs text-gray-500 mb-1">Input tokens</p>
+    <p class="text-2xl font-bold text-gray-800"><%= number_with_delimiter(@totals[:input]) %></p>
+  </div>
+  <div class="bg-white rounded-xl border border-gray-200 p-5">
+    <p class="text-xs text-gray-500 mb-1">Output tokens</p>
+    <p class="text-2xl font-bold text-gray-800"><%= number_with_delimiter(@totals[:output]) %></p>
+  </div>
+  <div class="bg-white rounded-xl border border-gray-200 p-5">
+    <p class="text-xs text-gray-500 mb-1">Chi phí ước tính</p>
+    <p class="text-2xl font-bold text-green-600">$<%= @totals[:cost].round(4) %></p>
+  </div>
+</div>
+
+<%# ── Daily breakdown chart ───────────────────────────────────────────────── %>
+<div class="bg-white rounded-xl border border-gray-200 p-5 mb-5">
+  <h2 class="text-sm font-semibold text-gray-700 mb-4">Token usage theo ngày</h2>
+  <% max_tokens = [@daily.map { |d| d[:tokens] }.max.to_i, 1].max %>
+  <div class="flex items-end gap-1 h-28">
+    <% @daily.each do |d| %>
+      <div class="flex-1 flex flex-col items-center gap-1 group relative">
+        <span class="hidden group-hover:block absolute -top-6 bg-gray-800 text-white text-xs px-1.5 py-0.5 rounded whitespace-nowrap">
+          <%= d[:date] %>: <%= number_with_delimiter(d[:tokens]) %> tokens
+        </span>
+        <div class="w-full bg-blue-400 rounded-t hover:bg-blue-500 transition"
+             style="height: <%= [(d[:tokens].to_f / max_tokens * 96).round, 2].max %>px;"></div>
+        <span class="text-gray-400 text-xs" style="font-size:9px"><%= d[:date][5..] %></span>
+      </div>
+    <% end %>
+    <% if @daily.empty? %>
+      <p class="text-sm text-gray-400 mx-auto py-8">Chưa có dữ liệu.</p>
+    <% end %>
+  </div>
+</div>
+
+<%# ── By feature table ───────────────────────────────────────────────────── %>
+<div class="bg-white rounded-xl border border-gray-200 overflow-hidden">
+  <div class="px-5 py-4 border-b border-gray-100">
+    <h2 class="text-sm font-semibold text-gray-700">Chi tiết theo feature</h2>
+  </div>
+  <table class="w-full text-sm">
+    <thead class="bg-gray-50 text-xs text-gray-500 uppercase">
+      <tr>
+        <th class="px-5 py-3 text-left">Feature</th>
+        <th class="px-5 py-3 text-left">Model</th>
+        <th class="px-5 py-3 text-right">Requests</th>
+        <th class="px-5 py-3 text-right">Cache hits</th>
+        <th class="px-5 py-3 text-right">Input tokens</th>
+        <th class="px-5 py-3 text-right">Output tokens</th>
+        <th class="px-5 py-3 text-right">Chi phí</th>
+      </tr>
+    </thead>
+    <tbody class="divide-y divide-gray-100">
+      <% @by_feature.each do |row| %>
+        <tr class="hover:bg-gray-50 transition">
+          <td class="px-5 py-3 font-mono text-xs text-gray-700"><%= row[:feature] %></td>
+          <td class="px-5 py-3 text-gray-500 text-xs"><%= row[:model] %></td>
+          <td class="px-5 py-3 text-right"><%= number_with_delimiter(row[:requests]) %></td>
+          <td class="px-5 py-3 text-right text-green-600">
+            <% cache_pct = row[:requests] > 0 ? (row[:cached_hits].to_f / row[:requests] * 100).round : 0 %>
+            <%= row[:cached_hits] %> (<%= cache_pct %>%)
+          </td>
+          <td class="px-5 py-3 text-right"><%= number_with_delimiter(row[:input]) %></td>
+          <td class="px-5 py-3 text-right"><%= number_with_delimiter(row[:output]) %></td>
+          <td class="px-5 py-3 text-right font-semibold text-green-600">$<%= row[:cost] %></td>
+        </tr>
+      <% end %>
+      <% if @by_feature.empty? %>
+        <tr><td colspan="7" class="px-5 py-10 text-center text-gray-400">Chưa có dữ liệu AI usage log nào.</td></tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
+
+<p class="mt-3 text-xs text-gray-400">
+  * Chi phí ước tính dựa trên giá Gemini 2.5 Flash: $0.0001/1K input, $0.0004/1K output. Chỉ mang tính tham khảo.
+</p>

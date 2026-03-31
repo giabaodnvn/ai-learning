@@ -1,0 +1,175 @@
+<% content_for :page_title, "User: #{@user.email}" %>
+
+<div class="flex items-center gap-3 mb-6">
+  <%= link_to "← Danh sách", admin_users_path, class: "text-sm text-gray-500 hover:text-gray-700" %>
+  <% if @user.blocked? %>
+    <span class="rounded-full bg-red-100 px-3 py-1 text-xs font-medium text-red-700">Tài khoản bị khóa</span>
+  <% end %>
+</div>
+
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-5">
+
+  <%# ── Left: Info + Edit ────────────────────────────────────────────────── %>
+  <div class="lg:col-span-1 space-y-5">
+
+    <%# Profile card %>
+    <div class="bg-white rounded-xl border border-gray-200 p-5">
+      <div class="flex items-center gap-3 mb-4">
+        <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-xl font-bold text-blue-600">
+          <%= (@user.name.presence || @user.email)[0].upcase %>
+        </div>
+        <div>
+          <p class="font-semibold text-gray-900"><%= @user.name.presence || "(Chưa đặt tên)" %></p>
+          <p class="text-sm text-gray-500"><%= @user.email %></p>
+        </div>
+      </div>
+      <dl class="space-y-2 text-sm">
+        <div class="flex justify-between"><dt class="text-gray-500">ID</dt><dd class="font-mono">#<%= @user.id %></dd></div>
+        <div class="flex justify-between"><dt class="text-gray-500">Đăng ký</dt><dd><%= @user.created_at.strftime("%d/%m/%Y %H:%M") %></dd></div>
+        <div class="flex justify-between"><dt class="text-gray-500">Streak</dt><dd class="font-semibold text-orange-500">🔥 <%= @user.streak_count %> ngày</dd></div>
+        <div class="flex justify-between"><dt class="text-gray-500">Thẻ đã học</dt><dd><%= @card_stats[:learned] %>/<%= @card_stats[:total] %></dd></div>
+        <div class="flex justify-between"><dt class="text-gray-500">Đến hạn ôn</dt><dd><%= @card_stats[:due] %></dd></div>
+      </dl>
+    </div>
+
+    <%# Edit form %>
+    <div class="bg-white rounded-xl border border-gray-200 p-5">
+      <h3 class="text-sm font-semibold text-gray-700 mb-4">Chỉnh sửa</h3>
+      <%= form_with url: admin_user_path(@user), method: :patch, local: true, class: "space-y-3" do |f| %>
+        <div>
+          <label class="text-xs font-medium text-gray-600 block mb-1">Tên hiển thị</label>
+          <%= f.text_field :name, value: @user.name, placeholder: "Tên người dùng",
+                class: "w-full rounded-lg border border-gray-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500",
+                name: "user[name]" %>
+        </div>
+        <div>
+          <label class="text-xs font-medium text-gray-600 block mb-1">Role</label>
+          <%= f.select :role, [["Student", "student"], ["Admin", "admin"]],
+                { selected: @user.role },
+                { class: "w-full rounded-lg border border-gray-300 px-3 py-2 text-sm", name: "user[role]" } %>
+        </div>
+        <div>
+          <label class="text-xs font-medium text-gray-600 block mb-1">JLPT Level</label>
+          <%= f.select :jlpt_level, [["N5","n5"],["N4","n4"],["N3","n3"],["N2","n2"],["N1","n1"]],
+                { selected: @user.jlpt_level },
+                { class: "w-full rounded-lg border border-gray-300 px-3 py-2 text-sm", name: "user[jlpt_level]" } %>
+        </div>
+
+        <div class="pt-2 border-t border-gray-100">
+          <p class="text-xs font-semibold text-gray-500 mb-2">⭐ VIP / Số dư</p>
+          <label class="text-xs font-medium text-gray-600 block mb-1">VIP Level</label>
+          <%= f.select :vip_level,
+                [["Free (0)","0"],["Basic (1)","1"],["Pro (2)","2"],["Premium (3)","3"]],
+                { selected: @user.vip_level.to_s },
+                { class: "w-full rounded-lg border border-gray-300 px-3 py-2 text-sm", name: "user[vip_level]" } %>
+        </div>
+        <div>
+          <label class="text-xs font-medium text-gray-600 block mb-1">Số dư (VNĐ)</label>
+          <%= f.number_field :balance, value: @user.balance, step: 1000, min: 0,
+                class: "w-full rounded-lg border border-gray-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500",
+                name: "user[balance]" %>
+        </div>
+        <div>
+          <label class="text-xs font-medium text-gray-600 block mb-1">VIP hết hạn</label>
+          <%= f.datetime_local_field :vip_expires_at,
+                value: @user.vip_expires_at&.strftime("%Y-%m-%dT%H:%M"),
+                class: "w-full rounded-lg border border-gray-300 px-3 py-2 text-sm focus:outline-none",
+                name: "user[vip_expires_at]" %>
+        </div>
+
+        <%= f.submit "Lưu thay đổi", class: "w-full rounded-lg bg-blue-600 px-4 py-2 text-sm font-semibold text-white hover:bg-blue-700 transition cursor-pointer" %>
+      <% end %>
+    </div>
+
+    <%# Danger zone %>
+    <div class="bg-white rounded-xl border border-red-200 p-5">
+      <h3 class="text-sm font-semibold text-red-600 mb-3">Thao tác nguy hiểm</h3>
+      <div class="space-y-2">
+        <%= button_to @user.blocked? ? "Mở khóa tài khoản" : "Khóa tài khoản",
+              toggle_block_admin_user_path(@user), method: :patch,
+              data: { confirm: "Chắc chắn #{@user.blocked? ? 'mở khóa' : 'khóa'} #{@user.email}?" },
+              class: "w-full rounded-lg border px-4 py-2 text-sm font-medium transition #{@user.blocked? ? 'border-green-300 text-green-700 hover:bg-green-50' : 'border-red-300 text-red-700 hover:bg-red-50'}" %>
+        <%= button_to "Reset VIP về Free",
+              reset_vip_admin_user_path(@user), method: :delete,
+              data: { confirm: "Reset VIP của #{@user.email}?" },
+              class: "w-full rounded-lg border border-gray-300 px-4 py-2 text-sm font-medium text-gray-600 hover:bg-gray-50 transition" %>
+      </div>
+    </div>
+  </div>
+
+  <%# ── Right: Activity ──────────────────────────────────────────────────── %>
+  <div class="lg:col-span-2 space-y-5">
+
+    <%# Study log (14 days) %>
+    <div class="bg-white rounded-xl border border-gray-200 p-5">
+      <h3 class="text-sm font-semibold text-gray-700 mb-4">📅 Lịch sử học (14 ngày gần nhất)</h3>
+      <% if @study_logs.any? %>
+        <table class="w-full text-sm">
+          <thead class="text-xs text-gray-500 uppercase">
+            <tr>
+              <th class="py-2 text-left">Ngày</th>
+              <th class="py-2 text-right">Thẻ ôn</th>
+              <th class="py-2 text-right">Đúng</th>
+              <th class="py-2 text-right">Tỉ lệ</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-gray-100">
+            <% @study_logs.each do |log| %>
+              <tr>
+                <td class="py-2"><%= log.studied_on.strftime("%d/%m/%Y") %></td>
+                <td class="py-2 text-right"><%= log.cards_reviewed %></td>
+                <td class="py-2 text-right text-green-600"><%= log.correct_count %></td>
+                <td class="py-2 text-right">
+                  <% acc = log.cards_reviewed > 0 ? (log.correct_count.to_f / log.cards_reviewed * 100).round : 0 %>
+                  <span class="font-medium <%= acc >= 70 ? 'text-green-600' : 'text-red-500' %>">
+                    <%= acc %>%
+                  </span>
+                </td>
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
+      <% else %>
+        <p class="text-sm text-gray-400 text-center py-4">Chưa có dữ liệu học.</p>
+      <% end %>
+    </div>
+
+    <%# AI usage logs %>
+    <div class="bg-white rounded-xl border border-gray-200 p-5">
+      <h3 class="text-sm font-semibold text-gray-700 mb-4">🤖 AI requests gần nhất</h3>
+      <% if @ai_logs.any? %>
+        <table class="w-full text-sm">
+          <thead class="text-xs text-gray-500 uppercase">
+            <tr>
+              <th class="py-2 text-left">Feature</th>
+              <th class="py-2 text-left">Model</th>
+              <th class="py-2 text-right">Tokens</th>
+              <th class="py-2 text-right">Cache</th>
+              <th class="py-2 text-right">Thời gian</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-gray-100">
+            <% @ai_logs.each do |log| %>
+              <tr>
+                <td class="py-2 font-mono text-xs"><%= log.feature %></td>
+                <td class="py-2 text-gray-500 text-xs"><%= log.model %></td>
+                <td class="py-2 text-right"><%= number_with_delimiter(log.input_tokens + log.output_tokens) %></td>
+                <td class="py-2 text-right">
+                  <% if log.cached %>
+                    <span class="text-green-600 text-xs">✓ Cache</span>
+                  <% else %>
+                    <span class="text-gray-400 text-xs">API</span>
+                  <% end %>
+                </td>
+                <td class="py-2 text-right text-gray-400 text-xs"><%= log.created_at.strftime("%d/%m %H:%M") %></td>
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
+      <% else %>
+        <p class="text-sm text-gray-400 text-center py-4">Chưa có AI request nào được log.</p>
+      <% end %>
+    </div>
+
+  </div>
+</div>

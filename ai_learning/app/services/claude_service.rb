@@ -6,6 +6,9 @@ require "json"
 # ClaudeService — AI service layer backed by Google Gemini API.
 # Interface is intentionally identical to the Claude version so all
 # controllers work without modification.
+#
+# Usage logging: pass `log_usage: {feature:, user_id:}` to `complete` or `chat`
+# and token counts are persisted asynchronously to AiUsageLog.
 class ClaudeService
   BASE_URL           = "https://generativelanguage.googleapis.com"
   CONVERSATION_MODEL = "gemini-2.5-flash"
@@ -13,7 +16,8 @@ class ClaudeService
 
   # Streaming chat — yields each text delta as it arrives.
   # `system` is passed as Gemini's systemInstruction (not a user turn).
-  def self.chat(messages:, model: CONVERSATION_MODEL, max_tokens: 2048, system: nil, &block)
+  # `log_usage:` — hash with :feature and optional :user_id for AiUsageLog.
+  def self.chat(messages:, model: CONVERSATION_MODEL, max_tokens: 2048, system: nil, log_usage: nil, &block)
     body = {
       contents:         gemini_contents(messages),
       generationConfig: { maxOutputTokens: max_tokens, thinkingConfig: { thinkingBudget: 0 } }
@@ -21,6 +25,9 @@ class ClaudeService
     body[:systemInstruction] = { parts: [ { text: system } ] } if system
 
     uri = URI("#{BASE_URL}/v1beta/models/#{model}:streamGenerateContent?alt=sse&key=#{api_key}")
+
+    input_tokens  = 0
+    output_tokens = 0
 
     Net::HTTP.start(uri.host, uri.port, use_ssl: true, read_timeout: 60) do |http|
       req      = Net::HTTP::Post.new(uri, "Content-Type" => "application/json")
@@ -40,6 +47,11 @@ class ClaudeService
               parsed = JSON.parse(data)
               text   = parsed.dig("candidates", 0, "content", "parts", 0, "text")
               block.call(text) if text && block
+              # Gemini includes usageMetadata in the final streamed chunk
+              if (usage = parsed["usageMetadata"])
+                input_tokens  = usage["promptTokenCount"].to_i
+                output_tokens = usage["candidatesTokenCount"].to_i
+              end
             rescue JSON::ParserError
               next
             end
@@ -47,6 +59,8 @@ class ClaudeService
         end
       end
     end
+
+    record_usage(log_usage, model, input_tokens, output_tokens) if log_usage
   rescue RateLimitError, TimeoutError, ServiceError
     raise
   rescue Net::ReadTimeout
@@ -56,7 +70,8 @@ class ClaudeService
   end
 
   # Single (non-streaming) completion — returns the full text string.
-  def self.complete(prompt:, model: DEFAULT_MODEL, max_tokens: 2048)
+  # `log_usage:` — hash with :feature and optional :user_id for AiUsageLog.
+  def self.complete(prompt:, model: DEFAULT_MODEL, max_tokens: 2048, log_usage: nil)
     body = {
       contents:         [ { role: "user", parts: [ { text: prompt } ] } ],
       generationConfig: { maxOutputTokens: max_tokens, thinkingConfig: { thinkingBudget: 0 } }
@@ -70,8 +85,15 @@ class ClaudeService
 
     handle_error_status!(res.code.to_i)
 
-    parsed = JSON.parse(res.body)
-    parsed.dig("candidates", 0, "content", "parts", 0, "text") || ""
+    parsed        = JSON.parse(res.body)
+    text          = parsed.dig("candidates", 0, "content", "parts", 0, "text") || ""
+    usage         = parsed["usageMetadata"] || {}
+    input_tokens  = usage["promptTokenCount"].to_i
+    output_tokens = usage["candidatesTokenCount"].to_i
+
+    record_usage(log_usage, model, input_tokens, output_tokens) if log_usage
+
+    text
   rescue RateLimitError, TimeoutError, ServiceError
     raise
   rescue Net::ReadTimeout
@@ -89,6 +111,21 @@ class ClaudeService
 
     def api_key
       ENV.fetch("GEMINI_API_KEY")
+    end
+
+    # Persist token usage asynchronously (non-blocking).
+    def record_usage(opts, model, input_tokens, output_tokens)
+      return unless opts.is_a?(Hash) && opts[:feature]
+      AiUsageLog.record_async(
+        feature:       opts[:feature].to_s,
+        model:         model,
+        input_tokens:  input_tokens,
+        output_tokens: output_tokens,
+        user_id:       opts[:user_id],
+        cached:        opts[:cached] || false
+      )
+    rescue => e
+      Rails.logger.warn "[ClaudeService] record_usage failed: #{e.message}"
     end
 
     # Convert {role:, content:} hashes → Gemini contents array.

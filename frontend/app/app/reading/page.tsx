@@ -7,6 +7,8 @@ import { PassageCard, PassageData } from "@/components/reading/PassageCard";
 import { ReaderView } from "@/components/reading/ReaderView";
 import { QuizSection } from "@/components/reading/QuizSection";
 import { ResultScreen } from "@/components/reading/ResultScreen";
+import { ErrorBoundary } from "@/components/ErrorBoundary";
+import { AIStreamFallback } from "@/components/AIStreamFallback";
 
 // ---------------------------------------------------------------------------
 // Types
@@ -157,7 +159,14 @@ export default function ReadingPage() {
     return (
       <div className="space-y-4">
         <BackButton onClick={() => setView("reading")} label="Quay lại bài đọc" />
-        <QuizSection passage={selected} onFinish={finishQuiz} />
+        <ErrorBoundary fallback={
+          <AIStreamFallback
+            errorMessage="Không thể tải câu hỏi. Vui lòng thử lại."
+            onRetry={() => setView("quiz")}
+          />
+        }>
+          <QuizSection passage={selected} onFinish={finishQuiz} />
+        </ErrorBoundary>
       </div>
     );
   }
@@ -167,7 +176,14 @@ export default function ReadingPage() {
     return (
       <div className="space-y-4">
         <BackButton onClick={goToList} label="Danh sách bài đọc" />
-        <ReaderView passage={selected} onStartQuiz={startQuiz} />
+        <ErrorBoundary fallback={
+          <AIStreamFallback
+            errorMessage="Không thể tải bài đọc. Vui lòng thử lại."
+            onRetry={() => { setSelected(null); setView("reading"); setSelected(selected); }}
+          />
+        }>
+          <ReaderView passage={selected} onStartQuiz={startQuiz} />
+        </ErrorBoundary>
       </div>
     );
   }
