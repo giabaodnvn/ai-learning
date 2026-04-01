@@ -124,9 +124,7 @@ export default function ReviewPage() {
               <p className="text-lg font-bold text-zinc-900">
                 Không có thẻ nào cần ôn hôm nay!
               </p>
-              <p className="text-sm text-zinc-500">
-                Tổng số thẻ đến hạn: {data?.total_due ?? 0}. Quay lại sau nhé.
-              </p>
+              <p className="text-sm text-zinc-500">Quay lại sau nhé.</p>
             </>
           ) : (
             <>
@@ -134,6 +132,11 @@ export default function ReviewPage() {
               <p className="text-sm text-zinc-500">
                 Đúng {correct}/{total} thẻ ({total > 0 ? Math.round((correct / total) * 100) : 0}%)
               </p>
+              {(data?.total_due ?? 0) > total && (
+                <p className="text-sm text-amber-600 font-medium">
+                  Còn {(data?.total_due ?? 0) - total} thẻ đến hạn — nhấn &quot;Tiếp tục&quot; để ôn thêm.
+                </p>
+              )}
             </>
           )}
           <button
@@ -146,7 +149,7 @@ export default function ReviewPage() {
             }}
             className="rounded-lg border border-zinc-300 px-4 py-2 text-sm font-medium text-zinc-700 hover:bg-zinc-50 transition-colors"
           >
-            Tải lại
+            {(data?.total_due ?? 0) > sessionResults.length ? "Tiếp tục ôn tập" : "Tải lại"}
           </button>
         </div>
       </div>

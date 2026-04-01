@@ -75,6 +75,12 @@ Rails.application.routes.draw do
         end
       end
 
+      # Level-up tests (JLPT mini exam)
+      resources :level_tests, only: [:index, :show] do
+        collection { post :generate }
+        member     { post :submit   }
+      end
+
       # Dashboard + gamification
       get  "dashboard",               to: "dashboard#index"
       get  "dashboard/weekly_report", to: "dashboard#weekly_report"

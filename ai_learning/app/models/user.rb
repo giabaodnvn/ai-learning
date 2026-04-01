@@ -17,6 +17,7 @@ class User < ApplicationRecord
   has_many :conversation_sessions, dependent: :destroy
   has_many :user_card_progresses, dependent: :destroy
   has_many :study_logs, dependent: :destroy
+  has_many :level_test_attempts, dependent: :destroy
 
   validates :name, presence: true, length: { maximum: 100 }
   validates :jlpt_level, inclusion: { in: JLPT_LEVELS }

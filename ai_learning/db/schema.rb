@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.2].define(version: 2026_03_30_000003) do
+ActiveRecord::Schema[7.2].define(version: 2026_03_31_000002) do
   create_table "ai_usage_logs", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.bigint "user_id"
     t.string "feature", null: false
@@ -61,6 +61,39 @@ ActiveRecord::Schema[7.2].define(version: 2026_03_30_000003) do
     t.datetime "updated_at", null: false
     t.index ["character"], name: "index_kanjis_on_character", unique: true
     t.index ["jlpt_level"], name: "index_kanjis_on_jlpt_level"
+  end
+
+  create_table "level_test_attempts", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.bigint "level_test_id", null: false
+    t.json "answers", null: false
+    t.integer "score", default: 0, null: false
+    t.integer "total_questions", default: 25, null: false
+    t.boolean "passed", default: false, null: false
+    t.string "jlpt_level", null: false
+    t.string "level_before", null: false
+    t.string "level_after"
+    t.datetime "completed_at"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["level_test_id"], name: "index_level_test_attempts_on_level_test_id"
+    t.index ["passed"], name: "index_level_test_attempts_on_passed"
+    t.index ["user_id", "jlpt_level"], name: "index_level_test_attempts_on_user_id_and_jlpt_level"
+    t.index ["user_id"], name: "index_level_test_attempts_on_user_id"
+  end
+
+  create_table "level_tests", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+    t.string "jlpt_level", null: false
+    t.string "title", null: false
+    t.json "sections", null: false
+    t.integer "total_questions", default: 25, null: false
+    t.integer "pass_score", default: 18, null: false
+    t.integer "time_limit_min", default: 30, null: false
+    t.boolean "ai_generated", default: true, null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["created_at"], name: "index_level_tests_on_created_at"
+    t.index ["jlpt_level"], name: "index_level_tests_on_jlpt_level"
   end
 
   create_table "reading_passages", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|

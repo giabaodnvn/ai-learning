@@ -7,14 +7,12 @@ module Api
       # GET /api/v1/review/queue
       # Returns vocabulary cards due today for the current user (max 20)
       def queue
-        cards = current_user.user_vocabulary_progresses
-                            .includes(:vocabulary)
+        base  = current_user.user_vocabulary_progresses
                             .where("due_date <= ?", Date.current)
-                            .order(:due_date)
-                            .limit(20)
+        cards = base.includes(:vocabulary).order(:due_date).limit(20)
 
         render json: {
-          total_due: cards.size,
+          total_due: base.count,
           cards:     cards.map { |p| serialize_progress(p) }
         }, status: :ok
       end

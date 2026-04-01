@@ -1,4 +1,5 @@
 import { UserMenu } from "@/components/UserMenu";
+import { AppNav } from "@/components/AppNav";
 
 export default function AppLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -10,6 +11,7 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
           </a>
           <UserMenu />
         </div>
+        <AppNav />
       </header>
 
       <main className="mx-auto max-w-5xl px-4 py-8">{children}</main>
