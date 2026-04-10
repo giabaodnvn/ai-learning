@@ -1,0 +1,1081 @@
+[
+  {
+    "word": "私",
+    "reading": "わたし",
+    "romaji": "watashi",
+    "meaning_vi": "tôi, mình (lịch sự)",
+    "part_of_speech": "noun",
+    "tags": [
+      "pronoun",
+      "basic"
+    ]
+  },
+  {
+    "word": "僕",
+    "reading": "ぼく",
+    "romaji": "boku",
+    "meaning_vi": "tôi (nam giới, thân mật)",
+    "part_of_speech": "noun",
+    "tags": [
+      "pronoun",
+      "male"
+    ]
+  },
+  {
+    "word": "あなた",
+    "reading": "あなた",
+    "romaji": "anata",
+    "meaning_vi": "bạn, anh/chị (ngôi thứ hai)",
+    "part_of_speech": "noun",
+    "tags": [
+      "pronoun",
+      "basic"
+    ]
+  },
+  {
+    "word": "彼",
+    "reading": "かれ",
+    "romaji": "kare",
+    "meaning_vi": "anh ấy; bạn trai",
+    "part_of_speech": "noun",
+    "tags": [
+      "pronoun"
+    ]
+  },
+  {
+    "word": "彼女",
+    "reading": "かのじょ",
+    "romaji": "kanojo",
+    "meaning_vi": "cô ấy; bạn gái",
+    "part_of_speech": "noun",
+    "tags": [
+      "pronoun"
+    ]
+  },
+  {
+    "word": "みんな",
+    "reading": "みんな",
+    "romaji": "minna",
+    "meaning_vi": "mọi người, tất cả mọi người",
+    "part_of_speech": "noun",
+    "tags": [
+      "pronoun",
+      "group"
+    ]
+  },
+  {
+    "word": "私たち",
+    "reading": "わたしたち",
+    "romaji": "watashitachi",
+    "meaning_vi": "chúng tôi, chúng ta",
+    "part_of_speech": "noun",
+    "tags": [
+      "pronoun",
+      "plural"
+    ]
+  },
+  {
+    "word": "今日",
+    "reading": "きょう",
+    "romaji": "kyou",
+    "meaning_vi": "hôm nay",
+    "part_of_speech": "noun",
+    "tags": [
+      "time",
+      "daily"
+    ]
+  },
+  {
+    "word": "明日",
+    "reading": "あした",
+    "romaji": "ashita",
+    "meaning_vi": "ngày mai",
+    "part_of_speech": "noun",
+    "tags": [
+      "time",
+      "daily"
+    ]
+  },
+  {
+    "word": "昨日",
+    "reading": "きのう",
+    "romaji": "kinou",
+    "meaning_vi": "hôm qua",
+    "part_of_speech": "noun",
+    "tags": [
+      "time",
+      "daily"
+    ]
+  },
+  {
+    "word": "今年",
+    "reading": "ことし",
+    "romaji": "kotoshi",
+    "meaning_vi": "năm nay",
+    "part_of_speech": "noun",
+    "tags": [
+      "time",
+      "yearly"
+    ]
+  },
+  {
+    "word": "来年",
+    "reading": "らいねん",
+    "romaji": "rainen",
+    "meaning_vi": "năm sau",
+    "part_of_speech": "noun",
+    "tags": [
+      "time",
+      "yearly"
+    ]
+  },
+  {
+    "word": "去年",
+    "reading": "きょねん",
+    "romaji": "kyonen",
+    "meaning_vi": "năm ngoái",
+    "part_of_speech": "noun",
+    "tags": [
+      "time",
+      "yearly"
+    ]
+  },
+  {
+    "word": "来月",
+    "reading": "らいげつ",
+    "romaji": "raigetsu",
+    "meaning_vi": "tháng sau",
+    "part_of_speech": "noun",
+    "tags": [
+      "time",
+      "monthly"
+    ]
+  },
+  {
+    "word": "先月",
+    "reading": "せんげつ",
+    "romaji": "sengetsu",
+    "meaning_vi": "tháng trước",
+    "part_of_speech": "noun",
+    "tags": [
+      "time",
+      "monthly"
+    ]
+  },
+  {
+    "word": "来週",
+    "reading": "らいしゅう",
+    "romaji": "raishuu",
+    "meaning_vi": "tuần sau",
+    "part_of_speech": "noun",
+    "tags": [
+      "time",
+      "weekly"
+    ]
+  },
+  {
+    "word": "先週",
+    "reading": "せんしゅう",
+    "romaji": "senshuu",
+    "meaning_vi": "tuần trước",
+    "part_of_speech": "noun",
+    "tags": [
+      "time",
+      "weekly"
+    ]
+  },
+  {
+    "word": "今朝",
+    "reading": "けさ",
+    "romaji": "kesa",
+    "meaning_vi": "sáng nay",
+    "part_of_speech": "noun",
+    "tags": [
+      "time",
+      "daily"
+    ]
+  },
+  {
+    "word": "今夜",
+    "reading": "こんや",
+    "romaji": "konya",
+    "meaning_vi": "tối nay",
+    "part_of_speech": "noun",
+    "tags": [
+      "time",
+      "daily"
+    ]
+  },
+  {
+    "word": "毎日",
+    "reading": "まいにち",
+    "romaji": "mainichi",
+    "meaning_vi": "mỗi ngày, hàng ngày",
+    "part_of_speech": "noun",
+    "tags": [
+      "time",
+      "frequency"
+    ]
+  },
+  {
+    "word": "毎朝",
+    "reading": "まいあさ",
+    "romaji": "maiasa",
+    "meaning_vi": "mỗi buổi sáng",
+    "part_of_speech": "noun",
+    "tags": [
+      "time",
+      "frequency"
+    ]
+  },
+  {
+    "word": "毎晩",
+    "reading": "まいばん",
+    "romaji": "maiban",
+    "meaning_vi": "mỗi buổi tối",
+    "part_of_speech": "noun",
+    "tags": [
+      "time",
+      "frequency"
+    ]
+  },
+  {
+    "word": "毎週",
+    "reading": "まいしゅう",
+    "romaji": "maishuu",
+    "meaning_vi": "mỗi tuần",
+    "part_of_speech": "noun",
+    "tags": [
+      "time",
+      "frequency"
+    ]
+  },
+  {
+    "word": "今",
+    "reading": "いま",
+    "romaji": "ima",
+    "meaning_vi": "bây giờ, lúc này",
+    "part_of_speech": "noun",
+    "tags": [
+      "time",
+      "present"
+    ]
+  },
+  {
+    "word": "朝",
+    "reading": "あさ",
+    "romaji": "asa",
+    "meaning_vi": "buổi sáng",
+    "part_of_speech": "noun",
+    "tags": [
+      "time",
+      "daily"
+    ]
+  },
+  {
+    "word": "昼",
+    "reading": "ひる",
+    "romaji": "hiru",
+    "meaning_vi": "buổi trưa",
+    "part_of_speech": "noun",
+    "tags": [
+      "time",
+      "daily"
+    ]
+  },
+  {
+    "word": "夜",
+    "reading": "よる",
+    "romaji": "yoru",
+    "meaning_vi": "buổi tối, đêm",
+    "part_of_speech": "noun",
+    "tags": [
+      "time",
+      "daily"
+    ]
+  },
+  {
+    "word": "午前",
+    "reading": "ごぜん",
+    "romaji": "gozen",
+    "meaning_vi": "buổi sáng (trước 12 giờ trưa), AM",
+    "part_of_speech": "noun",
+    "tags": [
+      "time"
+    ]
+  },
+  {
+    "word": "午後",
+    "reading": "ごご",
+    "romaji": "gogo",
+    "meaning_vi": "buổi chiều (sau 12 giờ trưa), PM",
+    "part_of_speech": "noun",
+    "tags": [
+      "time"
+    ]
+  },
+  {
+    "word": "半",
+    "reading": "はん",
+    "romaji": "han",
+    "meaning_vi": "rưỡi, nửa (dùng sau giờ: 三時半)",
+    "part_of_speech": "noun",
+    "tags": [
+      "time",
+      "counter"
+    ]
+  },
+  {
+    "word": "月曜日",
+    "reading": "げつようび",
+    "romaji": "getsuyoubi",
+    "meaning_vi": "thứ Hai",
+    "part_of_speech": "noun",
+    "tags": [
+      "weekday"
+    ]
+  },
+  {
+    "word": "火曜日",
+    "reading": "かようび",
+    "romaji": "kayoubi",
+    "meaning_vi": "thứ Ba",
+    "part_of_speech": "noun",
+    "tags": [
+      "weekday"
+    ]
+  },
+  {
+    "word": "水曜日",
+    "reading": "すいようび",
+    "romaji": "suiyoubi",
+    "meaning_vi": "thứ Tư",
+    "part_of_speech": "noun",
+    "tags": [
+      "weekday"
+    ]
+  },
+  {
+    "word": "木曜日",
+    "reading": "もくようび",
+    "romaji": "mokuyoubi",
+    "meaning_vi": "thứ Năm",
+    "part_of_speech": "noun",
+    "tags": [
+      "weekday"
+    ]
+  },
+  {
+    "word": "金曜日",
+    "reading": "きんようび",
+    "romaji": "kin'youbi",
+    "meaning_vi": "thứ Sáu",
+    "part_of_speech": "noun",
+    "tags": [
+      "weekday"
+    ]
+  },
+  {
+    "word": "土曜日",
+    "reading": "どようび",
+    "romaji": "doyoubi",
+    "meaning_vi": "thứ Bảy",
+    "part_of_speech": "noun",
+    "tags": [
+      "weekday"
+    ]
+  },
+  {
+    "word": "日曜日",
+    "reading": "にちようび",
+    "romaji": "nichiyoubi",
+    "meaning_vi": "Chủ nhật",
+    "part_of_speech": "noun",
+    "tags": [
+      "weekday"
+    ]
+  },
+  {
+    "word": "ひとつ",
+    "reading": "ひとつ",
+    "romaji": "hitotsu",
+    "meaning_vi": "một (cái, đồ vật)",
+    "part_of_speech": "noun",
+    "tags": [
+      "number",
+      "counter",
+      "wago"
+    ]
+  },
+  {
+    "word": "ふたつ",
+    "reading": "ふたつ",
+    "romaji": "futatsu",
+    "meaning_vi": "hai (cái, đồ vật)",
+    "part_of_speech": "noun",
+    "tags": [
+      "number",
+      "counter",
+      "wago"
+    ]
+  },
+  {
+    "word": "みっつ",
+    "reading": "みっつ",
+    "romaji": "mittsu",
+    "meaning_vi": "ba (cái, đồ vật)",
+    "part_of_speech": "noun",
+    "tags": [
+      "number",
+      "counter",
+      "wago"
+    ]
+  },
+  {
+    "word": "よっつ",
+    "reading": "よっつ",
+    "romaji": "yottsu",
+    "meaning_vi": "bốn (cái, đồ vật)",
+    "part_of_speech": "noun",
+    "tags": [
+      "number",
+      "counter",
+      "wago"
+    ]
+  },
+  {
+    "word": "いつつ",
+    "reading": "いつつ",
+    "romaji": "itsutsu",
+    "meaning_vi": "năm (cái, đồ vật)",
+    "part_of_speech": "noun",
+    "tags": [
+      "number",
+      "counter",
+      "wago"
+    ]
+  },
+  {
+    "word": "むっつ",
+    "reading": "むっつ",
+    "romaji": "muttsu",
+    "meaning_vi": "sáu (cái, đồ vật)",
+    "part_of_speech": "noun",
+    "tags": [
+      "number",
+      "counter",
+      "wago"
+    ]
+  },
+  {
+    "word": "ななつ",
+    "reading": "ななつ",
+    "romaji": "nanatsu",
+    "meaning_vi": "bảy (cái, đồ vật)",
+    "part_of_speech": "noun",
+    "tags": [
+      "number",
+      "counter",
+      "wago"
+    ]
+  },
+  {
+    "word": "やっつ",
+    "reading": "やっつ",
+    "romaji": "yattsu",
+    "meaning_vi": "tám (cái, đồ vật)",
+    "part_of_speech": "noun",
+    "tags": [
+      "number",
+      "counter",
+      "wago"
+    ]
+  },
+  {
+    "word": "ここのつ",
+    "reading": "ここのつ",
+    "romaji": "kokonotsu",
+    "meaning_vi": "chín (cái, đồ vật)",
+    "part_of_speech": "noun",
+    "tags": [
+      "number",
+      "counter",
+      "wago"
+    ]
+  },
+  {
+    "word": "とお",
+    "reading": "とお",
+    "romaji": "too",
+    "meaning_vi": "mười (cái, đồ vật)",
+    "part_of_speech": "noun",
+    "tags": [
+      "number",
+      "counter",
+      "wago"
+    ]
+  },
+  {
+    "word": "お父さん",
+    "reading": "おとうさん",
+    "romaji": "otousan",
+    "meaning_vi": "bố/cha (kính ngữ, của người khác)",
+    "part_of_speech": "noun",
+    "tags": [
+      "family",
+      "honorific"
+    ]
+  },
+  {
+    "word": "お母さん",
+    "reading": "おかあさん",
+    "romaji": "okaasan",
+    "meaning_vi": "mẹ (kính ngữ, của người khác)",
+    "part_of_speech": "noun",
+    "tags": [
+      "family",
+      "honorific"
+    ]
+  },
+  {
+    "word": "お兄さん",
+    "reading": "おにいさん",
+    "romaji": "oniisan",
+    "meaning_vi": "anh trai (kính ngữ)",
+    "part_of_speech": "noun",
+    "tags": [
+      "family",
+      "honorific"
+    ]
+  },
+  {
+    "word": "お姉さん",
+    "reading": "おねえさん",
+    "romaji": "oneesan",
+    "meaning_vi": "chị gái (kính ngữ)",
+    "part_of_speech": "noun",
+    "tags": [
+      "family",
+      "honorific"
+    ]
+  },
+  {
+    "word": "父",
+    "reading": "ちち",
+    "romaji": "chichi",
+    "meaning_vi": "bố/cha (của mình, khiêm tốn)",
+    "part_of_speech": "noun",
+    "tags": [
+      "family"
+    ]
+  },
+  {
+    "word": "母",
+    "reading": "はは",
+    "romaji": "haha",
+    "meaning_vi": "mẹ (của mình, khiêm tốn)",
+    "part_of_speech": "noun",
+    "tags": [
+      "family"
+    ]
+  },
+  {
+    "word": "弟",
+    "reading": "おとうと",
+    "romaji": "otouto",
+    "meaning_vi": "em trai",
+    "part_of_speech": "noun",
+    "tags": [
+      "family"
+    ]
+  },
+  {
+    "word": "妹",
+    "reading": "いもうと",
+    "romaji": "imouto",
+    "meaning_vi": "em gái",
+    "part_of_speech": "noun",
+    "tags": [
+      "family"
+    ]
+  },
+  {
+    "word": "子供",
+    "reading": "こども",
+    "romaji": "kodomo",
+    "meaning_vi": "trẻ em, con cái",
+    "part_of_speech": "noun",
+    "tags": [
+      "family",
+      "people"
+    ]
+  },
+  {
+    "word": "赤ちゃん",
+    "reading": "あかちゃん",
+    "romaji": "akachan",
+    "meaning_vi": "em bé, trẻ sơ sinh",
+    "part_of_speech": "noun",
+    "tags": [
+      "family",
+      "people"
+    ]
+  },
+  {
+    "word": "家族",
+    "reading": "かぞく",
+    "romaji": "kazoku",
+    "meaning_vi": "gia đình",
+    "part_of_speech": "noun",
+    "tags": [
+      "family"
+    ]
+  },
+  {
+    "word": "頭",
+    "reading": "あたま",
+    "romaji": "atama",
+    "meaning_vi": "đầu, não",
+    "part_of_speech": "noun",
+    "tags": [
+      "body"
+    ]
+  },
+  {
+    "word": "顔",
+    "reading": "かお",
+    "romaji": "kao",
+    "meaning_vi": "mặt, khuôn mặt",
+    "part_of_speech": "noun",
+    "tags": [
+      "body"
+    ]
+  },
+  {
+    "word": "目",
+    "reading": "め",
+    "romaji": "me",
+    "meaning_vi": "mắt, mắt nhìn",
+    "part_of_speech": "noun",
+    "tags": [
+      "body"
+    ]
+  },
+  {
+    "word": "耳",
+    "reading": "みみ",
+    "romaji": "mimi",
+    "meaning_vi": "tai",
+    "part_of_speech": "noun",
+    "tags": [
+      "body"
+    ]
+  },
+  {
+    "word": "鼻",
+    "reading": "はな",
+    "romaji": "hana",
+    "meaning_vi": "mũi",
+    "part_of_speech": "noun",
+    "tags": [
+      "body"
+    ]
+  },
+  {
+    "word": "口",
+    "reading": "くち",
+    "romaji": "kuchi",
+    "meaning_vi": "miệng, cửa",
+    "part_of_speech": "noun",
+    "tags": [
+      "body"
+    ]
+  },
+  {
+    "word": "歯",
+    "reading": "は",
+    "romaji": "ha",
+    "meaning_vi": "răng",
+    "part_of_speech": "noun",
+    "tags": [
+      "body"
+    ]
+  },
+  {
+    "word": "手",
+    "reading": "て",
+    "romaji": "te",
+    "meaning_vi": "tay, bàn tay",
+    "part_of_speech": "noun",
+    "tags": [
+      "body"
+    ]
+  },
+  {
+    "word": "足",
+    "reading": "あし",
+    "romaji": "ashi",
+    "meaning_vi": "chân, chân (cả cẳng chân)",
+    "part_of_speech": "noun",
+    "tags": [
+      "body"
+    ]
+  },
+  {
+    "word": "体",
+    "reading": "からだ",
+    "romaji": "karada",
+    "meaning_vi": "cơ thể",
+    "part_of_speech": "noun",
+    "tags": [
+      "body"
+    ]
+  },
+  {
+    "word": "背",
+    "reading": "せ",
+    "romaji": "se",
+    "meaning_vi": "chiều cao, lưng",
+    "part_of_speech": "noun",
+    "tags": [
+      "body"
+    ]
+  },
+  {
+    "word": "髪",
+    "reading": "かみ",
+    "romaji": "kami",
+    "meaning_vi": "tóc",
+    "part_of_speech": "noun",
+    "tags": [
+      "body"
+    ]
+  },
+  {
+    "word": "ご飯",
+    "reading": "ごはん",
+    "romaji": "gohan",
+    "meaning_vi": "cơm; bữa ăn (nói chung)",
+    "part_of_speech": "noun",
+    "tags": [
+      "food",
+      "meal"
+    ]
+  },
+  {
+    "word": "パン",
+    "reading": "ぱん",
+    "romaji": "pan",
+    "meaning_vi": "bánh mì",
+    "part_of_speech": "noun",
+    "tags": [
+      "food",
+      "katakana"
+    ]
+  },
+  {
+    "word": "肉",
+    "reading": "にく",
+    "romaji": "niku",
+    "meaning_vi": "thịt",
+    "part_of_speech": "noun",
+    "tags": [
+      "food"
+    ]
+  },
+  {
+    "word": "魚",
+    "reading": "さかな",
+    "romaji": "sakana",
+    "meaning_vi": "cá",
+    "part_of_speech": "noun",
+    "tags": [
+      "food",
+      "animal"
+    ]
+  },
+  {
+    "word": "野菜",
+    "reading": "やさい",
+    "romaji": "yasai",
+    "meaning_vi": "rau củ",
+    "part_of_speech": "noun",
+    "tags": [
+      "food"
+    ]
+  },
+  {
+    "word": "果物",
+    "reading": "くだもの",
+    "romaji": "kudamono",
+    "meaning_vi": "trái cây",
+    "part_of_speech": "noun",
+    "tags": [
+      "food",
+      "fruit"
+    ]
+  },
+  {
+    "word": "卵",
+    "reading": "たまご",
+    "romaji": "tamago",
+    "meaning_vi": "trứng",
+    "part_of_speech": "noun",
+    "tags": [
+      "food"
+    ]
+  },
+  {
+    "word": "牛乳",
+    "reading": "ぎゅうにゅう",
+    "romaji": "gyuunyuu",
+    "meaning_vi": "sữa bò, sữa tươi",
+    "part_of_speech": "noun",
+    "tags": [
+      "food",
+      "drink"
+    ]
+  },
+  {
+    "word": "水",
+    "reading": "みず",
+    "romaji": "mizu",
+    "meaning_vi": "nước (lọc/lạnh)",
+    "part_of_speech": "noun",
+    "tags": [
+      "food",
+      "drink",
+      "nature"
+    ]
+  },
+  {
+    "word": "お茶",
+    "reading": "おちゃ",
+    "romaji": "ocha",
+    "meaning_vi": "trà (nhất là trà xanh Nhật)",
+    "part_of_speech": "noun",
+    "tags": [
+      "food",
+      "drink"
+    ]
+  },
+  {
+    "word": "コーヒー",
+    "reading": "こーひー",
+    "romaji": "koohii",
+    "meaning_vi": "cà phê",
+    "part_of_speech": "noun",
+    "tags": [
+      "food",
+      "drink",
+      "katakana"
+    ]
+  },
+  {
+    "word": "ジュース",
+    "reading": "じゅーす",
+    "romaji": "juusu",
+    "meaning_vi": "nước ép, nước hoa quả",
+    "part_of_speech": "noun",
+    "tags": [
+      "food",
+      "drink",
+      "katakana"
+    ]
+  },
+  {
+    "word": "お酒",
+    "reading": "おさけ",
+    "romaji": "osake",
+    "meaning_vi": "rượu (nói chung, nhất là sake)",
+    "part_of_speech": "noun",
+    "tags": [
+      "food",
+      "drink"
+    ]
+  },
+  {
+    "word": "ビール",
+    "reading": "びーる",
+    "romaji": "biiru",
+    "meaning_vi": "bia",
+    "part_of_speech": "noun",
+    "tags": [
+      "food",
+      "drink",
+      "katakana"
+    ]
+  },
+  {
+    "word": "りんご",
+    "reading": "りんご",
+    "romaji": "ringo",
+    "meaning_vi": "táo",
+    "part_of_speech": "noun",
+    "tags": [
+      "food",
+      "fruit"
+    ]
+  },
+  {
+    "word": "みかん",
+    "reading": "みかん",
+    "romaji": "mikan",
+    "meaning_vi": "quýt, cam",
+    "part_of_speech": "noun",
+    "tags": [
+      "food",
+      "fruit"
+    ]
+  },
+  {
+    "word": "バナナ",
+    "reading": "ばなな",
+    "romaji": "banana",
+    "meaning_vi": "chuối",
+    "part_of_speech": "noun",
+    "tags": [
+      "food",
+      "fruit",
+      "katakana"
+    ]
+  },
+  {
+    "word": "いちご",
+    "reading": "いちご",
+    "romaji": "ichigo",
+    "meaning_vi": "dâu tây",
+    "part_of_speech": "noun",
+    "tags": [
+      "food",
+      "fruit"
+    ]
+  },
+  {
+    "word": "砂糖",
+    "reading": "さとう",
+    "romaji": "satou",
+    "meaning_vi": "đường",
+    "part_of_speech": "noun",
+    "tags": [
+      "food",
+      "condiment"
+    ]
+  },
+  {
+    "word": "塩",
+    "reading": "しお",
+    "romaji": "shio",
+    "meaning_vi": "muối",
+    "part_of_speech": "noun",
+    "tags": [
+      "food",
+      "condiment"
+    ]
+  },
+  {
+    "word": "朝ご飯",
+    "reading": "あさごはん",
+    "romaji": "asagohan",
+    "meaning_vi": "bữa sáng",
+    "part_of_speech": "noun",
+    "tags": [
+      "food",
+      "meal"
+    ]
+  },
+  {
+    "word": "昼ご飯",
+    "reading": "ひるごはん",
+    "romaji": "hirugohan",
+    "meaning_vi": "bữa trưa",
+    "part_of_speech": "noun",
+    "tags": [
+      "food",
+      "meal"
+    ]
+  },
+  {
+    "word": "晩ご飯",
+    "reading": "ばんごはん",
+    "romaji": "bangohan",
+    "meaning_vi": "bữa tối",
+    "part_of_speech": "noun",
+    "tags": [
+      "food",
+      "meal"
+    ]
+  },
+  {
+    "word": "電車",
+    "reading": "でんしゃ",
+    "romaji": "densha",
+    "meaning_vi": "tàu điện, tàu hỏa",
+    "part_of_speech": "noun",
+    "tags": [
+      "transportation"
+    ]
+  },
+  {
+    "word": "バス",
+    "reading": "ばす",
+    "romaji": "basu",
+    "meaning_vi": "xe buýt",
+    "part_of_speech": "noun",
+    "tags": [
+      "transportation",
+      "katakana"
+    ]
+  },
+  {
+    "word": "タクシー",
+    "reading": "たくしー",
+    "romaji": "takushii",
+    "meaning_vi": "taxi",
+    "part_of_speech": "noun",
+    "tags": [
+      "transportation",
+      "katakana"
+    ]
+  },
+  {
+    "word": "飛行機",
+    "reading": "ひこうき",
+    "romaji": "hikouki",
+    "meaning_vi": "máy bay",
+    "part_of_speech": "noun",
+    "tags": [
+      "transportation"
+    ]
+  },
+  {
+    "word": "地下鉄",
+    "reading": "ちかてつ",
+    "romaji": "chikatetsu",
+    "meaning_vi": "tàu điện ngầm, metro",
+    "part_of_speech": "noun",
+    "tags": [
+      "transportation"
+    ]
+  },
+  {
+    "word": "自転車",
+    "reading": "じてんしゃ",
+    "romaji": "jitensha",
+    "meaning_vi": "xe đạp",
+    "part_of_speech": "noun",
+    "tags": [
+      "transportation"
+    ]
+  },
+  {
+    "word": "車",
+    "reading": "くるま",
+    "romaji": "kuruma",
+    "meaning_vi": "xe hơi, ô tô",
+    "part_of_speech": "noun",
+    "tags": [
+      "transportation"
+    ]
+  }
+]

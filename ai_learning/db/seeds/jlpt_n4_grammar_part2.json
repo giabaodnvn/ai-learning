@@ -1,0 +1,437 @@
+[
+  {
+    "pattern": "〜ことができる",
+    "explanation_vi": "Có thể... / Có khả năng... (khả năng)",
+    "examples": [
+      {
+        "ja": "私は日本語を話すことができます。",
+        "vi": "Tôi có thể nói tiếng Nhật."
+      },
+      {
+        "ja": "この部屋では喫煙することができません。",
+        "vi": "Không thể hút thuốc trong phòng này."
+      }
+    ],
+    "notes_vi": "Tương đương với thể khả năng (-られる/できる) nhưng mang tính viết hơn."
+  },
+  {
+    "pattern": "〜ことにする",
+    "explanation_vi": "Quyết định sẽ... (quyết định có chủ ý)",
+    "examples": [
+      {
+        "ja": "毎朝ジョギングすることにしました。",
+        "vi": "Tôi đã quyết định chạy bộ mỗi sáng."
+      },
+      {
+        "ja": "タバコをやめることにした。",
+        "vi": "Tôi đã quyết định bỏ thuốc."
+      }
+    ],
+    "notes_vi": "Phân biệt với 〜ことになる: cái đó là kết quả từ hoàn cảnh bên ngoài, không phải quyết định cá nhân."
+  },
+  {
+    "pattern": "〜ことになる",
+    "explanation_vi": "Trở thành tình huống... / Được quyết định (do hoàn cảnh, quy định)",
+    "examples": [
+      {
+        "ja": "来月、大阪に転勤することになりました。",
+        "vi": "Tôi đã được điều chuyển đến Osaka vào tháng tới."
+      },
+      {
+        "ja": "この学校では制服を着ることになっています。",
+        "vi": "Trường này có quy định phải mặc đồng phục."
+      }
+    ],
+    "notes_vi": "Diễn đạt quyết định đến từ bên ngoài, hoàn cảnh, hoặc quy tắc. 〜ことになっている = có quy định."
+  },
+  {
+    "pattern": "〜はずだ",
+    "explanation_vi": "Chắc là... / Lẽ ra phải... (kỳ vọng dựa trên logic)",
+    "examples": [
+      {
+        "ja": "彼はもう着いているはずです。",
+        "vi": "Anh ấy chắc là đã đến rồi."
+      },
+      {
+        "ja": "これは簡単なはずなのに、できない。",
+        "vi": "Cái này lẽ ra phải đơn giản nhưng lại không làm được."
+      }
+    ],
+    "notes_vi": "Dùng khi có lý do logic để kỳ vọng. Phủ định: 〜はずがない (không thể nào)."
+  },
+  {
+    "pattern": "〜かもしれない",
+    "explanation_vi": "Có thể... / Có lẽ... (khả năng không chắc chắn)",
+    "examples": [
+      {
+        "ja": "明日は雨が降るかもしれません。",
+        "vi": "Ngày mai có thể trời sẽ mưa."
+      },
+      {
+        "ja": "彼女は怒っているかもしれない。",
+        "vi": "Có lẽ cô ấy đang tức."
+      }
+    ],
+    "notes_vi": "Biểu đạt khả năng khoảng 50%. Ít chắc chắn hơn 〜だろう."
+  },
+  {
+    "pattern": "〜だろう / でしょう",
+    "explanation_vi": "Chắc là... / Có lẽ... (phỏng đoán lịch sự)",
+    "examples": [
+      {
+        "ja": "明日は晴れるでしょう。",
+        "vi": "Ngày mai chắc sẽ nắng."
+      },
+      {
+        "ja": "彼はもう知っているだろう。",
+        "vi": "Chắc anh ấy đã biết rồi."
+      }
+    ],
+    "notes_vi": "でしょう là dạng lịch sự của だろう. Biểu đạt phỏng đoán của người nói, thường có căn cứ hơn かもしれない."
+  },
+  {
+    "pattern": "〜まま",
+    "explanation_vi": "Cứ... thế mà... / Giữ nguyên trạng thái...",
+    "examples": [
+      {
+        "ja": "靴を履いたまま、家に入ってはいけません。",
+        "vi": "Không được vào nhà khi vẫn còn đi giày."
+      },
+      {
+        "ja": "電気をつけたまま、寝てしまった。",
+        "vi": "Tôi đã ngủ mà quên tắt đèn."
+      }
+    ],
+    "notes_vi": "Diễn đạt trạng thái giữ nguyên, không thay đổi từ lúc trước đến lúc sau."
+  },
+  {
+    "pattern": "〜だけ",
+    "explanation_vi": "Chỉ... / Chỉ có... mà thôi",
+    "examples": [
+      {
+        "ja": "水だけ飲んでいます。",
+        "vi": "Tôi chỉ uống nước thôi."
+      },
+      {
+        "ja": "彼だけが知っている。",
+        "vi": "Chỉ có anh ấy biết thôi."
+      }
+    ],
+    "notes_vi": "Giới hạn phạm vi. Khác với 〜しか ở chỗ しか yêu cầu phủ định ở vế sau."
+  },
+  {
+    "pattern": "〜しか〜ない",
+    "explanation_vi": "Chỉ có... (thôi) — nhấn mạnh ít/hạn chế",
+    "examples": [
+      {
+        "ja": "財布には100円しかない。",
+        "vi": "Trong ví chỉ còn 100 yên thôi."
+      },
+      {
+        "ja": "日本語しか話せません。",
+        "vi": "Tôi chỉ nói được tiếng Nhật thôi."
+      }
+    ],
+    "notes_vi": "Luôn đi kèm phủ định. Nhấn mạnh sự ít ỏi hoặc giới hạn."
+  },
+  {
+    "pattern": "〜ても",
+    "explanation_vi": "Dù... cũng... / Cho dù... (nhượng bộ)",
+    "examples": [
+      {
+        "ja": "雨が降っても、出かけます。",
+        "vi": "Dù trời mưa tôi vẫn ra ngoài."
+      },
+      {
+        "ja": "疲れていても、勉強します。",
+        "vi": "Dù mệt tôi vẫn học bài."
+      }
+    ],
+    "notes_vi": "Diễn đạt sự nhượng bộ: bất kể điều kiện gì, kết quả vẫn vậy."
+  },
+  {
+    "pattern": "〜ても〜ても",
+    "explanation_vi": "Dù... hay... cũng... (liệt kê nhiều điều kiện nhượng bộ)",
+    "examples": [
+      {
+        "ja": "食べても食べても、お腹がすく。",
+        "vi": "Ăn hoài mà vẫn đói."
+      },
+      {
+        "ja": "探しても探しても、見つからない。",
+        "vi": "Tìm mãi cũng không thấy."
+      }
+    ],
+    "notes_vi": "Nhấn mạnh việc dù cố gắng thế nào cũng không thay đổi được kết quả."
+  },
+  {
+    "pattern": "〜によって",
+    "explanation_vi": "Tùy theo... / Do... / Vì... (nguyên nhân, phương tiện, tác nhân)",
+    "examples": [
+      {
+        "ja": "人によって、意見が違います。",
+        "vi": "Tùy người mà ý kiến khác nhau."
+      },
+      {
+        "ja": "この絵はピカソによって描かれました。",
+        "vi": "Bức tranh này được vẽ bởi Picasso."
+      }
+    ],
+    "notes_vi": "Đa nghĩa: (1) tùy theo; (2) bị động tác nhân; (3) phương tiện/nguyên nhân."
+  },
+  {
+    "pattern": "〜について",
+    "explanation_vi": "Về... / Liên quan đến...",
+    "examples": [
+      {
+        "ja": "環境問題について話し合いました。",
+        "vi": "Chúng tôi đã thảo luận về vấn đề môi trường."
+      },
+      {
+        "ja": "日本文化についての本を読んでいます。",
+        "vi": "Tôi đang đọc sách về văn hóa Nhật."
+      }
+    ],
+    "notes_vi": "Dùng khi nói về chủ đề của hành động/suy nghĩ."
+  },
+  {
+    "pattern": "〜に対して",
+    "explanation_vi": "Đối với... / Với... (đối tượng của hành động/cảm xúc)",
+    "examples": [
+      {
+        "ja": "先生に対して敬語を使います。",
+        "vi": "Dùng kính ngữ với thầy giáo."
+      },
+      {
+        "ja": "この問題に対して、どう思いますか。",
+        "vi": "Bạn nghĩ gì về vấn đề này?"
+      }
+    ],
+    "notes_vi": "Chỉ đối tượng nhắm đến của hành động hay thái độ."
+  },
+  {
+    "pattern": "〜として",
+    "explanation_vi": "Với tư cách là... / Như là...",
+    "examples": [
+      {
+        "ja": "医者として、患者を助けます。",
+        "vi": "Với tư cách là bác sĩ, tôi giúp đỡ bệnh nhân."
+      },
+      {
+        "ja": "友達として、アドバイスします。",
+        "vi": "Với tư cách là bạn bè, tôi cho lời khuyên."
+      }
+    ],
+    "notes_vi": "Diễn đạt vai trò, tư cách, hoặc chức năng của ai/cái gì."
+  },
+  {
+    "pattern": "〜というのは / 〜とは",
+    "explanation_vi": "... nghĩa là gì / ... tức là...",
+    "examples": [
+      {
+        "ja": "「お疲れ様」というのはどういう意味ですか。",
+        "vi": "「お疲れ様」nghĩa là gì vậy?"
+      },
+      {
+        "ja": "友達とは、何でも話せる人だ。",
+        "vi": "Bạn bè tức là người có thể nói chuyện về mọi thứ."
+      }
+    ],
+    "notes_vi": "Dùng để định nghĩa hoặc giải thích ý nghĩa của một từ/khái niệm."
+  },
+  {
+    "pattern": "〜と言われている",
+    "explanation_vi": "Người ta nói rằng... / Được cho là...",
+    "examples": [
+      {
+        "ja": "日本は安全な国だと言われています。",
+        "vi": "Nhật Bản được cho là đất nước an toàn."
+      },
+      {
+        "ja": "この店の料理はおいしいと言われている。",
+        "vi": "Người ta nói rằng món ăn ở tiệm này ngon."
+      }
+    ],
+    "notes_vi": "Trích dẫn quan điểm chung hoặc thông tin phổ biến không xác định nguồn."
+  },
+  {
+    "pattern": "〜ようだ / 〜みたいだ",
+    "explanation_vi": "Có vẻ như... / Giống như... (phỏng đoán từ quan sát)",
+    "examples": [
+      {
+        "ja": "外は寒いようです。",
+        "vi": "Bên ngoài có vẻ lạnh."
+      },
+      {
+        "ja": "彼は疲れているみたいだ。",
+        "vi": "Anh ấy có vẻ mệt."
+      }
+    ],
+    "notes_vi": "みたいだ thân mật hơn ようだ. Cả hai dựa trên quan sát trực tiếp."
+  },
+  {
+    "pattern": "〜てほしい",
+    "explanation_vi": "Muốn (người khác) làm... (yêu cầu/mong muốn)",
+    "examples": [
+      {
+        "ja": "もっと静かにしてほしい。",
+        "vi": "Tôi muốn (bạn) im lặng hơn."
+      },
+      {
+        "ja": "早く帰ってきてほしいです。",
+        "vi": "Tôi muốn bạn về sớm."
+      }
+    ],
+    "notes_vi": "Diễn đạt mong muốn người khác làm gì đó. Khác với 〜たい (muốn mình làm)."
+  },
+  {
+    "pattern": "〜たがる",
+    "explanation_vi": "Có vẻ muốn... (người thứ ba muốn làm gì)",
+    "examples": [
+      {
+        "ja": "子供はいつもアイスを食べたがる。",
+        "vi": "Trẻ con lúc nào cũng muốn ăn kem."
+      },
+      {
+        "ja": "彼は新しいゲームを買いたがっています。",
+        "vi": "Anh ấy có vẻ muốn mua game mới."
+      }
+    ],
+    "notes_vi": "Dùng cho người thứ ba. 〜たい chỉ dùng cho người nói (ngôi thứ nhất)."
+  },
+  {
+    "pattern": "〜がる",
+    "explanation_vi": "Tỏ ra... / Có vẻ cảm thấy... (người thứ ba biểu lộ cảm xúc)",
+    "examples": [
+      {
+        "ja": "彼女は怖がっています。",
+        "vi": "Cô ấy tỏ ra sợ hãi."
+      },
+      {
+        "ja": "子供が痛がっている。",
+        "vi": "Đứa bé có vẻ đau."
+      }
+    ],
+    "notes_vi": "Ghép vào gốc tính từ cảm xúc (怖い→怖がる, 痛い→痛がる) để mô tả biểu hiện của người thứ ba."
+  },
+  {
+    "pattern": "〜させる (使役)",
+    "explanation_vi": "Bắt/để (ai đó) làm... (sai khiến)",
+    "examples": [
+      {
+        "ja": "先生は学生に本を読ませました。",
+        "vi": "Thầy giáo bắt học sinh đọc sách."
+      },
+      {
+        "ja": "子供に野菜を食べさせた。",
+        "vi": "Tôi cho/bắt con ăn rau."
+      }
+    ],
+    "notes_vi": "Chia: nhóm I (-u → -aseru), nhóm II (-ru → -saseru), nhóm III: させる, こさせる."
+  },
+  {
+    "pattern": "〜られる (受身)",
+    "explanation_vi": "Bị... (bị động)",
+    "examples": [
+      {
+        "ja": "先生に褒められました。",
+        "vi": "Tôi được thầy khen."
+      },
+      {
+        "ja": "犬に噛まれた。",
+        "vi": "Tôi bị chó cắn."
+      }
+    ],
+    "notes_vi": "Chia: nhóm I (-u → -areru), nhóm II (-ru → -rareru), nhóm III: される, こられる. Cũng dùng để diễn đạt kính ngữ."
+  },
+  {
+    "pattern": "〜させてもらう / 〜させてください",
+    "explanation_vi": "Cho phép tôi... / Xin cho tôi... (xin phép lịch sự)",
+    "examples": [
+      {
+        "ja": "一度考えさせてください。",
+        "vi": "Xin cho tôi suy nghĩ một lần."
+      },
+      {
+        "ja": "先に帰らせてもらえますか。",
+        "vi": "Có thể cho tôi về trước không?"
+      }
+    ],
+    "notes_vi": "Dùng để lịch sự xin phép làm gì đó."
+  },
+  {
+    "pattern": "〜はずがない",
+    "explanation_vi": "Không thể nào... / Chắc chắn không...",
+    "examples": [
+      {
+        "ja": "彼がそんなことをするはずがない。",
+        "vi": "Anh ấy không thể nào làm chuyện như vậy."
+      },
+      {
+        "ja": "あの店がまずいはずがない。",
+        "vi": "Không thể nào quán đó lại dở."
+      }
+    ],
+    "notes_vi": "Phủ định logic mạnh, phủ nhận khả năng dựa trên lý lẽ."
+  },
+  {
+    "pattern": "〜ところだ",
+    "explanation_vi": "Đang sắp... / Vừa mới... (thời điểm của hành động)",
+    "examples": [
+      {
+        "ja": "今、出かけるところです。",
+        "vi": "Tôi đang sắp ra ngoài."
+      },
+      {
+        "ja": "ちょうど食べ終わったところです。",
+        "vi": "Tôi vừa mới ăn xong."
+      }
+    ],
+    "notes_vi": "V(từ điển)+ところ=sắp; V(ている)+ところ=đang; V(た)+ところ=vừa mới."
+  },
+  {
+    "pattern": "〜ばかり",
+    "explanation_vi": "Toàn... / Chỉ... / Vừa mới... (chỉ điều đó, hoặc vừa xong)",
+    "examples": [
+      {
+        "ja": "彼はゲームばかりしている。",
+        "vi": "Anh ấy toàn chơi game thôi."
+      },
+      {
+        "ja": "日本に来たばかりです。",
+        "vi": "Tôi vừa mới đến Nhật."
+      }
+    ],
+    "notes_vi": "Hai nghĩa: (1) toàn làm việc đó (hơi tiêu cực); (2) vừa mới làm (V+た+ばかり)."
+  },
+  {
+    "pattern": "〜ことがある",
+    "explanation_vi": "Đôi khi... / Thỉnh thoảng... (hành động xảy ra không thường xuyên)",
+    "examples": [
+      {
+        "ja": "電車が遅れることがあります。",
+        "vi": "Đôi khi tàu điện bị trễ."
+      },
+      {
+        "ja": "夜、一人で映画を見ることがある。",
+        "vi": "Thỉnh thoảng tôi xem phim một mình vào ban đêm."
+      }
+    ],
+    "notes_vi": "Khác với 〜ことがある (kinh nghiệm): 食べたことがある=đã từng ăn."
+  },
+  {
+    "pattern": "〜たことがある",
+    "explanation_vi": "Đã từng... (kinh nghiệm trong quá khứ)",
+    "examples": [
+      {
+        "ja": "富士山に登ったことがあります。",
+        "vi": "Tôi đã từng leo núi Phú Sĩ."
+      },
+      {
+        "ja": "納豆を食べたことがありますか。",
+        "vi": "Bạn đã từng ăn natto chưa?"
+      }
+    ],
+    "notes_vi": "Diễn đạt kinh nghiệm. Phủ định: 〜たことがない (chưa từng)."
+  }
+]

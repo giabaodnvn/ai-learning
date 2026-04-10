@@ -1,0 +1,295 @@
+[
+  {
+    "pattern": "〜し",
+    "explanation_vi": "Liệt kê lý do: vừa ~, và còn ~: nêu nhiều lý do.",
+    "examples": [
+      {
+        "ja": "安いし、おいしいし、また来たいです。",
+        "vi": "Vừa rẻ, lại ngon, tôi muốn đến lại."
+      },
+      {
+        "ja": "疲れているし、お腹も空いているし…",
+        "vi": "Vừa mệt mà lại vừa đói nữa..."
+      }
+    ],
+    "notes_vi": "し liệt kê nhiều lý do (thường từ 2 lý do trở lên) không phân biệt thứ tự."
+  },
+  {
+    "pattern": "〜たことがあります",
+    "explanation_vi": "Đã từng ~ (kinh nghiệm): diễn tả trải nghiệm đã có.",
+    "examples": [
+      {
+        "ja": "日本へ行ったことがあります。",
+        "vi": "Tôi đã từng đến Nhật Bản."
+      },
+      {
+        "ja": "富士山に登ったことがありますか。",
+        "vi": "Bạn đã từng leo núi Phú Sĩ chưa?"
+      }
+    ],
+    "notes_vi": "Dạng た + ことがあります. Phủ định: たことがありません."
+  },
+  {
+    "pattern": "〜たほうがいいです",
+    "explanation_vi": "Nên ~ (lời khuyên): tốt hơn là nên làm ~.",
+    "examples": [
+      {
+        "ja": "早く寝たほうがいいです。",
+        "vi": "Bạn nên đi ngủ sớm."
+      },
+      {
+        "ja": "病院に行ったほうがいいですよ。",
+        "vi": "Bạn nên đi bệnh viện đấy."
+      }
+    ],
+    "notes_vi": "Dạng た + ほうがいい. Phủ định: ないほうがいい (không nên)."
+  },
+  {
+    "pattern": "〜ないほうがいいです",
+    "explanation_vi": "Không nên ~: lời khuyên tránh làm gì đó.",
+    "examples": [
+      {
+        "ja": "夜遅く食べないほうがいいです。",
+        "vi": "Bạn không nên ăn khuya."
+      },
+      {
+        "ja": "無理しないほうがいいですよ。",
+        "vi": "Bạn không nên cố quá đâu."
+      }
+    ],
+    "notes_vi": null
+  },
+  {
+    "pattern": "〜はどうですか",
+    "explanation_vi": "~ thì thế nào? ~ có được không?: hỏi ý kiến hoặc đề nghị.",
+    "examples": [
+      {
+        "ja": "コーヒーはどうですか。",
+        "vi": "Cà phê thế nào? (mời uống)"
+      },
+      {
+        "ja": "週末に映画はどうですか。",
+        "vi": "Cuối tuần xem phim thế nào?"
+      }
+    ],
+    "notes_vi": null
+  },
+  {
+    "pattern": "疑問詞 + でも",
+    "explanation_vi": "Từ để hỏi + でも = bất kỳ ~: nào cũng được.",
+    "examples": [
+      {
+        "ja": "何でも食べます。",
+        "vi": "Tôi ăn bất cứ thứ gì cũng được."
+      },
+      {
+        "ja": "どこでも行きます。",
+        "vi": "Đi đâu cũng được."
+      },
+      {
+        "ja": "誰でも参加できます。",
+        "vi": "Ai cũng có thể tham gia."
+      }
+    ],
+    "notes_vi": "何でも, どこでも, 誰でも, いつでも."
+  },
+  {
+    "pattern": "〜ている（着用）",
+    "explanation_vi": "Đang mặc / đang đeo ~: trạng thái mặc đồ.",
+    "examples": [
+      {
+        "ja": "青いシャツを着ています。",
+        "vi": "Đang mặc áo xanh."
+      },
+      {
+        "ja": "眼鏡をかけています。",
+        "vi": "Đang đeo kính."
+      }
+    ],
+    "notes_vi": "着る → 着ている (mặc vào), かぶる → かぶっている (đội)."
+  },
+  {
+    "pattern": "〜い → 〜くて (て形 of い-adjective)",
+    "explanation_vi": "Dạng て của tính từ い: nối hai tính chất hoặc làm trạng từ.",
+    "examples": [
+      {
+        "ja": "このカフェは安くておいしいです。",
+        "vi": "Quán cà phê này rẻ và ngon."
+      },
+      {
+        "ja": "彼は背が高くてハンサムです。",
+        "vi": "Anh ấy cao và đẹp trai."
+      }
+    ],
+    "notes_vi": "い-adj: bỏ い + くて. Đặc biệt: いい → よくて."
+  },
+  {
+    "pattern": "〜な → 〜で (て形 of な-adjective)",
+    "explanation_vi": "Dạng て của tính từ な: nối các tính chất.",
+    "examples": [
+      {
+        "ja": "彼女は親切で賢いです。",
+        "vi": "Cô ấy tốt bụng và thông minh."
+      },
+      {
+        "ja": "この部屋は静かできれいです。",
+        "vi": "Phòng này yên tĩnh và sạch sẽ."
+      }
+    ],
+    "notes_vi": "な-adj: danh từ/tính từ な + で."
+  },
+  {
+    "pattern": "〜く / 〜に (副詞化)",
+    "explanation_vi": "Biến tính từ thành trạng từ: い-adj + く, な-adj + に.",
+    "examples": [
+      {
+        "ja": "早く来てください。",
+        "vi": "Hãy đến sớm."
+      },
+      {
+        "ja": "静かに話してください。",
+        "vi": "Hãy nói chuyện nhỏ thôi."
+      }
+    ],
+    "notes_vi": "はやい → はやく; しずか（な）→ しずかに."
+  },
+  {
+    "pattern": "どんな〜",
+    "explanation_vi": "Loại ~ nào, ~ như thế nào: hỏi về đặc điểm, loại.",
+    "examples": [
+      {
+        "ja": "どんな音楽が好きですか。",
+        "vi": "Bạn thích loại nhạc nào?"
+      },
+      {
+        "ja": "どんな人ですか。",
+        "vi": "Anh ấy là người như thế nào?"
+      }
+    ],
+    "notes_vi": "どんな + danh từ."
+  },
+  {
+    "pattern": "いつ / どこ / だれ / なに / なんで / なぜ",
+    "explanation_vi": "Các từ để hỏi N5: khi nào, ở đâu, ai, cái gì, tại sao.",
+    "examples": [
+      {
+        "ja": "いつ来ましたか。",
+        "vi": "Bạn đến khi nào?"
+      },
+      {
+        "ja": "どこに住んでいますか。",
+        "vi": "Bạn sống ở đâu?"
+      },
+      {
+        "ja": "なぜ遅れましたか。",
+        "vi": "Tại sao bạn đến trễ?"
+      }
+    ],
+    "notes_vi": "なんで thân mật hơn なぜ."
+  },
+  {
+    "pattern": "〜ましたか / 〜ました",
+    "explanation_vi": "Thể lịch sự quá khứ: đã ~. Dùng để kể chuyện quá khứ lịch sự.",
+    "examples": [
+      {
+        "ja": "昨日、映画を見ました。",
+        "vi": "Hôm qua tôi đã xem phim."
+      },
+      {
+        "ja": "朝ご飯を食べましたか。",
+        "vi": "Bạn đã ăn sáng chưa?"
+      }
+    ],
+    "notes_vi": "ます → ました (quá khứ), ませんでした (phủ định quá khứ)."
+  },
+  {
+    "pattern": "〜てみます",
+    "explanation_vi": "Thử ~: thực hiện hành động để xem kết quả.",
+    "examples": [
+      {
+        "ja": "この料理を食べてみます。",
+        "vi": "Tôi thử ăn món này xem."
+      },
+      {
+        "ja": "一度やってみてください。",
+        "vi": "Hãy thử làm một lần xem."
+      }
+    ],
+    "notes_vi": "て形 + みます."
+  },
+  {
+    "pattern": "〜てしまいます",
+    "explanation_vi": "Lỡ ~, mất rồi ~: diễn tả hành động hoàn tất (thường là không mong muốn).",
+    "examples": [
+      {
+        "ja": "財布をなくしてしまいました。",
+        "vi": "Tôi đã lỡ làm mất ví rồi."
+      },
+      {
+        "ja": "全部食べてしまいました。",
+        "vi": "Đã ăn hết rồi."
+      }
+    ],
+    "notes_vi": "Thân mật: てしまう → ちゃう / でしまう → じゃう."
+  },
+  {
+    "pattern": "〜ておきます",
+    "explanation_vi": "Làm ~ trước (để chuẩn bị): thực hiện hành động có chủ đích trước.",
+    "examples": [
+      {
+        "ja": "パーティーのために食べ物を買っておきます。",
+        "vi": "Mua đồ ăn trước để chuẩn bị cho bữa tiệc."
+      },
+      {
+        "ja": "予約しておいたほうがいいですよ。",
+        "vi": "Bạn nên đặt chỗ trước thì tốt."
+      }
+    ],
+    "notes_vi": "て形 + おきます. Thân mật: ておく → とく."
+  },
+  {
+    "pattern": "〜てくる / 〜ていく",
+    "explanation_vi": "くる: hành động hướng về phía người nói; いく: hành động đi xa hơn.",
+    "examples": [
+      {
+        "ja": "雨が降ってきました。",
+        "vi": "Trời bắt đầu mưa (dần dần)."
+      },
+      {
+        "ja": "日本語が上手になっていきます。",
+        "vi": "Tiếng Nhật ngày càng tiến bộ."
+      }
+    ],
+    "notes_vi": "てくる: diễn tiến đến hiện tại; ていく: diễn tiến từ hiện tại về tương lai."
+  },
+  {
+    "pattern": "〜という",
+    "explanation_vi": "Gọi là ~, tên là ~: giải thích tên hoặc khái niệm.",
+    "examples": [
+      {
+        "ja": "「さくら」という花は有名です。",
+        "vi": "Hoa tên là 'sakura' rất nổi tiếng."
+      },
+      {
+        "ja": "スマホというのは便利です。",
+        "vi": "Thứ gọi là smartphone thật tiện lợi."
+      }
+    ],
+    "notes_vi": null
+  },
+  {
+    "pattern": "〜と言っていました",
+    "explanation_vi": "Ai đó nói rằng ~: truyền đạt lời nói của người khác.",
+    "examples": [
+      {
+        "ja": "田中さんは明日来ないと言っていました。",
+        "vi": "Anh Tanaka nói rằng ngày mai không đến."
+      },
+      {
+        "ja": "先生は試験は難しいと言いました。",
+        "vi": "Thầy nói rằng bài thi khó."
+      }
+    ],
+    "notes_vi": "Thể thông thường + と言いました. Thể lịch sự + と言いました cũng được."
+  }
+]

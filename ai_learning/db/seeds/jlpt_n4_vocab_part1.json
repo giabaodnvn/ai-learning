@@ -1,0 +1,1064 @@
+[
+  {
+    "word": "意味",
+    "reading": "いみ",
+    "romaji": "imi",
+    "meaning_vi": "ý nghĩa, nghĩa của từ",
+    "part_of_speech": "noun",
+    "tags": [
+      "study",
+      "language"
+    ]
+  },
+  {
+    "word": "文章",
+    "reading": "ぶんしょう",
+    "romaji": "bunshou",
+    "meaning_vi": "văn bản, đoạn văn",
+    "part_of_speech": "noun",
+    "tags": [
+      "study",
+      "language"
+    ]
+  },
+  {
+    "word": "文法",
+    "reading": "ぶんぽう",
+    "romaji": "bunpou",
+    "meaning_vi": "ngữ pháp",
+    "part_of_speech": "noun",
+    "tags": [
+      "study",
+      "language"
+    ]
+  },
+  {
+    "word": "言葉",
+    "reading": "ことば",
+    "romaji": "kotoba",
+    "meaning_vi": "ngôn ngữ, từ ngữ, lời nói",
+    "part_of_speech": "noun",
+    "tags": [
+      "study",
+      "language"
+    ]
+  },
+  {
+    "word": "文字",
+    "reading": "もじ",
+    "romaji": "moji",
+    "meaning_vi": "chữ cái, ký tự",
+    "part_of_speech": "noun",
+    "tags": [
+      "study",
+      "language"
+    ]
+  },
+  {
+    "word": "発音",
+    "reading": "はつおん",
+    "romaji": "hatsuon",
+    "meaning_vi": "phát âm",
+    "part_of_speech": "noun",
+    "tags": [
+      "study",
+      "language"
+    ]
+  },
+  {
+    "word": "翻訳",
+    "reading": "ほんやく",
+    "romaji": "hon'yaku",
+    "meaning_vi": "dịch thuật, bản dịch",
+    "part_of_speech": "noun",
+    "tags": [
+      "study",
+      "language"
+    ]
+  },
+  {
+    "word": "辞書",
+    "reading": "じしょ",
+    "romaji": "jisho",
+    "meaning_vi": "từ điển",
+    "part_of_speech": "noun",
+    "tags": [
+      "study",
+      "language"
+    ]
+  },
+  {
+    "word": "練習",
+    "reading": "れんしゅう",
+    "romaji": "renshuu",
+    "meaning_vi": "luyện tập, tập luyện",
+    "part_of_speech": "noun",
+    "tags": [
+      "study"
+    ]
+  },
+  {
+    "word": "宿題",
+    "reading": "しゅくだい",
+    "romaji": "shukudai",
+    "meaning_vi": "bài tập về nhà",
+    "part_of_speech": "noun",
+    "tags": [
+      "study",
+      "school"
+    ]
+  },
+  {
+    "word": "授業",
+    "reading": "じゅぎょう",
+    "romaji": "jugyou",
+    "meaning_vi": "giờ học, bài học, tiết học",
+    "part_of_speech": "noun",
+    "tags": [
+      "study",
+      "school"
+    ]
+  },
+  {
+    "word": "試験",
+    "reading": "しけん",
+    "romaji": "shiken",
+    "meaning_vi": "bài kiểm tra, kỳ thi",
+    "part_of_speech": "noun",
+    "tags": [
+      "study",
+      "school"
+    ]
+  },
+  {
+    "word": "合格",
+    "reading": "ごうかく",
+    "romaji": "goukaku",
+    "meaning_vi": "đậu (kỳ thi), đạt tiêu chuẩn",
+    "part_of_speech": "noun",
+    "tags": [
+      "study",
+      "school"
+    ]
+  },
+  {
+    "word": "成績",
+    "reading": "せいせき",
+    "romaji": "seiseki",
+    "meaning_vi": "thành tích học tập, điểm số",
+    "part_of_speech": "noun",
+    "tags": [
+      "study",
+      "school"
+    ]
+  },
+  {
+    "word": "卒業",
+    "reading": "そつぎょう",
+    "romaji": "sotsugyou",
+    "meaning_vi": "tốt nghiệp",
+    "part_of_speech": "noun",
+    "tags": [
+      "study",
+      "school"
+    ]
+  },
+  {
+    "word": "入学",
+    "reading": "にゅうがく",
+    "romaji": "nyuugaku",
+    "meaning_vi": "nhập học, vào trường",
+    "part_of_speech": "noun",
+    "tags": [
+      "study",
+      "school"
+    ]
+  },
+  {
+    "word": "図書館",
+    "reading": "としょかん",
+    "romaji": "toshokan",
+    "meaning_vi": "thư viện",
+    "part_of_speech": "noun",
+    "tags": [
+      "place",
+      "study"
+    ]
+  },
+  {
+    "word": "教室",
+    "reading": "きょうしつ",
+    "romaji": "kyoushitsu",
+    "meaning_vi": "phòng học, lớp học",
+    "part_of_speech": "noun",
+    "tags": [
+      "place",
+      "study"
+    ]
+  },
+  {
+    "word": "黒板",
+    "reading": "こくばん",
+    "romaji": "kokuban",
+    "meaning_vi": "bảng đen",
+    "part_of_speech": "noun",
+    "tags": [
+      "study",
+      "school"
+    ]
+  },
+  {
+    "word": "鉛筆",
+    "reading": "えんぴつ",
+    "romaji": "enpitsu",
+    "meaning_vi": "bút chì",
+    "part_of_speech": "noun",
+    "tags": [
+      "study",
+      "tool"
+    ]
+  },
+  {
+    "word": "会社",
+    "reading": "かいしゃ",
+    "romaji": "kaisha",
+    "meaning_vi": "công ty",
+    "part_of_speech": "noun",
+    "tags": [
+      "work"
+    ]
+  },
+  {
+    "word": "仕事",
+    "reading": "しごと",
+    "romaji": "shigoto",
+    "meaning_vi": "công việc, việc làm",
+    "part_of_speech": "noun",
+    "tags": [
+      "work"
+    ]
+  },
+  {
+    "word": "会議",
+    "reading": "かいぎ",
+    "romaji": "kaigi",
+    "meaning_vi": "cuộc họp, hội nghị",
+    "part_of_speech": "noun",
+    "tags": [
+      "work"
+    ]
+  },
+  {
+    "word": "社員",
+    "reading": "しゃいん",
+    "romaji": "shain",
+    "meaning_vi": "nhân viên công ty",
+    "part_of_speech": "noun",
+    "tags": [
+      "work",
+      "person"
+    ]
+  },
+  {
+    "word": "部長",
+    "reading": "ぶちょう",
+    "romaji": "buchou",
+    "meaning_vi": "trưởng phòng, trưởng bộ phận",
+    "part_of_speech": "noun",
+    "tags": [
+      "work",
+      "title"
+    ]
+  },
+  {
+    "word": "課長",
+    "reading": "かちょう",
+    "romaji": "kachou",
+    "meaning_vi": "trưởng nhóm, trưởng ban",
+    "part_of_speech": "noun",
+    "tags": [
+      "work",
+      "title"
+    ]
+  },
+  {
+    "word": "給料",
+    "reading": "きゅうりょう",
+    "romaji": "kyuuryou",
+    "meaning_vi": "lương, tiền lương",
+    "part_of_speech": "noun",
+    "tags": [
+      "work",
+      "money"
+    ]
+  },
+  {
+    "word": "残業",
+    "reading": "ざんぎょう",
+    "romaji": "zangyou",
+    "meaning_vi": "làm thêm giờ, tăng ca",
+    "part_of_speech": "noun",
+    "tags": [
+      "work"
+    ]
+  },
+  {
+    "word": "休暇",
+    "reading": "きゅうか",
+    "romaji": "kyuuka",
+    "meaning_vi": "ngày nghỉ, kỳ nghỉ (có phép)",
+    "part_of_speech": "noun",
+    "tags": [
+      "work",
+      "time"
+    ]
+  },
+  {
+    "word": "出張",
+    "reading": "しゅっちょう",
+    "romaji": "shutchou",
+    "meaning_vi": "công tác, đi công tác",
+    "part_of_speech": "noun",
+    "tags": [
+      "work"
+    ]
+  },
+  {
+    "word": "面接",
+    "reading": "めんせつ",
+    "romaji": "mensetsu",
+    "meaning_vi": "phỏng vấn xin việc",
+    "part_of_speech": "noun",
+    "tags": [
+      "work"
+    ]
+  },
+  {
+    "word": "応募",
+    "reading": "おうぼ",
+    "romaji": "oubo",
+    "meaning_vi": "nộp đơn ứng tuyển",
+    "part_of_speech": "noun",
+    "tags": [
+      "work"
+    ]
+  },
+  {
+    "word": "退職",
+    "reading": "たいしょく",
+    "romaji": "taishoku",
+    "meaning_vi": "nghỉ việc, từ chức",
+    "part_of_speech": "noun",
+    "tags": [
+      "work"
+    ]
+  },
+  {
+    "word": "転職",
+    "reading": "てんしょく",
+    "romaji": "tenshoku",
+    "meaning_vi": "chuyển việc, đổi nghề",
+    "part_of_speech": "noun",
+    "tags": [
+      "work"
+    ]
+  },
+  {
+    "word": "病院",
+    "reading": "びょういん",
+    "romaji": "byouin",
+    "meaning_vi": "bệnh viện",
+    "part_of_speech": "noun",
+    "tags": [
+      "health",
+      "place"
+    ]
+  },
+  {
+    "word": "医者",
+    "reading": "いしゃ",
+    "romaji": "isha",
+    "meaning_vi": "bác sĩ",
+    "part_of_speech": "noun",
+    "tags": [
+      "health",
+      "person"
+    ]
+  },
+  {
+    "word": "看護師",
+    "reading": "かんごし",
+    "romaji": "kangoshi",
+    "meaning_vi": "y tá, điều dưỡng viên",
+    "part_of_speech": "noun",
+    "tags": [
+      "health",
+      "person"
+    ]
+  },
+  {
+    "word": "薬",
+    "reading": "くすり",
+    "romaji": "kusuri",
+    "meaning_vi": "thuốc",
+    "part_of_speech": "noun",
+    "tags": [
+      "health"
+    ]
+  },
+  {
+    "word": "熱",
+    "reading": "ねつ",
+    "romaji": "netsu",
+    "meaning_vi": "sốt, nhiệt",
+    "part_of_speech": "noun",
+    "tags": [
+      "health",
+      "symptom"
+    ]
+  },
+  {
+    "word": "頭痛",
+    "reading": "ずつう",
+    "romaji": "zutsuu",
+    "meaning_vi": "đau đầu",
+    "part_of_speech": "noun",
+    "tags": [
+      "health",
+      "symptom"
+    ]
+  },
+  {
+    "word": "腹痛",
+    "reading": "ふくつう",
+    "romaji": "fukutsuu",
+    "meaning_vi": "đau bụng",
+    "part_of_speech": "noun",
+    "tags": [
+      "health",
+      "symptom"
+    ]
+  },
+  {
+    "word": "風邪",
+    "reading": "かぜ",
+    "romaji": "kaze",
+    "meaning_vi": "cảm lạnh, cảm cúm",
+    "part_of_speech": "noun",
+    "tags": [
+      "health",
+      "symptom"
+    ]
+  },
+  {
+    "word": "アレルギー",
+    "reading": "アレルギー",
+    "romaji": "arerugii",
+    "meaning_vi": "dị ứng",
+    "part_of_speech": "noun",
+    "tags": [
+      "health"
+    ]
+  },
+  {
+    "word": "手術",
+    "reading": "しゅじゅつ",
+    "romaji": "shujutsu",
+    "meaning_vi": "phẫu thuật, ca mổ",
+    "part_of_speech": "noun",
+    "tags": [
+      "health"
+    ]
+  },
+  {
+    "word": "入院",
+    "reading": "にゅういん",
+    "romaji": "nyuuin",
+    "meaning_vi": "nhập viện, nhập viện điều trị",
+    "part_of_speech": "noun",
+    "tags": [
+      "health"
+    ]
+  },
+  {
+    "word": "退院",
+    "reading": "たいいん",
+    "romaji": "taiin",
+    "meaning_vi": "xuất viện",
+    "part_of_speech": "noun",
+    "tags": [
+      "health"
+    ]
+  },
+  {
+    "word": "血液",
+    "reading": "けつえき",
+    "romaji": "ketsueki",
+    "meaning_vi": "máu, huyết dịch",
+    "part_of_speech": "noun",
+    "tags": [
+      "health",
+      "body"
+    ]
+  },
+  {
+    "word": "怪我",
+    "reading": "けが",
+    "romaji": "kega",
+    "meaning_vi": "thương tích, vết thương",
+    "part_of_speech": "noun",
+    "tags": [
+      "health"
+    ]
+  },
+  {
+    "word": "電車",
+    "reading": "でんしゃ",
+    "romaji": "densha",
+    "meaning_vi": "tàu điện, tàu hỏa",
+    "part_of_speech": "noun",
+    "tags": [
+      "transport"
+    ]
+  },
+  {
+    "word": "地下鉄",
+    "reading": "ちかてつ",
+    "romaji": "chikatetsu",
+    "meaning_vi": "tàu điện ngầm, metro",
+    "part_of_speech": "noun",
+    "tags": [
+      "transport"
+    ]
+  },
+  {
+    "word": "バス",
+    "reading": "バス",
+    "romaji": "basu",
+    "meaning_vi": "xe buýt",
+    "part_of_speech": "noun",
+    "tags": [
+      "transport"
+    ]
+  },
+  {
+    "word": "タクシー",
+    "reading": "タクシー",
+    "romaji": "takushii",
+    "meaning_vi": "xe taxi",
+    "part_of_speech": "noun",
+    "tags": [
+      "transport"
+    ]
+  },
+  {
+    "word": "飛行機",
+    "reading": "ひこうき",
+    "romaji": "hikouki",
+    "meaning_vi": "máy bay",
+    "part_of_speech": "noun",
+    "tags": [
+      "transport"
+    ]
+  },
+  {
+    "word": "船",
+    "reading": "ふね",
+    "romaji": "fune",
+    "meaning_vi": "tàu thủy, con thuyền",
+    "part_of_speech": "noun",
+    "tags": [
+      "transport"
+    ]
+  },
+  {
+    "word": "自転車",
+    "reading": "じてんしゃ",
+    "romaji": "jitensha",
+    "meaning_vi": "xe đạp",
+    "part_of_speech": "noun",
+    "tags": [
+      "transport"
+    ]
+  },
+  {
+    "word": "バイク",
+    "reading": "バイク",
+    "romaji": "baiku",
+    "meaning_vi": "xe máy, xe mô tô",
+    "part_of_speech": "noun",
+    "tags": [
+      "transport"
+    ]
+  },
+  {
+    "word": "駐車場",
+    "reading": "ちゅうしゃじょう",
+    "romaji": "chuushajou",
+    "meaning_vi": "bãi đỗ xe, bãi giữ xe",
+    "part_of_speech": "noun",
+    "tags": [
+      "transport",
+      "place"
+    ]
+  },
+  {
+    "word": "信号",
+    "reading": "しんごう",
+    "romaji": "shingou",
+    "meaning_vi": "đèn giao thông, tín hiệu",
+    "part_of_speech": "noun",
+    "tags": [
+      "transport"
+    ]
+  },
+  {
+    "word": "交差点",
+    "reading": "こうさてん",
+    "romaji": "kousaten",
+    "meaning_vi": "ngã tư, giao lộ",
+    "part_of_speech": "noun",
+    "tags": [
+      "transport",
+      "place"
+    ]
+  },
+  {
+    "word": "道路",
+    "reading": "どうろ",
+    "romaji": "douro",
+    "meaning_vi": "đường bộ, con đường",
+    "part_of_speech": "noun",
+    "tags": [
+      "transport",
+      "place"
+    ]
+  },
+  {
+    "word": "切符",
+    "reading": "きっぷ",
+    "romaji": "kippu",
+    "meaning_vi": "vé (tàu, xe)",
+    "part_of_speech": "noun",
+    "tags": [
+      "transport"
+    ]
+  },
+  {
+    "word": "定期券",
+    "reading": "ていきけん",
+    "romaji": "teikiken",
+    "meaning_vi": "vé tháng, thẻ xe định kỳ",
+    "part_of_speech": "noun",
+    "tags": [
+      "transport"
+    ]
+  },
+  {
+    "word": "旅行",
+    "reading": "りょこう",
+    "romaji": "ryokou",
+    "meaning_vi": "du lịch, đi chơi xa",
+    "part_of_speech": "noun",
+    "tags": [
+      "travel"
+    ]
+  },
+  {
+    "word": "観光",
+    "reading": "かんこう",
+    "romaji": "kankou",
+    "meaning_vi": "tham quan, du lịch",
+    "part_of_speech": "noun",
+    "tags": [
+      "travel"
+    ]
+  },
+  {
+    "word": "ホテル",
+    "reading": "ホテル",
+    "romaji": "hoteru",
+    "meaning_vi": "khách sạn",
+    "part_of_speech": "noun",
+    "tags": [
+      "travel",
+      "place"
+    ]
+  },
+  {
+    "word": "旅館",
+    "reading": "りょかん",
+    "romaji": "ryokan",
+    "meaning_vi": "nhà trọ kiểu Nhật, ryokan",
+    "part_of_speech": "noun",
+    "tags": [
+      "travel",
+      "place"
+    ]
+  },
+  {
+    "word": "空港",
+    "reading": "くうこう",
+    "romaji": "kuukou",
+    "meaning_vi": "sân bay, phi trường",
+    "part_of_speech": "noun",
+    "tags": [
+      "travel",
+      "place"
+    ]
+  },
+  {
+    "word": "パスポート",
+    "reading": "パスポート",
+    "romaji": "pasupooto",
+    "meaning_vi": "hộ chiếu, passport",
+    "part_of_speech": "noun",
+    "tags": [
+      "travel",
+      "document"
+    ]
+  },
+  {
+    "word": "荷物",
+    "reading": "にもつ",
+    "romaji": "nimotsu",
+    "meaning_vi": "hành lý, đồ đạc",
+    "part_of_speech": "noun",
+    "tags": [
+      "travel"
+    ]
+  },
+  {
+    "word": "予約",
+    "reading": "よやく",
+    "romaji": "yoyaku",
+    "meaning_vi": "đặt trước, đặt chỗ, đặt phòng",
+    "part_of_speech": "noun",
+    "tags": [
+      "travel",
+      "action"
+    ]
+  },
+  {
+    "word": "案内",
+    "reading": "あんない",
+    "romaji": "annai",
+    "meaning_vi": "hướng dẫn, chỉ đường",
+    "part_of_speech": "noun",
+    "tags": [
+      "travel"
+    ]
+  },
+  {
+    "word": "地図",
+    "reading": "ちず",
+    "romaji": "chizu",
+    "meaning_vi": "bản đồ",
+    "part_of_speech": "noun",
+    "tags": [
+      "travel"
+    ]
+  },
+  {
+    "word": "趣味",
+    "reading": "しゅみ",
+    "romaji": "shumi",
+    "meaning_vi": "sở thích, thú vui",
+    "part_of_speech": "noun",
+    "tags": [
+      "hobby"
+    ]
+  },
+  {
+    "word": "スポーツ",
+    "reading": "スポーツ",
+    "romaji": "supootsu",
+    "meaning_vi": "thể thao",
+    "part_of_speech": "noun",
+    "tags": [
+      "hobby",
+      "sport"
+    ]
+  },
+  {
+    "word": "サッカー",
+    "reading": "サッカー",
+    "romaji": "sakkaa",
+    "meaning_vi": "bóng đá",
+    "part_of_speech": "noun",
+    "tags": [
+      "hobby",
+      "sport"
+    ]
+  },
+  {
+    "word": "野球",
+    "reading": "やきゅう",
+    "romaji": "yakyuu",
+    "meaning_vi": "bóng chày",
+    "part_of_speech": "noun",
+    "tags": [
+      "hobby",
+      "sport"
+    ]
+  },
+  {
+    "word": "水泳",
+    "reading": "すいえい",
+    "romaji": "suiei",
+    "meaning_vi": "bơi lội",
+    "part_of_speech": "noun",
+    "tags": [
+      "hobby",
+      "sport"
+    ]
+  },
+  {
+    "word": "テニス",
+    "reading": "テニス",
+    "romaji": "tenisu",
+    "meaning_vi": "tennis, quần vợt",
+    "part_of_speech": "noun",
+    "tags": [
+      "hobby",
+      "sport"
+    ]
+  },
+  {
+    "word": "コンサート",
+    "reading": "コンサート",
+    "romaji": "konsaato",
+    "meaning_vi": "buổi hòa nhạc, concert",
+    "part_of_speech": "noun",
+    "tags": [
+      "hobby",
+      "entertainment"
+    ]
+  },
+  {
+    "word": "映画館",
+    "reading": "えいがかん",
+    "romaji": "eigakan",
+    "meaning_vi": "rạp chiếu phim",
+    "part_of_speech": "noun",
+    "tags": [
+      "hobby",
+      "place"
+    ]
+  },
+  {
+    "word": "美術館",
+    "reading": "びじゅつかん",
+    "romaji": "bijutsukan",
+    "meaning_vi": "bảo tàng nghệ thuật",
+    "part_of_speech": "noun",
+    "tags": [
+      "hobby",
+      "place"
+    ]
+  },
+  {
+    "word": "博物館",
+    "reading": "はくぶつかん",
+    "romaji": "hakubutsukan",
+    "meaning_vi": "bảo tàng lịch sử",
+    "part_of_speech": "noun",
+    "tags": [
+      "hobby",
+      "place"
+    ]
+  },
+  {
+    "word": "絵",
+    "reading": "え",
+    "romaji": "e",
+    "meaning_vi": "tranh vẽ, bức họa",
+    "part_of_speech": "noun",
+    "tags": [
+      "hobby",
+      "art"
+    ]
+  },
+  {
+    "word": "写真",
+    "reading": "しゃしん",
+    "romaji": "shashin",
+    "meaning_vi": "ảnh chụp, tấm hình",
+    "part_of_speech": "noun",
+    "tags": [
+      "hobby"
+    ]
+  },
+  {
+    "word": "ゲーム",
+    "reading": "ゲーム",
+    "romaji": "geemu",
+    "meaning_vi": "trò chơi, game",
+    "part_of_speech": "noun",
+    "tags": [
+      "hobby",
+      "entertainment"
+    ]
+  },
+  {
+    "word": "料理",
+    "reading": "りょうり",
+    "romaji": "ryouri",
+    "meaning_vi": "nấu ăn; món ăn",
+    "part_of_speech": "noun",
+    "tags": [
+      "food",
+      "daily"
+    ]
+  },
+  {
+    "word": "食事",
+    "reading": "しょくじ",
+    "romaji": "shokuji",
+    "meaning_vi": "bữa ăn, dùng bữa",
+    "part_of_speech": "noun",
+    "tags": [
+      "food",
+      "daily"
+    ]
+  },
+  {
+    "word": "味",
+    "reading": "あじ",
+    "romaji": "aji",
+    "meaning_vi": "mùi vị, hương vị",
+    "part_of_speech": "noun",
+    "tags": [
+      "food"
+    ]
+  },
+  {
+    "word": "材料",
+    "reading": "ざいりょう",
+    "romaji": "zairyou",
+    "meaning_vi": "nguyên liệu, vật liệu",
+    "part_of_speech": "noun",
+    "tags": [
+      "food",
+      "tool"
+    ]
+  },
+  {
+    "word": "冷蔵庫",
+    "reading": "れいぞうこ",
+    "romaji": "reizouko",
+    "meaning_vi": "tủ lạnh",
+    "part_of_speech": "noun",
+    "tags": [
+      "food",
+      "appliance"
+    ]
+  },
+  {
+    "word": "電子レンジ",
+    "reading": "でんしレンジ",
+    "romaji": "denshi renji",
+    "meaning_vi": "lò vi sóng",
+    "part_of_speech": "noun",
+    "tags": [
+      "food",
+      "appliance"
+    ]
+  },
+  {
+    "word": "鍋",
+    "reading": "なべ",
+    "romaji": "nabe",
+    "meaning_vi": "nồi, xoong; lẩu",
+    "part_of_speech": "noun",
+    "tags": [
+      "food",
+      "tool"
+    ]
+  },
+  {
+    "word": "皿",
+    "reading": "さら",
+    "romaji": "sara",
+    "meaning_vi": "đĩa, dĩa",
+    "part_of_speech": "noun",
+    "tags": [
+      "food",
+      "tool"
+    ]
+  },
+  {
+    "word": "箸",
+    "reading": "はし",
+    "romaji": "hashi",
+    "meaning_vi": "đũa",
+    "part_of_speech": "noun",
+    "tags": [
+      "food",
+      "tool"
+    ]
+  },
+  {
+    "word": "コーヒー",
+    "reading": "コーヒー",
+    "romaji": "koohii",
+    "meaning_vi": "cà phê",
+    "part_of_speech": "noun",
+    "tags": [
+      "food",
+      "drink"
+    ]
+  },
+  {
+    "word": "お茶",
+    "reading": "おちゃ",
+    "romaji": "ocha",
+    "meaning_vi": "trà, trà Nhật",
+    "part_of_speech": "noun",
+    "tags": [
+      "food",
+      "drink"
+    ]
+  },
+  {
+    "word": "ビール",
+    "reading": "ビール",
+    "romaji": "biiru",
+    "meaning_vi": "bia",
+    "part_of_speech": "noun",
+    "tags": [
+      "food",
+      "drink"
+    ]
+  },
+  {
+    "word": "パン",
+    "reading": "パン",
+    "romaji": "pan",
+    "meaning_vi": "bánh mì",
+    "part_of_speech": "noun",
+    "tags": [
+      "food"
+    ]
+  },
+  {
+    "word": "ご飯",
+    "reading": "ごはん",
+    "romaji": "gohan",
+    "meaning_vi": "cơm; bữa ăn",
+    "part_of_speech": "noun",
+    "tags": [
+      "food"
+    ]
+  },
+  {
+    "word": "肉",
+    "reading": "にく",
+    "romaji": "niku",
+    "meaning_vi": "thịt",
+    "part_of_speech": "noun",
+    "tags": [
+      "food"
+    ]
+  }
+]

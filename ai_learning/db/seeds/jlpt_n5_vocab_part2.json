@@ -1,0 +1,1105 @@
+[
+  {
+    "word": "船",
+    "reading": "ふね",
+    "romaji": "fune",
+    "meaning_vi": "tàu thuyền",
+    "part_of_speech": "noun",
+    "tags": [
+      "transportation"
+    ]
+  },
+  {
+    "word": "駅",
+    "reading": "えき",
+    "romaji": "eki",
+    "meaning_vi": "nhà ga (tàu/metro)",
+    "part_of_speech": "noun",
+    "tags": [
+      "place",
+      "transportation"
+    ]
+  },
+  {
+    "word": "空港",
+    "reading": "くうこう",
+    "romaji": "kuukou",
+    "meaning_vi": "sân bay",
+    "part_of_speech": "noun",
+    "tags": [
+      "place",
+      "transportation"
+    ]
+  },
+  {
+    "word": "学校",
+    "reading": "がっこう",
+    "romaji": "gakkou",
+    "meaning_vi": "trường học (tiểu học đến trung học)",
+    "part_of_speech": "noun",
+    "tags": [
+      "place",
+      "education"
+    ]
+  },
+  {
+    "word": "大学",
+    "reading": "だいがく",
+    "romaji": "daigaku",
+    "meaning_vi": "trường đại học",
+    "part_of_speech": "noun",
+    "tags": [
+      "place",
+      "education"
+    ]
+  },
+  {
+    "word": "図書館",
+    "reading": "としょかん",
+    "romaji": "toshokan",
+    "meaning_vi": "thư viện",
+    "part_of_speech": "noun",
+    "tags": [
+      "place",
+      "education"
+    ]
+  },
+  {
+    "word": "病院",
+    "reading": "びょういん",
+    "romaji": "byouin",
+    "meaning_vi": "bệnh viện",
+    "part_of_speech": "noun",
+    "tags": [
+      "place",
+      "medical"
+    ]
+  },
+  {
+    "word": "銀行",
+    "reading": "ぎんこう",
+    "romaji": "ginkou",
+    "meaning_vi": "ngân hàng",
+    "part_of_speech": "noun",
+    "tags": [
+      "place",
+      "service"
+    ]
+  },
+  {
+    "word": "郵便局",
+    "reading": "ゆうびんきょく",
+    "romaji": "yuubinkyoku",
+    "meaning_vi": "bưu điện",
+    "part_of_speech": "noun",
+    "tags": [
+      "place",
+      "service"
+    ]
+  },
+  {
+    "word": "スーパー",
+    "reading": "すーぱー",
+    "romaji": "suupaa",
+    "meaning_vi": "siêu thị",
+    "part_of_speech": "noun",
+    "tags": [
+      "place",
+      "shop",
+      "katakana"
+    ]
+  },
+  {
+    "word": "デパート",
+    "reading": "でぱーと",
+    "romaji": "depaato",
+    "meaning_vi": "trung tâm thương mại, bách hóa",
+    "part_of_speech": "noun",
+    "tags": [
+      "place",
+      "shop",
+      "katakana"
+    ]
+  },
+  {
+    "word": "レストラン",
+    "reading": "れすとらん",
+    "romaji": "resutoran",
+    "meaning_vi": "nhà hàng",
+    "part_of_speech": "noun",
+    "tags": [
+      "place",
+      "food",
+      "katakana"
+    ]
+  },
+  {
+    "word": "コンビニ",
+    "reading": "こんびに",
+    "romaji": "konbini",
+    "meaning_vi": "cửa hàng tiện lợi",
+    "part_of_speech": "noun",
+    "tags": [
+      "place",
+      "shop",
+      "katakana"
+    ]
+  },
+  {
+    "word": "ホテル",
+    "reading": "ほてる",
+    "romaji": "hoteru",
+    "meaning_vi": "khách sạn",
+    "part_of_speech": "noun",
+    "tags": [
+      "place",
+      "katakana"
+    ]
+  },
+  {
+    "word": "公園",
+    "reading": "こうえん",
+    "romaji": "kouen",
+    "meaning_vi": "công viên",
+    "part_of_speech": "noun",
+    "tags": [
+      "place",
+      "outdoor"
+    ]
+  },
+  {
+    "word": "映画館",
+    "reading": "えいがかん",
+    "romaji": "eigakan",
+    "meaning_vi": "rạp chiếu phim",
+    "part_of_speech": "noun",
+    "tags": [
+      "place",
+      "entertainment"
+    ]
+  },
+  {
+    "word": "本屋",
+    "reading": "ほんや",
+    "romaji": "hon'ya",
+    "meaning_vi": "hiệu sách",
+    "part_of_speech": "noun",
+    "tags": [
+      "place",
+      "shop"
+    ]
+  },
+  {
+    "word": "お店",
+    "reading": "おみせ",
+    "romaji": "omise",
+    "meaning_vi": "cửa hàng",
+    "part_of_speech": "noun",
+    "tags": [
+      "place",
+      "shop"
+    ]
+  },
+  {
+    "word": "会社",
+    "reading": "かいしゃ",
+    "romaji": "kaisha",
+    "meaning_vi": "công ty",
+    "part_of_speech": "noun",
+    "tags": [
+      "place",
+      "work"
+    ]
+  },
+  {
+    "word": "家",
+    "reading": "いえ",
+    "romaji": "ie",
+    "meaning_vi": "nhà, ngôi nhà",
+    "part_of_speech": "noun",
+    "tags": [
+      "home"
+    ]
+  },
+  {
+    "word": "うち",
+    "reading": "うち",
+    "romaji": "uchi",
+    "meaning_vi": "nhà mình, gia đình mình (thân mật)",
+    "part_of_speech": "noun",
+    "tags": [
+      "home",
+      "colloquial"
+    ]
+  },
+  {
+    "word": "部屋",
+    "reading": "へや",
+    "romaji": "heya",
+    "meaning_vi": "phòng",
+    "part_of_speech": "noun",
+    "tags": [
+      "home"
+    ]
+  },
+  {
+    "word": "台所",
+    "reading": "だいどころ",
+    "romaji": "daidokoro",
+    "meaning_vi": "nhà bếp",
+    "part_of_speech": "noun",
+    "tags": [
+      "home",
+      "room"
+    ]
+  },
+  {
+    "word": "お風呂",
+    "reading": "おふろ",
+    "romaji": "ofuro",
+    "meaning_vi": "phòng tắm (bồn tắm Nhật)",
+    "part_of_speech": "noun",
+    "tags": [
+      "home",
+      "room"
+    ]
+  },
+  {
+    "word": "トイレ",
+    "reading": "といれ",
+    "romaji": "toire",
+    "meaning_vi": "nhà vệ sinh, toilet",
+    "part_of_speech": "noun",
+    "tags": [
+      "home",
+      "room",
+      "katakana"
+    ]
+  },
+  {
+    "word": "窓",
+    "reading": "まど",
+    "romaji": "mado",
+    "meaning_vi": "cửa sổ",
+    "part_of_speech": "noun",
+    "tags": [
+      "home"
+    ]
+  },
+  {
+    "word": "ドア",
+    "reading": "どあ",
+    "romaji": "doa",
+    "meaning_vi": "cửa ra vào",
+    "part_of_speech": "noun",
+    "tags": [
+      "home",
+      "katakana"
+    ]
+  },
+  {
+    "word": "庭",
+    "reading": "にわ",
+    "romaji": "niwa",
+    "meaning_vi": "sân, vườn",
+    "part_of_speech": "noun",
+    "tags": [
+      "home",
+      "outdoor"
+    ]
+  },
+  {
+    "word": "二階",
+    "reading": "にかい",
+    "romaji": "nikai",
+    "meaning_vi": "tầng hai, lầu một",
+    "part_of_speech": "noun",
+    "tags": [
+      "home",
+      "building"
+    ]
+  },
+  {
+    "word": "本",
+    "reading": "ほん",
+    "romaji": "hon",
+    "meaning_vi": "sách, cuốn sách",
+    "part_of_speech": "noun",
+    "tags": [
+      "object",
+      "education"
+    ]
+  },
+  {
+    "word": "ノート",
+    "reading": "のーと",
+    "romaji": "nooto",
+    "meaning_vi": "vở, tập ghi chép",
+    "part_of_speech": "noun",
+    "tags": [
+      "object",
+      "education",
+      "katakana"
+    ]
+  },
+  {
+    "word": "ペン",
+    "reading": "ぺん",
+    "romaji": "pen",
+    "meaning_vi": "bút bi, bút mực",
+    "part_of_speech": "noun",
+    "tags": [
+      "object",
+      "stationery",
+      "katakana"
+    ]
+  },
+  {
+    "word": "鉛筆",
+    "reading": "えんぴつ",
+    "romaji": "enpitsu",
+    "meaning_vi": "bút chì",
+    "part_of_speech": "noun",
+    "tags": [
+      "object",
+      "stationery"
+    ]
+  },
+  {
+    "word": "消しゴム",
+    "reading": "けしごむ",
+    "romaji": "keshigomu",
+    "meaning_vi": "cục tẩy",
+    "part_of_speech": "noun",
+    "tags": [
+      "object",
+      "stationery"
+    ]
+  },
+  {
+    "word": "鞄",
+    "reading": "かばん",
+    "romaji": "kaban",
+    "meaning_vi": "túi xách, cặp sách",
+    "part_of_speech": "noun",
+    "tags": [
+      "object",
+      "accessory"
+    ]
+  },
+  {
+    "word": "財布",
+    "reading": "さいふ",
+    "romaji": "saifu",
+    "meaning_vi": "ví tiền",
+    "part_of_speech": "noun",
+    "tags": [
+      "object",
+      "accessory"
+    ]
+  },
+  {
+    "word": "時計",
+    "reading": "とけい",
+    "romaji": "tokei",
+    "meaning_vi": "đồng hồ",
+    "part_of_speech": "noun",
+    "tags": [
+      "object"
+    ]
+  },
+  {
+    "word": "電話",
+    "reading": "でんわ",
+    "romaji": "denwa",
+    "meaning_vi": "điện thoại",
+    "part_of_speech": "noun",
+    "tags": [
+      "object",
+      "communication"
+    ]
+  },
+  {
+    "word": "テレビ",
+    "reading": "てれび",
+    "romaji": "terebi",
+    "meaning_vi": "tivi, truyền hình",
+    "part_of_speech": "noun",
+    "tags": [
+      "object",
+      "entertainment",
+      "katakana"
+    ]
+  },
+  {
+    "word": "ラジオ",
+    "reading": "らじお",
+    "romaji": "rajio",
+    "meaning_vi": "đài radio",
+    "part_of_speech": "noun",
+    "tags": [
+      "object",
+      "entertainment",
+      "katakana"
+    ]
+  },
+  {
+    "word": "カメラ",
+    "reading": "かめら",
+    "romaji": "kamera",
+    "meaning_vi": "máy ảnh",
+    "part_of_speech": "noun",
+    "tags": [
+      "object",
+      "katakana"
+    ]
+  },
+  {
+    "word": "パソコン",
+    "reading": "ぱそこん",
+    "romaji": "pasokon",
+    "meaning_vi": "máy tính cá nhân, PC",
+    "part_of_speech": "noun",
+    "tags": [
+      "object",
+      "technology",
+      "katakana"
+    ]
+  },
+  {
+    "word": "傘",
+    "reading": "かさ",
+    "romaji": "kasa",
+    "meaning_vi": "ô, dù",
+    "part_of_speech": "noun",
+    "tags": [
+      "object"
+    ]
+  },
+  {
+    "word": "眼鏡",
+    "reading": "めがね",
+    "romaji": "megane",
+    "meaning_vi": "kính mắt",
+    "part_of_speech": "noun",
+    "tags": [
+      "object",
+      "accessory"
+    ]
+  },
+  {
+    "word": "地図",
+    "reading": "ちず",
+    "romaji": "chizu",
+    "meaning_vi": "bản đồ",
+    "part_of_speech": "noun",
+    "tags": [
+      "object"
+    ]
+  },
+  {
+    "word": "写真",
+    "reading": "しゃしん",
+    "romaji": "shashin",
+    "meaning_vi": "ảnh chụp, tấm ảnh",
+    "part_of_speech": "noun",
+    "tags": [
+      "object"
+    ]
+  },
+  {
+    "word": "服",
+    "reading": "ふく",
+    "romaji": "fuku",
+    "meaning_vi": "quần áo",
+    "part_of_speech": "noun",
+    "tags": [
+      "clothes"
+    ]
+  },
+  {
+    "word": "シャツ",
+    "reading": "しゃつ",
+    "romaji": "shatsu",
+    "meaning_vi": "áo sơ mi",
+    "part_of_speech": "noun",
+    "tags": [
+      "clothes",
+      "katakana"
+    ]
+  },
+  {
+    "word": "Tシャツ",
+    "reading": "ティーシャツ",
+    "romaji": "tiishatsu",
+    "meaning_vi": "áo phông, áo thun",
+    "part_of_speech": "noun",
+    "tags": [
+      "clothes",
+      "katakana"
+    ]
+  },
+  {
+    "word": "ズボン",
+    "reading": "ずぼん",
+    "romaji": "zubon",
+    "meaning_vi": "quần dài",
+    "part_of_speech": "noun",
+    "tags": [
+      "clothes"
+    ]
+  },
+  {
+    "word": "スカート",
+    "reading": "すかーと",
+    "romaji": "sukaato",
+    "meaning_vi": "váy",
+    "part_of_speech": "noun",
+    "tags": [
+      "clothes",
+      "katakana"
+    ]
+  },
+  {
+    "word": "コート",
+    "reading": "こーと",
+    "romaji": "kooto",
+    "meaning_vi": "áo khoác dài",
+    "part_of_speech": "noun",
+    "tags": [
+      "clothes",
+      "katakana"
+    ]
+  },
+  {
+    "word": "靴",
+    "reading": "くつ",
+    "romaji": "kutsu",
+    "meaning_vi": "giày",
+    "part_of_speech": "noun",
+    "tags": [
+      "clothes"
+    ]
+  },
+  {
+    "word": "靴下",
+    "reading": "くつした",
+    "romaji": "kutsushita",
+    "meaning_vi": "tất, vớ",
+    "part_of_speech": "noun",
+    "tags": [
+      "clothes"
+    ]
+  },
+  {
+    "word": "帽子",
+    "reading": "ぼうし",
+    "romaji": "boushi",
+    "meaning_vi": "mũ, nón",
+    "part_of_speech": "noun",
+    "tags": [
+      "clothes"
+    ]
+  },
+  {
+    "word": "セーター",
+    "reading": "せーたー",
+    "romaji": "seetaa",
+    "meaning_vi": "áo len",
+    "part_of_speech": "noun",
+    "tags": [
+      "clothes",
+      "katakana"
+    ]
+  },
+  {
+    "word": "大きい",
+    "reading": "おおきい",
+    "romaji": "ookii",
+    "meaning_vi": "to, lớn, rộng lớn",
+    "part_of_speech": "adjective",
+    "tags": [
+      "i-adjective",
+      "size"
+    ]
+  },
+  {
+    "word": "小さい",
+    "reading": "ちいさい",
+    "romaji": "chiisai",
+    "meaning_vi": "nhỏ, bé",
+    "part_of_speech": "adjective",
+    "tags": [
+      "i-adjective",
+      "size"
+    ]
+  },
+  {
+    "word": "長い",
+    "reading": "ながい",
+    "romaji": "nagai",
+    "meaning_vi": "dài (chiều dài); lâu (thời gian)",
+    "part_of_speech": "adjective",
+    "tags": [
+      "i-adjective",
+      "size"
+    ]
+  },
+  {
+    "word": "短い",
+    "reading": "みじかい",
+    "romaji": "mijikai",
+    "meaning_vi": "ngắn",
+    "part_of_speech": "adjective",
+    "tags": [
+      "i-adjective",
+      "size"
+    ]
+  },
+  {
+    "word": "高い",
+    "reading": "たかい",
+    "romaji": "takai",
+    "meaning_vi": "cao; đắt (giá)",
+    "part_of_speech": "adjective",
+    "tags": [
+      "i-adjective",
+      "price",
+      "height"
+    ]
+  },
+  {
+    "word": "安い",
+    "reading": "やすい",
+    "romaji": "yasui",
+    "meaning_vi": "rẻ (giá)",
+    "part_of_speech": "adjective",
+    "tags": [
+      "i-adjective",
+      "price"
+    ]
+  },
+  {
+    "word": "低い",
+    "reading": "ひくい",
+    "romaji": "hikui",
+    "meaning_vi": "thấp",
+    "part_of_speech": "adjective",
+    "tags": [
+      "i-adjective",
+      "height"
+    ]
+  },
+  {
+    "word": "多い",
+    "reading": "おおい",
+    "romaji": "ooi",
+    "meaning_vi": "nhiều",
+    "part_of_speech": "adjective",
+    "tags": [
+      "i-adjective",
+      "quantity"
+    ]
+  },
+  {
+    "word": "少ない",
+    "reading": "すくない",
+    "romaji": "sukunai",
+    "meaning_vi": "ít",
+    "part_of_speech": "adjective",
+    "tags": [
+      "i-adjective",
+      "quantity"
+    ]
+  },
+  {
+    "word": "新しい",
+    "reading": "あたらしい",
+    "romaji": "atarashii",
+    "meaning_vi": "mới, hiện đại",
+    "part_of_speech": "adjective",
+    "tags": [
+      "i-adjective",
+      "state"
+    ]
+  },
+  {
+    "word": "古い",
+    "reading": "ふるい",
+    "romaji": "furui",
+    "meaning_vi": "cũ, lâu đời",
+    "part_of_speech": "adjective",
+    "tags": [
+      "i-adjective",
+      "state"
+    ]
+  },
+  {
+    "word": "いい",
+    "reading": "いい",
+    "romaji": "ii",
+    "meaning_vi": "tốt, đẹp, được (dạng thân mật của よい)",
+    "part_of_speech": "adjective",
+    "tags": [
+      "i-adjective",
+      "quality",
+      "irregular"
+    ]
+  },
+  {
+    "word": "悪い",
+    "reading": "わるい",
+    "romaji": "warui",
+    "meaning_vi": "xấu, tệ, có lỗi",
+    "part_of_speech": "adjective",
+    "tags": [
+      "i-adjective",
+      "quality"
+    ]
+  },
+  {
+    "word": "難しい",
+    "reading": "むずかしい",
+    "romaji": "muzukashii",
+    "meaning_vi": "khó",
+    "part_of_speech": "adjective",
+    "tags": [
+      "i-adjective",
+      "difficulty"
+    ]
+  },
+  {
+    "word": "易しい",
+    "reading": "やさしい",
+    "romaji": "yasashii",
+    "meaning_vi": "dễ; hiền lành, tốt bụng",
+    "part_of_speech": "adjective",
+    "tags": [
+      "i-adjective",
+      "difficulty"
+    ]
+  },
+  {
+    "word": "暑い",
+    "reading": "あつい",
+    "romaji": "atsui",
+    "meaning_vi": "nóng (thời tiết, không khí)",
+    "part_of_speech": "adjective",
+    "tags": [
+      "i-adjective",
+      "temperature",
+      "weather"
+    ]
+  },
+  {
+    "word": "寒い",
+    "reading": "さむい",
+    "romaji": "samui",
+    "meaning_vi": "lạnh (thời tiết)",
+    "part_of_speech": "adjective",
+    "tags": [
+      "i-adjective",
+      "temperature",
+      "weather"
+    ]
+  },
+  {
+    "word": "熱い",
+    "reading": "あつい",
+    "romaji": "atsui",
+    "meaning_vi": "nóng (vật thể, thức ăn/đồ uống)",
+    "part_of_speech": "adjective",
+    "tags": [
+      "i-adjective",
+      "temperature"
+    ]
+  },
+  {
+    "word": "冷たい",
+    "reading": "つめたい",
+    "romaji": "tsumetai",
+    "meaning_vi": "lạnh (vật thể, thức ăn/đồ uống); lạnh nhạt (thái độ)",
+    "part_of_speech": "adjective",
+    "tags": [
+      "i-adjective",
+      "temperature"
+    ]
+  },
+  {
+    "word": "暖かい",
+    "reading": "あたたかい",
+    "romaji": "atatakai",
+    "meaning_vi": "ấm áp (dễ chịu)",
+    "part_of_speech": "adjective",
+    "tags": [
+      "i-adjective",
+      "temperature",
+      "weather"
+    ]
+  },
+  {
+    "word": "涼しい",
+    "reading": "すずしい",
+    "romaji": "suzushii",
+    "meaning_vi": "mát mẻ, dễ chịu",
+    "part_of_speech": "adjective",
+    "tags": [
+      "i-adjective",
+      "temperature",
+      "weather"
+    ]
+  },
+  {
+    "word": "広い",
+    "reading": "ひろい",
+    "romaji": "hiroi",
+    "meaning_vi": "rộng, rộng rãi",
+    "part_of_speech": "adjective",
+    "tags": [
+      "i-adjective",
+      "space"
+    ]
+  },
+  {
+    "word": "狭い",
+    "reading": "せまい",
+    "romaji": "semai",
+    "meaning_vi": "hẹp, chật",
+    "part_of_speech": "adjective",
+    "tags": [
+      "i-adjective",
+      "space"
+    ]
+  },
+  {
+    "word": "重い",
+    "reading": "おもい",
+    "romaji": "omoi",
+    "meaning_vi": "nặng",
+    "part_of_speech": "adjective",
+    "tags": [
+      "i-adjective",
+      "weight"
+    ]
+  },
+  {
+    "word": "軽い",
+    "reading": "かるい",
+    "romaji": "karui",
+    "meaning_vi": "nhẹ",
+    "part_of_speech": "adjective",
+    "tags": [
+      "i-adjective",
+      "weight"
+    ]
+  },
+  {
+    "word": "早い",
+    "reading": "はやい",
+    "romaji": "hayai",
+    "meaning_vi": "sớm; nhanh",
+    "part_of_speech": "adjective",
+    "tags": [
+      "i-adjective",
+      "speed",
+      "time"
+    ]
+  },
+  {
+    "word": "遅い",
+    "reading": "おそい",
+    "romaji": "osoi",
+    "meaning_vi": "muộn; chậm",
+    "part_of_speech": "adjective",
+    "tags": [
+      "i-adjective",
+      "speed",
+      "time"
+    ]
+  },
+  {
+    "word": "おいしい",
+    "reading": "おいしい",
+    "romaji": "oishii",
+    "meaning_vi": "ngon (ăn/uống)",
+    "part_of_speech": "adjective",
+    "tags": [
+      "i-adjective",
+      "taste"
+    ]
+  },
+  {
+    "word": "まずい",
+    "reading": "まずい",
+    "romaji": "mazui",
+    "meaning_vi": "không ngon; dở, tệ",
+    "part_of_speech": "adjective",
+    "tags": [
+      "i-adjective",
+      "taste"
+    ]
+  },
+  {
+    "word": "面白い",
+    "reading": "おもしろい",
+    "romaji": "omoshiroi",
+    "meaning_vi": "thú vị, buồn cười, hay",
+    "part_of_speech": "adjective",
+    "tags": [
+      "i-adjective",
+      "feeling"
+    ]
+  },
+  {
+    "word": "つまらない",
+    "reading": "つまらない",
+    "romaji": "tsumaranai",
+    "meaning_vi": "chán ngắt, nhàm chán",
+    "part_of_speech": "adjective",
+    "tags": [
+      "i-adjective",
+      "feeling"
+    ]
+  },
+  {
+    "word": "楽しい",
+    "reading": "たのしい",
+    "romaji": "tanoshii",
+    "meaning_vi": "vui, thú vị",
+    "part_of_speech": "adjective",
+    "tags": [
+      "i-adjective",
+      "feeling"
+    ]
+  },
+  {
+    "word": "悲しい",
+    "reading": "かなしい",
+    "romaji": "kanashii",
+    "meaning_vi": "buồn",
+    "part_of_speech": "adjective",
+    "tags": [
+      "i-adjective",
+      "feeling"
+    ]
+  },
+  {
+    "word": "忙しい",
+    "reading": "いそがしい",
+    "romaji": "isogashii",
+    "meaning_vi": "bận rộn",
+    "part_of_speech": "adjective",
+    "tags": [
+      "i-adjective",
+      "state"
+    ]
+  },
+  {
+    "word": "眠い",
+    "reading": "ねむい",
+    "romaji": "nemui",
+    "meaning_vi": "buồn ngủ",
+    "part_of_speech": "adjective",
+    "tags": [
+      "i-adjective",
+      "state"
+    ]
+  },
+  {
+    "word": "痛い",
+    "reading": "いたい",
+    "romaji": "itai",
+    "meaning_vi": "đau",
+    "part_of_speech": "adjective",
+    "tags": [
+      "i-adjective",
+      "physical"
+    ]
+  },
+  {
+    "word": "かわいい",
+    "reading": "かわいい",
+    "romaji": "kawaii",
+    "meaning_vi": "dễ thương, đáng yêu",
+    "part_of_speech": "adjective",
+    "tags": [
+      "i-adjective",
+      "appearance"
+    ]
+  },
+  {
+    "word": "明るい",
+    "reading": "あかるい",
+    "romaji": "akarui",
+    "meaning_vi": "sáng (ánh sáng); vui vẻ, cởi mở (tính cách)",
+    "part_of_speech": "adjective",
+    "tags": [
+      "i-adjective"
+    ]
+  },
+  {
+    "word": "暗い",
+    "reading": "くらい",
+    "romaji": "kurai",
+    "meaning_vi": "tối; u tối (tính cách)",
+    "part_of_speech": "adjective",
+    "tags": [
+      "i-adjective"
+    ]
+  },
+  {
+    "word": "丸い",
+    "reading": "まるい",
+    "romaji": "marui",
+    "meaning_vi": "tròn",
+    "part_of_speech": "adjective",
+    "tags": [
+      "i-adjective",
+      "shape"
+    ]
+  },
+  {
+    "word": "白い",
+    "reading": "しろい",
+    "romaji": "shiroi",
+    "meaning_vi": "(màu) trắng",
+    "part_of_speech": "adjective",
+    "tags": [
+      "i-adjective",
+      "color"
+    ]
+  },
+  {
+    "word": "黒い",
+    "reading": "くろい",
+    "romaji": "kuroi",
+    "meaning_vi": "(màu) đen",
+    "part_of_speech": "adjective",
+    "tags": [
+      "i-adjective",
+      "color"
+    ]
+  },
+  {
+    "word": "赤い",
+    "reading": "あかい",
+    "romaji": "akai",
+    "meaning_vi": "(màu) đỏ",
+    "part_of_speech": "adjective",
+    "tags": [
+      "i-adjective",
+      "color"
+    ]
+  },
+  {
+    "word": "青い",
+    "reading": "あおい",
+    "romaji": "aoi",
+    "meaning_vi": "(màu) xanh lam/xanh lá; xanh xao (nước da)",
+    "part_of_speech": "adjective",
+    "tags": [
+      "i-adjective",
+      "color"
+    ]
+  }
+]

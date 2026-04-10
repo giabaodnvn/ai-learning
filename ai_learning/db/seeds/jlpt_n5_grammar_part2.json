@@ -1,0 +1,460 @@
+[
+  {
+    "pattern": "〜と思います",
+    "explanation_vi": "Bày tỏ ý kiến cá nhân: tôi nghĩ rằng ~.",
+    "examples": [
+      {
+        "ja": "明日は雨が降ると思います。",
+        "vi": "Tôi nghĩ ngày mai sẽ mưa."
+      },
+      {
+        "ja": "彼は優しい人だと思います。",
+        "vi": "Tôi nghĩ anh ấy là người tốt bụng."
+      }
+    ],
+    "notes_vi": "Dùng thể thông thường (普通形) trước と思います."
+  },
+  {
+    "pattern": "〜から（理由）",
+    "explanation_vi": "Diễn tả lý do: vì ~, bởi vì ~.",
+    "examples": [
+      {
+        "ja": "寒いから、コートを着ます。",
+        "vi": "Vì lạnh nên tôi mặc áo khoác."
+      },
+      {
+        "ja": "お金がないから、買えません。",
+        "vi": "Vì không có tiền nên không mua được."
+      }
+    ],
+    "notes_vi": "Thường đứng ở mệnh đề nguyên nhân (phần trước)."
+  },
+  {
+    "pattern": "〜ので",
+    "explanation_vi": "Diễn tả lý do (lịch sự hơn から): vì ~.",
+    "examples": [
+      {
+        "ja": "病気なので、学校を休みます。",
+        "vi": "Vì bệnh nên tôi nghỉ học."
+      },
+      {
+        "ja": "忙しいので、行けません。",
+        "vi": "Vì bận nên không đi được."
+      }
+    ],
+    "notes_vi": "ので lịch sự hơn から, thường dùng trong văn viết hoặc tình huống trang trọng."
+  },
+  {
+    "pattern": "〜が (chủ thể)",
+    "explanation_vi": "Trợ từ が đánh dấu chủ thể (subject marker), khác với は là chủ đề.",
+    "examples": [
+      {
+        "ja": "猫が来ました。",
+        "vi": "Con mèo đến rồi."
+      },
+      {
+        "ja": "誰が来ましたか。",
+        "vi": "Ai đến vậy?"
+      }
+    ],
+    "notes_vi": "が dùng khi giới thiệu thông tin mới, trong câu hỏi 誰/何, và với tính từ cảm giác."
+  },
+  {
+    "pattern": "〜か〜か",
+    "explanation_vi": "Câu hỏi lựa chọn: A hay B?",
+    "examples": [
+      {
+        "ja": "コーヒーか紅茶か、どちらがいいですか。",
+        "vi": "Cà phê hay trà, bạn thích cái nào?"
+      },
+      {
+        "ja": "電車かバスで行きます。",
+        "vi": "Đi bằng tàu hoặc xe buýt."
+      }
+    ],
+    "notes_vi": null
+  },
+  {
+    "pattern": "〜や〜など",
+    "explanation_vi": "Liệt kê các ví dụ không đầy đủ: ~ và ~, v.v.",
+    "examples": [
+      {
+        "ja": "りんごやみかんなどを買いました。",
+        "vi": "Đã mua táo, quýt, v.v."
+      },
+      {
+        "ja": "新聞や本など読みます。",
+        "vi": "Đọc báo, sách, v.v."
+      }
+    ],
+    "notes_vi": "と liệt kê đầy đủ, や liệt kê không đầy đủ (chỉ là ví dụ)."
+  },
+  {
+    "pattern": "〜て (て形連続)",
+    "explanation_vi": "Nối các hành động liên tiếp bằng dạng て: làm A rồi (làm B).",
+    "examples": [
+      {
+        "ja": "朝起きて、顔を洗って、朝ご飯を食べます。",
+        "vi": "Sáng thức dậy, rửa mặt rồi ăn sáng."
+      },
+      {
+        "ja": "電車に乗って、駅まで行きます。",
+        "vi": "Lên tàu rồi đi đến ga."
+      }
+    ],
+    "notes_vi": "Trật tự hành động theo thứ tự thực hiện."
+  },
+  {
+    "pattern": "〜たり〜たりします",
+    "explanation_vi": "Liệt kê các hành động không theo thứ tự cụ thể: khi thì ~, khi thì ~.",
+    "examples": [
+      {
+        "ja": "週末は映画を見たり、本を読んだりします。",
+        "vi": "Cuối tuần tôi xem phim, đọc sách, v.v."
+      },
+      {
+        "ja": "音楽を聴いたり、友達と話したりします。",
+        "vi": "Nghe nhạc hay nói chuyện với bạn bè."
+      }
+    ],
+    "notes_vi": "Dạng た + り (kết thúc bằng します). Hành động không theo thứ tự, chỉ liệt kê ví dụ."
+  },
+  {
+    "pattern": "〜ながら",
+    "explanation_vi": "Làm hai việc đồng thời: vừa ~ vừa ~.",
+    "examples": [
+      {
+        "ja": "音楽を聴きながら、勉強します。",
+        "vi": "Vừa nghe nhạc vừa học."
+      },
+      {
+        "ja": "コーヒーを飲みながら、新聞を読みます。",
+        "vi": "Vừa uống cà phê vừa đọc báo."
+      }
+    ],
+    "notes_vi": "ながら đứng sau stem (masu-stem) của động từ hành động phụ."
+  },
+  {
+    "pattern": "〜前に",
+    "explanation_vi": "Trước khi ~: diễn tả hành động xảy ra trước.",
+    "examples": [
+      {
+        "ja": "寝る前に歯を磨きます。",
+        "vi": "Đánh răng trước khi đi ngủ."
+      },
+      {
+        "ja": "食べる前に手を洗ってください。",
+        "vi": "Rửa tay trước khi ăn."
+      }
+    ],
+    "notes_vi": "Động từ thể từ điển (辞書形) + 前に."
+  },
+  {
+    "pattern": "〜後で / 〜てから",
+    "explanation_vi": "Sau khi ~. 後で dùng với danh từ, てから nhấn mạnh thứ tự.",
+    "examples": [
+      {
+        "ja": "食事の後で、散歩します。",
+        "vi": "Sau bữa ăn, tôi đi dạo."
+      },
+      {
+        "ja": "宿題をしてから、テレビを見ます。",
+        "vi": "Làm bài tập xong rồi mới xem TV."
+      }
+    ],
+    "notes_vi": "てから nhấn mạnh thứ tự bắt buộc."
+  },
+  {
+    "pattern": "〜とき",
+    "explanation_vi": "Khi ~: chỉ thời điểm xảy ra.",
+    "examples": [
+      {
+        "ja": "子どものとき、よく泳ぎました。",
+        "vi": "Khi còn nhỏ, tôi thường bơi lội."
+      },
+      {
+        "ja": "暇なとき、本を読みます。",
+        "vi": "Khi rảnh, tôi đọc sách."
+      }
+    ],
+    "notes_vi": "Danh từ/tính từ な + なとき, tính từ い/động từ + とき."
+  },
+  {
+    "pattern": "〜でも",
+    "explanation_vi": "Nhượng bộ: ngay cả ~, dù là ~ (cũng vậy). Cũng dùng để đề nghị 'uống trà/cà phê hay gì đó đi'.",
+    "examples": [
+      {
+        "ja": "子どもでも分かります。",
+        "vi": "Ngay cả trẻ con cũng hiểu."
+      },
+      {
+        "ja": "お茶でも飲みませんか。",
+        "vi": "Uống trà hay gì đó không?"
+      }
+    ],
+    "notes_vi": null
+  },
+  {
+    "pattern": "〜しか〜ない",
+    "explanation_vi": "Chỉ có ~: nhấn mạnh sự giới hạn (dùng với phủ định).",
+    "examples": [
+      {
+        "ja": "百円しかありません。",
+        "vi": "Chỉ có một trăm yên thôi."
+      },
+      {
+        "ja": "日本語しか話せません。",
+        "vi": "Chỉ nói được tiếng Nhật thôi."
+      }
+    ],
+    "notes_vi": "しか phải đi kèm với phủ định ない/ません."
+  },
+  {
+    "pattern": "〜だけ",
+    "explanation_vi": "Chỉ ~: giới hạn không mang sắc thái tiêu cực (khác しか〜ない).",
+    "examples": [
+      {
+        "ja": "一つだけください。",
+        "vi": "Cho tôi một cái thôi."
+      },
+      {
+        "ja": "これだけ分かりました。",
+        "vi": "Chỉ hiểu được điều này thôi."
+      }
+    ],
+    "notes_vi": "だけ trung tính, しか〜ない mang sắc thái 'ít đến đáng tiếc'."
+  },
+  {
+    "pattern": "〜より〜の方が",
+    "explanation_vi": "So sánh hơn: ~ hơn ~. より chỉ đối tượng bị so sánh.",
+    "examples": [
+      {
+        "ja": "東京より大阪の方が好きです。",
+        "vi": "Tôi thích Osaka hơn Tokyo."
+      },
+      {
+        "ja": "電車よりバスの方が安いです。",
+        "vi": "Xe buýt rẻ hơn tàu điện."
+      }
+    ],
+    "notes_vi": "Cấu trúc: AよりBのほうが + tính chất."
+  },
+  {
+    "pattern": "〜の中で〜が一番",
+    "explanation_vi": "Trong số ~, ~ là nhất: so sánh bậc nhất.",
+    "examples": [
+      {
+        "ja": "果物の中でりんごが一番好きです。",
+        "vi": "Trong số các loại trái cây, tôi thích táo nhất."
+      },
+      {
+        "ja": "クラスの中で田中さんが一番背が高いです。",
+        "vi": "Trong lớp, anh Tanaka cao nhất."
+      }
+    ],
+    "notes_vi": null
+  },
+  {
+    "pattern": "〜でも〜でも",
+    "explanation_vi": "Cả ~ lẫn ~, ~ hay ~ đều được: bất kể cái nào cũng chấp nhận.",
+    "examples": [
+      {
+        "ja": "コーヒーでも紅茶でも大丈夫です。",
+        "vi": "Cà phê hay trà đều được."
+      },
+      {
+        "ja": "いつでも来てください。",
+        "vi": "Bao giờ cũng được, cứ đến đi."
+      }
+    ],
+    "notes_vi": null
+  },
+  {
+    "pattern": "〜ていただけませんか",
+    "explanation_vi": "Yêu cầu lịch sự ở mức cao nhất: Nhờ bạn làm ơn ~ được không?",
+    "examples": [
+      {
+        "ja": "もう一度説明していただけませんか。",
+        "vi": "Bạn có thể giải thích lại một lần nữa không?"
+      },
+      {
+        "ja": "写真を撮っていただけませんか。",
+        "vi": "Nhờ bạn chụp ảnh giúp được không?"
+      }
+    ],
+    "notes_vi": "Rất lịch sự. てください < てもらえますか < ていただけませんか."
+  },
+  {
+    "pattern": "〜あげます / 〜もらいます / 〜くれます",
+    "explanation_vi": "Hành động cho và nhận: あげる (tôi cho), もらう (tôi nhận), くれる (người khác cho tôi).",
+    "examples": [
+      {
+        "ja": "友達にプレゼントをあげました。",
+        "vi": "Tôi tặng quà cho bạn."
+      },
+      {
+        "ja": "先生に本をもらいました。",
+        "vi": "Tôi nhận sách từ giáo viên."
+      },
+      {
+        "ja": "母が弁当を作ってくれました。",
+        "vi": "Mẹ làm cơm hộp cho tôi."
+      }
+    ],
+    "notes_vi": "くれる là người khác làm lợi cho tôi/nhóm tôi."
+  },
+  {
+    "pattern": "〜てあげます / 〜てもらいます / 〜てくれます",
+    "explanation_vi": "Làm hành động cho/nhận: あげる (tôi làm cho), もらう (nhờ làm cho tôi), くれる (người khác làm cho tôi).",
+    "examples": [
+      {
+        "ja": "荷物を運んであげました。",
+        "vi": "Tôi giúp xách hành lý cho."
+      },
+      {
+        "ja": "先生に説明してもらいました。",
+        "vi": "Nhờ thầy giải thích."
+      },
+      {
+        "ja": "友達が手伝ってくれました。",
+        "vi": "Bạn giúp tôi."
+      }
+    ],
+    "notes_vi": null
+  },
+  {
+    "pattern": "〜そうです（様態）",
+    "explanation_vi": "Trông có vẻ ~: nhận xét dựa trên quan sát trực tiếp.",
+    "examples": [
+      {
+        "ja": "このケーキはおいしそうです。",
+        "vi": "Chiếc bánh này trông có vẻ ngon."
+      },
+      {
+        "ja": "彼は眠そうです。",
+        "vi": "Trông anh ấy có vẻ buồn ngủ."
+      }
+    ],
+    "notes_vi": "Tính từ い: bỏ い + そう. Tính từ な: bỏ な + そう. Động từ: masu-stem + そう."
+  },
+  {
+    "pattern": "〜そうです（伝聞）",
+    "explanation_vi": "Nghe nói ~, theo như ~: truyền đạt thông tin nghe được.",
+    "examples": [
+      {
+        "ja": "明日は雨が降るそうです。",
+        "vi": "Nghe nói ngày mai sẽ mưa."
+      },
+      {
+        "ja": "田中さんは来ないそうです。",
+        "vi": "Nghe nói anh Tanaka không đến."
+      }
+    ],
+    "notes_vi": "Dùng thể thông thường (普通形) + そうです. Khác với 様態 (trông có vẻ)."
+  },
+  {
+    "pattern": "〜ようです / 〜みたいです",
+    "explanation_vi": "Có vẻ ~, như ~: suy đoán dựa trên bằng chứng gián tiếp.",
+    "examples": [
+      {
+        "ja": "誰かいるようです。",
+        "vi": "Có vẻ như có ai đó ở đó."
+      },
+      {
+        "ja": "彼女は眠れなかったみたいです。",
+        "vi": "Có vẻ cô ấy không ngủ được."
+      }
+    ],
+    "notes_vi": "ようです lịch sự hơn, みたいです thân mật hơn."
+  },
+  {
+    "pattern": "〜ため（に）",
+    "explanation_vi": "Vì ~, để ~: chỉ mục đích hoặc nguyên nhân.",
+    "examples": [
+      {
+        "ja": "健康のために走ります。",
+        "vi": "Chạy bộ vì sức khỏe."
+      },
+      {
+        "ja": "試験のために勉強しています。",
+        "vi": "Học để thi."
+      }
+    ],
+    "notes_vi": "Danh từ + のために, động từ từ điển + ために."
+  },
+  {
+    "pattern": "〜について",
+    "explanation_vi": "Về ~: chỉ chủ đề bàn luận.",
+    "examples": [
+      {
+        "ja": "日本の文化について話しました。",
+        "vi": "Đã nói về văn hóa Nhật Bản."
+      },
+      {
+        "ja": "この問題について教えてください。",
+        "vi": "Hãy giải thích về vấn đề này cho tôi."
+      }
+    ],
+    "notes_vi": null
+  },
+  {
+    "pattern": "〜かもしれません",
+    "explanation_vi": "Có thể là ~, có lẽ ~: biểu thị khả năng (khoảng 50%)",
+    "examples": [
+      {
+        "ja": "明日は雨かもしれません。",
+        "vi": "Ngày mai có lẽ mưa."
+      },
+      {
+        "ja": "彼女は知っているかもしれません。",
+        "vi": "Cô ấy có thể biết."
+      }
+    ],
+    "notes_vi": "Thể thông thường + かもしれません. Ít chắc chắn hơn でしょう."
+  },
+  {
+    "pattern": "〜はずです",
+    "explanation_vi": "Đáng lẽ phải ~, chắc chắn ~: kỳ vọng hợp lý dựa trên logic.",
+    "examples": [
+      {
+        "ja": "彼はもう来るはずです。",
+        "vi": "Lẽ ra anh ấy phải đến rồi."
+      },
+      {
+        "ja": "この道でいいはずです。",
+        "vi": "Con đường này chắc là đúng."
+      }
+    ],
+    "notes_vi": null
+  },
+  {
+    "pattern": "〜のに",
+    "explanation_vi": "Mặc dù ~, dù ~ (nhưng kết quả ngược kỳ vọng): diễn tả sự thất vọng.",
+    "examples": [
+      {
+        "ja": "一生懸命勉強したのに、試験に落ちました。",
+        "vi": "Dù học chăm chỉ nhưng vẫn trượt thi."
+      },
+      {
+        "ja": "傘を持ってきたのに、雨が降りませんでした。",
+        "vi": "Đã mang ô đến nhưng trời không mưa."
+      }
+    ],
+    "notes_vi": "のに mang sắc thái tiếc nuối, thất vọng. Khác với けど/が là trung tính hơn."
+  },
+  {
+    "pattern": "〜けど / 〜が（逆接）",
+    "explanation_vi": "Nhưng ~, tuy nhiên ~: nối hai mệnh đề tương phản.",
+    "examples": [
+      {
+        "ja": "寒いけど、散歩します。",
+        "vi": "Dù lạnh nhưng vẫn đi dạo."
+      },
+      {
+        "ja": "行きたいですが、時間がありません。",
+        "vi": "Muốn đi nhưng không có thời gian."
+      }
+    ],
+    "notes_vi": "が lịch sự hơn けど. Cả hai đều là liên từ đối lập."
+  }
+]

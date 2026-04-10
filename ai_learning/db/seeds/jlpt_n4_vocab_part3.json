@@ -1,0 +1,1084 @@
+[
+  {
+    "word": "取る",
+    "reading": "とる",
+    "romaji": "toru",
+    "meaning_vi": "lấy, cầm; chụp (ảnh)",
+    "part_of_speech": "verb",
+    "tags": [
+      "action"
+    ]
+  },
+  {
+    "word": "借りる",
+    "reading": "かりる",
+    "romaji": "kariru",
+    "meaning_vi": "mượn, thuê",
+    "part_of_speech": "verb",
+    "tags": [
+      "action"
+    ]
+  },
+  {
+    "word": "貸す",
+    "reading": "かす",
+    "romaji": "kasu",
+    "meaning_vi": "cho mượn, cho thuê",
+    "part_of_speech": "verb",
+    "tags": [
+      "action"
+    ]
+  },
+  {
+    "word": "払う",
+    "reading": "はらう",
+    "romaji": "harau",
+    "meaning_vi": "trả tiền, thanh toán",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "money"
+    ]
+  },
+  {
+    "word": "稼ぐ",
+    "reading": "かせぐ",
+    "romaji": "kasegu",
+    "meaning_vi": "kiếm tiền, kiếm được",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "money",
+      "work"
+    ]
+  },
+  {
+    "word": "使う",
+    "reading": "つかう",
+    "romaji": "tsukau",
+    "meaning_vi": "sử dụng, dùng",
+    "part_of_speech": "verb",
+    "tags": [
+      "action"
+    ]
+  },
+  {
+    "word": "作る",
+    "reading": "つくる",
+    "romaji": "tsukuru",
+    "meaning_vi": "làm, tạo ra, chế tạo",
+    "part_of_speech": "verb",
+    "tags": [
+      "action"
+    ]
+  },
+  {
+    "word": "直す",
+    "reading": "なおす",
+    "romaji": "naosu",
+    "meaning_vi": "sửa chữa, chữa bệnh",
+    "part_of_speech": "verb",
+    "tags": [
+      "action"
+    ]
+  },
+  {
+    "word": "壊す",
+    "reading": "こわす",
+    "romaji": "kowasu",
+    "meaning_vi": "phá vỡ, làm hỏng",
+    "part_of_speech": "verb",
+    "tags": [
+      "action"
+    ]
+  },
+  {
+    "word": "閉める",
+    "reading": "しめる",
+    "romaji": "shimeru",
+    "meaning_vi": "đóng (cửa, cửa sổ)",
+    "part_of_speech": "verb",
+    "tags": [
+      "action"
+    ]
+  },
+  {
+    "word": "開ける",
+    "reading": "あける",
+    "romaji": "akeru",
+    "meaning_vi": "mở (cửa, hộp)",
+    "part_of_speech": "verb",
+    "tags": [
+      "action"
+    ]
+  },
+  {
+    "word": "動く",
+    "reading": "うごく",
+    "romaji": "ugoku",
+    "meaning_vi": "di chuyển, cử động, hoạt động",
+    "part_of_speech": "verb",
+    "tags": [
+      "action"
+    ]
+  },
+  {
+    "word": "止まる",
+    "reading": "とまる",
+    "romaji": "tomaru",
+    "meaning_vi": "dừng lại, ngừng lại",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "transport"
+    ]
+  },
+  {
+    "word": "乗り換える",
+    "reading": "のりかえる",
+    "romaji": "norikaeru",
+    "meaning_vi": "chuyển tàu/xe, đổi tuyến",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "transport"
+    ]
+  },
+  {
+    "word": "乗る",
+    "reading": "のる",
+    "romaji": "noru",
+    "meaning_vi": "lên (xe, tàu), đi bằng",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "transport"
+    ]
+  },
+  {
+    "word": "降りる",
+    "reading": "おりる",
+    "romaji": "oriru",
+    "meaning_vi": "xuống (xe, tàu), xuống dốc",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "transport"
+    ]
+  },
+  {
+    "word": "渡る",
+    "reading": "わたる",
+    "romaji": "wataru",
+    "meaning_vi": "qua (đường, cầu), vượt sang",
+    "part_of_speech": "verb",
+    "tags": [
+      "action"
+    ]
+  },
+  {
+    "word": "曲がる",
+    "reading": "まがる",
+    "romaji": "magaru",
+    "meaning_vi": "rẽ, quẹo; cong",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "direction"
+    ]
+  },
+  {
+    "word": "走る",
+    "reading": "はしる",
+    "romaji": "hashiru",
+    "meaning_vi": "chạy",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "movement"
+    ]
+  },
+  {
+    "word": "急ぐ",
+    "reading": "いそぐ",
+    "romaji": "isogu",
+    "meaning_vi": "vội vàng, hối hả",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "movement"
+    ]
+  },
+  {
+    "word": "戻る",
+    "reading": "もどる",
+    "romaji": "modoru",
+    "meaning_vi": "quay lại, trở về",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "movement"
+    ]
+  },
+  {
+    "word": "通う",
+    "reading": "かよう",
+    "romaji": "kayou",
+    "meaning_vi": "đi lại thường xuyên, thông qua",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "transport"
+    ]
+  },
+  {
+    "word": "引っ越す",
+    "reading": "ひっこす",
+    "romaji": "hikkosu",
+    "meaning_vi": "chuyển nhà",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "house"
+    ]
+  },
+  {
+    "word": "住む",
+    "reading": "すむ",
+    "romaji": "sumu",
+    "meaning_vi": "sống, cư trú",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "house"
+    ]
+  },
+  {
+    "word": "泊まる",
+    "reading": "とまる",
+    "romaji": "tomaru",
+    "meaning_vi": "ở lại qua đêm, trọ",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "travel"
+    ]
+  },
+  {
+    "word": "招待する",
+    "reading": "しょうたいする",
+    "romaji": "shoutai suru",
+    "meaning_vi": "mời, chiêu đãi",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "social"
+    ]
+  },
+  {
+    "word": "訪問する",
+    "reading": "ほうもんする",
+    "romaji": "houmon suru",
+    "meaning_vi": "thăm viếng, viếng thăm",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "social"
+    ]
+  },
+  {
+    "word": "集まる",
+    "reading": "あつまる",
+    "romaji": "atsumaru",
+    "meaning_vi": "tập hợp lại, tụ tập",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "social"
+    ]
+  },
+  {
+    "word": "別れる",
+    "reading": "わかれる",
+    "romaji": "wakareru",
+    "meaning_vi": "chia tay, chia xa",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "social"
+    ]
+  },
+  {
+    "word": "相談する",
+    "reading": "そうだんする",
+    "romaji": "soudan suru",
+    "meaning_vi": "tư vấn, hỏi ý kiến, bàn bạc",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "communication"
+    ]
+  },
+  {
+    "word": "注意する",
+    "reading": "ちゅういする",
+    "romaji": "chuui suru",
+    "meaning_vi": "chú ý, cảnh báo, nhắc nhở",
+    "part_of_speech": "verb",
+    "tags": [
+      "action"
+    ]
+  },
+  {
+    "word": "心配する",
+    "reading": "しんぱいする",
+    "romaji": "shinpai suru",
+    "meaning_vi": "lo lắng, lo âu",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "feeling"
+    ]
+  },
+  {
+    "word": "安心する",
+    "reading": "あんしんする",
+    "romaji": "anshin suru",
+    "meaning_vi": "yên tâm, an tâm",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "feeling"
+    ]
+  },
+  {
+    "word": "失敗する",
+    "reading": "しっぱいする",
+    "romaji": "shippai suru",
+    "meaning_vi": "thất bại, sai lầm",
+    "part_of_speech": "verb",
+    "tags": [
+      "action"
+    ]
+  },
+  {
+    "word": "成功する",
+    "reading": "せいこうする",
+    "romaji": "seikou suru",
+    "meaning_vi": "thành công",
+    "part_of_speech": "verb",
+    "tags": [
+      "action"
+    ]
+  },
+  {
+    "word": "確認する",
+    "reading": "かくにんする",
+    "romaji": "kakunin suru",
+    "meaning_vi": "xác nhận, kiểm tra lại",
+    "part_of_speech": "verb",
+    "tags": [
+      "action"
+    ]
+  },
+  {
+    "word": "説明する",
+    "reading": "せつめいする",
+    "romaji": "setsumei suru",
+    "meaning_vi": "giải thích, thuyết minh",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "communication"
+    ]
+  },
+  {
+    "word": "比べる",
+    "reading": "くらべる",
+    "romaji": "kuraberu",
+    "meaning_vi": "so sánh",
+    "part_of_speech": "verb",
+    "tags": [
+      "action"
+    ]
+  },
+  {
+    "word": "選ぶ",
+    "reading": "えらぶ",
+    "romaji": "erabu",
+    "meaning_vi": "chọn lựa, lựa chọn",
+    "part_of_speech": "verb",
+    "tags": [
+      "action"
+    ]
+  },
+  {
+    "word": "断る",
+    "reading": "ことわる",
+    "romaji": "kotowaru",
+    "meaning_vi": "từ chối, khước từ",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "social"
+    ]
+  },
+  {
+    "word": "頼む",
+    "reading": "たのむ",
+    "romaji": "tanomu",
+    "meaning_vi": "nhờ vả, yêu cầu, cậy",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "social"
+    ]
+  },
+  {
+    "word": "手伝う",
+    "reading": "てつだう",
+    "romaji": "tetsudau",
+    "meaning_vi": "giúp đỡ, phụ giúp",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "social"
+    ]
+  },
+  {
+    "word": "直る",
+    "reading": "なおる",
+    "romaji": "naoru",
+    "meaning_vi": "được sửa chữa, khỏi bệnh",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "health"
+    ]
+  },
+  {
+    "word": "治る",
+    "reading": "なおる",
+    "romaji": "naoru",
+    "meaning_vi": "hồi phục, khỏi (bệnh)",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "health"
+    ]
+  },
+  {
+    "word": "休む",
+    "reading": "やすむ",
+    "romaji": "yasumu",
+    "meaning_vi": "nghỉ ngơi, vắng mặt",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "health"
+    ]
+  },
+  {
+    "word": "太る",
+    "reading": "ふとる",
+    "romaji": "futoru",
+    "meaning_vi": "béo lên, tăng cân",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "body"
+    ]
+  },
+  {
+    "word": "痩せる",
+    "reading": "やせる",
+    "romaji": "yaseru",
+    "meaning_vi": "giảm cân, gầy đi",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "body"
+    ]
+  },
+  {
+    "word": "産む",
+    "reading": "うむ",
+    "romaji": "umu",
+    "meaning_vi": "sinh (con), đẻ",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "body"
+    ]
+  },
+  {
+    "word": "育てる",
+    "reading": "そだてる",
+    "romaji": "sodateru",
+    "meaning_vi": "nuôi dưỡng, chăm sóc (con cái, cây)",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "family"
+    ]
+  },
+  {
+    "word": "叱る",
+    "reading": "しかる",
+    "romaji": "shikaru",
+    "meaning_vi": "mắng, la rầy",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "social"
+    ]
+  },
+  {
+    "word": "褒める",
+    "reading": "ほめる",
+    "romaji": "homeru",
+    "meaning_vi": "khen ngợi, tán dương",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "social"
+    ]
+  },
+  {
+    "word": "泣く",
+    "reading": "なく",
+    "romaji": "naku",
+    "meaning_vi": "khóc",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "feeling"
+    ]
+  },
+  {
+    "word": "笑う",
+    "reading": "わらう",
+    "romaji": "warau",
+    "meaning_vi": "cười",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "feeling"
+    ]
+  },
+  {
+    "word": "怒る",
+    "reading": "おこる",
+    "romaji": "okoru",
+    "meaning_vi": "tức giận, nổi giận",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "feeling"
+    ]
+  },
+  {
+    "word": "驚く",
+    "reading": "おどろく",
+    "romaji": "odoroku",
+    "meaning_vi": "ngạc nhiên, kinh ngạc",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "feeling"
+    ]
+  },
+  {
+    "word": "困る",
+    "reading": "こまる",
+    "romaji": "komaru",
+    "meaning_vi": "gặp khó khăn, bối rối, khó xử",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "feeling"
+    ]
+  },
+  {
+    "word": "諦める",
+    "reading": "あきらめる",
+    "romaji": "akirameru",
+    "meaning_vi": "từ bỏ, buông xuôi",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "feeling"
+    ]
+  },
+  {
+    "word": "喜ぶ",
+    "reading": "よろこぶ",
+    "romaji": "yorokobu",
+    "meaning_vi": "vui mừng, hân hoan",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "feeling"
+    ]
+  },
+  {
+    "word": "落ち込む",
+    "reading": "おちこむ",
+    "romaji": "ochikomu",
+    "meaning_vi": "chán nản, thất vọng, xuống tinh thần",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "feeling"
+    ]
+  },
+  {
+    "word": "大切な",
+    "reading": "たいせつな",
+    "romaji": "taisetsuna",
+    "meaning_vi": "quan trọng, quý giá",
+    "part_of_speech": "adjective",
+    "tags": [
+      "na-adj",
+      "value"
+    ]
+  },
+  {
+    "word": "大事な",
+    "reading": "だいじな",
+    "romaji": "daijina",
+    "meaning_vi": "quan trọng, cẩn thận",
+    "part_of_speech": "adjective",
+    "tags": [
+      "na-adj",
+      "value"
+    ]
+  },
+  {
+    "word": "便利な",
+    "reading": "べんりな",
+    "romaji": "benrina",
+    "meaning_vi": "tiện lợi, thuận tiện",
+    "part_of_speech": "adjective",
+    "tags": [
+      "na-adj"
+    ]
+  },
+  {
+    "word": "不便な",
+    "reading": "ふべんな",
+    "romaji": "fubenna",
+    "meaning_vi": "bất tiện, không thuận tiện",
+    "part_of_speech": "adjective",
+    "tags": [
+      "na-adj"
+    ]
+  },
+  {
+    "word": "安全な",
+    "reading": "あんぜんな",
+    "romaji": "anzenna",
+    "meaning_vi": "an toàn",
+    "part_of_speech": "adjective",
+    "tags": [
+      "na-adj"
+    ]
+  },
+  {
+    "word": "危険な",
+    "reading": "きけんな",
+    "romaji": "kikenna",
+    "meaning_vi": "nguy hiểm",
+    "part_of_speech": "adjective",
+    "tags": [
+      "na-adj"
+    ]
+  },
+  {
+    "word": "丁寧な",
+    "reading": "ていねいな",
+    "romaji": "teineina",
+    "meaning_vi": "lịch sự, cẩn thận, tỉ mỉ",
+    "part_of_speech": "adjective",
+    "tags": [
+      "na-adj",
+      "manner"
+    ]
+  },
+  {
+    "word": "失礼な",
+    "reading": "しつれいな",
+    "romaji": "shitsureina",
+    "meaning_vi": "vô lễ, thiếu lịch sự",
+    "part_of_speech": "adjective",
+    "tags": [
+      "na-adj",
+      "manner"
+    ]
+  },
+  {
+    "word": "正直な",
+    "reading": "しょうじきな",
+    "romaji": "shoujikina",
+    "meaning_vi": "thành thật, trung thực",
+    "part_of_speech": "adjective",
+    "tags": [
+      "na-adj",
+      "personality"
+    ]
+  },
+  {
+    "word": "真面目な",
+    "reading": "まじめな",
+    "romaji": "majimena",
+    "meaning_vi": "nghiêm túc, chăm chỉ, thật thà",
+    "part_of_speech": "adjective",
+    "tags": [
+      "na-adj",
+      "personality"
+    ]
+  },
+  {
+    "word": "親切な",
+    "reading": "しんせつな",
+    "romaji": "shinsetsu na",
+    "meaning_vi": "tốt bụng, thân thiện, nhiệt tình",
+    "part_of_speech": "adjective",
+    "tags": [
+      "na-adj",
+      "personality"
+    ]
+  },
+  {
+    "word": "幸せな",
+    "reading": "しあわせな",
+    "romaji": "shiawasena",
+    "meaning_vi": "hạnh phúc",
+    "part_of_speech": "adjective",
+    "tags": [
+      "na-adj",
+      "feeling"
+    ]
+  },
+  {
+    "word": "不幸な",
+    "reading": "ふこうな",
+    "romaji": "fukouna",
+    "meaning_vi": "bất hạnh, khổ sở",
+    "part_of_speech": "adjective",
+    "tags": [
+      "na-adj",
+      "feeling"
+    ]
+  },
+  {
+    "word": "元気な",
+    "reading": "げんきな",
+    "romaji": "genkina",
+    "meaning_vi": "khỏe mạnh, sôi nổi",
+    "part_of_speech": "adjective",
+    "tags": [
+      "na-adj",
+      "health"
+    ]
+  },
+  {
+    "word": "得意な",
+    "reading": "とくいな",
+    "romaji": "tokuina",
+    "meaning_vi": "giỏi về, sở trường",
+    "part_of_speech": "adjective",
+    "tags": [
+      "na-adj",
+      "ability"
+    ]
+  },
+  {
+    "word": "苦手な",
+    "reading": "にがてな",
+    "romaji": "nigatena",
+    "meaning_vi": "không giỏi, điểm yếu",
+    "part_of_speech": "adjective",
+    "tags": [
+      "na-adj",
+      "ability"
+    ]
+  },
+  {
+    "word": "無駄な",
+    "reading": "むだな",
+    "romaji": "mudana",
+    "meaning_vi": "lãng phí, vô ích",
+    "part_of_speech": "adjective",
+    "tags": [
+      "na-adj"
+    ]
+  },
+  {
+    "word": "必要な",
+    "reading": "ひつような",
+    "romaji": "hitsuyouna",
+    "meaning_vi": "cần thiết, cần có",
+    "part_of_speech": "adjective",
+    "tags": [
+      "na-adj"
+    ]
+  },
+  {
+    "word": "特別な",
+    "reading": "とくべつな",
+    "romaji": "tokubetsuna",
+    "meaning_vi": "đặc biệt",
+    "part_of_speech": "adjective",
+    "tags": [
+      "na-adj"
+    ]
+  },
+  {
+    "word": "普通の",
+    "reading": "ふつうの",
+    "romaji": "futsuu no",
+    "meaning_vi": "bình thường, thông thường",
+    "part_of_speech": "adjective",
+    "tags": [
+      "na-adj"
+    ]
+  },
+  {
+    "word": "嬉しい",
+    "reading": "うれしい",
+    "romaji": "ureshii",
+    "meaning_vi": "vui mừng, sung sướng",
+    "part_of_speech": "adjective",
+    "tags": [
+      "i-adj",
+      "feeling"
+    ]
+  },
+  {
+    "word": "悲しい",
+    "reading": "かなしい",
+    "romaji": "kanashii",
+    "meaning_vi": "buồn bã, đau lòng",
+    "part_of_speech": "adjective",
+    "tags": [
+      "i-adj",
+      "feeling"
+    ]
+  },
+  {
+    "word": "恥ずかしい",
+    "reading": "はずかしい",
+    "romaji": "hazukashii",
+    "meaning_vi": "xấu hổ, bẽn lẽn",
+    "part_of_speech": "adjective",
+    "tags": [
+      "i-adj",
+      "feeling"
+    ]
+  },
+  {
+    "word": "懐かしい",
+    "reading": "なつかしい",
+    "romaji": "natsukashii",
+    "meaning_vi": "nhớ nhung, hoài cổ",
+    "part_of_speech": "adjective",
+    "tags": [
+      "i-adj",
+      "feeling"
+    ]
+  },
+  {
+    "word": "眠い",
+    "reading": "ねむい",
+    "romaji": "nemui",
+    "meaning_vi": "buồn ngủ",
+    "part_of_speech": "adjective",
+    "tags": [
+      "i-adj",
+      "feeling",
+      "body"
+    ]
+  },
+  {
+    "word": "疲れた",
+    "reading": "つかれた",
+    "romaji": "tsukareta",
+    "meaning_vi": "mệt mỏi",
+    "part_of_speech": "adjective",
+    "tags": [
+      "i-adj",
+      "feeling",
+      "body"
+    ]
+  },
+  {
+    "word": "痛い",
+    "reading": "いたい",
+    "romaji": "itai",
+    "meaning_vi": "đau",
+    "part_of_speech": "adjective",
+    "tags": [
+      "i-adj",
+      "health",
+      "body"
+    ]
+  },
+  {
+    "word": "かゆい",
+    "reading": "かゆい",
+    "romaji": "kayui",
+    "meaning_vi": "ngứa",
+    "part_of_speech": "adjective",
+    "tags": [
+      "i-adj",
+      "health",
+      "body"
+    ]
+  },
+  {
+    "word": "重い",
+    "reading": "おもい",
+    "romaji": "omoi",
+    "meaning_vi": "nặng; trầm trọng",
+    "part_of_speech": "adjective",
+    "tags": [
+      "i-adj",
+      "weight"
+    ]
+  },
+  {
+    "word": "軽い",
+    "reading": "かるい",
+    "romaji": "karui",
+    "meaning_vi": "nhẹ; nhẹ nhàng",
+    "part_of_speech": "adjective",
+    "tags": [
+      "i-adj",
+      "weight"
+    ]
+  },
+  {
+    "word": "硬い",
+    "reading": "かたい",
+    "romaji": "katai",
+    "meaning_vi": "cứng, rắn",
+    "part_of_speech": "adjective",
+    "tags": [
+      "i-adj",
+      "texture"
+    ]
+  },
+  {
+    "word": "柔らかい",
+    "reading": "やわらかい",
+    "romaji": "yawarakai",
+    "meaning_vi": "mềm mại, mềm",
+    "part_of_speech": "adjective",
+    "tags": [
+      "i-adj",
+      "texture"
+    ]
+  },
+  {
+    "word": "甘い",
+    "reading": "あまい",
+    "romaji": "amai",
+    "meaning_vi": "ngọt; dễ dàng",
+    "part_of_speech": "adjective",
+    "tags": [
+      "i-adj",
+      "taste",
+      "food"
+    ]
+  },
+  {
+    "word": "辛い",
+    "reading": "からい",
+    "romaji": "karai",
+    "meaning_vi": "cay",
+    "part_of_speech": "adjective",
+    "tags": [
+      "i-adj",
+      "taste",
+      "food"
+    ]
+  },
+  {
+    "word": "酸っぱい",
+    "reading": "すっぱい",
+    "romaji": "suppai",
+    "meaning_vi": "chua",
+    "part_of_speech": "adjective",
+    "tags": [
+      "i-adj",
+      "taste",
+      "food"
+    ]
+  },
+  {
+    "word": "苦い",
+    "reading": "にがい",
+    "romaji": "nigai",
+    "meaning_vi": "đắng",
+    "part_of_speech": "adjective",
+    "tags": [
+      "i-adj",
+      "taste",
+      "food"
+    ]
+  },
+  {
+    "word": "臭い",
+    "reading": "くさい",
+    "romaji": "kusai",
+    "meaning_vi": "hôi, có mùi khó chịu",
+    "part_of_speech": "adjective",
+    "tags": [
+      "i-adj",
+      "smell"
+    ]
+  },
+  {
+    "word": "珍しい",
+    "reading": "めずらしい",
+    "romaji": "mezurashii",
+    "meaning_vi": "hiếm có, lạ, độc đáo",
+    "part_of_speech": "adjective",
+    "tags": [
+      "i-adj"
+    ]
+  },
+  {
+    "word": "正しい",
+    "reading": "ただしい",
+    "romaji": "tadashii",
+    "meaning_vi": "đúng, chính xác",
+    "part_of_speech": "adjective",
+    "tags": [
+      "i-adj"
+    ]
+  },
+  {
+    "word": "厳しい",
+    "reading": "きびしい",
+    "romaji": "kibishii",
+    "meaning_vi": "nghiêm khắc, khắt khe",
+    "part_of_speech": "adjective",
+    "tags": [
+      "i-adj",
+      "personality"
+    ]
+  },
+  {
+    "word": "優しい",
+    "reading": "やさしい",
+    "romaji": "yasashii",
+    "meaning_vi": "dịu dàng, tốt bụng",
+    "part_of_speech": "adjective",
+    "tags": [
+      "i-adj",
+      "personality"
+    ]
+  }
+]

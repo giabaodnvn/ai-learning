@@ -1,0 +1,475 @@
+[
+  {
+    "word": "もうすぐ",
+    "reading": "もうすぐ",
+    "romaji": "mousugu",
+    "meaning_vi": "sắp, sắp tới, chẳng mấy chốc",
+    "part_of_speech": "adverb",
+    "tags": [
+      "time",
+      "adverb"
+    ]
+  },
+  {
+    "word": "なかなか",
+    "reading": "なかなか",
+    "romaji": "nakanaka",
+    "meaning_vi": "khá, tương đối; (+ phủ định) không dễ dàng",
+    "part_of_speech": "adverb",
+    "tags": [
+      "adverb",
+      "degree"
+    ]
+  },
+  {
+    "word": "やっと",
+    "reading": "やっと",
+    "romaji": "yatto",
+    "meaning_vi": "cuối cùng cũng, mãi mới",
+    "part_of_speech": "adverb",
+    "tags": [
+      "adverb",
+      "time"
+    ]
+  },
+  {
+    "word": "ようやく",
+    "reading": "ようやく",
+    "romaji": "youyaku",
+    "meaning_vi": "cuối cùng, rốt cục",
+    "part_of_speech": "adverb",
+    "tags": [
+      "adverb",
+      "time"
+    ]
+  },
+  {
+    "word": "すでに",
+    "reading": "すでに",
+    "romaji": "sudeni",
+    "meaning_vi": "đã rồi, trước rồi",
+    "part_of_speech": "adverb",
+    "tags": [
+      "adverb",
+      "time"
+    ]
+  },
+  {
+    "word": "まだ",
+    "reading": "まだ",
+    "romaji": "mada",
+    "meaning_vi": "vẫn còn, chưa (+ phủ định)",
+    "part_of_speech": "adverb",
+    "tags": [
+      "adverb",
+      "time"
+    ]
+  },
+  {
+    "word": "もう",
+    "reading": "もう",
+    "romaji": "mou",
+    "meaning_vi": "rồi, đã; (+ phủ định) không nữa",
+    "part_of_speech": "adverb",
+    "tags": [
+      "adverb",
+      "time"
+    ]
+  },
+  {
+    "word": "きっと",
+    "reading": "きっと",
+    "romaji": "kitto",
+    "meaning_vi": "chắc chắn, nhất định",
+    "part_of_speech": "adverb",
+    "tags": [
+      "adverb",
+      "certainty"
+    ]
+  },
+  {
+    "word": "たぶん",
+    "reading": "たぶん",
+    "romaji": "tabun",
+    "meaning_vi": "có lẽ, chắc là",
+    "part_of_speech": "adverb",
+    "tags": [
+      "adverb",
+      "certainty"
+    ]
+  },
+  {
+    "word": "もしかしたら",
+    "reading": "もしかしたら",
+    "romaji": "moshikashitara",
+    "meaning_vi": "biết đâu, có thể là",
+    "part_of_speech": "adverb",
+    "tags": [
+      "adverb",
+      "certainty"
+    ]
+  },
+  {
+    "word": "ぜひ",
+    "reading": "ぜひ",
+    "romaji": "zehi",
+    "meaning_vi": "nhất định, chắc chắn (mong muốn)",
+    "part_of_speech": "adverb",
+    "tags": [
+      "adverb",
+      "desire"
+    ]
+  },
+  {
+    "word": "特に",
+    "reading": "とくに",
+    "romaji": "tokuni",
+    "meaning_vi": "đặc biệt, nhất là",
+    "part_of_speech": "adverb",
+    "tags": [
+      "adverb",
+      "degree"
+    ]
+  },
+  {
+    "word": "主に",
+    "reading": "おもに",
+    "romaji": "omoni",
+    "meaning_vi": "chủ yếu, phần lớn",
+    "part_of_speech": "adverb",
+    "tags": [
+      "adverb",
+      "degree"
+    ]
+  },
+  {
+    "word": "だんだん",
+    "reading": "だんだん",
+    "romaji": "dandan",
+    "meaning_vi": "dần dần, ngày càng",
+    "part_of_speech": "adverb",
+    "tags": [
+      "adverb",
+      "change"
+    ]
+  },
+  {
+    "word": "どんどん",
+    "reading": "どんどん",
+    "romaji": "dondon",
+    "meaning_vi": "ngày càng, cứ thế tăng lên",
+    "part_of_speech": "adverb",
+    "tags": [
+      "adverb",
+      "change"
+    ]
+  },
+  {
+    "word": "少しずつ",
+    "reading": "すこしずつ",
+    "romaji": "sukoshi zutsu",
+    "meaning_vi": "từng chút một, dần dần",
+    "part_of_speech": "adverb",
+    "tags": [
+      "adverb",
+      "quantity"
+    ]
+  },
+  {
+    "word": "いつでも",
+    "reading": "いつでも",
+    "romaji": "itsudemo",
+    "meaning_vi": "bất cứ lúc nào",
+    "part_of_speech": "adverb",
+    "tags": [
+      "adverb",
+      "time"
+    ]
+  },
+  {
+    "word": "どこでも",
+    "reading": "どこでも",
+    "romaji": "dokodemo",
+    "meaning_vi": "bất cứ nơi nào",
+    "part_of_speech": "adverb",
+    "tags": [
+      "adverb",
+      "place"
+    ]
+  },
+  {
+    "word": "なんでも",
+    "reading": "なんでも",
+    "romaji": "nandemo",
+    "meaning_vi": "bất cứ điều gì",
+    "part_of_speech": "adverb",
+    "tags": [
+      "adverb"
+    ]
+  },
+  {
+    "word": "ほとんど",
+    "reading": "ほとんど",
+    "romaji": "hotondo",
+    "meaning_vi": "hầu hết, gần như",
+    "part_of_speech": "adverb",
+    "tags": [
+      "adverb",
+      "quantity"
+    ]
+  },
+  {
+    "word": "かなり",
+    "reading": "かなり",
+    "romaji": "kanari",
+    "meaning_vi": "khá, tương đối, đáng kể",
+    "part_of_speech": "adverb",
+    "tags": [
+      "adverb",
+      "degree"
+    ]
+  },
+  {
+    "word": "非常に",
+    "reading": "ひじょうに",
+    "romaji": "hijou ni",
+    "meaning_vi": "rất, vô cùng, phi thường",
+    "part_of_speech": "adverb",
+    "tags": [
+      "adverb",
+      "degree"
+    ]
+  },
+  {
+    "word": "思ったより",
+    "reading": "おもったより",
+    "romaji": "omotta yori",
+    "meaning_vi": "hơn tưởng, hơn mong đợi",
+    "part_of_speech": "adverb",
+    "tags": [
+      "adverb",
+      "degree"
+    ]
+  },
+  {
+    "word": "実は",
+    "reading": "じつは",
+    "romaji": "jitsu wa",
+    "meaning_vi": "thực ra, thực ra là",
+    "part_of_speech": "adverb",
+    "tags": [
+      "adverb",
+      "discourse"
+    ]
+  },
+  {
+    "word": "ところで",
+    "reading": "ところで",
+    "romaji": "tokorode",
+    "meaning_vi": "nhân tiện, thế thì",
+    "part_of_speech": "adverb",
+    "tags": [
+      "adverb",
+      "discourse"
+    ]
+  },
+  {
+    "word": "それから",
+    "reading": "それから",
+    "romaji": "sorekara",
+    "meaning_vi": "và sau đó, rồi thì",
+    "part_of_speech": "adverb",
+    "tags": [
+      "adverb",
+      "sequence"
+    ]
+  },
+  {
+    "word": "それに",
+    "reading": "それに",
+    "romaji": "soreni",
+    "meaning_vi": "hơn nữa, và thêm vào đó",
+    "part_of_speech": "adverb",
+    "tags": [
+      "adverb",
+      "addition"
+    ]
+  },
+  {
+    "word": "しかし",
+    "reading": "しかし",
+    "romaji": "shikashi",
+    "meaning_vi": "tuy nhiên, nhưng",
+    "part_of_speech": "adverb",
+    "tags": [
+      "adverb",
+      "contrast"
+    ]
+  },
+  {
+    "word": "でも",
+    "reading": "でも",
+    "romaji": "demo",
+    "meaning_vi": "nhưng, tuy nhiên (thông thường)",
+    "part_of_speech": "adverb",
+    "tags": [
+      "adverb",
+      "contrast"
+    ]
+  },
+  {
+    "word": "番号",
+    "reading": "ばんごう",
+    "romaji": "bangou",
+    "meaning_vi": "số, mã số",
+    "part_of_speech": "noun",
+    "tags": [
+      "number"
+    ]
+  },
+  {
+    "word": "台",
+    "reading": "だい",
+    "romaji": "dai",
+    "meaning_vi": "(đếm xe cộ, máy móc)",
+    "part_of_speech": "noun",
+    "tags": [
+      "counter"
+    ]
+  },
+  {
+    "word": "冊",
+    "reading": "さつ",
+    "romaji": "satsu",
+    "meaning_vi": "(đếm sách, vở)",
+    "part_of_speech": "noun",
+    "tags": [
+      "counter"
+    ]
+  },
+  {
+    "word": "枚",
+    "reading": "まい",
+    "romaji": "mai",
+    "meaning_vi": "(đếm vật phẳng mỏng: tờ giấy, tấm ảnh)",
+    "part_of_speech": "noun",
+    "tags": [
+      "counter"
+    ]
+  },
+  {
+    "word": "本",
+    "reading": "ほん",
+    "romaji": "hon",
+    "meaning_vi": "(đếm vật dài, dạng trụ: bút, chai, cây)",
+    "part_of_speech": "noun",
+    "tags": [
+      "counter"
+    ]
+  },
+  {
+    "word": "杯",
+    "reading": "はい",
+    "romaji": "hai",
+    "meaning_vi": "(đếm cốc, chén, bát)",
+    "part_of_speech": "noun",
+    "tags": [
+      "counter",
+      "food"
+    ]
+  },
+  {
+    "word": "回",
+    "reading": "かい",
+    "romaji": "kai",
+    "meaning_vi": "lần, lượt (số lần)",
+    "part_of_speech": "noun",
+    "tags": [
+      "counter",
+      "frequency"
+    ]
+  },
+  {
+    "word": "度",
+    "reading": "ど",
+    "romaji": "do",
+    "meaning_vi": "lần, lần nữa; độ (nhiệt độ, góc độ)",
+    "part_of_speech": "noun",
+    "tags": [
+      "counter"
+    ]
+  },
+  {
+    "word": "週間",
+    "reading": "しゅうかん",
+    "romaji": "shuukan",
+    "meaning_vi": "(đếm số tuần)",
+    "part_of_speech": "noun",
+    "tags": [
+      "counter",
+      "time"
+    ]
+  },
+  {
+    "word": "ヶ月",
+    "reading": "かげつ",
+    "romaji": "kagetsu",
+    "meaning_vi": "(đếm số tháng)",
+    "part_of_speech": "noun",
+    "tags": [
+      "counter",
+      "time"
+    ]
+  },
+  {
+    "word": "年間",
+    "reading": "ねんかん",
+    "romaji": "nenkan",
+    "meaning_vi": "(đếm số năm)",
+    "part_of_speech": "noun",
+    "tags": [
+      "counter",
+      "time"
+    ]
+  },
+  {
+    "word": "キロ",
+    "reading": "キロ",
+    "romaji": "kiro",
+    "meaning_vi": "ki-lô-gam; ki-lô-mét",
+    "part_of_speech": "noun",
+    "tags": [
+      "measurement"
+    ]
+  },
+  {
+    "word": "グラム",
+    "reading": "グラム",
+    "romaji": "guramu",
+    "meaning_vi": "gram",
+    "part_of_speech": "noun",
+    "tags": [
+      "measurement"
+    ]
+  },
+  {
+    "word": "センチ",
+    "reading": "センチ",
+    "romaji": "senchi",
+    "meaning_vi": "xăng-ti-mét, cm",
+    "part_of_speech": "noun",
+    "tags": [
+      "measurement"
+    ]
+  },
+  {
+    "word": "メートル",
+    "reading": "メートル",
+    "romaji": "meetoru",
+    "meaning_vi": "mét",
+    "part_of_speech": "noun",
+    "tags": [
+      "measurement"
+    ]
+  }
+]

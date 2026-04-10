@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.2].define(version: 2026_03_31_000002) do
+ActiveRecord::Schema[7.2].define(version: 2026_04_01_000001) do
   create_table "ai_usage_logs", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.bigint "user_id"
     t.string "feature", null: false
@@ -46,7 +46,7 @@ ActiveRecord::Schema[7.2].define(version: 2026_03_31_000002) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["jlpt_level"], name: "index_grammar_points_on_jlpt_level"
-    t.index ["pattern"], name: "index_grammar_points_on_pattern"
+    t.index ["pattern", "jlpt_level"], name: "idx_grammar_points_pattern_level_unique", unique: true
   end
 
   create_table "kanjis", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
@@ -198,7 +198,7 @@ ActiveRecord::Schema[7.2].define(version: 2026_03_31_000002) do
     t.json "tags"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["jlpt_level", "word"], name: "idx_vocabularies_level_word"
+    t.index ["jlpt_level", "word"], name: "idx_vocabularies_level_word_unique", unique: true
     t.index ["jlpt_level"], name: "index_vocabularies_on_jlpt_level"
     t.index ["part_of_speech"], name: "index_vocabularies_on_part_of_speech"
     t.index ["word"], name: "index_vocabularies_on_word"

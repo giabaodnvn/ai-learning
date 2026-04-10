@@ -1,0 +1,288 @@
+[
+  {
+    "character": "正",
+    "onyomi": [
+      "セイ",
+      "ショウ"
+    ],
+    "kunyomi": [
+      "ただ.しい",
+      "まさ"
+    ],
+    "meaning_vi": "đúng, chính",
+    "stroke_count": 5,
+    "vocab_examples": [
+      {
+        "word": "正しい",
+        "reading": "ただしい",
+        "meaning_vi": "đúng"
+      },
+      {
+        "word": "正直",
+        "reading": "しょうじき",
+        "meaning_vi": "thành thật"
+      },
+      {
+        "word": "正月",
+        "reading": "しょうがつ",
+        "meaning_vi": "tháng Giêng, Tết Nhật"
+      }
+    ]
+  },
+  {
+    "character": "夕",
+    "onyomi": [
+      "セキ"
+    ],
+    "kunyomi": [
+      "ゆう"
+    ],
+    "meaning_vi": "buổi tối",
+    "stroke_count": 3,
+    "vocab_examples": [
+      {
+        "word": "夕方",
+        "reading": "ゆうがた",
+        "meaning_vi": "buổi chiều tối"
+      },
+      {
+        "word": "夕飯",
+        "reading": "ゆうはん",
+        "meaning_vi": "bữa tối"
+      },
+      {
+        "word": "夕日",
+        "reading": "ゆうひ",
+        "meaning_vi": "mặt trời lặn"
+      }
+    ]
+  },
+  {
+    "character": "天",
+    "onyomi": [
+      "テン"
+    ],
+    "kunyomi": [
+      "あめ",
+      "あま"
+    ],
+    "meaning_vi": "trời, thiên",
+    "stroke_count": 4,
+    "vocab_examples": [
+      {
+        "word": "天気",
+        "reading": "てんき",
+        "meaning_vi": "thời tiết"
+      },
+      {
+        "word": "天国",
+        "reading": "てんごく",
+        "meaning_vi": "thiên đường"
+      },
+      {
+        "word": "天ぷら",
+        "reading": "てんぷら",
+        "meaning_vi": "tempura (món chiên xù)"
+      }
+    ]
+  },
+  {
+    "character": "町",
+    "onyomi": [
+      "チョウ"
+    ],
+    "kunyomi": [
+      "まち"
+    ],
+    "meaning_vi": "phố, thị trấn",
+    "stroke_count": 7,
+    "vocab_examples": [
+      {
+        "word": "町",
+        "reading": "まち",
+        "meaning_vi": "phố, thị trấn"
+      },
+      {
+        "word": "下町",
+        "reading": "したまち",
+        "meaning_vi": "khu phố cũ"
+      },
+      {
+        "word": "町内会",
+        "reading": "ちょうないかい",
+        "meaning_vi": "hội khu phố"
+      }
+    ]
+  },
+  {
+    "character": "村",
+    "onyomi": [
+      "ソン"
+    ],
+    "kunyomi": [
+      "むら"
+    ],
+    "meaning_vi": "làng",
+    "stroke_count": 7,
+    "vocab_examples": [
+      {
+        "word": "村",
+        "reading": "むら",
+        "meaning_vi": "làng"
+      },
+      {
+        "word": "農村",
+        "reading": "のうそん",
+        "meaning_vi": "làng quê nông nghiệp"
+      },
+      {
+        "word": "村人",
+        "reading": "むらびと",
+        "meaning_vi": "người dân làng"
+      }
+    ]
+  },
+  {
+    "character": "立",
+    "onyomi": [
+      "リツ",
+      "リュウ"
+    ],
+    "kunyomi": [
+      "た.つ",
+      "た.てる"
+    ],
+    "meaning_vi": "đứng, lập",
+    "stroke_count": 5,
+    "vocab_examples": [
+      {
+        "word": "立つ",
+        "reading": "たつ",
+        "meaning_vi": "đứng"
+      },
+      {
+        "word": "立てる",
+        "reading": "たてる",
+        "meaning_vi": "dựng lên"
+      },
+      {
+        "word": "国立",
+        "reading": "こくりつ",
+        "meaning_vi": "quốc lập"
+      }
+    ]
+  },
+  {
+    "character": "休",
+    "onyomi": [
+      "キュウ"
+    ],
+    "kunyomi": [
+      "やす.む",
+      "やす.み"
+    ],
+    "meaning_vi": "nghỉ",
+    "stroke_count": 6,
+    "vocab_examples": [
+      {
+        "word": "休む",
+        "reading": "やすむ",
+        "meaning_vi": "nghỉ"
+      },
+      {
+        "word": "休み",
+        "reading": "やすみ",
+        "meaning_vi": "kỳ nghỉ"
+      },
+      {
+        "word": "休日",
+        "reading": "きゅうじつ",
+        "meaning_vi": "ngày nghỉ"
+      }
+    ]
+  },
+  {
+    "character": "早",
+    "onyomi": [
+      "ソウ",
+      "サッ"
+    ],
+    "kunyomi": [
+      "はや.い",
+      "はや"
+    ],
+    "meaning_vi": "sớm, nhanh",
+    "stroke_count": 6,
+    "vocab_examples": [
+      {
+        "word": "早い",
+        "reading": "はやい",
+        "meaning_vi": "sớm, nhanh"
+      },
+      {
+        "word": "早起き",
+        "reading": "はやおき",
+        "meaning_vi": "dậy sớm"
+      },
+      {
+        "word": "早速",
+        "reading": "さっそく",
+        "meaning_vi": "ngay lập tức"
+      }
+    ]
+  },
+  {
+    "character": "校",
+    "onyomi": [
+      "コウ"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "trường học",
+    "stroke_count": 10,
+    "vocab_examples": [
+      {
+        "word": "学校",
+        "reading": "がっこう",
+        "meaning_vi": "trường học"
+      },
+      {
+        "word": "高校",
+        "reading": "こうこう",
+        "meaning_vi": "trường THPT"
+      },
+      {
+        "word": "小学校",
+        "reading": "しょうがっこう",
+        "meaning_vi": "trường tiểu học"
+      }
+    ]
+  },
+  {
+    "character": "門",
+    "onyomi": [
+      "モン"
+    ],
+    "kunyomi": [
+      "かど"
+    ],
+    "meaning_vi": "cổng",
+    "stroke_count": 8,
+    "vocab_examples": [
+      {
+        "word": "門",
+        "reading": "もん",
+        "meaning_vi": "cổng"
+      },
+      {
+        "word": "正門",
+        "reading": "せいもん",
+        "meaning_vi": "cổng chính"
+      },
+      {
+        "word": "専門",
+        "reading": "せんもん",
+        "meaning_vi": "chuyên môn"
+      }
+    ]
+  }
+]

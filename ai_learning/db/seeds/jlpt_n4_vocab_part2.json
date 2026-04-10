@@ -1,0 +1,1053 @@
+[
+  {
+    "word": "魚",
+    "reading": "さかな",
+    "romaji": "sakana",
+    "meaning_vi": "cá",
+    "part_of_speech": "noun",
+    "tags": [
+      "food"
+    ]
+  },
+  {
+    "word": "野菜",
+    "reading": "やさい",
+    "romaji": "yasai",
+    "meaning_vi": "rau củ",
+    "part_of_speech": "noun",
+    "tags": [
+      "food"
+    ]
+  },
+  {
+    "word": "果物",
+    "reading": "くだもの",
+    "romaji": "kudamono",
+    "meaning_vi": "trái cây, hoa quả",
+    "part_of_speech": "noun",
+    "tags": [
+      "food"
+    ]
+  },
+  {
+    "word": "アパート",
+    "reading": "アパート",
+    "romaji": "apaato",
+    "meaning_vi": "căn hộ, chung cư mini",
+    "part_of_speech": "noun",
+    "tags": [
+      "house"
+    ]
+  },
+  {
+    "word": "マンション",
+    "reading": "マンション",
+    "romaji": "manshon",
+    "meaning_vi": "chung cư cao cấp, căn hộ",
+    "part_of_speech": "noun",
+    "tags": [
+      "house"
+    ]
+  },
+  {
+    "word": "玄関",
+    "reading": "げんかん",
+    "romaji": "genkan",
+    "meaning_vi": "lối vào nhà, tiền sảnh",
+    "part_of_speech": "noun",
+    "tags": [
+      "house",
+      "room"
+    ]
+  },
+  {
+    "word": "廊下",
+    "reading": "ろうか",
+    "romaji": "rouka",
+    "meaning_vi": "hành lang, lối đi",
+    "part_of_speech": "noun",
+    "tags": [
+      "house",
+      "room"
+    ]
+  },
+  {
+    "word": "階段",
+    "reading": "かいだん",
+    "romaji": "kaidan",
+    "meaning_vi": "cầu thang",
+    "part_of_speech": "noun",
+    "tags": [
+      "house"
+    ]
+  },
+  {
+    "word": "屋根",
+    "reading": "やね",
+    "romaji": "yane",
+    "meaning_vi": "mái nhà",
+    "part_of_speech": "noun",
+    "tags": [
+      "house"
+    ]
+  },
+  {
+    "word": "壁",
+    "reading": "かべ",
+    "romaji": "kabe",
+    "meaning_vi": "tường, vách",
+    "part_of_speech": "noun",
+    "tags": [
+      "house"
+    ]
+  },
+  {
+    "word": "床",
+    "reading": "ゆか",
+    "romaji": "yuka",
+    "meaning_vi": "sàn nhà",
+    "part_of_speech": "noun",
+    "tags": [
+      "house"
+    ]
+  },
+  {
+    "word": "天井",
+    "reading": "てんじょう",
+    "romaji": "tenjou",
+    "meaning_vi": "trần nhà",
+    "part_of_speech": "noun",
+    "tags": [
+      "house"
+    ]
+  },
+  {
+    "word": "引越し",
+    "reading": "ひっこし",
+    "romaji": "hikkoshi",
+    "meaning_vi": "chuyển nhà",
+    "part_of_speech": "noun",
+    "tags": [
+      "house",
+      "action"
+    ]
+  },
+  {
+    "word": "家賃",
+    "reading": "やちん",
+    "romaji": "yachin",
+    "meaning_vi": "tiền thuê nhà",
+    "part_of_speech": "noun",
+    "tags": [
+      "house",
+      "money"
+    ]
+  },
+  {
+    "word": "電気代",
+    "reading": "でんきだい",
+    "romaji": "denkidai",
+    "meaning_vi": "tiền điện",
+    "part_of_speech": "noun",
+    "tags": [
+      "house",
+      "money"
+    ]
+  },
+  {
+    "word": "水道代",
+    "reading": "すいどうだい",
+    "romaji": "suidoudai",
+    "meaning_vi": "tiền nước",
+    "part_of_speech": "noun",
+    "tags": [
+      "house",
+      "money"
+    ]
+  },
+  {
+    "word": "服",
+    "reading": "ふく",
+    "romaji": "fuku",
+    "meaning_vi": "quần áo, trang phục",
+    "part_of_speech": "noun",
+    "tags": [
+      "clothing"
+    ]
+  },
+  {
+    "word": "洋服",
+    "reading": "ようふく",
+    "romaji": "youfuku",
+    "meaning_vi": "quần áo kiểu Tây",
+    "part_of_speech": "noun",
+    "tags": [
+      "clothing"
+    ]
+  },
+  {
+    "word": "着物",
+    "reading": "きもの",
+    "romaji": "kimono",
+    "meaning_vi": "kimono, trang phục truyền thống Nhật",
+    "part_of_speech": "noun",
+    "tags": [
+      "clothing",
+      "culture"
+    ]
+  },
+  {
+    "word": "スーツ",
+    "reading": "スーツ",
+    "romaji": "suutsu",
+    "meaning_vi": "bộ comple, vest",
+    "part_of_speech": "noun",
+    "tags": [
+      "clothing",
+      "work"
+    ]
+  },
+  {
+    "word": "ネクタイ",
+    "reading": "ネクタイ",
+    "romaji": "nekutai",
+    "meaning_vi": "cà vạt",
+    "part_of_speech": "noun",
+    "tags": [
+      "clothing"
+    ]
+  },
+  {
+    "word": "コート",
+    "reading": "コート",
+    "romaji": "kooto",
+    "meaning_vi": "áo khoác dài, áo coat",
+    "part_of_speech": "noun",
+    "tags": [
+      "clothing"
+    ]
+  },
+  {
+    "word": "帽子",
+    "reading": "ぼうし",
+    "romaji": "boushi",
+    "meaning_vi": "mũ, nón",
+    "part_of_speech": "noun",
+    "tags": [
+      "clothing"
+    ]
+  },
+  {
+    "word": "靴下",
+    "reading": "くつした",
+    "romaji": "kutsushita",
+    "meaning_vi": "tất, vớ",
+    "part_of_speech": "noun",
+    "tags": [
+      "clothing"
+    ]
+  },
+  {
+    "word": "手袋",
+    "reading": "てぶくろ",
+    "romaji": "tebukuro",
+    "meaning_vi": "găng tay",
+    "part_of_speech": "noun",
+    "tags": [
+      "clothing"
+    ]
+  },
+  {
+    "word": "眼鏡",
+    "reading": "めがね",
+    "romaji": "megane",
+    "meaning_vi": "kính mắt",
+    "part_of_speech": "noun",
+    "tags": [
+      "clothing",
+      "accessory"
+    ]
+  },
+  {
+    "word": "財布",
+    "reading": "さいふ",
+    "romaji": "saifu",
+    "meaning_vi": "ví tiền",
+    "part_of_speech": "noun",
+    "tags": [
+      "accessory"
+    ]
+  },
+  {
+    "word": "鞄",
+    "reading": "かばん",
+    "romaji": "kaban",
+    "meaning_vi": "túi xách, cặp",
+    "part_of_speech": "noun",
+    "tags": [
+      "accessory"
+    ]
+  },
+  {
+    "word": "天気予報",
+    "reading": "てんきよほう",
+    "romaji": "tenki yohou",
+    "meaning_vi": "dự báo thời tiết",
+    "part_of_speech": "noun",
+    "tags": [
+      "weather"
+    ]
+  },
+  {
+    "word": "台風",
+    "reading": "たいふう",
+    "romaji": "taifuu",
+    "meaning_vi": "bão, cơn bão",
+    "part_of_speech": "noun",
+    "tags": [
+      "weather"
+    ]
+  },
+  {
+    "word": "地震",
+    "reading": "じしん",
+    "romaji": "jishin",
+    "meaning_vi": "động đất",
+    "part_of_speech": "noun",
+    "tags": [
+      "weather",
+      "disaster"
+    ]
+  },
+  {
+    "word": "洪水",
+    "reading": "こうずい",
+    "romaji": "kouzui",
+    "meaning_vi": "lũ lụt",
+    "part_of_speech": "noun",
+    "tags": [
+      "weather",
+      "disaster"
+    ]
+  },
+  {
+    "word": "霧",
+    "reading": "きり",
+    "romaji": "kiri",
+    "meaning_vi": "sương mù",
+    "part_of_speech": "noun",
+    "tags": [
+      "weather"
+    ]
+  },
+  {
+    "word": "雷",
+    "reading": "かみなり",
+    "romaji": "kaminari",
+    "meaning_vi": "sấm sét, tiếng sấm",
+    "part_of_speech": "noun",
+    "tags": [
+      "weather"
+    ]
+  },
+  {
+    "word": "気温",
+    "reading": "きおん",
+    "romaji": "kion",
+    "meaning_vi": "nhiệt độ không khí",
+    "part_of_speech": "noun",
+    "tags": [
+      "weather"
+    ]
+  },
+  {
+    "word": "湿度",
+    "reading": "しつど",
+    "romaji": "shitsudo",
+    "meaning_vi": "độ ẩm",
+    "part_of_speech": "noun",
+    "tags": [
+      "weather"
+    ]
+  },
+  {
+    "word": "季節",
+    "reading": "きせつ",
+    "romaji": "kisetsu",
+    "meaning_vi": "mùa, mùa trong năm",
+    "part_of_speech": "noun",
+    "tags": [
+      "weather",
+      "time"
+    ]
+  },
+  {
+    "word": "春",
+    "reading": "はる",
+    "romaji": "haru",
+    "meaning_vi": "mùa xuân",
+    "part_of_speech": "noun",
+    "tags": [
+      "weather",
+      "season"
+    ]
+  },
+  {
+    "word": "夏",
+    "reading": "なつ",
+    "romaji": "natsu",
+    "meaning_vi": "mùa hè",
+    "part_of_speech": "noun",
+    "tags": [
+      "weather",
+      "season"
+    ]
+  },
+  {
+    "word": "秋",
+    "reading": "あき",
+    "romaji": "aki",
+    "meaning_vi": "mùa thu",
+    "part_of_speech": "noun",
+    "tags": [
+      "weather",
+      "season"
+    ]
+  },
+  {
+    "word": "冬",
+    "reading": "ふゆ",
+    "romaji": "fuyu",
+    "meaning_vi": "mùa đông",
+    "part_of_speech": "noun",
+    "tags": [
+      "weather",
+      "season"
+    ]
+  },
+  {
+    "word": "電話",
+    "reading": "でんわ",
+    "romaji": "denwa",
+    "meaning_vi": "điện thoại; gọi điện",
+    "part_of_speech": "noun",
+    "tags": [
+      "communication",
+      "tech"
+    ]
+  },
+  {
+    "word": "携帯電話",
+    "reading": "けいたいでんわ",
+    "romaji": "keitai denwa",
+    "meaning_vi": "điện thoại di động",
+    "part_of_speech": "noun",
+    "tags": [
+      "communication",
+      "tech"
+    ]
+  },
+  {
+    "word": "スマートフォン",
+    "reading": "スマートフォン",
+    "romaji": "sumaatofon",
+    "meaning_vi": "điện thoại thông minh, smartphone",
+    "part_of_speech": "noun",
+    "tags": [
+      "communication",
+      "tech"
+    ]
+  },
+  {
+    "word": "パソコン",
+    "reading": "パソコン",
+    "romaji": "pasokon",
+    "meaning_vi": "máy tính cá nhân, PC",
+    "part_of_speech": "noun",
+    "tags": [
+      "tech"
+    ]
+  },
+  {
+    "word": "インターネット",
+    "reading": "インターネット",
+    "romaji": "intaanetto",
+    "meaning_vi": "internet",
+    "part_of_speech": "noun",
+    "tags": [
+      "tech",
+      "communication"
+    ]
+  },
+  {
+    "word": "メール",
+    "reading": "メール",
+    "romaji": "meeru",
+    "meaning_vi": "email, thư điện tử",
+    "part_of_speech": "noun",
+    "tags": [
+      "communication",
+      "tech"
+    ]
+  },
+  {
+    "word": "メッセージ",
+    "reading": "メッセージ",
+    "romaji": "messeeji",
+    "meaning_vi": "tin nhắn, thông điệp",
+    "part_of_speech": "noun",
+    "tags": [
+      "communication"
+    ]
+  },
+  {
+    "word": "連絡",
+    "reading": "れんらく",
+    "romaji": "renraku",
+    "meaning_vi": "liên lạc, liên hệ",
+    "part_of_speech": "noun",
+    "tags": [
+      "communication"
+    ]
+  },
+  {
+    "word": "報告",
+    "reading": "ほうこく",
+    "romaji": "houkoku",
+    "meaning_vi": "báo cáo, thông báo",
+    "part_of_speech": "noun",
+    "tags": [
+      "communication",
+      "work"
+    ]
+  },
+  {
+    "word": "銀行",
+    "reading": "ぎんこう",
+    "romaji": "ginkou",
+    "meaning_vi": "ngân hàng",
+    "part_of_speech": "noun",
+    "tags": [
+      "money",
+      "place"
+    ]
+  },
+  {
+    "word": "郵便局",
+    "reading": "ゆうびんきょく",
+    "romaji": "yuubinkyoku",
+    "meaning_vi": "bưu điện",
+    "part_of_speech": "noun",
+    "tags": [
+      "place",
+      "service"
+    ]
+  },
+  {
+    "word": "市役所",
+    "reading": "しやくしょ",
+    "romaji": "shiyakusho",
+    "meaning_vi": "ủy ban nhân dân thành phố, tòa thị chính",
+    "part_of_speech": "noun",
+    "tags": [
+      "place",
+      "service"
+    ]
+  },
+  {
+    "word": "交番",
+    "reading": "こうばん",
+    "romaji": "kouban",
+    "meaning_vi": "trạm cảnh sát",
+    "part_of_speech": "noun",
+    "tags": [
+      "place",
+      "service"
+    ]
+  },
+  {
+    "word": "消防署",
+    "reading": "しょうぼうしょ",
+    "romaji": "shoubousho",
+    "meaning_vi": "trạm cứu hỏa",
+    "part_of_speech": "noun",
+    "tags": [
+      "place",
+      "service"
+    ]
+  },
+  {
+    "word": "スーパー",
+    "reading": "スーパー",
+    "romaji": "suupaa",
+    "meaning_vi": "siêu thị",
+    "part_of_speech": "noun",
+    "tags": [
+      "place",
+      "shopping"
+    ]
+  },
+  {
+    "word": "コンビニ",
+    "reading": "コンビニ",
+    "romaji": "konbini",
+    "meaning_vi": "cửa hàng tiện lợi, convenience store",
+    "part_of_speech": "noun",
+    "tags": [
+      "place",
+      "shopping"
+    ]
+  },
+  {
+    "word": "デパート",
+    "reading": "デパート",
+    "romaji": "depaato",
+    "meaning_vi": "trung tâm thương mại, bách hóa",
+    "part_of_speech": "noun",
+    "tags": [
+      "place",
+      "shopping"
+    ]
+  },
+  {
+    "word": "薬局",
+    "reading": "やっきょく",
+    "romaji": "yakkyoku",
+    "meaning_vi": "hiệu thuốc, nhà thuốc",
+    "part_of_speech": "noun",
+    "tags": [
+      "place",
+      "health"
+    ]
+  },
+  {
+    "word": "美容院",
+    "reading": "びよういん",
+    "romaji": "biyouin",
+    "meaning_vi": "tiệm cắt tóc (nữ), salon tóc",
+    "part_of_speech": "noun",
+    "tags": [
+      "place",
+      "service"
+    ]
+  },
+  {
+    "word": "床屋",
+    "reading": "とこや",
+    "romaji": "tokoya",
+    "meaning_vi": "tiệm hớt tóc (nam)",
+    "part_of_speech": "noun",
+    "tags": [
+      "place",
+      "service"
+    ]
+  },
+  {
+    "word": "値段",
+    "reading": "ねだん",
+    "romaji": "nedan",
+    "meaning_vi": "giá cả, giá tiền",
+    "part_of_speech": "noun",
+    "tags": [
+      "money",
+      "shopping"
+    ]
+  },
+  {
+    "word": "割引",
+    "reading": "わりびき",
+    "romaji": "waribiki",
+    "meaning_vi": "giảm giá, chiết khấu",
+    "part_of_speech": "noun",
+    "tags": [
+      "money",
+      "shopping"
+    ]
+  },
+  {
+    "word": "消費税",
+    "reading": "しょうひぜい",
+    "romaji": "shouhizei",
+    "meaning_vi": "thuế tiêu dùng, VAT",
+    "part_of_speech": "noun",
+    "tags": [
+      "money"
+    ]
+  },
+  {
+    "word": "お釣り",
+    "reading": "おつり",
+    "romaji": "otsuri",
+    "meaning_vi": "tiền thối lại",
+    "part_of_speech": "noun",
+    "tags": [
+      "money",
+      "shopping"
+    ]
+  },
+  {
+    "word": "領収書",
+    "reading": "りょうしゅうしょ",
+    "romaji": "ryoushuusho",
+    "meaning_vi": "hóa đơn, biên lai",
+    "part_of_speech": "noun",
+    "tags": [
+      "money",
+      "shopping"
+    ]
+  },
+  {
+    "word": "現金",
+    "reading": "げんきん",
+    "romaji": "genkin",
+    "meaning_vi": "tiền mặt",
+    "part_of_speech": "noun",
+    "tags": [
+      "money"
+    ]
+  },
+  {
+    "word": "クレジットカード",
+    "reading": "クレジットカード",
+    "romaji": "kurejitto kaado",
+    "meaning_vi": "thẻ tín dụng",
+    "part_of_speech": "noun",
+    "tags": [
+      "money"
+    ]
+  },
+  {
+    "word": "貯金",
+    "reading": "ちょきん",
+    "romaji": "chokin",
+    "meaning_vi": "tiền tiết kiệm; tiết kiệm tiền",
+    "part_of_speech": "noun",
+    "tags": [
+      "money"
+    ]
+  },
+  {
+    "word": "社会",
+    "reading": "しゃかい",
+    "romaji": "shakai",
+    "meaning_vi": "xã hội",
+    "part_of_speech": "noun",
+    "tags": [
+      "society"
+    ]
+  },
+  {
+    "word": "文化",
+    "reading": "ぶんか",
+    "romaji": "bunka",
+    "meaning_vi": "văn hóa",
+    "part_of_speech": "noun",
+    "tags": [
+      "society",
+      "culture"
+    ]
+  },
+  {
+    "word": "伝統",
+    "reading": "でんとう",
+    "romaji": "dentou",
+    "meaning_vi": "truyền thống",
+    "part_of_speech": "noun",
+    "tags": [
+      "society",
+      "culture"
+    ]
+  },
+  {
+    "word": "習慣",
+    "reading": "しゅうかん",
+    "romaji": "shuukan",
+    "meaning_vi": "thói quen, tập quán",
+    "part_of_speech": "noun",
+    "tags": [
+      "society",
+      "culture"
+    ]
+  },
+  {
+    "word": "政治",
+    "reading": "せいじ",
+    "romaji": "seiji",
+    "meaning_vi": "chính trị",
+    "part_of_speech": "noun",
+    "tags": [
+      "society"
+    ]
+  },
+  {
+    "word": "経済",
+    "reading": "けいざい",
+    "romaji": "keizai",
+    "meaning_vi": "kinh tế",
+    "part_of_speech": "noun",
+    "tags": [
+      "society"
+    ]
+  },
+  {
+    "word": "環境",
+    "reading": "かんきょう",
+    "romaji": "kankyou",
+    "meaning_vi": "môi trường",
+    "part_of_speech": "noun",
+    "tags": [
+      "society",
+      "nature"
+    ]
+  },
+  {
+    "word": "問題",
+    "reading": "もんだい",
+    "romaji": "mondai",
+    "meaning_vi": "vấn đề, bài toán",
+    "part_of_speech": "noun",
+    "tags": [
+      "society",
+      "study"
+    ]
+  },
+  {
+    "word": "原因",
+    "reading": "げんいん",
+    "romaji": "gen'in",
+    "meaning_vi": "nguyên nhân",
+    "part_of_speech": "noun",
+    "tags": [
+      "society"
+    ]
+  },
+  {
+    "word": "結果",
+    "reading": "けっか",
+    "romaji": "kekka",
+    "meaning_vi": "kết quả",
+    "part_of_speech": "noun",
+    "tags": [
+      "society",
+      "study"
+    ]
+  },
+  {
+    "word": "影響",
+    "reading": "えいきょう",
+    "romaji": "eikyou",
+    "meaning_vi": "ảnh hưởng, tác động",
+    "part_of_speech": "noun",
+    "tags": [
+      "society"
+    ]
+  },
+  {
+    "word": "関係",
+    "reading": "かんけい",
+    "romaji": "kankei",
+    "meaning_vi": "mối quan hệ, liên quan",
+    "part_of_speech": "noun",
+    "tags": [
+      "society",
+      "people"
+    ]
+  },
+  {
+    "word": "機会",
+    "reading": "きかい",
+    "romaji": "kikai",
+    "meaning_vi": "cơ hội",
+    "part_of_speech": "noun",
+    "tags": [
+      "society"
+    ]
+  },
+  {
+    "word": "目的",
+    "reading": "もくてき",
+    "romaji": "mokuteki",
+    "meaning_vi": "mục đích, mục tiêu",
+    "part_of_speech": "noun",
+    "tags": [
+      "society"
+    ]
+  },
+  {
+    "word": "理由",
+    "reading": "りゆう",
+    "romaji": "riyuu",
+    "meaning_vi": "lý do, nguyên nhân",
+    "part_of_speech": "noun",
+    "tags": [
+      "society"
+    ]
+  },
+  {
+    "word": "決める",
+    "reading": "きめる",
+    "romaji": "kimeru",
+    "meaning_vi": "quyết định, xác định",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "decision"
+    ]
+  },
+  {
+    "word": "変える",
+    "reading": "かえる",
+    "romaji": "kaeru",
+    "meaning_vi": "thay đổi (cái gì đó)",
+    "part_of_speech": "verb",
+    "tags": [
+      "action"
+    ]
+  },
+  {
+    "word": "続ける",
+    "reading": "つづける",
+    "romaji": "tsuzukeru",
+    "meaning_vi": "tiếp tục (làm gì đó)",
+    "part_of_speech": "verb",
+    "tags": [
+      "action"
+    ]
+  },
+  {
+    "word": "始める",
+    "reading": "はじめる",
+    "romaji": "hajimeru",
+    "meaning_vi": "bắt đầu (cái gì đó)",
+    "part_of_speech": "verb",
+    "tags": [
+      "action"
+    ]
+  },
+  {
+    "word": "終わる",
+    "reading": "おわる",
+    "romaji": "owaru",
+    "meaning_vi": "kết thúc, xong",
+    "part_of_speech": "verb",
+    "tags": [
+      "action"
+    ]
+  },
+  {
+    "word": "集める",
+    "reading": "あつめる",
+    "romaji": "atsumeru",
+    "meaning_vi": "thu thập, tập hợp lại",
+    "part_of_speech": "verb",
+    "tags": [
+      "action"
+    ]
+  },
+  {
+    "word": "調べる",
+    "reading": "しらべる",
+    "romaji": "shiraberu",
+    "meaning_vi": "tìm hiểu, điều tra, tra cứu",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "study"
+    ]
+  },
+  {
+    "word": "覚える",
+    "reading": "おぼえる",
+    "romaji": "oboeru",
+    "meaning_vi": "nhớ, ghi nhớ, học thuộc",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "study"
+    ]
+  },
+  {
+    "word": "忘れる",
+    "reading": "わすれる",
+    "romaji": "wasureru",
+    "meaning_vi": "quên",
+    "part_of_speech": "verb",
+    "tags": [
+      "action"
+    ]
+  },
+  {
+    "word": "知らせる",
+    "reading": "しらせる",
+    "romaji": "shiraseru",
+    "meaning_vi": "thông báo, báo cho biết",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "communication"
+    ]
+  },
+  {
+    "word": "伝える",
+    "reading": "つたえる",
+    "romaji": "tsutaeru",
+    "meaning_vi": "truyền đạt, thông tin lại",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "communication"
+    ]
+  },
+  {
+    "word": "教える",
+    "reading": "おしえる",
+    "romaji": "oshieru",
+    "meaning_vi": "dạy, chỉ bảo, thông báo",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "study"
+    ]
+  },
+  {
+    "word": "送る",
+    "reading": "おくる",
+    "romaji": "okuru",
+    "meaning_vi": "gửi; tiễn; trải qua (thời gian)",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "communication"
+    ]
+  },
+  {
+    "word": "受け取る",
+    "reading": "うけとる",
+    "romaji": "uketoru",
+    "meaning_vi": "nhận lấy, tiếp nhận",
+    "part_of_speech": "verb",
+    "tags": [
+      "action"
+    ]
+  },
+  {
+    "word": "出す",
+    "reading": "だす",
+    "romaji": "dasu",
+    "meaning_vi": "lấy ra, nộp; gửi đi",
+    "part_of_speech": "verb",
+    "tags": [
+      "action"
+    ]
+  },
+  {
+    "word": "入れる",
+    "reading": "いれる",
+    "romaji": "ireru",
+    "meaning_vi": "cho vào, bỏ vào",
+    "part_of_speech": "verb",
+    "tags": [
+      "action"
+    ]
+  }
+]

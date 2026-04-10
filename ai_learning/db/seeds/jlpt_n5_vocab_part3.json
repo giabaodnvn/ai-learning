@@ -1,0 +1,1131 @@
+[
+  {
+    "word": "黄色い",
+    "reading": "きいろい",
+    "romaji": "kiiroi",
+    "meaning_vi": "(màu) vàng",
+    "part_of_speech": "adjective",
+    "tags": [
+      "i-adjective",
+      "color"
+    ]
+  },
+  {
+    "word": "きれいな",
+    "reading": "きれいな",
+    "romaji": "kireina",
+    "meaning_vi": "đẹp; sạch sẽ, gọn gàng",
+    "part_of_speech": "adjective",
+    "tags": [
+      "na-adjective",
+      "appearance"
+    ]
+  },
+  {
+    "word": "有名な",
+    "reading": "ゆうめいな",
+    "romaji": "yuumeina",
+    "meaning_vi": "nổi tiếng",
+    "part_of_speech": "adjective",
+    "tags": [
+      "na-adjective"
+    ]
+  },
+  {
+    "word": "好きな",
+    "reading": "すきな",
+    "romaji": "sukina",
+    "meaning_vi": "thích, yêu thích",
+    "part_of_speech": "adjective",
+    "tags": [
+      "na-adjective",
+      "feeling"
+    ]
+  },
+  {
+    "word": "嫌いな",
+    "reading": "きらいな",
+    "romaji": "kiraina",
+    "meaning_vi": "ghét, không thích",
+    "part_of_speech": "adjective",
+    "tags": [
+      "na-adjective",
+      "feeling"
+    ]
+  },
+  {
+    "word": "上手な",
+    "reading": "じょうずな",
+    "romaji": "jouzuna",
+    "meaning_vi": "giỏi, thành thạo (kỹ năng của người khác)",
+    "part_of_speech": "adjective",
+    "tags": [
+      "na-adjective",
+      "ability"
+    ]
+  },
+  {
+    "word": "下手な",
+    "reading": "へたな",
+    "romaji": "hetana",
+    "meaning_vi": "kém, vụng về",
+    "part_of_speech": "adjective",
+    "tags": [
+      "na-adjective",
+      "ability"
+    ]
+  },
+  {
+    "word": "得意な",
+    "reading": "とくいな",
+    "romaji": "tokuina",
+    "meaning_vi": "giỏi, sở trường (của mình)",
+    "part_of_speech": "adjective",
+    "tags": [
+      "na-adjective",
+      "ability"
+    ]
+  },
+  {
+    "word": "苦手な",
+    "reading": "にがてな",
+    "romaji": "nigatena",
+    "meaning_vi": "không giỏi, không sở trường",
+    "part_of_speech": "adjective",
+    "tags": [
+      "na-adjective",
+      "ability"
+    ]
+  },
+  {
+    "word": "元気な",
+    "reading": "げんきな",
+    "romaji": "genkina",
+    "meaning_vi": "khỏe mạnh, năng động, sống động",
+    "part_of_speech": "adjective",
+    "tags": [
+      "na-adjective",
+      "health"
+    ]
+  },
+  {
+    "word": "静かな",
+    "reading": "しずかな",
+    "romaji": "shizukana",
+    "meaning_vi": "yên tĩnh, lặng lẽ",
+    "part_of_speech": "adjective",
+    "tags": [
+      "na-adjective",
+      "sound"
+    ]
+  },
+  {
+    "word": "賑やかな",
+    "reading": "にぎやかな",
+    "romaji": "nigiyakana",
+    "meaning_vi": "sôi động, nhộn nhịp",
+    "part_of_speech": "adjective",
+    "tags": [
+      "na-adjective",
+      "sound"
+    ]
+  },
+  {
+    "word": "親切な",
+    "reading": "しんせつな",
+    "romaji": "shinsetsuna",
+    "meaning_vi": "tốt bụng, chu đáo, ân cần",
+    "part_of_speech": "adjective",
+    "tags": [
+      "na-adjective",
+      "personality"
+    ]
+  },
+  {
+    "word": "大切な",
+    "reading": "たいせつな",
+    "romaji": "taisetsuna",
+    "meaning_vi": "quan trọng, quý giá",
+    "part_of_speech": "adjective",
+    "tags": [
+      "na-adjective"
+    ]
+  },
+  {
+    "word": "大丈夫な",
+    "reading": "だいじょうぶな",
+    "romaji": "daijoubu-na",
+    "meaning_vi": "không sao, ổn, an toàn",
+    "part_of_speech": "adjective",
+    "tags": [
+      "na-adjective",
+      "state"
+    ]
+  },
+  {
+    "word": "暇な",
+    "reading": "ひまな",
+    "romaji": "himana",
+    "meaning_vi": "rảnh rỗi, rảnh tay",
+    "part_of_speech": "adjective",
+    "tags": [
+      "na-adjective",
+      "time"
+    ]
+  },
+  {
+    "word": "便利な",
+    "reading": "べんりな",
+    "romaji": "benrina",
+    "meaning_vi": "tiện lợi, tiện ích",
+    "part_of_speech": "adjective",
+    "tags": [
+      "na-adjective"
+    ]
+  },
+  {
+    "word": "不便な",
+    "reading": "ふべんな",
+    "romaji": "fubenna",
+    "meaning_vi": "bất tiện",
+    "part_of_speech": "adjective",
+    "tags": [
+      "na-adjective"
+    ]
+  },
+  {
+    "word": "丁寧な",
+    "reading": "ていねいな",
+    "romaji": "teineina",
+    "meaning_vi": "lịch sự, cẩn thận, chu đáo",
+    "part_of_speech": "adjective",
+    "tags": [
+      "na-adjective",
+      "manner"
+    ]
+  },
+  {
+    "word": "真面目な",
+    "reading": "まじめな",
+    "romaji": "majimena",
+    "meaning_vi": "nghiêm túc, chăm chỉ, thật thà",
+    "part_of_speech": "adjective",
+    "tags": [
+      "na-adjective",
+      "personality"
+    ]
+  },
+  {
+    "word": "いろいろな",
+    "reading": "いろいろな",
+    "romaji": "iroirona",
+    "meaning_vi": "đủ loại, đa dạng, nhiều thứ",
+    "part_of_speech": "adjective",
+    "tags": [
+      "na-adjective",
+      "variety"
+    ]
+  },
+  {
+    "word": "特別な",
+    "reading": "とくべつな",
+    "romaji": "tokubetsuna",
+    "meaning_vi": "đặc biệt",
+    "part_of_speech": "adjective",
+    "tags": [
+      "na-adjective"
+    ]
+  },
+  {
+    "word": "大変な",
+    "reading": "たいへんな",
+    "romaji": "taiheina",
+    "meaning_vi": "vất vả, khó khăn, nghiêm trọng",
+    "part_of_speech": "adjective",
+    "tags": [
+      "na-adjective"
+    ]
+  },
+  {
+    "word": "食べる",
+    "reading": "たべる",
+    "romaji": "taberu",
+    "meaning_vi": "ăn",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "food",
+      "ichidan"
+    ]
+  },
+  {
+    "word": "飲む",
+    "reading": "のむ",
+    "romaji": "nomu",
+    "meaning_vi": "uống",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "food",
+      "godan"
+    ]
+  },
+  {
+    "word": "行く",
+    "reading": "いく",
+    "romaji": "iku",
+    "meaning_vi": "đi (rời xa người nói)",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "movement",
+      "godan"
+    ]
+  },
+  {
+    "word": "来る",
+    "reading": "くる",
+    "romaji": "kuru",
+    "meaning_vi": "đến (về phía người nói)",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "movement",
+      "irregular"
+    ]
+  },
+  {
+    "word": "帰る",
+    "reading": "かえる",
+    "romaji": "kaeru",
+    "meaning_vi": "về (nhà/nơi xuất phát)",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "movement",
+      "godan"
+    ]
+  },
+  {
+    "word": "見る",
+    "reading": "みる",
+    "romaji": "miru",
+    "meaning_vi": "xem, nhìn",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "perception",
+      "ichidan"
+    ]
+  },
+  {
+    "word": "聞く",
+    "reading": "きく",
+    "romaji": "kiku",
+    "meaning_vi": "nghe; hỏi",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "perception",
+      "godan"
+    ]
+  },
+  {
+    "word": "話す",
+    "reading": "はなす",
+    "romaji": "hanasu",
+    "meaning_vi": "nói, trò chuyện, kể",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "communication",
+      "godan"
+    ]
+  },
+  {
+    "word": "読む",
+    "reading": "よむ",
+    "romaji": "yomu",
+    "meaning_vi": "đọc",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "study",
+      "godan"
+    ]
+  },
+  {
+    "word": "書く",
+    "reading": "かく",
+    "romaji": "kaku",
+    "meaning_vi": "viết",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "study",
+      "godan"
+    ]
+  },
+  {
+    "word": "買う",
+    "reading": "かう",
+    "romaji": "kau",
+    "meaning_vi": "mua",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "shopping",
+      "godan"
+    ]
+  },
+  {
+    "word": "売る",
+    "reading": "うる",
+    "romaji": "uru",
+    "meaning_vi": "bán",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "shopping",
+      "godan"
+    ]
+  },
+  {
+    "word": "入る",
+    "reading": "はいる",
+    "romaji": "hairu",
+    "meaning_vi": "vào, đi vào (phòng/nơi nào đó)",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "movement",
+      "godan"
+    ]
+  },
+  {
+    "word": "出る",
+    "reading": "でる",
+    "romaji": "deru",
+    "meaning_vi": "ra, đi ra, xuất hiện",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "movement",
+      "ichidan"
+    ]
+  },
+  {
+    "word": "起きる",
+    "reading": "おきる",
+    "romaji": "okiru",
+    "meaning_vi": "thức dậy; xảy ra",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "daily",
+      "ichidan"
+    ]
+  },
+  {
+    "word": "寝る",
+    "reading": "ねる",
+    "romaji": "neru",
+    "meaning_vi": "ngủ, đi ngủ, nằm xuống",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "daily",
+      "ichidan"
+    ]
+  },
+  {
+    "word": "着る",
+    "reading": "きる",
+    "romaji": "kiru",
+    "meaning_vi": "mặc (áo, quần áo phần thân trên)",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "clothes",
+      "ichidan"
+    ]
+  },
+  {
+    "word": "脱ぐ",
+    "reading": "ぬぐ",
+    "romaji": "nugu",
+    "meaning_vi": "cởi (quần áo)",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "clothes",
+      "godan"
+    ]
+  },
+  {
+    "word": "開ける",
+    "reading": "あける",
+    "romaji": "akeru",
+    "meaning_vi": "mở (cửa, hộp...) — tác động lên vật",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "ichidan"
+    ]
+  },
+  {
+    "word": "閉める",
+    "reading": "しめる",
+    "romaji": "shimeru",
+    "meaning_vi": "đóng (cửa, cửa sổ...) — tác động lên vật",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "ichidan"
+    ]
+  },
+  {
+    "word": "開く",
+    "reading": "あく",
+    "romaji": "aku",
+    "meaning_vi": "mở ra (tự nó mở)",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "godan"
+    ]
+  },
+  {
+    "word": "閉まる",
+    "reading": "しまる",
+    "romaji": "shimaru",
+    "meaning_vi": "đóng lại (tự nó đóng)",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "godan"
+    ]
+  },
+  {
+    "word": "つける",
+    "reading": "つける",
+    "romaji": "tsukeru",
+    "meaning_vi": "bật (điện, máy móc)",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "ichidan"
+    ]
+  },
+  {
+    "word": "消す",
+    "reading": "けす",
+    "romaji": "kesu",
+    "meaning_vi": "tắt (điện, lửa); xóa",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "godan"
+    ]
+  },
+  {
+    "word": "分かる",
+    "reading": "わかる",
+    "romaji": "wakaru",
+    "meaning_vi": "hiểu, biết (kết quả của việc hiểu)",
+    "part_of_speech": "verb",
+    "tags": [
+      "mental",
+      "godan"
+    ]
+  },
+  {
+    "word": "知る",
+    "reading": "しる",
+    "romaji": "shiru",
+    "meaning_vi": "biết (thông tin, quen biết)",
+    "part_of_speech": "verb",
+    "tags": [
+      "mental",
+      "godan"
+    ]
+  },
+  {
+    "word": "いる",
+    "reading": "いる",
+    "romaji": "iru",
+    "meaning_vi": "có (người, động vật), ở (người/động vật)",
+    "part_of_speech": "verb",
+    "tags": [
+      "existence",
+      "ichidan"
+    ]
+  },
+  {
+    "word": "ある",
+    "reading": "ある",
+    "romaji": "aru",
+    "meaning_vi": "có (đồ vật, sự việc), ở (đồ vật)",
+    "part_of_speech": "verb",
+    "tags": [
+      "existence",
+      "godan-irregular"
+    ]
+  },
+  {
+    "word": "できる",
+    "reading": "できる",
+    "romaji": "dekiru",
+    "meaning_vi": "có thể làm được; hoàn thành",
+    "part_of_speech": "verb",
+    "tags": [
+      "ability",
+      "ichidan"
+    ]
+  },
+  {
+    "word": "勉強する",
+    "reading": "べんきょうする",
+    "romaji": "benkyousuru",
+    "meaning_vi": "học bài, ôn luyện",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "study",
+      "suru"
+    ]
+  },
+  {
+    "word": "仕事する",
+    "reading": "しごとをする",
+    "romaji": "shigoto o suru",
+    "meaning_vi": "làm việc",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "work",
+      "suru"
+    ]
+  },
+  {
+    "word": "洗う",
+    "reading": "あらう",
+    "romaji": "arau",
+    "meaning_vi": "rửa, giặt",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "daily",
+      "godan"
+    ]
+  },
+  {
+    "word": "掃除する",
+    "reading": "そうじする",
+    "romaji": "soujisuru",
+    "meaning_vi": "dọn dẹp, vệ sinh",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "daily",
+      "suru"
+    ]
+  },
+  {
+    "word": "料理する",
+    "reading": "りょうりする",
+    "romaji": "ryourisuru",
+    "meaning_vi": "nấu ăn",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "food",
+      "suru"
+    ]
+  },
+  {
+    "word": "電話する",
+    "reading": "でんわする",
+    "romaji": "denwasuru",
+    "meaning_vi": "gọi điện thoại",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "communication",
+      "suru"
+    ]
+  },
+  {
+    "word": "乗る",
+    "reading": "のる",
+    "romaji": "noru",
+    "meaning_vi": "lên (xe, tàu, máy bay)",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "transportation",
+      "godan"
+    ]
+  },
+  {
+    "word": "降りる",
+    "reading": "おりる",
+    "romaji": "oriru",
+    "meaning_vi": "xuống (xe, tàu)",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "transportation",
+      "ichidan"
+    ]
+  },
+  {
+    "word": "歩く",
+    "reading": "あるく",
+    "romaji": "aruku",
+    "meaning_vi": "đi bộ, đi dạo",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "movement",
+      "godan"
+    ]
+  },
+  {
+    "word": "走る",
+    "reading": "はしる",
+    "romaji": "hashiru",
+    "meaning_vi": "chạy",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "movement",
+      "godan"
+    ]
+  },
+  {
+    "word": "泳ぐ",
+    "reading": "およぐ",
+    "romaji": "oyogu",
+    "meaning_vi": "bơi",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "sport",
+      "godan"
+    ]
+  },
+  {
+    "word": "休む",
+    "reading": "やすむ",
+    "romaji": "yasumu",
+    "meaning_vi": "nghỉ ngơi, vắng mặt",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "daily",
+      "godan"
+    ]
+  },
+  {
+    "word": "遊ぶ",
+    "reading": "あそぶ",
+    "romaji": "asobu",
+    "meaning_vi": "chơi, vui chơi, dạo chơi",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "leisure",
+      "godan"
+    ]
+  },
+  {
+    "word": "働く",
+    "reading": "はたらく",
+    "romaji": "hataraku",
+    "meaning_vi": "làm việc, lao động",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "work",
+      "godan"
+    ]
+  },
+  {
+    "word": "使う",
+    "reading": "つかう",
+    "romaji": "tsukau",
+    "meaning_vi": "sử dụng, dùng",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "godan"
+    ]
+  },
+  {
+    "word": "もらう",
+    "reading": "もらう",
+    "romaji": "morau",
+    "meaning_vi": "nhận, được cho (từ người khác)",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "giving",
+      "godan"
+    ]
+  },
+  {
+    "word": "あげる",
+    "reading": "あげる",
+    "romaji": "ageru",
+    "meaning_vi": "cho (người khác thứ gì đó)",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "giving",
+      "ichidan"
+    ]
+  },
+  {
+    "word": "くれる",
+    "reading": "くれる",
+    "romaji": "kureru",
+    "meaning_vi": "cho (mình/phe mình thứ gì đó)",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "giving",
+      "ichidan"
+    ]
+  },
+  {
+    "word": "持つ",
+    "reading": "もつ",
+    "romaji": "motsu",
+    "meaning_vi": "cầm, giữ, mang theo, có (sở hữu)",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "godan"
+    ]
+  },
+  {
+    "word": "撮る",
+    "reading": "とる",
+    "romaji": "toru",
+    "meaning_vi": "chụp (ảnh)",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "godan"
+    ]
+  },
+  {
+    "word": "作る",
+    "reading": "つくる",
+    "romaji": "tsukuru",
+    "meaning_vi": "làm, tạo ra, nấu (món ăn)",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "creation",
+      "godan"
+    ]
+  },
+  {
+    "word": "教える",
+    "reading": "おしえる",
+    "romaji": "oshieru",
+    "meaning_vi": "dạy, chỉ bảo, cho biết",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "education",
+      "ichidan"
+    ]
+  },
+  {
+    "word": "習う",
+    "reading": "ならう",
+    "romaji": "narau",
+    "meaning_vi": "học (từ thầy/cô), luyện tập",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "study",
+      "godan"
+    ]
+  },
+  {
+    "word": "覚える",
+    "reading": "おぼえる",
+    "romaji": "oboeru",
+    "meaning_vi": "nhớ, ghi nhớ, học thuộc",
+    "part_of_speech": "verb",
+    "tags": [
+      "mental",
+      "ichidan"
+    ]
+  },
+  {
+    "word": "忘れる",
+    "reading": "わすれる",
+    "romaji": "wasureru",
+    "meaning_vi": "quên",
+    "part_of_speech": "verb",
+    "tags": [
+      "mental",
+      "ichidan"
+    ]
+  },
+  {
+    "word": "始める",
+    "reading": "はじめる",
+    "romaji": "hajimeru",
+    "meaning_vi": "bắt đầu (làm gì đó) — tác động",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "ichidan"
+    ]
+  },
+  {
+    "word": "終わる",
+    "reading": "おわる",
+    "romaji": "owaru",
+    "meaning_vi": "kết thúc, xong (tự nó)",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "godan"
+    ]
+  },
+  {
+    "word": "待つ",
+    "reading": "まつ",
+    "romaji": "matsu",
+    "meaning_vi": "đợi, chờ",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "godan"
+    ]
+  },
+  {
+    "word": "会う",
+    "reading": "あう",
+    "romaji": "au",
+    "meaning_vi": "gặp, gặp gỡ",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "social",
+      "godan"
+    ]
+  },
+  {
+    "word": "切る",
+    "reading": "きる",
+    "romaji": "kiru",
+    "meaning_vi": "cắt",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "godan"
+    ]
+  },
+  {
+    "word": "送る",
+    "reading": "おくる",
+    "romaji": "okuru",
+    "meaning_vi": "gửi; tiễn",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "godan"
+    ]
+  },
+  {
+    "word": "受け取る",
+    "reading": "うけとる",
+    "romaji": "uketoru",
+    "meaning_vi": "nhận (đơn hàng, thư...)",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "godan"
+    ]
+  },
+  {
+    "word": "かける",
+    "reading": "かける",
+    "romaji": "kakeru",
+    "meaning_vi": "gọi (điện thoại); đeo (kính); ngồi",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "ichidan"
+    ]
+  },
+  {
+    "word": "かかる",
+    "reading": "かかる",
+    "romaji": "kakaru",
+    "meaning_vi": "mất (thời gian, tiền); treo",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "godan"
+    ]
+  },
+  {
+    "word": "見せる",
+    "reading": "みせる",
+    "romaji": "miseru",
+    "meaning_vi": "cho xem, trình bày",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "ichidan"
+    ]
+  },
+  {
+    "word": "上げる",
+    "reading": "あげる",
+    "romaji": "ageru",
+    "meaning_vi": "nâng lên, tăng lên",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "ichidan"
+    ]
+  },
+  {
+    "word": "下げる",
+    "reading": "さげる",
+    "romaji": "sageru",
+    "meaning_vi": "hạ xuống, giảm xuống",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "ichidan"
+    ]
+  },
+  {
+    "word": "入れる",
+    "reading": "いれる",
+    "romaji": "ireru",
+    "meaning_vi": "bỏ vào, đặt vào, pha (trà/cà phê)",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "ichidan"
+    ]
+  },
+  {
+    "word": "出す",
+    "reading": "だす",
+    "romaji": "dasu",
+    "meaning_vi": "lấy ra, nộp (bài tập), gửi (thư)",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "godan"
+    ]
+  },
+  {
+    "word": "とても",
+    "reading": "とても",
+    "romaji": "totemo",
+    "meaning_vi": "rất, lắm (dùng với câu khẳng định)",
+    "part_of_speech": "adverb",
+    "tags": [
+      "degree"
+    ]
+  },
+  {
+    "word": "あまり",
+    "reading": "あまり",
+    "romaji": "amari",
+    "meaning_vi": "không lắm, không mấy (dùng với phủ định)",
+    "part_of_speech": "adverb",
+    "tags": [
+      "degree",
+      "negative"
+    ]
+  },
+  {
+    "word": "全然",
+    "reading": "ぜんぜん",
+    "romaji": "zenzen",
+    "meaning_vi": "hoàn toàn không (dùng với phủ định)",
+    "part_of_speech": "adverb",
+    "tags": [
+      "degree",
+      "negative"
+    ]
+  },
+  {
+    "word": "少し",
+    "reading": "すこし",
+    "romaji": "sukoshi",
+    "meaning_vi": "một chút, một ít",
+    "part_of_speech": "adverb",
+    "tags": [
+      "quantity"
+    ]
+  },
+  {
+    "word": "もう",
+    "reading": "もう",
+    "romaji": "mou",
+    "meaning_vi": "đã (rồi); (không) nữa",
+    "part_of_speech": "adverb",
+    "tags": [
+      "time",
+      "aspect"
+    ]
+  },
+  {
+    "word": "まだ",
+    "reading": "まだ",
+    "romaji": "mada",
+    "meaning_vi": "vẫn còn; chưa (với phủ định)",
+    "part_of_speech": "adverb",
+    "tags": [
+      "time",
+      "aspect"
+    ]
+  },
+  {
+    "word": "また",
+    "reading": "また",
+    "romaji": "mata",
+    "meaning_vi": "lại, nữa; hẹn gặp lại",
+    "part_of_speech": "adverb",
+    "tags": [
+      "repetition"
+    ]
+  },
+  {
+    "word": "もっと",
+    "reading": "もっと",
+    "romaji": "motto",
+    "meaning_vi": "hơn nữa, nhiều hơn, thêm nữa",
+    "part_of_speech": "adverb",
+    "tags": [
+      "degree",
+      "comparative"
+    ]
+  },
+  {
+    "word": "たくさん",
+    "reading": "たくさん",
+    "romaji": "takusan",
+    "meaning_vi": "nhiều, rất nhiều",
+    "part_of_speech": "adverb",
+    "tags": [
+      "quantity"
+    ]
+  }
+]

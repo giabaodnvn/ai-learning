@@ -1,0 +1,559 @@
+[
+  {
+    "word": "ちょっと",
+    "reading": "ちょっと",
+    "romaji": "chotto",
+    "meaning_vi": "một chút, một lát; xin lỗi...",
+    "part_of_speech": "adverb",
+    "tags": [
+      "quantity",
+      "request"
+    ]
+  },
+  {
+    "word": "よく",
+    "reading": "よく",
+    "romaji": "yoku",
+    "meaning_vi": "thường xuyên; tốt, cẩn thận",
+    "part_of_speech": "adverb",
+    "tags": [
+      "frequency",
+      "manner"
+    ]
+  },
+  {
+    "word": "時々",
+    "reading": "ときどき",
+    "romaji": "tokidoki",
+    "meaning_vi": "đôi khi, thỉnh thoảng",
+    "part_of_speech": "adverb",
+    "tags": [
+      "frequency"
+    ]
+  },
+  {
+    "word": "いつも",
+    "reading": "いつも",
+    "romaji": "itsumo",
+    "meaning_vi": "luôn luôn, lúc nào cũng",
+    "part_of_speech": "adverb",
+    "tags": [
+      "frequency"
+    ]
+  },
+  {
+    "word": "たいてい",
+    "reading": "たいてい",
+    "romaji": "taitei",
+    "meaning_vi": "thường thường, hầu hết",
+    "part_of_speech": "adverb",
+    "tags": [
+      "frequency"
+    ]
+  },
+  {
+    "word": "ゆっくり",
+    "reading": "ゆっくり",
+    "romaji": "yukkuri",
+    "meaning_vi": "từ từ, thong thả, chậm rãi",
+    "part_of_speech": "adverb",
+    "tags": [
+      "manner"
+    ]
+  },
+  {
+    "word": "はっきり",
+    "reading": "はっきり",
+    "romaji": "hakkiri",
+    "meaning_vi": "rõ ràng, dứt khoát",
+    "part_of_speech": "adverb",
+    "tags": [
+      "manner"
+    ]
+  },
+  {
+    "word": "一緒に",
+    "reading": "いっしょに",
+    "romaji": "issho ni",
+    "meaning_vi": "cùng nhau, cùng với",
+    "part_of_speech": "adverb",
+    "tags": [
+      "manner"
+    ]
+  },
+  {
+    "word": "一人で",
+    "reading": "ひとりで",
+    "romaji": "hitoride",
+    "meaning_vi": "một mình, tự mình",
+    "part_of_speech": "adverb",
+    "tags": [
+      "manner"
+    ]
+  },
+  {
+    "word": "だれ",
+    "reading": "だれ",
+    "romaji": "dare",
+    "meaning_vi": "ai (câu hỏi về người)",
+    "part_of_speech": "noun",
+    "tags": [
+      "question",
+      "person"
+    ]
+  },
+  {
+    "word": "どなた",
+    "reading": "どなた",
+    "romaji": "donata",
+    "meaning_vi": "ai (lịch sự, kính ngữ của だれ)",
+    "part_of_speech": "noun",
+    "tags": [
+      "question",
+      "person",
+      "honorific"
+    ]
+  },
+  {
+    "word": "なに",
+    "reading": "なに",
+    "romaji": "nani",
+    "meaning_vi": "cái gì (câu hỏi về vật/sự việc)",
+    "part_of_speech": "noun",
+    "tags": [
+      "question"
+    ]
+  },
+  {
+    "word": "どこ",
+    "reading": "どこ",
+    "romaji": "doko",
+    "meaning_vi": "ở đâu, đâu",
+    "part_of_speech": "noun",
+    "tags": [
+      "question",
+      "place"
+    ]
+  },
+  {
+    "word": "いつ",
+    "reading": "いつ",
+    "romaji": "itsu",
+    "meaning_vi": "khi nào, lúc nào, bao giờ",
+    "part_of_speech": "noun",
+    "tags": [
+      "question",
+      "time"
+    ]
+  },
+  {
+    "word": "なぜ",
+    "reading": "なぜ",
+    "romaji": "naze",
+    "meaning_vi": "tại sao, vì sao",
+    "part_of_speech": "adverb",
+    "tags": [
+      "question",
+      "reason"
+    ]
+  },
+  {
+    "word": "どうして",
+    "reading": "どうして",
+    "romaji": "doushite",
+    "meaning_vi": "tại sao, vì sao (thông thường hơn なぜ)",
+    "part_of_speech": "adverb",
+    "tags": [
+      "question",
+      "reason"
+    ]
+  },
+  {
+    "word": "どう",
+    "reading": "どう",
+    "romaji": "dou",
+    "meaning_vi": "như thế nào (câu hỏi về cách thức/trạng thái)",
+    "part_of_speech": "adverb",
+    "tags": [
+      "question",
+      "manner"
+    ]
+  },
+  {
+    "word": "どんな",
+    "reading": "どんな",
+    "romaji": "donna",
+    "meaning_vi": "loại gì, như thế nào (mô tả chất lượng)",
+    "part_of_speech": "adjective",
+    "tags": [
+      "question"
+    ]
+  },
+  {
+    "word": "どの",
+    "reading": "どの",
+    "romaji": "dono",
+    "meaning_vi": "cái nào (chỉ định trong nhóm)",
+    "part_of_speech": "adjective",
+    "tags": [
+      "question"
+    ]
+  },
+  {
+    "word": "いくつ",
+    "reading": "いくつ",
+    "romaji": "ikutsu",
+    "meaning_vi": "bao nhiêu cái; bao nhiêu tuổi",
+    "part_of_speech": "noun",
+    "tags": [
+      "question",
+      "number"
+    ]
+  },
+  {
+    "word": "いくら",
+    "reading": "いくら",
+    "romaji": "ikura",
+    "meaning_vi": "bao nhiêu tiền, giá bao nhiêu",
+    "part_of_speech": "noun",
+    "tags": [
+      "question",
+      "price"
+    ]
+  },
+  {
+    "word": "どのくらい",
+    "reading": "どのくらい",
+    "romaji": "donokurai",
+    "meaning_vi": "bao lâu, bao xa, bao nhiêu (về mức độ)",
+    "part_of_speech": "expression",
+    "tags": [
+      "question",
+      "degree"
+    ]
+  },
+  {
+    "word": "名前",
+    "reading": "なまえ",
+    "romaji": "namae",
+    "meaning_vi": "tên, tên gọi",
+    "part_of_speech": "noun",
+    "tags": [
+      "personal"
+    ]
+  },
+  {
+    "word": "国",
+    "reading": "くに",
+    "romaji": "kuni",
+    "meaning_vi": "đất nước, quê hương",
+    "part_of_speech": "noun",
+    "tags": [
+      "geography"
+    ]
+  },
+  {
+    "word": "言葉",
+    "reading": "ことば",
+    "romaji": "kotoba",
+    "meaning_vi": "ngôn ngữ, lời nói, từ ngữ",
+    "part_of_speech": "noun",
+    "tags": [
+      "language"
+    ]
+  },
+  {
+    "word": "日本語",
+    "reading": "にほんご",
+    "romaji": "nihongo",
+    "meaning_vi": "tiếng Nhật",
+    "part_of_speech": "noun",
+    "tags": [
+      "language"
+    ]
+  },
+  {
+    "word": "英語",
+    "reading": "えいご",
+    "romaji": "eigo",
+    "meaning_vi": "tiếng Anh",
+    "part_of_speech": "noun",
+    "tags": [
+      "language"
+    ]
+  },
+  {
+    "word": "中国語",
+    "reading": "ちゅうごくご",
+    "romaji": "chuugokugo",
+    "meaning_vi": "tiếng Trung Quốc",
+    "part_of_speech": "noun",
+    "tags": [
+      "language"
+    ]
+  },
+  {
+    "word": "韓国語",
+    "reading": "かんこくご",
+    "romaji": "kankokugo",
+    "meaning_vi": "tiếng Hàn Quốc",
+    "part_of_speech": "noun",
+    "tags": [
+      "language"
+    ]
+  },
+  {
+    "word": "友達",
+    "reading": "ともだち",
+    "romaji": "tomodachi",
+    "meaning_vi": "bạn bè",
+    "part_of_speech": "noun",
+    "tags": [
+      "social"
+    ]
+  },
+  {
+    "word": "先生",
+    "reading": "せんせい",
+    "romaji": "sensei",
+    "meaning_vi": "giáo viên, thầy/cô; bác sĩ",
+    "part_of_speech": "noun",
+    "tags": [
+      "education",
+      "honorific"
+    ]
+  },
+  {
+    "word": "学生",
+    "reading": "がくせい",
+    "romaji": "gakusei",
+    "meaning_vi": "học sinh, sinh viên đại học",
+    "part_of_speech": "noun",
+    "tags": [
+      "education",
+      "people"
+    ]
+  },
+  {
+    "word": "お金",
+    "reading": "おかね",
+    "romaji": "okane",
+    "meaning_vi": "tiền",
+    "part_of_speech": "noun",
+    "tags": [
+      "money"
+    ]
+  },
+  {
+    "word": "電気",
+    "reading": "でんき",
+    "romaji": "denki",
+    "meaning_vi": "điện; đèn điện",
+    "part_of_speech": "noun",
+    "tags": [
+      "utility"
+    ]
+  },
+  {
+    "word": "天気",
+    "reading": "てんき",
+    "romaji": "tenki",
+    "meaning_vi": "thời tiết",
+    "part_of_speech": "noun",
+    "tags": [
+      "weather"
+    ]
+  },
+  {
+    "word": "雨",
+    "reading": "あめ",
+    "romaji": "ame",
+    "meaning_vi": "mưa",
+    "part_of_speech": "noun",
+    "tags": [
+      "weather"
+    ]
+  },
+  {
+    "word": "雪",
+    "reading": "ゆき",
+    "romaji": "yuki",
+    "meaning_vi": "tuyết",
+    "part_of_speech": "noun",
+    "tags": [
+      "weather"
+    ]
+  },
+  {
+    "word": "風",
+    "reading": "かぜ",
+    "romaji": "kaze",
+    "meaning_vi": "gió; cảm lạnh (bệnh)",
+    "part_of_speech": "noun",
+    "tags": [
+      "weather"
+    ]
+  },
+  {
+    "word": "曇り",
+    "reading": "くもり",
+    "romaji": "kumori",
+    "meaning_vi": "trời mây",
+    "part_of_speech": "noun",
+    "tags": [
+      "weather"
+    ]
+  },
+  {
+    "word": "映画",
+    "reading": "えいが",
+    "romaji": "eiga",
+    "meaning_vi": "phim (điện ảnh)",
+    "part_of_speech": "noun",
+    "tags": [
+      "entertainment"
+    ]
+  },
+  {
+    "word": "音楽",
+    "reading": "おんがく",
+    "romaji": "ongaku",
+    "meaning_vi": "âm nhạc",
+    "part_of_speech": "noun",
+    "tags": [
+      "entertainment"
+    ]
+  },
+  {
+    "word": "スポーツ",
+    "reading": "すぽーつ",
+    "romaji": "supootsu",
+    "meaning_vi": "thể thao",
+    "part_of_speech": "noun",
+    "tags": [
+      "sport",
+      "katakana"
+    ]
+  },
+  {
+    "word": "試験",
+    "reading": "しけん",
+    "romaji": "shiken",
+    "meaning_vi": "bài kiểm tra, kỳ thi",
+    "part_of_speech": "noun",
+    "tags": [
+      "education"
+    ]
+  },
+  {
+    "word": "授業",
+    "reading": "じゅぎょう",
+    "romaji": "jugyou",
+    "meaning_vi": "tiết học, lớp học",
+    "part_of_speech": "noun",
+    "tags": [
+      "education"
+    ]
+  },
+  {
+    "word": "宿題",
+    "reading": "しゅくだい",
+    "romaji": "shukudai",
+    "meaning_vi": "bài tập về nhà",
+    "part_of_speech": "noun",
+    "tags": [
+      "education"
+    ]
+  },
+  {
+    "word": "仕事",
+    "reading": "しごと",
+    "romaji": "shigoto",
+    "meaning_vi": "công việc, việc làm",
+    "part_of_speech": "noun",
+    "tags": [
+      "work"
+    ]
+  },
+  {
+    "word": "犬",
+    "reading": "いぬ",
+    "romaji": "inu",
+    "meaning_vi": "con chó",
+    "part_of_speech": "noun",
+    "tags": [
+      "animal"
+    ]
+  },
+  {
+    "word": "猫",
+    "reading": "ねこ",
+    "romaji": "neko",
+    "meaning_vi": "con mèo",
+    "part_of_speech": "noun",
+    "tags": [
+      "animal"
+    ]
+  },
+  {
+    "word": "鳥",
+    "reading": "とり",
+    "romaji": "tori",
+    "meaning_vi": "con chim; gà (thịt)",
+    "part_of_speech": "noun",
+    "tags": [
+      "animal"
+    ]
+  },
+  {
+    "word": "色",
+    "reading": "いろ",
+    "romaji": "iro",
+    "meaning_vi": "màu sắc",
+    "part_of_speech": "noun",
+    "tags": [
+      "color"
+    ]
+  },
+  {
+    "word": "緑",
+    "reading": "みどり",
+    "romaji": "midori",
+    "meaning_vi": "màu xanh lá",
+    "part_of_speech": "noun",
+    "tags": [
+      "color"
+    ]
+  },
+  {
+    "word": "黄色",
+    "reading": "きいろ",
+    "romaji": "kiiro",
+    "meaning_vi": "màu vàng",
+    "part_of_speech": "noun",
+    "tags": [
+      "color"
+    ]
+  },
+  {
+    "word": "茶色",
+    "reading": "ちゃいろ",
+    "romaji": "chairo",
+    "meaning_vi": "màu nâu",
+    "part_of_speech": "noun",
+    "tags": [
+      "color"
+    ]
+  },
+  {
+    "word": "ピンク",
+    "reading": "ぴんく",
+    "romaji": "pinku",
+    "meaning_vi": "màu hồng",
+    "part_of_speech": "noun",
+    "tags": [
+      "color",
+      "katakana"
+    ]
+  }
+]

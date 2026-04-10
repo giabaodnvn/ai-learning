@@ -1,0 +1,457 @@
+[
+  {
+    "pattern": "〜は〜です",
+    "explanation_vi": "Câu khẳng định cơ bản: A là B. Dùng để giới thiệu hoặc mô tả sự vật.",
+    "examples": [
+      {
+        "ja": "これは本です。",
+        "vi": "Đây là cuốn sách."
+      },
+      {
+        "ja": "田中さんは先生です。",
+        "vi": "Anh Tanaka là giáo viên."
+      }
+    ],
+    "notes_vi": "は là trợ từ chủ đề (topic marker), đọc là 'wa' trong ngữ cảnh này."
+  },
+  {
+    "pattern": "〜は〜ではありません",
+    "explanation_vi": "Câu phủ định lịch sự: A không phải là B.",
+    "examples": [
+      {
+        "ja": "これは本ではありません。",
+        "vi": "Đây không phải là cuốn sách."
+      },
+      {
+        "ja": "田中さんは学生ではありません。",
+        "vi": "Anh Tanaka không phải là học sinh."
+      }
+    ],
+    "notes_vi": "じゃありません là dạng thông thường hơn của ではありません."
+  },
+  {
+    "pattern": "〜は〜ですか",
+    "explanation_vi": "Câu hỏi Yes/No: A có phải là B không?",
+    "examples": [
+      {
+        "ja": "これは本ですか。",
+        "vi": "Đây có phải là cuốn sách không?"
+      },
+      {
+        "ja": "あなたは学生ですか。",
+        "vi": "Bạn có phải là học sinh không?"
+      }
+    ],
+    "notes_vi": "Thêm か vào cuối câu để tạo câu hỏi. Giọng xuống ở cuối câu."
+  },
+  {
+    "pattern": "〜も",
+    "explanation_vi": "Trợ từ も (cũng): dùng thay cho は/が để nói 'cũng vậy'.",
+    "examples": [
+      {
+        "ja": "田中さんは学生です。山田さんも学生です。",
+        "vi": "Anh Tanaka là học sinh. Anh Yamada cũng là học sinh."
+      },
+      {
+        "ja": "私も行きます。",
+        "vi": "Tôi cũng đi."
+      }
+    ],
+    "notes_vi": null
+  },
+  {
+    "pattern": "〜の",
+    "explanation_vi": "Trợ từ の biểu thị sở hữu hoặc quan hệ giữa danh từ: A của B, A thuộc về B.",
+    "examples": [
+      {
+        "ja": "私の本",
+        "vi": "cuốn sách của tôi"
+      },
+      {
+        "ja": "日本語の先生",
+        "vi": "giáo viên tiếng Nhật"
+      },
+      {
+        "ja": "田中さんの車",
+        "vi": "xe của anh Tanaka"
+      }
+    ],
+    "notes_vi": null
+  },
+  {
+    "pattern": "〜が好きです / 〜が嫌いです",
+    "explanation_vi": "Bày tỏ sở thích: thích / không thích ~. Trợ từ が được dùng với 好き và 嫌い.",
+    "examples": [
+      {
+        "ja": "私は音楽が好きです。",
+        "vi": "Tôi thích âm nhạc."
+      },
+      {
+        "ja": "野菜が嫌いです。",
+        "vi": "Tôi không thích rau."
+      }
+    ],
+    "notes_vi": "Đây là tính từ な (na-adjective), không phải động từ."
+  },
+  {
+    "pattern": "〜があります / 〜があった",
+    "explanation_vi": "Tồn tại của vật (vô tri): có ~, ~ ở đó. Dùng cho đồ vật không có sinh mạng.",
+    "examples": [
+      {
+        "ja": "机の上に本があります。",
+        "vi": "Trên bàn có cuốn sách."
+      },
+      {
+        "ja": "駅の前にコンビニがあります。",
+        "vi": "Trước ga có cửa hàng tiện lợi."
+      }
+    ],
+    "notes_vi": "Dùng います cho người và động vật (có sinh mạng)."
+  },
+  {
+    "pattern": "〜がいます / 〜がいた",
+    "explanation_vi": "Tồn tại của người/động vật (hữu sinh): có ~. Dùng cho người, động vật.",
+    "examples": [
+      {
+        "ja": "部屋に猫がいます。",
+        "vi": "Trong phòng có con mèo."
+      },
+      {
+        "ja": "公園に子どもたちがいます。",
+        "vi": "Ở công viên có các em nhỏ."
+      }
+    ],
+    "notes_vi": "Dùng あります cho đồ vật (vô tri)."
+  },
+  {
+    "pattern": "〜に〜があります／います",
+    "explanation_vi": "Cấu trúc chỉ vị trí tồn tại: ở ~ có ~. に là trợ từ chỉ nơi chốn.",
+    "examples": [
+      {
+        "ja": "冷蔵庫にジュースがあります。",
+        "vi": "Trong tủ lạnh có nước trái cây."
+      },
+      {
+        "ja": "教室に学生がいます。",
+        "vi": "Trong lớp có học sinh."
+      }
+    ],
+    "notes_vi": null
+  },
+  {
+    "pattern": "〜で",
+    "explanation_vi": "Trợ từ で chỉ nơi thực hiện hành động: ở ~, tại ~. Khác với に là nơi tồn tại.",
+    "examples": [
+      {
+        "ja": "図書館で勉強します。",
+        "vi": "Tôi học ở thư viện."
+      },
+      {
+        "ja": "レストランで食べます。",
+        "vi": "Ăn ở nhà hàng."
+      }
+    ],
+    "notes_vi": "に chỉ nơi tồn tại/đến, で chỉ nơi thực hiện hành động."
+  },
+  {
+    "pattern": "〜へ / 〜に (chỉ hướng)",
+    "explanation_vi": "Trợ từ へ/に chỉ hướng di chuyển: đến ~, tới ~.",
+    "examples": [
+      {
+        "ja": "学校へ行きます。",
+        "vi": "Đi đến trường."
+      },
+      {
+        "ja": "東京に行きます。",
+        "vi": "Đi tới Tokyo."
+      }
+    ],
+    "notes_vi": "へ đọc là 'e'. へ nhấn mạnh hướng di chuyển, に nhấn mạnh điểm đến."
+  },
+  {
+    "pattern": "〜を",
+    "explanation_vi": "Trợ từ を đánh dấu tân ngữ trực tiếp của động từ (đối tượng hành động).",
+    "examples": [
+      {
+        "ja": "本を読みます。",
+        "vi": "Đọc sách."
+      },
+      {
+        "ja": "コーヒーを飲みます。",
+        "vi": "Uống cà phê."
+      }
+    ],
+    "notes_vi": "を đọc là 'o'."
+  },
+  {
+    "pattern": "〜から〜まで",
+    "explanation_vi": "Từ ~ đến ~: chỉ phạm vi về thời gian hoặc không gian.",
+    "examples": [
+      {
+        "ja": "9時から5時まで働きます。",
+        "vi": "Làm việc từ 9 giờ đến 5 giờ."
+      },
+      {
+        "ja": "東京から大阪まで新幹線で行きます。",
+        "vi": "Đi từ Tokyo đến Osaka bằng Shinkansen."
+      }
+    ],
+    "notes_vi": null
+  },
+  {
+    "pattern": "〜と",
+    "explanation_vi": "Trợ từ と: (1) và, cùng với; (2) trích dẫn, nói rằng.",
+    "examples": [
+      {
+        "word": "本とノート",
+        "ja": "本とノートを買います。",
+        "vi": "Mua sách và vở."
+      },
+      {
+        "ja": "友達と映画を見ます。",
+        "vi": "Xem phim cùng với bạn."
+      }
+    ],
+    "notes_vi": "と nối hai danh từ (và), hoặc chỉ người đi cùng."
+  },
+  {
+    "pattern": "〜ね / 〜よ",
+    "explanation_vi": "Trợ từ cuối câu: ね tìm kiếm sự đồng tình; よ nhấn mạnh thông tin mới.",
+    "examples": [
+      {
+        "ja": "今日は寒いですね。",
+        "vi": "Hôm nay lạnh nhỉ? (phải không?)"
+      },
+      {
+        "ja": "明日は休みですよ。",
+        "vi": "Ngày mai nghỉ đấy. (tôi thông báo cho bạn)"
+      }
+    ],
+    "notes_vi": null
+  },
+  {
+    "pattern": "〜ている（動作の進行）",
+    "explanation_vi": "Diễn tả hành động đang xảy ra: đang ~.",
+    "examples": [
+      {
+        "ja": "今、ご飯を食べています。",
+        "vi": "Bây giờ đang ăn cơm."
+      },
+      {
+        "ja": "音楽を聴いています。",
+        "vi": "Đang nghe nhạc."
+      }
+    ],
+    "notes_vi": "て形 + います. Dạng thân mật là てる."
+  },
+  {
+    "pattern": "〜ている（状態）",
+    "explanation_vi": "Diễn tả trạng thái là kết quả của hành động đã xảy ra: đã ~ và vẫn còn như vậy.",
+    "examples": [
+      {
+        "ja": "結婚しています。",
+        "vi": "Đã kết hôn. (đang ở trạng thái kết hôn)"
+      },
+      {
+        "ja": "眼鏡をかけています。",
+        "vi": "Đang đeo kính."
+      }
+    ],
+    "notes_vi": "Phân biệt với diễn tiến: 結婚している = hiện đang có gia đình."
+  },
+  {
+    "pattern": "〜てください",
+    "explanation_vi": "Yêu cầu/đề nghị lịch sự: xin hãy ~, làm ơn ~.",
+    "examples": [
+      {
+        "ja": "ここに座ってください。",
+        "vi": "Xin mời ngồi đây."
+      },
+      {
+        "ja": "もう一度言ってください。",
+        "vi": "Làm ơn nói lại một lần nữa."
+      }
+    ],
+    "notes_vi": "て形 + ください."
+  },
+  {
+    "pattern": "〜てもいいですか",
+    "explanation_vi": "Xin phép làm ~: ~ có được không?",
+    "examples": [
+      {
+        "ja": "写真を撮ってもいいですか。",
+        "vi": "Tôi có thể chụp ảnh không?"
+      },
+      {
+        "ja": "ここに座ってもいいですか。",
+        "vi": "Tôi có thể ngồi đây không?"
+      }
+    ],
+    "notes_vi": "Trả lời đồng ý: はい、どうぞ. Từ chối: いいえ、ちょっと…"
+  },
+  {
+    "pattern": "〜てはいけません",
+    "explanation_vi": "Cấm đoán: không được ~.",
+    "examples": [
+      {
+        "ja": "ここで写真を撮ってはいけません。",
+        "vi": "Không được chụp ảnh ở đây."
+      },
+      {
+        "ja": "タバコを吸ってはいけません。",
+        "vi": "Không được hút thuốc."
+      }
+    ],
+    "notes_vi": "Dạng thân mật: てはだめ."
+  },
+  {
+    "pattern": "〜なければなりません",
+    "explanation_vi": "Bắt buộc phải ~: phải ~.",
+    "examples": [
+      {
+        "ja": "毎日薬を飲まなければなりません。",
+        "vi": "Phải uống thuốc mỗi ngày."
+      },
+      {
+        "ja": "宿題をしなければなりません。",
+        "vi": "Phải làm bài tập về nhà."
+      }
+    ],
+    "notes_vi": "Dạng phủ định của động từ + ければなりません. Dạng ngắn: なきゃ."
+  },
+  {
+    "pattern": "〜なくてもいいです",
+    "explanation_vi": "Không cần thiết phải ~: không cần ~.",
+    "examples": [
+      {
+        "ja": "今日は来なくてもいいです。",
+        "vi": "Hôm nay không cần đến."
+      },
+      {
+        "ja": "全部食べなくてもいいですよ。",
+        "vi": "Không cần phải ăn hết đâu."
+      }
+    ],
+    "notes_vi": null
+  },
+  {
+    "pattern": "〜たい",
+    "explanation_vi": "Bày tỏ mong muốn của bản thân: muốn ~.",
+    "examples": [
+      {
+        "ja": "日本へ行きたいです。",
+        "vi": "Tôi muốn đi Nhật Bản."
+      },
+      {
+        "ja": "アイスクリームが食べたいです。",
+        "vi": "Tôi muốn ăn kem."
+      }
+    ],
+    "notes_vi": "Chia như tính từ い: たい、たくない、たかった. Không dùng cho ý muốn của người khác."
+  },
+  {
+    "pattern": "〜たいと思います",
+    "explanation_vi": "Diễn đạt ý định hoặc mong muốn (nhẹ hơn): tôi muốn / tôi dự định ~.",
+    "examples": [
+      {
+        "ja": "来年、日本語を勉強したいと思います。",
+        "vi": "Năm tới tôi muốn học tiếng Nhật."
+      },
+      {
+        "ja": "将来は教師になりたいと思います。",
+        "vi": "Tôi muốn trở thành giáo viên trong tương lai."
+      }
+    ],
+    "notes_vi": null
+  },
+  {
+    "pattern": "〜ましょう / 〜ませんか",
+    "explanation_vi": "Đề nghị cùng làm: hãy cùng ~, chúng ta ~ nhé. ませんか lịch sự hơn.",
+    "examples": [
+      {
+        "ja": "一緒に食べましょう！",
+        "vi": "Cùng ăn nhé!"
+      },
+      {
+        "ja": "映画を見ませんか。",
+        "vi": "Chúng mình xem phim không?"
+      }
+    ],
+    "notes_vi": "ましょう là đề nghị mạnh, ませんか là mời lịch sự hơn."
+  },
+  {
+    "pattern": "〜ませんか（勧誘）",
+    "explanation_vi": "Lời mời nhẹ nhàng: bạn có muốn ~ không?",
+    "examples": [
+      {
+        "ja": "一緒にコーヒーを飲みませんか。",
+        "vi": "Bạn có muốn uống cà phê cùng tôi không?"
+      },
+      {
+        "ja": "今週末、出かけませんか。",
+        "vi": "Cuối tuần này đi chơi không?"
+      }
+    ],
+    "notes_vi": null
+  },
+  {
+    "pattern": "〜ことができます",
+    "explanation_vi": "Khả năng: có thể ~.",
+    "examples": [
+      {
+        "ja": "私は日本語を話すことができます。",
+        "vi": "Tôi có thể nói tiếng Nhật."
+      },
+      {
+        "ja": "ここで泳ぐことができます。",
+        "vi": "Có thể bơi ở đây."
+      }
+    ],
+    "notes_vi": "Thay thế bằng tiềm năng hình: 話せます."
+  },
+  {
+    "pattern": "〜が分かります",
+    "explanation_vi": "Hiểu ~, biết ~. が là trợ từ đối tượng.",
+    "examples": [
+      {
+        "ja": "日本語が少し分かります。",
+        "vi": "Tôi hiểu tiếng Nhật một chút."
+      },
+      {
+        "ja": "この問題が分かりません。",
+        "vi": "Tôi không hiểu bài toán này."
+      }
+    ],
+    "notes_vi": "Chú ý dùng が, không phải を."
+  },
+  {
+    "pattern": "〜が上手です / 〜が下手です",
+    "explanation_vi": "Giỏi ~ / vụng về về ~.",
+    "examples": [
+      {
+        "ja": "田中さんはテニスが上手です。",
+        "vi": "Anh Tanaka giỏi tennis."
+      },
+      {
+        "ja": "私は料理が下手です。",
+        "vi": "Tôi nấu ăn không giỏi."
+      }
+    ],
+    "notes_vi": "Dùng が, không phải を."
+  },
+  {
+    "pattern": "〜でしょう",
+    "explanation_vi": "Phỏng đoán lịch sự: chắc là ~, có lẽ ~.",
+    "examples": [
+      {
+        "ja": "明日は雨でしょう。",
+        "vi": "Ngày mai chắc là mưa."
+      },
+      {
+        "ja": "彼女は学生でしょう。",
+        "vi": "Cô ấy chắc là học sinh."
+      }
+    ],
+    "notes_vi": "Dạng thân mật: だろう."
+  }
+]

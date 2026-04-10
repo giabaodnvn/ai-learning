@@ -1,0 +1,1450 @@
+[
+  {
+    "character": "一",
+    "onyomi": [
+      "イチ",
+      "イツ"
+    ],
+    "kunyomi": [
+      "ひと",
+      "ひと.つ"
+    ],
+    "meaning_vi": "một",
+    "stroke_count": 1,
+    "vocab_examples": [
+      {
+        "word": "一つ",
+        "reading": "ひとつ",
+        "meaning_vi": "một cái"
+      },
+      {
+        "word": "一日",
+        "reading": "いちにち",
+        "meaning_vi": "một ngày"
+      },
+      {
+        "word": "一番",
+        "reading": "いちばん",
+        "meaning_vi": "số một, nhất"
+      }
+    ]
+  },
+  {
+    "character": "二",
+    "onyomi": [
+      "ニ",
+      "ジ"
+    ],
+    "kunyomi": [
+      "ふた",
+      "ふた.つ"
+    ],
+    "meaning_vi": "hai",
+    "stroke_count": 2,
+    "vocab_examples": [
+      {
+        "word": "二つ",
+        "reading": "ふたつ",
+        "meaning_vi": "hai cái"
+      },
+      {
+        "word": "二日",
+        "reading": "ふつか",
+        "meaning_vi": "ngày hai, hai ngày"
+      },
+      {
+        "word": "二人",
+        "reading": "ふたり",
+        "meaning_vi": "hai người"
+      }
+    ]
+  },
+  {
+    "character": "三",
+    "onyomi": [
+      "サン"
+    ],
+    "kunyomi": [
+      "み",
+      "み.つ",
+      "みっ.つ"
+    ],
+    "meaning_vi": "ba",
+    "stroke_count": 3,
+    "vocab_examples": [
+      {
+        "word": "三つ",
+        "reading": "みっつ",
+        "meaning_vi": "ba cái"
+      },
+      {
+        "word": "三日",
+        "reading": "みっか",
+        "meaning_vi": "ngày ba, ba ngày"
+      },
+      {
+        "word": "三月",
+        "reading": "さんがつ",
+        "meaning_vi": "tháng ba"
+      }
+    ]
+  },
+  {
+    "character": "四",
+    "onyomi": [
+      "シ"
+    ],
+    "kunyomi": [
+      "よ",
+      "よ.つ",
+      "よっ.つ",
+      "よん"
+    ],
+    "meaning_vi": "bốn",
+    "stroke_count": 5,
+    "vocab_examples": [
+      {
+        "word": "四つ",
+        "reading": "よっつ",
+        "meaning_vi": "bốn cái"
+      },
+      {
+        "word": "四日",
+        "reading": "よっか",
+        "meaning_vi": "ngày bốn, bốn ngày"
+      },
+      {
+        "word": "四月",
+        "reading": "しがつ",
+        "meaning_vi": "tháng tư"
+      }
+    ]
+  },
+  {
+    "character": "五",
+    "onyomi": [
+      "ゴ"
+    ],
+    "kunyomi": [
+      "いつ",
+      "いつ.つ"
+    ],
+    "meaning_vi": "năm",
+    "stroke_count": 4,
+    "vocab_examples": [
+      {
+        "word": "五つ",
+        "reading": "いつつ",
+        "meaning_vi": "năm cái"
+      },
+      {
+        "word": "五日",
+        "reading": "いつか",
+        "meaning_vi": "ngày năm, năm ngày"
+      },
+      {
+        "word": "五月",
+        "reading": "ごがつ",
+        "meaning_vi": "tháng năm"
+      }
+    ]
+  },
+  {
+    "character": "六",
+    "onyomi": [
+      "ロク"
+    ],
+    "kunyomi": [
+      "む",
+      "む.つ",
+      "むっ.つ",
+      "むい"
+    ],
+    "meaning_vi": "sáu",
+    "stroke_count": 4,
+    "vocab_examples": [
+      {
+        "word": "六つ",
+        "reading": "むっつ",
+        "meaning_vi": "sáu cái"
+      },
+      {
+        "word": "六日",
+        "reading": "むいか",
+        "meaning_vi": "ngày sáu, sáu ngày"
+      },
+      {
+        "word": "六月",
+        "reading": "ろくがつ",
+        "meaning_vi": "tháng sáu"
+      }
+    ]
+  },
+  {
+    "character": "七",
+    "onyomi": [
+      "シチ"
+    ],
+    "kunyomi": [
+      "なな",
+      "なな.つ",
+      "なの"
+    ],
+    "meaning_vi": "bảy",
+    "stroke_count": 2,
+    "vocab_examples": [
+      {
+        "word": "七つ",
+        "reading": "ななつ",
+        "meaning_vi": "bảy cái"
+      },
+      {
+        "word": "七日",
+        "reading": "なのか",
+        "meaning_vi": "ngày bảy, bảy ngày"
+      },
+      {
+        "word": "七月",
+        "reading": "しちがつ",
+        "meaning_vi": "tháng bảy"
+      }
+    ]
+  },
+  {
+    "character": "八",
+    "onyomi": [
+      "ハチ"
+    ],
+    "kunyomi": [
+      "や",
+      "や.つ",
+      "やっ.つ",
+      "よう"
+    ],
+    "meaning_vi": "tám",
+    "stroke_count": 2,
+    "vocab_examples": [
+      {
+        "word": "八つ",
+        "reading": "やっつ",
+        "meaning_vi": "tám cái"
+      },
+      {
+        "word": "八日",
+        "reading": "ようか",
+        "meaning_vi": "ngày tám, tám ngày"
+      },
+      {
+        "word": "八月",
+        "reading": "はちがつ",
+        "meaning_vi": "tháng tám"
+      }
+    ]
+  },
+  {
+    "character": "九",
+    "onyomi": [
+      "キュウ",
+      "ク"
+    ],
+    "kunyomi": [
+      "ここの",
+      "ここの.つ"
+    ],
+    "meaning_vi": "chín",
+    "stroke_count": 2,
+    "vocab_examples": [
+      {
+        "word": "九つ",
+        "reading": "ここのつ",
+        "meaning_vi": "chín cái"
+      },
+      {
+        "word": "九日",
+        "reading": "ここのか",
+        "meaning_vi": "ngày chín, chín ngày"
+      },
+      {
+        "word": "九月",
+        "reading": "くがつ",
+        "meaning_vi": "tháng chín"
+      }
+    ]
+  },
+  {
+    "character": "十",
+    "onyomi": [
+      "ジュウ",
+      "ジッ"
+    ],
+    "kunyomi": [
+      "とお",
+      "と"
+    ],
+    "meaning_vi": "mười",
+    "stroke_count": 2,
+    "vocab_examples": [
+      {
+        "word": "十日",
+        "reading": "とおか",
+        "meaning_vi": "ngày mười, mười ngày"
+      },
+      {
+        "word": "十月",
+        "reading": "じゅうがつ",
+        "meaning_vi": "tháng mười"
+      },
+      {
+        "word": "二十歳",
+        "reading": "はたち",
+        "meaning_vi": "hai mươi tuổi"
+      }
+    ]
+  },
+  {
+    "character": "百",
+    "onyomi": [
+      "ヒャク"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "trăm",
+    "stroke_count": 6,
+    "vocab_examples": [
+      {
+        "word": "百円",
+        "reading": "ひゃくえん",
+        "meaning_vi": "một trăm yên"
+      },
+      {
+        "word": "三百",
+        "reading": "さんびゃく",
+        "meaning_vi": "ba trăm"
+      },
+      {
+        "word": "百貨店",
+        "reading": "ひゃっかてん",
+        "meaning_vi": "bách hóa"
+      }
+    ]
+  },
+  {
+    "character": "千",
+    "onyomi": [
+      "セン"
+    ],
+    "kunyomi": [
+      "ち"
+    ],
+    "meaning_vi": "nghìn",
+    "stroke_count": 3,
+    "vocab_examples": [
+      {
+        "word": "千円",
+        "reading": "せんえん",
+        "meaning_vi": "một nghìn yên"
+      },
+      {
+        "word": "三千",
+        "reading": "さんぜん",
+        "meaning_vi": "ba nghìn"
+      },
+      {
+        "word": "千年",
+        "reading": "せんねん",
+        "meaning_vi": "nghìn năm"
+      }
+    ]
+  },
+  {
+    "character": "万",
+    "onyomi": [
+      "マン",
+      "バン"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "vạn, mười nghìn",
+    "stroke_count": 3,
+    "vocab_examples": [
+      {
+        "word": "一万",
+        "reading": "いちまん",
+        "meaning_vi": "mười nghìn"
+      },
+      {
+        "word": "万円",
+        "reading": "まんえん",
+        "meaning_vi": "mười nghìn yên"
+      },
+      {
+        "word": "万年筆",
+        "reading": "まんねんひつ",
+        "meaning_vi": "bút máy"
+      }
+    ]
+  },
+  {
+    "character": "円",
+    "onyomi": [
+      "エン"
+    ],
+    "kunyomi": [
+      "まる.い"
+    ],
+    "meaning_vi": "yên (tiền tệ), tròn",
+    "stroke_count": 4,
+    "vocab_examples": [
+      {
+        "word": "百円",
+        "reading": "ひゃくえん",
+        "meaning_vi": "một trăm yên"
+      },
+      {
+        "word": "円い",
+        "reading": "まるい",
+        "meaning_vi": "tròn"
+      },
+      {
+        "word": "円高",
+        "reading": "えんだか",
+        "meaning_vi": "đồng yên tăng giá"
+      }
+    ]
+  },
+  {
+    "character": "年",
+    "onyomi": [
+      "ネン"
+    ],
+    "kunyomi": [
+      "とし"
+    ],
+    "meaning_vi": "năm (thời gian)",
+    "stroke_count": 6,
+    "vocab_examples": [
+      {
+        "word": "今年",
+        "reading": "ことし",
+        "meaning_vi": "năm nay"
+      },
+      {
+        "word": "来年",
+        "reading": "らいねん",
+        "meaning_vi": "năm tới"
+      },
+      {
+        "word": "去年",
+        "reading": "きょねん",
+        "meaning_vi": "năm ngoái"
+      }
+    ]
+  },
+  {
+    "character": "月",
+    "onyomi": [
+      "ゲツ",
+      "ガツ"
+    ],
+    "kunyomi": [
+      "つき"
+    ],
+    "meaning_vi": "tháng, mặt trăng",
+    "stroke_count": 4,
+    "vocab_examples": [
+      {
+        "word": "月曜日",
+        "reading": "げつようび",
+        "meaning_vi": "thứ Hai"
+      },
+      {
+        "word": "今月",
+        "reading": "こんげつ",
+        "meaning_vi": "tháng này"
+      },
+      {
+        "word": "来月",
+        "reading": "らいげつ",
+        "meaning_vi": "tháng tới"
+      }
+    ]
+  },
+  {
+    "character": "日",
+    "onyomi": [
+      "ニチ",
+      "ジツ"
+    ],
+    "kunyomi": [
+      "ひ",
+      "か"
+    ],
+    "meaning_vi": "ngày, mặt trời",
+    "stroke_count": 4,
+    "vocab_examples": [
+      {
+        "word": "日曜日",
+        "reading": "にちようび",
+        "meaning_vi": "chủ nhật"
+      },
+      {
+        "word": "今日",
+        "reading": "きょう",
+        "meaning_vi": "hôm nay"
+      },
+      {
+        "word": "毎日",
+        "reading": "まいにち",
+        "meaning_vi": "mỗi ngày"
+      }
+    ]
+  },
+  {
+    "character": "時",
+    "onyomi": [
+      "ジ"
+    ],
+    "kunyomi": [
+      "とき"
+    ],
+    "meaning_vi": "giờ, thời gian",
+    "stroke_count": 10,
+    "vocab_examples": [
+      {
+        "word": "時間",
+        "reading": "じかん",
+        "meaning_vi": "thời gian"
+      },
+      {
+        "word": "何時",
+        "reading": "なんじ",
+        "meaning_vi": "mấy giờ"
+      },
+      {
+        "word": "時々",
+        "reading": "ときどき",
+        "meaning_vi": "đôi khi"
+      }
+    ]
+  },
+  {
+    "character": "分",
+    "onyomi": [
+      "フン",
+      "ブン"
+    ],
+    "kunyomi": [
+      "わ.かる",
+      "わ.ける"
+    ],
+    "meaning_vi": "phút, phần",
+    "stroke_count": 4,
+    "vocab_examples": [
+      {
+        "word": "五分",
+        "reading": "ごふん",
+        "meaning_vi": "năm phút"
+      },
+      {
+        "word": "半分",
+        "reading": "はんぶん",
+        "meaning_vi": "một nửa"
+      },
+      {
+        "word": "分かる",
+        "reading": "わかる",
+        "meaning_vi": "hiểu"
+      }
+    ]
+  },
+  {
+    "character": "今",
+    "onyomi": [
+      "コン",
+      "キン"
+    ],
+    "kunyomi": [
+      "いま"
+    ],
+    "meaning_vi": "bây giờ, hiện tại",
+    "stroke_count": 4,
+    "vocab_examples": [
+      {
+        "word": "今日",
+        "reading": "きょう",
+        "meaning_vi": "hôm nay"
+      },
+      {
+        "word": "今週",
+        "reading": "こんしゅう",
+        "meaning_vi": "tuần này"
+      },
+      {
+        "word": "今年",
+        "reading": "ことし",
+        "meaning_vi": "năm nay"
+      }
+    ]
+  },
+  {
+    "character": "午",
+    "onyomi": [
+      "ゴ"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "giờ ngọ, buổi trưa",
+    "stroke_count": 4,
+    "vocab_examples": [
+      {
+        "word": "午前",
+        "reading": "ごぜん",
+        "meaning_vi": "buổi sáng (trước 12h)"
+      },
+      {
+        "word": "午後",
+        "reading": "ごご",
+        "meaning_vi": "buổi chiều (sau 12h)"
+      },
+      {
+        "word": "午前中",
+        "reading": "ごぜんちゅう",
+        "meaning_vi": "suốt buổi sáng"
+      }
+    ]
+  },
+  {
+    "character": "前",
+    "onyomi": [
+      "ゼン"
+    ],
+    "kunyomi": [
+      "まえ"
+    ],
+    "meaning_vi": "trước, phía trước",
+    "stroke_count": 9,
+    "vocab_examples": [
+      {
+        "word": "前",
+        "reading": "まえ",
+        "meaning_vi": "phía trước"
+      },
+      {
+        "word": "午前",
+        "reading": "ごぜん",
+        "meaning_vi": "buổi sáng"
+      },
+      {
+        "word": "名前",
+        "reading": "なまえ",
+        "meaning_vi": "tên"
+      }
+    ]
+  },
+  {
+    "character": "後",
+    "onyomi": [
+      "ゴ",
+      "コウ"
+    ],
+    "kunyomi": [
+      "あと",
+      "うし.ろ",
+      "のち"
+    ],
+    "meaning_vi": "sau, phía sau",
+    "stroke_count": 9,
+    "vocab_examples": [
+      {
+        "word": "後",
+        "reading": "あと",
+        "meaning_vi": "sau, phía sau"
+      },
+      {
+        "word": "午後",
+        "reading": "ごご",
+        "meaning_vi": "buổi chiều"
+      },
+      {
+        "word": "後で",
+        "reading": "あとで",
+        "meaning_vi": "sau này"
+      }
+    ]
+  },
+  {
+    "character": "毎",
+    "onyomi": [
+      "マイ"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "mỗi",
+    "stroke_count": 6,
+    "vocab_examples": [
+      {
+        "word": "毎日",
+        "reading": "まいにち",
+        "meaning_vi": "mỗi ngày"
+      },
+      {
+        "word": "毎週",
+        "reading": "まいしゅう",
+        "meaning_vi": "mỗi tuần"
+      },
+      {
+        "word": "毎朝",
+        "reading": "まいあさ",
+        "meaning_vi": "mỗi buổi sáng"
+      }
+    ]
+  },
+  {
+    "character": "何",
+    "onyomi": [
+      "カ"
+    ],
+    "kunyomi": [
+      "なに",
+      "なん"
+    ],
+    "meaning_vi": "gì, cái gì",
+    "stroke_count": 7,
+    "vocab_examples": [
+      {
+        "word": "何",
+        "reading": "なに/なん",
+        "meaning_vi": "cái gì"
+      },
+      {
+        "word": "何時",
+        "reading": "なんじ",
+        "meaning_vi": "mấy giờ"
+      },
+      {
+        "word": "何人",
+        "reading": "なんにん",
+        "meaning_vi": "bao nhiêu người"
+      }
+    ]
+  },
+  {
+    "character": "人",
+    "onyomi": [
+      "ジン",
+      "ニン"
+    ],
+    "kunyomi": [
+      "ひと"
+    ],
+    "meaning_vi": "người",
+    "stroke_count": 2,
+    "vocab_examples": [
+      {
+        "word": "人",
+        "reading": "ひと",
+        "meaning_vi": "người"
+      },
+      {
+        "word": "日本人",
+        "reading": "にほんじん",
+        "meaning_vi": "người Nhật"
+      },
+      {
+        "word": "外国人",
+        "reading": "がいこくじん",
+        "meaning_vi": "người nước ngoài"
+      }
+    ]
+  },
+  {
+    "character": "名",
+    "onyomi": [
+      "メイ",
+      "ミョウ"
+    ],
+    "kunyomi": [
+      "な"
+    ],
+    "meaning_vi": "tên, danh",
+    "stroke_count": 6,
+    "vocab_examples": [
+      {
+        "word": "名前",
+        "reading": "なまえ",
+        "meaning_vi": "tên"
+      },
+      {
+        "word": "名前",
+        "reading": "なまえ",
+        "meaning_vi": "tên"
+      },
+      {
+        "word": "有名",
+        "reading": "ゆうめい",
+        "meaning_vi": "nổi tiếng"
+      }
+    ]
+  },
+  {
+    "character": "国",
+    "onyomi": [
+      "コク"
+    ],
+    "kunyomi": [
+      "くに"
+    ],
+    "meaning_vi": "nước, quốc gia",
+    "stroke_count": 8,
+    "vocab_examples": [
+      {
+        "word": "国",
+        "reading": "くに",
+        "meaning_vi": "đất nước"
+      },
+      {
+        "word": "外国",
+        "reading": "がいこく",
+        "meaning_vi": "nước ngoài"
+      },
+      {
+        "word": "中国",
+        "reading": "ちゅうごく",
+        "meaning_vi": "Trung Quốc"
+      }
+    ]
+  },
+  {
+    "character": "語",
+    "onyomi": [
+      "ゴ"
+    ],
+    "kunyomi": [
+      "かた.る"
+    ],
+    "meaning_vi": "ngôn ngữ, tiếng",
+    "stroke_count": 14,
+    "vocab_examples": [
+      {
+        "word": "日本語",
+        "reading": "にほんご",
+        "meaning_vi": "tiếng Nhật"
+      },
+      {
+        "word": "英語",
+        "reading": "えいご",
+        "meaning_vi": "tiếng Anh"
+      },
+      {
+        "word": "外国語",
+        "reading": "がいこくご",
+        "meaning_vi": "tiếng nước ngoài"
+      }
+    ]
+  },
+  {
+    "character": "本",
+    "onyomi": [
+      "ホン"
+    ],
+    "kunyomi": [
+      "もと"
+    ],
+    "meaning_vi": "sách, gốc, Nhật Bản",
+    "stroke_count": 5,
+    "vocab_examples": [
+      {
+        "word": "本",
+        "reading": "ほん",
+        "meaning_vi": "cuốn sách"
+      },
+      {
+        "word": "日本",
+        "reading": "にほん",
+        "meaning_vi": "Nhật Bản"
+      },
+      {
+        "word": "本当",
+        "reading": "ほんとう",
+        "meaning_vi": "thật sự"
+      }
+    ]
+  },
+  {
+    "character": "学",
+    "onyomi": [
+      "ガク"
+    ],
+    "kunyomi": [
+      "まな.ぶ"
+    ],
+    "meaning_vi": "học",
+    "stroke_count": 8,
+    "vocab_examples": [
+      {
+        "word": "学校",
+        "reading": "がっこう",
+        "meaning_vi": "trường học"
+      },
+      {
+        "word": "学生",
+        "reading": "がくせい",
+        "meaning_vi": "học sinh"
+      },
+      {
+        "word": "大学",
+        "reading": "だいがく",
+        "meaning_vi": "đại học"
+      }
+    ]
+  },
+  {
+    "character": "生",
+    "onyomi": [
+      "セイ",
+      "ショウ"
+    ],
+    "kunyomi": [
+      "い.きる",
+      "う.まれる",
+      "なま"
+    ],
+    "meaning_vi": "sống, sinh",
+    "stroke_count": 5,
+    "vocab_examples": [
+      {
+        "word": "学生",
+        "reading": "がくせい",
+        "meaning_vi": "học sinh"
+      },
+      {
+        "word": "先生",
+        "reading": "せんせい",
+        "meaning_vi": "giáo viên"
+      },
+      {
+        "word": "生まれる",
+        "reading": "うまれる",
+        "meaning_vi": "được sinh ra"
+      }
+    ]
+  },
+  {
+    "character": "先",
+    "onyomi": [
+      "セン"
+    ],
+    "kunyomi": [
+      "さき"
+    ],
+    "meaning_vi": "trước, tiên",
+    "stroke_count": 6,
+    "vocab_examples": [
+      {
+        "word": "先生",
+        "reading": "せんせい",
+        "meaning_vi": "giáo viên"
+      },
+      {
+        "word": "先週",
+        "reading": "せんしゅう",
+        "meaning_vi": "tuần trước"
+      },
+      {
+        "word": "先",
+        "reading": "さき",
+        "meaning_vi": "phía trước, trước"
+      }
+    ]
+  },
+  {
+    "character": "山",
+    "onyomi": [
+      "サン"
+    ],
+    "kunyomi": [
+      "やま"
+    ],
+    "meaning_vi": "núi",
+    "stroke_count": 3,
+    "vocab_examples": [
+      {
+        "word": "山",
+        "reading": "やま",
+        "meaning_vi": "núi"
+      },
+      {
+        "word": "富士山",
+        "reading": "ふじさん",
+        "meaning_vi": "núi Phú Sĩ"
+      },
+      {
+        "word": "山田",
+        "reading": "やまだ",
+        "meaning_vi": "Yamada (họ người)"
+      }
+    ]
+  },
+  {
+    "character": "川",
+    "onyomi": [
+      "セン"
+    ],
+    "kunyomi": [
+      "かわ"
+    ],
+    "meaning_vi": "sông",
+    "stroke_count": 3,
+    "vocab_examples": [
+      {
+        "word": "川",
+        "reading": "かわ",
+        "meaning_vi": "con sông"
+      },
+      {
+        "word": "小川",
+        "reading": "おがわ",
+        "meaning_vi": "suối nhỏ"
+      },
+      {
+        "word": "川口",
+        "reading": "かわぐち",
+        "meaning_vi": "cửa sông"
+      }
+    ]
+  },
+  {
+    "character": "田",
+    "onyomi": [
+      "デン"
+    ],
+    "kunyomi": [
+      "た"
+    ],
+    "meaning_vi": "ruộng lúa",
+    "stroke_count": 5,
+    "vocab_examples": [
+      {
+        "word": "田んぼ",
+        "reading": "たんぼ",
+        "meaning_vi": "ruộng lúa"
+      },
+      {
+        "word": "田中",
+        "reading": "たなか",
+        "meaning_vi": "Tanaka (họ người)"
+      },
+      {
+        "word": "山田",
+        "reading": "やまだ",
+        "meaning_vi": "Yamada (họ người)"
+      }
+    ]
+  },
+  {
+    "character": "大",
+    "onyomi": [
+      "ダイ",
+      "タイ"
+    ],
+    "kunyomi": [
+      "おお.きい"
+    ],
+    "meaning_vi": "lớn, to",
+    "stroke_count": 3,
+    "vocab_examples": [
+      {
+        "word": "大きい",
+        "reading": "おおきい",
+        "meaning_vi": "lớn"
+      },
+      {
+        "word": "大学",
+        "reading": "だいがく",
+        "meaning_vi": "đại học"
+      },
+      {
+        "word": "大好き",
+        "reading": "だいすき",
+        "meaning_vi": "rất thích"
+      }
+    ]
+  },
+  {
+    "character": "小",
+    "onyomi": [
+      "ショウ"
+    ],
+    "kunyomi": [
+      "ちい.さい",
+      "こ",
+      "お"
+    ],
+    "meaning_vi": "nhỏ, bé",
+    "stroke_count": 3,
+    "vocab_examples": [
+      {
+        "word": "小さい",
+        "reading": "ちいさい",
+        "meaning_vi": "nhỏ"
+      },
+      {
+        "word": "小学校",
+        "reading": "しょうがっこう",
+        "meaning_vi": "trường tiểu học"
+      },
+      {
+        "word": "小説",
+        "reading": "しょうせつ",
+        "meaning_vi": "tiểu thuyết"
+      }
+    ]
+  },
+  {
+    "character": "上",
+    "onyomi": [
+      "ジョウ",
+      "ショウ"
+    ],
+    "kunyomi": [
+      "うえ",
+      "うわ",
+      "のぼ.る",
+      "あ.げる"
+    ],
+    "meaning_vi": "trên, phía trên",
+    "stroke_count": 3,
+    "vocab_examples": [
+      {
+        "word": "上",
+        "reading": "うえ",
+        "meaning_vi": "phía trên"
+      },
+      {
+        "word": "上手",
+        "reading": "じょうず",
+        "meaning_vi": "giỏi"
+      },
+      {
+        "word": "上がる",
+        "reading": "あがる",
+        "meaning_vi": "lên, tăng"
+      }
+    ]
+  },
+  {
+    "character": "下",
+    "onyomi": [
+      "カ",
+      "ゲ"
+    ],
+    "kunyomi": [
+      "した",
+      "しも",
+      "くだ.さい",
+      "さ.げる"
+    ],
+    "meaning_vi": "dưới, phía dưới",
+    "stroke_count": 3,
+    "vocab_examples": [
+      {
+        "word": "下",
+        "reading": "した",
+        "meaning_vi": "phía dưới"
+      },
+      {
+        "word": "下手",
+        "reading": "へた",
+        "meaning_vi": "vụng về"
+      },
+      {
+        "word": "ください",
+        "reading": "ください",
+        "meaning_vi": "xin hãy, làm ơn cho"
+      }
+    ]
+  },
+  {
+    "character": "左",
+    "onyomi": [
+      "サ"
+    ],
+    "kunyomi": [
+      "ひだり"
+    ],
+    "meaning_vi": "trái",
+    "stroke_count": 5,
+    "vocab_examples": [
+      {
+        "word": "左",
+        "reading": "ひだり",
+        "meaning_vi": "bên trái"
+      },
+      {
+        "word": "左手",
+        "reading": "ひだりて",
+        "meaning_vi": "tay trái"
+      },
+      {
+        "word": "左側",
+        "reading": "ひだりがわ",
+        "meaning_vi": "phía bên trái"
+      }
+    ]
+  },
+  {
+    "character": "右",
+    "onyomi": [
+      "ウ",
+      "ユウ"
+    ],
+    "kunyomi": [
+      "みぎ"
+    ],
+    "meaning_vi": "phải",
+    "stroke_count": 5,
+    "vocab_examples": [
+      {
+        "word": "右",
+        "reading": "みぎ",
+        "meaning_vi": "bên phải"
+      },
+      {
+        "word": "右手",
+        "reading": "みぎて",
+        "meaning_vi": "tay phải"
+      },
+      {
+        "word": "右側",
+        "reading": "みぎがわ",
+        "meaning_vi": "phía bên phải"
+      }
+    ]
+  },
+  {
+    "character": "中",
+    "onyomi": [
+      "チュウ"
+    ],
+    "kunyomi": [
+      "なか"
+    ],
+    "meaning_vi": "trong, giữa",
+    "stroke_count": 4,
+    "vocab_examples": [
+      {
+        "word": "中",
+        "reading": "なか",
+        "meaning_vi": "bên trong"
+      },
+      {
+        "word": "中国",
+        "reading": "ちゅうごく",
+        "meaning_vi": "Trung Quốc"
+      },
+      {
+        "word": "中学校",
+        "reading": "ちゅうがっこう",
+        "meaning_vi": "trường trung học cơ sở"
+      }
+    ]
+  },
+  {
+    "character": "外",
+    "onyomi": [
+      "ガイ",
+      "ゲ"
+    ],
+    "kunyomi": [
+      "そと",
+      "はず.れる"
+    ],
+    "meaning_vi": "ngoài, bên ngoài",
+    "stroke_count": 5,
+    "vocab_examples": [
+      {
+        "word": "外",
+        "reading": "そと",
+        "meaning_vi": "bên ngoài"
+      },
+      {
+        "word": "外国",
+        "reading": "がいこく",
+        "meaning_vi": "nước ngoài"
+      },
+      {
+        "word": "外出",
+        "reading": "がいしゅつ",
+        "meaning_vi": "ra ngoài"
+      }
+    ]
+  },
+  {
+    "character": "女",
+    "onyomi": [
+      "ジョ",
+      "ニョ"
+    ],
+    "kunyomi": [
+      "おんな",
+      "め"
+    ],
+    "meaning_vi": "phụ nữ, nữ",
+    "stroke_count": 3,
+    "vocab_examples": [
+      {
+        "word": "女",
+        "reading": "おんな",
+        "meaning_vi": "phụ nữ"
+      },
+      {
+        "word": "女の子",
+        "reading": "おんなのこ",
+        "meaning_vi": "con gái"
+      },
+      {
+        "word": "女性",
+        "reading": "じょせい",
+        "meaning_vi": "nữ giới"
+      }
+    ]
+  },
+  {
+    "character": "男",
+    "onyomi": [
+      "ダン",
+      "ナン"
+    ],
+    "kunyomi": [
+      "おとこ"
+    ],
+    "meaning_vi": "đàn ông, nam",
+    "stroke_count": 7,
+    "vocab_examples": [
+      {
+        "word": "男",
+        "reading": "おとこ",
+        "meaning_vi": "đàn ông"
+      },
+      {
+        "word": "男の子",
+        "reading": "おとこのこ",
+        "meaning_vi": "con trai"
+      },
+      {
+        "word": "男性",
+        "reading": "だんせい",
+        "meaning_vi": "nam giới"
+      }
+    ]
+  },
+  {
+    "character": "子",
+    "onyomi": [
+      "シ",
+      "ス"
+    ],
+    "kunyomi": [
+      "こ"
+    ],
+    "meaning_vi": "đứa trẻ, con",
+    "stroke_count": 3,
+    "vocab_examples": [
+      {
+        "word": "子ども",
+        "reading": "こども",
+        "meaning_vi": "trẻ em"
+      },
+      {
+        "word": "女の子",
+        "reading": "おんなのこ",
+        "meaning_vi": "con gái"
+      },
+      {
+        "word": "男の子",
+        "reading": "おとこのこ",
+        "meaning_vi": "con trai"
+      }
+    ]
+  },
+  {
+    "character": "父",
+    "onyomi": [
+      "フ"
+    ],
+    "kunyomi": [
+      "ちち"
+    ],
+    "meaning_vi": "cha, bố",
+    "stroke_count": 4,
+    "vocab_examples": [
+      {
+        "word": "父",
+        "reading": "ちち",
+        "meaning_vi": "cha (cách nói khiêm tốn)"
+      },
+      {
+        "word": "お父さん",
+        "reading": "おとうさん",
+        "meaning_vi": "bố (cách nói lịch sự)"
+      },
+      {
+        "word": "父親",
+        "reading": "ちちおや",
+        "meaning_vi": "người cha"
+      }
+    ]
+  },
+  {
+    "character": "母",
+    "onyomi": [
+      "ボ"
+    ],
+    "kunyomi": [
+      "はは"
+    ],
+    "meaning_vi": "mẹ",
+    "stroke_count": 5,
+    "vocab_examples": [
+      {
+        "word": "母",
+        "reading": "はは",
+        "meaning_vi": "mẹ (cách nói khiêm tốn)"
+      },
+      {
+        "word": "お母さん",
+        "reading": "おかあさん",
+        "meaning_vi": "mẹ (cách nói lịch sự)"
+      },
+      {
+        "word": "母親",
+        "reading": "ははおや",
+        "meaning_vi": "người mẹ"
+      }
+    ]
+  },
+  {
+    "character": "友",
+    "onyomi": [
+      "ユウ"
+    ],
+    "kunyomi": [
+      "とも"
+    ],
+    "meaning_vi": "bạn bè",
+    "stroke_count": 4,
+    "vocab_examples": [
+      {
+        "word": "友達",
+        "reading": "ともだち",
+        "meaning_vi": "bạn bè"
+      },
+      {
+        "word": "友人",
+        "reading": "ゆうじん",
+        "meaning_vi": "bạn bè (trang trọng)"
+      },
+      {
+        "word": "親友",
+        "reading": "しんゆう",
+        "meaning_vi": "bạn thân"
+      }
+    ]
+  }
+]

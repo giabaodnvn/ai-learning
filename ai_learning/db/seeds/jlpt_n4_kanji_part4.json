@@ -1,0 +1,780 @@
+[
+  {
+    "character": "鳥",
+    "onyomi": [
+      "チョウ"
+    ],
+    "kunyomi": [
+      "とり"
+    ],
+    "meaning_vi": "chim",
+    "stroke_count": 11,
+    "vocab_examples": [
+      {
+        "word": "鳥",
+        "reading": "とり",
+        "meaning_vi": "chim"
+      },
+      {
+        "word": "野鳥",
+        "reading": "やちょう",
+        "meaning_vi": "chim hoang dã"
+      },
+      {
+        "word": "小鳥",
+        "reading": "ことり",
+        "meaning_vi": "chim nhỏ"
+      }
+    ]
+  },
+  {
+    "character": "黒",
+    "onyomi": [
+      "コク"
+    ],
+    "kunyomi": [
+      "くろ",
+      "くろ.い"
+    ],
+    "meaning_vi": "đen",
+    "stroke_count": 11,
+    "vocab_examples": [
+      {
+        "word": "黒い",
+        "reading": "くろい",
+        "meaning_vi": "đen"
+      },
+      {
+        "word": "黒板",
+        "reading": "こくばん",
+        "meaning_vi": "bảng đen"
+      },
+      {
+        "word": "白黒",
+        "reading": "しろくろ",
+        "meaning_vi": "trắng đen"
+      }
+    ]
+  },
+  {
+    "character": "点",
+    "onyomi": [
+      "テン"
+    ],
+    "kunyomi": [
+      "とも.る",
+      "つ.ける"
+    ],
+    "meaning_vi": "điểm, chấm",
+    "stroke_count": 9,
+    "vocab_examples": [
+      {
+        "word": "問題点",
+        "reading": "もんだいてん",
+        "meaning_vi": "điểm vấn đề"
+      },
+      {
+        "word": "観点",
+        "reading": "かんてん",
+        "meaning_vi": "quan điểm"
+      },
+      {
+        "word": "地点",
+        "reading": "ちてん",
+        "meaning_vi": "địa điểm"
+      }
+    ]
+  },
+  {
+    "character": "平",
+    "onyomi": [
+      "ヘイ",
+      "ビョウ"
+    ],
+    "kunyomi": [
+      "たい.ら",
+      "ひら"
+    ],
+    "meaning_vi": "bằng phẳng, bình thường",
+    "stroke_count": 5,
+    "vocab_examples": [
+      {
+        "word": "平和",
+        "reading": "へいわ",
+        "meaning_vi": "hòa bình"
+      },
+      {
+        "word": "平日",
+        "reading": "へいじつ",
+        "meaning_vi": "ngày thường (không phải cuối tuần)"
+      },
+      {
+        "word": "水平",
+        "reading": "すいへい",
+        "meaning_vi": "nằm ngang, thủy bình"
+      }
+    ]
+  },
+  {
+    "character": "伝",
+    "onyomi": [
+      "デン"
+    ],
+    "kunyomi": [
+      "つた.わる",
+      "つた.える"
+    ],
+    "meaning_vi": "truyền đạt, kể lại",
+    "stroke_count": 6,
+    "vocab_examples": [
+      {
+        "word": "伝える",
+        "reading": "つたえる",
+        "meaning_vi": "truyền đạt, thông báo"
+      },
+      {
+        "word": "伝わる",
+        "reading": "つたわる",
+        "meaning_vi": "được truyền đạt"
+      },
+      {
+        "word": "伝言",
+        "reading": "でんごん",
+        "meaning_vi": "lời nhắn, tin nhắn"
+      }
+    ]
+  },
+  {
+    "character": "列",
+    "onyomi": [
+      "レツ"
+    ],
+    "kunyomi": [
+      "なら.ぶ"
+    ],
+    "meaning_vi": "hàng, dãy, liệt",
+    "stroke_count": 6,
+    "vocab_examples": [
+      {
+        "word": "列車",
+        "reading": "れっしゃ",
+        "meaning_vi": "đoàn tàu"
+      },
+      {
+        "word": "行列",
+        "reading": "ぎょうれつ",
+        "meaning_vi": "hàng dài, đoàn người xếp hàng"
+      },
+      {
+        "word": "列島",
+        "reading": "れっとう",
+        "meaning_vi": "quần đảo"
+      }
+    ]
+  },
+  {
+    "character": "初",
+    "onyomi": [
+      "ショ"
+    ],
+    "kunyomi": [
+      "はじ.め",
+      "はじ.めて",
+      "うい"
+    ],
+    "meaning_vi": "đầu tiên, lần đầu",
+    "stroke_count": 7,
+    "vocab_examples": [
+      {
+        "word": "初めて",
+        "reading": "はじめて",
+        "meaning_vi": "lần đầu tiên"
+      },
+      {
+        "word": "初日",
+        "reading": "しょにち",
+        "meaning_vi": "ngày đầu tiên"
+      },
+      {
+        "word": "最初",
+        "reading": "さいしょ",
+        "meaning_vi": "đầu tiên, ban đầu"
+      }
+    ]
+  },
+  {
+    "character": "末",
+    "onyomi": [
+      "マツ",
+      "バツ"
+    ],
+    "kunyomi": [
+      "すえ"
+    ],
+    "meaning_vi": "cuối, ngọn",
+    "stroke_count": 5,
+    "vocab_examples": [
+      {
+        "word": "月末",
+        "reading": "げつまつ",
+        "meaning_vi": "cuối tháng"
+      },
+      {
+        "word": "期末",
+        "reading": "きまつ",
+        "meaning_vi": "cuối kỳ"
+      },
+      {
+        "word": "始末",
+        "reading": "しまつ",
+        "meaning_vi": "đầu đuôi, kết quả"
+      }
+    ]
+  },
+  {
+    "character": "様",
+    "onyomi": [
+      "ヨウ"
+    ],
+    "kunyomi": [
+      "さま"
+    ],
+    "meaning_vi": "dáng, dạng, vẻ",
+    "stroke_count": 14,
+    "vocab_examples": [
+      {
+        "word": "一様",
+        "reading": "いちよう",
+        "meaning_vi": "đồng đều, giống nhau"
+      },
+      {
+        "word": "模様",
+        "reading": "もよう",
+        "meaning_vi": "hoa văn, hình mẫu"
+      },
+      {
+        "word": "同様",
+        "reading": "どうよう",
+        "meaning_vi": "tương tự, cùng loại"
+      }
+    ]
+  },
+  {
+    "character": "望",
+    "onyomi": [
+      "ボウ",
+      "モウ"
+    ],
+    "kunyomi": [
+      "のぞ.む",
+      "のぞ.み"
+    ],
+    "meaning_vi": "mong muốn, hy vọng",
+    "stroke_count": 11,
+    "vocab_examples": [
+      {
+        "word": "希望",
+        "reading": "きぼう",
+        "meaning_vi": "hy vọng"
+      },
+      {
+        "word": "望む",
+        "reading": "のぞむ",
+        "meaning_vi": "mong muốn"
+      },
+      {
+        "word": "展望",
+        "reading": "てんぼう",
+        "meaning_vi": "triển vọng, tầm nhìn"
+      }
+    ]
+  },
+  {
+    "character": "相",
+    "onyomi": [
+      "ソウ",
+      "ショウ"
+    ],
+    "kunyomi": [
+      "あい"
+    ],
+    "meaning_vi": "tương, hỗ trợ, hình dáng",
+    "stroke_count": 9,
+    "vocab_examples": [
+      {
+        "word": "相談",
+        "reading": "そうだん",
+        "meaning_vi": "tư vấn, thảo luận"
+      },
+      {
+        "word": "首相",
+        "reading": "しゅしょう",
+        "meaning_vi": "thủ tướng"
+      },
+      {
+        "word": "相手",
+        "reading": "あいて",
+        "meaning_vi": "đối phương, bạn đồng hành"
+      }
+    ]
+  },
+  {
+    "character": "説",
+    "onyomi": [
+      "セツ",
+      "ゼイ"
+    ],
+    "kunyomi": [
+      "と.く"
+    ],
+    "meaning_vi": "giải thích, thuyết",
+    "stroke_count": 14,
+    "vocab_examples": [
+      {
+        "word": "説明",
+        "reading": "せつめい",
+        "meaning_vi": "giải thích"
+      },
+      {
+        "word": "小説",
+        "reading": "しょうせつ",
+        "meaning_vi": "tiểu thuyết"
+      },
+      {
+        "word": "説得",
+        "reading": "せっとく",
+        "meaning_vi": "thuyết phục"
+      }
+    ]
+  },
+  {
+    "character": "調",
+    "onyomi": [
+      "チョウ"
+    ],
+    "kunyomi": [
+      "しら.べる",
+      "ととの.う"
+    ],
+    "meaning_vi": "điều tra, điều chỉnh",
+    "stroke_count": 15,
+    "vocab_examples": [
+      {
+        "word": "調べる",
+        "reading": "しらべる",
+        "meaning_vi": "điều tra, tra cứu"
+      },
+      {
+        "word": "調子",
+        "reading": "ちょうし",
+        "meaning_vi": "tình trạng, điều kiện"
+      },
+      {
+        "word": "調査",
+        "reading": "ちょうさ",
+        "meaning_vi": "điều tra, khảo sát"
+      }
+    ]
+  },
+  {
+    "character": "談",
+    "onyomi": [
+      "ダン"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "trò chuyện, bàn bạc",
+    "stroke_count": 15,
+    "vocab_examples": [
+      {
+        "word": "相談",
+        "reading": "そうだん",
+        "meaning_vi": "tư vấn, thảo luận"
+      },
+      {
+        "word": "会談",
+        "reading": "かいだん",
+        "meaning_vi": "hội đàm"
+      },
+      {
+        "word": "談話",
+        "reading": "だんわ",
+        "meaning_vi": "trò chuyện, đàm thoại"
+      }
+    ]
+  },
+  {
+    "character": "頭",
+    "onyomi": [
+      "トウ",
+      "ズ"
+    ],
+    "kunyomi": [
+      "あたま",
+      "かしら"
+    ],
+    "meaning_vi": "đầu, não",
+    "stroke_count": 16,
+    "vocab_examples": [
+      {
+        "word": "頭",
+        "reading": "あたま",
+        "meaning_vi": "cái đầu"
+      },
+      {
+        "word": "頭痛",
+        "reading": "ずつう",
+        "meaning_vi": "đau đầu"
+      },
+      {
+        "word": "先頭",
+        "reading": "せんとう",
+        "meaning_vi": "dẫn đầu, đứng đầu"
+      }
+    ]
+  },
+  {
+    "character": "具",
+    "onyomi": [
+      "グ"
+    ],
+    "kunyomi": [
+      "そな.える"
+    ],
+    "meaning_vi": "dụng cụ, đồ nghề",
+    "stroke_count": 8,
+    "vocab_examples": [
+      {
+        "word": "道具",
+        "reading": "どうぐ",
+        "meaning_vi": "dụng cụ, công cụ"
+      },
+      {
+        "word": "具体的",
+        "reading": "ぐたいてき",
+        "meaning_vi": "cụ thể"
+      },
+      {
+        "word": "家具",
+        "reading": "かぐ",
+        "meaning_vi": "đồ nội thất"
+      }
+    ]
+  },
+  {
+    "character": "込",
+    "onyomi": [],
+    "kunyomi": [
+      "こ.む",
+      "こ.める"
+    ],
+    "meaning_vi": "nhồi vào, chen chúc, đông đúc",
+    "stroke_count": 5,
+    "vocab_examples": [
+      {
+        "word": "込む",
+        "reading": "こむ",
+        "meaning_vi": "đông đúc, chen chúc"
+      },
+      {
+        "word": "申し込む",
+        "reading": "もうしこむ",
+        "meaning_vi": "đăng ký, nộp đơn"
+      },
+      {
+        "word": "込める",
+        "reading": "こめる",
+        "meaning_vi": "nhồi vào, bỏ vào"
+      }
+    ]
+  },
+  {
+    "character": "違",
+    "onyomi": [
+      "イ"
+    ],
+    "kunyomi": [
+      "ちが.う",
+      "ちが.い"
+    ],
+    "meaning_vi": "khác nhau, sai",
+    "stroke_count": 13,
+    "vocab_examples": [
+      {
+        "word": "違う",
+        "reading": "ちがう",
+        "meaning_vi": "khác nhau, sai"
+      },
+      {
+        "word": "違い",
+        "reading": "ちがい",
+        "meaning_vi": "sự khác biệt"
+      },
+      {
+        "word": "間違い",
+        "reading": "まちがい",
+        "meaning_vi": "lỗi, nhầm lẫn"
+      }
+    ]
+  },
+  {
+    "character": "払",
+    "onyomi": [
+      "フツ"
+    ],
+    "kunyomi": [
+      "はら.う"
+    ],
+    "meaning_vi": "trả tiền, thanh toán",
+    "stroke_count": 5,
+    "vocab_examples": [
+      {
+        "word": "払う",
+        "reading": "はらう",
+        "meaning_vi": "trả tiền, thanh toán"
+      },
+      {
+        "word": "支払い",
+        "reading": "しはらい",
+        "meaning_vi": "thanh toán, trả tiền"
+      },
+      {
+        "word": "前払い",
+        "reading": "まえばらい",
+        "meaning_vi": "trả trước"
+      }
+    ]
+  },
+  {
+    "character": "済",
+    "onyomi": [
+      "サイ",
+      "セイ"
+    ],
+    "kunyomi": [
+      "す.む",
+      "す.ます"
+    ],
+    "meaning_vi": "xong, hoàn tất",
+    "stroke_count": 11,
+    "vocab_examples": [
+      {
+        "word": "済む",
+        "reading": "すむ",
+        "meaning_vi": "xong, hoàn tất"
+      },
+      {
+        "word": "経済",
+        "reading": "けいざい",
+        "meaning_vi": "kinh tế"
+      },
+      {
+        "word": "返済",
+        "reading": "へんさい",
+        "meaning_vi": "hoàn trả, trả nợ"
+      }
+    ]
+  },
+  {
+    "character": "連",
+    "onyomi": [
+      "レン"
+    ],
+    "kunyomi": [
+      "つ.れる",
+      "つら.なる"
+    ],
+    "meaning_vi": "liên kết, dẫn theo",
+    "stroke_count": 10,
+    "vocab_examples": [
+      {
+        "word": "連れる",
+        "reading": "つれる",
+        "meaning_vi": "dẫn theo, đưa đi"
+      },
+      {
+        "word": "連絡",
+        "reading": "れんらく",
+        "meaning_vi": "liên lạc"
+      },
+      {
+        "word": "関連",
+        "reading": "かんれん",
+        "meaning_vi": "liên quan"
+      }
+    ]
+  },
+  {
+    "character": "結",
+    "onyomi": [
+      "ケツ"
+    ],
+    "kunyomi": [
+      "むす.ぶ",
+      "ゆ.う"
+    ],
+    "meaning_vi": "buộc, kết, kết quả",
+    "stroke_count": 12,
+    "vocab_examples": [
+      {
+        "word": "結婚",
+        "reading": "けっこん",
+        "meaning_vi": "kết hôn"
+      },
+      {
+        "word": "結果",
+        "reading": "けっか",
+        "meaning_vi": "kết quả"
+      },
+      {
+        "word": "結局",
+        "reading": "けっきょく",
+        "meaning_vi": "cuối cùng, rốt cuộc"
+      }
+    ]
+  },
+  {
+    "character": "切",
+    "onyomi": [
+      "セツ",
+      "サイ"
+    ],
+    "kunyomi": [
+      "き.る",
+      "き.れる"
+    ],
+    "meaning_vi": "cắt, hết, quan trọng",
+    "stroke_count": 4,
+    "vocab_examples": [
+      {
+        "word": "切る",
+        "reading": "きる",
+        "meaning_vi": "cắt"
+      },
+      {
+        "word": "大切",
+        "reading": "たいせつ",
+        "meaning_vi": "quan trọng, trân trọng"
+      },
+      {
+        "word": "切符",
+        "reading": "きっぷ",
+        "meaning_vi": "vé"
+      }
+    ]
+  },
+  {
+    "character": "以",
+    "onyomi": [
+      "イ"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "từ, hơn, dĩ",
+    "stroke_count": 5,
+    "vocab_examples": [
+      {
+        "word": "以外",
+        "reading": "いがい",
+        "meaning_vi": "ngoài ra, ngoài…"
+      },
+      {
+        "word": "以内",
+        "reading": "いない",
+        "meaning_vi": "trong vòng, không quá"
+      },
+      {
+        "word": "以後",
+        "reading": "いご",
+        "meaning_vi": "kể từ đây về sau"
+      }
+    ]
+  },
+  {
+    "character": "確",
+    "onyomi": [
+      "カク"
+    ],
+    "kunyomi": [
+      "たし.か",
+      "たし.かめる"
+    ],
+    "meaning_vi": "chắc chắn, xác nhận",
+    "stroke_count": 15,
+    "vocab_examples": [
+      {
+        "word": "確認",
+        "reading": "かくにん",
+        "meaning_vi": "xác nhận"
+      },
+      {
+        "word": "確かめる",
+        "reading": "たしかめる",
+        "meaning_vi": "xác nhận, kiểm tra"
+      },
+      {
+        "word": "正確",
+        "reading": "せいかく",
+        "meaning_vi": "chính xác"
+      }
+    ]
+  },
+  {
+    "character": "形",
+    "onyomi": [
+      "ケイ",
+      "ギョウ"
+    ],
+    "kunyomi": [
+      "かたち",
+      "かた"
+    ],
+    "meaning_vi": "hình dạng, hình thức",
+    "stroke_count": 7,
+    "vocab_examples": [
+      {
+        "word": "形",
+        "reading": "かたち",
+        "meaning_vi": "hình dạng"
+      },
+      {
+        "word": "形式",
+        "reading": "けいしき",
+        "meaning_vi": "hình thức"
+      },
+      {
+        "word": "人形",
+        "reading": "にんぎょう",
+        "meaning_vi": "búp bê, con rối"
+      }
+    ]
+  },
+  {
+    "character": "数",
+    "onyomi": [
+      "スウ",
+      "ス"
+    ],
+    "kunyomi": [
+      "かず",
+      "かぞ.える"
+    ],
+    "meaning_vi": "số, đếm",
+    "stroke_count": 13,
+    "vocab_examples": [
+      {
+        "word": "数学",
+        "reading": "すうがく",
+        "meaning_vi": "toán học"
+      },
+      {
+        "word": "数える",
+        "reading": "かぞえる",
+        "meaning_vi": "đếm"
+      },
+      {
+        "word": "人数",
+        "reading": "にんずう",
+        "meaning_vi": "số người"
+      }
+    ]
+  }
+]
