@@ -108,6 +108,9 @@ Rails.application.routes.draw do
         end
       end
 
+      # Kanji list + detail
+      resources :kanjis, only: [:index, :show]
+
       # Flashcard / SRS  (universal — vocabulary + kanji + grammar_point)
       get  "flashcards/due",                    to: "flashcards#due"
       get  "flashcards/new",                    to: "flashcards#new_cards"

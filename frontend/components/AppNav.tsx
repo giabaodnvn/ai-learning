@@ -11,6 +11,7 @@ const NAV_ITEMS = [
   { href: "/app/grammar",     label: "Ngữ pháp" },
   { href: "/app/conversation",label: "Hội thoại" },
   { href: "/app/vocabulary",  label: "Từ điển" },
+  { href: "/app/kanji",       label: "Chữ Hán" },
   { href: "/app/level-test",  label: "Kiểm tra cấp độ" },
 ];
 
