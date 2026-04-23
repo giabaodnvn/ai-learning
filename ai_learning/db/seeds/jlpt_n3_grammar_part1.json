@@ -1,0 +1,302 @@
+[
+  {
+    "pattern": "〜あげく",
+    "explanation_vi": "Sau khi... cuối cùng... (kết quả sau quá trình dài)",
+    "examples": [
+      {
+        "ja": "長い議論のあげく、結局同じ結論になった。",
+        "vi": "Sau khi tranh luận dài, cuối cùng cũng đi đến kết luận giống nhau."
+      },
+      {
+        "ja": "迷ったあげく、電車で行くことにした。",
+        "vi": "Sau khi do dự, cuối cùng quyết định đi bằng tàu điện."
+      }
+    ],
+    "notes_vi": "Diễn đạt kết quả sau một quá trình dài hoặc khó khăn."
+  },
+  {
+    "pattern": "〜あまり",
+    "explanation_vi": "Quá... đến nỗi... (quá mức dẫn đến hậu quả)",
+    "examples": [
+      {
+        "ja": "嬉しすぎて、涙が出るほどだった。",
+        "vi": "Quá vui đến nỗi suýt nữa thì khóc."
+      },
+      {
+        "ja": "疲れのあまり、寝てしまった。",
+        "vi": "Quá mệt đến nỗi ngủ thiếp đi."
+      }
+    ],
+    "notes_vi": "Dùng cho cảm xúc hoặc trạng thái quá mức."
+  },
+  {
+    "pattern": "〜うちに",
+    "explanation_vi": "Trong khi... / Trước khi... (thời điểm còn kịp)",
+    "examples": [
+      {
+        "ja": "若いうちに、いろいろな経験を積むべきだ。",
+        "vi": "Nên tích lũy nhiều kinh nghiệm khi còn trẻ."
+      },
+      {
+        "ja": "雨が降らないうちに、帰りましょう。",
+        "vi": "Hãy về trước khi trời mưa."
+      }
+    ],
+    "notes_vi": "Khuyến khích hành động trong thời điểm thuận lợi."
+  },
+  {
+    "pattern": "〜おかげで",
+    "explanation_vi": "Nhờ... mà... (nguyên nhân tích cực)",
+    "examples": [
+      {
+        "ja": "先生のおかげで、試験に合格できた。",
+        "vi": "Nhờ thầy giáo mà tôi thi đậu."
+      },
+      {
+        "ja": "良い天気のおかげで、ピクニックが楽しめた。",
+        "vi": "Nhờ thời tiết tốt mà chuyến dã ngoại vui vẻ."
+      }
+    ],
+    "notes_vi": "Diễn đạt nguyên nhân dẫn đến kết quả tốt."
+  },
+  {
+    "pattern": "〜かぎり",
+    "explanation_vi": "Trong phạm vi... / Hết mức có thể...",
+    "examples": [
+      {
+        "ja": "できるかぎり、早く来てください。",
+        "vi": "Xin hãy đến sớm hết mức có thể."
+      },
+      {
+        "ja": "私の知るかぎり、彼は正直だ。",
+        "vi": "Trong phạm vi tôi biết, anh ấy là người chân thật."
+      }
+    ],
+    "notes_vi": "Nhấn mạnh giới hạn hoặc nỗ lực tối đa."
+  },
+  {
+    "pattern": "〜がたい",
+    "explanation_vi": "Khó... / Không thể... (khó khăn về mặt cảm xúc)",
+    "examples": [
+      {
+        "ja": "信じがたい話だ。",
+        "vi": "Là câu chuyện khó tin."
+      },
+      {
+        "ja": "許しがたい行為だ。",
+        "vi": "Là hành vi không thể tha thứ."
+      }
+    ],
+    "notes_vi": "Ghép vào tính từ để diễn đạt sự khó khăn."
+  },
+  {
+    "pattern": "〜きり",
+    "explanation_vi": "Từ khi... đến giờ chỉ... (chỉ một lần và không lặp lại)",
+    "examples": [
+      {
+        "ja": "卒業してから、一度も会っていない。",
+        "vi": "Từ khi tốt nghiệp đến giờ, chưa gặp một lần nào."
+      },
+      {
+        "ja": "それきり、連絡が来ない。",
+        "vi": "Từ đó đến giờ, không có liên lạc."
+      }
+    ],
+    "notes_vi": "Nhấn mạnh sự dừng lại và không tiếp tục."
+  },
+  {
+    "pattern": "〜くせに",
+    "explanation_vi": "Mặc dù... mà lại... (mâu thuẫn)",
+    "examples": [
+      {
+        "ja": "知っているくせに、聞かない。",
+        "vi": "Mặc dù biết mà lại không hỏi."
+      },
+      {
+        "ja": "貧乏なくせに、高い物を買う。",
+        "vi": "Mặc dù nghèo mà lại mua đồ đắt tiền."
+      }
+    ],
+    "notes_vi": "Diễn đạt sự mâu thuẫn giữa kỳ vọng và thực tế."
+  },
+  {
+    "pattern": "〜さえ〜ば",
+    "explanation_vi": "Chỉ cần... thì... (điều kiện tối thiểu)",
+    "examples": [
+      {
+        "ja": "君さえいれば、それでいい。",
+        "vi": "Chỉ cần có cậu thì đã đủ."
+      },
+      {
+        "ja": "お金さえあれば、買える。",
+        "vi": "Chỉ cần có tiền thì mua được."
+      }
+    ],
+    "notes_vi": "Nhấn mạnh điều kiện cần thiết tối thiểu."
+  },
+  {
+    "pattern": "〜次第",
+    "explanation_vi": "Ngay khi... / Tùy theo... (ngay lập tức hoặc tùy thuộc)",
+    "examples": [
+      {
+        "ja": "準備ができ次第、連絡します。",
+        "vi": "Ngay khi chuẩn bị xong, tôi sẽ liên lạc."
+      },
+      {
+        "ja": "天気次第で、計画が変わる。",
+        "vi": "Tùy theo thời tiết mà kế hoạch thay đổi."
+      }
+    ],
+    "notes_vi": "Diễn đạt sự phụ thuộc hoặc thời điểm ngay lập tức."
+  },
+  {
+    "pattern": "〜たびに",
+    "explanation_vi": "Mỗi khi... thì... (lặp lại)",
+    "examples": [
+      {
+        "ja": "東京に行くたびに、渋谷を訪れる。",
+        "vi": "Mỗi khi đến Tokyo, tôi đều ghé Shibuya."
+      },
+      {
+        "ja": "試験のたびに、緊張する。",
+        "vi": "Mỗi khi thi, tôi đều căng thẳng."
+      }
+    ],
+    "notes_vi": "Diễn đạt hành động lặp lại theo chu kỳ."
+  },
+  {
+    "pattern": "〜ついでに",
+    "explanation_vi": "Nhân tiện... / Thừa lúc... (làm thêm việc khác)",
+    "examples": [
+      {
+        "ja": "買い物のついでに、郵便局に行った。",
+        "vi": "Nhân tiện đi mua sắm, tôi ghé bưu điện."
+      },
+      {
+        "ja": "散歩のついでに、ごみを捨てた。",
+        "vi": "Thừa lúc đi dạo, tôi vứt rác."
+      }
+    ],
+    "notes_vi": "Dùng khi làm thêm việc khác trong cùng chuyến đi."
+  },
+  {
+    "pattern": "〜つもり",
+    "explanation_vi": "Ý định... / Dự định... (kế hoạch trong đầu)",
+    "examples": [
+      {
+        "ja": "明日、勉強するつもりです。",
+        "vi": "Tôi dự định học bài ngày mai."
+      },
+      {
+        "ja": "そんなつもりはありませんでした。",
+        "vi": "Tôi không có ý định như vậy."
+      }
+    ],
+    "notes_vi": "Diễn đạt ý định hoặc kế hoạch chủ quan."
+  },
+  {
+    "pattern": "〜てからでないと",
+    "explanation_vi": "Phải... rồi mới... (điều kiện tiên quyết)",
+    "examples": [
+      {
+        "ja": "食べてからでないと、薬を飲めない。",
+        "vi": "Phải ăn rồi mới uống thuốc được."
+      },
+      {
+        "ja": "確認してからでないと、決められない。",
+        "vi": "Phải xác nhận rồi mới quyết định được."
+      }
+    ],
+    "notes_vi": "Nhấn mạnh thứ tự bắt buộc."
+  },
+  {
+    "pattern": "〜てでも",
+    "explanation_vi": "Dù phải... cũng... (sẵn sàng làm bất cứ gì)",
+    "examples": [
+      {
+        "ja": "死んででも、守る。",
+        "vi": "Dù phải chết cũng bảo vệ."
+      },
+      {
+        "ja": "どんな手段を使ってでも、成功する。",
+        "vi": "Dù phải dùng biện pháp gì cũng thành công."
+      }
+    ],
+    "notes_vi": "Diễn đạt quyết tâm mạnh mẽ."
+  },
+  {
+    "pattern": "〜ては",
+    "explanation_vi": "Mỗi khi... thì... (lặp lại tiêu cực)",
+    "examples": [
+      {
+        "ja": "勉強しては忘れる。",
+        "vi": "Học xong lại quên."
+      },
+      {
+        "ja": "泣いては笑う。",
+        "vi": "Khóc xong lại cười."
+      }
+    ],
+    "notes_vi": "Diễn đạt chu kỳ lặp lại không mong muốn."
+  },
+  {
+    "pattern": "〜てばかりいる",
+    "explanation_vi": "Toàn... mãi (chỉ làm việc đó)",
+    "examples": [
+      {
+        "ja": "テレビを見てばかりいる。",
+        "vi": "Toàn xem ti vi mãi."
+      },
+      {
+        "ja": "遊んでばかりいる。",
+        "vi": "Toàn chơi bời mãi."
+      }
+    ],
+    "notes_vi": "Nhấn mạnh việc chỉ làm một việc, mang tính tiêu cực."
+  },
+  {
+    "pattern": "〜てばかりだ",
+    "explanation_vi": "Toàn... thôi (tình trạng liên tục)",
+    "examples": [
+      {
+        "ja": "最近、雨が降ってばかりだ。",
+        "vi": "Gần đây toàn mưa thôi."
+      },
+      {
+        "ja": "失敗してばかりだ。",
+        "vi": "Toàn thất bại thôi."
+      }
+    ],
+    "notes_vi": "Diễn đạt tình trạng lặp lại không mong muốn."
+  },
+  {
+    "pattern": "〜てみる",
+    "explanation_vi": "Thử... xem (thử làm để xem kết quả)",
+    "examples": [
+      {
+        "ja": "この料理を食べてみてください。",
+        "vi": "Hãy thử ăn món này xem."
+      },
+      {
+        "ja": "日本語で話してみた。",
+        "vi": "Tôi thử nói tiếng Nhật xem."
+      }
+    ],
+    "notes_vi": "Dùng khi thử nghiệm hoặc trải nghiệm."
+  },
+  {
+    "pattern": "〜てしまう",
+    "explanation_vi": "Làm... mất / ...hết (hoàn thành hoặc hối hận)",
+    "examples": [
+      {
+        "ja": "宿題を忘れてしまった。",
+        "vi": "Tôi quên mất bài tập về nhà."
+      },
+      {
+        "ja": "ケーキを全部食べてしまった。",
+        "vi": "Tôi ăn hết cái bánh."
+      }
+    ],
+    "notes_vi": "Diễn đạt hành động hoàn tất hoặc mang tính hối hận."
+  }
+]

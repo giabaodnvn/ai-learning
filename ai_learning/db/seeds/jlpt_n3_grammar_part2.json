@@ -1,0 +1,407 @@
+[
+  {
+    "pattern": "〜てたまらない",
+    "explanation_vi": "Không chịu nổi... / Quá... đến mức không chịu được",
+    "examples": [
+      {
+        "ja": "暑くてたまらない。",
+        "vi": "Nóng quá không chịu nổi."
+      },
+      {
+        "ja": "心配でたまらない。",
+        "vi": "Lo lắng quá không chịu được."
+      }
+    ],
+    "notes_vi": "Diễn đạt cảm xúc mạnh đến mức cực đoan."
+  },
+  {
+    "pattern": "〜てならない",
+    "explanation_vi": "Không thể không... / Rất... (cảm xúc tự nhiên)",
+    "examples": [
+      {
+        "ja": "嬉しくてならない。",
+        "vi": "Vui mừng không thể tả."
+      },
+      {
+        "ja": "悲しくてならない。",
+        "vi": "Buồn bã không thể tả."
+      }
+    ],
+    "notes_vi": "Diễn đạt cảm xúc tự nhiên dâng trào."
+  },
+  {
+    "pattern": "〜とおり",
+    "explanation_vi": "Theo như... / Như... (theo đúng)",
+    "examples": [
+      {
+        "ja": "説明書どおりに作った。",
+        "vi": "Làm theo đúng sách hướng dẫn."
+      },
+      {
+        "ja": "予想どおりの結果だった。",
+        "vi": "Là kết quả như dự đoán."
+      }
+    ],
+    "notes_vi": "Diễn đạt sự tuân theo hoặc phù hợp."
+  },
+  {
+    "pattern": "〜ところだった",
+    "explanation_vi": "Suýt nữa thì... (vừa kịp tránh)",
+    "examples": [
+      {
+        "ja": "事故を起こすところだった。",
+        "vi": "Suýt nữa thì gây tai nạn."
+      },
+      {
+        "ja": "忘れるところだった。",
+        "vi": "Suýt nữa thì quên."
+      }
+    ],
+    "notes_vi": "Diễn đạt việc vừa kịp tránh được hậu quả xấu."
+  },
+  {
+    "pattern": "〜ないうちに",
+    "explanation_vi": "Trước khi... (trước khi quá muộn)",
+    "examples": [
+      {
+        "ja": "雨が降らないうちに、帰ろう。",
+        "vi": "Hãy về trước khi trời mưa."
+      },
+      {
+        "ja": "忘れないうちに、メモしておこう。",
+        "vi": "Hãy ghi chú trước khi quên."
+      }
+    ],
+    "notes_vi": "Khuyến khích hành động trước khi tình huống thay đổi."
+  },
+  {
+    "pattern": "〜ながら",
+    "explanation_vi": "Trong khi... (song song)",
+    "examples": [
+      {
+        "ja": "音楽を聞きながら、勉強する。",
+        "vi": "Học bài trong khi nghe nhạc."
+      },
+      {
+        "ja": "歩きながら、話す。",
+        "vi": "Nói chuyện trong khi đi bộ."
+      }
+    ],
+    "notes_vi": "Diễn đạt hai hành động diễn ra đồng thời."
+  },
+  {
+    "pattern": "〜なら",
+    "explanation_vi": "Nếu... thì... (điều kiện giả định)",
+    "examples": [
+      {
+        "ja": "君が行くなら、私も行く。",
+        "vi": "Nếu cậu đi thì tôi cũng đi."
+      },
+      {
+        "ja": "お金があるなら、買う。",
+        "vi": "Nếu có tiền thì mua."
+      }
+    ],
+    "notes_vi": "Dùng cho điều kiện giả định hoặc đề xuất."
+  },
+  {
+    "pattern": "〜に違いない",
+    "explanation_vi": "Chắc chắn là... (phỏng đoán chắc chắn)",
+    "examples": [
+      {
+        "ja": "彼は知っているに違いない。",
+        "vi": "Anh ấy chắc chắn biết."
+      },
+      {
+        "ja": "これは本物に違いない。",
+        "vi": "Cái này chắc chắn là thật."
+      }
+    ],
+    "notes_vi": "Diễn đạt sự chắc chắn dựa trên lý lẽ."
+  },
+  {
+    "pattern": "〜に決まっている",
+    "explanation_vi": "Chắc chắn là... / Tất nhiên là... (logic hiển nhiên)",
+    "examples": [
+      {
+        "ja": "そんなことはないに決まっている。",
+        "vi": "Chắc chắn không phải như vậy."
+      },
+      {
+        "ja": "彼が勝つに決まっている。",
+        "vi": "Chắc chắn anh ấy thắng."
+      }
+    ],
+    "notes_vi": "Nhấn mạnh điều hiển nhiên hoặc logic."
+  },
+  {
+    "pattern": "〜にすぎない",
+    "explanation_vi": "Chỉ là... mà thôi (giảm nhẹ)",
+    "examples": [
+      {
+        "ja": "それは冗談にすぎない。",
+        "vi": "Đó chỉ là đùa thôi."
+      },
+      {
+        "ja": "私の意見にすぎません。",
+        "vi": "Chỉ là ý kiến của tôi mà thôi."
+      }
+    ],
+    "notes_vi": "Giảm nhẹ tầm quan trọng hoặc giá trị."
+  },
+  {
+    "pattern": "〜に限る",
+    "explanation_vi": "Không gì bằng... / Tốt nhất là...",
+    "examples": [
+      {
+        "ja": "早寝早起きに限る。",
+        "vi": "Không gì bằng ngủ sớm dậy sớm."
+      },
+      {
+        "ja": "新鮮なうちに食べるに限る。",
+        "vi": "Tốt nhất là ăn khi còn tươi."
+      }
+    ],
+    "notes_vi": "Khuyến khích lựa chọn tốt nhất."
+  },
+  {
+    "pattern": "〜にほかならない",
+    "explanation_vi": "Chính là... / Không gì khác hơn...",
+    "examples": [
+      {
+        "ja": "これは彼の責任にほかならない。",
+        "vi": "Đây chính là trách nhiệm của anh ấy."
+      },
+      {
+        "ja": "成功は努力の結果にほかならない。",
+        "vi": "Thành công chính là kết quả của nỗ lực."
+      }
+    ],
+    "notes_vi": "Nhấn mạnh rằng đó là nguyên nhân duy nhất."
+  },
+  {
+    "pattern": "〜ぬく",
+    "explanation_vi": "...hết / ...sạch (hoàn toàn)",
+    "examples": [
+      {
+        "ja": "本を読みぬいた。",
+        "vi": "Đọc hết cuốn sách."
+      },
+      {
+        "ja": "仕事をやりぬく。",
+        "vi": "Làm hết công việc."
+      }
+    ],
+    "notes_vi": "Diễn đạt hành động hoàn tất triệt để."
+  },
+  {
+    "pattern": "〜ばかりか",
+    "explanation_vi": "Không chỉ... mà còn... (mở rộng)",
+    "examples": [
+      {
+        "ja": "日本語ばかりか、英語も話せる。",
+        "vi": "Không chỉ nói tiếng Nhật mà còn nói tiếng Anh."
+      },
+      {
+        "ja": "学生ばかりか、先生も参加した。",
+        "vi": "Không chỉ học sinh mà cả thầy giáo cũng tham gia."
+      }
+    ],
+    "notes_vi": "Mở rộng phạm vi hoặc mức độ."
+  },
+  {
+    "pattern": "〜ばかりに",
+    "explanation_vi": "Chính vì... mà... (nguyên nhân dẫn đến hậu quả xấu)",
+    "examples": [
+      {
+        "ja": "彼のせいばかりに、失敗した。",
+        "vi": "Chính vì lỗi của anh ấy mà thất bại."
+      },
+      {
+        "ja": "急いだばかりに、ミスをした。",
+        "vi": "Chính vì vội vàng mà phạm sai lầm."
+      }
+    ],
+    "notes_vi": "Diễn đạt nguyên nhân trực tiếp dẫn đến kết quả tiêu cực."
+  },
+  {
+    "pattern": "〜ばこそ",
+    "explanation_vi": "Chính vì... nên mới... (nguyên nhân tích cực)",
+    "examples": [
+      {
+        "ja": "努力したばこそ、成功した。",
+        "vi": "Chính vì nỗ lực nên mới thành công."
+      },
+      {
+        "ja": "君がいるばこそ、頑張れる。",
+        "vi": "Chính vì có cậu nên mới cố gắng được."
+      }
+    ],
+    "notes_vi": "Nhấn mạnh nguyên nhân dẫn đến kết quả tốt."
+  },
+  {
+    "pattern": "〜ほど",
+    "explanation_vi": "Đến mức... / Đến nỗi... (mức độ)",
+    "examples": [
+      {
+        "ja": "疲れるほど働いた。",
+        "vi": "Làm việc đến mức mệt mỏi."
+      },
+      {
+        "ja": "信じられないほど美しい。",
+        "vi": "Đẹp đến mức không tin được."
+      }
+    ],
+    "notes_vi": "Diễn đạt mức độ cực đoan."
+  },
+  {
+    "pattern": "〜まい",
+    "explanation_vi": "Sẽ không... / Không... đâu (phủ định mạnh)",
+    "examples": [
+      {
+        "ja": "二度と行かないまい。",
+        "vi": "Sẽ không đi lần nữa đâu."
+      },
+      {
+        "ja": "そんなことはないまい。",
+        "vi": "Không có chuyện đó đâu."
+      }
+    ],
+    "notes_vi": "Diễn đạt phủ định mạnh hoặc quyết tâm không làm."
+  },
+  {
+    "pattern": "〜ものか",
+    "explanation_vi": "Làm sao... được / Không đời nào... (phủ định mạnh)",
+    "examples": [
+      {
+        "ja": "そんなことをするものか。",
+        "vi": "Làm sao làm chuyện đó được."
+      },
+      {
+        "ja": "負けるものか。",
+        "vi": "Không đời nào thua."
+      }
+    ],
+    "notes_vi": "Diễn đạt sự phản đối mạnh mẽ hoặc quyết tâm."
+  },
+  {
+    "pattern": "〜ものだ",
+    "explanation_vi": "Thường... / Lẽ ra phải... (thói quen hoặc quy tắc)",
+    "examples": [
+      {
+        "ja": "昔はよく遊んだものだ。",
+        "vi": "Thuở xưa thường chơi lắm."
+      },
+      {
+        "ja": "約束は守るものだ。",
+        "vi": "Lời hứa thì phải giữ."
+      }
+    ],
+    "notes_vi": "Diễn đạt thói quen hoặc quy tắc chung."
+  },
+  {
+    "pattern": "〜ものではない",
+    "explanation_vi": "Không phải là... / Không nên... (không phù hợp)",
+    "examples": [
+      {
+        "ja": "そんなことを言うものではない。",
+        "vi": "Không nên nói như vậy."
+      },
+      {
+        "ja": "子供の遊びものではない。",
+        "vi": "Không phải là trò chơi trẻ con."
+      }
+    ],
+    "notes_vi": "Diễn đạt sự không phù hợp hoặc không nên làm."
+  },
+  {
+    "pattern": "〜わけだ",
+    "explanation_vi": "Tất nhiên là... / Bởi vì... (kết luận logic)",
+    "examples": [
+      {
+        "ja": "勉強したから、合格したわけだ。",
+        "vi": "Bởi vì học bài nên thi đậu."
+      },
+      {
+        "ja": "忙しいわけだ。",
+        "vi": "Tất nhiên là bận rộn."
+      }
+    ],
+    "notes_vi": "Diễn đạt kết luận logic từ nguyên nhân."
+  },
+  {
+    "pattern": "〜わけではない",
+    "explanation_vi": "Không phải là... / Không hẳn là... (phủ định một phần)",
+    "examples": [
+      {
+        "ja": "好きではないわけではない。",
+        "vi": "Không phải là không thích."
+      },
+      {
+        "ja": "知らないわけではない。",
+        "vi": "Không phải là không biết."
+      }
+    ],
+    "notes_vi": "Phủ định một phần, thừa nhận một mức độ nào đó."
+  },
+  {
+    "pattern": "〜わけがない",
+    "explanation_vi": "Không thể nào... / Không đời nào... (logic phủ định)",
+    "examples": [
+      {
+        "ja": "そんなわけがない。",
+        "vi": "Không thể nào như vậy."
+      },
+      {
+        "ja": "彼が知っているわけがない。",
+        "vi": "Anh ấy không thể nào biết."
+      }
+    ],
+    "notes_vi": "Phủ định dựa trên logic hoặc lý lẽ."
+  },
+  {
+    "pattern": "〜を問わず",
+    "explanation_vi": "Bất kể... / Không phân biệt...",
+    "examples": [
+      {
+        "ja": "男女を問わず、参加できる。",
+        "vi": "Bất kể nam nữ đều có thể tham gia."
+      },
+      {
+        "ja": "年齢を問わず、歓迎します。",
+        "vi": "Không phân biệt tuổi tác, chào đón."
+      }
+    ],
+    "notes_vi": "Diễn đạt sự không phân biệt hoặc bao gồm tất cả."
+  },
+  {
+    "pattern": "〜をめぐって",
+    "explanation_vi": "Về... / Xung quanh... (chủ đề tranh luận)",
+    "examples": [
+      {
+        "ja": "環境問題をめぐって、議論した。",
+        "vi": "Thảo luận xung quanh vấn đề môi trường."
+      },
+      {
+        "ja": "この問題をめぐって、意見が分かれた。",
+        "vi": "Xung quanh vấn đề này, ý kiến chia rẽ."
+      }
+    ],
+    "notes_vi": "Dùng cho chủ đề của cuộc thảo luận hoặc tranh cãi."
+  },
+  {
+    "pattern": "〜をよそに",
+    "explanation_vi": "Bỏ qua... / Không quan tâm đến...",
+    "examples": [
+      {
+        "ja": "忠告をよそに、進めた。",
+        "vi": "Bỏ qua lời khuyên, tiến hành."
+      },
+      {
+        "ja": "反対をよそに、決定した。",
+        "vi": "Không quan tâm đến sự phản đối, quyết định."
+      }
+    ],
+    "notes_vi": "Diễn đạt việc phớt lờ hoặc không chú ý đến điều gì đó."
+  }
+]

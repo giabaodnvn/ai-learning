@@ -1,0 +1,222 @@
+[
+  {
+    "id": "TC001",
+    "priority": "High",
+    "category": "Hiển thị cơ bản",
+    "objectives": "Kiểm tra toast notification hiển thị đúng với thông điệp",
+    "data_test": "Thông điệp: 'Thao tác thành công'",
+    "pre_conditions": "Component toast đã được render trên trang",
+    "test_steps": "1. Gọi hàm showToast với loại 'success' và thông điệp\n2. Quan sát toast có hiển thị trên màn hình\n3. Kiểm tra nội dung thông điệp",
+    "expected_results": "Toast hiển thị đúng vị trí, thông điệp rõ ràng, không bị cắt xén",
+    "notes": "Kiểm tra trên các kích thước màn hình khác nhau"
+  },
+  {
+    "id": "TC002",
+    "priority": "High",
+    "category": "Loại toast",
+    "objectives": "Kiểm tra toast hiển thị đúng loại (success, error, warning, info)",
+    "data_test": "4 loại toast: success, error, warning, info",
+    "pre_conditions": "Component toast sẵn sàng",
+    "test_steps": "1. Hiển thị toast type='success' và kiểm tra icon/màu sắc\n2. Hiển thị toast type='error' và kiểm tra icon/màu sắc\n3. Hiển thị toast type='warning' và kiểm tra icon/màu sắc\n4. Hiển thị toast type='info' và kiểm tra icon/màu sắc",
+    "expected_results": "Mỗi loại toast có biểu tượng, màu sắc đúng theo thiết kế",
+    "notes": "Đảm bảo consistency với design system"
+  },
+  {
+    "id": "TC003",
+    "priority": "High",
+    "category": "Tự động đóng",
+    "objectives": "Kiểm tra toast tự động đóng sau thời gian quy định",
+    "data_test": "Timeout = 3 giây (hoặc giá trị mặc định)",
+    "pre_conditions": "Toast đã hiển thị",
+    "test_steps": "1. Ghi lại thời gian hiển thị toast\n2. Chờ 3 giây\n3. Quan sát toast có biến mất hay không",
+    "expected_results": "Toast tự động biến mất sau đúng 3 giây, không còn hiển thị",
+    "notes": "Sử dụng stopwatch hoặc timer để đo thời gian chính xác"
+  },
+  {
+    "id": "TC004",
+    "priority": "High",
+    "category": "Đóng thủ công",
+    "objectives": "Kiểm tra người dùng có thể đóng toast bằng nút X",
+    "data_test": "Toast hiển thị với nút đóng",
+    "pre_conditions": "Toast đang hiển thị",
+    "test_steps": "1. Nhấp chuột vào nút X trên toast\n2. Quan sát toast có biến mất ngay lập tức",
+    "expected_results": "Toast biến mất ngay khi nhấp X, không cần chờ timeout",
+    "notes": "Kiểm tra nút X có accessibility attribute không"
+  },
+  {
+    "id": "TC005",
+    "priority": "Medium",
+    "category": "Nhiều toast",
+    "objectives": "Kiểm tra xử lý khi có nhiều toast cùng lúc",
+    "data_test": "Hiển thị 3-5 toast liên tiếp",
+    "pre_conditions": "Ứng dụng cho phép stack nhiều toast",
+    "test_steps": "1. Gọi showToast nhiều lần liên tiếp\n2. Quan sát vị trí xếp chồng của các toast\n3. Kiểm tra thứ tự hiển thị\n4. Đợi các toast tự động đóng",
+    "expected_results": "Các toast xếp chồng đúng, không che phủ nhau, đóng theo thứ tự FIFO",
+    "notes": "Giới hạn số lượng toast tối đa nên là bao nhiêu?"
+  },
+  {
+    "id": "TC006",
+    "priority": "High",
+    "category": "Vị trí hiển thị",
+    "objectives": "Kiểm tra toast hiển thị ở vị trí chính xác",
+    "data_test": "Vị trí: top-right, top-left, bottom-right, bottom-left (nếu có)",
+    "pre_conditions": "Component toast support nhiều vị trí",
+    "test_steps": "1. Hiển thị toast ở vị trí top-right\n2. Kiểm tra lề (margin) từ cạnh màn hình\n3. Kiểm tra trên các độ phân giải khác nhau",
+    "expected_results": "Toast hiển thị đúng vị trí, cách lề 16px hoặc theo thiết kế",
+    "notes": "Kiểm tra trên mobile, tablet, desktop"
+  },
+  {
+    "id": "TC007",
+    "priority": "Medium",
+    "category": "Nội dung dài",
+    "objectives": "Kiểm tra xử lý thông điệp dài",
+    "data_test": "Thông điệp > 100 ký tự",
+    "pre_conditions": "Toast đang hiển thị",
+    "test_steps": "1. Hiển thị toast với thông điệp rất dài\n2. Quan sát có bị tràn hay cắt xén không\n3. Kiểm tra text wrap có đúng không",
+    "expected_results": "Text wrap đúng, không bị cắt, toast mở rộng kích thước hợp lý",
+    "notes": "Kiểm tra max-width của toast"
+  },
+  {
+    "id": "TC008",
+    "priority": "Medium",
+    "category": "Tương tác trong toast",
+    "objectives": "Kiểm tra nếu toast chứa action button hoặc link",
+    "data_test": "Toast hiển thị với button 'Undo' hoặc link",
+    "pre_conditions": "Toast hỗ trợ action",
+    "test_steps": "1. Hiển thị toast với action button\n2. Nhấp vào button\n3. Kiểm tra hành động được thực thi",
+    "expected_results": "Button hoạt động đúng, gọi callback function tương ứng",
+    "notes": "Đảm bảo button không bị che khuất bởi nút X"
+  },
+  {
+    "id": "TC009",
+    "priority": "High",
+    "category": "Accessibility",
+    "objectives": "Kiểm tra toast accessible cho người dùng screen reader",
+    "data_test": "Kiểm tra ARIA attributes",
+    "pre_conditions": "Toast đã render",
+    "test_steps": "1. Kiểm tra role='alert' hoặc role='status' trên toast\n2. Kiểm tra aria-live attribute\n3. Sử dụng screen reader đọc thông báo",
+    "expected_results": "Screen reader đọc được toast message, role và aria-live đúng",
+    "notes": "Đảm bảo WCAG 2.1 Level AA compliance"
+  },
+  {
+    "id": "TC010",
+    "priority": "Medium",
+    "category": "Keyboard navigation",
+    "objectives": "Kiểm tra điều hướng bằng keyboard",
+    "data_test": "Sử dụng Tab, Enter, Escape",
+    "pre_conditions": "Toast có nút X hoặc action",
+    "test_steps": "1. Nhấp Tab để di chuyển focus đến nút X\n2. Nhấp Enter để đóng toast\n3. Hoặc nhấp Escape để đóng toast",
+    "expected_results": "Tất cả phím điều hướng hoạt động, focus hiển thị rõ ràng",
+    "notes": "Kiểm tra focus outline visibility"
+  },
+  {
+    "id": "TC011",
+    "priority": "Medium",
+    "category": "Edge case - Null/Empty",
+    "objectives": "Kiểm tra xử lý thông điệp rỗng hoặc null",
+    "data_test": "message = '' hoặc message = null",
+    "pre_conditions": "Component toast",
+    "test_steps": "1. Gọi showToast với message rỗng\n2. Quan sát hành vi\n3. Kiểm tra console error",
+    "expected_results": "Toast không hiển thị hoặc hiển thị fallback message, không lỗi",
+    "notes": "Cần validation đầu vào"
+  },
+  {
+    "id": "TC012",
+    "priority": "Medium",
+    "category": "Edge case - HTML content",
+    "objectives": "Kiểm tra xử lý nếu message chứa HTML",
+    "data_test": "message = '<img src=x onerror=alert(1)>'",
+    "pre_conditions": "Component toast",
+    "test_steps": "1. Gọi showToast với message chứa HTML\n2. Kiểm tra có execute XSS không\n3. Kiểm tra content hiển thị dạng text",
+    "expected_results": "HTML escape đúng, chỉ hiển thị text, không execute script",
+    "notes": "CRITICAL: Kiểm tra security, tránh XSS vulnerability"
+  },
+  {
+    "id": "TC013",
+    "priority": "High",
+    "category": "Performance",
+    "objectives": "Kiểm tra hiệu năng khi render nhiều toast",
+    "data_test": "Render 10 toast liên tiếp",
+    "pre_conditions": "Dev tools mở, performance tab",
+    "test_steps": "1. Mở DevTools Performance tab\n2. Hiển thị 10 toast liên tiếp\n3. Kiểm tra render time, FPS",
+    "expected_results": "Render time < 100ms mỗi toast, FPS ≥ 60, không lag",
+    "notes": "Sử dụng React DevTools Profiler"
+  },
+  {
+    "id": "TC014",
+    "priority": "Medium",
+    "category": "Responsive",
+    "objectives": "Kiểm tra toast responsive trên mobile",
+    "data_test": "Viewport: 375x667 (iPhone), 768x1024 (iPad)",
+    "pre_conditions": "App scale mobile viewport",
+    "test_steps": "1. Đặt viewport mobile\n2. Hiển thị toast\n3. Kiểm tra layout, spacing, font size",
+    "expected_results": "Toast fit đúng trên mobile, readable, không scroll ngang",
+    "notes": "Kiểm tra padding, width, font-size trên mobile"
+  },
+  {
+    "id": "TC015",
+    "priority": "Medium",
+    "category": "Dark mode",
+    "objectives": "Kiểm tra toast trong dark mode",
+    "data_test": "Theme: dark",
+    "pre_conditions": "Ứng dụng bật dark mode",
+    "test_steps": "1. Chuyển sang dark mode\n2. Hiển thị toast\n3. Kiểm tra contrast, đọc được không",
+    "expected_results": "Toast color có contrast đủ, readable trên dark background",
+    "notes": "Kiểm tra WCAG contrast ratio"
+  },
+  {
+    "id": "TC016",
+    "priority": "Low",
+    "category": "Animation",
+    "objectives": "Kiểm tra toast animation smooth",
+    "data_test": "Toast entry/exit animation",
+    "pre_conditions": "Toast component",
+    "test_steps": "1. Quan sát toast fade in\n2. Quan sát toast fade out hoặc slide\n3. Kiểm tra duration ~300ms",
+    "expected_results": "Animation mượt, duration phù hợp, không choppy",
+    "notes": "Optional feature, không critical"
+  },
+  {
+    "id": "TC017",
+    "priority": "Medium",
+    "category": "Toast persistence",
+    "objectives": "Kiểm tra toast persist khi navigate",
+    "data_test": "Hiển thị toast, sau đó navigate sang trang khác",
+    "pre_conditions": "Toast context global",
+    "test_steps": "1. Hiển thị toast\n2. Navigate sang page khác\n3. Kiểm tra toast còn hiển thị hay không",
+    "expected_results": "Toast hiển thị đúng theo requirement (persist hoặc clear)",
+    "notes": "Tùy thuộc vào design requirement"
+  },
+  {
+    "id": "TC018",
+    "priority": "Medium",
+    "category": "Cancel timeout",
+    "objectives": "Kiểm tra có thể cancel toast timeout",
+    "data_test": "Hover on toast > pause timeout, unhover > resume",
+    "pre_conditions": "Toast đang hiển thị",
+    "test_steps": "1. Hover mouse vào toast\n2. Chờ > 3 giây\n3. Toast có biến mất không?\n4. Unhover\n5. Toast biến mất sau timeout?",
+    "expected_results": "Timeout pause khi hover, resume khi unhover (nếu có feature này)",
+    "notes": "Feature optional, kiểm tra design requirement"
+  },
+  {
+    "id": "TC019",
+    "priority": "Low",
+    "category": "Sound/Haptic",
+    "objectives": "Kiểm tra toast có sound/vibration (nếu có)",
+    "data_test": "Device haptic feedback, sound volume",
+    "pre_conditions": "Mobile device với haptic support",
+    "test_steps": "1. Hiển thị toast trên mobile\n2. Kiểm tra có vibration không\n3. Kiểm tra volume level",
+    "expected_results": "Haptic/sound phù hợp, không quá lớn",
+    "notes": "Optional, tùy design requirement"
+  },
+  {
+    "id": "TC020",
+    "priority": "High",
+    "category": "Integration test",
+    "objectives": "Kiểm tra toast hoạt động sau hành động thực tế",
+    "data_test": "Gửi form, save data, API error",
+    "pre_conditions": "Form hoặc API endpoint ready",
+    "test_steps": "1. Submit form với dữ liệu valid\n2. Kiểm tra success toast hiển thị\n3. Submit với dữ liệu invalid\n4. Kiểm tra error toast hiển thị với message đúng",
+    "expected_results": "Toast hiển thị đúng lúc, message chính xác từ API response",
+    "notes": "End-to-end test với backend"
+  }
+]

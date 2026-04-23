@@ -1,0 +1,22 @@
+{
+  "rules_md": [
+    "CLAUDE.md",
+    "frontend/CLAUDE.md",
+    "frontend/AGENTS.md"
+  ],
+  "repo": "",
+  "default_branch": "main",
+  "languages": [
+    "ruby",
+    "typescript"
+  ],
+  "outputs": {
+    "pr_review": "claude-reviews/pr-${PR}.md",
+    "task_check": "claude-reviews/task-${TASK}.md",
+    "rendered_prompt": "claude-kit/output/${COMMAND}-${ID}-prompt.md"
+  },
+  "claude": {
+    "command": "claude",
+    "args": []
+  }
+}

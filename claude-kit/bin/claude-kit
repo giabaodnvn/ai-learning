@@ -1,0 +1,405 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+PROGRAM_NAME="$(basename "$0")"
+
+ROOT="$(git rev-parse --show-toplevel 2>/dev/null || pwd)"
+KIT_DIR="$ROOT/claude-kit"
+CONFIG_PATH="${CLAUDE_KIT_CONFIG:-$KIT_DIR/config.json}"
+
+COMMAND_NAME=""
+TARGET_ID=""
+OUTPUT_TO_STDOUT=0
+RUN_WITH_CLAUDE=0
+BRANCH_NAME=""
+PARSED_ARGS=()
+
+usage() {
+  cat <<EOF
+Usage:
+  $PROGRAM_NAME help
+  $PROGRAM_NAME print-rules
+  $PROGRAM_NAME review-pr <PR_NUMBER> [--stdout] [--run]
+  $PROGRAM_NAME check-task <ISSUE_NUMBER> [--branch <name>] [--stdout] [--run]
+  $PROGRAM_NAME check-task --branch <name> [--stdout] [--run]
+
+Options:
+  --stdout   Print the final output to stdout instead of writing a file
+  --run      Send the rendered prompt to the configured Claude CLI command
+  --branch   Compare the named branch against the configured default branch
+EOF
+}
+
+require_command() {
+  local command_name="$1"
+
+  if ! command -v "$command_name" >/dev/null 2>&1; then
+    echo "Missing required command: $command_name" >&2
+    exit 1
+  fi
+}
+
+ensure_config() {
+  if [[ ! -f "$CONFIG_PATH" ]]; then
+    echo "Missing config file: $CONFIG_PATH" >&2
+    exit 1
+  fi
+}
+
+require_python() {
+  require_command python3
+}
+
+config_string() {
+  local key_path="$1"
+  python3 - "$CONFIG_PATH" "$key_path" <<'PY'
+import json
+import sys
+
+config_path, key_path = sys.argv[1], sys.argv[2]
+with open(config_path, encoding="utf-8") as handle:
+    data = json.load(handle)
+
+value = data
+for key in key_path.split("."):
+    value = value[key]
+
+if isinstance(value, bool):
+    print("true" if value else "false")
+elif value is None:
+    print("")
+else:
+    print(value)
+PY
+}
+
+config_array_lines() {
+  local key_path="$1"
+  python3 - "$CONFIG_PATH" "$key_path" <<'PY'
+import json
+import sys
+
+config_path, key_path = sys.argv[1], sys.argv[2]
+with open(config_path, encoding="utf-8") as handle:
+    data = json.load(handle)
+
+value = data
+for key in key_path.split("."):
+    value = value[key]
+
+for item in value:
+    print(item)
+PY
+}
+
+sanitize_id() {
+  local raw="$1"
+  printf '%s' "$raw" | tr '/[:space:]' '__'
+}
+
+expand_output_path() {
+  local template="$1"
+  local output_path="$template"
+  local safe_target_id
+
+  safe_target_id="$(sanitize_id "$TARGET_ID")"
+
+  output_path="${output_path//'${PR}'/$safe_target_id}"
+  output_path="${output_path//'${TASK}'/$safe_target_id}"
+  output_path="${output_path//'${COMMAND}'/$COMMAND_NAME}"
+  output_path="${output_path//'${ID}'/$safe_target_id}"
+
+  printf '%s\n' "$ROOT/$output_path"
+}
+
+ensure_parent_dir() {
+  local path="$1"
+  mkdir -p "$(dirname "$path")"
+}
+
+load_rules() {
+  local rule_file
+  local output=""
+
+  while IFS= read -r rule_file; do
+    [[ -z "$rule_file" ]] && continue
+    if [[ ! -f "$ROOT/$rule_file" ]]; then
+      echo "Configured RULE file not found: $rule_file" >&2
+      exit 1
+    fi
+
+    output+=$'\n'
+    output+="## Source: $rule_file"$'\n'
+    output+=$'\n'
+    output+="$(cat "$ROOT/$rule_file")"$'\n'
+  done < <(config_array_lines "rules_md")
+
+  printf '%s' "$output"
+}
+
+write_or_print() {
+  local content="$1"
+  local destination="$2"
+
+  if [[ "$OUTPUT_TO_STDOUT" -eq 1 ]]; then
+    printf '%s\n' "$content"
+    return
+  fi
+
+  ensure_parent_dir "$destination"
+  printf '%s\n' "$content" > "$destination"
+  echo "Wrote $destination"
+}
+
+render_pr_prompt() {
+  local prompt_template="$KIT_DIR/prompts/pr_review.md"
+  local rules_content="$1"
+  local pr_meta="$2"
+  local pr_diff="$3"
+
+  cat <<EOF
+$(cat "$prompt_template")
+
+## Repository Rules
+$rules_content
+
+## Pull Request Metadata
+$pr_meta
+
+## Pull Request Diff
+$pr_diff
+EOF
+}
+
+render_task_prompt() {
+  local prompt_template="$KIT_DIR/prompts/task_check.md"
+  local rules_content="$1"
+  local task_meta="$2"
+  local working_tree_status="$3"
+  local task_diff="$4"
+
+  cat <<EOF
+$(cat "$prompt_template")
+
+## Repository Rules
+$rules_content
+
+## Task Metadata
+$task_meta
+
+## Working Tree Status
+$working_tree_status
+
+## Relevant Diff
+$task_diff
+EOF
+}
+
+collect_untracked_diff() {
+  local untracked_diff=""
+  local file_path=""
+
+  while IFS= read -r -d '' file_path; do
+    untracked_diff+=$'\n'
+    untracked_diff+="$(git -C "$ROOT" diff --no-index -- /dev/null "$file_path" || true)"$'\n'
+  done < <(git -C "$ROOT" ls-files --others --exclude-standard -z)
+
+  printf '%s' "$untracked_diff"
+}
+
+maybe_run_claude() {
+  local rendered_prompt_path="$1"
+  local final_output_path="$2"
+  local claude_command
+
+  [[ "$RUN_WITH_CLAUDE" -eq 1 ]] || return 0
+
+  claude_command="$(config_string "claude.command")"
+
+  require_command "$claude_command"
+
+  mapfile -t claude_args < <(config_array_lines "claude.args")
+
+  if [[ "$OUTPUT_TO_STDOUT" -eq 1 ]]; then
+    "$claude_command" "${claude_args[@]}" < "$rendered_prompt_path"
+    return 0
+  fi
+
+  ensure_parent_dir "$final_output_path"
+  "$claude_command" "${claude_args[@]}" < "$rendered_prompt_path" > "$final_output_path"
+  echo "Ran Claude and wrote $final_output_path"
+}
+
+command_help() {
+  usage
+}
+
+command_print_rules() {
+  ensure_config
+  require_python
+  load_rules
+}
+
+command_review_pr() {
+  local pr_number="${1:-}"
+  local rules_content
+  local pr_meta
+  local pr_diff
+  local rendered_prompt
+  local rendered_prompt_path
+  local output_path
+
+  if [[ -z "$pr_number" ]]; then
+    echo "PR number is required." >&2
+    usage >&2
+    exit 1
+  fi
+
+  TARGET_ID="$pr_number"
+  COMMAND_NAME="review-pr"
+
+  require_python
+  require_command gh
+  ensure_config
+
+  rules_content="$(load_rules)"
+  pr_meta="$(gh pr view "$pr_number" --json number,title,body,author,baseRefName,headRefName,files,commits,labels,url)"
+  pr_diff="$(gh pr diff "$pr_number")"
+  rendered_prompt="$(render_pr_prompt "$rules_content" "$pr_meta" "$pr_diff")"
+
+  rendered_prompt_path="$(expand_output_path "$(config_string "outputs.rendered_prompt")")"
+  output_path="$(expand_output_path "$(config_string "outputs.pr_review")")"
+
+  ensure_parent_dir "$rendered_prompt_path"
+  printf '%s\n' "$rendered_prompt" > "$rendered_prompt_path"
+
+  if [[ "$RUN_WITH_CLAUDE" -eq 1 ]]; then
+    maybe_run_claude "$rendered_prompt_path" "$output_path"
+    return 0
+  fi
+
+  write_or_print "$rendered_prompt" "$output_path"
+}
+
+command_check_task() {
+  local issue_number="${1:-}"
+  local default_branch
+  local task_meta="No GitHub issue was requested."
+  local task_diff=""
+  local working_tree_status
+  local rendered_prompt
+  local rendered_prompt_path
+  local output_path
+  local rules_content
+  local untracked_diff
+
+  COMMAND_NAME="check-task"
+  TARGET_ID="${issue_number:-${BRANCH_NAME:-local}}"
+
+  require_python
+  require_command git
+  ensure_config
+
+  if [[ -n "$issue_number" ]]; then
+    require_command gh
+    task_meta="$(gh issue view "$issue_number" --json number,title,body,author,labels,assignees,url,comments)"
+  fi
+
+  default_branch="$(config_string "default_branch")"
+  working_tree_status="$(git -C "$ROOT" status --short)"
+
+  if [[ -n "$BRANCH_NAME" ]]; then
+    task_diff="$(git -C "$ROOT" diff "$default_branch...$BRANCH_NAME")"
+  else
+    task_diff="$(git -C "$ROOT" diff HEAD)"
+    if [[ -z "$task_diff" ]]; then
+      task_diff="$(git -C "$ROOT" diff --cached)"
+    fi
+
+    untracked_diff="$(collect_untracked_diff)"
+    if [[ -n "$untracked_diff" ]]; then
+      task_diff+=$'\n'
+      task_diff+="$untracked_diff"
+    fi
+  fi
+
+  if [[ -z "$task_diff" ]]; then
+    task_diff="No diff detected."
+  fi
+
+  if [[ -z "$working_tree_status" ]]; then
+    working_tree_status="Working tree clean."
+  fi
+
+  rules_content="$(load_rules)"
+  rendered_prompt="$(render_task_prompt "$rules_content" "$task_meta" "$working_tree_status" "$task_diff")"
+
+  rendered_prompt_path="$(expand_output_path "$(config_string "outputs.rendered_prompt")")"
+  output_path="$(expand_output_path "$(config_string "outputs.task_check")")"
+
+  ensure_parent_dir "$rendered_prompt_path"
+  printf '%s\n' "$rendered_prompt" > "$rendered_prompt_path"
+
+  if [[ "$RUN_WITH_CLAUDE" -eq 1 ]]; then
+    maybe_run_claude "$rendered_prompt_path" "$output_path"
+    return 0
+  fi
+
+  write_or_print "$rendered_prompt" "$output_path"
+}
+
+parse_common_flags() {
+  PARSED_ARGS=()
+
+  while [[ $# -gt 0 ]]; do
+    case "$1" in
+      --stdout)
+        OUTPUT_TO_STDOUT=1
+        ;;
+      --run)
+        RUN_WITH_CLAUDE=1
+        ;;
+      --branch)
+        shift
+        if [[ $# -eq 0 ]]; then
+          echo "--branch requires a branch name." >&2
+          exit 1
+        fi
+        BRANCH_NAME="$1"
+        ;;
+      *)
+        PARSED_ARGS+=("$1")
+        ;;
+    esac
+    shift
+  done
+}
+
+main() {
+  local subcommand="${1:-help}"
+  shift || true
+
+  case "$subcommand" in
+    help|-h|--help)
+      command_help
+      ;;
+    print-rules)
+      command_print_rules
+      ;;
+    review-pr)
+      parse_common_flags "$@"
+      command_review_pr "${PARSED_ARGS[0]:-}"
+      ;;
+    check-task)
+      parse_common_flags "$@"
+      command_check_task "${PARSED_ARGS[0]:-}"
+      ;;
+    *)
+      echo "Unknown command: $subcommand" >&2
+      usage >&2
+      exit 1
+      ;;
+  esac
+}
+
+main "$@"
