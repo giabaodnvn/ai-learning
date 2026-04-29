@@ -1,0 +1,590 @@
+[
+  {
+    "pattern": "〜だけに",
+    "explanation_vi": "Chính vì..., vì là... (kết quả tự nhiên)",
+    "examples": [
+      {
+        "ja": "長年の経験があるだけに、対応が早い。",
+        "vi": "Chính vì có kinh nghiệm nhiều năm, nên sự ứng phó nhanh chóng."
+      },
+      {
+        "ja": "有名な大学だけに、競争が激しい。",
+        "vi": "Vì là một trường đại học nổi tiếng, nên cuộc cạnh tranh rất gay gắt."
+      }
+    ],
+    "notes_vi": "Biểu thị kết quả tự nhiên từ nguyên nhân được nêu."
+  },
+  {
+    "pattern": "〜あげく",
+    "explanation_vi": "Rồi cuối cùng..., sau hết... (kết quả không tốt)",
+    "examples": [
+      {
+        "ja": "何度も相談したあげく、やはり失敗した。",
+        "vi": "Sau khi tư vấn nhiều lần, cuối cùng vẫn thất bại."
+      },
+      {
+        "ja": "いろいろ試したあげくに、元の方法に戻った。",
+        "vi": "Sau khi thử nhiều cách, rồi lại quay trở lại phương pháp cũ."
+      }
+    ],
+    "notes_vi": "Thường dùng để chỉ kết quả không tốt hoặc bất ngờ."
+  },
+  {
+    "pattern": "〜ふり",
+    "explanation_vi": "Giả vờ..., tỏ ra...",
+    "examples": [
+      {
+        "ja": "知らないふりをして、話を聞いていた。",
+        "vi": "Tôi giả vờ không biết, nhưng vẫn lắng nghe câu chuyện."
+      },
+      {
+        "ja": "忙しいふりをするな。",
+        "vi": "Đừng giả vờ bận rộn."
+      }
+    ],
+    "notes_vi": "Biểu thị hành động giả vờ hoặc tỏ ra như thế nào đó."
+  },
+  {
+    "pattern": "〜まみれ",
+    "explanation_vi": "Nhuộm..., dính... (đầu mình tới chân tất cả)",
+    "examples": [
+      {
+        "ja": "泥まみれになって遊んでいた。",
+        "vi": "Đứa trẻ chơi và bây giờ toàn bộ là bùn."
+      },
+      {
+        "ja": "血まみれの手で助けを求めた。",
+        "vi": "Với bàn tay đầy máu, anh ấy kêu cứu."
+      }
+    ],
+    "notes_vi": "Biểu thị trạng thái toàn bộ bị phủ lên thứ gì đó."
+  },
+  {
+    "pattern": "〜ぶり",
+    "explanation_vi": "Kể từ... lần cuối cùng, lần đầu tiên kể từ...",
+    "examples": [
+      {
+        "ja": "5年ぶりに故郷に帰った。",
+        "vi": "Sau 5 năm, tôi trở về quê hương."
+      },
+      {
+        "ja": "久しぶりに友人に会った。",
+        "vi": "Sau lâu lâu, tôi gặp bạn bè."
+      }
+    ],
+    "notes_vi": "Chỉ khoảng thời gian từ lần cuối cùng đến lần này."
+  },
+  {
+    "pattern": "〜ぶりに",
+    "explanation_vi": "Lần đầu tiên kể từ..., sau lâu... mới lại",
+    "examples": [
+      {
+        "ja": "去年ぶりに会った。",
+        "vi": "Kể từ năm ngoái, lần đầu tiên gặp lại."
+      },
+      {
+        "ja": "数年ぶりにあの場所に行った。",
+        "vi": "Sau vài năm, tôi lại đến địa điểm đó."
+      }
+    ],
+    "notes_vi": "Tương tự 〜ぶり nhưng có に thêm vào."
+  },
+  {
+    "pattern": "〜めく",
+    "explanation_vi": "Trông như..., có vẻ..., dường như...",
+    "examples": [
+      {
+        "ja": "秋めいた天気になってきた。",
+        "vi": "Thời tiết trở nên có vẻ như mùa thu."
+      },
+      {
+        "ja": "子どもっぽい行動をするな。",
+        "vi": "Đừng hành động trông như trẻ con."
+      }
+    ],
+    "notes_vi": "Biểu thị tính chất hoặc ngoại hình có vẻ như."
+  },
+  {
+    "pattern": "〜かねない",
+    "explanation_vi": "Có thể..., dễ bị...",
+    "examples": [
+      {
+        "ja": "この計画は失敗しかねない。",
+        "vi": "Kế hoạch này có thể thất bại."
+      },
+      {
+        "ja": "そんなことをすれば、事故を起こしかねない。",
+        "vi": "Nếu làm như vậy, dễ bị gây ra tai nạn."
+      }
+    ],
+    "notes_vi": "Biểu thị khả năng xảy ra điều gì đó, thường tiêu cực."
+  },
+  {
+    "pattern": "〜かねる",
+    "explanation_vi": "Không thể..., khó có thể...",
+    "examples": [
+      {
+        "ja": "その提案は受け入れかねます。",
+        "vi": "Tôi không thể chấp nhận đề xuất đó."
+      },
+      {
+        "ja": "彼の態度は賛成しかねます。",
+        "vi": "Tôi không thể đồng ý với thái độ của anh ấy."
+      }
+    ],
+    "notes_vi": "Cách nói hình thức để từ chối hoặc biểu thị khó khăn."
+  },
+  {
+    "pattern": "〜きれない",
+    "explanation_vi": "Không thể hết..., không thể hoàn toàn...",
+    "examples": [
+      {
+        "ja": "すべてを説明しきれない。",
+        "vi": "Không thể giải thích hết tất cả."
+      },
+      {
+        "ja": "その魅力に引き込まれずにいられない。",
+        "vi": "Không thể tránh khỏi bị thu hút bởi sức hấp dẫn đó."
+      }
+    ],
+    "notes_vi": "Biểu thị sự không thể hoàn thành hoàn toàn."
+  },
+  {
+    "pattern": "〜きる",
+    "explanation_vi": "Hoàn toàn..., có thể...",
+    "examples": [
+      {
+        "ja": "この問題は解ける。",
+        "vi": "Có thể giải được bài toán này."
+      },
+      {
+        "ja": "彼は本当に強い。",
+        "vi": "Anh ấy thực sự mạnh."
+      }
+    ],
+    "notes_vi": "Biểu thị khả năng hoặc tính chất hoàn toàn."
+  },
+  {
+    "pattern": "〜やまない",
+    "explanation_vi": "Không ngừng..., liên tục...",
+    "examples": [
+      {
+        "ja": "彼は文句を言いやまない。",
+        "vi": "Anh ấy liên tục than phiền."
+      },
+      {
+        "ja": "この問題は出現しやまない。",
+        "vi": "Vấn đề này không ngừng xuất hiện."
+      }
+    ],
+    "notes_vi": "Biểu thị hành động hoặc trạng thái không dừng lại."
+  },
+  {
+    "pattern": "〜さかい",
+    "explanation_vi": "Vì..., bởi vì... (lý do)",
+    "examples": [
+      {
+        "ja": "時間がないさかい、急いでください。",
+        "vi": "Vì không có thời gian, hãy vội lên."
+      },
+      {
+        "ja": "雨が降ってるさかい、傘を持ってきた。",
+        "vi": "Vì đang mưa, tôi đã mang theo ô."
+      }
+    ],
+    "notes_vi": "Cách nói khoảng của vùng Kansai, chỉ lý do."
+  },
+  {
+    "pattern": "〜したたか",
+    "explanation_vi": "Chắc chắn..., đáng kể...",
+    "examples": [
+      {
+        "ja": "その影響は相当したたかだった。",
+        "vi": "Ảnh hưởng đó khá đáng kể."
+      },
+      {
+        "ja": "ダメージを受けたが、したたかに立ち上がった。",
+        "vi": "Mặc dù bị tổn thương, nhưng vẫn chắc chắn đứng lên."
+      }
+    ],
+    "notes_vi": "Biểu thị tính chất vững chắc hoặc mức độ đáng kể."
+  },
+  {
+    "pattern": "〜つつ",
+    "explanation_vi": "Trong khi..., vừa... vừa...",
+    "examples": [
+      {
+        "ja": "仕事をしつつ、勉強している。",
+        "vi": "Trong khi làm việc, anh ấy vẫn học tập."
+      },
+      {
+        "ja": "成功しつつも、新しい問題が生じた。",
+        "vi": "Mặc dù thành công, nhưng các vấn đề mới nảy sinh."
+      }
+    ],
+    "notes_vi": "Biểu thị hai hành động diễn ra cùng lúc hoặc mâu thuẫn."
+  },
+  {
+    "pattern": "〜ながら",
+    "explanation_vi": "Trong khi..., mặc dù..., vừa... vừa...",
+    "examples": [
+      {
+        "ja": "テレビを見ながら、ご飯を食べている。",
+        "vi": "Trong khi xem TV, anh ấy ăn cơm."
+      },
+      {
+        "ja": "知りながらも、何も言わなかった。",
+        "vi": "Mặc dù biết, nhưng vẫn không nói gì."
+      }
+    ],
+    "notes_vi": "Một trong những patterns phổ biến nhất trong tiếng Nhật."
+  },
+  {
+    "pattern": "〜とおり",
+    "explanation_vi": "Theo..., như..., chính như...",
+    "examples": [
+      {
+        "ja": "説明書の通りに組み立ててください。",
+        "vi": "Hãy lắp ráp theo hướng dẫn."
+      },
+      {
+        "ja": "予想通りに結果が出た。",
+        "vi": "Kết quả ra đúng như dự tính."
+      }
+    ],
+    "notes_vi": "Biểu thị sự tuân theo hoặc khớp với."
+  },
+  {
+    "pattern": "〜ほど",
+    "explanation_vi": "Mức độ..., đến nỗi..., hơn...",
+    "examples": [
+      {
+        "ja": "想像するほど難しくない。",
+        "vi": "Không khó bằng tưởng tượng."
+      },
+      {
+        "ja": "それほど重要ではありません。",
+        "vi": "Không quan trọng đến mức đó."
+      }
+    ],
+    "notes_vi": "Biểu thị mức độ hoặc so sánh."
+  },
+  {
+    "pattern": "〜たり〜たり",
+    "explanation_vi": "Đôi khi... đôi khi..., vừa... vừa...",
+    "examples": [
+      {
+        "ja": "彼は笑ったり泣いたりしている。",
+        "vi": "Anh ấy vừa cười vừa khóc."
+      },
+      {
+        "ja": "仕事をしたり、遊んだりしている。",
+        "vi": "Đôi khi làm việc, đôi khi chơi."
+      }
+    ],
+    "notes_vi": "Biểu thị nhiều hành động hoặc trạng thái xảy ra."
+  },
+  {
+    "pattern": "〜し〜し",
+    "explanation_vi": "Vừa... vừa..., không chỉ..., mà còn...",
+    "examples": [
+      {
+        "ja": "天気は良いし、気温も高い。",
+        "vi": "Thời tiết tốt và nhiệt độ cũng cao."
+      },
+      {
+        "ja": "仕事は忙しいし、ストレスも多い。",
+        "vi": "Vừa công việc bận rộn, vừa còn nhiều áp lực."
+      }
+    ],
+    "notes_vi": "Liệt kê nhiều lý do hoặc tính chất."
+  },
+  {
+    "pattern": "〜はともかく",
+    "explanation_vi": "Không nói gì đến..., khỏi bàn cãi...",
+    "examples": [
+      {
+        "ja": "品質はともかく、価格が高すぎる。",
+        "vi": "Khỏi bàn về chất lượng, giá thì quá cao."
+      },
+      {
+        "ja": "理由はともかく、結果が重要です。",
+        "vi": "Không nói gì đến lý do, kết quả mới quan trọng."
+      }
+    ],
+    "notes_vi": "Từ chối thảo luận về một điều gì đó để tập trung vào điều khác."
+  },
+  {
+    "pattern": "〜もそこそこに",
+    "explanation_vi": "Một cách hối hả..., vội vàng...",
+    "examples": [
+      {
+        "ja": "朝食もそこそこに、会社へ向かった。",
+        "vi": "Ăn sáng một cách vội vàng, rồi về công ty."
+      },
+      {
+        "ja": "挨拶もそこそこに、仕事を始めた。",
+        "vi": "Chào hỏi một cách vội vàng, rồi bắt đầu làm việc."
+      }
+    ],
+    "notes_vi": "Biểu thị cách làm một cách nhanh chóng hoặc không kỹ lưỡng."
+  },
+  {
+    "pattern": "〜ぐらいなら",
+    "explanation_vi": "Hơn là..., với..., khoảng...",
+    "examples": [
+      {
+        "ja": "失敗するぐらいなら、やらない方がいい。",
+        "vi": "Hơn là thất bại, không làm còn tốt hơn."
+      },
+      {
+        "ja": "それぐらいなら、簡単です。",
+        "vi": "Với mức độ đó, thì dễ thôi."
+      }
+    ],
+    "notes_vi": "Biểu thị lựa chọn hoặc so sánh."
+  },
+  {
+    "pattern": "〜ばかりか",
+    "explanation_vi": "Không chỉ..., mà còn..., thậm chí...",
+    "examples": [
+      {
+        "ja": "彼は日本語ばかりか、中国語も話せる。",
+        "vi": "Anh ấy không chỉ nói tiếng Nhật, mà còn tiếng Trung."
+      },
+      {
+        "ja": "失敗ばかりか、多額の損失を被った。",
+        "vi": "Không chỉ thất bại, mà còn bị tổn thất lớn."
+      }
+    ],
+    "notes_vi": "Mở rộng phạm vi hoặc thêm vào tính chất."
+  },
+  {
+    "pattern": "〜ばかりでなく",
+    "explanation_vi": "Không chỉ..., mà còn...",
+    "examples": [
+      {
+        "ja": "学校ばかりでなく、家庭でも学べる。",
+        "vi": "Không chỉ ở trường, mà còn ở nhà cũng học được."
+      },
+      {
+        "ja": "日本ばかりでなく、世界でも有名だ。",
+        "vi": "Không chỉ ở Nhật, mà còn nổi tiếng trên thế giới."
+      }
+    ],
+    "notes_vi": "Mở rộng phạm vi hoặc liệt kê thêm."
+  },
+  {
+    "pattern": "〜てならない",
+    "explanation_vi": "Không thể..., lòng muốn..., chỉ muốn...",
+    "examples": [
+      {
+        "ja": "彼に会ってならない。",
+        "vi": "Chỉ muốn gặp anh ấy."
+      },
+      {
+        "ja": "その結果が気になってならない。",
+        "vi": "Không thể khỏi lo lắng về kết quả đó."
+      }
+    ],
+    "notes_vi": "Biểu thị cảm giác hoặc muốn mạnh mẽ không thể kiểm soát."
+  },
+  {
+    "pattern": "〜でならない",
+    "explanation_vi": "Không thể không..., lòng muốn...",
+    "examples": [
+      {
+        "ja": "心配でならない。",
+        "vi": "Không thể không lo lắng."
+      },
+      {
+        "ja": "行きたくてならない。",
+        "vi": "Lòng muốn đi không thể tả."
+      }
+    ],
+    "notes_vi": "Biểu thị cảm giác hoặc muốn mạnh mẽ."
+  },
+  {
+    "pattern": "〜ても",
+    "explanation_vi": "Dù..., thậm chí... (nhượng bộ)",
+    "examples": [
+      {
+        "ja": "雨が降っても、出かけます。",
+        "vi": "Dù có mưa, tôi vẫn đi ra ngoài."
+      },
+      {
+        "ja": "失敗しても、諦めません。",
+        "vi": "Dù thất bại, tôi cũng không bỏ cuộc."
+      }
+    ],
+    "notes_vi": "Biểu thị sự nhượng bộ hoặc không bị ảnh hưởng."
+  },
+  {
+    "pattern": "〜としたら",
+    "explanation_vi": "Nếu... thì..., nếu xem như... (giả thuyết)",
+    "examples": [
+      {
+        "ja": "彼が来なかったとしたら、どうする？",
+        "vi": "Nếu anh ấy không đến, thì sao?"
+      },
+      {
+        "ja": "これが本当だとしたら、大問題だ。",
+        "vi": "Nếu điều này là sự thật, thì đó là vấn đề lớn."
+      }
+    ],
+    "notes_vi": "Biểu thị giả thuyết hoặc điều kiện."
+  },
+  {
+    "pattern": "〜といったら",
+    "explanation_vi": "Nói đến..., khi nói đến... (nhấn mạnh)",
+    "examples": [
+      {
+        "ja": "彼の怒りといったら、ひどかった。",
+        "vi": "Nói đến cơn giận của anh ấy, thật tệ."
+      },
+      {
+        "ja": "その味といったら、忘れられない。",
+        "vi": "Khi nói đến hương vị đó, không thể quên."
+      }
+    ],
+    "notes_vi": "Nhấn mạnh một tính chất hoặc cảm giác."
+  },
+  {
+    "pattern": "〜どころか",
+    "explanation_vi": "Không chỉ..., mà ngược lại..., thậm chí...",
+    "examples": [
+      {
+        "ja": "手伝うどころか、邪魔をされた。",
+        "vi": "Không chỉ không giúp, mà ngược lại còn cản trở."
+      },
+      {
+        "ja": "悪くなるどころか、さらに悪くなった。",
+        "vi": "Thậm chí không chỉ không tốt hơn, mà còn tệ hơn nữa."
+      }
+    ],
+    "notes_vi": "Biểu thị kết quả ngược lại mong đợi."
+  },
+  {
+    "pattern": "〜ばかりではなく",
+    "explanation_vi": "Không chỉ..., mà còn...",
+    "examples": [
+      {
+        "ja": "仕事ばかりではなく、プライベートも重要だ。",
+        "vi": "Không chỉ công việc, mà cả đời tư cũng quan trọng."
+      },
+      {
+        "ja": "日本ばかりではなく、アジア全体に影響がある。",
+        "vi": "Không chỉ Nhật, mà còn ảnh hưởng tới cả châu Á."
+      }
+    ],
+    "notes_vi": "Mở rộng phạm vi hoặc liệt kê thêm."
+  },
+  {
+    "pattern": "〜かいなしに",
+    "explanation_vi": "Mà không..., khoảng..., ngay...",
+    "examples": [
+      {
+        "ja": "返事をかいなしに、立ち去った。",
+        "vi": "Mà không trả lời, anh ấy đi khỏi."
+      },
+      {
+        "ja": "説明もかいなしに、進めてしまった。",
+        "vi": "Khoảng không giải thích, công việc đã tiến hành."
+      }
+    ],
+    "notes_vi": "Biểu thị hành động mà không làm điều gì đó trước."
+  },
+  {
+    "pattern": "〜ずや",
+    "explanation_vi": "Ngay khi... không... (ngay cả khi)",
+    "examples": [
+      {
+        "ja": "着くずや、電話をかけた。",
+        "vi": "Ngay khi tới, anh ấy gọi điện."
+      }
+    ],
+    "notes_vi": "Cách nói cổ điển, ít dùng trong văn nói hiện đại."
+  },
+  {
+    "pattern": "〜ないことには",
+    "explanation_vi": "Nếu không..., không thể...",
+    "examples": [
+      {
+        "ja": "努力しないことには、成功しない。",
+        "vi": "Nếu không cố gắng, không thể thành công."
+      },
+      {
+        "ja": "見ないことには、判断できない。",
+        "vi": "Nếu không xem, không thể phán xét."
+      }
+    ],
+    "notes_vi": "Biểu thị điều kiện cần thiết."
+  },
+  {
+    "pattern": "〜おおせか",
+    "explanation_vi": "Nói..., phát biểu... (cách nói cổ)",
+    "examples": [
+      {
+        "ja": "先生がおおせか。",
+        "vi": "Thầy giáo nói như vậy."
+      }
+    ],
+    "notes_vi": "Cách nói cổ điển rất hình thức, hiếm dùng."
+  },
+  {
+    "pattern": "〜むき",
+    "explanation_vi": "Hướng tới..., dành cho...",
+    "examples": [
+      {
+        "ja": "初心者向きの教材。",
+        "vi": "Tài liệu dành cho người mới bắt đầu."
+      },
+      {
+        "ja": "子どもむきの番組。",
+        "vi": "Chương trình dành cho trẻ em."
+      }
+    ],
+    "notes_vi": "Biểu thị mục đích hoặc đối tượng."
+  },
+  {
+    "pattern": "〜えど",
+    "explanation_vi": "Mặc dù..., nhưng... (cộ)",
+    "examples": [
+      {
+        "ja": "知ってはいえど、言わない。",
+        "vi": "Mặc dù biết, nhưng vẫn không nói."
+      }
+    ],
+    "notes_vi": "Cách nói cổ điển hoặc khoảng, ít dùng."
+  },
+  {
+    "pattern": "〜げ",
+    "explanation_vi": "Có vẻ..., tỏ ra..., trông như...",
+    "examples": [
+      {
+        "ja": "疲れたげに見えた。",
+        "vi": "Trông có vẻ mệt mỏi."
+      },
+      {
+        "ja": "悲しげな表情をしている。",
+        "vi": "Tỏ ra có vẻ buồn."
+      }
+    ],
+    "notes_vi": "Biểu thị tính chất hoặc ngoại hình có vẻ như."
+  },
+  {
+    "pattern": "〜や否や",
+    "explanation_vi": "Ngay khi..., vừa mới...",
+    "examples": [
+      {
+        "ja": "到着や否や、会議を始めた。",
+        "vi": "Ngay khi tới, anh ấy bắt đầu cuộc họp."
+      },
+      {
+        "ja": "問題が出たや否や、対応が必要。",
+        "vi": "Vừa mới có vấn đề, đã cần ứng phó."
+      }
+    ],
+    "notes_vi": "Biểu thị hành động ngay lập tức sau hành động khác."
+  }
+]

@@ -1,0 +1,474 @@
+[
+  {
+    "pattern": "〜ものなら",
+    "explanation_vi": "Nếu được phép... (giả thuyết, điều kiện)",
+    "examples": [
+      {
+        "ja": "もし時間があるものなら、もう一度確認したいです。",
+        "vi": "Nếu có thời gian, tôi muốn kiểm tra lại một lần nữa."
+      },
+      {
+        "ja": "できるものなら、この問題を解決したい。",
+        "vi": "Nếu có thể, tôi muốn giải quyết vấn đề này."
+      }
+    ],
+    "notes_vi": "Diễn đạt giả thuyết hoặc mong muốn trong tình huống giả định."
+  },
+  {
+    "pattern": "〜ものを",
+    "explanation_vi": "Mặc dù..., nhưng... (tiếc nuối, trách)",
+    "examples": [
+      {
+        "ja": "もっと早く来るものを、遅刻してしまった。",
+        "vi": "Mặc dù nên đến sớm hơn, nhưng tôi đã đi trễ."
+      },
+      {
+        "ja": "注意するものを、同じ間違いを繰り返した。",
+        "vi": "Mặc dù được cảnh báo, nhưng anh ấy lặp lại sai lầm tương tự."
+      }
+    ],
+    "notes_vi": "Biểu thị sự tiếc nuối hoặc trách hơi nhẹ."
+  },
+  {
+    "pattern": "〜ものか",
+    "explanation_vi": "Làm sao mà..., không bao giờ... (phủ định mạnh)",
+    "examples": [
+      {
+        "ja": "そんなことが可能なものか。",
+        "vi": "Làm sao mà có thể là như vậy?"
+      },
+      {
+        "ja": "私がそんなことをするものか。",
+        "vi": "Tôi không bao giờ làm điều như vậy."
+      }
+    ],
+    "notes_vi": "Biểu thị phủ định mạnh hoặc câu hỏi sâu sắc."
+  },
+  {
+    "pattern": "〜ものとして",
+    "explanation_vi": "Coi như..., xem như... (giả định)",
+    "examples": [
+      {
+        "ja": "田中さんを新しいリーダーものとして認めます。",
+        "vi": "Chúng tôi công nhận ông Tanaka như một người lãnh đạo mới."
+      },
+      {
+        "ja": "この計画を成功したものとして進めましょう。",
+        "vi": "Hãy tiếp tục kế hoạch này coi như nó sẽ thành công."
+      }
+    ],
+    "notes_vi": "Coi một điều gì đó như là đã thực hiện hoặc đúng."
+  },
+  {
+    "pattern": "〜かぎりでは",
+    "explanation_vi": "Trong phạm vi..., chỉ trong...",
+    "examples": [
+      {
+        "ja": "私の知識の限りでは、その情報は正確です。",
+        "vi": "Trong phạm vi kiến thức của tôi, thông tin đó là chính xác."
+      },
+      {
+        "ja": "現在のデータの限りでは、結論を出せません。",
+        "vi": "Trong phạm vi dữ liệu hiện tại, chúng tôi không thể đưa ra kết luận."
+      }
+    ],
+    "notes_vi": "Chỉ ra giới hạn của phạm vi hoặc kiến thức."
+  },
+  {
+    "pattern": "〜ないまでも",
+    "explanation_vi": "Nếu không... cũng... (nhượng bộ)",
+    "examples": [
+      {
+        "ja": "完璧でないまでも、このプロジェクトは成功しました。",
+        "vi": "Mặc dù không hoàn hảo, nhưng dự án này vẫn thành công."
+      },
+      {
+        "ja": "すべては理解していないまでも、大体わかりました。",
+        "vi": "Mặc dù không hiểu hết, nhưng tôi cũng hiểu được phần lớn."
+      }
+    ],
+    "notes_vi": "Biểu thị sự nhượng bộ, chấp nhận một mức độ nào đó."
+  },
+  {
+    "pattern": "〜ずは",
+    "explanation_vi": "Nếu không... (cổ điển)",
+    "examples": [
+      {
+        "ja": "努力せずは成功しない。",
+        "vi": "Nếu không cố gắng, sẽ không thành công."
+      },
+      {
+        "ja": "準備をせずは、試験に合格できません。",
+        "vi": "Nếu không chuẩn bị, bạn sẽ không thể vượt qua kỳ thi."
+      }
+    ],
+    "notes_vi": "Hình thức cổ điển của 'nếu không'."
+  },
+  {
+    "pattern": "〜ずんば",
+    "explanation_vi": "Nếu không... (cổ điển, hình thức cao)",
+    "examples": [
+      {
+        "ja": "この状況を改善せずんば、問題は続くだろう。",
+        "vi": "Nếu không cải thiện tình huống này, vấn đề sẽ tiếp tục."
+      }
+    ],
+    "notes_vi": "Hình thức cổ điển rất hình thức, ít dùng trong văn nói."
+  },
+  {
+    "pattern": "〜ずに",
+    "explanation_vi": "Mà không..., không phải... (phủ định)",
+    "examples": [
+      {
+        "ja": "言葉に頼らずに、身振りで説明した。",
+        "vi": "Mà không dùng lời nói, anh ấy giải thích bằng cử chỉ."
+      },
+      {
+        "ja": "許可をもらわずに、勝手に進めてしまった。",
+        "vi": "Mà không xin phép, tôi tự tiến hành công việc."
+      }
+    ],
+    "notes_vi": "Biểu thị hành động mà không làm điều gì đó trước."
+  },
+  {
+    "pattern": "〜わりに",
+    "explanation_vi": "Mặc dù..., nhưng... (tương phản mong đợi)",
+    "examples": [
+      {
+        "ja": "値段の割に品質が悪い。",
+        "vi": "Mặc dù giá cả như vậy, nhưng chất lượng lại kém."
+      },
+      {
+        "ja": "経験の割には失敗が多い。",
+        "vi": "Mặc dù có kinh nghiệm, nhưng vẫn có nhiều sai lầm."
+      }
+    ],
+    "notes_vi": "Biểu thị sự không tương xứng giữa hai mặt."
+  },
+  {
+    "pattern": "〜などと",
+    "explanation_vi": "Như... (coi thường, hạ thấp)",
+    "examples": [
+      {
+        "ja": "そんなことなどと言っていられない。",
+        "vi": "Không thể nói những điều như vậy."
+      },
+      {
+        "ja": "彼は成功などとは思っていなかった。",
+        "vi": "Anh ấy không hề nghĩ rằng sẽ thành công."
+      }
+    ],
+    "notes_vi": "Thường dùng để coi thường hoặc hạ thấp một điều gì đó."
+  },
+  {
+    "pattern": "〜てはいられない",
+    "explanation_vi": "Không thể không..., phải... (bắt buộc)",
+    "examples": [
+      {
+        "ja": "このような状況では、黙っていられない。",
+        "vi": "Trong tình huống như vậy, không thể im lặng."
+      },
+      {
+        "ja": "子どもが泣いているのに、見て見ぬふりはしていられない。",
+        "vi": "Trẻ con đang khóc, không thể giả vờ không thấy."
+      }
+    ],
+    "notes_vi": "Biểu thị sự bắt buộc hoặc không thể không làm."
+  },
+  {
+    "pattern": "〜ようとも",
+    "explanation_vi": "Dù... như thế nào, cũng... (nhượng bộ)",
+    "examples": [
+      {
+        "ja": "どんなことがあろうとも、諦めません。",
+        "vi": "Dù có chuyện gì xảy ra, tôi cũng không bỏ cuộc."
+      },
+      {
+        "ja": "反対されようとも、やり遂げたい。",
+        "vi": "Dù bị phản đối, tôi vẫn muốn hoàn thành."
+      }
+    ],
+    "notes_vi": "Biểu thị sự nhất tâm hoặc quyết tâm không thay đổi."
+  },
+  {
+    "pattern": "〜がためにも",
+    "explanation_vi": "Để..., vì..., cho...",
+    "examples": [
+      {
+        "ja": "子どもの将来のためにも、今から準備が必要です。",
+        "vi": "Để tương lai của con em, cần chuẩn bị từ bây giờ."
+      },
+      {
+        "ja": "社会の安定のためにも、法律が必要です。",
+        "vi": "Để sự ổn định của xã hội, luật pháp là cần thiết."
+      }
+    ],
+    "notes_vi": "Cách nói hình thức để chỉ mục đích hoặc lý do."
+  },
+  {
+    "pattern": "〜ことにしている",
+    "explanation_vi": "Có thói quen..., quy tắc là...",
+    "examples": [
+      {
+        "ja": "毎朝、運動することにしている。",
+        "vi": "Tôi có thói quen tập thể dục mỗi sáng."
+      },
+      {
+        "ja": "会議は毎週月曜日に開くことにしている。",
+        "vi": "Quy tắc là tổ chức cuộc họp vào thứ hai hàng tuần."
+      }
+    ],
+    "notes_vi": "Biểu thị thói quen hoặc quy tắc được duy trì."
+  },
+  {
+    "pattern": "〜ことにする",
+    "explanation_vi": "Quyết định..., lên kế hoạch...",
+    "examples": [
+      {
+        "ja": "来年から新しい方法を使うことにします。",
+        "vi": "Tôi quyết định sử dụng phương pháp mới từ năm tới."
+      },
+      {
+        "ja": "この問題は解決することにした。",
+        "vi": "Chúng tôi quyết định giải quyết vấn đề này."
+      }
+    ],
+    "notes_vi": "Biểu thị quyết định hoặc kế hoạch được đưa ra."
+  },
+  {
+    "pattern": "〜ことになった",
+    "explanation_vi": "Trở thành..., có kết quả là...",
+    "examples": [
+      {
+        "ja": "急な仕事が入ったため、出張することになった。",
+        "vi": "Do công việc bất ngờ, tôi phải đi công tác."
+      },
+      {
+        "ja": "この会社で働くことになりました。",
+        "vi": "Tôi đã được làm việc tại công ty này."
+      }
+    ],
+    "notes_vi": "Biểu thị kết quả cuối cùng hoặc sự kiện đã xảy ra."
+  },
+  {
+    "pattern": "〜ことになる",
+    "explanation_vi": "Sẽ..., dự kiến..., quy tắc là...",
+    "examples": [
+      {
+        "ja": "明日の午後、会議をすることになっています。",
+        "vi": "Dự kiến sẽ có cuộc họp vào chiều mai."
+      },
+      {
+        "ja": "この契約によって、給料が上がることになります。",
+        "vi": "Theo hợp đồng này, lương sẽ tăng."
+      }
+    ],
+    "notes_vi": "Biểu thị kế hoạch hoặc quy tắc."
+  },
+  {
+    "pattern": "〜こともある",
+    "explanation_vi": "Có khi..., thỉnh thoảng...",
+    "examples": [
+      {
+        "ja": "仕事が忙しくて、夜中に働くこともある。",
+        "vi": "Khi công việc bận rộn, có khi tôi làm việc đến đêm."
+      },
+      {
+        "ja": "天気が悪いこともあります。",
+        "vi": "Có khi thời tiết xấu."
+      }
+    ],
+    "notes_vi": "Biểu thị tính chất không chắc chắn hoặc thi thoảng."
+  },
+  {
+    "pattern": "〜ともあろう",
+    "explanation_vi": "Một người như..., ai mà... (chỉ trích)",
+    "examples": [
+      {
+        "ja": "先生ともあろう人が、そんなことを言うべきではない。",
+        "vi": "Một người như giáo viên không nên nói điều như vậy."
+      },
+      {
+        "ja": "プロともあろう選手が、こんな簡単なプレーを失敗した。",
+        "vi": "Một vận động viên chuyên nghiệp mà lại thất bại trong một pha đơn giản."
+      }
+    ],
+    "notes_vi": "Diễn đạt sự chỉ trích hoặc ngạc nhiên."
+  },
+  {
+    "pattern": "〜ともなると",
+    "explanation_vi": "Khi đến mức..., khi là... (khi đạt tới mức độ nào đó)",
+    "examples": [
+      {
+        "ja": "年をとってくると、体が思うようには動かなくなってきます。",
+        "vi": "Khi già đi, cơ thể không còn nghe lời."
+      },
+      {
+        "ja": "危機的な状況ともなると、対応が必要です。",
+        "vi": "Khi tình huống trở nên nguy cấp, cần phải ứng phó."
+      }
+    ],
+    "notes_vi": "Chỉ ra điểm mà tại đó một điều gì đó thay đổi."
+  },
+  {
+    "pattern": "〜にあって",
+    "explanation_vi": "Trong tình huống..., khi...",
+    "examples": [
+      {
+        "ja": "危機的な状況にあって、彼は冷静を保った。",
+        "vi": "Trong tình huống nguy cấp, anh ấy giữ bình tĩnh."
+      },
+      {
+        "ja": "困難な時代にあって、成功を収めた。",
+        "vi": "Trong thời kỳ khó khăn, anh ấy đã đạt thành công."
+      }
+    ],
+    "notes_vi": "Cách nói hình thức để chỉ tình huống hoặc bối cảnh."
+  },
+  {
+    "pattern": "〜にして",
+    "explanation_vi": "Ngay cả..., mặc dù... (coi như, xem như)",
+    "examples": [
+      {
+        "ja": "その高い地位にして、それほど偉くはない。",
+        "vi": "Mặc dù có địa vị cao, nhưng người đó không quá quan trọng."
+      },
+      {
+        "ja": "彼の才能にして、成功できなかった。",
+        "vi": "Ngay cả với tài năng của anh ấy, anh ấy cũng không thành công."
+      }
+    ],
+    "notes_vi": "Biểu thị tương phản mong đợi hoặc nhượng bộ."
+  },
+  {
+    "pattern": "〜になって",
+    "explanation_vi": "Sau khi trở thành..., khi thành...",
+    "examples": [
+      {
+        "ja": "大人になって、その重要性を理解した。",
+        "vi": "Sau khi trở thành người lớn, tôi mới hiểu được tầm quan trọng."
+      },
+      {
+        "ja": "リーダーになって、責任の重さを感じた。",
+        "vi": "Khi trở thành lãnh đạo, tôi cảm thấy nặng nề của trách nhiệm."
+      }
+    ],
+    "notes_vi": "Biểu thị một sự thay đổi hoặc thực hiện điều gì đó."
+  },
+  {
+    "pattern": "〜にもまして",
+    "explanation_vi": "Còn hơn cả..., thậm chí còn...",
+    "examples": [
+      {
+        "ja": "去年にもまして、今年の売上が増加した。",
+        "vi": "Doanh số năm nay tăng hơn cả năm ngoái."
+      },
+      {
+        "ja": "前回の試験にもまして、この次は難しいだろう。",
+        "vi": "Kỳ thi tới sẽ còn khó hơn kỳ trước."
+      }
+    ],
+    "notes_vi": "Biểu thị mức độ cao hơn hoặc so sánh vượt trội."
+  },
+  {
+    "pattern": "〜に至っては",
+    "explanation_vi": "Đến mức..., thậm chí... (nhấn mạnh mức độ cực đoan)",
+    "examples": [
+      {
+        "ja": "単なる不注意に至っては、許されません。",
+        "vi": "Đến mức chỉ là bất cẩn, điều đó không được phép."
+      },
+      {
+        "ja": "子どもに至るまで、みんなが参加しました。",
+        "vi": "Thậm chí đến cả trẻ con, ai cũng tham gia."
+      }
+    ],
+    "notes_vi": "Nhấn mạnh mức độ cực đoan hoặc toàn diện."
+  },
+  {
+    "pattern": "〜かつ",
+    "explanation_vi": "Và, cùng lúc...",
+    "examples": [
+      {
+        "ja": "効果的かつ効率的な方法を探している。",
+        "vi": "Chúng tôi đang tìm kiếm phương pháp vừa hiệu quả vừa hiệu suất cao."
+      },
+      {
+        "ja": "安全かつ快適な環境を作ることが目標です。",
+        "vi": "Mục tiêu là tạo ra môi trường vừa an toàn vừa thoải mái."
+      }
+    ],
+    "notes_vi": "Cách nói hình thức để kết nối hai tính chất hoặc điều kiện."
+  },
+  {
+    "pattern": "〜ない限り",
+    "explanation_vi": "Trừ khi..., nếu không... (điều kiện cần)",
+    "examples": [
+      {
+        "ja": "許可を得ない限り、進めることはできません。",
+        "vi": "Trừ khi được phép, không thể tiến hành."
+      },
+      {
+        "ja": "改革が起こらない限り、問題は続くでしょう。",
+        "vi": "Nếu không có cải cách, vấn đề sẽ tiếp tục."
+      }
+    ],
+    "notes_vi": "Biểu thị điều kiện cần thiết để điều gì đó xảy ra."
+  },
+  {
+    "pattern": "〜ん限りは",
+    "explanation_vi": "Trong khi..., miễn là... (điều kiện)",
+    "examples": [
+      {
+        "ja": "これ以上の予算は出ないんだから、この予算内で進めなければならない。",
+        "vi": "Vì ngân sách không còn nữa, phải tiếp tục trong phạm vi ngân sách này."
+      }
+    ],
+    "notes_vi": "Diễn đạt điều kiện hoặc hạn chế."
+  },
+  {
+    "pattern": "〜たるべき",
+    "explanation_vi": "Nên được..., xứng đáng... (nghĩa vụ hoặc tính chất)",
+    "examples": [
+      {
+        "ja": "大人たるべき責任感を持つべきです。",
+        "vi": "Một người lớn nên có trách nhiệm của người lớn."
+      },
+      {
+        "ja": "指導者たるべき資質が必要です。",
+        "vi": "Cần có phẩm chất xứng đáng cho một người hướng dẫn."
+      }
+    ],
+    "notes_vi": "Cách nói hình thức để chỉ nghĩa vụ hoặc tính chất cần có."
+  },
+  {
+    "pattern": "〜ばあるまいし",
+    "explanation_vi": "Không phải..., không như... (phủ định)",
+    "examples": [
+      {
+        "ja": "そこまで心配する必要もあるまい。",
+        "vi": "Không cần phải lo lắng đến mức đó."
+      },
+      {
+        "ja": "絶対に失敗するわけではあるまい。",
+        "vi": "Không chắc là sẽ thất bại hoàn toàn."
+      }
+    ],
+    "notes_vi": "Cách nói cổ điển để phủ định hoặc biểu thị sự không chắc chắn."
+  },
+  {
+    "pattern": "〜なり",
+    "explanation_vi": "Hoặc..., hoặc là..., hay... (lựa chọn hoặc ngay lập tức)",
+    "examples": [
+      {
+        "ja": "好きなり嫌いなり、どちらでもいいです。",
+        "vi": "Dù thích hay không thích, dù cách nào cũng được."
+      },
+      {
+        "ja": "到着したなり、すぐに会議を始めた。",
+        "vi": "Ngay khi tới, anh ấy lập tức bắt đầu cuộc họp."
+      }
+    ],
+    "notes_vi": "Biểu thị lựa chọn hoặc hành động ngay lập tức."
+  }
+]

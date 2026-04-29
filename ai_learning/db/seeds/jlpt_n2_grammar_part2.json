@@ -1,0 +1,302 @@
+[
+  {
+    "pattern": "〜わりに",
+    "explanation_vi": "Đáng lẽ ra..., tuy nhiên... (tương phản với kỳ vọng)",
+    "examples": [
+      {
+        "ja": "価格の割に、品質が悪い。",
+        "vi": "Giá cả cao, nhưng chất lượng lại kém."
+      },
+      {
+        "ja": "長時間勉強したわりに、成績が伸びない。",
+        "vi": "Tuy học lâu, nhưng điểm số không tăng."
+      }
+    ],
+    "notes_vi": "Biểu thị sự không phù hợp giữa mong đợi và hiện thực."
+  },
+  {
+    "pattern": "〜かた",
+    "explanation_vi": "Cách..., phương pháp... (hình thức)",
+    "examples": [
+      {
+        "ja": "説明の仕方が分かりやすい。",
+        "vi": "Cách giải thích dễ hiểu."
+      },
+      {
+        "ja": "仕事のやり方を教えてください。",
+        "vi": "Hãy chỉ cho tôi cách làm việc."
+      }
+    ],
+    "notes_vi": "Thường được viết thành 〜かた hoặc 〜ぶり."
+  },
+  {
+    "pattern": "〜ばこそ",
+    "explanation_vi": "Chính vì... nên... (nhấn mạnh, điều kiện hình thức)",
+    "examples": [
+      {
+        "ja": "失敗したればこそ、その教訓を得た。",
+        "vi": "Chính vì thất bại mà tôi mới học được."
+      },
+      {
+        "ja": "経験があればこそ、判断できる。",
+        "vi": "Chính vì có kinh nghiệm nên mới phán đoán được."
+      }
+    ],
+    "notes_vi": "Tương tự 〜からこそ nhưng hình thức hơn."
+  },
+  {
+    "pattern": "〜たびに",
+    "explanation_vi": "Mỗi lần... (lặp lại, tần suất)",
+    "examples": [
+      {
+        "ja": "雨が降るたびに、彼は気分が悪くなる。",
+        "vi": "Mỗi lần mưa, anh ấy lại cảm thấy khó chịu."
+      },
+      {
+        "ja": "失敗するたびに、諦めたくなる。",
+        "vi": "Mỗi lần thất bại, tôi lại muốn bỏ cuộc."
+      }
+    ],
+    "notes_vi": "Biểu thị điều gì đó xảy ra lặp lại."
+  },
+  {
+    "pattern": "〜につき",
+    "explanation_vi": "Vì..., do... (nguyên nhân), hoặc theo (tỷ lệ)",
+    "examples": [
+      {
+        "ja": "雨のため、運動会は中止になった。相当につき、メンバーの了解を得た。",
+        "vi": "Vì mưa nên hội thao bị hủy. Theo sự đồng ý của thành viên..."
+      },
+      {
+        "ja": "人口一人につき、一票の権利がある。",
+        "vi": "Mỗi người có quyền bầu cử."
+      }
+    ],
+    "notes_vi": "Có hai ý nghĩa: nguyên nhân hoặc tỷ lệ."
+  },
+  {
+    "pattern": "〜しまう",
+    "explanation_vi": "Làm xong, hoàn thành (thường có hàm ý tiêu cực)",
+    "examples": [
+      {
+        "ja": "つい、秘密を言ってしまった。",
+        "vi": "Tôi vô tình nói ra bí mật."
+      },
+      {
+        "ja": "全部食べてしまった。",
+        "vi": "Ăn hết rồi."
+      }
+    ],
+    "notes_vi": "Biểu thị hành động hoàn thành, thường với cảm xúc tiêu cực."
+  },
+  {
+    "pattern": "〜かもしれない",
+    "explanation_vi": "Có thể..., có lẽ... (khả năng)",
+    "examples": [
+      {
+        "ja": "明日は雨かもしれない。",
+        "vi": "Ngày mai có thể mưa."
+      },
+      {
+        "ja": "彼は病気かもしれない。",
+        "vi": "Anh ấy có lẽ bị bệnh."
+      }
+    ],
+    "notes_vi": "Biểu thị sự không chắc chắn, khả năng có thể xảy ra."
+  },
+  {
+    "pattern": "〜ずに",
+    "explanation_vi": "Không..., mà không... (phủ định)",
+    "examples": [
+      {
+        "ja": "申し込まずに、参加することはできません。",
+        "vi": "Không đăng ký, không thể tham gia."
+      },
+      {
+        "ja": "説明せずに、始めるわけにはいきません。",
+        "vi": "Không giải thích, không thể bắt đầu."
+      }
+    ],
+    "notes_vi": "Tiêu chuẩn của phủ định với ý nghĩa 'không thể không'."
+  },
+  {
+    "pattern": "〜ほか",
+    "explanation_vi": "Ngoài..., chỉ có... (lựa chọn)",
+    "examples": [
+      {
+        "ja": "他に選択肢がないほか、この決定を下した。",
+        "vi": "Không có cách khác, tôi mới đưa ra quyết định này."
+      },
+      {
+        "ja": "これ以外のほか、方法はない。",
+        "vi": "Ngoài cách này ra, không có cách nào khác."
+      }
+    ],
+    "notes_vi": "Thường dùng để chỉ lựa chọn duy nhất."
+  },
+  {
+    "pattern": "〜と同じく",
+    "explanation_vi": "Giống như..., cũng như... (so sánh)",
+    "examples": [
+      {
+        "ja": "兄と同じく、弟も医者になった。",
+        "vi": "Giống như anh, em trai cũng trở thành bác sĩ."
+      },
+      {
+        "ja": "他の人と同じく、私も反対する。",
+        "vi": "Cũng như những người khác, tôi cũng phản đối."
+      }
+    ],
+    "notes_vi": "Biểu thị sự tương đồng hoặc sự bằng nhau."
+  },
+  {
+    "pattern": "〜ので",
+    "explanation_vi": "Vì..., do..., nên... (nguyên nhân, lý do)",
+    "examples": [
+      {
+        "ja": "雨なので、外に出られない。",
+        "vi": "Vì mưa nên tôi không thể ra ngoài."
+      },
+      {
+        "ja": "忙しいので、手伝えません。",
+        "vi": "Vì bận nên tôi không thể giúp."
+      }
+    ],
+    "notes_vi": "Biểu thị lý do, nguyên nhân tự nhiên."
+  },
+  {
+    "pattern": "〜させる",
+    "explanation_vi": "Làm cho..., buộc... (nhân quả)",
+    "examples": [
+      {
+        "ja": "子どもに勉強させる。",
+        "vi": "Bắt con học."
+      },
+      {
+        "ja": "部下に仕事をさせた。",
+        "vi": "Tôi giao cho thu属qui công việc."
+      }
+    ],
+    "notes_vi": "Biểu thị sự buộc hoặc yêu cầu ai đó làm điều gì."
+  },
+  {
+    "pattern": "〜ところだ",
+    "explanation_vi": "Đang..., sắp sửa... (diễn ra)",
+    "examples": [
+      {
+        "ja": "今、仕事をしているところです。",
+        "vi": "Tôi đang làm việc."
+      },
+      {
+        "ja": "これから出かけるところです。",
+        "vi": "Tôi sắp sửa đi."
+      }
+    ],
+    "notes_vi": "Biểu thị hành động đang diễn ra hoặc sắp xảy ra."
+  },
+  {
+    "pattern": "〜とおり",
+    "explanation_vi": "Như..., theo... (tương đồng, phương pháp)",
+    "examples": [
+      {
+        "ja": "説明書の通りに、組み立ててください。",
+        "vi": "Hãy lắp ráp theo hướng dẫn."
+      },
+      {
+        "ja": "予定通りに、計画を実行した。",
+        "vi": "Chúng tôi thực hiện kế hoạch đúng theo dự định."
+      }
+    ],
+    "notes_vi": "Biểu thị sự tuân theo hoặc tương ứng với."
+  },
+  {
+    "pattern": "〜ぐらい",
+    "explanation_vi": "Khoảng..., xấp xỉ... (mức độ, số lượng)",
+    "examples": [
+      {
+        "ja": "水は摂氏100度ぐらいで沸騰する。",
+        "vi": "Nước sôi ở khoảng 100 độ C."
+      },
+      {
+        "ja": "1時間ぐらい待った。",
+        "vi": "Tôi đợi khoảng 1 giờ."
+      }
+    ],
+    "notes_vi": "Biểu thị giá trị gần đúng hoặc xấp xỉ."
+  },
+  {
+    "pattern": "〜とは",
+    "explanation_vi": "...có nghĩa là... (định nghĩa, giải thích)",
+    "examples": [
+      {
+        "ja": "民主主義とは、人民による支配である。",
+        "vi": "Dân chủ có nghĩa là sự cai trị của nhân dân."
+      },
+      {
+        "ja": "愛とは何かを考える。",
+        "vi": "Suy nghĩ về ý nghĩa của tình yêu."
+      }
+    ],
+    "notes_vi": "Dùng để giải thích hoặc định nghĩa một khái niệm."
+  },
+  {
+    "pattern": "〜てからは",
+    "explanation_vi": "Từ khi..., sau khi... (giai đoạn)",
+    "examples": [
+      {
+        "ja": "大学に入ってからは、よく勉強している。",
+        "vi": "Từ khi vào đại học, tôi học rất chăm chỉ."
+      },
+      {
+        "ja": "日本に来てからは、多くのことを学んだ。",
+        "vi": "Từ khi đến Nhật, tôi đã học được nhiều thứ."
+      }
+    ],
+    "notes_vi": "Biểu thị một giai đoạn bắt đầu từ một mốc thời gian."
+  },
+  {
+    "pattern": "〜ものなら",
+    "explanation_vi": "Nếu dám..., nếu có thể... (điều kiện thử thách)",
+    "examples": [
+      {
+        "ja": "できるものなら、やってみて。",
+        "vi": "Nếu dám, hãy thử làm."
+      },
+      {
+        "ja": "分かるものなら、教えてください。",
+        "vi": "Nếu hiểu được, hãy dạy cho tôi."
+      }
+    ],
+    "notes_vi": "Biểu thị thách thức hoặc điều kiện khó khăn."
+  },
+  {
+    "pattern": "〜ほうが",
+    "explanation_vi": "...hơn, ...tốt hơn... (so sánh)",
+    "examples": [
+      {
+        "ja": "歩いた方が健康にいい。",
+        "vi": "Đi bộ tốt hơn cho sức khỏe."
+      },
+      {
+        "ja": "今すぐ決めた方がいい。",
+        "vi": "Nên quyết định ngay bây giờ."
+      }
+    ],
+    "notes_vi": "Biểu thị so sánh hoặc khuyến nghị hành động nào đó tốt hơn."
+  },
+  {
+    "pattern": "〜ぬき",
+    "explanation_vi": "Bỏ qua..., không tính... (loại bỏ)",
+    "examples": [
+      {
+        "ja": "文法を抜きにして、日本語は学べない。",
+        "vi": "Không thể học tiếng Nhật mà bỏ qua ngữ pháp."
+      },
+      {
+        "ja": "感情を抜きにしても、この決定は正しい。",
+        "vi": "Bỏ qua cảm xúc, quyết định này vẫn là đúng."
+      }
+    ],
+    "notes_vi": "Dùng để loại bỏ một yếu tố khỏi xem xét."
+  }
+]

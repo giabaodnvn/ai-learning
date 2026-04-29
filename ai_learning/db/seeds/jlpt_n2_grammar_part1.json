@@ -1,0 +1,467 @@
+[
+  {
+    "pattern": "〜べからず",
+    "explanation_vi": "Không nên, không được (cách nói hình thức, cấm)",
+    "examples": [
+      {
+        "ja": "学生は遅刻すべからずである。",
+        "vi": "Học sinh không được đi trễ."
+      },
+      {
+        "ja": "このような不正行為は許すべからざるものである。",
+        "vi": "Hành vi gian lận như vậy là không được phép."
+      }
+    ],
+    "notes_vi": "Cách nói hình thức, thường dùng trong tài liệu chính thức hoặc bài viết lịch sự."
+  },
+  {
+    "pattern": "〜ざるを得ない",
+    "explanation_vi": "Không có cách nào khác ngoài việc... (bắt buộc)",
+    "examples": [
+      {
+        "ja": "事情が急変したため、計画を変更せざるを得なかった。",
+        "vi": "Do tình huống thay đổi đột ngột, chúng tôi bắt buộc phải thay đổi kế hoạch."
+      },
+      {
+        "ja": "彼の提案を受け入れざるを得なかった。",
+        "vi": "Tôi bắt buộc phải chấp nhận đề xuất của anh ấy."
+      }
+    ],
+    "notes_vi": "Biểu thị sự bắt buộc, không có lựa chọn nào khác."
+  },
+  {
+    "pattern": "〜ないではすまない",
+    "explanation_vi": "Phải..., không thể không... (bắt buộc)",
+    "examples": [
+      {
+        "ja": "この失敗に対して、謝罪しないではすまない。",
+        "vi": "Đối với thất bại này, tôi phải xin lỗi."
+      },
+      {
+        "ja": "問題を解決しないではすまない。",
+        "vi": "Phải giải quyết vấn đề này."
+      }
+    ],
+    "notes_vi": "Diễn đạt sự cần thiết, bắt buộc phải làm điều gì đó."
+  },
+  {
+    "pattern": "〜とすれば",
+    "explanation_vi": "Nếu giả sử..., nếu coi như... (giả thuyết)",
+    "examples": [
+      {
+        "ja": "このプランが成功するとすれば、利益は倍増するだろう。",
+        "vi": "Nếu kế hoạch này thành công, lợi nhuận sẽ tăng gấp đôi."
+      },
+      {
+        "ja": "彼が正直な人物だとすれば、この行動は理解できない。",
+        "vi": "Nếu anh ấy là người thành thật, hành động này không thể hiểu được."
+      }
+    ],
+    "notes_vi": "Giả thuyết cao cấp, dùng để phân tích các trường hợp giả định."
+  },
+  {
+    "pattern": "〜とも言える",
+    "explanation_vi": "Có thể nói rằng..., có thể coi như... (giải thích)",
+    "examples": [
+      {
+        "ja": "この状況は危機とも言える。",
+        "vi": "Có thể nói rằng tình huống này là một cuộc khủng hoảng."
+      },
+      {
+        "ja": "彼のアプローチは革新的とも言える。",
+        "vi": "Phương pháp của anh ấy có thể coi là sáng tạo."
+      }
+    ],
+    "notes_vi": "Dùng để phân tích hoặc giải thích từ góc độ khác."
+  },
+  {
+    "pattern": "〜にせよ",
+    "explanation_vi": "Dù..., cho dù... (nhượng bộ)",
+    "examples": [
+      {
+        "ja": "成功するにせよ、失敗するにせよ、最善を尽くすべきだ。",
+        "vi": "Dù thành công hay thất bại, chúng ta phải cố gắng hết sức."
+      },
+      {
+        "ja": "どの案を選ぶにせよ、責任は同じだ。",
+        "vi": "Cho dù chọn phương án nào, trách nhiệm cũng như nhau."
+      }
+    ],
+    "notes_vi": "Biểu thị sự nhượng bộ, không phụ thuộc vào lựa chọn nào."
+  },
+  {
+    "pattern": "〜に限らず",
+    "explanation_vi": "Không chỉ..., mà còn... (mở rộng)",
+    "examples": [
+      {
+        "ja": "日本に限らず、世界中でこの現象が見られる。",
+        "vi": "Không chỉ Nhật Bản, mà hiện tượng này còn thấy ở khắp thế giới."
+      },
+      {
+        "ja": "学生に限らず、一般市民も参加できます。",
+        "vi": "Không chỉ học sinh, mà công dân bình thường cũng có thể tham gia."
+      }
+    ],
+    "notes_vi": "Mở rộng phạm vi để bao gồm nhiều hơn những gì được nêu."
+  },
+  {
+    "pattern": "〜ばかりか",
+    "explanation_vi": "Không chỉ..., mà còn... (thêm vào)",
+    "examples": [
+      {
+        "ja": "仕事が難しいばかりか、給料も安い。",
+        "vi": "Không chỉ công việc khó, mà lương còn thấp."
+      },
+      {
+        "ja": "彼は勉強するばかりか、スポーツも得意だ。",
+        "vi": "Anh ấy không chỉ học tập, mà còn giỏi thể thao."
+      }
+    ],
+    "notes_vi": "Thêm thông tin bổ sung vào câu trước đó."
+  },
+  {
+    "pattern": "〜ともなると",
+    "explanation_vi": "Khi... đến mức độ, lúc... (trở nên)",
+    "examples": [
+      {
+        "ja": "戦争ともなると、多くの人命が失われる。",
+        "vi": "Khi xảy ra chiến tranh, nhiều người mất mạng."
+      },
+      {
+        "ja": "本格的な経営危機ともなると、全社員の協力が必要だ。",
+        "vi": "Khi chính thức rơi vào khủng hoảng kinh doanh, cần sự hợp tác của toàn bộ nhân viên."
+      }
+    ],
+    "notes_vi": "Biểu thị mức độ hoặc tình huống nghiêm trọng."
+  },
+  {
+    "pattern": "〜からこそ",
+    "explanation_vi": "Chính vì...nên... (nhấn mạnh nguyên nhân)",
+    "examples": [
+      {
+        "ja": "失敗したからこそ、その教訓を学ぶことができた。",
+        "vi": "Chính vì thất bại, tôi mới học được bài học đó."
+      },
+      {
+        "ja": "難しいからこそ、挑戦する価値がある。",
+        "vi": "Chính vì khó nên mới đáng để thử thách."
+      }
+    ],
+    "notes_vi": "Nhấn mạnh mối quan hệ giữa nguyên nhân và kết quả."
+  },
+  {
+    "pattern": "〜ゆえに",
+    "explanation_vi": "Vì...nên..., do...mà... (nguyên nhân)",
+    "examples": [
+      {
+        "ja": "知識の不足ゆえに、判断を誤った。",
+        "vi": "Do thiếu kiến thức nên tôi mới sai trong phán đoán."
+      },
+      {
+        "ja": "彼の努力ゆえに、プロジェクトは成功した。",
+        "vi": "Vì nỗ lực của anh ấy nên dự án mới thành công."
+      }
+    ],
+    "notes_vi": "Cách nói hình thức để biểu thị nguyên nhân."
+  },
+  {
+    "pattern": "〜そばから",
+    "explanation_vi": "Vừa... vừa..., ngay khi... (hành động liên tiếp)",
+    "examples": [
+      {
+        "ja": "掃除したそばから、また散らかしてしまう。",
+        "vi": "Vừa dọn dẹp xong lại vướng bại vào."
+      },
+      {
+        "ja": "言ったそばから、忘れてしまう。",
+        "vi": "Vừa nói xong đã quên ngay."
+      }
+    ],
+    "notes_vi": "Diễn đạt hành động xảy ra ngay sau một hành động khác."
+  },
+  {
+    "pattern": "〜いかんによって",
+    "explanation_vi": "Tùy thuộc vào..., phụ thuộc vào... (điều kiện)",
+    "examples": [
+      {
+        "ja": "成功するかどうかは、準備の充実いかんによって決まる。",
+        "vi": "Thành công hay thất bại tùy thuộc vào sự chuẩn bị."
+      },
+      {
+        "ja": "結果は戦略いかんによって変わる。",
+        "vi": "Kết quả thay đổi tùy theo chiến lược."
+      }
+    ],
+    "notes_vi": "Cách nói hình thức để biểu thị sự phụ thuộc vào điều kiện."
+  },
+  {
+    "pattern": "〜もさることながら",
+    "explanation_vi": "Đúng là...nhưng hơn cả... (nhấn mạnh điểm khác)",
+    "examples": [
+      {
+        "ja": "この製品の品質もさることながら、価格も競争力がある。",
+        "vi": "Chất lượng sản phẩm này tốt, nhưng giá cả cũng cạnh tranh."
+      },
+      {
+        "ja": "彼の知識もさることながら、実行力も優れている。",
+        "vi": "Kiến thức của anh ấy tốt, nhưng khả năng thực hiện cũng xuất sắc."
+      }
+    ],
+    "notes_vi": "Nhấn mạnh một khía cạnh khác ngoài cái đã được đề cập."
+  },
+  {
+    "pattern": "〜ばあるまいし",
+    "explanation_vi": "Không phải là...chứ gì... (phủ định giả thuyết)",
+    "examples": [
+      {
+        "ja": "素人ばあるまいし、このくらいのことはできるはずだ。",
+        "vi": "Không phải là người mới, nên phải làm được việc này."
+      },
+      {
+        "ja": "子どもばあるまいし、そんなことは分かっているはずだ。",
+        "vi": "Không phải là trẻ con, nên phải hiểu chuyện đó."
+      }
+    ],
+    "notes_vi": "Phủ định một giả thuyết hoặc lý do không hợp lý."
+  },
+  {
+    "pattern": "〜ものならば",
+    "explanation_vi": "Nếu có thể..., nếu dám... (điều kiện khó khăn)",
+    "examples": [
+      {
+        "ja": "できるものならば、その問題を解決したいのだが。",
+        "vi": "Nếu có thể được, tôi muốn giải quyết vấn đề đó."
+      },
+      {
+        "ja": "分かるものならば、誰も苦労しない。",
+        "vi": "Nếu dễ dàng hiểu được thì ai cũng không phải khó khăn."
+      }
+    ],
+    "notes_vi": "Biểu thị điều kiện khó thực hiện hoặc bất khả thi."
+  },
+  {
+    "pattern": "〜ないではいられない",
+    "explanation_vi": "Không thể không..., phải... (bươc buộc)",
+    "examples": [
+      {
+        "ja": "この状況を見て、心配しないではいられない。",
+        "vi": "Nhìn tình huống này, tôi không thể không lo lắng."
+      },
+      {
+        "ja": "彼の成功に喜ばないではいられない。",
+        "vi": "Tôi không thể không vui vì thành công của anh ấy."
+      }
+    ],
+    "notes_vi": "Diễn đạt một tình cảm hoặc phản ứng không thể kiểm soát."
+  },
+  {
+    "pattern": "〜ことのないよう",
+    "explanation_vi": "Để tránh..., để không... (mục đích)",
+    "examples": [
+      {
+        "ja": "同じ失敗を繰り返すことのないよう、注意が必要だ。",
+        "vi": "Cần chú ý để tránh lặp lại cùng một sai lầm."
+      },
+      {
+        "ja": "事故が起こることのないよう、安全対策を強化する。",
+        "vi": "Để tránh tai nạn, chúng tôi sẽ tăng cường biện pháp an toàn."
+      }
+    ],
+    "notes_vi": "Biểu thị mục đích phòng tránh hoặc dự phòng."
+  },
+  {
+    "pattern": "〜ところにきて",
+    "explanation_vi": "Thêm vào đó..., mặt khác... (tình huống bổ sung)",
+    "examples": [
+      {
+        "ja": "不況が続いているところへきて、さらに税金も上がった。",
+        "vi": "Không chỉ suy thoái kinh tế tiếp tục, mặt khác thuế còn tăng thêm."
+      },
+      {
+        "ja": "人手不足のところへきて、急な注文が増えた。",
+        "vi": "Thêm vào thiếu nhân lực, lượng đơn đặt hàng đột ngột tăng."
+      }
+    ],
+    "notes_vi": "Thêm một tình huống phức tạp vào tình huống hiện tại."
+  },
+  {
+    "pattern": "〜と言わんばかりに",
+    "explanation_vi": "Như để nói rằng..., như muốn nói... (diễn đạt)",
+    "examples": [
+      {
+        "ja": "彼は首を横に振ると言わんばかりに、拒否の意思を示した。",
+        "vi": "Anh ấy lắc đầu như muốn nói 'không', thể hiện sự từ chối."
+      },
+      {
+        "ja": "雲が空を覆い尽くさんと言わんばかりに広がっていた。",
+        "vi": "Mây phủ đầy bầu trời như muốn che phủ tất cả."
+      }
+    ],
+    "notes_vi": "Biểu thị hành động hoặc hiện tượng thể hiện một ý định nào đó."
+  },
+  {
+    "pattern": "〜を抜きにして",
+    "explanation_vi": "Ngoại trừ..., không tính... (loại bỏ)",
+    "examples": [
+      {
+        "ja": "価格を抜きにして考えると、この製品は最高だ。",
+        "vi": "Ngoại trừ giá cả, sản phẩm này là tốt nhất."
+      },
+      {
+        "ja": "彼の人格を抜きにして、仕事の成績を評価することはできない。",
+        "vi": "Không tính tính cách của anh ấy, không thể đánh giá kết quả công việc."
+      }
+    ],
+    "notes_vi": "Loại bỏ một yếu tố để xem xét các yếu tố khác."
+  },
+  {
+    "pattern": "〜なくば",
+    "explanation_vi": "Nếu không..., trừ khi... (điều kiện)",
+    "examples": [
+      {
+        "ja": "強い意志がなくば、成功することはない。",
+        "vi": "Nếu không có ý chí mạnh mẽ, sẽ không thành công."
+      },
+      {
+        "ja": "準備がなくば、プロジェクトは失敗するだろう。",
+        "vi": "Trừ khi có chuẩn bị, dự án sẽ thất bại."
+      }
+    ],
+    "notes_vi": "Cách nói hình thức để biểu thị điều kiện tiên quyết."
+  },
+  {
+    "pattern": "〜ないばかりか",
+    "explanation_vi": "Không chỉ không..., mà còn... (nhấn mạnh tiêu cực)",
+    "examples": [
+      {
+        "ja": "この計画は費用効率的でないばかりか、実現不可能でもある。",
+        "vi": "Kế hoạch này không chỉ không hiệu quả chi phí, mà còn không thể thực hiện được."
+      },
+      {
+        "ja": "彼のアドバイスは役に立たないばかりか、むしろ有害だ。",
+        "vi": "Lời khuyên của anh ấy không chỉ vô ích, mà còn có hại."
+      }
+    ],
+    "notes_vi": "Nhấn mạnh hai khía cạnh tiêu cực của một vấn đề."
+  },
+  {
+    "pattern": "〜ばかりではなく",
+    "explanation_vi": "Không chỉ..., mà không..., không hơn nữa... (phủ định mở rộng)",
+    "examples": [
+      {
+        "ja": "この条件は不利であるばかりではなく、実行不可能でもある。",
+        "vi": "Điều kiện này không chỉ không thuận lợi, mà còn không thể thực hiện."
+      },
+      {
+        "ja": "彼の提案は現実的ではないばかりではなく、危険でもある。",
+        "vi": "Đề xuất của anh ấy không chỉ không thực tế, mà còn nguy hiểm."
+      }
+    ],
+    "notes_vi": "Mở rộng phủ định sang một khía cạnh khác."
+  },
+  {
+    "pattern": "〜さもあろう",
+    "explanation_vi": "Cũng phải chăng là vậy... (đồng ý với nhận xét)",
+    "examples": [
+      {
+        "ja": "長時間の会議の後で疲れているのは当然だ、さもあろう。",
+        "vi": "Cũng phải chăng là mệt mỏi sau cuộc họp dài?"
+      },
+      {
+        "ja": "失敗した後で落ち込んでいるのは当然だ、さもあろう。",
+        "vi": "Cũng phải chăng là buồn sau thất bại?"
+      }
+    ],
+    "notes_vi": "Thể hiện sự đồng ý hoặc hiểu biết về một tình huống."
+  },
+  {
+    "pattern": "〜というよりも",
+    "explanation_vi": "Không nói là..., mà là..., đúng hơn là... (sửa lại)",
+    "examples": [
+      {
+        "ja": "失敗したというよりも、計画そのものが不適切だった。",
+        "vi": "Không nói là thất bại, mà đúng hơn là kế hoạch không phù hợp."
+      },
+      {
+        "ja": "批判されたというよりも、提案を受け入れられなかった。",
+        "vi": "Không nói là bị chỉ trích, mà là đề xuất không được chấp nhận."
+      }
+    ],
+    "notes_vi": "Sửa lại hoặc làm rõ một phát biểu trước đó."
+  },
+  {
+    "pattern": "〜なき",
+    "explanation_vi": "Thiếu, không có... (phủ định)",
+    "examples": [
+      {
+        "ja": "根拠なきまま、決定を下すことはできない。",
+        "vi": "Không thể đưa ra quyết định mà không có cơ sở."
+      },
+      {
+        "ja": "計画なき行動は失敗する。",
+        "vi": "Hành động không có kế hoạch sẽ thất bại."
+      }
+    ],
+    "notes_vi": "Cách nói hình thức để biểu thị sự thiếu hoặc không có."
+  },
+  {
+    "pattern": "〜なし",
+    "explanation_vi": "Không, không có... (phủ định)",
+    "examples": [
+      {
+        "ja": "努力なしに成功することはない。",
+        "vi": "Không thể thành công mà không nỗ lực."
+      },
+      {
+        "ja": "根拠なしに非難することは不公正だ。",
+        "vi": "Chỉ trích mà không có cơ sở là bất công."
+      }
+    ],
+    "notes_vi": "Phủ định một yếu tố hoặc điều kiện."
+  },
+  {
+    "pattern": "〜これない",
+    "explanation_vi": "Không thể..., không khỏi... (bất lực)",
+    "examples": [
+      {
+        "ja": "この状況では、対応しようがない。",
+        "vi": "Tôi không thể ứng phó với tình huống này."
+      },
+      {
+        "ja": "彼の言葉に反論できない。",
+        "vi": "Tôi không thể phản đối lời nói của anh ấy."
+      }
+    ],
+    "notes_vi": "Biểu thị sự bất lực hoặc không có khả năng làm gì đó."
+  },
+  {
+    "pattern": "〜かねない",
+    "explanation_vi": "Có thể..., có nguy cơ... (khả năng tiêu cực)",
+    "examples": [
+      {
+        "ja": "この決定は問題を引き起こしかねない。",
+        "vi": "Quyết định này có thể gây ra vấn đề."
+      },
+      {
+        "ja": "不注意で事故につながりかねない。",
+        "vi": "Thiếu chú ý có nguy cơ dẫn đến tai nạn."
+      }
+    ],
+    "notes_vi": "Biểu thị khả năng xảy ra điều tiêu cực nếu không cẩn thận."
+  },
+  {
+    "pattern": "〜ばかりに",
+    "explanation_vi": "Vì...nên... (nguyên nhân)",
+    "examples": [
+      {
+        "ja": "新製品を発表したばかりに、株価が下がった。",
+        "vi": "Vì phát hành sản phẩm mới nên giá cổ phiếu giảm."
+      },
+      {
+        "ja": "意見を言ったばかりに、怒られてしまった。",
+        "vi": "Vì nói ý kiến nên bị giận dữ."
+      }
+    ],
+    "notes_vi": "Biểu thị nguyên nhân gây ra kết quả không mong muốn."
+  }
+]

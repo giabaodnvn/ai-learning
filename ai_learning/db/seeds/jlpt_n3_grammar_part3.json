@@ -1,0 +1,452 @@
+[
+  {
+    "pattern": "〜に関わらず",
+    "explanation_vi": "Bất kể..., không quan tâm... (không được ảnh hưởng bởi)",
+    "examples": [
+      {
+        "ja": "天気に関わらず、毎日運動している。",
+        "vi": "Bất kể thời tiết, tôi tập thể dục mỗi ngày."
+      },
+      {
+        "ja": "経験の有無に関わらず、皆平等な機会が与えられます。",
+        "vi": "Bất kể có kinh nghiệm hay không, mọi người đều được cơ hội bình đẳng."
+      }
+    ],
+    "notes_vi": "Diễn đạt tính độc lập của hai sự việc."
+  },
+  {
+    "pattern": "〜一方だ",
+    "explanation_vi": "Vẫn cứ tiếp tục... (tình trạng kéo dài)",
+    "examples": [
+      {
+        "ja": "給料は上がらない一方で、物価は上昇し続けている。",
+        "vi": "Trong khi lương không tăng, giá cả vẫn cứ tăng lên."
+      },
+      {
+        "ja": "技術は進歩する一方で、環境問題も増えている。",
+        "vi": "Kỹ thuật vẫn cứ tiến bộ, nhưng vấn đề môi trường cũng gia tăng."
+      }
+    ],
+    "notes_vi": "Dùng để so sánh hai tình trạng đối lập."
+  },
+  {
+    "pattern": "〜そうだ",
+    "explanation_vi": "Có vẻ như..., trông như... (dự đoán dựa trên bề ngoài)",
+    "examples": [
+      {
+        "ja": "このケーキは美味しそうだ。",
+        "vi": "Cái bánh này có vẻ ngon."
+      },
+      {
+        "ja": "彼は疲れているそうに見える。",
+        "vi": "Anh ấy trông có vẻ mệt mỏi."
+      }
+    ],
+    "notes_vi": "Biểu thị nhận xét từ bề ngoài, không phải sự kiện xác định."
+  },
+  {
+    "pattern": "〜べきだ",
+    "explanation_vi": "Nên..., phải... (khuyến cáo, ý kiến)",
+    "examples": [
+      {
+        "ja": "学生は勉強すべきだ。",
+        "vi": "Học sinh nên học tập."
+      },
+      {
+        "ja": "健康のために、毎日運動すべきです。",
+        "vi": "Để khỏe mạnh, bạn nên tập thể dục mỗi ngày."
+      }
+    ],
+    "notes_vi": "Cách diễn đạt lời khuyên hoặc lẽ ra phải làm."
+  },
+  {
+    "pattern": "〜ことになっている",
+    "explanation_vi": "Được quy định là..., được coi là... (quy tắc hoặc sự phân công)",
+    "examples": [
+      {
+        "ja": "毎週月曜日に会議が行われることになっている。",
+        "vi": "Được quy định là họp mỗi thứ hai hàng tuần."
+      },
+      {
+        "ja": "雇用契約によると、年に2回ボーナスが支給されることになっている。",
+        "vi": "Theo hợp đồng lao động, được coi là lương thưởng được cấp 2 lần mỗi năm."
+      }
+    ],
+    "notes_vi": "Diễn đạt những gì đã được quy định hoặc được thỏa thuận."
+  },
+  {
+    "pattern": "〜ことができる",
+    "explanation_vi": "Có thể..., được phép... (khả năng hoặc quyền hạn)",
+    "examples": [
+      {
+        "ja": "このアプリを使うことで、写真を編集することができます。",
+        "vi": "Bằng cách sử dụng ứng dụng này, bạn có thể chỉnh sửa ảnh."
+      },
+      {
+        "ja": "図書館で本を借りることができます。",
+        "vi": "Bạn có thể mượn sách ở thư viện."
+      }
+    ],
+    "notes_vi": "Biểu thị khả năng hoặc quyền được làm điều gì đó."
+  },
+  {
+    "pattern": "〜ため",
+    "explanation_vi": "Vì mục đích..., để... (mục đích hoặc nguyên nhân)",
+    "examples": [
+      {
+        "ja": "健康のために、毎日歩いている。",
+        "vi": "Để khỏe mạnh, tôi đi bộ mỗi ngày."
+      },
+      {
+        "ja": "試験に合格するため、一生懸命勉強した。",
+        "vi": "Để đỗ kỳ thi, tôi đã học rất chăm chỉ."
+      }
+    ],
+    "notes_vi": "Diễn đạt mục đích hay nguyên nhân của hành động."
+  },
+  {
+    "pattern": "〜せいで",
+    "explanation_vi": "Vì..., tại..., do lỗi của... (nguyên nhân tiêu cực)",
+    "examples": [
+      {
+        "ja": "あなたのせいで、私たちは遅刻してしまった。",
+        "vi": "Vì bạn, chúng tôi đã đi trễ."
+      },
+      {
+        "ja": "機械の故障のせいで、生産が止まった。",
+        "vi": "Do máy hỏng, sản xuất đã dừng lại."
+      }
+    ],
+    "notes_vi": "Dùng để chỉ nguyên nhân không mong muốn hoặc tiêu cực."
+  },
+  {
+    "pattern": "〜ぐらい",
+    "explanation_vi": "Khoảng..., tầm mức độ... (độ lớn/nhỏ)",
+    "examples": [
+      {
+        "ja": "これくらい簡単なことができないのか。",
+        "vi": "Bạn không thể làm được một việc dễ như thế này?"
+      },
+      {
+        "ja": "1時間ぐらい待ってください。",
+        "vi": "Xin hãy chờ khoảng 1 tiếng."
+      }
+    ],
+    "notes_vi": "Biểu thị một mức độ hoặc khoảng không chính xác."
+  },
+  {
+    "pattern": "〜など",
+    "explanation_vi": "Chẳng hạn như..., v.v... (liệt kê không đầy đủ)",
+    "examples": [
+      {
+        "ja": "りんご、みかん、バナナなど、いろいろな果物がある。",
+        "vi": "Có nhiều trái cây như táo, cam, chuối, v.v..."
+      },
+      {
+        "ja": "読書、映画鑑賞など、様々な趣味がある。",
+        "vi": "Có nhiều sở thích khác nhau như đọc sách, xem phim, v.v..."
+      }
+    ],
+    "notes_vi": "Dùng để chỉ các ví dụ mà không cần liệt kê hết tất cả."
+  },
+  {
+    "pattern": "〜しか",
+    "explanation_vi": "Chỉ..., chỉ có... (hạn chế, không có cái khác)",
+    "examples": [
+      {
+        "ja": "私は日本語しか話せません。",
+        "vi": "Tôi chỉ nói được tiếng Nhật."
+      },
+      {
+        "ja": "この町には一軒のレストランしかありません。",
+        "vi": "Thị trấn này chỉ có một nhà hàng."
+      }
+    ],
+    "notes_vi": "Biểu thị sự hạn chế, độc quyền. Thường dùng với phủ định."
+  },
+  {
+    "pattern": "〜ばかりでなく",
+    "explanation_vi": "Không chỉ..., mà còn... (mở rộng danh sách)",
+    "examples": [
+      {
+        "ja": "日本語ばかりでなく、英語も勉強している。",
+        "vi": "Không chỉ tiếng Nhật, tôi còn học tiếng Anh nữa."
+      },
+      {
+        "ja": "仕事の効率性ばかりでなく、品質も重要だ。",
+        "vi": "Không chỉ hiệu suất công việc, mà chất lượng cũng quan trọng."
+      }
+    ],
+    "notes_vi": "Mở rộng phạm vi, thêm một yếu tố khác vào."
+  },
+  {
+    "pattern": "〜ないとも限らない",
+    "explanation_vi": "Có thể không..., không chắc là không... (khả năng tiêu cực)",
+    "examples": [
+      {
+        "ja": "明日は雨が降らないとも限らない。",
+        "vi": "Không chắc là ngày mai không mưa."
+      },
+      {
+        "ja": "彼がまだ来ないとも限らない。",
+        "vi": "Không chắc là anh ấy không còn đến nữa."
+      }
+    ],
+    "notes_vi": "Diễn đạt khả năng xảy ra điều tiêu cực hoặc không mong muốn."
+  },
+  {
+    "pattern": "〜ようがない",
+    "explanation_vi": "Không có cách nào..., không thể... (bất lực)",
+    "examples": [
+      {
+        "ja": "彼はもう去ってしまったので、呼び戻しようがない。",
+        "vi": "Anh ấy đã đi rồi nên không có cách nào gọi lại."
+      },
+      {
+        "ja": "事故は起きてしまったので、避けようがない。",
+        "vi": "Tai nạn đã xảy ra rồi nên không thể tránh được."
+      }
+    ],
+    "notes_vi": "Diễn đạt sự bất lực hoặc không có lựa chọn."
+  },
+  {
+    "pattern": "〜にしても",
+    "explanation_vi": "Dù..., kể cả khi... (dù cho, nhưng vẫn)",
+    "examples": [
+      {
+        "ja": "雨にしても、雪にしても、明日は出かけなければならない。",
+        "vi": "Dù mưa hay tuyết, ngày mai tôi vẫn phải đi."
+      },
+      {
+        "ja": "お金がなくにしても、幸せに生きることができる。",
+        "vi": "Dù không có tiền, vẫn có thể sống hạnh phúc."
+      }
+    ],
+    "notes_vi": "Biểu thị điều kiện giả định nhưng không ảnh hưởng đến kết quả."
+  },
+  {
+    "pattern": "〜なくて",
+    "explanation_vi": "Không..., mà không... (thiếu một cái gì đó)",
+    "examples": [
+      {
+        "ja": "水がなくては、生きることはできません。",
+        "vi": "Không có nước, không thể sống được."
+      },
+      {
+        "ja": "君がいなくては、何もできない。",
+        "vi": "Nếu không có bạn, tôi không thể làm gì cả."
+      }
+    ],
+    "notes_vi": "Diễn đạt sự cần thiết hoặc điều kiện tiên quyết."
+  },
+  {
+    "pattern": "〜せずに",
+    "explanation_vi": "Mà không..., lại không... (sự vắng mặt của hành động)",
+    "examples": [
+      {
+        "ja": "許可を求めずに、勝手に進めてはいけません。",
+        "vi": "Không được tiến hành mà không xin phép."
+      },
+      {
+        "ja": "相談せずに、独断で決めてしまった。",
+        "vi": "Tôi quyết định một mình mà không thương lượng."
+      }
+    ],
+    "notes_vi": "Biểu thị sự không làm hay bỏ qua một hành động."
+  },
+  {
+    "pattern": "〜いる",
+    "explanation_vi": "Đang..., là... (hành động tiếp diễn hoặc trạng thái)",
+    "examples": [
+      {
+        "ja": "今、私は本を読んでいます。",
+        "vi": "Bây giờ, tôi đang đọc sách."
+      },
+      {
+        "ja": "私の友人は医者です。",
+        "vi": "Bạn của tôi là bác sĩ."
+      }
+    ],
+    "notes_vi": "Dùng để biểu thị hành động đang tiến hành hoặc trạng thái hiện tại."
+  },
+  {
+    "pattern": "〜ことがある",
+    "explanation_vi": "Từng..., có lần..., có thể... (kinh nghiệm hoặc khả năng)",
+    "examples": [
+      {
+        "ja": "私は日本に行ったことがあります。",
+        "vi": "Tôi từng đi Nhật Bản."
+      },
+      {
+        "ja": "彼は時々遅刻することがある。",
+        "vi": "Anh ấy có thể đi trễ thỉnh thoảng."
+      }
+    ],
+    "notes_vi": "Biểu thị kinh nghiệm quá khứ hoặc khả năng xảy ra."
+  },
+  {
+    "pattern": "〜てはいけない",
+    "explanation_vi": "Không được..., không nên... (cấm, không cho phép)",
+    "examples": [
+      {
+        "ja": "図書館では、大きな声で話してはいけません。",
+        "vi": "Trong thư viện, không được nói to."
+      },
+      {
+        "ja": "子どもは夜更かししてはいけません。",
+        "vi": "Trẻ em không nên thức khuya."
+      }
+    ],
+    "notes_vi": "Biểu thị sự cấm hoặc bất chấp hành động gì đó."
+  },
+  {
+    "pattern": "〜ままだ",
+    "explanation_vi": "Còn mãi như vậy..., vẫn giữ nguyên... (trạng thái không thay đổi)",
+    "examples": [
+      {
+        "ja": "机の上に書類がそのままになっている。",
+        "vi": "Giấy tờ vẫn còn nguyên trên bàn."
+      },
+      {
+        "ja": "彼は大学生のままだ。",
+        "vi": "Anh ấy vẫn còn là sinh viên."
+      }
+    ],
+    "notes_vi": "Diễn đạt sự duy trì trạng thái cũ hoặc thói quen."
+  },
+  {
+    "pattern": "〜うえで",
+    "explanation_vi": "Trên cơ sở..., sau khi... (điều kiện tiên quyết)",
+    "examples": [
+      {
+        "ja": "契約書にサインしたうえで、仕事を始めます。",
+        "vi": "Sau khi ký hợp đồng, tôi sẽ bắt đầu công việc."
+      },
+      {
+        "ja": "十分な準備をしたうえで、プロジェクトを進める。",
+        "vi": "Trên cơ sở chuẩn bị kỹ lưỡng, chúng tôi tiến hành dự án."
+      }
+    ],
+    "notes_vi": "Diễn đạt điều kiện hoặc bước tiên quyết."
+  },
+  {
+    "pattern": "〜のに",
+    "explanation_vi": "Mặc dù..., trong khi... (mâu thuẫn hoặc tương phản)",
+    "examples": [
+      {
+        "ja": "彼はお金がたくさんあるのに、幸せじゃない。",
+        "vi": "Mặc dù anh ấy có nhiều tiền, nhưng không hạnh phúc."
+      },
+      {
+        "ja": "頑張ったのに、試験に落ちてしまった。",
+        "vi": "Mặc dù cố gắng, tôi vẫn rớt kỳ thi."
+      }
+    ],
+    "notes_vi": "Biểu thị sự mâu thuẫn giữa hai tình huống."
+  },
+  {
+    "pattern": "〜へ",
+    "explanation_vi": "Tới..., hướng tới... (phương hướng, đích đến)",
+    "examples": [
+      {
+        "ja": "私たちは東京へ行きます。",
+        "vi": "Chúng tôi sẽ đi tới Tokyo."
+      },
+      {
+        "ja": "仕事に関する意見を社長へ提出しました。",
+        "vi": "Tôi đã trình ý kiến về công việc cho giám đốc."
+      }
+    ],
+    "notes_vi": "Biểu thị phương hướng hoặc người nhận hành động."
+  },
+  {
+    "pattern": "〜より",
+    "explanation_vi": "Hơn..., từ... (so sánh hoặc điểm bắt đầu)",
+    "examples": [
+      {
+        "ja": "姉より妹の方が背が高い。",
+        "vi": "Em gái cao hơn chị gái."
+      },
+      {
+        "ja": "今日より仕事を始めます。",
+        "vi": "Từ hôm nay, tôi sẽ bắt đầu công việc."
+      }
+    ],
+    "notes_vi": "Dùng để so sánh hoặc chỉ điểm khởi đầu."
+  },
+  {
+    "pattern": "〜させる",
+    "explanation_vi": "Làm cho..., buộc... (gây ra hành động của người khác)",
+    "examples": [
+      {
+        "ja": "親は子どもに勉強させている。",
+        "vi": "Cha mẹ bắt con học tập."
+      },
+      {
+        "ja": "先生が学生に質問に答えさせた。",
+        "vi": "Thầy giáo bắt học sinh trả lời câu hỏi."
+      }
+    ],
+    "notes_vi": "Biểu thị sự buộc hoặc cho phép ai đó làm điều gì."
+  },
+  {
+    "pattern": "〜られる",
+    "explanation_vi": "Có thể..., được... (khả năng bị động hoặc chủ động)",
+    "examples": [
+      {
+        "ja": "この本は簡単に読まれています。",
+        "vi": "Cuốn sách này dễ dàng được đọc."
+      },
+      {
+        "ja": "彼は英語が話せられます。",
+        "vi": "Anh ấy có thể nói tiếng Anh."
+      }
+    ],
+    "notes_vi": "Biểu thị khả năng hoặc hình thức bị động."
+  },
+  {
+    "pattern": "〜を除いて",
+    "explanation_vi": "Ngoại trừ..., trừ... (loại trừ)",
+    "examples": [
+      {
+        "ja": "日曜日を除いて、毎日営業しています。",
+        "vi": "Ngoại trừ chủ nhật, chúng tôi mở cửa mỗi ngày."
+      },
+      {
+        "ja": "私を除いて、皆が同意した。",
+        "vi": "Ngoại trừ tôi, mọi người đều đồng ý."
+      }
+    ],
+    "notes_vi": "Biểu thị sự loại trừ hoặc ngoại lệ."
+  },
+  {
+    "pattern": "〜に当たって",
+    "explanation_vi": "Khi..., vào lúc... (thời điểm, dịp)",
+    "examples": [
+      {
+        "ja": "新年に当たって、新しい目標を立てました。",
+        "vi": "Vào đầu năm mới, tôi đã đặt ra mục tiêu mới."
+      },
+      {
+        "ja": "会議に当たって、資料を配布します。",
+        "vi": "Khi họp, chúng tôi sẽ phân phối tài liệu."
+      }
+    ],
+    "notes_vi": "Biểu thị thời điểm hoặc dịp xảy ra điều gì."
+  },
+  {
+    "pattern": "〜にしては",
+    "explanation_vi": "Đối với..., so với... (thước đo, tiêu chuẩn)",
+    "examples": [
+      {
+        "ja": "彼は子どもにしては、背が高い。",
+        "vi": "Đối với một đứa trẻ, nó có vẻ cao."
+      },
+      {
+        "ja": "初めてにしては、よくできた。",
+        "vi": "So với lần đầu, kết quả tốt lắm."
+      }
+    ],
+    "notes_vi": "Dùng để chỉ ra rằng điều gì đó vượt ngoài kỳ vọng."
+  }
+]

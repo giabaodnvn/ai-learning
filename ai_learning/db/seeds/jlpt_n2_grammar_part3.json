@@ -1,0 +1,287 @@
+[
+  {
+    "pattern": "〜ろう",
+    "explanation_vi": "Sẽ..., hãy..., có lẽ... (tiếp diễn hoặc đề xuất)",
+    "examples": [
+      {
+        "ja": "明日、行こう。",
+        "vi": "Ngày mai, chúng ta sẽ đi."
+      },
+      {
+        "ja": "一緒に頑張ろう。",
+        "vi": "Chúng ta hãy cố gắng cùng nhau."
+      }
+    ],
+    "notes_vi": "Biểu thị ý định, đề xuất hoặc tiếp diễn hành động."
+  },
+  {
+    "pattern": "〜やすい",
+    "explanation_vi": "Dễ..., dễ dàng... (khả năng)",
+    "examples": [
+      {
+        "ja": "この本は読みやすい。",
+        "vi": "Cuốn sách này dễ đọc."
+      },
+      {
+        "ja": "雨の日は事故が起こりやすい。",
+        "vi": "Vào ngày mưa, dễ xảy ra tai nạn."
+      }
+    ],
+    "notes_vi": "Biểu thị tính chất dễ xảy ra hoặc dễ làm."
+  },
+  {
+    "pattern": "〜ぐらいなら",
+    "explanation_vi": "Nếu..., nếu chỉ là... (so sánh với giả thuyết)",
+    "examples": [
+      {
+        "ja": "失敗するぐらいなら、やらない方がいい。",
+        "vi": "Nếu sẽ thất bại, tốt hơn là không làm."
+      },
+      {
+        "ja": "働きながら勉強するぐらいなら、フルタイムで働きたい。",
+        "vi": "Nếu phải vừa làm vừa học, tôi thà làm toàn thời gian."
+      }
+    ],
+    "notes_vi": "Biểu thị so sánh hoặc lựa chọn ưu tiên."
+  },
+  {
+    "pattern": "〜たって",
+    "explanation_vi": "Thậm chí..., cho dù... (nhượng bộ)",
+    "examples": [
+      {
+        "ja": "何を言ったって、もう遅い。",
+        "vi": "Dù nói gì cũng đã quá muộn."
+      },
+      {
+        "ja": "どんなに頑張ったって、できない。",
+        "vi": "Cho dù cố gắng bao nhiêu cũng làm không được."
+      }
+    ],
+    "notes_vi": "Biểu thị nhượng bộ hoặc vô ích của một hành động."
+  },
+  {
+    "pattern": "〜にはかる",
+    "explanation_vi": "...không thể không..., phải..., buộc phải... (bắt buộc)",
+    "examples": [
+      {
+        "ja": "その秘密を守らないではいられない。",
+        "vi": "Tôi không thể không giữ bí mật đó."
+      },
+      {
+        "ja": "その状況を見て、笑わないではいられない。",
+        "vi": "Nhìn tình huống đó, tôi không thể không cười."
+      }
+    ],
+    "notes_vi": "Biểu thị sự bắt buộc hoặc không thể tránh khỏi."
+  },
+  {
+    "pattern": "〜みたいな",
+    "explanation_vi": "Giống như..., như..., có vẻ... (so sánh)",
+    "examples": [
+      {
+        "ja": "幽霊みたいな顔をしている。",
+        "vi": "Anh ấy có khuôn mặt giống như ma."
+      },
+      {
+        "ja": "子どもみたいに走る。",
+        "vi": "Chạy như một đứa trẻ."
+      }
+    ],
+    "notes_vi": "Biểu thị sự tương tự, thường dùng trong cách nói không chính thức."
+  },
+  {
+    "pattern": "〜だけで",
+    "explanation_vi": "Chỉ..., chỉ cần... (giới hạn)",
+    "examples": [
+      {
+        "ja": "単語を知っているだけでは、会話はできない。",
+        "vi": "Chỉ biết từ vựng thôi không thể nói chuyện."
+      },
+      {
+        "ja": "努力だけで成功する。",
+        "vi": "Chỉ cần nỗ lực là có thể thành công."
+      }
+    ],
+    "notes_vi": "Biểu thị giới hạn hoặc điều kiện cần thiết."
+  },
+  {
+    "pattern": "〜なくてはいけない",
+    "explanation_vi": "Phải..., không thể không... (bắt buộc)",
+    "examples": [
+      {
+        "ja": "毎日、勉強しなくてはいけない。",
+        "vi": "Phải học tập mỗi ngày."
+      },
+      {
+        "ja": "約束を守らなくてはいけない。",
+        "vi": "Phải giữ lời hứa."
+      }
+    ],
+    "notes_vi": "Biểu thị sự bắt buộc hoặc trách nhiệm."
+  },
+  {
+    "pattern": "〜するや",
+    "explanation_vi": "Ngay khi..., vừa...thì... (tức thời)",
+    "examples": [
+      {
+        "ja": "電話を切るや、彼は出かけた。",
+        "vi": "Ngay khi cắt máy, anh ấy đã đi ra."
+      },
+      {
+        "ja": "ドアを開けるや、彼は逃げた。",
+        "vi": "Vừa mở cửa, anh ấy đã chạy trốn."
+      }
+    ],
+    "notes_vi": "Biểu thị hành động xảy ra liên tiếp, tức thời."
+  },
+  {
+    "pattern": "〜あっての",
+    "explanation_vi": "...có..., nhờ có..., vì... (nguyên nhân, điều kiện)",
+    "examples": [
+      {
+        "ja": "父親があっての私です。",
+        "vi": "Nhờ có bố mà có tôi."
+      },
+      {
+        "ja": "努力があっての成功だ。",
+        "vi": "Thành công là nhờ nỗ lực."
+      }
+    ],
+    "notes_vi": "Biểu thị sự phụ thuộc hoặc điều kiện tiên quyết."
+  },
+  {
+    "pattern": "〜つつ",
+    "explanation_vi": "Vừa...vừa..., trong khi... (hành động đồng thời)",
+    "examples": [
+      {
+        "ja": "勉強しつつ、働いている。",
+        "vi": "Tôi vừa học vừa làm việc."
+      },
+      {
+        "ja": "成功しつつある。",
+        "vi": "Đang trên đường thành công."
+      }
+    ],
+    "notes_vi": "Biểu thị hành động xảy ra đồng thời hoặc quá trình diễn ra."
+  },
+  {
+    "pattern": "〜ておく",
+    "explanation_vi": "...(dự bị), chuẩn bị sẵn (chuẩn bị)",
+    "examples": [
+      {
+        "ja": "プレゼンテーションを準備しておく。",
+        "vi": "Chuẩn bị sẵn bài trình bày."
+      },
+      {
+        "ja": "明日のために、今日は早く寝ておく。",
+        "vi": "Để chuẩn bị cho ngày mai, tôi sẽ ngủ sớm."
+      }
+    ],
+    "notes_vi": "Biểu thị hành động chuẩn bị sẵn hoặc dự bị."
+  },
+  {
+    "pattern": "〜て初めて",
+    "explanation_vi": "Mới..., chỉ khi...(lần đầu tiên, mới hiểu)",
+    "examples": [
+      {
+        "ja": "失敗して初めて、その重要性が分かった。",
+        "vi": "Chỉ khi thất bại, tôi mới hiểu tầm quan trọng của nó."
+      },
+      {
+        "ja": "大人になって初めて、親の恩が分かる。",
+        "vi": "Khi trưởng thành, mới hiểu được lòng tốt của cha mẹ."
+      }
+    ],
+    "notes_vi": "Biểu thị hành động hoặc hiểu biết xảy ra lần đầu tiên."
+  },
+  {
+    "pattern": "〜ことか",
+    "explanation_vi": "...bao nhiêu..., ...như thế nào... (nhấn mạnh cảm xúc)",
+    "examples": [
+      {
+        "ja": "嬉しいことか。",
+        "vi": "Vui biết bao!"
+      },
+      {
+        "ja": "悔しいことか。",
+        "vi": "Hối hận biết bao!"
+      }
+    ],
+    "notes_vi": "Biểu thị nhấn mạnh cảm xúc hoặc thích nghi, thường dùng trong lối văn tự sự."
+  },
+  {
+    "pattern": "〜ものだ",
+    "explanation_vi": "...thường..., ...nên... (thói quen, nên làm)",
+    "examples": [
+      {
+        "ja": "子どもは遊ぶものだ。",
+        "vi": "Trẻ em thường chơi."
+      },
+      {
+        "ja": "困った時は友人に相談するものだ。",
+        "vi": "Khi gặp khó, nên tư vấn bạn bè."
+      }
+    ],
+    "notes_vi": "Biểu thị thói quen, quy tắc chung hoặc nên làm gì đó."
+  },
+  {
+    "pattern": "〜わけが",
+    "explanation_vi": "...không thể..., ...không lẽ... (phủ định)",
+    "examples": [
+      {
+        "ja": "彼が嘘をつくわけがない。",
+        "vi": "Anh ấy không thể nói dối."
+      },
+      {
+        "ja": "彼女が怒るわけがない。",
+        "vi": "Cô ấy không lẽ giận đâu."
+      }
+    ],
+    "notes_vi": "Biểu thị sự phủ định hoặc không chắc chắn."
+  },
+  {
+    "pattern": "〜どうしよう",
+    "explanation_vi": "...làm sao..., ...phải làm sao... (bối rối)",
+    "examples": [
+      {
+        "ja": "お金がない、どうしよう。",
+        "vi": "Không có tiền, phải làm sao?"
+      },
+      {
+        "ja": "遅刻した、どうしよう。",
+        "vi": "Đi trễ, phải làm sao?"
+      }
+    ],
+    "notes_vi": "Biểu thị tình trạng bối rối hoặc lo lắng."
+  },
+  {
+    "pattern": "〜いかんで",
+    "explanation_vi": "Tùy thuộc vào..., phụ thuộc vào... (điều kiện)",
+    "examples": [
+      {
+        "ja": "努力いかんで成功する。",
+        "vi": "Thành công tùy thuộc vào nỗ lực."
+      },
+      {
+        "ja": "天気いかんで計画を変える。",
+        "vi": "Chúng tôi sẽ thay đổi kế hoạch tùy theo thời tiết."
+      }
+    ],
+    "notes_vi": "Biểu thị điều kiện phụ thuộc vào yếu tố khác."
+  },
+  {
+    "pattern": "〜みたい",
+    "explanation_vi": "Có vẻ như..., dường như... (dự đoán)",
+    "examples": [
+      {
+        "ja": "彼は病気みたいだ。",
+        "vi": "Có vẻ như anh ấy bị bệnh."
+      },
+      {
+        "ja": "明日は雨みたいです。",
+        "vi": "Dường như ngày mai sẽ mưa."
+      }
+    ],
+    "notes_vi": "Biểu thị sự dự đoán hoặc nhận xét dựa trên dấu hiệu."
+  }
+]
