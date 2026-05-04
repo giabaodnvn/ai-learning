@@ -168,10 +168,10 @@
     ]
   },
   {
-    "word": "米",
-    "reading": "こめ",
+    "word": "籾",
+    "reading": "もみ",
     "romaji": "kome",
-    "meaning_vi": "gạo",
+    "meaning_vi": "cơm lúa",
     "part_of_speech": "noun",
     "tags": [
       "rice",
@@ -276,10 +276,10 @@
     ]
   },
   {
-    "word": "肉",
-    "reading": "にく",
+    "word": "畜肉",
+    "reading": "ちくにく",
     "romaji": "niku",
-    "meaning_vi": "thịt",
+    "meaning_vi": "thịt gia súc",
     "part_of_speech": "noun",
     "tags": [
       "meat",
@@ -288,10 +288,10 @@
     ]
   },
   {
-    "word": "魚",
-    "reading": "さかな",
+    "word": "白身魚",
+    "reading": "しろみざかな",
     "romaji": "sakana",
-    "meaning_vi": "cá",
+    "meaning_vi": "cá trắng",
     "part_of_speech": "noun",
     "tags": [
       "fish",
@@ -312,10 +312,10 @@
     ]
   },
   {
-    "word": "野菜",
-    "reading": "やさい",
+    "word": "根菜",
+    "reading": "ねやさい",
     "romaji": "yasai",
-    "meaning_vi": "rau",
+    "meaning_vi": "rau cải gốc",
     "part_of_speech": "noun",
     "tags": [
       "vegetable",
@@ -372,10 +372,10 @@
     ]
   },
   {
-    "word": "卵",
-    "reading": "たまご",
+    "word": "鶏卵",
+    "reading": "けいらん",
     "romaji": "tamago",
-    "meaning_vi": "trứng",
+    "meaning_vi": "trứng gà",
     "part_of_speech": "noun",
     "tags": [
       "egg",
@@ -396,10 +396,10 @@
     ]
   },
   {
-    "word": "パン",
-    "reading": "ぱん",
+    "word": "焼成食",
+    "reading": "しょうせいしょく",
     "romaji": "pan",
-    "meaning_vi": "bánh mì",
+    "meaning_vi": "thức ăn nướng",
     "part_of_speech": "noun",
     "tags": [
       "bread",
@@ -408,10 +408,10 @@
     ]
   },
   {
-    "word": "麺",
-    "reading": "めん",
+    "word": "製麺",
+    "reading": "せいめん",
     "romaji": "men",
-    "meaning_vi": "mì",
+    "meaning_vi": "chế biến mì",
     "part_of_speech": "noun",
     "tags": [
       "noodle",
@@ -636,10 +636,10 @@
     ]
   },
   {
-    "word": "水",
-    "reading": "みず",
+    "word": "湯",
+    "reading": "ゆ",
     "romaji": "mizu",
-    "meaning_vi": "nước",
+    "meaning_vi": "nước nóng",
     "part_of_speech": "noun",
     "tags": [
       "water",
@@ -720,10 +720,10 @@
     ]
   },
   {
-    "word": "食べる",
-    "reading": "たべる",
+    "word": "咀嚼",
+    "reading": "そしゃく",
     "romaji": "taberu",
-    "meaning_vi": "ăn",
+    "meaning_vi": "nhai",
     "part_of_speech": "verb",
     "tags": [
       "eat",
@@ -732,10 +732,10 @@
     ]
   },
   {
-    "word": "飲む",
-    "reading": "のむ",
+    "word": "嚥下",
+    "reading": "えんか",
     "romaji": "nomu",
-    "meaning_vi": "uống",
+    "meaning_vi": "nuốt",
     "part_of_speech": "verb",
     "tags": [
       "drink",
@@ -1032,10 +1032,10 @@
     ]
   },
   {
-    "word": "安い",
-    "reading": "やすい",
+    "word": "廉価",
+    "reading": "れんか",
     "romaji": "yasui",
-    "meaning_vi": "rẻ",
+    "meaning_vi": "giá rẻ",
     "part_of_speech": "adjective",
     "tags": [
       "cheap",
@@ -1044,10 +1044,10 @@
     ]
   },
   {
-    "word": "高い",
-    "reading": "たかい",
+    "word": "高額",
+    "reading": "こうがく",
     "romaji": "takai",
-    "meaning_vi": "đắt",
+    "meaning_vi": "giá cao",
     "part_of_speech": "adjective",
     "tags": [
       "expensive",
