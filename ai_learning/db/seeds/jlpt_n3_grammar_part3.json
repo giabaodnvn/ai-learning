@@ -90,19 +90,19 @@
     "notes_vi": "Biểu thị khả năng hoặc quyền được làm điều gì đó."
   },
   {
-    "pattern": "〜ため",
-    "explanation_vi": "Vì mục đích..., để... (mục đích hoặc nguyên nhân)",
+    "pattern": "〜に伴って",
+    "explanation_vi": "Cùng với... / Khi... thì... (thay đổi kèm theo)",
     "examples": [
       {
-        "ja": "健康のために、毎日歩いている。",
-        "vi": "Để khỏe mạnh, tôi đi bộ mỗi ngày."
+        "ja": "経済発展に伴って、環境問題も深刻になった。",
+        "vi": "Cùng với sự phát triển kinh tế, vấn đề môi trường cũng trở nên nghiêm trọng hơn."
       },
       {
-        "ja": "試験に合格するため、一生懸命勉強した。",
-        "vi": "Để đỗ kỳ thi, tôi đã học rất chăm chỉ."
+        "ja": "人口増加に伴って、住宅不足が生じた。",
+        "vi": "Cùng với sự tăng dân số, tình trạng thiếu nhà ở đã xảy ra."
       }
     ],
-    "notes_vi": "Diễn đạt mục đích hay nguyên nhân của hành động."
+    "notes_vi": "Diễn đạt sự thay đổi xảy ra kèm theo một sự thay đổi khác."
   },
   {
     "pattern": "〜せいで",
@@ -120,49 +120,49 @@
     "notes_vi": "Dùng để chỉ nguyên nhân không mong muốn hoặc tiêu cực."
   },
   {
-    "pattern": "〜ぐらい",
-    "explanation_vi": "Khoảng..., tầm mức độ... (độ lớn/nhỏ)",
+    "pattern": "〜をもとに",
+    "explanation_vi": "Dựa trên... / Căn cứ vào... (nguồn gốc, nền tảng)",
     "examples": [
       {
-        "ja": "これくらい簡単なことができないのか。",
-        "vi": "Bạn không thể làm được một việc dễ như thế này?"
+        "ja": "この映画は実話をもとに作られた。",
+        "vi": "Bộ phim này được làm dựa trên câu chuyện có thật."
       },
       {
-        "ja": "1時間ぐらい待ってください。",
-        "vi": "Xin hãy chờ khoảng 1 tiếng."
+        "ja": "アンケート結果をもとに、改善策を考えた。",
+        "vi": "Dựa trên kết quả khảo sát, chúng tôi đã nghĩ ra biện pháp cải thiện."
       }
     ],
-    "notes_vi": "Biểu thị một mức độ hoặc khoảng không chính xác."
+    "notes_vi": "Diễn đạt nền tảng hoặc nguồn gốc của hành động/sự việc."
   },
   {
-    "pattern": "〜など",
-    "explanation_vi": "Chẳng hạn như..., v.v... (liệt kê không đầy đủ)",
+    "pattern": "〜に対して",
+    "explanation_vi": "Đối với... / Nhắm vào... (đối tượng của hành động hoặc cảm xúc)",
     "examples": [
       {
-        "ja": "りんご、みかん、バナナなど、いろいろな果物がある。",
-        "vi": "Có nhiều trái cây như táo, cam, chuối, v.v..."
+        "ja": "先生の意見に対して、反論した。",
+        "vi": "Tôi đã phản bác ý kiến của thầy giáo."
       },
       {
-        "ja": "読書、映画鑑賞など、様々な趣味がある。",
-        "vi": "Có nhiều sở thích khác nhau như đọc sách, xem phim, v.v..."
+        "ja": "子どもに対して、優しく接することが大切だ。",
+        "vi": "Điều quan trọng là đối xử nhẹ nhàng với trẻ em."
       }
     ],
-    "notes_vi": "Dùng để chỉ các ví dụ mà không cần liệt kê hết tất cả."
+    "notes_vi": "Diễn đạt đối tượng của hành động, cảm xúc hoặc thái độ."
   },
   {
-    "pattern": "〜しか",
-    "explanation_vi": "Chỉ..., chỉ có... (hạn chế, không có cái khác)",
+    "pattern": "〜によって",
+    "explanation_vi": "Tùy theo... / Do... / Bằng cách... (nguyên nhân, phương tiện, hoặc sự khác biệt)",
     "examples": [
       {
-        "ja": "私は日本語しか話せません。",
-        "vi": "Tôi chỉ nói được tiếng Nhật."
+        "ja": "人によって、意見が違う。",
+        "vi": "Tùy theo từng người, ý kiến sẽ khác nhau."
       },
       {
-        "ja": "この町には一軒のレストランしかありません。",
-        "vi": "Thị trấn này chỉ có một nhà hàng."
+        "ja": "努力によって、夢が実現できる。",
+        "vi": "Bằng nỗ lực, ước mơ có thể thành hiện thực."
       }
     ],
-    "notes_vi": "Biểu thị sự hạn chế, độc quyền. Thường dùng với phủ định."
+    "notes_vi": "Diễn đạt nguyên nhân, phương tiện, hoặc sự khác biệt tùy theo điều kiện."
   },
   {
     "pattern": "〜ばかりでなく",
@@ -255,19 +255,19 @@
     "notes_vi": "Biểu thị sự không làm hay bỏ qua một hành động."
   },
   {
-    "pattern": "〜いる",
-    "explanation_vi": "Đang..., là... (hành động tiếp diễn hoặc trạng thái)",
+    "pattern": "〜を通じて",
+    "explanation_vi": "Thông qua... / Suốt... (phương tiện hoặc toàn bộ thời gian)",
     "examples": [
       {
-        "ja": "今、私は本を読んでいます。",
-        "vi": "Bây giờ, tôi đang đọc sách."
+        "ja": "インターネットを通じて、世界中の人とつながれる。",
+        "vi": "Thông qua internet, có thể kết nối với người trên toàn thế giới."
       },
       {
-        "ja": "私の友人は医者です。",
-        "vi": "Bạn của tôi là bác sĩ."
+        "ja": "一年を通じて、この店は人気がある。",
+        "vi": "Suốt cả năm, cửa hàng này luôn đông khách."
       }
     ],
-    "notes_vi": "Dùng để biểu thị hành động đang tiến hành hoặc trạng thái hiện tại."
+    "notes_vi": "Diễn đạt phương tiện trung gian hoặc khoảng thời gian liên tục."
   },
   {
     "pattern": "〜ことがある",
@@ -330,79 +330,79 @@
     "notes_vi": "Diễn đạt điều kiện hoặc bước tiên quyết."
   },
   {
-    "pattern": "〜のに",
-    "explanation_vi": "Mặc dù..., trong khi... (mâu thuẫn hoặc tương phản)",
+    "pattern": "〜において",
+    "explanation_vi": "Ở... / Trong... / Về mặt... (địa điểm, lĩnh vực, hoàn cảnh)",
     "examples": [
       {
-        "ja": "彼はお金がたくさんあるのに、幸せじゃない。",
-        "vi": "Mặc dù anh ấy có nhiều tiền, nhưng không hạnh phúc."
+        "ja": "現代社会において、スマートフォンは欠かせない。",
+        "vi": "Trong xã hội hiện đại, điện thoại thông minh là không thể thiếu."
       },
       {
-        "ja": "頑張ったのに、試験に落ちてしまった。",
-        "vi": "Mặc dù cố gắng, tôi vẫn rớt kỳ thi."
+        "ja": "スポーツにおいて、チームワークが重要だ。",
+        "vi": "Trong thể thao, tinh thần đồng đội là quan trọng."
       }
     ],
-    "notes_vi": "Biểu thị sự mâu thuẫn giữa hai tình huống."
+    "notes_vi": "Diễn đạt địa điểm, lĩnh vực hoặc hoàn cảnh; thường dùng trong văn viết."
   },
   {
-    "pattern": "〜へ",
-    "explanation_vi": "Tới..., hướng tới... (phương hướng, đích đến)",
+    "pattern": "〜に関して",
+    "explanation_vi": "Về... / Liên quan đến... (chủ đề hoặc nội dung)",
     "examples": [
       {
-        "ja": "私たちは東京へ行きます。",
-        "vi": "Chúng tôi sẽ đi tới Tokyo."
+        "ja": "この件に関して、詳しく説明してください。",
+        "vi": "Về vấn đề này, xin hãy giải thích chi tiết."
       },
       {
-        "ja": "仕事に関する意見を社長へ提出しました。",
-        "vi": "Tôi đã trình ý kiến về công việc cho giám đốc."
+        "ja": "環境問題に関して、専門家が意見を述べた。",
+        "vi": "Về vấn đề môi trường, các chuyên gia đã phát biểu ý kiến."
       }
     ],
-    "notes_vi": "Biểu thị phương hướng hoặc người nhận hành động."
+    "notes_vi": "Diễn đạt chủ đề hoặc nội dung được đề cập; tương tự〜について nhưng trang trọng hơn."
   },
   {
-    "pattern": "〜より",
-    "explanation_vi": "Hơn..., từ... (so sánh hoặc điểm bắt đầu)",
+    "pattern": "〜ようになる",
+    "explanation_vi": "Bắt đầu... / Trở nên có thể... (sự thay đổi dần dần)",
     "examples": [
       {
-        "ja": "姉より妹の方が背が高い。",
-        "vi": "Em gái cao hơn chị gái."
+        "ja": "練習したら、泳げるようになった。",
+        "vi": "Sau khi luyện tập, tôi đã biết bơi."
       },
       {
-        "ja": "今日より仕事を始めます。",
-        "vi": "Từ hôm nay, tôi sẽ bắt đầu công việc."
+        "ja": "毎日勉強して、日本語が話せるようになった。",
+        "vi": "Học mỗi ngày, tôi đã có thể nói tiếng Nhật được."
       }
     ],
-    "notes_vi": "Dùng để so sánh hoặc chỉ điểm khởi đầu."
+    "notes_vi": "Diễn đạt sự thay đổi dần dần, đặc biệt là đạt được khả năng mới."
   },
   {
-    "pattern": "〜させる",
-    "explanation_vi": "Làm cho..., buộc... (gây ra hành động của người khác)",
+    "pattern": "〜に応じて",
+    "explanation_vi": "Tùy theo... / Phù hợp với... (điều chỉnh theo hoàn cảnh)",
     "examples": [
       {
-        "ja": "親は子どもに勉強させている。",
-        "vi": "Cha mẹ bắt con học tập."
+        "ja": "状況に応じて、計画を変更する。",
+        "vi": "Tùy theo tình huống, thay đổi kế hoạch."
       },
       {
-        "ja": "先生が学生に質問に答えさせた。",
-        "vi": "Thầy giáo bắt học sinh trả lời câu hỏi."
+        "ja": "能力に応じた仕事を与えてください。",
+        "vi": "Xin hãy giao việc phù hợp với năng lực."
       }
     ],
-    "notes_vi": "Biểu thị sự buộc hoặc cho phép ai đó làm điều gì."
+    "notes_vi": "Diễn đạt sự điều chỉnh hoặc phản ứng phù hợp với hoàn cảnh."
   },
   {
-    "pattern": "〜られる",
-    "explanation_vi": "Có thể..., được... (khả năng bị động hoặc chủ động)",
+    "pattern": "〜にしたがって",
+    "explanation_vi": "Theo... / Đi theo... (thay đổi theo hướng đã định)",
     "examples": [
       {
-        "ja": "この本は簡単に読まれています。",
-        "vi": "Cuốn sách này dễ dàng được đọc."
+        "ja": "規則にしたがって、行動してください。",
+        "vi": "Hãy hành động theo quy tắc."
       },
       {
-        "ja": "彼は英語が話せられます。",
-        "vi": "Anh ấy có thể nói tiếng Anh."
+        "ja": "時代の変化にしたがって、生活も変わった。",
+        "vi": "Theo sự thay đổi của thời đại, cuộc sống cũng thay đổi."
       }
     ],
-    "notes_vi": "Biểu thị khả năng hoặc hình thức bị động."
+    "notes_vi": "Diễn đạt sự tuân theo quy tắc hoặc thay đổi cùng chiều với một yếu tố khác."
   },
   {
     "pattern": "〜を除いて",

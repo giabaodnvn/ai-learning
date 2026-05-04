@@ -165,19 +165,19 @@
     "notes_vi": "Khuyến khích lựa chọn tốt nhất."
   },
   {
-    "pattern": "〜にほかならない",
-    "explanation_vi": "Chính là... / Không gì khác hơn...",
+    "pattern": "〜とたん",
+    "explanation_vi": "Vừa... thì ngay lập tức... (ngay khi vừa xong)",
     "examples": [
       {
-        "ja": "これは彼の責任にほかならない。",
-        "vi": "Đây chính là trách nhiệm của anh ấy."
+        "ja": "ドアを開けたとたん、猫が飛び込んできた。",
+        "vi": "Vừa mở cửa thì con mèo nhảy vào ngay."
       },
       {
-        "ja": "成功は努力の結果にほかならない。",
-        "vi": "Thành công chính là kết quả của nỗ lực."
+        "ja": "外に出たとたん、雨が降り始めた。",
+        "vi": "Vừa ra ngoài thì trời bắt đầu mưa ngay."
       }
     ],
-    "notes_vi": "Nhấn mạnh rằng đó là nguyên nhân duy nhất."
+    "notes_vi": "Diễn đạt sự kiện thứ hai xảy ra ngay tức thì sau sự kiện thứ nhất, thường là bất ngờ."
   },
   {
     "pattern": "〜ぬく",
@@ -270,19 +270,19 @@
     "notes_vi": "Diễn đạt phủ định mạnh hoặc quyết tâm không làm."
   },
   {
-    "pattern": "〜ものか",
-    "explanation_vi": "Làm sao... được / Không đời nào... (phủ định mạnh)",
+    "pattern": "〜につれて",
+    "explanation_vi": "Theo... / Khi... thì... (tỉ lệ thuận, thay đổi cùng nhau)",
     "examples": [
       {
-        "ja": "そんなことをするものか。",
-        "vi": "Làm sao làm chuyện đó được."
+        "ja": "時間が経つにつれて、痛みが和らいできた。",
+        "vi": "Theo thời gian trôi qua, cơn đau dần dịu lại."
       },
       {
-        "ja": "負けるものか。",
-        "vi": "Không đời nào thua."
+        "ja": "練習するにつれて、上手になった。",
+        "vi": "Càng luyện tập thì càng tiến bộ."
       }
     ],
-    "notes_vi": "Diễn đạt sự phản đối mạnh mẽ hoặc quyết tâm."
+    "notes_vi": "Diễn đạt hai thay đổi xảy ra song song theo cùng chiều hướng."
   },
   {
     "pattern": "〜ものだ",

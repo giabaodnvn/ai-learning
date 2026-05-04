@@ -1,5 +1,5 @@
 [
-  {"word": "生態系", "reading": "せいたいけい", "romaji": "seitaikei", "meaning_vi": "hệ sinh thái, chuỗi thức ăn", "part_of_speech": "noun", "tags": ["science", "nature", "environment"]},
+  {"word": "生物圏", "reading": "せいぶつけん", "romaji": "seibutsken", "meaning_vi": "quyển sinh vật, sinh khuyển", "part_of_speech": "noun", "tags": ["science", "nature", "environment"]},
   {"word": "食物連鎖", "reading": "しょくもつれんさ", "romaji": "shokumotsurenssa", "meaning_vi": "chuỗi thức ăn, xích thức ăn", "part_of_speech": "noun", "tags": ["science", "nature"]},
   {"word": "捕食", "reading": "ほしょく", "romaji": "hoshoku", "meaning_vi": "ăn thịt, săn bắt", "part_of_speech": "noun", "tags": ["nature", "action"]},
   {"word": "草食", "reading": "そうしょく", "romaji": "soushoku", "meaning_vi": "ăn cỏ, phương thức ăn cỏ", "part_of_speech": "noun", "tags": ["nature"]},
@@ -22,8 +22,8 @@
   {"word": "野生動物", "reading": "やせいどうぶつ", "romaji": "yaseidoubutsu", "meaning_vi": "động vật hoang dã, động vật quý hiếm", "part_of_speech": "noun", "tags": ["nature", "environment"]},
   {"word": "生物多様性", "reading": "せいぶつたようせい", "romaji": "seibutsutayousei", "meaning_vi": "đa dạng sinh học, đa dạng loài", "part_of_speech": "noun", "tags": ["environment", "nature"]},
   {"word": "二酸化炭素", "reading": "にさんかたんそ", "romaji": "nisankataasou", "meaning_vi": "khí CO2, carbon dioxide", "part_of_speech": "noun", "tags": ["science", "environment"]},
-  {"word": "温暖化", "reading": "おんだんか", "romaji": "ondanka", "meaning_vi": "nóng lên, ấm lên", "part_of_speech": "noun", "tags": ["environment", "science"]},
-  {"word": "気候変動", "reading": "きこうへんどう", "romaji": "kikouhendou", "meaning_vi": "biến đổi khí hậu", "part_of_speech": "noun", "tags": ["environment", "nature"]},
+  {"word": "熱帯化", "reading": "ねったいか", "romaji": "nettaika", "meaning_vi": "nhiệt đới hóa, xu hướng nhiệt đới", "part_of_speech": "noun", "tags": ["environment", "science"]},
+  {"word": "異常気象", "reading": "いじょうきしょう", "romaji": "ijou-kishou", "meaning_vi": "thời tiết bất thường, khí tượng dị thường", "part_of_speech": "noun", "tags": ["environment", "nature"]},
   {"word": "汚染", "reading": "おせん", "romaji": "osen", "meaning_vi": "ô nhiễm, bẩn", "part_of_speech": "noun", "tags": ["environment", "health"]},
   {"word": "排出", "reading": "はいしゅつ", "romaji": "haishutsu", "meaning_vi": "xả ra, phát thải", "part_of_speech": "noun", "tags": ["action", "environment"]},
   {"word": "廃棄物", "reading": "はいきぶつ", "romaji": "haikibutsu", "meaning_vi": "chất thải, rác", "part_of_speech": "noun", "tags": ["environment", "daily"]},

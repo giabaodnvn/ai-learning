@@ -7,7 +7,7 @@
   {"word": "逆さま", "reading": "ぎゃくさま", "romaji": "gyakusama", "meaning_vi": "ngược lại, lộn xộn", "part_of_speech": "noun", "tags": ["abstract", "daily"]},
   {"word": "反対", "reading": "はんたい", "romaji": "hantai", "meaning_vi": "đối lập, ngược lại", "part_of_speech": "noun", "tags": ["abstract"]},
   {"word": "相反", "reading": "そうはん", "romaji": "souhan", "meaning_vi": "mâu thuẫn, đối lập", "part_of_speech": "noun", "tags": ["abstract"]},
-  {"word": "矛盾", "reading": "むじゅん", "romaji": "mujun", "meaning_vi": "mâu thuẫn, không hợp lý", "part_of_speech": "noun", "tags": ["abstract", "thinking"]},
+  {"word": "逆説", "reading": "ぎゃくせつ", "romaji": "gyakusetsu", "meaning_vi": "nghịch lý, điều trái với lẽ thường", "part_of_speech": "noun", "tags": ["abstract", "thinking"]},
   {"word": "葛藤", "reading": "かっとう", "romaji": "kattou", "meaning_vi": "xung đột, mâu thuẫn nội tâm", "part_of_speech": "noun", "tags": ["emotion", "psychology"]},
   {"word": "ジレンマ", "reading": "じれんま", "romaji": "jirenma", "meaning_vi": "lưỡng nan, tình thế tiến thoái lưỡng nan", "part_of_speech": "noun", "tags": ["abstract", "psychology"]},
   {"word": "パラドックス", "reading": "ぱらどっくす", "romaji": "paradokkusu", "meaning_vi": "nghịch lý, mâu thuẫn logic", "part_of_speech": "noun", "tags": ["abstract", "thinking"]},
