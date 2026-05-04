@@ -1,18 +1,18 @@
 [
   {
-    "pattern": "〜ろう",
-    "explanation_vi": "Sẽ..., hãy..., có lẽ... (tiếp diễn hoặc đề xuất)",
+    "pattern": "〜に加えて",
+    "explanation_vi": "Thêm vào đó..., ngoài ra còn... (bổ sung)",
     "examples": [
       {
-        "ja": "明日、行こう。",
-        "vi": "Ngày mai, chúng ta sẽ đi."
+        "ja": "英語に加えて、日本語も勉強している。",
+        "vi": "Ngoài tiếng Anh, tôi còn đang học tiếng Nhật."
       },
       {
-        "ja": "一緒に頑張ろう。",
-        "vi": "Chúng ta hãy cố gắng cùng nhau."
+        "ja": "不景気に加えて、円安も続いている。",
+        "vi": "Thêm vào suy thoái kinh tế, tỷ giá đồng yên cũng tiếp tục giảm."
       }
     ],
-    "notes_vi": "Biểu thị ý định, đề xuất hoặc tiếp diễn hành động."
+    "notes_vi": "Dùng để bổ sung thêm thông tin hoặc liệt kê các yếu tố cộng hưởng."
   },
   {
     "pattern": "〜やすい",
@@ -270,18 +270,18 @@
     "notes_vi": "Biểu thị điều kiện phụ thuộc vào yếu tố khác."
   },
   {
-    "pattern": "〜みたい",
-    "explanation_vi": "Có vẻ như..., dường như... (dự đoán)",
+    "pattern": "〜をきっかけに",
+    "explanation_vi": "Lấy...làm cơ hội, nhân dịp..., bắt đầu từ... (sự kiện khởi đầu)",
     "examples": [
       {
-        "ja": "彼は病気みたいだ。",
-        "vi": "Có vẻ như anh ấy bị bệnh."
+        "ja": "病気をきっかけに、健康に気をつけるようになった。",
+        "vi": "Nhân dịp bị bệnh, tôi bắt đầu chú ý đến sức khỏe hơn."
       },
       {
-        "ja": "明日は雨みたいです。",
-        "vi": "Dường như ngày mai sẽ mưa."
+        "ja": "この出会いをきっかけに、二人は付き合い始めた。",
+        "vi": "Lấy cuộc gặp gỡ này làm cơ hội, hai người bắt đầu hẹn hò."
       }
     ],
-    "notes_vi": "Biểu thị sự dự đoán hoặc nhận xét dựa trên dấu hiệu."
+    "notes_vi": "Biểu thị sự kiện hoặc tình huống đóng vai trò là bước ngoặt, khởi điểm cho sự thay đổi."
   }
 ]

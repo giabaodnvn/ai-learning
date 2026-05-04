@@ -1,33 +1,33 @@
 [
   {
-    "pattern": "〜ため",
-    "explanation_vi": "Để..., vì mục đích... (mục đích)",
+    "pattern": "〜に際して",
+    "explanation_vi": "Khi..., nhân dịp..., vào lúc... (thời điểm quan trọng)",
     "examples": [
       {
-        "ja": "試験に合格するため、毎日勉強している。",
-        "vi": "Để vượt qua kỳ thi, tôi học tập hàng ngày."
+        "ja": "入社に際して、いくつかの書類を提出してください。",
+        "vi": "Khi gia nhập công ty, hãy nộp một số giấy tờ."
       },
       {
-        "ja": "健康のため、運動しています。",
-        "vi": "Để sức khỏe, tôi tập thể dục."
+        "ja": "契約に際して、条件をよく確認することが大切だ。",
+        "vi": "Vào lúc ký hợp đồng, điều quan trọng là phải kiểm tra kỹ các điều kiện."
       }
     ],
-    "notes_vi": "Biểu thị mục đích hoặc lý do."
+    "notes_vi": "Dùng trong văn phong trang trọng để chỉ thời điểm hoặc dịp trọng yếu."
   },
   {
-    "pattern": "〜ために",
-    "explanation_vi": "Để..., vì... (mục đích, nguyên nhân)",
+    "pattern": "〜にしたがって",
+    "explanation_vi": "Khi...thì..., theo tiến trình..., cùng với sự thay đổi của... (tương quan)",
     "examples": [
       {
-        "ja": "家族のために働いている。",
-        "vi": "Tôi làm việc vì gia đình."
+        "ja": "時間が経つにしたがって、記憶が薄れていく。",
+        "vi": "Theo thời gian trôi qua, ký ức dần phai nhạt."
       },
       {
-        "ja": "成功するために、努力が必要です。",
-        "vi": "Để thành công, cần nỗ lực."
+        "ja": "経験を積むにしたがって、判断力が高まる。",
+        "vi": "Khi tích lũy kinh nghiệm, năng lực phán đoán cũng tăng lên."
       }
     ],
-    "notes_vi": "Biểu thị mục đích hoặc nguyên nhân."
+    "notes_vi": "Biểu thị hai sự thay đổi diễn ra song song theo thời gian hoặc quá trình."
   },
   {
     "pattern": "〜がため",
@@ -90,19 +90,19 @@
     "notes_vi": "Hình thức cổ điển của 〜が, biểu thị nhượng bộ."
   },
   {
-    "pattern": "〜でも",
-    "explanation_vi": "Dù..., cho dù..., hoặc..., thậm chí... (nhượng bộ hoặc lựa chọn)",
+    "pattern": "〜を通じて",
+    "explanation_vi": "Thông qua..., qua..., xuyên suốt... (phương tiện hoặc toàn bộ thời gian)",
     "examples": [
       {
-        "ja": "誰でも参加できます。",
-        "vi": "Ai cũng có thể tham gia."
+        "ja": "インターネットを通じて、世界中の人とつながれる。",
+        "vi": "Thông qua internet, có thể kết nối với người trên toàn thế giới."
       },
       {
-        "ja": "どんなに努力しても、できない。",
-        "vi": "Dù cố gắng bao nhiêu cũng làm không được."
+        "ja": "一年を通じて、温暖な気候が続く。",
+        "vi": "Xuyên suốt cả năm, khí hậu ấm áp kéo dài."
       }
     ],
-    "notes_vi": "Biểu thị lựa chọn hoặc nhượng bộ."
+    "notes_vi": "Có hai nghĩa: phương tiện/trung gian, và khoảng thời gian liên tục."
   },
   {
     "pattern": "〜だけ",
@@ -480,19 +480,19 @@
     "notes_vi": "Phiên bản mở rộng của 〜をはじめ."
   },
   {
-    "pattern": "〜や",
-    "explanation_vi": "Hoặc..., hay..., hoặc là... (lựa chọn)",
+    "pattern": "〜にわたって",
+    "explanation_vi": "Trong suốt..., trải dài..., qua... (phạm vi thời gian hoặc không gian)",
     "examples": [
       {
-        "ja": "りんごやみかんが好きです。",
-        "vi": "Tôi thích táo hoặc cam."
+        "ja": "三年間にわたって、このプロジェクトを進めてきた。",
+        "vi": "Trong suốt ba năm, dự án này đã được tiến hành."
       },
       {
-        "ja": "仕事や趣味など、いろいろなことに時間を使う。",
-        "vi": "Dùng thời gian cho công việc hay sở thích."
+        "ja": "全国にわたって、調査が行われた。",
+        "vi": "Cuộc điều tra được thực hiện trải dài trên toàn quốc."
       }
     ],
-    "notes_vi": "Biểu thị lựa chọn hoặc liệt kê."
+    "notes_vi": "Biểu thị phạm vi rộng về thời gian hoặc không gian."
   },
   {
     "pattern": "〜やら",
@@ -525,34 +525,34 @@
     "notes_vi": "Biểu thị nhiều hành động hoặc lựa chọn."
   },
   {
-    "pattern": "〜より",
-    "explanation_vi": "Từ..., hơn..., so với... (nguồn, so sánh)",
+    "pattern": "〜をもとに",
+    "explanation_vi": "Dựa trên..., căn cứ vào... (cơ sở)",
     "examples": [
       {
-        "ja": "東京より大阪に行きたい。",
-        "vi": "Tôi muốn đi Osaka hơn là Tokyo."
+        "ja": "このデータをもとに、報告書を作成した。",
+        "vi": "Dựa trên dữ liệu này, tôi đã soạn báo cáo."
       },
       {
-        "ja": "去年より今年の方が売上が良い。",
-        "vi": "Năm nay bán tốt hơn năm ngoái."
+        "ja": "実際の事件をもとに、映画が制作された。",
+        "vi": "Bộ phim được sản xuất dựa trên vụ án thực tế."
       }
     ],
-    "notes_vi": "Biểu thị so sánh hoặc nguồn."
+    "notes_vi": "Biểu thị nguồn gốc hoặc cơ sở của hành động, sản phẩm."
   },
   {
-    "pattern": "〜から",
-    "explanation_vi": "Từ..., bắt đầu từ..., vì... (nguồn, nguyên nhân)",
+    "pattern": "〜に基づいて",
+    "explanation_vi": "Dựa trên..., dựa vào..., theo... (căn cứ)",
     "examples": [
       {
-        "ja": "昨日から、新しいプロジェクトが始まった。",
-        "vi": "Từ hôm qua, dự án mới bắt đầu."
+        "ja": "法律に基づいて、処分を決定した。",
+        "vi": "Dựa trên pháp luật, đã quyết định xử lý."
       },
       {
-        "ja": "病気だから、休みました。",
-        "vi": "Vì bị bệnh, nên nghỉ."
+        "ja": "科学的な証拠に基づいて、結論を出した。",
+        "vi": "Dựa vào bằng chứng khoa học, đã đưa ra kết luận."
       }
     ],
-    "notes_vi": "Biểu thị nguồn, nguyên nhân hoặc điểm khởi đầu."
+    "notes_vi": "Mang tính hình thức hơn 〜をもとに, thường dùng trong văn bản quy định."
   },
   {
     "pattern": "〜として",
@@ -660,64 +660,64 @@
     "notes_vi": "Mạnh hơn 〜べき, biểu thị bắt buộc phải."
   },
   {
-    "pattern": "〜で",
-    "explanation_vi": "Bằng..., dùng..., trong..., ở... (phương tiện, nơi chốn)",
+    "pattern": "〜にあたり",
+    "explanation_vi": "Khi..., vào dịp..., nhân lúc... (thời điểm)",
     "examples": [
       {
-        "ja": "ペンで書いています。",
-        "vi": "Tôi viết bằng bút."
+        "ja": "開会式にあたり、一言ご挨拶申し上げます。",
+        "vi": "Vào dịp lễ khai mạc, xin phép nói đôi lời."
       },
       {
-        "ja": "学校で勉強しています。",
-        "vi": "Tôi học tập ở trường."
+        "ja": "新年度の開始にあたり、目標を設定した。",
+        "vi": "Nhân lúc bắt đầu năm học mới, tôi đã đặt ra mục tiêu."
       }
     ],
-    "notes_vi": "Biểu thị phương tiện hoặc nơi chốn."
+    "notes_vi": "Tương tự 〜にあたって nhưng mang sắc thái trang trọng, hay dùng trong diễn văn hoặc thông báo."
   },
   {
-    "pattern": "〜に",
-    "explanation_vi": "Đến..., ở..., cho..., thành... (chỉ định, hướng)",
+    "pattern": "〜にかけて",
+    "explanation_vi": "Từ...đến..., trong khoảng..., trải dài từ... đến... (phạm vi)",
     "examples": [
       {
-        "ja": "東京に行きます。",
-        "vi": "Tôi đi Tokyo."
+        "ja": "春から夏にかけて、桜が咲く。",
+        "vi": "Từ mùa xuân đến mùa hè, hoa anh đào nở."
       },
       {
-        "ja": "友達に本をあげました。",
-        "vi": "Tôi cho bạn một cuốn sách."
+        "ja": "北部から南部にかけて、大雨が降った。",
+        "vi": "Mưa lớn rơi từ phía bắc đến phía nam."
       }
     ],
-    "notes_vi": "Biểu thị hướng, người nhận hoặc chỉ định."
+    "notes_vi": "Biểu thị phạm vi thời gian hoặc không gian, thường mang tính mơ hồ hơn 〜にわたって."
   },
   {
-    "pattern": "〜まで",
-    "explanation_vi": "Đến..., cho đến..., thậm chí... (giới hạn)",
+    "pattern": "〜を契機に",
+    "explanation_vi": "Nhân dịp..., lấy...làm bước ngoặt... (cơ hội thay đổi)",
     "examples": [
       {
-        "ja": "朝まで待ちます。",
-        "vi": "Tôi sẽ đợi đến sáng."
+        "ja": "この事故を契機に、安全対策が強化された。",
+        "vi": "Lấy vụ tai nạn này làm bước ngoặt, các biện pháp an toàn đã được tăng cường."
       },
       {
-        "ja": "子どもまで知っています。",
-        "vi": "Thậm chí trẻ em cũng biết."
+        "ja": "留学を契機に、人生観が大きく変わった。",
+        "vi": "Nhân dịp du học, quan niệm về cuộc sống đã thay đổi lớn."
       }
     ],
-    "notes_vi": "Biểu thị giới hạn hoặc mức độ."
+    "notes_vi": "Tương tự 〜をきっかけに nhưng trang trọng hơn, thường dùng trong văn viết."
   },
   {
-    "pattern": "〜べからず",
-    "explanation_vi": "Không nên, không được (cấm đoán)",
+    "pattern": "〜に限って",
+    "explanation_vi": "Chỉ khi..., riêng...thì..., đặc biệt đối với... (ngoại lệ)",
     "examples": [
       {
-        "ja": "この規則を破るべからず。",
-        "vi": "Không được phá vỡ quy tắc này."
+        "ja": "大事な日に限って、電車が遅れる。",
+        "vi": "Chỉ vào những ngày quan trọng mới bị tàu điện trễ."
       },
       {
-        "ja": "不注意はあるべからず。",
-        "vi": "Không được thiếu cẩn thận."
+        "ja": "うちの子に限って、そんなことはしないはずだ。",
+        "vi": "Riêng con tôi thì không thể làm chuyện đó."
       }
     ],
-    "notes_vi": "Hình thức cấm đoán rất hình thức trong N2."
+    "notes_vi": "Thường dùng khi nói về điều bất ngờ, nghịch lý, hoặc khi nói về sự đặc biệt của một người/trường hợp."
   },
   {
     "pattern": "〜ことになっている",

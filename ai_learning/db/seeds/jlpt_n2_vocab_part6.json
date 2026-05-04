@@ -1,38 +1,217 @@
 [
   {
-    "word": "古雅",
-    "reading": "こが",
-    "romaji": "koga",
-    "meaning_vi": "cổ điển, thanh雅",
+    "word": "情緒",
+    "reading": "じょうちょ",
+    "romaji": "joucho",
+    "meaning_vi": "tình cảm, cảm xúc, không khí đặc trưng",
+    "part_of_speech": "noun",
+    "tags": [
+      "emotion",
+      "atmosphere",
+      "sentiment"
+    ]
+  },
+  {
+    "word": "風情",
+    "reading": "ふぜい",
+    "romaji": "fuzei",
+    "meaning_vi": "vẻ đẹp, không khí, phong vị",
+    "part_of_speech": "noun",
+    "tags": [
+      "atmosphere",
+      "elegant",
+      "aesthetic"
+    ]
+  },
+  {
+    "word": "余韻",
+    "reading": "よいん",
+    "romaji": "yoin",
+    "meaning_vi": "dư âm, âm vang còn lại",
+    "part_of_speech": "noun",
+    "tags": [
+      "lingering",
+      "reverberation",
+      "aftertaste"
+    ]
+  },
+  {
+    "word": "哀愁",
+    "reading": "あいしゅう",
+    "romaji": "aishuu",
+    "meaning_vi": "nỗi buồn, bi sầu",
+    "part_of_speech": "noun",
+    "tags": [
+      "sorrow",
+      "melancholy",
+      "sadness"
+    ]
+  },
+  {
+    "word": "郷愁",
+    "reading": "きょうしゅう",
+    "romaji": "kyoushuu",
+    "meaning_vi": "nỗi nhớ quê hương, hoài hương",
+    "part_of_speech": "noun",
+    "tags": [
+      "nostalgia",
+      "homesickness"
+    ]
+  },
+  {
+    "word": "感慨",
+    "reading": "かんがい",
+    "romaji": "kangai",
+    "meaning_vi": "cảm xúc sâu sắc, xúc động",
+    "part_of_speech": "noun",
+    "tags": [
+      "deep emotion",
+      "moved",
+      "sentiment"
+    ]
+  },
+  {
+    "word": "趣",
+    "reading": "おもむき",
+    "romaji": "omomuki",
+    "meaning_vi": "vẻ thú vị, nét đặc trưng, phong vị",
+    "part_of_speech": "noun",
+    "tags": [
+      "charm",
+      "flavor",
+      "aesthetic"
+    ]
+  },
+  {
+    "word": "風雅",
+    "reading": "ふうが",
+    "romaji": "fuuga",
+    "meaning_vi": "phong nhã, thanh lịch",
+    "part_of_speech": "noun",
+    "tags": [
+      "elegant",
+      "refined",
+      "cultivated"
+    ]
+  },
+  {
+    "word": "渋い",
+    "reading": "しぶい",
+    "romaji": "shibui",
+    "meaning_vi": "đắng, trầm mặc, thâm thúy",
     "part_of_speech": "adjective",
     "tags": [
-      "classical",
-      "elegant",
+      "austere",
+      "subdued",
       "refined"
     ]
   },
   {
-    "word": "幽玄",
-    "reading": "ゆうげん",
-    "romaji": "yuugen",
-    "meaning_vi": "ảo diệu, thâm sâu",
-    "part_of_speech": "noun",
+    "word": "奥ゆかしい",
+    "reading": "おくゆかしい",
+    "romaji": "okuyukashii",
+    "meaning_vi": "kín đáo, sâu sắc, duyên dáng",
+    "part_of_speech": "adjective",
     "tags": [
-      "profound",
-      "mysterious",
-      "subtle"
+      "modest",
+      "refined",
+      "graceful"
     ]
   },
   {
-    "word": "淡雅",
-    "reading": "たんが",
-    "romaji": "tanga",
-    "meaning_vi": "nhẹ nhàng thanh雅",
+    "word": "豊かさ",
+    "reading": "ゆたかさ",
+    "romaji": "yutakasa",
+    "meaning_vi": "sự phong phú, sự dồi dào",
+    "part_of_speech": "noun",
+    "tags": [
+      "abundance",
+      "richness",
+      "prosperity"
+    ]
+  },
+  {
+    "word": "清々しい",
+    "reading": "すがすがしい",
+    "romaji": "sugasugashii",
+    "meaning_vi": "trong trẻo, sảng khoái, mát mẻ",
     "part_of_speech": "adjective",
     "tags": [
-      "elegant",
-      "refined",
-      "subtle"
+      "refreshing",
+      "crisp",
+      "invigorating"
+    ]
+  },
+  {
+    "word": "晴れやか",
+    "reading": "はれやか",
+    "romaji": "hareyaka",
+    "meaning_vi": "sáng sủa, vui vẻ, hân hoan",
+    "part_of_speech": "adjective",
+    "tags": [
+      "bright",
+      "cheerful",
+      "radiant"
+    ]
+  },
+  {
+    "word": "穏やか",
+    "reading": "おだやか",
+    "romaji": "odayaka",
+    "meaning_vi": "ôn hòa, bình thản, yên tĩnh",
+    "part_of_speech": "adjective",
+    "tags": [
+      "calm",
+      "gentle",
+      "peaceful"
+    ]
+  },
+  {
+    "word": "侘しい",
+    "reading": "わびしい",
+    "romaji": "wabishii",
+    "meaning_vi": "cô đơn, buồn tẻ, hoang vắng",
+    "part_of_speech": "adjective",
+    "tags": [
+      "lonely",
+      "desolate",
+      "wabi"
+    ]
+  },
+  {
+    "word": "寂しさ",
+    "reading": "さびしさ",
+    "romaji": "sabishisa",
+    "meaning_vi": "sự cô đơn, nỗi buồn cô quạnh",
+    "part_of_speech": "noun",
+    "tags": [
+      "loneliness",
+      "solitude",
+      "sabi"
+    ]
+  },
+  {
+    "word": "懐かしさ",
+    "reading": "なつかしさ",
+    "romaji": "natsukashisa",
+    "meaning_vi": "sự nhớ nhung, cảm giác thân thương",
+    "part_of_speech": "noun",
+    "tags": [
+      "nostalgia",
+      "fondness",
+      "longing"
+    ]
+  },
+  {
+    "word": "情趣",
+    "reading": "じょうしゅ",
+    "romaji": "joushu",
+    "meaning_vi": "phong vị, nét thú vị, cảm xúc",
+    "part_of_speech": "noun",
+    "tags": [
+      "charm",
+      "poetic",
+      "sentiment"
     ]
   },
   {
@@ -49,9 +228,9 @@
   },
   {
     "word": "撫でる",
-    "reading": "ぶでる",
-    "romaji": "buderu",
-    "meaning_vi": "vuốt, xoa đầu",
+    "reading": "なでる",
+    "romaji": "naderu",
+    "meaning_vi": "vuốt ve, xoa nhẹ",
     "part_of_speech": "verb",
     "tags": [
       "caress",
@@ -60,45 +239,9 @@
     ]
   },
   {
-    "word": "撫う",
-    "reading": "ぶう",
-    "romaji": "buu",
-    "meaning_vi": "nuôi, dỗ dành",
-    "part_of_speech": "verb",
-    "tags": [
-      "nurture",
-      "soothe",
-      "caress"
-    ]
-  },
-  {
-    "word": "弭める",
-    "reading": "いめる",
-    "romaji": "imeru",
-    "meaning_vi": "dừng, chấm dứt",
-    "part_of_speech": "verb",
-    "tags": [
-      "stop",
-      "end",
-      "cease"
-    ]
-  },
-  {
-    "word": "弭む",
-    "reading": "やまぬ",
-    "romaji": "yamanu",
-    "meaning_vi": "không dừng, tiếp tục",
-    "part_of_speech": "verb",
-    "tags": [
-      "not stop",
-      "continue",
-      "persist"
-    ]
-  },
-  {
     "word": "彷徨う",
-    "reading": "ほうこうる",
-    "romaji": "houkouru",
+    "reading": "さまよう",
+    "romaji": "samayou",
     "meaning_vi": "lênh đênh, lang thang",
     "part_of_speech": "verb",
     "tags": [
@@ -111,7 +254,7 @@
     "word": "徘徊",
     "reading": "はいかい",
     "romaji": "haikai",
-    "meaning_vi": "lang thang, đi loại quanh",
+    "meaning_vi": "lang thang, đi vòng quanh",
     "part_of_speech": "noun",
     "tags": [
       "wandering",
@@ -135,19 +278,18 @@
     "word": "翼",
     "reading": "つばさ",
     "romaji": "tsubasa",
-    "meaning_vi": "cánh, chi",
+    "meaning_vi": "đôi cánh",
     "part_of_speech": "noun",
     "tags": [
       "wing",
-      "blade",
-      "limb"
+      "blade"
     ]
   },
   {
     "word": "鶴",
     "reading": "つる",
     "romaji": "tsuru",
-    "meaning_vi": "hạc, chim hạc",
+    "meaning_vi": "con hạc, chim hạc",
     "part_of_speech": "noun",
     "tags": [
       "crane",
@@ -158,7 +300,7 @@
     "word": "瑞々しい",
     "reading": "みずみずしい",
     "romaji": "mizumizushii",
-    "meaning_vi": "tươi tồn, sạch sẽ",
+    "meaning_vi": "tươi mọng, căng tràn sức sống",
     "part_of_speech": "adjective",
     "tags": [
       "fresh",
@@ -167,22 +309,10 @@
     ]
   },
   {
-    "word": "瑞",
-    "reading": "ずい",
-    "romaji": "zui",
-    "meaning_vi": "may mắn, tốt lành",
-    "part_of_speech": "noun",
-    "tags": [
-      "auspicious",
-      "lucky",
-      "favorable"
-    ]
-  },
-  {
     "word": "萌える",
     "reading": "もえる",
     "romaji": "moeru",
-    "meaning_vi": "nảy sinh, nẩy, phát triển",
+    "meaning_vi": "nảy mầm, nẩy sinh",
     "part_of_speech": "verb",
     "tags": [
       "sprout",
@@ -191,10 +321,10 @@
     ]
   },
   {
-    "word": "萌し",
+    "word": "兆し",
     "reading": "きざし",
     "romaji": "kizashi",
-    "meaning_vi": "dấu hiệu, dự báo",
+    "meaning_vi": "dấu hiệu, điềm báo",
     "part_of_speech": "noun",
     "tags": [
       "sign",
@@ -206,7 +336,7 @@
     "word": "芽吹く",
     "reading": "めぶく",
     "romaji": "mebuku",
-    "meaning_vi": "nẩy mầm, phát triển",
+    "meaning_vi": "nảy mầm, phát triển",
     "part_of_speech": "verb",
     "tags": [
       "bud",
@@ -229,7 +359,7 @@
     "word": "草花",
     "reading": "くさばな",
     "romaji": "kusabana",
-    "meaning_vi": "cây cỏ, hoa dại",
+    "meaning_vi": "cây cỏ hoa, hoa dại",
     "part_of_speech": "noun",
     "tags": [
       "grass flower",
@@ -252,19 +382,18 @@
     "word": "薫る",
     "reading": "かおる",
     "romaji": "kaoru",
-    "meaning_vi": "thơm, có mùi",
+    "meaning_vi": "tỏa hương thơm",
     "part_of_speech": "verb",
     "tags": [
       "be fragrant",
-      "smell sweet",
-      "exhale"
+      "smell sweet"
     ]
   },
   {
     "word": "馨しい",
-    "reading": "かおるしい",
-    "romaji": "kaoreshii",
-    "meaning_vi": "thơm lừng, tốt",
+    "reading": "かんばしい",
+    "romaji": "kanbashii",
+    "meaning_vi": "thơm lừng, ngào ngạt",
     "part_of_speech": "adjective",
     "tags": [
       "fragrant",
@@ -275,7 +404,7 @@
     "word": "薫陶",
     "reading": "くんとう",
     "romaji": "kuntou",
-    "meaning_vi": "ảnh hưởng, huấn luyện",
+    "meaning_vi": "ảnh hưởng tốt, sự giáo dưỡng",
     "part_of_speech": "noun",
     "tags": [
       "influence",
@@ -287,7 +416,7 @@
     "word": "蘭",
     "reading": "らん",
     "romaji": "ran",
-    "meaning_vi": "phong lan, hoa lan",
+    "meaning_vi": "hoa lan, phong lan",
     "part_of_speech": "noun",
     "tags": [
       "orchid",
@@ -295,21 +424,10 @@
     ]
   },
   {
-    "word": "竹",
-    "reading": "たけ",
-    "romaji": "take",
-    "meaning_vi": "tre, cây tre",
-    "part_of_speech": "noun",
-    "tags": [
-      "bamboo",
-      "shoot"
-    ]
-  },
-  {
     "word": "竹林",
     "reading": "ちくりん",
     "romaji": "chikurin",
-    "meaning_vi": "khu rừng tre",
+    "meaning_vi": "khu rừng tre, lùm tre",
     "part_of_speech": "noun",
     "tags": [
       "bamboo grove",
@@ -317,21 +435,10 @@
     ]
   },
   {
-    "word": "柳",
-    "reading": "やなぎ",
-    "romaji": "yanagi",
-    "meaning_vi": "cây liễu",
-    "part_of_speech": "noun",
-    "tags": [
-      "willow",
-      "tree"
-    ]
-  },
-  {
     "word": "楓",
-    "reading": "ふう",
-    "romaji": "fuu",
-    "meaning_vi": "cây phong, tò vò",
+    "reading": "かえで",
+    "romaji": "kaede",
+    "meaning_vi": "cây phong, lá phong",
     "part_of_speech": "noun",
     "tags": [
       "maple",
@@ -339,43 +446,10 @@
     ]
   },
   {
-    "word": "松",
-    "reading": "まつ",
-    "romaji": "matsu",
-    "meaning_vi": "cây thông",
-    "part_of_speech": "noun",
-    "tags": [
-      "pine",
-      "tree"
-    ]
-  },
-  {
-    "word": "梅",
-    "reading": "うめ",
-    "romaji": "ume",
-    "meaning_vi": "hoa mơ, cây mơ",
-    "part_of_speech": "noun",
-    "tags": [
-      "plum",
-      "tree"
-    ]
-  },
-  {
-    "word": "菊",
-    "reading": "きく",
-    "romaji": "kiku",
-    "meaning_vi": "hoa cúc",
-    "part_of_speech": "noun",
-    "tags": [
-      "chrysanthemum",
-      "flower"
-    ]
-  },
-  {
     "word": "紅葉",
     "reading": "こうよう",
     "romaji": "kouyou",
-    "meaning_vi": "lá đỏ, mùa thu",
+    "meaning_vi": "lá đỏ mùa thu, sắc lá thu",
     "part_of_speech": "noun",
     "tags": [
       "red leaves",
@@ -386,7 +460,7 @@
     "word": "若葉",
     "reading": "わかば",
     "romaji": "wakaba",
-    "meaning_vi": "lá non, lá non",
+    "meaning_vi": "lá non, lá xanh non",
     "part_of_speech": "noun",
     "tags": [
       "young leaves",
@@ -397,7 +471,7 @@
     "word": "落葉",
     "reading": "らくよう",
     "romaji": "rakuyou",
-    "meaning_vi": "lá rơi, sỹ rụng",
+    "meaning_vi": "lá rụng, lá rơi",
     "part_of_speech": "noun",
     "tags": [
       "falling leaves",
@@ -431,19 +505,18 @@
     "word": "霜",
     "reading": "しも",
     "romaji": "shimo",
-    "meaning_vi": "sương muối, sương giá",
+    "meaning_vi": "sương giá, sương muối",
     "part_of_speech": "noun",
     "tags": [
       "frost",
-      "hoarfrost",
-      "dew"
+      "hoarfrost"
     ]
   },
   {
     "word": "霞",
     "reading": "かすみ",
     "romaji": "kasumi",
-    "meaning_vi": "sương mù, mù",
+    "meaning_vi": "sương mù nhẹ, khói mờ",
     "part_of_speech": "noun",
     "tags": [
       "haze",
@@ -455,7 +528,7 @@
     "word": "霧",
     "reading": "きり",
     "romaji": "kiri",
-    "meaning_vi": "sương mù, mù dày",
+    "meaning_vi": "sương mù dày",
     "part_of_speech": "noun",
     "tags": [
       "fog",
@@ -464,115 +537,10 @@
     ]
   },
   {
-    "word": "雨",
-    "reading": "あめ",
-    "romaji": "ame",
-    "meaning_vi": "mưa",
-    "part_of_speech": "noun",
-    "tags": [
-      "rain",
-      "rainfall"
-    ]
-  },
-  {
-    "word": "氷",
-    "reading": "こおり",
-    "romaji": "koori",
-    "meaning_vi": "đá, băng",
-    "part_of_speech": "noun",
-    "tags": [
-      "ice",
-      "frost",
-      "frozen"
-    ]
-  },
-  {
-    "word": "雪",
-    "reading": "ゆき",
-    "romaji": "yuki",
-    "meaning_vi": "tuyết",
-    "part_of_speech": "noun",
-    "tags": [
-      "snow",
-      "snowfall"
-    ]
-  },
-  {
-    "word": "月",
-    "reading": "つき",
-    "romaji": "tsuki",
-    "meaning_vi": "mặt trăng, tháng",
-    "part_of_speech": "noun",
-    "tags": [
-      "moon",
-      "month",
-      "lunar"
-    ]
-  },
-  {
-    "word": "星",
-    "reading": "ほし",
-    "romaji": "hoshi",
-    "meaning_vi": "sao, ngôi sao",
-    "part_of_speech": "noun",
-    "tags": [
-      "star",
-      "celestial"
-    ]
-  },
-  {
-    "word": "日",
-    "reading": "ひ",
-    "romaji": "hi",
-    "meaning_vi": "mặt trời, ngày",
-    "part_of_speech": "noun",
-    "tags": [
-      "sun",
-      "day",
-      "light"
-    ]
-  },
-  {
-    "word": "光",
-    "reading": "ひかり",
-    "romaji": "hikari",
-    "meaning_vi": "ánh sáng, sáng",
-    "part_of_speech": "noun",
-    "tags": [
-      "light",
-      "ray",
-      "radiance"
-    ]
-  },
-  {
-    "word": "影",
-    "reading": "かげ",
-    "romaji": "kage",
-    "meaning_vi": "bóng, bóng tối",
-    "part_of_speech": "noun",
-    "tags": [
-      "shadow",
-      "shade",
-      "silhouette"
-    ]
-  },
-  {
-    "word": "闇",
-    "reading": "やみ",
-    "romaji": "yami",
-    "meaning_vi": "tối, bóng tối",
-    "part_of_speech": "noun",
-    "tags": [
-      "darkness",
-      "gloom",
-      "obscurity"
-    ]
-  },
-  {
     "word": "宵",
     "reading": "よい",
     "romaji": "yoi",
-    "meaning_vi": "buổi tối, ban đêm sớm",
+    "meaning_vi": "buổi tối sớm, chiều tà",
     "part_of_speech": "noun",
     "tags": [
       "evening",
@@ -596,7 +564,7 @@
     "word": "暁",
     "reading": "あかつき",
     "romaji": "akatsuki",
-    "meaning_vi": "rạng sáng, bình minh",
+    "meaning_vi": "rạng sáng, lúc bình minh",
     "part_of_speech": "noun",
     "tags": [
       "dawn",
@@ -620,7 +588,7 @@
     "word": "薄暮",
     "reading": "はくぼ",
     "romaji": "hakubo",
-    "meaning_vi": "chạng vạng",
+    "meaning_vi": "chạng vạng, nhá nhem tối",
     "part_of_speech": "noun",
     "tags": [
       "twilight",
@@ -631,22 +599,11 @@
     "word": "宵闇",
     "reading": "よいやみ",
     "romaji": "yoiyami",
-    "meaning_vi": "buổi tối tối",
+    "meaning_vi": "bóng tối buổi chiều tà",
     "part_of_speech": "noun",
     "tags": [
       "dark evening",
       "dusk"
-    ]
-  },
-  {
-    "word": "夜中",
-    "reading": "やちゅう",
-    "romaji": "yachuu",
-    "meaning_vi": "giữa đêm, khuya",
-    "part_of_speech": "noun",
-    "tags": [
-      "middle of the night",
-      "midnight"
     ]
   },
   {
@@ -662,9 +619,9 @@
   },
   {
     "word": "未明",
-    "reading": "びめい",
-    "romaji": "bimei",
-    "meaning_vi": "sáng sớm, rạng sáng",
+    "reading": "みめい",
+    "romaji": "mimei",
+    "meaning_vi": "sáng sớm trước bình minh, rạng sáng",
     "part_of_speech": "noun",
     "tags": [
       "daybreak",
@@ -676,7 +633,7 @@
     "word": "朝靄",
     "reading": "あさもや",
     "romaji": "asamoya",
-    "meaning_vi": "sương sáng",
+    "meaning_vi": "sương sáng, khói sương buổi sáng",
     "part_of_speech": "noun",
     "tags": [
       "morning mist",
@@ -687,7 +644,7 @@
     "word": "朝焼け",
     "reading": "あさやけ",
     "romaji": "asayake",
-    "meaning_vi": "bầu trời đỏ sáng",
+    "meaning_vi": "bầu trời đỏ lúc bình minh",
     "part_of_speech": "noun",
     "tags": [
       "red sky at dawn"
@@ -697,7 +654,7 @@
     "word": "夕焼け",
     "reading": "ゆうやけ",
     "romaji": "yuuyake",
-    "meaning_vi": "bầu trời đỏ chiều",
+    "meaning_vi": "bầu trời đỏ lúc hoàng hôn",
     "part_of_speech": "noun",
     "tags": [
       "red sky at sunset"
@@ -718,7 +675,7 @@
     "word": "雷",
     "reading": "かみなり",
     "romaji": "kaminari",
-    "meaning_vi": "sấm, tia sét",
+    "meaning_vi": "sấm, sét",
     "part_of_speech": "noun",
     "tags": [
       "thunder",
@@ -742,7 +699,7 @@
     "word": "烈しい",
     "reading": "はげしい",
     "romaji": "hageshii",
-    "meaning_vi": "dữ dội, mạnh",
+    "meaning_vi": "dữ dội, mãnh liệt",
     "part_of_speech": "adjective",
     "tags": [
       "violent",
@@ -754,7 +711,7 @@
     "word": "荒れ狂う",
     "reading": "あれくるう",
     "romaji": "arekuruu",
-    "meaning_vi": "hoang dã, điên cuồng",
+    "meaning_vi": "nổi loạn, điên cuồng",
     "part_of_speech": "verb",
     "tags": [
       "rage",
@@ -766,7 +723,7 @@
     "word": "怒涛",
     "reading": "どとう",
     "romaji": "dotou",
-    "meaning_vi": "sóng dữ",
+    "meaning_vi": "sóng dữ, sóng cuồn cuộn",
     "part_of_speech": "noun",
     "tags": [
       "raging waves",
@@ -789,7 +746,7 @@
     "word": "漆黒",
     "reading": "しっこく",
     "romaji": "shikkoku",
-    "meaning_vi": "đen kịt",
+    "meaning_vi": "đen kịt, tối đen như mực",
     "part_of_speech": "noun",
     "tags": [
       "jet black",
@@ -809,22 +766,10 @@
     ]
   },
   {
-    "word": "紅",
-    "reading": "べに",
-    "romaji": "beni",
-    "meaning_vi": "đỏ, đỏ tươi",
-    "part_of_speech": "noun",
-    "tags": [
-      "crimson",
-      "red",
-      "rouge"
-    ]
-  },
-  {
     "word": "朱",
     "reading": "しゅ",
     "romaji": "shu",
-    "meaning_vi": "đỏ sẫm, đỏ như máu",
+    "meaning_vi": "màu đỏ sẫm, màu son",
     "part_of_speech": "noun",
     "tags": [
       "vermillion",
@@ -836,7 +781,7 @@
     "word": "琥珀",
     "reading": "こはく",
     "romaji": "kohaku",
-    "meaning_vi": "hổ phách, hạt apricot",
+    "meaning_vi": "hổ phách, màu hổ phách",
     "part_of_speech": "noun",
     "tags": [
       "amber",
@@ -847,7 +792,7 @@
     "word": "瑠璃",
     "reading": "るり",
     "romaji": "ruri",
-    "meaning_vi": "lapis lazuli, xanh",
+    "meaning_vi": "lapis lazuli, màu xanh lam",
     "part_of_speech": "noun",
     "tags": [
       "lapis lazuli",
@@ -859,7 +804,7 @@
     "word": "翡翠",
     "reading": "ひすい",
     "romaji": "hisui",
-    "meaning_vi": "ngọc bích",
+    "meaning_vi": "ngọc bích, màu xanh ngọc",
     "part_of_speech": "noun",
     "tags": [
       "jade",
@@ -870,7 +815,7 @@
     "word": "珊瑚",
     "reading": "さんご",
     "romaji": "sango",
-    "meaning_vi": "san hô, san hô",
+    "meaning_vi": "san hô",
     "part_of_speech": "noun",
     "tags": [
       "coral",
@@ -891,7 +836,7 @@
   {
     "word": "金剛石",
     "reading": "こんごうせき",
-    "romaji": "kongoyseki",
+    "romaji": "kongouseki",
     "meaning_vi": "kim cương",
     "part_of_speech": "noun",
     "tags": [
@@ -903,7 +848,7 @@
     "word": "宝石",
     "reading": "ほうせき",
     "romaji": "houseki",
-    "meaning_vi": "viên ngọc, châu báu",
+    "meaning_vi": "đá quý, châu báu",
     "part_of_speech": "noun",
     "tags": [
       "jewel",
@@ -912,22 +857,10 @@
     ]
   },
   {
-    "word": "玉",
+    "word": "珠",
     "reading": "たま",
     "romaji": "tama",
-    "meaning_vi": "cầu, tròn",
-    "part_of_speech": "noun",
-    "tags": [
-      "ball",
-      "gem",
-      "round"
-    ]
-  },
-  {
-    "word": "珠",
-    "reading": "しゅ",
-    "romaji": "shu",
-    "meaning_vi": "hạt, viên",
+    "meaning_vi": "hạt ngọc, viên ngọc",
     "part_of_speech": "noun",
     "tags": [
       "bead",
@@ -951,7 +884,7 @@
     "word": "輝き",
     "reading": "かがやき",
     "romaji": "kagayaki",
-    "meaning_vi": "sáng chói, chói sáng",
+    "meaning_vi": "ánh sáng chói, sự rực rỡ",
     "part_of_speech": "noun",
     "tags": [
       "radiance",
@@ -963,7 +896,7 @@
     "word": "麗しさ",
     "reading": "うるわしさ",
     "romaji": "uruwashisa",
-    "meaning_vi": "vẻ đẹp, sắc đẹp",
+    "meaning_vi": "vẻ đẹp, nét duyên dáng",
     "part_of_speech": "noun",
     "tags": [
       "beauty",

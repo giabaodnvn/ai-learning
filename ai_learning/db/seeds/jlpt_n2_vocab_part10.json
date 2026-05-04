@@ -540,18 +540,6 @@
     ]
   },
   {
-    "word": "穏やか",
-    "reading": "おだやか",
-    "romaji": "odayaka",
-    "meaning_vi": "yên tĩnh",
-    "part_of_speech": "adjective",
-    "tags": [
-      "calm",
-      "peaceful",
-      "character"
-    ]
-  },
-  {
     "word": "静寂",
     "reading": "せいじゃく",
     "romaji": "seijyaku",
@@ -1401,6 +1389,18 @@
       "contempt",
       "scorn",
       "emotion"
+    ]
+  },
+  {
+    "word": "平静",
+    "reading": "へいせい",
+    "romaji": "heisei",
+    "meaning_vi": "bình tĩnh, thản nhiên",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract",
+      "emotion",
+      "psychology"
     ]
   }
 ]

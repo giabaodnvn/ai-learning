@@ -247,25 +247,25 @@
     ]
   },
   {
-    "character": "赤",
+    "character": "扇",
     "onyomi": [
-      "セキ"
+      "セン"
     ],
     "kunyomi": [
-      "あか"
+      "おうぎ"
     ],
-    "meaning_vi": "đỏ, thua lỗ",
-    "stroke_count": 7,
+    "meaning_vi": "quạt, xoắn",
+    "stroke_count": 10,
     "vocab_examples": [
       {
-        "word": "赤色",
-        "reading": "あかいろ",
-        "meaning_vi": "màu đỏ"
+        "word": "扇風機",
+        "reading": "せんぷうき",
+        "meaning_vi": "quạt điện"
       },
       {
-        "word": "赤字",
-        "reading": "あかじ",
-        "meaning_vi": "lỗ"
+        "word": "扇子",
+        "reading": "せんす",
+        "meaning_vi": "quạt giấy"
       }
     ]
   },

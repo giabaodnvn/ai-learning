@@ -39,25 +39,25 @@
     ]
   },
   {
-    "character": "糸",
+    "character": "磨",
     "onyomi": [
-      "シ"
+      "マ"
     ],
     "kunyomi": [
-      "いと"
+      "みが.く"
     ],
-    "meaning_vi": "sợi, chỉ",
-    "stroke_count": 3,
+    "meaning_vi": "mài, đánh bóng",
+    "stroke_count": 16,
     "vocab_examples": [
       {
-        "word": "糸",
-        "reading": "いと",
-        "meaning_vi": "sợi"
+        "word": "磨く",
+        "reading": "みがく",
+        "meaning_vi": "đánh bóng"
       },
       {
-        "word": "糸口",
-        "reading": "いとぐち",
-        "meaning_vi": "đầu chỉ"
+        "word": "研磨",
+        "reading": "けんま",
+        "meaning_vi": "mài giũa"
       }
     ]
   },
@@ -120,25 +120,25 @@
     ]
   },
   {
-    "character": "紙",
+    "character": "棚",
     "onyomi": [
-      "シ"
+      "ホウ"
     ],
     "kunyomi": [
-      "かみ"
+      "たな"
     ],
-    "meaning_vi": "giấy",
-    "stroke_count": 10,
+    "meaning_vi": "kệ, giá sách",
+    "stroke_count": 12,
     "vocab_examples": [
       {
-        "word": "紙",
-        "reading": "かみ",
-        "meaning_vi": "giấy"
+        "word": "棚",
+        "reading": "たな",
+        "meaning_vi": "kệ"
       },
       {
-        "word": "紙张",
-        "reading": "かみはり",
-        "meaning_vi": "giấy dán"
+        "word": "本棚",
+        "reading": "ほんだな",
+        "meaning_vi": "giá sách"
       }
     ]
   },
