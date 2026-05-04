@@ -1,82 +1,933 @@
 [
-  {"word": "及ぶ", "reading": "およぶ", "romaji": "oyobu", "meaning_vi": "tới, đạt tới, ảnh hưởng", "part_of_speech": "verb", "tags": ["reach", "extend", "affect"]},
-  {"word": "宛てる", "reading": "あてる", "romaji": "ateru", "meaning_vi": "gửi đến, dành cho", "part_of_speech": "verb", "tags": ["address", "target", "allocate"]},
-  {"word": "伴う", "reading": "ともなう", "romaji": "tomonau", "meaning_vi": "đi kèm, kèm theo", "part_of_speech": "verb", "tags": ["accompany", "involve", "entail"]},
-  {"word": "替わる", "reading": "かわる", "romaji": "kawaru", "meaning_vi": "thay thế, thay đổi", "part_of_speech": "verb", "tags": ["replace", "change", "substitute"]},
-  {"word": "構える", "reading": "かまえる", "romaji": "kamaeru", "meaning_vi": "chuẩn bị, xây dựng", "part_of_speech": "verb", "tags": ["prepare", "build", "establish"]},
-  {"word": "殖える", "reading": "ふえる", "romaji": "fueru", "meaning_vi": "tăng, nhân đôi", "part_of_speech": "verb", "tags": ["increase", "multiply", "grow"]},
-  {"word": "嘲る", "reading": "あざける", "romaji": "azakeru", "meaning_vi": "chế nhạo, cười nhạo", "part_of_speech": "verb", "tags": ["mock", "scorn", "deride"]},
-  {"word": "譲る", "reading": "ゆずる", "romaji": "yuzuru", "meaning_vi": "nhượng lại, từ bỏ", "part_of_speech": "verb", "tags": ["yield", "give", "concede"]},
-  {"word": "帯びる", "reading": "おびる", "romaji": "obiru", "meaning_vi": "mang, chứa đựng", "part_of_speech": "verb", "tags": ["bear", "carry", "have"]},
-  {"word": "呪う", "reading": "のろう", "romaji": "norou", "meaning_vi": "nguyền rủa, chửi rủa", "part_of_speech": "verb", "tags": ["curse", "damn", "hex"]},
-  {"word": "扱う", "reading": "あつかう", "romaji": "atsukaou", "meaning_vi": "xử lý, đối xử", "part_of_speech": "verb", "tags": ["handle", "treat", "manage"]},
-  {"word": "頼る", "reading": "たよる", "romaji": "tayoru", "meaning_vi": "dựa vào, tin cậy", "part_of_speech": "verb", "tags": ["rely on", "depend", "trust"]},
-  {"word": "賭ける", "reading": "かける", "romaji": "kakeru", "meaning_vi": "cược, đặt cược", "part_of_speech": "verb", "tags": ["bet", "gamble", "wager"]},
-  {"word": "詰める", "reading": "つめる", "romaji": "tsumeru", "meaning_vi": "nhồi, nén, vắn tắt", "part_of_speech": "verb", "tags": ["stuff", "pack", "condense"]},
-  {"word": "詰まる", "reading": "つまる", "romaji": "tsumaru", "meaning_vi": "bị tắc, kết lại", "part_of_speech": "verb", "tags": ["clog", "jam", "boil down"]},
-  {"word": "述べる", "reading": "のべる", "romaji": "noberu", "meaning_vi": "trình bày, nói", "part_of_speech": "verb", "tags": ["state", "express", "recount"]},
-  {"word": "滅びる", "reading": "ほろびる", "romaji": "horobiru", "meaning_vi": "bị tiêu diệt, tuyệt chủng", "part_of_speech": "verb", "tags": ["perish", "be destroyed", "decline"]},
-  {"word": "焼ける", "reading": "やける", "romaji": "yakeru", "meaning_vi": "bị cháy, nóng", "part_of_speech": "verb", "tags": ["burn", "be roasted", "heat"]},
-  {"word": "磨く", "reading": "みがく", "romaji": "migaku", "meaning_vi": "đánh bóng, mài", "part_of_speech": "verb", "tags": ["polish", "grind", "hone"]},
-  {"word": "拭う", "reading": "ぬぐう", "romaji": "nuguu", "meaning_vi": "lau, chùi", "part_of_speech": "verb", "tags": ["wipe", "dry", "rub"]},
-  {"word": "寄る", "reading": "よる", "romaji": "yoru", "meaning_vi": "ghé, lại gần", "part_of_speech": "verb", "tags": ["approach", "gather", "call"]},
-  {"word": "削る", "reading": "けずる", "romaji": "kezuru", "meaning_vi": "cạo, bào", "part_of_speech": "verb", "tags": ["shave", "carve", "reduce"]},
-  {"word": "裂く", "reading": "さく", "romaji": "saku", "meaning_vi": "xé, rách", "part_of_speech": "verb", "tags": ["tear", "split", "rip"]},
-  {"word": "絡む", "reading": "からむ", "romaji": "karamu", "meaning_vi": "quấn, cắm chặt", "part_of_speech": "verb", "tags": ["twine", "entangle", "involve"]},
-  {"word": "絡める", "reading": "からめる", "romaji": "karameru", "meaning_vi": "quấn, cắm", "part_of_speech": "verb", "tags": ["entwine", "tangle", "entrap"]},
-  {"word": "萎える", "reading": "しなえる", "romaji": "shinaeru", "meaning_vi": "héo, tàn", "part_of_speech": "verb", "tags": ["wither", "droop", "wilt"]},
-  {"word": "栄える", "reading": "さかえる", "romaji": "sakeru", "meaning_vi": "thịnh vượng, phát triển", "part_of_speech": "verb", "tags": ["flourish", "prosper", "thrive"]},
-  {"word": "衰える", "reading": "おとろえる", "romaji": "otoroeru", "meaning_vi": "yếu đi, suy thoái", "part_of_speech": "verb", "tags": ["decline", "weaken", "deteriorate"]},
-  {"word": "劣る", "reading": "おとる", "romaji": "otoru", "meaning_vi": "thua, yếu hơn", "part_of_speech": "verb", "tags": ["be inferior", "lose", "fail"]},
-  {"word": "勝る", "reading": "まさる", "romaji": "masaru", "meaning_vi": "hơn, tốt hơn", "part_of_speech": "verb", "tags": ["surpass", "exceed", "outweigh"]},
-  {"word": "優る", "reading": "すぐれる", "romaji": "sugureru", "meaning_vi": "xuất sắc, vượt trội", "part_of_speech": "verb", "tags": ["excel", "be superior", "stand out"]},
-  {"word": "逆らう", "reading": "さからう", "romaji": "sakarou", "meaning_vi": "phản kháng, chống lại", "part_of_speech": "verb", "tags": ["resist", "defy", "oppose"]},
-  {"word": "漏らす", "reading": "もらす", "romaji": "morasu", "meaning_vi": "lọc, rò rỉ", "part_of_speech": "verb", "tags": ["leak", "disclose", "let out"]},
-  {"word": "漏れる", "reading": "もれる", "romaji": "moreru", "meaning_vi": "rò, lộ", "part_of_speech": "verb", "tags": ["leak", "slip", "escape"]},
-  {"word": "濡らす", "reading": "ぬらす", "romaji": "nurasu", "meaning_vi": "làm ướt", "part_of_speech": "verb", "tags": ["wet", "moisten", "dampen"]},
-  {"word": "濡れる", "reading": "ぬれる", "romaji": "nureru", "meaning_vi": "ướt, tẫm", "part_of_speech": "verb", "tags": ["be wet", "get soaked", "moisten"]},
-  {"word": "淀む", "reading": "よどむ", "romaji": "yodomu", "meaning_vi": "đọng lại, ngập ngưỡng", "part_of_speech": "verb", "tags": ["stagnate", "be cloudy", "hesitate"]},
-  {"word": "澄む", "reading": "すむ", "romaji": "sumu", "meaning_vi": "trong, sáng", "part_of_speech": "verb", "tags": ["be clear", "be serene", "be pure"]},
-  {"word": "澄ます", "reading": "すます", "romaji": "sumasu", "meaning_vi": "làm sáng, xua tan", "part_of_speech": "verb", "tags": ["clarify", "make clear", "clear"]},
-  {"word": "噴く", "reading": "ふく", "romaji": "fuku", "meaning_vi": "phun, xịt", "part_of_speech": "verb", "tags": ["spurt", "spout", "blow"]},
-  {"word": "吹く", "reading": "ふく", "romaji": "fuku", "meaning_vi": "thổi, gió thổi", "part_of_speech": "verb", "tags": ["blow", "wind", "fan"]},
-  {"word": "吹き出す", "reading": "ふきだす", "romaji": "fukidasu", "meaning_vi": "bật cười, phun ra", "part_of_speech": "verb", "tags": ["burst out laughing", "spurt", "erupt"]},
-  {"word": "吹き飛ぶ", "reading": "ふきとぶ", "romaji": "fukitobu", "meaning_vi": "thổi bay, bị thổi bay", "part_of_speech": "verb", "tags": ["be blown away", "be swept away"]},
-  {"word": "抉る", "reading": "こじる", "romaji": "kojiru", "meaning_vi": "ngoéo, móc", "part_of_speech": "verb", "tags": ["pry", "gouge", "extract"]},
-  {"word": "抉出", "reading": "ていしゅつ", "romaji": "teishutsu", "meaning_vi": "chiết xuất", "part_of_speech": "verb", "tags": ["extraction", "disclosure"]},
-  {"word": "弄ぶ", "reading": "もてあそぶ", "romaji": "moteasonobu", "meaning_vi": "chơi đùa, lợi dụng", "part_of_speech": "verb", "tags": ["trifle", "toy with", "manipulate"]},
-  {"word": "弄る", "reading": "いじる", "romaji": "ijiru", "meaning_vi": "sờ, chạm", "part_of_speech": "verb", "tags": ["touch", "meddle", "tinker"]},
-  {"word": "弄ぶ", "reading": "からかう", "romaji": "karakau", "meaning_vi": "chọc cười, đấu đá", "part_of_speech": "verb", "tags": ["tease", "banter", "joke"]},
-  {"word": "嘆く", "reading": "なげく", "romaji": "nageku", "meaning_vi": "than vãn, thất vọng", "part_of_speech": "verb", "tags": ["sigh", "lament", "grieve"]},
-  {"word": "嘯く", "reading": "うそぶく", "romaji": "usobuku", "meaning_vi": "tỏ vẻ, giả vờ", "part_of_speech": "verb", "tags": ["pretend", "feign", "assume"]},
-  {"word": "啀む", "reading": "あうむ", "romaji": "aomu", "meaning_vi": "xung khắc, cối xay", "part_of_speech": "verb", "tags": ["clash", "conflict", "grind"]},
-  {"word": "嗤う", "reading": "わらう", "romaji": "warau", "meaning_vi": "cười, cười nhạo", "part_of_speech": "verb", "tags": ["laugh", "smile", "scoff"]},
-  {"word": "唆す", "reading": "そそのかす", "romaji": "sosonokasu", "meaning_vi": "xui bẩy, lôi kéo", "part_of_speech": "verb", "tags": ["incite", "instigate", "tempt"]},
-  {"word": "嗄らす", "reading": "かれる", "romaji": "kareru", "meaning_vi": "khàn", "part_of_speech": "verb", "tags": ["be hoarse", "go dry"]},
-  {"word": "唸る", "reading": "うなる", "romaji": "unaru", "meaning_vi": "rên, kêu", "part_of_speech": "verb", "tags": ["moan", "groan", "sing"]},
-  {"word": "唄う", "reading": "うたう", "romaji": "utau", "meaning_vi": "hát", "part_of_speech": "verb", "tags": ["sing", "chant", "recite"]},
-  {"word": "喘ぐ", "reading": "あえぐ", "romaji": "aegu", "meaning_vi": "thở dốc", "part_of_speech": "verb", "tags": ["pant", "gasp", "struggle"]},
-  {"word": "嘗める", "reading": "なめる", "romaji": "nameru", "meaning_vi": "liếm, nếm thử", "part_of_speech": "verb", "tags": ["lick", "taste", "sample"]},
-  {"word": "啜る", "reading": "すする", "romaji": "susuru", "meaning_vi": "sip, hít", "part_of_speech": "verb", "tags": ["sip", "slurp", "sniff"]},
-  {"word": "吮う", "reading": "すう", "romaji": "suu", "meaning_vi": "hút, thở", "part_of_speech": "verb", "tags": ["suck", "draw", "inhale"]},
-  {"word": "吐く", "reading": "はく", "romaji": "haku", "meaning_vi": "phun, nôn", "part_of_speech": "verb", "tags": ["spit", "vomit", "utter"]},
-  {"word": "咬む", "reading": "かむ", "romaji": "kamu", "meaning_vi": "cắn, nhai", "part_of_speech": "verb", "tags": ["bite", "chew", "gnaw"]},
-  {"word": "咳く", "reading": "しわぶく", "romaji": "shiwabuku", "meaning_vi": "ho, sụt", "part_of_speech": "verb", "tags": ["cough", "hack"]},
-  {"word": "嗅ぐ", "reading": "かぐ", "romaji": "kagu", "meaning_vi": "ngửi", "part_of_speech": "verb", "tags": ["smell", "sniff", "nose"]},
-  {"word": "嗷く", "reading": "さけぶ", "romaji": "sakebu", "meaning_vi": "kêu la, kêu gào", "part_of_speech": "verb", "tags": ["cry", "shout", "wail"]},
-  {"word": "唱える", "reading": "となえる", "romaji": "tonaeru", "meaning_vi": "hát, chim hót", "part_of_speech": "verb", "tags": ["intone", "chant", "recite"]},
-  {"word": "嘱する", "reading": "しょくする", "romaji": "shoku-suru", "meaning_vi": "giao phó, nhờ cậy", "part_of_speech": "verb", "tags": ["entrust", "commission", "ask"]},
-  {"word": "肯定", "reading": "こうてい", "romaji": "koutei", "meaning_vi": "khẳng định, đồng ý", "part_of_speech": "noun", "tags": ["affirmation", "acknowledgment", "consent"]},
-  {"word": "否定", "reading": "ひてい", "romaji": "hitei", "meaning_vi": "phủ nhận, từ chối", "part_of_speech": "noun", "tags": ["negation", "denial", "rejection"]},
-  {"word": "肯う", "reading": "うなずく", "romaji": "unazuku", "meaning_vi": "gật đầu, nhất trí", "part_of_speech": "verb", "tags": ["nod", "agree", "assent"]},
-  {"word": "唯", "reading": "ただ", "romaji": "tada", "meaning_vi": "chỉ, duy nhất", "part_of_speech": "adverb", "tags": ["only", "merely", "sole"]},
-  {"word": "果たして", "reading": "はたして", "romaji": "hatashite", "meaning_vi": "có thực sự, quả vậy", "part_of_speech": "adverb", "tags": ["really", "truly", "indeed"]},
-  {"word": "須く", "reading": "すべからく", "romaji": "subekaraku", "meaning_vi": "phải, nên", "part_of_speech": "adverb", "tags": ["should", "must", "ought"]},
-  {"word": "抑々", "reading": "そもそも", "romaji": "somosomo", "meaning_vi": "từ đầu, nguyên nhân", "part_of_speech": "adverb", "tags": ["in the first place", "originally", "after all"]},
-  {"word": "寧ろ", "reading": "むしろ", "romaji": "mushiro", "meaning_vi": "đúng hơn, ngược lại", "part_of_speech": "adverb", "tags": ["rather", "instead", "on the contrary"]},
-  {"word": "況や", "reading": "いわんや", "romaji": "iwanaya", "meaning_vi": "huống chi, thậm chí", "part_of_speech": "adverb", "tags": ["much less", "let alone", "all the more"]},
-  {"word": "由来", "reading": "ゆらい", "romaji": "yurai", "meaning_vi": "nguồn gốc, bắt nguồn", "part_of_speech": "noun", "tags": ["origin", "source", "derivation"]},
-  {"word": "来し方", "reading": "きしかた", "romaji": "kishikata", "meaning_vi": "quá khứ, cách tới", "part_of_speech": "noun", "tags": ["past", "coming way", "history"]},
-  {"word": "行く末", "reading": "ゆくすえ", "romaji": "yukusue", "meaning_vi": "tương lai, hết cuộc", "part_of_speech": "noun", "tags": ["future", "end", "fate"]},
-  {"word": "漸進", "reading": "ぜんしん", "romaji": "zenshin", "meaning_vi": "tiến triển từng bước", "part_of_speech": "noun", "tags": ["gradual progress", "step-by-step"]}
+  {
+    "word": "及ぶ",
+    "reading": "およぶ",
+    "romaji": "oyobu",
+    "meaning_vi": "tới, đạt tới, ảnh hưởng",
+    "part_of_speech": "verb",
+    "tags": [
+      "reach",
+      "extend",
+      "affect"
+    ]
+  },
+  {
+    "word": "宛てる",
+    "reading": "あてる",
+    "romaji": "ateru",
+    "meaning_vi": "gửi đến, dành cho",
+    "part_of_speech": "verb",
+    "tags": [
+      "address",
+      "target",
+      "allocate"
+    ]
+  },
+  {
+    "word": "伴う",
+    "reading": "ともなう",
+    "romaji": "tomonau",
+    "meaning_vi": "đi kèm, kèm theo",
+    "part_of_speech": "verb",
+    "tags": [
+      "accompany",
+      "involve",
+      "entail"
+    ]
+  },
+  {
+    "word": "替わる",
+    "reading": "かわる",
+    "romaji": "kawaru",
+    "meaning_vi": "thay thế, thay đổi",
+    "part_of_speech": "verb",
+    "tags": [
+      "replace",
+      "change",
+      "substitute"
+    ]
+  },
+  {
+    "word": "構える",
+    "reading": "かまえる",
+    "romaji": "kamaeru",
+    "meaning_vi": "chuẩn bị, xây dựng",
+    "part_of_speech": "verb",
+    "tags": [
+      "prepare",
+      "build",
+      "establish"
+    ]
+  },
+  {
+    "word": "殖える",
+    "reading": "ふえる",
+    "romaji": "fueru",
+    "meaning_vi": "tăng, nhân đôi",
+    "part_of_speech": "verb",
+    "tags": [
+      "increase",
+      "multiply",
+      "grow"
+    ]
+  },
+  {
+    "word": "嘲る",
+    "reading": "あざける",
+    "romaji": "azakeru",
+    "meaning_vi": "chế nhạo, cười nhạo",
+    "part_of_speech": "verb",
+    "tags": [
+      "mock",
+      "scorn",
+      "deride"
+    ]
+  },
+  {
+    "word": "譲る",
+    "reading": "ゆずる",
+    "romaji": "yuzuru",
+    "meaning_vi": "nhượng lại, từ bỏ",
+    "part_of_speech": "verb",
+    "tags": [
+      "yield",
+      "give",
+      "concede"
+    ]
+  },
+  {
+    "word": "帯びる",
+    "reading": "おびる",
+    "romaji": "obiru",
+    "meaning_vi": "mang, chứa đựng",
+    "part_of_speech": "verb",
+    "tags": [
+      "bear",
+      "carry",
+      "have"
+    ]
+  },
+  {
+    "word": "呪う",
+    "reading": "のろう",
+    "romaji": "norou",
+    "meaning_vi": "nguyền rủa, chửi rủa",
+    "part_of_speech": "verb",
+    "tags": [
+      "curse",
+      "damn",
+      "hex"
+    ]
+  },
+  {
+    "word": "扱う",
+    "reading": "あつかう",
+    "romaji": "atsukaou",
+    "meaning_vi": "xử lý, đối xử",
+    "part_of_speech": "verb",
+    "tags": [
+      "handle",
+      "treat",
+      "manage"
+    ]
+  },
+  {
+    "word": "頼る",
+    "reading": "たよる",
+    "romaji": "tayoru",
+    "meaning_vi": "dựa vào, tin cậy",
+    "part_of_speech": "verb",
+    "tags": [
+      "rely on",
+      "depend",
+      "trust"
+    ]
+  },
+  {
+    "word": "賭ける",
+    "reading": "かける",
+    "romaji": "kakeru",
+    "meaning_vi": "cược, đặt cược",
+    "part_of_speech": "verb",
+    "tags": [
+      "bet",
+      "gamble",
+      "wager"
+    ]
+  },
+  {
+    "word": "詰める",
+    "reading": "つめる",
+    "romaji": "tsumeru",
+    "meaning_vi": "nhồi, nén, vắn tắt",
+    "part_of_speech": "verb",
+    "tags": [
+      "stuff",
+      "pack",
+      "condense"
+    ]
+  },
+  {
+    "word": "詰まる",
+    "reading": "つまる",
+    "romaji": "tsumaru",
+    "meaning_vi": "bị tắc, kết lại",
+    "part_of_speech": "verb",
+    "tags": [
+      "clog",
+      "jam",
+      "boil down"
+    ]
+  },
+  {
+    "word": "述べる",
+    "reading": "のべる",
+    "romaji": "noberu",
+    "meaning_vi": "trình bày, nói",
+    "part_of_speech": "verb",
+    "tags": [
+      "state",
+      "express",
+      "recount"
+    ]
+  },
+  {
+    "word": "滅びる",
+    "reading": "ほろびる",
+    "romaji": "horobiru",
+    "meaning_vi": "bị tiêu diệt, tuyệt chủng",
+    "part_of_speech": "verb",
+    "tags": [
+      "perish",
+      "be destroyed",
+      "decline"
+    ]
+  },
+  {
+    "word": "焼ける",
+    "reading": "やける",
+    "romaji": "yakeru",
+    "meaning_vi": "bị cháy, nóng",
+    "part_of_speech": "verb",
+    "tags": [
+      "burn",
+      "be roasted",
+      "heat"
+    ]
+  },
+  {
+    "word": "磨く",
+    "reading": "みがく",
+    "romaji": "migaku",
+    "meaning_vi": "đánh bóng, mài",
+    "part_of_speech": "verb",
+    "tags": [
+      "polish",
+      "grind",
+      "hone"
+    ]
+  },
+  {
+    "word": "拭う",
+    "reading": "ぬぐう",
+    "romaji": "nuguu",
+    "meaning_vi": "lau, chùi",
+    "part_of_speech": "verb",
+    "tags": [
+      "wipe",
+      "dry",
+      "rub"
+    ]
+  },
+  {
+    "word": "寄る",
+    "reading": "よる",
+    "romaji": "yoru",
+    "meaning_vi": "ghé, lại gần",
+    "part_of_speech": "verb",
+    "tags": [
+      "approach",
+      "gather",
+      "call"
+    ]
+  },
+  {
+    "word": "削る",
+    "reading": "けずる",
+    "romaji": "kezuru",
+    "meaning_vi": "cạo, bào",
+    "part_of_speech": "verb",
+    "tags": [
+      "shave",
+      "carve",
+      "reduce"
+    ]
+  },
+  {
+    "word": "裂く",
+    "reading": "さく",
+    "romaji": "saku",
+    "meaning_vi": "xé, rách",
+    "part_of_speech": "verb",
+    "tags": [
+      "tear",
+      "split",
+      "rip"
+    ]
+  },
+  {
+    "word": "絡む",
+    "reading": "からむ",
+    "romaji": "karamu",
+    "meaning_vi": "quấn, cắm chặt",
+    "part_of_speech": "verb",
+    "tags": [
+      "twine",
+      "entangle",
+      "involve"
+    ]
+  },
+  {
+    "word": "絡める",
+    "reading": "からめる",
+    "romaji": "karameru",
+    "meaning_vi": "quấn, cắm",
+    "part_of_speech": "verb",
+    "tags": [
+      "entwine",
+      "tangle",
+      "entrap"
+    ]
+  },
+  {
+    "word": "萎える",
+    "reading": "しなえる",
+    "romaji": "shinaeru",
+    "meaning_vi": "héo, tàn",
+    "part_of_speech": "verb",
+    "tags": [
+      "wither",
+      "droop",
+      "wilt"
+    ]
+  },
+  {
+    "word": "栄える",
+    "reading": "さかえる",
+    "romaji": "sakeru",
+    "meaning_vi": "thịnh vượng, phát triển",
+    "part_of_speech": "verb",
+    "tags": [
+      "flourish",
+      "prosper",
+      "thrive"
+    ]
+  },
+  {
+    "word": "衰える",
+    "reading": "おとろえる",
+    "romaji": "otoroeru",
+    "meaning_vi": "yếu đi, suy thoái",
+    "part_of_speech": "verb",
+    "tags": [
+      "decline",
+      "weaken",
+      "deteriorate"
+    ]
+  },
+  {
+    "word": "劣る",
+    "reading": "おとる",
+    "romaji": "otoru",
+    "meaning_vi": "thua, yếu hơn",
+    "part_of_speech": "verb",
+    "tags": [
+      "be inferior",
+      "lose",
+      "fail"
+    ]
+  },
+  {
+    "word": "勝る",
+    "reading": "まさる",
+    "romaji": "masaru",
+    "meaning_vi": "hơn, tốt hơn",
+    "part_of_speech": "verb",
+    "tags": [
+      "surpass",
+      "exceed",
+      "outweigh"
+    ]
+  },
+  {
+    "word": "優る",
+    "reading": "すぐれる",
+    "romaji": "sugureru",
+    "meaning_vi": "xuất sắc, vượt trội",
+    "part_of_speech": "verb",
+    "tags": [
+      "excel",
+      "be superior",
+      "stand out"
+    ]
+  },
+  {
+    "word": "逆らう",
+    "reading": "さからう",
+    "romaji": "sakarou",
+    "meaning_vi": "phản kháng, chống lại",
+    "part_of_speech": "verb",
+    "tags": [
+      "resist",
+      "defy",
+      "oppose"
+    ]
+  },
+  {
+    "word": "漏らす",
+    "reading": "もらす",
+    "romaji": "morasu",
+    "meaning_vi": "lọc, rò rỉ",
+    "part_of_speech": "verb",
+    "tags": [
+      "leak",
+      "disclose",
+      "let out"
+    ]
+  },
+  {
+    "word": "漏れる",
+    "reading": "もれる",
+    "romaji": "moreru",
+    "meaning_vi": "rò, lộ",
+    "part_of_speech": "verb",
+    "tags": [
+      "leak",
+      "slip",
+      "escape"
+    ]
+  },
+  {
+    "word": "濡らす",
+    "reading": "ぬらす",
+    "romaji": "nurasu",
+    "meaning_vi": "làm ướt",
+    "part_of_speech": "verb",
+    "tags": [
+      "wet",
+      "moisten",
+      "dampen"
+    ]
+  },
+  {
+    "word": "濡れる",
+    "reading": "ぬれる",
+    "romaji": "nureru",
+    "meaning_vi": "ướt, tẫm",
+    "part_of_speech": "verb",
+    "tags": [
+      "be wet",
+      "get soaked",
+      "moisten"
+    ]
+  },
+  {
+    "word": "淀む",
+    "reading": "よどむ",
+    "romaji": "yodomu",
+    "meaning_vi": "đọng lại, ngập ngưỡng",
+    "part_of_speech": "verb",
+    "tags": [
+      "stagnate",
+      "be cloudy",
+      "hesitate"
+    ]
+  },
+  {
+    "word": "澄む",
+    "reading": "すむ",
+    "romaji": "sumu",
+    "meaning_vi": "trong, sáng",
+    "part_of_speech": "verb",
+    "tags": [
+      "be clear",
+      "be serene",
+      "be pure"
+    ]
+  },
+  {
+    "word": "澄ます",
+    "reading": "すます",
+    "romaji": "sumasu",
+    "meaning_vi": "làm sáng, xua tan",
+    "part_of_speech": "verb",
+    "tags": [
+      "clarify",
+      "make clear",
+      "clear"
+    ]
+  },
+  {
+    "word": "噴く",
+    "reading": "ふく",
+    "romaji": "fuku",
+    "meaning_vi": "phun, xịt",
+    "part_of_speech": "verb",
+    "tags": [
+      "spurt",
+      "spout",
+      "blow"
+    ]
+  },
+  {
+    "word": "吹く",
+    "reading": "ふく",
+    "romaji": "fuku",
+    "meaning_vi": "thổi, gió thổi",
+    "part_of_speech": "verb",
+    "tags": [
+      "blow",
+      "wind",
+      "fan"
+    ]
+  },
+  {
+    "word": "吹き出す",
+    "reading": "ふきだす",
+    "romaji": "fukidasu",
+    "meaning_vi": "bật cười, phun ra",
+    "part_of_speech": "verb",
+    "tags": [
+      "burst out laughing",
+      "spurt",
+      "erupt"
+    ]
+  },
+  {
+    "word": "吹き飛ぶ",
+    "reading": "ふきとぶ",
+    "romaji": "fukitobu",
+    "meaning_vi": "thổi bay, bị thổi bay",
+    "part_of_speech": "verb",
+    "tags": [
+      "be blown away",
+      "be swept away"
+    ]
+  },
+  {
+    "word": "抉る",
+    "reading": "こじる",
+    "romaji": "kojiru",
+    "meaning_vi": "ngoéo, móc",
+    "part_of_speech": "verb",
+    "tags": [
+      "pry",
+      "gouge",
+      "extract"
+    ]
+  },
+  {
+    "word": "抉出",
+    "reading": "ていしゅつ",
+    "romaji": "teishutsu",
+    "meaning_vi": "chiết xuất",
+    "part_of_speech": "verb",
+    "tags": [
+      "extraction",
+      "disclosure"
+    ]
+  },
+  {
+    "word": "弄ぶ",
+    "reading": "もてあそぶ",
+    "romaji": "moteasonobu",
+    "meaning_vi": "chơi đùa, lợi dụng",
+    "part_of_speech": "verb",
+    "tags": [
+      "trifle",
+      "toy with",
+      "manipulate"
+    ]
+  },
+  {
+    "word": "弄る",
+    "reading": "いじる",
+    "romaji": "ijiru",
+    "meaning_vi": "sờ, chạm",
+    "part_of_speech": "verb",
+    "tags": [
+      "touch",
+      "meddle",
+      "tinker"
+    ]
+  },
+  {
+    "word": "嘆く",
+    "reading": "なげく",
+    "romaji": "nageku",
+    "meaning_vi": "than vãn, thất vọng",
+    "part_of_speech": "verb",
+    "tags": [
+      "sigh",
+      "lament",
+      "grieve"
+    ]
+  },
+  {
+    "word": "嘯く",
+    "reading": "うそぶく",
+    "romaji": "usobuku",
+    "meaning_vi": "tỏ vẻ, giả vờ",
+    "part_of_speech": "verb",
+    "tags": [
+      "pretend",
+      "feign",
+      "assume"
+    ]
+  },
+  {
+    "word": "啀む",
+    "reading": "あうむ",
+    "romaji": "aomu",
+    "meaning_vi": "xung khắc, cối xay",
+    "part_of_speech": "verb",
+    "tags": [
+      "clash",
+      "conflict",
+      "grind"
+    ]
+  },
+  {
+    "word": "嗤う",
+    "reading": "わらう",
+    "romaji": "warau",
+    "meaning_vi": "cười, cười nhạo",
+    "part_of_speech": "verb",
+    "tags": [
+      "laugh",
+      "smile",
+      "scoff"
+    ]
+  },
+  {
+    "word": "唆す",
+    "reading": "そそのかす",
+    "romaji": "sosonokasu",
+    "meaning_vi": "xui bẩy, lôi kéo",
+    "part_of_speech": "verb",
+    "tags": [
+      "incite",
+      "instigate",
+      "tempt"
+    ]
+  },
+  {
+    "word": "嗄らす",
+    "reading": "かれる",
+    "romaji": "kareru",
+    "meaning_vi": "khàn",
+    "part_of_speech": "verb",
+    "tags": [
+      "be hoarse",
+      "go dry"
+    ]
+  },
+  {
+    "word": "唸る",
+    "reading": "うなる",
+    "romaji": "unaru",
+    "meaning_vi": "rên, kêu",
+    "part_of_speech": "verb",
+    "tags": [
+      "moan",
+      "groan",
+      "sing"
+    ]
+  },
+  {
+    "word": "唄う",
+    "reading": "うたう",
+    "romaji": "utau",
+    "meaning_vi": "hát",
+    "part_of_speech": "verb",
+    "tags": [
+      "sing",
+      "chant",
+      "recite"
+    ]
+  },
+  {
+    "word": "喘ぐ",
+    "reading": "あえぐ",
+    "romaji": "aegu",
+    "meaning_vi": "thở dốc",
+    "part_of_speech": "verb",
+    "tags": [
+      "pant",
+      "gasp",
+      "struggle"
+    ]
+  },
+  {
+    "word": "嘗める",
+    "reading": "なめる",
+    "romaji": "nameru",
+    "meaning_vi": "liếm, nếm thử",
+    "part_of_speech": "verb",
+    "tags": [
+      "lick",
+      "taste",
+      "sample"
+    ]
+  },
+  {
+    "word": "啜る",
+    "reading": "すする",
+    "romaji": "susuru",
+    "meaning_vi": "sip, hít",
+    "part_of_speech": "verb",
+    "tags": [
+      "sip",
+      "slurp",
+      "sniff"
+    ]
+  },
+  {
+    "word": "吮う",
+    "reading": "すう",
+    "romaji": "suu",
+    "meaning_vi": "hút, thở",
+    "part_of_speech": "verb",
+    "tags": [
+      "suck",
+      "draw",
+      "inhale"
+    ]
+  },
+  {
+    "word": "吐く",
+    "reading": "はく",
+    "romaji": "haku",
+    "meaning_vi": "phun, nôn",
+    "part_of_speech": "verb",
+    "tags": [
+      "spit",
+      "vomit",
+      "utter"
+    ]
+  },
+  {
+    "word": "咬む",
+    "reading": "かむ",
+    "romaji": "kamu",
+    "meaning_vi": "cắn, nhai",
+    "part_of_speech": "verb",
+    "tags": [
+      "bite",
+      "chew",
+      "gnaw"
+    ]
+  },
+  {
+    "word": "咳く",
+    "reading": "しわぶく",
+    "romaji": "shiwabuku",
+    "meaning_vi": "ho, sụt",
+    "part_of_speech": "verb",
+    "tags": [
+      "cough",
+      "hack"
+    ]
+  },
+  {
+    "word": "嗅ぐ",
+    "reading": "かぐ",
+    "romaji": "kagu",
+    "meaning_vi": "ngửi",
+    "part_of_speech": "verb",
+    "tags": [
+      "smell",
+      "sniff",
+      "nose"
+    ]
+  },
+  {
+    "word": "嗷く",
+    "reading": "さけぶ",
+    "romaji": "sakebu",
+    "meaning_vi": "kêu la, kêu gào",
+    "part_of_speech": "verb",
+    "tags": [
+      "cry",
+      "shout",
+      "wail"
+    ]
+  },
+  {
+    "word": "唱える",
+    "reading": "となえる",
+    "romaji": "tonaeru",
+    "meaning_vi": "hát, chim hót",
+    "part_of_speech": "verb",
+    "tags": [
+      "intone",
+      "chant",
+      "recite"
+    ]
+  },
+  {
+    "word": "嘱する",
+    "reading": "しょくする",
+    "romaji": "shoku-suru",
+    "meaning_vi": "giao phó, nhờ cậy",
+    "part_of_speech": "verb",
+    "tags": [
+      "entrust",
+      "commission",
+      "ask"
+    ]
+  },
+  {
+    "word": "肯定",
+    "reading": "こうてい",
+    "romaji": "koutei",
+    "meaning_vi": "khẳng định, đồng ý",
+    "part_of_speech": "noun",
+    "tags": [
+      "affirmation",
+      "acknowledgment",
+      "consent"
+    ]
+  },
+  {
+    "word": "否定",
+    "reading": "ひてい",
+    "romaji": "hitei",
+    "meaning_vi": "phủ nhận, từ chối",
+    "part_of_speech": "noun",
+    "tags": [
+      "negation",
+      "denial",
+      "rejection"
+    ]
+  },
+  {
+    "word": "肯う",
+    "reading": "うなずく",
+    "romaji": "unazuku",
+    "meaning_vi": "gật đầu, nhất trí",
+    "part_of_speech": "verb",
+    "tags": [
+      "nod",
+      "agree",
+      "assent"
+    ]
+  },
+  {
+    "word": "唯",
+    "reading": "ただ",
+    "romaji": "tada",
+    "meaning_vi": "chỉ, duy nhất",
+    "part_of_speech": "adverb",
+    "tags": [
+      "only",
+      "merely",
+      "sole"
+    ]
+  },
+  {
+    "word": "果たして",
+    "reading": "はたして",
+    "romaji": "hatashite",
+    "meaning_vi": "có thực sự, quả vậy",
+    "part_of_speech": "adverb",
+    "tags": [
+      "really",
+      "truly",
+      "indeed"
+    ]
+  },
+  {
+    "word": "須く",
+    "reading": "すべからく",
+    "romaji": "subekaraku",
+    "meaning_vi": "phải, nên",
+    "part_of_speech": "adverb",
+    "tags": [
+      "should",
+      "must",
+      "ought"
+    ]
+  },
+  {
+    "word": "抑々",
+    "reading": "そもそも",
+    "romaji": "somosomo",
+    "meaning_vi": "từ đầu, nguyên nhân",
+    "part_of_speech": "adverb",
+    "tags": [
+      "in the first place",
+      "originally",
+      "after all"
+    ]
+  },
+  {
+    "word": "寧ろ",
+    "reading": "むしろ",
+    "romaji": "mushiro",
+    "meaning_vi": "đúng hơn, ngược lại",
+    "part_of_speech": "adverb",
+    "tags": [
+      "rather",
+      "instead",
+      "on the contrary"
+    ]
+  },
+  {
+    "word": "況や",
+    "reading": "いわんや",
+    "romaji": "iwanaya",
+    "meaning_vi": "huống chi, thậm chí",
+    "part_of_speech": "adverb",
+    "tags": [
+      "much less",
+      "let alone",
+      "all the more"
+    ]
+  },
+  {
+    "word": "来し方",
+    "reading": "きしかた",
+    "romaji": "kishikata",
+    "meaning_vi": "quá khứ, cách tới",
+    "part_of_speech": "noun",
+    "tags": [
+      "past",
+      "coming way",
+      "history"
+    ]
+  },
+  {
+    "word": "行く末",
+    "reading": "ゆくすえ",
+    "romaji": "yukusue",
+    "meaning_vi": "tương lai, hết cuộc",
+    "part_of_speech": "noun",
+    "tags": [
+      "future",
+      "end",
+      "fate"
+    ]
+  },
+  {
+    "word": "漸進",
+    "reading": "ぜんしん",
+    "romaji": "zenshin",
+    "meaning_vi": "tiến triển từng bước",
+    "part_of_speech": "noun",
+    "tags": [
+      "gradual progress",
+      "step-by-step"
+    ]
+  }
 ]

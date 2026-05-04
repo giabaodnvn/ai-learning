@@ -1,0 +1,1478 @@
+[
+  {
+    "word": "雇用",
+    "reading": "こよう",
+    "romaji": "koyou",
+    "meaning_vi": "tuyển dụng, thuê mướn",
+    "part_of_speech": "noun",
+    "tags": [
+      "employment",
+      "hiring",
+      "business"
+    ]
+  },
+  {
+    "word": "解雇",
+    "reading": "かいこ",
+    "romaji": "kaiko",
+    "meaning_vi": "sa thải, chấm dứt hợp đồng",
+    "part_of_speech": "noun",
+    "tags": [
+      "dismissal",
+      "termination",
+      "business"
+    ]
+  },
+  {
+    "word": "給与",
+    "reading": "きゅうよ",
+    "romaji": "kyuuyo",
+    "meaning_vi": "lương, tiền lương",
+    "part_of_speech": "noun",
+    "tags": [
+      "salary",
+      "wage",
+      "business"
+    ]
+  },
+  {
+    "word": "年収",
+    "reading": "ねんしゅう",
+    "romaji": "nenshuu",
+    "meaning_vi": "thu nhập hàng năm",
+    "part_of_speech": "noun",
+    "tags": [
+      "annual income",
+      "annual salary",
+      "business"
+    ]
+  },
+  {
+    "word": "給料",
+    "reading": "きゅうりょう",
+    "romaji": "kyuuryou",
+    "meaning_vi": "lương, tiền công",
+    "part_of_speech": "noun",
+    "tags": [
+      "salary",
+      "wages",
+      "business"
+    ]
+  },
+  {
+    "word": "報酬",
+    "reading": "ほうしゅう",
+    "romaji": "houshuu",
+    "meaning_vi": "tiền thưởng, phần thưởng",
+    "part_of_speech": "noun",
+    "tags": [
+      "remuneration",
+      "reward",
+      "business"
+    ]
+  },
+  {
+    "word": "無給",
+    "reading": "むきゅう",
+    "romaji": "mukyuu",
+    "meaning_vi": "không lương, không công",
+    "part_of_speech": "adjective",
+    "tags": [
+      "unpaid",
+      "voluntary",
+      "business"
+    ]
+  },
+  {
+    "word": "寸志",
+    "reading": "すんし",
+    "romaji": "sunshi",
+    "meaning_vi": "tiền lẻ, tiền bỏ túi",
+    "part_of_speech": "noun",
+    "tags": [
+      "gratuity",
+      "token",
+      "business"
+    ]
+  },
+  {
+    "word": "勤続年数",
+    "reading": "きんぞくねんすう",
+    "romaji": "kinzokunensu",
+    "meaning_vi": "năm công tác liên tục",
+    "part_of_speech": "noun",
+    "tags": [
+      "years of service",
+      "tenure",
+      "business"
+    ]
+  },
+  {
+    "word": "昇給",
+    "reading": "しょうきゅう",
+    "romaji": "shoukyu",
+    "meaning_vi": "tăng lương",
+    "part_of_speech": "noun",
+    "tags": [
+      "wage increase",
+      "raise",
+      "business"
+    ]
+  },
+  {
+    "word": "減給",
+    "reading": "げんきゅう",
+    "romaji": "genkyu",
+    "meaning_vi": "giảm lương",
+    "part_of_speech": "noun",
+    "tags": [
+      "wage cut",
+      "salary reduction",
+      "business"
+    ]
+  },
+  {
+    "word": "賞与",
+    "reading": "しょうよ",
+    "romaji": "shouyo",
+    "meaning_vi": "thưởng, tiền thưởng",
+    "part_of_speech": "noun",
+    "tags": [
+      "bonus",
+      "allowance",
+      "business"
+    ]
+  },
+  {
+    "word": "福利厚生",
+    "reading": "ふくりこうせい",
+    "romaji": "fukurikousei",
+    "meaning_vi": "phúc lợi, trợ cấp xã hội",
+    "part_of_speech": "noun",
+    "tags": [
+      "welfare",
+      "benefits",
+      "business"
+    ]
+  },
+  {
+    "word": "残業",
+    "reading": "ざんぎょう",
+    "romaji": "zangyou",
+    "meaning_vi": "làm thêm giờ, tăng ca",
+    "part_of_speech": "noun",
+    "tags": [
+      "overtime",
+      "extra work",
+      "business"
+    ]
+  },
+  {
+    "word": "定時",
+    "reading": "ていじ",
+    "romaji": "teiji",
+    "meaning_vi": "giờ quy định, giờ hành chính",
+    "part_of_speech": "noun",
+    "tags": [
+      "regular hours",
+      "scheduled time",
+      "business"
+    ]
+  },
+  {
+    "word": "勤務時間",
+    "reading": "きんむじかん",
+    "romaji": "kinmujikan",
+    "meaning_vi": "giờ làm việc",
+    "part_of_speech": "noun",
+    "tags": [
+      "working hours",
+      "business hours",
+      "business"
+    ]
+  },
+  {
+    "word": "出勤",
+    "reading": "しゅっきん",
+    "romaji": "shukkin",
+    "meaning_vi": "đến công ty, xuất quy đội",
+    "part_of_speech": "noun",
+    "tags": [
+      "attendance",
+      "going to work",
+      "business"
+    ]
+  },
+  {
+    "word": "欠勤",
+    "reading": "けっきん",
+    "romaji": "kekkin",
+    "meaning_vi": "vắng mặt, nghỉ không phép",
+    "part_of_speech": "noun",
+    "tags": [
+      "absence",
+      "absenteeism",
+      "business"
+    ]
+  },
+  {
+    "word": "遅刻",
+    "reading": "ちこく",
+    "romaji": "chikoku",
+    "meaning_vi": "đi muộn, trễ giờ",
+    "part_of_speech": "noun",
+    "tags": [
+      "lateness",
+      "tardiness",
+      "business"
+    ]
+  },
+  {
+    "word": "早退",
+    "reading": "そうたい",
+    "romaji": "soutai",
+    "meaning_vi": "về sớm, rời sớm",
+    "part_of_speech": "noun",
+    "tags": [
+      "early leaving",
+      "early departure",
+      "business"
+    ]
+  },
+  {
+    "word": "有給休暇",
+    "reading": "ゆうきゅうきゅうか",
+    "romaji": "yuukyuukyuuka",
+    "meaning_vi": "nghỉ có lương, phép lương",
+    "part_of_speech": "noun",
+    "tags": [
+      "paid leave",
+      "vacation",
+      "business"
+    ]
+  },
+  {
+    "word": "病休",
+    "reading": "びょうきゅう",
+    "romaji": "byoukyu",
+    "meaning_vi": "nghỉ ốm",
+    "part_of_speech": "noun",
+    "tags": [
+      "sick leave",
+      "medical leave",
+      "business"
+    ]
+  },
+  {
+    "word": "産休",
+    "reading": "さんきゅう",
+    "romaji": "sankyu",
+    "meaning_vi": "nghỉ sinh",
+    "part_of_speech": "noun",
+    "tags": [
+      "maternity leave",
+      "parental leave",
+      "business"
+    ]
+  },
+  {
+    "word": "育休",
+    "reading": "いくきゅう",
+    "romaji": "ikukyu",
+    "meaning_vi": "nghỉ chăm sóc con",
+    "part_of_speech": "noun",
+    "tags": [
+      "childcare leave",
+      "parental leave",
+      "business"
+    ]
+  },
+  {
+    "word": "研修",
+    "reading": "けんしゅう",
+    "romaji": "kenshuu",
+    "meaning_vi": "đào tạo, huấn luyện",
+    "part_of_speech": "noun",
+    "tags": [
+      "training",
+      "education",
+      "business"
+    ]
+  },
+  {
+    "word": "セミナー",
+    "reading": "せみなー",
+    "romaji": "seminaa",
+    "meaning_vi": "hội thảo, seminar",
+    "part_of_speech": "noun",
+    "tags": [
+      "seminar",
+      "workshop",
+      "business"
+    ]
+  },
+  {
+    "word": "会議",
+    "reading": "かいぎ",
+    "romaji": "kaigi",
+    "meaning_vi": "hội họp, cuộc họp",
+    "part_of_speech": "noun",
+    "tags": [
+      "meeting",
+      "conference",
+      "business"
+    ]
+  },
+  {
+    "word": "打ち合わせ",
+    "reading": "うちあわせ",
+    "romaji": "uchiawase",
+    "meaning_vi": "bàn bạc, thảo luận",
+    "part_of_speech": "noun",
+    "tags": [
+      "discussion",
+      "briefing",
+      "business"
+    ]
+  },
+  {
+    "word": "会議室",
+    "reading": "かいぎしつ",
+    "romaji": "kaigishitsu",
+    "meaning_vi": "phòng họp",
+    "part_of_speech": "noun",
+    "tags": [
+      "conference room",
+      "meeting room",
+      "business"
+    ]
+  },
+  {
+    "word": "指示",
+    "reading": "しじ",
+    "romaji": "shiji",
+    "meaning_vi": "chỉ thị, hướng dẫn",
+    "part_of_speech": "noun",
+    "tags": [
+      "instruction",
+      "direction",
+      "business"
+    ]
+  },
+  {
+    "word": "命令",
+    "reading": "めいれい",
+    "romaji": "meirei",
+    "meaning_vi": "lệnh, chỉ lệnh",
+    "part_of_speech": "noun",
+    "tags": [
+      "order",
+      "command",
+      "business"
+    ]
+  },
+  {
+    "word": "報告書",
+    "reading": "ほうこくしょ",
+    "romaji": "houkokusho",
+    "meaning_vi": "báo cáo, bản báo cáo",
+    "part_of_speech": "noun",
+    "tags": [
+      "report",
+      "statement",
+      "business"
+    ]
+  },
+  {
+    "word": "企画",
+    "reading": "きかく",
+    "romaji": "kikaku",
+    "meaning_vi": "kế hoạch, đề án",
+    "part_of_speech": "noun",
+    "tags": [
+      "planning",
+      "project",
+      "business"
+    ]
+  },
+  {
+    "word": "営業",
+    "reading": "えいぎょう",
+    "romaji": "eigyou",
+    "meaning_vi": "kinh doanh, bán hàng",
+    "part_of_speech": "noun",
+    "tags": [
+      "business",
+      "sales",
+      "operation"
+    ]
+  },
+  {
+    "word": "営業所",
+    "reading": "えいぎょうしょ",
+    "romaji": "eigyousho",
+    "meaning_vi": "chi nhánh bán hàng, văn phòng kinh doanh",
+    "part_of_speech": "noun",
+    "tags": [
+      "branch office",
+      "sales office",
+      "business"
+    ]
+  },
+  {
+    "word": "代理店",
+    "reading": "だいりてん",
+    "romaji": "dairiten",
+    "meaning_vi": "cửa hàng đại lý",
+    "part_of_speech": "noun",
+    "tags": [
+      "agency",
+      "dealer",
+      "business"
+    ]
+  },
+  {
+    "word": "取引",
+    "reading": "とりひき",
+    "romaji": "torihiki",
+    "meaning_vi": "giao dịch, thương mại",
+    "part_of_speech": "noun",
+    "tags": [
+      "transaction",
+      "dealings",
+      "business"
+    ]
+  },
+  {
+    "word": "取引先",
+    "reading": "とりひきさき",
+    "romaji": "torihikisaki",
+    "meaning_vi": "khách hàng, đối tác giao dịch",
+    "part_of_speech": "noun",
+    "tags": [
+      "client",
+      "business partner",
+      "business"
+    ]
+  },
+  {
+    "word": "顧客",
+    "reading": "こきゃく",
+    "romaji": "kokyaku",
+    "meaning_vi": "khách hàng",
+    "part_of_speech": "noun",
+    "tags": [
+      "customer",
+      "client",
+      "business"
+    ]
+  },
+  {
+    "word": "商談",
+    "reading": "しょうだん",
+    "romaji": "shoudan",
+    "meaning_vi": "đàm phán thương mại",
+    "part_of_speech": "noun",
+    "tags": [
+      "business negotiation",
+      "sales talk",
+      "business"
+    ]
+  },
+  {
+    "word": "見積もり",
+    "reading": "みつもり",
+    "romaji": "mitsumori",
+    "meaning_vi": "dự tính, ước tính",
+    "part_of_speech": "noun",
+    "tags": [
+      "estimate",
+      "quotation",
+      "business"
+    ]
+  },
+  {
+    "word": "納期",
+    "reading": "のうき",
+    "romaji": "nouki",
+    "meaning_vi": "hạn giao hàng, thời hạn giao dịch",
+    "part_of_speech": "noun",
+    "tags": [
+      "delivery date",
+      "deadline",
+      "business"
+    ]
+  },
+  {
+    "word": "納入",
+    "reading": "のうにゅう",
+    "romaji": "nounyuu",
+    "meaning_vi": "giao hàng, cung cấp",
+    "part_of_speech": "noun",
+    "tags": [
+      "delivery",
+      "supply",
+      "business"
+    ]
+  },
+  {
+    "word": "領収書",
+    "reading": "りょうしゅうしょ",
+    "romaji": "ryoushuusho",
+    "meaning_vi": "hóa đơn, biên lai",
+    "part_of_speech": "noun",
+    "tags": [
+      "receipt",
+      "voucher",
+      "business"
+    ]
+  },
+  {
+    "word": "請求",
+    "reading": "せいきゅう",
+    "romaji": "seikyuu",
+    "meaning_vi": "yêu cầu thanh toán, hóa đơn",
+    "part_of_speech": "noun",
+    "tags": [
+      "billing",
+      "invoice",
+      "business"
+    ]
+  },
+  {
+    "word": "請求書",
+    "reading": "せいきゅうしょ",
+    "romaji": "seikyuusho",
+    "meaning_vi": "hóa đơn",
+    "part_of_speech": "noun",
+    "tags": [
+      "invoice",
+      "bill",
+      "business"
+    ]
+  },
+  {
+    "word": "納税",
+    "reading": "のうぜい",
+    "romaji": "nouzei",
+    "meaning_vi": "nộp thuế",
+    "part_of_speech": "noun",
+    "tags": [
+      "tax payment",
+      "taxation",
+      "business"
+    ]
+  },
+  {
+    "word": "所得税",
+    "reading": "しょとくぜい",
+    "romaji": "shotokuzei",
+    "meaning_vi": "thuế thu nhập",
+    "part_of_speech": "noun",
+    "tags": [
+      "income tax",
+      "personal tax",
+      "business"
+    ]
+  },
+  {
+    "word": "消費税",
+    "reading": "しょうひぜい",
+    "romaji": "shouhizei",
+    "meaning_vi": "thuế tiêu thụ",
+    "part_of_speech": "noun",
+    "tags": [
+      "consumption tax",
+      "sales tax",
+      "business"
+    ]
+  },
+  {
+    "word": "事業税",
+    "reading": "じぎょうぜい",
+    "romaji": "jigyouzei",
+    "meaning_vi": "thuế kinh doanh",
+    "part_of_speech": "noun",
+    "tags": [
+      "business tax",
+      "enterprise tax",
+      "business"
+    ]
+  },
+  {
+    "word": "保険",
+    "reading": "ほけん",
+    "romaji": "hoken",
+    "meaning_vi": "bảo hiểm",
+    "part_of_speech": "noun",
+    "tags": [
+      "insurance",
+      "coverage",
+      "business"
+    ]
+  },
+  {
+    "word": "生命保険",
+    "reading": "せいめいほけん",
+    "romaji": "seimeihoken",
+    "meaning_vi": "bảo hiểm nhân thọ",
+    "part_of_speech": "noun",
+    "tags": [
+      "life insurance",
+      "insurance",
+      "business"
+    ]
+  },
+  {
+    "word": "損害保険",
+    "reading": "そんがいほけん",
+    "romaji": "songaihoken",
+    "meaning_vi": "bảo hiểm tài sản",
+    "part_of_speech": "noun",
+    "tags": [
+      "property insurance",
+      "casualty insurance",
+      "business"
+    ]
+  },
+  {
+    "word": "契約者",
+    "reading": "けいやくしゃ",
+    "romaji": "keiyakusha",
+    "meaning_vi": "người ký hợp đồng",
+    "part_of_speech": "noun",
+    "tags": [
+      "contractor",
+      "contract party",
+      "business"
+    ]
+  },
+  {
+    "word": "被保険者",
+    "reading": "ひほけんしゃ",
+    "romaji": "hihokensha",
+    "meaning_vi": "người được bảo hiểm",
+    "part_of_speech": "noun",
+    "tags": [
+      "insured",
+      "policyholder",
+      "business"
+    ]
+  },
+  {
+    "word": "保険料",
+    "reading": "ほけんりょう",
+    "romaji": "hokenryou",
+    "meaning_vi": "phí bảo hiểm",
+    "part_of_speech": "noun",
+    "tags": [
+      "insurance premium",
+      "insurance fee",
+      "business"
+    ]
+  },
+  {
+    "word": "会計",
+    "reading": "かいけい",
+    "romaji": "kaikei",
+    "meaning_vi": "kế toán, tài chính",
+    "part_of_speech": "noun",
+    "tags": [
+      "accounting",
+      "accounts",
+      "business"
+    ]
+  },
+  {
+    "word": "決算",
+    "reading": "けっさん",
+    "romaji": "kessan",
+    "meaning_vi": "chốt quyết toán, báo cáo tài chính",
+    "part_of_speech": "noun",
+    "tags": [
+      "settlement",
+      "balance",
+      "business"
+    ]
+  },
+  {
+    "word": "財務",
+    "reading": "ざいむ",
+    "romaji": "zaimu",
+    "meaning_vi": "tài chính",
+    "part_of_speech": "noun",
+    "tags": [
+      "finance",
+      "financial",
+      "business"
+    ]
+  },
+  {
+    "word": "会社法",
+    "reading": "かいしゃほう",
+    "romaji": "kaishahou",
+    "meaning_vi": "luật công ty",
+    "part_of_speech": "noun",
+    "tags": [
+      "company law",
+      "corporate law",
+      "business"
+    ]
+  },
+  {
+    "word": "株式",
+    "reading": "かぶしき",
+    "romaji": "kabushiki",
+    "meaning_vi": "cổ phiếu",
+    "part_of_speech": "noun",
+    "tags": [
+      "stock",
+      "share",
+      "business"
+    ]
+  },
+  {
+    "word": "株主",
+    "reading": "かぶぬし",
+    "romaji": "kabunushi",
+    "meaning_vi": "cổ đông",
+    "part_of_speech": "noun",
+    "tags": [
+      "shareholder",
+      "stockholder",
+      "business"
+    ]
+  },
+  {
+    "word": "配当",
+    "reading": "はいとう",
+    "romaji": "haitou",
+    "meaning_vi": "cổ tức, lợi tức",
+    "part_of_speech": "noun",
+    "tags": [
+      "dividend",
+      "distribution",
+      "business"
+    ]
+  },
+  {
+    "word": "倒産",
+    "reading": "とうさん",
+    "romaji": "tousan",
+    "meaning_vi": "phá sản, tập sự",
+    "part_of_speech": "noun",
+    "tags": [
+      "bankruptcy",
+      "failure",
+      "business"
+    ]
+  },
+  {
+    "word": "経営危機",
+    "reading": "けいえいきき",
+    "romaji": "keieiкiki",
+    "meaning_vi": "khủng hoảng kinh doanh",
+    "part_of_speech": "noun",
+    "tags": [
+      "management crisis",
+      "business crisis",
+      "business"
+    ]
+  },
+  {
+    "word": "リストラ",
+    "reading": "りすとら",
+    "romaji": "risutora",
+    "meaning_vi": "sắp xếp lại tổ chức, cắt giảm",
+    "part_of_speech": "noun",
+    "tags": [
+      "restructuring",
+      "downsizing",
+      "business"
+    ]
+  },
+  {
+    "word": "合併",
+    "reading": "ごうぺい",
+    "romaji": "goupei",
+    "meaning_vi": "hợp nhất, sáp nhập",
+    "part_of_speech": "noun",
+    "tags": [
+      "merger",
+      "consolidation",
+      "business"
+    ]
+  },
+  {
+    "word": "買収",
+    "reading": "ばいしゅう",
+    "romaji": "baishuu",
+    "meaning_vi": "mua lại, thâu tóm",
+    "part_of_speech": "noun",
+    "tags": [
+      "acquisition",
+      "takeover",
+      "business"
+    ]
+  },
+  {
+    "word": "提携",
+    "reading": "ていけい",
+    "romaji": "teikei",
+    "meaning_vi": "liên kết, hợp tác",
+    "part_of_speech": "noun",
+    "tags": [
+      "alliance",
+      "partnership",
+      "business"
+    ]
+  },
+  {
+    "word": "コンプライアンス",
+    "reading": "こんぷらいあんす",
+    "romaji": "konpuraiannsu",
+    "meaning_vi": "tuân thủ quy tắc",
+    "part_of_speech": "noun",
+    "tags": [
+      "compliance",
+      "regulatory",
+      "business"
+    ]
+  },
+  {
+    "word": "コーポレート",
+    "reading": "こーぽれーと",
+    "romaji": "koorporeeto",
+    "meaning_vi": "công ty, công ty",
+    "part_of_speech": "noun",
+    "tags": [
+      "corporate",
+      "corporation",
+      "business"
+    ]
+  },
+  {
+    "word": "グローバル",
+    "reading": "ぐろーばる",
+    "romaji": "guroobaru",
+    "meaning_vi": "toàn cầu, toàn thế giới",
+    "part_of_speech": "adjective",
+    "tags": [
+      "global",
+      "worldwide",
+      "business"
+    ]
+  },
+  {
+    "word": "アウトソーシング",
+    "reading": "あうとそーしんぐ",
+    "romaji": "autosoushing",
+    "meaning_vi": "thuê ngoài",
+    "part_of_speech": "noun",
+    "tags": [
+      "outsourcing",
+      "subcontracting",
+      "business"
+    ]
+  },
+  {
+    "word": "テレワーク",
+    "reading": "てれわーく",
+    "romaji": "terewaaku",
+    "meaning_vi": "làm việc từ xa",
+    "part_of_speech": "noun",
+    "tags": [
+      "remote work",
+      "telecommuting",
+      "business"
+    ]
+  },
+  {
+    "word": "ワークライフバランス",
+    "reading": "わーくらいふばらんす",
+    "romaji": "waakuraifubaransu",
+    "meaning_vi": "cân bằng công việc - cuộc sống",
+    "part_of_speech": "noun",
+    "tags": [
+      "work-life balance",
+      "balance",
+      "business"
+    ]
+  },
+  {
+    "word": "キャリア",
+    "reading": "きゃりあ",
+    "romaji": "kyaria",
+    "meaning_vi": "sự nghiệp, con đường sự nghiệp",
+    "part_of_speech": "noun",
+    "tags": [
+      "career",
+      "profession",
+      "business"
+    ]
+  },
+  {
+    "word": "職業",
+    "reading": "しょくぎょう",
+    "romaji": "shokugyou",
+    "meaning_vi": "nghề nghiệp, khối lực",
+    "part_of_speech": "noun",
+    "tags": [
+      "occupation",
+      "job",
+      "business"
+    ]
+  },
+  {
+    "word": "職場",
+    "reading": "しょくば",
+    "romaji": "shokuba",
+    "meaning_vi": "nơi làm việc",
+    "part_of_speech": "noun",
+    "tags": [
+      "workplace",
+      "work site",
+      "business"
+    ]
+  },
+  {
+    "word": "同僚",
+    "reading": "どうりょう",
+    "romaji": "douryou",
+    "meaning_vi": "đồng nghiệp",
+    "part_of_speech": "noun",
+    "tags": [
+      "colleague",
+      "coworker",
+      "business"
+    ]
+  },
+  {
+    "word": "上司",
+    "reading": "じょうし",
+    "romaji": "joushi",
+    "meaning_vi": "sếp, cấp trên",
+    "part_of_speech": "noun",
+    "tags": [
+      "boss",
+      "supervisor",
+      "business"
+    ]
+  },
+  {
+    "word": "部下",
+    "reading": "ぶか",
+    "romaji": "buka",
+    "meaning_vi": "cấp dưới, thuộc hạ",
+    "part_of_speech": "noun",
+    "tags": [
+      "subordinate",
+      "staff",
+      "business"
+    ]
+  },
+  {
+    "word": "後進",
+    "reading": "こうしん",
+    "romaji": "koushin",
+    "meaning_vi": "người trẻ, thế hệ sau",
+    "part_of_speech": "noun",
+    "tags": [
+      "junior",
+      "successor",
+      "business"
+    ]
+  },
+  {
+    "word": "先輩",
+    "reading": "せんぱい",
+    "romaji": "senpai",
+    "meaning_vi": "tiền bối, đàn anh",
+    "part_of_speech": "noun",
+    "tags": [
+      "senior",
+      "predecessor",
+      "business"
+    ]
+  },
+  {
+    "word": "メンタル",
+    "reading": "めんたる",
+    "romaji": "mentaru",
+    "meaning_vi": "tâm lý, tinh thần",
+    "part_of_speech": "noun",
+    "tags": [
+      "mental",
+      "psychology",
+      "work"
+    ]
+  },
+  {
+    "word": "ストレス",
+    "reading": "すとれす",
+    "romaji": "sutoress",
+    "meaning_vi": "áp lực, căng thẳng",
+    "part_of_speech": "noun",
+    "tags": [
+      "stress",
+      "tension",
+      "work"
+    ]
+  },
+  {
+    "word": "疲労",
+    "reading": "ひろう",
+    "romaji": "hirou",
+    "meaning_vi": "mệt mỏi, kiệt sức",
+    "part_of_speech": "noun",
+    "tags": [
+      "fatigue",
+      "tiredness",
+      "work"
+    ]
+  },
+  {
+    "word": "過労死",
+    "reading": "かろうし",
+    "romaji": "karoushi",
+    "meaning_vi": "chết vì overwork",
+    "part_of_speech": "noun",
+    "tags": [
+      "death from overwork",
+      "karoshi",
+      "work"
+    ]
+  },
+  {
+    "word": "パワハラ",
+    "reading": "ぱわはら",
+    "romaji": "pawahara",
+    "meaning_vi": "qu騷nhiễu quyền lực",
+    "part_of_speech": "noun",
+    "tags": [
+      "workplace harassment",
+      "bullying",
+      "work"
+    ]
+  },
+  {
+    "word": "セクハラ",
+    "reading": "せくはら",
+    "romaji": "sekuhara",
+    "meaning_vi": "quấy rối tình dục",
+    "part_of_speech": "noun",
+    "tags": [
+      "sexual harassment",
+      "harassment",
+      "work"
+    ]
+  },
+  {
+    "word": "業績",
+    "reading": "ぎょうせき",
+    "romaji": "gyouseki",
+    "meaning_vi": "thành tích, kết quả",
+    "part_of_speech": "noun",
+    "tags": [
+      "performance",
+      "achievement",
+      "business"
+    ]
+  },
+  {
+    "word": "目標達成",
+    "reading": "もくひょうたっせい",
+    "romaji": "mokuhyoutassei",
+    "meaning_vi": "đạt được mục tiêu",
+    "part_of_speech": "noun",
+    "tags": [
+      "goal achievement",
+      "target",
+      "business"
+    ]
+  },
+  {
+    "word": "生産性",
+    "reading": "せいさんせい",
+    "romaji": "seisansei",
+    "meaning_vi": "năng suất",
+    "part_of_speech": "noun",
+    "tags": [
+      "productivity",
+      "efficiency",
+      "business"
+    ]
+  },
+  {
+    "word": "効率",
+    "reading": "こうりつ",
+    "romaji": "kouritu",
+    "meaning_vi": "hiệu quả, hiệu suất",
+    "part_of_speech": "noun",
+    "tags": [
+      "efficiency",
+      "effectiveness",
+      "business"
+    ]
+  },
+  {
+    "word": "品質",
+    "reading": "ひんしつ",
+    "romaji": "hinshitsu",
+    "meaning_vi": "chất lượng",
+    "part_of_speech": "noun",
+    "tags": [
+      "quality",
+      "standard",
+      "business"
+    ]
+  },
+  {
+    "word": "コスト",
+    "reading": "こすと",
+    "romaji": "kosuto",
+    "meaning_vi": "chi phí, giá thành",
+    "part_of_speech": "noun",
+    "tags": [
+      "cost",
+      "expense",
+      "business"
+    ]
+  },
+  {
+    "word": "利益率",
+    "reading": "りえきりつ",
+    "romaji": "riekiristu",
+    "meaning_vi": "tỷ suất lợi nhuận",
+    "part_of_speech": "noun",
+    "tags": [
+      "profit margin",
+      "return rate",
+      "business"
+    ]
+  },
+  {
+    "word": "回収",
+    "reading": "かいしゅう",
+    "romaji": "kaishuu",
+    "meaning_vi": "hồi thu, thu hồi",
+    "part_of_speech": "noun",
+    "tags": [
+      "recovery",
+      "collection",
+      "business"
+    ]
+  },
+  {
+    "word": "資金繰り",
+    "reading": "しきんくり",
+    "romaji": "yuushi",
+    "meaning_vi": "quản lý dòng tiền, tài chính",
+    "part_of_speech": "noun",
+    "tags": [
+      "financing",
+      "loan",
+      "business"
+    ]
+  },
+  {
+    "word": "銀行",
+    "reading": "ぎんこう",
+    "romaji": "ginkou",
+    "meaning_vi": "ngân hàng",
+    "part_of_speech": "noun",
+    "tags": [
+      "bank",
+      "banking",
+      "business"
+    ]
+  },
+  {
+    "word": "信用金庫",
+    "reading": "しんようきんこ",
+    "romaji": "shinyoukinko",
+    "meaning_vi": "quỹ tín dụng",
+    "part_of_speech": "noun",
+    "tags": [
+      "credit union",
+      "savings bank",
+      "business"
+    ]
+  },
+  {
+    "word": "株価",
+    "reading": "かぶか",
+    "romaji": "kabuka",
+    "meaning_vi": "giá cổ phiếu",
+    "part_of_speech": "noun",
+    "tags": [
+      "stock price",
+      "share price",
+      "business"
+    ]
+  },
+  {
+    "word": "為替",
+    "reading": "かわせ",
+    "romaji": "kawase",
+    "meaning_vi": "tỷ giá hối đoái",
+    "part_of_speech": "noun",
+    "tags": [
+      "foreign exchange",
+      "rate",
+      "business"
+    ]
+  },
+  {
+    "word": "景気",
+    "reading": "けいき",
+    "romaji": "keiki",
+    "meaning_vi": "tình hình kinh tế",
+    "part_of_speech": "noun",
+    "tags": [
+      "business conditions",
+      "economy",
+      "business"
+    ]
+  },
+  {
+    "word": "景気後退",
+    "reading": "けいきこうたい",
+    "romaji": "keikikoutai",
+    "meaning_vi": "suy thoái kinh tế",
+    "part_of_speech": "noun",
+    "tags": [
+      "recession",
+      "downturn",
+      "business"
+    ]
+  },
+  {
+    "word": "ブーム",
+    "reading": "ぶーむ",
+    "romaji": "buumu",
+    "meaning_vi": "thịnh vượng, bùng nổ",
+    "part_of_speech": "noun",
+    "tags": [
+      "boom",
+      "craze",
+      "business"
+    ]
+  },
+  {
+    "word": "バブル",
+    "reading": "ばぶる",
+    "romaji": "baburu",
+    "meaning_vi": "bong bóng kinh tế, bong bóng",
+    "part_of_speech": "noun",
+    "tags": [
+      "bubble",
+      "boom",
+      "business"
+    ]
+  },
+  {
+    "word": "デフレ",
+    "reading": "でふれ",
+    "romaji": "defure",
+    "meaning_vi": "giảm phát",
+    "part_of_speech": "noun",
+    "tags": [
+      "deflation",
+      "price drop",
+      "business"
+    ]
+  },
+  {
+    "word": "インフレ",
+    "reading": "いんふれ",
+    "romaji": "infure",
+    "meaning_vi": "lạm phát",
+    "part_of_speech": "noun",
+    "tags": [
+      "inflation",
+      "price rise",
+      "business"
+    ]
+  },
+  {
+    "word": "スタートアップ",
+    "reading": "すたーとあっぷ",
+    "romaji": "sutaatoappu",
+    "meaning_vi": "công ty khởi nghiệp",
+    "part_of_speech": "noun",
+    "tags": [
+      "startup",
+      "business",
+      "work"
+    ]
+  },
+  {
+    "word": "ベンチャー",
+    "reading": "べんちゃー",
+    "romaji": "bencha",
+    "meaning_vi": "doanh nghiệp rủi ro",
+    "part_of_speech": "noun",
+    "tags": [
+      "venture",
+      "business",
+      "work"
+    ]
+  },
+  {
+    "word": "フランチャイズ",
+    "reading": "ふらんちゃいず",
+    "romaji": "furancharizu",
+    "meaning_vi": "nhượng quyền",
+    "part_of_speech": "noun",
+    "tags": [
+      "franchise",
+      "business",
+      "work"
+    ]
+  },
+  {
+    "word": "ライセンス",
+    "reading": "らいせんす",
+    "romaji": "raisensu",
+    "meaning_vi": "giấy phép",
+    "part_of_speech": "noun",
+    "tags": [
+      "license",
+      "permission",
+      "business"
+    ]
+  },
+  {
+    "word": "パテント",
+    "reading": "ぱてんと",
+    "romaji": "patento",
+    "meaning_vi": "bằng sáng chế",
+    "part_of_speech": "noun",
+    "tags": [
+      "patent",
+      "intellectual property",
+      "business"
+    ]
+  },
+  {
+    "word": "著作権",
+    "reading": "ちょさくけん",
+    "romaji": "chosakuken",
+    "meaning_vi": "bản quyền",
+    "part_of_speech": "noun",
+    "tags": [
+      "copyright",
+      "intellectual property",
+      "business"
+    ]
+  },
+  {
+    "word": "商標",
+    "reading": "しょうひょう",
+    "romaji": "shouhyou",
+    "meaning_vi": "nhãn hiệu",
+    "part_of_speech": "noun",
+    "tags": [
+      "trademark",
+      "brand",
+      "business"
+    ]
+  },
+  {
+    "word": "ブランド",
+    "reading": "ぶらんど",
+    "romaji": "burando",
+    "meaning_vi": "thương hiệu",
+    "part_of_speech": "noun",
+    "tags": [
+      "brand",
+      "trademark",
+      "business"
+    ]
+  },
+  {
+    "word": "広告",
+    "reading": "こうこく",
+    "romaji": "koukoku",
+    "meaning_vi": "quảng cáo",
+    "part_of_speech": "noun",
+    "tags": [
+      "advertisement",
+      "marketing",
+      "business"
+    ]
+  },
+  {
+    "word": "マーケティング",
+    "reading": "まーけてぃんぐ",
+    "romaji": "maaketingu",
+    "meaning_vi": "tiếp thị",
+    "part_of_speech": "noun",
+    "tags": [
+      "marketing",
+      "business",
+      "work"
+    ]
+  },
+  {
+    "word": "プロモーション",
+    "reading": "ぷろもーしょん",
+    "romaji": "puromousyon",
+    "meaning_vi": "khuyến mãi",
+    "part_of_speech": "noun",
+    "tags": [
+      "promotion",
+      "marketing",
+      "business"
+    ]
+  },
+  {
+    "word": "キャンペーン",
+    "reading": "きゃんぺーん",
+    "romaji": "kyanpeen",
+    "meaning_vi": "chiến dịch",
+    "part_of_speech": "noun",
+    "tags": [
+      "campaign",
+      "promotion",
+      "business"
+    ]
+  },
+  {
+    "word": "セール",
+    "reading": "せーる",
+    "romaji": "seeru",
+    "meaning_vi": "đợt bán hàng giảm giá",
+    "part_of_speech": "noun",
+    "tags": [
+      "sale",
+      "clearance",
+      "business"
+    ]
+  },
+  {
+    "word": "値上げ",
+    "reading": "ねあげ",
+    "romaji": "neage",
+    "meaning_vi": "tăng giá",
+    "part_of_speech": "noun",
+    "tags": [
+      "price increase",
+      "raise",
+      "business"
+    ]
+  },
+  {
+    "word": "値下げ",
+    "reading": "ねさげ",
+    "romaji": "nesage",
+    "meaning_vi": "giảm giá",
+    "part_of_speech": "noun",
+    "tags": [
+      "price reduction",
+      "discount",
+      "business"
+    ]
+  }
+]

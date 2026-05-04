@@ -1,0 +1,1430 @@
+[
+  {
+    "word": "食事",
+    "reading": "しょくじ",
+    "romaji": "shokuji",
+    "meaning_vi": "bữa ăn, ăn cơm",
+    "part_of_speech": "noun",
+    "tags": [
+      "meal",
+      "dining",
+      "daily life"
+    ]
+  },
+  {
+    "word": "朝食",
+    "reading": "ちょうしょく",
+    "romaji": "choushoku",
+    "meaning_vi": "bữa sáng",
+    "part_of_speech": "noun",
+    "tags": [
+      "breakfast",
+      "morning meal",
+      "daily life"
+    ]
+  },
+  {
+    "word": "昼食",
+    "reading": "ちゅうしょく",
+    "romaji": "chuushoku",
+    "meaning_vi": "bữa trưa",
+    "part_of_speech": "noun",
+    "tags": [
+      "lunch",
+      "midday meal",
+      "daily life"
+    ]
+  },
+  {
+    "word": "夕食",
+    "reading": "ゆうしょく",
+    "romaji": "yuushoku",
+    "meaning_vi": "bữa tối",
+    "part_of_speech": "noun",
+    "tags": [
+      "dinner",
+      "evening meal",
+      "daily life"
+    ]
+  },
+  {
+    "word": "宵夜",
+    "reading": "よいよ",
+    "romaji": "yoiyo",
+    "meaning_vi": "bữa tối muộn, bữa đêm",
+    "part_of_speech": "noun",
+    "tags": [
+      "late dinner",
+      "evening snack",
+      "daily life"
+    ]
+  },
+  {
+    "word": "お弁当",
+    "reading": "おべんとう",
+    "romaji": "obentou",
+    "meaning_vi": "hộp cơm đựng",
+    "part_of_speech": "noun",
+    "tags": [
+      "packed lunch",
+      "bento",
+      "daily life"
+    ]
+  },
+  {
+    "word": "惣菜",
+    "reading": "そうざい",
+    "romaji": "souzai",
+    "meaning_vi": "thực phẩm chế biến sẵn",
+    "part_of_speech": "noun",
+    "tags": [
+      "side dish",
+      "prepared food",
+      "daily life"
+    ]
+  },
+  {
+    "word": "レストラン",
+    "reading": "れすとらん",
+    "romaji": "resutoran",
+    "meaning_vi": "nhà hàng",
+    "part_of_speech": "noun",
+    "tags": [
+      "restaurant",
+      "dining",
+      "daily life"
+    ]
+  },
+  {
+    "word": "カフェ",
+    "reading": "かふぇ",
+    "romaji": "kafe",
+    "meaning_vi": "quán cà phê",
+    "part_of_speech": "noun",
+    "tags": [
+      "cafe",
+      "coffee shop",
+      "daily life"
+    ]
+  },
+  {
+    "word": "居酒屋",
+    "reading": "いざかや",
+    "romaji": "izakaya",
+    "meaning_vi": "quán rượu ăn nhẹ",
+    "part_of_speech": "noun",
+    "tags": [
+      "izakaya",
+      "bar",
+      "dining"
+    ]
+  },
+  {
+    "word": "料理",
+    "reading": "りょうり",
+    "romaji": "ryouri",
+    "meaning_vi": "nấu ăn, món ăn",
+    "part_of_speech": "noun",
+    "tags": [
+      "cooking",
+      "cuisine",
+      "daily life"
+    ]
+  },
+  {
+    "word": "調理",
+    "reading": "ちょうり",
+    "romaji": "chouri",
+    "meaning_vi": "nấu nướng, chế biến",
+    "part_of_speech": "noun",
+    "tags": [
+      "cooking",
+      "preparation",
+      "daily life"
+    ]
+  },
+  {
+    "word": "食べ物",
+    "reading": "たべもの",
+    "romaji": "tabemono",
+    "meaning_vi": "thức ăn, đồ ăn",
+    "part_of_speech": "noun",
+    "tags": [
+      "food",
+      "edible",
+      "daily life"
+    ]
+  },
+  {
+    "word": "飲み物",
+    "reading": "のみもの",
+    "romaji": "nomimono",
+    "meaning_vi": "đồ uống",
+    "part_of_speech": "noun",
+    "tags": [
+      "beverage",
+      "drink",
+      "daily life"
+    ]
+  },
+  {
+    "word": "米",
+    "reading": "こめ",
+    "romaji": "kome",
+    "meaning_vi": "gạo",
+    "part_of_speech": "noun",
+    "tags": [
+      "rice",
+      "grain",
+      "food"
+    ]
+  },
+  {
+    "word": "味噌汁",
+    "reading": "みそしる",
+    "romaji": "misoshiru",
+    "meaning_vi": "canh miso",
+    "part_of_speech": "noun",
+    "tags": [
+      "miso soup",
+      "soup",
+      "daily life"
+    ]
+  },
+  {
+    "word": "醤油",
+    "reading": "しょうゆ",
+    "romaji": "shoyu",
+    "meaning_vi": "nước tương",
+    "part_of_speech": "noun",
+    "tags": [
+      "soy sauce",
+      "seasoning",
+      "food"
+    ]
+  },
+  {
+    "word": "塩",
+    "reading": "しお",
+    "romaji": "shio",
+    "meaning_vi": "muối",
+    "part_of_speech": "noun",
+    "tags": [
+      "salt",
+      "seasoning",
+      "food"
+    ]
+  },
+  {
+    "word": "砂糖",
+    "reading": "さとう",
+    "romaji": "satou",
+    "meaning_vi": "đường",
+    "part_of_speech": "noun",
+    "tags": [
+      "sugar",
+      "sweetener",
+      "food"
+    ]
+  },
+  {
+    "word": "油",
+    "reading": "あぶら",
+    "romaji": "abura",
+    "meaning_vi": "dầu",
+    "part_of_speech": "noun",
+    "tags": [
+      "oil",
+      "fat",
+      "food"
+    ]
+  },
+  {
+    "word": "酢",
+    "reading": "す",
+    "romaji": "su",
+    "meaning_vi": "giấm",
+    "part_of_speech": "noun",
+    "tags": [
+      "vinegar",
+      "sour",
+      "food"
+    ]
+  },
+  {
+    "word": "胡椒",
+    "reading": "こしょう",
+    "romaji": "koshou",
+    "meaning_vi": "tiêu",
+    "part_of_speech": "noun",
+    "tags": [
+      "pepper",
+      "spice",
+      "food"
+    ]
+  },
+  {
+    "word": "唐辛子",
+    "reading": "とうがらし",
+    "romaji": "tougarashi",
+    "meaning_vi": "ớt, tiêu ớt",
+    "part_of_speech": "noun",
+    "tags": [
+      "chili pepper",
+      "spice",
+      "food"
+    ]
+  },
+  {
+    "word": "肉",
+    "reading": "にく",
+    "romaji": "niku",
+    "meaning_vi": "thịt",
+    "part_of_speech": "noun",
+    "tags": [
+      "meat",
+      "protein",
+      "food"
+    ]
+  },
+  {
+    "word": "魚",
+    "reading": "さかな",
+    "romaji": "sakana",
+    "meaning_vi": "cá",
+    "part_of_speech": "noun",
+    "tags": [
+      "fish",
+      "seafood",
+      "food"
+    ]
+  },
+  {
+    "word": "海鮮",
+    "reading": "かいせん",
+    "romaji": "kaisen",
+    "meaning_vi": "hải sản",
+    "part_of_speech": "noun",
+    "tags": [
+      "seafood",
+      "fish",
+      "food"
+    ]
+  },
+  {
+    "word": "野菜",
+    "reading": "やさい",
+    "romaji": "yasai",
+    "meaning_vi": "rau",
+    "part_of_speech": "noun",
+    "tags": [
+      "vegetable",
+      "produce",
+      "food"
+    ]
+  },
+  {
+    "word": "果物",
+    "reading": "くだもの",
+    "romaji": "kudamono",
+    "meaning_vi": "trái cây",
+    "part_of_speech": "noun",
+    "tags": [
+      "fruit",
+      "produce",
+      "food"
+    ]
+  },
+  {
+    "word": "乳製品",
+    "reading": "にゅうせいひん",
+    "romaji": "nyuuseihin",
+    "meaning_vi": "sản phẩm từ sữa",
+    "part_of_speech": "noun",
+    "tags": [
+      "dairy products",
+      "milk",
+      "food"
+    ]
+  },
+  {
+    "word": "チーズ",
+    "reading": "ちーず",
+    "romaji": "chiizu",
+    "meaning_vi": "pho mát",
+    "part_of_speech": "noun",
+    "tags": [
+      "cheese",
+      "dairy",
+      "food"
+    ]
+  },
+  {
+    "word": "ヨーグルト",
+    "reading": "よーぐると",
+    "romaji": "yoogurutol",
+    "meaning_vi": "sữa chua",
+    "part_of_speech": "noun",
+    "tags": [
+      "yogurt",
+      "dairy",
+      "food"
+    ]
+  },
+  {
+    "word": "卵",
+    "reading": "たまご",
+    "romaji": "tamago",
+    "meaning_vi": "trứng",
+    "part_of_speech": "noun",
+    "tags": [
+      "egg",
+      "protein",
+      "food"
+    ]
+  },
+  {
+    "word": "豆",
+    "reading": "まめ",
+    "romaji": "mame",
+    "meaning_vi": "đậu",
+    "part_of_speech": "noun",
+    "tags": [
+      "bean",
+      "legume",
+      "food"
+    ]
+  },
+  {
+    "word": "パン",
+    "reading": "ぱん",
+    "romaji": "pan",
+    "meaning_vi": "bánh mì",
+    "part_of_speech": "noun",
+    "tags": [
+      "bread",
+      "baked good",
+      "food"
+    ]
+  },
+  {
+    "word": "麺",
+    "reading": "めん",
+    "romaji": "men",
+    "meaning_vi": "mì",
+    "part_of_speech": "noun",
+    "tags": [
+      "noodle",
+      "pasta",
+      "food"
+    ]
+  },
+  {
+    "word": "ラーメン",
+    "reading": "らーめん",
+    "romaji": "raamen",
+    "meaning_vi": "mì ramen",
+    "part_of_speech": "noun",
+    "tags": [
+      "ramen",
+      "noodle",
+      "food"
+    ]
+  },
+  {
+    "word": "うどん",
+    "reading": "うどん",
+    "romaji": "udon",
+    "meaning_vi": "mì udon",
+    "part_of_speech": "noun",
+    "tags": [
+      "udon",
+      "noodle",
+      "food"
+    ]
+  },
+  {
+    "word": "そば",
+    "reading": "そば",
+    "romaji": "soba",
+    "meaning_vi": "mì soba",
+    "part_of_speech": "noun",
+    "tags": [
+      "soba",
+      "noodle",
+      "food"
+    ]
+  },
+  {
+    "word": "寿司",
+    "reading": "すし",
+    "romaji": "sushi",
+    "meaning_vi": "sushi",
+    "part_of_speech": "noun",
+    "tags": [
+      "sushi",
+      "Japanese food",
+      "food"
+    ]
+  },
+  {
+    "word": "天ぷら",
+    "reading": "てんぷら",
+    "romaji": "tenpura",
+    "meaning_vi": "chiên cầu",
+    "part_of_speech": "noun",
+    "tags": [
+      "tempura",
+      "fried food",
+      "food"
+    ]
+  },
+  {
+    "word": "焼き肉",
+    "reading": "やきにく",
+    "romaji": "yakiniku",
+    "meaning_vi": "thịt nướng",
+    "part_of_speech": "noun",
+    "tags": [
+      "grilled meat",
+      "barbecue",
+      "food"
+    ]
+  },
+  {
+    "word": "鍋",
+    "reading": "なべ",
+    "romaji": "nabe",
+    "meaning_vi": "lẩu, nồi",
+    "part_of_speech": "noun",
+    "tags": [
+      "hot pot",
+      "stew",
+      "food"
+    ]
+  },
+  {
+    "word": "カレー",
+    "reading": "かれー",
+    "romaji": "karee",
+    "meaning_vi": "cà ri",
+    "part_of_speech": "noun",
+    "tags": [
+      "curry",
+      "spiced",
+      "food"
+    ]
+  },
+  {
+    "word": "スープ",
+    "reading": "すーぷ",
+    "romaji": "suupu",
+    "meaning_vi": "canh, súp",
+    "part_of_speech": "noun",
+    "tags": [
+      "soup",
+      "broth",
+      "food"
+    ]
+  },
+  {
+    "word": "デザート",
+    "reading": "でざーと",
+    "romaji": "dezaato",
+    "meaning_vi": "tráng miệng",
+    "part_of_speech": "noun",
+    "tags": [
+      "dessert",
+      "sweet",
+      "food"
+    ]
+  },
+  {
+    "word": "ケーキ",
+    "reading": "けーき",
+    "romaji": "keeki",
+    "meaning_vi": "bánh",
+    "part_of_speech": "noun",
+    "tags": [
+      "cake",
+      "pastry",
+      "food"
+    ]
+  },
+  {
+    "word": "ビスケット",
+    "reading": "びすけっと",
+    "romaji": "bisuketto",
+    "meaning_vi": "bánh quy",
+    "part_of_speech": "noun",
+    "tags": [
+      "biscuit",
+      "cookie",
+      "food"
+    ]
+  },
+  {
+    "word": "冷たい",
+    "reading": "つめたい",
+    "romaji": "koori",
+    "meaning_vi": "lạnh",
+    "part_of_speech": "noun",
+    "tags": [
+      "ice",
+      "frozen",
+      "food"
+    ]
+  },
+  {
+    "word": "アイスクリーム",
+    "reading": "あいすくりーむ",
+    "romaji": "aisukrimu",
+    "meaning_vi": "kem",
+    "part_of_speech": "noun",
+    "tags": [
+      "ice cream",
+      "frozen dessert",
+      "food"
+    ]
+  },
+  {
+    "word": "コーヒー",
+    "reading": "こーひー",
+    "romaji": "koohii",
+    "meaning_vi": "cà phê",
+    "part_of_speech": "noun",
+    "tags": [
+      "coffee",
+      "beverage",
+      "drink"
+    ]
+  },
+  {
+    "word": "紅茶",
+    "reading": "こうちゃ",
+    "romaji": "koucha",
+    "meaning_vi": "trà đen",
+    "part_of_speech": "noun",
+    "tags": [
+      "black tea",
+      "tea",
+      "drink"
+    ]
+  },
+  {
+    "word": "緑茶",
+    "reading": "りょくちゃ",
+    "romaji": "ryokucha",
+    "meaning_vi": "trà xanh",
+    "part_of_speech": "noun",
+    "tags": [
+      "green tea",
+      "tea",
+      "drink"
+    ]
+  },
+  {
+    "word": "ジュース",
+    "reading": "じゅーす",
+    "romaji": "juusu",
+    "meaning_vi": "nước trái cây",
+    "part_of_speech": "noun",
+    "tags": [
+      "juice",
+      "beverage",
+      "drink"
+    ]
+  },
+  {
+    "word": "水",
+    "reading": "みず",
+    "romaji": "mizu",
+    "meaning_vi": "nước",
+    "part_of_speech": "noun",
+    "tags": [
+      "water",
+      "liquid",
+      "drink"
+    ]
+  },
+  {
+    "word": "ビール",
+    "reading": "びーる",
+    "romaji": "biiru",
+    "meaning_vi": "bia",
+    "part_of_speech": "noun",
+    "tags": [
+      "beer",
+      "alcohol",
+      "drink"
+    ]
+  },
+  {
+    "word": "ワイン",
+    "reading": "わいん",
+    "romaji": "wain",
+    "meaning_vi": "rượu vang",
+    "part_of_speech": "noun",
+    "tags": [
+      "wine",
+      "alcohol",
+      "drink"
+    ]
+  },
+  {
+    "word": "日本酒",
+    "reading": "にほんしゅ",
+    "romaji": "nihonshu",
+    "meaning_vi": "rượu sake",
+    "part_of_speech": "noun",
+    "tags": [
+      "sake",
+      "alcohol",
+      "drink"
+    ]
+  },
+  {
+    "word": "空腹",
+    "reading": "くうふく",
+    "romaji": "kuufuku",
+    "meaning_vi": "đói",
+    "part_of_speech": "noun",
+    "tags": [
+      "hunger",
+      "empty stomach",
+      "daily life"
+    ]
+  },
+  {
+    "word": "満腹",
+    "reading": "まんぷく",
+    "romaji": "manpuku",
+    "meaning_vi": "no nê",
+    "part_of_speech": "noun",
+    "tags": [
+      "full stomach",
+      "satisfaction",
+      "daily life"
+    ]
+  },
+  {
+    "word": "腹ペコ",
+    "reading": "はらぺこ",
+    "romaji": "harapeko",
+    "meaning_vi": "rất đói",
+    "part_of_speech": "adjective",
+    "tags": [
+      "very hungry",
+      "starving",
+      "daily life"
+    ]
+  },
+  {
+    "word": "食べる",
+    "reading": "たべる",
+    "romaji": "taberu",
+    "meaning_vi": "ăn",
+    "part_of_speech": "verb",
+    "tags": [
+      "eat",
+      "consume",
+      "daily life"
+    ]
+  },
+  {
+    "word": "飲む",
+    "reading": "のむ",
+    "romaji": "nomu",
+    "meaning_vi": "uống",
+    "part_of_speech": "verb",
+    "tags": [
+      "drink",
+      "consume",
+      "daily life"
+    ]
+  },
+  {
+    "word": "喝す",
+    "reading": "かつす",
+    "romaji": "katssu",
+    "meaning_vi": "uống sạch",
+    "part_of_speech": "verb",
+    "tags": [
+      "drink up",
+      "drain",
+      "daily life"
+    ]
+  },
+  {
+    "word": "味わう",
+    "reading": "あじわう",
+    "romaji": "ajiwau",
+    "meaning_vi": "nếm, thưởng thức",
+    "part_of_speech": "verb",
+    "tags": [
+      "taste",
+      "enjoy",
+      "daily life"
+    ]
+  },
+  {
+    "word": "スプーン",
+    "reading": "すぷーん",
+    "romaji": "supuun",
+    "meaning_vi": "muỗng",
+    "part_of_speech": "noun",
+    "tags": [
+      "spoon",
+      "utensil",
+      "daily life"
+    ]
+  },
+  {
+    "word": "フォーク",
+    "reading": "ふぉーく",
+    "romaji": "fooku",
+    "meaning_vi": "nĩa",
+    "part_of_speech": "noun",
+    "tags": [
+      "fork",
+      "utensil",
+      "daily life"
+    ]
+  },
+  {
+    "word": "ナイフ",
+    "reading": "ないふ",
+    "romaji": "naifu",
+    "meaning_vi": "dao",
+    "part_of_speech": "noun",
+    "tags": [
+      "knife",
+      "utensil",
+      "daily life"
+    ]
+  },
+  {
+    "word": "箸",
+    "reading": "はし",
+    "romaji": "hashi",
+    "meaning_vi": "đũa",
+    "part_of_speech": "noun",
+    "tags": [
+      "chopsticks",
+      "utensil",
+      "daily life"
+    ]
+  },
+  {
+    "word": "茶碗",
+    "reading": "ちゃわん",
+    "romaji": "chawan",
+    "meaning_vi": "tô, bát cơm",
+    "part_of_speech": "noun",
+    "tags": [
+      "rice bowl",
+      "dish",
+      "daily life"
+    ]
+  },
+  {
+    "word": "湯呑",
+    "reading": "ゆのみ",
+    "romaji": "yunomi",
+    "meaning_vi": "cốc trà",
+    "part_of_speech": "noun",
+    "tags": [
+      "tea cup",
+      "cup",
+      "daily life"
+    ]
+  },
+  {
+    "word": "グラス",
+    "reading": "ぐらす",
+    "romaji": "gurasu",
+    "meaning_vi": "ly",
+    "part_of_speech": "noun",
+    "tags": [
+      "glass",
+      "cup",
+      "daily life"
+    ]
+  },
+  {
+    "word": "皿",
+    "reading": "さら",
+    "romaji": "sara",
+    "meaning_vi": "đĩa",
+    "part_of_speech": "noun",
+    "tags": [
+      "plate",
+      "dish",
+      "daily life"
+    ]
+  },
+  {
+    "word": "フライパン",
+    "reading": "ふらいぱん",
+    "romaji": "furaipan",
+    "meaning_vi": "chảo",
+    "part_of_speech": "noun",
+    "tags": [
+      "frying pan",
+      "cooking",
+      "daily life"
+    ]
+  },
+  {
+    "word": "まな板",
+    "reading": "まないた",
+    "romaji": "manaita",
+    "meaning_vi": "thớt",
+    "part_of_speech": "noun",
+    "tags": [
+      "cutting board",
+      "kitchen",
+      "daily life"
+    ]
+  },
+  {
+    "word": "キッチン",
+    "reading": "きっちん",
+    "romaji": "kichin",
+    "meaning_vi": "bếp",
+    "part_of_speech": "noun",
+    "tags": [
+      "kitchen",
+      "cooking",
+      "daily life"
+    ]
+  },
+  {
+    "word": "流し台",
+    "reading": "ながしだい",
+    "romaji": "nagashidai",
+    "meaning_vi": "bồn rửa",
+    "part_of_speech": "noun",
+    "tags": [
+      "sink",
+      "kitchen",
+      "daily life"
+    ]
+  },
+  {
+    "word": "冷蔵庫",
+    "reading": "れいぞうこ",
+    "romaji": "reizouko",
+    "meaning_vi": "tủ lạnh",
+    "part_of_speech": "noun",
+    "tags": [
+      "refrigerator",
+      "kitchen appliance",
+      "daily life"
+    ]
+  },
+  {
+    "word": "電子レンジ",
+    "reading": "でんしれんじ",
+    "romaji": "denshirenji",
+    "meaning_vi": "lò vi sóng",
+    "part_of_speech": "noun",
+    "tags": [
+      "microwave",
+      "kitchen appliance",
+      "daily life"
+    ]
+  },
+  {
+    "word": "炊飯器",
+    "reading": "すいはんき",
+    "romaji": "suihanki",
+    "meaning_vi": "nồi cơm điện",
+    "part_of_speech": "noun",
+    "tags": [
+      "rice cooker",
+      "kitchen appliance",
+      "daily life"
+    ]
+  },
+  {
+    "word": "洗濯機",
+    "reading": "せんたくき",
+    "romaji": "sentakuki",
+    "meaning_vi": "máy giặt",
+    "part_of_speech": "noun",
+    "tags": [
+      "washing machine",
+      "appliance",
+      "daily life"
+    ]
+  },
+  {
+    "word": "掃除",
+    "reading": "そうじ",
+    "romaji": "souji",
+    "meaning_vi": "dọn dẹp, lau chùi",
+    "part_of_speech": "noun",
+    "tags": [
+      "cleaning",
+      "housework",
+      "daily life"
+    ]
+  },
+  {
+    "word": "洗濯",
+    "reading": "せんたく",
+    "romaji": "sentaku",
+    "meaning_vi": "giặt quần áo",
+    "part_of_speech": "noun",
+    "tags": [
+      "laundry",
+      "washing",
+      "daily life"
+    ]
+  },
+  {
+    "word": "買い物",
+    "reading": "かいもの",
+    "romaji": "kaimono",
+    "meaning_vi": "mua sắm",
+    "part_of_speech": "noun",
+    "tags": [
+      "shopping",
+      "purchase",
+      "daily life"
+    ]
+  },
+  {
+    "word": "スーパー",
+    "reading": "すーぱー",
+    "romaji": "suupaa",
+    "meaning_vi": "siêu thị",
+    "part_of_speech": "noun",
+    "tags": [
+      "supermarket",
+      "shopping",
+      "daily life"
+    ]
+  },
+  {
+    "word": "商店街",
+    "reading": "しょうてんがい",
+    "romaji": "shoutengai",
+    "meaning_vi": "phố thương mại",
+    "part_of_speech": "noun",
+    "tags": [
+      "shopping street",
+      "market",
+      "daily life"
+    ]
+  },
+  {
+    "word": "商品",
+    "reading": "しょうひん",
+    "romaji": "ichiba",
+    "meaning_vi": "sản phẩm, hàng hoá",
+    "part_of_speech": "noun",
+    "tags": [
+      "market",
+      "marketplace",
+      "daily life"
+    ]
+  },
+  {
+    "word": "安い",
+    "reading": "やすい",
+    "romaji": "yasui",
+    "meaning_vi": "rẻ",
+    "part_of_speech": "adjective",
+    "tags": [
+      "cheap",
+      "inexpensive",
+      "daily life"
+    ]
+  },
+  {
+    "word": "高い",
+    "reading": "たかい",
+    "romaji": "takai",
+    "meaning_vi": "đắt",
+    "part_of_speech": "adjective",
+    "tags": [
+      "expensive",
+      "high price",
+      "daily life"
+    ]
+  },
+  {
+    "word": "割引",
+    "reading": "わりびき",
+    "romaji": "waribiki",
+    "meaning_vi": "giảm giá, chiết khấu",
+    "part_of_speech": "noun",
+    "tags": [
+      "discount",
+      "reduction",
+      "daily life"
+    ]
+  },
+  {
+    "word": "クーポン",
+    "reading": "くーぽん",
+    "romaji": "kuupon",
+    "meaning_vi": "phiếu giảm giá",
+    "part_of_speech": "noun",
+    "tags": [
+      "coupon",
+      "voucher",
+      "daily life"
+    ]
+  },
+  {
+    "word": "レジ",
+    "reading": "れじ",
+    "romaji": "reji",
+    "meaning_vi": "quầy thanh toán",
+    "part_of_speech": "noun",
+    "tags": [
+      "checkout",
+      "register",
+      "daily life"
+    ]
+  },
+  {
+    "word": "現金",
+    "reading": "げんきん",
+    "romaji": "genkin",
+    "meaning_vi": "tiền mặt",
+    "part_of_speech": "noun",
+    "tags": [
+      "cash",
+      "money",
+      "daily life"
+    ]
+  },
+  {
+    "word": "クレジットカード",
+    "reading": "くれじっとかーど",
+    "romaji": "kurejittokado",
+    "meaning_vi": "thẻ tín dụng",
+    "part_of_speech": "noun",
+    "tags": [
+      "credit card",
+      "payment",
+      "daily life"
+    ]
+  },
+  {
+    "word": "キャッシュカード",
+    "reading": "きゃっしゅかーど",
+    "romaji": "kyasshukaado",
+    "meaning_vi": "thẻ ATM",
+    "part_of_speech": "noun",
+    "tags": [
+      "cash card",
+      "banking",
+      "daily life"
+    ]
+  },
+  {
+    "word": "デビットカード",
+    "reading": "でびっとかーど",
+    "romaji": "debittokaado",
+    "meaning_vi": "thẻ ghi nợ",
+    "part_of_speech": "noun",
+    "tags": [
+      "debit card",
+      "payment",
+      "daily life"
+    ]
+  },
+  {
+    "word": "ATM",
+    "reading": "えーてぃーえむ",
+    "romaji": "eetiiemu",
+    "meaning_vi": "máy ATM",
+    "part_of_speech": "noun",
+    "tags": [
+      "ATM",
+      "banking",
+      "daily life"
+    ]
+  },
+  {
+    "word": "銀行口座",
+    "reading": "ぎんこうこうざ",
+    "romaji": "ginkoukouza",
+    "meaning_vi": "tài khoản ngân hàng",
+    "part_of_speech": "noun",
+    "tags": [
+      "bank account",
+      "banking",
+      "daily life"
+    ]
+  },
+  {
+    "word": "送金",
+    "reading": "そうきん",
+    "romaji": "soukin",
+    "meaning_vi": "chuyển tiền",
+    "part_of_speech": "noun",
+    "tags": [
+      "transfer",
+      "money",
+      "daily life"
+    ]
+  },
+  {
+    "word": "振込",
+    "reading": "ふりこみ",
+    "romaji": "furikomi",
+    "meaning_vi": "chuyển khoản",
+    "part_of_speech": "noun",
+    "tags": [
+      "transfer",
+      "payment",
+      "daily life"
+    ]
+  },
+  {
+    "word": "両替",
+    "reading": "りょうがえ",
+    "romaji": "ryougae",
+    "meaning_vi": "đổi tiền",
+    "part_of_speech": "noun",
+    "tags": [
+      "exchange",
+      "money",
+      "daily life"
+    ]
+  },
+  {
+    "word": "貯金",
+    "reading": "ちょきん",
+    "romaji": "chokin",
+    "meaning_vi": "tiết kiệm",
+    "part_of_speech": "noun",
+    "tags": [
+      "savings",
+      "money",
+      "daily life"
+    ]
+  },
+  {
+    "word": "預金",
+    "reading": "よきん",
+    "romaji": "yokin",
+    "meaning_vi": "tiền gửi",
+    "part_of_speech": "noun",
+    "tags": [
+      "deposit",
+      "banking",
+      "daily life"
+    ]
+  },
+  {
+    "word": "利子",
+    "reading": "りし",
+    "romaji": "rishi",
+    "meaning_vi": "lãi suất",
+    "part_of_speech": "noun",
+    "tags": [
+      "interest",
+      "banking",
+      "daily life"
+    ]
+  },
+  {
+    "word": "定期預金",
+    "reading": "ていきよきん",
+    "romaji": "teikiyokin",
+    "meaning_vi": "tiền gửi định kỳ",
+    "part_of_speech": "noun",
+    "tags": [
+      "time deposit",
+      "banking",
+      "daily life"
+    ]
+  },
+  {
+    "word": "普通預金",
+    "reading": "ふつうよきん",
+    "romaji": "futsuuyokin",
+    "meaning_vi": "tiền gửi thường",
+    "part_of_speech": "noun",
+    "tags": [
+      "savings account",
+      "banking",
+      "daily life"
+    ]
+  },
+  {
+    "word": "通帳",
+    "reading": "つうちょう",
+    "romaji": "tuuchou",
+    "meaning_vi": "sổ tiết kiệm",
+    "part_of_speech": "noun",
+    "tags": [
+      "passbook",
+      "banking",
+      "daily life"
+    ]
+  },
+  {
+    "word": "暖房",
+    "reading": "だんぼう",
+    "romaji": "danbou",
+    "meaning_vi": "sưởi ấm",
+    "part_of_speech": "noun",
+    "tags": [
+      "heating",
+      "comfort",
+      "daily life"
+    ]
+  },
+  {
+    "word": "冷房",
+    "reading": "れいぼう",
+    "romaji": "reibou",
+    "meaning_vi": "máy lạnh",
+    "part_of_speech": "noun",
+    "tags": [
+      "air conditioning",
+      "comfort",
+      "daily life"
+    ]
+  },
+  {
+    "word": "エアコン",
+    "reading": "えあこん",
+    "romaji": "eakon",
+    "meaning_vi": "máy lạnh",
+    "part_of_speech": "noun",
+    "tags": [
+      "air conditioning",
+      "appliance",
+      "daily life"
+    ]
+  },
+  {
+    "word": "ストーブ",
+    "reading": "すとーぶ",
+    "romaji": "sutoobuu",
+    "meaning_vi": "lò sưởi",
+    "part_of_speech": "noun",
+    "tags": [
+      "heater",
+      "comfort",
+      "daily life"
+    ]
+  },
+  {
+    "word": "照明",
+    "reading": "しょうめい",
+    "romaji": "shoumei",
+    "meaning_vi": "ánh sáng",
+    "part_of_speech": "noun",
+    "tags": [
+      "lighting",
+      "equipment",
+      "daily life"
+    ]
+  },
+  {
+    "word": "ランプ",
+    "reading": "らんぷ",
+    "romaji": "ranpu",
+    "meaning_vi": "đèn",
+    "part_of_speech": "noun",
+    "tags": [
+      "lamp",
+      "lighting",
+      "daily life"
+    ]
+  },
+  {
+    "word": "懐中電灯",
+    "reading": "かいちゅうでんとう",
+    "romaji": "kaichuudentou",
+    "meaning_vi": "đèn pin",
+    "part_of_speech": "noun",
+    "tags": [
+      "flashlight",
+      "lighting",
+      "daily life"
+    ]
+  },
+  {
+    "word": "換気",
+    "reading": "かんき",
+    "romaji": "kanki",
+    "meaning_vi": "thông gió",
+    "part_of_speech": "noun",
+    "tags": [
+      "ventilation",
+      "comfort",
+      "daily life"
+    ]
+  },
+  {
+    "word": "掃除機",
+    "reading": "そうじき",
+    "romaji": "soujiki",
+    "meaning_vi": "máy hút bụi",
+    "part_of_speech": "noun",
+    "tags": [
+      "vacuum cleaner",
+      "appliance",
+      "daily life"
+    ]
+  },
+  {
+    "word": "アイロン",
+    "reading": "あいろん",
+    "romaji": "airon",
+    "meaning_vi": "máy là quần áo",
+    "part_of_speech": "noun",
+    "tags": [
+      "iron",
+      "appliance",
+      "daily life"
+    ]
+  },
+  {
+    "word": "タオル",
+    "reading": "たおる",
+    "romaji": "taoru",
+    "meaning_vi": "khăn tắm",
+    "part_of_speech": "noun",
+    "tags": [
+      "towel",
+      "textile",
+      "daily life"
+    ]
+  },
+  {
+    "word": "シーツ",
+    "reading": "しーつ",
+    "romaji": "shiitsu",
+    "meaning_vi": "vải trải giường",
+    "part_of_speech": "noun",
+    "tags": [
+      "sheet",
+      "textile",
+      "daily life"
+    ]
+  },
+  {
+    "word": "毛布",
+    "reading": "もうふ",
+    "romaji": "moufu",
+    "meaning_vi": "chăn lông",
+    "part_of_speech": "noun",
+    "tags": [
+      "blanket",
+      "textile",
+      "daily life"
+    ]
+  }
+]

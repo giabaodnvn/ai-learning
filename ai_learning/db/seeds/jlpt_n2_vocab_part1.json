@@ -1,93 +1,993 @@
 [
-  {"word": "所轄", "reading": "しょかつ", "romaji": "shokkatsu", "meaning_vi": "quản lý, kiểm soát", "part_of_speech": "noun", "tags": ["administration", "formal"]},
-  {"word": "配下", "reading": "はいか", "romaji": "haika", "meaning_vi": "dưới quyền, tay chân", "part_of_speech": "noun", "tags": ["organization", "formal"]},
-  {"word": "傘下", "reading": "さんか", "romaji": "sanka", "meaning_vi": "dưới ô, dưới quyền", "part_of_speech": "noun", "tags": ["organization", "business"]},
-  {"word": "配置", "reading": "はいち", "romaji": "haichi", "meaning_vi": "bố trí, sắp xếp", "part_of_speech": "noun", "tags": ["action", "organization"]},
-  {"word": "勤務", "reading": "きんむ", "romaji": "kinmu", "meaning_vi": "công việc, làm việc", "part_of_speech": "noun", "tags": ["business", "work"]},
-  {"word": "勤続", "reading": "きんぞく", "romaji": "kinzoku", "meaning_vi": "tiếp tục làm việc", "part_of_speech": "noun", "tags": ["work", "business"]},
-  {"word": "勤務地", "reading": "きんむち", "romaji": "kinmuchi", "meaning_vi": "địa điểm làm việc", "part_of_speech": "noun", "tags": ["work", "place"]},
-  {"word": "転勤", "reading": "てんきん", "romaji": "tenkin", "meaning_vi": "điều chuyển công tác", "part_of_speech": "noun", "tags": ["work", "action"]},
-  {"word": "配転", "reading": "はいてん", "romaji": "haiten", "meaning_vi": "điều chuyển, sắp xếp lại", "part_of_speech": "noun", "tags": ["organization", "work"]},
-  {"word": "栄転", "reading": "えいてん", "romaji": "eiten", "meaning_vi": "thăng chức vinh dự", "part_of_speech": "noun", "tags": ["work", "success"]},
-  {"word": "降格", "reading": "こうかく", "romaji": "koukaku", "meaning_vi": "hạ chức", "part_of_speech": "noun", "tags": ["work", "failure"]},
-  {"word": "左遷", "reading": "させん", "romaji": "sasen", "meaning_vi": "giáng chức, hạ thấp", "part_of_speech": "noun", "tags": ["work", "failure"]},
-  {"word": "昇進", "reading": "しょうしん", "romaji": "shoushin", "meaning_vi": "thăng chức", "part_of_speech": "noun", "tags": ["work", "success"]},
-  {"word": "昇格", "reading": "しょうかく", "romaji": "shoukaku", "meaning_vi": "nâng cấp, thăng chức", "part_of_speech": "noun", "tags": ["work", "success"]},
-  {"word": "進捗", "reading": "しんちょく", "romaji": "shinchoku", "meaning_vi": "tiến độ, tiến triển", "part_of_speech": "noun", "tags": ["progress", "business"]},
-  {"word": "進展", "reading": "しんてん", "romaji": "shintent", "meaning_vi": "phát triển, tiến triển", "part_of_speech": "noun", "tags": ["progress", "development"]},
-  {"word": "推移", "reading": "すいい", "romaji": "suii", "meaning_vi": "biến thiên, chuyển biến", "part_of_speech": "noun", "tags": ["change", "abstract"]},
-  {"word": "趨勢", "reading": "すうせい", "romaji": "suusei", "meaning_vi": "xu hướng, thị trường", "part_of_speech": "noun", "tags": ["trend", "business"]},
-  {"word": "勢い", "reading": "いきおい", "romaji": "ikoi", "meaning_vi": "sức mạnh, xu hướng", "part_of_speech": "noun", "tags": ["power", "trend"]},
-  {"word": "機運", "reading": "きうん", "romaji": "kiun", "meaning_vi": "cơ hội, khí vận", "part_of_speech": "noun", "tags": ["opportunity", "abstract"]},
-  {"word": "端緒", "reading": "たんしょ", "romaji": "tansho", "meaning_vi": "khởi đầu, bước đầu", "part_of_speech": "noun", "tags": ["beginning", "abstract"]},
-  {"word": "要領", "reading": "ようりょう", "romaji": "youryou", "meaning_vi": "yếu chỉ, cốt lõi", "part_of_speech": "noun", "tags": ["summary", "abstract"]},
-  {"word": "要旨", "reading": "ようし", "romaji": "youshi", "meaning_vi": "ý chính, nội dung chính", "part_of_speech": "noun", "tags": ["summary", "abstract"]},
-  {"word": "大意", "reading": "たいい", "romaji": "taii", "meaning_vi": "ý chính, tóm tắt", "part_of_speech": "noun", "tags": ["summary", "abstract"]},
-  {"word": "概要", "reading": "がいよう", "romaji": "gaiyou", "meaning_vi": "tóm lược, khái quát", "part_of_speech": "noun", "tags": ["summary", "abstract"]},
-  {"word": "摘要", "reading": "てきよう", "romaji": "tekiyou", "meaning_vi": "trích yếu, tóm lược", "part_of_speech": "noun", "tags": ["summary", "formal"]},
-  {"word": "趣旨", "reading": "しゅし", "romaji": "shushi", "meaning_vi": "mục đích, ý tứa", "part_of_speech": "noun", "tags": ["purpose", "abstract"]},
-  {"word": "主旨", "reading": "しゅし", "romaji": "shushi", "meaning_vi": "nội dung chính, mục đích", "part_of_speech": "noun", "tags": ["purpose", "abstract"]},
-  {"word": "趣意", "reading": "しゅい", "romaji": "shui", "meaning_vi": "ý tứa, mục đích", "part_of_speech": "noun", "tags": ["purpose", "abstract"]},
-  {"word": "意向", "reading": "いこう", "romaji": "ikou", "meaning_vi": "ý định, ý kiến", "part_of_speech": "noun", "tags": ["intention", "abstract"]},
-  {"word": "意中", "reading": "いちゅう", "romaji": "ichuu", "meaning_vi": "trong tâm, ý tứa", "part_of_speech": "noun", "tags": ["intention", "abstract"]},
-  {"word": "胸中", "reading": "きょうちゅう", "romaji": "kyouchuu", "meaning_vi": "trong lòng, trong tâm", "part_of_speech": "noun", "tags": ["emotion", "abstract"]},
-  {"word": "本心", "reading": "ほんしん", "romaji": "honshin", "meaning_vi": "thật tâm, lòng chân thành", "part_of_speech": "noun", "tags": ["emotion", "character"]},
-  {"word": "実意", "reading": "じつい", "romaji": "jitsui", "meaning_vi": "thực tâm, chân tâm", "part_of_speech": "noun", "tags": ["emotion", "character"]},
-  {"word": "誠意", "reading": "せいい", "romaji": "seiі", "meaning_vi": "chân tâm, thành tâm", "part_of_speech": "noun", "tags": ["emotion", "character"]},
-  {"word": "至誠", "reading": "しせい", "romaji": "shisei", "meaning_vi": "tuyệt đối chân tâm", "part_of_speech": "noun", "tags": ["character", "formal"]},
-  {"word": "盤石", "reading": "ばんじゃく", "romaji": "banjaku", "meaning_vi": "nền tảng vững chắc", "part_of_speech": "noun", "tags": ["stability", "formal"]},
-  {"word": "基盤", "reading": "きばん", "romaji": "kiban", "meaning_vi": "nền tảng, cơ sở", "part_of_speech": "noun", "tags": ["foundation", "abstract"]},
-  {"word": "基礎", "reading": "きそ", "romaji": "kiso", "meaning_vi": "nền tảng, cơ sở", "part_of_speech": "noun", "tags": ["foundation", "abstract"]},
-  {"word": "土台", "reading": "どだい", "romaji": "dodai", "meaning_vi": "bệ, nền tảng", "part_of_speech": "noun", "tags": ["foundation", "abstract"]},
-  {"word": "足がかり", "reading": "あしがかり", "romaji": "ashigakari", "meaning_vi": "bước đầu, điểm tựa", "part_of_speech": "noun", "tags": ["foundation", "beginning"]},
-  {"word": "足掛かり", "reading": "あしがかり", "romaji": "ashigakari", "meaning_vi": "bước đầu, tựa", "part_of_speech": "noun", "tags": ["foundation", "beginning"]},
-  {"word": "取っ掛かり", "reading": "とっかかり", "romaji": "tokkakari", "meaning_vi": "khởi đầu, điểm bắt đầu", "part_of_speech": "noun", "tags": ["beginning", "abstract"]},
-  {"word": "掛かり", "reading": "かかり", "romaji": "kakari", "meaning_vi": "phần, mục, điểm tựa", "part_of_speech": "noun", "tags": ["abstract"]},
-  {"word": "由来", "reading": "ゆらい", "romaji": "yurai", "meaning_vi": "nguồn gốc, bắt nguồn", "part_of_speech": "noun", "tags": ["origin", "abstract"]},
-  {"word": "根源", "reading": "こんげん", "romaji": "kongen", "meaning_vi": "gốc rễ, nguồn gốc", "part_of_speech": "noun", "tags": ["origin", "abstract"]},
-  {"word": "淵源", "reading": "えんげん", "romaji": "engen", "meaning_vi": "nguồn gốc sâu xa", "part_of_speech": "noun", "tags": ["origin", "abstract"]},
-  {"word": "伏線", "reading": "ふくせん", "romaji": "fukusen", "meaning_vi": "ám chỉ, chuẩn bị", "part_of_speech": "noun", "tags": ["preparation", "narrative"]},
-  {"word": "布石", "reading": "ふせき", "romaji": "fuseki", "meaning_vi": "bước chuẩn bị, tính toán trước", "part_of_speech": "noun", "tags": ["preparation", "strategy"]},
-  {"word": "仕掛け", "reading": "しかけ", "romaji": "shikake", "meaning_vi": "cách sắp xếp, kế hoạch", "part_of_speech": "noun", "tags": ["preparation", "strategy"]},
-  {"word": "手筈", "reading": "てはず", "romaji": "tehazu", "meaning_vi": "phương pháp, cách thức", "part_of_speech": "noun", "tags": ["method", "preparation"]},
-  {"word": "手はず", "reading": "てはず", "romaji": "tehazu", "meaning_vi": "cách bố trí, thủ tục", "part_of_speech": "noun", "tags": ["method", "procedure"]},
-  {"word": "段取り", "reading": "だんどり", "romaji": "dandori", "meaning_vi": "sắp xếp, chuẩn bị", "part_of_speech": "noun", "tags": ["preparation", "organization"]},
-  {"word": "手順", "reading": "てじゅん", "romaji": "tejun", "meaning_vi": "thủ tục, thứ tự", "part_of_speech": "noun", "tags": ["procedure", "order"]},
-  {"word": "次第", "reading": "しだい", "romaji": "shidai", "meaning_vi": "thứ tự, tuỳ theo", "part_of_speech": "noun", "tags": ["order", "condition"]},
-  {"word": "一貫", "reading": "いっかん", "romaji": "ikkan", "meaning_vi": "nhất quán, từ đầu đến cuối", "part_of_speech": "noun", "tags": ["consistency", "abstract"]},
-  {"word": "節操", "reading": "せっそう", "romaji": "sessou", "meaning_vi": "tiết tấu, nguyên tắc", "part_of_speech": "noun", "tags": ["principle", "character"]},
-  {"word": "操守", "reading": "そうしゅ", "romaji": "soushu", "meaning_vi": "đạo đức, nguyên tắc", "part_of_speech": "noun", "tags": ["morality", "character"]},
-  {"word": "廉潔", "reading": "れんけつ", "romaji": "renketsu", "meaning_vi": "liêm chính, trong sạch", "part_of_speech": "adjective", "tags": ["morality", "character"]},
-  {"word": "清廉", "reading": "せいれん", "romaji": "seiren", "meaning_vi": "sạch sẽ, trong sạch", "part_of_speech": "adjective", "tags": ["morality", "character"]},
-  {"word": "正直", "reading": "しょうじき", "romaji": "shoujiki", "meaning_vi": "thành thật, trung thực", "part_of_speech": "adjective", "tags": ["character", "morality"]},
-  {"word": "率直", "reading": "そっちょく", "romaji": "sotchoku", "meaning_vi": "thẳng thắn, tươm tất", "part_of_speech": "adjective", "tags": ["character", "communication"]},
-  {"word": "率意", "reading": "そつい", "romaji": "sotsui", "meaning_vi": "bốc đồng, tìm tinh", "part_of_speech": "adjective", "tags": ["character"]},
-  {"word": "素直", "reading": "すなお", "romaji": "sunao", "meaning_vi": "thẳng thắn, tốt bụng", "part_of_speech": "adjective", "tags": ["character"]},
-  {"word": "率真", "reading": "そっしん", "romaji": "soshin", "meaning_vi": "thẳng thắn, chân thành", "part_of_speech": "adjective", "tags": ["character", "formal"]},
-  {"word": "坦白", "reading": "たんぱく", "romaji": "tanpaku", "meaning_vi": "thẳng thắn, khai bạch", "part_of_speech": "adjective", "tags": ["character", "formal"]},
-  {"word": "坦々", "reading": "たんたん", "romaji": "tantan", "meaning_vi": "bình tĩnh, thẳng thắn", "part_of_speech": "adjective", "tags": ["character"]},
-  {"word": "平坦", "reading": "へいたん", "romaji": "heitan", "meaning_vi": "bằng phẳng, nhẵn", "part_of_speech": "adjective", "tags": ["physical"]},
-  {"word": "坦道", "reading": "たんどう", "romaji": "tandou", "meaning_vi": "đường bằng phẳng", "part_of_speech": "noun", "tags": ["place", "physical"]},
-  {"word": "平坦性", "reading": "へいたんせい", "romaji": "heitansei", "meaning_vi": "tính bằng phẳng", "part_of_speech": "noun", "tags": ["physical"]},
-  {"word": "峻険", "reading": "しゅんけん", "romaji": "shunken", "meaning_vi": "hiểm trở, gập ghềnh", "part_of_speech": "adjective", "tags": ["physical", "difficult"]},
-  {"word": "崎嶇", "reading": "きこ", "romaji": "kiko", "meaning_vi": "gập ghềnh, hiểm trở", "part_of_speech": "adjective", "tags": ["physical", "difficult"]},
-  {"word": "起伏", "reading": "きふく", "romaji": "kifuku", "meaning_vi": "lên xuống, thăng trầm", "part_of_speech": "noun", "tags": ["physical", "change"]},
-  {"word": "凹凸", "reading": "おうとつ", "romaji": "outotsu", "meaning_vi": "lõm lồi, gập ghềnh", "part_of_speech": "noun", "tags": ["physical"]},
-  {"word": "凹地", "reading": "おうち", "romaji": "ouchi", "meaning_vi": "vùng lõm, vực thẳm", "part_of_speech": "noun", "tags": ["place", "physical"]},
-  {"word": "盆地", "reading": "ぼんち", "romaji": "bonchi", "meaning_vi": "bồn địa, hạ nguyên", "part_of_speech": "noun", "tags": ["place", "geography"]},
-  {"word": "堆積", "reading": "たいせき", "romaji": "taiseki", "meaning_vi": "tích lũy, tích tụ", "part_of_speech": "noun", "tags": ["action", "geology"]},
-  {"word": "沈積", "reading": "ちんせき", "romaji": "chinseki", "meaning_vi": "lắng đọng, tủa", "part_of_speech": "noun", "tags": ["action", "geology"]},
-  {"word": "堆砂", "reading": "たいしゃ", "romaji": "taisha", "meaning_vi": "tích tụ cát", "part_of_speech": "noun", "tags": ["geology"]},
-  {"word": "堆雪", "reading": "たいせつ", "romaji": "taisetsu", "meaning_vi": "tích tụ tuyết", "part_of_speech": "noun", "tags": ["geology"]},
-  {"word": "崩壊", "reading": "ほうかい", "romaji": "houkai", "meaning_vi": "sập đổ, hủy hoại", "part_of_speech": "noun", "tags": ["destruction", "collapse"]},
-  {"word": "壊滅", "reading": "かいめつ", "romaji": "kaimetsu", "meaning_vi": "tàn phá, tiêu diệt", "part_of_speech": "noun", "tags": ["destruction"]},
-  {"word": "決壊", "reading": "けつかい", "romaji": "ketsukai", "meaning_vi": "vỡ đê, bị vỡ", "part_of_speech": "noun", "tags": ["destruction", "disaster"]},
-  {"word": "亀裂", "reading": "きれつ", "romaji": "kiretsu", "meaning_vi": "nứt nẻ, khe hở", "part_of_speech": "noun", "tags": ["damage", "physical"]},
-  {"word": "裂け目", "reading": "さけめ", "romaji": "sakeme", "meaning_vi": "khe hở, nứt nẻ", "part_of_speech": "noun", "tags": ["damage", "physical"]},
-  {"word": "罅", "reading": "ひび", "romaji": "hibi", "meaning_vi": "nứt nẻ, khe hở", "part_of_speech": "noun", "tags": ["damage", "physical"]},
-  {"word": "隙間", "reading": "すきま", "romaji": "sukima", "meaning_vi": "khe hở, lỗ hổng", "part_of_speech": "noun", "tags": ["space", "physical"]},
-  {"word": "空隙", "reading": "くうげき", "romaji": "kuugeki", "meaning_vi": "chỗ trống, lỗ hổng", "part_of_speech": "noun", "tags": ["space", "abstract"]},
-  {"word": "欠陥", "reading": "けっかん", "romaji": "kekkan", "meaning_vi": "khiếm khuyết, khuyết điểm", "part_of_speech": "noun", "tags": ["defect", "failure"]},
-  {"word": "不備", "reading": "ふび", "romaji": "fubi", "meaning_vi": "không đầy đủ, thiếu", "part_of_speech": "noun", "tags": ["defect", "incomplete"]},
-  {"word": "不十分", "reading": "ふじゅうぶん", "romaji": "fujuubun", "meaning_vi": "không đủ, không đầy đủ", "part_of_speech": "adjective", "tags": ["incomplete", "insufficient"]}
+  {
+    "word": "所轄",
+    "reading": "しょかつ",
+    "romaji": "shokkatsu",
+    "meaning_vi": "quản lý, kiểm soát",
+    "part_of_speech": "noun",
+    "tags": [
+      "administration",
+      "formal"
+    ]
+  },
+  {
+    "word": "配下",
+    "reading": "はいか",
+    "romaji": "haika",
+    "meaning_vi": "dưới quyền, tay chân",
+    "part_of_speech": "noun",
+    "tags": [
+      "organization",
+      "formal"
+    ]
+  },
+  {
+    "word": "傘下",
+    "reading": "さんか",
+    "romaji": "sanka",
+    "meaning_vi": "dưới ô, dưới quyền",
+    "part_of_speech": "noun",
+    "tags": [
+      "organization",
+      "business"
+    ]
+  },
+  {
+    "word": "配置",
+    "reading": "はいち",
+    "romaji": "haichi",
+    "meaning_vi": "bố trí, sắp xếp",
+    "part_of_speech": "noun",
+    "tags": [
+      "action",
+      "organization"
+    ]
+  },
+  {
+    "word": "勤務",
+    "reading": "きんむ",
+    "romaji": "kinmu",
+    "meaning_vi": "công việc, làm việc",
+    "part_of_speech": "noun",
+    "tags": [
+      "business",
+      "work"
+    ]
+  },
+  {
+    "word": "勤続",
+    "reading": "きんぞく",
+    "romaji": "kinzoku",
+    "meaning_vi": "tiếp tục làm việc",
+    "part_of_speech": "noun",
+    "tags": [
+      "work",
+      "business"
+    ]
+  },
+  {
+    "word": "勤務地",
+    "reading": "きんむち",
+    "romaji": "kinmuchi",
+    "meaning_vi": "địa điểm làm việc",
+    "part_of_speech": "noun",
+    "tags": [
+      "work",
+      "place"
+    ]
+  },
+  {
+    "word": "転勤",
+    "reading": "てんきん",
+    "romaji": "tenkin",
+    "meaning_vi": "điều chuyển công tác",
+    "part_of_speech": "noun",
+    "tags": [
+      "work",
+      "action"
+    ]
+  },
+  {
+    "word": "配転",
+    "reading": "はいてん",
+    "romaji": "haiten",
+    "meaning_vi": "điều chuyển, sắp xếp lại",
+    "part_of_speech": "noun",
+    "tags": [
+      "organization",
+      "work"
+    ]
+  },
+  {
+    "word": "栄転",
+    "reading": "えいてん",
+    "romaji": "eiten",
+    "meaning_vi": "thăng chức vinh dự",
+    "part_of_speech": "noun",
+    "tags": [
+      "work",
+      "success"
+    ]
+  },
+  {
+    "word": "降格",
+    "reading": "こうかく",
+    "romaji": "koukaku",
+    "meaning_vi": "hạ chức",
+    "part_of_speech": "noun",
+    "tags": [
+      "work",
+      "failure"
+    ]
+  },
+  {
+    "word": "左遷",
+    "reading": "させん",
+    "romaji": "sasen",
+    "meaning_vi": "giáng chức, hạ thấp",
+    "part_of_speech": "noun",
+    "tags": [
+      "work",
+      "failure"
+    ]
+  },
+  {
+    "word": "昇進",
+    "reading": "しょうしん",
+    "romaji": "shoushin",
+    "meaning_vi": "thăng chức",
+    "part_of_speech": "noun",
+    "tags": [
+      "work",
+      "success"
+    ]
+  },
+  {
+    "word": "昇格",
+    "reading": "しょうかく",
+    "romaji": "shoukaku",
+    "meaning_vi": "nâng cấp, thăng chức",
+    "part_of_speech": "noun",
+    "tags": [
+      "work",
+      "success"
+    ]
+  },
+  {
+    "word": "進捗",
+    "reading": "しんちょく",
+    "romaji": "shinchoku",
+    "meaning_vi": "tiến độ, tiến triển",
+    "part_of_speech": "noun",
+    "tags": [
+      "progress",
+      "business"
+    ]
+  },
+  {
+    "word": "進展",
+    "reading": "しんてん",
+    "romaji": "shintent",
+    "meaning_vi": "phát triển, tiến triển",
+    "part_of_speech": "noun",
+    "tags": [
+      "progress",
+      "development"
+    ]
+  },
+  {
+    "word": "推移",
+    "reading": "すいい",
+    "romaji": "suii",
+    "meaning_vi": "biến thiên, chuyển biến",
+    "part_of_speech": "noun",
+    "tags": [
+      "change",
+      "abstract"
+    ]
+  },
+  {
+    "word": "趨勢",
+    "reading": "すうせい",
+    "romaji": "suusei",
+    "meaning_vi": "xu hướng, thị trường",
+    "part_of_speech": "noun",
+    "tags": [
+      "trend",
+      "business"
+    ]
+  },
+  {
+    "word": "勢い",
+    "reading": "いきおい",
+    "romaji": "ikoi",
+    "meaning_vi": "sức mạnh, xu hướng",
+    "part_of_speech": "noun",
+    "tags": [
+      "power",
+      "trend"
+    ]
+  },
+  {
+    "word": "機運",
+    "reading": "きうん",
+    "romaji": "kiun",
+    "meaning_vi": "cơ hội, khí vận",
+    "part_of_speech": "noun",
+    "tags": [
+      "opportunity",
+      "abstract"
+    ]
+  },
+  {
+    "word": "端緒",
+    "reading": "たんしょ",
+    "romaji": "tansho",
+    "meaning_vi": "khởi đầu, bước đầu",
+    "part_of_speech": "noun",
+    "tags": [
+      "beginning",
+      "abstract"
+    ]
+  },
+  {
+    "word": "要領",
+    "reading": "ようりょう",
+    "romaji": "youryou",
+    "meaning_vi": "yếu chỉ, cốt lõi",
+    "part_of_speech": "noun",
+    "tags": [
+      "summary",
+      "abstract"
+    ]
+  },
+  {
+    "word": "要旨",
+    "reading": "ようし",
+    "romaji": "youshi",
+    "meaning_vi": "ý chính, nội dung chính",
+    "part_of_speech": "noun",
+    "tags": [
+      "summary",
+      "abstract"
+    ]
+  },
+  {
+    "word": "大意",
+    "reading": "たいい",
+    "romaji": "taii",
+    "meaning_vi": "ý chính, tóm tắt",
+    "part_of_speech": "noun",
+    "tags": [
+      "summary",
+      "abstract"
+    ]
+  },
+  {
+    "word": "概要",
+    "reading": "がいよう",
+    "romaji": "gaiyou",
+    "meaning_vi": "tóm lược, khái quát",
+    "part_of_speech": "noun",
+    "tags": [
+      "summary",
+      "abstract"
+    ]
+  },
+  {
+    "word": "摘要",
+    "reading": "てきよう",
+    "romaji": "tekiyou",
+    "meaning_vi": "trích yếu, tóm lược",
+    "part_of_speech": "noun",
+    "tags": [
+      "summary",
+      "formal"
+    ]
+  },
+  {
+    "word": "趣旨",
+    "reading": "しゅし",
+    "romaji": "shushi",
+    "meaning_vi": "mục đích, ý tứa",
+    "part_of_speech": "noun",
+    "tags": [
+      "purpose",
+      "abstract"
+    ]
+  },
+  {
+    "word": "主旨",
+    "reading": "しゅし",
+    "romaji": "shushi",
+    "meaning_vi": "nội dung chính, mục đích",
+    "part_of_speech": "noun",
+    "tags": [
+      "purpose",
+      "abstract"
+    ]
+  },
+  {
+    "word": "趣意",
+    "reading": "しゅい",
+    "romaji": "shui",
+    "meaning_vi": "ý tứa, mục đích",
+    "part_of_speech": "noun",
+    "tags": [
+      "purpose",
+      "abstract"
+    ]
+  },
+  {
+    "word": "意向",
+    "reading": "いこう",
+    "romaji": "ikou",
+    "meaning_vi": "ý định, ý kiến",
+    "part_of_speech": "noun",
+    "tags": [
+      "intention",
+      "abstract"
+    ]
+  },
+  {
+    "word": "意中",
+    "reading": "いちゅう",
+    "romaji": "ichuu",
+    "meaning_vi": "trong tâm, ý tứa",
+    "part_of_speech": "noun",
+    "tags": [
+      "intention",
+      "abstract"
+    ]
+  },
+  {
+    "word": "胸中",
+    "reading": "きょうちゅう",
+    "romaji": "kyouchuu",
+    "meaning_vi": "trong lòng, trong tâm",
+    "part_of_speech": "noun",
+    "tags": [
+      "emotion",
+      "abstract"
+    ]
+  },
+  {
+    "word": "本心",
+    "reading": "ほんしん",
+    "romaji": "honshin",
+    "meaning_vi": "thật tâm, lòng chân thành",
+    "part_of_speech": "noun",
+    "tags": [
+      "emotion",
+      "character"
+    ]
+  },
+  {
+    "word": "実意",
+    "reading": "じつい",
+    "romaji": "jitsui",
+    "meaning_vi": "thực tâm, chân tâm",
+    "part_of_speech": "noun",
+    "tags": [
+      "emotion",
+      "character"
+    ]
+  },
+  {
+    "word": "誠意",
+    "reading": "せいい",
+    "romaji": "seiі",
+    "meaning_vi": "chân tâm, thành tâm",
+    "part_of_speech": "noun",
+    "tags": [
+      "emotion",
+      "character"
+    ]
+  },
+  {
+    "word": "至誠",
+    "reading": "しせい",
+    "romaji": "shisei",
+    "meaning_vi": "tuyệt đối chân tâm",
+    "part_of_speech": "noun",
+    "tags": [
+      "character",
+      "formal"
+    ]
+  },
+  {
+    "word": "盤石",
+    "reading": "ばんじゃく",
+    "romaji": "banjaku",
+    "meaning_vi": "nền tảng vững chắc",
+    "part_of_speech": "noun",
+    "tags": [
+      "stability",
+      "formal"
+    ]
+  },
+  {
+    "word": "基盤",
+    "reading": "きばん",
+    "romaji": "kiban",
+    "meaning_vi": "nền tảng, cơ sở",
+    "part_of_speech": "noun",
+    "tags": [
+      "foundation",
+      "abstract"
+    ]
+  },
+  {
+    "word": "基礎",
+    "reading": "きそ",
+    "romaji": "kiso",
+    "meaning_vi": "nền tảng, cơ sở",
+    "part_of_speech": "noun",
+    "tags": [
+      "foundation",
+      "abstract"
+    ]
+  },
+  {
+    "word": "土台",
+    "reading": "どだい",
+    "romaji": "dodai",
+    "meaning_vi": "bệ, nền tảng",
+    "part_of_speech": "noun",
+    "tags": [
+      "foundation",
+      "abstract"
+    ]
+  },
+  {
+    "word": "足がかり",
+    "reading": "あしがかり",
+    "romaji": "ashigakari",
+    "meaning_vi": "bước đầu, điểm tựa",
+    "part_of_speech": "noun",
+    "tags": [
+      "foundation",
+      "beginning"
+    ]
+  },
+  {
+    "word": "足掛かり",
+    "reading": "あしがかり",
+    "romaji": "ashigakari",
+    "meaning_vi": "bước đầu, tựa",
+    "part_of_speech": "noun",
+    "tags": [
+      "foundation",
+      "beginning"
+    ]
+  },
+  {
+    "word": "取っ掛かり",
+    "reading": "とっかかり",
+    "romaji": "tokkakari",
+    "meaning_vi": "khởi đầu, điểm bắt đầu",
+    "part_of_speech": "noun",
+    "tags": [
+      "beginning",
+      "abstract"
+    ]
+  },
+  {
+    "word": "掛かり",
+    "reading": "かかり",
+    "romaji": "kakari",
+    "meaning_vi": "phần, mục, điểm tựa",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract"
+    ]
+  },
+  {
+    "word": "由来",
+    "reading": "ゆらい",
+    "romaji": "yurai",
+    "meaning_vi": "nguồn gốc, bắt nguồn",
+    "part_of_speech": "noun",
+    "tags": [
+      "origin",
+      "abstract"
+    ]
+  },
+  {
+    "word": "根源",
+    "reading": "こんげん",
+    "romaji": "kongen",
+    "meaning_vi": "gốc rễ, nguồn gốc",
+    "part_of_speech": "noun",
+    "tags": [
+      "origin",
+      "abstract"
+    ]
+  },
+  {
+    "word": "淵源",
+    "reading": "えんげん",
+    "romaji": "engen",
+    "meaning_vi": "nguồn gốc sâu xa",
+    "part_of_speech": "noun",
+    "tags": [
+      "origin",
+      "abstract"
+    ]
+  },
+  {
+    "word": "伏線",
+    "reading": "ふくせん",
+    "romaji": "fukusen",
+    "meaning_vi": "ám chỉ, chuẩn bị",
+    "part_of_speech": "noun",
+    "tags": [
+      "preparation",
+      "narrative"
+    ]
+  },
+  {
+    "word": "布石",
+    "reading": "ふせき",
+    "romaji": "fuseki",
+    "meaning_vi": "bước chuẩn bị, tính toán trước",
+    "part_of_speech": "noun",
+    "tags": [
+      "preparation",
+      "strategy"
+    ]
+  },
+  {
+    "word": "仕掛け",
+    "reading": "しかけ",
+    "romaji": "shikake",
+    "meaning_vi": "cách sắp xếp, kế hoạch",
+    "part_of_speech": "noun",
+    "tags": [
+      "preparation",
+      "strategy"
+    ]
+  },
+  {
+    "word": "手筈",
+    "reading": "てはず",
+    "romaji": "tehazu",
+    "meaning_vi": "phương pháp, cách thức",
+    "part_of_speech": "noun",
+    "tags": [
+      "method",
+      "preparation"
+    ]
+  },
+  {
+    "word": "手はず",
+    "reading": "てはず",
+    "romaji": "tehazu",
+    "meaning_vi": "cách bố trí, thủ tục",
+    "part_of_speech": "noun",
+    "tags": [
+      "method",
+      "procedure"
+    ]
+  },
+  {
+    "word": "段取り",
+    "reading": "だんどり",
+    "romaji": "dandori",
+    "meaning_vi": "sắp xếp, chuẩn bị",
+    "part_of_speech": "noun",
+    "tags": [
+      "preparation",
+      "organization"
+    ]
+  },
+  {
+    "word": "手順",
+    "reading": "てじゅん",
+    "romaji": "tejun",
+    "meaning_vi": "thủ tục, thứ tự",
+    "part_of_speech": "noun",
+    "tags": [
+      "procedure",
+      "order"
+    ]
+  },
+  {
+    "word": "次第",
+    "reading": "しだい",
+    "romaji": "shidai",
+    "meaning_vi": "thứ tự, tuỳ theo",
+    "part_of_speech": "noun",
+    "tags": [
+      "order",
+      "condition"
+    ]
+  },
+  {
+    "word": "一貫",
+    "reading": "いっかん",
+    "romaji": "ikkan",
+    "meaning_vi": "nhất quán, từ đầu đến cuối",
+    "part_of_speech": "noun",
+    "tags": [
+      "consistency",
+      "abstract"
+    ]
+  },
+  {
+    "word": "節操",
+    "reading": "せっそう",
+    "romaji": "sessou",
+    "meaning_vi": "tiết tấu, nguyên tắc",
+    "part_of_speech": "noun",
+    "tags": [
+      "principle",
+      "character"
+    ]
+  },
+  {
+    "word": "操守",
+    "reading": "そうしゅ",
+    "romaji": "soushu",
+    "meaning_vi": "đạo đức, nguyên tắc",
+    "part_of_speech": "noun",
+    "tags": [
+      "morality",
+      "character"
+    ]
+  },
+  {
+    "word": "廉潔",
+    "reading": "れんけつ",
+    "romaji": "renketsu",
+    "meaning_vi": "liêm chính, trong sạch",
+    "part_of_speech": "adjective",
+    "tags": [
+      "morality",
+      "character"
+    ]
+  },
+  {
+    "word": "清廉",
+    "reading": "せいれん",
+    "romaji": "seiren",
+    "meaning_vi": "sạch sẽ, trong sạch",
+    "part_of_speech": "adjective",
+    "tags": [
+      "morality",
+      "character"
+    ]
+  },
+  {
+    "word": "正直",
+    "reading": "しょうじき",
+    "romaji": "shoujiki",
+    "meaning_vi": "thành thật, trung thực",
+    "part_of_speech": "adjective",
+    "tags": [
+      "character",
+      "morality"
+    ]
+  },
+  {
+    "word": "率直",
+    "reading": "そっちょく",
+    "romaji": "sotchoku",
+    "meaning_vi": "thẳng thắn, tươm tất",
+    "part_of_speech": "adjective",
+    "tags": [
+      "character",
+      "communication"
+    ]
+  },
+  {
+    "word": "率意",
+    "reading": "そつい",
+    "romaji": "sotsui",
+    "meaning_vi": "bốc đồng, tìm tinh",
+    "part_of_speech": "adjective",
+    "tags": [
+      "character"
+    ]
+  },
+  {
+    "word": "素直",
+    "reading": "すなお",
+    "romaji": "sunao",
+    "meaning_vi": "thẳng thắn, tốt bụng",
+    "part_of_speech": "adjective",
+    "tags": [
+      "character"
+    ]
+  },
+  {
+    "word": "率真",
+    "reading": "そっしん",
+    "romaji": "soshin",
+    "meaning_vi": "thẳng thắn, chân thành",
+    "part_of_speech": "adjective",
+    "tags": [
+      "character",
+      "formal"
+    ]
+  },
+  {
+    "word": "坦白",
+    "reading": "たんぱく",
+    "romaji": "tanpaku",
+    "meaning_vi": "thẳng thắn, khai bạch",
+    "part_of_speech": "adjective",
+    "tags": [
+      "character",
+      "formal"
+    ]
+  },
+  {
+    "word": "坦々",
+    "reading": "たんたん",
+    "romaji": "tantan",
+    "meaning_vi": "bình tĩnh, thẳng thắn",
+    "part_of_speech": "adjective",
+    "tags": [
+      "character"
+    ]
+  },
+  {
+    "word": "平坦",
+    "reading": "へいたん",
+    "romaji": "heitan",
+    "meaning_vi": "bằng phẳng, nhẵn",
+    "part_of_speech": "adjective",
+    "tags": [
+      "physical"
+    ]
+  },
+  {
+    "word": "坦道",
+    "reading": "たんどう",
+    "romaji": "tandou",
+    "meaning_vi": "đường bằng phẳng",
+    "part_of_speech": "noun",
+    "tags": [
+      "place",
+      "physical"
+    ]
+  },
+  {
+    "word": "平坦性",
+    "reading": "へいたんせい",
+    "romaji": "heitansei",
+    "meaning_vi": "tính bằng phẳng",
+    "part_of_speech": "noun",
+    "tags": [
+      "physical"
+    ]
+  },
+  {
+    "word": "峻険",
+    "reading": "しゅんけん",
+    "romaji": "shunken",
+    "meaning_vi": "hiểm trở, gập ghềnh",
+    "part_of_speech": "adjective",
+    "tags": [
+      "physical",
+      "difficult"
+    ]
+  },
+  {
+    "word": "崎嶇",
+    "reading": "きこ",
+    "romaji": "kiko",
+    "meaning_vi": "gập ghềnh, hiểm trở",
+    "part_of_speech": "adjective",
+    "tags": [
+      "physical",
+      "difficult"
+    ]
+  },
+  {
+    "word": "起伏",
+    "reading": "きふく",
+    "romaji": "kifuku",
+    "meaning_vi": "lên xuống, thăng trầm",
+    "part_of_speech": "noun",
+    "tags": [
+      "physical",
+      "change"
+    ]
+  },
+  {
+    "word": "凹凸",
+    "reading": "おうとつ",
+    "romaji": "outotsu",
+    "meaning_vi": "lõm lồi, gập ghềnh",
+    "part_of_speech": "noun",
+    "tags": [
+      "physical"
+    ]
+  },
+  {
+    "word": "凹地",
+    "reading": "おうち",
+    "romaji": "ouchi",
+    "meaning_vi": "vùng lõm, vực thẳm",
+    "part_of_speech": "noun",
+    "tags": [
+      "place",
+      "physical"
+    ]
+  },
+  {
+    "word": "盆地",
+    "reading": "ぼんち",
+    "romaji": "bonchi",
+    "meaning_vi": "bồn địa, hạ nguyên",
+    "part_of_speech": "noun",
+    "tags": [
+      "place",
+      "geography"
+    ]
+  },
+  {
+    "word": "堆積",
+    "reading": "たいせき",
+    "romaji": "taiseki",
+    "meaning_vi": "tích lũy, tích tụ",
+    "part_of_speech": "noun",
+    "tags": [
+      "action",
+      "geology"
+    ]
+  },
+  {
+    "word": "沈積",
+    "reading": "ちんせき",
+    "romaji": "chinseki",
+    "meaning_vi": "lắng đọng, tủa",
+    "part_of_speech": "noun",
+    "tags": [
+      "action",
+      "geology"
+    ]
+  },
+  {
+    "word": "堆砂",
+    "reading": "たいしゃ",
+    "romaji": "taisha",
+    "meaning_vi": "tích tụ cát",
+    "part_of_speech": "noun",
+    "tags": [
+      "geology"
+    ]
+  },
+  {
+    "word": "堆雪",
+    "reading": "たいせつ",
+    "romaji": "taisetsu",
+    "meaning_vi": "tích tụ tuyết",
+    "part_of_speech": "noun",
+    "tags": [
+      "geology"
+    ]
+  },
+  {
+    "word": "崩壊",
+    "reading": "ほうかい",
+    "romaji": "houkai",
+    "meaning_vi": "sập đổ, hủy hoại",
+    "part_of_speech": "noun",
+    "tags": [
+      "destruction",
+      "collapse"
+    ]
+  },
+  {
+    "word": "壊滅",
+    "reading": "かいめつ",
+    "romaji": "kaimetsu",
+    "meaning_vi": "tàn phá, tiêu diệt",
+    "part_of_speech": "noun",
+    "tags": [
+      "destruction"
+    ]
+  },
+  {
+    "word": "決壊",
+    "reading": "けつかい",
+    "romaji": "ketsukai",
+    "meaning_vi": "vỡ đê, bị vỡ",
+    "part_of_speech": "noun",
+    "tags": [
+      "destruction",
+      "disaster"
+    ]
+  },
+  {
+    "word": "亀裂",
+    "reading": "きれつ",
+    "romaji": "kiretsu",
+    "meaning_vi": "nứt nẻ, khe hở",
+    "part_of_speech": "noun",
+    "tags": [
+      "damage",
+      "physical"
+    ]
+  },
+  {
+    "word": "裂け目",
+    "reading": "さけめ",
+    "romaji": "sakeme",
+    "meaning_vi": "khe hở, nứt nẻ",
+    "part_of_speech": "noun",
+    "tags": [
+      "damage",
+      "physical"
+    ]
+  },
+  {
+    "word": "罅",
+    "reading": "ひび",
+    "romaji": "hibi",
+    "meaning_vi": "nứt nẻ, khe hở",
+    "part_of_speech": "noun",
+    "tags": [
+      "damage",
+      "physical"
+    ]
+  },
+  {
+    "word": "隙間",
+    "reading": "すきま",
+    "romaji": "sukima",
+    "meaning_vi": "khe hở, lỗ hổng",
+    "part_of_speech": "noun",
+    "tags": [
+      "space",
+      "physical"
+    ]
+  },
+  {
+    "word": "空隙",
+    "reading": "くうげき",
+    "romaji": "kuugeki",
+    "meaning_vi": "chỗ trống, lỗ hổng",
+    "part_of_speech": "noun",
+    "tags": [
+      "space",
+      "abstract"
+    ]
+  },
+  {
+    "word": "欠陥",
+    "reading": "けっかん",
+    "romaji": "kekkan",
+    "meaning_vi": "khiếm khuyết, khuyết điểm",
+    "part_of_speech": "noun",
+    "tags": [
+      "defect",
+      "failure"
+    ]
+  },
+  {
+    "word": "不備",
+    "reading": "ふび",
+    "romaji": "fubi",
+    "meaning_vi": "không đầy đủ, thiếu",
+    "part_of_speech": "noun",
+    "tags": [
+      "defect",
+      "incomplete"
+    ]
+  },
+  {
+    "word": "不十分",
+    "reading": "ふじゅうぶん",
+    "romaji": "fujuubun",
+    "meaning_vi": "không đủ, không đầy đủ",
+    "part_of_speech": "adjective",
+    "tags": [
+      "incomplete",
+      "insufficient"
+    ]
+  }
 ]

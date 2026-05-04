@@ -105,21 +105,6 @@
     "notes_vi": "Biểu thị tính chất hoặc ngoại hình có vẻ như."
   },
   {
-    "pattern": "〜かねない",
-    "explanation_vi": "Có thể..., dễ bị...",
-    "examples": [
-      {
-        "ja": "この計画は失敗しかねない。",
-        "vi": "Kế hoạch này có thể thất bại."
-      },
-      {
-        "ja": "そんなことをすれば、事故を起こしかねない。",
-        "vi": "Nếu làm như vậy, dễ bị gây ra tai nạn."
-      }
-    ],
-    "notes_vi": "Biểu thị khả năng xảy ra điều gì đó, thường tiêu cực."
-  },
-  {
     "pattern": "〜かねる",
     "explanation_vi": "Không thể..., khó có thể...",
     "examples": [
@@ -210,21 +195,6 @@
     "notes_vi": "Biểu thị tính chất vững chắc hoặc mức độ đáng kể."
   },
   {
-    "pattern": "〜つつ",
-    "explanation_vi": "Trong khi..., vừa... vừa...",
-    "examples": [
-      {
-        "ja": "仕事をしつつ、勉強している。",
-        "vi": "Trong khi làm việc, anh ấy vẫn học tập."
-      },
-      {
-        "ja": "成功しつつも、新しい問題が生じた。",
-        "vi": "Mặc dù thành công, nhưng các vấn đề mới nảy sinh."
-      }
-    ],
-    "notes_vi": "Biểu thị hai hành động diễn ra cùng lúc hoặc mâu thuẫn."
-  },
-  {
     "pattern": "〜ながら",
     "explanation_vi": "Trong khi..., mặc dù..., vừa... vừa...",
     "examples": [
@@ -238,21 +208,6 @@
       }
     ],
     "notes_vi": "Một trong những patterns phổ biến nhất trong tiếng Nhật."
-  },
-  {
-    "pattern": "〜とおり",
-    "explanation_vi": "Theo..., như..., chính như...",
-    "examples": [
-      {
-        "ja": "説明書の通りに組み立ててください。",
-        "vi": "Hãy lắp ráp theo hướng dẫn."
-      },
-      {
-        "ja": "予想通りに結果が出た。",
-        "vi": "Kết quả ra đúng như dự tính."
-      }
-    ],
-    "notes_vi": "Biểu thị sự tuân theo hoặc khớp với."
   },
   {
     "pattern": "〜ほど",
@@ -328,36 +283,6 @@
       }
     ],
     "notes_vi": "Biểu thị cách làm một cách nhanh chóng hoặc không kỹ lưỡng."
-  },
-  {
-    "pattern": "〜ぐらいなら",
-    "explanation_vi": "Hơn là..., với..., khoảng...",
-    "examples": [
-      {
-        "ja": "失敗するぐらいなら、やらない方がいい。",
-        "vi": "Hơn là thất bại, không làm còn tốt hơn."
-      },
-      {
-        "ja": "それぐらいなら、簡単です。",
-        "vi": "Với mức độ đó, thì dễ thôi."
-      }
-    ],
-    "notes_vi": "Biểu thị lựa chọn hoặc so sánh."
-  },
-  {
-    "pattern": "〜ばかりか",
-    "explanation_vi": "Không chỉ..., mà còn..., thậm chí...",
-    "examples": [
-      {
-        "ja": "彼は日本語ばかりか、中国語も話せる。",
-        "vi": "Anh ấy không chỉ nói tiếng Nhật, mà còn tiếng Trung."
-      },
-      {
-        "ja": "失敗ばかりか、多額の損失を被った。",
-        "vi": "Không chỉ thất bại, mà còn bị tổn thất lớn."
-      }
-    ],
-    "notes_vi": "Mở rộng phạm vi hoặc thêm vào tính chất."
   },
   {
     "pattern": "〜ばかりでなく",
@@ -463,21 +388,6 @@
       }
     ],
     "notes_vi": "Biểu thị kết quả ngược lại mong đợi."
-  },
-  {
-    "pattern": "〜ばかりではなく",
-    "explanation_vi": "Không chỉ..., mà còn...",
-    "examples": [
-      {
-        "ja": "仕事ばかりではなく、プライベートも重要だ。",
-        "vi": "Không chỉ công việc, mà cả đời tư cũng quan trọng."
-      },
-      {
-        "ja": "日本ばかりではなく、アジア全体に影響がある。",
-        "vi": "Không chỉ Nhật, mà còn ảnh hưởng tới cả châu Á."
-      }
-    ],
-    "notes_vi": "Mở rộng phạm vi hoặc liệt kê thêm."
   },
   {
     "pattern": "〜かいなしに",

@@ -1,20 +1,5 @@
 [
   {
-    "pattern": "〜ものなら",
-    "explanation_vi": "Nếu được phép... (giả thuyết, điều kiện)",
-    "examples": [
-      {
-        "ja": "もし時間があるものなら、もう一度確認したいです。",
-        "vi": "Nếu có thời gian, tôi muốn kiểm tra lại một lần nữa."
-      },
-      {
-        "ja": "できるものなら、この問題を解決したい。",
-        "vi": "Nếu có thể, tôi muốn giải quyết vấn đề này."
-      }
-    ],
-    "notes_vi": "Diễn đạt giả thuyết hoặc mong muốn trong tình huống giả định."
-  },
-  {
     "pattern": "〜ものを",
     "explanation_vi": "Mặc dù..., nhưng... (tiếc nuối, trách)",
     "examples": [
@@ -30,21 +15,6 @@
     "notes_vi": "Biểu thị sự tiếc nuối hoặc trách hơi nhẹ."
   },
   {
-    "pattern": "〜ものか",
-    "explanation_vi": "Làm sao mà..., không bao giờ... (phủ định mạnh)",
-    "examples": [
-      {
-        "ja": "そんなことが可能なものか。",
-        "vi": "Làm sao mà có thể là như vậy?"
-      },
-      {
-        "ja": "私がそんなことをするものか。",
-        "vi": "Tôi không bao giờ làm điều như vậy."
-      }
-    ],
-    "notes_vi": "Biểu thị phủ định mạnh hoặc câu hỏi sâu sắc."
-  },
-  {
     "pattern": "〜ものとして",
     "explanation_vi": "Coi như..., xem như... (giả định)",
     "examples": [
@@ -58,21 +28,6 @@
       }
     ],
     "notes_vi": "Coi một điều gì đó như là đã thực hiện hoặc đúng."
-  },
-  {
-    "pattern": "〜かぎりでは",
-    "explanation_vi": "Trong phạm vi..., chỉ trong...",
-    "examples": [
-      {
-        "ja": "私の知識の限りでは、その情報は正確です。",
-        "vi": "Trong phạm vi kiến thức của tôi, thông tin đó là chính xác."
-      },
-      {
-        "ja": "現在のデータの限りでは、結論を出せません。",
-        "vi": "Trong phạm vi dữ liệu hiện tại, chúng tôi không thể đưa ra kết luận."
-      }
-    ],
-    "notes_vi": "Chỉ ra giới hạn của phạm vi hoặc kiến thức."
   },
   {
     "pattern": "〜ないまでも",
@@ -114,36 +69,6 @@
       }
     ],
     "notes_vi": "Hình thức cổ điển rất hình thức, ít dùng trong văn nói."
-  },
-  {
-    "pattern": "〜ずに",
-    "explanation_vi": "Mà không..., không phải... (phủ định)",
-    "examples": [
-      {
-        "ja": "言葉に頼らずに、身振りで説明した。",
-        "vi": "Mà không dùng lời nói, anh ấy giải thích bằng cử chỉ."
-      },
-      {
-        "ja": "許可をもらわずに、勝手に進めてしまった。",
-        "vi": "Mà không xin phép, tôi tự tiến hành công việc."
-      }
-    ],
-    "notes_vi": "Biểu thị hành động mà không làm điều gì đó trước."
-  },
-  {
-    "pattern": "〜わりに",
-    "explanation_vi": "Mặc dù..., nhưng... (tương phản mong đợi)",
-    "examples": [
-      {
-        "ja": "値段の割に品質が悪い。",
-        "vi": "Mặc dù giá cả như vậy, nhưng chất lượng lại kém."
-      },
-      {
-        "ja": "経験の割には失敗が多い。",
-        "vi": "Mặc dù có kinh nghiệm, nhưng vẫn có nhiều sai lầm."
-      }
-    ],
-    "notes_vi": "Biểu thị sự không tương xứng giữa hai mặt."
   },
   {
     "pattern": "〜などと",
@@ -296,21 +221,6 @@
     "notes_vi": "Diễn đạt sự chỉ trích hoặc ngạc nhiên."
   },
   {
-    "pattern": "〜ともなると",
-    "explanation_vi": "Khi đến mức..., khi là... (khi đạt tới mức độ nào đó)",
-    "examples": [
-      {
-        "ja": "年をとってくると、体が思うようには動かなくなってきます。",
-        "vi": "Khi già đi, cơ thể không còn nghe lời."
-      },
-      {
-        "ja": "危機的な状況ともなると、対応が必要です。",
-        "vi": "Khi tình huống trở nên nguy cấp, cần phải ứng phó."
-      }
-    ],
-    "notes_vi": "Chỉ ra điểm mà tại đó một điều gì đó thay đổi."
-  },
-  {
     "pattern": "〜にあって",
     "explanation_vi": "Trong tình huống..., khi...",
     "examples": [
@@ -440,21 +350,6 @@
       }
     ],
     "notes_vi": "Cách nói hình thức để chỉ nghĩa vụ hoặc tính chất cần có."
-  },
-  {
-    "pattern": "〜ばあるまいし",
-    "explanation_vi": "Không phải..., không như... (phủ định)",
-    "examples": [
-      {
-        "ja": "そこまで心配する必要もあるまい。",
-        "vi": "Không cần phải lo lắng đến mức đó."
-      },
-      {
-        "ja": "絶対に失敗するわけではあるまい。",
-        "vi": "Không chắc là sẽ thất bại hoàn toàn."
-      }
-    ],
-    "notes_vi": "Cách nói cổ điển để phủ định hoặc biểu thị sự không chắc chắn."
   },
   {
     "pattern": "〜なり",

@@ -1,102 +1,1142 @@
 [
-  {"word": "展示", "reading": "てんじ", "romaji": "tenji", "meaning_vi": "trưng bày, triển lãm", "part_of_speech": "noun", "tags": ["display", "exhibition", "demonstration"]},
-  {"word": "提出", "reading": "ていしゅつ", "romaji": "teishutsu", "meaning_vi": "nộp, trình bày", "part_of_speech": "noun", "tags": ["submission", "presentation", "filing"]},
-  {"word": "提供", "reading": "ていきょう", "romaji": "teikiou", "meaning_vi": "cung cấp, cấp", "part_of_speech": "noun", "tags": ["provision", "supply", "offering"]},
-  {"word": "供給", "reading": "きょうきゅう", "romaji": "kyoukyuu", "meaning_vi": "cung cấp, tiếp tế", "part_of_speech": "noun", "tags": ["supply", "provision", "delivery"]},
-  {"word": "配分", "reading": "はいぶん", "romaji": "haibun", "meaning_vi": "phân bổ, chia sẻ", "part_of_speech": "noun", "tags": ["distribution", "allocation", "division"]},
-  {"word": "配備", "reading": "はいび", "romaji": "haibi", "meaning_vi": "bố trí, triển khai", "part_of_speech": "noun", "tags": ["deployment", "arrangement", "placement"]},
-  {"word": "配置", "reading": "はいち", "romaji": "haichi", "meaning_vi": "sắp xếp, bố trí", "part_of_speech": "noun", "tags": ["arrangement", "placement", "deployment"]},
-  {"word": "動員", "reading": "どういん", "romaji": "douin", "meaning_vi": "huy động, tổ chức", "part_of_speech": "noun", "tags": ["mobilization", "recruitment", "deployment"]},
-  {"word": "投入", "reading": "とうにゅう", "romaji": "tounyuu", "meaning_vi": "đầu tư, bỏ vào", "part_of_speech": "noun", "tags": ["investment", "inputting", "deployment"]},
-  {"word": "投資", "reading": "とうし", "romaji": "toushi", "meaning_vi": "đầu tư, cổ phần", "part_of_speech": "noun", "tags": ["investment", "finance", "capital"]},
-  {"word": "融資", "reading": "ゆうし", "romaji": "yuushi", "meaning_vi": "cấp tín dụng, tài chính", "part_of_speech": "noun", "tags": ["financing", "loan", "credit"]},
-  {"word": "資金", "reading": "しきん", "romaji": "shikin", "meaning_vi": "vốn, kinh phí", "part_of_speech": "noun", "tags": ["funds", "capital", "finance"]},
-  {"word": "予算", "reading": "よさん", "romaji": "yosan", "meaning_vi": "ngân sách, dự toán", "part_of_speech": "noun", "tags": ["budget", "estimate", "appropriation"]},
-  {"word": "経費", "reading": "けいひ", "romaji": "keihi", "meaning_vi": "chi phí, khóan chi", "part_of_speech": "noun", "tags": ["expense", "cost", "expenditure"]},
-  {"word": "費用", "reading": "ひよう", "romaji": "hiyou", "meaning_vi": "chi phí, hóa đơn", "part_of_speech": "noun", "tags": ["cost", "expense", "fee"]},
-  {"word": "負担", "reading": "ふたん", "romaji": "futan", "meaning_vi": "gánh nặng, chi phí", "part_of_speech": "noun", "tags": ["burden", "cost", "responsibility"]},
-  {"word": "損失", "reading": "そんしつ", "romaji": "sonshitsu", "meaning_vi": "tổn thất, mất mát", "part_of_speech": "noun", "tags": ["loss", "damage", "deficit"]},
-  {"word": "損害", "reading": "そんがい", "romaji": "songai", "meaning_vi": "tổn hại, mất mát", "part_of_speech": "noun", "tags": ["damage", "loss", "injury"]},
-  {"word": "被害", "reading": "ひがい", "romaji": "higai", "meaning_vi": "thiệt hại, tổn thương", "part_of_speech": "noun", "tags": ["damage", "victim", "casualty"]},
-  {"word": "障害", "reading": "しょうがい", "romaji": "shougai", "meaning_vi": "chướng ngại, bệnh tật", "part_of_speech": "noun", "tags": ["obstacle", "disability", "problem"]},
-  {"word": "支障", "reading": "ししょう", "romaji": "shishou", "meaning_vi": "cản trở, chứng ngại", "part_of_speech": "noun", "tags": ["obstacle", "hindrance", "impediment"]},
-  {"word": "妨げ", "reading": "さまたげ", "romaji": "samatage", "meaning_vi": "cản trở, cặn bã", "part_of_speech": "noun", "tags": ["obstruction", "hindrance", "interference"]},
-  {"word": "抵抗", "reading": "ていこう", "romaji": "teikou", "meaning_vi": "kháng cự, phản kháng", "part_of_speech": "noun", "tags": ["resistance", "opposition", "defiance"]},
-  {"word": "抵触", "reading": "ていしょく", "romaji": "teishoku", "meaning_vi": "mâu thuẫn, xung đột", "part_of_speech": "noun", "tags": ["conflict", "violation", "opposition"]},
-  {"word": "侵害", "reading": "しんがい", "romaji": "shingai", "meaning_vi": "xâm phạm, vi phạm", "part_of_speech": "noun", "tags": ["infringement", "violation", "transgression"]},
-  {"word": "浸透", "reading": "しんとう", "romaji": "shintou", "meaning_vi": "thấm nhuần, xâm nhập", "part_of_speech": "noun", "tags": ["penetration", "permeation", "infiltration"]},
-  {"word": "拡張", "reading": "かくちょう", "romaji": "kakuchou", "meaning_vi": "mở rộng, tăng", "part_of_speech": "noun", "tags": ["expansion", "enlargement", "extension"]},
-  {"word": "拡大", "reading": "かくだい", "romaji": "kakudai", "meaning_vi": "mở rộng, phóng to", "part_of_speech": "noun", "tags": ["expansion", "enlargement", "magnification"]},
-  {"word": "増加", "reading": "ぞうか", "romaji": "zouka", "meaning_vi": "tăng thêm, gia tăng", "part_of_speech": "noun", "tags": ["increase", "addition", "growth"]},
-  {"word": "増大", "reading": "ぞうだい", "romaji": "zoudai", "meaning_vi": "tăng lớn, phát triển", "part_of_speech": "noun", "tags": ["increase", "growth", "expansion"]},
-  {"word": "増殖", "reading": "ぞうしょく", "romaji": "zoushoku", "meaning_vi": "nhân rộng, tăng sinh", "part_of_speech": "noun", "tags": ["proliferation", "reproduction", "multiplication"]},
-  {"word": "拡散", "reading": "かくさん", "romaji": "kakusan", "meaning_vi": "phân tán, lây lan", "part_of_speech": "noun", "tags": ["dispersion", "diffusion", "spread"]},
-  {"word": "分散", "reading": "ぶんさん", "romaji": "bunsan", "meaning_vi": "phân tán, phân tách", "part_of_speech": "noun", "tags": ["dispersion", "distribution", "diversification"]},
-  {"word": "混在", "reading": "こんざい", "romaji": "konzai", "meaning_vi": "hỗn hợp, lẫn lộn", "part_of_speech": "noun", "tags": ["mixture", "coexistence", "intermixture"]},
-  {"word": "混合", "reading": "こんごう", "romaji": "kongou", "meaning_vi": "hỗn hợp, pha trộn", "part_of_speech": "noun", "tags": ["mixture", "mixing", "combination"]},
-  {"word": "融合", "reading": "ゆうごう", "romaji": "yuugou", "meaning_vi": "hôn hợp, kết hợp", "part_of_speech": "noun", "tags": ["fusion", "integration", "blending"]},
-  {"word": "統合", "reading": "とうごう", "romaji": "tougou", "meaning_vi": "tổng hợp, hợp nhất", "part_of_speech": "noun", "tags": ["integration", "consolidation", "combination"]},
-  {"word": "集約", "reading": "しゅうやく", "romaji": "shuuyaku", "meaning_vi": "tóm tắt, thành tố", "part_of_speech": "noun", "tags": ["consolidation", "summarization", "essence"]},
-  {"word": "圧縮", "reading": "あっしゅく", "romaji": "asshuku", "meaning_vi": "nén lại, giảm", "part_of_speech": "noun", "tags": ["compression", "reduction", "condensation"]},
-  {"word": "濃縮", "reading": "のうしゅく", "romaji": "noushuku", "meaning_vi": "đặc cô, tập trung", "part_of_speech": "noun", "tags": ["concentration", "condensation", "intensification"]},
-  {"word": "凝集", "reading": "ぎょうしゅう", "romaji": "gyoushuu", "meaning_vi": "tập hợp, đông tụ", "part_of_speech": "noun", "tags": ["aggregation", "clustering", "gathering"]},
-  {"word": "集中", "reading": "しゅうちゅう", "romaji": "shuuchuu", "meaning_vi": "tập trung, tập中", "part_of_speech": "noun", "tags": ["concentration", "focus", "centralization"]},
-  {"word": "集合", "reading": "しゅうごう", "romaji": "shuugou", "meaning_vi": "tập hợp, quy tụ", "part_of_speech": "noun", "tags": ["assembly", "gathering", "collection"]},
-  {"word": "群生", "reading": "ぐんせい", "romaji": "gunsei", "meaning_vi": "sống thành nhóm, tập sinh", "part_of_speech": "noun", "tags": ["clustering", "gregariousness", "aggregation"]},
-  {"word": "孤立", "reading": "こりつ", "romaji": "koritsu", "meaning_vi": "cô lập, biệt lập", "part_of_speech": "noun", "tags": ["isolation", "loneliness", "seclusion"]},
-  {"word": "分離", "reading": "ぶんり", "romaji": "bunri", "meaning_vi": "tách rời, ly thân", "part_of_speech": "noun", "tags": ["separation", "division", "disconnection"]},
-  {"word": "解離", "reading": "かいり", "romaji": "kairi", "meaning_vi": "tách rời, ly giải", "part_of_speech": "noun", "tags": ["dissociation", "separation", "detachment"]},
-  {"word": "遊離", "reading": "ゆうり", "romaji": "yuuri", "meaning_vi": "tách rời, xa rời", "part_of_speech": "noun", "tags": ["liberation", "detachment", "freedom"]},
-  {"word": "割裂", "reading": "かつれつ", "romaji": "katsuretsuu", "meaning_vi": "bóc tách, chém", "part_of_speech": "noun", "tags": ["splitting", "rupture", "severance"]},
-  {"word": "断裂", "reading": "だんれつ", "romaji": "danretsu", "meaning_vi": "rạn nứt, gãy", "part_of_speech": "noun", "tags": ["fracture", "rupture", "break"]},
-  {"word": "破裂", "reading": "はれつ", "romaji": "haretsu", "meaning_vi": "vỡ, nổ tung", "part_of_speech": "noun", "tags": ["bursting", "rupture", "explosion"]},
-  {"word": "亀裂", "reading": "きれつ", "romaji": "kiretsu", "meaning_vi": "rạn nứt, nứt mẻ", "part_of_speech": "noun", "tags": ["crack", "fracture", "crevice"]},
-  {"word": "ひび割れ", "reading": "ひびわれ", "romaji": "hibiwaire", "meaning_vi": "nứt, rạn", "part_of_speech": "noun", "tags": ["crack", "split", "fissure"]},
-  {"word": "欠損", "reading": "けっそん", "romaji": "kesson", "meaning_vi": "khiếm khuyết, tổn thất", "part_of_speech": "noun", "tags": ["defect", "loss", "shortfall"]},
-  {"word": "欠陥", "reading": "けっかん", "romaji": "kekkan", "meaning_vi": "khuyết điểm, khiếm khuyết", "part_of_speech": "noun", "tags": ["defect", "flaw", "imperfection"]},
-  {"word": "不備", "reading": "ふび", "romaji": "fubi", "meaning_vi": "không đủ, khuyết điểm", "part_of_speech": "noun", "tags": ["deficiency", "inadequacy", "incompleteness"]},
-  {"word": "不足", "reading": "ふそく", "romaji": "fusoku", "meaning_vi": "thiếu, không đủ", "part_of_speech": "noun", "tags": ["shortage", "deficiency", "insufficiency"]},
-  {"word": "欠如", "reading": "けつじょ", "romaji": "ketsujyo", "meaning_vi": "thiếu, không có", "part_of_speech": "noun", "tags": ["lack", "absence", "deficiency"]},
-  {"word": "過剰", "reading": "かじょう", "romaji": "kajou", "meaning_vi": "thừa, quá mức", "part_of_speech": "noun", "tags": ["excess", "surplus", "overabundance"]},
-  {"word": "過多", "reading": "かた", "romaji": "kata", "meaning_vi": "quá nhiều, thừa", "part_of_speech": "noun", "tags": ["excess", "surplus", "overabundance"]},
-  {"word": "均衡", "reading": "きんこう", "romaji": "kinkou", "meaning_vi": "cân bằng, công bằng", "part_of_speech": "noun", "tags": ["balance", "equilibrium", "equality"]},
-  {"word": "不均衡", "reading": "ふきんこう", "romaji": "fukinkou", "meaning_vi": "mất cân bằng, bất đối xứng", "part_of_speech": "noun", "tags": ["imbalance", "disparity", "asymmetry"]},
-  {"word": "偏り", "reading": "かたより", "romaji": "katayori", "meaning_vi": "nghiêng vênh, thiên vị", "part_of_speech": "noun", "tags": ["bias", "slant", "skew"]},
-  {"word": "歪み", "reading": "ゆがみ", "romaji": "yugami", "meaning_vi": "biến dạng, quặt vặt", "part_of_speech": "noun", "tags": ["distortion", "warping", "perversion"]},
-  {"word": "逆説", "reading": "ぎゃくせつ", "romaji": "gyakusetsu", "meaning_vi": "nghịch lý, lũy thừa", "part_of_speech": "noun", "tags": ["paradox", "contradiction", "irony"]},
-  {"word": "矛盾点", "reading": "むじゅんてん", "romaji": "mujunten", "meaning_vi": "điểm mâu thuẫn, sự tranh chấp", "part_of_speech": "noun", "tags": ["contradiction", "inconsistency", "discrepancy"]},
-  {"word": "齟齬", "reading": "そご", "romaji": "sogo", "meaning_vi": "không phù hợp, xung đột", "part_of_speech": "noun", "tags": ["discord", "misalignment", "mismatch"]},
-  {"word": "食い違い", "reading": "くいちがい", "romaji": "kuichigai", "meaning_vi": "không trùng khít, chênh lệch", "part_of_speech": "noun", "tags": ["discrepancy", "misalignment", "divergence"]},
-  {"word": "ずれ", "reading": "ずれ", "romaji": "zure", "meaning_vi": "sai lệch, trượt", "part_of_speech": "noun", "tags": ["deviation", "shift", "displacement"]},
-  {"word": "乖離", "reading": "かいり", "romaji": "kairi", "meaning_vi": "xa rời, sai lạc", "part_of_speech": "noun", "tags": ["divergence", "separation", "discrepancy"]},
-  {"word": "剥離", "reading": "はくり", "romaji": "hakuri", "meaning_vi": "tách rời, bong tróc", "part_of_speech": "noun", "tags": ["detachment", "peeling", "separation"]},
-  {"word": "融通", "reading": "ゆうずう", "romaji": "yuuzuu", "meaning_vi": "linh hoạt, tính năng", "part_of_speech": "noun", "tags": ["flexibility", "accommodation", "adjustability"]},
-  {"word": "弾力", "reading": "だんりょく", "romaji": "danryoku", "meaning_vi": "tính đàn hồi, sức mềm dẻo", "part_of_speech": "noun", "tags": ["elasticity", "flexibility", "resilience"]},
-  {"word": "硬直", "reading": "こうちょく", "romaji": "kouchoku", "meaning_vi": "cứng, không linh hoạt", "part_of_speech": "noun", "tags": ["rigidity", "stiffness", "inflexibility"]},
-  {"word": "融資", "reading": "ゆうし", "romaji": "yuushi", "meaning_vi": "tài chính, cho vay", "part_of_speech": "noun", "tags": ["financing", "loan", "credit"]},
-  {"word": "借款", "reading": "しゃっかん", "romaji": "shakkan", "meaning_vi": "khoản vay, tiền vay", "part_of_speech": "noun", "tags": ["loan", "credit", "borrowing"]},
-  {"word": "起債", "reading": "きさい", "romaji": "kisai", "meaning_vi": "phát hành trái phiếu, vay tiền", "part_of_speech": "noun", "tags": ["bond issuance", "financing", "borrowing"]},
-  {"word": "償却", "reading": "しょうきゃく", "romaji": "shokyaku", "meaning_vi": "khấu hao, hoàn trả", "part_of_speech": "noun", "tags": ["depreciation", "amortization", "repayment"]},
-  {"word": "返済", "reading": "へんさい", "romaji": "hensai", "meaning_vi": "trả nợ, hoàn trả", "part_of_speech": "noun", "tags": ["repayment", "redemption", "refund"]},
-  {"word": "利息", "reading": "りそく", "romaji": "risoku", "meaning_vi": "lãi suất, tiền lãi", "part_of_speech": "noun", "tags": ["interest", "rate", "dividend"]},
-  {"word": "利益", "reading": "りえき", "romaji": "rieki", "meaning_vi": "lợi ích, lợi nhuận", "part_of_speech": "noun", "tags": ["profit", "benefit", "interest"]},
-  {"word": "利潤", "reading": "りじゅん", "romaji": "rijun", "meaning_vi": "lợi nhuận, lãi suất", "part_of_speech": "noun", "tags": ["profit", "margin", "return"]},
-  {"word": "収益", "reading": "しゅうえき", "romaji": "shuueki", "meaning_vi": "thu nhập, doanh thu", "part_of_speech": "noun", "tags": ["revenue", "income", "earnings"]},
-  {"word": "赤字", "reading": "あかじ", "romaji": "akaji", "meaning_vi": "thâm hụt, thua lỗ", "part_of_speech": "noun", "tags": ["deficit", "loss", "shortfall"]},
-  {"word": "黒字", "reading": "くろじ", "romaji": "kuroji", "meaning_vi": "thặng dư, lãi", "part_of_speech": "noun", "tags": ["surplus", "profit", "balance"]},
-  {"word": "企業", "reading": "きぎょう", "romaji": "kigyou", "meaning_vi": "doanh nghiệp, công ty", "part_of_speech": "noun", "tags": ["enterprise", "business", "corporation"]},
-  {"word": "事業", "reading": "じぎょう", "romaji": "jigyou", "meaning_vi": "sự nghiệp, kinh doanh", "part_of_speech": "noun", "tags": ["business", "enterprise", "operation"]},
-  {"word": "産業", "reading": "さんぎょう", "romaji": "sangyou", "meaning_vi": "công nghiệp, ngành", "part_of_speech": "noun", "tags": ["industry", "sector", "business"]},
-  {"word": "業種", "reading": "ぎょうしゅ", "romaji": "gyoushu", "meaning_vi": "ngành nghề, loại hình kinh doanh", "part_of_speech": "noun", "tags": ["business type", "industry", "trade"]},
-  {"word": "商業", "reading": "しょうぎょう", "romaji": "shougyou", "meaning_vi": "thương mại, buôn bán", "part_of_speech": "noun", "tags": ["commerce", "trade", "business"]},
-  {"word": "製造", "reading": "せいぞう", "romaji": "seizou", "meaning_vi": "sản xuất, chế tạo", "part_of_speech": "noun", "tags": ["manufacturing", "production", "fabrication"]},
-  {"word": "加工", "reading": "かこう", "romaji": "kakou", "meaning_vi": "chế biến, xử lý", "part_of_speech": "noun", "tags": ["processing", "workmanship", "fabrication"]},
-  {"word": "流通", "reading": "りゅうつう", "romaji": "ryuutsuu", "meaning_vi": "lưu thông, phân phối", "part_of_speech": "noun", "tags": ["distribution", "circulation", "flow"]},
-  {"word": "市場", "reading": "しじょう", "romaji": "shijou", "meaning_vi": "thị trường, chợ", "part_of_speech": "noun", "tags": ["market", "marketplace", "commercial"]},
-  {"word": "市況", "reading": "しきょう", "romaji": "shikyou", "meaning_vi": "tình hình thị trường, giá cả", "part_of_speech": "noun", "tags": ["market conditions", "trading", "prices"]},
-  {"word": "相場", "reading": "そうば", "romaji": "souba", "meaning_vi": "giá, tỷ giá", "part_of_speech": "noun", "tags": ["price", "rate", "quotation"]},
-  {"word": "価格", "reading": "かかく", "romaji": "kakaku", "meaning_vi": "giá cả, giá tiền", "part_of_speech": "noun", "tags": ["price", "cost", "value"]},
-  {"word": "値段", "reading": "ねだん", "romaji": "nedan", "meaning_vi": "giá, giá tiền", "part_of_speech": "noun", "tags": ["price", "cost", "fare"]},
-  {"word": "販売", "reading": "はんばい", "romaji": "hanbai", "meaning_vi": "bán hàng, tiêu thụ", "part_of_speech": "noun", "tags": ["sales", "selling", "distribution"]},
-  {"word": "取扱", "reading": "とりあつかい", "romaji": "toriatsukai", "meaning_vi": "xử lý, quản lý", "part_of_speech": "noun", "tags": ["handling", "treatment", "management"]}
+  {
+    "word": "展示",
+    "reading": "てんじ",
+    "romaji": "tenji",
+    "meaning_vi": "trưng bày, triển lãm",
+    "part_of_speech": "noun",
+    "tags": [
+      "display",
+      "exhibition",
+      "demonstration"
+    ]
+  },
+  {
+    "word": "提出",
+    "reading": "ていしゅつ",
+    "romaji": "teishutsu",
+    "meaning_vi": "nộp, trình bày",
+    "part_of_speech": "noun",
+    "tags": [
+      "submission",
+      "presentation",
+      "filing"
+    ]
+  },
+  {
+    "word": "提供",
+    "reading": "ていきょう",
+    "romaji": "teikiou",
+    "meaning_vi": "cung cấp, cấp",
+    "part_of_speech": "noun",
+    "tags": [
+      "provision",
+      "supply",
+      "offering"
+    ]
+  },
+  {
+    "word": "供給",
+    "reading": "きょうきゅう",
+    "romaji": "kyoukyuu",
+    "meaning_vi": "cung cấp, tiếp tế",
+    "part_of_speech": "noun",
+    "tags": [
+      "supply",
+      "provision",
+      "delivery"
+    ]
+  },
+  {
+    "word": "配分",
+    "reading": "はいぶん",
+    "romaji": "haibun",
+    "meaning_vi": "phân bổ, chia sẻ",
+    "part_of_speech": "noun",
+    "tags": [
+      "distribution",
+      "allocation",
+      "division"
+    ]
+  },
+  {
+    "word": "配備",
+    "reading": "はいび",
+    "romaji": "haibi",
+    "meaning_vi": "bố trí, triển khai",
+    "part_of_speech": "noun",
+    "tags": [
+      "deployment",
+      "arrangement",
+      "placement"
+    ]
+  },
+  {
+    "word": "動員",
+    "reading": "どういん",
+    "romaji": "douin",
+    "meaning_vi": "huy động, tổ chức",
+    "part_of_speech": "noun",
+    "tags": [
+      "mobilization",
+      "recruitment",
+      "deployment"
+    ]
+  },
+  {
+    "word": "投入",
+    "reading": "とうにゅう",
+    "romaji": "tounyuu",
+    "meaning_vi": "đầu tư, bỏ vào",
+    "part_of_speech": "noun",
+    "tags": [
+      "investment",
+      "inputting",
+      "deployment"
+    ]
+  },
+  {
+    "word": "投資",
+    "reading": "とうし",
+    "romaji": "toushi",
+    "meaning_vi": "đầu tư, cổ phần",
+    "part_of_speech": "noun",
+    "tags": [
+      "investment",
+      "finance",
+      "capital"
+    ]
+  },
+  {
+    "word": "融資",
+    "reading": "ゆうし",
+    "romaji": "yuushi",
+    "meaning_vi": "cấp tín dụng, tài chính",
+    "part_of_speech": "noun",
+    "tags": [
+      "financing",
+      "loan",
+      "credit"
+    ]
+  },
+  {
+    "word": "資金",
+    "reading": "しきん",
+    "romaji": "shikin",
+    "meaning_vi": "vốn, kinh phí",
+    "part_of_speech": "noun",
+    "tags": [
+      "funds",
+      "capital",
+      "finance"
+    ]
+  },
+  {
+    "word": "予算",
+    "reading": "よさん",
+    "romaji": "yosan",
+    "meaning_vi": "ngân sách, dự toán",
+    "part_of_speech": "noun",
+    "tags": [
+      "budget",
+      "estimate",
+      "appropriation"
+    ]
+  },
+  {
+    "word": "経費",
+    "reading": "けいひ",
+    "romaji": "keihi",
+    "meaning_vi": "chi phí, khóan chi",
+    "part_of_speech": "noun",
+    "tags": [
+      "expense",
+      "cost",
+      "expenditure"
+    ]
+  },
+  {
+    "word": "費用",
+    "reading": "ひよう",
+    "romaji": "hiyou",
+    "meaning_vi": "chi phí, hóa đơn",
+    "part_of_speech": "noun",
+    "tags": [
+      "cost",
+      "expense",
+      "fee"
+    ]
+  },
+  {
+    "word": "負担",
+    "reading": "ふたん",
+    "romaji": "futan",
+    "meaning_vi": "gánh nặng, chi phí",
+    "part_of_speech": "noun",
+    "tags": [
+      "burden",
+      "cost",
+      "responsibility"
+    ]
+  },
+  {
+    "word": "損失",
+    "reading": "そんしつ",
+    "romaji": "sonshitsu",
+    "meaning_vi": "tổn thất, mất mát",
+    "part_of_speech": "noun",
+    "tags": [
+      "loss",
+      "damage",
+      "deficit"
+    ]
+  },
+  {
+    "word": "損害",
+    "reading": "そんがい",
+    "romaji": "songai",
+    "meaning_vi": "tổn hại, mất mát",
+    "part_of_speech": "noun",
+    "tags": [
+      "damage",
+      "loss",
+      "injury"
+    ]
+  },
+  {
+    "word": "被害",
+    "reading": "ひがい",
+    "romaji": "higai",
+    "meaning_vi": "thiệt hại, tổn thương",
+    "part_of_speech": "noun",
+    "tags": [
+      "damage",
+      "victim",
+      "casualty"
+    ]
+  },
+  {
+    "word": "障害",
+    "reading": "しょうがい",
+    "romaji": "shougai",
+    "meaning_vi": "chướng ngại, bệnh tật",
+    "part_of_speech": "noun",
+    "tags": [
+      "obstacle",
+      "disability",
+      "problem"
+    ]
+  },
+  {
+    "word": "支障",
+    "reading": "ししょう",
+    "romaji": "shishou",
+    "meaning_vi": "cản trở, chứng ngại",
+    "part_of_speech": "noun",
+    "tags": [
+      "obstacle",
+      "hindrance",
+      "impediment"
+    ]
+  },
+  {
+    "word": "妨げ",
+    "reading": "さまたげ",
+    "romaji": "samatage",
+    "meaning_vi": "cản trở, cặn bã",
+    "part_of_speech": "noun",
+    "tags": [
+      "obstruction",
+      "hindrance",
+      "interference"
+    ]
+  },
+  {
+    "word": "抵抗",
+    "reading": "ていこう",
+    "romaji": "teikou",
+    "meaning_vi": "kháng cự, phản kháng",
+    "part_of_speech": "noun",
+    "tags": [
+      "resistance",
+      "opposition",
+      "defiance"
+    ]
+  },
+  {
+    "word": "抵触",
+    "reading": "ていしょく",
+    "romaji": "teishoku",
+    "meaning_vi": "mâu thuẫn, xung đột",
+    "part_of_speech": "noun",
+    "tags": [
+      "conflict",
+      "violation",
+      "opposition"
+    ]
+  },
+  {
+    "word": "侵害",
+    "reading": "しんがい",
+    "romaji": "shingai",
+    "meaning_vi": "xâm phạm, vi phạm",
+    "part_of_speech": "noun",
+    "tags": [
+      "infringement",
+      "violation",
+      "transgression"
+    ]
+  },
+  {
+    "word": "浸透",
+    "reading": "しんとう",
+    "romaji": "shintou",
+    "meaning_vi": "thấm nhuần, xâm nhập",
+    "part_of_speech": "noun",
+    "tags": [
+      "penetration",
+      "permeation",
+      "infiltration"
+    ]
+  },
+  {
+    "word": "拡張",
+    "reading": "かくちょう",
+    "romaji": "kakuchou",
+    "meaning_vi": "mở rộng, tăng",
+    "part_of_speech": "noun",
+    "tags": [
+      "expansion",
+      "enlargement",
+      "extension"
+    ]
+  },
+  {
+    "word": "拡大",
+    "reading": "かくだい",
+    "romaji": "kakudai",
+    "meaning_vi": "mở rộng, phóng to",
+    "part_of_speech": "noun",
+    "tags": [
+      "expansion",
+      "enlargement",
+      "magnification"
+    ]
+  },
+  {
+    "word": "増加",
+    "reading": "ぞうか",
+    "romaji": "zouka",
+    "meaning_vi": "tăng thêm, gia tăng",
+    "part_of_speech": "noun",
+    "tags": [
+      "increase",
+      "addition",
+      "growth"
+    ]
+  },
+  {
+    "word": "増大",
+    "reading": "ぞうだい",
+    "romaji": "zoudai",
+    "meaning_vi": "tăng lớn, phát triển",
+    "part_of_speech": "noun",
+    "tags": [
+      "increase",
+      "growth",
+      "expansion"
+    ]
+  },
+  {
+    "word": "増殖",
+    "reading": "ぞうしょく",
+    "romaji": "zoushoku",
+    "meaning_vi": "nhân rộng, tăng sinh",
+    "part_of_speech": "noun",
+    "tags": [
+      "proliferation",
+      "reproduction",
+      "multiplication"
+    ]
+  },
+  {
+    "word": "拡散",
+    "reading": "かくさん",
+    "romaji": "kakusan",
+    "meaning_vi": "phân tán, lây lan",
+    "part_of_speech": "noun",
+    "tags": [
+      "dispersion",
+      "diffusion",
+      "spread"
+    ]
+  },
+  {
+    "word": "分散",
+    "reading": "ぶんさん",
+    "romaji": "bunsan",
+    "meaning_vi": "phân tán, phân tách",
+    "part_of_speech": "noun",
+    "tags": [
+      "dispersion",
+      "distribution",
+      "diversification"
+    ]
+  },
+  {
+    "word": "混在",
+    "reading": "こんざい",
+    "romaji": "konzai",
+    "meaning_vi": "hỗn hợp, lẫn lộn",
+    "part_of_speech": "noun",
+    "tags": [
+      "mixture",
+      "coexistence",
+      "intermixture"
+    ]
+  },
+  {
+    "word": "混合",
+    "reading": "こんごう",
+    "romaji": "kongou",
+    "meaning_vi": "hỗn hợp, pha trộn",
+    "part_of_speech": "noun",
+    "tags": [
+      "mixture",
+      "mixing",
+      "combination"
+    ]
+  },
+  {
+    "word": "融合",
+    "reading": "ゆうごう",
+    "romaji": "yuugou",
+    "meaning_vi": "hôn hợp, kết hợp",
+    "part_of_speech": "noun",
+    "tags": [
+      "fusion",
+      "integration",
+      "blending"
+    ]
+  },
+  {
+    "word": "統合",
+    "reading": "とうごう",
+    "romaji": "tougou",
+    "meaning_vi": "tổng hợp, hợp nhất",
+    "part_of_speech": "noun",
+    "tags": [
+      "integration",
+      "consolidation",
+      "combination"
+    ]
+  },
+  {
+    "word": "集約",
+    "reading": "しゅうやく",
+    "romaji": "shuuyaku",
+    "meaning_vi": "tóm tắt, thành tố",
+    "part_of_speech": "noun",
+    "tags": [
+      "consolidation",
+      "summarization",
+      "essence"
+    ]
+  },
+  {
+    "word": "圧縮",
+    "reading": "あっしゅく",
+    "romaji": "asshuku",
+    "meaning_vi": "nén lại, giảm",
+    "part_of_speech": "noun",
+    "tags": [
+      "compression",
+      "reduction",
+      "condensation"
+    ]
+  },
+  {
+    "word": "濃縮",
+    "reading": "のうしゅく",
+    "romaji": "noushuku",
+    "meaning_vi": "đặc cô, tập trung",
+    "part_of_speech": "noun",
+    "tags": [
+      "concentration",
+      "condensation",
+      "intensification"
+    ]
+  },
+  {
+    "word": "凝集",
+    "reading": "ぎょうしゅう",
+    "romaji": "gyoushuu",
+    "meaning_vi": "tập hợp, đông tụ",
+    "part_of_speech": "noun",
+    "tags": [
+      "aggregation",
+      "clustering",
+      "gathering"
+    ]
+  },
+  {
+    "word": "集中",
+    "reading": "しゅうちゅう",
+    "romaji": "shuuchuu",
+    "meaning_vi": "tập trung, tập中",
+    "part_of_speech": "noun",
+    "tags": [
+      "concentration",
+      "focus",
+      "centralization"
+    ]
+  },
+  {
+    "word": "集合",
+    "reading": "しゅうごう",
+    "romaji": "shuugou",
+    "meaning_vi": "tập hợp, quy tụ",
+    "part_of_speech": "noun",
+    "tags": [
+      "assembly",
+      "gathering",
+      "collection"
+    ]
+  },
+  {
+    "word": "群生",
+    "reading": "ぐんせい",
+    "romaji": "gunsei",
+    "meaning_vi": "sống thành nhóm, tập sinh",
+    "part_of_speech": "noun",
+    "tags": [
+      "clustering",
+      "gregariousness",
+      "aggregation"
+    ]
+  },
+  {
+    "word": "孤立",
+    "reading": "こりつ",
+    "romaji": "koritsu",
+    "meaning_vi": "cô lập, biệt lập",
+    "part_of_speech": "noun",
+    "tags": [
+      "isolation",
+      "loneliness",
+      "seclusion"
+    ]
+  },
+  {
+    "word": "分離",
+    "reading": "ぶんり",
+    "romaji": "bunri",
+    "meaning_vi": "tách rời, ly thân",
+    "part_of_speech": "noun",
+    "tags": [
+      "separation",
+      "division",
+      "disconnection"
+    ]
+  },
+  {
+    "word": "解離",
+    "reading": "かいり",
+    "romaji": "kairi",
+    "meaning_vi": "tách rời, ly giải",
+    "part_of_speech": "noun",
+    "tags": [
+      "dissociation",
+      "separation",
+      "detachment"
+    ]
+  },
+  {
+    "word": "遊離",
+    "reading": "ゆうり",
+    "romaji": "yuuri",
+    "meaning_vi": "tách rời, xa rời",
+    "part_of_speech": "noun",
+    "tags": [
+      "liberation",
+      "detachment",
+      "freedom"
+    ]
+  },
+  {
+    "word": "割裂",
+    "reading": "かつれつ",
+    "romaji": "katsuretsuu",
+    "meaning_vi": "bóc tách, chém",
+    "part_of_speech": "noun",
+    "tags": [
+      "splitting",
+      "rupture",
+      "severance"
+    ]
+  },
+  {
+    "word": "断裂",
+    "reading": "だんれつ",
+    "romaji": "danretsu",
+    "meaning_vi": "rạn nứt, gãy",
+    "part_of_speech": "noun",
+    "tags": [
+      "fracture",
+      "rupture",
+      "break"
+    ]
+  },
+  {
+    "word": "破裂",
+    "reading": "はれつ",
+    "romaji": "haretsu",
+    "meaning_vi": "vỡ, nổ tung",
+    "part_of_speech": "noun",
+    "tags": [
+      "bursting",
+      "rupture",
+      "explosion"
+    ]
+  },
+  {
+    "word": "ひび割れ",
+    "reading": "ひびわれ",
+    "romaji": "hibiwaire",
+    "meaning_vi": "nứt, rạn",
+    "part_of_speech": "noun",
+    "tags": [
+      "crack",
+      "split",
+      "fissure"
+    ]
+  },
+  {
+    "word": "欠損",
+    "reading": "けっそん",
+    "romaji": "kesson",
+    "meaning_vi": "khiếm khuyết, tổn thất",
+    "part_of_speech": "noun",
+    "tags": [
+      "defect",
+      "loss",
+      "shortfall"
+    ]
+  },
+  {
+    "word": "不足",
+    "reading": "ふそく",
+    "romaji": "fusoku",
+    "meaning_vi": "thiếu, không đủ",
+    "part_of_speech": "noun",
+    "tags": [
+      "shortage",
+      "deficiency",
+      "insufficiency"
+    ]
+  },
+  {
+    "word": "欠如",
+    "reading": "けつじょ",
+    "romaji": "ketsujyo",
+    "meaning_vi": "thiếu, không có",
+    "part_of_speech": "noun",
+    "tags": [
+      "lack",
+      "absence",
+      "deficiency"
+    ]
+  },
+  {
+    "word": "過剰",
+    "reading": "かじょう",
+    "romaji": "kajou",
+    "meaning_vi": "thừa, quá mức",
+    "part_of_speech": "noun",
+    "tags": [
+      "excess",
+      "surplus",
+      "overabundance"
+    ]
+  },
+  {
+    "word": "過多",
+    "reading": "かた",
+    "romaji": "kata",
+    "meaning_vi": "quá nhiều, thừa",
+    "part_of_speech": "noun",
+    "tags": [
+      "excess",
+      "surplus",
+      "overabundance"
+    ]
+  },
+  {
+    "word": "均衡",
+    "reading": "きんこう",
+    "romaji": "kinkou",
+    "meaning_vi": "cân bằng, công bằng",
+    "part_of_speech": "noun",
+    "tags": [
+      "balance",
+      "equilibrium",
+      "equality"
+    ]
+  },
+  {
+    "word": "不均衡",
+    "reading": "ふきんこう",
+    "romaji": "fukinkou",
+    "meaning_vi": "mất cân bằng, bất đối xứng",
+    "part_of_speech": "noun",
+    "tags": [
+      "imbalance",
+      "disparity",
+      "asymmetry"
+    ]
+  },
+  {
+    "word": "偏り",
+    "reading": "かたより",
+    "romaji": "katayori",
+    "meaning_vi": "nghiêng vênh, thiên vị",
+    "part_of_speech": "noun",
+    "tags": [
+      "bias",
+      "slant",
+      "skew"
+    ]
+  },
+  {
+    "word": "歪み",
+    "reading": "ゆがみ",
+    "romaji": "yugami",
+    "meaning_vi": "biến dạng, quặt vặt",
+    "part_of_speech": "noun",
+    "tags": [
+      "distortion",
+      "warping",
+      "perversion"
+    ]
+  },
+  {
+    "word": "逆説",
+    "reading": "ぎゃくせつ",
+    "romaji": "gyakusetsu",
+    "meaning_vi": "nghịch lý, lũy thừa",
+    "part_of_speech": "noun",
+    "tags": [
+      "paradox",
+      "contradiction",
+      "irony"
+    ]
+  },
+  {
+    "word": "矛盾点",
+    "reading": "むじゅんてん",
+    "romaji": "mujunten",
+    "meaning_vi": "điểm mâu thuẫn, sự tranh chấp",
+    "part_of_speech": "noun",
+    "tags": [
+      "contradiction",
+      "inconsistency",
+      "discrepancy"
+    ]
+  },
+  {
+    "word": "齟齬",
+    "reading": "そご",
+    "romaji": "sogo",
+    "meaning_vi": "không phù hợp, xung đột",
+    "part_of_speech": "noun",
+    "tags": [
+      "discord",
+      "misalignment",
+      "mismatch"
+    ]
+  },
+  {
+    "word": "食い違い",
+    "reading": "くいちがい",
+    "romaji": "kuichigai",
+    "meaning_vi": "không trùng khít, chênh lệch",
+    "part_of_speech": "noun",
+    "tags": [
+      "discrepancy",
+      "misalignment",
+      "divergence"
+    ]
+  },
+  {
+    "word": "ずれ",
+    "reading": "ずれ",
+    "romaji": "zure",
+    "meaning_vi": "sai lệch, trượt",
+    "part_of_speech": "noun",
+    "tags": [
+      "deviation",
+      "shift",
+      "displacement"
+    ]
+  },
+  {
+    "word": "乖離",
+    "reading": "かいり",
+    "romaji": "kairi",
+    "meaning_vi": "xa rời, sai lạc",
+    "part_of_speech": "noun",
+    "tags": [
+      "divergence",
+      "separation",
+      "discrepancy"
+    ]
+  },
+  {
+    "word": "剥離",
+    "reading": "はくり",
+    "romaji": "hakuri",
+    "meaning_vi": "tách rời, bong tróc",
+    "part_of_speech": "noun",
+    "tags": [
+      "detachment",
+      "peeling",
+      "separation"
+    ]
+  },
+  {
+    "word": "融通",
+    "reading": "ゆうずう",
+    "romaji": "yuuzuu",
+    "meaning_vi": "linh hoạt, tính năng",
+    "part_of_speech": "noun",
+    "tags": [
+      "flexibility",
+      "accommodation",
+      "adjustability"
+    ]
+  },
+  {
+    "word": "弾力",
+    "reading": "だんりょく",
+    "romaji": "danryoku",
+    "meaning_vi": "tính đàn hồi, sức mềm dẻo",
+    "part_of_speech": "noun",
+    "tags": [
+      "elasticity",
+      "flexibility",
+      "resilience"
+    ]
+  },
+  {
+    "word": "硬直",
+    "reading": "こうちょく",
+    "romaji": "kouchoku",
+    "meaning_vi": "cứng, không linh hoạt",
+    "part_of_speech": "noun",
+    "tags": [
+      "rigidity",
+      "stiffness",
+      "inflexibility"
+    ]
+  },
+  {
+    "word": "借款",
+    "reading": "しゃっかん",
+    "romaji": "shakkan",
+    "meaning_vi": "khoản vay, tiền vay",
+    "part_of_speech": "noun",
+    "tags": [
+      "loan",
+      "credit",
+      "borrowing"
+    ]
+  },
+  {
+    "word": "起債",
+    "reading": "きさい",
+    "romaji": "kisai",
+    "meaning_vi": "phát hành trái phiếu, vay tiền",
+    "part_of_speech": "noun",
+    "tags": [
+      "bond issuance",
+      "financing",
+      "borrowing"
+    ]
+  },
+  {
+    "word": "償却",
+    "reading": "しょうきゃく",
+    "romaji": "shokyaku",
+    "meaning_vi": "khấu hao, hoàn trả",
+    "part_of_speech": "noun",
+    "tags": [
+      "depreciation",
+      "amortization",
+      "repayment"
+    ]
+  },
+  {
+    "word": "返済",
+    "reading": "へんさい",
+    "romaji": "hensai",
+    "meaning_vi": "trả nợ, hoàn trả",
+    "part_of_speech": "noun",
+    "tags": [
+      "repayment",
+      "redemption",
+      "refund"
+    ]
+  },
+  {
+    "word": "利息",
+    "reading": "りそく",
+    "romaji": "risoku",
+    "meaning_vi": "lãi suất, tiền lãi",
+    "part_of_speech": "noun",
+    "tags": [
+      "interest",
+      "rate",
+      "dividend"
+    ]
+  },
+  {
+    "word": "利益",
+    "reading": "りえき",
+    "romaji": "rieki",
+    "meaning_vi": "lợi ích, lợi nhuận",
+    "part_of_speech": "noun",
+    "tags": [
+      "profit",
+      "benefit",
+      "interest"
+    ]
+  },
+  {
+    "word": "利潤",
+    "reading": "りじゅん",
+    "romaji": "rijun",
+    "meaning_vi": "lợi nhuận, lãi suất",
+    "part_of_speech": "noun",
+    "tags": [
+      "profit",
+      "margin",
+      "return"
+    ]
+  },
+  {
+    "word": "収益",
+    "reading": "しゅうえき",
+    "romaji": "shuueki",
+    "meaning_vi": "thu nhập, doanh thu",
+    "part_of_speech": "noun",
+    "tags": [
+      "revenue",
+      "income",
+      "earnings"
+    ]
+  },
+  {
+    "word": "赤字",
+    "reading": "あかじ",
+    "romaji": "akaji",
+    "meaning_vi": "thâm hụt, thua lỗ",
+    "part_of_speech": "noun",
+    "tags": [
+      "deficit",
+      "loss",
+      "shortfall"
+    ]
+  },
+  {
+    "word": "黒字",
+    "reading": "くろじ",
+    "romaji": "kuroji",
+    "meaning_vi": "thặng dư, lãi",
+    "part_of_speech": "noun",
+    "tags": [
+      "surplus",
+      "profit",
+      "balance"
+    ]
+  },
+  {
+    "word": "企業",
+    "reading": "きぎょう",
+    "romaji": "kigyou",
+    "meaning_vi": "doanh nghiệp, công ty",
+    "part_of_speech": "noun",
+    "tags": [
+      "enterprise",
+      "business",
+      "corporation"
+    ]
+  },
+  {
+    "word": "事業",
+    "reading": "じぎょう",
+    "romaji": "jigyou",
+    "meaning_vi": "sự nghiệp, kinh doanh",
+    "part_of_speech": "noun",
+    "tags": [
+      "business",
+      "enterprise",
+      "operation"
+    ]
+  },
+  {
+    "word": "産業",
+    "reading": "さんぎょう",
+    "romaji": "sangyou",
+    "meaning_vi": "công nghiệp, ngành",
+    "part_of_speech": "noun",
+    "tags": [
+      "industry",
+      "sector",
+      "business"
+    ]
+  },
+  {
+    "word": "業種",
+    "reading": "ぎょうしゅ",
+    "romaji": "gyoushu",
+    "meaning_vi": "ngành nghề, loại hình kinh doanh",
+    "part_of_speech": "noun",
+    "tags": [
+      "business type",
+      "industry",
+      "trade"
+    ]
+  },
+  {
+    "word": "商業",
+    "reading": "しょうぎょう",
+    "romaji": "shougyou",
+    "meaning_vi": "thương mại, buôn bán",
+    "part_of_speech": "noun",
+    "tags": [
+      "commerce",
+      "trade",
+      "business"
+    ]
+  },
+  {
+    "word": "製造",
+    "reading": "せいぞう",
+    "romaji": "seizou",
+    "meaning_vi": "sản xuất, chế tạo",
+    "part_of_speech": "noun",
+    "tags": [
+      "manufacturing",
+      "production",
+      "fabrication"
+    ]
+  },
+  {
+    "word": "加工",
+    "reading": "かこう",
+    "romaji": "kakou",
+    "meaning_vi": "chế biến, xử lý",
+    "part_of_speech": "noun",
+    "tags": [
+      "processing",
+      "workmanship",
+      "fabrication"
+    ]
+  },
+  {
+    "word": "流通",
+    "reading": "りゅうつう",
+    "romaji": "ryuutsuu",
+    "meaning_vi": "lưu thông, phân phối",
+    "part_of_speech": "noun",
+    "tags": [
+      "distribution",
+      "circulation",
+      "flow"
+    ]
+  },
+  {
+    "word": "市場",
+    "reading": "しじょう",
+    "romaji": "shijou",
+    "meaning_vi": "thị trường, chợ",
+    "part_of_speech": "noun",
+    "tags": [
+      "market",
+      "marketplace",
+      "commercial"
+    ]
+  },
+  {
+    "word": "市況",
+    "reading": "しきょう",
+    "romaji": "shikyou",
+    "meaning_vi": "tình hình thị trường, giá cả",
+    "part_of_speech": "noun",
+    "tags": [
+      "market conditions",
+      "trading",
+      "prices"
+    ]
+  },
+  {
+    "word": "相場",
+    "reading": "そうば",
+    "romaji": "souba",
+    "meaning_vi": "giá, tỷ giá",
+    "part_of_speech": "noun",
+    "tags": [
+      "price",
+      "rate",
+      "quotation"
+    ]
+  },
+  {
+    "word": "価格",
+    "reading": "かかく",
+    "romaji": "kakaku",
+    "meaning_vi": "giá cả, giá tiền",
+    "part_of_speech": "noun",
+    "tags": [
+      "price",
+      "cost",
+      "value"
+    ]
+  },
+  {
+    "word": "値段",
+    "reading": "ねだん",
+    "romaji": "nedan",
+    "meaning_vi": "giá, giá tiền",
+    "part_of_speech": "noun",
+    "tags": [
+      "price",
+      "cost",
+      "fare"
+    ]
+  },
+  {
+    "word": "販売",
+    "reading": "はんばい",
+    "romaji": "hanbai",
+    "meaning_vi": "bán hàng, tiêu thụ",
+    "part_of_speech": "noun",
+    "tags": [
+      "sales",
+      "selling",
+      "distribution"
+    ]
+  },
+  {
+    "word": "取扱",
+    "reading": "とりあつかい",
+    "romaji": "toriatsukai",
+    "meaning_vi": "xử lý, quản lý",
+    "part_of_speech": "noun",
+    "tags": [
+      "handling",
+      "treatment",
+      "management"
+    ]
+  }
 ]

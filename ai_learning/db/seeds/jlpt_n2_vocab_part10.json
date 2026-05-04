@@ -1,0 +1,1406 @@
+[
+  {
+    "word": "思想",
+    "reading": "しそう",
+    "romaji": "gainnen",
+    "meaning_vi": "ý tưởng, tư tưởng",
+    "part_of_speech": "noun",
+    "tags": [
+      "concept",
+      "idea",
+      "abstract"
+    ]
+  },
+  {
+    "word": "哲学",
+    "reading": "てつがく",
+    "romaji": "tetsugaku",
+    "meaning_vi": "triết học",
+    "part_of_speech": "noun",
+    "tags": [
+      "philosophy",
+      "academic",
+      "abstract"
+    ]
+  },
+  {
+    "word": "美学",
+    "reading": "びがく",
+    "romaji": "bigaku",
+    "meaning_vi": "thẩm mỹ học",
+    "part_of_speech": "noun",
+    "tags": [
+      "aesthetics",
+      "academic",
+      "abstract"
+    ]
+  },
+  {
+    "word": "倫理",
+    "reading": "りんり",
+    "romaji": "rinri",
+    "meaning_vi": "đạo đức, luân lý",
+    "part_of_speech": "noun",
+    "tags": [
+      "ethics",
+      "morality",
+      "abstract"
+    ]
+  },
+  {
+    "word": "価値",
+    "reading": "かちん",
+    "romaji": "kachin",
+    "meaning_vi": "giá trị",
+    "part_of_speech": "noun",
+    "tags": [
+      "value",
+      "worth",
+      "abstract"
+    ]
+  },
+  {
+    "word": "意義",
+    "reading": "いぎ",
+    "romaji": "igi",
+    "meaning_vi": "ý nghĩa",
+    "part_of_speech": "noun",
+    "tags": [
+      "meaning",
+      "significance",
+      "abstract"
+    ]
+  },
+  {
+    "word": "本質",
+    "reading": "ほんしつ",
+    "romaji": "honshitsu",
+    "meaning_vi": "bản chất",
+    "part_of_speech": "noun",
+    "tags": [
+      "essence",
+      "nature",
+      "abstract"
+    ]
+  },
+  {
+    "word": "属性",
+    "reading": "ぞくせい",
+    "romaji": "zokusei",
+    "meaning_vi": "thuộc tính, tính chất",
+    "part_of_speech": "noun",
+    "tags": [
+      "attribute",
+      "property",
+      "abstract"
+    ]
+  },
+  {
+    "word": "特徴",
+    "reading": "とくちょう",
+    "romaji": "tokuchou",
+    "meaning_vi": "đặc trưng, đặc điểm",
+    "part_of_speech": "noun",
+    "tags": [
+      "characteristic",
+      "feature",
+      "abstract"
+    ]
+  },
+  {
+    "word": "性質",
+    "reading": "せいしつ",
+    "romaji": "seishitsu",
+    "meaning_vi": "tính chất",
+    "part_of_speech": "noun",
+    "tags": [
+      "nature",
+      "property",
+      "abstract"
+    ]
+  },
+  {
+    "word": "体質",
+    "reading": "たいしつ",
+    "romaji": "taishitsu",
+    "meaning_vi": "thể chất",
+    "part_of_speech": "noun",
+    "tags": [
+      "constitution",
+      "physique",
+      "abstract"
+    ]
+  },
+  {
+    "word": "気質",
+    "reading": "きしつ",
+    "romaji": "kishitsu",
+    "meaning_vi": "tính khí",
+    "part_of_speech": "noun",
+    "tags": [
+      "temperament",
+      "disposition",
+      "abstract"
+    ]
+  },
+  {
+    "word": "品性",
+    "reading": "ひんせい",
+    "romaji": "hinsei",
+    "meaning_vi": "phẩm chất",
+    "part_of_speech": "noun",
+    "tags": [
+      "character",
+      "morality",
+      "abstract"
+    ]
+  },
+  {
+    "word": "人格",
+    "reading": "じんかく",
+    "romaji": "jinkaku",
+    "meaning_vi": "nhân cách",
+    "part_of_speech": "noun",
+    "tags": [
+      "personality",
+      "character",
+      "abstract"
+    ]
+  },
+  {
+    "word": "個性",
+    "reading": "こせい",
+    "romaji": "kosei",
+    "meaning_vi": "cá tính",
+    "part_of_speech": "noun",
+    "tags": [
+      "individuality",
+      "personality",
+      "abstract"
+    ]
+  },
+  {
+    "word": "能力",
+    "reading": "のうりょく",
+    "romaji": "sainou",
+    "meaning_vi": "khả năng, năng lực",
+    "part_of_speech": "noun",
+    "tags": [
+      "talent",
+      "ability",
+      "abstract"
+    ]
+  },
+  {
+    "word": "才覚",
+    "reading": "さいかく",
+    "romaji": "saikaku",
+    "meaning_vi": "tài lãnh",
+    "part_of_speech": "noun",
+    "tags": [
+      "talent",
+      "capability",
+      "abstract"
+    ]
+  },
+  {
+    "word": "素養",
+    "reading": "そよう",
+    "romaji": "soyou",
+    "meaning_vi": "tố dưỡng, căn bản",
+    "part_of_speech": "noun",
+    "tags": [
+      "cultivation",
+      "refinement",
+      "abstract"
+    ]
+  },
+  {
+    "word": "修養",
+    "reading": "しゅうよう",
+    "romaji": "shuuyou",
+    "meaning_vi": "tu dưỡng",
+    "part_of_speech": "noun",
+    "tags": [
+      "cultivation",
+      "training",
+      "abstract"
+    ]
+  },
+  {
+    "word": "教養",
+    "reading": "きょうよう",
+    "romaji": "kyouyou",
+    "meaning_vi": "học vấn, giáo dưỡng",
+    "part_of_speech": "noun",
+    "tags": [
+      "education",
+      "culture",
+      "abstract"
+    ]
+  },
+  {
+    "word": "知識",
+    "reading": "ちしき",
+    "romaji": "chishiki",
+    "meaning_vi": "kiến thức",
+    "part_of_speech": "noun",
+    "tags": [
+      "knowledge",
+      "learning",
+      "abstract"
+    ]
+  },
+  {
+    "word": "知恵",
+    "reading": "ちえ",
+    "romaji": "chie",
+    "meaning_vi": "trí tuệ, khôn ngoan",
+    "part_of_speech": "noun",
+    "tags": [
+      "wisdom",
+      "intelligence",
+      "abstract"
+    ]
+  },
+  {
+    "word": "見識",
+    "reading": "けんしき",
+    "romaji": "kenshiki",
+    "meaning_vi": "nhận thức, tầm nhìn",
+    "part_of_speech": "noun",
+    "tags": [
+      "insight",
+      "discernment",
+      "abstract"
+    ]
+  },
+  {
+    "word": "洞察",
+    "reading": "どうさつ",
+    "romaji": "dousatsu",
+    "meaning_vi": "thẩu hiểu",
+    "part_of_speech": "noun",
+    "tags": [
+      "insight",
+      "perception",
+      "abstract"
+    ]
+  },
+  {
+    "word": "直感",
+    "reading": "ちょっかん",
+    "romaji": "chokkan",
+    "meaning_vi": "trực giác",
+    "part_of_speech": "noun",
+    "tags": [
+      "intuition",
+      "instinct",
+      "abstract"
+    ]
+  },
+  {
+    "word": "感覚",
+    "reading": "かんかく",
+    "romaji": "kankaku",
+    "meaning_vi": "cảm giác",
+    "part_of_speech": "noun",
+    "tags": [
+      "sensation",
+      "feeling",
+      "abstract"
+    ]
+  },
+  {
+    "word": "感情",
+    "reading": "かんじょう",
+    "romaji": "kanjou",
+    "meaning_vi": "cảm xúc",
+    "part_of_speech": "noun",
+    "tags": [
+      "emotion",
+      "feeling",
+      "abstract"
+    ]
+  },
+  {
+    "word": "喜び",
+    "reading": "よろこび",
+    "romaji": "yorokobi",
+    "meaning_vi": "vui sướng",
+    "part_of_speech": "noun",
+    "tags": [
+      "joy",
+      "happiness",
+      "emotion"
+    ]
+  },
+  {
+    "word": "悲しみ",
+    "reading": "かなしみ",
+    "romaji": "kanashimi",
+    "meaning_vi": "buồn rầu",
+    "part_of_speech": "noun",
+    "tags": [
+      "sadness",
+      "sorrow",
+      "emotion"
+    ]
+  },
+  {
+    "word": "怒り",
+    "reading": "いかり",
+    "romaji": "ikari",
+    "meaning_vi": "tức giận",
+    "part_of_speech": "noun",
+    "tags": [
+      "anger",
+      "rage",
+      "emotion"
+    ]
+  },
+  {
+    "word": "恐怖",
+    "reading": "きょうふ",
+    "romaji": "kyoufu",
+    "meaning_vi": "sợ hãi",
+    "part_of_speech": "noun",
+    "tags": [
+      "fear",
+      "terror",
+      "emotion"
+    ]
+  },
+  {
+    "word": "不安",
+    "reading": "ふあん",
+    "romaji": "fuan",
+    "meaning_vi": "bất an, lo lắng",
+    "part_of_speech": "noun",
+    "tags": [
+      "anxiety",
+      "worry",
+      "emotion"
+    ]
+  },
+  {
+    "word": "幸福",
+    "reading": "こうふく",
+    "romaji": "koufuku",
+    "meaning_vi": "hạnh phúc",
+    "part_of_speech": "noun",
+    "tags": [
+      "happiness",
+      "bliss",
+      "emotion"
+    ]
+  },
+  {
+    "word": "苦しみ",
+    "reading": "くるしみ",
+    "romaji": "kurushimi",
+    "meaning_vi": "khổ đau",
+    "part_of_speech": "noun",
+    "tags": [
+      "suffering",
+      "pain",
+      "emotion"
+    ]
+  },
+  {
+    "word": "苦労",
+    "reading": "くろう",
+    "romaji": "kurou",
+    "meaning_vi": "khó nhọc",
+    "part_of_speech": "noun",
+    "tags": [
+      "hardship",
+      "trouble",
+      "emotion"
+    ]
+  },
+  {
+    "word": "悔しさ",
+    "reading": "くやしさ",
+    "romaji": "kuyashisa",
+    "meaning_vi": "hối tiếc",
+    "part_of_speech": "noun",
+    "tags": [
+      "regret",
+      "chagrin",
+      "emotion"
+    ]
+  },
+  {
+    "word": "失望",
+    "reading": "しつぼう",
+    "romaji": "shitsubou",
+    "meaning_vi": "thất vọng",
+    "part_of_speech": "noun",
+    "tags": [
+      "disappointment",
+      "letdown",
+      "emotion"
+    ]
+  },
+  {
+    "word": "絶望",
+    "reading": "ぜつぼう",
+    "romaji": "zetsubou",
+    "meaning_vi": "tuyệt vọng",
+    "part_of_speech": "noun",
+    "tags": [
+      "despair",
+      "hopelessness",
+      "emotion"
+    ]
+  },
+  {
+    "word": "希望",
+    "reading": "きぼう",
+    "romaji": "kibou",
+    "meaning_vi": "hy vọng",
+    "part_of_speech": "noun",
+    "tags": [
+      "hope",
+      "aspiration",
+      "emotion"
+    ]
+  },
+  {
+    "word": "願い",
+    "reading": "ねがい",
+    "romaji": "negai",
+    "meaning_vi": "mong muốn",
+    "part_of_speech": "noun",
+    "tags": [
+      "wish",
+      "desire",
+      "emotion"
+    ]
+  },
+  {
+    "word": "欲望",
+    "reading": "よくぼう",
+    "romaji": "yokuбou",
+    "meaning_vi": "lust, ham muốn",
+    "part_of_speech": "noun",
+    "tags": [
+      "desire",
+      "greed",
+      "emotion"
+    ]
+  },
+  {
+    "word": "貪欲",
+    "reading": "たんよく",
+    "romaji": "tanyoku",
+    "meaning_vi": "tham lam",
+    "part_of_speech": "noun",
+    "tags": [
+      "greed",
+      "avarice",
+      "character"
+    ]
+  },
+  {
+    "word": "傲慢",
+    "reading": "ごうまん",
+    "romaji": "gouman",
+    "meaning_vi": "ngạo mạn",
+    "part_of_speech": "noun",
+    "tags": [
+      "arrogance",
+      "pride",
+      "character"
+    ]
+  },
+  {
+    "word": "謙虚",
+    "reading": "けんきょ",
+    "romaji": "kenkyo",
+    "meaning_vi": "khiêm tốn",
+    "part_of_speech": "adjective",
+    "tags": [
+      "modesty",
+      "humility",
+      "character"
+    ]
+  },
+  {
+    "word": "温和",
+    "reading": "おんわ",
+    "romaji": "onwa",
+    "meaning_vi": "hiền hòa",
+    "part_of_speech": "adjective",
+    "tags": [
+      "gentleness",
+      "mildness",
+      "character"
+    ]
+  },
+  {
+    "word": "穏やか",
+    "reading": "おだやか",
+    "romaji": "odayaka",
+    "meaning_vi": "yên tĩnh",
+    "part_of_speech": "adjective",
+    "tags": [
+      "calm",
+      "peaceful",
+      "character"
+    ]
+  },
+  {
+    "word": "静寂",
+    "reading": "せいじゃく",
+    "romaji": "seijyaku",
+    "meaning_vi": "yên lặng",
+    "part_of_speech": "noun",
+    "tags": [
+      "silence",
+      "quietness",
+      "abstract"
+    ]
+  },
+  {
+    "word": "喧騒",
+    "reading": "けんそう",
+    "romaji": "kensou",
+    "meaning_vi": "ồn ào",
+    "part_of_speech": "noun",
+    "tags": [
+      "noise",
+      "clamor",
+      "abstract"
+    ]
+  },
+  {
+    "word": "騒音",
+    "reading": "そうおん",
+    "romaji": "souon",
+    "meaning_vi": "tiếng ồn",
+    "part_of_speech": "noun",
+    "tags": [
+      "noise",
+      "sound",
+      "abstract"
+    ]
+  },
+  {
+    "word": "音色",
+    "reading": "ねいろ",
+    "romaji": "neiro",
+    "meaning_vi": "âm sắc",
+    "part_of_speech": "noun",
+    "tags": [
+      "tone",
+      "timbre",
+      "abstract"
+    ]
+  },
+  {
+    "word": "調子",
+    "reading": "ちょうし",
+    "romaji": "choushi",
+    "meaning_vi": "tâm trạng",
+    "part_of_speech": "noun",
+    "tags": [
+      "mood",
+      "condition",
+      "abstract"
+    ]
+  },
+  {
+    "word": "雰囲気",
+    "reading": "ふんいき",
+    "romaji": "fun'iki",
+    "meaning_vi": "không khí",
+    "part_of_speech": "noun",
+    "tags": [
+      "atmosphere",
+      "ambiance",
+      "abstract"
+    ]
+  },
+  {
+    "word": "状況",
+    "reading": "じょうきょう",
+    "romaji": "joukyou",
+    "meaning_vi": "tình trạng",
+    "part_of_speech": "noun",
+    "tags": [
+      "situation",
+      "condition",
+      "abstract"
+    ]
+  },
+  {
+    "word": "状態",
+    "reading": "じょうたい",
+    "romaji": "joutai",
+    "meaning_vi": "trạng thái",
+    "part_of_speech": "noun",
+    "tags": [
+      "state",
+      "condition",
+      "abstract"
+    ]
+  },
+  {
+    "word": "原因",
+    "reading": "げんいん",
+    "romaji": "gen'in",
+    "meaning_vi": "nguyên nhân",
+    "part_of_speech": "noun",
+    "tags": [
+      "cause",
+      "reason",
+      "abstract"
+    ]
+  },
+  {
+    "word": "結果",
+    "reading": "けっか",
+    "romaji": "kekka",
+    "meaning_vi": "kết quả",
+    "part_of_speech": "noun",
+    "tags": [
+      "result",
+      "outcome",
+      "abstract"
+    ]
+  },
+  {
+    "word": "因果",
+    "reading": "いんが",
+    "romaji": "inga",
+    "meaning_vi": "nhân quả",
+    "part_of_speech": "noun",
+    "tags": [
+      "causality",
+      "cause and effect",
+      "abstract"
+    ]
+  },
+  {
+    "word": "因果関係",
+    "reading": "いんがかんけい",
+    "romaji": "ingakankei",
+    "meaning_vi": "mối quan hệ nhân quả",
+    "part_of_speech": "noun",
+    "tags": [
+      "causal relationship",
+      "logic",
+      "abstract"
+    ]
+  },
+  {
+    "word": "理由",
+    "reading": "りゆう",
+    "romaji": "riyuu",
+    "meaning_vi": "lý do",
+    "part_of_speech": "noun",
+    "tags": [
+      "reason",
+      "excuse",
+      "abstract"
+    ]
+  },
+  {
+    "word": "わけ",
+    "reading": "わけ",
+    "romaji": "wake",
+    "meaning_vi": "lý do, nguyên do",
+    "part_of_speech": "noun",
+    "tags": [
+      "reason",
+      "meaning",
+      "abstract"
+    ]
+  },
+  {
+    "word": "背景",
+    "reading": "はいけい",
+    "romaji": "haikei",
+    "meaning_vi": "nền tảng, bối cảnh",
+    "part_of_speech": "noun",
+    "tags": [
+      "background",
+      "context",
+      "abstract"
+    ]
+  },
+  {
+    "word": "前提",
+    "reading": "ぜんてい",
+    "romaji": "zentei",
+    "meaning_vi": "tiền đề",
+    "part_of_speech": "noun",
+    "tags": [
+      "premise",
+      "prerequisite",
+      "abstract"
+    ]
+  },
+  {
+    "word": "条件",
+    "reading": "じょうけん",
+    "romaji": "jouken",
+    "meaning_vi": "điều kiện",
+    "part_of_speech": "noun",
+    "tags": [
+      "condition",
+      "term",
+      "abstract"
+    ]
+  },
+  {
+    "word": "要件",
+    "reading": "ようけん",
+    "romaji": "youken",
+    "meaning_vi": "yêu cầu",
+    "part_of_speech": "noun",
+    "tags": [
+      "requirement",
+      "requisite",
+      "abstract"
+    ]
+  },
+  {
+    "word": "機会",
+    "reading": "きかい",
+    "romaji": "kikai",
+    "meaning_vi": "cơ hội",
+    "part_of_speech": "noun",
+    "tags": [
+      "opportunity",
+      "chance",
+      "abstract"
+    ]
+  },
+  {
+    "word": "危機",
+    "reading": "きき",
+    "romaji": "kiki",
+    "meaning_vi": "khủng hoảng",
+    "part_of_speech": "noun",
+    "tags": [
+      "crisis",
+      "danger",
+      "abstract"
+    ]
+  },
+  {
+    "word": "困難",
+    "reading": "こんなん",
+    "romaji": "konnan",
+    "meaning_vi": "khó khăn",
+    "part_of_speech": "noun",
+    "tags": [
+      "difficulty",
+      "hardship",
+      "abstract"
+    ]
+  },
+  {
+    "word": "バリア",
+    "reading": "ばりあ",
+    "romaji": "baria",
+    "meaning_vi": "rào cản",
+    "part_of_speech": "noun",
+    "tags": [
+      "barrier",
+      "obstacle",
+      "abstract"
+    ]
+  },
+  {
+    "word": "限界",
+    "reading": "げんかい",
+    "romaji": "genkai",
+    "meaning_vi": "giới hạn",
+    "part_of_speech": "noun",
+    "tags": [
+      "limit",
+      "boundary",
+      "abstract"
+    ]
+  },
+  {
+    "word": "幅",
+    "reading": "はば",
+    "romaji": "han'i",
+    "meaning_vi": "rộng, phạm vi",
+    "part_of_speech": "noun",
+    "tags": [
+      "scope",
+      "range",
+      "abstract"
+    ]
+  },
+  {
+    "word": "寸法",
+    "reading": "すんぽう",
+    "romaji": "sunpou",
+    "meaning_vi": "kích thước",
+    "part_of_speech": "noun",
+    "tags": [
+      "dimension",
+      "measurement",
+      "abstract"
+    ]
+  },
+  {
+    "word": "規模",
+    "reading": "きぼ",
+    "romaji": "kibo",
+    "meaning_vi": "quy mô",
+    "part_of_speech": "noun",
+    "tags": [
+      "scale",
+      "scope",
+      "abstract"
+    ]
+  },
+  {
+    "word": "程度",
+    "reading": "ていど",
+    "romaji": "teido",
+    "meaning_vi": "mức độ",
+    "part_of_speech": "noun",
+    "tags": [
+      "degree",
+      "extent",
+      "abstract"
+    ]
+  },
+  {
+    "word": "水準",
+    "reading": "すいじゅん",
+    "romaji": "dankai",
+    "meaning_vi": "mức độ, chuẩn",
+    "part_of_speech": "noun",
+    "tags": [
+      "phase",
+      "stage",
+      "abstract"
+    ]
+  },
+  {
+    "word": "様子",
+    "reading": "ようす",
+    "romaji": "shidai",
+    "meaning_vi": "tình hình, cách thức",
+    "part_of_speech": "noun",
+    "tags": [
+      "order",
+      "sequence",
+      "abstract"
+    ]
+  },
+  {
+    "word": "流れ",
+    "reading": "ながれ",
+    "romaji": "junjo",
+    "meaning_vi": "luồng, dòng chảy",
+    "part_of_speech": "noun",
+    "tags": [
+      "order",
+      "sequence",
+      "abstract"
+    ]
+  },
+  {
+    "word": "分布",
+    "reading": "ぶんぷ",
+    "romaji": "bunpu",
+    "meaning_vi": "phân bố",
+    "part_of_speech": "noun",
+    "tags": [
+      "distribution",
+      "spread",
+      "abstract"
+    ]
+  },
+  {
+    "word": "密集",
+    "reading": "みっしゅう",
+    "romaji": "misshuu",
+    "meaning_vi": "tập trung đông đúc",
+    "part_of_speech": "noun",
+    "tags": [
+      "concentration",
+      "density",
+      "abstract"
+    ]
+  },
+  {
+    "word": "散在",
+    "reading": "さんざい",
+    "romaji": "sanzai",
+    "meaning_vi": "phân tán",
+    "part_of_speech": "noun",
+    "tags": [
+      "scattering",
+      "dispersion",
+      "abstract"
+    ]
+  },
+  {
+    "word": "調整",
+    "reading": "ちょうせい",
+    "romaji": "chousei",
+    "meaning_vi": "điều chỉnh",
+    "part_of_speech": "noun",
+    "tags": [
+      "adjustment",
+      "coordination",
+      "abstract"
+    ]
+  },
+  {
+    "word": "均等",
+    "reading": "きんとう",
+    "romaji": "kinkou",
+    "meaning_vi": "đều đặn, bằng nhau",
+    "part_of_speech": "noun",
+    "tags": [
+      "balance",
+      "equilibrium",
+      "abstract"
+    ]
+  },
+  {
+    "word": "完全",
+    "reading": "かんぜん",
+    "romaji": "kanzen",
+    "meaning_vi": "hoàn toàn",
+    "part_of_speech": "adjective",
+    "tags": [
+      "perfect",
+      "complete",
+      "quality"
+    ]
+  },
+  {
+    "word": "不完全",
+    "reading": "ふかんぜん",
+    "romaji": "fukanzen",
+    "meaning_vi": "không hoàn toàn",
+    "part_of_speech": "adjective",
+    "tags": [
+      "incomplete",
+      "imperfect",
+      "quality"
+    ]
+  },
+  {
+    "word": "完璧",
+    "reading": "かんぺき",
+    "romaji": "kanpeki",
+    "meaning_vi": "hoàn hảo",
+    "part_of_speech": "adjective",
+    "tags": [
+      "flawless",
+      "perfect",
+      "quality"
+    ]
+  },
+  {
+    "word": "厳密",
+    "reading": "げんみつ",
+    "romaji": "genmitsu",
+    "meaning_vi": "chặt chẽ",
+    "part_of_speech": "adjective",
+    "tags": [
+      "precise",
+      "strict",
+      "quality"
+    ]
+  },
+  {
+    "word": "正確",
+    "reading": "せいかく",
+    "romaji": "seikaku",
+    "meaning_vi": "chính xác",
+    "part_of_speech": "adjective",
+    "tags": [
+      "accurate",
+      "correct",
+      "quality"
+    ]
+  },
+  {
+    "word": "厳格",
+    "reading": "げんかく",
+    "romaji": "genkaku",
+    "meaning_vi": "nghiêm khắc",
+    "part_of_speech": "adjective",
+    "tags": [
+      "strict",
+      "severe",
+      "quality"
+    ]
+  },
+  {
+    "word": "厳しい",
+    "reading": "きびしい",
+    "romaji": "kibishi",
+    "meaning_vi": "nghiêm",
+    "part_of_speech": "adjective",
+    "tags": [
+      "stern",
+      "harsh",
+      "quality"
+    ]
+  },
+  {
+    "word": "柔軟",
+    "reading": "じゅうなん",
+    "romaji": "juunan",
+    "meaning_vi": "mềm dẻo",
+    "part_of_speech": "adjective",
+    "tags": [
+      "flexible",
+      "soft",
+      "quality"
+    ]
+  },
+  {
+    "word": "堅固",
+    "reading": "けんご",
+    "romaji": "kengo",
+    "meaning_vi": "vững chắc",
+    "part_of_speech": "adjective",
+    "tags": [
+      "solid",
+      "firm",
+      "quality"
+    ]
+  },
+  {
+    "word": "安定",
+    "reading": "あんてい",
+    "romaji": "antei",
+    "meaning_vi": "ổn định",
+    "part_of_speech": "noun",
+    "tags": [
+      "stability",
+      "steadiness",
+      "quality"
+    ]
+  },
+  {
+    "word": "不安定",
+    "reading": "ふあんてい",
+    "romaji": "fuantei",
+    "meaning_vi": "không ổn định",
+    "part_of_speech": "adjective",
+    "tags": [
+      "unstable",
+      "unsteady",
+      "quality"
+    ]
+  },
+  {
+    "word": "変動",
+    "reading": "へんどう",
+    "romaji": "hendou",
+    "meaning_vi": "biến động",
+    "part_of_speech": "noun",
+    "tags": [
+      "fluctuation",
+      "variation",
+      "change"
+    ]
+  },
+  {
+    "word": "衰退",
+    "reading": "すいたい",
+    "romaji": "suitai",
+    "meaning_vi": "suy thoái",
+    "part_of_speech": "noun",
+    "tags": [
+      "decline",
+      "recession",
+      "change"
+    ]
+  },
+  {
+    "word": "繁栄",
+    "reading": "はんえい",
+    "romaji": "han'ei",
+    "meaning_vi": "thịnh vượng",
+    "part_of_speech": "noun",
+    "tags": [
+      "prosperity",
+      "flourishing",
+      "quality"
+    ]
+  },
+  {
+    "word": "衰微",
+    "reading": "すいび",
+    "romaji": "suibi",
+    "meaning_vi": "suy vi, lụi tàn",
+    "part_of_speech": "noun",
+    "tags": [
+      "decline",
+      "decay",
+      "change"
+    ]
+  },
+  {
+    "word": "興隆",
+    "reading": "こうりゅう",
+    "romaji": "kouryuu",
+    "meaning_vi": "hưng thịnh",
+    "part_of_speech": "noun",
+    "tags": [
+      "prosperity",
+      "boom",
+      "quality"
+    ]
+  },
+  {
+    "word": "衰落",
+    "reading": "すいらく",
+    "romaji": "suiraku",
+    "meaning_vi": "suy sụp",
+    "part_of_speech": "noun",
+    "tags": [
+      "collapse",
+      "decline",
+      "change"
+    ]
+  },
+  {
+    "word": "栄華",
+    "reading": "えいが",
+    "romaji": "eiga",
+    "meaning_vi": "vinh hoa",
+    "part_of_speech": "noun",
+    "tags": [
+      "glory",
+      "splendor",
+      "quality"
+    ]
+  },
+  {
+    "word": "光栄",
+    "reading": "こうえい",
+    "romaji": "kouei",
+    "meaning_vi": "danh dự",
+    "part_of_speech": "noun",
+    "tags": [
+      "honor",
+      "glory",
+      "quality"
+    ]
+  },
+  {
+    "word": "恥辱",
+    "reading": "ちじょく",
+    "romaji": "chijyoku",
+    "meaning_vi": "sỉ nhục",
+    "part_of_speech": "noun",
+    "tags": [
+      "shame",
+      "disgrace",
+      "emotion"
+    ]
+  },
+  {
+    "word": "汚名",
+    "reading": "おめい",
+    "romaji": "omei",
+    "meaning_vi": "danh dự xấu",
+    "part_of_speech": "noun",
+    "tags": [
+      "disgrace",
+      "shame",
+      "quality"
+    ]
+  },
+  {
+    "word": "面目",
+    "reading": "めんぼく",
+    "romaji": "menboku",
+    "meaning_vi": "thể diện",
+    "part_of_speech": "noun",
+    "tags": [
+      "prestige",
+      "honor",
+      "quality"
+    ]
+  },
+  {
+    "word": "虚栄",
+    "reading": "きょえい",
+    "romaji": "kyoei",
+    "meaning_vi": "hình bóng",
+    "part_of_speech": "noun",
+    "tags": [
+      "vanity",
+      "pride",
+      "character"
+    ]
+  },
+  {
+    "word": "自尊心",
+    "reading": "じそんしん",
+    "romaji": "jisonshin",
+    "meaning_vi": "tự trọng",
+    "part_of_speech": "noun",
+    "tags": [
+      "self-respect",
+      "pride",
+      "character"
+    ]
+  },
+  {
+    "word": "劣等感",
+    "reading": "れっとうかん",
+    "romaji": "rettoukan",
+    "meaning_vi": "cảm giác tự ti",
+    "part_of_speech": "noun",
+    "tags": [
+      "inferiority complex",
+      "feeling",
+      "emotion"
+    ]
+  },
+  {
+    "word": "優越感",
+    "reading": "ゆうえつかん",
+    "romaji": "yuuetsucan",
+    "meaning_vi": "cảm giác vượt trội",
+    "part_of_speech": "noun",
+    "tags": [
+      "superiority complex",
+      "feeling",
+      "emotion"
+    ]
+  },
+  {
+    "word": "栄誉",
+    "reading": "えいよ",
+    "romaji": "eiyo",
+    "meaning_vi": "danh dự",
+    "part_of_speech": "noun",
+    "tags": [
+      "honor",
+      "glory",
+      "quality"
+    ]
+  },
+  {
+    "word": "名誉",
+    "reading": "めいよ",
+    "romaji": "meiyo",
+    "meaning_vi": "danh dự",
+    "part_of_speech": "noun",
+    "tags": [
+      "honor",
+      "reputation",
+      "quality"
+    ]
+  },
+  {
+    "word": "勲章",
+    "reading": "くんしょう",
+    "romaji": "kunshou",
+    "meaning_vi": "huân chương",
+    "part_of_speech": "noun",
+    "tags": [
+      "medal",
+      "honor",
+      "quality"
+    ]
+  },
+  {
+    "word": "表彰",
+    "reading": "ひょうしょう",
+    "romaji": "hyoushou",
+    "meaning_vi": "biểu dương",
+    "part_of_speech": "noun",
+    "tags": [
+      "commendation",
+      "honor",
+      "abstract"
+    ]
+  },
+  {
+    "word": "褒美",
+    "reading": "ほうび",
+    "romaji": "houbi",
+    "meaning_vi": "phần thưởng",
+    "part_of_speech": "noun",
+    "tags": [
+      "reward",
+      "honor",
+      "abstract"
+    ]
+  },
+  {
+    "word": "褒める",
+    "reading": "ほめる",
+    "romaji": "homeru",
+    "meaning_vi": "khen ngợi",
+    "part_of_speech": "verb",
+    "tags": [
+      "praise",
+      "commend",
+      "emotion"
+    ]
+  },
+  {
+    "word": "非難",
+    "reading": "ひなん",
+    "romaji": "hinan",
+    "meaning_vi": "chỉ trích",
+    "part_of_speech": "noun",
+    "tags": [
+      "criticism",
+      "blame",
+      "emotion"
+    ]
+  },
+  {
+    "word": "非難する",
+    "reading": "ひなんする",
+    "romaji": "hinansuru",
+    "meaning_vi": "chỉ trích",
+    "part_of_speech": "verb",
+    "tags": [
+      "criticize",
+      "blame",
+      "emotion"
+    ]
+  },
+  {
+    "word": "尊敬",
+    "reading": "そんけい",
+    "romaji": "sonkei",
+    "meaning_vi": "tôn trọng",
+    "part_of_speech": "noun",
+    "tags": [
+      "respect",
+      "admiration",
+      "emotion"
+    ]
+  },
+  {
+    "word": "軽蔑",
+    "reading": "けいべつ",
+    "romaji": "keibetsu",
+    "meaning_vi": "khinh miệt",
+    "part_of_speech": "noun",
+    "tags": [
+      "contempt",
+      "scorn",
+      "emotion"
+    ]
+  }
+]

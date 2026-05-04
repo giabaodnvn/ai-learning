@@ -1,50 +1,5 @@
 [
   {
-    "pattern": "〜べからず",
-    "explanation_vi": "Không nên, không được (cách nói hình thức, cấm)",
-    "examples": [
-      {
-        "ja": "学生は遅刻すべからずである。",
-        "vi": "Học sinh không được đi trễ."
-      },
-      {
-        "ja": "このような不正行為は許すべからざるものである。",
-        "vi": "Hành vi gian lận như vậy là không được phép."
-      }
-    ],
-    "notes_vi": "Cách nói hình thức, thường dùng trong tài liệu chính thức hoặc bài viết lịch sự."
-  },
-  {
-    "pattern": "〜ざるを得ない",
-    "explanation_vi": "Không có cách nào khác ngoài việc... (bắt buộc)",
-    "examples": [
-      {
-        "ja": "事情が急変したため、計画を変更せざるを得なかった。",
-        "vi": "Do tình huống thay đổi đột ngột, chúng tôi bắt buộc phải thay đổi kế hoạch."
-      },
-      {
-        "ja": "彼の提案を受け入れざるを得なかった。",
-        "vi": "Tôi bắt buộc phải chấp nhận đề xuất của anh ấy."
-      }
-    ],
-    "notes_vi": "Biểu thị sự bắt buộc, không có lựa chọn nào khác."
-  },
-  {
-    "pattern": "〜ないではすまない",
-    "explanation_vi": "Phải..., không thể không... (bắt buộc)",
-    "examples": [
-      {
-        "ja": "この失敗に対して、謝罪しないではすまない。",
-        "vi": "Đối với thất bại này, tôi phải xin lỗi."
-      },
-      {
-        "ja": "問題を解決しないではすまない。",
-        "vi": "Phải giải quyết vấn đề này."
-      }
-    ],
-    "notes_vi": "Diễn đạt sự cần thiết, bắt buộc phải làm điều gì đó."
-  },
-  {
     "pattern": "〜とすれば",
     "explanation_vi": "Nếu giả sử..., nếu coi như... (giả thuyết)",
     "examples": [
@@ -148,21 +103,6 @@
       }
     ],
     "notes_vi": "Nhấn mạnh mối quan hệ giữa nguyên nhân và kết quả."
-  },
-  {
-    "pattern": "〜ゆえに",
-    "explanation_vi": "Vì...nên..., do...mà... (nguyên nhân)",
-    "examples": [
-      {
-        "ja": "知識の不足ゆえに、判断を誤った。",
-        "vi": "Do thiếu kiến thức nên tôi mới sai trong phán đoán."
-      },
-      {
-        "ja": "彼の努力ゆえに、プロジェクトは成功した。",
-        "vi": "Vì nỗ lực của anh ấy nên dự án mới thành công."
-      }
-    ],
-    "notes_vi": "Cách nói hình thức để biểu thị nguyên nhân."
   },
   {
     "pattern": "〜そばから",
