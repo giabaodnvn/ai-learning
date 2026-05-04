@@ -64,20 +64,20 @@ module Prompts
                 "lựa chọn C",
                 "lựa chọn D"
               ],
-              "answer_index": 0
+              "answer_index": 1
             }
           ]
         }
 
         Yêu cầu:
-        - "title": String đơn thuần, không cần cấu trúc <ruby>. Ví dụ: "日本の四季"
-        - "content" phải chứa furigana bằng HTML ruby tags, ví dụ: <ruby>漢字<rt>かんじ</rt></ruby>
-        - Không dùng <p> tag cho paragraphs. Sử dụng <br/> hoặc \n để phân tách đoạn văn thay vào đó
-        - Không dùng định dạng furigana như 《...》 hoặc chú giải chữ ngoài HTML ruby
-        - "vocabulary_highlights": 5–8 từ quan trọng xuất hiện trong bài, chọn từ hữu ích cho trình độ #{jlpt_level.upcase}
-        - "questions": đúng 4 câu hỏi trắc nghiệm, mỗi câu có đúng 4 lựa chọn
-        - "answer_index": index 0–3 của đáp án đúng
+        - "title": String đơn thuần bình thường, KHÔNG có ruby tags. Ví dụ: "日本の四季"
+        - CHỈ "content" phải chứa furigana bằng HTML ruby tags, ví dụ: <ruby>漢字<rt>かんじ</rt></ruby>
+        - "vocabulary_highlights": 5–8 từ bình thường KHÔNG ruby tags (word, reading, meaning_vi đều là text thuần)
+        - "questions": đúng 4 câu hỏi trắc nghiệm bằng text bình thường KHÔNG ruby tags, mỗi câu có đúng 4 lựa chọn
+        - "answer_index": index 0–3 của đáp án đúng. PHẢI NGẪU NHIÊN
         - Câu hỏi phải kiểm tra hiểu nội dung thực sự, không chỉ tìm từ trong bài
+        - Không dùng <p> tag cho paragraphs. Sử dụng <br/> hoặc \n để phân tách đoạn văn thay vào đó
+        - Không dùng định dạng furigana như 《...》 hoặc chú giải chữ ngoài HTML ruby (chỉ dùng ruby tags trong content)
         - Chỉ trả về JSON, không thêm bất kỳ text nào khác
       PROMPT
     end
