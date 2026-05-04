@@ -33,14 +33,14 @@
   {"character":"徇","onyomi":["ジュン"],"kunyomi":["したがう"],"meaning_vi":"theo, tuân theo, phục vụ","stroke_count":10,"vocab_examples":[{"word":"徇職","reading":"じゅんしょく","meaning_vi":"trung thành với công việc"}]},
   {"character":"徉","onyomi":["ヨウ"],"kunyomi":[],"meaning_vi":"dạo phố, lang thang","stroke_count":11,"vocab_examples":[{"word":"徉步","reading":"ようほ","meaning_vi":"dạo bộ"}]},
   {"character":"很","onyomi":["コウ"],"kunyomi":[],"meaning_vi":"tuyến đường, hành trình","stroke_count":12,"vocab_examples":[{"word":"很路","reading":"こうろ","meaning_vi":"đường đi"}]},
-  {"character":"徉","onyomi":["ヨウ"],"kunyomi":[],"meaning_vi":"dạo chơi, loạn (cổ)","stroke_count":11,"vocab_examples":[{"word":"徉遊","reading":"ようゆう","meaning_vi":"dạo chơi"}]},
+  {"character":"韶","onyomi":["ショウ"],"kunyomi":[],"meaning_vi":"đẹp, thanh nhã, âm nhạc (cổ)","stroke_count":14,"vocab_examples":[{"word":"韶光","reading":"しょうこう","meaning_vi":"thời trẻ thanh xuân"},{"word":"韶華","reading":"しょうか","meaning_vi":"tuổi trẻ"}]},
   {"character":"徘","onyomi":["ハイ"],"kunyomi":[],"meaning_vi":"qua lại, lang thang","stroke_count":10,"vocab_examples":[{"word":"徘徊","reading":"はいかい","meaning_vi":"lang thang"}]},
   {"character":"徙","onyomi":["シ"],"kunyomi":[],"meaning_vi":"di chuyển, chuyển nhà","stroke_count":10,"vocab_examples":[{"word":"徙遷","reading":"しせん","meaning_vi":"di chuyển"}]},
   {"character":"徚","onyomi":["トク"],"kunyomi":[],"meaning_vi":"tốc độ, phải, có thể (cổ)","stroke_count":10,"vocab_examples":[{"word":"徚捷","reading":"とくしょう","meaning_vi":"nhanh"}]},
   {"character":"徛","onyomi":["タツ","タイ"],"kunyomi":[],"meaning_vi":"đứng, dứng lại","stroke_count":11,"vocab_examples":[{"word":"徛立","reading":"たつりつ","meaning_vi":"đứng"}]},
   {"character":"徜","onyomi":["ショウ","シャン"],"kunyomi":[],"meaning_vi":"dạo, lang thang","stroke_count":11,"vocab_examples":[{"word":"徜徉","reading":"しょうよう","meaning_vi":"dạo chơi"}]},
   {"character":"徝","onyomi":["チ"],"kunyomi":[],"meaning_vi":"giá trị, đáng, cân (cổ)","stroke_count":11,"vocab_examples":[{"word":"徝值","reading":"ちち","meaning_vi":"giá trị"}]},
-  {"character":"從","onyomi":["シャ"],"kunyomi":[],"meaning_vi":"tuần tra, lệnh theo dõi","stroke_count":11,"vocab_examples":[{"word":"從檢","reading":"しゃけん","meaning_vi":"tuần tra"}]},
+  {"character":"靂","onyomi":["ラク"],"kunyomi":[],"meaning_vi":"sét, tia sét, lôi ngôn","stroke_count":13,"vocab_examples":[{"word":"靂聲","reading":"らくせい","meaning_vi":"tiếng sét"},{"word":"迅靂","reading":"じんらく","meaning_vi":"sét nhanh"}]},
   {"character":"徟","onyomi":["ギ"],"kunyomi":[],"meaning_vi":"đi khập khiễng, mất cân bằng","stroke_count":12,"vocab_examples":[{"word":"徟走","reading":"ぎそう","meaning_vi":"chạy loạn"}]},
   {"character":"徠","onyomi":["ライ"],"kunyomi":[],"meaning_vi":"xa xôi, ở xa (cổ)","stroke_count":12,"vocab_examples":[{"word":"徠兮","reading":"らいけい","meaning_vi":"ở xa"}]},
   {"character":"御","onyomi":["キョウ"],"kunyomi":[],"meaning_vi":"cùng, cùng nhau (cổ)","stroke_count":12,"vocab_examples":[{"word":"御行","reading":"きょうこう","meaning_vi":"đi cùng"}]},
@@ -51,6 +51,6 @@
   {"character":"徦","onyomi":["シ"],"kunyomi":[],"meaning_vi":"giả, mạo danh (cổ)","stroke_count":13,"vocab_examples":[{"word":"徦者","reading":"しぼ","meaning_vi":"kẻ giả"}]},
   {"character":"徧","onyomi":["ヘン"],"kunyomi":[],"meaning_vi":"phổ biến, khắp, toàn (cổ)","stroke_count":13,"vocab_examples":[{"word":"徧地","reading":"へんち","meaning_vi":"khắp nơi"}]},
   {"character":"徨","onyomi":["コウ"],"kunyomi":[],"meaning_vi":"qua lại, loạn động","stroke_count":14,"vocab_examples":[{"word":"徨徨","reading":"こうこう","meaning_vi":"loạn động"}]},
-  {"character":"復","onyomi":["サン"],"kunyomi":[],"meaning_vi":"đi ba lần, ba bước","stroke_count":13,"vocab_examples":[{"word":"復步","reading":"さんほ","meaning_vi":"ba bước"}]},
-  {"character":"循","onyomi":["ハ"],"kunyomi":[],"meaning_vi":"bên cạnh, lân cận (cổ)","stroke_count":14,"vocab_examples":[{"word":"循行","reading":"はこう","meaning_vi":"đi bên cạnh"}]}
+  {"character":"復","onyomi":["フク"],"kunyomi":["もとに","かえす"],"meaning_vi":"phục hồi, trở lại, hồi phục","stroke_count":12,"vocab_examples":[{"word":"復興","reading":"ふっこう","meaning_vi":"phục h興"},{"word":"復帰","reading":"ふっき","meaning_vi":"trở lại"}]},
+  {"character":"邃","onyomi":["スイ"],"kunyomi":[],"meaning_vi":"sâu thẳm, thẫm sâu, uyên bác","stroke_count":12,"vocab_examples":[{"word":"邃密","reading":"すいみつ","meaning_vi":"sâu kín"},{"word":"高邃","reading":"こうすい","meaning_vi":"cao sâu"}]}
 ]
