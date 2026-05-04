@@ -20,11 +20,16 @@ function parseSegments(html: string): { segments: Segment[]; plainText: string }
   const segments: Segment[] = [];
   let plain = "";
 
+  // Strip <p> tags and their content, keeping inner text + line breaks
+  let cleaned = html
+    .replace(/<p>\s*/g, "")
+    .replace(/\s*<\/p>/g, "<br/>");
+
   // Match <ruby>WORD<rt>READING</rt></ruby> or plain text (including \n)
   const re = /<ruby>([\s\S]*?)<rt>([\s\S]*?)<\/rt><\/ruby>|([^<]+)|<br\s*\/?>/gi;
   let match: RegExpExecArray | null;
 
-  while ((match = re.exec(html)) !== null) {
+  while ((match = re.exec(cleaned)) !== null) {
     if (match[1] !== undefined) {
       // ruby group
       const word    = match[1].replace(/<[^>]+>/g, ""); // strip nested tags
@@ -159,11 +164,12 @@ export function ReaderView({ passage, onStartQuiz }: Props) {
             <button
               key={opt.value}
               onClick={() => tts.setRate(opt.value)}
+              disabled={tts.playing}
               className={`rounded px-2 py-1 text-xs font-medium transition-colors ${
                 tts.rate === opt.value
                   ? "bg-zinc-800 text-white"
                   : "border border-zinc-300 text-zinc-600 hover:bg-zinc-50"
-              }`}
+              } ${tts.playing ? "opacity-50 cursor-not-allowed" : "cursor-pointer"}`}
             >
               {opt.label}
             </button>
@@ -173,10 +179,10 @@ export function ReaderView({ passage, onStartQuiz }: Props) {
             onClick={tts.playing ? tts.pause : tts.play}
             className="ml-1 rounded-lg bg-zinc-900 px-3 py-1.5 text-xs font-medium text-white hover:bg-zinc-700 transition-colors"
           >
-            {tts.playing ? "⏸ Dừng" : "▶ Nghe"}
+            {tts.playing ? "⏸ Dừng" : tts.paused ? "▶ Tiếp tục" : "▶ Nghe"}
           </button>
 
-          {tts.playing && (
+          {(tts.playing || tts.paused) && (
             <button
               onClick={tts.stop}
               className="rounded-lg border border-zinc-300 px-3 py-1.5 text-xs font-medium text-zinc-600 hover:bg-zinc-50 transition-colors"

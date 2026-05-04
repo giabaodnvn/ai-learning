@@ -47,7 +47,7 @@ module Prompts
 
         {
           "title": "tiêu đề bài đọc bằng tiếng Nhật",
-          "content": "nội dung bài đọc (có furigana theo yêu cầu trình độ)",
+          "content": "nội dung bài đọc có furigana. Sử dụng HTML <ruby> tags với <rt> để đánh dấu furigana cho từng kanji hoặc cụm kanji.",
           "vocabulary_highlights": [
             {
               "word": "単語",
@@ -70,6 +70,9 @@ module Prompts
         }
 
         Yêu cầu:
+        - "content" phải chứa furigana bằng HTML ruby tags, ví dụ: <ruby>漢字<rt>かんじ</rt></ruby>
+        - Không dùng <p> tag cho paragraphs. Sử dụng <br/> hoặc \n để phân tách đoạn văn thay vào đó
+        - Không dùng định dạng furigana như 《...》 hoặc chú giải chữ ngoài HTML ruby
         - "vocabulary_highlights": 5–8 từ quan trọng xuất hiện trong bài, chọn từ hữu ích cho trình độ #{jlpt_level.upcase}
         - "questions": đúng 4 câu hỏi trắc nghiệm, mỗi câu có đúng 4 lựa chọn
         - "answer_index": index 0–3 của đáp án đúng
