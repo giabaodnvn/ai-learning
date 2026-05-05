@@ -1,92 +1,92 @@
-# UX & UI Recommendations — Japanese Learning App
+# Khuyến nghị UX & UI — Ứng dụng học tiếng Nhật
 
-**Prepared**: May 5, 2026  
-**Audience**: Product, Design, and Engineering teams
-
----
-
-## 🎨 Current State Assessment
-
-### Strengths
-- ✅ Clean, modern design (Tailwind CSS)
-- ✅ Intuitive navigation (left sidebar, breadcrumbs)
-- ✅ Responsive on tablet/desktop
-- ✅ Good use of emojis (reduces language barrier for non-English users)
-- ✅ Color-coded JLPT levels (N5 green → N1 purple)
-
-### Weaknesses
-- ❌ Mobile experience suboptimal (not touch-friendly)
-- ❌ Some loading skeletons inconsistent
-- ❌ No empty state illustrations (blank views feel boring)
-- ❌ Missing help tooltips (what's SM-2? what's "ease factor"?)
-- ❌ Inconsistent spacing & alignment in some places
-- ❌ No dark mode option
-- ❌ Grammar page looks sparse (no visual hierarchy)
+**Chuẩn bị**: 5 tháng 5, 2026  
+**Đối tượng**: Các nhóm sản phẩm, thiết kế và kỹ thuật
 
 ---
 
-## 📱 Mobile-First Improvements
+## 🎨 Đánh giá trạng thái hiện tại
 
-### Priority 1: Responsive Refinement
+### Điểm mạnh
+- ✅ Thiết kế sạch, hiện đại (Tailwind CSS)
+- ✅ Điều hướng trực quan (thanh bên trái, breadcrumb)
+- ✅ Responsive trên tablet/máy tính để bàn
+- ✅ Sử dụng emoji tốt (giảm rào cản ngôn ngữ cho người dùng không phải tiếng Anh)
+- ✅ Mã hóa màu theo cấp độ JLPT (N5 xanh lá → N1 tím)
 
-#### Problem
-Dashboard on phone is cramped; vocabulary grid is hard to tap.
+### Điểm yếu
+- ❌ Trải nghiệm di động không tối ưu (không thân thiện với cảm ứng)
+- ❌ Một số loading skeleton không nhất quán
+- ❌ Thiếu minh họa trạng thái trống (các khung trống cảm thấy nhàm chán)
+- ❌ Thiếu tooltip trợ giúp (SRS-2 là gì? "ease factor" là gì?)
+- ❌ Khoảng cách & căn chỉnh không nhất quán ở một số nơi
+- ❌ Không có chế độ tối
+- ❌ Trang ngữ pháp trông thưa thớt (không có phân cấp trực quan)
 
-#### Solutions
+---
 
-**1. Stack Quick Links Vertically on Small Screens**
+## 📱 Cải tiến Mobile-First
+
+### Ưu tiên 1: Tinh chỉnh Responsive
+
+#### Vấn đề
+Dashboard trên điện thoại bị chật; lưới từ vựng khó nhấn.
+
+#### Giải pháp
+
+**1. Xếp liên kết nhanh theo chiều dọc trên màn hình nhỏ**
 ```tsx
-// Current: grid-cols-3 (3 columns)
-// Better:   grid-cols-2 on mobile, grid-cols-3 on tablet, grid-cols-6 on desktop
+// Hiện tại: grid-cols-3 (3 cột)
+// Tốt hơn:   grid-cols-2 trên di động, grid-cols-3 trên máy tính bảng, grid-cols-6 trên máy tính để bàn
 <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
 ```
 
-**2. Full-Width Tabs for Study Modes**
-Current review page has tiny buttons. Make them full-width on mobile:
+**2. Tab toàn chiều rộng cho chế độ học**
+Trang xem xét hiện tại có các nút nhỏ. Làm cho chúng toàn chiều rộng trên di động:
 ```tsx
-// Mobile: Full width, stacked
-// Desktop: Side-by-side
+// Di động: Toàn chiều rộng, xếp chồng
+// Máy tính để bàn: Side-by-side
 <div className="flex flex-col sm:flex-row gap-4">
 ```
 
-**3. Bottom Navigation Bar (Mobile)**
-Instead of sidebar, show sticky bottom nav on phones:
+**3. Thanh điều hướng dưới cùng (Di động)**
+Thay vì thanh bên, hiển thị thanh điều hướng dính ở dưới cùng trên điện thoại:
 ```tsx
-// Mobile-only sticky footer with 5 main features:
-// 📖 Vocab | 📝 Grammar | 🎤 Conversation | 📰 Reading | 🎯 Review
+// Chỉ di động thanh dính dưới với 5 tính năng chính:
+// 📖 Từ vựng | 📝 Ngữ pháp | 🎤 Hội thoại | 📰 Đọc | 🎯 Xem xét
 ```
 
-#### Impact
-- Easier thumb-based navigation
-- 20% faster on mobile
-- Better for smaller screens
+#### Tác động
+- Điều hướng dễ dàng hơn dựa trên ngón tay cái
+- Nhanh hơn 20% trên di động
+- Tốt hơn cho màn hình nhỏ
 
 ---
 
-### Priority 2: Touch Optimization
+### Ưu tiên 2: Tối ưu hóa cảm ứng
 
-#### Problem
-Buttons too small; hover states not touch-friendly.
+#### Vấn đề
+Các nút quá nhỏ; các trạng thái hover không thân thiện với cảm ứng.
 
-#### Solutions
+#### Giải pháp
 
-**1. Increase Button Touch Target**
-WCAG guideline: 44×44px minimum
+**1. Tăng mục tiêu cảm ứng nút**
+Hướng dẫn WCAG: tối thiểu 44×44px
 ```tsx
-// Current: py-2 px-3 (too small)
-// Better: py-3 px-4 minimum on mobile
+// Hiện tại: py-2 px-3 (quá nhỏ)
+// Tốt hơn: py-3 px-4 tối thiểu trên di động
 <button className="py-3 px-4 md:py-2 md:px-3">
 ```
 
-**2. Swipe-Based Flashcard Review**
-Allow swiping left/right to rate cards (instead of clicking tiny buttons):
+**2. Xem xét flashcard dựa trên vuốt**
+Cho phép vuốt trái/phải để xếp hạng thẻ (thay vì nhấp các nút nhỏ):
 ```tsx
-// Swipe left = "Forgot", right = "Easy"
+// Vuốt trái = "Quên", phải = "Dễ"
 <Gesture onSwipeLeft={() => rate(0)} onSwipeRight={() => rate(5)} />
 ```
 
-**3. Double-Tap to Reveal Flashcard**
-More intuitive than clicking button:
+**3. Nhấp đôi để tiết lộ flashcard**
+Trực quan hơn so với nhấp nút:
 ```tsx
 <div onDoubleClick={() => setRevealed(!revealed)} className="cursor-pointer">
   {revealed ? <Back /> : <Front />}
@@ -95,16 +95,16 @@ More intuitive than clicking button:
 
 ---
 
-### Priority 3: Mobile Keyboard Integration
+### Ưu tiên 3: Tích hợp bàn phím di động
 
-#### Problem
-Japanese input is clunky on mobile browsers.
+#### Vấn đề
+Đầu vào tiếng Nhật khó chịu trên trình duyệt di động.
 
-#### Solutions
+#### Giải pháp
 
-**1. Suggest Common Particles** (grammar exercise)
+**1. Gợi ý các hạt phổ biến** (bài tập ngữ pháp)
 ```tsx
-// Instead of typing, let user select from buttons:
+// Thay vì gõ, hãy để người dùng chọn từ các nút:
 <div className="flex gap-2 flex-wrap">
   {["は", "が", "を", "に"].map(p => 
     <button onClick={() => addParticle(p)}>{p}</button>
@@ -112,329 +112,329 @@ Japanese input is clunky on mobile browsers.
 </div>
 ```
 
-**2. Hiragana Keyboard Hints**
-Show reading above blanks in fill-the-blank exercises:
+**2. Gợi ý bàn phím Hiragana**
+Hiển thị reading phía trên các chỗ trống trong bài tập điền chỗ trống:
 ```tsx
-{/* User sees: 私__学校に行きます */}
-{/* Hint above: わたし __ がっこう に いきます */}
+{/* Người dùng thấy: 私__学校に行きます */}
+{/* Gợi ý phía trên: わたし __ がっこう に いきます */}
 ```
 
-**3. Voice Input for Listening**
-Let users speak answers instead of typing (accessibility + ease):
+**3. Đầu vào thoại cho luyện nghe**
+Cho phép người dùng nói câu trả lời thay vì gõ (khả năng truy cập + dễ dàng):
 ```tsx
-<button onClick={startVoiceRecording}>🎤 Speak Answer</button>
+<button onClick={startVoiceRecording}>🎤 Phát âm câu trả lời</button>
 ```
 
 ---
 
-## 🎓 Onboarding & Guidance
+## 🎓 Onboarding & Hướng dẫn
 
-### Problem
-New users don't know what SRS is, why streaks matter, or how to use grammar explanations.
+### Vấn đề
+Người dùng mới không biết SRS là gì, tại sao streak quan trọng, hoặc cách sử dụng giải thích ngữ pháp.
 
-### Solutions
+### Giải pháp
 
-#### 1. Interactive Onboarding Tour (First 2 Visits)
+#### 1. Tour Onboarding Interactive (2 lần ghé thăm đầu tiên)
 ```tsx
-// Use react-joyride or similar
-Tour steps:
-1. "Welcome! Here's your dashboard. The green bar shows your JLPT progress."
-2. "This flame 🔥 is your study streak. Study every day to keep it alive!"
-3. "Click 'Vocabulary' to start learning words."
-4. "Try 'Flashcards' to review words you've already learned."
+// Sử dụng react-joyride hoặc tương tự
+Các bước tour:
+1. "Chào mừng! Đây là bảng điều khiển của bạn. Thanh xanh lá hiển thị tiến độ JLPT của bạn."
+2. "Ngọn lửa 🔥 này là streak học tập của bạn. Học mỗi ngày để giữ nó còn sống!"
+3. "Nhấp 'Từ vựng' để bắt đầu học các từ."
+4. "Hãy thử 'Flashcard' để xem xét các từ bạn đã học."
 ```
 
-#### 2. Glossary Tooltips
-Add hover tooltips for jargon:
+#### 2. Tooltip Thuật ngữ Glossary
+Thêm tooltip di chuột cho jargon:
 ```tsx
 <span className="relative group cursor-help">
   SRS
   <span className="absolute hidden group-hover:block bg-gray-900 text-white p-2 rounded text-xs">
-    Spaced Repetition System — reviews words at intervals to boost memory
+    Hệ thống Spaced Repetition — xem xét các từ theo khoảng thời gian để tăng cường bộ nhớ
   </span>
 </span>
 ```
 
-#### 3. Empty State Illustrations
-When user has no vocabulary to review, show:
+#### 3. Minh họa trạng thái trống
+Khi người dùng không có từ vựng để xem xét, hãy hiển thị:
 ```
-📚 No vocabulary yet!
-Start by exploring new words, then come back here to review them.
-[← Go to Vocabulary]
+📚 Không có từ vựng nào!
+Bắt đầu bằng cách khám phá các từ mới, sau đó quay lại đây để xem lại chúng.
+[← Đi đến từ vựng]
 ```
 
-#### 4. Contextual Help Videos
-Short GIFs (10–30 sec) showing how to use each feature:
+#### 4. Video trợ giúp ngữ cảnh
+GIF ngắn (10–30 giây) hiển thị cách sử dụng từng tính năng:
 ```tsx
 <Video src="/help/how-to-flashcard.gif" autoPlay loop muted />
 ```
 
 ---
 
-## 🎯 Dashboard Improvements
+## 🎯 Cải tiến Dashboard
 
-### Problem
-Dashboard shows stats, but no clear "what to do next?"
+### Vấn đề
+Dashboard hiển thị thống kê, nhưng không có rõ ràng "phải làm gì tiếp theo?"
 
-### Solutions
+### Giải pháp
 
-#### 1. Action Items Section
+#### 1. Mục tiêu của Bạn Tiếp theo
 ```tsx
 <div className="bg-blue-50 border-l-4 border-blue-500 p-4">
-  <h3>Your Next Steps</h3>
+  <h3>Các bước tiếp theo của bạn</h3>
   <ul className="list-disc ml-5 text-sm">
-    <li>📖 Review 5 vocabulary words (due today)</li>
-    <li>✍️ Practice N3 particles (you're weak here)</li>
-    <li>🎤 Do one conversation drill (level N5)</li>
+    <li>📖 Xem lại 5 từ vựng (hôm nay)</li>
+    <li>✍️ Luyện tập hạt N3 (bạn yếu ở đây)</li>
+    <li>🎤 Làm một bài tập hội thoại (cấp độ N5)</li>
   </ul>
 </div>
 ```
 
-#### 2. Progress Predictions
+#### 2. Dự đoán tiến độ
 ```tsx
 <div className="bg-green-50 p-4 rounded">
-  <p className="font-semibold">📈 Pace Prediction</p>
+  <p className="font-semibold">📈 Dự đoán tốc độ</p>
   <p className="text-sm text-gray-700">
-    At your current pace (2 hours/week), you'll reach N2 in ~8 months.
+    Với tốc độ hiện tại của bạn (2 giờ/tuần), bạn sẽ đạt N2 trong ~8 tháng.
   </p>
 </div>
 ```
 
-#### 3. Achievement Badges (Gamification)
-Instead of just streak numbers:
+#### 3. Huy hiệu thành tựu (Gamification)
+Thay vì chỉ số streak:
 ```
-🏅 Milestone Unlocked!
-You've learned 500 words. You're ready for N4 practice tests.
+🏅 Cột mốc được mở khóa!
+Bạn đã học 500 từ. Bạn đã sẵn sàng cho bài tập kiểm tra N4.
 ```
 
 ---
 
-## 📖 Reading Page Enhancements
+## 📖 Cải tiến trang đọc
 
-### Current Issue
-Reader view is text-heavy; hard to follow for beginners.
+### Vấn đề hiện tại
+Khung đọc là đồng nghĩa với sự rối loạn; khó theo dõi cho người mới bắt đầu.
 
-### Solutions
+### Giải pháp
 
-#### 1. Furigana Display Toggle
+#### 1. Toggle hiển thị Furigana
 ```tsx
 <label className="flex items-center gap-2">
   <input type="checkbox" defaultChecked onChange={toggleFurigana} />
-  <span>Show furigana for all kanji</span>
+  <span>Hiển thị furigana cho tất cả kanji</span>
 </label>
 
-{/* If enabled: */}
+{/* Nếu được bật: */}
 {showFurigana && <ruby>漢字<rt>かんじ</rt></ruby>}
-{/* If disabled: */}
+{/* Nếu bị tắt: */}
 {!showFurigana && <span>漢字</span>}
 ```
 
-#### 2. Word-by-Word Playback
-Click any word → hear native pronunciation:
+#### 2. Phát âm từng từ
+Nhấp vào bất kỳ từ nào → nghe phát âm gốc:
 ```tsx
 <span 
   className="cursor-pointer hover:bg-yellow-100" 
   onClick={() => playAudio(word)}
 >
-  𝗧𝗮𝗽 𝗺𝗲 𝗳𝗼𝗿 𝗰𝗹𝗶𝗰𝗸
+  Nhấn tôi để nghe
 </span>
 ```
 
-#### 3. Vocabulary Sidebar During Reading
-Show all unknown words in left panel (with audio + meaning):
+#### 3. Thanh bên từ vựng trong khi đọc
+Hiển thị tất cả các từ không biết trong bảng điều khiển bên trái (với âm thanh + nghĩa):
 ```tsx
-// Right: Reading passage
-// Left: Unknown words
-// User clicks word → definition appears, audio plays
+// Phải: Bài viết đọc
+// Trái: Các từ không biết
+// Người dùng nhấp vào từ → định nghĩa xuất hiện, âm thanh phát
 ```
 
-#### 4. Reading Speed Adjustment
-Some texts are too fast; let users:
+#### 4. Điều chỉnh tốc độ đọc
+Một số văn bản quá nhanh; cho người dùng:
 ```tsx
 <select onChange={(e) => setSpeed(e.target.value)}>
-  <option value="0.75">Slow (0.75x)</option>
-  <option value="1">Normal</option>
-  <option value="1.25">Fast (1.25x)</option>
+  <option value="0.75">Chậm (0.75x)</option>
+  <option value="1">Bình thường</option>
+  <option value="1.25">Nhanh (1.25x)</option>
 </select>
 ```
 
 ---
 
-## 📝 Grammar Page Revamp
+## 📝 Cải tổ trang ngữ pháp
 
-### Current Issue
-Grammar list is plain; explanations don't engage users.
+### Vấn đề hiện tại
+Danh sách ngữ pháp là đơn giản; giải thích không thu hút người dùng.
 
-### Solutions
+### Giải pháp
 
-#### 1. Visual Grammar Cards
-Instead of plain list, show pattern with colored labels:
+#### 1. Thẻ ngữ pháp trực quan
+Thay vì danh sách đơn giản, hãy hiển thị mẫu với nhãn màu:
 ```
 ┌─────────────────────────────────┐
 │ 〜ことができる                  │ N4
-│ be able to / can                │
+│ có thể / có thể                │
 │                                 │
 │ 私は日本語を話すことができます。│
-│ I can speak Japanese.           │
+│ Tôi có thể nói tiếng Nhật.     │
 │                                 │
-│ [📝 Explain] [✍️ Exercise] [🔄 Review]
+│ [📝 Giải thích] [✍️ Bài tập] [🔄 Xem xét]
 └─────────────────────────────────┘
 ```
 
-#### 2. Grammar Family Organization
-Group related patterns:
+#### 2. Sắp xếp gia đình ngữ pháp
+Các mẫu liên quan nhóm:
 ```
-🌳 Grammar Family: Cause & Effect
-├── 〜から (N5) — because of
-├── 〜ので (N4) — because (more formal)
-├── 〜のに (N3) — though, in spite of
-└── 〜せいで (N3) — due to (negative)
+🌳 Gia đình ngữ pháp: Nguyên nhân & Hiệu ứng
+├── 〜から (N5) — vì nguyên do
+├── 〜ので (N4) — bởi vì (chính thức hơn)
+├── 〜のに (N3) — mặc dù, bất chấp
+└── 〜せいで (N3) — do (tiêu cực)
 
-[Show relationships visually with arrows]
+[Hiển thị mối quan hệ trực quan với mũi tên]
 ```
 
-#### 3. Sentence Builder Tool
-Drag components to build sentences:
+#### 3. Công cụ xây dựng câu
+Kéo thành phần để xây dựng câu:
 ```
-[私は] [本を] [読む] [ことができます]
+[Tôi là] [cuốn sách] [đọc] [có thể]
    ↓      ↓     ↓       ↓
- subject object verb  auxiliary
+chủ ngữ đối tượng động từ phụ trợ
 ```
 
-#### 4. Pattern Difficulty Indicator
-Visual indicator of pattern rarity:
+#### 4. Chỉ báo khó độ mẫu
+Chỉ báo trực quan về khó độ hiếm gặp:
 ```
-Common (100%+ of users know)     ████████░░
-Medium (50% of users know)       ████░░░░░░
-Rare (10% of users know)         ██░░░░░░░░
+Phổ biến (100%+ người dùng biết)     ████████░░
+Trung bình (50% người dùng biết)     ████░░░░░░
+Hiếm (10% người dùng biết)           ██░░░░░░░░
 ```
 
 ---
 
-## 🎙️ Conversation Feature Polish
+## 🎙️ Đánh bóng tính năng hội thoại
 
-### Current Issue
-Chat interface feels like basic Q&A, not realistic conversation.
+### Vấn đề hiện tại
+Giao diện trò chuyện cảm thấy giống như Q&A cơ bản, không phải hội thoại thực tế.
 
-### Solutions
+### Giải pháp
 
-#### 1. Realistic UI
-Make it look like a real chat app:
+#### 1. UI thực tế
+Làm cho nó trông giống một ứng dụng trò chuyện thực sự:
 ```
 ┌──────────────────────────────────┐
-│ 👩‍🏫 Tutor                        │
-│ Let's talk about your day!       │
-│ What did you do today?           │
+│ 👩‍🏫 Gia sư                        │
+│ Hãy nói về ngày hôm nay của bạn!│
+│ Bạn đã làm gì hôm nay?           │
 │                                  │
-│    [You just now]               │
+│    [Bạn vừa xong]               │
 │ 今日は仕事をしました。            │
 │                                  │
-│ 👩‍🏫 Tutor (just now)              │
-│ Good! What kind of work?         │
+│ 👩‍🏫 Gia sư (vừa xong)              │
+│ Tốt! Loại công việc nào?        │
 │ 仕事は何ですか？                 │
-│ [📖 Learn] [🎧 Listen] [⏸ Slow]│
+│ [📖 Học] [🎧 Nghe] [⏸ Chậm]│
 └──────────────────────────────────┘
-[Type here... | 🎤 Speak]
+[Gõ ở đây... | 🎤 Phát âm]
 ```
 
-#### 2. Typing Indicator
-Show when AI is "thinking" (realistic):
+#### 2. Chỉ báo gõ
+Hiển thị khi AI "suy nghĩ" (thực tế):
 ```
-👩‍🏫 Tutor is typing...
-```
-
-#### 3. Mistake Correction
-Inline corrections in conversation:
-```
-You: 私は学生です。
-👩‍🏫: Perfect! But you could also say "僕は学生です" (less formal)
+👩‍🏫 Gia sư đang gõ...
 ```
 
-#### 4. Scenario Context
-Show situation visually:
+#### 3. Sửa lỗi
+Sửa lỗi trong hội thoại:
 ```
-🏪 You're at a convenience store. Ask for milk.
+Bạn: 私は学生です。
+👩‍🏫: Hoàn hảo! Nhưng bạn cũng có thể nói "僕は学生です" (ít chính thức hơn)
+```
+
+#### 4. Ngữ cảnh kịch bản
+Hiển thị tình huống trực quan:
+```
+🏪 Bạn ở một cửa hàng tiện lợi. Hỏi mua sữa.
 ```
 
 ---
 
-## 🌙 Dark Mode Support
+## 🌙 Hỗ trợ chế độ tối
 
-### Implementation
-Add theme toggle in settings:
+### Triển khai
+Thêm bộ chuyển đổi chủ đề trong cài đặt:
 ```tsx
 // app/layout.tsx
 const [theme, setTheme] = useState<'light' | 'dark'>('light');
 
 <html className={theme === 'dark' ? 'dark' : ''}>
-  {/* Use Tailwind's dark: prefix */}
+  {/* Sử dụng tiền tố tối tailwind: */}
 </html>
 ```
 
-Benefits:
-- Reduces eye strain (especially for evening learners)
-- More battery-friendly on OLED screens
-- Modern user expectation
+Lợi ích:
+- Giảm căng thẳng mắt (đặc biệt là cho những người học buổi tối)
+- Tiết kiệm pin hơn trên màn hình OLED
+- Kỳ vọng người dùng hiện đại
 
 ---
 
-## 🎨 Color & Design System
+## 🎨 Hệ thống màu & thiết kế
 
-### Current Palette
+### Bảng màu hiện tại
 ```
-Primary:   Indigo-600 (blue)
-Success:   Green-600 (progress)
-Warning:   Amber-500 (caution)
-Error:     Red-600 (mistakes)
-```
-
-### Improvements
-
-#### 1. JLPT Level Color Coding (Consistent)
-```
-N5 → Green    (beginner)
-N4 → Blue     (intermediate)
-N3 → Yellow   (upper intermediate)
-N2 → Orange   (advanced)
-N1 → Purple   (mastery)
-```
-Use these **everywhere** (tags, progress bars, badges)
-
-#### 2. Difficulty Indicator
-```
-👶 Easy      → Green
-😐 Medium    → Blue
-😰 Hard      → Orange
-😱 Very Hard → Red
+Chính:   Indigo-600 (xanh)
+Thành công:   Xanh lá cây-600 (tiến độ)
+Cảnh báo:   Amber-500 (cảnh báo)
+Lỗi:     Đỏ-600 (lỗi)
 ```
 
-#### 3. Whitespace & Breathing Room
-Add padding between sections (currently too cramped on desktop):
+### Cải tiến
+
+#### 1. Mã hóa màu cấp độ JLPT (Nhất quán)
+```
+N5 → Xanh lá cây    (người mới bắt đầu)
+N4 → Xanh           (trung gian)
+N3 → Vàng           (trung gian cao)
+N2 → Cam            (nâng cao)
+N1 → Tím            (thành thạo)
+```
+Sử dụng chúng **ở mọi nơi** (thẻ, thanh tiến độ, huy hiệu)
+
+#### 2. Chỉ báo khó
+```
+👶 Dễ      → Xanh
+😐 Trung bình    → Xanh
+😰 Khó      → Cam
+😱 Rất khó → Đỏ
+```
+
+#### 3. Khoảng trắng & Không gian thở
+Thêm lề giữa các phần (hiện tại quá chật):
 ```css
-.section { margin-bottom: 2rem; } /* was 1rem */
-.card    { padding: 1.5rem; }     /* was 1rem */
+.section { margin-bottom: 2rem; } /* là 1rem */
+.card    { padding: 1.5rem; }     /* là 1rem */
 ```
 
 ---
 
-## ♿ Accessibility Improvements
+## ♿ Cải tiến khả năng truy cập
 
-### Current Gaps
-- Missing ARIA labels on icons
-- Color-only indicators (red = error, but no text)
-- Keyboard navigation incomplete
+### Khoảng trống hiện tại
+- Thiếu nhãn ARIA trên các biểu tượng
+- Chỉ các chỉ báo màu (đỏ = lỗi, nhưng không có văn bản)
+- Điều hướng bàn phím không hoàn chỉnh
 
-### Solutions
+### Giải pháp
 
 #### 1. Alt Text & ARIA
 ```tsx
-<button aria-label="Read passage aloud" title="Text-to-speech">
+<button aria-label="Đọc bài viết to tiếng" title="Text-to-speech">
   🔊
 </button>
 ```
 
-#### 2. Focus Indicators
-Make keyboard users see what's selected:
+#### 2. Chỉ báo tiêu điểm
+Làm cho những người dùng bàn phím thấy những gì được chọn:
 ```css
 .button:focus {
   outline: 2px solid indigo-600;
@@ -442,124 +442,124 @@ Make keyboard users see what's selected:
 }
 ```
 
-#### 3. Color + Icon/Text Indicators
+#### 3. Chỉ báo màu + biểu tượng/văn bản
 ```tsx
-// Bad: just red background
-// Good: Red background + ❌ icon + "Error" text
+// Xấu: chỉ nền đỏ
+// Tốt: nền đỏ + ❌ biểu tượng + "Lỗi" văn bản
 <div className="bg-red-100 text-red-700">
-  ❌ Answer incorrect
+  ❌ Câu trả lời không chính xác
 </div>
 ```
 
-#### 4. Form Labels
-All inputs must have visible labels (not placeholders):
+#### 4. Nhãn biểu mẫu
+Tất cả các đầu vào phải có nhãn có thể nhìn thấy (không chỉ trình giữ chỗ):
 ```tsx
-<label htmlFor="word">Word in Japanese</label>
-<input id="word" type="text" placeholder="e.g., 好き" />
+<label htmlFor="word">Từ trong tiếng Nhật</label>
+<input id="word" type="text" placeholder="ví dụ: 好き" />
 ```
 
 ---
 
-## 📊 Analytics & Tracking (Non-Invasive)
+## 📊 Phân tích & Theo dõi (Không xâm phạm)
 
-### What to Measure
+### Những gì cần đo lường
 ```
-Page Views:
-- Most visited features
-- Feature adoption over time
-- Drop-off points (where users leave)
+Lượt xem trang:
+- Tính năng được truy cập nhiều nhất
+- Áp dụng tính năng theo thời gian
+- Điểm rơi (nơi người dùng rời đi)
 
-Engagement:
-- Time spent per feature
-- Feature switch frequency
-- Session duration
+Sự tham gia:
+- Thời gian dành cho mỗi tính năng
+- Tần suất chuyển đổi tính năng
+- Thời lượng phiên
 
-Learning:
-- Quiz accuracy by grammar pattern
-- SRS performance (how well users retain)
-- Level progression rate
+Học tập:
+- Độ chính xác bài quiz theo mẫu ngữ pháp
+- Hiệu suất SRS (người dùng giữ chân bao nhiêu)
+- Tốc độ tiến bộ cấp độ
 
-Monetization:
-- VIP conversion rate
-- Feature gate interactions
-- Payment success rate
+Kiếm tiền:
+- Tỷ lệ chuyển đổi VIP
+- Các tương tác cổng thanh toán
+- Tỷ lệ thành công thanh toán
 ```
 
-### Privacy-First Approach
-- Use anonymized IDs
-- No user tracking across third-party sites
-- Clear privacy policy
-- Option to opt out of analytics
+### Cách tiếp cận ưu tiên quyền riêng tư
+- Sử dụng ID ẩn danh
+- Không theo dõi người dùng trên các trang web của bên thứ ba
+- Chính sách bảo mật rõ ràng
+- Tùy chọn từ chối phân tích
 
 ---
 
-## 📱 Notification Strategy
+## 📱 Chiến lược thông báo
 
 ### Email
-- **Weekly Summary** (Monday 9am): "You learned 20 words this week!"
-- **Review Reminder** (if gap > 3 days): "You have 15 vocabulary words to review"
-- **Achievement**: "You reached a 30-day streak!"
+- **Tóm tắt hàng tuần** (Thứ hai 9 sáng): "Bạn đã học 20 từ tuần này!"
+- **Nhắc nhở xem xét** (nếu khoảng > 3 ngày): "Bạn có 15 từ vựng để xem xét"
+- **Thành tựu**: "Bạn đạt được streak 30 ngày!"
 
-### In-App
-- **Review Due**: Floating badge on dashboard ("5 reviews due")
-- **Milestone**: Celebratory banner ("You've learned 500 words!")
+### Trong ứng dụng
+- **Xem xét hết hạn**: Huy hiệu nổi trên bảng điều khiển ("5 xem xét hết hạn")
+- **Cột mốc**: Biểu ngữ ăn mừng ("Bạn đã học 500 từ!")
 
-### Push (Mobile)
-- **Daily Reminder** (opt-in): "Time for 10 minutes of Japanese?"
-- **Urgent Review**: "3 vocabulary items due today!"
+### Đẩy (Di động)
+- **Lời nhắc hàng ngày** (opt-in): "Đã đến lúc 10 phút tiếng Nhật?"
+- **Xem xét khẩn cấp**: "3 mục từ vựng hết hạn hôm nay!"
 
-**Key**: Make notifications helpful, not annoying. Respect user preferences.
+**Chìa khóa**: Làm cho thông báo hữu ích, không phiền. Tôn trọng tùy chọn người dùng.
 
 ---
 
-## 🧪 A/B Testing Ideas
+## 🧪 Ý tưởng kiểm tra A/B
 
-Test these to optimize engagement:
+Kiểm tra những điều này để tối ưu hóa sự tham gia:
 
-| Test | Variant A | Variant B | Success Metric |
+| Bài kiểm tra | Biến thể A | Biến thể B | Thước đo thành công |
 |------|-----------|-----------|----------------|
-| **Streak Reset** | Auto-reset on missed day | No auto-reset (user extends) | Retention |
-| **Review Button Color** | Green | Red | Click rate |
-| **Grammar Exercise Type** | Fill-blank | Multiple-choice | Accuracy |
-| **Listening Speed** | 1x (normal) | 0.75x (slow) | Task completion |
-| **VIP Paywall** | $5/mo | $10/mo | Conversion |
-| **Empty State** | Text only | Illustration | Click-through rate |
+| **Streak Reset** | Tự động đặt lại khi bỏ qua ngày | Không tự động đặt lại (người dùng kéo dài) | Retention |
+| **Màu nút xem xét** | Xanh | Đỏ | Tỷ lệ nhấp chuột |
+| **Loại bài tập ngữ pháp** | Fill-blank | Lựa chọn nhiều | Độ chính xác |
+| **Tốc độ nghe** | 1x (bình thường) | 0.75x (chậm) | Hoàn thành tác vụ |
+| **Paywall VIP** | $5/tháng | $10/tháng | Chuyển đổi |
+| **Trạng thái trống** | Chỉ văn bản | Minh họa | Tỷ lệ nhấp qua |
 
 ---
 
-## 🎬 Quick Win Checklist (This Month)
+## 🎬 Danh sách kiểm tra Chiến thắng nhanh (Tháng này)
 
-- [ ] Add "Help" tooltip on SRS page (explain ease factor, interval)
-- [ ] Create empty state illustrations for all blank views
-- [ ] Mobile: Make quick link buttons full-width on phones
-- [ ] Dark mode toggle in user settings
-- [ ] Add "What to do next?" section to dashboard
-- [ ] Improve button touch targets (44×44px minimum)
-- [ ] Add audio playback to vocabulary explanations
-- [ ] Fix grammar page layout (better visual hierarchy)
-- [ ] Add ARIA labels to all icon buttons
-- [ ] Create simple onboarding tour (3 steps)
+- [ ] Thêm tooltip "Trợ giúp" trên trang SRS (giải thích ease factor, interval)
+- [ ] Tạo minh họa trạng thái trống cho tất cả khung trống
+- [ ] Di động: Làm cho nút liên kết nhanh toàn chiều rộng trên điện thoại
+- [ ] Chế độ tối toggle trong cài đặt người dùng
+- [ ] Thêm phần "Phải làm gì tiếp theo?" vào bảng điều khiển
+- [ ] Cải thiện mục tiêu cảm ứng nút (44×44px tối thiểu)
+- [ ] Thêm phát âm âm thanh vào giải thích từ vựng
+- [ ] Sửa bố cục trang ngữ pháp (phân cấp trực quan tốt hơn)
+- [ ] Thêm nhãn ARIA cho tất cả nút biểu tượng
+- [ ] Tạo tour onboarding đơn giản (3 bước)
 
 ---
 
-## 🎯 Long-Term Vision
+## 🎯 Tầm nhìn dài hạn
 
-**The Goal**: Japanese learning that feels **natural, engaging, and rewarding**
+**Mục tiêu**: Học tiếng Nhật cảm thấy **tự nhiên, hấp dẫn và đáng giá**
 
-### Ideal User Journey
+### Hành trình người dùng lý tưởng
 ```
-Day 1:  User signs up → Onboarding tour → Learn first 5 words ✅
-Week 1: Reviews vocabulary → Tries grammar exercise → Loves streak 🔥
-Month 1: Completes reading passage → Passes mini test 🎉
-Month 3: Reaches N3 level → Tries conversation mode 🤖
-Month 6: Preparing for N2 exam → Using all features daily ✨
-Year 1: Passed JLPT N2 → Recommends app to friends 🌟
+Ngày 1:  Người dùng đăng ký → Tour onboarding → Học 5 từ đầu tiên ✅
+Tuần 1: Xem lại từ vựng → Thử bài tập ngữ pháp → Yêu thích streak 🔥
+Tháng 1: Hoàn thành bài viết đọc → Vượt qua mini test 🎉
+Tháng 3: Đạt cấp độ N3 → Thử chế độ hội thoại 🤖
+Tháng 6: Chuẩn bị kỳ thi N2 → Sử dụng tất cả tính năng hàng ngày ✨
+Năm 1: Vượt kỳ thi JLPT N2 → Giới thiệu ứng dụng cho bạn bè 🌟
 ```
 
-**Our job**: Remove friction at every step. Make learning feel effortless.
+**Công việc của chúng tôi**: Loại bỏ ma sát ở mỗi bước. Làm cho học tập cảm thấy dễ dàng.
 
 ---
 
-**Last Updated**: May 5, 2026  
-**Next Review**: August 2026  
-**Owner**: Product + Design Team
+**Cập nhật lần cuối**: 5 tháng 5, 2026  
+**Lần xem lại tiếp theo**: Tháng 8, 2026  
+**Chủ sở hữu**: Nhóm sản phẩm + thiết kế

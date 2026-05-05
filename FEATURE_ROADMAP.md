@@ -1,380 +1,380 @@
-# Feature Roadmap — Japanese Learning App
+# Lộ trình tính năng — Ứng dụng học tiếng Nhật
 
-**Last Updated**: May 5, 2026  
-**Planning Horizon**: 12 months
-
----
-
-## 🎯 Strategic Goals
-
-1. **Cover all JLPT skill areas** (listening + writing + reading + grammar)
-2. **Increase daily active users** (engagement + retention)
-3. **Enable monetization** (VIP features, paid courses)
-4. **Differentiate from competitors** (Duolingo, Anki, human tutors)
+**Cập nhật lần cuối**: 5 tháng 5, 2026  
+**Chân trời kế hoạch**: 12 tháng
 
 ---
 
-## 📅 Roadmap by Quarter
+## 🎯 Mục tiêu chiến lược
 
-### Q2 2026 (May–July) — Listening & Writing Foundation
+1. **Bao phủ tất cả các lĩnh vực kỹ năng JLPT** (nghe + viết + đọc + ngữ pháp)
+2. **Tăng số lượng người dùng hoạt động hàng ngày** (sự tham gia + giữ chân)
+3. **Cho phép kiếm tiền** (tính năng VIP, khóa học trả phí)
+4. **Phân biệt với các đối thủ cạnh tranh** (Duolingo, Anki, gia sư con người)
 
-#### Sprint 2.1: Listening Practice (Weeks 1–4)
-**Objective**: Add JLPT listening comprehension
+---
 
-**Features**:
-- [ ] Listening exercise generator (Claude generates dialogue scripts)
-- [ ] Audio synthesis (TTS or integrate external audio API)
-- [ ] UI: Audio player + multiple choice questions
-- [ ] Difficulty tiers: Slow (N5/N4) → Normal (N3/N2) → Fast (N1)
-- [ ] Auto-generated lesson difficulty based on user level
-- [ ] Listening stats dashboard (% correct by speed)
+## 📅 Lộ trình theo quý
 
-**Backend Work**:
+### Q2 2026 (Tháng 5–7) — Nền tảng Nghe & Viết
+
+#### Sprint 2.1: Luyện nghe (Tuần 1–4)
+**Mục tiêu**: Thêm bài luyện nghe hiểu JLPT
+
+**Tính năng**:
+- [ ] Trình tạo bài luyện nghe (Claude tạo kịch bản hội thoại)
+- [ ] Tổng hợp âm thanh (TTS hoặc tích hợp API âm thanh bên ngoài)
+- [ ] UI: Trình phát âm thanh + câu hỏi trắc nghiệm
+- [ ] Các tier độ khó: Chậm (N5/N4) → Bình thường (N3/N2) → Nhanh (N1)
+- [ ] Tạo bài học độ khó tự động dựa trên cấp độ người dùng
+- [ ] Bảng điều khiển thống kê nghe (% đúng theo tốc độ)
+
+**Công việc Backend**:
 ```ruby
-# New model: ListeningExercise
+# Model mới: ListeningExercise
 - id, topic, script_ja, script_vi, audio_url, level, created_by
 - questions: [{question_ja, options[], correct_index}]
 
-# New controller: listening_exercises_controller.rb
-- POST /api/v1/listening/generate  — Generate new exercise
-- GET  /api/v1/listening/:id        — Get exercise details
-- POST /api/v1/listening/:id/submit — Check answers
+# Controller mới: listening_exercises_controller.rb
+- POST /api/v1/listening/generate  — Tạo bài luyện mới
+- GET  /api/v1/listening/:id        — Lấy chi tiết bài luyện
+- POST /api/v1/listening/:id/submit — Kiểm tra câu trả lời
 ```
 
-**Frontend Work**:
+**Công việc Frontend**:
 ```tsx
-# New pages:
-- /app/listening           — Browse exercises
-- /app/listening/[id]      — Exercise player
+# Trang mới:
+- /app/listening           — Duyệt bài luyện
+- /app/listening/[id]      — Trình phát bài luyện
 
-# New components:
-- ListeningPlayer          — Audio + UI
-- ListeningResults         — Score & feedback
+# Component mới:
+- ListeningPlayer          — Âm thanh + UI
+- ListeningResults         — Điểm & phản hồi
 ```
 
-**Effort**: 3–4 weeks | **Priority**: 🔴 Critical | **Blockers**: None
+**Nỗ lực**: 3–4 tuần | **Ưu tiên**: 🔴 Cực cao | **Chướng ngại vật**: Không
 
 ---
 
-#### Sprint 2.2: Grammar Exercise Drills (Weeks 3–6)
-**Objective**: Interactive grammar practice
+#### Sprint 2.2: Bài tập ngữ pháp (Tuần 3–6)
+**Mục tiêu**: Luyện tập ngữ pháp interactive
 
-**Features**:
-- [ ] Fill-in-the-blank exercises (user types particle/conjugation)
-- [ ] Multiple-choice grammar drills
-- [ ] Sentence construction (drag particles to build sentence)
-- [ ] Translation practice (Vietnamese → Japanese)
-- [ ] Grammar drill sets (10–20 exercises per pattern)
-- [ ] Streak tracking per grammar pattern
-- [ ] Integrated with SRS (learned patterns reviewed)
+**Tính năng**:
+- [ ] Bài tập fill-in-the-blank (người dùng gõ hạt/chia động từ)
+- [ ] Bài tập trắc nghiệm ngữ pháp
+- [ ] Xây dựng câu (kéo hạt để xây dựng câu)
+- [ ] Luyện dịch (Việt → Nhật)
+- [ ] Bộ luyện ngữ pháp (10–20 bài tập mỗi mẫu)
+- [ ] Theo dõi streak cho mỗi mẫu ngữ pháp
+- [ ] Tích hợp với SRS (các mẫu học được xem xét)
 
-**Backend Work**:
+**Công việc Backend**:
 ```ruby
-# New model: GrammarExercise
+# Model mới: GrammarExercise
 - id, grammar_point_id, exercise_type (fill_blank, choice, construct, translate)
 - prompt, correct_answer, explanations
 
-# New controller: grammar_exercises_controller.rb
-- POST /api/v1/grammar_points/:id/generate_exercise  — Already exists!
+# Controller mới: grammar_exercises_controller.rb
+- POST /api/v1/grammar_points/:id/generate_exercise  — Đã tồn tại!
 - POST /api/v1/grammar_exercises/:id/submit
 ```
 
-**Frontend Work**:
+**Công việc Frontend**:
 ```tsx
-# Extend existing:
-- /app/grammar/[id]  — Add exercises tab
-- GrammarExerciseForm — New component for interaction
-- ExerciseResult       — Feedback & explanation
+# Mở rộng tồn tại:
+- /app/grammar/[id]  — Thêm tab bài tập
+- GrammarExerciseForm — Component mới cho tương tác
+- ExerciseResult       — Phản hồi & giải thích
 ```
 
-**Effort**: 2–3 weeks | **Priority**: 🔴 High | **Blockers**: Grammar Point data completeness
+**Nỗ lực**: 2–3 tuần | **Ưu tiên**: 🔴 Cao | **Chướng ngại vật**: Hoàn thành dữ liệu ngữ pháp
 
 ---
 
-#### Sprint 2.3: Kanji Stroke Practice (Weeks 4–7)
-**Objective**: Handwriting practice for kanji
+#### Sprint 2.3: Luyện viết Kanji (Tuần 4–7)
+**Mục tiêu**: Luyện viết tay cho kanji
 
-**Features**:
-- [ ] Canvas-based stroke drawing
-- [ ] Stroke order animation (show correct sequence)
-- [ ] Stroke detection (validate user's writing matches correct form)
-- [ ] Radical breakdown (show radical + meaning)
-- [ ] Handwriting drills (random kanji, 5–10 per session)
-- [ ] Difficulty: Show stroke order vs. no hints
-- [ ] Progress tracking
+**Tính năng**:
+- [ ] Vẽ nét dựa trên canvas
+- [ ] Hình ảnh động thứ tự nét (hiển thị trình tự đúng)
+- [ ] Phát hiện nét (xác thực bài viết của người dùng khớp với hình thức đúng)
+- [ ] Phân tách radical (hiển thị radical + nghĩa)
+- [ ] Bài tập viết kanji (kanji ngẫu nhiên, 5–10 mỗi phiên)
+- [ ] Độ khó: Hiển thị thứ tự nét vs. không có gợi ý
+- [ ] Theo dõi tiến độ
 
-**Backend Work**:
+**Công việc Backend**:
 ```ruby
-# No new models needed—extend Kanji model
-- Kanji: add stroke_order (JSON array of stroke coordinates)
+# Không cần model mới—mở rộng mô hình Kanji
+- Kanji: thêm stroke_order (JSON array của tọa độ nét)
 
-# New controller: kanji_handwriting_controller.rb
-- POST /api/v1/kanjis/:id/validate_stroke  — Check drawing
+# Controller mới: kanji_handwriting_controller.rb
+- POST /api/v1/kanjis/:id/validate_stroke  — Kiểm tra vẽ
 ```
 
-**Frontend Work**:
+**Công việc Frontend**:
 ```tsx
-# New library: react-drawing-canvas (or custom canvas)
-# New pages:
-- /app/kanji/handwriting  — Handwriting drill mode
-# New components:
-- StrokeCanvas           — Drawing area
-- StrokeOrderAnimation   — Show correct sequence
+# Thư viện mới: react-drawing-canvas (hoặc canvas tùy chỉnh)
+# Trang mới:
+- /app/kanji/handwriting  — Chế độ bài tập viết
+# Component mới:
+- StrokeCanvas           — Vùng vẽ
+- StrokeOrderAnimation   — Hiển thị trình tự đúng
 ```
 
-**Effort**: 3 weeks | **Priority**: 🟡 Medium | **Blockers**: Stroke data in kanji DB
+**Nỗ lực**: 3 tuần | **Ưu tiên**: 🟡 Trung bình | **Chướng ngại vật**: Dữ liệu nét trong DB kanji
 
-**Note**: Need to add `stroke_order` data to all kanji (automation script)
+**Lưu ý**: Cần thêm dữ liệu `stroke_order` vào tất cả kanji (kịch bản tự động hóa)
 
 ---
 
-### Q3 2026 (Aug–Oct) — Mobile & Community
+### Q3 2026 (Tháng 8–10) — Di động & Cộng đồng
 
-#### Sprint 3.1: Mobile App (Flutter) (Weeks 1–6)
-**Objective**: Native iOS/Android learning
+#### Sprint 3.1: Ứng dụng di động (Flutter) (Tuần 1–6)
+**Mục tiêu**: Học tập gốc iOS/Android
 
-**Features**:
-- [ ] Mirror core features (vocabulary, grammar, flashcards, reading)
-- [ ] Offline mode for flashcards (cache cards locally)
-- [ ] Push notifications (daily reminders, review due)
-- [ ] Gesture-based navigation (swipe between cards)
-- [ ] Better keyboard support (Japanese IME)
-- [ ] App store listings (Play Store, App Store)
+**Tính năng**:
+- [ ] Phản chiếu các tính năng cốt lõi (từ vựng, ngữ pháp, flashcard, đọc)
+- [ ] Chế độ offline cho flashcard (cache thẻ cục bộ)
+- [ ] Thông báo đẩy (nhắc hàng ngày, xem xét đến hạn)
+- [ ] Điều hướng dựa trên cử chỉ (vuốt giữa các thẻ)
+- [ ] Hỗ trợ bàn phím tốt hơn (IME tiếng Nhật)
+- [ ] Danh sách cửa hàng ứng dụng (Play Store, App Store)
 
 **Tech Stack**: Flutter + Dart (code-share friendly)
 
-**Effort**: 4–6 weeks | **Priority**: 🟡 High | **Blockers**: API stability
+**Nỗ lực**: 4–6 tuần | **Ưu tiên**: 🟡 Cao | **Chướng ngại vật**: Tính ổn định API
 
 ---
 
-#### Sprint 3.2: Community Features (Weeks 4–8)
-**Objective**: Peer learning & engagement
+#### Sprint 3.2: Tính năng cộng đồng (Tuần 4–8)
+**Mục tiêu**: Học tập ngang hàng & sự tham gia
 
-**Features**:
-- [ ] Language exchange matching (connect learners at similar levels)
-- [ ] Simple chat/voice calls (powered by WebRTC or Twilio)
-- [ ] Comment threads on difficult concepts
-- [ ] User-generated content (tips, mnemonic tricks)
-- [ ] Leaderboard (optional; respect privacy)
-- [ ] Learning groups (e.g., "N2 March cohort")
+**Tính năng**:
+- [ ] Ghép đôi trao đổi ngôn ngữ (kết nối những người học ở cấp độ tương tự)
+- [ ] Chat/gọi thoại đơn giản (được hỗ trợ bởi WebRTC hoặc Twilio)
+- [ ] Luồng bình luận về những khái niệm khó
+- [ ] Nội dung do người dùng tạo (mẹo, thủ thuật ghi nhớ)
+- [ ] Bảng xếp hạng (tùy chọn; tôn trọng quyền riêng tư)
+- [ ] Nhóm học (ví dụ: "Nhóm N2 tháng 3")
 
-**Backend Work**:
+**Công việc Backend**:
 ```ruby
-# New models:
-- UserProfile (extended with avatar, bio, goal_level)
-- LanguageExchange (matches users, tracks interaction)
-- PostComment (threaded comments on grammar/vocab)
-- StudyGroup (cohort management)
+# Model mới:
+- UserProfile (mở rộng với avatar, bio, goal_level)
+- LanguageExchange (ghép đôi người dùng, theo dõi tương tác)
+- PostComment (bình luận theo luồng về ngữ pháp/từ vựng)
+- StudyGroup (quản lý nhóm học)
 
-# New controllers:
+# Controller mới:
 - language_exchanges_controller
 - community_comments_controller
 - study_groups_controller
 ```
 
-**Frontend Work**:
+**Công việc Frontend**:
 ```tsx
-# New pages:
-- /app/community          — Explore users & groups
-- /app/exchange/[userId] — Exchange profile
-- /app/groups            — Browse & join groups
+# Trang mới:
+- /app/community          — Khám phá người dùng & nhóm
+- /app/exchange/[userId] — Hồ sơ trao đổi
+- /app/groups            — Duyệt & tham gia nhóm
 ```
 
-**Effort**: 3–4 weeks | **Priority**: 🟡 Medium | **Blockers**: Moderation policy
+**Nỗ lực**: 3–4 tuần | **Ưu tiên**: 🟡 Trung bình | **Chướng ngại vật**: Chính sách kiểm duyệt
 
 ---
 
-### Q4 2026 (Nov–Jan) — Monetization & Polish
+### Q4 2026 (Tháng 11–1) — Kiếm tiền & Hoàn thiện
 
-#### Sprint 4.1: VIP Feature Tiers (Weeks 1–4)
-**Objective**: Monetize premium features
+#### Sprint 4.1: Các Tier tính năng VIP (Tuần 1–4)
+**Mục tiêu**: Kiếm tiền từ các tính năng cao cấp
 
-**Tiers**:
-- **Free**: Basics (5 vocabulary explanations/day, limited SRS)
-- **VIP Bronze** ($5/mo): Unlimited explanations, advanced analytics
-- **VIP Silver** ($10/mo): + Custom learning paths, priority support
-- **VIP Gold** ($20/mo): + Grammar exercises, listening drills, essay feedback
+**Các Tier**:
+- **Miễn phí**: Kiến thức cơ bản (5 giải thích từ vựng/ngày, SRS bị giới hạn)
+- **VIP Bronze** ($5/tháng): Giải thích không giới hạn, phân tích nâng cao
+- **VIP Silver** ($10/tháng): + Đường dẫn học được cá nhân hóa, hỗ trợ ưu tiên
+- **VIP Gold** ($20/tháng): + Bài tập ngữ pháp, bài tập nghe, phản hồi bài luận
 
-**Backend Work**:
-- Enforce feature gates (check VIP status before allowing usage)
-- Usage limits per tier
-- Stripe/PayPal integration (payment processing)
+**Công việc Backend**:
+- Thực thi cổng tính năng (kiểm tra trạng thái VIP trước khi cho phép sử dụng)
+- Giới hạn sử dụng theo tier
+- Tích hợp Stripe/PayPal (xử lý thanh toán)
 
-**Frontend Work**:
-- Paywall UI (upgrade prompts)
-- Feature comparison table
-- Settings → Subscription management
+**Công việc Frontend**:
+- UI paywall (nhắc nâng cấp)
+- Bảng so sánh tính năng
+- Cài đặt → Quản lý đăng ký
 
-**Effort**: 2–3 weeks | **Priority**: 🟡 Medium | **Blockers**: Payment processor setup
-
----
-
-#### Sprint 4.2: Phrasebook & Expressions (Weeks 2–4)
-**Objective**: Contextual phrase learning
-
-**Features**:
-- [ ] 1,000+ phrases by situation (greetings, shopping, business, travel)
-- [ ] Audio pronunciation
-- [ ] Usage notes (formal vs. casual, when to use)
-- [ ] Flashcard integration
-- [ ] Search & filter by context
-
-**Data**: Pre-populate from open-source JLPT phrase databases
-
-**Effort**: 2 weeks | **Priority**: 🟢 Low | **Blockers**: None
+**Nỗ lực**: 2–3 tuần | **Ưu tiên**: 🟡 Trung bình | **Chướng ngại vật**: Thiết lập xử lý thanh toán
 
 ---
 
-#### Sprint 4.3: Advanced Analytics & Insights (Weeks 3–6)
-**Objective**: Help users track progress
+#### Sprint 4.2: Phrasebook & Biểu thức (Tuần 2–4)
+**Mục tiêu**: Học cụm từ bối cảnh
 
-**Features**:
-- [ ] Detailed progress charts (by level, category, skill)
-- [ ] Weak area detection ("You're struggling with N3 particles")
-- [ ] Time-to-proficiency estimate ("Estimated 6 months to N2")
-- [ ] Recommendation engine (suggest next topics)
-- [ ] Comparison to cohort (anonymized; optional)
-- [ ] Export progress reports (PDF)
+**Tính năng**:
+- [ ] 1,000+ cụm từ theo tình huống (chào hỏi, mua sắm, kinh doanh, du lịch)
+- [ ] Âm thanh phát âm
+- [ ] Ghi chú sử dụng (chính thức vs. thân mật, khi nào sử dụng)
+- [ ] Tích hợp flashcard
+- [ ] Tìm kiếm & lọc theo bối cảnh
 
-**Effort**: 2 weeks | **Priority**: 🟢 Low | **Blockers**: Data aggregation performance
+**Dữ liệu**: Điền sẵn từ các cơ sở dữ liệu cụm từ JLPT mã nguồn mở
 
----
-
-### 2027+ (Year 2) — Scale & Differentiation
-
-#### Future Features (Rough Ideas)
-
-1. **Essay/Composition Feedback**
-   - User writes Japanese essay → Claude reviews grammar/kanji/flow
-   - Suggestions for improvements
-   - High cost per request; needs premium tier
-
-2. **Media Integration**
-   - Short news articles (with furigana, word lookup)
-   - Manga snippet reading (practice with real content)
-   - Drama/anime scene clips (with subtitles)
-   - Podcast transcripts (listening + reading)
-
-3. **Adaptive Difficulty**
-   - ML-based system adjusts difficulty in real-time
-   - Personalized learning paths (avoid boredom + frustration)
-   - Predict weak areas before user struggles
-
-4. **Teacher Dashboard**
-   - Educators manage students
-   - Create assignments (target specific grammar/vocab)
-   - Track class progress
-
-5. **Partnership Content**
-   - Official JLPT practice tests (authentic exams)
-   - NHK Easy News integration
-   - Licensed manga/anime content
+**Nỗ lực**: 2 tuần | **Ưu tiên**: 🟢 Thấp | **Chướng ngại vật**: Không
 
 ---
 
-## 📊 Success Metrics
+#### Sprint 4.3: Phân tích nâng cao & Thông tin chi tiết (Tuần 3–6)
+**Mục tiêu**: Giúp người dùng theo dõi tiến độ
 
-Track these to validate feature priorities:
+**Tính năng**:
+- [ ] Biểu đồ tiến độ chi tiết (theo cấp độ, danh mục, kỹ năng)
+- [ ] Phát hiện khu vực yếu ("Bạn đang gặp khó khăn với hạt N3")
+- [ ] Ước tính thời gian thành thạo ("Ước tính 6 tháng để đạt N2")
+- [ ] Công cụ suy luận (đề xuất chủ đề tiếp theo)
+- [ ] So sánh với nhóm (ẩn danh; tùy chọn)
+- [ ] Xuất báo cáo tiến độ (PDF)
 
-| Metric | Target | Measurement |
-|--------|--------|-------------|
-| **DAU Growth** | +50% YoY | Google Analytics |
-| **Listening Feature Adoption** | 60% within 3 months | Feature flag analytics |
-| **VIP Conversion Rate** | 5–10% | Stripe data |
-| **Avg. Session Duration** | 30 min | Analytics |
-| **Retention (7-day)** | 40%+ | Cohort analysis |
-| **User Test Pass Rate** | 70% of N2+ users pass JLPT | Survey |
-| **NPS (Net Promoter Score)** | 40+ | Quarterly survey |
-
----
-
-## 🛠️ Implementation Guidelines
-
-### Engineering Practices
-- **Feature flags**: Use for gradual rollout (e.g., 10% → 50% → 100% users)
-- **A/B testing**: Compare UI variants for engagement
-- **Performance**: Target <3s page load; <500ms API response
-- **Testing**: Aim for 70%+ code coverage (unit + integration tests)
-- **Monitoring**: Alert on errors, API latency, feature adoption
-
-### Design & UX
-- Keep mobile-first (80%+ of learners study on phone)
-- Accessibility: WCAG AA compliance (color contrast, screen readers)
-- Onboarding: <2 min to first value (explain game immediately)
-- Feedback loops: Show results immediately (streak, accuracy %)
-
-### Product Management
-- **User interviews**: Monthly conversations with 5–10 users
-- **Feedback loop**: In-app feedback widget
-- **Analytics**: Track feature adoption, drop-off points
-- **Priorities**: User voice > roadmap > engineer ideas
+**Nỗ lực**: 2 tuần | **Ưu tiên**: 🟢 Thấp | **Chướng ngại vật**: Hiệu suất tổng hợp dữ liệu
 
 ---
 
-## 📝 Implementation Checklist
+### 2027+ (Năm 2) — Mở rộng & Khác biệt
 
-### Before Starting Any Feature
-- [ ] Define success metrics
-- [ ] Create JIRA tickets with acceptance criteria
-- [ ] Design UI mockups (Figma)
-- [ ] Plan data model (ERD)
-- [ ] Estimate effort (story points)
-- [ ] Identify blockers & dependencies
+#### Tính năng tương lai (Ý tưởng sơ bộ)
 
-### During Development
-- [ ] Write tests (TDD when possible)
-- [ ] Code review (2+ approvers)
-- [ ] Performance testing (load test if needed)
-- [ ] Accessibility audit (WCAG)
-- [ ] Documentation (API docs, UX guide)
+1. **Phản hồi bài luận/sáng tác**
+   - Người dùng viết bài luận tiếng Nhật → Claude xem xét ngữ pháp/kanji/luồng
+   - Gợi ý cải tiến
+   - Chi phí cao trên mỗi yêu cầu; cần mô hình định giá
 
-### Before Shipping
-- [ ] QA testing (dev + staging)
-- [ ] Monitoring setup (error tracking, analytics)
-- [ ] Feature flag ready (dark launch option)
-- [ ] User documentation (help articles, videos)
-- [ ] Marketing readiness (social media, emails)
+2. **Tích hợp phương tiện**
+   - Các bài báo tin tức ngắn (với furigana, tra từ)
+   - Đọc manga snippet (thực hành với nội dung thực)
+   - Clip phim/anime (với phụ đề)
+   - Phiên bản podcast (nghe + đọc)
 
-### Post-Launch
-- [ ] Monitor adoption & errors (daily)
-- [ ] Gather user feedback (weekly surveys)
-- [ ] Optimize based on data (weekly sprint)
-- [ ] Plan next iteration (bi-weekly retrospective)
+3. **Độ khó thích ứng**
+   - Hệ thống dựa trên ML điều chỉnh độ khó trong thời gian thực
+   - Đường dẫn học tập được cá nhân hóa (tránh chán + chán)
+   - Dự đoán khu vực yếu trước khi người dùng gặp khó khăn
 
----
+4. **Bảng điều khiển giáo viên**
+   - Giáo viên quản lý học sinh
+   - Tạo bài tập (mục tiêu ngữ pháp/từ vựng cụ thể)
+   - Theo dõi tiến độ lớp
 
-## 💰 Budget Estimate (Annual)
-
-| Feature | Dev Time | Infrastructure | Total |
-|---------|----------|-----------------|-------|
-| Listening | 3–4 weeks | $500/mo (TTS API) | $8K |
-| Grammar Exercises | 2–3 weeks | — | $4K |
-| Kanji Handwriting | 2–3 weeks | — | $4K |
-| Mobile App | 4–6 weeks | $200/mo | $6K |
-| Community Features | 3–4 weeks | $1K/mo | $8K |
-| VIP Monetization | 2–3 weeks | Stripe fees | $4K |
-| **Total (Year 1)** | ~4–6 months | ~$2K/mo | **$40–50K** |
-
-*Note: Assumes 2–3 FTE engineers + 1 product manager*
+5. **Nội dung hợp tác**
+   - Bài kiểm tra JLPT chính thức (bài thi xác thực)
+   - Tích hợp NHK Easy News
+   - Nội dung manga/anime được cấp phép
 
 ---
 
-## 🎓 Conclusion
+## 📊 Thước đo thành công
 
-**Prioritization Summary**:
-1. **Q2 2026**: Listening + Grammar exercises (covers JLPT gaps)
-2. **Q3 2026**: Mobile app + Community (increase engagement)
-3. **Q4 2026**: VIP monetization + Polish (revenue + retention)
-4. **2027+**: Content partnerships + AI adaptive learning (differentiation)
+Theo dõi những điều này để xác thực ưu tiên tính năng:
 
-This roadmap balances:
-- ✅ User needs (better coverage of JLPT skills)
-- ✅ Business goals (monetization, growth)
-- ✅ Technical debt (mobile, performance)
-- ✅ Competitive positioning (vs. Duolingo, tutors)
-
-**Success = Users who go from N5 → N2 → N1 with confidence & joy** 🎉
+| Thước đo | Mục tiêu | Phép đo |
+|----------|----------|--------|
+| **Tăng trưởng DAU** | +50% Năm | Google Analytics |
+| **Áp dụng tính năng nghe** | 60% trong 3 tháng | Phân tích cờ tính năng |
+| **Tỷ lệ chuyển đổi VIP** | 5–10% | Dữ liệu Stripe |
+| **Thời lượng phiên trung bình** | 30 phút | Analytics |
+| **Retention (7 ngày)** | 40%+ | Phân tích nhóm |
+| **Tỷ lệ vượt JLPT của người dùng** | 70% người dùng N2+ vượt JLPT | Khảo sát |
+| **NPS** | 40+ | Khảo sát hàng quý |
 
 ---
 
-*Questions? Suggestions? Update this doc as priorities shift.*
+## 🛠️ Hướng dẫn triển khai
+
+### Thực hành kỹ thuật
+- **Cờ tính năng**: Sử dụng để quăng từng bước (ví dụ: 10% → 50% → 100% người dùng)
+- **Kiểm tra A/B**: So sánh các biến thể UI để tăng sự tham gia
+- **Hiệu suất**: Mục tiêu <3s tải trang; <500ms phản hồi API
+- **Kiểm tra**: Nhắm đạt 70%+ độ bao phủ mã (kiểm tra đơn vị + tích hợp)
+- **Giám sát**: Cảnh báo về lỗi, độ trễ API, áp dụng tính năng
+
+### Thiết kế & UX
+- Giữ mobile-first (80%+ người học dùng điện thoại)
+- Khả năng truy cập: Tuân thủ WCAG AA (độ tương phản màu, trình đọc màn hình)
+- Onboarding: <2 phút để đạt giá trị đầu tiên (giải thích trò chơi ngay lập tức)
+- Vòng lặp phản hồi: Hiển thị kết quả ngay lập tức (streak, chính xác %)
+
+### Quản lý sản phẩm
+- **Phỏng vấn người dùng**: Hội thoại hàng tháng với 5–10 người dùng
+- **Vòng phản hồi**: Widget phản hồi trong ứng dụng
+- **Phân tích**: Theo dõi áp dụng tính năng, điểm rơi
+- **Ưu tiên**: Tiếng nói người dùng > lộ trình > ý tưởng kỹ sư
+
+---
+
+## 📝 Danh sách kiểm tra triển khai
+
+### Trước khi bắt đầu bất kỳ tính năng nào
+- [ ] Định nghĩa thước đo thành công
+- [ ] Tạo vé JIRA với tiêu chí chấp nhận
+- [ ] Thiết kế mockup UI (Figma)
+- [ ] Lên kế hoạch mô hình dữ liệu (ERD)
+- [ ] Ước tính nỗ lực (điểm story)
+- [ ] Xác định chướng ngại vật & phụ thuộc
+
+### Trong quá trình phát triển
+- [ ] Viết bài kiểm tra (TDD khi có thể)
+- [ ] Đánh giá mã (2+ nhà phê duyệt)
+- [ ] Kiểm tra hiệu suất (kiểm tra tải nếu cần)
+- [ ] Kiểm tra khả năng truy cập (WCAG)
+- [ ] Tài liệu (API docs, hướng dẫn UX)
+
+### Trước khi phát hành
+- [ ] Kiểm tra QA (dev + staging)
+- [ ] Thiết lập giám sát (theo dõi lỗi, phân tích)
+- [ ] Cờ tính năng sẵn sàng (tùy chọn quăng tối tối)
+- [ ] Tài liệu người dùng (bài viết trợ giúp, video)
+- [ ] Sẵn sàng tiếp thị (media xã hội, email)
+
+### Sau khi phát hành
+- [ ] Giám sát áp dụng & lỗi (hàng ngày)
+- [ ] Tập hợp phản hồi người dùng (khảo sát hàng tuần)
+- [ ] Tối ưu hóa dựa trên dữ liệu (sprint hàng tuần)
+- [ ] Kế hoạch lặp lại tiếp theo (hợp rút gọn lưỡng tuần)
+
+---
+
+## 💰 Ước tính ngân sách (Hàng năm)
+
+| Tính năng | Thời gian Dev | Cơ sở hạ tầng | Tổng cộng |
+|-----------|---------|-----------|--------|
+| Nghe | 3–4 tuần | $500/tháng (API TTS) | $8K |
+| Bài tập ngữ pháp | 2–3 tuần | — | $4K |
+| Luyện viết kanji | 2–3 tuần | — | $4K |
+| Ứng dụng di động | 4–6 tuần | $200/tháng | $6K |
+| Tính năng cộng đồng | 3–4 tuần | $1K/tháng | $8K |
+| Kiếm tiền VIP | 2–3 tuần | Phí Stripe | $4K |
+| **Tổng cộng (Năm 1)** | ~4–6 tháng | ~$2K/tháng | **$40–50K** |
+
+*Lưu ý: Giả định 2–3 FTE kỹ sư + 1 quản lý sản phẩm*
+
+---
+
+## 🎓 Kết luận
+
+**Tóm tắt ưu tiên**:
+1. **Q2 2026**: Nghe + Bài tập ngữ pháp (bao gồm khoảng trống JLPT)
+2. **Q3 2026**: Ứng dụng di động + Cộng đồng (tăng sự tham gia)
+3. **Q4 2026**: Kiếm tiền VIP + Hoàn thiện (doanh thu + retention)
+4. **2027+**: Hợp tác nội dung + AI học thích ứng (sự khác biệt)
+
+Lộ trình này cân bằng:
+- ✅ Nhu cầu người dùng (phủ JLPT tốt hơn)
+- ✅ Mục tiêu kinh doanh (kiếm tiền, tăng trưởng)
+- ✅ Nợ kỹ thuật (di động, hiệu suất)
+- ✅ Định vị cạnh tranh (vs. Duolingo, gia sư)
+
+**Thành công = Người dùng đi từ N5 → N2 → N1 với tự tin & niềm vui** 🎉
+
+---
+
+*Câu hỏi? Gợi ý? Cập nhật tài liệu này khi ưu tiên thay đổi.*

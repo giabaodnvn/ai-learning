@@ -1,339 +1,339 @@
-# Japanese Learning App — Project Review
+# Đánh giá Project — Ứng dụng học tiếng Nhật
 
-**Date**: May 5, 2026  
-**Reviewer**: Claude AI  
-**Project Type**: Full-stack web app (Rails 7 + Next.js 14 + PostgreSQL + Redis)
+**Ngày**: 5 tháng 5, 2026  
+**Người đánh giá**: Claude AI  
+**Loại project**: Full-stack web app (Rails 7 + Next.js 14 + PostgreSQL + Redis)
 
 ---
 
-## 📊 Current Feature Set
+## 📊 Tập hợp tính năng hiện tại
 
-### ✅ Core Learning Features
+### ✅ Các tính năng học tập cốt lõi
 
-#### 1. **Vocabulary Learning**
-- Browse vocabulary lists by JLPT level (N5–N1)
-- AI-powered explanations (word → meaning + usage + examples)
-- Vocabulary search & filtering
-- Integrated with SRS/flashcard system
-- **Status**: Fully functional
-- **Quality**: Good — explanation streaming works, context-aware
+#### 1. **Học từ vựng**
+- Duyệt danh sách từ vựng theo cấp độ JLPT (N5–N1)
+- Giải thích do AI cung cấp (từ → nghĩa + cách dùng + ví dụ)
+- Tìm kiếm & lọc từ vựng
+- Tích hợp với hệ thống SRS/flashcard
+- **Trạng thái**: Hoạt động hoàn toàn
+- **Chất lượng**: Tốt — giải thích streaming hoạt động, context-aware
 
-#### 2. **Grammar Points**
-- Grammar pattern database (N5–N1)
-- Pattern explanations with Vietnamese translations
-- Example sentences + grammar checks
-- **Status**: Core feature exists
-- **Quality**: Basic — no interactive exercises yet
+#### 2. **Mẫu ngữ pháp**
+- Cơ sở dữ liệu mẫu ngữ pháp (N5–N1)
+- Giải thích mẫu với dịch tiếng Việt
+- Các câu ví dụ + kiểm tra ngữ pháp
+- **Trạng thái**: Tính năng cốt lõi tồn tại
+- **Chất lượng**: Cơ bản — chưa có bài tập interactive
 
-#### 3. **Kanji Learning**
-- 6,000+ kanji organized by JLPT level (N5–N1)
-- Character detail: meanings, on/kun readings, stroke count
-- Vocabulary examples showing usage
-- **Status**: Complete data, basic UI
-- **Quality**: Data-rich but UI could be more interactive
+#### 3. **Học Kanji**
+- 6,000+ kanji được sắp xếp theo cấp độ JLPT (N5–N1)
+- Chi tiết ký tự: nghĩa, readings on/kun, số nét
+- Ví dụ từ vựng hiển thị cách sử dụng
+- **Trạng thái**: Dữ liệu hoàn chỉnh, UI cơ bản
+- **Chất lượng**: Dữ liệu phong phú nhưng UI có thể interactive hơn
 
-#### 4. **Reading Comprehension**
-- AI-generated reading passages by topic + JLPT level
-- Multi-choice comprehension questions
-- Word lookup during reading
-- Answer feedback with explanations
-- **Status**: Fully functional
-- **Quality**: Good — real-time generation, immediate feedback
+#### 4. **Luyện đọc hiểu**
+- Các bài viết đọc được tạo bởi AI theo chủ đề + cấp độ JLPT
+- Câu hỏi trắc nghiệm hiểu nội dung
+- Tìm kiếm từ trong khi đọc
+- Phản hồi về câu trả lời kèm giải thích
+- **Trạng thái**: Hoạt động hoàn toàn
+- **Chất lượng**: Tốt — tạo real-time, phản hồi ngay lập tức
 
-#### 5. **AI Conversation (Role-play)**
-- 6 pre-built roles: tutor, convenience store, restaurant, office, hotel, airport
-- Stateful conversation sessions
-- Difficulty adjusted to user level
-- Chat history
-- **Status**: Fully functional
-- **Quality**: Excellent — realistic role-play scenarios
+#### 5. **Hội thoại AI (Tình huống)**
+- 6 vai trò được xây dựng sẵn: gia sư, cửa hàng tiện lợi, nhà hàng, văn phòng, khách sạn, sân bay
+- Phiên hội thoại có trạng thái
+- Độ khó điều chỉnh theo cấp độ người dùng
+- Lịch sử chat
+- **Trạng thái**: Hoạt động hoàn toàn
+- **Chất lượng**: Xuất sắc — tình huống tình huống thực tế
 
-#### 6. **Spaced Repetition System (SRS)**
-- SM-2 algorithm implementation
-- Review queue with due dates
-- Difficulty ratings (Forgot → Difficult → OK → Easy)
-- 7-day accuracy tracking
-- **Status**: Fully functional
-- **Quality**: Solid implementation
+#### 6. **Hệ thống Spaced Repetition (SRS)**
+- Triển khai thuật toán SM-2
+- Hàng đợi xem xét với ngày đáo hạn
+- Xếp hạng độ khó (Quên → Khó → Ổn → Dễ)
+- Theo dõi độ chính xác 7 ngày
+- **Trạng thái**: Hoạt động hoàn toàn
+- **Chất lượng**: Triển khai vững chắc
 
-#### 7. **Flashcard Study**
-- Learn mode (random cards)
-- Quiz generation
-- Bulk status updates
-- **Status**: Functional
-- **Quality**: Basic — needs more polish
+#### 7. **Học Flashcard**
+- Chế độ Học (thẻ ngẫu nhiên)
+- Tạo bài quiz
+- Cập nhật trạng thái hàng loạt
+- **Trạng thái**: Hoạt động
+- **Chất lượng**: Cơ bản — cần nhiều cải tiến
 
-#### 8. **JLPT Level Tests**
-- Mini exams (20–30 questions)
-- Scored results with feedback
-- Level progression tracking
-- **Status**: Functional
-- **Quality**: Good foundation
+#### 8. **Bài kiểm tra JLPT**
+- Mini exam (20–30 câu hỏi)
+- Kết quả có điểm kèm phản hồi
+- Theo dõi tiến trình cấp độ
+- **Trạng thái**: Hoạt động
+- **Chất lượng**: Nền tảng tốt
 
 ### 📊 Dashboard & Gamification
 
-#### 9. **User Dashboard**
-- Streak counter (consecutive study days)
-- Vocabulary stats (learned, due today, 7-day accuracy)
-- Activity heatmap (last 30 days)
-- JLPT progress bar (words/patterns learned per level)
-- Weekly AI report (personalized summary)
-- Quick links to all features
+#### 9. **Dashboard người dùng**
+- Bộ đếm streak (ngày học liên tiếp)
+- Thống kê từ vựng (đã học, hôm nay, độ chính xác 7 ngày)
+- Activity heatmap (30 ngày gần đây)
+- Thanh tiến độ JLPT (từ/mẫu học được mỗi cấp độ)
+- Báo cáo hàng tuần do AI tạo (tóm tắt cá nhân hóa)
+- Liên kết nhanh đến tất cả tính năng
 
-**Status**: Fully implemented  
-**Quality**: Excellent — attractive, data-rich, motivating
+**Trạng thái**: Được triển khai hoàn toàn  
+**Chất lượng**: Xuất sắc — hấp dẫn, dữ liệu phong phú, động lực
 
-### 🔐 System Features
+### 🔐 Tính năng hệ thống
 
-#### 10. **User Authentication**
-- Email/password signup & login
-- JWT token-based auth (devise-jwt)
-- Profile management
-- **Status**: Complete
+#### 10. **Xác thực người dùng**
+- Đăng ký & đăng nhập email/mật khẩu
+- Xác thực dựa trên JWT (devise-jwt)
+- Quản lý hồ sơ
+- **Trạng thái**: Hoàn thành
 
-#### 11. **VIP/Subscription System**
-- Multiple tiers with perks
-- VIP expiration tracking
-- Admin controls
-- **Status**: Database support, UI not yet implemented
+#### 11. **Hệ thống VIP/Đăng ký**
+- Nhiều tier với các đặc quyền
+- Theo dõi hết hạn VIP
+- Điều khiển quản trị
+- **Trạng thái**: Hỗ trợ cơ sở dữ liệu, UI chưa được triển khai
 
-#### 12. **Admin Panel**
-- User management (view, block, reset VIP)
-- AI cost tracking (Claude API usage)
-- Sidekiq monitoring
-- **Status**: Core features present
+#### 12. **Bảng điều khiển quản trị**
+- Quản lý người dùng (xem, chặn, đặt lại VIP)
+- Theo dõi chi phí AI (sử dụng Claude API)
+- Giám sát Sidekiq
+- **Trạng thái**: Các tính năng cốt lõi hiện tại
 
 #### 13. **Text-to-Speech**
-- Hook exists (`useTextToSpeech.ts`)
-- Not yet fully integrated into all pages
-- **Status**: Partially implemented
+- Hook tồn tại (`useTextToSpeech.ts`)
+- Chưa được tích hợp đầy đủ vào tất cả các trang
+- **Trạng thái**: Được triển khai một phần
 
-#### 14. **AI Cost Management**
-- Logging all API calls to Claude
-- Cost tracking by user
-- Usage analytics
-- **Status**: Infrastructure in place
-
----
-
-## 🎯 Assessment
-
-### Strengths ✨
-
-1. **Solid Architecture** — Clean separation: Rails API + Next.js frontend, JSON:API format
-2. **AI-Powered Features** — All major learning features leverage Claude API for personalization
-3. **Comprehensive JLPT Data** — N1-N5 vocabulary (3,000+), grammar (500+), kanji (2,500+)
-4. **Gamification** — Streaks, progress tracking, weekly reports drive engagement
-5. **Real-Time Features** — Server-Sent Events (SSE) for streaming explanations & chat
-6. **SRS Implementation** — Scientifically-backed spaced repetition (SM-2 algorithm)
-7. **Multiple Learning Modes** — Diverse content types (vocab, grammar, reading, speaking, tests)
-8. **Caching & Performance** — Redis caching, AI response caching (30-day TTL)
-
-### Gaps & Missing Features 🔴
-
-1. **No Listening Practice**
-   - Missing audio input & comprehension exercises
-   - No practice with authentic Japanese audio
-   - Impact: Major gap for JLPT listening section (25% of test)
-
-2. **No Writing Practice**
-   - No kanji stroke practice (handwriting)
-   - No essay/composition feedback
-   - No particle ordering exercises
-   - Impact: Can't practice JLPT writing section (25% of test)
-
-3. **Grammar Exercises Limited**
-   - View grammar patterns, but no fill-in-the-blank drills
-   - No sentence construction practice
-   - Impact: Users can read grammar but not apply it
-
-4. **Kanji Radicals Not Covered**
-   - No radical breakdown for kanji learning
-   - No etymology/mnemonics system
-   - Impact: Harder to remember complex characters
-
-5. **No Pronunciation Audio**
-   - Text-to-speech exists but not integrated everywhere
-   - No native speaker audio samples
-   - Impact: Users uncertain about correct pronunciation
-
-6. **Limited Cultural Content**
-   - No context about when/how to use keigo
-   - No cultural etiquette lessons
-   - No Japanese media (news, manga) integration
-   - Impact: Learners miss real-world context
-
-7. **No Community/Social Features**
-   - No peer-to-peer language exchange
-   - No forums or discussion boards
-   - No leaderboards (only personal streak)
-   - Impact: Isolated learning experience
-
-8. **Mobile Optimization Weak**
-   - Designed for desktop/tablet
-   - No mobile app (iOS/Android)
-   - No offline capability
-   - Impact: Can't study on the go effectively
-
-9. **Vocabulary Export/Integration Missing**
-   - Can't export learned words for other apps
-   - No Anki deck export
-   - Impact: Can't leverage other study tools
-
-10. **Limited Adaptive Learning**
-    - No difficulty adjustment based on performance
-    - No personalized learning paths
-    - No weak area detection/focus
-    - Impact: One-size-fits-all approach
+#### 14. **Quản lý chi phí AI**
+- Ghi nhật ký tất cả các lệnh gọi API đến Claude
+- Theo dõi chi phí theo người dùng
+- Phân tích sử dụng
+- **Trạng thái**: Cơ sở hạ tầng có sẵn
 
 ---
 
-## 💡 Feature Recommendations (Prioritized)
+## 🎯 Đánh giá
 
-### Phase 1: High Impact, Medium Effort (Next Quarter)
+### Điểm mạnh ✨
 
-#### 1. **Listening Practice** 🎧
-**Why**: Covers JLPT listening section; differentiates from text-based competitors
-- Generate short audio dialogues (TTS or real samples)
-- Play audio 1–2 times, user answers multiple-choice
-- Difficulty levels: slow/natural/fast
-- **Effort**: 3–4 weeks (audio generation, UI, backend)
-- **Revenue Impact**: High (core JLPT feature)
+1. **Kiến trúc vững chắc** — Phân tách sạch: Rails API + Next.js frontend, định dạng JSON:API
+2. **Tính năng được hỗ trợ bởi AI** — Tất cả các tính năng học chính tận dụng Claude API để cá nhân hóa
+3. **Dữ liệu JLPT toàn diện** — N1-N5 từ vựng (3,000+), ngữ pháp (500+), kanji (2,500+)
+4. **Gamification** — Streak tracking, theo dõi tiến độ, báo cáo hàng tuần thúc đẩy sự tham gia
+5. **Tính năng Real-Time** — Server-Sent Events (SSE) để giải thích & chat streaming
+6. **Triển khai SRS** — Spaced repetition được hỗ trợ khoa học (thuật toán SM-2)
+7. **Các chế độ học tập đa dạng** — Các loại nội dung đa dạng (từ vựng, ngữ pháp, đọc, nói, bài kiểm tra)
+8. **Caching & Hiệu suất** — Redis caching, caching phản hồi AI (TTL 30 ngày)
 
-#### 2. **Interactive Grammar Exercises** ✍️
-**Why**: Users know grammar but can't apply it
-- Fill-in-the-blank (drag/type particles, conjugations)
-- Sentence ordering (arrange words into correct order)
-- Translation practice (Vietnamese → Japanese)
-- **Effort**: 2–3 weeks (exercise generation, validation)
-- **Revenue Impact**: High (core study feature)
+### Khoảng trống & Tính năng bị thiếu 🔴
 
-#### 3. **Kanji Stroke Practice** 🖊️
-**Why**: Essential for writing section; engage motor memory
-- Canvas drawing detection (user traces strokes)
-- Stroke order animation
-- Radical breakdown cards
-- **Effort**: 3 weeks (canvas integration, stroke detection)
-- **Revenue Impact**: Medium (niche but valuable)
+1. **Không có luyện nghe**
+   - Thiếu bài tập nghe & lý thuyết nghe
+   - Không thực hành với âm thanh tiếng Nhật chính gốc
+   - Tác động: Khoảng trống lớn cho phần nghe JLPT (25% bài thi)
 
-#### 4. **Integrated Text-to-Speech** 🔊
-**Why**: Already coded; easy win
-- Add "pronounce" button to all vocabulary
-- Pronunciation guide in grammar explanations
-- Audio in flashcards
-- **Effort**: 1 week (integration across pages)
-- **Revenue Impact**: Low (nice-to-have)
+2. **Không có luyện viết**
+   - Không luyện viết nét kanji (viết tay)
+   - Không phản hồi bài luận/sáng tác
+   - Không bài tập sắp xếp hạt
+   - Tác động: Không thể thực hành phần viết JLPT (25% bài thi)
 
-### Phase 2: High Engagement (Next 6 Months)
+3. **Bài tập ngữ pháp bị giới hạn**
+   - Xem mẫu ngữ pháp nhưng không có bài luyện fill-in-the-blank
+   - Không luyện xây dựng câu
+   - Tác động: Người dùng có thể đọc ngữ pháp nhưng không thể áp dụng nó
 
-#### 5. **Phrasebook & Expressions**
-- 500–1,000 common phrases by context (greetings, shopping, business)
-- Audio + example usage
-- Search by situation
+4. **Radicals của Kanji không được đề cập**
+   - Không phân tích radical cho học kanji
+   - Không có hệ thống etymology/mnemonics
+   - Tác động: Khó nhớ các ký tự phức tạp hơn
 
-#### 6. **Community & Social**
-- Language exchange matching (connect learners to practice together)
-- Simple comment/discussion on difficult concepts
-- Leaderboard (optional)
+5. **Không có âm thanh phát âm**
+   - Text-to-speech tồn tại nhưng không tích hợp ở mọi nơi
+   - Không có mẫu âm thanh của người bản xứ
+   - Tác động: Người dùng không chắc chắn về phát âm đúng
 
-#### 7. **Mobile App** 📱
-- React Native or Flutter wrapper
-- Offline mode for flashcards/vocabulary
-- Push notifications for daily reminders
+6. **Nội dung văn hóa bị giới hạn**
+   - Không ngữ cảnh về khi/cách sử dụng keigo
+   - Không bài học về l礼 lịch sự văn hóa
+   - Không tích hợp phương tiện Nhật Bản (tin tức, manga)
+   - Tác động: Học viên bỏ lỡ ngữ cảnh thế giới thực
 
-#### 8. **Advanced Analytics**
-- Detailed progress history (charts by level/category)
-- Weak area detection ("You're struggling with N3 particles")
-- Recommended next steps based on performance
+7. **Không có tính năng Cộng đồng/Xã hội**
+   - Không trao đổi ngôn ngữ ngang hàng
+   - Không diễn đàn hoặc bảng thảo luận
+   - Không bảng xếp hạng (chỉ streak cá nhân)
+   - Tác động: Trải nghiệm học tập cô lập
 
-### Phase 3: Differentiation (Future)
+8. **Tối ưu hóa Mobile yếu**
+   - Được thiết kế cho máy tính để bàn/máy tính bảng
+   - Không có ứng dụng di động (iOS/Android)
+   - Không có khả năng offline
+   - Tác động: Không thể học hiệu quả khi đang di chuyển
 
-#### 9. **Cultural & Media Integration**
-- Short news articles (with furigana)
-- Manga snippet reading
-- Video clips (NHK, drama) with subtitles
-- Etiquette lessons (keigo, formal writing)
+9. **Xuất/Tích hợp từ vựng bị thiếu**
+   - Không thể xuất các từ đã học để sử dụng với các ứng dụng khác
+   - Không xuất bộ Anki
+   - Tác động: Không thể tận dụng các công cụ học tập khác
 
-#### 10. **Adaptive Difficulty**
-- ML-based difficulty scaling
-- Personalized learning paths
-- Predict time-to-proficiency
-
-#### 11. **Essay/Composition Feedback**
-- User writes Japanese essay → AI reviews grammar/kanji/flow
-- Suggestions for improvements
-- **Risk**: High cost per request; pricing model needed
+10. **Học tập thích ứng bị giới hạn**
+    - Không điều chỉnh độ khó dựa trên hiệu suất
+    - Không có đường dẫn học tập được cá nhân hóa
+    - Không phát hiện/tập trung vào khu vực yếu
+    - Tác động: Cách tiếp cận one-size-fits-all
 
 ---
 
-## 📈 Usage Metrics to Track
+## 💡 Khuyến nghị Tính năng (Theo mức ưu tiên)
 
-To prioritize features, monitor:
+### Giai đoạn 1: Tác động cao, Nỗ lực trung bình (Quý tiếp theo)
 
-1. **Feature Adoption** — % of users using each feature
-2. **Daily Active Users (DAU)** — Trend over time
-3. **Session Duration** — Time spent per feature type
-4. **Drop-off Points** — Where users stop using the app
-5. **VIP Conversion** — Are learners willing to pay?
-6. **Test Scores** — Do users pass JLPT after using the app?
+#### 1. **Luyện nghe** 🎧
+**Tại sao**: Bao gồm phần nghe JLPT; phân biệt với những đối thủ cạnh tranh chỉ dựa trên văn bản
+- Tạo hội thoại âm thanh ngắn (TTS hoặc mẫu thực)
+- Phát âm 1–2 lần, người dùng trả lời trắc nghiệm
+- Cấp độ khó: chậm/bình thường/nhanh
+- **Nỗ lực**: 3–4 tuần (tạo âm thanh, UI, backend)
+- **Tác động doanh thu**: Cao (tính năng JLPT cốt lõi)
+
+#### 2. **Bài tập ngữ pháp Interactive** ✍️
+**Tại sao**: Người dùng biết ngữ pháp nhưng không thể áp dụng nó
+- Fill-in-the-blank (kéo/gõ hạt, chia động từ)
+- Sắp xếp câu (sắp xếp các từ thành thứ tự đúng)
+- Luyện dịch (Việt → Nhật)
+- **Nỗ lực**: 2–3 tuần (tạo bài tập, xác thực)
+- **Tác động doanh thu**: Cao (tính năng học tập cốt lõi)
+
+#### 3. **Luyện viết Kanji** 🖊️
+**Tại sao**: Cần thiết cho phần viết; tham gia trí nhớ vận động
+- Phát hiện vẽ trên canvas (người dùng kéo nét)
+- Hình ảnh động thứ tự nét
+- Thẻ phân tách radical
+- **Nỗ lực**: 3 tuần (tích hợp canvas, phát hiện nét)
+- **Tác động doanh thu**: Trung bình (hẹp nhưng có giá trị)
+
+#### 4. **Text-to-Speech Tích hợp** 🔊
+**Tại sao**: Đã được mã hóa; chiến thắng dễ dàng
+- Thêm nút "phát âm" vào tất cả từ vựng
+- Hướng dẫn phát âm trong giải thích ngữ pháp
+- Âm thanh trong flashcard
+- **Nỗ lực**: 1 tuần (tích hợp trên các trang)
+- **Tác động doanh thu**: Thấp (nice-to-have)
+
+### Giai đoạn 2: Sự tham gia cao (6 tháng tiếp theo)
+
+#### 5. **Phrasebook & Biểu thức**
+- 500–1,000 cụm từ phổ biến theo bối cảnh (chào hỏi, mua sắm, kinh doanh)
+- Âm thanh + cách sử dụng ví dụ
+- Tìm kiếm theo tình huống
+
+#### 6. **Cộng đồng & Xã hội**
+- Ghép đôi trao đổi ngôn ngữ (kết nối những người học để thực hành)
+- Bình luận/thảo luận đơn giản về các khái niệm khó
+- Bảng xếp hạng (tùy chọn)
+
+#### 7. **Ứng dụng di động** 📱
+- React Native hoặc Flutter wrapper
+- Chế độ offline cho flashcard/từ vựng
+- Thông báo đẩy cho lời nhắc hàng ngày
+
+#### 8. **Phân tích nâng cao**
+- Biểu đồ lịch sử tiến độ chi tiết (theo cấp độ/danh mục)
+- Phát hiện khu vực yếu ("Bạn đang gặp khó khăn với các hạt N3")
+- Ước tính thời gian đến thành thạo ("Ước tính 6 tháng để đạt N2")
+
+### Giai đoạn 3: Khác biệt (Tương lai)
+
+#### 9. **Văn hóa & Tích hợp Phương tiện**
+- Các bài báo tin tức ngắn (có furigana)
+- Đọc manga snippet
+- Video clips (NHK, phim) có phụ đề
+- Bài học về lịch sự (keigo, viết chính thức)
+
+#### 10. **Độ khó thích ứng**
+- Hệ thống dựa trên ML điều chỉnh độ khó trong thời gian thực
+- Đường dẫn học tập được cá nhân hóa
+- Dự đoán thời gian đạt thành thạo
+
+#### 11. **Phản hồi bài luận/Sáng tác**
+- Người dùng viết bài luận tiếng Nhật → AI xem xét ngữ pháp/kanji/luồng
+- Gợi ý cải tiến
+- **Rủi ro**: Chi phí cao mỗi yêu cầu; cần mô hình định giá
 
 ---
 
-## 🚀 Quick Wins (1–2 Weeks)
+## 📈 Các chỉ số sử dụng để theo dõi
 
-If you want fast improvements with minimal effort:
+Để ưu tiên các tính năng, hãy theo dõi:
 
-1. **Add "Show Furigana" toggle** to all Japanese text
-2. **Expand reading topics** (currently 8; add 20+)
-3. **Create preset study plans** by goal (e.g., "Pass N2 in 6 months")
-4. **Email reminders** for daily reviews
-5. **Export vocabulary as CSV** for user records
-
----
-
-## ⚡ Technical Debt to Address
-
-1. **Admin panel documentation** — Hard to manage without guide
-2. **Error handling** — Some API errors not caught gracefully
-3. **Load testing** — Check performance at 1,000+ concurrent users
-4. **Accessibility** — Missing some ARIA labels, color contrast
-5. **Testing** — No visible test suite; add RSpec + Jest tests
+1. **Áp dụng tính năng** — % người dùng sử dụng mỗi tính năng
+2. **Người dùng hoạt động hàng ngày (DAU)** — Xu hướng theo thời gian
+3. **Thời lượng phiên** — Thời gian dành cho mỗi loại tính năng
+4. **Điểm rơi** — Người dùng dừng sử dụng ứng dụng ở đâu
+5. **Chuyển đổi VIP** — Những học viên có sẵn sàng trả tiền không?
+6. **Điểm kiểm tra** — Người dùng có vượt qua JLPT sau khi sử dụng ứng dụng không?
 
 ---
 
-## 🎓 Verdict
+## 🚀 Chiến thắng nhanh (1–2 tuần)
 
-**Overall Assessment**: **B+ (Good Foundation, Needs Polish)**
+Nếu bạn muốn cải tiến nhanh với nỗ lực tối thiểu:
 
-### Summary
-You have a **solid, functional Japanese learning app** with:
-- ✅ Comprehensive content (vocab, grammar, kanji)
-- ✅ Smart gamification (streaks, progress)
-- ✅ AI-powered features (explanations, generation)
-- ✅ Multiple learning modes (5+ ways to study)
-
-**But it's missing critical skill areas:**
-- ❌ No listening practice (JLPT listening test)
-- ❌ No writing practice (JLPT writing test)
-- ❌ No interactive grammar exercises
-- ❌ No mobile support
-- ❌ No social/community features
-
-**If I were a user**, I'd want:
-1. **Listening exercises** (so I can practice what I hear)
-2. **Grammar drills** (so I can apply patterns)
-3. **Mobile app** (so I can study anywhere)
-4. **Peer language exchange** (so I practice with humans, not just AI)
-
-### Next Steps
-1. **Survey users** — Which missing features matter most?
-2. **Implement listening** — Highest ROI for JLPT coverage
-3. **Add grammar exercises** — Transforms passive learning → active
-4. **Optimize mobile** — Reach users on-the-go
-5. **Build community** — Differentiator vs. Duolingo/Anki
+1. **Thêm toggles "Hiển thị Furigana"** cho tất cả văn bản tiếng Nhật
+2. **Mở rộng chủ đề đọc** (hiện tại 8; thêm 20+)
+3. **Tạo kế hoạch học được định sẵn** theo mục tiêu (ví dụ: "Vượt qua N2 trong 6 tháng")
+4. **Email reminders** cho các lần xem xét hàng ngày
+5. **Xuất từ vựng dưới dạng CSV** để lưu hồ sơ người dùng
 
 ---
 
-**Created by**: Claude AI  
-**Reviewed**: Frontend (`/frontend`), Backend (`/ai_learning`), Routes, Models, Controllers  
-**Codebase Stats**: ~50 API endpoints, 15+ database models, 12+ frontend pages
+## ⚡ Nợ kỹ thuật để giải quyết
+
+1. **Tài liệu bảng điều khiển quản trị** — Khó quản lý mà không có hướng dẫn
+2. **Xử lý lỗi** — Một số lỗi API không được bắt một cách duyên dáng
+3. **Kiểm tra tải** — Kiểm tra hiệu suất ở 1,000+ người dùng đồng thời
+4. **Khả năng truy cập** — Thiếu một số nhãn ARIA, độ tương phản màu
+5. **Kiểm tra** — Không có bộ kiểm tra có thể nhìn thấy; thêm bài kiểm tra RSpec + Jest
+
+---
+
+## 🎓 Đánh giá
+
+**Đánh giá tổng thể**: **B+ (Nền tảng tốt, cần hoàn thiện)**
+
+### Tóm tắt
+Bạn có một **ứng dụng học tiếng Nhật vững chắc, hoạt động tốt** với:
+- ✅ Nội dung toàn diện (từ vựng, ngữ pháp, kanji)
+- ✅ Gamification thông minh (streaks, tiến độ)
+- ✅ Tính năng được hỗ trợ bởi AI (giải thích, tạo)
+- ✅ Nhiều chế độ học (5+ cách để học)
+
+**Nhưng nó thiếu các khu vực kỹ năng quan trọng:**
+- ❌ Không có luyện nghe (bài kiểm tra JLPT nghe)
+- ❌ Không có luyện viết (bài kiểm tra JLPT viết)
+- ❌ Không có bài tập ngữ pháp interactive
+- ❌ Không hỗ trợ di động
+- ❌ Không có tính năng cộng đồng
+
+**Nếu tôi là người dùng**, tôi muốn:
+1. **Bài tập nghe** (để thực hành những gì tôi nghe)
+2. **Bài tập ngữ pháp** (để áp dụng các mẫu)
+3. **Ứng dụng di động** (để học mọi nơi)
+4. **Trao đổi ngôn ngữ ngang hàng** (để thực hành với con người, không chỉ AI)
+
+### Các bước tiếp theo
+1. **Khảo sát người dùng** — Tính năng bị thiếu nào quan trọng nhất?
+2. **Triển khai nghe** — ROI cao nhất cho phủ JLPT
+3. **Thêm bài tập ngữ pháp** — Chuyển từ học bị động → chủ động
+4. **Tối ưu hóa di động** — Tiếp cận người dùng khi đang di chuyển
+5. **Xây dựng cộng đồng** — Phân biệt với Duolingo/Anki
+
+---
+
+**Tạo bởi**: Claude AI  
+**Đã xem xét**: Frontend (`/frontend`), Backend (`/ai_learning`), Routes, Models, Controllers  
+**Thống kê cơ sở mã**: ~50 điểm cuối API, 15+ mô hình cơ sở dữ liệu, 12+ trang frontend
