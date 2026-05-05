@@ -116,6 +116,9 @@ Rails.application.routes.draw do
           post :check_sentence
           post :generate_exercise
           post :ask
+          post :generate_set
+          post :complete_set
+          get  :streak_info
         end
       end
 

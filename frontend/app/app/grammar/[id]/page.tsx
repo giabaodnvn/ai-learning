@@ -7,13 +7,15 @@ import { api } from "@/lib/api";
 import FillInBlank from "@/components/grammar/FillInBlank";
 import FreeWriting from "@/components/grammar/FreeWriting";
 import AskAI from "@/components/grammar/AskAI";
+import { GrammarPracticeSet } from "@/components/grammar/GrammarPracticeSet";
 
-type Tab = "fillblank" | "freewrite" | "askai";
+type Tab = "fillblank" | "freewrite" | "practice_set" | "askai";
 
 const TABS: { id: Tab; label: string }[] = [
-  { id: "fillblank", label: "Điền vào chỗ trống" },
-  { id: "freewrite", label: "Viết tự do" },
-  { id: "askai",     label: "Hỏi AI" },
+  { id: "fillblank",     label: "Điền vào chỗ trống" },
+  { id: "freewrite",     label: "Viết tự do" },
+  { id: "practice_set",  label: "Bộ luyện tập" },
+  { id: "askai",         label: "Hỏi AI" },
 ];
 
 interface GrammarPointAttrs {
@@ -38,6 +40,15 @@ export default function GrammarDetailPage() {
     queryKey: ["grammar_point", id],
     queryFn:  () => fetchGrammarPoint(id),
     enabled:  !!id,
+  });
+
+  const { data: streakData } = useQuery({
+    queryKey: ["grammar_streak", id],
+    queryFn: async () => {
+      const res = await api.get(`/api/v1/grammar_points/${id}/streak_info`);
+      return res.data;
+    },
+    enabled: !!id,
   });
 
   if (isLoading) {
@@ -77,7 +88,16 @@ export default function GrammarDetailPage() {
       {/* Header */}
       <div className="rounded-2xl border border-zinc-200 bg-white p-6">
         <div className="flex items-start justify-between gap-4">
-          <h1 className="text-2xl font-bold text-zinc-900">{gp.pattern}</h1>
+          <div className="flex-1">
+            <div className="flex items-center gap-2">
+              <h1 className="text-2xl font-bold text-zinc-900">{gp.pattern}</h1>
+              {streakData?.streak_count > 0 && (
+                <span className="text-xs text-orange-600 font-medium">
+                  🔥 {streakData.streak_count} ngày liên tiếp
+                </span>
+              )}
+            </div>
+          </div>
           <span className="flex-shrink-0 rounded-full bg-zinc-100 px-3 py-1 text-sm font-medium text-zinc-500">
             {gp.jlpt_level.toUpperCase()}
           </span>
@@ -127,9 +147,10 @@ export default function GrammarDetailPage() {
 
         {/* Tab content */}
         <div className="p-6">
-          {tab === "fillblank" && <FillInBlank grammarPointId={numericId} />}
-          {tab === "freewrite" && <FreeWriting grammarPointId={numericId} pattern={gp.pattern} />}
-          {tab === "askai"    && <AskAI grammarPointId={numericId} pattern={gp.pattern} />}
+          {tab === "fillblank"    && <FillInBlank grammarPointId={numericId} />}
+          {tab === "freewrite"    && <FreeWriting grammarPointId={numericId} pattern={gp.pattern} />}
+          {tab === "practice_set" && <GrammarPracticeSet grammarPointId={numericId} pattern={gp.pattern} />}
+          {tab === "askai"        && <AskAI grammarPointId={numericId} pattern={gp.pattern} />}
         </div>
       </div>
     </div>
