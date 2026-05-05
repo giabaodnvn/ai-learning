@@ -6,7 +6,13 @@ import { api } from "@/lib/api";
 
 interface ReviewCard {
   id: number;
-  vocabulary: {
+  card_type: "vocabulary" | "kanji" | "grammar_point";
+  due_date: string;
+  repetitions: number;
+  interval: number;
+  ease_factor: number;
+  // Content fields depending on card_type:
+  vocabulary?: {
     id: number;
     word: string;
     reading: string;
@@ -14,15 +20,52 @@ interface ReviewCard {
     part_of_speech: string;
     jlpt_level: string;
   };
-  due_date: string;
-  repetitions: number;
-  interval: number;
-  ease_factor: number;
+  kanji?: {
+    id: number;
+    character: string;
+    reading_on: string;
+    meaning_vi: string;
+    jlpt_level: string;
+  };
+  grammar_point?: {
+    id: number;
+    pattern: string;
+    explanation_vi: string;
+    jlpt_level: string;
+  };
 }
 
 interface ReviewQueue {
   cards: ReviewCard[];
   total_due: number;
+}
+
+function cardDisplay(card: ReviewCard) {
+  if (card.card_type === "kanji" && card.kanji) {
+    return {
+      front: card.kanji.character,
+      reading: card.kanji.reading_on,
+      meaning_vi: card.kanji.meaning_vi,
+      tag: "Kanji",
+      jlpt_level: card.kanji.jlpt_level,
+    };
+  }
+  if (card.card_type === "grammar_point" && card.grammar_point) {
+    return {
+      front: card.grammar_point.pattern,
+      reading: null as string | null,
+      meaning_vi: card.grammar_point.explanation_vi,
+      tag: "Ngữ pháp",
+      jlpt_level: card.grammar_point.jlpt_level,
+    };
+  }
+  return {
+    front: card.vocabulary?.word ?? "",
+    reading: card.vocabulary?.reading ?? "",
+    meaning_vi: card.vocabulary?.meaning_vi ?? "",
+    tag: card.vocabulary?.part_of_speech ?? null as string | null,
+    jlpt_level: card.vocabulary?.jlpt_level ?? "",
+  };
 }
 
 const RATINGS = [
@@ -109,7 +152,7 @@ export default function ReviewPage() {
   }
 
   if (cards.length === 0 || done) {
-    const correct = sessionResults.filter((r) => r.quality >= 4).length;
+    const correct = sessionResults.filter((r) => r.quality >= 3).length;
     const total = sessionResults.length;
 
     return (
@@ -158,6 +201,8 @@ export default function ReviewPage() {
 
   const progress = (currentIndex / cards.length) * 100;
 
+  const display = cardDisplay(current);
+
   return (
     <div className="space-y-6">
       <div className="flex items-center justify-between">
@@ -168,7 +213,7 @@ export default function ReviewPage() {
           </p>
         </div>
         <span className="rounded-full bg-indigo-100 px-2 py-0.5 text-xs font-semibold text-indigo-700">
-          {current.vocabulary.jlpt_level.toUpperCase()}
+          {display.jlpt_level.toUpperCase()}
         </span>
       </div>
 
@@ -186,22 +231,22 @@ export default function ReviewPage() {
         onClick={() => !revealed && setRevealed(true)}
       >
         <p className="text-5xl font-bold text-zinc-900">
-          {current.vocabulary.word}
+          {display.front}
         </p>
 
         {!revealed ? (
           <p className="text-sm text-zinc-400 mt-4">Nhấn để xem đáp án</p>
         ) : (
           <div className="space-y-2 mt-2">
-            <p className="text-lg text-zinc-600">
-              {current.vocabulary.reading}
-            </p>
+            {display.reading && (
+              <p className="text-lg text-zinc-600">{display.reading}</p>
+            )}
             <p className="text-xl font-semibold text-zinc-800">
-              {current.vocabulary.meaning_vi}
+              {display.meaning_vi}
             </p>
-            {current.vocabulary.part_of_speech && (
+            {display.tag && (
               <span className="inline-block rounded-full bg-zinc-100 px-2 py-0.5 text-xs text-zinc-500">
-                {current.vocabulary.part_of_speech}
+                {display.tag}
               </span>
             )}
           </div>

@@ -11,8 +11,8 @@ class UserVocabularyProgress < ApplicationRecord
   scope :due_for_user, ->(user) { where(user: user).due_today }
 
   # SM-2 algorithm: update interval and ease_factor after a review
-  # quality: 0-5 (0-1 = fail, 2-5 = pass)
-  def review!(quality)
+  # quality: 0-5 (0-2 = fail, 3-5 = pass)
+  def review!(quality, user = nil)
     raise ArgumentError, "quality must be 0-5" unless (0..5).include?(quality)
 
     if quality >= 3
@@ -27,6 +27,13 @@ class UserVocabularyProgress < ApplicationRecord
     self.due_date        = Date.current + interval.days
     self.last_reviewed_at = Time.current
     save!
+
+    # Record study activity (track streak and statistics)
+    if user
+      correct = quality >= 3
+      StudyLog.record!(user_id: user.id, correct: correct)
+      user.record_study_session!
+    end
   end
 
   private
