@@ -75,6 +75,17 @@ Rails.application.routes.draw do
         end
       end
 
+      # Listening exercises (REST + generate + submit + stats)
+      resources :listening_exercises, only: [:index, :show] do
+        collection do
+          post :generate
+          get  :stats
+        end
+        member do
+          post :submit
+        end
+      end
+
       # Level-up tests (JLPT mini exam)
       resources :level_tests, only: [:index, :show] do
         collection { post :generate }

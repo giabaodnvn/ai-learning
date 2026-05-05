@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.2].define(version: 2026_05_04_000001) do
+ActiveRecord::Schema[7.2].define(version: 2026_05_05_000002) do
   create_table "ai_usage_logs", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.bigint "user_id"
     t.string "feature", null: false
@@ -94,6 +94,34 @@ ActiveRecord::Schema[7.2].define(version: 2026_05_04_000001) do
     t.datetime "updated_at", null: false
     t.index ["created_at"], name: "index_level_tests_on_created_at"
     t.index ["jlpt_level"], name: "index_level_tests_on_jlpt_level"
+  end
+
+  create_table "listening_attempts", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.bigint "listening_exercise_id", null: false
+    t.integer "score", null: false
+    t.integer "total_questions", null: false
+    t.float "speech_rate", default: 1.0, null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["listening_exercise_id"], name: "index_listening_attempts_on_listening_exercise_id"
+    t.index ["user_id", "created_at"], name: "index_listening_attempts_on_user_id_and_created_at"
+    t.index ["user_id"], name: "index_listening_attempts_on_user_id"
+  end
+
+  create_table "listening_exercises", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+    t.string "jlpt_level", null: false
+    t.string "topic", null: false
+    t.string "title", null: false
+    t.text "script_ja", null: false
+    t.text "script_vi", null: false
+    t.json "questions", null: false
+    t.boolean "ai_generated", default: true, null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["ai_generated"], name: "index_listening_exercises_on_ai_generated"
+    t.index ["jlpt_level", "topic"], name: "index_listening_exercises_on_jlpt_level_and_topic"
+    t.index ["jlpt_level"], name: "index_listening_exercises_on_jlpt_level"
   end
 
   create_table "reading_passages", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
@@ -205,6 +233,8 @@ ActiveRecord::Schema[7.2].define(version: 2026_05_04_000001) do
   end
 
   add_foreign_key "conversation_sessions", "users"
+  add_foreign_key "listening_attempts", "listening_exercises"
+  add_foreign_key "listening_attempts", "users"
   add_foreign_key "study_logs", "users"
   add_foreign_key "user_card_progresses", "users"
   add_foreign_key "user_vocabulary_progresses", "users"

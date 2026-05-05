@@ -8,6 +8,7 @@ const NAV_ITEMS = [
   { href: "/app/study/flashcard", label: "Học từ vựng" },
   { href: "/app/review",      label: "Ôn tập SRS" },
   { href: "/app/reading",     label: "Đọc hiểu" },
+  { href: "/app/listening",   label: "Nghe hiểu" },
   { href: "/app/grammar",     label: "Ngữ pháp" },
   { href: "/app/conversation",label: "Hội thoại" },
   { href: "/app/vocabulary",  label: "Từ điển" },
