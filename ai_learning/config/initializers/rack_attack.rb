@@ -7,7 +7,15 @@ class Rack::Attack
     /api/v1/grammar
     /api/v1/reading
     /api/v1/reading_passages
+    /api/v1/listening_exercises
+    /api/v1/level_tests
   ].freeze
+
+  # Allow all requests from localhost / Docker internal network in development
+  safelist("allow-localhost") do |req|
+    Rails.env.development? &&
+      (req.ip == "127.0.0.1" || req.ip == "::1" || req.ip.start_with?("172.") || req.ip.start_with?("192.168."))
+  end
 
   # ── IP throttles ─────────────────────────────────────────────────────────
 
