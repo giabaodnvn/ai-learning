@@ -9,10 +9,10 @@ interface Props {
 }
 
 const GRADE_LABELS = [
-  { label: "Quên", color: "bg-red-50 text-red-700", grade: 0 },
-  { label: "Khó",  color: "bg-amber-50 text-amber-700", grade: 1 },
-  { label: "Ổn",   color: "bg-blue-50 text-blue-700", grade: 2 },
-  { label: "Dễ",   color: "bg-green-50 text-green-700", grade: 3 },
+  { label: "Quên",  color: "bg-red-50 border border-red-100 text-red-700",     grade: 0, emoji: "😰" },
+  { label: "Khó",   color: "bg-amber-50 border border-amber-100 text-amber-700", grade: 1, emoji: "😅" },
+  { label: "Ổn",    color: "bg-blue-50 border border-blue-100 text-blue-700",   grade: 2, emoji: "😊" },
+  { label: "Dễ",    color: "bg-emerald-50 border border-emerald-100 text-emerald-700", grade: 3, emoji: "🌟" },
 ] as const;
 
 export function SessionSummary({ onRestart, onBack }: Props) {
@@ -23,53 +23,66 @@ export function SessionSummary({ onRestart, onBack }: Props) {
   const correct  = sessionStats.grades.filter((g) => g >= 2).length;
   const accuracy = total > 0 ? Math.round((correct / total) * 100) : 0;
 
+  const trophy = accuracy >= 80 ? "🏆" : accuracy >= 50 ? "💪" : "📚";
+  const message =
+    accuracy >= 80 ? "Xuất sắc！すごい！" :
+    accuracy >= 50 ? "Tiến bộ tốt！頑張って！" :
+    "Cần luyện thêm！もっと頑張れ！";
+
   function handleRestart() {
     queryClient.invalidateQueries({ queryKey: ["flashcards-due"] });
     onRestart();
   }
 
   return (
-    <div className="rounded-2xl border border-zinc-200 bg-white p-10 text-center space-y-5">
-      <p className="text-5xl">
-        {accuracy >= 80 ? "🏆" : accuracy >= 50 ? "💪" : "📚"}
-      </p>
+    <div className="rounded-2xl border border-stone-200 bg-[#FAF7F2] overflow-hidden shadow-sm">
+      {/* Header gradient bar */}
+      <div className={`h-1.5 ${accuracy >= 80 ? "bg-gradient-to-r from-amber-400 to-yellow-300" : accuracy >= 50 ? "bg-gradient-to-r from-blue-500 to-indigo-400" : "bg-gradient-to-r from-zinc-400 to-stone-300"}`} />
 
-      <div>
-        <h2 className="text-xl font-bold text-zinc-900">
-          Phiên ôn tập hoàn thành!
-        </h2>
-        <p className="mt-1 text-sm text-zinc-500">
-          {total} thẻ đã ôn · Đúng {correct}/{total} ({accuracy}%)
-        </p>
-      </div>
+      <div className="p-10 text-center space-y-5">
+        <div>
+          <p className="text-5xl mb-3">{trophy}</p>
+          <h2 className="text-xl font-bold text-zinc-900">{message}</h2>
+          <p className="mt-1.5 text-sm text-zinc-500">
+            {total} thẻ đã ôn · Độ chính xác <span className="font-bold text-zinc-700">{accuracy}%</span>
+          </p>
+        </div>
 
-      {/* Grade breakdown */}
-      <div className="grid grid-cols-4 gap-2">
-        {GRADE_LABELS.map(({ label, color, grade }) => (
-          <div key={grade} className={`rounded-lg py-3 ${color}`}>
-            <p className="text-2xl font-bold">
-              {sessionStats.grades.filter((g) => g === grade).length}
-            </p>
-            <p className="text-xs mt-0.5">{label}</p>
-          </div>
-        ))}
-      </div>
+        {/* Accuracy ring (simple) */}
+        <div className="flex items-center justify-center gap-2 py-1">
+          <span className="text-3xl font-black text-zinc-900">{correct}</span>
+          <span className="text-sm text-zinc-400">/ {total} đúng</span>
+        </div>
 
-      <div className="flex gap-2">
-        {onBack && (
+        {/* Grade breakdown */}
+        <div className="grid grid-cols-4 gap-2">
+          {GRADE_LABELS.map(({ label, color, grade, emoji }) => (
+            <div key={grade} className={`rounded-xl py-3.5 px-2 ${color}`}>
+              <p className="text-lg">{emoji}</p>
+              <p className="text-xl font-bold mt-0.5">
+                {sessionStats.grades.filter((g) => g === grade).length}
+              </p>
+              <p className="text-[11px] mt-0.5">{label}</p>
+            </div>
+          ))}
+        </div>
+
+        <div className="flex gap-2 pt-1">
+          {onBack && (
+            <button
+              onClick={onBack}
+              className="flex-1 rounded-xl border border-stone-300 bg-white px-4 py-2.5 text-sm font-semibold text-zinc-700 hover:bg-stone-50 transition-colors"
+            >
+              Đổi chế độ
+            </button>
+          )}
           <button
-            onClick={onBack}
-            className="flex-1 rounded-lg border border-zinc-300 px-4 py-2.5 text-sm font-medium text-zinc-700 hover:bg-zinc-50 transition-colors"
+            onClick={handleRestart}
+            className="flex-1 rounded-xl bg-gradient-to-r from-indigo-700 to-indigo-600 px-4 py-2.5 text-sm font-bold text-white hover:from-indigo-800 hover:to-indigo-700 transition-all shadow-sm shadow-indigo-200"
           >
-            Đổi chế độ
+            Ôn tiếp →
           </button>
-        )}
-        <button
-          onClick={handleRestart}
-          className="flex-1 rounded-lg bg-zinc-900 px-4 py-2.5 text-sm font-medium text-white hover:bg-zinc-700 transition-colors"
-        >
-          Ôn tập tiếp
-        </button>
+        </div>
       </div>
     </div>
   );

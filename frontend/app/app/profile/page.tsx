@@ -4,6 +4,8 @@ import { useState } from "react";
 import { useQueryClient, useMutation } from "@tanstack/react-query";
 import { useCurrentUser } from "@/hooks/useCurrentUser";
 import { api } from "@/lib/api";
+import Image from "next/image";
+import coverImage from "@/app/images/4.jpg";
 
 const JLPT_LEVELS = [
   { value: "n5", label: "N5 – Sơ cấp" },
@@ -13,30 +15,41 @@ const JLPT_LEVELS = [
   { value: "n1", label: "N1 – Cao cấp" },
 ];
 
-const VIP_CONFIG: Record<number, { label: string; desc: string; cardClass: string; badgeClass: string }> = {
+const JLPT_JP: Record<string, string> = {
+  n5: "初級", n4: "初中級", n3: "中級", n2: "中上級", n1: "上級",
+};
+
+const VIP_CONFIG: Record<number, {
+  label: string; desc: string;
+  headerClass: string; badgeClass: string; borderClass: string;
+}> = {
   0: {
     label: "Free",
     desc: "Truy cập các tính năng học tập cơ bản.",
-    cardClass: "border-zinc-200 bg-zinc-50",
-    badgeClass: "bg-zinc-100 text-zinc-600",
+    headerClass: "from-zinc-700 to-zinc-500",
+    badgeClass: "bg-zinc-100 text-zinc-700",
+    borderClass: "border-zinc-200",
   },
   1: {
     label: "Basic",
     desc: "Mở khóa thêm bài tập và lịch sử học tập.",
-    cardClass: "border-blue-200 bg-blue-50",
+    headerClass: "from-blue-700 to-blue-500",
     badgeClass: "bg-blue-100 text-blue-700",
+    borderClass: "border-blue-200",
   },
   2: {
     label: "Pro",
     desc: "AI không giới hạn, tất cả bài kiểm tra cấp độ.",
-    cardClass: "border-purple-200 bg-purple-50",
+    headerClass: "from-purple-700 to-violet-500",
     badgeClass: "bg-purple-100 text-purple-700",
+    borderClass: "border-purple-200",
   },
   3: {
     label: "Premium",
     desc: "Toàn quyền truy cập, ưu tiên hỗ trợ.",
-    cardClass: "border-amber-200 bg-amber-50",
+    headerClass: "from-amber-600 to-orange-400",
     badgeClass: "bg-amber-100 text-amber-700",
+    borderClass: "border-amber-200",
   },
 };
 
@@ -79,10 +92,10 @@ export default function ProfilePage() {
 
   if (isLoading) {
     return (
-      <div className="space-y-4">
-        {[1, 2, 3].map((i) => (
-          <div key={i} className="h-28 animate-pulse rounded-2xl bg-zinc-100" />
-        ))}
+      <div className="max-w-2xl space-y-4 animate-pulse">
+        <div className="h-52 rounded-2xl bg-zinc-200" />
+        <div className="h-28 rounded-2xl bg-zinc-100" />
+        <div className="h-44 rounded-2xl bg-zinc-100" />
       </div>
     );
   }
@@ -91,6 +104,8 @@ export default function ProfilePage() {
 
   const vip = VIP_CONFIG[user.vip_level] ?? VIP_CONFIG[0];
   const displayName = name ?? user.name ?? "";
+  const initials = (user.name || user.email)[0].toUpperCase();
+  const isDirty = name !== null && name !== user.name;
 
   function handleSave() {
     setSaveSuccess(false);
@@ -98,125 +113,168 @@ export default function ProfilePage() {
     updateMutation.mutate({ name: displayName });
   }
 
-  const isDirty = name !== null && name !== user.name;
-
   return (
-    <div className="max-w-2xl space-y-5">
-      <h1 className="text-xl font-bold text-zinc-900">Hồ sơ cá nhân</h1>
+    <div className="max-w-2xl space-y-5 animate-slide-up">
 
-      {/* Identity card */}
-      <div className="rounded-2xl border border-zinc-200 bg-white p-6">
-        <div className="flex items-center gap-4 mb-5">
-          <div className="w-14 h-14 rounded-full bg-indigo-100 flex items-center justify-center text-2xl font-bold text-indigo-700">
-            {(user.name || user.email)[0].toUpperCase()}
-          </div>
-          <div>
-            <p className="text-base font-semibold text-zinc-900">{user.name || "(Chưa đặt tên)"}</p>
-            <p className="text-sm text-zinc-500">{user.email}</p>
-            <p className="text-xs text-zinc-400 mt-0.5">Thành viên từ {formatDate(user.created_at)}</p>
+      {/* ── Identity card ─────────────────────────────────── */}
+      <div className="rounded-2xl overflow-hidden border border-zinc-200 bg-white shadow-sm">
+
+        {/* Cover image */}
+        <div className="relative h-44 sm:h-52">
+          <Image
+            src={coverImage}
+            alt="Khu rừng Ghibli"
+            fill
+            className="object-cover object-center"
+            priority
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-indigo-950/40 to-transparent" />
+
+          {/* Name overlay on cover */}
+          <div className="absolute bottom-0 left-0 right-0 px-6 pb-5 flex items-end gap-4">
+            <div className="w-16 h-16 rounded-full bg-indigo-200 flex items-center justify-center text-2xl font-bold text-indigo-800 ring-4 ring-white shadow-lg shrink-0">
+              {initials}
+            </div>
+            <div className="mb-0.5">
+              <p className="text-lg font-bold text-white leading-tight drop-shadow">
+                {user.name || "(Chưa đặt tên)"}
+              </p>
+              <p className="text-xs text-white/70">{user.email}</p>
+            </div>
           </div>
         </div>
 
-        <div className="grid grid-cols-2 gap-3 text-sm">
-          <div className="rounded-xl bg-zinc-50 border border-zinc-100 px-4 py-3">
-            <p className="text-xs text-zinc-400 mb-0.5">Trình độ JLPT</p>
-            <span className="rounded-full bg-indigo-100 px-2 py-0.5 text-xs font-semibold text-indigo-700">
-              {user.jlpt_level.toUpperCase()}
-            </span>
+        {/* Stats row */}
+        <div className="px-6 py-4 flex flex-wrap gap-3">
+          <div className="flex items-center gap-2 rounded-xl bg-indigo-50 border border-indigo-100 px-4 py-2.5">
+            <span className="text-lg leading-none">{JLPT_JP[user.jlpt_level]}</span>
+            <div>
+              <p className="text-[10px] text-indigo-400 leading-none">Trình độ</p>
+              <p className="text-sm font-bold text-indigo-700 leading-tight">
+                {user.jlpt_level.toUpperCase()}
+              </p>
+            </div>
           </div>
-          <div className="rounded-xl bg-zinc-50 border border-zinc-100 px-4 py-3">
-            <p className="text-xs text-zinc-400 mb-0.5">Streak</p>
-            <p className="font-semibold text-orange-500">🔥 {user.streak_count} ngày</p>
+
+          {user.streak_count > 0 && (
+            <div className="flex items-center gap-2 rounded-xl bg-orange-50 border border-orange-100 px-4 py-2.5">
+              <span className="text-lg leading-none">🔥</span>
+              <div>
+                <p className="text-[10px] text-orange-400 leading-none">Streak</p>
+                <p className="text-sm font-bold text-orange-600 leading-tight">
+                  {user.streak_count} ngày
+                </p>
+              </div>
+            </div>
+          )}
+
+          <div className="flex items-center gap-2 rounded-xl bg-zinc-50 border border-zinc-100 px-4 py-2.5">
+            <span className="text-lg leading-none">📅</span>
+            <div>
+              <p className="text-[10px] text-zinc-400 leading-none">Thành viên</p>
+              <p className="text-sm font-bold text-zinc-600 leading-tight">
+                {formatDate(user.created_at)}
+              </p>
+            </div>
           </div>
         </div>
       </div>
 
-      {/* VIP status */}
-      <div className={`rounded-2xl border p-6 ${vip.cardClass}`}>
-        <div className="flex items-start justify-between">
-          <div>
-            <p className="text-xs font-medium text-zinc-500 mb-1">Gói thành viên</p>
-            <span className={`inline-block rounded-full px-3 py-1 text-sm font-bold ${vip.badgeClass}`}>
-              {vip.label}
-            </span>
-            <p className="mt-2 text-sm text-zinc-600">{vip.desc}</p>
-          </div>
-          <div className="text-right space-y-1 shrink-0 ml-4">
-            <div>
-              <p className="text-xs text-zinc-400">Hết hạn</p>
-              <p className="text-sm font-medium text-zinc-700">{formatDate(user.vip_expires_at)}</p>
-            </div>
-            <div>
-              <p className="text-xs text-zinc-400">Số dư</p>
-              <p className="text-sm font-medium text-zinc-700">{formatBalance(user.balance)}</p>
-            </div>
-          </div>
-        </div>
+      {/* ── VIP status card ────────────────────────────────── */}
+      <div className={`rounded-2xl overflow-hidden border ${vip.borderClass} bg-white shadow-sm`}>
+        {/* Gradient header bar */}
+        <div className={`h-1.5 bg-gradient-to-r ${vip.headerClass}`} />
 
-        {/* VIP tier comparison */}
-        {user.vip_level < 3 && (
-          <div className="mt-4 pt-4 border-t border-black/5">
-            <div className="flex gap-2">
-              {Object.entries(VIP_CONFIG).map(([lvl, cfg]) => {
-                const level = Number(lvl);
-                const active = level === user.vip_level;
-                const achieved = level < user.vip_level;
-                return (
+        <div className="p-6">
+          <div className="flex items-start justify-between gap-4">
+            <div>
+              <p className="text-xs text-zinc-400 mb-1.5">Gói thành viên</p>
+              <span className={`inline-block rounded-full px-3 py-1 text-sm font-bold ${vip.badgeClass}`}>
+                {vip.label}
+              </span>
+              <p className="mt-2 text-sm text-zinc-500">{vip.desc}</p>
+            </div>
+            <div className="text-right shrink-0 space-y-2">
+              <div>
+                <p className="text-[10px] text-zinc-400 uppercase tracking-wide">Hết hạn</p>
+                <p className="text-sm font-semibold text-zinc-700">{formatDate(user.vip_expires_at)}</p>
+              </div>
+              <div>
+                <p className="text-[10px] text-zinc-400 uppercase tracking-wide">Số dư</p>
+                <p className="text-sm font-semibold text-zinc-700">{formatBalance(user.balance)}</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Tier progress bar */}
+          <div className="mt-5 flex gap-1.5">
+            {Object.entries(VIP_CONFIG).map(([lvl, cfg]) => {
+              const level = Number(lvl);
+              const active = level === user.vip_level;
+              const achieved = level < user.vip_level;
+              return (
+                <div key={lvl} className="flex-1 text-center">
                   <div
-                    key={lvl}
-                    className={`flex-1 rounded-lg px-2 py-1.5 text-center text-xs font-semibold transition-all ${
+                    className={`h-1.5 rounded-full mb-1.5 ${
                       active
-                        ? cfg.badgeClass + " ring-2 ring-offset-1 ring-current"
+                        ? `bg-gradient-to-r ${cfg.headerClass}`
                         : achieved
-                        ? "bg-zinc-100 text-zinc-400 line-through"
-                        : "bg-white/60 text-zinc-400"
+                        ? "bg-zinc-300"
+                        : "bg-zinc-100"
                     }`}
-                  >
+                  />
+                  <span className={`text-[10px] font-semibold ${
+                    active ? "text-zinc-800" : achieved ? "text-zinc-400 line-through" : "text-zinc-300"
+                  }`}>
                     {cfg.label}
-                  </div>
-                );
-              })}
-            </div>
+                  </span>
+                </div>
+              );
+            })}
           </div>
-        )}
-        {user.vip_level === 3 && (
-          <p className="mt-4 text-xs text-amber-700 font-medium">Bạn đang ở gói cao nhất!</p>
-        )}
+
+          {user.vip_level === 3 && (
+            <p className="mt-3 text-xs text-amber-600 font-medium text-center">
+              ✦ Bạn đang ở gói cao nhất!
+            </p>
+          )}
+        </div>
       </div>
 
-      {/* Edit form */}
-      <div className="rounded-2xl border border-zinc-200 bg-white p-6">
-        <h2 className="text-sm font-semibold text-zinc-700 mb-4">Chỉnh sửa thông tin</h2>
+      {/* ── Edit form ──────────────────────────────────────── */}
+      <div className="rounded-2xl border border-zinc-200 bg-white shadow-sm p-6">
+        <h2 className="text-sm font-semibold text-zinc-800 mb-5">Chỉnh sửa thông tin</h2>
 
         {saveSuccess && (
-          <div className="mb-4 rounded-lg bg-green-50 border border-green-200 px-4 py-2.5 text-sm text-green-700">
+          <div className="mb-4 rounded-xl bg-green-50 border border-green-200 px-4 py-3 text-sm text-green-700">
             Cập nhật thành công.
           </div>
         )}
         {saveError && (
-          <div className="mb-4 rounded-lg bg-red-50 border border-red-200 px-4 py-2.5 text-sm text-red-700">
+          <div className="mb-4 rounded-xl bg-red-50 border border-red-200 px-4 py-3 text-sm text-red-700">
             {saveError}
           </div>
         )}
 
         <div className="space-y-4">
           <div>
-            <label className="block text-xs font-medium text-zinc-600 mb-1">Tên hiển thị</label>
+            <label className="block text-xs font-medium text-zinc-600 mb-1.5">Tên hiển thị</label>
             <input
               type="text"
               value={displayName}
               onChange={(e) => setName(e.target.value)}
               placeholder="Nhập tên của bạn"
-              className="w-full rounded-lg border border-zinc-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"
+              className="w-full rounded-xl border border-zinc-200 bg-white px-4 py-2.5 text-sm outline-none focus:border-indigo-400 focus:ring-2 focus:ring-indigo-100 transition-all"
             />
           </div>
 
           <div>
-            <label className="block text-xs font-medium text-zinc-600 mb-1">Trình độ JLPT</label>
+            <label className="block text-xs font-medium text-zinc-600 mb-1.5">Trình độ JLPT</label>
             <select
               value={user.jlpt_level}
               disabled
-              className="w-full rounded-lg border border-zinc-200 bg-zinc-50 px-3 py-2 text-sm text-zinc-400 cursor-not-allowed"
+              className="w-full rounded-xl border border-zinc-200 bg-zinc-50 px-4 py-2.5 text-sm text-zinc-400 cursor-not-allowed appearance-none"
             >
               {JLPT_LEVELS.map(({ value, label }) => (
                 <option key={value} value={value}>{label}</option>
@@ -226,25 +284,25 @@ export default function ProfilePage() {
           </div>
 
           <div>
-            <label className="block text-xs font-medium text-zinc-600 mb-1">Email</label>
+            <label className="block text-xs font-medium text-zinc-600 mb-1.5">Email</label>
             <input
               type="email"
               value={user.email}
               disabled
-              className="w-full rounded-lg border border-zinc-200 bg-zinc-50 px-3 py-2 text-sm text-zinc-400 cursor-not-allowed"
+              className="w-full rounded-xl border border-zinc-200 bg-zinc-50 px-4 py-2.5 text-sm text-zinc-400 cursor-not-allowed"
             />
-            <p className="mt-1 text-xs text-zinc-400">Email không thể thay đổi.</p>
           </div>
 
           <button
             onClick={handleSave}
             disabled={!isDirty || updateMutation.isPending}
-            className="w-full rounded-lg bg-zinc-900 px-4 py-2 text-sm font-semibold text-white hover:bg-zinc-700 transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
+            className="w-full rounded-xl bg-indigo-700 px-4 py-2.5 text-sm font-semibold text-white hover:bg-indigo-800 transition-colors disabled:opacity-40 disabled:cursor-not-allowed shadow-sm shadow-indigo-200"
           >
             {updateMutation.isPending ? "Đang lưu..." : "Lưu thay đổi"}
           </button>
         </div>
       </div>
+
     </div>
   );
 }

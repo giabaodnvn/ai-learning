@@ -18,11 +18,55 @@ const MODES: {
   desc: string;
   icon: string;
   apiType: string;
+  gradient: string;
+  selectedBorder: string;
+  selectedBg: string;
+  countClass: string;
 }[] = [
-  { mode: "daily",         label: "Hằng ngày",  desc: "Tất cả loại thẻ",  icon: "📅", apiType: "all" },
-  { mode: "vocabulary",    label: "Từ vựng",    desc: "Chỉ từ vựng",       icon: "📝", apiType: "vocabulary" },
-  { mode: "kanji",         label: "Kanji",      desc: "Chỉ chữ Hán",       icon: "漢", apiType: "kanji" },
-  { mode: "grammar_point", label: "Ngữ pháp",   desc: "Chỉ ngữ pháp",      icon: "📖", apiType: "grammar_point" },
+  {
+    mode: "daily",
+    label: "Hằng ngày",
+    desc: "Tất cả loại thẻ",
+    icon: "📅",
+    apiType: "all",
+    gradient: "from-indigo-500 to-indigo-400",
+    selectedBorder: "border-indigo-400",
+    selectedBg: "bg-indigo-50",
+    countClass: "bg-indigo-100 text-indigo-700",
+  },
+  {
+    mode: "vocabulary",
+    label: "Từ vựng",
+    desc: "Chỉ từ vựng",
+    icon: "📝",
+    apiType: "vocabulary",
+    gradient: "from-blue-500 to-sky-400",
+    selectedBorder: "border-blue-400",
+    selectedBg: "bg-blue-50",
+    countClass: "bg-blue-100 text-blue-700",
+  },
+  {
+    mode: "kanji",
+    label: "Kanji",
+    desc: "Chỉ chữ Hán",
+    icon: "漢",
+    apiType: "kanji",
+    gradient: "from-rose-500 to-orange-400",
+    selectedBorder: "border-rose-400",
+    selectedBg: "bg-rose-50",
+    countClass: "bg-rose-100 text-rose-700",
+  },
+  {
+    mode: "grammar_point",
+    label: "Ngữ pháp",
+    desc: "Chỉ ngữ pháp",
+    icon: "✏️",
+    apiType: "grammar_point",
+    gradient: "from-violet-500 to-purple-400",
+    selectedBorder: "border-violet-400",
+    selectedBg: "bg-violet-50",
+    countClass: "bg-violet-100 text-violet-700",
+  },
 ];
 
 function useCardCounts(apiType: string, level?: string) {
@@ -38,7 +82,6 @@ function useCardCounts(apiType: string, level?: string) {
     },
     staleTime: 60_000,
   });
-
   const newCards = useQuery<{ total_new: number }>({
     queryKey: ["flashcards-new-count", apiType, level ?? "all"],
     queryFn: async () => {
@@ -57,60 +100,43 @@ function useCardCounts(apiType: string, level?: string) {
 }
 
 function ModeCard({
-  mode,
-  label,
-  desc,
-  icon,
-  apiType,
-  selected,
-  level,
-  onSelect,
-}: {
-  mode: SessionMode;
-  label: string;
-  desc: string;
-  icon: string;
-  apiType: string;
-  selected: boolean;
-  level?: string;
-  onSelect: () => void;
-}) {
+  mode, label, desc, icon, apiType,
+  gradient, selectedBorder, selectedBg, countClass,
+  selected, level, onSelect,
+}: (typeof MODES)[number] & { selected: boolean; level?: string; onSelect: () => void }) {
   const { due, newCount, total, loading } = useCardCounts(apiType, level);
 
   return (
     <button
       onClick={onSelect}
-      className={`relative rounded-2xl border-2 p-5 text-left transition-all ${
-        selected
-          ? "border-indigo-500 bg-indigo-50 shadow-sm"
-          : "border-zinc-200 bg-white hover:border-zinc-300"
+      className={`relative rounded-2xl border-2 overflow-hidden text-left transition-all duration-200 ${
+        selected ? `${selectedBorder} ${selectedBg} shadow-sm` : "border-stone-200 bg-white hover:border-stone-300 hover:shadow-sm"
       }`}
     >
-      <div className="flex items-start justify-between gap-1">
-        <span className="text-3xl leading-none">{icon}</span>
-        {loading ? (
-          <span className="h-4 w-8 animate-pulse rounded bg-zinc-200" />
-        ) : total > 0 ? (
-          <span className="rounded-full bg-indigo-100 px-2 py-0.5 text-xs font-semibold text-indigo-700">
-            {total}
-          </span>
-        ) : (
-          <span className="rounded-full bg-zinc-100 px-2 py-0.5 text-xs text-zinc-400">
-            Xong
-          </span>
+      {/* Gradient top bar */}
+      <div className={`h-1 bg-gradient-to-r ${gradient} ${selected ? "opacity-100" : "opacity-40"} transition-opacity`} />
+
+      <div className="p-4">
+        <div className="flex items-start justify-between gap-1 mb-3">
+          <span className={`text-2xl leading-none ${icon === "漢" ? "font-black" : ""}`}>{icon}</span>
+          {loading ? (
+            <span className="h-4 w-8 animate-pulse rounded-full bg-stone-200" />
+          ) : total > 0 ? (
+            <span className={`rounded-full px-2 py-0.5 text-xs font-bold ${countClass}`}>{total}</span>
+          ) : (
+            <span className="rounded-full bg-stone-100 px-2 py-0.5 text-xs text-stone-400">✓</span>
+          )}
+        </div>
+        <p className={`text-sm font-bold leading-tight ${selected ? "text-zinc-900" : "text-zinc-700"}`}>{label}</p>
+        <p className="mt-0.5 text-xs text-zinc-400">{desc}</p>
+        {!loading && total > 0 && (
+          <p className="mt-2 text-xs">
+            {due > 0 && <span className="text-amber-600">{due} ôn</span>}
+            {due > 0 && newCount > 0 && <span className="text-zinc-300 mx-1">·</span>}
+            {newCount > 0 && <span className="text-emerald-600">{newCount} mới</span>}
+          </p>
         )}
       </div>
-      <p className={`mt-3 text-sm font-semibold ${selected ? "text-indigo-900" : "text-zinc-800"}`}>
-        {label}
-      </p>
-      <p className="mt-0.5 text-xs text-zinc-500">{desc}</p>
-      {!loading && total > 0 && (
-        <p className="mt-1.5 text-xs text-zinc-400">
-          {due > 0 && <span className="text-amber-600">{due} ôn tập</span>}
-          {due > 0 && newCount > 0 && <span className="mx-1">·</span>}
-          {newCount > 0 && <span className="text-green-600">{newCount} từ mới</span>}
-        </p>
-      )}
     </button>
   );
 }
@@ -123,17 +149,11 @@ export function SessionSelector({ onStart }: Props) {
   const selectedApiType = MODES.find((m) => m.mode === selectedMode)?.apiType ?? "all";
   const { total } = useCardCounts(selectedApiType, level);
 
-  function handleStart() {
-    onStart({ mode: selectedMode, level });
-  }
-
   return (
     <div className="space-y-6">
       <div>
-        <h2 className="text-base font-semibold text-zinc-800">Chọn chế độ học</h2>
-        <p className="text-xs text-zinc-500 mt-0.5">
-          Mỗi phiên gồm thẻ cần ôn tập hôm nay + thẻ mới chưa học
-        </p>
+        <h2 className="text-base font-bold text-zinc-800">Chọn chế độ học</h2>
+        <p className="text-xs text-zinc-500 mt-0.5">Mỗi phiên gồm thẻ cần ôn hôm nay + thẻ mới chưa học</p>
       </div>
 
       {/* Mode grid */}
@@ -151,14 +171,14 @@ export function SessionSelector({ onStart }: Props) {
 
       {/* Level filter */}
       <div>
-        <p className="text-xs font-medium text-zinc-600 mb-2">Lọc theo trình độ (tuỳ chọn)</p>
+        <p className="text-xs font-semibold text-zinc-500 mb-2.5 uppercase tracking-wide">Lọc theo trình độ</p>
         <div className="flex flex-wrap gap-2">
           <button
             onClick={() => setSelectedLevel("")}
-            className={`rounded-full px-3 py-1 text-xs font-medium border transition-colors ${
+            className={`rounded-full border px-3.5 py-1.5 text-xs font-semibold transition-colors ${
               selectedLevel === ""
-                ? "border-indigo-500 bg-indigo-500 text-white"
-                : "border-zinc-200 bg-white text-zinc-600 hover:border-zinc-300"
+                ? "border-indigo-500 bg-indigo-500 text-white shadow-sm"
+                : "border-stone-200 bg-white text-zinc-600 hover:border-stone-300"
             }`}
           >
             Tất cả
@@ -167,10 +187,10 @@ export function SessionSelector({ onStart }: Props) {
             <button
               key={lv}
               onClick={() => setSelectedLevel(lv)}
-              className={`rounded-full px-3 py-1 text-xs font-medium border transition-colors ${
+              className={`rounded-full border px-3.5 py-1.5 text-xs font-semibold transition-colors ${
                 selectedLevel === lv
-                  ? "border-indigo-500 bg-indigo-500 text-white"
-                  : "border-zinc-200 bg-white text-zinc-600 hover:border-zinc-300"
+                  ? "border-indigo-500 bg-indigo-500 text-white shadow-sm"
+                  : "border-stone-200 bg-white text-zinc-600 hover:border-stone-300"
               }`}
             >
               {lv.toUpperCase()}
@@ -181,11 +201,11 @@ export function SessionSelector({ onStart }: Props) {
 
       {/* Start button */}
       <button
-        onClick={handleStart}
+        onClick={() => onStart({ mode: selectedMode, level })}
         disabled={total === 0}
-        className="w-full rounded-xl bg-zinc-900 px-4 py-3 text-sm font-semibold text-white hover:bg-zinc-700 disabled:opacity-40 disabled:cursor-not-allowed transition-colors"
+        className="w-full rounded-xl bg-gradient-to-r from-indigo-700 to-indigo-600 px-4 py-3 text-sm font-bold text-white hover:from-indigo-800 hover:to-indigo-700 disabled:opacity-40 disabled:cursor-not-allowed transition-all shadow-sm shadow-indigo-200"
       >
-        {total > 0 ? `Bắt đầu học (${total} thẻ)` : "Không có thẻ nào — hãy quay lại sau!"}
+        {total > 0 ? `始める — Bắt đầu (${total} thẻ)` : "Không có thẻ — hãy quay lại sau!"}
       </button>
     </div>
   );

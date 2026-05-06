@@ -8,12 +8,12 @@ import { api } from "@/lib/api";
 const LEVELS = ["n5", "n4", "n3", "n2", "n1"] as const;
 type Level = (typeof LEVELS)[number];
 
-const LEVEL_LABELS: Record<Level, string> = {
-  n5: "N5 — Sơ cấp",
-  n4: "N4 — Sơ trung",
-  n3: "N3 — Trung cấp",
-  n2: "N2 — Trung cao",
-  n1: "N1 — Cao cấp",
+const LEVEL_META: Record<Level, { label: string; jp: string; activeClass: string; inactiveClass: string }> = {
+  n5: { label: "N5", jp: "初級",   activeClass: "bg-emerald-600 text-white border-emerald-600 shadow-sm shadow-emerald-200", inactiveClass: "border-emerald-200 text-emerald-700 hover:bg-emerald-50" },
+  n4: { label: "N4", jp: "初中級", activeClass: "bg-blue-600 text-white border-blue-600 shadow-sm shadow-blue-200",         inactiveClass: "border-blue-200 text-blue-700 hover:bg-blue-50" },
+  n3: { label: "N3", jp: "中級",   activeClass: "bg-amber-500 text-white border-amber-500 shadow-sm shadow-amber-200",      inactiveClass: "border-amber-200 text-amber-700 hover:bg-amber-50" },
+  n2: { label: "N2", jp: "中上級", activeClass: "bg-violet-600 text-white border-violet-600 shadow-sm shadow-violet-200",   inactiveClass: "border-violet-200 text-violet-700 hover:bg-violet-50" },
+  n1: { label: "N1", jp: "上級",   activeClass: "bg-rose-600 text-white border-rose-600 shadow-sm shadow-rose-200",         inactiveClass: "border-rose-200 text-rose-700 hover:bg-rose-50" },
 };
 
 interface Kanji {
@@ -34,9 +34,7 @@ interface KanjiResponse {
 }
 
 async function fetchKanjis(level: Level, page: number): Promise<KanjiResponse> {
-  const res = await api.get("/api/v1/kanjis", {
-    params: { level, page, per_page: 30 },
-  });
+  const res = await api.get("/api/v1/kanjis", { params: { level, page, per_page: 30 } });
   return res.data;
 }
 
@@ -54,99 +52,112 @@ export default function KanjiGrid() {
     setPage(1);
   }
 
-  return (
-    <div className="space-y-6">
-      {/* Level tabs */}
-      <div className="flex gap-2 flex-wrap">
-        {LEVELS.map((l) => (
-          <button
-            key={l}
-            onClick={() => handleLevelChange(l)}
-            className={`rounded-full px-4 py-1.5 text-sm font-medium transition-colors ${
-              level === l
-                ? "bg-zinc-900 text-white"
-                : "border border-zinc-300 bg-white text-zinc-600 hover:bg-zinc-50"
-            }`}
-          >
-            {l.toUpperCase()}
-          </button>
-        ))}
-      </div>
+  const meta = LEVEL_META[level];
 
-      {/* Meta */}
-      {data && (
-        <p className="text-sm text-zinc-500">
-          {data.meta.total} chữ kanji {level.toUpperCase()}
-        </p>
-      )}
+  return (
+    <div className="space-y-5">
+
+      {/* Level tabs */}
+      <div className="flex gap-2 flex-wrap items-center">
+        {LEVELS.map((l) => {
+          const m = LEVEL_META[l];
+          return (
+            <button
+              key={l}
+              onClick={() => handleLevelChange(l)}
+              className={`rounded-full border px-4 py-1.5 text-sm font-semibold transition-all duration-150 ${
+                level === l ? m.activeClass : m.inactiveClass
+              }`}
+            >
+              {m.label}
+              <span className={`ml-1.5 text-xs font-normal ${level === l ? "opacity-80" : "opacity-60"}`}>
+                {m.jp}
+              </span>
+            </button>
+          );
+        })}
+        {data && (
+          <span className="ml-auto text-xs text-zinc-400">
+            {data.meta.total} chữ
+          </span>
+        )}
+      </div>
 
       {/* Loading skeleton */}
       {isLoading && (
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
-          {[...Array(12)].map((_, i) => (
-            <div key={i} className="rounded-2xl border border-zinc-200 bg-white p-5 space-y-2 aspect-square">
-              <div className="h-12 animate-pulse rounded bg-zinc-100 w-full" />
-              <div className="h-3 animate-pulse rounded bg-zinc-100 w-full" />
-              <div className="h-3 animate-pulse rounded bg-zinc-100 w-2/3" />
-            </div>
+        <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-5 gap-3">
+          {[...Array(15)].map((_, i) => (
+            <div key={i} className="rounded-2xl bg-stone-100 animate-pulse aspect-square" />
           ))}
         </div>
       )}
 
-      {/* Error */}
       {isError && (
-        <p className="text-sm text-red-600">Không thể tải dữ liệu. Vui lòng thử lại.</p>
+        <p className="text-sm text-red-500 text-center py-8">Không thể tải dữ liệu. Vui lòng thử lại.</p>
       )}
 
-      {/* Grid */}
+      {/* Kanji grid */}
       {data && (
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
-          {data.data.map((kanji) => (
-            <Link
-              key={kanji.id}
-              href={`/app/kanji/${kanji.id}`}
-              className="group rounded-2xl border border-zinc-200 bg-white p-5 hover:border-zinc-400 hover:shadow-sm transition-all flex flex-col items-center justify-center aspect-square"
-            >
-              <p className="text-5xl font-bold text-zinc-900 group-hover:text-zinc-700 mb-2">
-                {kanji.attributes.character}
-              </p>
-              <div className="flex flex-col items-center gap-1 text-xs">
-                {kanji.attributes.onyomi.length > 0 && (
-                  <p className="text-zinc-500">
-                    {kanji.attributes.onyomi.slice(0, 2).join("、")}
-                  </p>
-                )}
-                {kanji.attributes.kunyomi.length > 0 && (
-                  <p className="text-zinc-400">
-                    {kanji.attributes.kunyomi.slice(0, 2).join("、")}
-                  </p>
-                )}
-              </div>
-              <p className="mt-2 text-xs text-zinc-500 text-center line-clamp-1">
-                {kanji.attributes.meaning_vi}
-              </p>
-            </Link>
-          ))}
+        <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-5 gap-3">
+          {data.data.map((kanji) => {
+            const { character, meaning_vi, stroke_count, onyomi, kunyomi } = kanji.attributes;
+            return (
+              <Link
+                key={kanji.id}
+                href={`/app/kanji/${kanji.id}`}
+                className="group relative rounded-2xl border border-stone-200 bg-[#FAF7F2] hover:border-indigo-300 hover:shadow-md hover:scale-[1.03] transition-all duration-200 flex flex-col items-center justify-center aspect-square overflow-hidden p-3"
+              >
+                {/* Stroke count badge */}
+                <span className="absolute top-2 right-2.5 text-[9px] font-semibold text-zinc-400 group-hover:text-indigo-400 transition-colors">
+                  {stroke_count}画
+                </span>
+
+                {/* Main character */}
+                <p className="text-4xl sm:text-5xl font-bold text-zinc-900 group-hover:text-indigo-800 transition-colors leading-none mb-2">
+                  {character}
+                </p>
+
+                {/* Readings */}
+                <div className="flex flex-col items-center gap-0.5 w-full">
+                  {onyomi.length > 0 && (
+                    <p className="text-[10px] font-semibold text-rose-600 truncate w-full text-center leading-tight">
+                      {onyomi.slice(0, 2).join("・")}
+                    </p>
+                  )}
+                  {kunyomi.length > 0 && (
+                    <p className="text-[10px] text-teal-600 truncate w-full text-center leading-tight">
+                      {kunyomi.slice(0, 2).join("・")}
+                    </p>
+                  )}
+                </div>
+
+                {/* Meaning */}
+                <p className="mt-1.5 text-[10px] text-zinc-500 text-center line-clamp-1 w-full">
+                  {meaning_vi}
+                </p>
+              </Link>
+            );
+          })}
         </div>
       )}
 
       {/* Pagination */}
       {data && data.meta.pages > 1 && (
-        <div className="flex items-center justify-center gap-2">
+        <div className="flex items-center justify-center gap-3 pt-2">
           <button
             onClick={() => setPage((p) => Math.max(1, p - 1))}
             disabled={page === 1}
-            className="rounded-lg border border-zinc-300 px-3 py-1.5 text-sm font-medium text-zinc-600 hover:bg-zinc-50 disabled:opacity-40 transition-colors"
+            className={`rounded-full border px-4 py-1.5 text-sm font-medium transition-colors disabled:opacity-30 ${meta.inactiveClass}`}
           >
             ← Trước
           </button>
-          <span className="text-sm text-zinc-500">
+          <span className="text-sm text-zinc-500 tabular-nums">
             {page} / {data.meta.pages}
           </span>
           <button
             onClick={() => setPage((p) => Math.min(data.meta.pages, p + 1))}
             disabled={page === data.meta.pages}
-            className="rounded-lg border border-zinc-300 px-3 py-1.5 text-sm font-medium text-zinc-600 hover:bg-zinc-50 disabled:opacity-40 transition-colors"
+            className={`rounded-full border px-4 py-1.5 text-sm font-medium transition-colors disabled:opacity-30 ${meta.inactiveClass}`}
           >
             Sau →
           </button>
