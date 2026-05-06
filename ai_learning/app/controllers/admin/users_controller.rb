@@ -25,13 +25,7 @@ module Admin
 
     # GET /admin/users/:id
     def show
-      @study_logs  = @user.study_logs.order(studied_on: :desc).limit(14)
-      @ai_logs     = AiUsageLog.where(user_id: @user.id).order(created_at: :desc).limit(10)
-      @card_stats  = {
-        total:   @user.user_card_progresses.count,
-        learned: @user.user_card_progresses.where(learned: true).count,
-        due:     @user.user_card_progresses.where("due_date <= ?", Date.current).count
-      }
+      load_show_data
     end
 
     # PATCH /admin/users/:id
@@ -42,6 +36,7 @@ module Admin
         redirect_to admin_user_path(@user), notice: "Cập nhật thành công."
       else
         flash.now[:alert] = @user.errors.full_messages.to_sentence
+        load_show_data
         render :show, status: :unprocessable_entity
       end
     end
@@ -69,6 +64,16 @@ module Admin
       @user = User.find(params[:id])
     rescue ActiveRecord::RecordNotFound
       redirect_to admin_users_path, alert: "Không tìm thấy user."
+    end
+
+    def load_show_data
+      @study_logs = @user.study_logs.order(studied_on: :desc).limit(14)
+      @ai_logs    = AiUsageLog.where(user_id: @user.id).order(created_at: :desc).limit(10)
+      @card_stats = {
+        total:   @user.user_card_progresses.count,
+        learned: @user.user_card_progresses.where(learned: true).count,
+        due:     @user.user_card_progresses.where("due_date <= ?", Date.current).count
+      }
     end
   end
 end

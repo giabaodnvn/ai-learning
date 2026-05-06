@@ -29,8 +29,9 @@ module AiLearning
     # Skip views, helpers and assets when generating a new resource.
     config.api_only = true
 
-    # Add back cookie/session/flash middleware for the Admin panel (/admin/*)
+    # Add back cookie/session/flash/method-override middleware for the Admin panel (/admin/*)
     # These are excluded by api_only = true but required for browser-based admin UI.
+    config.middleware.use Rack::MethodOverride
     config.middleware.use ActionDispatch::Cookies
     config.middleware.use ActionDispatch::Session::CookieStore,
                           key:    "_ai_learning_admin_session",

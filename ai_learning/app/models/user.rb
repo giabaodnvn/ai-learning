@@ -20,7 +20,7 @@ class User < ApplicationRecord
   has_many :level_test_attempts, dependent: :destroy
   has_many :listening_attempts, dependent: :destroy
 
-  validates :name, presence: true, length: { maximum: 100 }
+  validates :name, length: { maximum: 100 }, allow_blank: true
   validates :jlpt_level, inclusion: { in: JLPT_LEVELS }
   validates :streak_count, numericality: { greater_than_or_equal_to: 0 }
   validates :vip_level, inclusion: { in: VIP_LEVELS.values }

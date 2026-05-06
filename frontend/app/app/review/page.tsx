@@ -103,9 +103,6 @@ export default function ReviewPage() {
         quality,
       });
     },
-    onSuccess: () => {
-      queryClient.invalidateQueries({ queryKey: ["reviewQueue"] });
-    },
   });
 
   const cards = data?.cards ?? [];
@@ -121,6 +118,7 @@ export default function ReviewPage() {
 
     if (currentIndex + 1 >= cards.length) {
       setDone(true);
+      queryClient.invalidateQueries({ queryKey: ["reviewQueue"] });
     } else {
       setCurrentIndex((prev) => prev + 1);
     }
@@ -151,7 +149,7 @@ export default function ReviewPage() {
     );
   }
 
-  if (cards.length === 0 || done) {
+  if (cards.length === 0 || done || !current) {
     const correct = sessionResults.filter((r) => r.quality >= 3).length;
     const total = sessionResults.length;
 

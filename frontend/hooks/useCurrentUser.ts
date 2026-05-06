@@ -2,7 +2,7 @@ import { useSession } from "next-auth/react";
 import { useQuery } from "@tanstack/react-query";
 import { api } from "@/lib/api";
 
-interface CurrentUser {
+export interface CurrentUser {
   id: string;
   name: string;
   email: string;
@@ -10,6 +10,11 @@ interface CurrentUser {
   role: string;
   streak_count: number;
   last_studied_at: string | null;
+  created_at: string;
+  vip_level: number;
+  vip_expires_at: string | null;
+  vip_active: boolean;
+  balance: string;
 }
 
 export function useCurrentUser() {

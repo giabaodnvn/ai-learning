@@ -49,7 +49,8 @@ Rails.application.routes.draw do
         defaults: { format: :json }
 
       namespace :auth do
-        get "me", to: "profiles#show"
+        get   "me", to: "profiles#show"
+        patch "me", to: "profiles#update"
         post "sign_out", to: "sessions#destroy"
       end
 
