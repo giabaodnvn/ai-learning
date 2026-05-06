@@ -57,35 +57,6 @@
     ]
   },
   {
-    "character": "点",
-    "onyomi": [
-      "テン"
-    ],
-    "kunyomi": [
-      "とも.る",
-      "つ.ける"
-    ],
-    "meaning_vi": "điểm, chấm",
-    "stroke_count": 9,
-    "vocab_examples": [
-      {
-        "word": "問題点",
-        "reading": "もんだいてん",
-        "meaning_vi": "điểm vấn đề"
-      },
-      {
-        "word": "観点",
-        "reading": "かんてん",
-        "meaning_vi": "quan điểm"
-      },
-      {
-        "word": "地点",
-        "reading": "ちてん",
-        "meaning_vi": "địa điểm"
-      }
-    ]
-  },
-  {
     "character": "平",
     "onyomi": [
       "ヘイ",
@@ -199,63 +170,6 @@
         "word": "最初",
         "reading": "さいしょ",
         "meaning_vi": "đầu tiên, ban đầu"
-      }
-    ]
-  },
-  {
-    "character": "末",
-    "onyomi": [
-      "マツ",
-      "バツ"
-    ],
-    "kunyomi": [
-      "すえ"
-    ],
-    "meaning_vi": "cuối, ngọn",
-    "stroke_count": 5,
-    "vocab_examples": [
-      {
-        "word": "月末",
-        "reading": "げつまつ",
-        "meaning_vi": "cuối tháng"
-      },
-      {
-        "word": "期末",
-        "reading": "きまつ",
-        "meaning_vi": "cuối kỳ"
-      },
-      {
-        "word": "始末",
-        "reading": "しまつ",
-        "meaning_vi": "đầu đuôi, kết quả"
-      }
-    ]
-  },
-  {
-    "character": "様",
-    "onyomi": [
-      "ヨウ"
-    ],
-    "kunyomi": [
-      "さま"
-    ],
-    "meaning_vi": "dáng, dạng, vẻ",
-    "stroke_count": 14,
-    "vocab_examples": [
-      {
-        "word": "一様",
-        "reading": "いちよう",
-        "meaning_vi": "đồng đều, giống nhau"
-      },
-      {
-        "word": "模様",
-        "reading": "もよう",
-        "meaning_vi": "hoa văn, hình mẫu"
-      },
-      {
-        "word": "同様",
-        "reading": "どうよう",
-        "meaning_vi": "tương tự, cùng loại"
       }
     ]
   },
@@ -659,32 +573,6 @@
         "word": "切符",
         "reading": "きっぷ",
         "meaning_vi": "vé"
-      }
-    ]
-  },
-  {
-    "character": "以",
-    "onyomi": [
-      "イ"
-    ],
-    "kunyomi": [],
-    "meaning_vi": "từ, hơn, dĩ",
-    "stroke_count": 5,
-    "vocab_examples": [
-      {
-        "word": "以外",
-        "reading": "いがい",
-        "meaning_vi": "ngoài ra, ngoài…"
-      },
-      {
-        "word": "以内",
-        "reading": "いない",
-        "meaning_vi": "trong vòng, không quá"
-      },
-      {
-        "word": "以後",
-        "reading": "いご",
-        "meaning_vi": "kể từ đây về sau"
       }
     ]
   },
