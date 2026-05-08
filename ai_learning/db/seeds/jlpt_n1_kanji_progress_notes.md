@@ -4,12 +4,14 @@
 
 ## Final Structure (Verified ✓)
 
-- **Target: 165 kanji N1 level (hoàn thành)**
-- Format: 54-57 kanji per part
-- **Total parts: 3 parts**
+- **Target: 276 kanji N1 level (hoàn thành)**
+- Format: 53-58 kanji per part
+- **Total parts: 5 parts**
 - Part 1: 54 kanji (formal, literary, classical)
 - Part 2: 54 kanji (archaic, rare readings)
 - Part 3: 57 kanji (specialized, complex)
+- **Part 4: 58 kanji (emotional, aesthetic, psychological)**
+- **Part 5: 53 kanji (nature, animals, plants, cultural symbols)**
 
 ## Current Progress
 
@@ -33,13 +35,23 @@
 - Sửa lỗi: Loại bỏ duplicate 徴, thay thế bằng 艦
 - Trạng thái: ✓ Đầy đủ & chính xác
 
+### Part 4 (NEW - Emotional/Aesthetic/Psychological)
+✓ Hoàn thành: 58 kanji (儚, 憤, 懸, 畏, 嘲, 蔑, 彩, 薫, 顕, 翠, 艶, 慄, 悼, 嘆, 峻, 凛, 麗, 粛, 憧, 懐, 慕, 拒, 蒼, 碧, 朧, 霞, 曙, 溺, 脆, 遜, 憐, 眩, 憩, 瞳, 麓, 霧, 嵐, 峰, 渓, 哀, 愁, 悶, 煩, 惚, 惰, 憾, 怨, 妬, 嫉, 侮, 澄, 凄, 憂, 慚, 煌, 幽, 玄)
+- Tập trung: Kanji cảm xúc, thẩm mỹ, tâm lý; kanji thiên nhiên (núi, sương)
+- Trạng thái: ✓ Đầy đủ & chính xác
+
+### Part 5 (NEW - Nature/Animals/Plants/Cultural)
+✓ Hoàn thành: 53 kanji (葛, 茨, 楠, 欅, 椿, 苔, 藍, 桐, 檜, 蔦, 棘, 萌, 菫, 葵, 蒲, 鯛, 鮭, 鰻, 鱈, 鰹, 鯖, 蛸, 蟹, 蝶, 蛙, 蝉, 蛍, 鷲, 鷹, 鴨, 燕, 雉, 鶉, 鷺, 隼, 鳶, 雛, 狼, 獅, 蜘, 蛛, 藤, 楓, 蓮, 槙, 鳳, 龍, 鶴, 亀, 麒, 麟, 蕨, 狐)
+- Tập trung: Kanji cây cối, động vật, chim muông, biểu tượng văn hóa Nhật
+- Trạng thái: ✓ Đầy đủ & chính xác
+
 ## Data Quality Verification ✓
 
-- ✓ Total: 165 kanji (không có duplicate)
+- ✓ Total: 276 kanji (không có duplicate)
 - ✓ Mỗi kanji có đầy đủ fields: character, onyomi, kunyomi, meaning_vi, stroke_count, vocab_examples
 - ✓ Tất cả meaning_vi đều viết tiếng Việt
 - ✓ Mỗi kanji có 2+ vocab examples
-- ✓ Stroke count nằm trong khoảng 5-30
+- ✓ Stroke count nằm trong khoảng 5-24
 
 ## Sửa Lỗi Chi Tiết (2026-05-04)
 
@@ -52,10 +64,12 @@
 
 ## Summary
 
-**Total N1 Kanji: 165 kanji ✓**
+**Total N1 Kanji: 276 kanji ✓**
 - Part 1: 54 kanji (Formal/Literary/Classical) ✓
 - Part 2: 54 kanji (Archaic/Rare Readings) ✓
 - Part 3: 57 kanji (Specialized/Complex) ✓
+- Part 4: 58 kanji (Emotional/Aesthetic/Psychological) ✓
+- Part 5: 53 kanji (Nature/Animals/Plants/Cultural) ✓
 
 Status: ✓ **Đầy đủ, chính xác, không có duplicate**
 

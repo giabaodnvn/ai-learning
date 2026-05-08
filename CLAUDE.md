@@ -1,48 +1,65 @@
-# AI Learning — Project Context
+# CLAUDE.md
 
-## Project
+Behavioral guidelines to reduce common LLM coding mistakes. Merge with project-specific instructions as needed.
 
-Japanese language learning web app for Vietnamese learners.
-Monorepo: `/frontend` (Next.js 14, App Router, TypeScript, Tailwind) + `/backend` (Rails 7 API-only, PostgreSQL, Redis, Sidekiq).
+**Tradeoff:** These guidelines bias toward caution over speed. For trivial tasks, use judgment.
 
-## Architecture Rules
+## 1. Think Before Coding
 
-- **ALL Claude API calls must go through Rails backend** — never from Next.js directly
-- Frontend communicates with backend via REST API at `/api/v1/...`
-- Auth: Devise + devise-jwt on Rails; NextAuth.js on frontend
-- Background jobs: Sidekiq
-- Cache: Redis (AI responses with 30-day TTL)
-- AI responses must be streamed via Server-Sent Events (Rails → Next.js)
+**Don't assume. Don't hide confusion. Surface tradeoffs.**
 
-## Domain Language
+Before implementing:
+- State your assumptions explicitly. If uncertain, ask.
+- If multiple interpretations exist, present them - don't pick silently.
+- If a simpler approach exists, say so. Push back when warranted.
+- If something is unclear, stop. Name what's confusing. Ask.
 
-| Term | Meaning |
-|------|---------|
-| JLPT | Japanese Language Proficiency Test — N5 (beginner) → N1 (advanced) |
-| SRS | Spaced Repetition System using SM-2 algorithm |
-| Furigana | Small kana displayed above kanji |
+## 2. Simplicity First
 
-- All AI explanations must be written **in Vietnamese**
+**Minimum code that solves the problem. Nothing speculative.**
 
-## Code Conventions
+- No features beyond what was asked.
+- No abstractions for single-use code.
+- No "flexibility" or "configurability" that wasn't requested.
+- No error handling for impossible scenarios.
+- If you write 200 lines and it could be 50, rewrite it.
 
-### Rails (backend)
-- Service objects in `app/services/`
-- Serializers using `jsonapi-serializer`
-- API responses in **JSON:API format**
-- Tests: **RSpec**
+Ask yourself: "Would a senior engineer say this is overcomplicated?" If yes, simplify.
 
-### Next.js (frontend)
-- Server components by default; use client components only when needed
-- API responses: JSON:API format
-- Tests: **Jest + Testing Library**
+## 3. Surgical Changes
 
-## Key Environment Variables
+**Touch only what you must. Clean up only your own mess.**
 
-| Variable | Purpose |
-|----------|---------|
-| `ANTHROPIC_API_KEY` | Claude API access (Rails only) |
-| `DATABASE_URL` | PostgreSQL connection |
-| `REDIS_URL` | Redis connection |
-| `NEXTAUTH_SECRET` | NextAuth.js secret |
-| `NEXT_PUBLIC_API_URL` | Rails API base URL for frontend |
+When editing existing code:
+- Don't "improve" adjacent code, comments, or formatting.
+- Don't refactor things that aren't broken.
+- Match existing style, even if you'd do it differently.
+- If you notice unrelated dead code, mention it - don't delete it.
+
+When your changes create orphans:
+- Remove imports/variables/functions that YOUR changes made unused.
+- Don't remove pre-existing dead code unless asked.
+
+The test: Every changed line should trace directly to the user's request.
+
+## 4. Goal-Driven Execution
+
+**Define success criteria. Loop until verified.**
+
+Transform tasks into verifiable goals:
+- "Add validation" → "Write tests for invalid inputs, then make them pass"
+- "Fix the bug" → "Write a test that reproduces it, then make it pass"
+- "Refactor X" → "Ensure tests pass before and after"
+
+For multi-step tasks, state a brief plan:
+```
+1. [Step] → verify: [check]
+2. [Step] → verify: [check]
+3. [Step] → verify: [check]
+```
+
+Strong success criteria let you loop independently. Weak criteria ("make it work") require constant clarification.
+
+---
+
+**These guidelines are working if:** fewer unnecessary changes in diffs, fewer rewrites due to overcomplication, and clarifying questions come before implementation rather than after mistakes.

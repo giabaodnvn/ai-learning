@@ -1,0 +1,640 @@
+[
+  {
+    "character": "儚",
+    "onyomi": ["ボウ"],
+    "kunyomi": ["はかな.い"],
+    "meaning_vi": "phù du, mong manh, không bền lâu",
+    "stroke_count": 11,
+    "vocab_examples": [
+      {"word": "儚い命", "reading": "はかないいのち", "meaning_vi": "sinh mạng mong manh"},
+      {"word": "儚い夢", "reading": "はかないゆめ", "meaning_vi": "giấc mộng phù du"}
+    ]
+  },
+  {
+    "character": "憤",
+    "onyomi": ["フン"],
+    "kunyomi": ["いきどお.る"],
+    "meaning_vi": "phẫn nộ, tức giận sâu sắc",
+    "stroke_count": 16,
+    "vocab_examples": [
+      {"word": "憤慨", "reading": "ふんがい", "meaning_vi": "phẫn uất, bất bình"},
+      {"word": "義憤", "reading": "ぎふん", "meaning_vi": "phẫn nộ chính đáng, nghĩa phẫn"}
+    ]
+  },
+  {
+    "character": "懸",
+    "onyomi": ["ケン", "ケ"],
+    "kunyomi": ["か.ける", "か.かる"],
+    "meaning_vi": "treo lên, gắn liền; đặt cược; lo lắng",
+    "stroke_count": 20,
+    "vocab_examples": [
+      {"word": "懸念", "reading": "けねん", "meaning_vi": "lo ngại, mối lo lắng"},
+      {"word": "懸命", "reading": "けんめい", "meaning_vi": "hết sức cố gắng, dốc toàn lực"}
+    ]
+  },
+  {
+    "character": "畏",
+    "onyomi": ["イ"],
+    "kunyomi": ["おそ.れる", "かしこ.む"],
+    "meaning_vi": "kính sợ, khâm phục với nỗi sợ hãi",
+    "stroke_count": 9,
+    "vocab_examples": [
+      {"word": "畏敬", "reading": "いけい", "meaning_vi": "kính sợ, tôn trọng"},
+      {"word": "畏怖", "reading": "いふ", "meaning_vi": "khiếp sợ, nỗi kinh hoàng"}
+    ]
+  },
+  {
+    "character": "嘲",
+    "onyomi": ["チョウ"],
+    "kunyomi": ["あざけ.る"],
+    "meaning_vi": "chế giễu, nhạo báng, chế nhạo",
+    "stroke_count": 15,
+    "vocab_examples": [
+      {"word": "嘲笑", "reading": "ちょうしょう", "meaning_vi": "cười chế giễu, nhạo báng"},
+      {"word": "嘲弄", "reading": "ちょうろう", "meaning_vi": "chế giễu, trêu chọc"}
+    ]
+  },
+  {
+    "character": "蔑",
+    "onyomi": ["ベツ"],
+    "kunyomi": ["さげす.む"],
+    "meaning_vi": "khinh thường, coi thường, xem nhẹ",
+    "stroke_count": 14,
+    "vocab_examples": [
+      {"word": "侮蔑", "reading": "ぶべつ", "meaning_vi": "khinh bỉ, coi thường"},
+      {"word": "蔑視", "reading": "べっし", "meaning_vi": "nhìn khinh thường, xem nhẹ"}
+    ]
+  },
+  {
+    "character": "彩",
+    "onyomi": ["サイ"],
+    "kunyomi": ["いろど.る"],
+    "meaning_vi": "tô màu, trang trí; màu sắc",
+    "stroke_count": 11,
+    "vocab_examples": [
+      {"word": "色彩", "reading": "しきさい", "meaning_vi": "màu sắc, sắc màu"},
+      {"word": "彩色", "reading": "さいしき", "meaning_vi": "tô màu, vẽ màu"}
+    ]
+  },
+  {
+    "character": "薫",
+    "onyomi": ["クン"],
+    "kunyomi": ["かお.る"],
+    "meaning_vi": "thơm, có mùi hương dễ chịu; hun khói",
+    "stroke_count": 16,
+    "vocab_examples": [
+      {"word": "薫風", "reading": "くんぷう", "meaning_vi": "gió thơm (gió mát mùa hè)"},
+      {"word": "薫陶", "reading": "くんとう", "meaning_vi": "giáo dưỡng, trau dồi phẩm cách"}
+    ]
+  },
+  {
+    "character": "顕",
+    "onyomi": ["ケン"],
+    "kunyomi": ["あきらか", "あら.われる"],
+    "meaning_vi": "rõ ràng, nổi bật, biểu lộ",
+    "stroke_count": 18,
+    "vocab_examples": [
+      {"word": "顕著", "reading": "けんちょ", "meaning_vi": "nổi bật, rõ ràng"},
+      {"word": "顕在", "reading": "けんざい", "meaning_vi": "hiện tồn, hiện hữu thực sự"}
+    ]
+  },
+  {
+    "character": "拙",
+    "onyomi": ["セツ"],
+    "kunyomi": ["つたな.い"],
+    "meaning_vi": "vụng về, kém cỏi, thiếu kỹ năng",
+    "stroke_count": 8,
+    "vocab_examples": [
+      {"word": "拙劣", "reading": "せつれつ", "meaning_vi": "vụng về tồi tệ, kém cỏi"},
+      {"word": "稚拙", "reading": "ちせつ", "meaning_vi": "ngây thơ và vụng về (như trẻ con)"}
+    ]
+  },
+  {
+    "character": "翠",
+    "onyomi": ["スイ"],
+    "kunyomi": ["みどり"],
+    "meaning_vi": "màu xanh ngọc bích, màu xanh lục tươi",
+    "stroke_count": 14,
+    "vocab_examples": [
+      {"word": "翠玉", "reading": "すいぎょく", "meaning_vi": "ngọc bích (emerald)"},
+      {"word": "翠緑", "reading": "すいりょく", "meaning_vi": "màu xanh lục ngọc"}
+    ]
+  },
+  {
+    "character": "艶",
+    "onyomi": ["エン"],
+    "kunyomi": ["つや", "あで.やか"],
+    "meaning_vi": "bóng láng, lộng lẫy; quyến rũ",
+    "stroke_count": 19,
+    "vocab_examples": [
+      {"word": "艶やか", "reading": "あでやか", "meaning_vi": "rực rỡ, lộng lẫy"},
+      {"word": "艶消し", "reading": "つやけし", "meaning_vi": "mờ (không bóng), làm mất vẻ đẹp"}
+    ]
+  },
+  {
+    "character": "慄",
+    "onyomi": ["リツ"],
+    "kunyomi": ["おのの.く"],
+    "meaning_vi": "run rẩy (vì sợ hãi hoặc lạnh), rùng mình",
+    "stroke_count": 13,
+    "vocab_examples": [
+      {"word": "戦慄", "reading": "せんりつ", "meaning_vi": "run sợ, khiếp đảm"},
+      {"word": "慄然", "reading": "りつぜん", "meaning_vi": "rùng mình vì kinh sợ"}
+    ]
+  },
+  {
+    "character": "悼",
+    "onyomi": ["トウ"],
+    "kunyomi": ["いた.む"],
+    "meaning_vi": "thương tiếc người đã mất, ai điếu",
+    "stroke_count": 11,
+    "vocab_examples": [
+      {"word": "哀悼", "reading": "あいとう", "meaning_vi": "ai điếu, thương tiếc người mất"},
+      {"word": "追悼", "reading": "ついとう", "meaning_vi": "tưởng niệm, tưởng nhớ người mất"}
+    ]
+  },
+  {
+    "character": "嘆",
+    "onyomi": ["タン"],
+    "kunyomi": ["なげ.く", "なげ.かわしい"],
+    "meaning_vi": "than thở, than vãn; kinh ngạc thán phục",
+    "stroke_count": 13,
+    "vocab_examples": [
+      {"word": "嘆息", "reading": "たんそく", "meaning_vi": "thở dài than thở"},
+      {"word": "感嘆", "reading": "かんたん", "meaning_vi": "kinh ngạc thán phục"}
+    ]
+  },
+  {
+    "character": "峻",
+    "onyomi": ["シュン"],
+    "kunyomi": ["けわ.しい"],
+    "meaning_vi": "dốc đứng, hiểm trở; nghiêm khắc",
+    "stroke_count": 10,
+    "vocab_examples": [
+      {"word": "峻険", "reading": "しゅんけん", "meaning_vi": "hiểm trở, dốc đứng nguy hiểm"},
+      {"word": "峻厳", "reading": "しゅんげん", "meaning_vi": "nghiêm khắc tột bậc, cứng rắn"}
+    ]
+  },
+  {
+    "character": "凛",
+    "onyomi": ["リン"],
+    "kunyomi": [],
+    "meaning_vi": "lạnh lẽo; oai nghiêm, khí phách",
+    "stroke_count": 15,
+    "vocab_examples": [
+      {"word": "凛々しい", "reading": "りりしい", "meaning_vi": "oai nghiêm, khí phách (dáng vẻ)"},
+      {"word": "凛然", "reading": "りんぜん", "meaning_vi": "uy nghiêm, đĩnh đạc"}
+    ]
+  },
+  {
+    "character": "麗",
+    "onyomi": ["レイ"],
+    "kunyomi": ["うるわ.しい"],
+    "meaning_vi": "xinh đẹp, rực rỡ, lộng lẫy",
+    "stroke_count": 19,
+    "vocab_examples": [
+      {"word": "美麗", "reading": "びれい", "meaning_vi": "đẹp đẽ, mỹ lệ"},
+      {"word": "麗しい", "reading": "うるわしい", "meaning_vi": "xinh đẹp, lộng lẫy"}
+    ]
+  },
+  {
+    "character": "粛",
+    "onyomi": ["シュク"],
+    "kunyomi": ["つつし.む"],
+    "meaning_vi": "trang nghiêm, uy nghiêm; nghiêm chỉnh",
+    "stroke_count": 11,
+    "vocab_examples": [
+      {"word": "粛清", "reading": "しゅくせい", "meaning_vi": "thanh trừng, loại bỏ"},
+      {"word": "厳粛", "reading": "げんしゅく", "meaning_vi": "nghiêm trang, trang trọng"}
+    ]
+  },
+  {
+    "character": "憧",
+    "onyomi": ["ショウ", "ドウ"],
+    "kunyomi": ["あこが.れる"],
+    "meaning_vi": "khát vọng, mơ ước, ngưỡng mộ",
+    "stroke_count": 15,
+    "vocab_examples": [
+      {"word": "憧れ", "reading": "あこがれ", "meaning_vi": "khát vọng, sự ngưỡng mộ"},
+      {"word": "憧憬", "reading": "しょうけい", "meaning_vi": "nỗi khao khát, sự ngưỡng mộ tha thiết"}
+    ]
+  },
+  {
+    "character": "懐",
+    "onyomi": ["カイ"],
+    "kunyomi": ["なつ.く", "なつ.かしい", "ふところ"],
+    "meaning_vi": "hoài niệm, nhớ thương; túi ngực; ôm ấp",
+    "stroke_count": 16,
+    "vocab_examples": [
+      {"word": "懐かしい", "reading": "なつかしい", "meaning_vi": "gợi nhớ, hoài niệm"},
+      {"word": "懐疑", "reading": "かいぎ", "meaning_vi": "hoài nghi, ngờ vực"}
+    ]
+  },
+  {
+    "character": "慕",
+    "onyomi": ["ボ"],
+    "kunyomi": ["した.う"],
+    "meaning_vi": "nhớ thương, yêu mến, ngưỡng mộ",
+    "stroke_count": 14,
+    "vocab_examples": [
+      {"word": "慕情", "reading": "ぼじょう", "meaning_vi": "nỗi nhớ thương, tình cảm yêu mến"},
+      {"word": "思慕", "reading": "しぼ", "meaning_vi": "nhớ nhung, tưởng nhớ"}
+    ]
+  },
+  {
+    "character": "拒",
+    "onyomi": ["キョ"],
+    "kunyomi": ["こば.む"],
+    "meaning_vi": "từ chối, khước từ, cự tuyệt",
+    "stroke_count": 8,
+    "vocab_examples": [
+      {"word": "拒否", "reading": "きょひ", "meaning_vi": "từ chối, phủ nhận"},
+      {"word": "拒絶", "reading": "きょぜつ", "meaning_vi": "khước từ, tuyệt giao"}
+    ]
+  },
+  {
+    "character": "蒼",
+    "onyomi": ["ソウ"],
+    "kunyomi": ["あお.い"],
+    "meaning_vi": "màu xanh lam nhạt; xanh xao, tái nhợt",
+    "stroke_count": 13,
+    "vocab_examples": [
+      {"word": "蒼白", "reading": "そうはく", "meaning_vi": "tái nhợt, xanh xao"},
+      {"word": "蒼天", "reading": "そうてん", "meaning_vi": "bầu trời xanh, thiên đình"}
+    ]
+  },
+  {
+    "character": "碧",
+    "onyomi": ["ヘキ"],
+    "kunyomi": ["みどり", "あお"],
+    "meaning_vi": "màu xanh ngọc lam, xanh biển sâu",
+    "stroke_count": 14,
+    "vocab_examples": [
+      {"word": "碧空", "reading": "へきくう", "meaning_vi": "bầu trời xanh thẳm"},
+      {"word": "碧玉", "reading": "へきぎょく", "meaning_vi": "ngọc bích, đá quý màu xanh"}
+    ]
+  },
+  {
+    "character": "朧",
+    "onyomi": ["ロウ"],
+    "kunyomi": ["おぼろ"],
+    "meaning_vi": "mờ nhạt, lờ mờ, không rõ ràng (như ánh trăng qua sương)",
+    "stroke_count": 20,
+    "vocab_examples": [
+      {"word": "朧月夜", "reading": "おぼろづきよ", "meaning_vi": "đêm trăng mờ ảo"},
+      {"word": "朧気", "reading": "おぼろげ", "meaning_vi": "mơ hồ, lờ mờ, không rõ ràng"}
+    ]
+  },
+  {
+    "character": "霞",
+    "onyomi": ["カ"],
+    "kunyomi": ["かすみ", "かす.む"],
+    "meaning_vi": "sương mù nhẹ (mùa xuân), mờ ảo",
+    "stroke_count": 17,
+    "vocab_examples": [
+      {"word": "霞がかかる", "reading": "かすみがかかる", "meaning_vi": "có màn sương bao phủ"},
+      {"word": "朝霞", "reading": "あさがすみ", "meaning_vi": "sương mai buổi sáng"}
+    ]
+  },
+  {
+    "character": "曙",
+    "onyomi": ["ショ"],
+    "kunyomi": ["あけぼの"],
+    "meaning_vi": "bình minh, lúc trời vừa sáng",
+    "stroke_count": 17,
+    "vocab_examples": [
+      {"word": "曙光", "reading": "しょこう", "meaning_vi": "ánh bình minh; tia hy vọng"},
+      {"word": "曙色", "reading": "あけぼのいろ", "meaning_vi": "màu bầu trời lúc bình minh (hồng nhạt)"}
+    ]
+  },
+  {
+    "character": "溺",
+    "onyomi": ["デキ"],
+    "kunyomi": ["おぼ.れる"],
+    "meaning_vi": "chết đuối, đắm chìm; mê đắm quá mức",
+    "stroke_count": 13,
+    "vocab_examples": [
+      {"word": "溺愛", "reading": "できあい", "meaning_vi": "yêu chiều thái quá, cưng nựng"},
+      {"word": "溺死", "reading": "できし", "meaning_vi": "chết đuối"}
+    ]
+  },
+  {
+    "character": "脆",
+    "onyomi": ["ゼイ"],
+    "kunyomi": ["もろ.い"],
+    "meaning_vi": "mong manh, dễ vỡ; yếu đuối",
+    "stroke_count": 10,
+    "vocab_examples": [
+      {"word": "脆弱", "reading": "ぜいじゃく", "meaning_vi": "dễ bị tổn thương, yếu đuối"},
+      {"word": "脆い心", "reading": "もろいこころ", "meaning_vi": "tâm hồn mong manh, dễ vỡ"}
+    ]
+  },
+  {
+    "character": "遜",
+    "onyomi": ["ソン"],
+    "kunyomi": ["したが.う", "へりくだ.る"],
+    "meaning_vi": "khiêm tốn, nhường nhịn; thua kém",
+    "stroke_count": 13,
+    "vocab_examples": [
+      {"word": "謙遜", "reading": "けんそん", "meaning_vi": "khiêm tốn, khiêm nhường"},
+      {"word": "遜色", "reading": "そんしょく", "meaning_vi": "kém hơn, thua kém"}
+    ]
+  },
+  {
+    "character": "憐",
+    "onyomi": ["レン"],
+    "kunyomi": ["あわ.れむ", "あわ.れ"],
+    "meaning_vi": "thương xót, trắc ẩn, cảm thương",
+    "stroke_count": 16,
+    "vocab_examples": [
+      {"word": "憐憫", "reading": "れんびん", "meaning_vi": "thương xót, lòng trắc ẩn"},
+      {"word": "可憐", "reading": "かれん", "meaning_vi": "đáng thương, đáng yêu và tội nghiệp"}
+    ]
+  },
+  {
+    "character": "眩",
+    "onyomi": ["ゲン"],
+    "kunyomi": ["くら.む", "まぶ.しい"],
+    "meaning_vi": "chóng mặt, hoa mắt; chói lóa",
+    "stroke_count": 10,
+    "vocab_examples": [
+      {"word": "眩暈", "reading": "めまい", "meaning_vi": "chóng mặt, choáng váng"},
+      {"word": "眩しい", "reading": "まぶしい", "meaning_vi": "chói mắt, chói sáng"}
+    ]
+  },
+  {
+    "character": "憩",
+    "onyomi": ["ケイ"],
+    "kunyomi": ["いこ.う"],
+    "meaning_vi": "nghỉ ngơi, thư giãn",
+    "stroke_count": 16,
+    "vocab_examples": [
+      {"word": "休憩", "reading": "きゅうけい", "meaning_vi": "nghỉ ngơi, giải lao"},
+      {"word": "憩いの場", "reading": "いこいのば", "meaning_vi": "nơi nghỉ ngơi, nơi thư giãn"}
+    ]
+  },
+  {
+    "character": "瞳",
+    "onyomi": ["ドウ"],
+    "kunyomi": ["ひとみ"],
+    "meaning_vi": "con ngươi mắt, đồng tử; ánh mắt",
+    "stroke_count": 17,
+    "vocab_examples": [
+      {"word": "瞳孔", "reading": "どうこう", "meaning_vi": "đồng tử mắt"},
+      {"word": "青い瞳", "reading": "あおいひとみ", "meaning_vi": "đôi mắt màu xanh"}
+    ]
+  },
+  {
+    "character": "麓",
+    "onyomi": ["ロク"],
+    "kunyomi": ["ふもと"],
+    "meaning_vi": "chân núi",
+    "stroke_count": 19,
+    "vocab_examples": [
+      {"word": "山麓", "reading": "さんろく", "meaning_vi": "chân núi, dưới chân núi"},
+      {"word": "麓の村", "reading": "ふもとのむら", "meaning_vi": "làng ở chân núi"}
+    ]
+  },
+  {
+    "character": "霧",
+    "onyomi": ["ム"],
+    "kunyomi": ["きり"],
+    "meaning_vi": "sương mù dày đặc",
+    "stroke_count": 19,
+    "vocab_examples": [
+      {"word": "霧雨", "reading": "きりさめ", "meaning_vi": "mưa mù, mưa phùn dày đặc"},
+      {"word": "霧散", "reading": "むさん", "meaning_vi": "tan biến như sương, tiêu tan"}
+    ]
+  },
+  {
+    "character": "嵐",
+    "onyomi": ["ラン"],
+    "kunyomi": ["あらし"],
+    "meaning_vi": "bão, cơn giông tố dữ dội",
+    "stroke_count": 12,
+    "vocab_examples": [
+      {"word": "嵐の夜", "reading": "あらしのよる", "meaning_vi": "đêm bão tố"},
+      {"word": "政界の嵐", "reading": "せいかいのあらし", "meaning_vi": "bão tố chính trị (nghĩa bóng)"}
+    ]
+  },
+  {
+    "character": "峰",
+    "onyomi": ["ホウ"],
+    "kunyomi": ["みね"],
+    "meaning_vi": "đỉnh núi, ngọn núi",
+    "stroke_count": 10,
+    "vocab_examples": [
+      {"word": "山峰", "reading": "さんぽう", "meaning_vi": "đỉnh núi"},
+      {"word": "峰々", "reading": "みねみね", "meaning_vi": "các đỉnh núi"}
+    ]
+  },
+  {
+    "character": "渓",
+    "onyomi": ["ケイ"],
+    "kunyomi": ["たに"],
+    "meaning_vi": "hẻm núi, suối trong thung lũng",
+    "stroke_count": 11,
+    "vocab_examples": [
+      {"word": "渓谷", "reading": "けいこく", "meaning_vi": "hẻm núi, thung lũng hẹp"},
+      {"word": "渓流", "reading": "けいりゅう", "meaning_vi": "suối trong thung lũng"}
+    ]
+  },
+  {
+    "character": "哀",
+    "onyomi": ["アイ"],
+    "kunyomi": ["あわ.れ", "あわ.れむ", "かな.しい"],
+    "meaning_vi": "buồn thương, xót xa; đáng thương",
+    "stroke_count": 9,
+    "vocab_examples": [
+      {"word": "哀愁", "reading": "あいしゅう", "meaning_vi": "nỗi buồn man mác, sầu muộn"},
+      {"word": "哀悼", "reading": "あいとう", "meaning_vi": "ai điếu, thương tiếc người mất"}
+    ]
+  },
+  {
+    "character": "愁",
+    "onyomi": ["シュウ"],
+    "kunyomi": ["うれ.える", "うれ.い"],
+    "meaning_vi": "buồn rầu, ưu sầu, nỗi lo âu",
+    "stroke_count": 13,
+    "vocab_examples": [
+      {"word": "哀愁", "reading": "あいしゅう", "meaning_vi": "nỗi buồn man mác"},
+      {"word": "旅愁", "reading": "りょしゅう", "meaning_vi": "nỗi buồn lữ khách, cô đơn khi đi xa"}
+    ]
+  },
+  {
+    "character": "悶",
+    "onyomi": ["モン"],
+    "kunyomi": ["もだ.える", "もん.する"],
+    "meaning_vi": "đau khổ, quằn quại trong đau đớn hoặc lo âu",
+    "stroke_count": 12,
+    "vocab_examples": [
+      {"word": "苦悶", "reading": "くもん", "meaning_vi": "đau khổ quằn quại, khổ sở"},
+      {"word": "悶絶", "reading": "もんぜつ", "meaning_vi": "ngất xỉu vì đau đớn"}
+    ]
+  },
+  {
+    "character": "煩",
+    "onyomi": ["ハン", "ボン"],
+    "kunyomi": ["わずら.う", "わずら.わしい"],
+    "meaning_vi": "phiền não, lo lắng; rắc rối, phiền phức",
+    "stroke_count": 13,
+    "vocab_examples": [
+      {"word": "煩悩", "reading": "ぼんのう", "meaning_vi": "phiền não, dục vọng (Phật giáo)"},
+      {"word": "煩わしい", "reading": "わずらわしい", "meaning_vi": "phiền phức, rắc rối"}
+    ]
+  },
+  {
+    "character": "惚",
+    "onyomi": ["コツ"],
+    "kunyomi": ["ほ.れる", "とぼ.ける"],
+    "meaning_vi": "say mê, mê đắm; giả vờ không biết",
+    "stroke_count": 11,
+    "vocab_examples": [
+      {"word": "惚れる", "reading": "ほれる", "meaning_vi": "say mê, yêu đắm say"},
+      {"word": "惚け", "reading": "ぼけ", "meaning_vi": "lẫn lộn (tuổi già); giả vờ ngây thơ"}
+    ]
+  },
+  {
+    "character": "惰",
+    "onyomi": ["ダ"],
+    "kunyomi": ["おこた.る"],
+    "meaning_vi": "lười biếng, thụ động, buông thả",
+    "stroke_count": 12,
+    "vocab_examples": [
+      {"word": "惰性", "reading": "だせい", "meaning_vi": "quán tính; thói quen thụ động"},
+      {"word": "怠惰", "reading": "たいだ", "meaning_vi": "lười biếng, trì trệ"}
+    ]
+  },
+  {
+    "character": "憾",
+    "onyomi": ["カン"],
+    "kunyomi": ["うら.む"],
+    "meaning_vi": "tiếc nuối, ân hận; oán giận",
+    "stroke_count": 16,
+    "vocab_examples": [
+      {"word": "遺憾", "reading": "いかん", "meaning_vi": "đáng tiếc, rất tiếc (biểu đạt chính thức)"},
+      {"word": "慚愧遺憾", "reading": "ざんきいかん", "meaning_vi": "hổ thẹn và đáng tiếc"}
+    ]
+  },
+  {
+    "character": "怨",
+    "onyomi": ["エン", "オン"],
+    "kunyomi": ["うら.む", "うら.めしい"],
+    "meaning_vi": "oán giận, thù hận, oán thù",
+    "stroke_count": 9,
+    "vocab_examples": [
+      {"word": "怨恨", "reading": "えんこん", "meaning_vi": "oán hận sâu sắc, thù hằn"},
+      {"word": "怨霊", "reading": "おんりょう", "meaning_vi": "hồn ma oán thù"}
+    ]
+  },
+  {
+    "character": "妬",
+    "onyomi": ["ト"],
+    "kunyomi": ["ねた.む", "そね.む"],
+    "meaning_vi": "ghen tuông, đố kỵ (chủ yếu về tình yêu)",
+    "stroke_count": 8,
+    "vocab_examples": [
+      {"word": "妬み", "reading": "ねたみ", "meaning_vi": "sự ghen tức, lòng đố kỵ"},
+      {"word": "嫉妬", "reading": "しっと", "meaning_vi": "ghen tức, đố kỵ"}
+    ]
+  },
+  {
+    "character": "嫉",
+    "onyomi": ["シツ"],
+    "kunyomi": ["ねた.む"],
+    "meaning_vi": "ghen ghét, đố kỵ, ganh tị",
+    "stroke_count": 13,
+    "vocab_examples": [
+      {"word": "嫉妬", "reading": "しっと", "meaning_vi": "ghen tức, đố kỵ"},
+      {"word": "嫉妬心", "reading": "しっとしん", "meaning_vi": "tâm lý ghen tuông, lòng đố kỵ"}
+    ]
+  },
+  {
+    "character": "侮",
+    "onyomi": ["ブ"],
+    "kunyomi": ["あなど.る"],
+    "meaning_vi": "khinh thường, xem thường, coi nhẹ",
+    "stroke_count": 8,
+    "vocab_examples": [
+      {"word": "侮辱", "reading": "ぶじょく", "meaning_vi": "xúc phạm, lăng mạ"},
+      {"word": "侮蔑", "reading": "ぶべつ", "meaning_vi": "khinh bỉ, coi thường"}
+    ]
+  },
+  {
+    "character": "澄",
+    "onyomi": ["チョウ"],
+    "kunyomi": ["す.む", "す.ます"],
+    "meaning_vi": "trong sáng, thanh khiết; lắng đọng",
+    "stroke_count": 15,
+    "vocab_examples": [
+      {"word": "清澄", "reading": "せいちょう", "meaning_vi": "trong sáng, thanh khiết"},
+      {"word": "澄んだ空気", "reading": "すんだくうき", "meaning_vi": "không khí trong lành"}
+    ]
+  },
+  {
+    "character": "凄",
+    "onyomi": ["セイ"],
+    "kunyomi": ["すご.い", "すさ.まじい"],
+    "meaning_vi": "kinh khủng, dữ dội; ghê gớm, ấn tượng mạnh",
+    "stroke_count": 10,
+    "vocab_examples": [
+      {"word": "凄惨", "reading": "せいさん", "meaning_vi": "thảm khốc, bi thảm kinh hoàng"},
+      {"word": "凄まじい", "reading": "すさまじい", "meaning_vi": "dữ dội, kinh khủng, mãnh liệt"}
+    ]
+  },
+  {
+    "character": "憂",
+    "onyomi": ["ユウ"],
+    "kunyomi": ["うれ.える", "うれ.い", "う.い"],
+    "meaning_vi": "ưu sầu, lo âu, buồn rầu",
+    "stroke_count": 15,
+    "vocab_examples": [
+      {"word": "憂鬱", "reading": "ゆううつ", "meaning_vi": "ưu uất, trầm cảm, buồn bã"},
+      {"word": "憂慮", "reading": "ゆうりょ", "meaning_vi": "lo âu, lo lắng sâu xa"}
+    ]
+  },
+  {
+    "character": "慚",
+    "onyomi": ["ザン"],
+    "kunyomi": ["は.じる"],
+    "meaning_vi": "xấu hổ, hổ thẹn sâu sắc",
+    "stroke_count": 14,
+    "vocab_examples": [
+      {"word": "慚愧", "reading": "ざんき", "meaning_vi": "hổ thẹn, xấu hổ cắn rứt"},
+      {"word": "慚愧に堪えない", "reading": "ざんきにたえない", "meaning_vi": "không chịu nổi sự hổ thẹn"}
+    ]
+  },
+  {
+    "character": "煌",
+    "onyomi": ["コウ"],
+    "kunyomi": ["きらめ.く", "きら.びやか"],
+    "meaning_vi": "lấp lánh, rực rỡ sáng chói",
+    "stroke_count": 13,
+    "vocab_examples": [
+      {"word": "煌びやか", "reading": "きらびやか", "meaning_vi": "lộng lẫy rực rỡ, lấp lánh"},
+      {"word": "煌めく", "reading": "きらめく", "meaning_vi": "lấp lánh, lóng lánh"}
+    ]
+  },
+  {
+    "character": "幽",
+    "onyomi": ["ユウ"],
+    "kunyomi": ["かす.か"],
+    "meaning_vi": "u tịch, mờ nhạt; thế giới âm ty",
+    "stroke_count": 9,
+    "vocab_examples": [
+      {"word": "幽玄", "reading": "ゆうげん", "meaning_vi": "u huyền, huyền bí sâu thẳm"},
+      {"word": "幽霊", "reading": "ゆうれい", "meaning_vi": "ma, bóng ma"}
+    ]
+  },
+  {
+    "character": "玄",
+    "onyomi": ["ゲン"],
+    "kunyomi": ["くろ"],
+    "meaning_vi": "huyền bí, thâm sâu; màu đen",
+    "stroke_count": 5,
+    "vocab_examples": [
+      {"word": "玄人", "reading": "くろうと", "meaning_vi": "chuyên gia, người sành sỏi"},
+      {"word": "玄関", "reading": "げんかん", "meaning_vi": "cửa vào nhà, sảnh đón khách"}
+    ]
+  }
+]

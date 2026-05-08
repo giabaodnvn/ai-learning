@@ -4,20 +4,23 @@
 
 ## Final Structure (Verified ✓)
 
-- **Target: 500+ N1 vocabulary words (hoàn thành)**
-- Format: 73-104 từ per part
-- **Total parts: 6 parts**
+- **Target: 695+ N1 vocabulary words (hoàn thành)**
+- Format: 73-106 từ per part
+- **Total parts: 8 parts**
 - Part 1: 73 từ (formal, literary, classical)
 - Part 2: 74 từ (advanced, formal, poetic)
 - Part 3: 82 từ (specialized, archaic, rare)
-- Part 4: 83 từ (rare kanji compounds, specialized) - Updated
-- **Part 5: 102 từ (negative actions, emotions, psychology)**
-- **Part 6: 81 từ (social concepts, judgment, organization)**
+- Part 4: 83 từ (rare kanji compounds, specialized)
+- Part 5: 102 từ (negative actions, emotions, psychology)
+- Part 6: 81 từ (social concepts, judgment, organization)
+- **Part 7: 94 từ (nature, aesthetics, traditional culture, philosophy)**
+- **Part 8: 106 từ (academic, scientific, legal, professional)**
 
 ## Current Progress
 
 ### Part 1-4 (Original)
 ✓ Hoàn thành & xác thực: 312 từ
+
 - Part 1: 73 từ - Formal/Literary/Classical
 - Part 2: 74 từ - Advanced/Formal/Poetic
 - Part 3: 82 từ - Specialized/Archaic/Rare (cleaned: removed duplicate 躑躅, 蹙踏)
@@ -35,10 +38,20 @@
 - Topics: Hệ thống xã hội, quyền lực, quản lý, tổ chức, cơ cấu, giai cấp
 - Tags: formal, society, system, organization, legal, authority, class
 
+### Part 7 (NEW - Thiên nhiên/Thẩm mỹ/Văn hóa truyền thống)
+✓ Hoàn thành: 94 từ (霞, 霙, 霰, 陽炎, 蜃気楼, 黎明, 侘び, 寂び, 物の哀れ, 余韻, 無常, 輪廻, ...)
+- Tập trung: Hiện tượng thiên nhiên, khái niệm thẩm mỹ Nhật Bản, văn hóa truyền thống, triết học Phật giáo
+- Topics: Hiện tượng khí hậu, phong cảnh, wabi-sabi, văn học cổ điển, Phật giáo
+
+### Part 8 (NEW - Học thuật/Khoa học/Pháp lý/Chuyên môn)
+✓ Hoàn thành: 106 từ (論証, 仮説, 帰納, 演繹, 腫瘍, 免疫, 融資, 管轄, 裁量, 刷新, 四字熟語, ...)
+- Tập trung: Thuật ngữ học thuật, khoa học, y tế, kinh tế, pháp lý, hành chính
+- Topics: Logic, khoa học, tài chính, xây dựng, pháp luật, ngôn ngữ học, thành ngữ
+
 ## Data Quality Verification ✓
 
-- ✓ Total: 495 từ (73+74+82+83+102+81)
-- ✓ Unique: 495 từ (0 duplicates)
+- ✓ Total: 695 từ (73+74+82+83+102+81+94+106)
+- ✓ Unique: 695 từ (0 duplicates)
 - ✓ Tất cả fields: word, reading, romaji, meaning_vi, part_of_speech, tags
 - ✓ Tất cả meaning_vi viết tiếng Việt
 - ✓ Tất cả từ là N1 level hoặc cao hơn

@@ -1,0 +1,1158 @@
+[
+  {
+    "word": "霞",
+    "reading": "かすみ",
+    "romaji": "kasumi",
+    "meaning_vi": "sương mù nhẹ (mùa xuân), màn hơi mờ ảo",
+    "part_of_speech": "名詞",
+    "tags": [
+      "nature",
+      "seasonal",
+      "poetic",
+      "spring"
+    ]
+  },
+  {
+    "word": "霙",
+    "reading": "みぞれ",
+    "romaji": "mizore",
+    "meaning_vi": "mưa tuyết, mưa lẫn tuyết",
+    "part_of_speech": "名詞",
+    "tags": [
+      "nature",
+      "weather",
+      "winter"
+    ]
+  },
+  {
+    "word": "霰",
+    "reading": "あられ",
+    "romaji": "arare",
+    "meaning_vi": "mưa đá nhỏ, băng rơi",
+    "part_of_speech": "名詞",
+    "tags": [
+      "nature",
+      "weather",
+      "winter"
+    ]
+  },
+  {
+    "word": "陽炎",
+    "reading": "かげろう",
+    "romaji": "kagerō",
+    "meaning_vi": "sóng nhiệt, ảo ảnh do nhiệt (trên mặt đường nóng)",
+    "part_of_speech": "名詞",
+    "tags": [
+      "nature",
+      "poetic",
+      "summer",
+      "literary"
+    ]
+  },
+  {
+    "word": "蜃気楼",
+    "reading": "しんきろう",
+    "romaji": "shinkirō",
+    "meaning_vi": "ảo ảnh (hiện tượng quang học trên biển hoặc sa mạc)",
+    "part_of_speech": "名詞",
+    "tags": [
+      "nature",
+      "literary",
+      "metaphorical"
+    ]
+  },
+  {
+    "word": "稲妻",
+    "reading": "いなずま",
+    "romaji": "inazuma",
+    "meaning_vi": "tia sét, chớp",
+    "part_of_speech": "名詞",
+    "tags": [
+      "nature",
+      "weather",
+      "literary"
+    ]
+  },
+  {
+    "word": "黎明",
+    "reading": "れいめい",
+    "romaji": "reimei",
+    "meaning_vi": "bình minh, lúc trời vừa sáng; buổi đầu của một thời đại mới",
+    "part_of_speech": "名詞",
+    "tags": [
+      "nature",
+      "formal",
+      "literary",
+      "metaphorical"
+    ]
+  },
+  {
+    "word": "薄明",
+    "reading": "はくめい",
+    "romaji": "hakumei",
+    "meaning_vi": "ánh sáng lờ mờ, lúc chạng vạng",
+    "part_of_speech": "名詞",
+    "tags": [
+      "nature",
+      "literary",
+      "formal"
+    ]
+  },
+  {
+    "word": "曙",
+    "reading": "あけぼの",
+    "romaji": "akebono",
+    "meaning_vi": "lúc rạng đông, buổi bình minh; khởi đầu",
+    "part_of_speech": "名詞",
+    "tags": [
+      "nature",
+      "poetic",
+      "literary",
+      "classical"
+    ]
+  },
+  {
+    "word": "朝凪",
+    "reading": "あさなぎ",
+    "romaji": "asanagi",
+    "meaning_vi": "lúc sáng sớm biển lặng, gió lặng buổi sáng",
+    "part_of_speech": "名詞",
+    "tags": [
+      "nature",
+      "seasonal",
+      "traditional",
+      "nautical"
+    ]
+  },
+  {
+    "word": "夕凪",
+    "reading": "ゆうなぎ",
+    "romaji": "yūnagi",
+    "meaning_vi": "lúc chiều biển lặng, gió lặng buổi chiều",
+    "part_of_speech": "名詞",
+    "tags": [
+      "nature",
+      "seasonal",
+      "traditional",
+      "nautical"
+    ]
+  },
+  {
+    "word": "時雨",
+    "reading": "しぐれ",
+    "romaji": "shigure",
+    "meaning_vi": "cơn mưa bất chợt vào mùa thu hoặc đầu đông",
+    "part_of_speech": "名詞",
+    "tags": [
+      "nature",
+      "seasonal",
+      "traditional",
+      "autumn",
+      "poetry"
+    ]
+  },
+  {
+    "word": "五月雨",
+    "reading": "さみだれ",
+    "romaji": "samidare",
+    "meaning_vi": "mưa tháng 5 âm lịch (mùa mưa đầu hè), mưa dài ngày",
+    "part_of_speech": "名詞",
+    "tags": [
+      "nature",
+      "seasonal",
+      "traditional",
+      "summer",
+      "poetry"
+    ]
+  },
+  {
+    "word": "木漏れ日",
+    "reading": "こもれび",
+    "romaji": "komorebi",
+    "meaning_vi": "ánh nắng lọc qua kẽ lá cây",
+    "part_of_speech": "名詞",
+    "tags": [
+      "nature",
+      "poetic",
+      "japanese_concept"
+    ]
+  },
+  {
+    "word": "渚",
+    "reading": "なぎさ",
+    "romaji": "nagisa",
+    "meaning_vi": "bờ biển nơi sóng vỗ, bờ cát",
+    "part_of_speech": "名詞",
+    "tags": [
+      "nature",
+      "poetic",
+      "literary",
+      "classical"
+    ]
+  },
+  {
+    "word": "汀",
+    "reading": "みぎわ",
+    "romaji": "migiwa",
+    "meaning_vi": "mép nước, bờ nước (sông, hồ, biển)",
+    "part_of_speech": "名詞",
+    "tags": [
+      "nature",
+      "literary",
+      "archaic",
+      "classical"
+    ]
+  },
+  {
+    "word": "潮騒",
+    "reading": "しおさい",
+    "romaji": "shiosai",
+    "meaning_vi": "tiếng sóng biển, âm thanh của thủy triều",
+    "part_of_speech": "名詞",
+    "tags": [
+      "nature",
+      "poetic",
+      "literary"
+    ]
+  },
+  {
+    "word": "飛沫",
+    "reading": "しぶき",
+    "romaji": "shibuki",
+    "meaning_vi": "hạt nước bắn ra, tia nước nhỏ",
+    "part_of_speech": "名詞",
+    "tags": [
+      "nature",
+      "formal"
+    ]
+  },
+  {
+    "word": "雪解け",
+    "reading": "ゆきどけ",
+    "romaji": "yukidoke",
+    "meaning_vi": "băng tan, mùa xuân đến; sự hòa giải (nghĩa bóng)",
+    "part_of_speech": "名詞",
+    "tags": [
+      "nature",
+      "seasonal",
+      "spring",
+      "metaphorical"
+    ]
+  },
+  {
+    "word": "霜柱",
+    "reading": "しもばしら",
+    "romaji": "shimobashira",
+    "meaning_vi": "cột băng dưới đất nổi lên vào mùa đông",
+    "part_of_speech": "名詞",
+    "tags": [
+      "nature",
+      "weather",
+      "winter"
+    ]
+  },
+  {
+    "word": "薄氷",
+    "reading": "うすごおり",
+    "romaji": "usugōri",
+    "meaning_vi": "lớp băng mỏng; tình huống nguy hiểm (nghĩa bóng)",
+    "part_of_speech": "名詞",
+    "tags": [
+      "nature",
+      "winter",
+      "literary",
+      "metaphorical"
+    ]
+  },
+  {
+    "word": "地層",
+    "reading": "ちそう",
+    "romaji": "chisō",
+    "meaning_vi": "địa tầng, lớp đất đá tích tụ theo thời gian",
+    "part_of_speech": "名詞",
+    "tags": [
+      "nature",
+      "science",
+      "geography"
+    ]
+  },
+  {
+    "word": "渓谷",
+    "reading": "けいこく",
+    "romaji": "keikoku",
+    "meaning_vi": "hẻm núi, thung lũng hẹp",
+    "part_of_speech": "名詞",
+    "tags": [
+      "nature",
+      "geography"
+    ]
+  },
+  {
+    "word": "絶壁",
+    "reading": "ぜっぺき",
+    "romaji": "zeppeki",
+    "meaning_vi": "vách đá dựng đứng, vách núi thẳng đứng",
+    "part_of_speech": "名詞",
+    "tags": [
+      "nature",
+      "geography",
+      "formal"
+    ]
+  },
+  {
+    "word": "断崖",
+    "reading": "だんがい",
+    "romaji": "dangai",
+    "meaning_vi": "vách đá dựng đứng, bờ vực hiểm trở",
+    "part_of_speech": "名詞",
+    "tags": [
+      "nature",
+      "geography",
+      "formal",
+      "literary"
+    ]
+  },
+  {
+    "word": "幽谷",
+    "reading": "ゆうこく",
+    "romaji": "yūkoku",
+    "meaning_vi": "thung lũng sâu u tịch",
+    "part_of_speech": "名詞",
+    "tags": [
+      "nature",
+      "literary",
+      "poetic"
+    ]
+  },
+  {
+    "word": "深淵",
+    "reading": "しんえん",
+    "romaji": "shin'en",
+    "meaning_vi": "vực sâu thẳm; bí ẩn sâu xa (nghĩa bóng)",
+    "part_of_speech": "名詞",
+    "tags": [
+      "nature",
+      "literary",
+      "metaphorical"
+    ]
+  },
+  {
+    "word": "暮色",
+    "reading": "ぼしょく",
+    "romaji": "boshoku",
+    "meaning_vi": "màu hoàng hôn, cảnh chiều tà",
+    "part_of_speech": "名詞",
+    "tags": [
+      "nature",
+      "poetic",
+      "literary",
+      "classical"
+    ]
+  },
+  {
+    "word": "夕映え",
+    "reading": "ゆうばえ",
+    "romaji": "yūbae",
+    "meaning_vi": "ánh hoàng hôn, màu trời đỏ lúc chiều tà",
+    "part_of_speech": "名詞",
+    "tags": [
+      "nature",
+      "poetic",
+      "seasonal"
+    ]
+  },
+  {
+    "word": "月影",
+    "reading": "つきかげ",
+    "romaji": "tsukikage",
+    "meaning_vi": "ánh trăng, bóng trăng in xuống",
+    "part_of_speech": "名詞",
+    "tags": [
+      "nature",
+      "poetic",
+      "classical"
+    ]
+  },
+  {
+    "word": "星明かり",
+    "reading": "ほしあかり",
+    "romaji": "hoshiakari",
+    "meaning_vi": "ánh sáng sao, ánh sáng của các ngôi sao",
+    "part_of_speech": "名詞",
+    "tags": [
+      "nature",
+      "poetic",
+      "literary"
+    ]
+  },
+  {
+    "word": "侘び",
+    "reading": "わび",
+    "romaji": "wabi",
+    "meaning_vi": "vẻ đẹp giản dị, đơn sơ (khái niệm thẩm mỹ Nhật)",
+    "part_of_speech": "名詞",
+    "tags": [
+      "aesthetics",
+      "japanese_concept",
+      "traditional",
+      "art"
+    ]
+  },
+  {
+    "word": "寂び",
+    "reading": "さび",
+    "romaji": "sabi",
+    "meaning_vi": "vẻ đẹp của sự lặng lẽ, phôi pha theo thời gian",
+    "part_of_speech": "名詞",
+    "tags": [
+      "aesthetics",
+      "japanese_concept",
+      "traditional",
+      "art"
+    ]
+  },
+  {
+    "word": "物の哀れ",
+    "reading": "もののあわれ",
+    "romaji": "mono no aware",
+    "meaning_vi": "cảm xúc về sự phù du của vạn vật, cảm giác buồn vui lẫn lộn",
+    "part_of_speech": "名詞",
+    "tags": [
+      "aesthetics",
+      "japanese_concept",
+      "literary",
+      "classical",
+      "philosophy"
+    ]
+  },
+  {
+    "word": "余韻",
+    "reading": "よいん",
+    "romaji": "yoin",
+    "meaning_vi": "dư âm, dư vang; ấn tượng còn đọng lại sau khi kết thúc",
+    "part_of_speech": "名詞",
+    "tags": [
+      "aesthetics",
+      "literary",
+      "formal"
+    ]
+  },
+  {
+    "word": "風情",
+    "reading": "ふぜい",
+    "romaji": "fuzei",
+    "meaning_vi": "vẻ thanh nhã, duyên dáng; sắc thái và không khí",
+    "part_of_speech": "名詞",
+    "tags": [
+      "aesthetics",
+      "traditional",
+      "formal",
+      "cultural"
+    ]
+  },
+  {
+    "word": "風雅",
+    "reading": "ふうが",
+    "romaji": "fūga",
+    "meaning_vi": "vẻ thanh lịch, phong nhã; nghệ thuật và sự tao nhã",
+    "part_of_speech": "名詞・形容動詞",
+    "tags": [
+      "aesthetics",
+      "traditional",
+      "formal",
+      "literary"
+    ]
+  },
+  {
+    "word": "風流",
+    "reading": "ふうりゅう",
+    "romaji": "fūryū",
+    "meaning_vi": "sự phong lưu, phong nhã; thú vui nghệ thuật tao nhã",
+    "part_of_speech": "名詞・形容動詞",
+    "tags": [
+      "aesthetics",
+      "traditional",
+      "formal",
+      "classical"
+    ]
+  },
+  {
+    "word": "粋",
+    "reading": "いき",
+    "romaji": "iki",
+    "meaning_vi": "phong cách thanh lịch, sành điệu (phong cách Edo)",
+    "part_of_speech": "名詞・形容動詞",
+    "tags": [
+      "aesthetics",
+      "japanese_concept",
+      "traditional",
+      "cultural"
+    ]
+  },
+  {
+    "word": "趣",
+    "reading": "おもむき",
+    "romaji": "omomuki",
+    "meaning_vi": "vẻ thú vị, sắc thái; ý nghĩa và nội dung",
+    "part_of_speech": "名詞",
+    "tags": [
+      "aesthetics",
+      "formal",
+      "literary"
+    ]
+  },
+  {
+    "word": "格調",
+    "reading": "かくちょう",
+    "romaji": "kakuchō",
+    "meaning_vi": "phong cách cao quý, đẳng cấp, phẩm cách",
+    "part_of_speech": "名詞",
+    "tags": [
+      "aesthetics",
+      "formal",
+      "literary"
+    ]
+  },
+  {
+    "word": "佇まい",
+    "reading": "たたずまい",
+    "romaji": "tatazumai",
+    "meaning_vi": "dáng đứng, diện mạo; bầu không khí của một nơi",
+    "part_of_speech": "名詞",
+    "tags": [
+      "aesthetics",
+      "literary",
+      "formal"
+    ]
+  },
+  {
+    "word": "情趣",
+    "reading": "じょうしゅ",
+    "romaji": "jōshu",
+    "meaning_vi": "cảm xúc thẩm mỹ, tình cảm thú vị sâu sắc",
+    "part_of_speech": "名詞",
+    "tags": [
+      "aesthetics",
+      "literary",
+      "formal"
+    ]
+  },
+  {
+    "word": "詩趣",
+    "reading": "しじゅ",
+    "romaji": "shiju",
+    "meaning_vi": "vẻ thơ mộng, chất thơ",
+    "part_of_speech": "名詞",
+    "tags": [
+      "aesthetics",
+      "literary",
+      "poetic"
+    ]
+  },
+  {
+    "word": "抒情",
+    "reading": "じょじょう",
+    "romaji": "jojō",
+    "meaning_vi": "trữ tình, biểu đạt cảm xúc cá nhân",
+    "part_of_speech": "名詞",
+    "tags": [
+      "literature",
+      "poetry",
+      "formal"
+    ]
+  },
+  {
+    "word": "叙事",
+    "reading": "じょじ",
+    "romaji": "joji",
+    "meaning_vi": "tự sự, kể chuyện, miêu tả sự việc",
+    "part_of_speech": "名詞",
+    "tags": [
+      "literature",
+      "formal"
+    ]
+  },
+  {
+    "word": "情操",
+    "reading": "じょうそう",
+    "romaji": "jōsō",
+    "meaning_vi": "tình cảm phong phú, cảm xúc tinh tế; đạo đức tình cảm",
+    "part_of_speech": "名詞",
+    "tags": [
+      "emotion",
+      "formal",
+      "education"
+    ]
+  },
+  {
+    "word": "感慨",
+    "reading": "かんがい",
+    "romaji": "kangai",
+    "meaning_vi": "cảm xúc sâu sắc, xúc động sâu xa",
+    "part_of_speech": "名詞",
+    "tags": [
+      "emotion",
+      "literary",
+      "formal"
+    ]
+  },
+  {
+    "word": "詠嘆",
+    "reading": "えいたん",
+    "romaji": "eitan",
+    "meaning_vi": "thán phục với cảm xúc sâu sắc, ngâm thơ đầy cảm xúc",
+    "part_of_speech": "名詞",
+    "tags": [
+      "emotion",
+      "literary",
+      "classical"
+    ]
+  },
+  {
+    "word": "郷愁",
+    "reading": "きょうしゅう",
+    "romaji": "kyōshū",
+    "meaning_vi": "nỗi nhớ quê hương, hoài niệm về quá khứ",
+    "part_of_speech": "名詞",
+    "tags": [
+      "emotion",
+      "formal",
+      "literary"
+    ]
+  },
+  {
+    "word": "愛惜",
+    "reading": "あいせき",
+    "romaji": "aiseki",
+    "meaning_vi": "tiếc thương, trân trọng và không muốn mất đi",
+    "part_of_speech": "名詞",
+    "tags": [
+      "emotion",
+      "formal",
+      "literary"
+    ]
+  },
+  {
+    "word": "慈愛",
+    "reading": "じあい",
+    "romaji": "jiai",
+    "meaning_vi": "tình yêu thương bao la, lòng nhân ái",
+    "part_of_speech": "名詞",
+    "tags": [
+      "emotion",
+      "formal",
+      "virtue"
+    ]
+  },
+  {
+    "word": "慕情",
+    "reading": "ぼじょう",
+    "romaji": "bojō",
+    "meaning_vi": "nỗi nhớ thương, tình cảm yêu mến da diết",
+    "part_of_speech": "名詞",
+    "tags": [
+      "emotion",
+      "literary",
+      "formal"
+    ]
+  },
+  {
+    "word": "憧憬",
+    "reading": "どうけい",
+    "romaji": "dōkei",
+    "meaning_vi": "khát vọng, mơ ước; sự ngưỡng mộ tha thiết",
+    "part_of_speech": "名詞",
+    "tags": [
+      "emotion",
+      "formal",
+      "literary"
+    ]
+  },
+  {
+    "word": "哀愁",
+    "reading": "あいしゅう",
+    "romaji": "aishū",
+    "meaning_vi": "nỗi buồn man mác, sầu muộn; vẻ bi thương",
+    "part_of_speech": "名詞",
+    "tags": [
+      "emotion",
+      "literary",
+      "formal"
+    ]
+  },
+  {
+    "word": "憂愁",
+    "reading": "ゆうしゅう",
+    "romaji": "yūshū",
+    "meaning_vi": "ưu sầu, tâm trạng u uất sâu xa",
+    "part_of_speech": "名詞",
+    "tags": [
+      "emotion",
+      "literary",
+      "formal"
+    ]
+  },
+  {
+    "word": "静寂",
+    "reading": "せいじゃく",
+    "romaji": "seijaku",
+    "meaning_vi": "tĩnh lặng tuyệt đối, yên ắng hoàn toàn",
+    "part_of_speech": "名詞",
+    "tags": [
+      "formal",
+      "literary"
+    ]
+  },
+  {
+    "word": "幽静",
+    "reading": "ゆうせい",
+    "romaji": "yūsei",
+    "meaning_vi": "yên tĩnh và u tịch, tĩnh mịch sâu xa",
+    "part_of_speech": "名詞・形容動詞",
+    "tags": [
+      "aesthetics",
+      "literary",
+      "formal"
+    ]
+  },
+  {
+    "word": "清澄",
+    "reading": "せいちょう",
+    "romaji": "seichō",
+    "meaning_vi": "trong sáng thanh khiết (không khí, nước, âm thanh)",
+    "part_of_speech": "名詞・形容動詞",
+    "tags": [
+      "nature",
+      "aesthetics",
+      "formal",
+      "literary"
+    ]
+  },
+  {
+    "word": "繊細",
+    "reading": "せんさい",
+    "romaji": "sensai",
+    "meaning_vi": "tinh tế, mong manh; nhạy cảm",
+    "part_of_speech": "形容動詞",
+    "tags": [
+      "aesthetics",
+      "formal",
+      "character"
+    ]
+  },
+  {
+    "word": "精緻",
+    "reading": "せいち",
+    "romaji": "seichi",
+    "meaning_vi": "tinh vi, tỉ mỉ, công phu",
+    "part_of_speech": "形容動詞",
+    "tags": [
+      "aesthetics",
+      "formal",
+      "craft"
+    ]
+  },
+  {
+    "word": "雅致",
+    "reading": "がち",
+    "romaji": "gachi",
+    "meaning_vi": "vẻ thanh nhã, duyên dáng phong lưu",
+    "part_of_speech": "名詞",
+    "tags": [
+      "aesthetics",
+      "formal",
+      "classical"
+    ]
+  },
+  {
+    "word": "洒脱",
+    "reading": "しゃだつ",
+    "romaji": "shadatsu",
+    "meaning_vi": "phóng khoáng, tự nhiên và thanh lịch",
+    "part_of_speech": "形容動詞",
+    "tags": [
+      "aesthetics",
+      "character",
+      "formal"
+    ]
+  },
+  {
+    "word": "温雅",
+    "reading": "おんが",
+    "romaji": "onga",
+    "meaning_vi": "ôn hòa và thanh nhã, hiền từ và lịch sự",
+    "part_of_speech": "形容動詞",
+    "tags": [
+      "aesthetics",
+      "character",
+      "formal"
+    ]
+  },
+  {
+    "word": "清雅",
+    "reading": "せいが",
+    "romaji": "seiga",
+    "meaning_vi": "trong sáng và thanh nhã, tinh khiết và lịch sự",
+    "part_of_speech": "形容動詞",
+    "tags": [
+      "aesthetics",
+      "formal",
+      "literary"
+    ]
+  },
+  {
+    "word": "俳諧",
+    "reading": "はいかい",
+    "romaji": "haikai",
+    "meaning_vi": "thể loại thơ haiku cổ điển, thơ hài hước châm biếm",
+    "part_of_speech": "名詞",
+    "tags": [
+      "literature",
+      "traditional",
+      "classical",
+      "poetry"
+    ]
+  },
+  {
+    "word": "連歌",
+    "reading": "れんが",
+    "romaji": "renga",
+    "meaning_vi": "thể loại thơ liên khúc truyền thống Nhật Bản",
+    "part_of_speech": "名詞",
+    "tags": [
+      "literature",
+      "traditional",
+      "classical",
+      "poetry"
+    ]
+  },
+  {
+    "word": "詩歌",
+    "reading": "しいか",
+    "romaji": "shiika",
+    "meaning_vi": "thơ ca, thơ và bài hát",
+    "part_of_speech": "名詞",
+    "tags": [
+      "literature",
+      "formal",
+      "poetry"
+    ]
+  },
+  {
+    "word": "絵巻",
+    "reading": "えまき",
+    "romaji": "emaki",
+    "meaning_vi": "tranh cuộn kể chuyện (emakimono) của Nhật Bản",
+    "part_of_speech": "名詞",
+    "tags": [
+      "art",
+      "traditional",
+      "cultural"
+    ]
+  },
+  {
+    "word": "屏風",
+    "reading": "びょうぶ",
+    "romaji": "byōbu",
+    "meaning_vi": "bình phong gấp khúc trang trí",
+    "part_of_speech": "名詞",
+    "tags": [
+      "art",
+      "traditional",
+      "cultural"
+    ]
+  },
+  {
+    "word": "掛け軸",
+    "reading": "かけじく",
+    "romaji": "kakejiku",
+    "meaning_vi": "cuộn tranh hoặc thư pháp treo trong phòng",
+    "part_of_speech": "名詞",
+    "tags": [
+      "art",
+      "traditional",
+      "cultural"
+    ]
+  },
+  {
+    "word": "床の間",
+    "reading": "とこのま",
+    "romaji": "tokonoma",
+    "meaning_vi": "hốc tường trang trí trong phòng truyền thống Nhật",
+    "part_of_speech": "名詞",
+    "tags": [
+      "architecture",
+      "traditional",
+      "cultural"
+    ]
+  },
+  {
+    "word": "枯山水",
+    "reading": "かれさんすい",
+    "romaji": "karesansui",
+    "meaning_vi": "vườn đá khô theo phong cách Nhật, vườn thiền",
+    "part_of_speech": "名詞",
+    "tags": [
+      "architecture",
+      "traditional",
+      "garden",
+      "zen"
+    ]
+  },
+  {
+    "word": "侘び寂び",
+    "reading": "わびさび",
+    "romaji": "wabi-sabi",
+    "meaning_vi": "triết lý thẩm mỹ Nhật Bản về vẻ đẹp không hoàn hảo và phù du",
+    "part_of_speech": "名詞",
+    "tags": [
+      "aesthetics",
+      "japanese_concept",
+      "philosophy",
+      "art"
+    ]
+  },
+  {
+    "word": "間",
+    "reading": "ま",
+    "romaji": "ma",
+    "meaning_vi": "khoảng trống, sự im lặng có chủ ý; không gian tâm linh (khái niệm thẩm mỹ Nhật)",
+    "part_of_speech": "名詞",
+    "tags": [
+      "aesthetics",
+      "japanese_concept",
+      "philosophy",
+      "traditional"
+    ]
+  },
+  {
+    "word": "気配り",
+    "reading": "きくばり",
+    "romaji": "kikubari",
+    "meaning_vi": "sự chú ý quan tâm người khác; sự tinh tế chu đáo",
+    "part_of_speech": "名詞",
+    "tags": [
+      "cultural",
+      "virtue",
+      "social"
+    ]
+  },
+  {
+    "word": "思慮",
+    "reading": "しりょ",
+    "romaji": "shiryo",
+    "meaning_vi": "sự suy xét cẩn thận, cân nhắc kỹ lưỡng",
+    "part_of_speech": "名詞",
+    "tags": [
+      "formal",
+      "virtue"
+    ]
+  },
+  {
+    "word": "思惟",
+    "reading": "しゆい",
+    "romaji": "shiyui",
+    "meaning_vi": "suy nghĩ, tư duy; tư tưởng triết học",
+    "part_of_speech": "名詞",
+    "tags": [
+      "philosophy",
+      "formal",
+      "academic"
+    ]
+  },
+  {
+    "word": "省察",
+    "reading": "せいさつ",
+    "romaji": "seisatsu",
+    "meaning_vi": "tự xem xét, tự suy ngẫm về bản thân",
+    "part_of_speech": "名詞",
+    "tags": [
+      "philosophy",
+      "formal",
+      "academic"
+    ]
+  },
+  {
+    "word": "反芻",
+    "reading": "はんすう",
+    "romaji": "hansū",
+    "meaning_vi": "nhai lại (động vật); suy nghĩ đi suy nghĩ lại, nghiền ngẫm",
+    "part_of_speech": "名詞",
+    "tags": [
+      "metaphorical",
+      "formal",
+      "academic"
+    ]
+  },
+  {
+    "word": "比喩",
+    "reading": "ひゆ",
+    "romaji": "hiyu",
+    "meaning_vi": "ẩn dụ, so sánh ngầm trong văn học",
+    "part_of_speech": "名詞",
+    "tags": [
+      "literature",
+      "academic",
+      "formal"
+    ]
+  },
+  {
+    "word": "換喩",
+    "reading": "かんゆ",
+    "romaji": "kanyu",
+    "meaning_vi": "hoán dụ (biện pháp tu từ dùng tên bộ phận thay toàn thể)",
+    "part_of_speech": "名詞",
+    "tags": [
+      "literature",
+      "academic",
+      "rhetoric"
+    ]
+  },
+  {
+    "word": "諷喩",
+    "reading": "ふうゆ",
+    "romaji": "fūyu",
+    "meaning_vi": "ẩn dụ bóng gió, ngụ ngôn châm biếm",
+    "part_of_speech": "名詞",
+    "tags": [
+      "literature",
+      "academic",
+      "rhetoric"
+    ]
+  },
+  {
+    "word": "余情",
+    "reading": "よじょう",
+    "romaji": "yojō",
+    "meaning_vi": "dư vị cảm xúc, tình cảm còn lại sau khi trải qua",
+    "part_of_speech": "名詞",
+    "tags": [
+      "aesthetics",
+      "literary",
+      "poetic"
+    ]
+  },
+  {
+    "word": "滋味",
+    "reading": "じみ",
+    "romaji": "jimi",
+    "meaning_vi": "hương vị phong phú, vị ngon sâu sắc; ý nghĩa sâu xa",
+    "part_of_speech": "名詞",
+    "tags": [
+      "aesthetics",
+      "formal",
+      "literary"
+    ]
+  },
+  {
+    "word": "奥義",
+    "reading": "おうぎ",
+    "romaji": "ōgi",
+    "meaning_vi": "bí quyết sâu xa, tinh hoa ẩn sâu của một nghệ thuật",
+    "part_of_speech": "名詞",
+    "tags": [
+      "formal",
+      "traditional",
+      "martial_arts",
+      "art"
+    ]
+  },
+  {
+    "word": "境地",
+    "reading": "きょうち",
+    "romaji": "kyōchi",
+    "meaning_vi": "cảnh giới, trạng thái tâm linh đạt được",
+    "part_of_speech": "名詞",
+    "tags": [
+      "formal",
+      "philosophy",
+      "literary"
+    ]
+  },
+  {
+    "word": "境涯",
+    "reading": "きょうがい",
+    "romaji": "kyōgai",
+    "meaning_vi": "hoàn cảnh sống, tình huống cuộc đời",
+    "part_of_speech": "名詞",
+    "tags": [
+      "formal",
+      "literary",
+      "Buddhist"
+    ]
+  },
+  {
+    "word": "悟り",
+    "reading": "さとり",
+    "romaji": "satori",
+    "meaning_vi": "giác ngộ, sự khai sáng tâm linh",
+    "part_of_speech": "名詞",
+    "tags": [
+      "philosophy",
+      "Buddhist",
+      "formal"
+    ]
+  },
+  {
+    "word": "無常",
+    "reading": "むじょう",
+    "romaji": "mujō",
+    "meaning_vi": "vô thường, sự không trường cửu của vạn vật",
+    "part_of_speech": "名詞",
+    "tags": [
+      "philosophy",
+      "Buddhist",
+      "literary",
+      "classical"
+    ]
+  },
+  {
+    "word": "輪廻",
+    "reading": "りんね",
+    "romaji": "rinne",
+    "meaning_vi": "luân hồi, sự tái sinh liên tiếp",
+    "part_of_speech": "名詞",
+    "tags": [
+      "philosophy",
+      "Buddhist",
+      "formal"
+    ]
+  },
+  {
+    "word": "業",
+    "reading": "ごう",
+    "romaji": "gō",
+    "meaning_vi": "nghiệp, karma (hành động và quả báo)",
+    "part_of_speech": "名詞",
+    "tags": [
+      "philosophy",
+      "Buddhist",
+      "formal"
+    ]
+  },
+  {
+    "word": "因縁",
+    "reading": "いんねん",
+    "romaji": "innen",
+    "meaning_vi": "nhân duyên, mối liên hệ nhân quả",
+    "part_of_speech": "名詞",
+    "tags": [
+      "philosophy",
+      "Buddhist",
+      "formal",
+      "fate"
+    ]
+  },
+  {
+    "word": "縁起",
+    "reading": "えんぎ",
+    "romaji": "engi",
+    "meaning_vi": "điềm may mắn; duyên khởi (học thuyết Phật giáo)",
+    "part_of_speech": "名詞",
+    "tags": [
+      "cultural",
+      "Buddhist",
+      "formal"
+    ]
+  }
+]
