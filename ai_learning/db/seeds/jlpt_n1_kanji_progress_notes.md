@@ -2,16 +2,15 @@
 
 - Seed format theo `jlpt_n1_kanji_part*.json`: mỗi item gồm `character`, `onyomi`, `kunyomi`, `meaning_vi`, `stroke_count`, `vocab_examples`
 
-## Final Structure (Verified ✓)
+## Final Structure (Verified ✓ — deduplicated 2026-05-08)
 
-- **Target: 276 kanji N1 level (hoàn thành)**
-- Format: 53-58 kanji per part
+- **Total: 239 kanji N1 level (unique, không trùng N2/N3/N4/N5)**
 - **Total parts: 5 parts**
-- Part 1: 54 kanji (formal, literary, classical)
-- Part 2: 54 kanji (archaic, rare readings)
-- Part 3: 57 kanji (specialized, complex)
-- **Part 4: 58 kanji (emotional, aesthetic, psychological)**
-- **Part 5: 53 kanji (nature, animals, plants, cultural symbols)**
+- Part 1: 43 kanji (formal, literary, classical)
+- Part 2: 51 kanji (archaic, rare readings)
+- Part 3: 50 kanji (specialized, complex)
+- Part 4: 47 kanji (emotional, aesthetic, psychological)
+- Part 5: 48 kanji (nature, animals, plants, cultural symbols)
 
 ## Current Progress
 
@@ -47,11 +46,11 @@
 
 ## Data Quality Verification ✓
 
-- ✓ Total: 276 kanji (không có duplicate)
+- ✓ Total: 239 kanji (đã xóa 37 entries trùng N2/N3/N4)
+- ✓ Unique: 239 kanji (0 duplicates cross-level, verified 2026-05-08)
 - ✓ Mỗi kanji có đầy đủ fields: character, onyomi, kunyomi, meaning_vi, stroke_count, vocab_examples
 - ✓ Tất cả meaning_vi đều viết tiếng Việt
 - ✓ Mỗi kanji có 2+ vocab examples
-- ✓ Stroke count nằm trong khoảng 5-24
 
 ## Sửa Lỗi Chi Tiết (2026-05-04)
 
@@ -64,14 +63,14 @@
 
 ## Summary
 
-**Total N1 Kanji: 276 kanji ✓**
-- Part 1: 54 kanji (Formal/Literary/Classical) ✓
-- Part 2: 54 kanji (Archaic/Rare Readings) ✓
-- Part 3: 57 kanji (Specialized/Complex) ✓
-- Part 4: 58 kanji (Emotional/Aesthetic/Psychological) ✓
-- Part 5: 53 kanji (Nature/Animals/Plants/Cultural) ✓
+**Total N1 Kanji: 239 kanji ✓ (deduplicated)**
+- Part 1: 43 kanji (Formal/Literary/Classical) ✓
+- Part 2: 51 kanji (Archaic/Rare Readings) ✓
+- Part 3: 50 kanji (Specialized/Complex) ✓
+- Part 4: 47 kanji (Emotional/Aesthetic/Psychological) ✓
+- Part 5: 48 kanji (Nature/Animals/Plants/Cultural) ✓
 
-Status: ✓ **Đầy đủ, chính xác, không có duplicate**
+Status: ✓ **Đầy đủ, không có duplicate cross-level**
 
 ## Notes
 

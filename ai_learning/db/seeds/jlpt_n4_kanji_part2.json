@@ -883,34 +883,6 @@
     ]
   },
   {
-    "character": "森",
-    "onyomi": [
-      "シン"
-    ],
-    "kunyomi": [
-      "もり"
-    ],
-    "meaning_vi": "rừng",
-    "stroke_count": 12,
-    "vocab_examples": [
-      {
-        "word": "森",
-        "reading": "もり",
-        "meaning_vi": "rừng cây"
-      },
-      {
-        "word": "森林",
-        "reading": "しんりん",
-        "meaning_vi": "rừng rậm"
-      },
-      {
-        "word": "森の中",
-        "reading": "もりのなか",
-        "meaning_vi": "trong rừng"
-      }
-    ]
-  },
-  {
     "character": "業",
     "onyomi": [
       "ギョウ",
@@ -1085,36 +1057,6 @@
         "word": "禁止",
         "reading": "きんし",
         "meaning_vi": "cấm"
-      }
-    ]
-  },
-  {
-    "character": "正",
-    "onyomi": [
-      "セイ",
-      "ショウ"
-    ],
-    "kunyomi": [
-      "ただ.しい",
-      "まさ"
-    ],
-    "meaning_vi": "đúng, chính xác",
-    "stroke_count": 5,
-    "vocab_examples": [
-      {
-        "word": "正しい",
-        "reading": "ただしい",
-        "meaning_vi": "đúng, chính xác"
-      },
-      {
-        "word": "正直",
-        "reading": "しょうじき",
-        "meaning_vi": "thành thật, trung thực"
-      },
-      {
-        "word": "訂正",
-        "reading": "ていせい",
-        "meaning_vi": "sửa chữa, đính chính"
       }
     ]
   },

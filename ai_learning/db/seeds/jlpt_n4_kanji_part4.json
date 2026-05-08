@@ -28,35 +28,6 @@
     ]
   },
   {
-    "character": "黒",
-    "onyomi": [
-      "コク"
-    ],
-    "kunyomi": [
-      "くろ",
-      "くろ.い"
-    ],
-    "meaning_vi": "đen",
-    "stroke_count": 11,
-    "vocab_examples": [
-      {
-        "word": "黒い",
-        "reading": "くろい",
-        "meaning_vi": "đen"
-      },
-      {
-        "word": "黒板",
-        "reading": "こくばん",
-        "meaning_vi": "bảng đen"
-      },
-      {
-        "word": "白黒",
-        "reading": "しろくろ",
-        "meaning_vi": "trắng đen"
-      }
-    ]
-  },
-  {
     "character": "平",
     "onyomi": [
       "ヘイ",

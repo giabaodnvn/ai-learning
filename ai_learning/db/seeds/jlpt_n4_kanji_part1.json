@@ -1309,34 +1309,6 @@
     ]
   },
   {
-    "character": "字",
-    "onyomi": [
-      "ジ"
-    ],
-    "kunyomi": [
-      "あざ"
-    ],
-    "meaning_vi": "chữ, ký tự",
-    "stroke_count": 6,
-    "vocab_examples": [
-      {
-        "word": "文字",
-        "reading": "もじ",
-        "meaning_vi": "chữ cái, ký tự"
-      },
-      {
-        "word": "漢字",
-        "reading": "かんじ",
-        "meaning_vi": "chữ Hán, kanji"
-      },
-      {
-        "word": "字引",
-        "reading": "じびき",
-        "meaning_vi": "từ điển"
-      }
-    ]
-  },
-  {
     "character": "宿",
     "onyomi": [
       "シュク"

@@ -1084,35 +1084,6 @@
     ]
   },
   {
-    "character": "高",
-    "onyomi": [
-      "コウ"
-    ],
-    "kunyomi": [
-      "たか.い",
-      "たか.める"
-    ],
-    "meaning_vi": "cao",
-    "stroke_count": 10,
-    "vocab_examples": [
-      {
-        "word": "高い",
-        "reading": "たかい",
-        "meaning_vi": "cao, đắt"
-      },
-      {
-        "word": "最高",
-        "reading": "さいこう",
-        "meaning_vi": "cao nhất, tuyệt vời nhất"
-      },
-      {
-        "word": "高校",
-        "reading": "こうこう",
-        "meaning_vi": "trường trung học phổ thông"
-      }
-    ]
-  },
-  {
     "character": "首",
     "onyomi": [
       "シュ"

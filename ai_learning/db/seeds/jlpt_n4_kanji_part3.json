@@ -769,32 +769,6 @@
     ]
   },
   {
-    "character": "駅",
-    "onyomi": [
-      "エキ"
-    ],
-    "kunyomi": [],
-    "meaning_vi": "nhà ga, trạm",
-    "stroke_count": 14,
-    "vocab_examples": [
-      {
-        "word": "駅",
-        "reading": "えき",
-        "meaning_vi": "nhà ga"
-      },
-      {
-        "word": "駅員",
-        "reading": "えきいん",
-        "meaning_vi": "nhân viên ga"
-      },
-      {
-        "word": "駅前",
-        "reading": "えきまえ",
-        "meaning_vi": "trước ga"
-      }
-    ]
-  },
-  {
     "character": "様",
     "onyomi": [
       "ヨウ"
@@ -1248,35 +1222,6 @@
     ]
   },
   {
-    "character": "力",
-    "onyomi": [
-      "リョク",
-      "リキ"
-    ],
-    "kunyomi": [
-      "ちから"
-    ],
-    "meaning_vi": "sức mạnh, lực",
-    "stroke_count": 2,
-    "vocab_examples": [
-      {
-        "word": "力",
-        "reading": "ちから",
-        "meaning_vi": "sức mạnh, lực"
-      },
-      {
-        "word": "努力",
-        "reading": "どりょく",
-        "meaning_vi": "cố gắng, nỗ lực"
-      },
-      {
-        "word": "電力",
-        "reading": "でんりょく",
-        "meaning_vi": "điện lực"
-      }
-    ]
-  },
-  {
     "character": "乗",
     "onyomi": [
       "ジョウ"
@@ -1390,36 +1335,6 @@
         "word": "読み方",
         "reading": "よみかた",
         "meaning_vi": "cách đọc"
-      }
-    ]
-  },
-  {
-    "character": "音",
-    "onyomi": [
-      "オン",
-      "イン"
-    ],
-    "kunyomi": [
-      "おと",
-      "ね"
-    ],
-    "meaning_vi": "âm thanh, tiếng",
-    "stroke_count": 9,
-    "vocab_examples": [
-      {
-        "word": "音楽",
-        "reading": "おんがく",
-        "meaning_vi": "âm nhạc"
-      },
-      {
-        "word": "発音",
-        "reading": "はつおん",
-        "meaning_vi": "phát âm"
-      },
-      {
-        "word": "音量",
-        "reading": "おんりょう",
-        "meaning_vi": "âm lượng"
       }
     ]
   }

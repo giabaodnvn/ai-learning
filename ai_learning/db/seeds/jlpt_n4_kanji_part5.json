@@ -783,34 +783,6 @@
     ]
   },
   {
-    "character": "語",
-    "onyomi": [
-      "ゴ"
-    ],
-    "kunyomi": [
-      "かた.る"
-    ],
-    "meaning_vi": "ngôn ngữ, từ ngữ, kể chuyện",
-    "stroke_count": 14,
-    "vocab_examples": [
-      {
-        "word": "日本語",
-        "reading": "にほんご",
-        "meaning_vi": "tiếng Nhật"
-      },
-      {
-        "word": "言語",
-        "reading": "げんご",
-        "meaning_vi": "ngôn ngữ"
-      },
-      {
-        "word": "単語",
-        "reading": "たんご",
-        "meaning_vi": "từ vựng"
-      }
-    ]
-  },
-  {
     "character": "論",
     "onyomi": [
       "ロン"
@@ -1244,34 +1216,6 @@
         "word": "気楽",
         "reading": "きらく",
         "meaning_vi": "thoải mái, thư thái"
-      }
-    ]
-  },
-  {
-    "character": "安",
-    "onyomi": [
-      "アン"
-    ],
-    "kunyomi": [
-      "やす.い"
-    ],
-    "meaning_vi": "an toàn, rẻ, yên tâm",
-    "stroke_count": 6,
-    "vocab_examples": [
-      {
-        "word": "安全",
-        "reading": "あんぜん",
-        "meaning_vi": "an toàn"
-      },
-      {
-        "word": "安心",
-        "reading": "あんしん",
-        "meaning_vi": "yên tâm"
-      },
-      {
-        "word": "安い",
-        "reading": "やすい",
-        "meaning_vi": "rẻ"
       }
     ]
   },

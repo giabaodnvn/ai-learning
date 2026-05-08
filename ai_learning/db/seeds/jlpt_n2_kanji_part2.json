@@ -1,68 +1,5 @@
 [
   {
-    "character": "論",
-    "onyomi": [
-      "ロン"
-    ],
-    "kunyomi": [],
-    "meaning_vi": "tranh luận, bình luận",
-    "stroke_count": 15,
-    "vocab_examples": [
-      {
-        "word": "議論",
-        "reading": "ぎろん",
-        "meaning_vi": "tranh luận"
-      },
-      {
-        "word": "理論",
-        "reading": "りろん",
-        "meaning_vi": "lý thuyết"
-      }
-    ]
-  },
-  {
-    "character": "諸",
-    "onyomi": [
-      "ショ"
-    ],
-    "kunyomi": [],
-    "meaning_vi": "nhiều, tất cả",
-    "stroke_count": 15,
-    "vocab_examples": [
-      {
-        "word": "諸国",
-        "reading": "しょこく",
-        "meaning_vi": "các nước"
-      },
-      {
-        "word": "諸々",
-        "reading": "もろもろ",
-        "meaning_vi": "cái này cái kia"
-      }
-    ]
-  },
-  {
-    "character": "謝",
-    "onyomi": [
-      "シャ"
-    ],
-    "kunyomi": [],
-    "meaning_vi": "cảm ơn, xin lỗi",
-    "stroke_count": 12,
-    "vocab_examples": [
-      {
-        "word": "謝罪",
-        "reading": "しゃざい",
-        "meaning_vi": "xin lỗi"
-      },
-      {
-        "word": "感謝",
-        "reading": "かんしゃ",
-        "meaning_vi": "cảm ơn"
-      }
-    ]
-  },
-  {
     "character": "謙",
     "onyomi": [
       "ケン"
@@ -75,119 +12,6 @@
         "word": "謙虚",
         "reading": "けんきょ",
         "meaning_vi": "khiêm tốn"
-      }
-    ]
-  },
-  {
-    "character": "豊",
-    "onyomi": [
-      "ホウ"
-    ],
-    "kunyomi": [
-      "とよ"
-    ],
-    "meaning_vi": "phong phú, giàu có",
-    "stroke_count": 13,
-    "vocab_examples": [
-      {
-        "word": "豊か",
-        "reading": "とよか",
-        "meaning_vi": "phong phú"
-      },
-      {
-        "word": "豊富",
-        "reading": "ほうふ",
-        "meaning_vi": "dồi dào"
-      }
-    ]
-  },
-  {
-    "character": "賃",
-    "onyomi": [
-      "チン"
-    ],
-    "kunyomi": [
-      "ちん"
-    ],
-    "meaning_vi": "tiền thuê, chi phí",
-    "stroke_count": 12,
-    "vocab_examples": [
-      {
-        "word": "賃金",
-        "reading": "ちんきん",
-        "meaning_vi": "tiền lương"
-      },
-      {
-        "word": "賃借",
-        "reading": "ちんしゃく",
-        "meaning_vi": "thuê"
-      }
-    ]
-  },
-  {
-    "character": "費",
-    "onyomi": [
-      "ヒ"
-    ],
-    "kunyomi": [
-      "つい.やす"
-    ],
-    "meaning_vi": "chi phí, tiêu xài",
-    "stroke_count": 12,
-    "vocab_examples": [
-      {
-        "word": "費用",
-        "reading": "ひよう",
-        "meaning_vi": "chi phí"
-      },
-      {
-        "word": "経費",
-        "reading": "けいひ",
-        "meaning_vi": "chi phí"
-      }
-    ]
-  },
-  {
-    "character": "貴",
-    "onyomi": [
-      "キ"
-    ],
-    "kunyomi": [
-      "たっと.い"
-    ],
-    "meaning_vi": "quý, cao quý",
-    "stroke_count": 12,
-    "vocab_examples": [
-      {
-        "word": "貴重",
-        "reading": "きちょう",
-        "meaning_vi": "quý giá"
-      },
-      {
-        "word": "貴族",
-        "reading": "きぞく",
-        "meaning_vi": "quý tộc"
-      }
-    ]
-  },
-  {
-    "character": "資",
-    "onyomi": [
-      "シ"
-    ],
-    "kunyomi": [],
-    "meaning_vi": "vốn, tư liệu",
-    "stroke_count": 13,
-    "vocab_examples": [
-      {
-        "word": "資金",
-        "reading": "しきん",
-        "meaning_vi": "vốn"
-      },
-      {
-        "word": "資料",
-        "reading": "しりょう",
-        "meaning_vi": "tư liệu"
       }
     ]
   },
@@ -209,24 +33,6 @@
         "word": "購入",
         "reading": "こうにゅう",
         "meaning_vi": "mua"
-      }
-    ]
-  },
-  {
-    "character": "賢",
-    "onyomi": [
-      "ケン"
-    ],
-    "kunyomi": [
-      "かしこ.い"
-    ],
-    "meaning_vi": "hiền, thông minh",
-    "stroke_count": 13,
-    "vocab_examples": [
-      {
-        "word": "賢者",
-        "reading": "けんじゃ",
-        "meaning_vi": "người khôn ngoan"
       }
     ]
   },
@@ -325,52 +131,6 @@
     ]
   },
   {
-    "character": "越",
-    "onyomi": [
-      "エツ"
-    ],
-    "kunyomi": [
-      "こ.す"
-    ],
-    "meaning_vi": "vượt qua, sai",
-    "stroke_count": 12,
-    "vocab_examples": [
-      {
-        "word": "越える",
-        "reading": "こえる",
-        "meaning_vi": "vượt"
-      },
-      {
-        "word": "越境",
-        "reading": "えっきょう",
-        "meaning_vi": "vượt biên"
-      }
-    ]
-  },
-  {
-    "character": "路",
-    "onyomi": [
-      "ロ"
-    ],
-    "kunyomi": [
-      "みち"
-    ],
-    "meaning_vi": "đường, lộ trình",
-    "stroke_count": 13,
-    "vocab_examples": [
-      {
-        "word": "道路",
-        "reading": "どうろ",
-        "meaning_vi": "đường xá"
-      },
-      {
-        "word": "路線",
-        "reading": "ろせん",
-        "meaning_vi": "tuyến đường"
-      }
-    ]
-  },
-  {
     "character": "身",
     "onyomi": [
       "シン"
@@ -390,70 +150,6 @@
         "word": "身体",
         "reading": "しんたい",
         "meaning_vi": "cơ thể"
-      }
-    ]
-  },
-  {
-    "character": "転",
-    "onyomi": [
-      "テン"
-    ],
-    "kunyomi": [
-      "ころ.ぶ"
-    ],
-    "meaning_vi": "lộn, rơi",
-    "stroke_count": 11,
-    "vocab_examples": [
-      {
-        "word": "転職",
-        "reading": "てんしょく",
-        "meaning_vi": "đổi việc"
-      },
-      {
-        "word": "転ぶ",
-        "reading": "ころぶ",
-        "meaning_vi": "rơi"
-      }
-    ]
-  },
-  {
-    "character": "軽",
-    "onyomi": [
-      "ケイ"
-    ],
-    "kunyomi": [
-      "かる.い"
-    ],
-    "meaning_vi": "nhẹ, tầm thường",
-    "stroke_count": 12,
-    "vocab_examples": [
-      {
-        "word": "軽視",
-        "reading": "けいし",
-        "meaning_vi": "xem nhẹ"
-      },
-      {
-        "word": "軽い",
-        "reading": "かるい",
-        "meaning_vi": "nhẹ"
-      }
-    ]
-  },
-  {
-    "character": "迎",
-    "onyomi": [
-      "ゲイ"
-    ],
-    "kunyomi": [
-      "むか.える"
-    ],
-    "meaning_vi": "đón, chào đón",
-    "stroke_count": 7,
-    "vocab_examples": [
-      {
-        "word": "迎える",
-        "reading": "むかえる",
-        "meaning_vi": "đón"
       }
     ]
   },
@@ -500,190 +196,6 @@
         "word": "追求",
         "reading": "ついきゅう",
         "meaning_vi": "theo đuổi"
-      }
-    ]
-  },
-  {
-    "character": "退",
-    "onyomi": [
-      "タイ"
-    ],
-    "kunyomi": [
-      "しりぞ.く"
-    ],
-    "meaning_vi": "rút lui, tan biến",
-    "stroke_count": 9,
-    "vocab_examples": [
-      {
-        "word": "退出",
-        "reading": "たいしゅつ",
-        "meaning_vi": "rút lui"
-      },
-      {
-        "word": "退職",
-        "reading": "たいしょく",
-        "meaning_vi": "từ chức"
-      }
-    ]
-  },
-  {
-    "character": "通",
-    "onyomi": [
-      "ツウ"
-    ],
-    "kunyomi": [
-      "かよ.う"
-    ],
-    "meaning_vi": "thông qua, đi lại",
-    "stroke_count": 10,
-    "vocab_examples": [
-      {
-        "word": "通常",
-        "reading": "つうじょう",
-        "meaning_vi": "thường"
-      },
-      {
-        "word": "通う",
-        "reading": "かよう",
-        "meaning_vi": "đi lại"
-      }
-    ]
-  },
-  {
-    "character": "速",
-    "onyomi": [
-      "ソク"
-    ],
-    "kunyomi": [
-      "はや.い"
-    ],
-    "meaning_vi": "nhanh",
-    "stroke_count": 10,
-    "vocab_examples": [
-      {
-        "word": "速度",
-        "reading": "そくど",
-        "meaning_vi": "tốc độ"
-      },
-      {
-        "word": "迅速",
-        "reading": "じんそく",
-        "meaning_vi": "nhanh chóng"
-      }
-    ]
-  },
-  {
-    "character": "逆",
-    "onyomi": [
-      "ギャク"
-    ],
-    "kunyomi": [
-      "さか.さ"
-    ],
-    "meaning_vi": "ngược, đảo",
-    "stroke_count": 9,
-    "vocab_examples": [
-      {
-        "word": "逆行",
-        "reading": "ぎゃくこう",
-        "meaning_vi": "đi ngược"
-      },
-      {
-        "word": "逆さ",
-        "reading": "さかさ",
-        "meaning_vi": "ngược"
-      }
-    ]
-  },
-  {
-    "character": "逃",
-    "onyomi": [
-      "トウ"
-    ],
-    "kunyomi": [
-      "に.げる"
-    ],
-    "meaning_vi": "chạy trốn, trốn tránh",
-    "stroke_count": 9,
-    "vocab_examples": [
-      {
-        "word": "逃亡",
-        "reading": "とうぼう",
-        "meaning_vi": "trốn chạy"
-      },
-      {
-        "word": "逃げる",
-        "reading": "にげる",
-        "meaning_vi": "trốn"
-      }
-    ]
-  },
-  {
-    "character": "遅",
-    "onyomi": [
-      "チ"
-    ],
-    "kunyomi": [
-      "おく.れる"
-    ],
-    "meaning_vi": "chậm, trễ",
-    "stroke_count": 13,
-    "vocab_examples": [
-      {
-        "word": "遅刻",
-        "reading": "ちこく",
-        "meaning_vi": "đi trễ"
-      },
-      {
-        "word": "遅れる",
-        "reading": "おくれる",
-        "meaning_vi": "chậm"
-      }
-    ]
-  },
-  {
-    "character": "遠",
-    "onyomi": [
-      "エン"
-    ],
-    "kunyomi": [
-      "とお.い"
-    ],
-    "meaning_vi": "xa",
-    "stroke_count": 13,
-    "vocab_examples": [
-      {
-        "word": "遠距離",
-        "reading": "えんきょり",
-        "meaning_vi": "khoảng cách xa"
-      },
-      {
-        "word": "遠い",
-        "reading": "とおい",
-        "meaning_vi": "xa"
-      }
-    ]
-  },
-  {
-    "character": "適",
-    "onyomi": [
-      "テキ"
-    ],
-    "kunyomi": [
-      "かな.う"
-    ],
-    "meaning_vi": "phù hợp, thích hợp",
-    "stroke_count": 14,
-    "vocab_examples": [
-      {
-        "word": "適応",
-        "reading": "てきおう",
-        "meaning_vi": "thích ứng"
-      },
-      {
-        "word": "適切",
-        "reading": "てきせつ",
-        "meaning_vi": "phù hợp"
       }
     ]
   },
@@ -741,82 +253,6 @@
         "word": "邑",
         "reading": "むら",
         "meaning_vi": "làng"
-      }
-    ]
-  },
-  {
-    "character": "邪",
-    "onyomi": [
-      "ジャ"
-    ],
-    "kunyomi": [],
-    "meaning_vi": "xấu xa, tà đạo",
-    "stroke_count": 8,
-    "vocab_examples": [
-      {
-        "word": "邪悪",
-        "reading": "じゃあく",
-        "meaning_vi": "tà ác"
-      },
-      {
-        "word": "邪魔",
-        "reading": "じゃま",
-        "meaning_vi": "cản trở"
-      }
-    ]
-  },
-  {
-    "character": "郊",
-    "onyomi": [
-      "コウ"
-    ],
-    "kunyomi": [],
-    "meaning_vi": "ngoại ô, ngoài thành",
-    "stroke_count": 9,
-    "vocab_examples": [
-      {
-        "word": "郊外",
-        "reading": "こうがい",
-        "meaning_vi": "ngoại ô"
-      }
-    ]
-  },
-  {
-    "character": "郡",
-    "onyomi": [
-      "グン"
-    ],
-    "kunyomi": [],
-    "meaning_vi": "quận, huyện",
-    "stroke_count": 12,
-    "vocab_examples": [
-      {
-        "word": "郡",
-        "reading": "ぐん",
-        "meaning_vi": "quận"
-      }
-    ]
-  },
-  {
-    "character": "郷",
-    "onyomi": [
-      "キョウ"
-    ],
-    "kunyomi": [
-      "さと"
-    ],
-    "meaning_vi": "quê nhà, làng quê",
-    "stroke_count": 12,
-    "vocab_examples": [
-      {
-        "word": "故郷",
-        "reading": "こきょう",
-        "meaning_vi": "quê nhà"
-      },
-      {
-        "word": "郷土",
-        "reading": "きょうど",
-        "meaning_vi": "quê hương"
       }
     ]
   },
@@ -906,22 +342,6 @@
     ]
   },
   {
-    "character": "釈",
-    "onyomi": [
-      "シャク"
-    ],
-    "kunyomi": [],
-    "meaning_vi": "thả, giải thích",
-    "stroke_count": 11,
-    "vocab_examples": [
-      {
-        "word": "釈放",
-        "reading": "しゃくほう",
-        "meaning_vi": "thả"
-      }
-    ]
-  },
-  {
     "character": "釜",
     "onyomi": [
       "カマ"
@@ -961,63 +381,6 @@
     ]
   },
   {
-    "character": "銅",
-    "onyomi": [
-      "ドウ"
-    ],
-    "kunyomi": [
-      "あかがね"
-    ],
-    "meaning_vi": "đồng (kim loại)",
-    "stroke_count": 14,
-    "vocab_examples": [
-      {
-        "word": "銅",
-        "reading": "あかがね",
-        "meaning_vi": "đồng"
-      },
-      {
-        "word": "青銅",
-        "reading": "せいどう",
-        "meaning_vi": "đồng thau"
-      }
-    ]
-  },
-  {
-    "character": "銭",
-    "onyomi": [
-      "セン"
-    ],
-    "kunyomi": [
-      "ぜに"
-    ],
-    "meaning_vi": "tiền, xu",
-    "stroke_count": 14,
-    "vocab_examples": [
-      {
-        "word": "銭",
-        "reading": "ぜに",
-        "meaning_vi": "tiền"
-      }
-    ]
-  },
-  {
-    "character": "錯",
-    "onyomi": [
-      "サク"
-    ],
-    "kunyomi": [],
-    "meaning_vi": "nhầm lẫn, sai",
-    "stroke_count": 16,
-    "vocab_examples": [
-      {
-        "word": "錯誤",
-        "reading": "さくご",
-        "meaning_vi": "nhầm lẫn"
-      }
-    ]
-  },
-  {
     "character": "錬",
     "onyomi": [
       "レン"
@@ -1034,24 +397,6 @@
     ]
   },
   {
-    "character": "鋭",
-    "onyomi": [
-      "エイ"
-    ],
-    "kunyomi": [
-      "するど.い"
-    ],
-    "meaning_vi": "sắc sảo, nhạy",
-    "stroke_count": 15,
-    "vocab_examples": [
-      {
-        "word": "鋭い",
-        "reading": "するどい",
-        "meaning_vi": "sắc"
-      }
-    ]
-  },
-  {
     "character": "鋲",
     "onyomi": [
       "ビョウ"
@@ -1064,24 +409,6 @@
         "word": "鋲",
         "reading": "びょう",
         "meaning_vi": "đinh"
-      }
-    ]
-  },
-  {
-    "character": "鎖",
-    "onyomi": [
-      "サ"
-    ],
-    "kunyomi": [
-      "くさり"
-    ],
-    "meaning_vi": "xích, khóa",
-    "stroke_count": 18,
-    "vocab_examples": [
-      {
-        "word": "鎖",
-        "reading": "くさり",
-        "meaning_vi": "xích"
       }
     ]
   },
@@ -1118,29 +445,6 @@
         "word": "鐵",
         "reading": "くろがね",
         "meaning_vi": "sắt"
-      }
-    ]
-  },
-  {
-    "character": "長",
-    "onyomi": [
-      "チョウ"
-    ],
-    "kunyomi": [
-      "なが.い"
-    ],
-    "meaning_vi": "dài, lâu",
-    "stroke_count": 8,
-    "vocab_examples": [
-      {
-        "word": "長年",
-        "reading": "ながねん",
-        "meaning_vi": "nhiều năm"
-      },
-      {
-        "word": "長い",
-        "reading": "ながい",
-        "meaning_vi": "dài"
       }
     ]
   },
@@ -1248,45 +552,6 @@
     ]
   },
   {
-    "character": "需",
-    "onyomi": [
-      "シュ"
-    ],
-    "kunyomi": [],
-    "meaning_vi": "cần, yêu cầu",
-    "stroke_count": 14,
-    "vocab_examples": [
-      {
-        "word": "需要",
-        "reading": "じゅよう",
-        "meaning_vi": "nhu cầu"
-      }
-    ]
-  },
-  {
-    "character": "震",
-    "onyomi": [
-      "シン"
-    ],
-    "kunyomi": [
-      "ふる.える"
-    ],
-    "meaning_vi": "rung, động đất",
-    "stroke_count": 15,
-    "vocab_examples": [
-      {
-        "word": "地震",
-        "reading": "じしん",
-        "meaning_vi": "động đất"
-      },
-      {
-        "word": "震える",
-        "reading": "ふるえる",
-        "meaning_vi": "rung"
-      }
-    ]
-  },
-  {
     "character": "霊",
     "onyomi": [
       "レイ"
@@ -1328,24 +593,6 @@
     ]
   },
   {
-    "character": "霧",
-    "onyomi": [
-      "ム"
-    ],
-    "kunyomi": [
-      "きり"
-    ],
-    "meaning_vi": "sương mù",
-    "stroke_count": 17,
-    "vocab_examples": [
-      {
-        "word": "霧",
-        "reading": "きり",
-        "meaning_vi": "sương mù"
-      }
-    ]
-  },
-  {
     "character": "昭",
     "onyomi": [
       "ショウ"
@@ -1354,31 +601,11 @@
     "meaning_vi": "sáng chiếu"
   },
   {
-    "character": "樹",
-    "onyomi": [
-      "ジュ"
-    ],
-    "kunyomi": [
-      "き"
-    ],
-    "meaning_vi": "cây"
-  },
-  {
     "character": "唯",
     "onyomi": [
       "ユイ"
     ],
     "kunyomi": [],
     "meaning_vi": "chỉ"
-  },
-  {
-    "character": "陸",
-    "onyomi": [
-      "リク"
-    ],
-    "kunyomi": [
-      "おか"
-    ],
-    "meaning_vi": "đất liền"
   }
 ]

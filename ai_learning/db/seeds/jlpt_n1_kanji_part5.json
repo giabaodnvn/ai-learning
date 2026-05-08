@@ -1,585 +1,1108 @@
 [
   {
     "character": "葛",
-    "onyomi": ["カツ"],
-    "kunyomi": ["くず"],
+    "onyomi": [
+      "カツ"
+    ],
+    "kunyomi": [
+      "くず"
+    ],
     "meaning_vi": "cây sắn dây (kudzu); sự đấu tranh nội tâm",
     "stroke_count": 12,
     "vocab_examples": [
-      {"word": "葛藤", "reading": "かっとう", "meaning_vi": "xung đột nội tâm, mâu thuẫn"},
-      {"word": "葛根湯", "reading": "かっこんとう", "meaning_vi": "thuốc sắc từ rễ sắn dây (trị cảm)"}
-    ]
-  },
-  {
-    "character": "茨",
-    "onyomi": ["シ"],
-    "kunyomi": ["いばら"],
-    "meaning_vi": "cây gai, bụi gai; con đường gai góc",
-    "stroke_count": 9,
-    "vocab_examples": [
-      {"word": "茨の道", "reading": "いばらのみち", "meaning_vi": "con đường gai góc, đường gian khổ"},
-      {"word": "茨城", "reading": "いばらき", "meaning_vi": "tỉnh Ibaraki (Nhật Bản)"}
+      {
+        "word": "葛藤",
+        "reading": "かっとう",
+        "meaning_vi": "xung đột nội tâm, mâu thuẫn"
+      },
+      {
+        "word": "葛根湯",
+        "reading": "かっこんとう",
+        "meaning_vi": "thuốc sắc từ rễ sắn dây (trị cảm)"
+      }
     ]
   },
   {
     "character": "楠",
-    "onyomi": ["ナン"],
-    "kunyomi": ["くすのき"],
+    "onyomi": [
+      "ナン"
+    ],
+    "kunyomi": [
+      "くすのき"
+    ],
     "meaning_vi": "cây long não (camphor tree)",
     "stroke_count": 13,
     "vocab_examples": [
-      {"word": "楠木", "reading": "くすのき", "meaning_vi": "cây long não"},
-      {"word": "楠材", "reading": "くすざい", "meaning_vi": "gỗ long não"}
+      {
+        "word": "楠木",
+        "reading": "くすのき",
+        "meaning_vi": "cây long não"
+      },
+      {
+        "word": "楠材",
+        "reading": "くすざい",
+        "meaning_vi": "gỗ long não"
+      }
     ]
   },
   {
     "character": "欅",
-    "onyomi": ["キョ"],
-    "kunyomi": ["けやき"],
+    "onyomi": [
+      "キョ"
+    ],
+    "kunyomi": [
+      "けやき"
+    ],
     "meaning_vi": "cây du Nhật (zelkova), cây phong cổ thụ",
     "stroke_count": 21,
     "vocab_examples": [
-      {"word": "欅並木", "reading": "けやきなみき", "meaning_vi": "hàng cây du Nhật"},
-      {"word": "欅材", "reading": "けやきざい", "meaning_vi": "gỗ du Nhật (gỗ quý)"}
+      {
+        "word": "欅並木",
+        "reading": "けやきなみき",
+        "meaning_vi": "hàng cây du Nhật"
+      },
+      {
+        "word": "欅材",
+        "reading": "けやきざい",
+        "meaning_vi": "gỗ du Nhật (gỗ quý)"
+      }
     ]
   },
   {
     "character": "椿",
-    "onyomi": ["チン"],
-    "kunyomi": ["つばき"],
+    "onyomi": [
+      "チン"
+    ],
+    "kunyomi": [
+      "つばき"
+    ],
     "meaning_vi": "cây trà mi, hoa trà (camellia)",
     "stroke_count": 13,
     "vocab_examples": [
-      {"word": "椿の花", "reading": "つばきのはな", "meaning_vi": "hoa trà mi"},
-      {"word": "椿事", "reading": "ちんじ", "meaning_vi": "sự kiện bất ngờ, chuyện lạ (hiếm gặp)"}
-    ]
-  },
-  {
-    "character": "苔",
-    "onyomi": ["タイ"],
-    "kunyomi": ["こけ"],
-    "meaning_vi": "rêu, cây rêu",
-    "stroke_count": 8,
-    "vocab_examples": [
-      {"word": "苔むす", "reading": "こけむす", "meaning_vi": "phủ đầy rêu, mọc rêu"},
-      {"word": "青苔", "reading": "せいたい", "meaning_vi": "rêu xanh, rêu tươi"}
+      {
+        "word": "椿の花",
+        "reading": "つばきのはな",
+        "meaning_vi": "hoa trà mi"
+      },
+      {
+        "word": "椿事",
+        "reading": "ちんじ",
+        "meaning_vi": "sự kiện bất ngờ, chuyện lạ (hiếm gặp)"
+      }
     ]
   },
   {
     "character": "藍",
-    "onyomi": ["ラン"],
-    "kunyomi": ["あい"],
+    "onyomi": [
+      "ラン"
+    ],
+    "kunyomi": [
+      "あい"
+    ],
     "meaning_vi": "màu chàm, cây chàm (cây thuốc nhuộm màu xanh)",
     "stroke_count": 18,
     "vocab_examples": [
-      {"word": "藍色", "reading": "あいいろ", "meaning_vi": "màu chàm, màu xanh đậm"},
-      {"word": "出藍の誉れ", "reading": "しゅつらんのほまれ", "meaning_vi": "học trò vượt thầy (thành ngữ)"}
+      {
+        "word": "藍色",
+        "reading": "あいいろ",
+        "meaning_vi": "màu chàm, màu xanh đậm"
+      },
+      {
+        "word": "出藍の誉れ",
+        "reading": "しゅつらんのほまれ",
+        "meaning_vi": "học trò vượt thầy (thành ngữ)"
+      }
     ]
   },
   {
     "character": "桐",
-    "onyomi": ["トウ"],
-    "kunyomi": ["きり"],
+    "onyomi": [
+      "トウ"
+    ],
+    "kunyomi": [
+      "きり"
+    ],
     "meaning_vi": "cây paulownia (ngô đồng Nhật Bản)",
     "stroke_count": 10,
     "vocab_examples": [
-      {"word": "桐箱", "reading": "きりばこ", "meaning_vi": "hộp gỗ ngô đồng (đựng đồ quý)"},
-      {"word": "桐一葉", "reading": "きりひとは", "meaning_vi": "một lá ngô đồng rụng (dấu hiệu mùa thu)"}
+      {
+        "word": "桐箱",
+        "reading": "きりばこ",
+        "meaning_vi": "hộp gỗ ngô đồng (đựng đồ quý)"
+      },
+      {
+        "word": "桐一葉",
+        "reading": "きりひとは",
+        "meaning_vi": "một lá ngô đồng rụng (dấu hiệu mùa thu)"
+      }
     ]
   },
   {
     "character": "檜",
-    "onyomi": ["カイ"],
-    "kunyomi": ["ひのき"],
+    "onyomi": [
+      "カイ"
+    ],
+    "kunyomi": [
+      "ひのき"
+    ],
     "meaning_vi": "cây bách Nhật (Japanese cypress)",
     "stroke_count": 17,
     "vocab_examples": [
-      {"word": "檜舞台", "reading": "ひのきぶたい", "meaning_vi": "sân khấu lớn; cơ hội nổi bật"},
-      {"word": "檜風呂", "reading": "ひのきふろ", "meaning_vi": "bồn tắm gỗ bách hương"}
+      {
+        "word": "檜舞台",
+        "reading": "ひのきぶたい",
+        "meaning_vi": "sân khấu lớn; cơ hội nổi bật"
+      },
+      {
+        "word": "檜風呂",
+        "reading": "ひのきふろ",
+        "meaning_vi": "bồn tắm gỗ bách hương"
+      }
     ]
   },
   {
     "character": "蔦",
-    "onyomi": ["チョウ"],
-    "kunyomi": ["つた"],
+    "onyomi": [
+      "チョウ"
+    ],
+    "kunyomi": [
+      "つた"
+    ],
     "meaning_vi": "cây thường xuân, dây leo bám tường",
     "stroke_count": 15,
     "vocab_examples": [
-      {"word": "蔦の絡まる", "reading": "つたのからまる", "meaning_vi": "leo bám quấn quýt (của dây leo)"},
-      {"word": "蔦紅葉", "reading": "つたもみじ", "meaning_vi": "lá dây leo đỏ mùa thu"}
+      {
+        "word": "蔦の絡まる",
+        "reading": "つたのからまる",
+        "meaning_vi": "leo bám quấn quýt (của dây leo)"
+      },
+      {
+        "word": "蔦紅葉",
+        "reading": "つたもみじ",
+        "meaning_vi": "lá dây leo đỏ mùa thu"
+      }
     ]
   },
   {
     "character": "棘",
-    "onyomi": ["キョク"],
-    "kunyomi": ["とげ", "いばら"],
+    "onyomi": [
+      "キョク"
+    ],
+    "kunyomi": [
+      "とげ",
+      "いばら"
+    ],
     "meaning_vi": "gai nhọn, mũi nhọn; lời nói châm biếm",
     "stroke_count": 12,
     "vocab_examples": [
-      {"word": "棘のある言葉", "reading": "とげのあることば", "meaning_vi": "lời nói có gai, lời sắc bén"},
-      {"word": "棘を抜く", "reading": "とげをぬく", "meaning_vi": "nhổ gai"}
+      {
+        "word": "棘のある言葉",
+        "reading": "とげのあることば",
+        "meaning_vi": "lời nói có gai, lời sắc bén"
+      },
+      {
+        "word": "棘を抜く",
+        "reading": "とげをぬく",
+        "meaning_vi": "nhổ gai"
+      }
     ]
   },
   {
     "character": "萌",
-    "onyomi": ["ホウ"],
-    "kunyomi": ["も.える", "きざ.す"],
+    "onyomi": [
+      "ホウ"
+    ],
+    "kunyomi": [
+      "も.える",
+      "きざ.す"
+    ],
     "meaning_vi": "nảy mầm, đâm chồi; khởi đầu; dễ thương",
     "stroke_count": 11,
     "vocab_examples": [
-      {"word": "萌える", "reading": "もえる", "meaning_vi": "nảy mầm; say mê (tiếng lóng)"},
-      {"word": "萌芽", "reading": "ほうが", "meaning_vi": "mầm mống, nảy sinh"}
+      {
+        "word": "萌える",
+        "reading": "もえる",
+        "meaning_vi": "nảy mầm; say mê (tiếng lóng)"
+      },
+      {
+        "word": "萌芽",
+        "reading": "ほうが",
+        "meaning_vi": "mầm mống, nảy sinh"
+      }
     ]
   },
   {
     "character": "菫",
-    "onyomi": ["キン"],
-    "kunyomi": ["すみれ"],
+    "onyomi": [
+      "キン"
+    ],
+    "kunyomi": [
+      "すみれ"
+    ],
     "meaning_vi": "hoa tím, hoa violet",
     "stroke_count": 11,
     "vocab_examples": [
-      {"word": "菫色", "reading": "すみれいろ", "meaning_vi": "màu tím hoa violet"},
-      {"word": "野菫", "reading": "のすみれ", "meaning_vi": "hoa tím đồng nội"}
+      {
+        "word": "菫色",
+        "reading": "すみれいろ",
+        "meaning_vi": "màu tím hoa violet"
+      },
+      {
+        "word": "野菫",
+        "reading": "のすみれ",
+        "meaning_vi": "hoa tím đồng nội"
+      }
     ]
   },
   {
     "character": "葵",
-    "onyomi": ["キ"],
-    "kunyomi": ["あおい"],
+    "onyomi": [
+      "キ"
+    ],
+    "kunyomi": [
+      "あおい"
+    ],
     "meaning_vi": "cây cẩm quỳ, hoa hollyhock; biểu tượng gia tộc Tokugawa",
     "stroke_count": 12,
     "vocab_examples": [
-      {"word": "葵の御紋", "reading": "あおいのごもん", "meaning_vi": "gia huy lá cẩm quỳ của Tokugawa"},
-      {"word": "立葵", "reading": "たちあおい", "meaning_vi": "hoa cẩm quỳ thẳng đứng"}
+      {
+        "word": "葵の御紋",
+        "reading": "あおいのごもん",
+        "meaning_vi": "gia huy lá cẩm quỳ của Tokugawa"
+      },
+      {
+        "word": "立葵",
+        "reading": "たちあおい",
+        "meaning_vi": "hoa cẩm quỳ thẳng đứng"
+      }
     ]
   },
   {
     "character": "蒲",
-    "onyomi": ["ホ", "フ"],
-    "kunyomi": ["かば", "がま"],
+    "onyomi": [
+      "ホ",
+      "フ"
+    ],
+    "kunyomi": [
+      "かば",
+      "がま"
+    ],
     "meaning_vi": "cây bồ (cói lác), cây nến (cattail)",
     "stroke_count": 13,
     "vocab_examples": [
-      {"word": "蒲鉾", "reading": "かまぼこ", "meaning_vi": "chả cá hấp Nhật Bản"},
-      {"word": "蒲団", "reading": "ふとん", "meaning_vi": "chăn/nệm bông Nhật"}
+      {
+        "word": "蒲鉾",
+        "reading": "かまぼこ",
+        "meaning_vi": "chả cá hấp Nhật Bản"
+      },
+      {
+        "word": "蒲団",
+        "reading": "ふとん",
+        "meaning_vi": "chăn/nệm bông Nhật"
+      }
     ]
   },
   {
     "character": "鯛",
-    "onyomi": ["チョウ", "タイ"],
-    "kunyomi": ["たい"],
+    "onyomi": [
+      "チョウ",
+      "タイ"
+    ],
+    "kunyomi": [
+      "たい"
+    ],
     "meaning_vi": "cá tai, cá tráp biển (sea bream)",
     "stroke_count": 19,
     "vocab_examples": [
-      {"word": "鯛の塩焼き", "reading": "たいのしおやき", "meaning_vi": "cá tráp nướng muối"},
-      {"word": "腐っても鯛", "reading": "くさってもたい", "meaning_vi": "dù thế nào vẫn là cá quý (câu tục ngữ)"}
+      {
+        "word": "鯛の塩焼き",
+        "reading": "たいのしおやき",
+        "meaning_vi": "cá tráp nướng muối"
+      },
+      {
+        "word": "腐っても鯛",
+        "reading": "くさってもたい",
+        "meaning_vi": "dù thế nào vẫn là cá quý (câu tục ngữ)"
+      }
     ]
   },
   {
     "character": "鮭",
-    "onyomi": ["カイ", "ケイ"],
-    "kunyomi": ["さけ", "しゃけ"],
+    "onyomi": [
+      "カイ",
+      "ケイ"
+    ],
+    "kunyomi": [
+      "さけ",
+      "しゃけ"
+    ],
     "meaning_vi": "cá hồi (salmon)",
     "stroke_count": 17,
     "vocab_examples": [
-      {"word": "鮭の切り身", "reading": "さけのきりみ", "meaning_vi": "miếng cá hồi phi lê"},
-      {"word": "塩鮭", "reading": "しおざけ", "meaning_vi": "cá hồi ướp muối"}
+      {
+        "word": "鮭の切り身",
+        "reading": "さけのきりみ",
+        "meaning_vi": "miếng cá hồi phi lê"
+      },
+      {
+        "word": "塩鮭",
+        "reading": "しおざけ",
+        "meaning_vi": "cá hồi ướp muối"
+      }
     ]
   },
   {
     "character": "鰻",
-    "onyomi": ["マン"],
-    "kunyomi": ["うなぎ"],
+    "onyomi": [
+      "マン"
+    ],
+    "kunyomi": [
+      "うなぎ"
+    ],
     "meaning_vi": "cá chình, lươn (eel)",
     "stroke_count": 22,
     "vocab_examples": [
-      {"word": "鰻丼", "reading": "うなどん", "meaning_vi": "cơm lươn nướng (unaju/unadon)"},
-      {"word": "鰻の寝床", "reading": "うなぎのねどこ", "meaning_vi": "nhà hình ống (nghĩa bóng)"}
+      {
+        "word": "鰻丼",
+        "reading": "うなどん",
+        "meaning_vi": "cơm lươn nướng (unaju/unadon)"
+      },
+      {
+        "word": "鰻の寝床",
+        "reading": "うなぎのねどこ",
+        "meaning_vi": "nhà hình ống (nghĩa bóng)"
+      }
     ]
   },
   {
     "character": "鱈",
-    "onyomi": ["セツ"],
-    "kunyomi": ["たら"],
+    "onyomi": [
+      "セツ"
+    ],
+    "kunyomi": [
+      "たら"
+    ],
     "meaning_vi": "cá tuyết (codfish)",
     "stroke_count": 21,
     "vocab_examples": [
-      {"word": "鱈鍋", "reading": "たらなべ", "meaning_vi": "lẩu cá tuyết"},
-      {"word": "鱈子", "reading": "たらこ", "meaning_vi": "trứng cá tuyết"}
+      {
+        "word": "鱈鍋",
+        "reading": "たらなべ",
+        "meaning_vi": "lẩu cá tuyết"
+      },
+      {
+        "word": "鱈子",
+        "reading": "たらこ",
+        "meaning_vi": "trứng cá tuyết"
+      }
     ]
   },
   {
     "character": "鰹",
-    "onyomi": ["ケン"],
-    "kunyomi": ["かつお"],
+    "onyomi": [
+      "ケン"
+    ],
+    "kunyomi": [
+      "かつお"
+    ],
     "meaning_vi": "cá ngừ vằn, cá bonito",
     "stroke_count": 20,
     "vocab_examples": [
-      {"word": "鰹節", "reading": "かつおぶし", "meaning_vi": "cá bào (katsuobushi), gia vị Nhật"},
-      {"word": "鰹のたたき", "reading": "かつおのたたき", "meaning_vi": "cá bonito áp chảo kiểu Nhật"}
+      {
+        "word": "鰹節",
+        "reading": "かつおぶし",
+        "meaning_vi": "cá bào (katsuobushi), gia vị Nhật"
+      },
+      {
+        "word": "鰹のたたき",
+        "reading": "かつおのたたき",
+        "meaning_vi": "cá bonito áp chảo kiểu Nhật"
+      }
     ]
   },
   {
     "character": "鯖",
-    "onyomi": ["セイ", "ショウ"],
-    "kunyomi": ["さば"],
+    "onyomi": [
+      "セイ",
+      "ショウ"
+    ],
+    "kunyomi": [
+      "さば"
+    ],
     "meaning_vi": "cá thu (mackerel)",
     "stroke_count": 16,
     "vocab_examples": [
-      {"word": "鯖の味噌煮", "reading": "さばのみそに", "meaning_vi": "cá thu kho miso"},
-      {"word": "鯖読む", "reading": "さばをよむ", "meaning_vi": "gian lận số liệu, nói dối về tuổi"}
+      {
+        "word": "鯖の味噌煮",
+        "reading": "さばのみそに",
+        "meaning_vi": "cá thu kho miso"
+      },
+      {
+        "word": "鯖読む",
+        "reading": "さばをよむ",
+        "meaning_vi": "gian lận số liệu, nói dối về tuổi"
+      }
     ]
   },
   {
     "character": "蛸",
-    "onyomi": ["ショウ"],
-    "kunyomi": ["たこ"],
+    "onyomi": [
+      "ショウ"
+    ],
+    "kunyomi": [
+      "たこ"
+    ],
     "meaning_vi": "con bạch tuộc (octopus)",
     "stroke_count": 13,
     "vocab_examples": [
-      {"word": "蛸焼き", "reading": "たこやき", "meaning_vi": "bánh bạch tuộc (takoyaki)"},
-      {"word": "蛸壺", "reading": "たこつぼ", "meaning_vi": "bình bẫy bạch tuộc; tư duy cục bộ"}
-    ]
-  },
-  {
-    "character": "蟹",
-    "onyomi": ["カイ"],
-    "kunyomi": ["かに"],
-    "meaning_vi": "con cua (crab)",
-    "stroke_count": 19,
-    "vocab_examples": [
-      {"word": "蟹道楽", "reading": "かにどうらく", "meaning_vi": "thú ăn cua; tên nhà hàng cua nổi tiếng"},
-      {"word": "蟹の甲羅", "reading": "かにのこうら", "meaning_vi": "mai cua"}
+      {
+        "word": "蛸焼き",
+        "reading": "たこやき",
+        "meaning_vi": "bánh bạch tuộc (takoyaki)"
+      },
+      {
+        "word": "蛸壺",
+        "reading": "たこつぼ",
+        "meaning_vi": "bình bẫy bạch tuộc; tư duy cục bộ"
+      }
     ]
   },
   {
     "character": "蝶",
-    "onyomi": ["チョウ"],
-    "kunyomi": ["ちょう"],
+    "onyomi": [
+      "チョウ"
+    ],
+    "kunyomi": [
+      "ちょう"
+    ],
     "meaning_vi": "con bướm (butterfly)",
     "stroke_count": 15,
     "vocab_examples": [
-      {"word": "蝶々", "reading": "ちょうちょう", "meaning_vi": "con bướm (ngôn ngữ trẻ em)"},
-      {"word": "胡蝶の夢", "reading": "こちょうのゆめ", "meaning_vi": "giấc mộng bướm (triết học Trang Tử)"}
+      {
+        "word": "蝶々",
+        "reading": "ちょうちょう",
+        "meaning_vi": "con bướm (ngôn ngữ trẻ em)"
+      },
+      {
+        "word": "胡蝶の夢",
+        "reading": "こちょうのゆめ",
+        "meaning_vi": "giấc mộng bướm (triết học Trang Tử)"
+      }
     ]
   },
   {
     "character": "蛙",
-    "onyomi": ["ア"],
-    "kunyomi": ["かえる"],
+    "onyomi": [
+      "ア"
+    ],
+    "kunyomi": [
+      "かえる"
+    ],
     "meaning_vi": "con ếch (frog)",
     "stroke_count": 12,
     "vocab_examples": [
-      {"word": "蛙の子は蛙", "reading": "かえるのこはかえる", "meaning_vi": "con nhà tông không giống lông cũng giống cánh"},
-      {"word": "井の中の蛙", "reading": "いのなかのかわず", "meaning_vi": "ếch ngồi đáy giếng (tục ngữ)"}
+      {
+        "word": "蛙の子は蛙",
+        "reading": "かえるのこはかえる",
+        "meaning_vi": "con nhà tông không giống lông cũng giống cánh"
+      },
+      {
+        "word": "井の中の蛙",
+        "reading": "いのなかのかわず",
+        "meaning_vi": "ếch ngồi đáy giếng (tục ngữ)"
+      }
     ]
   },
   {
     "character": "蝉",
-    "onyomi": ["セン"],
-    "kunyomi": ["せみ"],
+    "onyomi": [
+      "セン"
+    ],
+    "kunyomi": [
+      "せみ"
+    ],
     "meaning_vi": "con ve sầu (cicada)",
     "stroke_count": 15,
     "vocab_examples": [
-      {"word": "蝉の声", "reading": "せみのこえ", "meaning_vi": "tiếng ve sầu"},
-      {"word": "空蝉", "reading": "うつせみ", "meaning_vi": "xác ve; thế gian phù du"}
+      {
+        "word": "蝉の声",
+        "reading": "せみのこえ",
+        "meaning_vi": "tiếng ve sầu"
+      },
+      {
+        "word": "空蝉",
+        "reading": "うつせみ",
+        "meaning_vi": "xác ve; thế gian phù du"
+      }
     ]
   },
   {
     "character": "蛍",
-    "onyomi": ["ケイ"],
-    "kunyomi": ["ほたる"],
+    "onyomi": [
+      "ケイ"
+    ],
+    "kunyomi": [
+      "ほたる"
+    ],
     "meaning_vi": "con đom đóm (firefly)",
     "stroke_count": 11,
     "vocab_examples": [
-      {"word": "蛍光", "reading": "けいこう", "meaning_vi": "phát quang huỳnh quang"},
-      {"word": "蛍の光", "reading": "ほたるのひかり", "meaning_vi": "ánh đom đóm (bài hát tốt nghiệp nổi tiếng)"}
+      {
+        "word": "蛍光",
+        "reading": "けいこう",
+        "meaning_vi": "phát quang huỳnh quang"
+      },
+      {
+        "word": "蛍の光",
+        "reading": "ほたるのひかり",
+        "meaning_vi": "ánh đom đóm (bài hát tốt nghiệp nổi tiếng)"
+      }
     ]
   },
   {
     "character": "鷲",
-    "onyomi": ["シュウ"],
-    "kunyomi": ["わし"],
+    "onyomi": [
+      "シュウ"
+    ],
+    "kunyomi": [
+      "わし"
+    ],
     "meaning_vi": "đại bàng (eagle)",
     "stroke_count": 23,
     "vocab_examples": [
-      {"word": "金鷲", "reading": "きんしゅう", "meaning_vi": "đại bàng vàng (golden eagle)"},
-      {"word": "鷲掴み", "reading": "わしづかみ", "meaning_vi": "nắm chặt bằng cả bàn tay"}
+      {
+        "word": "金鷲",
+        "reading": "きんしゅう",
+        "meaning_vi": "đại bàng vàng (golden eagle)"
+      },
+      {
+        "word": "鷲掴み",
+        "reading": "わしづかみ",
+        "meaning_vi": "nắm chặt bằng cả bàn tay"
+      }
     ]
   },
   {
     "character": "鷹",
-    "onyomi": ["ヨウ"],
-    "kunyomi": ["たか"],
+    "onyomi": [
+      "ヨウ"
+    ],
+    "kunyomi": [
+      "たか"
+    ],
     "meaning_vi": "chim ưng, diều hâu (hawk)",
     "stroke_count": 24,
     "vocab_examples": [
-      {"word": "鷹狩り", "reading": "たかがり", "meaning_vi": "săn bằng chim ưng, falconry"},
-      {"word": "鷹の目", "reading": "たかのめ", "meaning_vi": "mắt đại bàng, quan sát sắc bén"}
+      {
+        "word": "鷹狩り",
+        "reading": "たかがり",
+        "meaning_vi": "săn bằng chim ưng, falconry"
+      },
+      {
+        "word": "鷹の目",
+        "reading": "たかのめ",
+        "meaning_vi": "mắt đại bàng, quan sát sắc bén"
+      }
     ]
   },
   {
     "character": "鴨",
-    "onyomi": ["オウ"],
-    "kunyomi": ["かも"],
+    "onyomi": [
+      "オウ"
+    ],
+    "kunyomi": [
+      "かも"
+    ],
     "meaning_vi": "con vịt trời (wild duck)",
     "stroke_count": 16,
     "vocab_examples": [
-      {"word": "鴨南蛮", "reading": "かもなんばん", "meaning_vi": "mì kiều/soba vịt hành"},
-      {"word": "鴨葱", "reading": "かもねぎ", "meaning_vi": "vịt với hành (ăn ngon); may mắn bất ngờ"}
+      {
+        "word": "鴨南蛮",
+        "reading": "かもなんばん",
+        "meaning_vi": "mì kiều/soba vịt hành"
+      },
+      {
+        "word": "鴨葱",
+        "reading": "かもねぎ",
+        "meaning_vi": "vịt với hành (ăn ngon); may mắn bất ngờ"
+      }
     ]
   },
   {
     "character": "燕",
-    "onyomi": ["エン"],
-    "kunyomi": ["つばめ"],
+    "onyomi": [
+      "エン"
+    ],
+    "kunyomi": [
+      "つばめ"
+    ],
     "meaning_vi": "con chim én, chim nhạn (swallow)",
     "stroke_count": 16,
     "vocab_examples": [
-      {"word": "燕の巣", "reading": "つばめのす", "meaning_vi": "tổ chim én; tổ yến"},
-      {"word": "飛燕", "reading": "ひえん", "meaning_vi": "én bay (hình tượng nhanh nhẹn)"}
+      {
+        "word": "燕の巣",
+        "reading": "つばめのす",
+        "meaning_vi": "tổ chim én; tổ yến"
+      },
+      {
+        "word": "飛燕",
+        "reading": "ひえん",
+        "meaning_vi": "én bay (hình tượng nhanh nhẹn)"
+      }
     ]
   },
   {
     "character": "雉",
-    "onyomi": ["チ"],
-    "kunyomi": ["きじ"],
+    "onyomi": [
+      "チ"
+    ],
+    "kunyomi": [
+      "きじ"
+    ],
     "meaning_vi": "chim trĩ (pheasant), biểu tượng quốc gia Nhật Bản",
     "stroke_count": 13,
     "vocab_examples": [
-      {"word": "雉鳩", "reading": "きじばと", "meaning_vi": "chim cu gáy (pigeon)"},
-      {"word": "雉の子", "reading": "きじのこ", "meaning_vi": "chim trĩ con"}
+      {
+        "word": "雉鳩",
+        "reading": "きじばと",
+        "meaning_vi": "chim cu gáy (pigeon)"
+      },
+      {
+        "word": "雉の子",
+        "reading": "きじのこ",
+        "meaning_vi": "chim trĩ con"
+      }
     ]
   },
   {
     "character": "鶉",
-    "onyomi": ["ジュン"],
-    "kunyomi": ["うずら"],
+    "onyomi": [
+      "ジュン"
+    ],
+    "kunyomi": [
+      "うずら"
+    ],
     "meaning_vi": "chim cút (quail)",
     "stroke_count": 18,
     "vocab_examples": [
-      {"word": "鶉の卵", "reading": "うずらのたまご", "meaning_vi": "trứng chim cút"},
-      {"word": "鶉衣", "reading": "うずらごろも", "meaning_vi": "áo vá víu (ăn mặc rách rưới, tục ngữ)"}
+      {
+        "word": "鶉の卵",
+        "reading": "うずらのたまご",
+        "meaning_vi": "trứng chim cút"
+      },
+      {
+        "word": "鶉衣",
+        "reading": "うずらごろも",
+        "meaning_vi": "áo vá víu (ăn mặc rách rưới, tục ngữ)"
+      }
     ]
   },
   {
     "character": "鷺",
-    "onyomi": ["ロ"],
-    "kunyomi": ["さぎ"],
+    "onyomi": [
+      "ロ"
+    ],
+    "kunyomi": [
+      "さぎ"
+    ],
     "meaning_vi": "con cò, diệc (heron)",
     "stroke_count": 24,
     "vocab_examples": [
-      {"word": "白鷺", "reading": "しらさぎ", "meaning_vi": "cò trắng, diệc trắng"},
-      {"word": "鷺の姿", "reading": "さぎのすがた", "meaning_vi": "dáng điệu cò đứng (thanh tao)"}
+      {
+        "word": "白鷺",
+        "reading": "しらさぎ",
+        "meaning_vi": "cò trắng, diệc trắng"
+      },
+      {
+        "word": "鷺の姿",
+        "reading": "さぎのすがた",
+        "meaning_vi": "dáng điệu cò đứng (thanh tao)"
+      }
     ]
   },
   {
     "character": "隼",
-    "onyomi": ["シュン"],
-    "kunyomi": ["はやぶさ"],
+    "onyomi": [
+      "シュン"
+    ],
+    "kunyomi": [
+      "はやぶさ"
+    ],
     "meaning_vi": "chim ưng cắt (peregrine falcon)",
     "stroke_count": 10,
     "vocab_examples": [
-      {"word": "隼人", "reading": "はやと", "meaning_vi": "tên người (nghĩa: người nhanh như ưng)"},
-      {"word": "隼の如く", "reading": "はやぶさのごとく", "meaning_vi": "nhanh như chim ưng"}
+      {
+        "word": "隼人",
+        "reading": "はやと",
+        "meaning_vi": "tên người (nghĩa: người nhanh như ưng)"
+      },
+      {
+        "word": "隼の如く",
+        "reading": "はやぶさのごとく",
+        "meaning_vi": "nhanh như chim ưng"
+      }
     ]
   },
   {
     "character": "鳶",
-    "onyomi": ["エン"],
-    "kunyomi": ["とび", "とんび"],
+    "onyomi": [
+      "エン"
+    ],
+    "kunyomi": [
+      "とび",
+      "とんび"
+    ],
     "meaning_vi": "diều hâu (black kite), thợ xây mặc yukata",
     "stroke_count": 14,
     "vocab_examples": [
-      {"word": "鳶が鷹を産む", "reading": "とびがたかをうむ", "meaning_vi": "diều hâu sinh ra chim ưng (con vượt cha mẹ)"},
-      {"word": "鳶職", "reading": "とびしょく", "meaning_vi": "thợ làm dàn giáo xây dựng"}
+      {
+        "word": "鳶が鷹を産む",
+        "reading": "とびがたかをうむ",
+        "meaning_vi": "diều hâu sinh ra chim ưng (con vượt cha mẹ)"
+      },
+      {
+        "word": "鳶職",
+        "reading": "とびしょく",
+        "meaning_vi": "thợ làm dàn giáo xây dựng"
+      }
     ]
   },
   {
     "character": "雛",
-    "onyomi": ["スウ"],
-    "kunyomi": ["ひな", "ひよこ"],
+    "onyomi": [
+      "スウ"
+    ],
+    "kunyomi": [
+      "ひな",
+      "ひよこ"
+    ],
     "meaning_vi": "gà con, chim non; búp bê nhỏ",
     "stroke_count": 18,
     "vocab_examples": [
-      {"word": "雛祭り", "reading": "ひなまつり", "meaning_vi": "Lễ hội búp bê (3/3 âm lịch)"},
-      {"word": "雛鳥", "reading": "ひなどり", "meaning_vi": "chim con, gà con mới nở"}
+      {
+        "word": "雛祭り",
+        "reading": "ひなまつり",
+        "meaning_vi": "Lễ hội búp bê (3/3 âm lịch)"
+      },
+      {
+        "word": "雛鳥",
+        "reading": "ひなどり",
+        "meaning_vi": "chim con, gà con mới nở"
+      }
     ]
   },
   {
     "character": "狼",
-    "onyomi": ["ロウ"],
-    "kunyomi": ["おおかみ"],
+    "onyomi": [
+      "ロウ"
+    ],
+    "kunyomi": [
+      "おおかみ"
+    ],
     "meaning_vi": "con sói (wolf)",
     "stroke_count": 10,
     "vocab_examples": [
-      {"word": "狼狽", "reading": "ろうばい", "meaning_vi": "hoảng loạn, luống cuống"},
-      {"word": "狼煙", "reading": "のろし", "meaning_vi": "khói hiệu (tín hiệu bằng khói)"}
+      {
+        "word": "狼狽",
+        "reading": "ろうばい",
+        "meaning_vi": "hoảng loạn, luống cuống"
+      },
+      {
+        "word": "狼煙",
+        "reading": "のろし",
+        "meaning_vi": "khói hiệu (tín hiệu bằng khói)"
+      }
     ]
   },
   {
     "character": "獅",
-    "onyomi": ["シ"],
+    "onyomi": [
+      "シ"
+    ],
     "kunyomi": [],
     "meaning_vi": "con sư tử (lion)",
     "stroke_count": 14,
     "vocab_examples": [
-      {"word": "獅子", "reading": "しし", "meaning_vi": "sư tử"},
-      {"word": "獅子舞", "reading": "ししまい", "meaning_vi": "múa sư tử (truyền thống Nhật)"}
+      {
+        "word": "獅子",
+        "reading": "しし",
+        "meaning_vi": "sư tử"
+      },
+      {
+        "word": "獅子舞",
+        "reading": "ししまい",
+        "meaning_vi": "múa sư tử (truyền thống Nhật)"
+      }
     ]
   },
   {
     "character": "蜘",
-    "onyomi": ["チ"],
+    "onyomi": [
+      "チ"
+    ],
     "kunyomi": [],
     "meaning_vi": "con nhện (spider) - dùng trong 蜘蛛",
     "stroke_count": 13,
     "vocab_examples": [
-      {"word": "蜘蛛", "reading": "くも", "meaning_vi": "con nhện"},
-      {"word": "蜘蛛の巣", "reading": "くものす", "meaning_vi": "mạng nhện"}
+      {
+        "word": "蜘蛛",
+        "reading": "くも",
+        "meaning_vi": "con nhện"
+      },
+      {
+        "word": "蜘蛛の巣",
+        "reading": "くものす",
+        "meaning_vi": "mạng nhện"
+      }
     ]
   },
   {
     "character": "蛛",
-    "onyomi": ["チュ"],
+    "onyomi": [
+      "チュ"
+    ],
     "kunyomi": [],
     "meaning_vi": "nhện (phần sau của 蜘蛛)",
     "stroke_count": 13,
     "vocab_examples": [
-      {"word": "蜘蛛", "reading": "くも", "meaning_vi": "con nhện"},
-      {"word": "蜘蛛の糸", "reading": "くものいと", "meaning_vi": "tơ nhện (câu chuyện của Akutagawa)"}
+      {
+        "word": "蜘蛛",
+        "reading": "くも",
+        "meaning_vi": "con nhện"
+      },
+      {
+        "word": "蜘蛛の糸",
+        "reading": "くものいと",
+        "meaning_vi": "tơ nhện (câu chuyện của Akutagawa)"
+      }
     ]
   },
   {
     "character": "藤",
-    "onyomi": ["トウ"],
-    "kunyomi": ["ふじ"],
+    "onyomi": [
+      "トウ"
+    ],
+    "kunyomi": [
+      "ふじ"
+    ],
     "meaning_vi": "hoa tử đằng (wisteria), tên họ phổ biến",
     "stroke_count": 18,
     "vocab_examples": [
-      {"word": "藤棚", "reading": "ふじだな", "meaning_vi": "giàn hoa tử đằng"},
-      {"word": "藤色", "reading": "ふじいろ", "meaning_vi": "màu tím nhạt (màu hoa tử đằng)"}
+      {
+        "word": "藤棚",
+        "reading": "ふじだな",
+        "meaning_vi": "giàn hoa tử đằng"
+      },
+      {
+        "word": "藤色",
+        "reading": "ふじいろ",
+        "meaning_vi": "màu tím nhạt (màu hoa tử đằng)"
+      }
     ]
   },
   {
     "character": "楓",
-    "onyomi": ["フウ"],
-    "kunyomi": ["かえで"],
+    "onyomi": [
+      "フウ"
+    ],
+    "kunyomi": [
+      "かえで"
+    ],
     "meaning_vi": "cây phong, lá phong (maple)",
     "stroke_count": 13,
     "vocab_examples": [
-      {"word": "楓の葉", "reading": "かえでのは", "meaning_vi": "lá phong"},
-      {"word": "楓林", "reading": "ふうりん", "meaning_vi": "rừng phong"}
+      {
+        "word": "楓の葉",
+        "reading": "かえでのは",
+        "meaning_vi": "lá phong"
+      },
+      {
+        "word": "楓林",
+        "reading": "ふうりん",
+        "meaning_vi": "rừng phong"
+      }
     ]
   },
   {
     "character": "蓮",
-    "onyomi": ["レン"],
-    "kunyomi": ["はす", "はちす"],
+    "onyomi": [
+      "レン"
+    ],
+    "kunyomi": [
+      "はす",
+      "はちす"
+    ],
     "meaning_vi": "hoa sen (lotus)",
     "stroke_count": 13,
     "vocab_examples": [
-      {"word": "蓮の花", "reading": "はすのはな", "meaning_vi": "hoa sen"},
-      {"word": "蓮根", "reading": "れんこん", "meaning_vi": "củ sen"}
+      {
+        "word": "蓮の花",
+        "reading": "はすのはな",
+        "meaning_vi": "hoa sen"
+      },
+      {
+        "word": "蓮根",
+        "reading": "れんこん",
+        "meaning_vi": "củ sen"
+      }
     ]
   },
   {
     "character": "槙",
-    "onyomi": ["テン"],
-    "kunyomi": ["まき"],
+    "onyomi": [
+      "テン"
+    ],
+    "kunyomi": [
+      "まき"
+    ],
     "meaning_vi": "cây thông thật (podocarpus), gỗ quý Nhật Bản",
     "stroke_count": 14,
     "vocab_examples": [
-      {"word": "槙の木", "reading": "まきのき", "meaning_vi": "cây thông thật (cây thường xanh quý)"},
-      {"word": "槙の庭", "reading": "まきのにわ", "meaning_vi": "vườn có cây thông thật"}
+      {
+        "word": "槙の木",
+        "reading": "まきのき",
+        "meaning_vi": "cây thông thật (cây thường xanh quý)"
+      },
+      {
+        "word": "槙の庭",
+        "reading": "まきのにわ",
+        "meaning_vi": "vườn có cây thông thật"
+      }
     ]
   },
   {
     "character": "鳳",
-    "onyomi": ["ホウ"],
-    "kunyomi": ["おおとり"],
+    "onyomi": [
+      "ホウ"
+    ],
+    "kunyomi": [
+      "おおとり"
+    ],
     "meaning_vi": "chim phụng, phượng hoàng (phoenix)",
     "stroke_count": 14,
     "vocab_examples": [
-      {"word": "鳳凰", "reading": "ほうおう", "meaning_vi": "phượng hoàng (chim huyền thoại)"},
-      {"word": "鳳雛", "reading": "ほうすう", "meaning_vi": "phượng hoàng con; người tài năng trẻ"}
-    ]
-  },
-  {
-    "character": "龍",
-    "onyomi": ["リュウ", "ロン"],
-    "kunyomi": ["たつ"],
-    "meaning_vi": "con rồng (dragon)",
-    "stroke_count": 16,
-    "vocab_examples": [
-      {"word": "龍神", "reading": "りゅうじん", "meaning_vi": "thần rồng, rồng thần"},
-      {"word": "臥龍", "reading": "がりょう", "meaning_vi": "rồng nằm; nhân tài chưa được dùng"}
-    ]
-  },
-  {
-    "character": "鶴",
-    "onyomi": ["カク"],
-    "kunyomi": ["つる"],
-    "meaning_vi": "chim hạc (crane), biểu tượng may mắn",
-    "stroke_count": 21,
-    "vocab_examples": [
-      {"word": "鶴の一声", "reading": "つるのひとこえ", "meaning_vi": "lệnh của người có thẩm quyền (một câu quyết định)"},
-      {"word": "千羽鶴", "reading": "せんばづる", "meaning_vi": "ngàn con hạc giấy (origami)"}
+      {
+        "word": "鳳凰",
+        "reading": "ほうおう",
+        "meaning_vi": "phượng hoàng (chim huyền thoại)"
+      },
+      {
+        "word": "鳳雛",
+        "reading": "ほうすう",
+        "meaning_vi": "phượng hoàng con; người tài năng trẻ"
+      }
     ]
   },
   {
     "character": "亀",
-    "onyomi": ["キ", "キュウ"],
-    "kunyomi": ["かめ"],
+    "onyomi": [
+      "キ",
+      "キュウ"
+    ],
+    "kunyomi": [
+      "かめ"
+    ],
     "meaning_vi": "con rùa (turtle), biểu tượng trường thọ",
     "stroke_count": 11,
     "vocab_examples": [
-      {"word": "亀の甲より年の功", "reading": "かめのこうよりとしのこう", "meaning_vi": "kinh nghiệm lâu năm quý hơn mọi thứ"},
-      {"word": "亀裂", "reading": "きれつ", "meaning_vi": "vết nứt, khe hở"}
+      {
+        "word": "亀の甲より年の功",
+        "reading": "かめのこうよりとしのこう",
+        "meaning_vi": "kinh nghiệm lâu năm quý hơn mọi thứ"
+      },
+      {
+        "word": "亀裂",
+        "reading": "きれつ",
+        "meaning_vi": "vết nứt, khe hở"
+      }
     ]
   },
   {
     "character": "麒",
-    "onyomi": ["キ"],
+    "onyomi": [
+      "キ"
+    ],
     "kunyomi": [],
     "meaning_vi": "kỳ lân (phần trước của 麒麟)",
     "stroke_count": 19,
     "vocab_examples": [
-      {"word": "麒麟", "reading": "きりん", "meaning_vi": "kỳ lân (linh vật huyền thoại); hươu cao cổ"},
-      {"word": "麒麟児", "reading": "きりんじ", "meaning_vi": "thần đồng, thiên tài"}
+      {
+        "word": "麒麟",
+        "reading": "きりん",
+        "meaning_vi": "kỳ lân (linh vật huyền thoại); hươu cao cổ"
+      },
+      {
+        "word": "麒麟児",
+        "reading": "きりんじ",
+        "meaning_vi": "thần đồng, thiên tài"
+      }
     ]
   },
   {
     "character": "麟",
-    "onyomi": ["リン"],
+    "onyomi": [
+      "リン"
+    ],
     "kunyomi": [],
     "meaning_vi": "kỳ lân (phần sau của 麒麟)",
     "stroke_count": 23,
     "vocab_examples": [
-      {"word": "麒麟", "reading": "きりん", "meaning_vi": "kỳ lân, biểu tượng của điềm lành"},
-      {"word": "鳳麟", "reading": "ほうりん", "meaning_vi": "phượng và kỳ lân (điềm lành)"}
+      {
+        "word": "麒麟",
+        "reading": "きりん",
+        "meaning_vi": "kỳ lân, biểu tượng của điềm lành"
+      },
+      {
+        "word": "鳳麟",
+        "reading": "ほうりん",
+        "meaning_vi": "phượng và kỳ lân (điềm lành)"
+      }
     ]
   },
   {
     "character": "蕨",
-    "onyomi": ["ケツ"],
-    "kunyomi": ["わらび"],
+    "onyomi": [
+      "ケツ"
+    ],
+    "kunyomi": [
+      "わらび"
+    ],
     "meaning_vi": "cây dương xỉ, cây quyết (bracken fern)",
     "stroke_count": 15,
     "vocab_examples": [
-      {"word": "蕨餅", "reading": "わらびもち", "meaning_vi": "bánh mochi dương xỉ (đặc sản Nhật)"},
-      {"word": "蕨採り", "reading": "わらびとり", "meaning_vi": "hái ngọn dương xỉ (hoạt động mùa xuân)"}
+      {
+        "word": "蕨餅",
+        "reading": "わらびもち",
+        "meaning_vi": "bánh mochi dương xỉ (đặc sản Nhật)"
+      },
+      {
+        "word": "蕨採り",
+        "reading": "わらびとり",
+        "meaning_vi": "hái ngọn dương xỉ (hoạt động mùa xuân)"
+      }
     ]
   },
   {
     "character": "狐",
-    "onyomi": ["コ"],
-    "kunyomi": ["きつね"],
+    "onyomi": [
+      "コ"
+    ],
+    "kunyomi": [
+      "きつね"
+    ],
     "meaning_vi": "con cáo (fox), con vật huyền bí trong văn hóa Nhật",
     "stroke_count": 9,
     "vocab_examples": [
-      {"word": "狐火", "reading": "きつねび", "meaning_vi": "lửa ma trơi (will-o'-the-wisp)"},
-      {"word": "狐疑", "reading": "こぎ", "meaning_vi": "nghi ngờ như cáo, do dự không quyết"}
+      {
+        "word": "狐火",
+        "reading": "きつねび",
+        "meaning_vi": "lửa ma trơi (will-o'-the-wisp)"
+      },
+      {
+        "word": "狐疑",
+        "reading": "こぎ",
+        "meaning_vi": "nghi ngờ như cáo, do dự không quyết"
+      }
     ]
   }
 ]
