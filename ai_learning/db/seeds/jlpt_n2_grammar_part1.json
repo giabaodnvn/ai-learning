@@ -60,21 +60,6 @@
     "notes_vi": "Mở rộng phạm vi để bao gồm nhiều hơn những gì được nêu."
   },
   {
-    "pattern": "〜ばかりか",
-    "explanation_vi": "Không chỉ..., mà còn... (thêm vào)",
-    "examples": [
-      {
-        "ja": "仕事が難しいばかりか、給料も安い。",
-        "vi": "Không chỉ công việc khó, mà lương còn thấp."
-      },
-      {
-        "ja": "彼は勉強するばかりか、スポーツも得意だ。",
-        "vi": "Anh ấy không chỉ học tập, mà còn giỏi thể thao."
-      }
-    ],
-    "notes_vi": "Thêm thông tin bổ sung vào câu trước đó."
-  },
-  {
     "pattern": "〜ともなると",
     "explanation_vi": "Khi... đến mức độ, lúc... (trở nên)",
     "examples": [
@@ -388,20 +373,5 @@
       }
     ],
     "notes_vi": "Biểu thị khả năng xảy ra điều tiêu cực nếu không cẩn thận."
-  },
-  {
-    "pattern": "〜ばかりに",
-    "explanation_vi": "Vì...nên... (nguyên nhân)",
-    "examples": [
-      {
-        "ja": "新製品を発表したばかりに、株価が下がった。",
-        "vi": "Vì phát hành sản phẩm mới nên giá cổ phiếu giảm."
-      },
-      {
-        "ja": "意見を言ったばかりに、怒られてしまった。",
-        "vi": "Vì nói ý kiến nên bị giận dữ."
-      }
-    ],
-    "notes_vi": "Biểu thị nguyên nhân gây ra kết quả không mong muốn."
   }
 ]

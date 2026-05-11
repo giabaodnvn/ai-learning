@@ -53,26 +53,6 @@
     ]
   },
   {
-    "word": "使う",
-    "reading": "つかう",
-    "romaji": "tsukau",
-    "meaning_vi": "sử dụng, dùng",
-    "part_of_speech": "verb",
-    "tags": [
-      "action"
-    ]
-  },
-  {
-    "word": "作る",
-    "reading": "つくる",
-    "romaji": "tsukuru",
-    "meaning_vi": "làm, tạo ra, chế tạo",
-    "part_of_speech": "verb",
-    "tags": [
-      "action"
-    ]
-  },
-  {
     "word": "直す",
     "reading": "なおす",
     "romaji": "naosu",
@@ -87,26 +67,6 @@
     "reading": "こわす",
     "romaji": "kowasu",
     "meaning_vi": "phá vỡ, làm hỏng",
-    "part_of_speech": "verb",
-    "tags": [
-      "action"
-    ]
-  },
-  {
-    "word": "閉める",
-    "reading": "しめる",
-    "romaji": "shimeru",
-    "meaning_vi": "đóng (cửa, cửa sổ)",
-    "part_of_speech": "verb",
-    "tags": [
-      "action"
-    ]
-  },
-  {
-    "word": "開ける",
-    "reading": "あける",
-    "romaji": "akeru",
-    "meaning_vi": "mở (cửa, hộp)",
     "part_of_speech": "verb",
     "tags": [
       "action"
@@ -145,28 +105,6 @@
     ]
   },
   {
-    "word": "乗る",
-    "reading": "のる",
-    "romaji": "noru",
-    "meaning_vi": "lên (xe, tàu), đi bằng",
-    "part_of_speech": "verb",
-    "tags": [
-      "action",
-      "transport"
-    ]
-  },
-  {
-    "word": "降りる",
-    "reading": "おりる",
-    "romaji": "oriru",
-    "meaning_vi": "xuống (xe, tàu), xuống dốc",
-    "part_of_speech": "verb",
-    "tags": [
-      "action",
-      "transport"
-    ]
-  },
-  {
     "word": "渡る",
     "reading": "わたる",
     "romaji": "wataru",
@@ -185,17 +123,6 @@
     "tags": [
       "action",
       "direction"
-    ]
-  },
-  {
-    "word": "走る",
-    "reading": "はしる",
-    "romaji": "hashiru",
-    "meaning_vi": "chạy",
-    "part_of_speech": "verb",
-    "tags": [
-      "action",
-      "movement"
     ]
   },
   {
@@ -468,17 +395,6 @@
     ]
   },
   {
-    "word": "休む",
-    "reading": "やすむ",
-    "romaji": "yasumu",
-    "meaning_vi": "nghỉ ngơi, vắng mặt",
-    "part_of_speech": "verb",
-    "tags": [
-      "action",
-      "health"
-    ]
-  },
-  {
     "word": "太る",
     "reading": "ふとる",
     "romaji": "futoru",
@@ -633,17 +549,6 @@
     ]
   },
   {
-    "word": "大切な",
-    "reading": "たいせつな",
-    "romaji": "taisetsuna",
-    "meaning_vi": "quan trọng, quý giá",
-    "part_of_speech": "adjective",
-    "tags": [
-      "na-adj",
-      "value"
-    ]
-  },
-  {
     "word": "大事な",
     "reading": "だいじな",
     "romaji": "daijina",
@@ -652,26 +557,6 @@
     "tags": [
       "na-adj",
       "value"
-    ]
-  },
-  {
-    "word": "便利な",
-    "reading": "べんりな",
-    "romaji": "benrina",
-    "meaning_vi": "tiện lợi, thuận tiện",
-    "part_of_speech": "adjective",
-    "tags": [
-      "na-adj"
-    ]
-  },
-  {
-    "word": "不便な",
-    "reading": "ふべんな",
-    "romaji": "fubenna",
-    "meaning_vi": "bất tiện, không thuận tiện",
-    "part_of_speech": "adjective",
-    "tags": [
-      "na-adj"
     ]
   },
   {
@@ -695,17 +580,6 @@
     ]
   },
   {
-    "word": "丁寧な",
-    "reading": "ていねいな",
-    "romaji": "teineina",
-    "meaning_vi": "lịch sự, cẩn thận, tỉ mỉ",
-    "part_of_speech": "adjective",
-    "tags": [
-      "na-adj",
-      "manner"
-    ]
-  },
-  {
     "word": "失礼な",
     "reading": "しつれいな",
     "romaji": "shitsureina",
@@ -721,28 +595,6 @@
     "reading": "しょうじきな",
     "romaji": "shoujikina",
     "meaning_vi": "thành thật, trung thực",
-    "part_of_speech": "adjective",
-    "tags": [
-      "na-adj",
-      "personality"
-    ]
-  },
-  {
-    "word": "真面目な",
-    "reading": "まじめな",
-    "romaji": "majimena",
-    "meaning_vi": "nghiêm túc, chăm chỉ, thật thà",
-    "part_of_speech": "adjective",
-    "tags": [
-      "na-adj",
-      "personality"
-    ]
-  },
-  {
-    "word": "親切な",
-    "reading": "しんせつな",
-    "romaji": "shinsetsu na",
-    "meaning_vi": "tốt bụng, thân thiện, nhiệt tình",
     "part_of_speech": "adjective",
     "tags": [
       "na-adj",
@@ -772,39 +624,6 @@
     ]
   },
   {
-    "word": "元気な",
-    "reading": "げんきな",
-    "romaji": "genkina",
-    "meaning_vi": "khỏe mạnh, sôi nổi",
-    "part_of_speech": "adjective",
-    "tags": [
-      "na-adj",
-      "health"
-    ]
-  },
-  {
-    "word": "得意な",
-    "reading": "とくいな",
-    "romaji": "tokuina",
-    "meaning_vi": "giỏi về, sở trường",
-    "part_of_speech": "adjective",
-    "tags": [
-      "na-adj",
-      "ability"
-    ]
-  },
-  {
-    "word": "苦手な",
-    "reading": "にがてな",
-    "romaji": "nigatena",
-    "meaning_vi": "không giỏi, điểm yếu",
-    "part_of_speech": "adjective",
-    "tags": [
-      "na-adj",
-      "ability"
-    ]
-  },
-  {
     "word": "無駄な",
     "reading": "むだな",
     "romaji": "mudana",
@@ -825,16 +644,6 @@
     ]
   },
   {
-    "word": "特別な",
-    "reading": "とくべつな",
-    "romaji": "tokubetsuna",
-    "meaning_vi": "đặc biệt",
-    "part_of_speech": "adjective",
-    "tags": [
-      "na-adj"
-    ]
-  },
-  {
     "word": "普通の",
     "reading": "ふつうの",
     "romaji": "futsuu no",
@@ -849,17 +658,6 @@
     "reading": "うれしい",
     "romaji": "ureshii",
     "meaning_vi": "vui mừng, sung sướng",
-    "part_of_speech": "adjective",
-    "tags": [
-      "i-adj",
-      "feeling"
-    ]
-  },
-  {
-    "word": "悲しい",
-    "reading": "かなしい",
-    "romaji": "kanashii",
-    "meaning_vi": "buồn bã, đau lòng",
     "part_of_speech": "adjective",
     "tags": [
       "i-adj",
@@ -889,18 +687,6 @@
     ]
   },
   {
-    "word": "眠い",
-    "reading": "ねむい",
-    "romaji": "nemui",
-    "meaning_vi": "buồn ngủ",
-    "part_of_speech": "adjective",
-    "tags": [
-      "i-adj",
-      "feeling",
-      "body"
-    ]
-  },
-  {
     "word": "疲れた",
     "reading": "つかれた",
     "romaji": "tsukareta",
@@ -909,18 +695,6 @@
     "tags": [
       "i-adj",
       "feeling",
-      "body"
-    ]
-  },
-  {
-    "word": "痛い",
-    "reading": "いたい",
-    "romaji": "itai",
-    "meaning_vi": "đau",
-    "part_of_speech": "adjective",
-    "tags": [
-      "i-adj",
-      "health",
       "body"
     ]
   },
@@ -934,28 +708,6 @@
       "i-adj",
       "health",
       "body"
-    ]
-  },
-  {
-    "word": "重い",
-    "reading": "おもい",
-    "romaji": "omoi",
-    "meaning_vi": "nặng; trầm trọng",
-    "part_of_speech": "adjective",
-    "tags": [
-      "i-adj",
-      "weight"
-    ]
-  },
-  {
-    "word": "軽い",
-    "reading": "かるい",
-    "romaji": "karui",
-    "meaning_vi": "nhẹ; nhẹ nhàng",
-    "part_of_speech": "adjective",
-    "tags": [
-      "i-adj",
-      "weight"
     ]
   },
   {

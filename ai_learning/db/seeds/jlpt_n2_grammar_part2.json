@@ -30,36 +30,6 @@
     "notes_vi": "Thường được viết thành 〜かた hoặc 〜ぶり."
   },
   {
-    "pattern": "〜ばこそ",
-    "explanation_vi": "Chính vì... nên... (nhấn mạnh, điều kiện hình thức)",
-    "examples": [
-      {
-        "ja": "失敗したればこそ、その教訓を得た。",
-        "vi": "Chính vì thất bại mà tôi mới học được."
-      },
-      {
-        "ja": "経験があればこそ、判断できる。",
-        "vi": "Chính vì có kinh nghiệm nên mới phán đoán được."
-      }
-    ],
-    "notes_vi": "Tương tự 〜からこそ nhưng hình thức hơn."
-  },
-  {
-    "pattern": "〜たびに",
-    "explanation_vi": "Mỗi lần... (lặp lại, tần suất)",
-    "examples": [
-      {
-        "ja": "雨が降るたびに、彼は気分が悪くなる。",
-        "vi": "Mỗi lần mưa, anh ấy lại cảm thấy khó chịu."
-      },
-      {
-        "ja": "失敗するたびに、諦めたくなる。",
-        "vi": "Mỗi lần thất bại, tôi lại muốn bỏ cuộc."
-      }
-    ],
-    "notes_vi": "Biểu thị điều gì đó xảy ra lặp lại."
-  },
-  {
     "pattern": "〜につき",
     "explanation_vi": "Vì..., do... (nguyên nhân), hoặc theo (tỷ lệ)",
     "examples": [
@@ -88,21 +58,6 @@
       }
     ],
     "notes_vi": "Biểu thị hành động hoàn thành, thường với cảm xúc tiêu cực."
-  },
-  {
-    "pattern": "〜かもしれない",
-    "explanation_vi": "Có thể..., có lẽ... (khả năng)",
-    "examples": [
-      {
-        "ja": "明日は雨かもしれない。",
-        "vi": "Ngày mai có thể mưa."
-      },
-      {
-        "ja": "彼は病気かもしれない。",
-        "vi": "Anh ấy có lẽ bị bệnh."
-      }
-    ],
-    "notes_vi": "Biểu thị sự không chắc chắn, khả năng có thể xảy ra."
   },
   {
     "pattern": "〜ずに",
@@ -150,21 +105,6 @@
     "notes_vi": "Biểu thị sự tương đồng hoặc sự bằng nhau."
   },
   {
-    "pattern": "〜ので",
-    "explanation_vi": "Vì..., do..., nên... (nguyên nhân, lý do)",
-    "examples": [
-      {
-        "ja": "雨なので、外に出られない。",
-        "vi": "Vì mưa nên tôi không thể ra ngoài."
-      },
-      {
-        "ja": "忙しいので、手伝えません。",
-        "vi": "Vì bận nên tôi không thể giúp."
-      }
-    ],
-    "notes_vi": "Biểu thị lý do, nguyên nhân tự nhiên."
-  },
-  {
     "pattern": "〜させる",
     "explanation_vi": "Làm cho..., buộc... (nhân quả)",
     "examples": [
@@ -178,36 +118,6 @@
       }
     ],
     "notes_vi": "Biểu thị sự buộc hoặc yêu cầu ai đó làm điều gì."
-  },
-  {
-    "pattern": "〜ところだ",
-    "explanation_vi": "Đang..., sắp sửa... (diễn ra)",
-    "examples": [
-      {
-        "ja": "今、仕事をしているところです。",
-        "vi": "Tôi đang làm việc."
-      },
-      {
-        "ja": "これから出かけるところです。",
-        "vi": "Tôi sắp sửa đi."
-      }
-    ],
-    "notes_vi": "Biểu thị hành động đang diễn ra hoặc sắp xảy ra."
-  },
-  {
-    "pattern": "〜とおり",
-    "explanation_vi": "Như..., theo... (tương đồng, phương pháp)",
-    "examples": [
-      {
-        "ja": "説明書の通りに、組み立ててください。",
-        "vi": "Hãy lắp ráp theo hướng dẫn."
-      },
-      {
-        "ja": "予定通りに、計画を実行した。",
-        "vi": "Chúng tôi thực hiện kế hoạch đúng theo dự định."
-      }
-    ],
-    "notes_vi": "Biểu thị sự tuân theo hoặc tương ứng với."
   },
   {
     "pattern": "〜ぐらい",

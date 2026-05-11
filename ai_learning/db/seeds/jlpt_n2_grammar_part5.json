@@ -15,21 +15,6 @@
     "notes_vi": "Biểu thị kết quả tự nhiên từ nguyên nhân được nêu."
   },
   {
-    "pattern": "〜あげく",
-    "explanation_vi": "Rồi cuối cùng..., sau hết... (kết quả không tốt)",
-    "examples": [
-      {
-        "ja": "何度も相談したあげく、やはり失敗した。",
-        "vi": "Sau khi tư vấn nhiều lần, cuối cùng vẫn thất bại."
-      },
-      {
-        "ja": "いろいろ試したあげくに、元の方法に戻った。",
-        "vi": "Sau khi thử nhiều cách, rồi lại quay trở lại phương pháp cũ."
-      }
-    ],
-    "notes_vi": "Thường dùng để chỉ kết quả không tốt hoặc bất ngờ."
-  },
-  {
     "pattern": "〜ふり",
     "explanation_vi": "Giả vờ..., tỏ ra...",
     "examples": [
@@ -195,36 +180,6 @@
     "notes_vi": "Biểu thị tính chất vững chắc hoặc mức độ đáng kể."
   },
   {
-    "pattern": "〜ながら",
-    "explanation_vi": "Trong khi..., mặc dù..., vừa... vừa...",
-    "examples": [
-      {
-        "ja": "テレビを見ながら、ご飯を食べている。",
-        "vi": "Trong khi xem TV, anh ấy ăn cơm."
-      },
-      {
-        "ja": "知りながらも、何も言わなかった。",
-        "vi": "Mặc dù biết, nhưng vẫn không nói gì."
-      }
-    ],
-    "notes_vi": "Một trong những patterns phổ biến nhất trong tiếng Nhật."
-  },
-  {
-    "pattern": "〜ほど",
-    "explanation_vi": "Mức độ..., đến nỗi..., hơn...",
-    "examples": [
-      {
-        "ja": "想像するほど難しくない。",
-        "vi": "Không khó bằng tưởng tượng."
-      },
-      {
-        "ja": "それほど重要ではありません。",
-        "vi": "Không quan trọng đến mức đó."
-      }
-    ],
-    "notes_vi": "Biểu thị mức độ hoặc so sánh."
-  },
-  {
     "pattern": "〜たり〜たり",
     "explanation_vi": "Đôi khi... đôi khi..., vừa... vừa...",
     "examples": [
@@ -285,36 +240,6 @@
     "notes_vi": "Biểu thị cách làm một cách nhanh chóng hoặc không kỹ lưỡng."
   },
   {
-    "pattern": "〜ばかりでなく",
-    "explanation_vi": "Không chỉ..., mà còn...",
-    "examples": [
-      {
-        "ja": "学校ばかりでなく、家庭でも学べる。",
-        "vi": "Không chỉ ở trường, mà còn ở nhà cũng học được."
-      },
-      {
-        "ja": "日本ばかりでなく、世界でも有名だ。",
-        "vi": "Không chỉ ở Nhật, mà còn nổi tiếng trên thế giới."
-      }
-    ],
-    "notes_vi": "Mở rộng phạm vi hoặc liệt kê thêm."
-  },
-  {
-    "pattern": "〜てならない",
-    "explanation_vi": "Không thể..., lòng muốn..., chỉ muốn...",
-    "examples": [
-      {
-        "ja": "彼に会ってならない。",
-        "vi": "Chỉ muốn gặp anh ấy."
-      },
-      {
-        "ja": "その結果が気になってならない。",
-        "vi": "Không thể khỏi lo lắng về kết quả đó."
-      }
-    ],
-    "notes_vi": "Biểu thị cảm giác hoặc muốn mạnh mẽ không thể kiểm soát."
-  },
-  {
     "pattern": "〜でならない",
     "explanation_vi": "Không thể không..., lòng muốn...",
     "examples": [
@@ -328,21 +253,6 @@
       }
     ],
     "notes_vi": "Biểu thị cảm giác hoặc muốn mạnh mẽ."
-  },
-  {
-    "pattern": "〜ても",
-    "explanation_vi": "Dù..., thậm chí... (nhượng bộ)",
-    "examples": [
-      {
-        "ja": "雨が降っても、出かけます。",
-        "vi": "Dù có mưa, tôi vẫn đi ra ngoài."
-      },
-      {
-        "ja": "失敗しても、諦めません。",
-        "vi": "Dù thất bại, tôi cũng không bỏ cuộc."
-      }
-    ],
-    "notes_vi": "Biểu thị sự nhượng bộ hoặc không bị ảnh hưởng."
   },
   {
     "pattern": "〜としたら",

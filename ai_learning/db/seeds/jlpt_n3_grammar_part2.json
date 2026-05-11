@@ -75,36 +75,6 @@
     "notes_vi": "Khuyến khích hành động trước khi tình huống thay đổi."
   },
   {
-    "pattern": "〜ながら",
-    "explanation_vi": "Trong khi... (song song)",
-    "examples": [
-      {
-        "ja": "音楽を聞きながら、勉強する。",
-        "vi": "Học bài trong khi nghe nhạc."
-      },
-      {
-        "ja": "歩きながら、話す。",
-        "vi": "Nói chuyện trong khi đi bộ."
-      }
-    ],
-    "notes_vi": "Diễn đạt hai hành động diễn ra đồng thời."
-  },
-  {
-    "pattern": "〜なら",
-    "explanation_vi": "Nếu... thì... (điều kiện giả định)",
-    "examples": [
-      {
-        "ja": "君が行くなら、私も行く。",
-        "vi": "Nếu cậu đi thì tôi cũng đi."
-      },
-      {
-        "ja": "お金があるなら、買う。",
-        "vi": "Nếu có tiền thì mua."
-      }
-    ],
-    "notes_vi": "Dùng cho điều kiện giả định hoặc đề xuất."
-  },
-  {
     "pattern": "〜に違いない",
     "explanation_vi": "Chắc chắn là... (phỏng đoán chắc chắn)",
     "examples": [

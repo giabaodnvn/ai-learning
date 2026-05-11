@@ -87,17 +87,6 @@
     ]
   },
   {
-    "word": "目的",
-    "reading": "もくてき",
-    "romaji": "mokuteki",
-    "meaning_vi": "mục đích",
-    "part_of_speech": "noun",
-    "tags": [
-      "abstract",
-      "work"
-    ]
-  },
-  {
     "word": "根拠",
     "reading": "こんきょ",
     "romaji": "konkyo",
@@ -378,16 +367,6 @@
     ]
   },
   {
-    "word": "可能性",
-    "reading": "かのうせい",
-    "romaji": "kanousei",
-    "meaning_vi": "khả năng xảy ra",
-    "part_of_speech": "noun",
-    "tags": [
-      "abstract"
-    ]
-  },
-  {
     "word": "重要性",
     "reading": "じゅうようせい",
     "romaji": "juuyousei",
@@ -531,47 +510,6 @@
     "tags": [
       "abstract",
       "time"
-    ]
-  },
-  {
-    "word": "結果",
-    "reading": "けっか",
-    "romaji": "kekka",
-    "meaning_vi": "kết quả, hậu quả",
-    "part_of_speech": "noun",
-    "tags": [
-      "abstract"
-    ]
-  },
-  {
-    "word": "原因",
-    "reading": "げんいん",
-    "romaji": "genin",
-    "meaning_vi": "nguyên nhân",
-    "part_of_speech": "noun",
-    "tags": [
-      "abstract"
-    ]
-  },
-  {
-    "word": "影響",
-    "reading": "えいきょう",
-    "romaji": "eikyou",
-    "meaning_vi": "ảnh hưởng",
-    "part_of_speech": "noun",
-    "tags": [
-      "abstract"
-    ]
-  },
-  {
-    "word": "関係",
-    "reading": "かんけい",
-    "romaji": "kankei",
-    "meaning_vi": "quan hệ, liên quan",
-    "part_of_speech": "noun",
-    "tags": [
-      "abstract",
-      "social"
     ]
   },
   {

@@ -1,53 +1,5 @@
 [
   {
-    "word": "技術",
-    "reading": "ぎじゅつ",
-    "romaji": "gijutsu",
-    "meaning_vi": "kỹ thuật, công nghệ",
-    "part_of_speech": "noun",
-    "tags": [
-      "technical",
-      "engineering",
-      "advanced"
-    ]
-  },
-  {
-    "word": "経営",
-    "reading": "けいえい",
-    "romaji": "keieirei",
-    "meaning_vi": "quản lý, kinh doanh",
-    "part_of_speech": "noun",
-    "tags": [
-      "business",
-      "management",
-      "enterprise"
-    ]
-  },
-  {
-    "word": "統計",
-    "reading": "とうけい",
-    "romaji": "toukei",
-    "meaning_vi": "thống kê",
-    "part_of_speech": "noun",
-    "tags": [
-      "analysis",
-      "technical",
-      "information"
-    ]
-  },
-  {
-    "word": "適応",
-    "reading": "てきおう",
-    "romaji": "tekiou",
-    "meaning_vi": "thích ứng, phù hợp",
-    "part_of_speech": "noun",
-    "tags": [
-      "adaptation",
-      "suitable",
-      "function"
-    ]
-  },
-  {
     "word": "解釈",
     "reading": "かいしゃく",
     "romaji": "kaishaku",
@@ -57,18 +9,6 @@
       "analysis",
       "language",
       "communication"
-    ]
-  },
-  {
-    "word": "検証",
-    "reading": "けんしょう",
-    "romaji": "kenshou",
-    "meaning_vi": "kiểm chứng, xác nhận",
-    "part_of_speech": "noun",
-    "tags": [
-      "verification",
-      "investigation",
-      "research"
     ]
   },
   {
@@ -96,54 +36,6 @@
     ]
   },
   {
-    "word": "論文",
-    "reading": "ろんぶん",
-    "romaji": "ronbun",
-    "meaning_vi": "bài báo, luận văn",
-    "part_of_speech": "noun",
-    "tags": [
-      "literature",
-      "academic",
-      "writing"
-    ]
-  },
-  {
-    "word": "結論",
-    "reading": "けつろん",
-    "romaji": "ketsuron",
-    "meaning_vi": "kết luận",
-    "part_of_speech": "noun",
-    "tags": [
-      "conclusion",
-      "analysis",
-      "logic"
-    ]
-  },
-  {
-    "word": "根拠",
-    "reading": "こんきょ",
-    "romaji": "konkyo",
-    "meaning_vi": "căn cứ, cơ sở",
-    "part_of_speech": "noun",
-    "tags": [
-      "basis",
-      "evidence",
-      "logic"
-    ]
-  },
-  {
-    "word": "仮説",
-    "reading": "かせつ",
-    "romaji": "kasetsu",
-    "meaning_vi": "giả thuyết",
-    "part_of_speech": "noun",
-    "tags": [
-      "hypothesis",
-      "theory",
-      "research"
-    ]
-  },
-  {
     "word": "理論",
     "reading": "りろん",
     "romaji": "riron",
@@ -153,90 +45,6 @@
       "theory",
       "knowledge",
       "concept"
-    ]
-  },
-  {
-    "word": "基準",
-    "reading": "きじゅん",
-    "romaji": "kijun",
-    "meaning_vi": "tiêu chuẩn, chuẩn mực",
-    "part_of_speech": "noun",
-    "tags": [
-      "standard",
-      "measurement",
-      "evaluation"
-    ]
-  },
-  {
-    "word": "効果",
-    "reading": "こうか",
-    "romaji": "kouka",
-    "meaning_vi": "hiệu quả, kết quả",
-    "part_of_speech": "noun",
-    "tags": [
-      "effectiveness",
-      "result",
-      "impact"
-    ]
-  },
-  {
-    "word": "影響",
-    "reading": "えいきょう",
-    "romaji": "eikyou",
-    "meaning_vi": "ảnh hưởng, tác động",
-    "part_of_speech": "noun",
-    "tags": [
-      "impact",
-      "effect",
-      "influence"
-    ]
-  },
-  {
-    "word": "傾向",
-    "reading": "けいこう",
-    "romaji": "keikou",
-    "meaning_vi": "xu hướng, chiều hướng",
-    "part_of_speech": "noun",
-    "tags": [
-      "trend",
-      "tendency",
-      "pattern"
-    ]
-  },
-  {
-    "word": "現象",
-    "reading": "げんしょう",
-    "romaji": "genshou",
-    "meaning_vi": "hiện tượng, sự kiện",
-    "part_of_speech": "noun",
-    "tags": [
-      "phenomenon",
-      "event",
-      "occurrence"
-    ]
-  },
-  {
-    "word": "原則",
-    "reading": "げんそく",
-    "romaji": "gensoku",
-    "meaning_vi": "nguyên tắc, quy tắc",
-    "part_of_speech": "noun",
-    "tags": [
-      "principle",
-      "rule",
-      "regulation"
-    ]
-  },
-  {
-    "word": "概念",
-    "reading": "がいねん",
-    "romaji": "gainnen",
-    "meaning_vi": "khái niệm, quan niệm",
-    "part_of_speech": "noun",
-    "tags": [
-      "concept",
-      "idea",
-      "abstract"
     ]
   },
   {
@@ -252,54 +60,6 @@
     ]
   },
   {
-    "word": "段階",
-    "reading": "だんかい",
-    "romaji": "dankai",
-    "meaning_vi": "giai đoạn, bậc",
-    "part_of_speech": "noun",
-    "tags": [
-      "phase",
-      "stage",
-      "level"
-    ]
-  },
-  {
-    "word": "過程",
-    "reading": "かてい",
-    "romaji": "katei",
-    "meaning_vi": "quá trình, diễn tiến",
-    "part_of_speech": "noun",
-    "tags": [
-      "process",
-      "procedure",
-      "progression"
-    ]
-  },
-  {
-    "word": "関連",
-    "reading": "かんれん",
-    "romaji": "kanren",
-    "meaning_vi": "liên quan, quan hệ",
-    "part_of_speech": "noun",
-    "tags": [
-      "relation",
-      "connection",
-      "relevance"
-    ]
-  },
-  {
-    "word": "矛盾",
-    "reading": "むじゅん",
-    "romaji": "mujun",
-    "meaning_vi": "mâu thuẫn, tương phản",
-    "part_of_speech": "noun",
-    "tags": [
-      "contradiction",
-      "inconsistency",
-      "conflict"
-    ]
-  },
-  {
     "word": "調和",
     "reading": "ちょうわ",
     "romaji": "chouwa",
@@ -309,18 +69,6 @@
       "harmony",
       "coordination",
       "agreement"
-    ]
-  },
-  {
-    "word": "適切",
-    "reading": "てきせつ",
-    "romaji": "tekisetsu",
-    "meaning_vi": "phù hợp, thích đáng",
-    "part_of_speech": "adjective",
-    "tags": [
-      "suitable",
-      "appropriate",
-      "proper"
     ]
   },
   {
@@ -348,42 +96,6 @@
     ]
   },
   {
-    "word": "複雑",
-    "reading": "ふくざつ",
-    "romaji": "fukuzatsu",
-    "meaning_vi": "phức tạp, phức tạp",
-    "part_of_speech": "adjective",
-    "tags": [
-      "complexity",
-      "complicated",
-      "intricate"
-    ]
-  },
-  {
-    "word": "明確",
-    "reading": "めいかく",
-    "romaji": "meikaku",
-    "meaning_vi": "rõ ràng, rõ mực",
-    "part_of_speech": "adjective",
-    "tags": [
-      "clarity",
-      "clear",
-      "definite"
-    ]
-  },
-  {
-    "word": "論理",
-    "reading": "ろんり",
-    "romaji": "ronri",
-    "meaning_vi": "logic, lôgic",
-    "part_of_speech": "noun",
-    "tags": [
-      "logic",
-      "reasoning",
-      "thought"
-    ]
-  },
-  {
     "word": "統一",
     "reading": "とういつ",
     "romaji": "touitsu",
@@ -393,54 +105,6 @@
       "unification",
       "unity",
       "consolidation"
-    ]
-  },
-  {
-    "word": "革新",
-    "reading": "かくしん",
-    "romaji": "kakushin",
-    "meaning_vi": "cải cách, đổi mới",
-    "part_of_speech": "noun",
-    "tags": [
-      "innovation",
-      "reform",
-      "renewal"
-    ]
-  },
-  {
-    "word": "発展",
-    "reading": "はってん",
-    "romaji": "hatten",
-    "meaning_vi": "phát triển, tiến bộ",
-    "part_of_speech": "noun",
-    "tags": [
-      "development",
-      "progress",
-      "growth"
-    ]
-  },
-  {
-    "word": "改善",
-    "reading": "かいぜん",
-    "romaji": "kaizen",
-    "meaning_vi": "cải thiện, nâng cao",
-    "part_of_speech": "noun",
-    "tags": [
-      "improvement",
-      "enhancement",
-      "betterment"
-    ]
-  },
-  {
-    "word": "維持",
-    "reading": "いじ",
-    "romaji": "iji",
-    "meaning_vi": "duy trì, bảo dưỡng",
-    "part_of_speech": "noun",
-    "tags": [
-      "maintenance",
-      "preservation",
-      "sustenance"
     ]
   },
   {
@@ -456,30 +120,6 @@
     ]
   },
   {
-    "word": "進歩",
-    "reading": "しんぽ",
-    "romaji": "shinpo",
-    "meaning_vi": "tiến bộ, kháo",
-    "part_of_speech": "noun",
-    "tags": [
-      "progress",
-      "advancement",
-      "improvement"
-    ]
-  },
-  {
-    "word": "成果",
-    "reading": "せいか",
-    "romaji": "seika",
-    "meaning_vi": "kết quả, thành quả",
-    "part_of_speech": "noun",
-    "tags": [
-      "result",
-      "achievement",
-      "outcome"
-    ]
-  },
-  {
     "word": "検討",
     "reading": "けんとう",
     "romaji": "kentou",
@@ -489,18 +129,6 @@
       "consideration",
       "examination",
       "discussion"
-    ]
-  },
-  {
-    "word": "判断",
-    "reading": "はんだん",
-    "romaji": "handan",
-    "meaning_vi": "phán đoán, phán xét",
-    "part_of_speech": "noun",
-    "tags": [
-      "judgment",
-      "decision",
-      "assessment"
     ]
   },
   {
@@ -528,30 +156,6 @@
     ]
   },
   {
-    "word": "批判",
-    "reading": "ひはん",
-    "romaji": "hihan",
-    "meaning_vi": "phê bình, chỉ trích",
-    "part_of_speech": "noun",
-    "tags": [
-      "criticism",
-      "critique",
-      "judgment"
-    ]
-  },
-  {
-    "word": "評価",
-    "reading": "ひょうか",
-    "romaji": "hyouka",
-    "meaning_vi": "đánh giá, xếp loại",
-    "part_of_speech": "noun",
-    "tags": [
-      "evaluation",
-      "assessment",
-      "rating"
-    ]
-  },
-  {
     "word": "認識",
     "reading": "にんしき",
     "romaji": "ninshiki",
@@ -576,30 +180,6 @@
     ]
   },
   {
-    "word": "目標",
-    "reading": "もくひょう",
-    "romaji": "mokuhyou",
-    "meaning_vi": "mục tiêu, đích hướng",
-    "part_of_speech": "noun",
-    "tags": [
-      "goal",
-      "objective",
-      "target"
-    ]
-  },
-  {
-    "word": "計画",
-    "reading": "けいかく",
-    "romaji": "keikaku",
-    "meaning_vi": "kế hoạch, dự định",
-    "part_of_speech": "noun",
-    "tags": [
-      "plan",
-      "planning",
-      "project"
-    ]
-  },
-  {
     "word": "戦略",
     "reading": "せんりゃく",
     "romaji": "senryaku",
@@ -609,18 +189,6 @@
       "strategy",
       "tactic",
       "approach"
-    ]
-  },
-  {
-    "word": "方針",
-    "reading": "ほうしん",
-    "romaji": "houshin",
-    "meaning_vi": "chính sách, định hướng",
-    "part_of_speech": "noun",
-    "tags": [
-      "policy",
-      "principle",
-      "direction"
     ]
   },
   {
@@ -636,54 +204,6 @@
     ]
   },
   {
-    "word": "課題",
-    "reading": "かだい",
-    "romaji": "kadai",
-    "meaning_vi": "vấn đề, nhiệm vụ",
-    "part_of_speech": "noun",
-    "tags": [
-      "problem",
-      "task",
-      "issue"
-    ]
-  },
-  {
-    "word": "問題",
-    "reading": "もんだい",
-    "romaji": "mondai",
-    "meaning_vi": "vấn đề, bài toán",
-    "part_of_speech": "noun",
-    "tags": [
-      "problem",
-      "issue",
-      "matter"
-    ]
-  },
-  {
-    "word": "解決",
-    "reading": "かいけつ",
-    "romaji": "kaiketsu",
-    "meaning_vi": "giải quyết, giải tỏa",
-    "part_of_speech": "noun",
-    "tags": [
-      "solution",
-      "resolution",
-      "settlement"
-    ]
-  },
-  {
-    "word": "対応",
-    "reading": "たいおう",
-    "romaji": "taiou",
-    "meaning_vi": "ứng phó, tương ứng",
-    "part_of_speech": "noun",
-    "tags": [
-      "response",
-      "action",
-      "dealing"
-    ]
-  },
-  {
     "word": "措置",
     "reading": "そち",
     "romaji": "sochi",
@@ -693,18 +213,6 @@
       "measure",
       "action",
       "means"
-    ]
-  },
-  {
-    "word": "改革",
-    "reading": "かいかく",
-    "romaji": "kaikaku",
-    "meaning_vi": "cải cách, cải tổ",
-    "part_of_speech": "noun",
-    "tags": [
-      "reform",
-      "transformation",
-      "change"
     ]
   },
   {
@@ -744,18 +252,6 @@
     ]
   },
   {
-    "word": "実施",
-    "reading": "じっし",
-    "romaji": "jisshi",
-    "meaning_vi": "thực hiện, áp dụng",
-    "part_of_speech": "noun",
-    "tags": [
-      "implementation",
-      "execution",
-      "enforcement"
-    ]
-  },
-  {
     "word": "展開",
     "reading": "てんかい",
     "romaji": "tenkai",
@@ -765,18 +261,6 @@
       "expansion",
       "development",
       "deployment"
-    ]
-  },
-  {
-    "word": "変化",
-    "reading": "へんか",
-    "romaji": "henka",
-    "meaning_vi": "thay đổi, biến hóa",
-    "part_of_speech": "noun",
-    "tags": [
-      "change",
-      "variation",
-      "transformation"
     ]
   },
   {
@@ -801,18 +285,6 @@
       "theory",
       "doctrine",
       "academic"
-    ]
-  },
-  {
-    "word": "仮定",
-    "reading": "かてい",
-    "romaji": "katei",
-    "meaning_vi": "giả định, giả sử",
-    "part_of_speech": "noun",
-    "tags": [
-      "assumption",
-      "supposition",
-      "hypothesis"
     ]
   },
   {
@@ -888,18 +360,6 @@
     ]
   },
   {
-    "word": "密度",
-    "reading": "みつど",
-    "romaji": "mitsudo",
-    "meaning_vi": "mật độ, độ đặc",
-    "part_of_speech": "noun",
-    "tags": [
-      "density",
-      "concentration",
-      "thickness"
-    ]
-  },
-  {
     "word": "濃度",
     "reading": "のうど",
     "romaji": "noudo",
@@ -909,18 +369,6 @@
       "concentration",
       "density",
       "strength"
-    ]
-  },
-  {
-    "word": "粘度",
-    "reading": "ねんど",
-    "romaji": "nendo",
-    "meaning_vi": "độ nhớt, độ dính",
-    "part_of_speech": "noun",
-    "tags": [
-      "viscosity",
-      "stickiness",
-      "adhesiveness"
     ]
   },
   {
@@ -960,28 +408,6 @@
     ]
   },
   {
-    "word": "融点",
-    "reading": "ゆうてん",
-    "romaji": "yuuten",
-    "meaning_vi": "điểm nóng chảy, điểm tan",
-    "part_of_speech": "noun",
-    "tags": [
-      "melting point",
-      "fusion point"
-    ]
-  },
-  {
-    "word": "沸点",
-    "reading": "ふってん",
-    "romaji": "futten",
-    "meaning_vi": "điểm sôi, điểm bay hơi",
-    "part_of_speech": "noun",
-    "tags": [
-      "boiling point",
-      "evaporation point"
-    ]
-  },
-  {
     "word": "腐食",
     "reading": "ふしょく",
     "romaji": "fushoku",
@@ -991,18 +417,6 @@
       "corrosion",
       "erosion",
       "oxidation"
-    ]
-  },
-  {
-    "word": "触媒",
-    "reading": "しょくばい",
-    "romaji": "shokubai",
-    "meaning_vi": "chất xúc tác, chất tác động",
-    "part_of_speech": "noun",
-    "tags": [
-      "catalyst",
-      "agent",
-      "activator"
     ]
   },
   {

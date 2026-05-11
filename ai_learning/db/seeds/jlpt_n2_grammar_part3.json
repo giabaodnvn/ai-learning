@@ -165,21 +165,6 @@
     "notes_vi": "Biểu thị hành động xảy ra đồng thời hoặc quá trình diễn ra."
   },
   {
-    "pattern": "〜ておく",
-    "explanation_vi": "...(dự bị), chuẩn bị sẵn (chuẩn bị)",
-    "examples": [
-      {
-        "ja": "プレゼンテーションを準備しておく。",
-        "vi": "Chuẩn bị sẵn bài trình bày."
-      },
-      {
-        "ja": "明日のために、今日は早く寝ておく。",
-        "vi": "Để chuẩn bị cho ngày mai, tôi sẽ ngủ sớm."
-      }
-    ],
-    "notes_vi": "Biểu thị hành động chuẩn bị sẵn hoặc dự bị."
-  },
-  {
     "pattern": "〜て初めて",
     "explanation_vi": "Mới..., chỉ khi...(lần đầu tiên, mới hiểu)",
     "examples": [
@@ -208,21 +193,6 @@
       }
     ],
     "notes_vi": "Biểu thị nhấn mạnh cảm xúc hoặc thích nghi, thường dùng trong lối văn tự sự."
-  },
-  {
-    "pattern": "〜ものだ",
-    "explanation_vi": "...thường..., ...nên... (thói quen, nên làm)",
-    "examples": [
-      {
-        "ja": "子どもは遊ぶものだ。",
-        "vi": "Trẻ em thường chơi."
-      },
-      {
-        "ja": "困った時は友人に相談するものだ。",
-        "vi": "Khi gặp khó, nên tư vấn bạn bè."
-      }
-    ],
-    "notes_vi": "Biểu thị thói quen, quy tắc chung hoặc nên làm gì đó."
   },
   {
     "pattern": "〜わけが",

@@ -78,29 +78,6 @@
     ]
   },
   {
-    "word": "スポーツ",
-    "reading": "すぽーつ",
-    "romaji": "supootsu",
-    "meaning_vi": "thể thao, môn thể thao",
-    "part_of_speech": "noun",
-    "tags": [
-      "daily",
-      "health",
-      "social"
-    ]
-  },
-  {
-    "word": "試合",
-    "reading": "しあい",
-    "romaji": "shiai",
-    "meaning_vi": "trận đấu, cuộc thi",
-    "part_of_speech": "noun",
-    "tags": [
-      "sports",
-      "social"
-    ]
-  },
-  {
     "word": "チーム",
     "reading": "ちーむ",
     "romaji": "chimu",
@@ -321,17 +298,6 @@
     ]
   },
   {
-    "word": "メール",
-    "reading": "めーる",
-    "romaji": "meeru",
-    "meaning_vi": "email, thư điện tử",
-    "part_of_speech": "noun",
-    "tags": [
-      "technology",
-      "communication"
-    ]
-  },
-  {
     "word": "チャット",
     "reading": "ちゃっと",
     "romaji": "chatto",
@@ -393,28 +359,6 @@
     ]
   },
   {
-    "word": "後輩",
-    "reading": "こうはい",
-    "romaji": "kouhai",
-    "meaning_vi": "người em, cấp dưới",
-    "part_of_speech": "noun",
-    "tags": [
-      "social",
-      "work"
-    ]
-  },
-  {
-    "word": "先輩",
-    "reading": "せんぱい",
-    "romaji": "senpai",
-    "meaning_vi": "người anh/chị, cấp trên",
-    "part_of_speech": "noun",
-    "tags": [
-      "social",
-      "work"
-    ]
-  },
-  {
     "word": "目上",
     "reading": "めうえ",
     "romaji": "meue",
@@ -444,28 +388,6 @@
     "tags": [
       "work",
       "relationship"
-    ]
-  },
-  {
-    "word": "部長",
-    "reading": "ぶちょう",
-    "romaji": "buchou",
-    "meaning_vi": "trưởng phòng, trưởng bộ",
-    "part_of_speech": "noun",
-    "tags": [
-      "work",
-      "social"
-    ]
-  },
-  {
-    "word": "課長",
-    "reading": "かちょう",
-    "romaji": "kachou",
-    "meaning_vi": "trưởng phòng nhỏ, quản lý",
-    "part_of_speech": "noun",
-    "tags": [
-      "work",
-      "social"
     ]
   },
   {
@@ -743,16 +665,6 @@
     ]
   },
   {
-    "word": "楽しい",
-    "reading": "たのしい",
-    "romaji": "tanoshii",
-    "meaning_vi": "vui vẻ, thú vị",
-    "part_of_speech": "adjective",
-    "tags": [
-      "emotion"
-    ]
-  },
-  {
     "word": "美しい",
     "reading": "うつくしい",
     "romaji": "utsukushii",
@@ -774,27 +686,6 @@
     ]
   },
   {
-    "word": "柔らかい",
-    "reading": "やわらかい",
-    "romaji": "yawarakai",
-    "meaning_vi": "mềm, ôn hòa",
-    "part_of_speech": "adjective",
-    "tags": [
-      "character",
-      "abstract"
-    ]
-  },
-  {
-    "word": "硬い",
-    "reading": "かたい",
-    "romaji": "katai",
-    "meaning_vi": "cứng, rắn",
-    "part_of_speech": "adjective",
-    "tags": [
-      "abstract"
-    ]
-  },
-  {
     "word": "温かい",
     "reading": "あたたかい",
     "romaji": "atakakai",
@@ -802,58 +693,6 @@
     "part_of_speech": "adjective",
     "tags": [
       "character",
-      "daily"
-    ]
-  },
-  {
-    "word": "冷たい",
-    "reading": "つめたい",
-    "romaji": "tsumetai",
-    "meaning_vi": "lạnh, lạnh lẽo",
-    "part_of_speech": "adjective",
-    "tags": [
-      "daily",
-      "character"
-    ]
-  },
-  {
-    "word": "甘い",
-    "reading": "あまい",
-    "romaji": "amai",
-    "meaning_vi": "ngọt, ngây thơ",
-    "part_of_speech": "adjective",
-    "tags": [
-      "daily",
-      "character"
-    ]
-  },
-  {
-    "word": "辛い",
-    "reading": "からい",
-    "romaji": "karai",
-    "meaning_vi": "cay, mặn",
-    "part_of_speech": "adjective",
-    "tags": [
-      "daily"
-    ]
-  },
-  {
-    "word": "酸っぱい",
-    "reading": "すっぱい",
-    "romaji": "suppai",
-    "meaning_vi": "chua, chua chua",
-    "part_of_speech": "adjective",
-    "tags": [
-      "daily"
-    ]
-  },
-  {
-    "word": "苦い",
-    "reading": "にがい",
-    "romaji": "nigai",
-    "meaning_vi": "đắng, đắc",
-    "part_of_speech": "adjective",
-    "tags": [
       "daily"
     ]
   },
@@ -930,17 +769,6 @@
     "part_of_speech": "adjective",
     "tags": [
       "abstract"
-    ]
-  },
-  {
-    "word": "遅い",
-    "reading": "おそい",
-    "romaji": "osoi",
-    "meaning_vi": "chậm, trễ",
-    "part_of_speech": "adjective",
-    "tags": [
-      "abstract",
-      "time"
     ]
   }
 ]

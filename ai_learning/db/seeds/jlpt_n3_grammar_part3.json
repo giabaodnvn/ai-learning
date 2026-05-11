@@ -75,21 +75,6 @@
     "notes_vi": "Diễn đạt những gì đã được quy định hoặc được thỏa thuận."
   },
   {
-    "pattern": "〜ことができる",
-    "explanation_vi": "Có thể..., được phép... (khả năng hoặc quyền hạn)",
-    "examples": [
-      {
-        "ja": "このアプリを使うことで、写真を編集することができます。",
-        "vi": "Bằng cách sử dụng ứng dụng này, bạn có thể chỉnh sửa ảnh."
-      },
-      {
-        "ja": "図書館で本を借りることができます。",
-        "vi": "Bạn có thể mượn sách ở thư viện."
-      }
-    ],
-    "notes_vi": "Biểu thị khả năng hoặc quyền được làm điều gì đó."
-  },
-  {
     "pattern": "〜に伴って",
     "explanation_vi": "Cùng với... / Khi... thì... (thay đổi kèm theo)",
     "examples": [
@@ -133,36 +118,6 @@
       }
     ],
     "notes_vi": "Diễn đạt nền tảng hoặc nguồn gốc của hành động/sự việc."
-  },
-  {
-    "pattern": "〜に対して",
-    "explanation_vi": "Đối với... / Nhắm vào... (đối tượng của hành động hoặc cảm xúc)",
-    "examples": [
-      {
-        "ja": "先生の意見に対して、反論した。",
-        "vi": "Tôi đã phản bác ý kiến của thầy giáo."
-      },
-      {
-        "ja": "子どもに対して、優しく接することが大切だ。",
-        "vi": "Điều quan trọng là đối xử nhẹ nhàng với trẻ em."
-      }
-    ],
-    "notes_vi": "Diễn đạt đối tượng của hành động, cảm xúc hoặc thái độ."
-  },
-  {
-    "pattern": "〜によって",
-    "explanation_vi": "Tùy theo... / Do... / Bằng cách... (nguyên nhân, phương tiện, hoặc sự khác biệt)",
-    "examples": [
-      {
-        "ja": "人によって、意見が違う。",
-        "vi": "Tùy theo từng người, ý kiến sẽ khác nhau."
-      },
-      {
-        "ja": "努力によって、夢が実現できる。",
-        "vi": "Bằng nỗ lực, ước mơ có thể thành hiện thực."
-      }
-    ],
-    "notes_vi": "Diễn đạt nguyên nhân, phương tiện, hoặc sự khác biệt tùy theo điều kiện."
   },
   {
     "pattern": "〜ばかりでなく",
@@ -270,36 +225,6 @@
     "notes_vi": "Diễn đạt phương tiện trung gian hoặc khoảng thời gian liên tục."
   },
   {
-    "pattern": "〜ことがある",
-    "explanation_vi": "Từng..., có lần..., có thể... (kinh nghiệm hoặc khả năng)",
-    "examples": [
-      {
-        "ja": "私は日本に行ったことがあります。",
-        "vi": "Tôi từng đi Nhật Bản."
-      },
-      {
-        "ja": "彼は時々遅刻することがある。",
-        "vi": "Anh ấy có thể đi trễ thỉnh thoảng."
-      }
-    ],
-    "notes_vi": "Biểu thị kinh nghiệm quá khứ hoặc khả năng xảy ra."
-  },
-  {
-    "pattern": "〜てはいけない",
-    "explanation_vi": "Không được..., không nên... (cấm, không cho phép)",
-    "examples": [
-      {
-        "ja": "図書館では、大きな声で話してはいけません。",
-        "vi": "Trong thư viện, không được nói to."
-      },
-      {
-        "ja": "子どもは夜更かししてはいけません。",
-        "vi": "Trẻ em không nên thức khuya."
-      }
-    ],
-    "notes_vi": "Biểu thị sự cấm hoặc bất chấp hành động gì đó."
-  },
-  {
     "pattern": "〜ままだ",
     "explanation_vi": "Còn mãi như vậy..., vẫn giữ nguyên... (trạng thái không thay đổi)",
     "examples": [
@@ -358,21 +283,6 @@
       }
     ],
     "notes_vi": "Diễn đạt chủ đề hoặc nội dung được đề cập; tương tự〜について nhưng trang trọng hơn."
-  },
-  {
-    "pattern": "〜ようになる",
-    "explanation_vi": "Bắt đầu... / Trở nên có thể... (sự thay đổi dần dần)",
-    "examples": [
-      {
-        "ja": "練習したら、泳げるようになった。",
-        "vi": "Sau khi luyện tập, tôi đã biết bơi."
-      },
-      {
-        "ja": "毎日勉強して、日本語が話せるようになった。",
-        "vi": "Học mỗi ngày, tôi đã có thể nói tiếng Nhật được."
-      }
-    ],
-    "notes_vi": "Diễn đạt sự thay đổi dần dần, đặc biệt là đạt được khả năng mới."
   },
   {
     "pattern": "〜に応じて",

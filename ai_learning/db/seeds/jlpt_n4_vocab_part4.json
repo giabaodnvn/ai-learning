@@ -55,28 +55,6 @@
     ]
   },
   {
-    "word": "まだ",
-    "reading": "まだ",
-    "romaji": "mada",
-    "meaning_vi": "vẫn còn, chưa (+ phủ định)",
-    "part_of_speech": "adverb",
-    "tags": [
-      "adverb",
-      "time"
-    ]
-  },
-  {
-    "word": "もう",
-    "reading": "もう",
-    "romaji": "mou",
-    "meaning_vi": "rồi, đã; (+ phủ định) không nữa",
-    "part_of_speech": "adverb",
-    "tags": [
-      "adverb",
-      "time"
-    ]
-  },
-  {
     "word": "きっと",
     "reading": "きっと",
     "romaji": "kitto",
@@ -352,16 +330,6 @@
     "reading": "まい",
     "romaji": "mai",
     "meaning_vi": "(đếm vật phẳng mỏng: tờ giấy, tấm ảnh)",
-    "part_of_speech": "noun",
-    "tags": [
-      "counter"
-    ]
-  },
-  {
-    "word": "本",
-    "reading": "ほん",
-    "romaji": "hon",
-    "meaning_vi": "(đếm vật dài, dạng trụ: bút, chai, cây)",
     "part_of_speech": "noun",
     "tags": [
       "counter"

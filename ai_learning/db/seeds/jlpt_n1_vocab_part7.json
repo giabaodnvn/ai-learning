@@ -1,18 +1,5 @@
 [
   {
-    "word": "霞",
-    "reading": "かすみ",
-    "romaji": "kasumi",
-    "meaning_vi": "sương mù nhẹ (mùa xuân), màn hơi mờ ảo",
-    "part_of_speech": "名詞",
-    "tags": [
-      "nature",
-      "seasonal",
-      "poetic",
-      "spring"
-    ]
-  },
-  {
     "word": "霙",
     "reading": "みぞれ",
     "romaji": "mizore",
@@ -265,29 +252,6 @@
     ]
   },
   {
-    "word": "地層",
-    "reading": "ちそう",
-    "romaji": "chisō",
-    "meaning_vi": "địa tầng, lớp đất đá tích tụ theo thời gian",
-    "part_of_speech": "名詞",
-    "tags": [
-      "nature",
-      "science",
-      "geography"
-    ]
-  },
-  {
-    "word": "渓谷",
-    "reading": "けいこく",
-    "romaji": "keikoku",
-    "meaning_vi": "hẻm núi, thung lũng hẹp",
-    "part_of_speech": "名詞",
-    "tags": [
-      "nature",
-      "geography"
-    ]
-  },
-  {
     "word": "絶壁",
     "reading": "ぜっぺき",
     "romaji": "zeppeki",
@@ -426,44 +390,6 @@
     ]
   },
   {
-    "word": "余韻",
-    "reading": "よいん",
-    "romaji": "yoin",
-    "meaning_vi": "dư âm, dư vang; ấn tượng còn đọng lại sau khi kết thúc",
-    "part_of_speech": "名詞",
-    "tags": [
-      "aesthetics",
-      "literary",
-      "formal"
-    ]
-  },
-  {
-    "word": "風情",
-    "reading": "ふぜい",
-    "romaji": "fuzei",
-    "meaning_vi": "vẻ thanh nhã, duyên dáng; sắc thái và không khí",
-    "part_of_speech": "名詞",
-    "tags": [
-      "aesthetics",
-      "traditional",
-      "formal",
-      "cultural"
-    ]
-  },
-  {
-    "word": "風雅",
-    "reading": "ふうが",
-    "romaji": "fūga",
-    "meaning_vi": "vẻ thanh lịch, phong nhã; nghệ thuật và sự tao nhã",
-    "part_of_speech": "名詞・形容動詞",
-    "tags": [
-      "aesthetics",
-      "traditional",
-      "formal",
-      "literary"
-    ]
-  },
-  {
     "word": "風流",
     "reading": "ふうりゅう",
     "romaji": "fūryū",
@@ -490,18 +416,6 @@
     ]
   },
   {
-    "word": "趣",
-    "reading": "おもむき",
-    "romaji": "omomuki",
-    "meaning_vi": "vẻ thú vị, sắc thái; ý nghĩa và nội dung",
-    "part_of_speech": "名詞",
-    "tags": [
-      "aesthetics",
-      "formal",
-      "literary"
-    ]
-  },
-  {
     "word": "格調",
     "reading": "かくちょう",
     "romaji": "kakuchō",
@@ -518,18 +432,6 @@
     "reading": "たたずまい",
     "romaji": "tatazumai",
     "meaning_vi": "dáng đứng, diện mạo; bầu không khí của một nơi",
-    "part_of_speech": "名詞",
-    "tags": [
-      "aesthetics",
-      "literary",
-      "formal"
-    ]
-  },
-  {
-    "word": "情趣",
-    "reading": "じょうしゅ",
-    "romaji": "jōshu",
-    "meaning_vi": "cảm xúc thẩm mỹ, tình cảm thú vị sâu sắc",
     "part_of_speech": "名詞",
     "tags": [
       "aesthetics",
@@ -585,18 +487,6 @@
     ]
   },
   {
-    "word": "感慨",
-    "reading": "かんがい",
-    "romaji": "kangai",
-    "meaning_vi": "cảm xúc sâu sắc, xúc động sâu xa",
-    "part_of_speech": "名詞",
-    "tags": [
-      "emotion",
-      "literary",
-      "formal"
-    ]
-  },
-  {
     "word": "詠嘆",
     "reading": "えいたん",
     "romaji": "eitan",
@@ -606,18 +496,6 @@
       "emotion",
       "literary",
       "classical"
-    ]
-  },
-  {
-    "word": "郷愁",
-    "reading": "きょうしゅう",
-    "romaji": "kyōshū",
-    "meaning_vi": "nỗi nhớ quê hương, hoài niệm về quá khứ",
-    "part_of_speech": "名詞",
-    "tags": [
-      "emotion",
-      "formal",
-      "literary"
     ]
   },
   {
@@ -669,18 +547,6 @@
     ]
   },
   {
-    "word": "哀愁",
-    "reading": "あいしゅう",
-    "romaji": "aishū",
-    "meaning_vi": "nỗi buồn man mác, sầu muộn; vẻ bi thương",
-    "part_of_speech": "名詞",
-    "tags": [
-      "emotion",
-      "literary",
-      "formal"
-    ]
-  },
-  {
     "word": "憂愁",
     "reading": "ゆうしゅう",
     "romaji": "yūshū",
@@ -690,17 +556,6 @@
       "emotion",
       "literary",
       "formal"
-    ]
-  },
-  {
-    "word": "静寂",
-    "reading": "せいじゃく",
-    "romaji": "seijaku",
-    "meaning_vi": "tĩnh lặng tuyệt đối, yên ắng hoàn toàn",
-    "part_of_speech": "名詞",
-    "tags": [
-      "formal",
-      "literary"
     ]
   },
   {

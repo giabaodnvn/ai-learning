@@ -300,36 +300,6 @@
     "notes_vi": "Dùng khi nêu điều kiện dựa trên thông tin đã biết hoặc giả định từ câu trước đó."
   },
   {
-    "pattern": "〜のに",
-    "explanation_vi": "Dù... nhưng... / Mặc dù... vẫn... (kết quả trái với kỳ vọng)",
-    "examples": [
-      {
-        "ja": "たくさん勉強したのに、試験に落ちた。",
-        "vi": "Mặc dù đã học nhiều nhưng vẫn trượt thi."
-      },
-      {
-        "ja": "安いのに、とてもおいしい。",
-        "vi": "Mặc dù rẻ nhưng lại rất ngon."
-      }
-    ],
-    "notes_vi": "Diễn đạt sự đối lập, thường kèm sự thất vọng, ngạc nhiên. Khác với 〜が ở chỗ có hàm ý cảm xúc hơn."
-  },
-  {
-    "pattern": "〜ながら",
-    "explanation_vi": "Vừa... vừa... (hai hành động xảy ra cùng lúc)",
-    "examples": [
-      {
-        "ja": "音楽を聴きながら、勉強します。",
-        "vi": "Vừa nghe nhạc vừa học bài."
-      },
-      {
-        "ja": "歩きながら、電話してはいけない。",
-        "vi": "Không được vừa đi bộ vừa nghe điện thoại."
-      }
-    ],
-    "notes_vi": "Chủ thể của hai động từ phải là cùng một người. Động từ chính thường quan trọng hơn."
-  },
-  {
     "pattern": "〜てから",
     "explanation_vi": "Sau khi... rồi mới... (thứ tự thời gian)",
     "examples": [
@@ -343,21 +313,6 @@
       }
     ],
     "notes_vi": "Nhấn mạnh hành động thứ nhất hoàn thành trước, rồi mới tiến hành hành động thứ hai."
-  },
-  {
-    "pattern": "〜前に",
-    "explanation_vi": "Trước khi...",
-    "examples": [
-      {
-        "ja": "寝る前に、歯を磨いてください。",
-        "vi": "Trước khi đi ngủ, hãy đánh răng."
-      },
-      {
-        "ja": "旅行に行く前に、計画を立てました。",
-        "vi": "Trước khi đi du lịch, tôi đã lập kế hoạch."
-      }
-    ],
-    "notes_vi": "Cấu trúc: V(thể từ điển) + 前に hoặc N + の前に."
   },
   {
     "pattern": "〜後で",

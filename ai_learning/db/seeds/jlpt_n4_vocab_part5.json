@@ -883,17 +883,6 @@
     ]
   },
   {
-    "word": "まずい",
-    "reading": "まずい",
-    "romaji": "mazui",
-    "meaning_vi": "dở, không ngon; không hay, rắc rối",
-    "part_of_speech": "adjective",
-    "tags": [
-      "food",
-      "situation"
-    ]
-  },
-  {
     "word": "細かい",
     "reading": "こまかい",
     "romaji": "komakai",
@@ -932,47 +921,6 @@
     "tags": [
       "shape",
       "abstract"
-    ]
-  },
-  {
-    "word": "広い",
-    "reading": "ひろい",
-    "romaji": "hiroi",
-    "meaning_vi": "rộng, rộng rãi",
-    "part_of_speech": "adjective",
-    "tags": [
-      "space"
-    ]
-  },
-  {
-    "word": "狭い",
-    "reading": "せまい",
-    "romaji": "semai",
-    "meaning_vi": "hẹp, chật chội",
-    "part_of_speech": "adjective",
-    "tags": [
-      "space"
-    ]
-  },
-  {
-    "word": "暖かい",
-    "reading": "あたたかい",
-    "romaji": "atatakai",
-    "meaning_vi": "ấm áp",
-    "part_of_speech": "adjective",
-    "tags": [
-      "weather",
-      "emotion"
-    ]
-  },
-  {
-    "word": "涼しい",
-    "reading": "すずしい",
-    "romaji": "suzushii",
-    "meaning_vi": "mát mẻ",
-    "part_of_speech": "adjective",
-    "tags": [
-      "weather"
     ]
   },
   {
@@ -1077,30 +1025,10 @@
     ]
   },
   {
-    "word": "ゆっくり",
-    "reading": "ゆっくり",
-    "romaji": "yukkuri",
-    "meaning_vi": "từ từ, thong thả",
-    "part_of_speech": "adverb",
-    "tags": [
-      "expression"
-    ]
-  },
-  {
     "word": "しっかり",
     "reading": "しっかり",
     "romaji": "shikkari",
     "meaning_vi": "chắc chắn, kiên cố, nghiêm túc",
-    "part_of_speech": "adverb",
-    "tags": [
-      "expression"
-    ]
-  },
-  {
-    "word": "はっきり",
-    "reading": "はっきり",
-    "romaji": "hakkiri",
-    "meaning_vi": "rõ ràng, dứt khoát",
     "part_of_speech": "adverb",
     "tags": [
       "expression"

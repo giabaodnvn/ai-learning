@@ -12,18 +12,6 @@
     ]
   },
   {
-    "word": "提出",
-    "reading": "ていしゅつ",
-    "romaji": "teishutsu",
-    "meaning_vi": "nộp, trình bày",
-    "part_of_speech": "noun",
-    "tags": [
-      "submission",
-      "presentation",
-      "filing"
-    ]
-  },
-  {
     "word": "提供",
     "reading": "ていきょう",
     "romaji": "teikiou",
@@ -33,18 +21,6 @@
       "provision",
       "supply",
       "offering"
-    ]
-  },
-  {
-    "word": "供給",
-    "reading": "きょうきゅう",
-    "romaji": "kyoukyuu",
-    "meaning_vi": "cung cấp, tiếp tế",
-    "part_of_speech": "noun",
-    "tags": [
-      "supply",
-      "provision",
-      "delivery"
     ]
   },
   {
@@ -96,30 +72,6 @@
     ]
   },
   {
-    "word": "投資",
-    "reading": "とうし",
-    "romaji": "toushi",
-    "meaning_vi": "đầu tư, cổ phần",
-    "part_of_speech": "noun",
-    "tags": [
-      "investment",
-      "finance",
-      "capital"
-    ]
-  },
-  {
-    "word": "融資",
-    "reading": "ゆうし",
-    "romaji": "yuushi",
-    "meaning_vi": "cấp tín dụng, tài chính",
-    "part_of_speech": "noun",
-    "tags": [
-      "financing",
-      "loan",
-      "credit"
-    ]
-  },
-  {
     "word": "資金",
     "reading": "しきん",
     "romaji": "shikin",
@@ -129,18 +81,6 @@
       "funds",
       "capital",
       "finance"
-    ]
-  },
-  {
-    "word": "予算",
-    "reading": "よさん",
-    "romaji": "yosan",
-    "meaning_vi": "ngân sách, dự toán",
-    "part_of_speech": "noun",
-    "tags": [
-      "budget",
-      "estimate",
-      "appropriation"
     ]
   },
   {
@@ -156,18 +96,6 @@
     ]
   },
   {
-    "word": "費用",
-    "reading": "ひよう",
-    "romaji": "hiyou",
-    "meaning_vi": "chi phí, hóa đơn",
-    "part_of_speech": "noun",
-    "tags": [
-      "cost",
-      "expense",
-      "fee"
-    ]
-  },
-  {
     "word": "負担",
     "reading": "ふたん",
     "romaji": "futan",
@@ -180,18 +108,6 @@
     ]
   },
   {
-    "word": "損失",
-    "reading": "そんしつ",
-    "romaji": "sonshitsu",
-    "meaning_vi": "tổn thất, mất mát",
-    "part_of_speech": "noun",
-    "tags": [
-      "loss",
-      "damage",
-      "deficit"
-    ]
-  },
-  {
     "word": "損害",
     "reading": "そんがい",
     "romaji": "songai",
@@ -201,18 +117,6 @@
       "damage",
       "loss",
       "injury"
-    ]
-  },
-  {
-    "word": "被害",
-    "reading": "ひがい",
-    "romaji": "higai",
-    "meaning_vi": "thiệt hại, tổn thương",
-    "part_of_speech": "noun",
-    "tags": [
-      "damage",
-      "victim",
-      "casualty"
     ]
   },
   {
@@ -324,18 +228,6 @@
     ]
   },
   {
-    "word": "増加",
-    "reading": "ぞうか",
-    "romaji": "zouka",
-    "meaning_vi": "tăng thêm, gia tăng",
-    "part_of_speech": "noun",
-    "tags": [
-      "increase",
-      "addition",
-      "growth"
-    ]
-  },
-  {
     "word": "増大",
     "reading": "ぞうだい",
     "romaji": "zoudai",
@@ -369,18 +261,6 @@
       "dispersion",
       "diffusion",
       "spread"
-    ]
-  },
-  {
-    "word": "分散",
-    "reading": "ぶんさん",
-    "romaji": "bunsan",
-    "meaning_vi": "phân tán, phân tách",
-    "part_of_speech": "noun",
-    "tags": [
-      "dispersion",
-      "distribution",
-      "diversification"
     ]
   },
   {
@@ -624,18 +504,6 @@
     ]
   },
   {
-    "word": "不足",
-    "reading": "ふそく",
-    "romaji": "fusoku",
-    "meaning_vi": "thiếu, không đủ",
-    "part_of_speech": "noun",
-    "tags": [
-      "shortage",
-      "deficiency",
-      "insufficiency"
-    ]
-  },
-  {
     "word": "欠如",
     "reading": "けつじょ",
     "romaji": "ketsujyo",
@@ -720,18 +588,6 @@
     ]
   },
   {
-    "word": "逆説",
-    "reading": "ぎゃくせつ",
-    "romaji": "gyakusetsu",
-    "meaning_vi": "nghịch lý, lũy thừa",
-    "part_of_speech": "noun",
-    "tags": [
-      "paradox",
-      "contradiction",
-      "irony"
-    ]
-  },
-  {
     "word": "矛盾点",
     "reading": "むじゅんてん",
     "romaji": "mujunten",
@@ -801,18 +657,6 @@
       "detachment",
       "peeling",
       "separation"
-    ]
-  },
-  {
-    "word": "融通",
-    "reading": "ゆうずう",
-    "romaji": "yuuzuu",
-    "meaning_vi": "linh hoạt, tính năng",
-    "part_of_speech": "noun",
-    "tags": [
-      "flexibility",
-      "accommodation",
-      "adjustability"
     ]
   },
   {
@@ -888,30 +732,6 @@
     ]
   },
   {
-    "word": "利息",
-    "reading": "りそく",
-    "romaji": "risoku",
-    "meaning_vi": "lãi suất, tiền lãi",
-    "part_of_speech": "noun",
-    "tags": [
-      "interest",
-      "rate",
-      "dividend"
-    ]
-  },
-  {
-    "word": "利益",
-    "reading": "りえき",
-    "romaji": "rieki",
-    "meaning_vi": "lợi ích, lợi nhuận",
-    "part_of_speech": "noun",
-    "tags": [
-      "profit",
-      "benefit",
-      "interest"
-    ]
-  },
-  {
     "word": "利潤",
     "reading": "りじゅん",
     "romaji": "rijun",
@@ -921,54 +741,6 @@
       "profit",
       "margin",
       "return"
-    ]
-  },
-  {
-    "word": "収益",
-    "reading": "しゅうえき",
-    "romaji": "shuueki",
-    "meaning_vi": "thu nhập, doanh thu",
-    "part_of_speech": "noun",
-    "tags": [
-      "revenue",
-      "income",
-      "earnings"
-    ]
-  },
-  {
-    "word": "赤字",
-    "reading": "あかじ",
-    "romaji": "akaji",
-    "meaning_vi": "thâm hụt, thua lỗ",
-    "part_of_speech": "noun",
-    "tags": [
-      "deficit",
-      "loss",
-      "shortfall"
-    ]
-  },
-  {
-    "word": "黒字",
-    "reading": "くろじ",
-    "romaji": "kuroji",
-    "meaning_vi": "thặng dư, lãi",
-    "part_of_speech": "noun",
-    "tags": [
-      "surplus",
-      "profit",
-      "balance"
-    ]
-  },
-  {
-    "word": "企業",
-    "reading": "きぎょう",
-    "romaji": "kigyou",
-    "meaning_vi": "doanh nghiệp, công ty",
-    "part_of_speech": "noun",
-    "tags": [
-      "enterprise",
-      "business",
-      "corporation"
     ]
   },
   {
@@ -1020,18 +792,6 @@
     ]
   },
   {
-    "word": "製造",
-    "reading": "せいぞう",
-    "romaji": "seizou",
-    "meaning_vi": "sản xuất, chế tạo",
-    "part_of_speech": "noun",
-    "tags": [
-      "manufacturing",
-      "production",
-      "fabrication"
-    ]
-  },
-  {
     "word": "加工",
     "reading": "かこう",
     "romaji": "kakou",
@@ -1041,18 +801,6 @@
       "processing",
       "workmanship",
       "fabrication"
-    ]
-  },
-  {
-    "word": "流通",
-    "reading": "りゅうつう",
-    "romaji": "ryuutsuu",
-    "meaning_vi": "lưu thông, phân phối",
-    "part_of_speech": "noun",
-    "tags": [
-      "distribution",
-      "circulation",
-      "flow"
     ]
   },
   {
@@ -1089,42 +837,6 @@
       "price",
       "rate",
       "quotation"
-    ]
-  },
-  {
-    "word": "価格",
-    "reading": "かかく",
-    "romaji": "kakaku",
-    "meaning_vi": "giá cả, giá tiền",
-    "part_of_speech": "noun",
-    "tags": [
-      "price",
-      "cost",
-      "value"
-    ]
-  },
-  {
-    "word": "値段",
-    "reading": "ねだん",
-    "romaji": "nedan",
-    "meaning_vi": "giá, giá tiền",
-    "part_of_speech": "noun",
-    "tags": [
-      "price",
-      "cost",
-      "fare"
-    ]
-  },
-  {
-    "word": "販売",
-    "reading": "はんばい",
-    "romaji": "hanbai",
-    "meaning_vi": "bán hàng, tiêu thụ",
-    "part_of_speech": "noun",
-    "tags": [
-      "sales",
-      "selling",
-      "distribution"
     ]
   },
   {

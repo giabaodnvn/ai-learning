@@ -48,18 +48,6 @@
     ]
   },
   {
-    "word": "価値",
-    "reading": "かちん",
-    "romaji": "kachin",
-    "meaning_vi": "giá trị",
-    "part_of_speech": "noun",
-    "tags": [
-      "value",
-      "worth",
-      "abstract"
-    ]
-  },
-  {
     "word": "意義",
     "reading": "いぎ",
     "romaji": "igi",
@@ -92,18 +80,6 @@
     "tags": [
       "attribute",
       "property",
-      "abstract"
-    ]
-  },
-  {
-    "word": "特徴",
-    "reading": "とくちょう",
-    "romaji": "tokuchou",
-    "meaning_vi": "đặc trưng, đặc điểm",
-    "part_of_speech": "noun",
-    "tags": [
-      "characteristic",
-      "feature",
       "abstract"
     ]
   },
@@ -176,18 +152,6 @@
     "tags": [
       "individuality",
       "personality",
-      "abstract"
-    ]
-  },
-  {
-    "word": "能力",
-    "reading": "のうりょく",
-    "romaji": "sainou",
-    "meaning_vi": "khả năng, năng lực",
-    "part_of_speech": "noun",
-    "tags": [
-      "talent",
-      "ability",
       "abstract"
     ]
   },
@@ -272,54 +236,6 @@
     "tags": [
       "insight",
       "discernment",
-      "abstract"
-    ]
-  },
-  {
-    "word": "洞察",
-    "reading": "どうさつ",
-    "romaji": "dousatsu",
-    "meaning_vi": "thẩu hiểu",
-    "part_of_speech": "noun",
-    "tags": [
-      "insight",
-      "perception",
-      "abstract"
-    ]
-  },
-  {
-    "word": "直感",
-    "reading": "ちょっかん",
-    "romaji": "chokkan",
-    "meaning_vi": "trực giác",
-    "part_of_speech": "noun",
-    "tags": [
-      "intuition",
-      "instinct",
-      "abstract"
-    ]
-  },
-  {
-    "word": "感覚",
-    "reading": "かんかく",
-    "romaji": "kankaku",
-    "meaning_vi": "cảm giác",
-    "part_of_speech": "noun",
-    "tags": [
-      "sensation",
-      "feeling",
-      "abstract"
-    ]
-  },
-  {
-    "word": "感情",
-    "reading": "かんじょう",
-    "romaji": "kanjou",
-    "meaning_vi": "cảm xúc",
-    "part_of_speech": "noun",
-    "tags": [
-      "emotion",
-      "feeling",
       "abstract"
     ]
   },
@@ -504,30 +420,6 @@
     ]
   },
   {
-    "word": "傲慢",
-    "reading": "ごうまん",
-    "romaji": "gouman",
-    "meaning_vi": "ngạo mạn",
-    "part_of_speech": "noun",
-    "tags": [
-      "arrogance",
-      "pride",
-      "character"
-    ]
-  },
-  {
-    "word": "謙虚",
-    "reading": "けんきょ",
-    "romaji": "kenkyo",
-    "meaning_vi": "khiêm tốn",
-    "part_of_speech": "adjective",
-    "tags": [
-      "modesty",
-      "humility",
-      "character"
-    ]
-  },
-  {
     "word": "温和",
     "reading": "おんわ",
     "romaji": "onwa",
@@ -560,18 +452,6 @@
     "tags": [
       "noise",
       "clamor",
-      "abstract"
-    ]
-  },
-  {
-    "word": "騒音",
-    "reading": "そうおん",
-    "romaji": "souon",
-    "meaning_vi": "tiếng ồn",
-    "part_of_speech": "noun",
-    "tags": [
-      "noise",
-      "sound",
       "abstract"
     ]
   },
@@ -612,54 +492,6 @@
     ]
   },
   {
-    "word": "状況",
-    "reading": "じょうきょう",
-    "romaji": "joukyou",
-    "meaning_vi": "tình trạng",
-    "part_of_speech": "noun",
-    "tags": [
-      "situation",
-      "condition",
-      "abstract"
-    ]
-  },
-  {
-    "word": "状態",
-    "reading": "じょうたい",
-    "romaji": "joutai",
-    "meaning_vi": "trạng thái",
-    "part_of_speech": "noun",
-    "tags": [
-      "state",
-      "condition",
-      "abstract"
-    ]
-  },
-  {
-    "word": "原因",
-    "reading": "げんいん",
-    "romaji": "gen'in",
-    "meaning_vi": "nguyên nhân",
-    "part_of_speech": "noun",
-    "tags": [
-      "cause",
-      "reason",
-      "abstract"
-    ]
-  },
-  {
-    "word": "結果",
-    "reading": "けっか",
-    "romaji": "kekka",
-    "meaning_vi": "kết quả",
-    "part_of_speech": "noun",
-    "tags": [
-      "result",
-      "outcome",
-      "abstract"
-    ]
-  },
-  {
     "word": "因果",
     "reading": "いんが",
     "romaji": "inga",
@@ -668,30 +500,6 @@
     "tags": [
       "causality",
       "cause and effect",
-      "abstract"
-    ]
-  },
-  {
-    "word": "因果関係",
-    "reading": "いんがかんけい",
-    "romaji": "ingakankei",
-    "meaning_vi": "mối quan hệ nhân quả",
-    "part_of_speech": "noun",
-    "tags": [
-      "causal relationship",
-      "logic",
-      "abstract"
-    ]
-  },
-  {
-    "word": "理由",
-    "reading": "りゆう",
-    "romaji": "riyuu",
-    "meaning_vi": "lý do",
-    "part_of_speech": "noun",
-    "tags": [
-      "reason",
-      "excuse",
       "abstract"
     ]
   },
@@ -708,42 +516,6 @@
     ]
   },
   {
-    "word": "背景",
-    "reading": "はいけい",
-    "romaji": "haikei",
-    "meaning_vi": "nền tảng, bối cảnh",
-    "part_of_speech": "noun",
-    "tags": [
-      "background",
-      "context",
-      "abstract"
-    ]
-  },
-  {
-    "word": "前提",
-    "reading": "ぜんてい",
-    "romaji": "zentei",
-    "meaning_vi": "tiền đề",
-    "part_of_speech": "noun",
-    "tags": [
-      "premise",
-      "prerequisite",
-      "abstract"
-    ]
-  },
-  {
-    "word": "条件",
-    "reading": "じょうけん",
-    "romaji": "jouken",
-    "meaning_vi": "điều kiện",
-    "part_of_speech": "noun",
-    "tags": [
-      "condition",
-      "term",
-      "abstract"
-    ]
-  },
-  {
     "word": "要件",
     "reading": "ようけん",
     "romaji": "youken",
@@ -752,18 +524,6 @@
     "tags": [
       "requirement",
       "requisite",
-      "abstract"
-    ]
-  },
-  {
-    "word": "機会",
-    "reading": "きかい",
-    "romaji": "kikai",
-    "meaning_vi": "cơ hội",
-    "part_of_speech": "noun",
-    "tags": [
-      "opportunity",
-      "chance",
       "abstract"
     ]
   },
@@ -780,18 +540,6 @@
     ]
   },
   {
-    "word": "困難",
-    "reading": "こんなん",
-    "romaji": "konnan",
-    "meaning_vi": "khó khăn",
-    "part_of_speech": "noun",
-    "tags": [
-      "difficulty",
-      "hardship",
-      "abstract"
-    ]
-  },
-  {
     "word": "バリア",
     "reading": "ばりあ",
     "romaji": "baria",
@@ -800,18 +548,6 @@
     "tags": [
       "barrier",
       "obstacle",
-      "abstract"
-    ]
-  },
-  {
-    "word": "限界",
-    "reading": "げんかい",
-    "romaji": "genkai",
-    "meaning_vi": "giới hạn",
-    "part_of_speech": "noun",
-    "tags": [
-      "limit",
-      "boundary",
       "abstract"
     ]
   },
@@ -840,42 +576,6 @@
     ]
   },
   {
-    "word": "規模",
-    "reading": "きぼ",
-    "romaji": "kibo",
-    "meaning_vi": "quy mô",
-    "part_of_speech": "noun",
-    "tags": [
-      "scale",
-      "scope",
-      "abstract"
-    ]
-  },
-  {
-    "word": "程度",
-    "reading": "ていど",
-    "romaji": "teido",
-    "meaning_vi": "mức độ",
-    "part_of_speech": "noun",
-    "tags": [
-      "degree",
-      "extent",
-      "abstract"
-    ]
-  },
-  {
-    "word": "水準",
-    "reading": "すいじゅん",
-    "romaji": "dankai",
-    "meaning_vi": "mức độ, chuẩn",
-    "part_of_speech": "noun",
-    "tags": [
-      "phase",
-      "stage",
-      "abstract"
-    ]
-  },
-  {
     "word": "様子",
     "reading": "ようす",
     "romaji": "shidai",
@@ -896,18 +596,6 @@
     "tags": [
       "order",
       "sequence",
-      "abstract"
-    ]
-  },
-  {
-    "word": "分布",
-    "reading": "ぶんぷ",
-    "romaji": "bunpu",
-    "meaning_vi": "phân bố",
-    "part_of_speech": "noun",
-    "tags": [
-      "distribution",
-      "spread",
       "abstract"
     ]
   },
@@ -960,18 +648,6 @@
     ]
   },
   {
-    "word": "完全",
-    "reading": "かんぜん",
-    "romaji": "kanzen",
-    "meaning_vi": "hoàn toàn",
-    "part_of_speech": "adjective",
-    "tags": [
-      "perfect",
-      "complete",
-      "quality"
-    ]
-  },
-  {
     "word": "不完全",
     "reading": "ふかんぜん",
     "romaji": "fukanzen",
@@ -996,66 +672,6 @@
     ]
   },
   {
-    "word": "厳密",
-    "reading": "げんみつ",
-    "romaji": "genmitsu",
-    "meaning_vi": "chặt chẽ",
-    "part_of_speech": "adjective",
-    "tags": [
-      "precise",
-      "strict",
-      "quality"
-    ]
-  },
-  {
-    "word": "正確",
-    "reading": "せいかく",
-    "romaji": "seikaku",
-    "meaning_vi": "chính xác",
-    "part_of_speech": "adjective",
-    "tags": [
-      "accurate",
-      "correct",
-      "quality"
-    ]
-  },
-  {
-    "word": "厳格",
-    "reading": "げんかく",
-    "romaji": "genkaku",
-    "meaning_vi": "nghiêm khắc",
-    "part_of_speech": "adjective",
-    "tags": [
-      "strict",
-      "severe",
-      "quality"
-    ]
-  },
-  {
-    "word": "厳しい",
-    "reading": "きびしい",
-    "romaji": "kibishi",
-    "meaning_vi": "nghiêm",
-    "part_of_speech": "adjective",
-    "tags": [
-      "stern",
-      "harsh",
-      "quality"
-    ]
-  },
-  {
-    "word": "柔軟",
-    "reading": "じゅうなん",
-    "romaji": "juunan",
-    "meaning_vi": "mềm dẻo",
-    "part_of_speech": "adjective",
-    "tags": [
-      "flexible",
-      "soft",
-      "quality"
-    ]
-  },
-  {
     "word": "堅固",
     "reading": "けんご",
     "romaji": "kengo",
@@ -1064,18 +680,6 @@
     "tags": [
       "solid",
       "firm",
-      "quality"
-    ]
-  },
-  {
-    "word": "安定",
-    "reading": "あんてい",
-    "romaji": "antei",
-    "meaning_vi": "ổn định",
-    "part_of_speech": "noun",
-    "tags": [
-      "stability",
-      "steadiness",
       "quality"
     ]
   },
@@ -1188,18 +792,6 @@
     ]
   },
   {
-    "word": "恥辱",
-    "reading": "ちじょく",
-    "romaji": "chijyoku",
-    "meaning_vi": "sỉ nhục",
-    "part_of_speech": "noun",
-    "tags": [
-      "shame",
-      "disgrace",
-      "emotion"
-    ]
-  },
-  {
     "word": "汚名",
     "reading": "おめい",
     "romaji": "omei",
@@ -1221,30 +813,6 @@
       "prestige",
       "honor",
       "quality"
-    ]
-  },
-  {
-    "word": "虚栄",
-    "reading": "きょえい",
-    "romaji": "kyoei",
-    "meaning_vi": "hình bóng",
-    "part_of_speech": "noun",
-    "tags": [
-      "vanity",
-      "pride",
-      "character"
-    ]
-  },
-  {
-    "word": "自尊心",
-    "reading": "じそんしん",
-    "romaji": "jisonshin",
-    "meaning_vi": "tự trọng",
-    "part_of_speech": "noun",
-    "tags": [
-      "self-respect",
-      "pride",
-      "character"
     ]
   },
   {
@@ -1272,30 +840,6 @@
     ]
   },
   {
-    "word": "栄誉",
-    "reading": "えいよ",
-    "romaji": "eiyo",
-    "meaning_vi": "danh dự",
-    "part_of_speech": "noun",
-    "tags": [
-      "honor",
-      "glory",
-      "quality"
-    ]
-  },
-  {
-    "word": "名誉",
-    "reading": "めいよ",
-    "romaji": "meiyo",
-    "meaning_vi": "danh dự",
-    "part_of_speech": "noun",
-    "tags": [
-      "honor",
-      "reputation",
-      "quality"
-    ]
-  },
-  {
     "word": "勲章",
     "reading": "くんしょう",
     "romaji": "kunshou",
@@ -1308,18 +852,6 @@
     ]
   },
   {
-    "word": "表彰",
-    "reading": "ひょうしょう",
-    "romaji": "hyoushou",
-    "meaning_vi": "biểu dương",
-    "part_of_speech": "noun",
-    "tags": [
-      "commendation",
-      "honor",
-      "abstract"
-    ]
-  },
-  {
     "word": "褒美",
     "reading": "ほうび",
     "romaji": "houbi",
@@ -1329,18 +861,6 @@
       "reward",
       "honor",
       "abstract"
-    ]
-  },
-  {
-    "word": "褒める",
-    "reading": "ほめる",
-    "romaji": "homeru",
-    "meaning_vi": "khen ngợi",
-    "part_of_speech": "verb",
-    "tags": [
-      "praise",
-      "commend",
-      "emotion"
     ]
   },
   {
@@ -1364,30 +884,6 @@
     "tags": [
       "criticize",
       "blame",
-      "emotion"
-    ]
-  },
-  {
-    "word": "尊敬",
-    "reading": "そんけい",
-    "romaji": "sonkei",
-    "meaning_vi": "tôn trọng",
-    "part_of_speech": "noun",
-    "tags": [
-      "respect",
-      "admiration",
-      "emotion"
-    ]
-  },
-  {
-    "word": "軽蔑",
-    "reading": "けいべつ",
-    "romaji": "keibetsu",
-    "meaning_vi": "khinh miệt",
-    "part_of_speech": "noun",
-    "tags": [
-      "contempt",
-      "scorn",
       "emotion"
     ]
   },

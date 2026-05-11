@@ -23,17 +23,6 @@
     ]
   },
   {
-    "word": "間取り",
-    "reading": "ままとり",
-    "romaji": "mamatori",
-    "meaning_vi": "bố cục căn hộ, phòng ở",
-    "part_of_speech": "noun",
-    "tags": [
-      "place",
-      "daily"
-    ]
-  },
-  {
     "word": "家具",
     "reading": "かぐ",
     "romaji": "kagu",
@@ -76,39 +65,6 @@
     "tags": [
       "transport",
       "work"
-    ]
-  },
-  {
-    "word": "駐車場",
-    "reading": "ちゅうしゃじょう",
-    "romaji": "chuushajou",
-    "meaning_vi": "bãi đỗ xe, chỗ để xe",
-    "part_of_speech": "noun",
-    "tags": [
-      "transport",
-      "place"
-    ]
-  },
-  {
-    "word": "交差点",
-    "reading": "こうさてん",
-    "romaji": "kousaten",
-    "meaning_vi": "ngã tư, giao lộ",
-    "part_of_speech": "noun",
-    "tags": [
-      "transport",
-      "place"
-    ]
-  },
-  {
-    "word": "信号",
-    "reading": "しんごう",
-    "romaji": "shingou",
-    "meaning_vi": "đèn giao thông, tín hiệu",
-    "part_of_speech": "noun",
-    "tags": [
-      "transport",
-      "technology"
     ]
   },
   {
@@ -300,29 +256,6 @@
     ]
   },
   {
-    "word": "映画",
-    "reading": "えいが",
-    "romaji": "eiga",
-    "meaning_vi": "phim, điện ảnh",
-    "part_of_speech": "noun",
-    "tags": [
-      "art",
-      "media",
-      "culture"
-    ]
-  },
-  {
-    "word": "音楽",
-    "reading": "おんがく",
-    "romaji": "ongaku",
-    "meaning_vi": "âm nhạc",
-    "part_of_speech": "noun",
-    "tags": [
-      "art",
-      "culture"
-    ]
-  },
-  {
     "word": "鑑賞",
     "reading": "かんしょう",
     "romaji": "kanshou",
@@ -353,28 +286,6 @@
     "tags": [
       "art",
       "culture"
-    ]
-  },
-  {
-    "word": "色",
-    "reading": "いろ",
-    "romaji": "iro",
-    "meaning_vi": "màu, sắc",
-    "part_of_speech": "noun",
-    "tags": [
-      "art",
-      "daily"
-    ]
-  },
-  {
-    "word": "効果",
-    "reading": "こうか",
-    "romaji": "kouka",
-    "meaning_vi": "hiệu quả, tác dụng",
-    "part_of_speech": "noun",
-    "tags": [
-      "abstract",
-      "work"
     ]
   },
   {
@@ -496,18 +407,6 @@
     ]
   },
   {
-    "word": "休む",
-    "reading": "やすむ",
-    "romaji": "yasumu",
-    "meaning_vi": "nghỉ, ngủ",
-    "part_of_speech": "verb",
-    "tags": [
-      "action",
-      "health",
-      "daily"
-    ]
-  },
-  {
     "word": "目覚める",
     "reading": "めざめる",
     "romaji": "mezameru",
@@ -516,50 +415,6 @@
     "tags": [
       "daily",
       "action"
-    ]
-  },
-  {
-    "word": "洗う",
-    "reading": "あらう",
-    "romaji": "arau",
-    "meaning_vi": "rửa, giặt",
-    "part_of_speech": "verb",
-    "tags": [
-      "action",
-      "daily"
-    ]
-  },
-  {
-    "word": "着る",
-    "reading": "きる",
-    "romaji": "kiru",
-    "meaning_vi": "mặc, đeo",
-    "part_of_speech": "verb",
-    "tags": [
-      "action",
-      "daily"
-    ]
-  },
-  {
-    "word": "脱ぐ",
-    "reading": "ぬぐ",
-    "romaji": "nugu",
-    "meaning_vi": "cởi, tháo (quần áo)",
-    "part_of_speech": "verb",
-    "tags": [
-      "action",
-      "daily"
-    ]
-  },
-  {
-    "word": "選ぶ",
-    "reading": "えらぶ",
-    "romaji": "erabu",
-    "meaning_vi": "chọn, lựa chọn",
-    "part_of_speech": "verb",
-    "tags": [
-      "action",
-      "daily"
     ]
   },
   {
@@ -664,17 +519,6 @@
     ]
   },
   {
-    "word": "切る",
-    "reading": "きる",
-    "romaji": "kiru",
-    "meaning_vi": "cắt, chặt",
-    "part_of_speech": "verb",
-    "tags": [
-      "action",
-      "daily"
-    ]
-  },
-  {
     "word": "削る",
     "reading": "けずる",
     "romaji": "kezuru",
@@ -730,17 +574,6 @@
     ]
   },
   {
-    "word": "並べる",
-    "reading": "ならべる",
-    "romaji": "naraberu",
-    "meaning_vi": "xếp hàng, sắp xếp",
-    "part_of_speech": "verb",
-    "tags": [
-      "action",
-      "daily"
-    ]
-  },
-  {
     "word": "描く",
     "reading": "えがく",
     "romaji": "egaku",
@@ -785,17 +618,6 @@
     ]
   },
   {
-    "word": "逃げる",
-    "reading": "にげる",
-    "romaji": "nigeru",
-    "meaning_vi": "chạy trốn, tẩu thoát",
-    "part_of_speech": "verb",
-    "tags": [
-      "action",
-      "safety"
-    ]
-  },
-  {
     "word": "追う",
     "reading": "おう",
     "romaji": "ou",
@@ -804,17 +626,6 @@
     "tags": [
       "action",
       "social"
-    ]
-  },
-  {
-    "word": "隠す",
-    "reading": "かくす",
-    "romaji": "kakusu",
-    "meaning_vi": "giấu, che giấu",
-    "part_of_speech": "verb",
-    "tags": [
-      "action",
-      "daily"
     ]
   },
   {
@@ -833,17 +644,6 @@
     "reading": "みつかる",
     "romaji": "mitsukaru",
     "meaning_vi": "được tìm thấy",
-    "part_of_speech": "verb",
-    "tags": [
-      "action",
-      "daily"
-    ]
-  },
-  {
-    "word": "かける",
-    "reading": "かける",
-    "romaji": "kakeru",
-    "meaning_vi": "gọi điện, tốn (thời gian), đặt",
     "part_of_speech": "verb",
     "tags": [
       "action",
@@ -939,17 +739,6 @@
     ]
   },
   {
-    "word": "外す",
-    "reading": "はずす",
-    "romaji": "hazusu",
-    "meaning_vi": "tháo ra, cởi bỏ",
-    "part_of_speech": "verb",
-    "tags": [
-      "action",
-      "daily"
-    ]
-  },
-  {
     "word": "固める",
     "reading": "かためる",
     "romaji": "katameru",
@@ -1003,28 +792,6 @@
       "action",
       "education",
       "social"
-    ]
-  },
-  {
-    "word": "教える",
-    "reading": "おしえる",
-    "romaji": "oshieru",
-    "meaning_vi": "dạy, hướng dẫn",
-    "part_of_speech": "verb",
-    "tags": [
-      "action",
-      "education"
-    ]
-  },
-  {
-    "word": "習う",
-    "reading": "ならう",
-    "romaji": "narau",
-    "meaning_vi": "học, học tập",
-    "part_of_speech": "verb",
-    "tags": [
-      "action",
-      "education"
     ]
   },
   {

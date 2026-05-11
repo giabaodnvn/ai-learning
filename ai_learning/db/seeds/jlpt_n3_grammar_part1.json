@@ -268,35 +268,5 @@
       }
     ],
     "notes_vi": "Diễn đạt tình trạng lặp lại không mong muốn."
-  },
-  {
-    "pattern": "〜てみる",
-    "explanation_vi": "Thử... xem (thử làm để xem kết quả)",
-    "examples": [
-      {
-        "ja": "この料理を食べてみてください。",
-        "vi": "Hãy thử ăn món này xem."
-      },
-      {
-        "ja": "日本語で話してみた。",
-        "vi": "Tôi thử nói tiếng Nhật xem."
-      }
-    ],
-    "notes_vi": "Dùng khi thử nghiệm hoặc trải nghiệm."
-  },
-  {
-    "pattern": "〜てしまう",
-    "explanation_vi": "Làm... mất / ...hết (hoàn thành hoặc hối hận)",
-    "examples": [
-      {
-        "ja": "宿題を忘れてしまった。",
-        "vi": "Tôi quên mất bài tập về nhà."
-      },
-      {
-        "ja": "ケーキを全部食べてしまった。",
-        "vi": "Tôi ăn hết cái bánh."
-      }
-    ],
-    "notes_vi": "Diễn đạt hành động hoàn tất hoặc mang tính hối hận."
   }
 ]

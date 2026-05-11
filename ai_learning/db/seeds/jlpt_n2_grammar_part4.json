@@ -146,21 +146,6 @@
     "notes_vi": "Biểu thị thói quen hoặc quy tắc được duy trì."
   },
   {
-    "pattern": "〜ことにする",
-    "explanation_vi": "Quyết định..., lên kế hoạch...",
-    "examples": [
-      {
-        "ja": "来年から新しい方法を使うことにします。",
-        "vi": "Tôi quyết định sử dụng phương pháp mới từ năm tới."
-      },
-      {
-        "ja": "この問題は解決することにした。",
-        "vi": "Chúng tôi quyết định giải quyết vấn đề này."
-      }
-    ],
-    "notes_vi": "Biểu thị quyết định hoặc kế hoạch được đưa ra."
-  },
-  {
     "pattern": "〜ことになった",
     "explanation_vi": "Trở thành..., có kết quả là...",
     "examples": [
@@ -174,21 +159,6 @@
       }
     ],
     "notes_vi": "Biểu thị kết quả cuối cùng hoặc sự kiện đã xảy ra."
-  },
-  {
-    "pattern": "〜ことになる",
-    "explanation_vi": "Sẽ..., dự kiến..., quy tắc là...",
-    "examples": [
-      {
-        "ja": "明日の午後、会議をすることになっています。",
-        "vi": "Dự kiến sẽ có cuộc họp vào chiều mai."
-      },
-      {
-        "ja": "この契約によって、給料が上がることになります。",
-        "vi": "Theo hợp đồng này, lương sẽ tăng."
-      }
-    ],
-    "notes_vi": "Biểu thị kế hoạch hoặc quy tắc."
   },
   {
     "pattern": "〜こともある",

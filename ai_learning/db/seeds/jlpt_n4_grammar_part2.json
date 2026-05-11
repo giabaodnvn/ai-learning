@@ -105,36 +105,6 @@
     "notes_vi": "Diễn đạt trạng thái giữ nguyên, không thay đổi từ lúc trước đến lúc sau."
   },
   {
-    "pattern": "〜だけ",
-    "explanation_vi": "Chỉ... / Chỉ có... mà thôi",
-    "examples": [
-      {
-        "ja": "水だけ飲んでいます。",
-        "vi": "Tôi chỉ uống nước thôi."
-      },
-      {
-        "ja": "彼だけが知っている。",
-        "vi": "Chỉ có anh ấy biết thôi."
-      }
-    ],
-    "notes_vi": "Giới hạn phạm vi. Khác với 〜しか ở chỗ しか yêu cầu phủ định ở vế sau."
-  },
-  {
-    "pattern": "〜しか〜ない",
-    "explanation_vi": "Chỉ có... (thôi) — nhấn mạnh ít/hạn chế",
-    "examples": [
-      {
-        "ja": "財布には100円しかない。",
-        "vi": "Trong ví chỉ còn 100 yên thôi."
-      },
-      {
-        "ja": "日本語しか話せません。",
-        "vi": "Tôi chỉ nói được tiếng Nhật thôi."
-      }
-    ],
-    "notes_vi": "Luôn đi kèm phủ định. Nhấn mạnh sự ít ỏi hoặc giới hạn."
-  },
-  {
     "pattern": "〜ても",
     "explanation_vi": "Dù... cũng... / Cho dù... (nhượng bộ)",
     "examples": [
@@ -178,21 +148,6 @@
       }
     ],
     "notes_vi": "Đa nghĩa: (1) tùy theo; (2) bị động tác nhân; (3) phương tiện/nguyên nhân."
-  },
-  {
-    "pattern": "〜について",
-    "explanation_vi": "Về... / Liên quan đến...",
-    "examples": [
-      {
-        "ja": "環境問題について話し合いました。",
-        "vi": "Chúng tôi đã thảo luận về vấn đề môi trường."
-      },
-      {
-        "ja": "日本文化についての本を読んでいます。",
-        "vi": "Tôi đang đọc sách về văn hóa Nhật."
-      }
-    ],
-    "notes_vi": "Dùng khi nói về chủ đề của hành động/suy nghĩ."
   },
   {
     "pattern": "〜に対して",

@@ -1,35 +1,5 @@
 [
   {
-    "word": "魚",
-    "reading": "さかな",
-    "romaji": "sakana",
-    "meaning_vi": "cá",
-    "part_of_speech": "noun",
-    "tags": [
-      "food"
-    ]
-  },
-  {
-    "word": "野菜",
-    "reading": "やさい",
-    "romaji": "yasai",
-    "meaning_vi": "rau củ",
-    "part_of_speech": "noun",
-    "tags": [
-      "food"
-    ]
-  },
-  {
-    "word": "果物",
-    "reading": "くだもの",
-    "romaji": "kudamono",
-    "meaning_vi": "trái cây, hoa quả",
-    "part_of_speech": "noun",
-    "tags": [
-      "food"
-    ]
-  },
-  {
     "word": "アパート",
     "reading": "アパート",
     "romaji": "apaato",
@@ -166,16 +136,6 @@
     ]
   },
   {
-    "word": "服",
-    "reading": "ふく",
-    "romaji": "fuku",
-    "meaning_vi": "quần áo, trang phục",
-    "part_of_speech": "noun",
-    "tags": [
-      "clothing"
-    ]
-  },
-  {
     "word": "洋服",
     "reading": "ようふく",
     "romaji": "youfuku",
@@ -218,36 +178,6 @@
     ]
   },
   {
-    "word": "コート",
-    "reading": "コート",
-    "romaji": "kooto",
-    "meaning_vi": "áo khoác dài, áo coat",
-    "part_of_speech": "noun",
-    "tags": [
-      "clothing"
-    ]
-  },
-  {
-    "word": "帽子",
-    "reading": "ぼうし",
-    "romaji": "boushi",
-    "meaning_vi": "mũ, nón",
-    "part_of_speech": "noun",
-    "tags": [
-      "clothing"
-    ]
-  },
-  {
-    "word": "靴下",
-    "reading": "くつした",
-    "romaji": "kutsushita",
-    "meaning_vi": "tất, vớ",
-    "part_of_speech": "noun",
-    "tags": [
-      "clothing"
-    ]
-  },
-  {
     "word": "手袋",
     "reading": "てぶくろ",
     "romaji": "tebukuro",
@@ -255,37 +185,6 @@
     "part_of_speech": "noun",
     "tags": [
       "clothing"
-    ]
-  },
-  {
-    "word": "眼鏡",
-    "reading": "めがね",
-    "romaji": "megane",
-    "meaning_vi": "kính mắt",
-    "part_of_speech": "noun",
-    "tags": [
-      "clothing",
-      "accessory"
-    ]
-  },
-  {
-    "word": "財布",
-    "reading": "さいふ",
-    "romaji": "saifu",
-    "meaning_vi": "ví tiền",
-    "part_of_speech": "noun",
-    "tags": [
-      "accessory"
-    ]
-  },
-  {
-    "word": "鞄",
-    "reading": "かばん",
-    "romaji": "kaban",
-    "meaning_vi": "túi xách, cặp",
-    "part_of_speech": "noun",
-    "tags": [
-      "accessory"
     ]
   },
   {
@@ -426,17 +325,6 @@
     ]
   },
   {
-    "word": "電話",
-    "reading": "でんわ",
-    "romaji": "denwa",
-    "meaning_vi": "điện thoại; gọi điện",
-    "part_of_speech": "noun",
-    "tags": [
-      "communication",
-      "tech"
-    ]
-  },
-  {
     "word": "携帯電話",
     "reading": "けいたいでんわ",
     "romaji": "keitai denwa",
@@ -455,16 +343,6 @@
     "part_of_speech": "noun",
     "tags": [
       "communication",
-      "tech"
-    ]
-  },
-  {
-    "word": "パソコン",
-    "reading": "パソコン",
-    "romaji": "pasokon",
-    "meaning_vi": "máy tính cá nhân, PC",
-    "part_of_speech": "noun",
-    "tags": [
       "tech"
     ]
   },
@@ -522,28 +400,6 @@
     ]
   },
   {
-    "word": "銀行",
-    "reading": "ぎんこう",
-    "romaji": "ginkou",
-    "meaning_vi": "ngân hàng",
-    "part_of_speech": "noun",
-    "tags": [
-      "money",
-      "place"
-    ]
-  },
-  {
-    "word": "郵便局",
-    "reading": "ゆうびんきょく",
-    "romaji": "yuubinkyoku",
-    "meaning_vi": "bưu điện",
-    "part_of_speech": "noun",
-    "tags": [
-      "place",
-      "service"
-    ]
-  },
-  {
     "word": "市役所",
     "reading": "しやくしょ",
     "romaji": "shiyakusho",
@@ -574,39 +430,6 @@
     "tags": [
       "place",
       "service"
-    ]
-  },
-  {
-    "word": "スーパー",
-    "reading": "スーパー",
-    "romaji": "suupaa",
-    "meaning_vi": "siêu thị",
-    "part_of_speech": "noun",
-    "tags": [
-      "place",
-      "shopping"
-    ]
-  },
-  {
-    "word": "コンビニ",
-    "reading": "コンビニ",
-    "romaji": "konbini",
-    "meaning_vi": "cửa hàng tiện lợi, convenience store",
-    "part_of_speech": "noun",
-    "tags": [
-      "place",
-      "shopping"
-    ]
-  },
-  {
-    "word": "デパート",
-    "reading": "デパート",
-    "romaji": "depaato",
-    "meaning_vi": "trung tâm thương mại, bách hóa",
-    "part_of_speech": "noun",
-    "tags": [
-      "place",
-      "shopping"
     ]
   },
   {
@@ -915,26 +738,6 @@
     ]
   },
   {
-    "word": "始める",
-    "reading": "はじめる",
-    "romaji": "hajimeru",
-    "meaning_vi": "bắt đầu (cái gì đó)",
-    "part_of_speech": "verb",
-    "tags": [
-      "action"
-    ]
-  },
-  {
-    "word": "終わる",
-    "reading": "おわる",
-    "romaji": "owaru",
-    "meaning_vi": "kết thúc, xong",
-    "part_of_speech": "verb",
-    "tags": [
-      "action"
-    ]
-  },
-  {
     "word": "集める",
     "reading": "あつめる",
     "romaji": "atsumeru",
@@ -953,27 +756,6 @@
     "tags": [
       "action",
       "study"
-    ]
-  },
-  {
-    "word": "覚える",
-    "reading": "おぼえる",
-    "romaji": "oboeru",
-    "meaning_vi": "nhớ, ghi nhớ, học thuộc",
-    "part_of_speech": "verb",
-    "tags": [
-      "action",
-      "study"
-    ]
-  },
-  {
-    "word": "忘れる",
-    "reading": "わすれる",
-    "romaji": "wasureru",
-    "meaning_vi": "quên",
-    "part_of_speech": "verb",
-    "tags": [
-      "action"
     ]
   },
   {
@@ -996,58 +778,6 @@
     "tags": [
       "action",
       "communication"
-    ]
-  },
-  {
-    "word": "教える",
-    "reading": "おしえる",
-    "romaji": "oshieru",
-    "meaning_vi": "dạy, chỉ bảo, thông báo",
-    "part_of_speech": "verb",
-    "tags": [
-      "action",
-      "study"
-    ]
-  },
-  {
-    "word": "送る",
-    "reading": "おくる",
-    "romaji": "okuru",
-    "meaning_vi": "gửi; tiễn; trải qua (thời gian)",
-    "part_of_speech": "verb",
-    "tags": [
-      "action",
-      "communication"
-    ]
-  },
-  {
-    "word": "受け取る",
-    "reading": "うけとる",
-    "romaji": "uketoru",
-    "meaning_vi": "nhận lấy, tiếp nhận",
-    "part_of_speech": "verb",
-    "tags": [
-      "action"
-    ]
-  },
-  {
-    "word": "出す",
-    "reading": "だす",
-    "romaji": "dasu",
-    "meaning_vi": "lấy ra, nộp; gửi đi",
-    "part_of_speech": "verb",
-    "tags": [
-      "action"
-    ]
-  },
-  {
-    "word": "入れる",
-    "reading": "いれる",
-    "romaji": "ireru",
-    "meaning_vi": "cho vào, bỏ vào",
-    "part_of_speech": "verb",
-    "tags": [
-      "action"
     ]
   }
 ]

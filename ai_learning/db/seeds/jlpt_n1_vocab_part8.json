@@ -1,29 +1,5 @@
 [
   {
-    "word": "論証",
-    "reading": "ろんしょう",
-    "romaji": "ronshō",
-    "meaning_vi": "lập luận có bằng chứng, chứng minh bằng logic",
-    "part_of_speech": "名詞",
-    "tags": [
-      "academic",
-      "formal",
-      "logic"
-    ]
-  },
-  {
-    "word": "仮説",
-    "reading": "かせつ",
-    "romaji": "kasetsu",
-    "meaning_vi": "giả thuyết, giả định chưa được chứng minh",
-    "part_of_speech": "名詞",
-    "tags": [
-      "academic",
-      "science",
-      "formal"
-    ]
-  },
-  {
     "word": "実証",
     "reading": "じっしょう",
     "romaji": "jisshō",
@@ -32,66 +8,6 @@
     "tags": [
       "academic",
       "science",
-      "formal"
-    ]
-  },
-  {
-    "word": "考察",
-    "reading": "こうさつ",
-    "romaji": "kōsatsu",
-    "meaning_vi": "xem xét, nghiên cứu, phân tích kỹ lưỡng",
-    "part_of_speech": "名詞",
-    "tags": [
-      "academic",
-      "formal",
-      "research"
-    ]
-  },
-  {
-    "word": "検証",
-    "reading": "けんしょう",
-    "romaji": "kenshō",
-    "meaning_vi": "kiểm chứng, xác minh tính đúng đắn",
-    "part_of_speech": "名詞",
-    "tags": [
-      "academic",
-      "science",
-      "formal"
-    ]
-  },
-  {
-    "word": "推論",
-    "reading": "すいろん",
-    "romaji": "suiron",
-    "meaning_vi": "suy luận, kết luận từ tiền đề",
-    "part_of_speech": "名詞",
-    "tags": [
-      "academic",
-      "logic",
-      "formal"
-    ]
-  },
-  {
-    "word": "帰納",
-    "reading": "きのう",
-    "romaji": "kinō",
-    "meaning_vi": "quy nạp, suy luận từ cụ thể đến tổng quát",
-    "part_of_speech": "名詞",
-    "tags": [
-      "academic",
-      "logic",
-      "formal"
-    ]
-  },
-  {
-    "word": "演繹",
-    "reading": "えんえき",
-    "romaji": "en'eki",
-    "meaning_vi": "diễn dịch, suy luận từ tổng quát đến cụ thể",
-    "part_of_speech": "名詞",
-    "tags": [
-      "academic",
-      "logic",
       "formal"
     ]
   },
@@ -143,18 +59,6 @@
     ]
   },
   {
-    "word": "解釈",
-    "reading": "かいしゃく",
-    "romaji": "kaishaku",
-    "meaning_vi": "giải thích, diễn giải ý nghĩa",
-    "part_of_speech": "名詞",
-    "tags": [
-      "academic",
-      "formal",
-      "legal"
-    ]
-  },
-  {
     "word": "分析",
     "reading": "ぶんせき",
     "romaji": "bunseki",
@@ -174,55 +78,6 @@
     "part_of_speech": "名詞",
     "tags": [
       "academic",
-      "formal"
-    ]
-  },
-  {
-    "word": "概念",
-    "reading": "がいねん",
-    "romaji": "gainen",
-    "meaning_vi": "khái niệm, ý niệm trừu tượng",
-    "part_of_speech": "名詞",
-    "tags": [
-      "academic",
-      "philosophy",
-      "formal"
-    ]
-  },
-  {
-    "word": "本質",
-    "reading": "ほんしつ",
-    "romaji": "honshitsu",
-    "meaning_vi": "bản chất, yếu tố cốt lõi",
-    "part_of_speech": "名詞",
-    "tags": [
-      "academic",
-      "philosophy",
-      "formal"
-    ]
-  },
-  {
-    "word": "属性",
-    "reading": "ぞくせい",
-    "romaji": "zokusei",
-    "meaning_vi": "thuộc tính, đặc tính",
-    "part_of_speech": "名詞",
-    "tags": [
-      "academic",
-      "formal",
-      "logic"
-    ]
-  },
-  {
-    "word": "命題",
-    "reading": "めいだい",
-    "romaji": "meidai",
-    "meaning_vi": "mệnh đề, luận điểm cần chứng minh",
-    "part_of_speech": "名詞",
-    "tags": [
-      "academic",
-      "logic",
-      "philosophy",
       "formal"
     ]
   },
@@ -356,42 +211,6 @@
     ]
   },
   {
-    "word": "免疫",
-    "reading": "めんえき",
-    "romaji": "men'eki",
-    "meaning_vi": "miễn dịch, khả năng chống lại bệnh",
-    "part_of_speech": "名詞",
-    "tags": [
-      "medical",
-      "science",
-      "formal"
-    ]
-  },
-  {
-    "word": "抗体",
-    "reading": "こうたい",
-    "romaji": "kōtai",
-    "meaning_vi": "kháng thể, protein chống lại mầm bệnh",
-    "part_of_speech": "名詞",
-    "tags": [
-      "medical",
-      "science",
-      "formal"
-    ]
-  },
-  {
-    "word": "遺伝子",
-    "reading": "いでんし",
-    "romaji": "idenshi",
-    "meaning_vi": "gen, yếu tố di truyền",
-    "part_of_speech": "名詞",
-    "tags": [
-      "science",
-      "biology",
-      "formal"
-    ]
-  },
-  {
     "word": "染色体",
     "reading": "せんしょくたい",
     "romaji": "senshokutai",
@@ -404,54 +223,6 @@
     ]
   },
   {
-    "word": "触媒",
-    "reading": "しょくばい",
-    "romaji": "shokubai",
-    "meaning_vi": "chất xúc tác",
-    "part_of_speech": "名詞",
-    "tags": [
-      "science",
-      "chemistry",
-      "formal"
-    ]
-  },
-  {
-    "word": "酵素",
-    "reading": "こうそ",
-    "romaji": "kōso",
-    "meaning_vi": "enzym, chất xúc tác sinh học",
-    "part_of_speech": "名詞",
-    "tags": [
-      "science",
-      "biology",
-      "formal"
-    ]
-  },
-  {
-    "word": "自然選択",
-    "reading": "しぜんせんたく",
-    "romaji": "shizen sentaku",
-    "meaning_vi": "chọn lọc tự nhiên (học thuyết Darwin)",
-    "part_of_speech": "名詞",
-    "tags": [
-      "science",
-      "biology",
-      "formal",
-      "academic"
-    ]
-  },
-  {
-    "word": "景気",
-    "reading": "けいき",
-    "romaji": "keiki",
-    "meaning_vi": "tình hình kinh tế, cảnh khí",
-    "part_of_speech": "名詞",
-    "tags": [
-      "economy",
-      "formal"
-    ]
-  },
-  {
     "word": "恐慌",
     "reading": "きょうこう",
     "romaji": "kyōkō",
@@ -460,68 +231,6 @@
     "tags": [
       "economy",
       "formal"
-    ]
-  },
-  {
-    "word": "倒産",
-    "reading": "とうさん",
-    "romaji": "tōsan",
-    "meaning_vi": "phá sản, sụp đổ kinh doanh",
-    "part_of_speech": "名詞",
-    "tags": [
-      "economy",
-      "formal",
-      "business"
-    ]
-  },
-  {
-    "word": "融資",
-    "reading": "ゆうし",
-    "romaji": "yūshi",
-    "meaning_vi": "cho vay vốn, tài trợ tài chính",
-    "part_of_speech": "名詞",
-    "tags": [
-      "economy",
-      "finance",
-      "formal"
-    ]
-  },
-  {
-    "word": "利息",
-    "reading": "りそく",
-    "romaji": "risoku",
-    "meaning_vi": "lãi suất, tiền lãi",
-    "part_of_speech": "名詞",
-    "tags": [
-      "economy",
-      "finance",
-      "formal"
-    ]
-  },
-  {
-    "word": "配当",
-    "reading": "はいとう",
-    "romaji": "haitō",
-    "meaning_vi": "cổ tức, chia cổ phần",
-    "part_of_speech": "名詞",
-    "tags": [
-      "economy",
-      "finance",
-      "formal",
-      "business"
-    ]
-  },
-  {
-    "word": "上場",
-    "reading": "じょうじょう",
-    "romaji": "jōjō",
-    "meaning_vi": "niêm yết (cổ phiếu trên sàn chứng khoán)",
-    "part_of_speech": "名詞",
-    "tags": [
-      "economy",
-      "finance",
-      "formal",
-      "business"
     ]
   },
   {
@@ -540,18 +249,6 @@
     "reading": "ぼうらく",
     "romaji": "bōraku",
     "meaning_vi": "sụt giảm đột ngột, sụp đổ giá",
-    "part_of_speech": "名詞",
-    "tags": [
-      "economy",
-      "finance",
-      "formal"
-    ]
-  },
-  {
-    "word": "相場",
-    "reading": "そうば",
-    "romaji": "sōba",
-    "meaning_vi": "giá thị trường, tỷ giá giao dịch",
     "part_of_speech": "名詞",
     "tags": [
       "economy",
@@ -593,17 +290,6 @@
     ]
   },
   {
-    "word": "点検",
-    "reading": "てんけん",
-    "romaji": "tenken",
-    "meaning_vi": "kiểm tra, kiểm định từng chi tiết",
-    "part_of_speech": "名詞",
-    "tags": [
-      "formal",
-      "technical"
-    ]
-  },
-  {
     "word": "稼働",
     "reading": "かどう",
     "romaji": "kadō",
@@ -625,17 +311,6 @@
       "formal",
       "academic",
       "technical"
-    ]
-  },
-  {
-    "word": "実施",
-    "reading": "じっし",
-    "romaji": "jisshi",
-    "meaning_vi": "thực thi, tiến hành thực hiện",
-    "part_of_speech": "名詞",
-    "tags": [
-      "formal",
-      "official"
     ]
   },
   {
@@ -686,17 +361,6 @@
       "formal",
       "official",
       "government"
-    ]
-  },
-  {
-    "word": "条項",
-    "reading": "じょうこう",
-    "romaji": "jōkō",
-    "meaning_vi": "điều khoản, quy định cụ thể trong văn bản",
-    "part_of_speech": "名詞",
-    "tags": [
-      "legal",
-      "formal"
     ]
   },
   {
@@ -779,18 +443,6 @@
       "formal",
       "official",
       "government"
-    ]
-  },
-  {
-    "word": "見解",
-    "reading": "けんかい",
-    "romaji": "kenkai",
-    "meaning_vi": "quan điểm, ý kiến sau khi xem xét",
-    "part_of_speech": "名詞",
-    "tags": [
-      "formal",
-      "academic",
-      "official"
     ]
   },
   {
@@ -892,29 +544,6 @@
     "tags": [
       "formal",
       "literary"
-    ]
-  },
-  {
-    "word": "趨勢",
-    "reading": "すうせい",
-    "romaji": "sūsei",
-    "meaning_vi": "xu thế, chiều hướng chung",
-    "part_of_speech": "名詞",
-    "tags": [
-      "formal",
-      "academic"
-    ]
-  },
-  {
-    "word": "動向",
-    "reading": "どうこう",
-    "romaji": "dōkō",
-    "meaning_vi": "xu hướng, hướng đi, diễn biến",
-    "part_of_speech": "名詞",
-    "tags": [
-      "formal",
-      "news",
-      "official"
     ]
   },
   {
@@ -1178,42 +807,6 @@
     ]
   },
   {
-    "word": "刷新",
-    "reading": "さっしん",
-    "romaji": "sasshin",
-    "meaning_vi": "cải cách mới, làm mới hoàn toàn",
-    "part_of_speech": "名詞",
-    "tags": [
-      "formal",
-      "political",
-      "official"
-    ]
-  },
-  {
-    "word": "変革",
-    "reading": "へんかく",
-    "romaji": "henkaku",
-    "meaning_vi": "cải cách, thay đổi căn bản",
-    "part_of_speech": "名詞",
-    "tags": [
-      "formal",
-      "political",
-      "social"
-    ]
-  },
-  {
-    "word": "革新",
-    "reading": "かくしん",
-    "romaji": "kakushin",
-    "meaning_vi": "cách tân, đổi mới",
-    "part_of_speech": "名詞",
-    "tags": [
-      "formal",
-      "political",
-      "social"
-    ]
-  },
-  {
     "word": "保守",
     "reading": "ほしゅ",
     "romaji": "hoshu",
@@ -1223,17 +816,6 @@
       "formal",
       "political",
       "social"
-    ]
-  },
-  {
-    "word": "漸進",
-    "reading": "ぜんしん",
-    "romaji": "zenshin",
-    "meaning_vi": "tiến dần từng bước, cải cách từ từ",
-    "part_of_speech": "名詞",
-    "tags": [
-      "formal",
-      "academic"
     ]
   },
   {

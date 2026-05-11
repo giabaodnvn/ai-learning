@@ -24,18 +24,6 @@
     ]
   },
   {
-    "word": "伴う",
-    "reading": "ともなう",
-    "romaji": "tomonau",
-    "meaning_vi": "đi kèm, kèm theo",
-    "part_of_speech": "verb",
-    "tags": [
-      "accompany",
-      "involve",
-      "entail"
-    ]
-  },
-  {
     "word": "替わる",
     "reading": "かわる",
     "romaji": "kawaru",
@@ -132,18 +120,6 @@
     ]
   },
   {
-    "word": "頼る",
-    "reading": "たよる",
-    "romaji": "tayoru",
-    "meaning_vi": "dựa vào, tin cậy",
-    "part_of_speech": "verb",
-    "tags": [
-      "rely on",
-      "depend",
-      "trust"
-    ]
-  },
-  {
     "word": "賭ける",
     "reading": "かける",
     "romaji": "kakeru",
@@ -180,18 +156,6 @@
     ]
   },
   {
-    "word": "述べる",
-    "reading": "のべる",
-    "romaji": "noberu",
-    "meaning_vi": "trình bày, nói",
-    "part_of_speech": "verb",
-    "tags": [
-      "state",
-      "express",
-      "recount"
-    ]
-  },
-  {
     "word": "滅びる",
     "reading": "ほろびる",
     "romaji": "horobiru",
@@ -216,18 +180,6 @@
     ]
   },
   {
-    "word": "磨く",
-    "reading": "みがく",
-    "romaji": "migaku",
-    "meaning_vi": "đánh bóng, mài",
-    "part_of_speech": "verb",
-    "tags": [
-      "polish",
-      "grind",
-      "hone"
-    ]
-  },
-  {
     "word": "拭う",
     "reading": "ぬぐう",
     "romaji": "nuguu",
@@ -249,18 +201,6 @@
       "approach",
       "gather",
       "call"
-    ]
-  },
-  {
-    "word": "削る",
-    "reading": "けずる",
-    "romaji": "kezuru",
-    "meaning_vi": "cạo, bào",
-    "part_of_speech": "verb",
-    "tags": [
-      "shave",
-      "carve",
-      "reduce"
     ]
   },
   {
@@ -489,18 +429,6 @@
       "blow",
       "wind",
       "fan"
-    ]
-  },
-  {
-    "word": "吹き出す",
-    "reading": "ふきだす",
-    "romaji": "fukidasu",
-    "meaning_vi": "bật cười, phun ra",
-    "part_of_speech": "verb",
-    "tags": [
-      "burst out laughing",
-      "spurt",
-      "erupt"
     ]
   },
   {
@@ -785,30 +713,6 @@
       "entrust",
       "commission",
       "ask"
-    ]
-  },
-  {
-    "word": "肯定",
-    "reading": "こうてい",
-    "romaji": "koutei",
-    "meaning_vi": "khẳng định, đồng ý",
-    "part_of_speech": "noun",
-    "tags": [
-      "affirmation",
-      "acknowledgment",
-      "consent"
-    ]
-  },
-  {
-    "word": "否定",
-    "reading": "ひてい",
-    "romaji": "hitei",
-    "meaning_vi": "phủ nhận, từ chối",
-    "part_of_speech": "noun",
-    "tags": [
-      "negation",
-      "denial",
-      "rejection"
     ]
   },
   {

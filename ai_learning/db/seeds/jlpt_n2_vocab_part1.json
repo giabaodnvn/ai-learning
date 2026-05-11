@@ -33,17 +33,6 @@
     ]
   },
   {
-    "word": "配置",
-    "reading": "はいち",
-    "romaji": "haichi",
-    "meaning_vi": "bố trí, sắp xếp",
-    "part_of_speech": "noun",
-    "tags": [
-      "action",
-      "organization"
-    ]
-  },
-  {
     "word": "勤務",
     "reading": "きんむ",
     "romaji": "kinmu",
@@ -77,17 +66,6 @@
     ]
   },
   {
-    "word": "転勤",
-    "reading": "てんきん",
-    "romaji": "tenkin",
-    "meaning_vi": "điều chuyển công tác",
-    "part_of_speech": "noun",
-    "tags": [
-      "work",
-      "action"
-    ]
-  },
-  {
     "word": "配転",
     "reading": "はいてん",
     "romaji": "haiten",
@@ -110,17 +88,6 @@
     ]
   },
   {
-    "word": "降格",
-    "reading": "こうかく",
-    "romaji": "koukaku",
-    "meaning_vi": "hạ chức",
-    "part_of_speech": "noun",
-    "tags": [
-      "work",
-      "failure"
-    ]
-  },
-  {
     "word": "左遷",
     "reading": "させん",
     "romaji": "sasen",
@@ -129,28 +96,6 @@
     "tags": [
       "work",
       "failure"
-    ]
-  },
-  {
-    "word": "昇進",
-    "reading": "しょうしん",
-    "romaji": "shoushin",
-    "meaning_vi": "thăng chức",
-    "part_of_speech": "noun",
-    "tags": [
-      "work",
-      "success"
-    ]
-  },
-  {
-    "word": "昇格",
-    "reading": "しょうかく",
-    "romaji": "shoukaku",
-    "meaning_vi": "nâng cấp, thăng chức",
-    "part_of_speech": "noun",
-    "tags": [
-      "work",
-      "success"
     ]
   },
   {
@@ -582,17 +527,6 @@
     ]
   },
   {
-    "word": "手順",
-    "reading": "てじゅん",
-    "romaji": "tejun",
-    "meaning_vi": "thủ tục, thứ tự",
-    "part_of_speech": "noun",
-    "tags": [
-      "procedure",
-      "order"
-    ]
-  },
-  {
     "word": "次第",
     "reading": "しだい",
     "romaji": "shidai",
@@ -659,42 +593,10 @@
     ]
   },
   {
-    "word": "正直",
-    "reading": "しょうじき",
-    "romaji": "shoujiki",
-    "meaning_vi": "thành thật, trung thực",
-    "part_of_speech": "adjective",
-    "tags": [
-      "character",
-      "morality"
-    ]
-  },
-  {
-    "word": "率直",
-    "reading": "そっちょく",
-    "romaji": "sotchoku",
-    "meaning_vi": "thẳng thắn, tươm tất",
-    "part_of_speech": "adjective",
-    "tags": [
-      "character",
-      "communication"
-    ]
-  },
-  {
     "word": "率意",
     "reading": "そつい",
     "romaji": "sotsui",
     "meaning_vi": "bốc đồng, tìm tinh",
-    "part_of_speech": "adjective",
-    "tags": [
-      "character"
-    ]
-  },
-  {
-    "word": "素直",
-    "reading": "すなお",
-    "romaji": "sunao",
-    "meaning_vi": "thẳng thắn, tốt bụng",
     "part_of_speech": "adjective",
     "tags": [
       "character"
@@ -829,17 +731,6 @@
     ]
   },
   {
-    "word": "堆積",
-    "reading": "たいせき",
-    "romaji": "taiseki",
-    "meaning_vi": "tích lũy, tích tụ",
-    "part_of_speech": "noun",
-    "tags": [
-      "action",
-      "geology"
-    ]
-  },
-  {
     "word": "沈積",
     "reading": "ちんせき",
     "romaji": "chinseki",
@@ -955,17 +846,6 @@
     "tags": [
       "space",
       "abstract"
-    ]
-  },
-  {
-    "word": "欠陥",
-    "reading": "けっかん",
-    "romaji": "kekkan",
-    "meaning_vi": "khiếm khuyết, khuyết điểm",
-    "part_of_speech": "noun",
-    "tags": [
-      "defect",
-      "failure"
     ]
   },
   {

@@ -155,18 +155,6 @@
     ]
   },
   {
-    "word": "穏やか",
-    "reading": "おだやか",
-    "romaji": "odayaka",
-    "meaning_vi": "ôn hòa, bình thản, yên tĩnh",
-    "part_of_speech": "adjective",
-    "tags": [
-      "calm",
-      "gentle",
-      "peaceful"
-    ]
-  },
-  {
     "word": "侘しい",
     "reading": "わびしい",
     "romaji": "wabishii",
@@ -502,17 +490,6 @@
     ]
   },
   {
-    "word": "霜",
-    "reading": "しも",
-    "romaji": "shimo",
-    "meaning_vi": "sương giá, sương muối",
-    "part_of_speech": "noun",
-    "tags": [
-      "frost",
-      "hoarfrost"
-    ]
-  },
-  {
     "word": "霞",
     "reading": "かすみ",
     "romaji": "kasumi",
@@ -522,18 +499,6 @@
       "haze",
       "mist",
       "fog"
-    ]
-  },
-  {
-    "word": "霧",
-    "reading": "きり",
-    "romaji": "kiri",
-    "meaning_vi": "sương mù dày",
-    "part_of_speech": "noun",
-    "tags": [
-      "fog",
-      "mist",
-      "haze"
     ]
   },
   {
@@ -669,18 +634,6 @@
     "tags": [
       "rainbow",
       "arc"
-    ]
-  },
-  {
-    "word": "雷",
-    "reading": "かみなり",
-    "romaji": "kaminari",
-    "meaning_vi": "sấm, sét",
-    "part_of_speech": "noun",
-    "tags": [
-      "thunder",
-      "lightning",
-      "thunderbolt"
     ]
   },
   {

@@ -1,29 +1,5 @@
 [
   {
-    "word": "報告",
-    "reading": "ほうこく",
-    "romaji": "houkoku",
-    "meaning_vi": "báo cáo, thông báo",
-    "part_of_speech": "noun",
-    "tags": [
-      "communication",
-      "report",
-      "notification"
-    ]
-  },
-  {
-    "word": "連絡",
-    "reading": "れんらく",
-    "romaji": "renraku",
-    "meaning_vi": "liên lạc, thông báo",
-    "part_of_speech": "noun",
-    "tags": [
-      "communication",
-      "contact",
-      "contact"
-    ]
-  },
-  {
     "word": "相談",
     "reading": "そうだん",
     "romaji": "soudan",
@@ -33,42 +9,6 @@
       "consultation",
       "discussion",
       "advice"
-    ]
-  },
-  {
-    "word": "議論",
-    "reading": "ぎろん",
-    "romaji": "giron",
-    "meaning_vi": "thảo luận, tranh luận",
-    "part_of_speech": "noun",
-    "tags": [
-      "discussion",
-      "debate",
-      "argument"
-    ]
-  },
-  {
-    "word": "交渉",
-    "reading": "こうしょう",
-    "romaji": "koushou",
-    "meaning_vi": "đàm phán, thương thảo",
-    "part_of_speech": "noun",
-    "tags": [
-      "negotiation",
-      "discussion",
-      "talk"
-    ]
-  },
-  {
-    "word": "協力",
-    "reading": "きょうりょく",
-    "romaji": "kyouryoku",
-    "meaning_vi": "hợp tác, hỗ trợ",
-    "part_of_speech": "noun",
-    "tags": [
-      "cooperation",
-      "collaboration",
-      "help"
     ]
   },
   {
@@ -96,42 +36,6 @@
     ]
   },
   {
-    "word": "委譲",
-    "reading": "いじょう",
-    "romaji": "ijou",
-    "meaning_vi": "giao phó, chuyển giao",
-    "part_of_speech": "noun",
-    "tags": [
-      "delegation",
-      "transfer",
-      "assignment"
-    ]
-  },
-  {
-    "word": "承認",
-    "reading": "しょうにん",
-    "romaji": "shounin",
-    "meaning_vi": "công nhận, chấp thuận",
-    "part_of_speech": "noun",
-    "tags": [
-      "approval",
-      "recognition",
-      "consent"
-    ]
-  },
-  {
-    "word": "決定",
-    "reading": "けってい",
-    "romaji": "kettei",
-    "meaning_vi": "quyết định, định đoạt",
-    "part_of_speech": "noun",
-    "tags": [
-      "decision",
-      "resolution",
-      "conclusion"
-    ]
-  },
-  {
     "word": "同意",
     "reading": "どうい",
     "romaji": "doui",
@@ -141,30 +45,6 @@
       "agreement",
       "consent",
       "approval"
-    ]
-  },
-  {
-    "word": "反対",
-    "reading": "はんたい",
-    "romaji": "hantai",
-    "meaning_vi": "phản đối, chống lại",
-    "part_of_speech": "noun",
-    "tags": [
-      "opposition",
-      "disagreement",
-      "against"
-    ]
-  },
-  {
-    "word": "提案",
-    "reading": "ていあん",
-    "romaji": "teian",
-    "meaning_vi": "đề xuất, đề nghị",
-    "part_of_speech": "noun",
-    "tags": [
-      "proposal",
-      "suggestion",
-      "motion"
     ]
   },
   {
@@ -252,30 +132,6 @@
     ]
   },
   {
-    "word": "許可",
-    "reading": "きょか",
-    "romaji": "kyoka",
-    "meaning_vi": "cho phép, cấp phép",
-    "part_of_speech": "noun",
-    "tags": [
-      "permission",
-      "approval",
-      "license"
-    ]
-  },
-  {
-    "word": "禁止",
-    "reading": "きんし",
-    "romaji": "kinshi",
-    "meaning_vi": "cấm, ngăn cấm",
-    "part_of_speech": "noun",
-    "tags": [
-      "prohibition",
-      "ban",
-      "restriction"
-    ]
-  },
-  {
     "word": "制御",
     "reading": "せいぎょ",
     "romaji": "seigyo",
@@ -297,18 +153,6 @@
       "control",
       "regulation",
       "management"
-    ]
-  },
-  {
-    "word": "保有",
-    "reading": "ほゆう",
-    "romaji": "hoyuu",
-    "meaning_vi": "sở hữu, nắm giữ",
-    "part_of_speech": "noun",
-    "tags": [
-      "possession",
-      "ownership",
-      "holding"
     ]
   },
   {
@@ -360,54 +204,6 @@
     ]
   },
   {
-    "word": "排除",
-    "reading": "はいじょ",
-    "romaji": "haikjo",
-    "meaning_vi": "loại bỏ, cấm",
-    "part_of_speech": "noun",
-    "tags": [
-      "exclusion",
-      "elimination",
-      "removal"
-    ]
-  },
-  {
-    "word": "組織",
-    "reading": "そしき",
-    "romaji": "soshiki",
-    "meaning_vi": "tổ chức, cấu trúc",
-    "part_of_speech": "noun",
-    "tags": [
-      "organization",
-      "structure",
-      "institution"
-    ]
-  },
-  {
-    "word": "機関",
-    "reading": "きかん",
-    "romaji": "kikan",
-    "meaning_vi": "cơ quan, tổ chức",
-    "part_of_speech": "noun",
-    "tags": [
-      "organization",
-      "institution",
-      "agency"
-    ]
-  },
-  {
-    "word": "団体",
-    "reading": "だんたい",
-    "romaji": "dantai",
-    "meaning_vi": "tổ chức, nhóm",
-    "part_of_speech": "noun",
-    "tags": [
-      "organization",
-      "group",
-      "association"
-    ]
-  },
-  {
     "word": "集団",
     "reading": "しゅうだん",
     "romaji": "shuudan",
@@ -417,18 +213,6 @@
       "group",
       "organization",
       "collective"
-    ]
-  },
-  {
-    "word": "部門",
-    "reading": "ぶもん",
-    "romaji": "bumon",
-    "meaning_vi": "bộ phận, ngành",
-    "part_of_speech": "noun",
-    "tags": [
-      "department",
-      "division",
-      "sector"
     ]
   },
   {
@@ -492,18 +276,6 @@
     ]
   },
   {
-    "word": "優先",
-    "reading": "ゆうせん",
-    "romaji": "yuusen",
-    "meaning_vi": "ưu tiên, thứ tự",
-    "part_of_speech": "noun",
-    "tags": [
-      "priority",
-      "precedence",
-      "preference"
-    ]
-  },
-  {
     "word": "等級",
     "reading": "とうきゅう",
     "romaji": "toukyuu",
@@ -513,30 +285,6 @@
       "level",
       "rank",
       "grade"
-    ]
-  },
-  {
-    "word": "格付け",
-    "reading": "かくづけ",
-    "romaji": "kakuduke",
-    "meaning_vi": "xếp loại, định giá",
-    "part_of_speech": "noun",
-    "tags": [
-      "rating",
-      "classification",
-      "ranking"
-    ]
-  },
-  {
-    "word": "格差",
-    "reading": "かくさ",
-    "romaji": "kakusa",
-    "meaning_vi": "chênh lệch, sự khác nhau",
-    "part_of_speech": "noun",
-    "tags": [
-      "difference",
-      "disparity",
-      "gap"
     ]
   },
   {
@@ -573,18 +321,6 @@
       "disadvantage",
       "weakness",
       "fault"
-    ]
-  },
-  {
-    "word": "利点",
-    "reading": "りてん",
-    "romaji": "riten",
-    "meaning_vi": "lợi thế, ưu thế",
-    "part_of_speech": "noun",
-    "tags": [
-      "advantage",
-      "benefit",
-      "merit"
     ]
   },
   {
@@ -708,18 +444,6 @@
     ]
   },
   {
-    "word": "分類",
-    "reading": "ぶんるい",
-    "romaji": "bunrui",
-    "meaning_vi": "phân loại, sắp xếp",
-    "part_of_speech": "noun",
-    "tags": [
-      "classification",
-      "categorization",
-      "sorting"
-    ]
-  },
-  {
     "word": "順位",
     "reading": "じゅんい",
     "romaji": "jun'i",
@@ -744,18 +468,6 @@
     ]
   },
   {
-    "word": "規則",
-    "reading": "きそく",
-    "romaji": "kisoku",
-    "meaning_vi": "quy tắc, luật lệ",
-    "part_of_speech": "noun",
-    "tags": [
-      "regulation",
-      "rule",
-      "norm"
-    ]
-  },
-  {
     "word": "法令",
     "reading": "ほうれい",
     "romaji": "hourei",
@@ -765,30 +477,6 @@
       "ordinance",
       "legal",
       "statute"
-    ]
-  },
-  {
-    "word": "法律",
-    "reading": "ほうりつ",
-    "romaji": "houritu",
-    "meaning_vi": "pháp luật, luật",
-    "part_of_speech": "noun",
-    "tags": [
-      "law",
-      "legal",
-      "statute"
-    ]
-  },
-  {
-    "word": "条約",
-    "reading": "じょうやく",
-    "romaji": "jouyaku",
-    "meaning_vi": "hiệp ước, hiệp định",
-    "part_of_speech": "noun",
-    "tags": [
-      "treaty",
-      "agreement",
-      "pact"
     ]
   },
   {
@@ -816,42 +504,6 @@
     ]
   },
   {
-    "word": "義務",
-    "reading": "ぎむ",
-    "romaji": "gimu",
-    "meaning_vi": "nghĩa vụ, trách nhiệm",
-    "part_of_speech": "noun",
-    "tags": [
-      "obligation",
-      "duty",
-      "responsibility"
-    ]
-  },
-  {
-    "word": "権利",
-    "reading": "けんり",
-    "romaji": "kenri",
-    "meaning_vi": "quyền lợi, quyền hạn",
-    "part_of_speech": "noun",
-    "tags": [
-      "right",
-      "privilege",
-      "authority"
-    ]
-  },
-  {
-    "word": "特権",
-    "reading": "とくけん",
-    "romaji": "tokuken",
-    "meaning_vi": "đặc quyền, ưu tiên",
-    "part_of_speech": "noun",
-    "tags": [
-      "privilege",
-      "prerogative",
-      "special right"
-    ]
-  },
-  {
     "word": "免責",
     "reading": "めんせき",
     "romaji": "menseki",
@@ -864,30 +516,6 @@
     ]
   },
   {
-    "word": "責任",
-    "reading": "せきにん",
-    "romaji": "sekinin",
-    "meaning_vi": "trách nhiệm, bổn phận",
-    "part_of_speech": "noun",
-    "tags": [
-      "responsibility",
-      "duty",
-      "liability"
-    ]
-  },
-  {
-    "word": "債務",
-    "reading": "さいむ",
-    "romaji": "saimu",
-    "meaning_vi": "nợ, khoản nợ",
-    "part_of_speech": "noun",
-    "tags": [
-      "debt",
-      "obligation",
-      "liability"
-    ]
-  },
-  {
     "word": "債権",
     "reading": "さいけん",
     "romaji": "saiken",
@@ -897,18 +525,6 @@
       "claim",
       "receivable",
       "credit"
-    ]
-  },
-  {
-    "word": "契約",
-    "reading": "けいやく",
-    "romaji": "keiyaku",
-    "meaning_vi": "hợp đồng, thoả thuận",
-    "part_of_speech": "noun",
-    "tags": [
-      "contract",
-      "agreement",
-      "deal"
     ]
   },
   {
@@ -996,18 +612,6 @@
     ]
   },
   {
-    "word": "訴訟",
-    "reading": "そしょう",
-    "romaji": "soshou",
-    "meaning_vi": "kiện tụng, vụ kiện",
-    "part_of_speech": "noun",
-    "tags": [
-      "lawsuit",
-      "litigation",
-      "suit"
-    ]
-  },
-  {
     "word": "上訴",
     "reading": "じょうそ",
     "romaji": "jouso",
@@ -1041,18 +645,6 @@
       "court",
       "tribunal",
       "courthouse"
-    ]
-  },
-  {
-    "word": "証拠",
-    "reading": "しょうこ",
-    "romaji": "shouko",
-    "meaning_vi": "bằng chứng, chứng cứ",
-    "part_of_speech": "noun",
-    "tags": [
-      "evidence",
-      "proof",
-      "testimony"
     ]
   },
   {

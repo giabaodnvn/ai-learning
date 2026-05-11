@@ -262,27 +262,6 @@
     ]
   },
   {
-    "word": "庭",
-    "reading": "にわ",
-    "romaji": "niwa",
-    "meaning_vi": "sân vườn",
-    "part_of_speech": "noun",
-    "tags": [
-      "housing",
-      "nature"
-    ]
-  },
-  {
-    "word": "窓",
-    "reading": "まど",
-    "romaji": "mado",
-    "meaning_vi": "cửa sổ",
-    "part_of_speech": "noun",
-    "tags": [
-      "housing"
-    ]
-  },
-  {
     "word": "敷金",
     "reading": "しきん",
     "romaji": "shikikin",
