@@ -431,30 +431,10 @@
     ]
   },
   {
-    "word": "草",
-    "reading": "くさ",
-    "romaji": "kusa",
-    "meaning_vi": "cỏ",
-    "part_of_speech": "noun",
-    "tags": [
-      "nature"
-    ]
-  },
-  {
     "word": "枝",
     "reading": "えだ",
     "romaji": "eda",
     "meaning_vi": "cành cây",
-    "part_of_speech": "noun",
-    "tags": [
-      "nature"
-    ]
-  },
-  {
-    "word": "虫",
-    "reading": "むし",
-    "romaji": "mushi",
-    "meaning_vi": "côn trùng, sâu bọ",
     "part_of_speech": "noun",
     "tags": [
       "nature"

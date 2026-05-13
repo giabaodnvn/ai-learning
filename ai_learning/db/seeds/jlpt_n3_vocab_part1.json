@@ -1,16 +1,5 @@
 [
   {
-    "word": "意見",
-    "reading": "いけん",
-    "romaji": "iken",
-    "meaning_vi": "ý kiến",
-    "part_of_speech": "noun",
-    "tags": [
-      "communication",
-      "abstract"
-    ]
-  },
-  {
     "word": "考え",
     "reading": "かんがえ",
     "romaji": "kangae",
@@ -33,17 +22,6 @@
     ]
   },
   {
-    "word": "記憶",
-    "reading": "きおく",
-    "romaji": "kioku",
-    "meaning_vi": "ký ức, trí nhớ",
-    "part_of_speech": "noun",
-    "tags": [
-      "abstract",
-      "memory"
-    ]
-  },
-  {
     "word": "判断",
     "reading": "はんだん",
     "romaji": "handan",
@@ -52,17 +30,6 @@
     "tags": [
       "abstract",
       "thinking"
-    ]
-  },
-  {
-    "word": "理解",
-    "reading": "りかい",
-    "romaji": "rikai",
-    "meaning_vi": "sự hiểu biết, lý giải",
-    "part_of_speech": "noun",
-    "tags": [
-      "study",
-      "abstract"
     ]
   },
   {
@@ -192,17 +159,6 @@
     "part_of_speech": "noun",
     "tags": [
       "abstract",
-      "psychology"
-    ]
-  },
-  {
-    "word": "感情",
-    "reading": "かんじょう",
-    "romaji": "kanjou",
-    "meaning_vi": "cảm xúc, tình cảm",
-    "part_of_speech": "noun",
-    "tags": [
-      "emotion",
       "psychology"
     ]
   },

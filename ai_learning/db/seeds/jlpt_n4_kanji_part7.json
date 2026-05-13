@@ -1,0 +1,362 @@
+[
+  {
+    "character": "羊",
+    "onyomi": ["ヨウ"],
+    "kunyomi": ["ひつじ"],
+    "meaning_vi": "con cừu",
+    "stroke_count": 6,
+    "vocab_examples": [
+      {"word": "羊", "reading": "ひつじ", "meaning_vi": "con cừu"},
+      {"word": "羊毛", "reading": "ようもう", "meaning_vi": "lông cừu"},
+      {"word": "子羊", "reading": "こひつじ", "meaning_vi": "cừu non"}
+    ]
+  },
+  {
+    "character": "者",
+    "onyomi": ["シャ"],
+    "kunyomi": ["もの"],
+    "meaning_vi": "người, kẻ",
+    "stroke_count": 8,
+    "vocab_examples": [
+      {"word": "記者", "reading": "きしゃ", "meaning_vi": "phóng viên, ký giả"},
+      {"word": "若者", "reading": "わかもの", "meaning_vi": "người trẻ"},
+      {"word": "医者", "reading": "いしゃ", "meaning_vi": "bác sĩ"}
+    ]
+  },
+  {
+    "character": "度",
+    "onyomi": ["ド", "ト", "タク"],
+    "kunyomi": ["たび"],
+    "meaning_vi": "độ, lần, mức độ",
+    "stroke_count": 9,
+    "vocab_examples": [
+      {"word": "今度", "reading": "こんど", "meaning_vi": "lần này, lần tới"},
+      {"word": "温度", "reading": "おんど", "meaning_vi": "nhiệt độ"},
+      {"word": "態度", "reading": "たいど", "meaning_vi": "thái độ"}
+    ]
+  },
+  {
+    "character": "夏",
+    "onyomi": ["カ", "ゲ"],
+    "kunyomi": ["なつ"],
+    "meaning_vi": "mùa hè",
+    "stroke_count": 10,
+    "vocab_examples": [
+      {"word": "夏", "reading": "なつ", "meaning_vi": "mùa hè"},
+      {"word": "夏休み", "reading": "なつやすみ", "meaning_vi": "kỳ nghỉ hè"},
+      {"word": "夏祭り", "reading": "なつまつり", "meaning_vi": "lễ hội mùa hè"}
+    ]
+  },
+  {
+    "character": "秋",
+    "onyomi": ["シュウ"],
+    "kunyomi": ["あき"],
+    "meaning_vi": "mùa thu",
+    "stroke_count": 9,
+    "vocab_examples": [
+      {"word": "秋", "reading": "あき", "meaning_vi": "mùa thu"},
+      {"word": "秋分", "reading": "しゅうぶん", "meaning_vi": "ngày thu phân"},
+      {"word": "秋風", "reading": "あきかぜ", "meaning_vi": "gió thu"}
+    ]
+  },
+  {
+    "character": "冬",
+    "onyomi": ["トウ"],
+    "kunyomi": ["ふゆ"],
+    "meaning_vi": "mùa đông",
+    "stroke_count": 5,
+    "vocab_examples": [
+      {"word": "冬", "reading": "ふゆ", "meaning_vi": "mùa đông"},
+      {"word": "冬休み", "reading": "ふゆやすみ", "meaning_vi": "kỳ nghỉ đông"},
+      {"word": "冬眠", "reading": "とうみん", "meaning_vi": "ngủ đông"}
+    ]
+  },
+  {
+    "character": "昼",
+    "onyomi": ["チュウ"],
+    "kunyomi": ["ひる"],
+    "meaning_vi": "ban ngày, buổi trưa",
+    "stroke_count": 9,
+    "vocab_examples": [
+      {"word": "昼", "reading": "ひる", "meaning_vi": "buổi trưa"},
+      {"word": "昼食", "reading": "ちゅうしょく", "meaning_vi": "bữa trưa"},
+      {"word": "昼間", "reading": "ひるま", "meaning_vi": "ban ngày"}
+    ]
+  },
+  {
+    "character": "朝",
+    "onyomi": ["チョウ"],
+    "kunyomi": ["あさ"],
+    "meaning_vi": "buổi sáng, triều đại",
+    "stroke_count": 12,
+    "vocab_examples": [
+      {"word": "朝", "reading": "あさ", "meaning_vi": "buổi sáng"},
+      {"word": "朝食", "reading": "ちょうしょく", "meaning_vi": "bữa sáng"},
+      {"word": "今朝", "reading": "けさ", "meaning_vi": "sáng nay"}
+    ]
+  },
+  {
+    "character": "昔",
+    "onyomi": ["セキ", "シャク"],
+    "kunyomi": ["むかし"],
+    "meaning_vi": "ngày xưa, xưa kia",
+    "stroke_count": 8,
+    "vocab_examples": [
+      {"word": "昔", "reading": "むかし", "meaning_vi": "ngày xưa"},
+      {"word": "昔話", "reading": "むかしばなし", "meaning_vi": "chuyện cổ tích"},
+      {"word": "大昔", "reading": "おおむかし", "meaning_vi": "ngày xửa ngày xưa"}
+    ]
+  },
+  {
+    "character": "近",
+    "onyomi": ["キン"],
+    "kunyomi": ["ちか.い"],
+    "meaning_vi": "gần",
+    "stroke_count": 7,
+    "vocab_examples": [
+      {"word": "近い", "reading": "ちかい", "meaning_vi": "gần"},
+      {"word": "近所", "reading": "きんじょ", "meaning_vi": "hàng xóm, vùng lân cận"},
+      {"word": "最近", "reading": "さいきん", "meaning_vi": "gần đây"}
+    ]
+  },
+  {
+    "character": "多",
+    "onyomi": ["タ"],
+    "kunyomi": ["おお.い"],
+    "meaning_vi": "nhiều",
+    "stroke_count": 6,
+    "vocab_examples": [
+      {"word": "多い", "reading": "おおい", "meaning_vi": "nhiều"},
+      {"word": "多分", "reading": "たぶん", "meaning_vi": "có lẽ, chắc là"},
+      {"word": "多数", "reading": "たすう", "meaning_vi": "đa số, nhiều"}
+    ]
+  },
+  {
+    "character": "少",
+    "onyomi": ["ショウ"],
+    "kunyomi": ["すく.ない", "すこ.し"],
+    "meaning_vi": "ít, nhỏ",
+    "stroke_count": 4,
+    "vocab_examples": [
+      {"word": "少し", "reading": "すこし", "meaning_vi": "một chút"},
+      {"word": "少ない", "reading": "すくない", "meaning_vi": "ít"},
+      {"word": "少年", "reading": "しょうねん", "meaning_vi": "thiếu niên"}
+    ]
+  },
+  {
+    "character": "狭",
+    "onyomi": ["キョウ"],
+    "kunyomi": ["せま.い", "せば.める"],
+    "meaning_vi": "hẹp",
+    "stroke_count": 9,
+    "vocab_examples": [
+      {"word": "狭い", "reading": "せまい", "meaning_vi": "hẹp"},
+      {"word": "狭める", "reading": "せばめる", "meaning_vi": "thu hẹp"},
+      {"word": "手狭", "reading": "てぜま", "meaning_vi": "chật hẹp"}
+    ]
+  },
+  {
+    "character": "来",
+    "onyomi": ["ライ"],
+    "kunyomi": ["く.る", "きた.る"],
+    "meaning_vi": "đến, lai",
+    "stroke_count": 7,
+    "vocab_examples": [
+      {"word": "来る", "reading": "くる", "meaning_vi": "đến"},
+      {"word": "来年", "reading": "らいねん", "meaning_vi": "năm sau"},
+      {"word": "将来", "reading": "しょうらい", "meaning_vi": "tương lai"}
+    ]
+  },
+  {
+    "character": "当",
+    "onyomi": ["トウ"],
+    "kunyomi": ["あ.たる", "あ.てる"],
+    "meaning_vi": "trúng, đúng, đương",
+    "stroke_count": 6,
+    "vocab_examples": [
+      {"word": "当たる", "reading": "あたる", "meaning_vi": "trúng, chạm vào"},
+      {"word": "当然", "reading": "とうぜん", "meaning_vi": "đương nhiên"},
+      {"word": "担当", "reading": "たんとう", "meaning_vi": "phụ trách"}
+    ]
+  },
+  {
+    "character": "交",
+    "onyomi": ["コウ"],
+    "kunyomi": ["まじ.わる", "か.わす"],
+    "meaning_vi": "giao lưu, trao đổi",
+    "stroke_count": 6,
+    "vocab_examples": [
+      {"word": "交通", "reading": "こうつう", "meaning_vi": "giao thông"},
+      {"word": "交換", "reading": "こうかん", "meaning_vi": "trao đổi"},
+      {"word": "外交", "reading": "がいこう", "meaning_vi": "ngoại giao"}
+    ]
+  },
+  {
+    "character": "着",
+    "onyomi": ["チャク", "ジャク"],
+    "kunyomi": ["き.る", "つ.く", "き.せる"],
+    "meaning_vi": "mặc, đến nơi",
+    "stroke_count": 12,
+    "vocab_examples": [
+      {"word": "着る", "reading": "きる", "meaning_vi": "mặc"},
+      {"word": "到着", "reading": "とうちゃく", "meaning_vi": "đến nơi"},
+      {"word": "着物", "reading": "きもの", "meaning_vi": "kimono, trang phục"}
+    ]
+  },
+  {
+    "character": "起",
+    "onyomi": ["キ"],
+    "kunyomi": ["お.きる", "お.こす"],
+    "meaning_vi": "dậy, xảy ra, khởi",
+    "stroke_count": 10,
+    "vocab_examples": [
+      {"word": "起きる", "reading": "おきる", "meaning_vi": "thức dậy"},
+      {"word": "起こす", "reading": "おこす", "meaning_vi": "đánh thức, gây ra"},
+      {"word": "起源", "reading": "きげん", "meaning_vi": "nguồn gốc"}
+    ]
+  },
+  {
+    "character": "寝",
+    "onyomi": ["シン"],
+    "kunyomi": ["ね.る", "ね.かす"],
+    "meaning_vi": "ngủ, nằm",
+    "stroke_count": 13,
+    "vocab_examples": [
+      {"word": "寝る", "reading": "ねる", "meaning_vi": "ngủ"},
+      {"word": "寝室", "reading": "しんしつ", "meaning_vi": "phòng ngủ"},
+      {"word": "昼寝", "reading": "ひるね", "meaning_vi": "ngủ trưa"}
+    ]
+  },
+  {
+    "character": "直",
+    "onyomi": ["チョク", "ジキ"],
+    "kunyomi": ["なお.す", "なお.る", "ただ.ちに"],
+    "meaning_vi": "thẳng, sửa, ngay lập tức",
+    "stroke_count": 8,
+    "vocab_examples": [
+      {"word": "直す", "reading": "なおす", "meaning_vi": "sửa chữa"},
+      {"word": "直接", "reading": "ちょくせつ", "meaning_vi": "trực tiếp"},
+      {"word": "正直", "reading": "しょうじき", "meaning_vi": "thành thật, ngay thẳng"}
+    ]
+  },
+  {
+    "character": "置",
+    "onyomi": ["チ"],
+    "kunyomi": ["お.く"],
+    "meaning_vi": "đặt, để",
+    "stroke_count": 13,
+    "vocab_examples": [
+      {"word": "置く", "reading": "おく", "meaning_vi": "đặt, để"},
+      {"word": "位置", "reading": "いち", "meaning_vi": "vị trí"},
+      {"word": "放置", "reading": "ほうち", "meaning_vi": "bỏ mặc, để yên"}
+    ]
+  },
+  {
+    "character": "取",
+    "onyomi": ["シュ"],
+    "kunyomi": ["と.る"],
+    "meaning_vi": "lấy, nhận, chụp",
+    "stroke_count": 8,
+    "vocab_examples": [
+      {"word": "取る", "reading": "とる", "meaning_vi": "lấy, chụp"},
+      {"word": "取引", "reading": "とりひき", "meaning_vi": "giao dịch"},
+      {"word": "受け取る", "reading": "うけとる", "meaning_vi": "nhận, nhận lấy"}
+    ]
+  },
+  {
+    "character": "売",
+    "onyomi": ["バイ"],
+    "kunyomi": ["う.る", "う.れる"],
+    "meaning_vi": "bán",
+    "stroke_count": 7,
+    "vocab_examples": [
+      {"word": "売る", "reading": "うる", "meaning_vi": "bán"},
+      {"word": "売り場", "reading": "うりば", "meaning_vi": "quầy bán hàng"},
+      {"word": "販売", "reading": "はんばい", "meaning_vi": "bán hàng"}
+    ]
+  },
+  {
+    "character": "買",
+    "onyomi": ["バイ"],
+    "kunyomi": ["か.う"],
+    "meaning_vi": "mua",
+    "stroke_count": 12,
+    "vocab_examples": [
+      {"word": "買う", "reading": "かう", "meaning_vi": "mua"},
+      {"word": "買い物", "reading": "かいもの", "meaning_vi": "mua sắm"},
+      {"word": "購買", "reading": "こうばい", "meaning_vi": "mua, mua sắm"}
+    ]
+  },
+  {
+    "character": "会",
+    "onyomi": ["カイ", "エ"],
+    "kunyomi": ["あ.う"],
+    "meaning_vi": "gặp gỡ, hội, họp",
+    "stroke_count": 6,
+    "vocab_examples": [
+      {"word": "会う", "reading": "あう", "meaning_vi": "gặp"},
+      {"word": "会議", "reading": "かいぎ", "meaning_vi": "cuộc họp"},
+      {"word": "社会", "reading": "しゃかい", "meaning_vi": "xã hội"}
+    ]
+  },
+  {
+    "character": "病",
+    "onyomi": ["ビョウ", "ヘイ"],
+    "kunyomi": ["やまい", "や.む"],
+    "meaning_vi": "bệnh, ốm",
+    "stroke_count": 10,
+    "vocab_examples": [
+      {"word": "病気", "reading": "びょうき", "meaning_vi": "bệnh tật"},
+      {"word": "病院", "reading": "びょういん", "meaning_vi": "bệnh viện"},
+      {"word": "病人", "reading": "びょうにん", "meaning_vi": "người bệnh"}
+    ]
+  },
+  {
+    "character": "道",
+    "onyomi": ["ドウ", "トウ"],
+    "kunyomi": ["みち"],
+    "meaning_vi": "đường, con đường, đạo",
+    "stroke_count": 12,
+    "vocab_examples": [
+      {"word": "道", "reading": "みち", "meaning_vi": "đường, con đường"},
+      {"word": "道路", "reading": "どうろ", "meaning_vi": "đường bộ"},
+      {"word": "近道", "reading": "ちかみち", "meaning_vi": "đường tắt"}
+    ]
+  },
+  {
+    "character": "海",
+    "onyomi": ["カイ"],
+    "kunyomi": ["うみ"],
+    "meaning_vi": "biển",
+    "stroke_count": 9,
+    "vocab_examples": [
+      {"word": "海", "reading": "うみ", "meaning_vi": "biển"},
+      {"word": "海外", "reading": "かいがい", "meaning_vi": "nước ngoài"},
+      {"word": "海岸", "reading": "かいがん", "meaning_vi": "bờ biển"}
+    ]
+  },
+  {
+    "character": "葉",
+    "onyomi": ["ヨウ"],
+    "kunyomi": ["は"],
+    "meaning_vi": "lá cây, trang",
+    "stroke_count": 12,
+    "vocab_examples": [
+      {"word": "葉", "reading": "は", "meaning_vi": "lá cây"},
+      {"word": "言葉", "reading": "ことば", "meaning_vi": "ngôn ngữ, lời nói"},
+      {"word": "紅葉", "reading": "こうよう", "meaning_vi": "lá đỏ mùa thu"}
+    ]
+  },
+  {
+    "character": "果",
+    "onyomi": ["カ"],
+    "kunyomi": ["は.たす", "はて", "くだもの"],
+    "meaning_vi": "quả, kết quả, hoàn thành",
+    "stroke_count": 8,
+    "vocab_examples": [
+      {"word": "果物", "reading": "くだもの", "meaning_vi": "trái cây"},
+      {"word": "結果", "reading": "けっか", "meaning_vi": "kết quả"},
+      {"word": "効果", "reading": "こうか", "meaning_vi": "hiệu quả"}
+    ]
+  }
+]

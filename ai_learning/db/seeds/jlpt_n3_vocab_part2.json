@@ -442,17 +442,6 @@
     ]
   },
   {
-    "word": "税金",
-    "reading": "ぜいきん",
-    "romaji": "zeikin",
-    "meaning_vi": "thuế, tiền thuế",
-    "part_of_speech": "noun",
-    "tags": [
-      "economy",
-      "society"
-    ]
-  },
-  {
     "word": "財政",
     "reading": "ざいせい",
     "romaji": "zaisei",
@@ -488,16 +477,6 @@
     "reading": "こうきょう",
     "romaji": "koukyou",
     "meaning_vi": "kinh tế phát đạt, phồn thịnh",
-    "part_of_speech": "noun",
-    "tags": [
-      "economy"
-    ]
-  },
-  {
-    "word": "物価",
-    "reading": "ぶっか",
-    "romaji": "bukka",
-    "meaning_vi": "giá cả hàng hóa",
     "part_of_speech": "noun",
     "tags": [
       "economy"
@@ -796,17 +775,6 @@
     ]
   },
   {
-    "word": "多様性",
-    "reading": "たようせい",
-    "romaji": "tayousei",
-    "meaning_vi": "sự đa dạng",
-    "part_of_speech": "noun",
-    "tags": [
-      "society",
-      "abstract"
-    ]
-  },
-  {
     "word": "共生",
     "reading": "きょうせい",
     "romaji": "kyousei",
@@ -915,17 +883,6 @@
     ]
   },
   {
-    "word": "透明性",
-    "reading": "とうめいせい",
-    "romaji": "toumeisei",
-    "meaning_vi": "tính minh bạch",
-    "part_of_speech": "noun",
-    "tags": [
-      "society",
-      "abstract"
-    ]
-  },
-  {
     "word": "公正",
     "reading": "こうせい",
     "romaji": "kousei",
@@ -981,16 +938,6 @@
     ]
   },
   {
-    "word": "歴史的",
-    "reading": "れきしてき",
-    "romaji": "rekishiteki",
-    "meaning_vi": "mang tính lịch sử, lịch sử",
-    "part_of_speech": "adjective",
-    "tags": [
-      "history"
-    ]
-  },
-  {
     "word": "伝統的",
     "reading": "でんとうてき",
     "romaji": "dentouteki",
@@ -1016,36 +963,6 @@
     "reading": "みんしゅてき",
     "romaji": "minshuteki",
     "meaning_vi": "mang tính dân chủ",
-    "part_of_speech": "adjective",
-    "tags": [
-      "politics"
-    ]
-  },
-  {
-    "word": "社会的",
-    "reading": "しゃかいてき",
-    "romaji": "shakaiteki",
-    "meaning_vi": "mang tính xã hội, xã hội",
-    "part_of_speech": "adjective",
-    "tags": [
-      "society"
-    ]
-  },
-  {
-    "word": "経済的",
-    "reading": "けいざいてき",
-    "romaji": "keizaiteki",
-    "meaning_vi": "về kinh tế, tiết kiệm",
-    "part_of_speech": "adjective",
-    "tags": [
-      "economy"
-    ]
-  },
-  {
-    "word": "政治的",
-    "reading": "せいじてき",
-    "romaji": "seiجiteki",
-    "meaning_vi": "mang tính chính trị",
     "part_of_speech": "adjective",
     "tags": [
       "politics"

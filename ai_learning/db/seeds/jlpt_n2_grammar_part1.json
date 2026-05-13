@@ -358,20 +358,5 @@
       }
     ],
     "notes_vi": "Biểu thị sự bất lực hoặc không có khả năng làm gì đó."
-  },
-  {
-    "pattern": "〜かねない",
-    "explanation_vi": "Có thể..., có nguy cơ... (khả năng tiêu cực)",
-    "examples": [
-      {
-        "ja": "この決定は問題を引き起こしかねない。",
-        "vi": "Quyết định này có thể gây ra vấn đề."
-      },
-      {
-        "ja": "不注意で事故につながりかねない。",
-        "vi": "Thiếu chú ý có nguy cơ dẫn đến tai nạn."
-      }
-    ],
-    "notes_vi": "Biểu thị khả năng xảy ra điều tiêu cực nếu không cẩn thận."
   }
 ]

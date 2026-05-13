@@ -1,0 +1,407 @@
+[
+  {
+    "pattern": "〜なんか / 〜なんて",
+    "explanation_vi": "Cái như... / Chuyện... (coi thường, ngạc nhiên, hoặc liệt kê). 〜なんか dùng để coi thường hoặc liệt kê không chính thức. 〜なんて dùng để bày tỏ ngạc nhiên, coi thường, hoặc không thể tin. Cả hai là dạng thân mật của 〜など.",
+    "examples": [
+      {
+        "ja": "勉強なんて嫌いだ！",
+        "vi": "Tôi ghét cái chuyện học hành lắm!"
+      },
+      {
+        "ja": "彼女が結婚するなんて、信じられない！",
+        "vi": "Không thể tin được là cô ấy lại kết hôn!"
+      }
+    ],
+    "notes_vi": "〜なんか thường liệt kê hoặc hạ thấp. 〜なんて thường bày tỏ ngạc nhiên mạnh hơn. Cả hai chỉ dùng trong văn nói thân mật."
+  },
+  {
+    "pattern": "〜ったら",
+    "explanation_vi": "Nói đến... thì... / Ấy thế mà... (bực bội, cảm thán). Dùng để bày tỏ cảm xúc mạnh như bực bội, ngạc nhiên, hay trêu chọc, khi nói về một người hoặc tình huống. Là dạng thân mật và cảm xúc.",
+    "examples": [
+      {
+        "ja": "もう、うちの子ったら、また忘れ物をして！",
+        "vi": "Thật sự đó, cái con nhà tôi ấy, lại bỏ quên đồ rồi!"
+      },
+      {
+        "ja": "彼女ったら、約束の時間に二時間も遅れてきた。",
+        "vi": "Cô ấy ấy, đến muộn đến những hai tiếng so với giờ hẹn."
+      }
+    ],
+    "notes_vi": "Thường dùng khi nói về người thứ ba theo kiểu cằn nhằn hoặc ngạc nhiên. Chỉ dùng trong văn nói thân mật."
+  },
+  {
+    "pattern": "〜ってことは",
+    "explanation_vi": "Có nghĩa là... / Thế thì... (suy luận). Dùng để rút ra kết luận hoặc suy luận từ những gì vừa nói hoặc nghe. Là dạng thân mật của 〜ということは.",
+    "examples": [
+      {
+        "ja": "え、電車が止まってるってことは、今日は遅刻するってこと？",
+        "vi": "Ơ, tàu điện dừng rồi, có nghĩa là hôm nay đến muộn rồi à?"
+      },
+      {
+        "ja": "彼女がいないってことは、もう帰ったんだね。",
+        "vi": "Cô ấy không có ở đây có nghĩa là đã về rồi nhỉ."
+      }
+    ],
+    "notes_vi": "Là dạng thân mật của 〜ということは. Dùng trong hội thoại hàng ngày khi suy luận hoặc tóm tắt ý nghĩa."
+  },
+  {
+    "pattern": "〜ということは",
+    "explanation_vi": "Có nghĩa là... / Điều đó có nghĩa là... (kết luận, suy luận). Dùng để rút ra kết luận hoặc giải thích ý nghĩa từ thông tin đã có. Trang trọng hơn 〜ってことは.",
+    "examples": [
+      {
+        "ja": "毎日2時間勉強するということは、1年間で730時間になる。",
+        "vi": "Học mỗi ngày 2 tiếng có nghĩa là 1 năm sẽ được 730 tiếng."
+      },
+      {
+        "ja": "彼が黙っているということは、賛成していないということだ。",
+        "vi": "Việc anh ấy im lặng có nghĩa là không đồng ý."
+      }
+    ],
+    "notes_vi": "Thường dùng trong văn nói và viết ở mức độ trang trọng vừa phải. Hay gặp trong giải thích hoặc phân tích."
+  },
+  {
+    "pattern": "〜いかにも",
+    "explanation_vi": "Thật sự... / Quả thật... / Đích thực là... Dùng để nhấn mạnh rằng điều gì đó hoàn toàn đúng như vẻ ngoài hoặc như người ta nghĩ. Mang sắc thái xác nhận mạnh mẽ.",
+    "examples": [
+      {
+        "ja": "いかにも日本らしい風景が広がっていた。",
+        "vi": "Một phong cảnh trải dài trông quả thật rất Nhật Bản."
+      },
+      {
+        "ja": "彼はいかにも怪しそうな顔をして、こそこそと歩いていた。",
+        "vi": "Anh ta đi lén lút với vẻ mặt trông thật sự đáng ngờ."
+      }
+    ],
+    "notes_vi": "Thường đứng trước tính từ hoặc mệnh đề. Mang ý 'đúng như bề ngoài' hoặc 'điển hình'. Hay dùng trong mô tả văn học."
+  },
+  {
+    "pattern": "〜もしも〜たら",
+    "explanation_vi": "Nếu chẳng may... / Giả sử như... Là dạng nhấn mạnh của 〜もし〜たら, dùng cho điều kiện giả định mang tính khẩn cấp, không thực tế, hoặc đặt ra tình huống khó khăn giả định.",
+    "examples": [
+      {
+        "ja": "もしも火事が起きたら、すぐに非常口から逃げてください。",
+        "vi": "Nếu chẳng may xảy ra hỏa hoạn, hãy lập tức thoát ra từ cửa khẩn cấp."
+      },
+      {
+        "ja": "もしも宝くじが当たったら、どうしますか？",
+        "vi": "Giả sử nếu trúng xổ số thì bạn sẽ làm gì?"
+      }
+    ],
+    "notes_vi": "〜もしも mạnh hơn 〜もし, thường dùng cho tình huống giả định nghiêm trọng hoặc khó có thể xảy ra."
+  },
+  {
+    "pattern": "〜たとえ〜ても",
+    "explanation_vi": "Dù có... đi nữa / Cho dù... Dùng để nêu điều kiện giả định cực đoan và khẳng định rằng kết quả vẫn không thay đổi dù điều kiện đó xảy ra. Mang ý chí hoặc xác nhận mạnh.",
+    "examples": [
+      {
+        "ja": "たとえ失敗しても、諦めないで挑戦し続ける。",
+        "vi": "Dù có thất bại đi nữa, tôi vẫn không bỏ cuộc và tiếp tục thử thách."
+      },
+      {
+        "ja": "たとえ雨が降っても、試合は予定通りに行います。",
+        "vi": "Cho dù có mưa, trận đấu vẫn diễn ra đúng kế hoạch."
+      }
+    ],
+    "notes_vi": "Cấu trúc: たとえ + [điều kiện] + ても/でも. Mạnh hơn 〜ても đơn thuần vì たとえ nhấn mạnh tính giả định cực đoan."
+  },
+  {
+    "pattern": "〜以外に / 〜以外は",
+    "explanation_vi": "Ngoài... ra / Trừ... ra. 〜以外に dùng để nêu điều gì đó ngoài phạm vi đã đề cập. 〜以外は nhấn mạnh rằng không có ngoại lệ nào khác, hoặc chỉ phạm vi còn lại.",
+    "examples": [
+      {
+        "ja": "この問題の解決策は、もう話し合う以外にない。",
+        "vi": "Cách giải quyết vấn đề này không có gì khác ngoài việc thảo luận."
+      },
+      {
+        "ja": "週末以外は、毎日仕事がある。",
+        "vi": "Trừ cuối tuần ra, ngày nào cũng có việc làm."
+      }
+    ],
+    "notes_vi": "Phân biệt với 〜ほかに (bổ sung thêm) và 〜を除いて (loại trừ): 〜以外に mang nghĩa trung lập, dùng được trong cả hai trường hợp."
+  },
+  {
+    "pattern": "〜ことから",
+    "explanation_vi": "Từ thực tế... / Vì... / Do... Dùng để diễn tả nguyên nhân hoặc cơ sở của một kết luận, tên gọi, hoặc nhận định. Thường dùng trong văn viết hoặc khi giải thích nguồn gốc.",
+    "examples": [
+      {
+        "ja": "富士山は美しい形をしていることから、日本の象徴となっている。",
+        "vi": "Vì núi Phú Sĩ có hình dáng đẹp nên đã trở thành biểu tượng của Nhật Bản."
+      },
+      {
+        "ja": "この病気は発症が非常に遅いことから、発見が難しい。",
+        "vi": "Từ thực tế bệnh này phát triển rất chậm nên khó phát hiện."
+      }
+    ],
+    "notes_vi": "Cấu trúc: [mệnh đề thể thông thường] + ことから. Thường dùng khi giải thích lý do hoặc nguồn gốc, tên gọi, kết luận."
+  },
+  {
+    "pattern": "〜ことで",
+    "explanation_vi": "Bằng cách... / Nhờ... / Thông qua... Dùng để diễn tả phương tiện hoặc cách thức đạt được điều gì đó. Nhấn mạnh hành động là công cụ để đạt được kết quả.",
+    "examples": [
+      {
+        "ja": "毎日少しずつ練習することで、確実に上達できる。",
+        "vi": "Bằng cách luyện tập mỗi ngày một chút, có thể tiến bộ chắc chắn."
+      },
+      {
+        "ja": "人と話し合うことで、新しいアイデアが生まれることがある。",
+        "vi": "Thông qua việc thảo luận với người khác, đôi khi có thể nảy sinh ý tưởng mới."
+      }
+    ],
+    "notes_vi": "Cấu trúc: V(thể từ điển/た) + ことで. Khác với 〜によって (do tác nhân) và 〜を通して (qua trung gian): 〜ことで nhấn mạnh bản thân hành động đó là phương tiện."
+  },
+  {
+    "pattern": "〜てみせる",
+    "explanation_vi": "Sẽ làm cho mà xem / Nhất định sẽ... (thể hiện quyết tâm). Dùng để bày tỏ quyết tâm mạnh mẽ, ý muốn chứng minh cho người khác thấy khả năng hoặc ý chí của mình.",
+    "examples": [
+      {
+        "ja": "今度こそ、絶対に合格してみせる！",
+        "vi": "Lần này nhất định sẽ thi đậu cho mà xem!"
+      },
+      {
+        "ja": "誰も信じてくれなくても、必ず成功してみせる。",
+        "vi": "Dù không ai tin, tôi nhất định sẽ thành công cho mà xem."
+      }
+    ],
+    "notes_vi": "Cấu trúc: V(て形) + みせる. Nhấn mạnh quyết tâm chứng minh, thường mang sắc thái thách thức hoặc tự khẳng định."
+  },
+  {
+    "pattern": "〜向かって / 〜に向かって",
+    "explanation_vi": "Hướng về... / Tiến về phía... Dùng để diễn tả hướng di chuyển thể chất hoặc trừu tượng: tiến về một địa điểm, mục tiêu, hoặc đối tượng.",
+    "examples": [
+      {
+        "ja": "駅に向かって歩いていたら、友達に会った。",
+        "vi": "Đang đi về hướng ga tàu thì gặp bạn."
+      },
+      {
+        "ja": "目標に向かって、一歩一歩進んでいこう。",
+        "vi": "Hãy tiến từng bước một về phía mục tiêu."
+      }
+    ],
+    "notes_vi": "Cấu trúc: N + に向かって / に向かう. Phân biệt với 〜に対して (đối với): 〜に向かって nhấn mạnh hướng đi/tiến tới, còn 〜に対して là thái độ/hành động hướng tới đối tượng."
+  },
+  {
+    "pattern": "〜どおりに / 〜通りに",
+    "explanation_vi": "Theo đúng... / Đúng như... Dùng để diễn tả hành động làm theo đúng kế hoạch, hướng dẫn, hay lời nói đã có. Tương tự 〜とおり nhưng 〜通りに nhấn mạnh cách thức 'theo đúng'.",
+    "examples": [
+      {
+        "ja": "レシピ通りに作ったのに、味が全然違う。",
+        "vi": "Làm theo đúng công thức mà sao vị lại hoàn toàn khác."
+      },
+      {
+        "ja": "先生に言われた通りに練習すれば、必ず上手になれる。",
+        "vi": "Nếu luyện tập đúng theo lời thầy dạy thì nhất định sẽ tiến bộ."
+      }
+    ],
+    "notes_vi": "Cấu trúc: N + 通りに / V(た) + 通りに / V(辞書形) + 通りに. Xem thêm 〜とおり ở N3 part2 — đây là cách dùng mở rộng có に."
+  },
+  {
+    "pattern": "〜てはじめて / 〜て初めて",
+    "explanation_vi": "Chỉ khi... mới... / Sau khi... mới hiểu được... Dùng để nói rằng chỉ sau khi trải qua hoặc thực hiện điều gì đó thì mới nhận ra, hiểu được, hoặc có thể làm được điều khác.",
+    "examples": [
+      {
+        "ja": "親になって初めて、親の大変さが分かった。",
+        "vi": "Chỉ khi trở thành cha mẹ mới hiểu được sự vất vả của cha mẹ."
+      },
+      {
+        "ja": "病気になって初めて、健康のありがたさを感じた。",
+        "vi": "Chỉ khi bị bệnh mới cảm nhận được giá trị của sức khỏe."
+      }
+    ],
+    "notes_vi": "Cấu trúc: V(て形) + 初めて. Tương tự 〜て初めて trong N2 part3 nhưng N3 tập trung vào trải nghiệm cá nhân và hiểu biết thực tế hơn."
+  },
+  {
+    "pattern": "〜ごろ / 〜ごろに",
+    "explanation_vi": "Khoảng... / Vào khoảng... (thời điểm ước lượng). Dùng để chỉ thời điểm ước lượng, không chính xác. Khác với 〜ごろ chỉ thời điểm, còn 〜ぐらい chỉ khoảng thời gian kéo dài.",
+    "examples": [
+      {
+        "ja": "3時ごろに来てください。",
+        "vi": "Hãy đến vào khoảng 3 giờ."
+      },
+      {
+        "ja": "子どものころ、よく川で遊んだ。",
+        "vi": "Hồi nhỏ, tôi thường chơi ở sông."
+      }
+    ],
+    "notes_vi": "Cấu trúc: N(thời gian) + ごろ. Khi chỉ giai đoạn thời thơ ấu: 子どものころ (hồi nhỏ). Phân biệt với 〜ぐらい/くらい chỉ mức độ/số lượng ước lượng."
+  },
+  {
+    "pattern": "〜ために / 〜ための (mục đích, nâng cao)",
+    "explanation_vi": "Để... / Nhằm... / Vì... (mục đích hoặc nguyên nhân nâng cao N3). Ở N3, 〜ために dùng được trong nhiều ngữ cảnh phức tạp hơn: giải thích mục đích cho việc đầu tư lớn, hoặc nguyên nhân của tình huống nghiêm trọng.",
+    "examples": [
+      {
+        "ja": "将来のために、今から貯金を始めることが大切だ。",
+        "vi": "Để chuẩn bị cho tương lai, điều quan trọng là bắt đầu tiết kiệm từ bây giờ."
+      },
+      {
+        "ja": "地球環境を守るための取り組みが求められている。",
+        "vi": "Người ta đang yêu cầu những nỗ lực nhằm bảo vệ môi trường trái đất."
+      }
+    ],
+    "notes_vi": "〜ための + N: danh từ bổ nghĩa. Ở N3, 〜ために quan trọng khi kết hợp với chủ thể khác ở hai vế, khác với 〜ように không đòi hỏi chủ thể giống nhau."
+  },
+  {
+    "pattern": "〜どうせ",
+    "explanation_vi": "Đằng nào cũng... / Dù sao thì... / Chắc chắn sẽ... (bi quan, buông xuôi). Dùng để diễn tả thái độ bi quan hoặc buông xuôi, cho rằng kết quả sẽ giống nhau dù có cố gắng hay không.",
+    "examples": [
+      {
+        "ja": "どうせ失敗するから、最初からやらない方がいい。",
+        "vi": "Đằng nào cũng thất bại thôi, chi bằng đừng làm từ đầu."
+      },
+      {
+        "ja": "どうせ分からないだろうから、説明しても無駄だよ。",
+        "vi": "Dù sao chắc cũng không hiểu đâu, giải thích cũng vô ích thôi."
+      }
+    ],
+    "notes_vi": "Đứng ở đầu câu như trạng từ. Mang sắc thái tiêu cực, bi quan hoặc mỉa mai. Cũng có thể dùng theo nghĩa tích cực: 「どうせやるなら、楽しくやろう」(đằng nào cũng phải làm, thì làm cho vui)."
+  },
+  {
+    "pattern": "〜せっかく〜のに / 〜せっかく〜から",
+    "explanation_vi": "Khổ công... / Công phu... / Cố đặc biệt... Dùng để nhấn mạnh rằng ai đó đã bỏ công sức, thời gian hoặc cơ hội đặc biệt. Khi kết hợp với 〜のに mang sắc thái tiếc nuối; với 〜から mang sắc thái tận dụng cơ hội.",
+    "examples": [
+      {
+        "ja": "せっかく作ったのに、誰も食べてくれなかった。",
+        "vi": "Khổ công nấu rồi mà không ai ăn."
+      },
+      {
+        "ja": "せっかく日本に来たのだから、富士山に登ってみたい。",
+        "vi": "Vì đã công đến Nhật rồi nên muốn thử leo núi Phú Sĩ."
+      }
+    ],
+    "notes_vi": "せっかく đứng ở đầu câu như trạng từ. せっかく〜のに (tiếc nuối vì công sức bị lãng phí), せっかく〜から (tận dụng cơ hội quý hiếm)."
+  },
+  {
+    "pattern": "〜てあげたい / 〜てほしい",
+    "explanation_vi": "Muốn làm... cho (ai đó) / Muốn (ai đó) làm... Đây là cặp mẫu thể hiện mong muốn: 〜てあげたい = người nói muốn làm điều tốt cho người khác; 〜てほしい = người nói muốn người khác làm điều gì.",
+    "examples": [
+      {
+        "ja": "困っている友達を助けてあげたい。",
+        "vi": "Tôi muốn giúp người bạn đang gặp khó khăn."
+      },
+      {
+        "ja": "もっと気軽に話しかけてほしいな。",
+        "vi": "Tôi muốn bạn cứ thoải mái bắt chuyện với tôi."
+      }
+    ],
+    "notes_vi": "〜てあげたい: chủ thể = người nói, làm ơn cho người khác. 〜てほしい: chủ thể = người khác, người nói muốn họ làm. Đây là ôn tập kết hợp N4 nâng cao."
+  },
+  {
+    "pattern": "〜に気づく",
+    "explanation_vi": "Nhận ra... / Để ý thấy... / Nhận thức được... Dùng để diễn tả việc chợt nhận ra hoặc phát hiện ra điều gì đó mà trước đó chưa biết hoặc chưa chú ý.",
+    "examples": [
+      {
+        "ja": "財布を忘れたことに気づいたのは、店に着いてからだった。",
+        "vi": "Tôi nhận ra là đã quên ví chỉ khi đã đến cửa hàng rồi."
+      },
+      {
+        "ja": "彼女の目が赤いのを見て、泣いていたことに気づいた。",
+        "vi": "Nhìn thấy mắt cô ấy đỏ, tôi nhận ra là cô ấy đã khóc."
+      }
+    ],
+    "notes_vi": "Cấu trúc: [mệnh đề] + ことに気づく / N + に気づく. Phân biệt với 〜が分かる (hiểu, biết) và 〜に気がつく (cũng được dùng, tương đương)."
+  },
+  {
+    "pattern": "〜ようになっている",
+    "explanation_vi": "Đã trở thành thông lệ / Đã được thiết kế / Được quy định là... Diễn tả một trạng thái hoặc cơ chế đã được thiết lập, thường không phải do quyết định cá nhân mà do quy tắc, thiết kế, hoặc tự nhiên.",
+    "examples": [
+      {
+        "ja": "このアプリは自動的にバックアップされるようになっている。",
+        "vi": "Ứng dụng này được thiết kế để tự động sao lưu."
+      },
+      {
+        "ja": "日本では、玄関で靴を脱ぐようになっている。",
+        "vi": "Ở Nhật, người ta có thông lệ cởi giày ở lối vào."
+      }
+    ],
+    "notes_vi": "Khác với 〜ようにしている (cố gắng cá nhân) và 〜ことになっている (quy định chính thức): 〜ようになっている nhấn mạnh kết quả tự nhiên hoặc thiết kế của hệ thống."
+  },
+  {
+    "pattern": "〜ばよかった",
+    "explanation_vi": "Phải chi... / Giá mà... (tiếc nuối về quá khứ). Dùng để bày tỏ sự tiếc nuối vì đã không làm điều gì đó hoặc đã làm điều gì đó mà giờ thấy sai. Mang cảm xúc hối tiếc.",
+    "examples": [
+      {
+        "ja": "もっと早く勉強を始めればよかった。",
+        "vi": "Phải chi tôi bắt đầu học sớm hơn thì tốt."
+      },
+      {
+        "ja": "あの時、彼の話をよく聞けばよかったと今でも後悔している。",
+        "vi": "Đến bây giờ tôi vẫn hối hận vì đã không lắng nghe kỹ lời anh ấy lúc đó."
+      }
+    ],
+    "notes_vi": "Cấu trúc: V(thể ば) + よかった. Dạng phủ định: 〜なければよかった (phải chi đừng làm). Phổ biến trong hội thoại hàng ngày."
+  },
+  {
+    "pattern": "〜なんとなく",
+    "explanation_vi": "Không hiểu sao / Cứ tự nhiên / Bâng quơ... Dùng để diễn tả hành động hoặc cảm giác xảy ra không có lý do rõ ràng, theo bản năng hoặc vô thức. Rất phổ biến trong hội thoại hàng ngày.",
+    "examples": [
+      {
+        "ja": "なんとなく、今日は何か良いことがある気がする。",
+        "vi": "Không hiểu sao hôm nay tôi cứ có cảm giác sẽ có chuyện tốt."
+      },
+      {
+        "ja": "特に理由はないが、なんとなく食欲がない。",
+        "vi": "Không có lý do đặc biệt gì, nhưng cứ không thấy thèm ăn."
+      }
+    ],
+    "notes_vi": "Đứng ở đầu câu hoặc trước động từ như trạng từ. Diễn tả tính vô thức hoặc không có lý do cụ thể. Rất thông dụng trong văn nói."
+  },
+  {
+    "pattern": "〜だろうか / 〜かな",
+    "explanation_vi": "Liệu có... không? / ... nhỉ? (tự hỏi bản thân). Dùng để diễn tả sự tự hỏi hoặc suy ngẫm của người nói, không nhằm hỏi người khác. 〜かな thân mật hơn và có thể dùng một mình.",
+    "examples": [
+      {
+        "ja": "あの人はなぜあんなことを言ったんだろうか。",
+        "vi": "Liệu tại sao người đó lại nói chuyện như thế nhỉ?"
+      },
+      {
+        "ja": "明日の試験、うまくいくかな。",
+        "vi": "Không biết bài thi ngày mai có trôi chảy không nhỉ."
+      }
+    ],
+    "notes_vi": "〜だろうか trang trọng hơn, dùng trong văn viết hoặc độc thoại. 〜かな thân mật, dùng trong hội thoại. Cả hai diễn tả sự tự hỏi, không cần câu trả lời."
+  },
+  {
+    "pattern": "〜にしろ / 〜にせよ (N3 level)",
+    "explanation_vi": "Dù là... hay... / Cho dù... cũng vậy. Dùng để liệt kê nhiều trường hợp có thể xảy ra và nêu rằng kết quả/kết luận đều giống nhau bất kể trường hợp nào. Dạng N3 phổ biến hơn, ít trang trọng hơn 〜にせよ.",
+    "examples": [
+      {
+        "ja": "成功するにしろ失敗するにしろ、最後までやり遂げるべきだ。",
+        "vi": "Dù thành công hay thất bại đi nữa, cũng phải hoàn thành đến cùng."
+      },
+      {
+        "ja": "行くにしろ行かないにしろ、早めに決めてください。",
+        "vi": "Dù đi hay không đi thì hãy quyết định sớm."
+      }
+    ],
+    "notes_vi": "〜にしろ và 〜にせよ tương đương, nhưng 〜にしろ thường gặp hơn ở N3. Cấu trúc: V/Adj/N + にしろ + V/Adj/N + にしろ."
+  },
+  {
+    "pattern": "〜ってば / 〜ってば！",
+    "explanation_vi": "... thì tôi đã nói rồi mà! / ... đó mà! (nhấn mạnh bực bội, lặp lại). Dùng để nhấn mạnh điều mình đã nói mà người kia không nghe, hoặc để gọi tên ai đó khi họ không phản ứng. Mang sắc thái bực dọc hoặc khó chịu.",
+    "examples": [
+      {
+        "ja": "もう行かないってば！何度言えば分かるの？",
+        "vi": "Tôi không đi rồi mà! Phải nói bao nhiêu lần mới hiểu vậy?"
+      },
+      {
+        "ja": "田中ってば、また遅刻だよ。",
+        "vi": "Tanaka đó mà, lại đi trễ nữa rồi."
+      }
+    ],
+    "notes_vi": "Dùng trong văn nói thân mật. Khi gọi tên: 名前 + ってば (gọi ai đó đang không để ý). Khi nhấn mạnh: [điều đã nói] + ってば (đã nói rồi mà)."
+  },
+  {
+    "pattern": "〜かのようだ / 〜かのように見える",
+    "explanation_vi": "Trông như... / Có vẻ như là... Dùng để mô tả bề ngoài hoặc vẻ bề mặt của sự vật, người, hoặc tình huống như thể là điều gì đó, dù thực ra không phải vậy. Đây là dạng mở rộng của 〜かのように trong ngữ cảnh mô tả ngoại hình.",
+    "examples": [
+      {
+        "ja": "彼女は幽霊を見たかのように真っ青になった。",
+        "vi": "Cô ấy tái mặt như thể vừa nhìn thấy ma vậy."
+      },
+      {
+        "ja": "静かすぎて、まるで誰もいないかのように見える。",
+        "vi": "Yên tĩnh quá, trông như thể không có ai cả."
+      }
+    ],
+    "notes_vi": "Mở rộng từ 〜かのように (N3 part4) với 〜見える/思われる/感じる ở cuối câu để nhấn mạnh hơn vào vẻ bề ngoài hoặc ấn tượng."
+  }
+]

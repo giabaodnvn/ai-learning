@@ -20,17 +20,6 @@
     ]
   },
   {
-    "word": "玄関",
-    "reading": "げんかん",
-    "romaji": "genkan",
-    "meaning_vi": "lối vào nhà, tiền sảnh",
-    "part_of_speech": "noun",
-    "tags": [
-      "house",
-      "room"
-    ]
-  },
-  {
     "word": "廊下",
     "reading": "ろうか",
     "romaji": "rouka",
@@ -42,50 +31,10 @@
     ]
   },
   {
-    "word": "階段",
-    "reading": "かいだん",
-    "romaji": "kaidan",
-    "meaning_vi": "cầu thang",
-    "part_of_speech": "noun",
-    "tags": [
-      "house"
-    ]
-  },
-  {
     "word": "屋根",
     "reading": "やね",
     "romaji": "yane",
     "meaning_vi": "mái nhà",
-    "part_of_speech": "noun",
-    "tags": [
-      "house"
-    ]
-  },
-  {
-    "word": "壁",
-    "reading": "かべ",
-    "romaji": "kabe",
-    "meaning_vi": "tường, vách",
-    "part_of_speech": "noun",
-    "tags": [
-      "house"
-    ]
-  },
-  {
-    "word": "床",
-    "reading": "ゆか",
-    "romaji": "yuka",
-    "meaning_vi": "sàn nhà",
-    "part_of_speech": "noun",
-    "tags": [
-      "house"
-    ]
-  },
-  {
-    "word": "天井",
-    "reading": "てんじょう",
-    "romaji": "tenjou",
-    "meaning_vi": "trần nhà",
     "part_of_speech": "noun",
     "tags": [
       "house"
@@ -281,50 +230,6 @@
     ]
   },
   {
-    "word": "春",
-    "reading": "はる",
-    "romaji": "haru",
-    "meaning_vi": "mùa xuân",
-    "part_of_speech": "noun",
-    "tags": [
-      "weather",
-      "season"
-    ]
-  },
-  {
-    "word": "夏",
-    "reading": "なつ",
-    "romaji": "natsu",
-    "meaning_vi": "mùa hè",
-    "part_of_speech": "noun",
-    "tags": [
-      "weather",
-      "season"
-    ]
-  },
-  {
-    "word": "秋",
-    "reading": "あき",
-    "romaji": "aki",
-    "meaning_vi": "mùa thu",
-    "part_of_speech": "noun",
-    "tags": [
-      "weather",
-      "season"
-    ]
-  },
-  {
-    "word": "冬",
-    "reading": "ふゆ",
-    "romaji": "fuyu",
-    "meaning_vi": "mùa đông",
-    "part_of_speech": "noun",
-    "tags": [
-      "weather",
-      "season"
-    ]
-  },
-  {
     "word": "携帯電話",
     "reading": "けいたいでんわ",
     "romaji": "keitai denwa",
@@ -463,17 +368,6 @@
     "tags": [
       "place",
       "service"
-    ]
-  },
-  {
-    "word": "値段",
-    "reading": "ねだん",
-    "romaji": "nedan",
-    "meaning_vi": "giá cả, giá tiền",
-    "part_of_speech": "noun",
-    "tags": [
-      "money",
-      "shopping"
     ]
   },
   {

@@ -10,16 +10,6 @@
     ]
   },
   {
-    "word": "治療",
-    "reading": "ちりょう",
-    "romaji": "chiryou",
-    "meaning_vi": "điều trị, chữa trị",
-    "part_of_speech": "noun",
-    "tags": [
-      "health"
-    ]
-  },
-  {
     "word": "診断",
     "reading": "しんだん",
     "romaji": "shindan",
@@ -328,17 +318,6 @@
     ]
   },
   {
-    "word": "慌てる",
-    "reading": "あわてる",
-    "romaji": "awateru",
-    "meaning_vi": "hoảng hốt, vội vàng, cuống quýt",
-    "part_of_speech": "verb",
-    "tags": [
-      "action",
-      "emotion"
-    ]
-  },
-  {
     "word": "落ち着く",
     "reading": "おちつく",
     "romaji": "ochitsuku",
@@ -383,18 +362,6 @@
     "tags": [
       "action",
       "daily",
-      "work"
-    ]
-  },
-  {
-    "word": "連絡する",
-    "reading": "れんらくする",
-    "romaji": "renrakusuru",
-    "meaning_vi": "liên lạc, liên hệ",
-    "part_of_speech": "verb",
-    "tags": [
-      "action",
-      "communication",
       "work"
     ]
   },
@@ -458,18 +425,6 @@
     ]
   },
   {
-    "word": "協力する",
-    "reading": "きょうりょくする",
-    "romaji": "kyouryokusuru",
-    "meaning_vi": "hợp tác, phối hợp",
-    "part_of_speech": "verb",
-    "tags": [
-      "action",
-      "social",
-      "work"
-    ]
-  },
-  {
     "word": "工夫する",
     "reading": "くふうする",
     "romaji": "kuhuusuru",
@@ -503,28 +458,6 @@
       "action",
       "communication",
       "language"
-    ]
-  },
-  {
-    "word": "具体的",
-    "reading": "ぐたいてき",
-    "romaji": "gutaiteki",
-    "meaning_vi": "cụ thể, rõ ràng, chi tiết",
-    "part_of_speech": "adjective",
-    "tags": [
-      "abstract",
-      "communication"
-    ]
-  },
-  {
-    "word": "抽象的",
-    "reading": "ちゅうしょうてき",
-    "romaji": "chuushouteki",
-    "meaning_vi": "trừu tượng",
-    "part_of_speech": "adjective",
-    "tags": [
-      "abstract",
-      "study"
     ]
   },
   {
@@ -596,17 +529,6 @@
     ]
   },
   {
-    "word": "重要",
-    "reading": "じゅうよう",
-    "romaji": "juuyou",
-    "meaning_vi": "quan trọng",
-    "part_of_speech": "adjective",
-    "tags": [
-      "abstract",
-      "work"
-    ]
-  },
-  {
     "word": "緊急",
     "reading": "きんきゅう",
     "romaji": "kinkyuu",
@@ -633,17 +555,6 @@
     "reading": "ふそく",
     "romaji": "fusoku",
     "meaning_vi": "thiếu hụt, không đủ",
-    "part_of_speech": "adjective",
-    "tags": [
-      "abstract",
-      "daily"
-    ]
-  },
-  {
-    "word": "十分",
-    "reading": "じゅうぶん",
-    "romaji": "juubun",
-    "meaning_vi": "đủ, đầy đủ, thỏa đáng",
     "part_of_speech": "adjective",
     "tags": [
       "abstract",

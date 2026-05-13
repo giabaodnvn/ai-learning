@@ -60,29 +60,6 @@
     ]
   },
   {
-    "character": "緊",
-    "onyomi": [
-      "キン"
-    ],
-    "kunyomi": [
-      "しまる"
-    ],
-    "meaning_vi": "chặt, khẩn cấp",
-    "stroke_count": 15,
-    "vocab_examples": [
-      {
-        "word": "緊急",
-        "reading": "きんきゅう",
-        "meaning_vi": "khẩn cấp"
-      },
-      {
-        "word": "緊張",
-        "reading": "きんちょう",
-        "meaning_vi": "căng thẳng"
-      }
-    ]
-  },
-  {
     "character": "縫",
     "onyomi": [
       "ホウ"

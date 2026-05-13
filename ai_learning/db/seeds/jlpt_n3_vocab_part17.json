@@ -1,0 +1,957 @@
+[
+  {
+    "word": "強調する",
+    "reading": "きょうちょうする",
+    "romaji": "kyouchou suru",
+    "meaning_vi": "nhấn mạnh, đề cao",
+    "part_of_speech": "verb",
+    "tags": [
+      "abstract",
+      "formal"
+    ]
+  },
+  {
+    "word": "指摘する",
+    "reading": "してきする",
+    "romaji": "shiteki suru",
+    "meaning_vi": "chỉ ra, nhận xét, vạch ra",
+    "part_of_speech": "verb",
+    "tags": [
+      "abstract",
+      "formal"
+    ]
+  },
+  {
+    "word": "試みる",
+    "reading": "こころみる",
+    "romaji": "kokoromiru",
+    "meaning_vi": "thử, thử nghiệm, cố gắng",
+    "part_of_speech": "verb",
+    "tags": [
+      "abstract",
+      "formal"
+    ]
+  },
+  {
+    "word": "影響する",
+    "reading": "えいきょうする",
+    "romaji": "eikyou suru",
+    "meaning_vi": "ảnh hưởng, tác động",
+    "part_of_speech": "verb",
+    "tags": [
+      "abstract",
+      "formal"
+    ]
+  },
+  {
+    "word": "発揮する",
+    "reading": "はっきする",
+    "romaji": "hakki suru",
+    "meaning_vi": "phát huy, thể hiện (năng lực)",
+    "part_of_speech": "verb",
+    "tags": [
+      "abstract",
+      "formal"
+    ]
+  },
+  {
+    "word": "貢献する",
+    "reading": "こうけんする",
+    "romaji": "kouken suru",
+    "meaning_vi": "đóng góp, cống hiến",
+    "part_of_speech": "verb",
+    "tags": [
+      "abstract",
+      "formal"
+    ]
+  },
+  {
+    "word": "処理する",
+    "reading": "しょりする",
+    "romaji": "shori suru",
+    "meaning_vi": "xử lý, giải quyết",
+    "part_of_speech": "verb",
+    "tags": [
+      "abstract",
+      "formal"
+    ]
+  },
+  {
+    "word": "運営する",
+    "reading": "うんえいする",
+    "romaji": "un'ei suru",
+    "meaning_vi": "vận hành, điều hành, quản lý",
+    "part_of_speech": "verb",
+    "tags": [
+      "formal",
+      "business"
+    ]
+  },
+  {
+    "word": "担当する",
+    "reading": "たんとうする",
+    "romaji": "tantou suru",
+    "meaning_vi": "phụ trách, đảm nhận",
+    "part_of_speech": "verb",
+    "tags": [
+      "formal",
+      "business"
+    ]
+  },
+  {
+    "word": "確立する",
+    "reading": "かくりつする",
+    "romaji": "kakuritsu suru",
+    "meaning_vi": "xác lập, thiết lập vững chắc",
+    "part_of_speech": "verb",
+    "tags": [
+      "abstract",
+      "formal"
+    ]
+  },
+  {
+    "word": "上昇する",
+    "reading": "じょうしょうする",
+    "romaji": "joushou suru",
+    "meaning_vi": "tăng lên, đi lên",
+    "part_of_speech": "verb",
+    "tags": [
+      "abstract"
+    ]
+  },
+  {
+    "word": "下降する",
+    "reading": "かこうする",
+    "romaji": "kakou suru",
+    "meaning_vi": "giảm xuống, đi xuống",
+    "part_of_speech": "verb",
+    "tags": [
+      "abstract"
+    ]
+  },
+  {
+    "word": "向上する",
+    "reading": "こうじょうする",
+    "romaji": "koujou suru",
+    "meaning_vi": "cải thiện, tiến bộ, nâng cao",
+    "part_of_speech": "verb",
+    "tags": [
+      "abstract",
+      "formal"
+    ]
+  },
+  {
+    "word": "低下する",
+    "reading": "ていかする",
+    "romaji": "teika suru",
+    "meaning_vi": "giảm sút, suy giảm",
+    "part_of_speech": "verb",
+    "tags": [
+      "abstract"
+    ]
+  },
+  {
+    "word": "深める",
+    "reading": "ふかめる",
+    "romaji": "fukameru",
+    "meaning_vi": "làm sâu hơn, đào sâu (mối quan hệ, hiểu biết)",
+    "part_of_speech": "verb",
+    "tags": [
+      "abstract"
+    ]
+  },
+  {
+    "word": "広める",
+    "reading": "ひろめる",
+    "romaji": "hiromeru",
+    "meaning_vi": "truyền bá, phổ biến, mở rộng",
+    "part_of_speech": "verb",
+    "tags": [
+      "abstract"
+    ]
+  },
+  {
+    "word": "高める",
+    "reading": "たかめる",
+    "romaji": "takameru",
+    "meaning_vi": "nâng cao, tăng cường",
+    "part_of_speech": "verb",
+    "tags": [
+      "abstract"
+    ]
+  },
+  {
+    "word": "価値観",
+    "reading": "かちかん",
+    "romaji": "kachikan",
+    "meaning_vi": "quan điểm giá trị, hệ thống giá trị",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract"
+    ]
+  },
+  {
+    "word": "考え方",
+    "reading": "かんがえかた",
+    "romaji": "kangaekata",
+    "meaning_vi": "cách suy nghĩ, quan niệm",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract"
+    ]
+  },
+  {
+    "word": "見方",
+    "reading": "みかた",
+    "romaji": "mikata",
+    "meaning_vi": "quan điểm, cách nhìn nhận",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract"
+    ]
+  },
+  {
+    "word": "やる気",
+    "reading": "やるき",
+    "romaji": "yaruki",
+    "meaning_vi": "động lực, tinh thần cố gắng",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract"
+    ]
+  },
+  {
+    "word": "忍耐力",
+    "reading": "にんたいりょく",
+    "romaji": "nintairyoku",
+    "meaning_vi": "sức chịu đựng, khả năng kiên nhẫn",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract"
+    ]
+  },
+  {
+    "word": "正義",
+    "reading": "せいぎ",
+    "romaji": "seigi",
+    "meaning_vi": "công lý, chính nghĩa",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract",
+      "formal"
+    ]
+  },
+  {
+    "word": "象徴的",
+    "reading": "しょうちょうてき",
+    "romaji": "shouchouteki",
+    "meaning_vi": "mang tính biểu tượng",
+    "part_of_speech": "adjective",
+    "tags": [
+      "abstract",
+      "academic"
+    ]
+  },
+  {
+    "word": "典型的",
+    "reading": "てんけいてき",
+    "romaji": "tenkeiteki",
+    "meaning_vi": "điển hình",
+    "part_of_speech": "adjective",
+    "tags": [
+      "abstract",
+      "academic"
+    ]
+  },
+  {
+    "word": "思いやり",
+    "reading": "おもいやり",
+    "romaji": "omoiyari",
+    "meaning_vi": "lòng trắc ẩn, sự quan tâm đến người khác",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract"
+    ]
+  },
+  {
+    "word": "気遣い",
+    "reading": "きづかい",
+    "romaji": "kizukai",
+    "meaning_vi": "sự quan tâm, ân cần",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract"
+    ]
+  },
+  {
+    "word": "根気強い",
+    "reading": "こんきづよい",
+    "romaji": "konkizuyoi",
+    "meaning_vi": "kiên trì, bền bỉ",
+    "part_of_speech": "adjective",
+    "tags": [
+      "abstract"
+    ]
+  },
+  {
+    "word": "粘り強い",
+    "reading": "ねばりづよい",
+    "romaji": "nebarizuyoi",
+    "meaning_vi": "kiên cường, bền bỉ không nản",
+    "part_of_speech": "adjective",
+    "tags": [
+      "abstract"
+    ]
+  },
+  {
+    "word": "前向き",
+    "reading": "まえむき",
+    "romaji": "maemuki",
+    "meaning_vi": "tích cực, hướng về phía trước",
+    "part_of_speech": "adjective",
+    "tags": [
+      "abstract"
+    ]
+  },
+  {
+    "word": "後ろ向き",
+    "reading": "うしろむき",
+    "romaji": "ushiromuki",
+    "meaning_vi": "tiêu cực, bi quan, quay lưng lại",
+    "part_of_speech": "adjective",
+    "tags": [
+      "abstract"
+    ]
+  },
+  {
+    "word": "柔軟性",
+    "reading": "じゅうなんせい",
+    "romaji": "juunansei",
+    "meaning_vi": "tính linh hoạt, sự mềm dẻo",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract"
+    ]
+  },
+  {
+    "word": "公平性",
+    "reading": "こうへいせい",
+    "romaji": "kouheisei",
+    "meaning_vi": "tính công bằng",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract",
+      "formal"
+    ]
+  },
+  {
+    "word": "客観性",
+    "reading": "きゃっかんせい",
+    "romaji": "kyakkansei",
+    "meaning_vi": "tính khách quan",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract",
+      "academic"
+    ]
+  },
+  {
+    "word": "主観性",
+    "reading": "しゅかんせい",
+    "romaji": "shukansei",
+    "meaning_vi": "tính chủ quan",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract",
+      "academic"
+    ]
+  },
+  {
+    "word": "論理性",
+    "reading": "ろんりせい",
+    "romaji": "ronrisei",
+    "meaning_vi": "tính logic, tính hợp lý",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract",
+      "academic"
+    ]
+  },
+  {
+    "word": "自発性",
+    "reading": "じはつせい",
+    "romaji": "jihatsusei",
+    "meaning_vi": "tính tự giác, tính chủ động",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract"
+    ]
+  },
+  {
+    "word": "協調性",
+    "reading": "きょうちょうせい",
+    "romaji": "kyouchousei",
+    "meaning_vi": "tính hợp tác, tinh thần đồng đội",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract",
+      "business"
+    ]
+  },
+  {
+    "word": "社交性",
+    "reading": "しゃこうせい",
+    "romaji": "shakousei",
+    "meaning_vi": "tính xã giao, khả năng giao tiếp",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract"
+    ]
+  },
+  {
+    "word": "創造性",
+    "reading": "そうぞうせい",
+    "romaji": "souzousei",
+    "meaning_vi": "tính sáng tạo",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract"
+    ]
+  },
+  {
+    "word": "革新性",
+    "reading": "かくしんせい",
+    "romaji": "kakushinsei",
+    "meaning_vi": "tính đổi mới, tính sáng tạo",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract",
+      "formal"
+    ]
+  },
+  {
+    "word": "関連性",
+    "reading": "かんれんせい",
+    "romaji": "kanrensei",
+    "meaning_vi": "tính liên quan, mức độ liên hệ",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract",
+      "academic"
+    ]
+  },
+  {
+    "word": "具体性",
+    "reading": "ぐたいせい",
+    "romaji": "gutaisei",
+    "meaning_vi": "tính cụ thể",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract",
+      "academic"
+    ]
+  },
+  {
+    "word": "抽象性",
+    "reading": "ちゅうしょうせい",
+    "romaji": "chuushousei",
+    "meaning_vi": "tính trừu tượng",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract",
+      "academic"
+    ]
+  },
+  {
+    "word": "総合力",
+    "reading": "そうごうりょく",
+    "romaji": "sougouryoku",
+    "meaning_vi": "năng lực tổng hợp",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract"
+    ]
+  },
+  {
+    "word": "基礎力",
+    "reading": "きそりょく",
+    "romaji": "kisoryoku",
+    "meaning_vi": "năng lực nền tảng, kỹ năng cơ bản",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract"
+    ]
+  },
+  {
+    "word": "応用力",
+    "reading": "おうようりょく",
+    "romaji": "ouyouryoku",
+    "meaning_vi": "năng lực ứng dụng",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract"
+    ]
+  },
+  {
+    "word": "思考力",
+    "reading": "しこうりょく",
+    "romaji": "shikouryoku",
+    "meaning_vi": "năng lực tư duy",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract",
+      "academic"
+    ]
+  },
+  {
+    "word": "分析力",
+    "reading": "ぶんせきりょく",
+    "romaji": "bunsekiryoku",
+    "meaning_vi": "năng lực phân tích",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract",
+      "academic"
+    ]
+  },
+  {
+    "word": "発想力",
+    "reading": "はっそうりょく",
+    "romaji": "hassouryoku",
+    "meaning_vi": "sức sáng tạo, khả năng nảy sinh ý tưởng",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract"
+    ]
+  },
+  {
+    "word": "指導力",
+    "reading": "しどうりょく",
+    "romaji": "shidouryoku",
+    "meaning_vi": "năng lực lãnh đạo, khả năng hướng dẫn",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract",
+      "formal"
+    ]
+  },
+  {
+    "word": "説得力",
+    "reading": "せっとくりょく",
+    "romaji": "settokuryoku",
+    "meaning_vi": "sức thuyết phục, tính thuyết phục",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract",
+      "formal"
+    ]
+  },
+  {
+    "word": "影響力",
+    "reading": "えいきょうりょく",
+    "romaji": "eikyouryoku",
+    "meaning_vi": "sức ảnh hưởng, tầm ảnh hưởng",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract",
+      "formal"
+    ]
+  },
+  {
+    "word": "理解力",
+    "reading": "りかいりょく",
+    "romaji": "rikairyoku",
+    "meaning_vi": "khả năng lĩnh hội, sức hiểu",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract"
+    ]
+  },
+  {
+    "word": "表現力",
+    "reading": "ひょうげんりょく",
+    "romaji": "hyougenryoku",
+    "meaning_vi": "năng lực biểu đạt, khả năng diễn đạt",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract"
+    ]
+  },
+  {
+    "word": "想像力",
+    "reading": "そうぞうりょく",
+    "romaji": "souzouryoku",
+    "meaning_vi": "trí tưởng tượng",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract"
+    ]
+  },
+  {
+    "word": "観察力",
+    "reading": "かんさつりょく",
+    "romaji": "kansatsuryoku",
+    "meaning_vi": "năng lực quan sát",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract"
+    ]
+  },
+  {
+    "word": "発信力",
+    "reading": "はっしんりょく",
+    "romaji": "hasshinryoku",
+    "meaning_vi": "năng lực truyền đạt thông tin, khả năng PR",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract",
+      "business"
+    ]
+  },
+  {
+    "word": "対応力",
+    "reading": "たいおうりょく",
+    "romaji": "taiouryoku",
+    "meaning_vi": "khả năng ứng phó, linh hoạt",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract"
+    ]
+  },
+  {
+    "word": "持続力",
+    "reading": "じぞくりょく",
+    "romaji": "jizokuryoku",
+    "meaning_vi": "sức bền, khả năng duy trì",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract"
+    ]
+  },
+  {
+    "word": "解決力",
+    "reading": "かいけつりょく",
+    "romaji": "kaiketsuryoku",
+    "meaning_vi": "năng lực giải quyết vấn đề",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract"
+    ]
+  },
+  {
+    "word": "実行力",
+    "reading": "じっこうりょく",
+    "romaji": "jikkouryoku",
+    "meaning_vi": "năng lực thực thi, khả năng thực hiện",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract"
+    ]
+  },
+  {
+    "word": "詳細",
+    "reading": "しょうさい",
+    "romaji": "shousai",
+    "meaning_vi": "chi tiết, tỉ mỉ",
+    "part_of_speech": "adjective",
+    "tags": [
+      "formal"
+    ]
+  },
+  {
+    "word": "簡潔",
+    "reading": "かんけつ",
+    "romaji": "kanketsu",
+    "meaning_vi": "súc tích, ngắn gọn",
+    "part_of_speech": "adjective",
+    "tags": [
+      "formal",
+      "academic"
+    ]
+  },
+  {
+    "word": "判断基準",
+    "reading": "はんだんきじゅん",
+    "romaji": "handan kijun",
+    "meaning_vi": "tiêu chí phán đoán",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract",
+      "formal"
+    ]
+  },
+  {
+    "word": "行動指針",
+    "reading": "こうどうししん",
+    "romaji": "koudou shishin",
+    "meaning_vi": "phương châm hành động, nguyên tắc ứng xử",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract",
+      "formal"
+    ]
+  },
+  {
+    "word": "目標設定",
+    "reading": "もくひょうせってい",
+    "romaji": "mokuhyou settei",
+    "meaning_vi": "thiết lập mục tiêu",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract",
+      "business"
+    ]
+  },
+  {
+    "word": "課題解決",
+    "reading": "かだいかいけつ",
+    "romaji": "kadai kaiketsu",
+    "meaning_vi": "giải quyết vấn đề, giải quyết nhiệm vụ",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract",
+      "formal"
+    ]
+  },
+  {
+    "word": "自己実現",
+    "reading": "じこじつげん",
+    "romaji": "jiko jitsugen",
+    "meaning_vi": "tự thực hiện bản thân, phát huy năng lực",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract"
+    ]
+  },
+  {
+    "word": "自己評価",
+    "reading": "じこひょうか",
+    "romaji": "jiko hyouka",
+    "meaning_vi": "tự đánh giá bản thân",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract"
+    ]
+  },
+  {
+    "word": "他者理解",
+    "reading": "たしゃりかい",
+    "romaji": "tasha rikai",
+    "meaning_vi": "hiểu người khác, đồng cảm với người khác",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract"
+    ]
+  },
+  {
+    "word": "相互理解",
+    "reading": "そうごりかい",
+    "romaji": "sougo rikai",
+    "meaning_vi": "hiểu biết lẫn nhau",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract",
+      "formal"
+    ]
+  },
+  {
+    "word": "主体的",
+    "reading": "しゅたいてき",
+    "romaji": "shutaiteki",
+    "meaning_vi": "chủ thể, chủ động",
+    "part_of_speech": "adjective",
+    "tags": [
+      "abstract",
+      "formal"
+    ]
+  },
+  {
+    "word": "受動的",
+    "reading": "じゅどうてき",
+    "romaji": "judouteki",
+    "meaning_vi": "thụ động, bị động",
+    "part_of_speech": "adjective",
+    "tags": [
+      "abstract"
+    ]
+  },
+  {
+    "word": "独立的",
+    "reading": "どくりつてき",
+    "romaji": "dokuritsu-teki",
+    "meaning_vi": "độc lập",
+    "part_of_speech": "adjective",
+    "tags": [
+      "abstract"
+    ]
+  },
+  {
+    "word": "依存的",
+    "reading": "いぞんてき",
+    "romaji": "izon-teki",
+    "meaning_vi": "phụ thuộc, có tính phụ thuộc",
+    "part_of_speech": "adjective",
+    "tags": [
+      "abstract"
+    ]
+  },
+  {
+    "word": "本末転倒",
+    "reading": "ほんまつてんとう",
+    "romaji": "honmatsu tentou",
+    "meaning_vi": "đảo lộn bản mạt, làm sai thứ tự ưu tiên",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "abstract"
+    ]
+  },
+  {
+    "word": "試行錯誤",
+    "reading": "しこうさくご",
+    "romaji": "shikou sakugo",
+    "meaning_vi": "thử và sai, thử nghiệm tìm tòi",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract"
+    ]
+  },
+  {
+    "word": "悪循環",
+    "reading": "あくじゅんかん",
+    "romaji": "akujunkan",
+    "meaning_vi": "vòng luẩn quẩn xấu, vòng xoáy tiêu cực",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract"
+    ]
+  },
+  {
+    "word": "好循環",
+    "reading": "こうじゅんかん",
+    "romaji": "koujunkan",
+    "meaning_vi": "vòng xoáy tích cực, vòng phát triển tốt",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract"
+    ]
+  },
+  {
+    "word": "相乗効果",
+    "reading": "そうじょうこうか",
+    "romaji": "soujou kouka",
+    "meaning_vi": "hiệu ứng hiệp đồng, hiệu quả kết hợp",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract",
+      "business"
+    ]
+  },
+  {
+    "word": "副作用",
+    "reading": "ふくさよう",
+    "romaji": "fukusayou",
+    "meaning_vi": "tác dụng phụ",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract"
+    ]
+  },
+  {
+    "word": "波及効果",
+    "reading": "はきゅうこうか",
+    "romaji": "hakyuu kouka",
+    "meaning_vi": "hiệu ứng lan tỏa, tác động dây chuyền",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract",
+      "formal"
+    ]
+  },
+  {
+    "word": "反動",
+    "reading": "はんどう",
+    "romaji": "handou",
+    "meaning_vi": "phản ứng ngược, phản lực",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract"
+    ]
+  },
+  {
+    "word": "揺り戻し",
+    "reading": "ゆりもどし",
+    "romaji": "yurimodoshi",
+    "meaning_vi": "sự giật lùi, phản ứng sau thay đổi",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract",
+      "formal"
+    ]
+  },
+  {
+    "word": "過渡期",
+    "reading": "かとき",
+    "romaji": "katoki",
+    "meaning_vi": "giai đoạn chuyển tiếp, thời kỳ quá độ",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract",
+      "formal"
+    ]
+  },
+  {
+    "word": "転換期",
+    "reading": "てんかんき",
+    "romaji": "tenkanki",
+    "meaning_vi": "thời điểm chuyển đổi, giai đoạn bước ngoặt",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract",
+      "formal"
+    ]
+  },
+  {
+    "word": "潜在的",
+    "reading": "せんざいてき",
+    "romaji": "senzaiteki",
+    "meaning_vi": "tiềm ẩn, tiềm năng",
+    "part_of_speech": "adjective",
+    "tags": [
+      "abstract",
+      "academic"
+    ]
+  },
+  {
+    "word": "顕在的",
+    "reading": "けんざいてき",
+    "romaji": "kenzaiteki",
+    "meaning_vi": "hiện hữu, rõ ràng, thể hiện ra",
+    "part_of_speech": "adjective",
+    "tags": [
+      "abstract",
+      "academic"
+    ]
+  },
+  {
+    "word": "相対的",
+    "reading": "そうたいてき",
+    "romaji": "soutaiteki",
+    "meaning_vi": "tương đối",
+    "part_of_speech": "adjective",
+    "tags": [
+      "abstract",
+      "academic"
+    ]
+  },
+  {
+    "word": "絶対的",
+    "reading": "ぜったいてき",
+    "romaji": "zettaiteki",
+    "meaning_vi": "tuyệt đối",
+    "part_of_speech": "adjective",
+    "tags": [
+      "abstract"
+    ]
+  }
+]

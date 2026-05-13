@@ -1,0 +1,1397 @@
+[
+  {
+    "character": "拒",
+    "onyomi": [
+      "キョ"
+    ],
+    "kunyomi": [
+      "こば.む"
+    ],
+    "meaning_vi": "từ chối, kháng cự",
+    "stroke_count": 8,
+    "vocab_examples": [
+      {
+        "word": "拒否",
+        "reading": "きょひ",
+        "meaning_vi": "từ chối"
+      },
+      {
+        "word": "拒絶",
+        "reading": "きょぜつ",
+        "meaning_vi": "từ chối, cự tuyệt"
+      },
+      {
+        "word": "拒む",
+        "reading": "こばむ",
+        "meaning_vi": "từ chối, phản đối"
+      }
+    ]
+  },
+  {
+    "character": "雑",
+    "onyomi": [
+      "ザツ",
+      "ゾウ"
+    ],
+    "kunyomi": [
+      "まじ.える"
+    ],
+    "meaning_vi": "tạp, phức tạp, lộn xộn",
+    "stroke_count": 14,
+    "vocab_examples": [
+      {
+        "word": "複雑",
+        "reading": "ふくざつ",
+        "meaning_vi": "phức tạp"
+      },
+      {
+        "word": "雑誌",
+        "reading": "ざっし",
+        "meaning_vi": "tạp chí"
+      },
+      {
+        "word": "雑音",
+        "reading": "ざつおん",
+        "meaning_vi": "tiếng ồn, tạp âm"
+      }
+    ]
+  },
+  {
+    "character": "怠",
+    "onyomi": [
+      "タイ"
+    ],
+    "kunyomi": [
+      "おこた.る",
+      "なま.ける"
+    ],
+    "meaning_vi": "lười biếng, lơ là",
+    "stroke_count": 9,
+    "vocab_examples": [
+      {
+        "word": "怠る",
+        "reading": "おこたる",
+        "meaning_vi": "lơ là, bỏ bê"
+      },
+      {
+        "word": "怠慢",
+        "reading": "たいまん",
+        "meaning_vi": "lười biếng, cẩu thả"
+      },
+      {
+        "word": "怠惰",
+        "reading": "たいだ",
+        "meaning_vi": "lười nhác"
+      }
+    ]
+  },
+  {
+    "character": "緊",
+    "onyomi": [
+      "キン"
+    ],
+    "kunyomi": [
+      "きつ"
+    ],
+    "meaning_vi": "căng thẳng, khẩn cấp",
+    "stroke_count": 15,
+    "vocab_examples": [
+      {
+        "word": "緊張",
+        "reading": "きんちょう",
+        "meaning_vi": "căng thẳng"
+      },
+      {
+        "word": "緊急",
+        "reading": "きんきゅう",
+        "meaning_vi": "khẩn cấp"
+      },
+      {
+        "word": "緊密",
+        "reading": "きんみつ",
+        "meaning_vi": "chặt chẽ, mật thiết"
+      }
+    ]
+  },
+  {
+    "character": "騒",
+    "onyomi": [
+      "ソウ"
+    ],
+    "kunyomi": [
+      "さわ.ぐ",
+      "さわ.がしい"
+    ],
+    "meaning_vi": "ồn ào, náo loạn",
+    "stroke_count": 18,
+    "vocab_examples": [
+      {
+        "word": "騒ぐ",
+        "reading": "さわぐ",
+        "meaning_vi": "ồn ào, náo loạn"
+      },
+      {
+        "word": "騒音",
+        "reading": "そうおん",
+        "meaning_vi": "tiếng ồn"
+      },
+      {
+        "word": "騒動",
+        "reading": "そうどう",
+        "meaning_vi": "náo loạn, xáo trộn"
+      }
+    ]
+  },
+  {
+    "character": "巧",
+    "onyomi": [
+      "コウ"
+    ],
+    "kunyomi": [
+      "たく.み"
+    ],
+    "meaning_vi": "khéo léo, tài giỏi",
+    "stroke_count": 5,
+    "vocab_examples": [
+      {
+        "word": "巧み",
+        "reading": "たくみ",
+        "meaning_vi": "khéo léo"
+      },
+      {
+        "word": "巧妙",
+        "reading": "こうみょう",
+        "meaning_vi": "khéo léo, tinh vi"
+      },
+      {
+        "word": "精巧",
+        "reading": "せいこう",
+        "meaning_vi": "tinh xảo, khéo léo"
+      }
+    ]
+  },
+  {
+    "character": "概",
+    "onyomi": [
+      "ガイ"
+    ],
+    "kunyomi": [
+      "おおむ.ね"
+    ],
+    "meaning_vi": "đại khái, khái quát",
+    "stroke_count": 14,
+    "vocab_examples": [
+      {
+        "word": "概念",
+        "reading": "がいねん",
+        "meaning_vi": "khái niệm"
+      },
+      {
+        "word": "概要",
+        "reading": "がいよう",
+        "meaning_vi": "tóm tắt, đại ý"
+      },
+      {
+        "word": "概ね",
+        "reading": "おおむね",
+        "meaning_vi": "đại khái, nhìn chung"
+      }
+    ]
+  },
+  {
+    "character": "欄",
+    "onyomi": [
+      "ラン"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "cột, mục, ô (trong biểu mẫu)",
+    "stroke_count": 20,
+    "vocab_examples": [
+      {
+        "word": "欄",
+        "reading": "らん",
+        "meaning_vi": "cột, mục"
+      },
+      {
+        "word": "記入欄",
+        "reading": "きにゅうらん",
+        "meaning_vi": "ô điền thông tin"
+      },
+      {
+        "word": "備考欄",
+        "reading": "びこうらん",
+        "meaning_vi": "cột ghi chú"
+      }
+    ]
+  },
+  {
+    "character": "歓",
+    "onyomi": [
+      "カン"
+    ],
+    "kunyomi": [
+      "よろこ.ぶ"
+    ],
+    "meaning_vi": "vui mừng, hoan nghênh",
+    "stroke_count": 15,
+    "vocab_examples": [
+      {
+        "word": "歓迎",
+        "reading": "かんげい",
+        "meaning_vi": "hoan nghênh, chào đón"
+      },
+      {
+        "word": "歓喜",
+        "reading": "かんき",
+        "meaning_vi": "vui mừng, hân hoan"
+      },
+      {
+        "word": "歓声",
+        "reading": "かんせい",
+        "meaning_vi": "tiếng歓呼"
+      }
+    ]
+  },
+  {
+    "character": "歯",
+    "onyomi": [
+      "シ"
+    ],
+    "kunyomi": [
+      "は"
+    ],
+    "meaning_vi": "răng",
+    "stroke_count": 12,
+    "vocab_examples": [
+      {
+        "word": "歯",
+        "reading": "は",
+        "meaning_vi": "răng"
+      },
+      {
+        "word": "歯磨き",
+        "reading": "はみがき",
+        "meaning_vi": "đánh răng"
+      },
+      {
+        "word": "虫歯",
+        "reading": "むしば",
+        "meaning_vi": "sâu răng"
+      }
+    ]
+  },
+  {
+    "character": "浦",
+    "onyomi": [
+      "ホ"
+    ],
+    "kunyomi": [
+      "うら"
+    ],
+    "meaning_vi": "vịnh nhỏ, bờ biển",
+    "stroke_count": 10,
+    "vocab_examples": [
+      {
+        "word": "浦",
+        "reading": "うら",
+        "meaning_vi": "vịnh nhỏ, bờ biển"
+      },
+      {
+        "word": "浦島太郎",
+        "reading": "うらしまたろう",
+        "meaning_vi": "Urashima Taro (nhân vật cổ tích)"
+      },
+      {
+        "word": "海浦",
+        "reading": "かいほ",
+        "meaning_vi": "vùng duyên hải"
+      }
+    ]
+  },
+  {
+    "character": "添",
+    "onyomi": [
+      "テン"
+    ],
+    "kunyomi": [
+      "そ.える",
+      "そ.う"
+    ],
+    "meaning_vi": "thêm vào, đi kèm",
+    "stroke_count": 11,
+    "vocab_examples": [
+      {
+        "word": "添える",
+        "reading": "そえる",
+        "meaning_vi": "thêm vào, đi kèm"
+      },
+      {
+        "word": "添付",
+        "reading": "てんぷ",
+        "meaning_vi": "đính kèm"
+      },
+      {
+        "word": "付き添い",
+        "reading": "つきそい",
+        "meaning_vi": "đi kèm, tháp tùng"
+      }
+    ]
+  },
+  {
+    "character": "漠",
+    "onyomi": [
+      "バク"
+    ],
+    "kunyomi": [
+      "ばく"
+    ],
+    "meaning_vi": "mơ hồ, sa mạc rộng lớn",
+    "stroke_count": 13,
+    "vocab_examples": [
+      {
+        "word": "漠然",
+        "reading": "ばくぜん",
+        "meaning_vi": "mơ hồ, không rõ ràng"
+      },
+      {
+        "word": "砂漠",
+        "reading": "さばく",
+        "meaning_vi": "sa mạc"
+      },
+      {
+        "word": "広漠",
+        "reading": "こうばく",
+        "meaning_vi": "rộng lớn bao la"
+      }
+    ]
+  },
+  {
+    "character": "潜",
+    "onyomi": [
+      "セン"
+    ],
+    "kunyomi": [
+      "もぐ.る",
+      "ひそ.む"
+    ],
+    "meaning_vi": "lặn, tiềm ẩn, bí mật",
+    "stroke_count": 15,
+    "vocab_examples": [
+      {
+        "word": "潜る",
+        "reading": "もぐる",
+        "meaning_vi": "lặn, chui vào"
+      },
+      {
+        "word": "潜在",
+        "reading": "せんざい",
+        "meaning_vi": "tiềm ẩn, tiềm năng"
+      },
+      {
+        "word": "潜水",
+        "reading": "せんすい",
+        "meaning_vi": "lặn nước"
+      }
+    ]
+  },
+  {
+    "character": "狙",
+    "onyomi": [
+      "ソ"
+    ],
+    "kunyomi": [
+      "ねら.う"
+    ],
+    "meaning_vi": "nhắm, nhắm mục tiêu",
+    "stroke_count": 8,
+    "vocab_examples": [
+      {
+        "word": "狙う",
+        "reading": "ねらう",
+        "meaning_vi": "nhắm, nhắm mục tiêu"
+      },
+      {
+        "word": "狙い",
+        "reading": "ねらい",
+        "meaning_vi": "mục tiêu, ý đồ"
+      },
+      {
+        "word": "狙撃",
+        "reading": "そげき",
+        "meaning_vi": "bắn tỉa"
+      }
+    ]
+  },
+  {
+    "character": "畑",
+    "onyomi": [],
+    "kunyomi": [
+      "はたけ",
+      "はた"
+    ],
+    "meaning_vi": "ruộng, cánh đồng (không tưới nước)",
+    "stroke_count": 9,
+    "vocab_examples": [
+      {
+        "word": "畑",
+        "reading": "はたけ",
+        "meaning_vi": "ruộng cạn, nương rẫy"
+      },
+      {
+        "word": "畑仕事",
+        "reading": "はたけしごと",
+        "meaning_vi": "công việc đồng áng"
+      },
+      {
+        "word": "麦畑",
+        "reading": "むぎばたけ",
+        "meaning_vi": "ruộng lúa mì"
+      }
+    ]
+  },
+  {
+    "character": "眺",
+    "onyomi": [
+      "チョウ"
+    ],
+    "kunyomi": [
+      "なが.める"
+    ],
+    "meaning_vi": "ngắm nhìn, phóng tầm mắt",
+    "stroke_count": 11,
+    "vocab_examples": [
+      {
+        "word": "眺める",
+        "reading": "ながめる",
+        "meaning_vi": "ngắm nhìn"
+      },
+      {
+        "word": "眺め",
+        "reading": "ながめ",
+        "meaning_vi": "cảnh quan, tầm nhìn"
+      },
+      {
+        "word": "眺望",
+        "reading": "ちょうぼう",
+        "meaning_vi": "tầm nhìn xa, cảnh quan"
+      }
+    ]
+  },
+  {
+    "character": "礎",
+    "onyomi": [
+      "ソ"
+    ],
+    "kunyomi": [
+      "いしずえ"
+    ],
+    "meaning_vi": "nền tảng, cột móng",
+    "stroke_count": 18,
+    "vocab_examples": [
+      {
+        "word": "礎",
+        "reading": "いしずえ",
+        "meaning_vi": "nền tảng, trụ cột"
+      },
+      {
+        "word": "基礎",
+        "reading": "きそ",
+        "meaning_vi": "cơ bản, nền tảng"
+      },
+      {
+        "word": "礎石",
+        "reading": "そせき",
+        "meaning_vi": "đá móng, nền tảng"
+      }
+    ]
+  },
+  {
+    "character": "締",
+    "onyomi": [
+      "テイ"
+    ],
+    "kunyomi": [
+      "し.める",
+      "し.まる"
+    ],
+    "meaning_vi": "thắt chặt, ký kết",
+    "stroke_count": 15,
+    "vocab_examples": [
+      {
+        "word": "締める",
+        "reading": "しめる",
+        "meaning_vi": "thắt, siết chặt"
+      },
+      {
+        "word": "締め切り",
+        "reading": "しめきり",
+        "meaning_vi": "hạn chót"
+      },
+      {
+        "word": "取り締まり",
+        "reading": "とりしまり",
+        "meaning_vi": "giám sát, kiểm soát"
+      }
+    ]
+  },
+  {
+    "character": "絞",
+    "onyomi": [
+      "コウ"
+    ],
+    "kunyomi": [
+      "しぼ.る",
+      "しぼ.り"
+    ],
+    "meaning_vi": "vắt, bóp, thu hẹp",
+    "stroke_count": 12,
+    "vocab_examples": [
+      {
+        "word": "絞る",
+        "reading": "しぼる",
+        "meaning_vi": "vắt, bóp, thu hẹp"
+      },
+      {
+        "word": "絞り込む",
+        "reading": "しぼりこむ",
+        "meaning_vi": "thu hẹp, lọc"
+      },
+      {
+        "word": "絞殺",
+        "reading": "こうさつ",
+        "meaning_vi": "giết bằng cách thắt cổ"
+      }
+    ]
+  },
+  {
+    "character": "茂",
+    "onyomi": [
+      "モ"
+    ],
+    "kunyomi": [
+      "しげ.る"
+    ],
+    "meaning_vi": "um tùm, rậm rạp, tươi tốt",
+    "stroke_count": 8,
+    "vocab_examples": [
+      {
+        "word": "茂る",
+        "reading": "しげる",
+        "meaning_vi": "mọc um tùm"
+      },
+      {
+        "word": "茂み",
+        "reading": "しげみ",
+        "meaning_vi": "bụi rậm"
+      },
+      {
+        "word": "繁茂",
+        "reading": "はんも",
+        "meaning_vi": "mọc xanh tươi, um tùm"
+      }
+    ]
+  },
+  {
+    "character": "葬",
+    "onyomi": [
+      "ソウ"
+    ],
+    "kunyomi": [
+      "ほうむ.る"
+    ],
+    "meaning_vi": "chôn cất, an táng",
+    "stroke_count": 12,
+    "vocab_examples": [
+      {
+        "word": "葬儀",
+        "reading": "そうぎ",
+        "meaning_vi": "tang lễ"
+      },
+      {
+        "word": "葬式",
+        "reading": "そうしき",
+        "meaning_vi": "đám tang"
+      },
+      {
+        "word": "埋葬",
+        "reading": "まいそう",
+        "meaning_vi": "chôn cất"
+      }
+    ]
+  },
+  {
+    "character": "虐",
+    "onyomi": [
+      "ギャク"
+    ],
+    "kunyomi": [
+      "しいた.げる"
+    ],
+    "meaning_vi": "ngược đãi, tàn nhẫn",
+    "stroke_count": 9,
+    "vocab_examples": [
+      {
+        "word": "虐待",
+        "reading": "ぎゃくたい",
+        "meaning_vi": "ngược đãi, bạo hành"
+      },
+      {
+        "word": "虐げる",
+        "reading": "しいたげる",
+        "meaning_vi": "áp bức, ngược đãi"
+      },
+      {
+        "word": "虐殺",
+        "reading": "ぎゃくさつ",
+        "meaning_vi": "tàn sát"
+      }
+    ]
+  },
+  {
+    "character": "虚",
+    "onyomi": [
+      "キョ",
+      "コ"
+    ],
+    "kunyomi": [
+      "うつ.ろ"
+    ],
+    "meaning_vi": "trống rỗng, giả dối",
+    "stroke_count": 11,
+    "vocab_examples": [
+      {
+        "word": "虚偽",
+        "reading": "きょぎ",
+        "meaning_vi": "dối trá, giả mạo"
+      },
+      {
+        "word": "虚構",
+        "reading": "きょこう",
+        "meaning_vi": "hư cấu, bịa đặt"
+      },
+      {
+        "word": "謙虚",
+        "reading": "けんきょ",
+        "meaning_vi": "khiêm tốn"
+      }
+    ]
+  },
+  {
+    "character": "衛",
+    "onyomi": [
+      "エイ"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "bảo vệ, vệ tinh",
+    "stroke_count": 16,
+    "vocab_examples": [
+      {
+        "word": "衛星",
+        "reading": "えいせい",
+        "meaning_vi": "vệ tinh"
+      },
+      {
+        "word": "防衛",
+        "reading": "ぼうえい",
+        "meaning_vi": "phòng thủ, bảo vệ"
+      },
+      {
+        "word": "衛生",
+        "reading": "えいせい",
+        "meaning_vi": "vệ sinh"
+      }
+    ]
+  },
+  {
+    "character": "褒",
+    "onyomi": [
+      "ホウ"
+    ],
+    "kunyomi": [
+      "ほ.める"
+    ],
+    "meaning_vi": "khen ngợi, tán dương",
+    "stroke_count": 15,
+    "vocab_examples": [
+      {
+        "word": "褒める",
+        "reading": "ほめる",
+        "meaning_vi": "khen ngợi"
+      },
+      {
+        "word": "褒賞",
+        "reading": "ほうしょう",
+        "meaning_vi": "giải thưởng, phần thưởng"
+      },
+      {
+        "word": "褒め言葉",
+        "reading": "ほめことば",
+        "meaning_vi": "lời khen"
+      }
+    ]
+  },
+  {
+    "character": "遂",
+    "onyomi": [
+      "スイ"
+    ],
+    "kunyomi": [
+      "と.げる"
+    ],
+    "meaning_vi": "hoàn thành, cuối cùng",
+    "stroke_count": 12,
+    "vocab_examples": [
+      {
+        "word": "遂げる",
+        "reading": "とげる",
+        "meaning_vi": "hoàn thành, đạt được"
+      },
+      {
+        "word": "未遂",
+        "reading": "みすい",
+        "meaning_vi": "chưa thực hiện, chưa hoàn thành"
+      },
+      {
+        "word": "遂行",
+        "reading": "すいこう",
+        "meaning_vi": "thực hiện, thi hành"
+      }
+    ]
+  },
+  {
+    "character": "遵",
+    "onyomi": [
+      "ジュン"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "tuân theo, tuân thủ",
+    "stroke_count": 15,
+    "vocab_examples": [
+      {
+        "word": "遵守",
+        "reading": "じゅんしゅ",
+        "meaning_vi": "tuân thủ, chấp hành"
+      },
+      {
+        "word": "遵法",
+        "reading": "じゅんぽう",
+        "meaning_vi": "tuân thủ pháp luật"
+      },
+      {
+        "word": "遵奉",
+        "reading": "じゅんぽう",
+        "meaning_vi": "noi theo, tuân theo"
+      }
+    ]
+  },
+  {
+    "character": "邸",
+    "onyomi": [
+      "テイ"
+    ],
+    "kunyomi": [
+      "やしき"
+    ],
+    "meaning_vi": "dinh thự, nhà lớn",
+    "stroke_count": 10,
+    "vocab_examples": [
+      {
+        "word": "邸宅",
+        "reading": "ていたく",
+        "meaning_vi": "dinh thự, biệt thự"
+      },
+      {
+        "word": "官邸",
+        "reading": "かんてい",
+        "meaning_vi": "dinh thủ tướng"
+      },
+      {
+        "word": "私邸",
+        "reading": "してい",
+        "meaning_vi": "tư dinh"
+      }
+    ]
+  },
+  {
+    "character": "釣",
+    "onyomi": [
+      "チョウ"
+    ],
+    "kunyomi": [
+      "つ.る",
+      "つり"
+    ],
+    "meaning_vi": "câu cá, câu nhử",
+    "stroke_count": 11,
+    "vocab_examples": [
+      {
+        "word": "釣る",
+        "reading": "つる",
+        "meaning_vi": "câu cá"
+      },
+      {
+        "word": "釣り",
+        "reading": "つり",
+        "meaning_vi": "câu cá"
+      },
+      {
+        "word": "釣り銭",
+        "reading": "つりせん",
+        "meaning_vi": "tiền thối lại"
+      }
+    ]
+  },
+  {
+    "character": "鈴",
+    "onyomi": [
+      "レイ",
+      "リン"
+    ],
+    "kunyomi": [
+      "すず"
+    ],
+    "meaning_vi": "chuông nhỏ, lục lạc",
+    "stroke_count": 13,
+    "vocab_examples": [
+      {
+        "word": "鈴",
+        "reading": "すず",
+        "meaning_vi": "chuông nhỏ, lục lạc"
+      },
+      {
+        "word": "鈴虫",
+        "reading": "すずむし",
+        "meaning_vi": "dế chuông"
+      },
+      {
+        "word": "風鈴",
+        "reading": "ふうりん",
+        "meaning_vi": "chuông gió"
+      }
+    ]
+  },
+  {
+    "character": "陳",
+    "onyomi": [
+      "チン"
+    ],
+    "kunyomi": [
+      "ひ.ねる"
+    ],
+    "meaning_vi": "trình bày, cũ kỹ",
+    "stroke_count": 11,
+    "vocab_examples": [
+      {
+        "word": "陳列",
+        "reading": "ちんれつ",
+        "meaning_vi": "trưng bày"
+      },
+      {
+        "word": "陳述",
+        "reading": "ちんじゅつ",
+        "meaning_vi": "trình bày, trần thuật"
+      },
+      {
+        "word": "陳謝",
+        "reading": "ちんしゃ",
+        "meaning_vi": "xin lỗi, tạ lỗi"
+      }
+    ]
+  },
+  {
+    "character": "陶",
+    "onyomi": [
+      "トウ"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "gốm sứ, hun đúc",
+    "stroke_count": 11,
+    "vocab_examples": [
+      {
+        "word": "陶器",
+        "reading": "とうき",
+        "meaning_vi": "đồ gốm sứ"
+      },
+      {
+        "word": "陶芸",
+        "reading": "とうげい",
+        "meaning_vi": "nghệ thuật gốm"
+      },
+      {
+        "word": "陶酔",
+        "reading": "とうすい",
+        "meaning_vi": "say mê, đắm chìm"
+      }
+    ]
+  },
+  {
+    "character": "飢",
+    "onyomi": [
+      "キ"
+    ],
+    "kunyomi": [
+      "う.える"
+    ],
+    "meaning_vi": "đói, nạn đói",
+    "stroke_count": 10,
+    "vocab_examples": [
+      {
+        "word": "飢える",
+        "reading": "うえる",
+        "meaning_vi": "đói, khát"
+      },
+      {
+        "word": "飢餓",
+        "reading": "きが",
+        "meaning_vi": "nạn đói"
+      },
+      {
+        "word": "飢饉",
+        "reading": "ききん",
+        "meaning_vi": "nạn đói lớn"
+      }
+    ]
+  },
+  {
+    "character": "勘",
+    "onyomi": [
+      "カン"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "linh cảm, trực giác, tính toán",
+    "stroke_count": 11,
+    "vocab_examples": [
+      {
+        "word": "勘違い",
+        "reading": "かんちがい",
+        "meaning_vi": "hiểu nhầm, lầm lẫn"
+      },
+      {
+        "word": "勘が良い",
+        "reading": "かんがいい",
+        "meaning_vi": "nhạy bén, tinh ý"
+      },
+      {
+        "word": "勘定",
+        "reading": "かんじょう",
+        "meaning_vi": "tính tiền, kế toán"
+      }
+    ]
+  },
+  {
+    "character": "勧",
+    "onyomi": [
+      "カン"
+    ],
+    "kunyomi": [
+      "すす.める"
+    ],
+    "meaning_vi": "khuyến khích, mời mọc",
+    "stroke_count": 13,
+    "vocab_examples": [
+      {
+        "word": "勧める",
+        "reading": "すすめる",
+        "meaning_vi": "khuyến khích, đề nghị"
+      },
+      {
+        "word": "勧誘",
+        "reading": "かんゆう",
+        "meaning_vi": "mời mọc, vận động"
+      },
+      {
+        "word": "勧告",
+        "reading": "かんこく",
+        "meaning_vi": "khuyến cáo, khuyên nhủ"
+      }
+    ]
+  },
+  {
+    "character": "匂",
+    "onyomi": [],
+    "kunyomi": [
+      "にお.い",
+      "にお.う"
+    ],
+    "meaning_vi": "mùi hương, hương thơm",
+    "stroke_count": 4,
+    "vocab_examples": [
+      {
+        "word": "匂い",
+        "reading": "におい",
+        "meaning_vi": "mùi hương"
+      },
+      {
+        "word": "匂う",
+        "reading": "におう",
+        "meaning_vi": "có mùi, thơm"
+      },
+      {
+        "word": "花の匂い",
+        "reading": "はなのにおい",
+        "meaning_vi": "mùi hoa"
+      }
+    ]
+  },
+  {
+    "character": "匹",
+    "onyomi": [
+      "ヒツ"
+    ],
+    "kunyomi": [
+      "ひき"
+    ],
+    "meaning_vi": "con (đơn vị đếm động vật nhỏ), tương đương",
+    "stroke_count": 4,
+    "vocab_examples": [
+      {
+        "word": "一匹",
+        "reading": "いっぴき",
+        "meaning_vi": "một con (vật nhỏ)"
+      },
+      {
+        "word": "匹敵",
+        "reading": "ひってき",
+        "meaning_vi": "ngang bằng, sánh ngang"
+      },
+      {
+        "word": "三匹",
+        "reading": "さんびき",
+        "meaning_vi": "ba con"
+      }
+    ]
+  },
+  {
+    "character": "卑",
+    "onyomi": [
+      "ヒ"
+    ],
+    "kunyomi": [
+      "いや.しい",
+      "ひく.める"
+    ],
+    "meaning_vi": "hèn hạ, ti tiện, thấp kém",
+    "stroke_count": 9,
+    "vocab_examples": [
+      {
+        "word": "卑しい",
+        "reading": "いやしい",
+        "meaning_vi": "hèn hạ, ti tiện"
+      },
+      {
+        "word": "卑怯",
+        "reading": "ひきょう",
+        "meaning_vi": "hèn nhát, đê tiện"
+      },
+      {
+        "word": "卑劣",
+        "reading": "ひれつ",
+        "meaning_vi": "đê tiện, bỉ ổi"
+      }
+    ]
+  },
+  {
+    "character": "卓",
+    "onyomi": [
+      "タク"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "xuất sắc, bàn (bàn ăn)",
+    "stroke_count": 8,
+    "vocab_examples": [
+      {
+        "word": "卓越",
+        "reading": "たくえつ",
+        "meaning_vi": "xuất sắc, nổi bật"
+      },
+      {
+        "word": "卓球",
+        "reading": "たっきゅう",
+        "meaning_vi": "bóng bàn"
+      },
+      {
+        "word": "食卓",
+        "reading": "しょくたく",
+        "meaning_vi": "bàn ăn"
+      }
+    ]
+  },
+  {
+    "character": "即",
+    "onyomi": [
+      "ソク"
+    ],
+    "kunyomi": [
+      "すなわ.ち"
+    ],
+    "meaning_vi": "ngay lập tức, tức là",
+    "stroke_count": 7,
+    "vocab_examples": [
+      {
+        "word": "即座",
+        "reading": "そくざ",
+        "meaning_vi": "ngay lập tức"
+      },
+      {
+        "word": "即時",
+        "reading": "そくじ",
+        "meaning_vi": "tức thì, ngay lập tức"
+      },
+      {
+        "word": "即決",
+        "reading": "そっけつ",
+        "meaning_vi": "quyết định ngay"
+      }
+    ]
+  },
+  {
+    "character": "吟",
+    "onyomi": [
+      "ギン"
+    ],
+    "kunyomi": [
+      "うた.う"
+    ],
+    "meaning_vi": "ngâm thơ, ca hát, xét kỹ",
+    "stroke_count": 7,
+    "vocab_examples": [
+      {
+        "word": "吟詠",
+        "reading": "ぎんえい",
+        "meaning_vi": "ngâm thơ"
+      },
+      {
+        "word": "吟味",
+        "reading": "ぎんみ",
+        "meaning_vi": "xem xét kỹ, tuyển chọn"
+      },
+      {
+        "word": "独吟",
+        "reading": "どくぎん",
+        "meaning_vi": "ngâm một mình"
+      }
+    ]
+  },
+  {
+    "character": "啓",
+    "onyomi": [
+      "ケイ"
+    ],
+    "kunyomi": [
+      "ひら.く"
+    ],
+    "meaning_vi": "khai sáng, mở ra, bẩm tấu",
+    "stroke_count": 11,
+    "vocab_examples": [
+      {
+        "word": "啓発",
+        "reading": "けいはつ",
+        "meaning_vi": "khai sáng, giáo dục"
+      },
+      {
+        "word": "啓蒙",
+        "reading": "けいもう",
+        "meaning_vi": "khai sáng, mở mang"
+      },
+      {
+        "word": "拝啓",
+        "reading": "はいけい",
+        "meaning_vi": "kính thưa (đầu thư)"
+      }
+    ]
+  },
+  {
+    "character": "喝",
+    "onyomi": [
+      "カツ"
+    ],
+    "kunyomi": [
+      "しか.る"
+    ],
+    "meaning_vi": "quát mắng, la rầy",
+    "stroke_count": 12,
+    "vocab_examples": [
+      {
+        "word": "喝采",
+        "reading": "かっさい",
+        "meaning_vi": "tán thưởng, vỗ tay"
+      },
+      {
+        "word": "一喝",
+        "reading": "いっかつ",
+        "meaning_vi": "quát to một tiếng"
+      },
+      {
+        "word": "喝破",
+        "reading": "かっぱ",
+        "meaning_vi": "phê phán, bác bỏ rõ ràng"
+      }
+    ]
+  },
+  {
+    "character": "喩",
+    "onyomi": [
+      "ユ"
+    ],
+    "kunyomi": [
+      "たと.える"
+    ],
+    "meaning_vi": "ví dụ, ẩn dụ",
+    "stroke_count": 12,
+    "vocab_examples": [
+      {
+        "word": "比喩",
+        "reading": "ひゆ",
+        "meaning_vi": "ẩn dụ, so sánh"
+      },
+      {
+        "word": "直喩",
+        "reading": "ちょくゆ",
+        "meaning_vi": "so sánh trực tiếp"
+      },
+      {
+        "word": "隠喩",
+        "reading": "いんゆ",
+        "meaning_vi": "ẩn dụ"
+      }
+    ]
+  },
+  {
+    "character": "坑",
+    "onyomi": [
+      "コウ"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "hầm mỏ, hố đào",
+    "stroke_count": 7,
+    "vocab_examples": [
+      {
+        "word": "坑道",
+        "reading": "こうどう",
+        "meaning_vi": "đường hầm mỏ"
+      },
+      {
+        "word": "炭坑",
+        "reading": "たんこう",
+        "meaning_vi": "mỏ than"
+      },
+      {
+        "word": "坑夫",
+        "reading": "こうふ",
+        "meaning_vi": "thợ mỏ"
+      }
+    ]
+  },
+  {
+    "character": "培",
+    "onyomi": [
+      "バイ"
+    ],
+    "kunyomi": [
+      "つちか.う"
+    ],
+    "meaning_vi": "bồi dưỡng, vun trồng",
+    "stroke_count": 11,
+    "vocab_examples": [
+      {
+        "word": "培う",
+        "reading": "つちかう",
+        "meaning_vi": "bồi dưỡng, nuôi dưỡng"
+      },
+      {
+        "word": "培養",
+        "reading": "ばいよう",
+        "meaning_vi": "nuôi cấy, bồi dưỡng"
+      },
+      {
+        "word": "栽培",
+        "reading": "さいばい",
+        "meaning_vi": "trồng trọt, canh tác"
+      }
+    ]
+  },
+  {
+    "character": "堕",
+    "onyomi": [
+      "ダ"
+    ],
+    "kunyomi": [
+      "お.ちる"
+    ],
+    "meaning_vi": "sa ngã, sụp đổ",
+    "stroke_count": 12,
+    "vocab_examples": [
+      {
+        "word": "堕落",
+        "reading": "だらく",
+        "meaning_vi": "sa đọa, tha hóa"
+      },
+      {
+        "word": "堕胎",
+        "reading": "だたい",
+        "meaning_vi": "phá thai"
+      },
+      {
+        "word": "堕天使",
+        "reading": "だてんし",
+        "meaning_vi": "thiên thần sa ngã"
+      }
+    ]
+  },
+  {
+    "character": "嚇",
+    "onyomi": [
+      "カク"
+    ],
+    "kunyomi": [
+      "おど.す"
+    ],
+    "meaning_vi": "đe dọa, hù dọa",
+    "stroke_count": 17,
+    "vocab_examples": [
+      {
+        "word": "嚇す",
+        "reading": "おどす",
+        "meaning_vi": "đe dọa, hù dọa"
+      },
+      {
+        "word": "威嚇",
+        "reading": "いかく",
+        "meaning_vi": "đe dọa, uy hiếp"
+      },
+      {
+        "word": "脅嚇",
+        "reading": "きょうかく",
+        "meaning_vi": "hăm dọa"
+      }
+    ]
+  },
+  {
+    "character": "奨",
+    "onyomi": [
+      "ショウ"
+    ],
+    "kunyomi": [
+      "すす.める"
+    ],
+    "meaning_vi": "khuyến khích, khuyến thưởng",
+    "stroke_count": 13,
+    "vocab_examples": [
+      {
+        "word": "奨学金",
+        "reading": "しょうがくきん",
+        "meaning_vi": "học bổng"
+      },
+      {
+        "word": "奨励",
+        "reading": "しょうれい",
+        "meaning_vi": "khuyến khích, cổ vũ"
+      },
+      {
+        "word": "推奨",
+        "reading": "すいしょう",
+        "meaning_vi": "khuyến nghị, đề xuất"
+      }
+    ]
+  }
+]

@@ -1,0 +1,422 @@
+[
+  {
+    "pattern": "〜かけ / 〜かける",
+    "explanation_vi": "Đang làm dở / Làm được một nửa mà chưa xong. Dùng để diễn tả hành động đang tiến hành nhưng chưa hoàn thành, hoặc sự vật đang ở trạng thái giữa chừng. Ghép vào dạng gốc (masu-stem) của động từ. Ví dụ: 食べかけ (ăn dở), 読みかける (đọc dở dang).",
+    "examples": [
+      {
+        "ja": "食べかけのパンをテーブルの上に置いたまま出かけてしまった。",
+        "vi": "Đã ra ngoài mà để chiếc bánh mì ăn dở trên bàn."
+      },
+      {
+        "ja": "読みかけた本に栞を挟んで、続きは明日読もうと思う。",
+        "vi": "Tôi kẹp bookmark vào cuốn sách đang đọc dở và định ngày mai đọc tiếp."
+      }
+    ],
+    "notes_vi": "〜かけの + danh từ: chiếc bánh ăn dở = 食べかけのパン. 〜かける: bắt đầu làm gì đó nhưng chưa xong."
+  },
+  {
+    "pattern": "〜っ放し",
+    "explanation_vi": "Để mặc / Để nguyên không làm gì. Diễn tả trạng thái để yên, không xử lý hoặc không hành động tiếp, thường mang ý tiêu cực (thờ ơ, bất cẩn). Ghép sau dạng gốc (masu-stem) của động từ.",
+    "examples": [
+      {
+        "ja": "エアコンをつけっ放しで寝てしまい、朝起きたら体が冷えていた。",
+        "vi": "Tôi ngủ quên để điều hòa bật mãi, sáng dậy thì người lạnh cóng."
+      },
+      {
+        "ja": "ドアを開けっ放しにしないでください。虫が入ってきますよ。",
+        "vi": "Đừng để cửa mở hoài như vậy. Côn trùng sẽ bay vào đấy."
+      }
+    ],
+    "notes_vi": "Thường dùng với: つけっ放し (để bật mãi), 開けっ放し (để mở mãi), 出しっ放し (để ra mà không cất)."
+  },
+  {
+    "pattern": "〜かのように / 〜かのようだ",
+    "explanation_vi": "Như thể... / Tựa như... (thực tế không phải vậy nhưng nhìn/nghe cứ như là). Diễn tả sự so sánh giả định, ý nói rằng điều gì đó trông hoặc nghe giống như một điều không có thật.",
+    "examples": [
+      {
+        "ja": "彼は何も知らないかのように振る舞っていたが、実は全部知っていた。",
+        "vi": "Anh ấy cứ tỏ ra như thể không biết gì, nhưng thực ra đã biết hết rồi."
+      },
+      {
+        "ja": "あの二人は初めて会ったかのように、ぎこちなく話していた。",
+        "vi": "Hai người đó nói chuyện ngượng ngùng như thể lần đầu gặp nhau vậy."
+      }
+    ],
+    "notes_vi": "Cấu trúc: [thể thông thường] + かのように / かのようだ. Dùng được với động từ, tính từ và danh từ."
+  },
+  {
+    "pattern": "〜わけにはいかない",
+    "explanation_vi": "Không thể... / Không thể làm được... (bất khả vì lý do đạo đức/xã hội). Dùng để nói rằng mặc dù có thể muốn làm nhưng không thể làm vì lý do đạo đức, xã hội, hoặc quy tắc. Khác với 〜できない (không có khả năng).",
+    "examples": [
+      {
+        "ja": "試験中にカンニングするわけにはいかない。",
+        "vi": "Không thể gian lận trong lúc thi được."
+      },
+      {
+        "ja": "友達が困っているのに、助けないわけにはいかない。",
+        "vi": "Bạn bè đang gặp khó khăn mà không thể không giúp được."
+      }
+    ],
+    "notes_vi": "Cấu trúc: V(辞書形) + わけにはいかない (không thể làm vì sẽ không phù hợp), V(ない形) + わけにはいかない (không thể không làm)."
+  },
+  {
+    "pattern": "〜にわたって / 〜にわたる",
+    "explanation_vi": "Trong suốt... / Trải dài... (phạm vi rộng về thời gian hoặc không gian). Dùng để diễn tả phạm vi rộng về thời gian hoặc không gian. 〜にわたって là phó từ, 〜にわたる đứng trước danh từ.",
+    "examples": [
+      {
+        "ja": "三日間にわたって、激しい雨が続いた。",
+        "vi": "Mưa lớn kéo dài suốt ba ngày."
+      },
+      {
+        "ja": "長年にわたる研究の成果がついに発表された。",
+        "vi": "Kết quả nghiên cứu trải dài nhiều năm cuối cùng đã được công bố."
+      }
+    ],
+    "notes_vi": "Cấu trúc: N(phạm vi) + にわたって / にわたる + N. Phân biệt với 〜にかけて (khoảng từ...đến...): 〜にわたって nhấn mạnh toàn bộ phạm vi liên tục."
+  },
+  {
+    "pattern": "〜に沿って",
+    "explanation_vi": "Dọc theo... / Theo đúng... / Phù hợp với... Có hai nghĩa: (1) di chuyển dọc theo địa điểm (sông, đường); (2) làm theo đúng phương hướng, kế hoạch, yêu cầu đã đặt ra.",
+    "examples": [
+      {
+        "ja": "川に沿って歩くと、きれいな景色が楽しめます。",
+        "vi": "Đi dọc theo sông thì có thể ngắm cảnh đẹp."
+      },
+      {
+        "ja": "計画に沿って、プロジェクトを進めていきましょう。",
+        "vi": "Hãy thúc đẩy dự án theo đúng kế hoạch đã đề ra."
+      }
+    ],
+    "notes_vi": "Khi dùng theo nghĩa vật lý: dọc theo một đường thẳng. Khi dùng theo nghĩa trừu tượng: làm theo đúng hướng/kế hoạch."
+  },
+  {
+    "pattern": "〜てこそ",
+    "explanation_vi": "Chính vì... mới... / Chỉ khi... thì mới... Nhấn mạnh rằng chỉ khi thực hiện hành động ở vế trước thì điều ở vế sau mới đạt được hoặc mới có ý nghĩa. Mang tính nhấn mạnh mạnh hơn 〜て初めて.",
+    "examples": [
+      {
+        "ja": "苦労してこそ、成功の喜びが分かるというものだ。",
+        "vi": "Chính vì phải trải qua khó khăn mới hiểu được niềm vui của thành công."
+      },
+      {
+        "ja": "実際にやってみてこそ、難しさが分かる。",
+        "vi": "Chỉ khi thực sự thử làm mới hiểu được sự khó khăn."
+      }
+    ],
+    "notes_vi": "Dùng thể て của động từ + こそ. Khác với 〜てから: 〜てこそ nhấn mạnh điều kiện thiết yếu chứ không chỉ thứ tự."
+  },
+  {
+    "pattern": "〜こそ",
+    "explanation_vi": "Chính... / Đích thực... (trợ từ nhấn mạnh). Dùng để nhấn mạnh một danh từ, đại từ hoặc mệnh đề, mang ý nghĩa 'chính điều đó/người đó mới là'. Thường thay thế は, が, を trong câu.",
+    "examples": [
+      {
+        "ja": "今年こそ、絶対に合格してみせる。",
+        "vi": "Chính năm nay, nhất định tôi sẽ thi đậu."
+      },
+      {
+        "ja": "あなたこそ、このチームに必要な人材だ。",
+        "vi": "Chính bạn mới là người tài mà đội này cần."
+      }
+    ],
+    "notes_vi": "こそ thường đứng sau danh từ, đại từ, hoặc trạng từ chỉ thời gian như 今年こそ, 今度こそ."
+  },
+  {
+    "pattern": "〜というか",
+    "explanation_vi": "Hay nói đúng hơn là... / Thật ra thì... / Nói thế nào nhỉ... Dùng khi người nói muốn sửa lại hoặc diễn đạt lại điều vừa nói một cách chính xác hơn, hoặc khi còn đang cân nhắc cách nói.",
+    "examples": [
+      {
+        "ja": "あの映画は面白いというか、ちょっと怖かった。",
+        "vi": "Bộ phim đó hay hay nói đúng hơn là hơi đáng sợ."
+      },
+      {
+        "ja": "彼女は優しいというか、ちょっとお人好しすぎるんだよね。",
+        "vi": "Cô ấy tốt bụng, hay nói đúng hơn là hơi cả tin quá đấy."
+      }
+    ],
+    "notes_vi": "Thường dùng trong hội thoại hàng ngày khi nói chuyện thân mật, thể hiện sự do dự trong cách diễn đạt."
+  },
+  {
+    "pattern": "〜というわけだ",
+    "explanation_vi": "Thế mới là... / Vì vậy mà... / Có nghĩa là... Dùng để đưa ra kết luận hoặc giải thích logic dựa trên những thông tin đã biết. Mang ý 'bây giờ thì đã hiểu vì sao rồi'.",
+    "examples": [
+      {
+        "ja": "彼は毎日3時間練習しているから、上手なのは当然だというわけだ。",
+        "vi": "Anh ấy luyện tập 3 tiếng mỗi ngày, vì vậy giỏi là hiển nhiên thôi."
+      },
+      {
+        "ja": "全員が反対したから、計画は中止になったというわけだ。",
+        "vi": "Tất cả đều phản đối nên kế hoạch bị hủy — đó là lý do vậy."
+      }
+    ],
+    "notes_vi": "Khác với 〜わけだ trong N3 part2 ở chỗ 〜というわけだ thường dùng sau khi giải thích, nhấn mạnh kết luận rõ ràng hơn."
+  },
+  {
+    "pattern": "〜というわけではない",
+    "explanation_vi": "Không phải là... / Không hẳn là... Dùng để phủ nhận một cách diễn giải hoặc kết luận cụ thể mà người khác có thể đã hiểu nhầm. Mang ý 'không nên hiểu như vậy'.",
+    "examples": [
+      {
+        "ja": "日本語が話せるからといって、日本のことが何でも分かるというわけではない。",
+        "vi": "Dù có nói được tiếng Nhật cũng không có nghĩa là hiểu hết mọi thứ về Nhật Bản."
+      },
+      {
+        "ja": "値段が高いからといって、品質が良いというわけではない。",
+        "vi": "Giá đắt không có nghĩa là chất lượng tốt."
+      }
+    ],
+    "notes_vi": "Thường dùng với からといって～というわけではない để phủ nhận một kết luận logic đơn giản."
+  },
+  {
+    "pattern": "〜かと思ったら",
+    "explanation_vi": "Vừa tưởng là... thì lại... Diễn tả tình huống bất ngờ: vừa nghĩ điều gì đó sẽ xảy ra thì ngay lập tức một điều khác (thường là ngược lại) lại xảy ra. Mang tính ngạc nhiên hoặc bất ngờ.",
+    "examples": [
+      {
+        "ja": "やっと晴れたかと思ったら、またすぐに雨が降り出した。",
+        "vi": "Vừa tưởng là trời đã hửng nắng thì ngay lập tức lại bắt đầu mưa rồi."
+      },
+      {
+        "ja": "彼が来たかと思ったら、すぐに帰ってしまった。",
+        "vi": "Vừa tưởng là anh ấy đến rồi thì lại về ngay."
+      }
+    ],
+    "notes_vi": "Vế trước dùng thể た + かと思ったら. Thường diễn tả sự thay đổi bất ngờ, nhanh chóng."
+  },
+  {
+    "pattern": "〜て以来",
+    "explanation_vi": "Kể từ khi... / Từ khi... đến nay. Diễn tả rằng từ thời điểm một hành động hoặc sự kiện nào đó xảy ra, trạng thái hiện tại vẫn tiếp tục cho đến bây giờ. Nhấn mạnh khoảng thời gian kéo dài.",
+    "examples": [
+      {
+        "ja": "日本に来て以来、ずっと健康に気をつけている。",
+        "vi": "Kể từ khi đến Nhật, tôi luôn chú ý đến sức khỏe."
+      },
+      {
+        "ja": "大学を卒業して以来、彼とは一度も会っていない。",
+        "vi": "Kể từ khi tốt nghiệp đại học, tôi chưa gặp anh ấy lần nào."
+      }
+    ],
+    "notes_vi": "Cấu trúc: V(thể て) + 以来. Khác với 〜てから: 〜て以来 nhấn mạnh trạng thái liên tục từ đó đến nay."
+  },
+  {
+    "pattern": "〜とは限らない",
+    "explanation_vi": "Không nhất thiết là... / Không phải lúc nào cũng... Dùng để phủ nhận một quy tắc chung hoặc kỳ vọng rằng điều gì đó luôn luôn đúng. Mang ý 'có ngoại lệ'.",
+    "examples": [
+      {
+        "ja": "高い薬が必ずしも効くとは限らない。",
+        "vi": "Thuốc đắt tiền không nhất thiết là có hiệu quả."
+      },
+      {
+        "ja": "有名な大学を出たからといって、必ず成功するとは限らない。",
+        "vi": "Dù tốt nghiệp đại học nổi tiếng cũng không chắc là thành công."
+      }
+    ],
+    "notes_vi": "Thường dùng với 必ずしも～とは限らない để nhấn mạnh tính không tuyệt đối."
+  },
+  {
+    "pattern": "〜に関わる",
+    "explanation_vi": "Liên quan đến... / Có ảnh hưởng đến... Dùng để diễn tả điều gì đó liên quan trực tiếp, có tác động, hoặc gắn liền với một vấn đề quan trọng. Thường dùng với danh dự, tính mạng, số phận.",
+    "examples": [
+      {
+        "ja": "これは命に関わる問題だから、真剣に考えなければならない。",
+        "vi": "Đây là vấn đề liên quan đến tính mạng nên phải suy nghĩ nghiêm túc."
+      },
+      {
+        "ja": "個人情報の取り扱いは会社の信頼に関わることだ。",
+        "vi": "Việc xử lý thông tin cá nhân là điều liên quan đến uy tín của công ty."
+      }
+    ],
+    "notes_vi": "Cấu trúc: N + に関わる. Phân biệt với 〜に関して (về chủ đề/nội dung): 〜に関わる nhấn mạnh ảnh hưởng hoặc liên quan mật thiết hơn."
+  },
+  {
+    "pattern": "〜はもとより",
+    "explanation_vi": "Không chỉ... mà còn... / ...đã đành rồi, còn... Tương tự 〜はもちろん nhưng mang sắc thái trang trọng hơn. Dùng để nêu một điều hiển nhiên trước rồi bổ sung thêm điều đáng chú ý hơn.",
+    "examples": [
+      {
+        "ja": "この大学は国内はもとより、海外でも知名度が高い。",
+        "vi": "Trường đại học này nổi tiếng không chỉ trong nước mà còn cả ở nước ngoài."
+      },
+      {
+        "ja": "体力はもとより、精神力も鍛えなければならない。",
+        "vi": "Không chỉ thể lực, mà tinh thần cũng cần được rèn luyện."
+      }
+    ],
+    "notes_vi": "Mang sắc thái trang trọng hơn 〜はもちろん, thường dùng trong văn viết hoặc bài phát biểu."
+  },
+  {
+    "pattern": "〜といっても",
+    "explanation_vi": "Tuy nói là... nhưng thực ra... Dùng để đặt ra một hạn định hoặc điều chỉnh cho điều vừa nói, mang ý 'nói vậy nhưng không đến mức...'. Thường dùng để giải thích thực tế không quá như người ta tưởng.",
+    "examples": [
+      {
+        "ja": "日本語が話せるといっても、まだ初心者レベルです。",
+        "vi": "Tuy nói là biết tiếng Nhật nhưng vẫn chỉ là trình độ người mới bắt đầu."
+      },
+      {
+        "ja": "近いといっても、歩いて30分かかります。",
+        "vi": "Tuy nói là gần nhưng đi bộ cũng mất 30 phút."
+      }
+    ],
+    "notes_vi": "Cấu trúc: [thể thông thường] + といっても. Thường làm giảm nhẹ sự kỳ vọng của người nghe về điều vừa được đề cập."
+  },
+  {
+    "pattern": "〜のは〜だ",
+    "explanation_vi": "Điều/người... chính là... (câu nhấn mạnh - cleft sentence). Dùng để nhấn mạnh một yếu tố trong câu bằng cách đặt nó vào vị trí trọng tâm. Giúp trả lời câu hỏi 'cái gì / ai / khi nào / ở đâu' một cách nhấn mạnh.",
+    "examples": [
+      {
+        "ja": "私が毎日勉強しているのは、来年の試験に合格するためだ。",
+        "vi": "Điều tôi học mỗi ngày chính là để đậu kỳ thi năm sau."
+      },
+      {
+        "ja": "このカメラを買ったのは先週のことだ。",
+        "vi": "Việc tôi mua chiếc máy ảnh này là tuần trước."
+      }
+    ],
+    "notes_vi": "Cấu trúc: [mệnh đề] + のは + [phần nhấn mạnh] + だ. Rất phổ biến trong hội thoại và văn viết."
+  },
+  {
+    "pattern": "〜のだ / 〜んだ",
+    "explanation_vi": "Thì ra là... / Mà... (giải thích, nhấn mạnh). Dùng để giải thích lý do, bối cảnh, hoặc thực tế của sự việc. 〜んだ là dạng nói thân mật của 〜のだ. Cũng dùng để yêu cầu giải thích (〜のですか/んですか).",
+    "examples": [
+      {
+        "ja": "顔色が悪いね。どうしたんだ？体の具合が悪いのか？",
+        "vi": "Trông mặt tái vậy. Sao thế? Bị bệnh à?"
+      },
+      {
+        "ja": "遅れてごめん。電車が遅延したんだ。",
+        "vi": "Xin lỗi vì đến muộn. Thì ra là tàu điện bị trễ."
+      }
+    ],
+    "notes_vi": "〜のだ dùng trong văn viết/trang trọng; 〜んだ dùng trong văn nói thân mật. Cực kỳ phổ biến trong tiếng Nhật hàng ngày."
+  },
+  {
+    "pattern": "〜ものだから",
+    "explanation_vi": "Bởi vì... / Mà là do... Diễn tả nguyên nhân hoặc lý do giải thích cho hành động/kết quả, thường mang tính biện hộ hoặc giải thích sự bất thường. Mang sắc thái chủ quan hơn 〜から.",
+    "examples": [
+      {
+        "ja": "急に呼ばれたものだから、何も準備できなかった。",
+        "vi": "Vì bị gọi đột ngột nên không chuẩn bị được gì cả."
+      },
+      {
+        "ja": "子どもが泣くものだから、会議に集中できなかった。",
+        "vi": "Vì đứa bé cứ khóc nên không thể tập trung họp được."
+      }
+    ],
+    "notes_vi": "Thường dùng để biện hộ cho hành vi của mình hoặc giải thích nguyên nhân nằm ngoài tầm kiểm soát."
+  },
+  {
+    "pattern": "〜だって",
+    "explanation_vi": "Thậm chí... / Ngay cả... / Cũng... Là trợ từ nhấn mạnh mang nghĩa bao gồm, tương tự 〜でも nhưng dùng trong văn nói thân mật, đôi khi mang sắc thái ngạc nhiên hoặc phản bác.",
+    "examples": [
+      {
+        "ja": "子どもだって、そのくらいのことは知っているよ。",
+        "vi": "Ngay cả trẻ con cũng biết chuyện đó đấy."
+      },
+      {
+        "ja": "私だって、失敗することはある。",
+        "vi": "Ngay cả tôi cũng có lúc thất bại."
+      }
+    ],
+    "notes_vi": "Dùng trong văn nói thân mật. Cũng có nghĩa 'bởi vì' trong văn nói của trẻ em / phương ngữ: 「だって、知らなかったんだもん」."
+  },
+  {
+    "pattern": "〜さ (danh từ hóa tính từ)",
+    "explanation_vi": "Độ... / Mức... (hậu tố tạo danh từ từ tính từ). Ghép 〜さ vào gốc tính từ い hoặc な để tạo danh từ chỉ mức độ hoặc tính chất. Ví dụ: 高さ (độ cao), 長さ (độ dài), 親切さ (sự tử tế).",
+    "examples": [
+      {
+        "ja": "この橋の長さは1キロメートルです。",
+        "vi": "Chiều dài của cây cầu này là 1 km."
+      },
+      {
+        "ja": "彼女の優しさに感動した。",
+        "vi": "Tôi cảm động trước sự dịu dàng của cô ấy."
+      }
+    ],
+    "notes_vi": "Phân biệt với 〜み: 〜さ chỉ mức độ khách quan (高さ=chiều cao), còn 〜み mang tính chất cảm xúc (暖かみ=hơi ấm dễ chịu)."
+  },
+  {
+    "pattern": "〜っけ",
+    "explanation_vi": "... nhỉ? / ... không nhỉ? (hỏi lại, tìm kiếm xác nhận). Dùng khi người nói muốn xác nhận lại điều mình đã biết hoặc đang không nhớ rõ. Là dạng thân mật, không dùng với cấp trên.",
+    "examples": [
+      {
+        "ja": "明日の会議は何時からだっけ？",
+        "vi": "Cuộc họp ngày mai bắt đầu từ mấy giờ nhỉ?"
+      },
+      {
+        "ja": "彼の名前はなんていったっけ、もう忘れちゃった。",
+        "vi": "Tên anh ấy là gì nhỉ, tôi quên mất rồi."
+      }
+    ],
+    "notes_vi": "Dùng ở cuối câu. Sau thể た (だっけ) hoặc thể từ điển + っけ. Chỉ dùng trong văn nói thân mật."
+  },
+  {
+    "pattern": "〜ようとしている",
+    "explanation_vi": "Đang cố làm... / Đang chuẩn bị làm... Diễn tả hành động đang trong giai đoạn cố thực hiện hoặc chuẩn bị thực hiện nhưng chưa xong. Khác với 〜ようとする (cố gắng nhưng không thành).",
+    "examples": [
+      {
+        "ja": "彼は立ち上がろうとしているが、足が痛くてなかなかできない。",
+        "vi": "Anh ấy đang cố đứng dậy nhưng chân đau nên khó làm được."
+      },
+      {
+        "ja": "太陽が沈もうとしている。早く写真を撮らなければ。",
+        "vi": "Mặt trời đang sắp lặn. Phải chụp ảnh nhanh thôi."
+      }
+    ],
+    "notes_vi": "Cấu trúc: V(thể volitional/ý chí) + としている. Nhấn mạnh quá trình đang diễn ra chứ chưa hoàn thành."
+  },
+  {
+    "pattern": "〜かねない",
+    "explanation_vi": "Có thể... / Có nguy cơ... (khả năng tiêu cực). Dùng để cảnh báo rằng nếu không cẩn thận thì điều xấu có thể xảy ra. Khác với 〜かもしれない: 〜かねない mang sắc thái lo ngại/cảnh báo mạnh hơn.",
+    "examples": [
+      {
+        "ja": "このままのペースで働き続けたら、体を壊しかねない。",
+        "vi": "Nếu cứ tiếp tục làm việc với nhịp độ này thì có thể sẽ hỏng sức khỏe."
+      },
+      {
+        "ja": "不注意な発言は、相手を傷つけかねない。",
+        "vi": "Những lời nói thiếu cẩn thận có nguy cơ làm tổn thương người khác."
+      }
+    ],
+    "notes_vi": "Cấu trúc: V(masu-stem) + かねない. Nhấn mạnh nguy cơ tiêu cực có thể xảy ra nếu không để ý."
+  },
+  {
+    "pattern": "〜ようにしている",
+    "explanation_vi": "Luôn cố gắng... / Có thói quen cố... Diễn tả nỗ lực có ý thức, chủ động duy trì thói quen hoặc hành vi nào đó. Khác với 〜ようになっている (đã trở thành thói quen tự nhiên).",
+    "examples": [
+      {
+        "ja": "健康のために、毎日野菜を食べるようにしている。",
+        "vi": "Vì sức khỏe, tôi luôn cố ăn rau mỗi ngày."
+      },
+      {
+        "ja": "夜は早く寝るようにしているけど、なかなか難しい。",
+        "vi": "Tôi cố gắng đi ngủ sớm vào ban đêm, nhưng thật khó."
+      }
+    ],
+    "notes_vi": "Khác với 〜ようになっている (quy định/tự nhiên) và 〜ことにしている (đã quyết định). 〜ようにしている nhấn mạnh nỗ lực cá nhân."
+  },
+  {
+    "pattern": "〜のに対して",
+    "explanation_vi": "Trong khi... thì... / So sánh với... thì... Dùng để đối chiếu hoặc so sánh hai sự việc, tình huống, hoặc tính chất trái nhau. Thường dùng để nêu sự tương phản rõ ràng.",
+    "examples": [
+      {
+        "ja": "兄は無口なのに対して、弟は話し好きだ。",
+        "vi": "Trong khi anh trai ít nói thì em trai lại thích nói chuyện."
+      },
+      {
+        "ja": "先進国では少子化が進んでいるのに対して、途上国では人口が増え続けている。",
+        "vi": "Trong khi các nước phát triển đang giảm tỷ lệ sinh thì các nước đang phát triển dân số vẫn tiếp tục tăng."
+      }
+    ],
+    "notes_vi": "Dùng để so sánh rõ ràng hai chiều đối lập. Phổ biến trong văn viết và bài luận."
+  },
+  {
+    "pattern": "〜に対する",
+    "explanation_vi": "Đối với... (dạng bổ ngữ). Là dạng thể liên thể (attributive form) của 〜に対して, dùng trước danh từ để bổ nghĩa. Diễn tả hành động, cảm xúc, hoặc thái độ hướng tới đối tượng nào đó.",
+    "examples": [
+      {
+        "ja": "先生に対する尊敬の気持ちを忘れないでください。",
+        "vi": "Hãy đừng quên sự tôn trọng đối với thầy giáo."
+      },
+      {
+        "ja": "この問題に対する政府の対応は遅すぎる。",
+        "vi": "Phản ứng của chính phủ đối với vấn đề này quá chậm."
+      }
+    ],
+    "notes_vi": "Cấu trúc: N + に対する + N. Khác với 〜に対して đứng trước vế câu: 〜に対する đứng trước danh từ."
+  }
+]

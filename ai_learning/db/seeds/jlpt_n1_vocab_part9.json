@@ -1,0 +1,1087 @@
+[
+  {
+    "word": "孤高",
+    "reading": "ここう",
+    "romaji": "kokou",
+    "meaning_vi": "cô độc cao thượng, đứng một mình không cần ai",
+    "part_of_speech": "noun",
+    "tags": [
+      "literary",
+      "abstract",
+      "formal"
+    ]
+  },
+  {
+    "word": "逡巡",
+    "reading": "しゅんじゅん",
+    "romaji": "shunjun",
+    "meaning_vi": "do dự, lưỡng lự, không dám tiến tới",
+    "part_of_speech": "noun",
+    "tags": [
+      "literary",
+      "formal",
+      "written"
+    ]
+  },
+  {
+    "word": "躊躇",
+    "reading": "ちゅうちょ",
+    "romaji": "chuucho",
+    "meaning_vi": "do dự, ngập ngừng",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "written"
+    ]
+  },
+  {
+    "word": "畏怖",
+    "reading": "いふ",
+    "romaji": "ifu",
+    "meaning_vi": "kính sợ, khiếp sợ, sợ hãi",
+    "part_of_speech": "noun",
+    "tags": [
+      "literary",
+      "formal",
+      "written"
+    ]
+  },
+  {
+    "word": "畏敬",
+    "reading": "いけい",
+    "romaji": "ikei",
+    "meaning_vi": "kính sợ và ngưỡng mộ, tôn kính",
+    "part_of_speech": "noun",
+    "tags": [
+      "literary",
+      "formal",
+      "written"
+    ]
+  },
+  {
+    "word": "崇拝",
+    "reading": "すうはい",
+    "romaji": "suuhai",
+    "meaning_vi": "tôn thờ, sùng bái, ngưỡng mộ",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "literary"
+    ]
+  },
+  {
+    "word": "礼讃",
+    "reading": "らいさん",
+    "romaji": "raisan",
+    "meaning_vi": "ca ngợi, tán dương, tụng ca",
+    "part_of_speech": "noun",
+    "tags": [
+      "literary",
+      "formal",
+      "written"
+    ]
+  },
+  {
+    "word": "追慕",
+    "reading": "ついぼ",
+    "romaji": "tsuibo",
+    "meaning_vi": "nhớ nhung người đã mất, hoài niệm",
+    "part_of_speech": "noun",
+    "tags": [
+      "literary",
+      "formal",
+      "written"
+    ]
+  },
+  {
+    "word": "哀惜",
+    "reading": "あいせき",
+    "romaji": "aiseki",
+    "meaning_vi": "thương tiếc, thương xót",
+    "part_of_speech": "noun",
+    "tags": [
+      "literary",
+      "formal",
+      "written"
+    ]
+  },
+  {
+    "word": "痛惜",
+    "reading": "つうせき",
+    "romaji": "tsuuseki",
+    "meaning_vi": "vô cùng tiếc, đau đớn tiếc nuối",
+    "part_of_speech": "noun",
+    "tags": [
+      "literary",
+      "formal",
+      "written"
+    ]
+  },
+  {
+    "word": "遺憾",
+    "reading": "いかん",
+    "romaji": "ikan",
+    "meaning_vi": "đáng tiếc, hối tiếc, bất mãn",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "written",
+      "politics"
+    ]
+  },
+  {
+    "word": "猜疑",
+    "reading": "さいぎ",
+    "romaji": "saigi",
+    "meaning_vi": "nghi ngờ, đa nghi",
+    "part_of_speech": "noun",
+    "tags": [
+      "literary",
+      "formal",
+      "written"
+    ]
+  },
+  {
+    "word": "疑念",
+    "reading": "ぎねん",
+    "romaji": "ginen",
+    "meaning_vi": "mối nghi ngờ, sự hoài nghi",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "written"
+    ]
+  },
+  {
+    "word": "真髄",
+    "reading": "しんずい",
+    "romaji": "shinzui",
+    "meaning_vi": "tinh túy, cốt tủy, bản chất sâu xa",
+    "part_of_speech": "noun",
+    "tags": [
+      "literary",
+      "formal",
+      "written"
+    ]
+  },
+  {
+    "word": "真相",
+    "reading": "しんそう",
+    "romaji": "shinsou",
+    "meaning_vi": "sự thật, thực tình, chân tướng",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "written"
+    ]
+  },
+  {
+    "word": "真意",
+    "reading": "しんい",
+    "romaji": "shin'i",
+    "meaning_vi": "ý định thực sự, ý nghĩa thực",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "written"
+    ]
+  },
+  {
+    "word": "虚無感",
+    "reading": "きょむかん",
+    "romaji": "kyomukan",
+    "meaning_vi": "cảm giác trống rỗng, cảm giác hư vô",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract",
+      "literary"
+    ]
+  },
+  {
+    "word": "創造力",
+    "reading": "そうぞうりょく",
+    "romaji": "souzouryoku",
+    "meaning_vi": "năng lực sáng tạo",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract"
+    ]
+  },
+  {
+    "word": "統率力",
+    "reading": "とうそつりょく",
+    "romaji": "tousotsuryoku",
+    "meaning_vi": "năng lực chỉ huy, khả năng lãnh đạo đội nhóm",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract",
+      "formal"
+    ]
+  },
+  {
+    "word": "脆弱",
+    "reading": "ぜいじゃく",
+    "romaji": "zeijaku",
+    "meaning_vi": "mỏng manh, dễ tổn thương, bất lực",
+    "part_of_speech": "adjective",
+    "tags": [
+      "formal",
+      "written"
+    ]
+  },
+  {
+    "word": "強靭",
+    "reading": "きょうじん",
+    "romaji": "kyoujin",
+    "meaning_vi": "bền bỉ, cứng cáp, kiên cường",
+    "part_of_speech": "adjective",
+    "tags": [
+      "formal",
+      "written"
+    ]
+  },
+  {
+    "word": "堅牢",
+    "reading": "けんろう",
+    "romaji": "kenrou",
+    "meaning_vi": "chắc chắn, bền vững, kiên cố",
+    "part_of_speech": "adjective",
+    "tags": [
+      "formal",
+      "written"
+    ]
+  },
+  {
+    "word": "緻密",
+    "reading": "ちみつ",
+    "romaji": "chimitsu",
+    "meaning_vi": "tỉ mỉ, chi tiết, chặt chẽ",
+    "part_of_speech": "adjective",
+    "tags": [
+      "formal",
+      "written"
+    ]
+  },
+  {
+    "word": "精巧",
+    "reading": "せいこう",
+    "romaji": "seikou",
+    "meaning_vi": "tinh xảo, khéo léo, tinh vi",
+    "part_of_speech": "adjective",
+    "tags": [
+      "formal",
+      "written"
+    ]
+  },
+  {
+    "word": "精妙",
+    "reading": "せいみょう",
+    "romaji": "seimyou",
+    "meaning_vi": "tinh diệu, tuyệt vời tinh tế",
+    "part_of_speech": "adjective",
+    "tags": [
+      "literary",
+      "formal",
+      "written"
+    ]
+  },
+  {
+    "word": "厳正",
+    "reading": "げんせい",
+    "romaji": "gensei",
+    "meaning_vi": "nghiêm chỉnh, công bằng nghiêm minh",
+    "part_of_speech": "adjective",
+    "tags": [
+      "formal",
+      "written",
+      "legal"
+    ]
+  },
+  {
+    "word": "重厚",
+    "reading": "じゅうこう",
+    "romaji": "juukou",
+    "meaning_vi": "trầm ổn, vững chắc, có bề dày",
+    "part_of_speech": "adjective",
+    "tags": [
+      "literary",
+      "formal",
+      "written"
+    ]
+  },
+  {
+    "word": "軽率",
+    "reading": "けいそつ",
+    "romaji": "keisotsu",
+    "meaning_vi": "bộp chộp, khinh suất, thiếu suy nghĩ",
+    "part_of_speech": "adjective",
+    "tags": [
+      "formal",
+      "written"
+    ]
+  },
+  {
+    "word": "思慮深い",
+    "reading": "しりょぶかい",
+    "romaji": "shiryobukai",
+    "meaning_vi": "sâu sắc, cẩn trọng, thận trọng",
+    "part_of_speech": "adjective",
+    "tags": [
+      "formal",
+      "written"
+    ]
+  },
+  {
+    "word": "思料する",
+    "reading": "しりょうする",
+    "romaji": "shiryou suru",
+    "meaning_vi": "suy xét cẩn thận, cân nhắc kỹ lưỡng",
+    "part_of_speech": "verb",
+    "tags": [
+      "formal",
+      "written",
+      "legal"
+    ]
+  },
+  {
+    "word": "勘案する",
+    "reading": "かんあんする",
+    "romaji": "kan'an suru",
+    "meaning_vi": "xem xét đến, tính đến khi cân nhắc",
+    "part_of_speech": "verb",
+    "tags": [
+      "formal",
+      "written",
+      "legal"
+    ]
+  },
+  {
+    "word": "鑑みる",
+    "reading": "かんがみる",
+    "romaji": "kangamiru",
+    "meaning_vi": "chiếu theo, dựa vào (để suy xét)",
+    "part_of_speech": "verb",
+    "tags": [
+      "formal",
+      "written",
+      "legal"
+    ]
+  },
+  {
+    "word": "顧みる",
+    "reading": "かえりみる",
+    "romaji": "kaerimiru",
+    "meaning_vi": "nhìn lại, nhớ lại, quan tâm đến",
+    "part_of_speech": "verb",
+    "tags": [
+      "formal",
+      "literary",
+      "written"
+    ]
+  },
+  {
+    "word": "省みる",
+    "reading": "かえりみる",
+    "romaji": "kaerimiru",
+    "meaning_vi": "tự kiểm điểm, suy ngẫm lại về bản thân",
+    "part_of_speech": "verb",
+    "tags": [
+      "formal",
+      "written"
+    ]
+  },
+  {
+    "word": "苦言",
+    "reading": "くげん",
+    "romaji": "kugen",
+    "meaning_vi": "lời khuyên thẳng thắn, lời phê bình khó nghe",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "written"
+    ]
+  },
+  {
+    "word": "忠言",
+    "reading": "ちゅうげん",
+    "romaji": "chuugen",
+    "meaning_vi": "lời khuyên trung thực, lời can gián",
+    "part_of_speech": "noun",
+    "tags": [
+      "literary",
+      "formal",
+      "written"
+    ]
+  },
+  {
+    "word": "警告",
+    "reading": "けいこく",
+    "romaji": "keikoku",
+    "meaning_vi": "cảnh báo, cảnh cáo",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "written"
+    ]
+  },
+  {
+    "word": "告示",
+    "reading": "こくじ",
+    "romaji": "kokuji",
+    "meaning_vi": "thông báo chính thức, yết thị",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "written",
+      "legal"
+    ]
+  },
+  {
+    "word": "宣言",
+    "reading": "せんげん",
+    "romaji": "sengen",
+    "meaning_vi": "tuyên bố, tuyên ngôn",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "written",
+      "politics"
+    ]
+  },
+  {
+    "word": "訓示",
+    "reading": "くんじ",
+    "romaji": "kunji",
+    "meaning_vi": "huấn thị, chỉ thị, lời chỉ dạy của cấp trên",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "written"
+    ]
+  },
+  {
+    "word": "深謀遠慮",
+    "reading": "しんぼうえんりょ",
+    "romaji": "shinbou enryo",
+    "meaning_vi": "mưu sâu kế xa, suy nghĩ sâu xa và lo xa",
+    "part_of_speech": "noun",
+    "tags": [
+      "literary",
+      "formal",
+      "yojijukugo"
+    ]
+  },
+  {
+    "word": "臨機応変",
+    "reading": "りんきおうへん",
+    "romaji": "rinki ouhen",
+    "meaning_vi": "ứng biến linh hoạt, tùy cơ ứng biến",
+    "part_of_speech": "noun",
+    "tags": [
+      "literary",
+      "formal",
+      "yojijukugo"
+    ]
+  },
+  {
+    "word": "七転八倒",
+    "reading": "しちてんばっとう",
+    "romaji": "shichiten battou",
+    "meaning_vi": "vật vã đau đớn, quằn quại",
+    "part_of_speech": "noun",
+    "tags": [
+      "literary",
+      "formal",
+      "yojijukugo"
+    ]
+  },
+  {
+    "word": "四苦八苦",
+    "reading": "しくはっく",
+    "romaji": "shiku hakku",
+    "meaning_vi": "khổ sở trăm bề, cực kỳ gian khổ",
+    "part_of_speech": "noun",
+    "tags": [
+      "literary",
+      "formal",
+      "yojijukugo"
+    ]
+  },
+  {
+    "word": "千変万化",
+    "reading": "せんぺんばんか",
+    "romaji": "senpen banka",
+    "meaning_vi": "ngàn biến vạn hóa, luôn thay đổi",
+    "part_of_speech": "noun",
+    "tags": [
+      "literary",
+      "formal",
+      "yojijukugo"
+    ]
+  },
+  {
+    "word": "縦横無尽",
+    "reading": "じゅうおうむじん",
+    "romaji": "juuou mujin",
+    "meaning_vi": "tung hoành ngang dọc, hoàn toàn tự do",
+    "part_of_speech": "noun",
+    "tags": [
+      "literary",
+      "formal",
+      "yojijukugo"
+    ]
+  },
+  {
+    "word": "自由自在",
+    "reading": "じゆうじざい",
+    "romaji": "jiyuu jizai",
+    "meaning_vi": "tự do tự tại, hoàn toàn thoải mái",
+    "part_of_speech": "noun",
+    "tags": [
+      "literary",
+      "formal",
+      "yojijukugo"
+    ]
+  },
+  {
+    "word": "杓子定規",
+    "reading": "しゃくしじょうぎ",
+    "romaji": "shakushi jougi",
+    "meaning_vi": "áp dụng cứng nhắc theo quy tắc, rập khuôn",
+    "part_of_speech": "noun",
+    "tags": [
+      "literary",
+      "formal"
+    ]
+  },
+  {
+    "word": "砂上の楼閣",
+    "reading": "さじょうのろうかく",
+    "romaji": "sajou no roukaku",
+    "meaning_vi": "lâu đài trên cát, nền tảng không vững chắc",
+    "part_of_speech": "noun",
+    "tags": [
+      "literary",
+      "formal",
+      "idiom"
+    ]
+  },
+  {
+    "word": "羊頭狗肉",
+    "reading": "ようとうくにく",
+    "romaji": "youtou kuniku",
+    "meaning_vi": "treo đầu dê bán thịt chó, lừa dối",
+    "part_of_speech": "noun",
+    "tags": [
+      "literary",
+      "formal",
+      "yojijukugo"
+    ]
+  },
+  {
+    "word": "机上の空論",
+    "reading": "きじょうのくうろん",
+    "romaji": "kijou no kuuron",
+    "meaning_vi": "lý thuyết suông, lý luận không thực tế",
+    "part_of_speech": "noun",
+    "tags": [
+      "literary",
+      "formal",
+      "idiom"
+    ]
+  },
+  {
+    "word": "先見の明",
+    "reading": "せんけんのめい",
+    "romaji": "senken no mei",
+    "meaning_vi": "tầm nhìn xa, tiên kiến",
+    "part_of_speech": "noun",
+    "tags": [
+      "literary",
+      "formal",
+      "idiom"
+    ]
+  },
+  {
+    "word": "弊害",
+    "reading": "へいがい",
+    "romaji": "heigai",
+    "meaning_vi": "tác hại, hại lây, phiền hại",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "written"
+    ]
+  },
+  {
+    "word": "慣例",
+    "reading": "かんれい",
+    "romaji": "kanrei",
+    "meaning_vi": "thông lệ, tập quán thông thường",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "written"
+    ]
+  },
+  {
+    "word": "慣行",
+    "reading": "かんこう",
+    "romaji": "kankou",
+    "meaning_vi": "thực hành thông lệ, tập tục đã quen",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "written"
+    ]
+  },
+  {
+    "word": "因習",
+    "reading": "いんしゅう",
+    "romaji": "inshuu",
+    "meaning_vi": "hủ tục, tập tục lỗi thời",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "written"
+    ]
+  },
+  {
+    "word": "陋習",
+    "reading": "ろうしゅう",
+    "romaji": "roushuu",
+    "meaning_vi": "thói xấu, tập tục xấu xa",
+    "part_of_speech": "noun",
+    "tags": [
+      "literary",
+      "formal",
+      "written"
+    ]
+  },
+  {
+    "word": "蔑視",
+    "reading": "べっし",
+    "romaji": "besshi",
+    "meaning_vi": "khinh thường, coi thường",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "written"
+    ]
+  },
+  {
+    "word": "差別意識",
+    "reading": "さべついしき",
+    "romaji": "sabetsu ishiki",
+    "meaning_vi": "ý thức phân biệt đối xử",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "abstract",
+      "social"
+    ]
+  },
+  {
+    "word": "無常観",
+    "reading": "むじょうかん",
+    "romaji": "mujou kan",
+    "meaning_vi": "quan niệm vô thường, ý thức về sự tạm thời",
+    "part_of_speech": "noun",
+    "tags": [
+      "literary",
+      "philosophy",
+      "formal"
+    ]
+  },
+  {
+    "word": "刹那主義",
+    "reading": "せつなしゅぎ",
+    "romaji": "setsuna shugi",
+    "meaning_vi": "chủ nghĩa tìm khoái lạc tức thời",
+    "part_of_speech": "noun",
+    "tags": [
+      "literary",
+      "philosophy",
+      "formal"
+    ]
+  },
+  {
+    "word": "虚無主義",
+    "reading": "きょむしゅぎ",
+    "romaji": "kyomu shugi",
+    "meaning_vi": "chủ nghĩa hư vô, nihilism",
+    "part_of_speech": "noun",
+    "tags": [
+      "literary",
+      "philosophy",
+      "formal"
+    ]
+  },
+  {
+    "word": "実存主義",
+    "reading": "じつぞんしゅぎ",
+    "romaji": "jitsuzon shugi",
+    "meaning_vi": "chủ nghĩa hiện sinh",
+    "part_of_speech": "noun",
+    "tags": [
+      "literary",
+      "philosophy",
+      "formal"
+    ]
+  },
+  {
+    "word": "普遍性",
+    "reading": "ふへんせい",
+    "romaji": "fuhensei",
+    "meaning_vi": "tính phổ quát, tính toàn cầu",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "academic",
+      "philosophy"
+    ]
+  },
+  {
+    "word": "個別性",
+    "reading": "こべつせい",
+    "romaji": "kobetsusei",
+    "meaning_vi": "tính cá biệt, tính đặc thù riêng lẻ",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "academic",
+      "philosophy"
+    ]
+  },
+  {
+    "word": "特殊性",
+    "reading": "とくしゅせい",
+    "romaji": "tokushusei",
+    "meaning_vi": "tính đặc thù, tính đặc biệt",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "academic"
+    ]
+  },
+  {
+    "word": "相対性",
+    "reading": "そうたいせい",
+    "romaji": "soutaisei",
+    "meaning_vi": "tính tương đối",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "academic",
+      "philosophy"
+    ]
+  },
+  {
+    "word": "絶対性",
+    "reading": "ぜったいせい",
+    "romaji": "zettaisei",
+    "meaning_vi": "tính tuyệt đối",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "academic",
+      "philosophy"
+    ]
+  },
+  {
+    "word": "超越性",
+    "reading": "ちょうえつせい",
+    "romaji": "chouetsusei",
+    "meaning_vi": "tính siêu việt, tính vượt trội",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "academic",
+      "philosophy"
+    ]
+  },
+  {
+    "word": "内在性",
+    "reading": "ないざいせい",
+    "romaji": "naizaisei",
+    "meaning_vi": "tính nội tại, tiềm ẩn bên trong",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "academic",
+      "philosophy"
+    ]
+  },
+  {
+    "word": "形而上",
+    "reading": "けいじじょう",
+    "romaji": "keijijou",
+    "meaning_vi": "siêu hình học, thuộc phạm vi trừu tượng",
+    "part_of_speech": "noun",
+    "tags": [
+      "literary",
+      "philosophy",
+      "formal"
+    ]
+  },
+  {
+    "word": "形而下",
+    "reading": "けいじか",
+    "romaji": "keijika",
+    "meaning_vi": "thuộc thế giới vật chất, cụ thể hữu hình",
+    "part_of_speech": "noun",
+    "tags": [
+      "literary",
+      "philosophy",
+      "formal"
+    ]
+  },
+  {
+    "word": "弁証法",
+    "reading": "べんしょうほう",
+    "romaji": "benshhouhou",
+    "meaning_vi": "phép biện chứng",
+    "part_of_speech": "noun",
+    "tags": [
+      "literary",
+      "philosophy",
+      "formal"
+    ]
+  },
+  {
+    "word": "唯物論",
+    "reading": "ゆいぶつろん",
+    "romaji": "yuibutsuron",
+    "meaning_vi": "chủ nghĩa duy vật",
+    "part_of_speech": "noun",
+    "tags": [
+      "literary",
+      "philosophy",
+      "formal"
+    ]
+  },
+  {
+    "word": "唯心論",
+    "reading": "ゆいしんろん",
+    "romaji": "yuishinron",
+    "meaning_vi": "chủ nghĩa duy tâm",
+    "part_of_speech": "noun",
+    "tags": [
+      "literary",
+      "philosophy",
+      "formal"
+    ]
+  },
+  {
+    "word": "認識論",
+    "reading": "にんしきろん",
+    "romaji": "ninshikiron",
+    "meaning_vi": "nhận thức luận",
+    "part_of_speech": "noun",
+    "tags": [
+      "literary",
+      "philosophy",
+      "formal"
+    ]
+  },
+  {
+    "word": "存在論",
+    "reading": "そんざいろん",
+    "romaji": "sonzairon",
+    "meaning_vi": "bản thể luận, luận về sự tồn tại",
+    "part_of_speech": "noun",
+    "tags": [
+      "literary",
+      "philosophy",
+      "formal"
+    ]
+  },
+  {
+    "word": "倫理観",
+    "reading": "りんりかん",
+    "romaji": "rinrikan",
+    "meaning_vi": "quan điểm đạo đức, hệ giá trị đạo đức",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "abstract",
+      "philosophy"
+    ]
+  },
+  {
+    "word": "道徳観",
+    "reading": "どうとくかん",
+    "romaji": "doutokukan",
+    "meaning_vi": "quan niệm đạo đức, đạo đức quan",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "abstract"
+    ]
+  },
+  {
+    "word": "人生観",
+    "reading": "じんせいかん",
+    "romaji": "jinseikan",
+    "meaning_vi": "quan niệm về cuộc đời, nhân sinh quan",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "abstract",
+      "philosophy"
+    ]
+  },
+  {
+    "word": "世界観",
+    "reading": "せかいかん",
+    "romaji": "sekaikan",
+    "meaning_vi": "thế giới quan",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "abstract",
+      "philosophy"
+    ]
+  },
+  {
+    "word": "自然観",
+    "reading": "しぜんかん",
+    "romaji": "shizekan",
+    "meaning_vi": "quan niệm về tự nhiên",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "abstract"
+    ]
+  },
+  {
+    "word": "歴史観",
+    "reading": "れきしかん",
+    "romaji": "rekishikan",
+    "meaning_vi": "quan niệm lịch sử, sử quan",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "abstract",
+      "academic"
+    ]
+  },
+  {
+    "word": "審美眼",
+    "reading": "しんびがん",
+    "romaji": "shinbigan",
+    "meaning_vi": "con mắt thẩm mỹ, thị hiếu thẩm mỹ",
+    "part_of_speech": "noun",
+    "tags": [
+      "literary",
+      "formal",
+      "art"
+    ]
+  },
+  {
+    "word": "卓見",
+    "reading": "たっけん",
+    "romaji": "takken",
+    "meaning_vi": "kiến giải sâu sắc, cái nhìn xuất sắc",
+    "part_of_speech": "noun",
+    "tags": [
+      "literary",
+      "formal",
+      "written"
+    ]
+  },
+  {
+    "word": "卓説",
+    "reading": "たくせつ",
+    "romaji": "takusetsu",
+    "meaning_vi": "lý luận xuất sắc, quan điểm siêu việt",
+    "part_of_speech": "noun",
+    "tags": [
+      "literary",
+      "formal",
+      "written"
+    ]
+  },
+  {
+    "word": "慧眼",
+    "reading": "けいがん",
+    "romaji": "keigan",
+    "meaning_vi": "nhãn quan sắc sảo, con mắt tinh đời",
+    "part_of_speech": "noun",
+    "tags": [
+      "literary",
+      "formal",
+      "written"
+    ]
+  },
+  {
+    "word": "達観",
+    "reading": "たっかん",
+    "romaji": "takkan",
+    "meaning_vi": "đạt quan, nhìn xa trông rộng, thản nhiên",
+    "part_of_speech": "noun",
+    "tags": [
+      "literary",
+      "formal",
+      "written"
+    ]
+  },
+  {
+    "word": "悟性",
+    "reading": "ごせい",
+    "romaji": "gosei",
+    "meaning_vi": "trí tuệ, sự hiểu biết bằng lý trí",
+    "part_of_speech": "noun",
+    "tags": [
+      "literary",
+      "philosophy",
+      "formal"
+    ]
+  },
+  {
+    "word": "直観力",
+    "reading": "ちょっかんりょく",
+    "romaji": "chokkanryoku",
+    "meaning_vi": "năng lực trực giác",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "abstract"
+    ]
+  },
+  {
+    "word": "俯瞰",
+    "reading": "ふかん",
+    "romaji": "fukan",
+    "meaning_vi": "nhìn từ trên xuống, quan sát toàn cảnh",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "written"
+    ]
+  },
+  {
+    "word": "捨象",
+    "reading": "しゃしょう",
+    "romaji": "shashou",
+    "meaning_vi": "trừu xuất, bỏ đi chi tiết để nắm bản chất",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "academic",
+      "philosophy"
+    ]
+  },
+  {
+    "word": "捨て置く",
+    "reading": "すておく",
+    "romaji": "suteoku",
+    "meaning_vi": "bỏ mặc, không để ý đến",
+    "part_of_speech": "verb",
+    "tags": [
+      "literary",
+      "formal",
+      "written"
+    ]
+  }
+]

@@ -130,17 +130,6 @@
     ]
   },
   {
-    "word": "内容",
-    "reading": "ないよう",
-    "romaji": "naiyou",
-    "meaning_vi": "nội dung",
-    "part_of_speech": "noun",
-    "tags": [
-      "abstract",
-      "communication"
-    ]
-  },
-  {
     "word": "情報",
     "reading": "じょうほう",
     "romaji": "jouhou",
@@ -535,16 +524,6 @@
     ]
   },
   {
-    "word": "複雑",
-    "reading": "ふくざつ",
-    "romaji": "fukuzatsu",
-    "meaning_vi": "phức tạp",
-    "part_of_speech": "adjective",
-    "tags": [
-      "abstract"
-    ]
-  },
-  {
     "word": "単純",
     "reading": "たんじゅん",
     "romaji": "tanjun",
@@ -574,39 +553,6 @@
     "tags": [
       "abstract",
       "life"
-    ]
-  },
-  {
-    "word": "明確",
-    "reading": "めいかく",
-    "romaji": "meikaku",
-    "meaning_vi": "rõ ràng, minh xác",
-    "part_of_speech": "adjective",
-    "tags": [
-      "abstract",
-      "communication"
-    ]
-  },
-  {
-    "word": "適切",
-    "reading": "てきせつ",
-    "romaji": "tekisetsu",
-    "meaning_vi": "thích hợp, phù hợp, đúng đắn",
-    "part_of_speech": "adjective",
-    "tags": [
-      "abstract",
-      "work"
-    ]
-  },
-  {
-    "word": "正確",
-    "reading": "せいかく",
-    "romaji": "seikaku",
-    "meaning_vi": "chính xác, đúng đắn",
-    "part_of_speech": "adjective",
-    "tags": [
-      "abstract",
-      "work"
     ]
   },
   {
@@ -643,17 +589,6 @@
     ]
   },
   {
-    "word": "主体的",
-    "reading": "しゅたいてき",
-    "romaji": "shutaiteki",
-    "meaning_vi": "chủ động, có chủ thể, độc lập",
-    "part_of_speech": "adjective",
-    "tags": [
-      "character",
-      "abstract"
-    ]
-  },
-  {
     "word": "慎重",
     "reading": "しんちょう",
     "romaji": "shinchou",
@@ -682,17 +617,6 @@
     "tags": [
       "character",
       "emotion"
-    ]
-  },
-  {
-    "word": "丁寧",
-    "reading": "ていねい",
-    "romaji": "teinei",
-    "meaning_vi": "lịch sự, cẩn thận, chu đáo",
-    "part_of_speech": "adjective",
-    "tags": [
-      "character",
-      "communication"
     ]
   },
   {

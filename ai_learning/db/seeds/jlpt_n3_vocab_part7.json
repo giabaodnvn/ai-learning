@@ -165,17 +165,6 @@
     ]
   },
   {
-    "word": "資料",
-    "reading": "しりょう",
-    "romaji": "shiryou",
-    "meaning_vi": "tài liệu, dữ liệu tham khảo",
-    "part_of_speech": "noun",
-    "tags": [
-      "work",
-      "study"
-    ]
-  },
-  {
     "word": "購入",
     "reading": "こうにゅう",
     "romaji": "kounyuu",
@@ -198,28 +187,6 @@
     ]
   },
   {
-    "word": "収入",
-    "reading": "しゅうにゅう",
-    "romaji": "shuunyuu",
-    "meaning_vi": "thu nhập",
-    "part_of_speech": "noun",
-    "tags": [
-      "money",
-      "work"
-    ]
-  },
-  {
-    "word": "支出",
-    "reading": "ししゅつ",
-    "romaji": "shishutsu",
-    "meaning_vi": "chi tiêu, chi phí",
-    "part_of_speech": "noun",
-    "tags": [
-      "money",
-      "finance"
-    ]
-  },
-  {
     "word": "借金",
     "reading": "しゃっきん",
     "romaji": "shakkin",
@@ -231,18 +198,6 @@
     ]
   },
   {
-    "word": "能力",
-    "reading": "のうりょく",
-    "romaji": "nouryoku",
-    "meaning_vi": "năng lực, khả năng",
-    "part_of_speech": "noun",
-    "tags": [
-      "abstract",
-      "work",
-      "education"
-    ]
-  },
-  {
     "word": "工夫",
     "reading": "くふう",
     "romaji": "kufuu",
@@ -251,17 +206,6 @@
     "tags": [
       "abstract",
       "thinking"
-    ]
-  },
-  {
-    "word": "方向",
-    "reading": "ほうこう",
-    "romaji": "houkou",
-    "meaning_vi": "hướng, phương hướng",
-    "part_of_speech": "noun",
-    "tags": [
-      "abstract",
-      "place"
     ]
   },
   {
@@ -329,18 +273,6 @@
     "tags": [
       "action",
       "education",
-      "work"
-    ]
-  },
-  {
-    "word": "準備する",
-    "reading": "じゅんびする",
-    "romaji": "junbisuru",
-    "meaning_vi": "chuẩn bị, sẵn sàng",
-    "part_of_speech": "verb",
-    "tags": [
-      "action",
-      "daily",
       "work"
     ]
   },
@@ -508,17 +440,6 @@
     ]
   },
   {
-    "word": "正直",
-    "reading": "しょうじき",
-    "romaji": "shoujiki",
-    "meaning_vi": "trung thực, thật thà, ngay thẳng",
-    "part_of_speech": "adjective",
-    "tags": [
-      "character",
-      "communication"
-    ]
-  },
-  {
     "word": "穏やか",
     "reading": "おだやか",
     "romaji": "odayaka",
@@ -632,17 +553,6 @@
     ]
   },
   {
-    "word": "批判的",
-    "reading": "ひはんてき",
-    "romaji": "hihannteki",
-    "meaning_vi": "phê phán, có tính chỉ trích",
-    "part_of_speech": "adjective",
-    "tags": [
-      "abstract",
-      "thinking"
-    ]
-  },
-  {
     "word": "平均的",
     "reading": "へいきんてき",
     "romaji": "heikinteki",
@@ -673,17 +583,6 @@
     "tags": [
       "abstract",
       "thinking"
-    ]
-  },
-  {
-    "word": "感情的",
-    "reading": "かんじょうてき",
-    "romaji": "kanjouteki",
-    "meaning_vi": "cảm tính, bị cảm xúc chi phối",
-    "part_of_speech": "adjective",
-    "tags": [
-      "psychology",
-      "character"
     ]
   }
 ]

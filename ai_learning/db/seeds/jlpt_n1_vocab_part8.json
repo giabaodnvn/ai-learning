@@ -4,7 +4,7 @@
     "reading": "じっしょう",
     "romaji": "jisshō",
     "meaning_vi": "chứng minh thực tế, xác minh bằng bằng chứng",
-    "part_of_speech": "名詞",
+    "part_of_speech": "noun",
     "tags": [
       "academic",
       "science",
@@ -12,23 +12,11 @@
     ]
   },
   {
-    "word": "論駁",
-    "reading": "ろんばく",
-    "romaji": "ronbaku",
-    "meaning_vi": "bác bỏ lập luận, phản bác có căn cứ",
-    "part_of_speech": "名詞",
-    "tags": [
-      "academic",
-      "formal",
-      "debate"
-    ]
-  },
-  {
     "word": "立証",
     "reading": "りっしょう",
     "romaji": "risshō",
     "meaning_vi": "lập chứng, chứng minh điều gì đó là đúng",
-    "part_of_speech": "名詞",
+    "part_of_speech": "noun",
     "tags": [
       "academic",
       "legal",
@@ -40,7 +28,7 @@
     "reading": "ろんきょ",
     "romaji": "ronkyo",
     "meaning_vi": "luận cứ, căn cứ lập luận",
-    "part_of_speech": "名詞",
+    "part_of_speech": "noun",
     "tags": [
       "academic",
       "formal",
@@ -52,7 +40,7 @@
     "reading": "ていしょう",
     "romaji": "teishō",
     "meaning_vi": "đề xướng, đưa ra và ủng hộ một ý tưởng",
-    "part_of_speech": "名詞",
+    "part_of_speech": "noun",
     "tags": [
       "academic",
       "formal"
@@ -63,7 +51,7 @@
     "reading": "ぶんせき",
     "romaji": "bunseki",
     "meaning_vi": "phân tích, chia nhỏ để nghiên cứu",
-    "part_of_speech": "名詞",
+    "part_of_speech": "noun",
     "tags": [
       "academic",
       "science",
@@ -75,7 +63,7 @@
     "reading": "そうごう",
     "romaji": "sōgō",
     "meaning_vi": "tổng hợp, kết hợp nhiều yếu tố thành một",
-    "part_of_speech": "名詞",
+    "part_of_speech": "noun",
     "tags": [
       "academic",
       "formal"
@@ -86,7 +74,7 @@
     "reading": "ふえん",
     "romaji": "fuen",
     "meaning_vi": "triển khai chi tiết, giải thích mở rộng",
-    "part_of_speech": "名詞",
+    "part_of_speech": "noun",
     "tags": [
       "academic",
       "formal",
@@ -98,7 +86,7 @@
     "reading": "ほい",
     "romaji": "hoi",
     "meaning_vi": "phần bổ sung, phụ lục bổ sung",
-    "part_of_speech": "名詞",
+    "part_of_speech": "noun",
     "tags": [
       "academic",
       "formal",
@@ -110,7 +98,7 @@
     "reading": "しょうろく",
     "romaji": "shōroku",
     "meaning_vi": "tóm tắt, trích lục tóm gọn",
-    "part_of_speech": "名詞",
+    "part_of_speech": "noun",
     "tags": [
       "academic",
       "formal",
@@ -122,7 +110,7 @@
     "reading": "いんしょう",
     "romaji": "inshō",
     "meaning_vi": "trích dẫn chứng cứ, dẫn chứng",
-    "part_of_speech": "名詞",
+    "part_of_speech": "noun",
     "tags": [
       "academic",
       "formal",
@@ -134,7 +122,7 @@
     "reading": "てんきょ",
     "romaji": "tenkyo",
     "meaning_vi": "nguồn trích dẫn, căn cứ tài liệu",
-    "part_of_speech": "名詞",
+    "part_of_speech": "noun",
     "tags": [
       "academic",
       "formal",
@@ -146,7 +134,7 @@
     "reading": "えんしょう",
     "romaji": "enshō",
     "meaning_vi": "viêm, phản ứng viêm của cơ thể",
-    "part_of_speech": "名詞",
+    "part_of_speech": "noun",
     "tags": [
       "medical",
       "science",
@@ -158,7 +146,7 @@
     "reading": "しゅよう",
     "romaji": "shuyō",
     "meaning_vi": "khối u, bướu",
-    "part_of_speech": "名詞",
+    "part_of_speech": "noun",
     "tags": [
       "medical",
       "science",
@@ -170,7 +158,7 @@
     "reading": "てんい",
     "romaji": "ten'i",
     "meaning_vi": "di căn (bệnh ung thư); chuyển dịch",
-    "part_of_speech": "名詞",
+    "part_of_speech": "noun",
     "tags": [
       "medical",
       "science",
@@ -182,7 +170,7 @@
     "reading": "ほうごう",
     "romaji": "hōgō",
     "meaning_vi": "khâu vá vết thương, khâu nối",
-    "part_of_speech": "名詞",
+    "part_of_speech": "noun",
     "tags": [
       "medical",
       "formal"
@@ -193,7 +181,7 @@
     "reading": "ますい",
     "romaji": "masui",
     "meaning_vi": "gây mê, gây tê",
-    "part_of_speech": "名詞",
+    "part_of_speech": "noun",
     "tags": [
       "medical",
       "formal"
@@ -204,7 +192,7 @@
     "reading": "かんわ",
     "romaji": "kanwa",
     "meaning_vi": "giảm nhẹ, làm dịu (đau đớn, căng thẳng)",
-    "part_of_speech": "名詞",
+    "part_of_speech": "noun",
     "tags": [
       "medical",
       "formal"
@@ -215,7 +203,7 @@
     "reading": "せんしょくたい",
     "romaji": "senshokutai",
     "meaning_vi": "nhiễm sắc thể",
-    "part_of_speech": "名詞",
+    "part_of_speech": "noun",
     "tags": [
       "science",
       "biology",
@@ -227,7 +215,7 @@
     "reading": "きょうこう",
     "romaji": "kyōkō",
     "meaning_vi": "khủng hoảng kinh tế, sự hoảng loạn",
-    "part_of_speech": "名詞",
+    "part_of_speech": "noun",
     "tags": [
       "economy",
       "formal"
@@ -238,7 +226,7 @@
     "reading": "こうとう",
     "romaji": "kōtō",
     "meaning_vi": "tăng vọt, leo thang mạnh (giá cả)",
-    "part_of_speech": "名詞",
+    "part_of_speech": "noun",
     "tags": [
       "economy",
       "formal"
@@ -249,7 +237,7 @@
     "reading": "ぼうらく",
     "romaji": "bōraku",
     "meaning_vi": "sụt giảm đột ngột, sụp đổ giá",
-    "part_of_speech": "名詞",
+    "part_of_speech": "noun",
     "tags": [
       "economy",
       "finance",
@@ -261,7 +249,7 @@
     "reading": "しゅんこう",
     "romaji": "shunkō",
     "meaning_vi": "hoàn công, hoàn thành xây dựng",
-    "part_of_speech": "名詞",
+    "part_of_speech": "noun",
     "tags": [
       "construction",
       "formal"
@@ -272,7 +260,7 @@
     "reading": "せこう",
     "romaji": "sekō",
     "meaning_vi": "thi công, thực hiện công trình xây dựng",
-    "part_of_speech": "名詞",
+    "part_of_speech": "noun",
     "tags": [
       "construction",
       "formal"
@@ -283,7 +271,7 @@
     "reading": "ほしゅう",
     "romaji": "hoshū",
     "meaning_vi": "sửa chữa, tu bổ",
-    "part_of_speech": "名詞",
+    "part_of_speech": "noun",
     "tags": [
       "construction",
       "formal"
@@ -294,7 +282,7 @@
     "reading": "かどう",
     "romaji": "kadō",
     "meaning_vi": "vận hành, hoạt động (máy móc, nhà máy)",
-    "part_of_speech": "名詞",
+    "part_of_speech": "noun",
     "tags": [
       "technical",
       "formal",
@@ -306,7 +294,7 @@
     "reading": "しこう",
     "romaji": "shikō",
     "meaning_vi": "thử nghiệm, thực hiện thử",
-    "part_of_speech": "名詞",
+    "part_of_speech": "noun",
     "tags": [
       "formal",
       "academic",
@@ -318,7 +306,7 @@
     "reading": "しっこう",
     "romaji": "shikkō",
     "meaning_vi": "thi hành, thực thi (pháp luật, lệnh)",
-    "part_of_speech": "名詞",
+    "part_of_speech": "noun",
     "tags": [
       "legal",
       "formal",
@@ -330,7 +318,7 @@
     "reading": "さいか",
     "romaji": "saika",
     "meaning_vi": "phê chuẩn, phê duyệt của cấp trên",
-    "part_of_speech": "名詞",
+    "part_of_speech": "noun",
     "tags": [
       "legal",
       "formal",
@@ -342,7 +330,7 @@
     "reading": "ちょくれい",
     "romaji": "chokurei",
     "meaning_vi": "sắc lệnh của Nhật hoàng, chiếu chỉ",
-    "part_of_speech": "名詞",
+    "part_of_speech": "noun",
     "tags": [
       "legal",
       "historical",
@@ -355,7 +343,7 @@
     "reading": "ふこく",
     "romaji": "fukoku",
     "meaning_vi": "tuyên bố chính thức, ban hành thông cáo",
-    "part_of_speech": "名詞",
+    "part_of_speech": "noun",
     "tags": [
       "legal",
       "formal",
@@ -368,7 +356,7 @@
     "reading": "ふそく",
     "romaji": "fusoku",
     "meaning_vi": "phụ lục quy định, điều khoản bổ sung",
-    "part_of_speech": "名詞",
+    "part_of_speech": "noun",
     "tags": [
       "legal",
       "formal"
@@ -379,7 +367,7 @@
     "reading": "しこう",
     "romaji": "shikō",
     "meaning_vi": "thi hành, áp dụng (luật pháp)",
-    "part_of_speech": "名詞",
+    "part_of_speech": "noun",
     "tags": [
       "legal",
       "formal",
@@ -387,34 +375,11 @@
     ]
   },
   {
-    "word": "管轄",
-    "reading": "かんかつ",
-    "romaji": "kankatsu",
-    "meaning_vi": "quyền hạn quản lý, phạm vi thẩm quyền",
-    "part_of_speech": "名詞",
-    "tags": [
-      "legal",
-      "formal",
-      "government"
-    ]
-  },
-  {
-    "word": "裁量",
-    "reading": "さいりょう",
-    "romaji": "sairyō",
-    "meaning_vi": "quyền quyết định, sự xét xử theo phán đoán riêng",
-    "part_of_speech": "名詞",
-    "tags": [
-      "legal",
-      "formal"
-    ]
-  },
-  {
     "word": "答申",
     "reading": "とうしん",
     "romaji": "tōshin",
     "meaning_vi": "báo cáo kết quả tư vấn, trả lời tư vấn cho cơ quan cao hơn",
-    "part_of_speech": "名詞",
+    "part_of_speech": "noun",
     "tags": [
       "formal",
       "government",
@@ -426,7 +391,7 @@
     "reading": "しもん",
     "romaji": "shimon",
     "meaning_vi": "tham vấn, hỏi ý kiến cơ quan có thẩm quyền",
-    "part_of_speech": "名詞",
+    "part_of_speech": "noun",
     "tags": [
       "formal",
       "government",
@@ -438,7 +403,7 @@
     "reading": "かんこく",
     "romaji": "kankoku",
     "meaning_vi": "khuyến nghị, đề nghị chính thức",
-    "part_of_speech": "名詞",
+    "part_of_speech": "noun",
     "tags": [
       "formal",
       "official",
@@ -450,7 +415,7 @@
     "reading": "しょけん",
     "romaji": "shoken",
     "meaning_vi": "nhận xét, ý kiến sau khi quan sát",
-    "part_of_speech": "名詞",
+    "part_of_speech": "noun",
     "tags": [
       "formal",
       "medical",
@@ -462,7 +427,7 @@
     "reading": "けねん",
     "romaji": "kenen",
     "meaning_vi": "lo ngại, mối lo lắng về điều có thể xảy ra",
-    "part_of_speech": "名詞",
+    "part_of_speech": "noun",
     "tags": [
       "formal",
       "official"
@@ -473,7 +438,7 @@
     "reading": "きぐ",
     "romaji": "kigu",
     "meaning_vi": "lo sợ, lo ngại về nguy hiểm",
-    "part_of_speech": "名詞",
+    "part_of_speech": "noun",
     "tags": [
       "formal",
       "official"
@@ -484,22 +449,10 @@
     "reading": "ゆうりょ",
     "romaji": "yūryo",
     "meaning_vi": "lo âu, lo lắng sâu xa",
-    "part_of_speech": "名詞",
+    "part_of_speech": "noun",
     "tags": [
       "formal",
       "official"
-    ]
-  },
-  {
-    "word": "懸案",
-    "reading": "けんあん",
-    "romaji": "ken'an",
-    "meaning_vi": "vấn đề còn tồn đọng, vấn đề chưa giải quyết",
-    "part_of_speech": "名詞",
-    "tags": [
-      "formal",
-      "official",
-      "government"
     ]
   },
   {
@@ -507,7 +460,7 @@
     "reading": "なんだい",
     "romaji": "nandai",
     "meaning_vi": "vấn đề khó giải quyết, bài toán nan giải",
-    "part_of_speech": "名詞",
+    "part_of_speech": "noun",
     "tags": [
       "formal"
     ]
@@ -517,7 +470,7 @@
     "reading": "しょうてん",
     "romaji": "shōten",
     "meaning_vi": "trọng tâm, điểm tập trung chú ý",
-    "part_of_speech": "名詞",
+    "part_of_speech": "noun",
     "tags": [
       "formal",
       "academic"
@@ -528,7 +481,7 @@
     "reading": "そうてん",
     "romaji": "sōten",
     "meaning_vi": "điểm tranh cãi, vấn đề gây tranh luận",
-    "part_of_speech": "名詞",
+    "part_of_speech": "noun",
     "tags": [
       "formal",
       "legal",
@@ -540,7 +493,7 @@
     "reading": "きすう",
     "romaji": "kisū",
     "meaning_vi": "kết cục, xu hướng cuối cùng",
-    "part_of_speech": "名詞",
+    "part_of_speech": "noun",
     "tags": [
       "formal",
       "literary"
@@ -551,21 +504,9 @@
     "reading": "もさく",
     "romaji": "mosaku",
     "meaning_vi": "tìm kiếm mò mẫm, thăm dò hướng đi",
-    "part_of_speech": "名詞",
+    "part_of_speech": "noun",
     "tags": [
       "formal"
-    ]
-  },
-  {
-    "word": "試行錯誤",
-    "reading": "しこうさくご",
-    "romaji": "shikō sakugo",
-    "meaning_vi": "thử nghiệm và sai lầm, mày mò tìm kiếm",
-    "part_of_speech": "名詞",
-    "tags": [
-      "formal",
-      "academic",
-      "idiom"
     ]
   },
   {
@@ -573,7 +514,7 @@
     "reading": "うよきょくせつ",
     "romaji": "uyo kyokusetsu",
     "meaning_vi": "quanh co khúc khuỷu, qua nhiều khó khăn thăng trầm",
-    "part_of_speech": "名詞",
+    "part_of_speech": "noun",
     "tags": [
       "formal",
       "idiom",
@@ -585,19 +526,7 @@
     "reading": "いっせきにちょう",
     "romaji": "isseki nichō",
     "meaning_vi": "một mũi tên trúng hai đích, lợi cả hai",
-    "part_of_speech": "名詞",
-    "tags": [
-      "idiom",
-      "formal",
-      "proverb"
-    ]
-  },
-  {
-    "word": "本末転倒",
-    "reading": "ほんまつてんとう",
-    "romaji": "honmatsu tentō",
-    "meaning_vi": "nhầm gốc với ngọn, nhầm cái chính với cái phụ",
-    "part_of_speech": "名詞",
+    "part_of_speech": "noun",
     "tags": [
       "idiom",
       "formal",
@@ -609,7 +538,7 @@
     "reading": "いしんでんしん",
     "romaji": "ishin denshin",
     "meaning_vi": "tâm truyền tâm, hiểu nhau không cần lời nói",
-    "part_of_speech": "名詞",
+    "part_of_speech": "noun",
     "tags": [
       "idiom",
       "formal",
@@ -621,7 +550,7 @@
     "reading": "おんこちしん",
     "romaji": "onko chishin",
     "meaning_vi": "ôn cũ biết mới, học từ quá khứ để hiểu tương lai",
-    "part_of_speech": "名詞",
+    "part_of_speech": "noun",
     "tags": [
       "idiom",
       "formal",
@@ -634,7 +563,7 @@
     "reading": "よじじゅくご",
     "romaji": "yoji jukugo",
     "meaning_vi": "thành ngữ 4 chữ Hán (yojijukugo)",
-    "part_of_speech": "名詞",
+    "part_of_speech": "noun",
     "tags": [
       "academic",
       "formal",
@@ -646,7 +575,7 @@
     "reading": "ごぎ",
     "romaji": "gogi",
     "meaning_vi": "nghĩa của từ, ý nghĩa ngữ nghĩa",
-    "part_of_speech": "名詞",
+    "part_of_speech": "noun",
     "tags": [
       "academic",
       "linguistics",
@@ -658,7 +587,7 @@
     "reading": "ごげん",
     "romaji": "gogen",
     "meaning_vi": "từ nguyên, nguồn gốc của từ",
-    "part_of_speech": "名詞",
+    "part_of_speech": "noun",
     "tags": [
       "academic",
       "linguistics",
@@ -670,7 +599,7 @@
     "reading": "ごほう",
     "romaji": "gohō",
     "meaning_vi": "ngữ pháp, cách dùng từ ngữ",
-    "part_of_speech": "名詞",
+    "part_of_speech": "noun",
     "tags": [
       "academic",
       "linguistics",
@@ -682,7 +611,7 @@
     "reading": "しゅうじ",
     "romaji": "shūji",
     "meaning_vi": "tu từ, nghệ thuật sử dụng ngôn ngữ",
-    "part_of_speech": "名詞",
+    "part_of_speech": "noun",
     "tags": [
       "academic",
       "rhetoric",
@@ -694,7 +623,7 @@
     "reading": "ぶんたい",
     "romaji": "buntai",
     "meaning_vi": "văn phong, phong cách viết",
-    "part_of_speech": "名詞",
+    "part_of_speech": "noun",
     "tags": [
       "academic",
       "literature",
@@ -706,7 +635,7 @@
     "reading": "ろんちょう",
     "romaji": "ronchō",
     "meaning_vi": "giọng điệu lập luận, phong cách tranh luận",
-    "part_of_speech": "名詞",
+    "part_of_speech": "noun",
     "tags": [
       "academic",
       "formal",
@@ -718,7 +647,7 @@
     "reading": "ひっち",
     "romaji": "hitchi",
     "meaning_vi": "bút pháp, phong cách viết lách",
-    "part_of_speech": "名詞",
+    "part_of_speech": "noun",
     "tags": [
       "literature",
       "formal",
@@ -730,7 +659,7 @@
     "reading": "びょうしゃ",
     "romaji": "byōsha",
     "meaning_vi": "miêu tả, diễn đạt bằng lời hoặc hình ảnh",
-    "part_of_speech": "名詞",
+    "part_of_speech": "noun",
     "tags": [
       "literature",
       "formal",
@@ -742,7 +671,7 @@
     "reading": "いつわ",
     "romaji": "itsuwa",
     "meaning_vi": "giai thoại, câu chuyện thú vị ít người biết",
-    "part_of_speech": "名詞",
+    "part_of_speech": "noun",
     "tags": [
       "literature",
       "formal"
@@ -753,7 +682,7 @@
     "reading": "でんしょう",
     "romaji": "denshō",
     "meaning_vi": "truyền thừa, truyền thống được lưu giữ qua các thế hệ",
-    "part_of_speech": "名詞",
+    "part_of_speech": "noun",
     "tags": [
       "cultural",
       "traditional",
@@ -765,7 +694,7 @@
     "reading": "みんぞく",
     "romaji": "minzoku",
     "meaning_vi": "phong tục dân gian, dân tục",
-    "part_of_speech": "名詞",
+    "part_of_speech": "noun",
     "tags": [
       "cultural",
       "traditional",
@@ -777,7 +706,7 @@
     "reading": "しゅうぞく",
     "romaji": "shūzoku",
     "meaning_vi": "phong tục tập quán",
-    "part_of_speech": "名詞",
+    "part_of_speech": "noun",
     "tags": [
       "cultural",
       "formal"
@@ -788,7 +717,7 @@
     "reading": "かんしゅう",
     "romaji": "kanshū",
     "meaning_vi": "thói quen, tập quán đã ăn sâu",
-    "part_of_speech": "名詞",
+    "part_of_speech": "noun",
     "tags": [
       "cultural",
       "formal",
@@ -800,7 +729,7 @@
     "reading": "きゅうへい",
     "romaji": "kyūhei",
     "meaning_vi": "tệ nạn cũ, thói quen xấu cổ hủ",
-    "part_of_speech": "名詞",
+    "part_of_speech": "noun",
     "tags": [
       "formal",
       "critical"
@@ -811,7 +740,7 @@
     "reading": "ほしゅ",
     "romaji": "hoshu",
     "meaning_vi": "bảo thủ, giữ nguyên truyền thống",
-    "part_of_speech": "名詞",
+    "part_of_speech": "noun",
     "tags": [
       "formal",
       "political",
@@ -823,7 +752,7 @@
     "reading": "きゅうしん",
     "romaji": "kyūshin",
     "meaning_vi": "cấp tiến, thay đổi nhanh và căn bản",
-    "part_of_speech": "名詞",
+    "part_of_speech": "noun",
     "tags": [
       "formal",
       "political"

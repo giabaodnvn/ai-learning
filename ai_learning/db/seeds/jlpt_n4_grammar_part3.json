@@ -1,0 +1,452 @@
+[
+  {
+    "pattern": "〜かどうか",
+    "explanation_vi": "Liệu có ~ hay không: dùng để diễn đạt sự không chắc chắn, hoặc nhúng một câu hỏi Yes/No vào trong một câu lớn hơn. Thường xuất hiện sau động từ/tính từ ở thể thông thường. Khác với 〜か (câu hỏi trực tiếp), 〜かどうか là câu hỏi gián tiếp.",
+    "examples": [
+      {
+        "ja": "明日来るかどうか分かりません。",
+        "vi": "Tôi không biết ngày mai có đến không."
+      },
+      {
+        "ja": "彼女が好きかどうか、まだ分からない。",
+        "vi": "Tôi vẫn chưa biết liệu mình có thích cô ấy không."
+      }
+    ],
+    "notes_vi": "Cấu trúc: thể thông thường + かどうか + động từ chính. Khác với 〜かどうか là lồng câu hỏi Yes/No, 〜か + từ để hỏi là lồng câu hỏi WH."
+  },
+  {
+    "pattern": "〜ごとに",
+    "explanation_vi": "Mỗi ~, cứ mỗi ~ lại...: diễn đạt sự lặp lại đều đặn theo một khoảng thời gian hoặc sau mỗi đơn vị. Đứng sau danh từ chỉ thời gian, khoảng cách, hoặc số lượng. Nhấn mạnh tính đều đặn, quy律.",
+    "examples": [
+      {
+        "ja": "1時間ごとに休憩します。",
+        "vi": "Cứ mỗi tiếng lại nghỉ một lần."
+      },
+      {
+        "ja": "季節ごとに景色が変わります。",
+        "vi": "Mỗi mùa cảnh vật lại thay đổi."
+      }
+    ],
+    "notes_vi": "ごとに nhấn mạnh sự đều đặn (every each time). Phân biệt với おきに: ごとに = mỗi 3 bước đều dừng, おきに = cứ cách 3 bước lại dừng."
+  },
+  {
+    "pattern": "〜おきに",
+    "explanation_vi": "Cứ cách ~ lại ~ (có khoảng cách giữa các lần): diễn đạt sự lặp lại với khoảng cách đều đặn. Khác với ごとに là 'mỗi', おきに là 'cách' (có khoảng trống ở giữa). Thường dùng với thời gian hoặc khoảng cách.",
+    "examples": [
+      {
+        "ja": "2日おきに運動します。",
+        "vi": "Cứ cách 2 ngày tôi lại tập thể dục một lần."
+      },
+      {
+        "ja": "50メートルおきに木が植えてあります。",
+        "vi": "Cứ cách 50 mét lại trồng một cây."
+      }
+    ],
+    "notes_vi": "おきに = cách ~. 1日おきに = cách 1 ngày (tức là 2 ngày một lần). Khác với 1日ごとに = mỗi ngày."
+  },
+  {
+    "pattern": "〜にとって",
+    "explanation_vi": "Đối với ~ / Từ quan điểm của ~: dùng để nêu rõ chủ thể đánh giá hoặc cảm nhận, cho thấy điều gì đó được xét từ góc độ của ai đó. Thường đi với tính từ đánh giá như 大切, 難しい, 重要.",
+    "examples": [
+      {
+        "ja": "子供にとって、遊ぶことは大切です。",
+        "vi": "Đối với trẻ em, việc chơi đùa rất quan trọng."
+      },
+      {
+        "ja": "私にとって、日本語は難しいです。",
+        "vi": "Đối với tôi, tiếng Nhật khó."
+      }
+    ],
+    "notes_vi": "にとって chỉ quan điểm hoặc lợi hại đối với ai. Phân biệt với に対して (nhắm vào đối tượng của hành động)."
+  },
+  {
+    "pattern": "〜によると / 〜によれば",
+    "explanation_vi": "Theo ~ / Dựa theo ~: dùng để trích dẫn nguồn thông tin. によると và によれば có nghĩa giống nhau và có thể thay thế nhau. Thường đi kèm với そうだ hoặc らしい ở cuối câu.",
+    "examples": [
+      {
+        "ja": "天気予報によると、明日は雨だそうです。",
+        "vi": "Theo dự báo thời tiết, nghe nói ngày mai trời mưa."
+      },
+      {
+        "ja": "先生によれば、試験は来週だそうです。",
+        "vi": "Theo thầy giáo, nghe nói kỳ thi là tuần sau."
+      }
+    ],
+    "notes_vi": "Nguồn thông tin + によると/によれば. Câu kết thường dùng: 〜そうだ, 〜らしい, 〜とのことだ."
+  },
+  {
+    "pattern": "〜だけでなく〜も",
+    "explanation_vi": "Không chỉ ~ mà còn ~: dùng để mở rộng phạm vi, nêu thêm thông tin bổ sung ngoài điều đã đề cập. Nhấn mạnh rằng có nhiều hơn một trường hợp. Cũng dùng dạng 〜ばかりでなく〜も.",
+    "examples": [
+      {
+        "ja": "彼は英語だけでなく、フランス語も話せます。",
+        "vi": "Anh ấy không chỉ nói được tiếng Anh mà còn tiếng Pháp."
+      },
+      {
+        "ja": "この店は安いだけでなく、おいしくもあります。",
+        "vi": "Cửa hàng này không chỉ rẻ mà còn ngon nữa."
+      }
+    ],
+    "notes_vi": "Cấu trúc: A + だけでなく + B + も. Có thể thay bằng だけじゃなく trong văn nói thân mật."
+  },
+  {
+    "pattern": "〜てある",
+    "explanation_vi": "Đã được làm ~ (và vẫn còn ở trạng thái đó): diễn đạt trạng thái là kết quả của một hành động cố ý đã được thực hiện trước. Nhấn mạnh rằng ai đó đã làm gì đó một cách có chủ đích. Dùng với động từ ngoại động từ (他動詞).",
+    "examples": [
+      {
+        "ja": "黒板に時間割が書いてあります。",
+        "vi": "Thời khóa biểu đã được viết trên bảng."
+      },
+      {
+        "ja": "ドアが開けてあります。",
+        "vi": "Cửa đã được mở ra (có chủ đích)."
+      }
+    ],
+    "notes_vi": "てある (trạng thái kết quả cố ý) vs ている (trạng thái kết quả tự nhiên). てある dùng với ngoại động từ (他動詞)."
+  },
+  {
+    "pattern": "〜ていただく",
+    "explanation_vi": "Kính nhận sự giúp đỡ từ ~ (thể kính ngữ của 〜てもらう): dùng khi người nói nhận được ân huệ từ người bề trên hoặc muốn nói một cách lịch sự hơn. Đây là hình thức khiêm tốn hơn 〜てもらう.",
+    "examples": [
+      {
+        "ja": "先生に説明していただきました。",
+        "vi": "Tôi đã được thầy giáo giải thích cho."
+      },
+      {
+        "ja": "社長にサインしていただきました。",
+        "vi": "Tôi đã được giám đốc ký cho."
+      }
+    ],
+    "notes_vi": "いただく là dạng khiêm tốn (謙譲語) của もらう. てもらう (thường) < ていただく (kính ngữ)."
+  },
+  {
+    "pattern": "〜てもらえますか / 〜てもらえませんか",
+    "explanation_vi": "Bạn có thể ~ cho tôi không? (nhờ vả lịch sự): dùng để yêu cầu ai đó làm gì đó cho mình. てもらえませんか lịch sự hơn一层 so với てもらえますか vì dùng dạng phủ định.",
+    "examples": [
+      {
+        "ja": "ここまで車で送ってもらえますか。",
+        "vi": "Bạn có thể chở tôi đến đây bằng xe không?"
+      },
+      {
+        "ja": "もう一度説明してもらえませんか。",
+        "vi": "Bạn có thể giải thích lại một lần nữa không?"
+      }
+    ],
+    "notes_vi": "Mức độ lịch sự: てください < てもらえますか < てもらえませんか < ていただけませんか."
+  },
+  {
+    "pattern": "〜にくい",
+    "explanation_vi": "Khó ~, không dễ ~: ghép vào masu-stem của động từ để diễn đạt tính chất khó thực hiện. Đây là tính từ い, nên chia: にくい, にくくない, にくかった. Dùng cho cả khó khăn về thể chất lẫn tinh thần.",
+    "examples": [
+      {
+        "ja": "この漢字は書きにくいです。",
+        "vi": "Chữ Hán này khó viết."
+      },
+      {
+        "ja": "暗い場所では読みにくいです。",
+        "vi": "Ở nơi tối thì khó đọc."
+      }
+    ],
+    "notes_vi": "V(masu-stem) + にくい. Trái nghĩa: 〜やすい (dễ ~). Cả hai đều là tính từ い."
+  },
+  {
+    "pattern": "〜くなる / 〜になる",
+    "explanation_vi": "Trở nên ~, thay đổi thành ~: diễn đạt sự thay đổi trạng thái. い-adj dùng 〜くなる, な-adj và danh từ dùng 〜になる. Khác với 〜くする/にする là chủ tâm làm cho thứ gì thay đổi.",
+    "examples": [
+      {
+        "ja": "だんだん寒くなってきました。",
+        "vi": "Dần dần trở nên lạnh hơn."
+      },
+      {
+        "ja": "日本語が上手になりたいです。",
+        "vi": "Tôi muốn trở nên giỏi tiếng Nhật."
+      }
+    ],
+    "notes_vi": "い-adj: bỏ い + くなる. な-adj/N: + になる. Tự nhiên thay đổi (khác 〜くする/にする là chủ động làm thay đổi)."
+  },
+  {
+    "pattern": "〜くする / 〜にする",
+    "explanation_vi": "Làm cho ~ thành ~, chủ động thay đổi ~: diễn đạt việc ai đó chủ động làm cho cái gì thay đổi trạng thái. い-adj dùng 〜くする, な-adj/N dùng 〜にする. Cũng dùng 〜にする để quyết định chọn cái gì.",
+    "examples": [
+      {
+        "ja": "音楽を大きくしてください。",
+        "vi": "Làm ơn tăng âm thanh lên."
+      },
+      {
+        "ja": "部屋をきれいにしました。",
+        "vi": "Tôi đã dọn phòng cho sạch sẽ."
+      }
+    ],
+    "notes_vi": "い-adj: bỏ い + くする. な-adj/N: + にする. Cũng dùng A（に）する = quyết định chọn A (コーヒーにします)."
+  },
+  {
+    "pattern": "〜続ける",
+    "explanation_vi": "Tiếp tục ~, cứ ~: ghép vào masu-stem để diễn đạt việc duy trì một hành động không ngừng. Khác với 〜ている là trạng thái, 〜続ける nhấn mạnh sự tiếp diễn tích cực.",
+    "examples": [
+      {
+        "ja": "3時間歩き続けました。",
+        "vi": "Tôi đã đi bộ liên tục 3 tiếng."
+      },
+      {
+        "ja": "諦めずに勉強し続けてください。",
+        "vi": "Hãy tiếp tục học mà không bỏ cuộc."
+      }
+    ],
+    "notes_vi": "V(masu-stem) + 続ける. Dạng て形: 続けて. Quá khứ: 続けた."
+  },
+  {
+    "pattern": "〜始める",
+    "explanation_vi": "Bắt đầu ~: ghép vào masu-stem để diễn đạt sự bắt đầu của một hành động hoặc thay đổi trạng thái. Thường dùng để diễn đạt hành động bắt đầu một cách tự nhiên hoặc đột ngột.",
+    "examples": [
+      {
+        "ja": "雨が降り始めました。",
+        "vi": "Trời bắt đầu mưa."
+      },
+      {
+        "ja": "6歳からピアノを習い始めました。",
+        "vi": "Tôi bắt đầu học piano từ năm 6 tuổi."
+      }
+    ],
+    "notes_vi": "V(masu-stem) + 始める. Tương tự: 〜出す (bắt đầu đột ngột), 〜終わる (kết thúc)."
+  },
+  {
+    "pattern": "〜終わる",
+    "explanation_vi": "Làm xong ~, hoàn thành ~: ghép vào masu-stem để diễn đạt việc hoàn thành một hành động. Khác với 〜てしまう là hành động hoàn tất (đôi khi có hối tiếc), 〜終わる chỉ đơn thuần là kết thúc.",
+    "examples": [
+      {
+        "ja": "宿題をやり終わりました。",
+        "vi": "Tôi đã làm xong bài tập."
+      },
+      {
+        "ja": "この本を読み終わったら、貸してください。",
+        "vi": "Đọc xong quyển sách này thì cho tôi mượn nhé."
+      }
+    ],
+    "notes_vi": "V(masu-stem) + 終わる. Bộ ba: 〜始める (bắt đầu), 〜続ける (tiếp tục), 〜終わる (kết thúc)."
+  },
+  {
+    "pattern": "〜直す",
+    "explanation_vi": "Làm lại ~, sửa lại ~: ghép vào masu-stem để diễn đạt việc làm lại từ đầu hoặc sửa chữa điều gì đó. Nhấn mạnh việc làm đúng lại sau khi đã có lỗi.",
+    "examples": [
+      {
+        "ja": "メールを書き直しました。",
+        "vi": "Tôi đã viết lại email."
+      },
+      {
+        "ja": "間違えたので、もう一度やり直してください。",
+        "vi": "Vì làm sai nên hãy làm lại một lần nữa."
+      }
+    ],
+    "notes_vi": "V(masu-stem) + 直す. 直す gốc nghĩa là 'sửa chữa', nên cụm này mang nghĩa làm lại để sửa."
+  },
+  {
+    "pattern": "〜ようとする",
+    "explanation_vi": "Cố (làm) ~, toan ~: diễn đạt sự cố gắng hoặc ý định chuẩn bị thực hiện một hành động. Nhấn mạnh quá trình chuẩn bị hoặc nỗ lực hướng đến hành động, ngay cả khi hành động chưa hoàn thành.",
+    "examples": [
+      {
+        "ja": "起き上がろうとしたが、体が動かなかった。",
+        "vi": "Tôi cố ngồi dậy nhưng cơ thể không cử động được."
+      },
+      {
+        "ja": "逃げようとしているところを捕まえた。",
+        "vi": "Tôi đã bắt được anh ta ngay khi đang cố bỏ trốn."
+      }
+    ],
+    "notes_vi": "V(volitional/ý chí形: 〜よう) + とする. Thường dùng để nói về nỗ lực chưa thành công."
+  },
+  {
+    "pattern": "〜ようとしない",
+    "explanation_vi": "Không chịu ~, cố tình không ~: phủ định của 〜ようとする. Diễn đạt sự cố ý không làm hoặc không có ý định làm gì đó, thường hàm ý tiêu cực hoặc phàn nàn.",
+    "examples": [
+      {
+        "ja": "彼は謝ろうとしない。",
+        "vi": "Anh ấy không chịu xin lỗi."
+      },
+      {
+        "ja": "子供が野菜を食べようとしない。",
+        "vi": "Đứa bé không chịu ăn rau."
+      }
+    ],
+    "notes_vi": "V(volitional) + としない = không có ý định / không chịu. Thường hàm ý người nói không hài lòng."
+  },
+  {
+    "pattern": "〜ないで",
+    "explanation_vi": "Không ~ mà (làm việc khác) / Thay vì ~: diễn đạt hành động được thực hiện mà không thực hiện hành động khác. Còn có nghĩa 'đừng ~' khi đi kèm yêu cầu. Khác với 〜なくて (phủ định nguyên nhân).",
+    "examples": [
+      {
+        "ja": "朝ご飯を食べないで、学校に行きました。",
+        "vi": "Tôi đi học mà không ăn sáng."
+      },
+      {
+        "ja": "辞書を使わないで、この文を読んでください。",
+        "vi": "Hãy đọc câu này mà không dùng từ điển."
+      }
+    ],
+    "notes_vi": "ないで nối hành động không làm + hành động chính. Khác 〜なくて: dùng sau tính từ để nêu lý do/hoàn cảnh."
+  },
+  {
+    "pattern": "〜ないでください",
+    "explanation_vi": "Xin đừng ~, không được ~ (yêu cầu không làm): dùng để yêu cầu người khác không làm gì đó. Lịch sự hơn ないで đơn thuần. Đây là phủ định của 〜てください.",
+    "examples": [
+      {
+        "ja": "ここで写真を撮らないでください。",
+        "vi": "Xin đừng chụp ảnh ở đây."
+      },
+      {
+        "ja": "心配しないでください。",
+        "vi": "Xin đừng lo lắng."
+      }
+    ],
+    "notes_vi": "V(ない形) + でください = yêu cầu không làm. Mạnh hơn: 〜てはいけません (cấm đoán)."
+  },
+  {
+    "pattern": "〜てよかった",
+    "explanation_vi": "May mà ~, mừng vì đã ~: diễn đạt sự hài lòng hoặc vui mừng vì đã làm gì đó. Nhìn lại hành động trong quá khứ với cảm giác tích cực. Thường xuất hiện sau khi kết quả tốt đẹp đã rõ ràng.",
+    "examples": [
+      {
+        "ja": "傘を持ってきてよかった。",
+        "vi": "May mà đã mang ô theo."
+      },
+      {
+        "ja": "日本語を勉強してよかったと思います。",
+        "vi": "Tôi nghĩ may mà mình đã học tiếng Nhật."
+      }
+    ],
+    "notes_vi": "V(て形) + よかった. Phủ định: 〜なくてよかった (may mà không ~)."
+  },
+  {
+    "pattern": "〜ばよかった / 〜たらよかった",
+    "explanation_vi": "Giá mà (đã) ~ / Tiếc là (không) ~: diễn đạt sự hối tiếc về một hành động không được thực hiện trong quá khứ. Nhìn lại và mong muốn điều đã xảy ra khác đi. Cả ばよかった và たらよかった đều có nghĩa tương tự.",
+    "examples": [
+      {
+        "ja": "もっと早く起きればよかった。",
+        "vi": "Giá mà thức dậy sớm hơn thì tốt."
+      },
+      {
+        "ja": "あのとき、正直に話したらよかった。",
+        "vi": "Giá như lúc đó đã nói thật thì tốt."
+      }
+    ],
+    "notes_vi": "Cả 〜ばよかった và 〜たらよかった đều diễn đạt hối tiếc. Phủ định: 〜なければよかった (giá không làm ~)."
+  },
+  {
+    "pattern": "〜といえば",
+    "explanation_vi": "Nói đến ~, nhắc đến ~ (thì nghĩ đến): dùng để chuyển chủ đề hoặc liên tưởng từ điều vừa nhắc đến. Người nói dùng mẫu này khi nghe một từ khóa và liên kết sang ý mới. Phổ biến trong hội thoại.",
+    "examples": [
+      {
+        "ja": "京都といえば、金閣寺ですね。",
+        "vi": "Nói đến Kyoto thì nghĩ ngay đến Kinkaku-ji nhỉ."
+      },
+      {
+        "ja": "秋といえば、紅葉ですね。",
+        "vi": "Nhắc đến mùa thu thì nghĩ đến lá đỏ nhỉ."
+      }
+    ],
+    "notes_vi": "N + といえば = khi nhắc đến N. Cũng dùng 〜というと, 〜と言ったら với nghĩa tương tự."
+  },
+  {
+    "pattern": "〜とか〜とか",
+    "explanation_vi": "~ hay ~, ví dụ như ~ và ~: liệt kê các ví dụ không đầy đủ (tương tự や〜など nhưng thân mật hơn). Thường dùng trong văn nói. Hàm ý còn có nhiều thứ khác không được nêu ra.",
+    "examples": [
+      {
+        "ja": "週末はショッピングとか映画とかを楽しみます。",
+        "vi": "Cuối tuần tôi thích mua sắm hay xem phim gì đó."
+      },
+      {
+        "ja": "ケーキとかアイスとか、甘いものが好きです。",
+        "vi": "Tôi thích đồ ngọt như bánh hay kem."
+      }
+    ],
+    "notes_vi": "や〜など (trung tính/lịch sự) vs とか〜とか (thân mật, nói). Cả hai đều liệt kê ví dụ không đầy đủ."
+  },
+  {
+    "pattern": "〜っぽい",
+    "explanation_vi": "Trông giống ~, có vẻ ~ish: ghép vào danh từ hoặc gốc tính từ để diễn đạt ấn tượng hoặc đặc điểm có vẻ giống cái gì. Có thể mang sắc thái không hoàn toàn là như vậy. Là tính từ い nên chia như い-adj.",
+    "examples": [
+      {
+        "ja": "あの人は子供っぽい行動をする。",
+        "vi": "Người đó hành động có vẻ trẻ con."
+      },
+      {
+        "ja": "このスープは水っぽくて、あまりおいしくない。",
+        "vi": "Món súp này có vẻ loãng, không ngon lắm."
+      }
+    ],
+    "notes_vi": "N/V(masu-stem)/adj-stem + っぽい. Tính từ い: っぽくない, っぽかった. Thường hàm ý nhẹ tiêu cực."
+  },
+  {
+    "pattern": "〜ほど〜ない",
+    "explanation_vi": "Không bằng ~, không đến mức ~ (so sánh kém): cấu trúc so sánh nêu rõ A không bằng B về một tính chất. Khác với より〜の方が là so sánh hơn, ほど〜ない chỉ nói A không đạt đến mức B.",
+    "examples": [
+      {
+        "ja": "今日は昨日ほど寒くないです。",
+        "vi": "Hôm nay không lạnh bằng hôm qua."
+      },
+      {
+        "ja": "思ったほど難しくなかった。",
+        "vi": "Không khó như tôi đã nghĩ."
+      }
+    ],
+    "notes_vi": "A は B ほど + 否定 = A không bằng B. Khác: A は B より + 肯定 = A hơn B."
+  },
+  {
+    "pattern": "〜てさしあげる",
+    "explanation_vi": "Kính làm ~ cho ~ (dạng kính ngữ của 〜てあげる): dùng khi người nói thực hiện hành động cho người bề trên hoặc người không quen thân để thể hiện sự kính trọng. Tuy nhiên, cần dùng cẩn thận vì đôi khi nghe bề trên.",
+    "examples": [
+      {
+        "ja": "お荷物をお持ちしてさしあげましょうか。",
+        "vi": "Để tôi xách đồ giúp ông/bà nhé?"
+      },
+      {
+        "ja": "道を教えてさしあげました。",
+        "vi": "Tôi đã chỉ đường cho vị ấy."
+      }
+    ],
+    "notes_vi": "てあげる (thường) < てさしあげる (kính ngữ). Dùng với người trên. Cẩn thận vì đôi khi nghe ra vẻ bề trên."
+  },
+  {
+    "pattern": "〜てやる",
+    "explanation_vi": "Làm ~ cho (người dưới/thân thiết) (dạng thân mật/hạ thấp của 〜てあげる): dùng khi người nói làm gì đó cho người thân, cấp dưới, hoặc động vật. Giọng điệu thân mật, có thể nghe thô nếu dùng sai đối tượng. Đôi khi có sắc thái làm đến nơi đến chốn.",
+    "examples": [
+      {
+        "ja": "犬にご飯を食べさせてやった。",
+        "vi": "Tôi đã cho con chó ăn."
+      },
+      {
+        "ja": "弟に漫画を買ってやった。",
+        "vi": "Tôi đã mua truyện tranh cho em trai."
+      }
+    ],
+    "notes_vi": "てやる = thân mật / cấp dưới / động vật. Không dùng với người trên. てあげる là trung tính hơn."
+  },
+  {
+    "pattern": "〜たところだ",
+    "explanation_vi": "Vừa mới ~ xong (ngay lúc này): diễn đạt hành động vừa mới hoàn thành ngay trước thời điểm nói. Nhấn mạnh tính tức thì. Phân biệt với ばかり (cũng vừa xong nhưng không nhất thiết ngay lúc này).",
+    "examples": [
+      {
+        "ja": "今ちょうど着いたところです。",
+        "vi": "Tôi vừa mới đến đây ngay bây giờ."
+      },
+      {
+        "ja": "夕食を食べ終わったところです。",
+        "vi": "Tôi vừa mới ăn tối xong."
+      }
+    ],
+    "notes_vi": "V(た) + ところだ = vừa mới xong (ngay lúc đó). V(辞書形) + ところだ = sắp làm. V(ている) + ところだ = đang làm."
+  },
+  {
+    "pattern": "〜たところ（が）",
+    "explanation_vi": "Khi ~ thì phát hiện ra ~: dùng để nêu hành động đã làm và kết quả/phát hiện bất ngờ xảy ra sau đó. Vế sau thường là điều bất ngờ hoặc thông tin mới mà người nói thu được.",
+    "examples": [
+      {
+        "ja": "電話してみたところ、繋がりませんでした。",
+        "vi": "Khi tôi thử gọi điện thì không liên lạc được."
+      },
+      {
+        "ja": "調べたところ、すでに廃業していることが分かった。",
+        "vi": "Khi điều tra thì tôi phát hiện ra họ đã đóng cửa rồi."
+      }
+    ],
+    "notes_vi": "V(た) + ところ(が) nêu hành động → kết quả/phát hiện. Khác 〜たところだ (vừa xong)."
+  }
+]

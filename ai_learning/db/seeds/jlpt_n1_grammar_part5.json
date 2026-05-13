@@ -1,0 +1,407 @@
+[
+  {
+    "pattern": "〜んがため（に）",
+    "explanation_vi": "Mẫu này là cách diễn đạt mục đích rất cổ điển và trang trọng, có nghĩa 'để', 'nhằm mục đích'. Được dùng trong văn học Nhật Bản cổ và các văn bản hình thức. 〜ん là dạng ý chí (volitional) của âm âm (e.g. せ→せん), tiếp theo が và ため(に). Thường dùng với các hành động có chủ ý mạnh mẽ, đôi khi là hy sinh hay nỗ lực lớn.",
+    "examples": [
+      {
+        "ja": "国を救わんがために、彼は命をかけて戦った。",
+        "vi": "Để cứu đất nước, ông ấy đã chiến đấu bằng cả tính mạng."
+      },
+      {
+        "ja": "真実を知らんがために、彼女は長い旅に出た。",
+        "vi": "Nhằm để biết được sự thật, cô ấy đã lên đường một chuyến hành trình dài."
+      }
+    ],
+    "notes_vi": "Cực kỳ cổ điển và trang trọng. Chủ yếu dùng trong văn học, lịch sử, hoặc diễn văn trang nghiêm. Học viên N1 cần nhận biết khi đọc văn bản Nhật cổ."
+  },
+  {
+    "pattern": "〜ともなく",
+    "explanation_vi": "Mẫu này diễn tả việc làm gì đó mà không có chủ ý rõ ràng, không định làm, hoặc vô tình. Có nghĩa 'không hẳn là để...', 'không đặc biệt'. Thường kết hợp với các động từ tri giác (見る, 聞く, 読む). Cũng có dạng 〜ともなしに. Diễn đạt hành động xảy ra một cách tự nhiên, không chủ ý.",
+    "examples": [
+      {
+        "ja": "どこからともなく、懐かしい音楽が聞こえてきた。",
+        "vi": "Từ đâu đó không rõ, giai điệu quen thuộc vẳng đến."
+      },
+      {
+        "ja": "テレビを見るともなく見ていたら、大切な情報を耳にした。",
+        "vi": "Đang xem ti vi mà không thực sự chú ý thì tình cờ nghe được thông tin quan trọng."
+      }
+    ],
+    "notes_vi": "〜ともなく / 〜ともなしに đều dùng được. Thường gặp với どこからともなく (từ đâu không rõ), 誰ともなく (không biết ai)."
+  },
+  {
+    "pattern": "〜なくしては",
+    "explanation_vi": "Mẫu này biểu thị 'nếu không có', 'thiếu đi', nhấn mạnh tính không thể thiếu của điều được nêu. Rất tương tự 〜なくして nhưng 〜なくしては nhấn mạnh thêm sự đối chiếu với điều kiện giả định (nếu thiếu thì...). Thường đi với câu phủ định ở vế sau. Rất trang trọng.",
+    "examples": [
+      {
+        "ja": "信頼なくしては、真のパートナーシップは成り立たない。",
+        "vi": "Nếu không có lòng tin, quan hệ đối tác thực sự không thể tồn tại."
+      },
+      {
+        "ja": "困難を乗り越える意志なくしては、どんな夢も実現できない。",
+        "vi": "Nếu thiếu ý chí vượt qua khó khăn, không có giấc mơ nào có thể thực hiện được."
+      }
+    ],
+    "notes_vi": "Trang trọng hơn なければ. Thường dùng trong văn viết chính thức, diễn thuyết. Vế sau thường là câu phủ định."
+  },
+  {
+    "pattern": "〜んばかりに",
+    "explanation_vi": "Mẫu này diễn tả trạng thái hoặc hành động như thể sắp xảy ra, mạnh hơn cả 〜せんばかり (đã có trong dữ liệu là 〜せんばかり). Cấu trúc: V(否定形) + ん + ばかりに. Thường dùng trong văn học và mô tả sinh động. Biểu thị điều gì đó sắp xảy ra hoặc trông như sắp xảy ra nhưng chưa thực sự xảy ra.",
+    "examples": [
+      {
+        "ja": "彼女は今にも泣き出さんばかりの表情で立っていた。",
+        "vi": "Cô ấy đứng với vẻ mặt như sắp khóc òa ra đến nơi."
+      },
+      {
+        "ja": "選手たちはコートが割れんばかりの大歓声に包まれた。",
+        "vi": "Các vận động viên được bao bọc bởi tiếng歓呼 như muốn vỡ cả sân."
+      }
+    ],
+    "notes_vi": "Dùng để miêu tả sinh động trạng thái sắp xảy ra. Thường gặp trong văn học, phóng sự. Phân biệt với 〜ばかりに (vì lý do)."
+  },
+  {
+    "pattern": "〜いかんにかかわらず",
+    "explanation_vi": "Mẫu này có nghĩa 'bất kể...thế nào', 'không phụ thuộc vào'. Rất trang trọng và hình thức. 〜いかん (如何) có gốc từ Hán tự, nghĩa là 'thế nào/như thế nào'. Dùng trong văn bản pháp luật, thông báo chính thức. Phân biệt với 〜いかんによって (tùy thuộc vào).",
+    "examples": [
+      {
+        "ja": "理由のいかんにかかわらず、遅刻は認められない。",
+        "vi": "Bất kể lý do là gì, việc đến muộn đều không được chấp nhận."
+      },
+      {
+        "ja": "結果のいかんにかかわらず、全力を尽くすことが大切だ。",
+        "vi": "Dù kết quả thế nào, điều quan trọng là phải cố gắng hết sức."
+      }
+    ],
+    "notes_vi": "Rất trang trọng, thường dùng trong văn bản pháp luật hoặc quy định. So sánh: 〜に関わらず (thông dụng hơn), 〜いかんによらず (tương đương, cũng rất trang trọng)."
+  },
+  {
+    "pattern": "〜べくして",
+    "explanation_vi": "Mẫu này biểu thị 'như số phận định sẵn', 'tất yếu phải xảy ra như vậy'. Diễn tả rằng kết quả là điều không thể tránh khỏi, như định mệnh. Thường dùng trong cấu trúc 〜べくして〜した (đã xảy ra như tất yếu). Cảm giác triết học, thường dùng khi nhìn lại sự kiện đã qua.",
+    "examples": [
+      {
+        "ja": "この二人は出会うべくして出会った運命的なカップルだ。",
+        "vi": "Đây là cặp đôi định mệnh đã gặp nhau như là tất yếu phải gặp."
+      },
+      {
+        "ja": "起こるべくして起きた事故に、誰もが胸を痛めた。",
+        "vi": "Vụ tai nạn xảy ra như là tất yếu phải xảy ra đã khiến mọi người đau lòng."
+      }
+    ],
+    "notes_vi": "Thường dùng trong văn học, triết học, và khi mô tả sự kiện lịch sử. Mang sắc thái định mệnh, tất yếu."
+  },
+  {
+    "pattern": "〜極まる / 〜極まりない",
+    "explanation_vi": "Mẫu này biểu thị 'cực kỳ', 'vô cùng', 'đến mức không thể hơn được'. Thường đi với tính từ チna hoặc danh từ. 〜極まる là dạng nối (て形), 〜極まりない là phủ định nhưng thực ra tăng cường ý nghĩa cực điểm. Thường mang sắc thái tiêu cực hoặc phê phán.",
+    "examples": [
+      {
+        "ja": "彼の無礼極まりない態度に、会場全員が怒りを覚えた。",
+        "vi": "Thái độ vô lễ cực kỳ của anh ta đã khiến mọi người trong hội trường cảm thấy tức giận."
+      },
+      {
+        "ja": "このような危険極まる行為は直ちに中止すべきだ。",
+        "vi": "Hành vi nguy hiểm tột cùng như thế này cần được dừng lại ngay lập tức."
+      }
+    ],
+    "notes_vi": "Phần lớn dùng với ý nghĩa tiêu cực (無礼, 危険, 不謹慎 etc.). 〜極まりない mạnh hơn 〜極まる. Rất trang trọng, dùng trong văn viết."
+  },
+  {
+    "pattern": "〜にたえる",
+    "explanation_vi": "Mẫu này biểu thị 'đáng để', 'xứng đáng', 'có thể chịu đựng'. Khác với 〜にたえない (không nén được cảm xúc), 〜にたえる mang nghĩa tích cực: điều gì đó đủ tiêu chuẩn để thực hiện hành động. Cũng có nghĩa 'có thể chịu đựng' theo nghĩa vật lý. Trang trọng, dùng trong văn viết.",
+    "examples": [
+      {
+        "ja": "この作品は鑑賞にたえる質の高い芸術だ。",
+        "vi": "Tác phẩm này là nghệ thuật chất lượng cao đáng để thưởng thức."
+      },
+      {
+        "ja": "長年の試練にたえてきた彼の精神力は本物だ。",
+        "vi": "Sức mạnh tinh thần của anh ấy đã chịu đựng được những thử thách nhiều năm, quả là thật sự."
+      }
+    ],
+    "notes_vi": "Phân biệt với 〜にたえない (không thể kìm nén cảm xúc) và 〜に値する (xứng đáng được hưởng). 〜にたえる thường dùng với hành động thưởng thức (鑑賞, 批判 etc.)."
+  },
+  {
+    "pattern": "〜とみるや",
+    "explanation_vi": "Mẫu này biểu thị 'ngay khi nhận ra', 'vừa thấy/nhận định thì ngay lập tức'. Nhấn mạnh tốc độ phản ứng tức thì ngay khi vừa nhận biết điều gì đó. Trang trọng và mang sắc thái văn học. Thường dùng để mô tả phản ứng nhanh nhạy, quyết đoán.",
+    "examples": [
+      {
+        "ja": "好機とみるや、彼は即座に交渉を開始した。",
+        "vi": "Ngay khi nhận ra cơ hội tốt, anh ấy lập tức bắt đầu đàm phán."
+      },
+      {
+        "ja": "敵の隙とみるや、剣士は素早く間合いを詰めた。",
+        "vi": "Vừa nhận ra sơ hở của địch, kiếm sĩ nhanh chóng rút ngắn khoảng cách."
+      }
+    ],
+    "notes_vi": "Rất trang trọng và văn học. Nhấn mạnh tính tức thì và quyết đoán. Tương tự 〜やいなや nhưng 〜とみるや có thêm yếu tố nhận thức/phán đoán trước khi hành động."
+  },
+  {
+    "pattern": "〜をいいことに",
+    "explanation_vi": "Mẫu này biểu thị 'lợi dụng', 'tranh thủ cơ hội từ', thường mang sắc thái tiêu cực khi nói về việc lợi dụng tình huống thuận lợi để làm điều không đúng mực. Vế trước là hoàn cảnh thuận lợi, vế sau là hành động lợi dụng. Khác với 〜を機に (cơ hội tích cực).",
+    "examples": [
+      {
+        "ja": "親が留守なのをいいことに、子供たちは夜遅くまで騒いでいた。",
+        "vi": "Lợi dụng việc cha mẹ vắng nhà, bọn trẻ ồn ào đến khuya."
+      },
+      {
+        "ja": "上司の不在をいいことに、部下たちは早々に帰ってしまった。",
+        "vi": "Lợi dụng sếp vắng mặt, các nhân viên cấp dưới đã về sớm."
+      }
+    ],
+    "notes_vi": "Thường mang sắc thái tiêu cực, phê phán. Người chủ thể lợi dụng hoàn cảnh để làm điều không đúng mực hoặc vượt giới hạn."
+  },
+  {
+    "pattern": "〜ともなれば",
+    "explanation_vi": "Mẫu này biểu thị 'khi đã là', 'nếu trở thành', nhấn mạnh rằng khi đạt đến cấp độ hoặc tình huống được nêu thì có những hệ quả tự nhiên. Thường dùng để nói về địa vị, cương vị, hoặc tình huống đặc biệt. Tương tự 〜ともなると nhưng 〜ともなれば mang sắc thái điều kiện giả định hơn.",
+    "examples": [
+      {
+        "ja": "会社のトップともなれば、その責任の重さは計り知れない。",
+        "vi": "Khi đã là người đứng đầu công ty, trọng trách của vị trí đó thật khó đo lường."
+      },
+      {
+        "ja": "有名人ともなれば、プライバシーを守ることが難しくなる。",
+        "vi": "Khi đã là người nổi tiếng, việc giữ gìn sự riêng tư trở nên khó khăn."
+      }
+    ],
+    "notes_vi": "Nhấn mạnh hệ quả tự nhiên khi đạt một địa vị/tình huống nhất định. So sánh: 〜ともなると (thực tế đang xảy ra), 〜ともなれば (điều kiện giả định)."
+  },
+  {
+    "pattern": "〜たる",
+    "explanation_vi": "Đây là dạng thuộc tính (attributive) của 〜だ trong văn ngôn/trang trọng, tương đương với 〜である trong văn hiện đại. Dùng trước danh từ như trợ từ quy định thuộc tính. Thường gặp trong các câu khẳng định về vai trò, trách nhiệm, phẩm chất. Phân biệt với 〜たる (đặc biệt kết hợp thành 〜たるもの).",
+    "examples": [
+      {
+        "ja": "教師たる者は、常に学び続けなければならない。",
+        "vi": "Người là giáo viên thì phải không ngừng học hỏi."
+      },
+      {
+        "ja": "指導者たる立場から、公正な判断を求められる。",
+        "vi": "Từ vị trí là người lãnh đạo, người ta đòi hỏi sự phán xét công bằng."
+      }
+    ],
+    "notes_vi": "Rất trang trọng và cổ điển. Tương đương 〜である trong văn hiện đại. Thường xuất hiện trong diễn văn, văn bản luật pháp, hoặc lời khuyên đạo đức."
+  },
+  {
+    "pattern": "〜たるもの",
+    "explanation_vi": "Mẫu này biểu thị 'những ai là', 'người mà đã là', nhấn mạnh trách nhiệm hoặc chuẩn mực đối với người có tư cách/vị trí được nêu. Thường theo sau là quy tắc, nghĩa vụ, hoặc kỳ vọng. Rất trang trọng, dùng để nêu nguyên tắc hoặc khuyên nhủ đạo đức.",
+    "examples": [
+      {
+        "ja": "武士たるものは、名誉を命より大切にしなければならない。",
+        "vi": "Người là võ sĩ thì phải coi danh dự quý hơn mạng sống."
+      },
+      {
+        "ja": "親たるものは、子供の模範となるべきだ。",
+        "vi": "Người là cha mẹ thì phải là tấm gương cho con cái."
+      }
+    ],
+    "notes_vi": "Rất trang trọng và cổ điển. Thường dùng trong phát biểu đạo đức, nguyên tắc sống. 〜たるもの + nghĩa vụ/chuẩn mực."
+  },
+  {
+    "pattern": "〜といったところ",
+    "explanation_vi": "Mẫu này biểu thị 'nhiều lắm là', 'xấp xỉ', 'ước chừng', thường dùng khi nói về số lượng hoặc mức độ với hàm ý không nhiều, không cao, hoặc chỉ ở mức đó. Có sắc thái khiêm nhường hoặc thực tế. Tương tự 〜というところだ nhưng dùng thường xuyên hơn.",
+    "examples": [
+      {
+        "ja": "今の私の実力はN2合格といったところだろう。",
+        "vi": "Trình độ của tôi hiện tại nhiều lắm là đỗ N2 mà thôi."
+      },
+      {
+        "ja": "参加者は多くて50人といったところだ。",
+        "vi": "Người tham dự nhiều nhất cũng chỉ khoảng 50 người."
+      }
+    ],
+    "notes_vi": "Biểu thị ước tính mức trần hoặc giới hạn trên. Thường mang sắc thái 'chỉ đến mức đó thôi', hơi khiêm nhường hoặc thực dụng."
+  },
+  {
+    "pattern": "〜ず（文語否定）",
+    "explanation_vi": "Đây là dạng phủ định văn ngôn/cổ điển, tương đương với 〜ない trong tiếng Nhật hiện đại. Được dùng rộng rãi trong tục ngữ, thành ngữ, văn học Nhật Bản cổ, và các mẫu ngữ pháp trang trọng. Thường theo sau bằng に hoặc, như trong 〜ずに (mà không). Người học N1 phải nhận biết khi đọc văn bản.",
+    "examples": [
+      {
+        "ja": "急がば回れ—焦らず確実な道を選ぶべきだ。",
+        "vi": "Dục tốc bất đạt—nên chọn con đường chắc chắn mà không vội vàng."
+      },
+      {
+        "ja": "言わず語らず、彼は静かに去っていった。",
+        "vi": "Chẳng nói chẳng rằng, anh ấy lặng lẽ rời đi."
+      }
+    ],
+    "notes_vi": "Văn ngôn cổ điển. Xuất hiện trong tục ngữ (〜ずして = mà không), thành ngữ, và văn học. する → せず, くる → こず."
+  },
+  {
+    "pattern": "〜こととなった",
+    "explanation_vi": "Mẫu này biểu thị 'đã được quyết định là', 'đã dẫn đến', nhấn mạnh kết quả hoặc quyết định đạt được qua quá trình bên ngoài ý muốn cá nhân. Thường dùng trong văn bản thông báo, tình huống chính thức. Nhẹ nhàng hơn 〜ことになった (xảy ra tự nhiên) và trang trọng hơn.",
+    "examples": [
+      {
+        "ja": "今般の合意により、両社は合併することとなった。",
+        "vi": "Do thỏa thuận lần này, hai công ty đã được quyết định sáp nhập."
+      },
+      {
+        "ja": "様々な検討の末、プロジェクトを延期することとなった。",
+        "vi": "Sau nhiều cân nhắc, dự án đã được quyết định hoãn lại."
+      }
+    ],
+    "notes_vi": "Trang trọng hơn 〜ことになった. Thường dùng trong thông cáo báo chí, thông báo công ty. Nhấn mạnh quyết định mang tính khách quan, không phải ý chí cá nhân."
+  },
+  {
+    "pattern": "〜はさておき",
+    "explanation_vi": "Mẫu này có nghĩa 'gác lại', 'để sang một bên', 'bỏ qua chuyện', thường dùng để tạm thời bỏ qua một vấn đề để tập trung vào điều khác. Thường mang sắc thái lịch sự khi muốn chuyển sang chủ đề khác mà không phủ nhận hoàn toàn chủ đề đầu tiên. Khác với 〜はともかく (không bàn đến) ở chỗ 〜はさておき nhẹ nhàng và có thể quay lại sau.",
+    "examples": [
+      {
+        "ja": "冗談はさておき、本題に入りましょう。",
+        "vi": "Gác chuyện đùa sang một bên, hãy vào vấn đề chính thôi."
+      },
+      {
+        "ja": "費用の問題はさておき、まず実現可能かどうかを検討しよう。",
+        "vi": "Bỏ qua vấn đề chi phí trước đã, hãy xem xét liệu có thể thực hiện được không."
+      }
+    ],
+    "notes_vi": "Dùng để chuyển chủ đề lịch sự. So sánh: 〜はともかく (thẳng thắn bỏ qua), 〜はさておき (nhẹ nhàng gác sang một bên, có thể quay lại sau)."
+  },
+  {
+    "pattern": "〜かといえば / 〜かというと",
+    "explanation_vi": "Mẫu này dùng để đưa ra câu trả lời cho câu hỏi ngầm, thường để phủ nhận một giả định hoặc giải thích lý do. Có nghĩa 'nếu hỏi là...thì', 'về việc có...không thì'. Vế sau thường là câu phủ định hoặc giải thích thực tế. Thường dùng trong văn nói để làm rõ quan điểm.",
+    "examples": [
+      {
+        "ja": "好きかというと、そうでもない。ただ慣れているだけだ。",
+        "vi": "Nếu hỏi có thích không thì cũng không hẳn. Chỉ là quen thôi."
+      },
+      {
+        "ja": "完璧な計画かといえば、まだ改善の余地はある。",
+        "vi": "Nếu hỏi có phải kế hoạch hoàn hảo không thì vẫn còn chỗ để cải thiện."
+      }
+    ],
+    "notes_vi": "Thường dùng để phủ nhận một giả định mà người nghe có thể có. Vế sau thường bắt đầu bằng 必ずしも, そうでもない, そうとは言えない."
+  },
+  {
+    "pattern": "〜ようとしたところ",
+    "explanation_vi": "Mẫu này biểu thị 'ngay lúc đang định', 'đúng lúc chuẩn bị', khi một sự kiện bất ngờ xảy ra cùng lúc với hành động đang chuẩn bị thực hiện. Thường dùng để kể chuyện về sự trùng hợp hoặc gián đoạn. Vế sau là sự kiện bất ngờ xảy ra.",
+    "examples": [
+      {
+        "ja": "外出しようとしたところ、急な雨が降り始めた。",
+        "vi": "Ngay lúc đang chuẩn bị ra ngoài thì trời đột ngột mưa."
+      },
+      {
+        "ja": "電話しようとしたところ、ちょうど向こうからかかってきた。",
+        "vi": "Đúng lúc đang định gọi điện thì người kia gọi đến trước."
+      }
+    ],
+    "notes_vi": "Biểu thị trùng hợp thời điểm. Vế trước là hành động đang chuẩn bị, vế sau là điều bất ngờ xảy ra. Thường dùng khi kể chuyện."
+  },
+  {
+    "pattern": "〜まいか",
+    "explanation_vi": "Mẫu này biểu thị 'liệu có nên không', 'hay là không', diễn đạt sự do dự hoặc tự hỏi về khả năng phủ định. Là kết hợp của 〜まい (phủ định ý chí/khả năng) và か (nghi vấn). Mang sắc thái tự vấn hoặc đề nghị lịch sự, đôi khi có sắc thái cổ điển.",
+    "examples": [
+      {
+        "ja": "もう一度チャレンジしてみるまいか、と自分に問いかけた。",
+        "vi": "Tôi tự hỏi mình, liệu có nên thử một lần nữa không?"
+      },
+      {
+        "ja": "この際、旧来の方法を見直してみるまいか。",
+        "vi": "Nhân dịp này, liệu có nên xem xét lại phương pháp cũ không?"
+      }
+    ],
+    "notes_vi": "Mang sắc thái cổ điển hoặc văn học. Biểu thị sự tự vấn hoặc đề nghị nhẹ nhàng. Thường thể hiện sự suy nghĩ nội tâm."
+  },
+  {
+    "pattern": "〜かいもなく",
+    "explanation_vi": "Mẫu này biểu thị 'dù đã cố gắng nhưng vô ích', 'nỗ lực không đền đáp', mang sắc thái tiếc nuối về công sức đã bỏ ra nhưng không có kết quả. 〜かい là dạng danh từ của 甲斐 (hiệu quả, kết quả xứng đáng). Thường dùng khi kết quả không như mong đợi sau nỗ lực.",
+    "examples": [
+      {
+        "ja": "懸命に看病したかいもなく、祖父は他界してしまった。",
+        "vi": "Dù đã tận tình chăm sóc nhưng vô ích, ông nội vẫn qua đời."
+      },
+      {
+        "ja": "長年の努力もかいもなく、プロジェクトは中止になった。",
+        "vi": "Dù nỗ lực nhiều năm nhưng cũng vô ích, dự án đã bị hủy."
+      }
+    ],
+    "notes_vi": "Biểu thị nỗ lực vô ích, tiếc nuối. So sánh với 〜かいがあって (nỗ lực đền đáp). Thường dùng khi kể về kết quả đáng buồn sau nỗ lực."
+  },
+  {
+    "pattern": "〜きらいがある",
+    "explanation_vi": "Mẫu này biểu thị 'có xu hướng', 'có thiên hướng', thường nói về tính chất hoặc thói quen tiêu cực. 〜きらい (嫌い) ở đây không phải 'không thích' mà là 'xu hướng/khuynh hướng'. Thường dùng khi đưa ra nhận xét phê phán nhẹ về một người hoặc tổ chức. Rất trang trọng.",
+    "examples": [
+      {
+        "ja": "彼は物事を悲観的に考えるきらいがある。",
+        "vi": "Anh ấy có xu hướng nghĩ về mọi chuyện theo chiều hướng bi quan."
+      },
+      {
+        "ja": "日本企業はリスクを避けすぎるきらいがある。",
+        "vi": "Các công ty Nhật Bản có xu hướng tránh né rủi ro quá mức."
+      }
+    ],
+    "notes_vi": "Biểu thị xu hướng (thường tiêu cực). Trang trọng, dùng trong văn viết và phân tích. Khác với 〜がちだ ở chỗ 〜きらいがある mang tính phê phán sâu sắc hơn."
+  },
+  {
+    "pattern": "〜てしかるべきだ",
+    "explanation_vi": "Mẫu này biểu thị 'là điều phù hợp/xứng đáng', 'lẽ ra nên', nhấn mạnh rằng điều gì đó là thích đáng, hợp lý, hoặc đúng theo chuẩn mực. Có sắc thái đánh giá từ bên ngoài về điều nên xảy ra hoặc nên tồn tại. Trang trọng.",
+    "examples": [
+      {
+        "ja": "これほどの功績に対しては、社会的な評価が与えられてしかるべきだ。",
+        "vi": "Đối với công lao lớn lao đến vậy, việc được xã hội công nhận là điều xứng đáng."
+      },
+      {
+        "ja": "事実を知った以上、責任ある立場の人は行動してしかるべきだ。",
+        "vi": "Đã biết sự thật rồi thì người ở vị trí có trách nhiệm nên hành động là điều phù hợp."
+      }
+    ],
+    "notes_vi": "Biểu thị đánh giá rằng điều gì đó là xứng đáng, hợp lý theo đạo lý hoặc chuẩn mực. Trang trọng, dùng trong văn viết phân tích hoặc luận văn."
+  },
+  {
+    "pattern": "〜んとする",
+    "explanation_vi": "Mẫu này biểu thị 'sắp', 'đang cố gắng để', 'chuẩn bị để'. Là dạng văn học/cổ điển của 〜ようとする. Cấu trúc: động từ dạng âm âm + ん + とする. Thường dùng trong văn học, thơ ca, và các mô tả mang tính kịch tính. Biểu thị hành động sắp xảy ra hoặc nỗ lực hướng tới.",
+    "examples": [
+      {
+        "ja": "夜明けの光が山の稜線を越えんとしていた。",
+        "vi": "Ánh sáng bình minh đang chuẩn bị vượt qua đỉnh núi."
+      },
+      {
+        "ja": "彼は真実を暴かんとする記者に追われ続けた。",
+        "vi": "Anh ấy liên tục bị phóng viên muốn phanh phui sự thật đeo bám."
+      }
+    ],
+    "notes_vi": "Văn học/cổ điển, tương đương 〜ようとする. Thường dùng trong mô tả hành động sắp xảy ra hoặc nỗ lực hướng tới. Mang sắc thái kịch tính hoặc thi ca."
+  },
+  {
+    "pattern": "〜ずじまい",
+    "explanation_vi": "Mẫu này biểu thị 'cuối cùng không làm được', 'đã không...mãi đến cuối'. Biểu thị hành động mà người nói dự định hoặc muốn làm nhưng kết thúc mà không thực hiện được. Mang sắc thái tiếc nuối. Cấu trúc: V(否定形ず) + じまい. Khác với 〜ないまま ở chỗ 〜ずじまい nhấn mạnh việc cơ hội đã qua đi.",
+    "examples": [
+      {
+        "ja": "日本にいる間、富士山に登れずじまいだった。",
+        "vi": "Trong suốt thời gian ở Nhật, cuối cùng đã không leo lên được núi Phú Sĩ."
+      },
+      {
+        "ja": "借りた本は結局読まずじまいで、返してしまった。",
+        "vi": "Cuốn sách mượn về cuối cùng đã không đọc được mà đành phải trả."
+      }
+    ],
+    "notes_vi": "Biểu thị tiếc nuối vì hành động dự định không được thực hiện. Thường mang sắc thái 'đã không làm mãi đến cuối'. Phổ biến trong cả văn nói lẫn văn viết."
+  },
+  {
+    "pattern": "〜といえなくもない",
+    "explanation_vi": "Mẫu này biểu thị 'không phải là không thể nói là', 'có thể nói là một cách nào đó'. Phủ định kép tạo ra sắc thái do dự và thận trọng khi đưa ra đánh giá. Người nói không khẳng định mạnh mẽ mà gợi mở khả năng. Trang trọng hơn 〜といえなくもない ở N2. Thường dùng trong văn viết học thuật và phân tích.",
+    "examples": [
+      {
+        "ja": "この政策は一定の効果をあげたといえなくもないが、問題も多い。",
+        "vi": "Có thể nói là chính sách này đã đạt được một số hiệu quả nhất định, nhưng cũng còn nhiều vấn đề."
+      },
+      {
+        "ja": "彼の行動は英雄的といえなくもないが、無謀だったことも確かだ。",
+        "vi": "Hành động của anh ấy có thể nói là hùng hồn theo một nghĩa nào đó, nhưng cũng chắc chắn là liều lĩnh."
+      }
+    ],
+    "notes_vi": "Phủ định kép tạo sắc thái nhẹ nhàng trong đánh giá. Người nói để ngỏ khả năng mà không cam kết. Thường dùng trong văn học thuật khi muốn thận trọng trong kết luận."
+  },
+  {
+    "pattern": "〜を限りに（して）",
+    "explanation_vi": "Mẫu 〜を限りに đã có trong N1 part3 với nghĩa 'kể từ...trở đi sẽ không còn'. Mẫu mở rộng này 〜を限りにして nhấn mạnh thêm sắc thái 'lấy...làm điểm kết thúc/giới hạn cuối cùng'. Biểu thị một mốc thời gian hoặc sự kiện là điểm kết thúc dứt khoát. Cũng dùng với 声を限りに (với tất cả sức lực giọng nói).",
+    "examples": [
+      {
+        "ja": "今日を限りにして、一切の連絡を断つことにした。",
+        "vi": "Lấy hôm nay làm điểm kết thúc, tôi quyết định cắt đứt mọi liên lạc."
+      },
+      {
+        "ja": "彼は声を限りにして助けを求めた。",
+        "vi": "Anh ấy kêu cứu với tất cả sức lực của giọng nói."
+      }
+    ],
+    "notes_vi": "〜を限りにして là dạng nhấn mạnh của 〜を限りに. Ngoài nghĩa thời gian, 声を限りに (dùng hết sức giọng) là thành ngữ phổ biến ở N1."
+  }
+]

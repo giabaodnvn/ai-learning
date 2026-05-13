@@ -1,0 +1,818 @@
+[
+  {
+    "word": "遂行する",
+    "reading": "すいこうする",
+    "romaji": "suikou suru",
+    "meaning_vi": "thực hiện đến cùng, hoàn thành nhiệm vụ",
+    "part_of_speech": "verb",
+    "tags": ["formal", "business", "written"]
+  },
+  {
+    "word": "執行する",
+    "reading": "しっこうする",
+    "romaji": "shikkou suru",
+    "meaning_vi": "thi hành, chấp hành (lệnh, bản án)",
+    "part_of_speech": "verb",
+    "tags": ["formal", "legal", "written"]
+  },
+  {
+    "word": "適用する",
+    "reading": "てきようする",
+    "romaji": "tekiyou suru",
+    "meaning_vi": "áp dụng, vận dụng (quy tắc, luật)",
+    "part_of_speech": "verb",
+    "tags": ["formal", "legal", "business"]
+  },
+  {
+    "word": "履行する",
+    "reading": "りこうする",
+    "romaji": "rikou suru",
+    "meaning_vi": "thực hiện, hoàn thành (nghĩa vụ, hợp đồng)",
+    "part_of_speech": "verb",
+    "tags": ["formal", "legal", "written"]
+  },
+  {
+    "word": "推進する",
+    "reading": "すいしんする",
+    "romaji": "suishin suru",
+    "meaning_vi": "thúc đẩy, đẩy mạnh",
+    "part_of_speech": "verb",
+    "tags": ["formal", "business", "written"]
+  },
+  {
+    "word": "阻止する",
+    "reading": "そしする",
+    "romaji": "soshi suru",
+    "meaning_vi": "ngăn chặn, cản trở",
+    "part_of_speech": "verb",
+    "tags": ["formal", "written"]
+  },
+  {
+    "word": "妨害する",
+    "reading": "ぼうがいする",
+    "romaji": "bougai suru",
+    "meaning_vi": "cản trở, gây trở ngại, phá hoại",
+    "part_of_speech": "verb",
+    "tags": ["formal", "legal", "written"]
+  },
+  {
+    "word": "干渉する",
+    "reading": "かんしょうする",
+    "romaji": "kanshou suru",
+    "meaning_vi": "can thiệp, xen vào",
+    "part_of_speech": "verb",
+    "tags": ["formal", "politics", "written"]
+  },
+  {
+    "word": "協議する",
+    "reading": "きょうぎする",
+    "romaji": "kyougi suru",
+    "meaning_vi": "hiệp thương, thảo luận, bàn bạc chính thức",
+    "part_of_speech": "verb",
+    "tags": ["formal", "business", "politics"]
+  },
+  {
+    "word": "交渉する",
+    "reading": "こうしょうする",
+    "romaji": "koushou suru",
+    "meaning_vi": "đàm phán, thương lượng",
+    "part_of_speech": "verb",
+    "tags": ["formal", "business", "politics"]
+  },
+  {
+    "word": "折衝する",
+    "reading": "せっしょうする",
+    "romaji": "sesshou suru",
+    "meaning_vi": "thương thảo, mặc cả, điều đình",
+    "part_of_speech": "verb",
+    "tags": ["formal", "business", "written"]
+  },
+  {
+    "word": "妥協する",
+    "reading": "だきょうする",
+    "romaji": "dakyou suru",
+    "meaning_vi": "thỏa hiệp, nhượng bộ",
+    "part_of_speech": "verb",
+    "tags": ["formal", "business", "written"]
+  },
+  {
+    "word": "合意する",
+    "reading": "ごういする",
+    "romaji": "goui suru",
+    "meaning_vi": "đồng thuận, đạt được thỏa thuận",
+    "part_of_speech": "verb",
+    "tags": ["formal", "business", "legal"]
+  },
+  {
+    "word": "決議する",
+    "reading": "けつぎする",
+    "romaji": "ketsugi suru",
+    "meaning_vi": "quyết nghị, thông qua nghị quyết",
+    "part_of_speech": "verb",
+    "tags": ["formal", "politics", "written"]
+  },
+  {
+    "word": "採択する",
+    "reading": "さいたくする",
+    "romaji": "saitaku suru",
+    "meaning_vi": "thông qua, chấp thuận (đề án, nghị quyết)",
+    "part_of_speech": "verb",
+    "tags": ["formal", "politics", "written"]
+  },
+  {
+    "word": "承認する",
+    "reading": "しょうにんする",
+    "romaji": "shounin suru",
+    "meaning_vi": "phê chuẩn, thừa nhận, chấp thuận",
+    "part_of_speech": "verb",
+    "tags": ["formal", "business", "legal"]
+  },
+  {
+    "word": "否決する",
+    "reading": "ひけつする",
+    "romaji": "hiketsu suru",
+    "meaning_vi": "bác bỏ, phủ quyết",
+    "part_of_speech": "verb",
+    "tags": ["formal", "politics", "written"]
+  },
+  {
+    "word": "撤回する",
+    "reading": "てっかいする",
+    "romaji": "tekkai suru",
+    "meaning_vi": "rút lại, thu hồi (đề xuất, tuyên bố)",
+    "part_of_speech": "verb",
+    "tags": ["formal", "written"]
+  },
+  {
+    "word": "改正する",
+    "reading": "かいせいする",
+    "romaji": "kaisei suru",
+    "meaning_vi": "sửa đổi, cải chính (luật, quy định)",
+    "part_of_speech": "verb",
+    "tags": ["formal", "legal", "politics"]
+  },
+  {
+    "word": "制定する",
+    "reading": "せいていする",
+    "romaji": "seitei suru",
+    "meaning_vi": "ban hành, lập pháp, chế định",
+    "part_of_speech": "verb",
+    "tags": ["formal", "legal", "politics"]
+  },
+  {
+    "word": "施行する",
+    "reading": "しこうする",
+    "romaji": "shikou suru",
+    "meaning_vi": "thi hành, thực thi (luật, chính sách)",
+    "part_of_speech": "verb",
+    "tags": ["formal", "legal", "written"]
+  },
+  {
+    "word": "補完する",
+    "reading": "ほかんする",
+    "romaji": "hokan suru",
+    "meaning_vi": "bổ sung, bổ khuyết, hoàn thiện",
+    "part_of_speech": "verb",
+    "tags": ["formal", "academic", "written"]
+  },
+  {
+    "word": "補強する",
+    "reading": "ほきょうする",
+    "romaji": "hokyou suru",
+    "meaning_vi": "củng cố, tăng cường, gia cố",
+    "part_of_speech": "verb",
+    "tags": ["formal", "written"]
+  },
+  {
+    "word": "補充する",
+    "reading": "ほじゅうする",
+    "romaji": "hojuu suru",
+    "meaning_vi": "bổ sung, cung cấp thêm",
+    "part_of_speech": "verb",
+    "tags": ["formal", "business"]
+  },
+  {
+    "word": "修正する",
+    "reading": "しゅうせいする",
+    "romaji": "shuusei suru",
+    "meaning_vi": "sửa chữa, tu chỉnh, điều chỉnh",
+    "part_of_speech": "verb",
+    "tags": ["formal", "academic", "business"]
+  },
+  {
+    "word": "訂正する",
+    "reading": "ていせいする",
+    "romaji": "teisei suru",
+    "meaning_vi": "đính chính, sửa lỗi",
+    "part_of_speech": "verb",
+    "tags": ["formal", "written"]
+  },
+  {
+    "word": "是正する",
+    "reading": "ぜせいする",
+    "romaji": "zesei suru",
+    "meaning_vi": "cải thiện, chấn chỉnh, khắc phục (sai lầm)",
+    "part_of_speech": "verb",
+    "tags": ["formal", "written", "business"]
+  },
+  {
+    "word": "優先順位",
+    "reading": "ゆうせんじゅんい",
+    "romaji": "yuusen jun'i",
+    "meaning_vi": "thứ tự ưu tiên",
+    "part_of_speech": "noun",
+    "tags": ["formal", "business", "academic"]
+  },
+  {
+    "word": "取り組み",
+    "reading": "とりくみ",
+    "romaji": "torikumi",
+    "meaning_vi": "nỗ lực, cách tiếp cận, biện pháp",
+    "part_of_speech": "noun",
+    "tags": ["formal", "business", "written"]
+  },
+  {
+    "word": "経緯",
+    "reading": "けいい",
+    "romaji": "keii",
+    "meaning_vi": "quá trình, diễn biến, lý do dẫn đến",
+    "part_of_speech": "noun",
+    "tags": ["formal", "written"]
+  },
+  {
+    "word": "動機",
+    "reading": "どうき",
+    "romaji": "douki",
+    "meaning_vi": "động cơ, động lực",
+    "part_of_speech": "noun",
+    "tags": ["formal", "academic"]
+  },
+  {
+    "word": "目的意識",
+    "reading": "もくてきいしき",
+    "romaji": "mokuteki ishiki",
+    "meaning_vi": "ý thức về mục tiêu, tinh thần định hướng",
+    "part_of_speech": "noun",
+    "tags": ["formal", "abstract"]
+  },
+  {
+    "word": "危機意識",
+    "reading": "ききいしき",
+    "romaji": "kiki ishiki",
+    "meaning_vi": "ý thức về nguy cơ, tinh thần cảnh giác",
+    "part_of_speech": "noun",
+    "tags": ["formal", "abstract"]
+  },
+  {
+    "word": "問題意識",
+    "reading": "もんだいいしき",
+    "romaji": "mondai ishiki",
+    "meaning_vi": "ý thức về vấn đề, tư duy phản biện",
+    "part_of_speech": "noun",
+    "tags": ["formal", "academic", "abstract"]
+  },
+  {
+    "word": "連帯感",
+    "reading": "れんたいかん",
+    "romaji": "rentaikan",
+    "meaning_vi": "cảm giác đoàn kết, tinh thần liên đới",
+    "part_of_speech": "noun",
+    "tags": ["formal", "abstract"]
+  },
+  {
+    "word": "一体感",
+    "reading": "いったいかん",
+    "romaji": "ittaikan",
+    "meaning_vi": "cảm giác gắn kết, sự đồng lòng",
+    "part_of_speech": "noun",
+    "tags": ["formal", "abstract"]
+  },
+  {
+    "word": "達成感",
+    "reading": "たっせいかん",
+    "romaji": "tasseikan",
+    "meaning_vi": "cảm giác hoàn thành, sự thỏa mãn khi đạt mục tiêu",
+    "part_of_speech": "noun",
+    "tags": ["abstract"]
+  },
+  {
+    "word": "満足感",
+    "reading": "まんぞくかん",
+    "romaji": "manzokukan",
+    "meaning_vi": "cảm giác thỏa mãn, hài lòng",
+    "part_of_speech": "noun",
+    "tags": ["abstract"]
+  },
+  {
+    "word": "喪失感",
+    "reading": "そうしつかん",
+    "romaji": "soushitsukan",
+    "meaning_vi": "cảm giác mất mát",
+    "part_of_speech": "noun",
+    "tags": ["abstract", "literary"]
+  },
+  {
+    "word": "疎外感",
+    "reading": "そがいかん",
+    "romaji": "sogaikan",
+    "meaning_vi": "cảm giác bị xa lánh, cảm giác cô lập",
+    "part_of_speech": "noun",
+    "tags": ["abstract", "literary"]
+  },
+  {
+    "word": "緊迫感",
+    "reading": "きんぱくかん",
+    "romaji": "kinpakukan",
+    "meaning_vi": "cảm giác căng thẳng, không khí bức bách",
+    "part_of_speech": "noun",
+    "tags": ["abstract", "written"]
+  },
+  {
+    "word": "緊張感",
+    "reading": "きんちょうかん",
+    "romaji": "kinchoukan",
+    "meaning_vi": "cảm giác căng thẳng, sự hồi hộp",
+    "part_of_speech": "noun",
+    "tags": ["abstract"]
+  },
+  {
+    "word": "切迫感",
+    "reading": "せっぱくかん",
+    "romaji": "seppakukan",
+    "meaning_vi": "cảm giác cấp bách, áp lực thời gian",
+    "part_of_speech": "noun",
+    "tags": ["abstract", "written"]
+  },
+  {
+    "word": "充実感",
+    "reading": "じゅうじつかん",
+    "romaji": "juujitsukan",
+    "meaning_vi": "cảm giác sung mãn, sự viên mãn",
+    "part_of_speech": "noun",
+    "tags": ["abstract"]
+  },
+  {
+    "word": "幸福感",
+    "reading": "こうふくかん",
+    "romaji": "koufukukan",
+    "meaning_vi": "cảm giác hạnh phúc",
+    "part_of_speech": "noun",
+    "tags": ["abstract"]
+  },
+  {
+    "word": "論点",
+    "reading": "ろんてん",
+    "romaji": "ronten",
+    "meaning_vi": "điểm tranh luận, vấn đề cốt lõi của cuộc tranh luận",
+    "part_of_speech": "noun",
+    "tags": ["formal", "academic", "written"]
+  },
+  {
+    "word": "核心",
+    "reading": "かくしん",
+    "romaji": "kakushin",
+    "meaning_vi": "cốt lõi, trọng tâm, điểm mấu chốt",
+    "part_of_speech": "noun",
+    "tags": ["formal", "academic", "written"]
+  },
+  {
+    "word": "根本",
+    "reading": "こんぽん",
+    "romaji": "konpon",
+    "meaning_vi": "căn bản, gốc rễ, nền tảng",
+    "part_of_speech": "noun",
+    "tags": ["formal", "abstract"]
+  },
+  {
+    "word": "把握",
+    "reading": "はあく",
+    "romaji": "haaku",
+    "meaning_vi": "nắm bắt, hiểu rõ, nắm vững",
+    "part_of_speech": "noun",
+    "tags": ["formal", "academic", "written"]
+  },
+  {
+    "word": "表示",
+    "reading": "ひょうじ",
+    "romaji": "hyouji",
+    "meaning_vi": "hiển thị, biểu thị, chỉ rõ",
+    "part_of_speech": "noun",
+    "tags": ["formal", "written"]
+  },
+  {
+    "word": "構想",
+    "reading": "こうそう",
+    "romaji": "kousou",
+    "meaning_vi": "ý tưởng lớn, kế hoạch tổng thể, cấu tứ",
+    "part_of_speech": "noun",
+    "tags": ["formal", "business", "academic"]
+  },
+  {
+    "word": "構築",
+    "reading": "こうちく",
+    "romaji": "kouchiku",
+    "meaning_vi": "xây dựng, thiết lập (hệ thống, quan hệ)",
+    "part_of_speech": "noun",
+    "tags": ["formal", "business", "academic"]
+  },
+  {
+    "word": "構造",
+    "reading": "こうぞう",
+    "romaji": "kouzou",
+    "meaning_vi": "cấu trúc, cấu tạo",
+    "part_of_speech": "noun",
+    "tags": ["formal", "academic"]
+  },
+  {
+    "word": "規格",
+    "reading": "きかく",
+    "romaji": "kikaku",
+    "meaning_vi": "quy cách, tiêu chuẩn kỹ thuật",
+    "part_of_speech": "noun",
+    "tags": ["formal", "business"]
+  },
+  {
+    "word": "標準",
+    "reading": "ひょうじゅん",
+    "romaji": "hyoujun",
+    "meaning_vi": "tiêu chuẩn, chuẩn mực",
+    "part_of_speech": "noun",
+    "tags": ["formal", "academic", "business"]
+  },
+  {
+    "word": "制約",
+    "reading": "せいやく",
+    "romaji": "seiyaku",
+    "meaning_vi": "ràng buộc, hạn chế, điều kiện",
+    "part_of_speech": "noun",
+    "tags": ["formal", "written"]
+  },
+  {
+    "word": "要因",
+    "reading": "よういん",
+    "romaji": "youin",
+    "meaning_vi": "nhân tố, nguyên nhân, yếu tố",
+    "part_of_speech": "noun",
+    "tags": ["formal", "academic", "written"]
+  },
+  {
+    "word": "側面",
+    "reading": "そくめん",
+    "romaji": "sokumen",
+    "meaning_vi": "mặt, khía cạnh, phương diện",
+    "part_of_speech": "noun",
+    "tags": ["formal", "academic"]
+  },
+  {
+    "word": "視野",
+    "reading": "しや",
+    "romaji": "shiya",
+    "meaning_vi": "tầm nhìn, tầm quan sát",
+    "part_of_speech": "noun",
+    "tags": ["formal", "academic"]
+  },
+  {
+    "word": "展望",
+    "reading": "てんぼう",
+    "romaji": "tenbou",
+    "meaning_vi": "triển vọng, tầm nhìn tương lai",
+    "part_of_speech": "noun",
+    "tags": ["formal", "written"]
+  },
+  {
+    "word": "実現性",
+    "reading": "じつげんせい",
+    "romaji": "jitsugensei",
+    "meaning_vi": "tính khả thi, khả năng thực hiện được",
+    "part_of_speech": "noun",
+    "tags": ["formal", "academic", "business"]
+  },
+  {
+    "word": "有効性",
+    "reading": "ゆうこうせい",
+    "romaji": "yuukousei",
+    "meaning_vi": "tính hiệu quả, tính có hiệu lực",
+    "part_of_speech": "noun",
+    "tags": ["formal", "academic", "written"]
+  },
+  {
+    "word": "合理性",
+    "reading": "ごうりせい",
+    "romaji": "gourisei",
+    "meaning_vi": "tính hợp lý, tính duy lý",
+    "part_of_speech": "noun",
+    "tags": ["formal", "academic", "abstract"]
+  },
+  {
+    "word": "適切性",
+    "reading": "てきせつせい",
+    "romaji": "tekisetsusei",
+    "meaning_vi": "tính thích hợp, tính phù hợp",
+    "part_of_speech": "noun",
+    "tags": ["formal", "academic", "written"]
+  },
+  {
+    "word": "緊急性",
+    "reading": "きんきゅうせい",
+    "romaji": "kinkyuusei",
+    "meaning_vi": "tính khẩn cấp, mức độ cấp bách",
+    "part_of_speech": "noun",
+    "tags": ["formal", "written"]
+  },
+  {
+    "word": "定義",
+    "reading": "ていぎ",
+    "romaji": "teigi",
+    "meaning_vi": "định nghĩa",
+    "part_of_speech": "noun",
+    "tags": ["formal", "academic"]
+  },
+  {
+    "word": "範疇",
+    "reading": "はんちゅう",
+    "romaji": "hanchuu",
+    "meaning_vi": "phạm trù, lĩnh vực, phạm vi",
+    "part_of_speech": "noun",
+    "tags": ["formal", "academic", "philosophy"]
+  },
+  {
+    "word": "整理",
+    "reading": "せいり",
+    "romaji": "seiri",
+    "meaning_vi": "sắp xếp, chỉnh lý, tổ chức lại",
+    "part_of_speech": "noun",
+    "tags": ["formal", "written"]
+  },
+  {
+    "word": "体系化",
+    "reading": "たいけいか",
+    "romaji": "taikeika",
+    "meaning_vi": "hệ thống hóa",
+    "part_of_speech": "noun",
+    "tags": ["formal", "academic", "written"]
+  },
+  {
+    "word": "連動",
+    "reading": "れんどう",
+    "romaji": "rendou",
+    "meaning_vi": "liên động, hoạt động liên kết",
+    "part_of_speech": "noun",
+    "tags": ["formal", "business"]
+  },
+  {
+    "word": "連続",
+    "reading": "れんぞく",
+    "romaji": "renzoku",
+    "meaning_vi": "liên tục, nối tiếp",
+    "part_of_speech": "noun",
+    "tags": ["formal"]
+  },
+  {
+    "word": "持続",
+    "reading": "じぞく",
+    "romaji": "jizoku",
+    "meaning_vi": "duy trì, tiếp diễn bền vững",
+    "part_of_speech": "noun",
+    "tags": ["formal", "academic"]
+  },
+  {
+    "word": "保持",
+    "reading": "ほじ",
+    "romaji": "hoji",
+    "meaning_vi": "bảo tồn, giữ gìn, duy trì",
+    "part_of_speech": "noun",
+    "tags": ["formal", "written"]
+  },
+  {
+    "word": "確保",
+    "reading": "かくほ",
+    "romaji": "kakuho",
+    "meaning_vi": "đảm bảo, bảo đảm có được",
+    "part_of_speech": "noun",
+    "tags": ["formal", "business", "written"]
+  },
+  {
+    "word": "調達",
+    "reading": "ちょうたつ",
+    "romaji": "choutatu",
+    "meaning_vi": "thu mua, cung cấp, điều phối nguồn lực",
+    "part_of_speech": "noun",
+    "tags": ["formal", "business"]
+  },
+  {
+    "word": "確立",
+    "reading": "かくりつ",
+    "romaji": "kakuritsu",
+    "meaning_vi": "xác lập, thiết lập vững chắc",
+    "part_of_speech": "noun",
+    "tags": ["formal", "written"]
+  },
+  {
+    "word": "強化",
+    "reading": "きょうか",
+    "romaji": "kyouka",
+    "meaning_vi": "tăng cường, củng cố",
+    "part_of_speech": "noun",
+    "tags": ["formal", "business"]
+  },
+  {
+    "word": "活性化",
+    "reading": "かっせいか",
+    "romaji": "kasseika",
+    "meaning_vi": "hoạt hóa, thúc đẩy sôi nổi",
+    "part_of_speech": "noun",
+    "tags": ["formal", "business"]
+  },
+  {
+    "word": "活用",
+    "reading": "かつよう",
+    "romaji": "katsuyou",
+    "meaning_vi": "tận dụng, vận dụng linh hoạt",
+    "part_of_speech": "noun",
+    "tags": ["formal", "business", "academic"]
+  },
+  {
+    "word": "転換",
+    "reading": "てんかん",
+    "romaji": "tenkan",
+    "meaning_vi": "chuyển đổi, thay đổi hướng",
+    "part_of_speech": "noun",
+    "tags": ["formal", "business", "written"]
+  },
+  {
+    "word": "打開",
+    "reading": "だかい",
+    "romaji": "dakai",
+    "meaning_vi": "khai thông, giải quyết bế tắc",
+    "part_of_speech": "noun",
+    "tags": ["formal", "written"]
+  },
+  {
+    "word": "打破",
+    "reading": "だは",
+    "romaji": "daha",
+    "meaning_vi": "phá vỡ, phá bỏ (rào cản, lệ cũ)",
+    "part_of_speech": "noun",
+    "tags": ["formal", "written"]
+  },
+  {
+    "word": "突破",
+    "reading": "とっぱ",
+    "romaji": "toppa",
+    "meaning_vi": "đột phá, vượt qua",
+    "part_of_speech": "noun",
+    "tags": ["formal", "written"]
+  },
+  {
+    "word": "解消",
+    "reading": "かいしょう",
+    "romaji": "kaishou",
+    "meaning_vi": "giải tỏa, giải quyết, xóa bỏ",
+    "part_of_speech": "noun",
+    "tags": ["formal", "business"]
+  },
+  {
+    "word": "解決策",
+    "reading": "かいけつさく",
+    "romaji": "kaiketsusaku",
+    "meaning_vi": "giải pháp, biện pháp giải quyết",
+    "part_of_speech": "noun",
+    "tags": ["formal", "business", "written"]
+  },
+  {
+    "word": "対処",
+    "reading": "たいしょ",
+    "romaji": "taisho",
+    "meaning_vi": "ứng phó, xử lý",
+    "part_of_speech": "noun",
+    "tags": ["formal", "written"]
+  },
+  {
+    "word": "対応策",
+    "reading": "たいおうさく",
+    "romaji": "taiousaku",
+    "meaning_vi": "biện pháp đối phó, phương án ứng phó",
+    "part_of_speech": "noun",
+    "tags": ["formal", "business", "written"]
+  },
+  {
+    "word": "回避",
+    "reading": "かいひ",
+    "romaji": "kaihi",
+    "meaning_vi": "né tránh, tránh né",
+    "part_of_speech": "noun",
+    "tags": ["formal", "written"]
+  },
+  {
+    "word": "未然に",
+    "reading": "みぜんに",
+    "romaji": "mizen ni",
+    "meaning_vi": "trước khi xảy ra, phòng trước",
+    "part_of_speech": "adverb",
+    "tags": ["formal", "written"]
+  },
+  {
+    "word": "事前に",
+    "reading": "じぜんに",
+    "romaji": "jizen ni",
+    "meaning_vi": "trước đó, trước khi, sự chuẩn bị trước",
+    "part_of_speech": "adverb",
+    "tags": ["formal", "written"]
+  },
+  {
+    "word": "従来",
+    "reading": "じゅうらい",
+    "romaji": "juurai",
+    "meaning_vi": "truyền thống, từ trước đến nay",
+    "part_of_speech": "noun",
+    "tags": ["formal", "written"]
+  },
+  {
+    "word": "既存",
+    "reading": "きそん",
+    "romaji": "kison",
+    "meaning_vi": "hiện có, đã tồn tại",
+    "part_of_speech": "noun",
+    "tags": ["formal", "written", "business"]
+  },
+  {
+    "word": "現行",
+    "reading": "げんこう",
+    "romaji": "genkou",
+    "meaning_vi": "hiện hành, đang áp dụng",
+    "part_of_speech": "noun",
+    "tags": ["formal", "legal", "written"]
+  },
+  {
+    "word": "従事",
+    "reading": "じゅうじ",
+    "romaji": "juuji",
+    "meaning_vi": "làm việc trong lĩnh vực, tham gia vào",
+    "part_of_speech": "noun",
+    "tags": ["formal", "written"]
+  },
+  {
+    "word": "携わる",
+    "reading": "たずさわる",
+    "romaji": "tazusawaru",
+    "meaning_vi": "tham gia vào, liên quan đến (công việc)",
+    "part_of_speech": "verb",
+    "tags": ["formal", "written"]
+  },
+  {
+    "word": "果たす",
+    "reading": "はたす",
+    "romaji": "hatasu",
+    "meaning_vi": "hoàn thành, thực hiện (trách nhiệm, vai trò)",
+    "part_of_speech": "verb",
+    "tags": ["formal", "written"]
+  },
+  {
+    "word": "見直し",
+    "reading": "みなおし",
+    "romaji": "minaoshi",
+    "meaning_vi": "xem xét lại, đánh giá lại",
+    "part_of_speech": "noun",
+    "tags": ["formal", "business", "written"]
+  },
+  {
+    "word": "再検討",
+    "reading": "さいけんとう",
+    "romaji": "saikentou",
+    "meaning_vi": "xem xét lại, tái kiểm tra",
+    "part_of_speech": "noun",
+    "tags": ["formal", "academic", "written"]
+  },
+  {
+    "word": "再考",
+    "reading": "さいこう",
+    "romaji": "saikou",
+    "meaning_vi": "suy nghĩ lại, xem xét lại",
+    "part_of_speech": "noun",
+    "tags": ["formal", "written"]
+  },
+  {
+    "word": "再評価",
+    "reading": "さいひょうか",
+    "romaji": "saihyouka",
+    "meaning_vi": "đánh giá lại, tái thẩm định",
+    "part_of_speech": "noun",
+    "tags": ["formal", "academic", "business"]
+  },
+  {
+    "word": "見定める",
+    "reading": "みさだめる",
+    "romaji": "misadameru",
+    "meaning_vi": "xác định rõ, nhìn rõ bản chất",
+    "part_of_speech": "verb",
+    "tags": ["formal", "written"]
+  },
+  {
+    "word": "難点",
+    "reading": "なんてん",
+    "romaji": "nanten",
+    "meaning_vi": "điểm khó, nhược điểm, vấn đề khó giải quyết",
+    "part_of_speech": "noun",
+    "tags": ["formal", "written"]
+  }
+]

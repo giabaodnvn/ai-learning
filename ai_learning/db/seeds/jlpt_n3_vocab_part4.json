@@ -42,17 +42,6 @@
     ]
   },
   {
-    "word": "分析する",
-    "reading": "ぶんせきする",
-    "romaji": "bunseki suru",
-    "meaning_vi": "phân tích",
-    "part_of_speech": "verb",
-    "tags": [
-      "thinking",
-      "work"
-    ]
-  },
-  {
     "word": "調査する",
     "reading": "ちょうさする",
     "romaji": "chousa suru",
@@ -200,17 +189,6 @@
     "meaning_vi": "vượt qua, khắc phục",
     "part_of_speech": "verb",
     "tags": [
-      "abstract"
-    ]
-  },
-  {
-    "word": "改善する",
-    "reading": "かいぜんする",
-    "romaji": "kaizen suru",
-    "meaning_vi": "cải thiện, cải tiến",
-    "part_of_speech": "verb",
-    "tags": [
-      "work",
       "abstract"
     ]
   },
@@ -565,17 +543,6 @@
     "tags": [
       "abstract",
       "action"
-    ]
-  },
-  {
-    "word": "取り組む",
-    "reading": "とりくむ",
-    "romaji": "torikumu",
-    "meaning_vi": "nỗ lực giải quyết, đối mặt với",
-    "part_of_speech": "verb",
-    "tags": [
-      "work",
-      "abstract"
     ]
   },
   {

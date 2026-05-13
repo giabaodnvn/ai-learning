@@ -1,41 +1,5 @@
 [
   {
-    "word": "朝食",
-    "reading": "ちょうしょく",
-    "romaji": "choushoku",
-    "meaning_vi": "bữa sáng",
-    "part_of_speech": "noun",
-    "tags": [
-      "breakfast",
-      "morning meal",
-      "daily life"
-    ]
-  },
-  {
-    "word": "昼食",
-    "reading": "ちゅうしょく",
-    "romaji": "chuushoku",
-    "meaning_vi": "bữa trưa",
-    "part_of_speech": "noun",
-    "tags": [
-      "lunch",
-      "midday meal",
-      "daily life"
-    ]
-  },
-  {
-    "word": "夕食",
-    "reading": "ゆうしょく",
-    "romaji": "yuushoku",
-    "meaning_vi": "bữa tối",
-    "part_of_speech": "noun",
-    "tags": [
-      "dinner",
-      "evening meal",
-      "daily life"
-    ]
-  },
-  {
     "word": "宵夜",
     "reading": "よいよ",
     "romaji": "yoiyo",
@@ -776,18 +740,6 @@
     "tags": [
       "coupon",
       "voucher",
-      "daily life"
-    ]
-  },
-  {
-    "word": "レジ",
-    "reading": "れじ",
-    "romaji": "reji",
-    "meaning_vi": "quầy thanh toán",
-    "part_of_speech": "noun",
-    "tags": [
-      "checkout",
-      "register",
       "daily life"
     ]
   },

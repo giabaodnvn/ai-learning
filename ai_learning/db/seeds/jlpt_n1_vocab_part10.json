@@ -1,0 +1,1096 @@
+[
+  {
+    "word": "慨嘆",
+    "reading": "がいたん",
+    "romaji": "gaitan",
+    "meaning_vi": "than thở, than vãn, lấy làm đáng tiếc",
+    "part_of_speech": "noun",
+    "tags": [
+      "literary",
+      "formal",
+      "written"
+    ]
+  },
+  {
+    "word": "慨然",
+    "reading": "がいぜん",
+    "romaji": "gaizen",
+    "meaning_vi": "phẫn uất, cảm khái mạnh mẽ",
+    "part_of_speech": "adverb",
+    "tags": [
+      "literary",
+      "formal",
+      "written"
+    ]
+  },
+  {
+    "word": "憤慨",
+    "reading": "ふんがい",
+    "romaji": "fungai",
+    "meaning_vi": "phẫn nộ, tức giận mạnh",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "written"
+    ]
+  },
+  {
+    "word": "憤怒",
+    "reading": "ふんど",
+    "romaji": "fundo",
+    "meaning_vi": "căm phẫn, tức giận tột độ",
+    "part_of_speech": "noun",
+    "tags": [
+      "literary",
+      "formal",
+      "written"
+    ]
+  },
+  {
+    "word": "義憤",
+    "reading": "ぎふん",
+    "romaji": "gifun",
+    "meaning_vi": "phẫn uất vì bất công, nghĩa phẫn",
+    "part_of_speech": "noun",
+    "tags": [
+      "literary",
+      "formal",
+      "written"
+    ]
+  },
+  {
+    "word": "憂悶",
+    "reading": "ゆうもん",
+    "romaji": "yuumon",
+    "meaning_vi": "ưu tư, phiền muộn",
+    "part_of_speech": "noun",
+    "tags": [
+      "literary",
+      "formal",
+      "written"
+    ]
+  },
+  {
+    "word": "沈痛",
+    "reading": "ちんつう",
+    "romaji": "chintsuu",
+    "meaning_vi": "đau lòng sâu sắc, trầm uất",
+    "part_of_speech": "adjective",
+    "tags": [
+      "literary",
+      "formal",
+      "written"
+    ]
+  },
+  {
+    "word": "粛然",
+    "reading": "しゅくぜん",
+    "romaji": "shukuzen",
+    "meaning_vi": "nghiêm trang, kính sợ im lặng",
+    "part_of_speech": "adverb",
+    "tags": [
+      "literary",
+      "formal",
+      "written"
+    ]
+  },
+  {
+    "word": "粛清",
+    "reading": "しゅくせい",
+    "romaji": "shukusei",
+    "meaning_vi": "thanh trừng, loại bỏ (phần tử bất trung)",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "politics",
+      "written"
+    ]
+  },
+  {
+    "word": "粛々",
+    "reading": "しゅくしゅく",
+    "romaji": "shukushuku",
+    "meaning_vi": "nghiêm túc lặng lẽ, trật tự không ồn ào",
+    "part_of_speech": "adverb",
+    "tags": [
+      "literary",
+      "formal",
+      "written"
+    ]
+  },
+  {
+    "word": "歴然",
+    "reading": "れきぜん",
+    "romaji": "rekizen",
+    "meaning_vi": "rõ ràng, hiển nhiên",
+    "part_of_speech": "adverb",
+    "tags": [
+      "formal",
+      "written"
+    ]
+  },
+  {
+    "word": "截然",
+    "reading": "せつぜん",
+    "romaji": "setsuzen",
+    "meaning_vi": "rõ ràng, dứt khoát, phân minh",
+    "part_of_speech": "adverb",
+    "tags": [
+      "literary",
+      "formal",
+      "written"
+    ]
+  },
+  {
+    "word": "漠然",
+    "reading": "ばくぜん",
+    "romaji": "bakuzen",
+    "meaning_vi": "mơ hồ, mung lung, không rõ ràng",
+    "part_of_speech": "adverb",
+    "tags": [
+      "formal",
+      "written"
+    ]
+  },
+  {
+    "word": "茫然",
+    "reading": "ぼうぜん",
+    "romaji": "bouzen",
+    "meaning_vi": "ngẩn ngơ, thẫn thờ, bàng hoàng",
+    "part_of_speech": "adverb",
+    "tags": [
+      "formal",
+      "written"
+    ]
+  },
+  {
+    "word": "呆然",
+    "reading": "ぼうぜん",
+    "romaji": "bouzen",
+    "meaning_vi": "ngây ngô, ngẩn ra, bàng hoàng",
+    "part_of_speech": "adverb",
+    "tags": [
+      "formal",
+      "written"
+    ]
+  },
+  {
+    "word": "愕然",
+    "reading": "がくぜん",
+    "romaji": "gakuzen",
+    "meaning_vi": "ngạc nhiên sửng sốt, kinh ngạc",
+    "part_of_speech": "adverb",
+    "tags": [
+      "formal",
+      "written"
+    ]
+  },
+  {
+    "word": "唖然",
+    "reading": "あぜん",
+    "romaji": "azen",
+    "meaning_vi": "câm lặng vì kinh ngạc, há hốc mồm",
+    "part_of_speech": "adverb",
+    "tags": [
+      "formal",
+      "written"
+    ]
+  },
+  {
+    "word": "欣然",
+    "reading": "きんぜん",
+    "romaji": "kinzen",
+    "meaning_vi": "vui mừng, hân hoan",
+    "part_of_speech": "adverb",
+    "tags": [
+      "literary",
+      "formal",
+      "written"
+    ]
+  },
+  {
+    "word": "欣喜",
+    "reading": "きんき",
+    "romaji": "kinki",
+    "meaning_vi": "vui sướng, hân hoan",
+    "part_of_speech": "noun",
+    "tags": [
+      "literary",
+      "formal",
+      "written"
+    ]
+  },
+  {
+    "word": "陶酔",
+    "reading": "とうすい",
+    "romaji": "tousui",
+    "meaning_vi": "say mê, ngây ngất",
+    "part_of_speech": "noun",
+    "tags": [
+      "literary",
+      "formal"
+    ]
+  },
+  {
+    "word": "恍惚",
+    "reading": "こうこつ",
+    "romaji": "koukotsu",
+    "meaning_vi": "ngây ngất, xuất thần",
+    "part_of_speech": "noun",
+    "tags": [
+      "literary",
+      "formal"
+    ]
+  },
+  {
+    "word": "忘我",
+    "reading": "ぼうが",
+    "romaji": "bouga",
+    "meaning_vi": "quên mình, quên bản thân trong trạng thái xuất thần",
+    "part_of_speech": "noun",
+    "tags": [
+      "literary",
+      "formal",
+      "written"
+    ]
+  },
+  {
+    "word": "自失",
+    "reading": "じしつ",
+    "romaji": "jishitsu",
+    "meaning_vi": "thất thần, mất hồn",
+    "part_of_speech": "noun",
+    "tags": [
+      "literary",
+      "formal",
+      "written"
+    ]
+  },
+  {
+    "word": "脱我",
+    "reading": "だつが",
+    "romaji": "datsuga",
+    "meaning_vi": "thoát khỏi cái tôi, không còn ý thức bản thân",
+    "part_of_speech": "noun",
+    "tags": [
+      "literary",
+      "philosophy",
+      "formal"
+    ]
+  },
+  {
+    "word": "自己陶冶",
+    "reading": "じこたんや",
+    "romaji": "jiko tan'ya",
+    "meaning_vi": "tự rèn luyện bản thân, tu dưỡng",
+    "part_of_speech": "noun",
+    "tags": [
+      "literary",
+      "formal",
+      "written"
+    ]
+  },
+  {
+    "word": "自己研鑽",
+    "reading": "じこけんさん",
+    "romaji": "jiko kensan",
+    "meaning_vi": "tự trau dồi, nỗ lực tự phát triển bản thân",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "written",
+      "business"
+    ]
+  },
+  {
+    "word": "自己超克",
+    "reading": "じこちょうこく",
+    "romaji": "jiko choukok",
+    "meaning_vi": "tự vượt qua bản thân, tự chiến thắng mình",
+    "part_of_speech": "noun",
+    "tags": [
+      "literary",
+      "formal",
+      "written"
+    ]
+  },
+  {
+    "word": "叡智",
+    "reading": "えいち",
+    "romaji": "eichi",
+    "meaning_vi": "trí tuệ siêu việt, minh trí",
+    "part_of_speech": "noun",
+    "tags": [
+      "literary",
+      "formal",
+      "written"
+    ]
+  },
+  {
+    "word": "英知",
+    "reading": "えいち",
+    "romaji": "eichi",
+    "meaning_vi": "trí tuệ uyên bác, sự thông thái",
+    "part_of_speech": "noun",
+    "tags": [
+      "literary",
+      "formal",
+      "written"
+    ]
+  },
+  {
+    "word": "博識",
+    "reading": "はくしき",
+    "romaji": "hakushiki",
+    "meaning_vi": "uyên bác, hiểu biết rộng rãi",
+    "part_of_speech": "noun",
+    "tags": [
+      "literary",
+      "formal"
+    ]
+  },
+  {
+    "word": "博覧",
+    "reading": "はくらん",
+    "romaji": "hakuran",
+    "meaning_vi": "uyên bác, đọc rộng, hiểu nhiều",
+    "part_of_speech": "noun",
+    "tags": [
+      "literary",
+      "formal",
+      "written"
+    ]
+  },
+  {
+    "word": "造詣",
+    "reading": "ぞうけい",
+    "romaji": "zoukei",
+    "meaning_vi": "kiến thức uyên sâu, sự tinh thông",
+    "part_of_speech": "noun",
+    "tags": [
+      "literary",
+      "formal",
+      "written"
+    ]
+  },
+  {
+    "word": "蘊蓄",
+    "reading": "うんちく",
+    "romaji": "unchiku",
+    "meaning_vi": "kiến thức chuyên sâu tích lũy được, sự am hiểu",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "written"
+    ]
+  },
+  {
+    "word": "含蓄",
+    "reading": "がんちく",
+    "romaji": "ganchiku",
+    "meaning_vi": "hàm súc, nhiều ý nghĩa sâu xa",
+    "part_of_speech": "noun",
+    "tags": [
+      "literary",
+      "formal",
+      "written"
+    ]
+  },
+  {
+    "word": "示唆",
+    "reading": "しさ",
+    "romaji": "shisa",
+    "meaning_vi": "gợi ý, ám chỉ, gợi mở",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "academic",
+      "written"
+    ]
+  },
+  {
+    "word": "含意",
+    "reading": "がんい",
+    "romaji": "gan'i",
+    "meaning_vi": "hàm ý, ý nghĩa ngầm",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "academic",
+      "written"
+    ]
+  },
+  {
+    "word": "逆説的",
+    "reading": "ぎゃくせつてき",
+    "romaji": "gyakusetsuteki",
+    "meaning_vi": "nghịch lý, có tính nghịch lý",
+    "part_of_speech": "adjective",
+    "tags": [
+      "formal",
+      "academic",
+      "written"
+    ]
+  },
+  {
+    "word": "二律背反",
+    "reading": "にりつはいはん",
+    "romaji": "niritsu haihan",
+    "meaning_vi": "mâu thuẫn hai mệnh đề, antinomy",
+    "part_of_speech": "noun",
+    "tags": [
+      "literary",
+      "philosophy",
+      "formal"
+    ]
+  },
+  {
+    "word": "自縄自縛",
+    "reading": "じじょうじばく",
+    "romaji": "jijou jibaku",
+    "meaning_vi": "tự mình trói buộc mình",
+    "part_of_speech": "noun",
+    "tags": [
+      "literary",
+      "formal",
+      "yojijukugo"
+    ]
+  },
+  {
+    "word": "茫洋",
+    "reading": "ぼうよう",
+    "romaji": "bouyou",
+    "meaning_vi": "mênh mang, bao la rộng lớn không định hình",
+    "part_of_speech": "adjective",
+    "tags": [
+      "literary",
+      "formal",
+      "written"
+    ]
+  },
+  {
+    "word": "広漠",
+    "reading": "こうばく",
+    "romaji": "koubaku",
+    "meaning_vi": "rộng lớn mênh mông",
+    "part_of_speech": "adjective",
+    "tags": [
+      "literary",
+      "formal",
+      "written"
+    ]
+  },
+  {
+    "word": "浩然",
+    "reading": "こうぜん",
+    "romaji": "kouzen",
+    "meaning_vi": "khí thế hùng mạnh, rộng rãi",
+    "part_of_speech": "adverb",
+    "tags": [
+      "literary",
+      "formal",
+      "written"
+    ]
+  },
+  {
+    "word": "渾然",
+    "reading": "こんぜん",
+    "romaji": "konzen",
+    "meaning_vi": "hòa hợp toàn vẹn, hòa quyện",
+    "part_of_speech": "adverb",
+    "tags": [
+      "literary",
+      "formal",
+      "written"
+    ]
+  },
+  {
+    "word": "渾然一体",
+    "reading": "こんぜんいったい",
+    "romaji": "konzen ittai",
+    "meaning_vi": "hòa thành một thể, hợp nhất hoàn toàn",
+    "part_of_speech": "noun",
+    "tags": [
+      "literary",
+      "formal",
+      "yojijukugo"
+    ]
+  },
+  {
+    "word": "融然",
+    "reading": "ゆうぜん",
+    "romaji": "yuuzen",
+    "meaning_vi": "hòa quyện tự nhiên, tan chảy vào nhau",
+    "part_of_speech": "adverb",
+    "tags": [
+      "literary",
+      "formal",
+      "written"
+    ]
+  },
+  {
+    "word": "脈絡",
+    "reading": "みゃくらく",
+    "romaji": "myakuraku",
+    "meaning_vi": "mạch lạc, ngữ cảnh, sự liên kết",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "academic",
+      "written"
+    ]
+  },
+  {
+    "word": "文脈",
+    "reading": "ぶんみゃく",
+    "romaji": "bunmyaku",
+    "meaning_vi": "văn mạch, ngữ cảnh",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "academic",
+      "written"
+    ]
+  },
+  {
+    "word": "前後関係",
+    "reading": "ぜんごかんけい",
+    "romaji": "zengo kankei",
+    "meaning_vi": "bối cảnh trước và sau, mối liên hệ nhân quả",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "academic",
+      "written"
+    ]
+  },
+  {
+    "word": "通底",
+    "reading": "つうてい",
+    "romaji": "tuutei",
+    "meaning_vi": "có điểm chung ở tầng sâu, thông nhau ở cơ bản",
+    "part_of_speech": "noun",
+    "tags": [
+      "literary",
+      "formal",
+      "written"
+    ]
+  },
+  {
+    "word": "通念",
+    "reading": "つうねん",
+    "romaji": "tuunen",
+    "meaning_vi": "quan niệm phổ biến, nhận thức chung",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "academic",
+      "written"
+    ]
+  },
+  {
+    "word": "通説",
+    "reading": "つうせつ",
+    "romaji": "tuusetsu",
+    "meaning_vi": "thuyết phổ biến, quan điểm được công nhận rộng rãi",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "academic",
+      "written"
+    ]
+  },
+  {
+    "word": "定説",
+    "reading": "ていせつ",
+    "romaji": "teisetsu",
+    "meaning_vi": "thuyết đã xác lập, quan điểm được công nhận",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "academic",
+      "written"
+    ]
+  },
+  {
+    "word": "異説",
+    "reading": "いせつ",
+    "romaji": "isetsu",
+    "meaning_vi": "thuyết khác, quan điểm bất đồng",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "academic",
+      "written"
+    ]
+  },
+  {
+    "word": "持論",
+    "reading": "じろん",
+    "romaji": "jiron",
+    "meaning_vi": "quan điểm riêng, lý thuyết cá nhân",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "written"
+    ]
+  },
+  {
+    "word": "論駁",
+    "reading": "ろんばく",
+    "romaji": "ronbaku",
+    "meaning_vi": "bác bỏ lập luận, phản bác",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "academic",
+      "written"
+    ]
+  },
+  {
+    "word": "反証",
+    "reading": "はんしょう",
+    "romaji": "hanshou",
+    "meaning_vi": "phản chứng, bằng chứng phản bác",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "academic",
+      "legal"
+    ]
+  },
+  {
+    "word": "傍証",
+    "reading": "ぼうしょう",
+    "romaji": "boushou",
+    "meaning_vi": "bằng chứng gián tiếp, chứng cứ phụ",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "legal",
+      "written"
+    ]
+  },
+  {
+    "word": "立証する",
+    "reading": "りっしょうする",
+    "romaji": "risshou suru",
+    "meaning_vi": "chứng minh (bằng bằng chứng)",
+    "part_of_speech": "verb",
+    "tags": [
+      "formal",
+      "legal",
+      "written"
+    ]
+  },
+  {
+    "word": "論証する",
+    "reading": "ろんしょうする",
+    "romaji": "ronshou suru",
+    "meaning_vi": "luận chứng, chứng minh bằng lập luận",
+    "part_of_speech": "verb",
+    "tags": [
+      "formal",
+      "academic",
+      "written"
+    ]
+  },
+  {
+    "word": "実証する",
+    "reading": "じっしょうする",
+    "romaji": "jisshou suru",
+    "meaning_vi": "thực chứng, chứng minh bằng thực tế",
+    "part_of_speech": "verb",
+    "tags": [
+      "formal",
+      "academic",
+      "written"
+    ]
+  },
+  {
+    "word": "仮説検証",
+    "reading": "かせつけんしょう",
+    "romaji": "kasetsu kenshou",
+    "meaning_vi": "kiểm định giả thuyết",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "academic",
+      "written"
+    ]
+  },
+  {
+    "word": "演繹的",
+    "reading": "えんえきてき",
+    "romaji": "en'ekiteki",
+    "meaning_vi": "có tính diễn dịch, từ tổng quát đến đặc thù",
+    "part_of_speech": "adjective",
+    "tags": [
+      "formal",
+      "academic",
+      "written"
+    ]
+  },
+  {
+    "word": "帰納的",
+    "reading": "きのうてき",
+    "romaji": "kinouteki",
+    "meaning_vi": "có tính quy nạp, từ cụ thể đến tổng quát",
+    "part_of_speech": "adjective",
+    "tags": [
+      "formal",
+      "academic",
+      "written"
+    ]
+  },
+  {
+    "word": "類推する",
+    "reading": "るいすいする",
+    "romaji": "ruisui suru",
+    "meaning_vi": "loại suy, suy đoán tương đồng",
+    "part_of_speech": "verb",
+    "tags": [
+      "formal",
+      "academic",
+      "written"
+    ]
+  },
+  {
+    "word": "敷衍する",
+    "reading": "ふえんする",
+    "romaji": "fuen suru",
+    "meaning_vi": "triển khai, giải thích mở rộng",
+    "part_of_speech": "verb",
+    "tags": [
+      "literary",
+      "formal",
+      "written"
+    ]
+  },
+  {
+    "word": "概念化",
+    "reading": "がいねんか",
+    "romaji": "gainenka",
+    "meaning_vi": "khái niệm hóa",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "academic",
+      "written"
+    ]
+  },
+  {
+    "word": "理念化",
+    "reading": "りねんか",
+    "romaji": "rinenka",
+    "meaning_vi": "lý niệm hóa, biến thành lý tưởng trừu tượng",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "academic",
+      "written"
+    ]
+  },
+  {
+    "word": "言語化",
+    "reading": "げんごか",
+    "romaji": "gengoka",
+    "meaning_vi": "ngôn ngữ hóa, diễn đạt bằng lời",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "academic",
+      "written"
+    ]
+  },
+  {
+    "word": "可視化",
+    "reading": "かしか",
+    "romaji": "kashika",
+    "meaning_vi": "trực quan hóa, làm cho nhìn thấy được",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "academic",
+      "business"
+    ]
+  },
+  {
+    "word": "数値化",
+    "reading": "すうちか",
+    "romaji": "suuchika",
+    "meaning_vi": "số hóa, lượng hóa bằng con số",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "academic",
+      "business"
+    ]
+  },
+  {
+    "word": "客体化",
+    "reading": "きゃくたいか",
+    "romaji": "kyakutaika",
+    "meaning_vi": "khách thể hóa, biến thành đối tượng khách quan",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "academic",
+      "philosophy"
+    ]
+  },
+  {
+    "word": "主体化",
+    "reading": "しゅたいか",
+    "romaji": "shutaika",
+    "meaning_vi": "chủ thể hóa, làm cho chủ động",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "academic",
+      "philosophy"
+    ]
+  },
+  {
+    "word": "内面化",
+    "reading": "ないめんか",
+    "romaji": "naimenka",
+    "meaning_vi": "nội tâm hóa, tiêu hóa vào trong",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "academic",
+      "psychology"
+    ]
+  },
+  {
+    "word": "外在化",
+    "reading": "がいざいか",
+    "romaji": "gaizaika",
+    "meaning_vi": "ngoại tại hóa, biểu lộ ra bên ngoài",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "academic",
+      "psychology"
+    ]
+  },
+  {
+    "word": "問題提起",
+    "reading": "もんだいていき",
+    "romaji": "mondai teiki",
+    "meaning_vi": "nêu lên vấn đề, đặt câu hỏi",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "academic",
+      "written"
+    ]
+  },
+  {
+    "word": "仮設定",
+    "reading": "かせってい",
+    "romaji": "kasetei",
+    "meaning_vi": "xác định tạm thời, giả đặt",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "academic",
+      "written"
+    ]
+  },
+  {
+    "word": "位相",
+    "reading": "いそう",
+    "romaji": "isou",
+    "meaning_vi": "pha, vị thế, trạng thái tương đối",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "academic",
+      "written"
+    ]
+  },
+  {
+    "word": "様相",
+    "reading": "ようそう",
+    "romaji": "yousou",
+    "meaning_vi": "diện mạo, cục diện",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "academic",
+      "written"
+    ]
+  },
+  {
+    "word": "様態",
+    "reading": "ようたい",
+    "romaji": "youtai",
+    "meaning_vi": "trạng thái, dáng vẻ",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "academic",
+      "written"
+    ]
+  },
+  {
+    "word": "様式",
+    "reading": "ようしき",
+    "romaji": "youshiki",
+    "meaning_vi": "phong cách, lối, hình thức",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "academic"
+    ]
+  },
+  {
+    "word": "形式",
+    "reading": "けいしき",
+    "romaji": "keishiki",
+    "meaning_vi": "hình thức",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal"
+    ]
+  },
+  {
+    "word": "内実",
+    "reading": "ないじつ",
+    "romaji": "naijitsu",
+    "meaning_vi": "nội dung thực tế, bản chất bên trong",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "written"
+    ]
+  },
+  {
+    "word": "外形",
+    "reading": "がいけい",
+    "romaji": "gaikei",
+    "meaning_vi": "hình dạng bên ngoài, ngoại hình",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "written"
+    ]
+  },
+  {
+    "word": "外観",
+    "reading": "がいかん",
+    "romaji": "gaikan",
+    "meaning_vi": "ngoại quan, bề ngoài",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "written"
+    ]
+  },
+  {
+    "word": "本質的",
+    "reading": "ほんしつてき",
+    "romaji": "honshitsuteki",
+    "meaning_vi": "có tính bản chất, căn bản",
+    "part_of_speech": "adjective",
+    "tags": [
+      "formal",
+      "academic",
+      "written"
+    ]
+  },
+  {
+    "word": "根底",
+    "reading": "こんてい",
+    "romaji": "kontei",
+    "meaning_vi": "nền tảng, gốc rễ sâu xa",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "written"
+    ]
+  },
+  {
+    "word": "起点",
+    "reading": "きてん",
+    "romaji": "kiten",
+    "meaning_vi": "điểm khởi đầu",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "written"
+    ]
+  },
+  {
+    "word": "帰着点",
+    "reading": "きちゃくてん",
+    "romaji": "kichakuten",
+    "meaning_vi": "điểm kết thúc, điểm đến cuối cùng",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "written"
+    ]
+  },
+  {
+    "word": "到達点",
+    "reading": "とうたつてん",
+    "romaji": "touchakuten",
+    "meaning_vi": "điểm đạt đến, mức độ đạt được",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "academic",
+      "written"
+    ]
+  },
+  {
+    "word": "分水嶺",
+    "reading": "ぶんすいれい",
+    "romaji": "bunsuirei",
+    "meaning_vi": "đường phân thủy, điểm phân kỳ, ngã rẽ quan trọng",
+    "part_of_speech": "noun",
+    "tags": [
+      "literary",
+      "formal",
+      "written"
+    ]
+  },
+  {
+    "word": "転換点",
+    "reading": "てんかんてん",
+    "romaji": "tenkanten",
+    "meaning_vi": "điểm bước ngoặt, điểm chuyển đổi",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "written"
+    ]
+  },
+  {
+    "word": "収斂",
+    "reading": "しゅうれん",
+    "romaji": "shuuren",
+    "meaning_vi": "hội tụ, thu về một điểm",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "academic",
+      "written"
+    ]
+  },
+  {
+    "word": "発散",
+    "reading": "はっさん",
+    "romaji": "hassan",
+    "meaning_vi": "phân kỳ, tản ra, giải tỏa",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "academic",
+      "written"
+    ]
+  }
+]

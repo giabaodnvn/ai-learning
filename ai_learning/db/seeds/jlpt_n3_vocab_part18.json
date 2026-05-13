@@ -1,0 +1,383 @@
+[
+  {
+    "word": "特徴的",
+    "reading": "とくちょうてき",
+    "romaji": "tokuchouteki",
+    "meaning_vi": "đặc trưng, có tính đặc biệt",
+    "part_of_speech": "adjective",
+    "tags": [
+      "abstract",
+      "academic"
+    ]
+  },
+  {
+    "word": "歴史的",
+    "reading": "れきしてき",
+    "romaji": "rekishiteki",
+    "meaning_vi": "lịch sử, mang tính lịch sử",
+    "part_of_speech": "adjective",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "word": "文化的",
+    "reading": "ぶんかてき",
+    "romaji": "bunkateki",
+    "meaning_vi": "mang tính văn hóa",
+    "part_of_speech": "adjective",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "word": "社会的",
+    "reading": "しゃかいてき",
+    "romaji": "shakaiteki",
+    "meaning_vi": "mang tính xã hội",
+    "part_of_speech": "adjective",
+    "tags": [
+      "formal",
+      "academic"
+    ]
+  },
+  {
+    "word": "経済的",
+    "reading": "けいざいてき",
+    "romaji": "keizaiteki",
+    "meaning_vi": "về mặt kinh tế; tiết kiệm",
+    "part_of_speech": "adjective",
+    "tags": [
+      "formal",
+      "academic"
+    ]
+  },
+  {
+    "word": "政治的",
+    "reading": "せいじてき",
+    "romaji": "seijiteki",
+    "meaning_vi": "mang tính chính trị",
+    "part_of_speech": "adjective",
+    "tags": [
+      "formal",
+      "academic"
+    ]
+  },
+  {
+    "word": "科学的",
+    "reading": "かがくてき",
+    "romaji": "kagakuteki",
+    "meaning_vi": "khoa học, có tính khoa học",
+    "part_of_speech": "adjective",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "word": "技術的",
+    "reading": "ぎじゅつてき",
+    "romaji": "gijutsuteki",
+    "meaning_vi": "về mặt kỹ thuật",
+    "part_of_speech": "adjective",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "word": "批判的",
+    "reading": "ひはんてき",
+    "romaji": "hihanteki",
+    "meaning_vi": "có tính phê bình, phê phán",
+    "part_of_speech": "adjective",
+    "tags": [
+      "academic",
+      "abstract"
+    ]
+  },
+  {
+    "word": "独創的",
+    "reading": "どくそうてき",
+    "romaji": "dokusouteki",
+    "meaning_vi": "sáng tạo độc đáo, có tính nguyên bản",
+    "part_of_speech": "adjective",
+    "tags": [
+      "abstract",
+      "academic"
+    ]
+  },
+  {
+    "word": "創造的",
+    "reading": "そうぞうてき",
+    "romaji": "souzouteki",
+    "meaning_vi": "sáng tạo",
+    "part_of_speech": "adjective",
+    "tags": [
+      "abstract"
+    ]
+  },
+  {
+    "word": "革新的",
+    "reading": "かくしんてき",
+    "romaji": "kakushinteki",
+    "meaning_vi": "đổi mới, cải cách, sáng tạo",
+    "part_of_speech": "adjective",
+    "tags": [
+      "abstract",
+      "formal"
+    ]
+  },
+  {
+    "word": "保守的",
+    "reading": "ほしゅてき",
+    "romaji": "hoshuteki",
+    "meaning_vi": "bảo thủ, thủ cựu",
+    "part_of_speech": "adjective",
+    "tags": [
+      "abstract",
+      "politics"
+    ]
+  },
+  {
+    "word": "進歩的",
+    "reading": "しんぽてき",
+    "romaji": "shinpoteki",
+    "meaning_vi": "tiến bộ, cải cách",
+    "part_of_speech": "adjective",
+    "tags": [
+      "abstract",
+      "politics"
+    ]
+  },
+  {
+    "word": "具体的",
+    "reading": "ぐたいてき",
+    "romaji": "gutaiteki",
+    "meaning_vi": "cụ thể",
+    "part_of_speech": "adjective",
+    "tags": [
+      "abstract",
+      "formal"
+    ]
+  },
+  {
+    "word": "抽象的",
+    "reading": "ちゅうしょうてき",
+    "romaji": "chuushouteki",
+    "meaning_vi": "trừu tượng",
+    "part_of_speech": "adjective",
+    "tags": [
+      "abstract",
+      "academic"
+    ]
+  },
+  {
+    "word": "取り組む",
+    "reading": "とりくむ",
+    "romaji": "torikumu",
+    "meaning_vi": "giải quyết, đối mặt với, dấn thân vào",
+    "part_of_speech": "verb",
+    "tags": [
+      "abstract",
+      "formal"
+    ]
+  },
+  {
+    "word": "分析する",
+    "reading": "ぶんせきする",
+    "romaji": "bunseki suru",
+    "meaning_vi": "phân tích",
+    "part_of_speech": "verb",
+    "tags": [
+      "academic",
+      "formal"
+    ]
+  },
+  {
+    "word": "協力する",
+    "reading": "きょうりょくする",
+    "romaji": "kyouryoku suru",
+    "meaning_vi": "hợp tác, phối hợp",
+    "part_of_speech": "verb",
+    "tags": [
+      "abstract"
+    ]
+  },
+  {
+    "word": "改善する",
+    "reading": "かいぜんする",
+    "romaji": "kaizen suru",
+    "meaning_vi": "cải thiện, cải tiến",
+    "part_of_speech": "verb",
+    "tags": [
+      "abstract",
+      "formal"
+    ]
+  },
+  {
+    "word": "気配り",
+    "reading": "きくばり",
+    "romaji": "kikubari",
+    "meaning_vi": "sự chu đáo, sự quan tâm đến người khác",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract"
+    ]
+  },
+  {
+    "word": "多様性",
+    "reading": "たようせい",
+    "romaji": "tayousei",
+    "meaning_vi": "sự đa dạng",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract",
+      "formal"
+    ]
+  },
+  {
+    "word": "透明性",
+    "reading": "とうめいせい",
+    "romaji": "toumesei",
+    "meaning_vi": "tính minh bạch",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract",
+      "formal"
+    ]
+  },
+  {
+    "word": "一貫性",
+    "reading": "いっかんせい",
+    "romaji": "ikkansei",
+    "meaning_vi": "tính nhất quán",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract",
+      "formal"
+    ]
+  },
+  {
+    "word": "能動性",
+    "reading": "のうどうせい",
+    "romaji": "noudousei",
+    "meaning_vi": "tính năng động, chủ động",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract"
+    ]
+  },
+  {
+    "word": "受動性",
+    "reading": "じゅどうせい",
+    "romaji": "judousei",
+    "meaning_vi": "tính thụ động, bị động",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract"
+    ]
+  },
+  {
+    "word": "独立性",
+    "reading": "どくりつせい",
+    "romaji": "dokuritsusei",
+    "meaning_vi": "tính độc lập",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract"
+    ]
+  },
+  {
+    "word": "整理力",
+    "reading": "せいりりょく",
+    "romaji": "seiryoku",
+    "meaning_vi": "khả năng sắp xếp, tổ chức thông tin",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract"
+    ]
+  },
+  {
+    "word": "現象",
+    "reading": "げんしょう",
+    "romaji": "genshou",
+    "meaning_vi": "hiện tượng",
+    "part_of_speech": "noun",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "word": "重要",
+    "reading": "じゅうよう",
+    "romaji": "juuyou",
+    "meaning_vi": "quan trọng",
+    "part_of_speech": "adjective",
+    "tags": [
+      "abstract"
+    ]
+  },
+  {
+    "word": "適切",
+    "reading": "てきせつ",
+    "romaji": "tekisetsu",
+    "meaning_vi": "thích hợp, phù hợp",
+    "part_of_speech": "adjective",
+    "tags": [
+      "abstract",
+      "formal"
+    ]
+  },
+  {
+    "word": "正確",
+    "reading": "せいかく",
+    "romaji": "seikaku",
+    "meaning_vi": "chính xác",
+    "part_of_speech": "adjective",
+    "tags": [
+      "abstract"
+    ]
+  },
+  {
+    "word": "明確",
+    "reading": "めいかく",
+    "romaji": "meikaku",
+    "meaning_vi": "rõ ràng, minh xác",
+    "part_of_speech": "adjective",
+    "tags": [
+      "abstract",
+      "formal"
+    ]
+  },
+  {
+    "word": "論理的",
+    "reading": "ろんりてき",
+    "romaji": "ronriteki",
+    "meaning_vi": "có tính logic",
+    "part_of_speech": "adjective",
+    "tags": [
+      "abstract",
+      "academic"
+    ]
+  },
+  {
+    "word": "感情的",
+    "reading": "かんじょうてき",
+    "romaji": "kanjouteki",
+    "meaning_vi": "cảm tính, dựa trên cảm xúc",
+    "part_of_speech": "adjective",
+    "tags": [
+      "abstract"
+    ]
+  },
+  {
+    "word": "理性的",
+    "reading": "りせいてき",
+    "romaji": "riseiteki",
+    "meaning_vi": "lý trí, dựa trên lý lẽ",
+    "part_of_speech": "adjective",
+    "tags": [
+      "abstract",
+      "academic"
+    ]
+  }
+]

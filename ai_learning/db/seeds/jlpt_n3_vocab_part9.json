@@ -567,28 +567,6 @@
     ]
   },
   {
-    "word": "消える",
-    "reading": "きえる",
-    "romaji": "kieru",
-    "meaning_vi": "biến mất, mất tích",
-    "part_of_speech": "verb",
-    "tags": [
-      "action",
-      "daily"
-    ]
-  },
-  {
-    "word": "現れる",
-    "reading": "あらわれる",
-    "romaji": "arawareru",
-    "meaning_vi": "xuất hiện, nổi lên",
-    "part_of_speech": "verb",
-    "tags": [
-      "action",
-      "daily"
-    ]
-  },
-  {
     "word": "便利",
     "reading": "べんり",
     "romaji": "benri",

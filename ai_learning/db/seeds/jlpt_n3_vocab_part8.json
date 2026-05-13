@@ -101,28 +101,6 @@
     ]
   },
   {
-    "word": "種類",
-    "reading": "しゅるい",
-    "romaji": "shurui",
-    "meaning_vi": "loại, chủng loại",
-    "part_of_speech": "noun",
-    "tags": [
-      "abstract",
-      "science"
-    ]
-  },
-  {
-    "word": "現象",
-    "reading": "げんしょう",
-    "romaji": "genshou",
-    "meaning_vi": "hiện tượng",
-    "part_of_speech": "noun",
-    "tags": [
-      "science",
-      "abstract"
-    ]
-  },
-  {
     "word": "物質",
     "reading": "ぶっしつ",
     "romaji": "busshitsu",
@@ -286,17 +264,6 @@
     "tags": [
       "art",
       "culture"
-    ]
-  },
-  {
-    "word": "費用",
-    "reading": "ひよう",
-    "romaji": "hiyou",
-    "meaning_vi": "chi phí, chí phí",
-    "part_of_speech": "noun",
-    "tags": [
-      "money",
-      "work"
     ]
   },
   {
@@ -523,17 +490,6 @@
     "reading": "けずる",
     "romaji": "kezuru",
     "meaning_vi": "cấc, bào, cạo",
-    "part_of_speech": "verb",
-    "tags": [
-      "action",
-      "daily"
-    ]
-  },
-  {
-    "word": "混ぜる",
-    "reading": "まぜる",
-    "romaji": "mazeru",
-    "meaning_vi": "trộn, pha trộn",
     "part_of_speech": "verb",
     "tags": [
       "action",

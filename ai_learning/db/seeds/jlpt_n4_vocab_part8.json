@@ -1,0 +1,842 @@
+[
+  {
+    "word": "混ぜる",
+    "reading": "まぜる",
+    "romaji": "mazeru",
+    "meaning_vi": "trộn, khuấy",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "food",
+      "daily"
+    ]
+  },
+  {
+    "word": "連絡する",
+    "reading": "れんらくする",
+    "romaji": "renraku suru",
+    "meaning_vi": "liên lạc",
+    "part_of_speech": "verb",
+    "tags": [
+      "communication",
+      "daily"
+    ]
+  },
+  {
+    "word": "準備する",
+    "reading": "じゅんびする",
+    "romaji": "junbi suru",
+    "meaning_vi": "chuẩn bị",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "daily"
+    ]
+  },
+  {
+    "word": "慌てる",
+    "reading": "あわてる",
+    "romaji": "awateru",
+    "meaning_vi": "cuống quýt, hốt hoảng",
+    "part_of_speech": "verb",
+    "tags": [
+      "emotion",
+      "action"
+    ]
+  },
+  {
+    "word": "丁寧",
+    "reading": "ていねい",
+    "romaji": "teinei",
+    "meaning_vi": "lịch sự, cẩn thận",
+    "part_of_speech": "adjective",
+    "tags": [
+      "personality",
+      "social"
+    ]
+  },
+  {
+    "word": "正直",
+    "reading": "しょうじき",
+    "romaji": "shoujiki",
+    "meaning_vi": "thành thật, trung thực",
+    "part_of_speech": "adjective",
+    "tags": [
+      "personality"
+    ]
+  },
+  {
+    "word": "十分",
+    "reading": "じゅうぶん",
+    "romaji": "juubun",
+    "meaning_vi": "đầy đủ, đủ rồi",
+    "part_of_speech": "adjective",
+    "tags": [
+      "quantity",
+      "daily"
+    ]
+  },
+  {
+    "word": "複雑",
+    "reading": "ふくざつ",
+    "romaji": "fukuzatsu",
+    "meaning_vi": "phức tạp",
+    "part_of_speech": "adjective",
+    "tags": [
+      "description",
+      "daily"
+    ]
+  },
+  {
+    "word": "理解",
+    "reading": "りかい",
+    "romaji": "rikai",
+    "meaning_vi": "hiểu, sự hiểu biết",
+    "part_of_speech": "noun",
+    "tags": [
+      "education",
+      "communication"
+    ]
+  },
+  {
+    "word": "能力",
+    "reading": "のうりょく",
+    "romaji": "nouryoku",
+    "meaning_vi": "năng lực, khả năng",
+    "part_of_speech": "noun",
+    "tags": [
+      "work",
+      "education"
+    ]
+  },
+  {
+    "word": "意見",
+    "reading": "いけん",
+    "romaji": "iken",
+    "meaning_vi": "ý kiến",
+    "part_of_speech": "noun",
+    "tags": [
+      "communication",
+      "social"
+    ]
+  },
+  {
+    "word": "感情",
+    "reading": "かんじょう",
+    "romaji": "kanjou",
+    "meaning_vi": "cảm xúc, tình cảm",
+    "part_of_speech": "noun",
+    "tags": [
+      "emotion",
+      "mental"
+    ]
+  },
+  {
+    "word": "記憶",
+    "reading": "きおく",
+    "romaji": "kioku",
+    "meaning_vi": "ký ức, trí nhớ",
+    "part_of_speech": "noun",
+    "tags": [
+      "mental",
+      "education"
+    ]
+  },
+  {
+    "word": "治療",
+    "reading": "ちりょう",
+    "romaji": "chiryou",
+    "meaning_vi": "điều trị, chữa trị",
+    "part_of_speech": "noun",
+    "tags": [
+      "medical",
+      "health"
+    ]
+  },
+  {
+    "word": "消える",
+    "reading": "きえる",
+    "romaji": "kieru",
+    "meaning_vi": "biến mất, tắt",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "daily"
+    ]
+  },
+  {
+    "word": "現れる",
+    "reading": "あらわれる",
+    "romaji": "arawareru",
+    "meaning_vi": "xuất hiện, hiện ra",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "daily"
+    ]
+  },
+  {
+    "word": "内容",
+    "reading": "ないよう",
+    "romaji": "naiyou",
+    "meaning_vi": "nội dung",
+    "part_of_speech": "noun",
+    "tags": [
+      "communication",
+      "work",
+      "education"
+    ]
+  },
+  {
+    "word": "種類",
+    "reading": "しゅるい",
+    "romaji": "shurui",
+    "meaning_vi": "chủng loại, loại",
+    "part_of_speech": "noun",
+    "tags": [
+      "description",
+      "daily"
+    ]
+  },
+  {
+    "word": "物価",
+    "reading": "ぶっか",
+    "romaji": "bukka",
+    "meaning_vi": "giá cả hàng hóa, vật giá",
+    "part_of_speech": "noun",
+    "tags": [
+      "finance",
+      "economics"
+    ]
+  },
+  {
+    "word": "税金",
+    "reading": "ぜいきん",
+    "romaji": "zeikin",
+    "meaning_vi": "thuế",
+    "part_of_speech": "noun",
+    "tags": [
+      "finance",
+      "society"
+    ]
+  },
+  {
+    "word": "収入",
+    "reading": "しゅうにゅう",
+    "romaji": "shuunyuu",
+    "meaning_vi": "thu nhập",
+    "part_of_speech": "noun",
+    "tags": [
+      "finance",
+      "work"
+    ]
+  },
+  {
+    "word": "支出",
+    "reading": "ししゅつ",
+    "romaji": "shishutsu",
+    "meaning_vi": "chi tiêu, chi phí",
+    "part_of_speech": "noun",
+    "tags": [
+      "finance",
+      "daily"
+    ]
+  },
+  {
+    "word": "費用",
+    "reading": "ひよう",
+    "romaji": "hiyou",
+    "meaning_vi": "chi phí, kinh phí",
+    "part_of_speech": "noun",
+    "tags": [
+      "finance",
+      "daily"
+    ]
+  },
+  {
+    "word": "返答",
+    "reading": "へんとう",
+    "romaji": "hentou",
+    "meaning_vi": "câu trả lời, hồi đáp",
+    "part_of_speech": "noun",
+    "tags": [
+      "communication"
+    ]
+  },
+  {
+    "word": "きちんと",
+    "reading": "きちんと",
+    "romaji": "kichinto",
+    "meaning_vi": "gọn gàng, đúng quy tắc",
+    "part_of_speech": "adverb",
+    "tags": [
+      "manner",
+      "daily"
+    ]
+  },
+  {
+    "word": "すぐに",
+    "reading": "すぐに",
+    "romaji": "suguni",
+    "meaning_vi": "ngay lập tức",
+    "part_of_speech": "adverb",
+    "tags": [
+      "time",
+      "daily"
+    ]
+  },
+  {
+    "word": "たまに",
+    "reading": "たまに",
+    "romaji": "tama ni",
+    "meaning_vi": "thỉnh thoảng",
+    "part_of_speech": "adverb",
+    "tags": [
+      "frequency",
+      "daily"
+    ]
+  },
+  {
+    "word": "絶対",
+    "reading": "ぜったい",
+    "romaji": "zettai",
+    "meaning_vi": "tuyệt đối, nhất định",
+    "part_of_speech": "adverb",
+    "tags": [
+      "emphasis",
+      "daily"
+    ]
+  },
+  {
+    "word": "多分",
+    "reading": "たぶん",
+    "romaji": "tabun",
+    "meaning_vi": "có lẽ, chắc là",
+    "part_of_speech": "adverb",
+    "tags": [
+      "expression",
+      "daily"
+    ]
+  },
+  {
+    "word": "だいたい",
+    "reading": "だいたい",
+    "romaji": "daitai",
+    "meaning_vi": "đại khái, khoảng chừng",
+    "part_of_speech": "adverb",
+    "tags": [
+      "quantity",
+      "daily"
+    ]
+  },
+  {
+    "word": "感じる",
+    "reading": "かんじる",
+    "romaji": "kanjiru",
+    "meaning_vi": "cảm thấy, cảm nhận",
+    "part_of_speech": "verb",
+    "tags": [
+      "emotion",
+      "mental"
+    ]
+  },
+  {
+    "word": "得る",
+    "reading": "える",
+    "romaji": "eru",
+    "meaning_vi": "nhận được, có được",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "daily"
+    ]
+  },
+  {
+    "word": "似る",
+    "reading": "にる",
+    "romaji": "niru",
+    "meaning_vi": "giống, trông giống",
+    "part_of_speech": "verb",
+    "tags": [
+      "description",
+      "daily"
+    ]
+  },
+  {
+    "word": "苦しむ",
+    "reading": "くるしむ",
+    "romaji": "kurushimu",
+    "meaning_vi": "đau khổ, khổ sở",
+    "part_of_speech": "verb",
+    "tags": [
+      "emotion",
+      "health"
+    ]
+  },
+  {
+    "word": "終える",
+    "reading": "おえる",
+    "romaji": "oeru",
+    "meaning_vi": "kết thúc, hoàn tất",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "daily"
+    ]
+  },
+  {
+    "word": "立ち上がる",
+    "reading": "たちあがる",
+    "romaji": "tachiagaru",
+    "meaning_vi": "đứng dậy, vươn lên",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "body"
+    ]
+  },
+  {
+    "word": "引き返す",
+    "reading": "ひきかえす",
+    "romaji": "hikikhaesu",
+    "meaning_vi": "quay trở lại, quay đầu",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "travel"
+    ]
+  },
+  {
+    "word": "取り消す",
+    "reading": "とりけす",
+    "romaji": "torikesu",
+    "meaning_vi": "hủy bỏ, xóa bỏ",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "daily"
+    ]
+  },
+  {
+    "word": "腹を立てる",
+    "reading": "はらをたてる",
+    "romaji": "hara wo tateru",
+    "meaning_vi": "tức giận, nổi giận",
+    "part_of_speech": "expression",
+    "tags": [
+      "emotion",
+      "expression"
+    ]
+  },
+  {
+    "word": "気を付ける",
+    "reading": "きをつける",
+    "romaji": "ki wo tsukeru",
+    "meaning_vi": "cẩn thận, chú ý",
+    "part_of_speech": "expression",
+    "tags": [
+      "action",
+      "expression",
+      "daily"
+    ]
+  },
+  {
+    "word": "気がする",
+    "reading": "きがする",
+    "romaji": "ki ga suru",
+    "meaning_vi": "có cảm giác, hình như",
+    "part_of_speech": "expression",
+    "tags": [
+      "mental",
+      "expression"
+    ]
+  },
+  {
+    "word": "気になる",
+    "reading": "きになる",
+    "romaji": "ki ni naru",
+    "meaning_vi": "lo lắng, thấy băn khoăn",
+    "part_of_speech": "expression",
+    "tags": [
+      "emotion",
+      "expression"
+    ]
+  },
+  {
+    "word": "努める",
+    "reading": "つとめる",
+    "romaji": "tsutomeru",
+    "meaning_vi": "cố gắng, nỗ lực",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "work"
+    ]
+  },
+  {
+    "word": "務める",
+    "reading": "つとめる",
+    "romaji": "tsutomeru",
+    "meaning_vi": "đảm nhiệm, phục vụ (chức vụ)",
+    "part_of_speech": "verb",
+    "tags": [
+      "work",
+      "occupation"
+    ]
+  },
+  {
+    "word": "挨拶",
+    "reading": "あいさつ",
+    "romaji": "aisatsu",
+    "meaning_vi": "lời chào hỏi, chào hỏi",
+    "part_of_speech": "noun",
+    "tags": [
+      "social",
+      "communication"
+    ]
+  },
+  {
+    "word": "お辞儀",
+    "reading": "おじぎ",
+    "romaji": "ojigi",
+    "meaning_vi": "cúi chào, kính cẩn",
+    "part_of_speech": "noun",
+    "tags": [
+      "social",
+      "culture"
+    ]
+  },
+  {
+    "word": "敬語",
+    "reading": "けいご",
+    "romaji": "keigo",
+    "meaning_vi": "kính ngữ (tiếng Nhật lịch sự)",
+    "part_of_speech": "noun",
+    "tags": [
+      "language",
+      "culture",
+      "social"
+    ]
+  },
+  {
+    "word": "責任者",
+    "reading": "せきにんしゃ",
+    "romaji": "sekininsha",
+    "meaning_vi": "người chịu trách nhiệm",
+    "part_of_speech": "noun",
+    "tags": [
+      "work",
+      "organization"
+    ]
+  },
+  {
+    "word": "議事録",
+    "reading": "ぎじろく",
+    "romaji": "gijiroku",
+    "meaning_vi": "biên bản cuộc họp",
+    "part_of_speech": "noun",
+    "tags": [
+      "work",
+      "document"
+    ]
+  },
+  {
+    "word": "連絡先",
+    "reading": "れんらくさき",
+    "romaji": "renrakusaki",
+    "meaning_vi": "địa chỉ liên lạc",
+    "part_of_speech": "noun",
+    "tags": [
+      "communication",
+      "work"
+    ]
+  },
+  {
+    "word": "用件",
+    "reading": "ようけん",
+    "romaji": "youken",
+    "meaning_vi": "việc cần làm, nội dung công việc",
+    "part_of_speech": "noun",
+    "tags": [
+      "work",
+      "communication"
+    ]
+  },
+  {
+    "word": "帰宅",
+    "reading": "きたく",
+    "romaji": "kitaku",
+    "meaning_vi": "về nhà",
+    "part_of_speech": "noun",
+    "tags": [
+      "daily",
+      "home"
+    ]
+  },
+  {
+    "word": "発熱",
+    "reading": "はつねつ",
+    "romaji": "hatsunetsu",
+    "meaning_vi": "sốt, phát nhiệt",
+    "part_of_speech": "noun",
+    "tags": [
+      "medical",
+      "health"
+    ]
+  },
+  {
+    "word": "行事",
+    "reading": "ぎょうじ",
+    "romaji": "gyouji",
+    "meaning_vi": "sự kiện, lễ hội, nghi lễ",
+    "part_of_speech": "noun",
+    "tags": [
+      "event",
+      "culture",
+      "daily"
+    ]
+  },
+  {
+    "word": "式典",
+    "reading": "しきてん",
+    "romaji": "shikiten",
+    "meaning_vi": "lễ kỷ niệm, buổi lễ",
+    "part_of_speech": "noun",
+    "tags": [
+      "event",
+      "culture"
+    ]
+  },
+  {
+    "word": "地元",
+    "reading": "じもと",
+    "romaji": "jimoto",
+    "meaning_vi": "địa phương, nơi mình từ đó",
+    "part_of_speech": "noun",
+    "tags": [
+      "place",
+      "daily"
+    ]
+  },
+  {
+    "word": "近所",
+    "reading": "きんじょ",
+    "romaji": "kinjo",
+    "meaning_vi": "hàng xóm láng giềng",
+    "part_of_speech": "noun",
+    "tags": [
+      "place",
+      "daily",
+      "social"
+    ]
+  },
+  {
+    "word": "特技",
+    "reading": "とくぎ",
+    "romaji": "tokugi",
+    "meaning_vi": "kỹ năng đặc biệt, sở trường",
+    "part_of_speech": "noun",
+    "tags": [
+      "personality",
+      "hobby"
+    ]
+  },
+  {
+    "word": "休日",
+    "reading": "きゅうじつ",
+    "romaji": "kyuujitsu",
+    "meaning_vi": "ngày nghỉ",
+    "part_of_speech": "noun",
+    "tags": [
+      "time",
+      "daily"
+    ]
+  },
+  {
+    "word": "有給",
+    "reading": "ゆうきゅう",
+    "romaji": "yuukyuu",
+    "meaning_vi": "phép có lương, nghỉ phép",
+    "part_of_speech": "noun",
+    "tags": [
+      "work",
+      "daily"
+    ]
+  },
+  {
+    "word": "元気",
+    "reading": "げんき",
+    "romaji": "genki",
+    "meaning_vi": "khỏe mạnh, tinh thần tốt",
+    "part_of_speech": "adjective",
+    "tags": [
+      "health",
+      "daily"
+    ]
+  },
+  {
+    "word": "几帳面",
+    "reading": "きちょうめん",
+    "romaji": "kichoumen",
+    "meaning_vi": "cẩn thận, ngăn nắp",
+    "part_of_speech": "adjective",
+    "tags": [
+      "personality"
+    ]
+  },
+  {
+    "word": "いよいよ",
+    "reading": "いよいよ",
+    "romaji": "iyoiyo",
+    "meaning_vi": "cuối cùng cũng, đến lúc rồi",
+    "part_of_speech": "adverb",
+    "tags": [
+      "expression",
+      "daily"
+    ]
+  },
+  {
+    "word": "ともかく",
+    "reading": "ともかく",
+    "romaji": "tomokaku",
+    "meaning_vi": "dù sao đi nữa, thôi thì",
+    "part_of_speech": "adverb",
+    "tags": [
+      "expression",
+      "daily"
+    ]
+  },
+  {
+    "word": "せっかく",
+    "reading": "せっかく",
+    "romaji": "sekkaku",
+    "meaning_vi": "đã công sức, khó khăn lắm mới có",
+    "part_of_speech": "adverb",
+    "tags": [
+      "expression",
+      "daily"
+    ]
+  },
+  {
+    "word": "わざわざ",
+    "reading": "わざわざ",
+    "romaji": "wazawaza",
+    "meaning_vi": "đặc biệt làm, cố tình đến",
+    "part_of_speech": "adverb",
+    "tags": [
+      "expression",
+      "daily"
+    ]
+  },
+  {
+    "word": "かえって",
+    "reading": "かえって",
+    "romaji": "kaette",
+    "meaning_vi": "ngược lại, trái lại",
+    "part_of_speech": "adverb",
+    "tags": [
+      "expression",
+      "daily"
+    ]
+  },
+  {
+    "word": "まるで",
+    "reading": "まるで",
+    "romaji": "marude",
+    "meaning_vi": "giống như là, cứ như là",
+    "part_of_speech": "adverb",
+    "tags": [
+      "expression",
+      "daily"
+    ]
+  },
+  {
+    "word": "ずいぶん",
+    "reading": "ずいぶん",
+    "romaji": "zuibun",
+    "meaning_vi": "khá, rất (bất ngờ)",
+    "part_of_speech": "adverb",
+    "tags": [
+      "expression",
+      "daily"
+    ]
+  },
+  {
+    "word": "前後",
+    "reading": "ぜんご",
+    "romaji": "zengo",
+    "meaning_vi": "trước sau, khoảng, xung quanh",
+    "part_of_speech": "noun",
+    "tags": [
+      "direction",
+      "time",
+      "daily"
+    ]
+  },
+  {
+    "word": "左右",
+    "reading": "さゆう",
+    "romaji": "sayuu",
+    "meaning_vi": "trái phải, ảnh hưởng",
+    "part_of_speech": "noun",
+    "tags": [
+      "direction",
+      "daily"
+    ]
+  },
+  {
+    "word": "上下",
+    "reading": "じょうげ",
+    "romaji": "jouge",
+    "meaning_vi": "trên dưới, thứ bậc",
+    "part_of_speech": "noun",
+    "tags": [
+      "direction",
+      "daily"
+    ]
+  },
+  {
+    "word": "担当",
+    "reading": "たんとう",
+    "romaji": "tantou",
+    "meaning_vi": "phụ trách, người đảm nhiệm",
+    "part_of_speech": "noun",
+    "tags": [
+      "work",
+      "organization"
+    ]
+  },
+  {
+    "word": "資料",
+    "reading": "しりょう",
+    "romaji": "shiryou",
+    "meaning_vi": "tài liệu tham khảo",
+    "part_of_speech": "noun",
+    "tags": [
+      "work",
+      "education"
+    ]
+  },
+  {
+    "word": "書類",
+    "reading": "しょるい",
+    "romaji": "shorui",
+    "meaning_vi": "văn bản, giấy tờ",
+    "part_of_speech": "noun",
+    "tags": [
+      "work",
+      "daily"
+    ]
+  },
+  {
+    "word": "研修",
+    "reading": "けんしゅう",
+    "romaji": "kenshuu",
+    "meaning_vi": "tập huấn, đào tạo",
+    "part_of_speech": "noun",
+    "tags": [
+      "work",
+      "education"
+    ]
+  }
+]

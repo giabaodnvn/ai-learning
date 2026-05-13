@@ -74,26 +74,6 @@
     ]
   },
   {
-    "word": "生まれる",
-    "reading": "うまれる",
-    "romaji": "umareru",
-    "meaning_vi": "được sinh ra",
-    "part_of_speech": "verb",
-    "tags": [
-      "life"
-    ]
-  },
-  {
-    "word": "死ぬ",
-    "reading": "しぬ",
-    "romaji": "shinu",
-    "meaning_vi": "chết, qua đời",
-    "part_of_speech": "verb",
-    "tags": [
-      "life"
-    ]
-  },
-  {
     "word": "助ける",
     "reading": "たすける",
     "romaji": "tasukeru",

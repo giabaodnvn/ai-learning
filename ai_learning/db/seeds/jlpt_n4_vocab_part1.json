@@ -66,17 +66,6 @@
     ]
   },
   {
-    "word": "辞書",
-    "reading": "じしょ",
-    "romaji": "jisho",
-    "meaning_vi": "từ điển",
-    "part_of_speech": "noun",
-    "tags": [
-      "study",
-      "language"
-    ]
-  },
-  {
     "word": "練習",
     "reading": "れんしゅう",
     "romaji": "renshuu",
@@ -278,17 +267,6 @@
     ]
   },
   {
-    "word": "医者",
-    "reading": "いしゃ",
-    "romaji": "isha",
-    "meaning_vi": "bác sĩ",
-    "part_of_speech": "noun",
-    "tags": [
-      "health",
-      "person"
-    ]
-  },
-  {
     "word": "看護師",
     "reading": "かんごし",
     "romaji": "kangoshi",
@@ -436,16 +414,6 @@
     ]
   },
   {
-    "word": "信号",
-    "reading": "しんごう",
-    "romaji": "shingou",
-    "meaning_vi": "đèn giao thông, tín hiệu",
-    "part_of_speech": "noun",
-    "tags": [
-      "transport"
-    ]
-  },
-  {
     "word": "交差点",
     "reading": "こうさてん",
     "romaji": "kousaten",
@@ -465,16 +433,6 @@
     "tags": [
       "transport",
       "place"
-    ]
-  },
-  {
-    "word": "切符",
-    "reading": "きっぷ",
-    "romaji": "kippu",
-    "meaning_vi": "vé (tàu, xe)",
-    "part_of_speech": "noun",
-    "tags": [
-      "transport"
     ]
   },
   {
@@ -527,16 +485,6 @@
     "tags": [
       "travel",
       "document"
-    ]
-  },
-  {
-    "word": "荷物",
-    "reading": "にもつ",
-    "romaji": "nimotsu",
-    "meaning_vi": "hành lý, đồ đạc",
-    "part_of_speech": "noun",
-    "tags": [
-      "travel"
     ]
   },
   {

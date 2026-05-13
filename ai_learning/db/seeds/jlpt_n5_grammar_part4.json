@@ -1,0 +1,167 @@
+[
+  {
+    "pattern": "〜んです / 〜んですか",
+    "explanation_vi": "Cấu trúc んです dùng để giải thích lý do hoặc bối cảnh, hoặc để xin giải thích. Khi dùng trong câu khẳng định, nó ngầm cho thấy người nói muốn người nghe hiểu rõ hơn. Khi dùng ở dạng câu hỏi (んですか), người nói tìm kiếm sự xác nhận hoặc giải thích từ phía người nghe. Đây là mẫu rất thông dụng trong hội thoại hàng ngày.",
+    "examples": [
+      {
+        "ja": "どうして休んだんですか。",
+        "vi": "Tại sao bạn nghỉ vậy? (cho tôi biết lý do)"
+      },
+      {
+        "ja": "頭が痛いんです。",
+        "vi": "Tôi bị đau đầu. (giải thích nguyên nhân)"
+      }
+    ],
+    "notes_vi": "んです = のです. Dạng thân mật: んだ / んだよ. Trước んです dùng thể thông thường (普通形)."
+  },
+  {
+    "pattern": "〜じゃない / 〜じゃありません",
+    "explanation_vi": "Phủ định thông thường (casual/lịch sự): không phải là ~. じゃない là dạng thân mật của じゃありません và ではありません. Trong văn nói hàng ngày, じゃない được dùng rất phổ biến. じゃないですか cũng có thể dùng để xác nhận thông tin.",
+    "examples": [
+      {
+        "ja": "これはペンじゃありません。",
+        "vi": "Đây không phải là bút."
+      },
+      {
+        "ja": "彼は学生じゃない。",
+        "vi": "Anh ấy không phải là học sinh."
+      }
+    ],
+    "notes_vi": "じゃない (thân mật) = じゃありません (lịch sự) = ではありません (trang trọng nhất)."
+  },
+  {
+    "pattern": "〜がほしい",
+    "explanation_vi": "Muốn có ~: bày tỏ mong muốn sở hữu một vật gì đó. が là trợ từ đối tượng dùng với ほしい. Đây là cách nói mong muốn về danh từ (đồ vật), còn mong muốn hành động dùng 〜たい. Chỉ dùng cho mong muốn của bản thân người nói.",
+    "examples": [
+      {
+        "ja": "新しいパソコンがほしいです。",
+        "vi": "Tôi muốn có máy tính mới."
+      },
+      {
+        "ja": "もっと時間がほしい。",
+        "vi": "Tôi muốn có nhiều thời gian hơn."
+      }
+    ],
+    "notes_vi": "ほしい chia như tính từ い: ほしくない (không muốn), ほしかった (đã từng muốn). Dùng が, không phải を."
+  },
+  {
+    "pattern": "〜まで（終点）",
+    "explanation_vi": "Đến ~ (điểm kết thúc về thời gian hoặc không gian): chỉ điểm cuối của một hành động hoặc trạng thái. まで kết hợp cùng から (từ ~ đến ~) rất thường gặp. Khác với に là điểm đến cụ thể, まで nhấn mạnh việc tiếp diễn cho đến điểm đó.",
+    "examples": [
+      {
+        "ja": "夜11時まで働きます。",
+        "vi": "Làm việc đến 11 giờ đêm."
+      },
+      {
+        "ja": "バス停まで歩きます。",
+        "vi": "Đi bộ đến trạm xe buýt."
+      }
+    ],
+    "notes_vi": "から〜まで = từ ~ đến ~. まで không giới hạn ở thời gian, cũng dùng cho không gian và phạm vi."
+  },
+  {
+    "pattern": "〜ごろ",
+    "explanation_vi": "Khoảng ~, chừng ~ (thời gian xấp xỉ): dùng để chỉ thời điểm ước lượng, không chính xác. Khác với ぐらい/くらい cũng có nghĩa xấp xỉ nhưng dùng cho số lượng, ごろ dùng riêng cho thời gian cụ thể (giờ, ngày, tháng, năm).",
+    "examples": [
+      {
+        "ja": "7時ごろ起きます。",
+        "vi": "Tôi thức dậy khoảng 7 giờ."
+      },
+      {
+        "ja": "来年ごろ、日本に行きたいです。",
+        "vi": "Tôi muốn đi Nhật khoảng năm sau."
+      }
+    ],
+    "notes_vi": "ごろ dùng cho thời điểm (7時ごろ, 3月ごろ), ぐらい/くらい dùng cho số lượng hoặc khoảng thời gian (3時間ぐらい)."
+  },
+  {
+    "pattern": "〜ましょうか",
+    "explanation_vi": "Tôi / chúng ta ~ nhé? (đề nghị giúp đỡ hoặc rủ cùng làm): dùng để hỏi xem có nên làm gì đó không, hoặc đề nghị giúp người khác. Mang sắc thái nhẹ nhàng, lịch sự hơn ましょう đơn thuần.",
+    "examples": [
+      {
+        "ja": "荷物を持ちましょうか。",
+        "vi": "Tôi giúp xách đồ nhé?"
+      },
+      {
+        "ja": "一緒に行きましょうか。",
+        "vi": "Chúng ta cùng đi nhé?"
+      }
+    ],
+    "notes_vi": "ましょうか = đề nghị giúp hoặc rủ làm cùng. Trả lời nhận lời: はい、お願いします. Từ chối: 大丈夫です、ありがとう."
+  },
+  {
+    "pattern": "〜たらどうですか",
+    "explanation_vi": "Sao bạn không ~ thử? (gợi ý, lời khuyên nhẹ nhàng): dùng để đề xuất một hành động cho người nghe, thường khi người nghe đang gặp vấn đề. Lịch sự và ít trực tiếp hơn 〜てください.",
+    "examples": [
+      {
+        "ja": "疲れているなら、少し休んだらどうですか。",
+        "vi": "Nếu mệt thì sao bạn không nghỉ một chút?"
+      },
+      {
+        "ja": "医者に行ったらどうですか。",
+        "vi": "Sao bạn không đi bác sĩ?"
+      }
+    ],
+    "notes_vi": "Cấu trúc: V(thể た) + らどうですか. Thân mật hơn: 〜たら？."
+  },
+  {
+    "pattern": "〜ていません",
+    "explanation_vi": "Chưa ~ / Không trong trạng thái ~: phủ định của 〜ています. Có hai nghĩa: (1) hành động chưa được thực hiện, (2) không ở trạng thái đó. Đây là dạng lịch sự; dạng thân mật là 〜ていない hoặc 〜てない.",
+    "examples": [
+      {
+        "ja": "まだ宿題をしていません。",
+        "vi": "Tôi chưa làm bài tập về nhà."
+      },
+      {
+        "ja": "今日はまだ何も食べていません。",
+        "vi": "Hôm nay tôi chưa ăn gì cả."
+      }
+    ],
+    "notes_vi": "まだ〜ていません = chưa (hành động chưa hoàn thành). Dùng まだ để nhấn mạnh 'vẫn chưa'."
+  },
+  {
+    "pattern": "〜をください",
+    "explanation_vi": "Cho tôi ~, xin ~ (yêu cầu đơn giản để có được vật gì đó): dùng trong tình huống mua đồ ở cửa hàng, nhà hàng, hoặc nhờ ai đó đưa cho mình thứ gì. Để nhờ ai đó làm việc gì, dùng 〜てください.",
+    "examples": [
+      {
+        "ja": "水をください。",
+        "vi": "Cho tôi nước."
+      },
+      {
+        "ja": "メニューをください。",
+        "vi": "Cho tôi xem thực đơn."
+      }
+    ],
+    "notes_vi": "をください = cho tôi (vật). Lịch sự hơn: をいただけますか. Để xin người làm gì: V(て形)+ください."
+  },
+  {
+    "pattern": "〜に（目的）",
+    "explanation_vi": "Đi đến đâu để ~ (mục đích di chuyển): dùng với các động từ di chuyển như 行く, 来る, 帰る để nêu mục đích của chuyến đi. Danh từ mục đích + に, hoặc masu-stem của động từ + に.",
+    "examples": [
+      {
+        "ja": "図書館へ本を借りに行きます。",
+        "vi": "Tôi đi thư viện để mượn sách."
+      },
+      {
+        "ja": "友達が遊びに来ました。",
+        "vi": "Bạn đến chơi."
+      }
+    ],
+    "notes_vi": "Cấu trúc: V(masu-stem) + に + 行く/来る/帰る. Danh từ + に + 行く/来る cũng được."
+  },
+  {
+    "pattern": "〜どのくらい / 〜どれくらい",
+    "explanation_vi": "Bao lâu, bao nhiêu, khoảng bao xa (hỏi về mức độ, thời gian, khoảng cách): dùng để hỏi về số lượng, khoảng cách, thời gian một cách không cụ thể. Cả どのくらい và どれくらい đều có nghĩa giống nhau và có thể dùng thay thế nhau.",
+    "examples": [
+      {
+        "ja": "ここから駅までどのくらいかかりますか。",
+        "vi": "Từ đây đến ga mất bao lâu?"
+      },
+      {
+        "ja": "日本語を勉強してどれくらいになりますか。",
+        "vi": "Bạn học tiếng Nhật được bao lâu rồi?"
+      }
+    ],
+    "notes_vi": "どのくらい = どれくらい = どれほど. Dùng với かかる (mất thời gian), ある (khoảng cách), など."
+  }
+]

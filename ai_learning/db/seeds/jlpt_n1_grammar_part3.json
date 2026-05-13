@@ -33,17 +33,6 @@
     "notes_vi": "Biểu thị hai hoạt động hoặc trạng thái xảy ra đồng thời ở cùng chủ thể."
   },
   {
-    "pattern": "〜ながらも",
-    "explanation_vi": "Dù...nhưng vẫn, trong khi đó vẫn — trạng thái/hành động tồn tại dù có điều kiện bất lợi",
-    "examples": [
-      {
-        "ja": "貧しいながらも、彼は夢を諦めなかった。",
-        "vi": "Dù nghèo khó, anh ấy vẫn không bỏ cuộc với giấc mơ."
-      }
-    ],
-    "notes_vi": "Nhấn mạnh sự kiên trì hoặc mâu thuẫn giữa trạng thái và hành động. ながら thêm も để tăng sắc thái nhượng bộ."
-  },
-  {
     "pattern": "〜を踏まえて",
     "explanation_vi": "Dựa trên, xuất phát từ, căn cứ vào — hành động/quyết định dựa trên cơ sở thực tế/kinh nghiệm",
     "examples": [

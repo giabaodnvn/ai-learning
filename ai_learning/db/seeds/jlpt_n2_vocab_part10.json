@@ -204,18 +204,6 @@
     ]
   },
   {
-    "word": "知識",
-    "reading": "ちしき",
-    "romaji": "chishiki",
-    "meaning_vi": "kiến thức",
-    "part_of_speech": "noun",
-    "tags": [
-      "knowledge",
-      "learning",
-      "abstract"
-    ]
-  },
-  {
     "word": "知恵",
     "reading": "ちえ",
     "romaji": "chie",
@@ -368,18 +356,6 @@
     "tags": [
       "despair",
       "hopelessness",
-      "emotion"
-    ]
-  },
-  {
-    "word": "希望",
-    "reading": "きぼう",
-    "romaji": "kibou",
-    "meaning_vi": "hy vọng",
-    "part_of_speech": "noun",
-    "tags": [
-      "hope",
-      "aspiration",
       "emotion"
     ]
   },
@@ -572,18 +548,6 @@
     "tags": [
       "dimension",
       "measurement",
-      "abstract"
-    ]
-  },
-  {
-    "word": "様子",
-    "reading": "ようす",
-    "romaji": "shidai",
-    "meaning_vi": "tình hình, cách thức",
-    "part_of_speech": "noun",
-    "tags": [
-      "order",
-      "sequence",
       "abstract"
     ]
   },
