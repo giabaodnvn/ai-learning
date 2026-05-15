@@ -208,5 +208,155 @@
       }
     ],
     "notes_vi": "Dùng để loại bỏ một yếu tố khỏi xem xét."
+  },
+  {
+    "pattern": "〜において",
+    "explanation_vi": "Ở..., trong... (chỉ bối cảnh, phạm vi, địa điểm – văn phong trang trọng)",
+    "examples": [
+      {
+        "ja": "現代社会において、情報管理は非常に重要だ。",
+        "vi": "Trong xã hội hiện đại, quản lý thông tin rất quan trọng."
+      },
+      {
+        "ja": "この分野においては、日本が最先端を行っている。",
+        "vi": "Trong lĩnh vực này, Nhật Bản đang dẫn đầu."
+      }
+    ],
+    "notes_vi": "Tương đương 〜で/〜に trong văn nói, nhưng trang trọng hơn. Thường dùng trong văn viết."
+  },
+  {
+    "pattern": "〜にとって",
+    "explanation_vi": "Đối với..., xét từ góc độ của... (quan điểm chủ thể)",
+    "examples": [
+      {
+        "ja": "子どもにとって、遊びは学習の一つだ。",
+        "vi": "Đối với trẻ em, vui chơi cũng là một hình thức học tập."
+      },
+      {
+        "ja": "私にとって、この仕事はとても大切だ。",
+        "vi": "Đối với tôi, công việc này rất quan trọng."
+      }
+    ],
+    "notes_vi": "Biểu thị quan điểm hoặc lợi ích từ phía một người/đối tượng cụ thể."
+  },
+  {
+    "pattern": "〜に関して",
+    "explanation_vi": "Liên quan đến..., về vấn đề... (đề cập chủ đề)",
+    "examples": [
+      {
+        "ja": "環境問題に関して、政府は対策を検討している。",
+        "vi": "Liên quan đến vấn đề môi trường, chính phủ đang xem xét các biện pháp."
+      },
+      {
+        "ja": "この件に関しては、後ほど説明します。",
+        "vi": "Về vấn đề này, tôi sẽ giải thích sau."
+      }
+    ],
+    "notes_vi": "Tương đương 〜について nhưng trang trọng hơn. Thường dùng trong văn phong kinh doanh, học thuật."
+  },
+  {
+    "pattern": "〜に対して",
+    "explanation_vi": "Đối với..., hướng tới..., so với... (đối tượng tác động hoặc tương phản)",
+    "examples": [
+      {
+        "ja": "先生の意見に対して、学生が反論した。",
+        "vi": "Học sinh phản bác ý kiến của giáo viên."
+      },
+      {
+        "ja": "去年に対して、今年は売上が増加した。",
+        "vi": "So với năm ngoái, doanh thu năm nay tăng lên."
+      }
+    ],
+    "notes_vi": "Có hai ý nghĩa chính: (1) đối tượng của hành động/cảm xúc, (2) so sánh tương phản."
+  },
+  {
+    "pattern": "〜わけではない",
+    "explanation_vi": "Không phải là..., không có nghĩa là... (phủ định một phần)",
+    "examples": [
+      {
+        "ja": "嫌いなわけではないが、あまり食べたくない。",
+        "vi": "Không phải là tôi ghét, nhưng không muốn ăn lắm."
+      },
+      {
+        "ja": "すべての日本人が寿司が好きなわけではない。",
+        "vi": "Không phải tất cả người Nhật đều thích sushi."
+      }
+    ],
+    "notes_vi": "Phủ định một phần hoặc một kết luận. Khác với 〜ではない (phủ định hoàn toàn)."
+  },
+  {
+    "pattern": "〜に違いない",
+    "explanation_vi": "Chắc chắn là..., nhất định phải... (suy đoán chắc chắn)",
+    "examples": [
+      {
+        "ja": "彼が遅れるとは、何か問題があったに違いない。",
+        "vi": "Anh ấy đến muộn, chắc chắn đã có chuyện gì đó."
+      },
+      {
+        "ja": "あの店はいつも混んでいる。きっとおいしいに違いない。",
+        "vi": "Quán đó lúc nào cũng đông. Chắc chắn là ngon."
+      }
+    ],
+    "notes_vi": "Biểu thị phán đoán chắc chắn dựa trên bằng chứng hay suy luận."
+  },
+  {
+    "pattern": "〜ものの",
+    "explanation_vi": "Tuy..., mặc dù..., nhưng... (nhượng bộ – thực tế trái với mong đợi)",
+    "examples": [
+      {
+        "ja": "日本語を勉強したものの、まだ話せない。",
+        "vi": "Tuy đã học tiếng Nhật nhưng vẫn chưa nói được."
+      },
+      {
+        "ja": "試験に合格したものの、就職はうまくいかなかった。",
+        "vi": "Tuy đã đỗ kỳ thi nhưng việc tìm việc lại không suôn sẻ."
+      }
+    ],
+    "notes_vi": "Biểu thị nhượng bộ: thừa nhận vế đầu nhưng thực tế lại trái với kỳ vọng."
+  },
+  {
+    "pattern": "〜とは限らない",
+    "explanation_vi": "Không nhất thiết là..., chưa chắc đã... (phủ định khái quát hóa)",
+    "examples": [
+      {
+        "ja": "高いものが必ずしもいいとは限らない。",
+        "vi": "Đắt tiền chưa chắc đã tốt."
+      },
+      {
+        "ja": "有名な大学を出たからといって、成功するとは限らない。",
+        "vi": "Dù tốt nghiệp trường nổi tiếng cũng chưa chắc thành công."
+      }
+    ],
+    "notes_vi": "Dùng để bác bỏ một quy tắc hay kết luận tổng quát. Thường đi với 〜とは限らない."
+  },
+  {
+    "pattern": "〜にすぎない",
+    "explanation_vi": "Chỉ là..., không hơn không kém là... (hạ thấp mức độ)",
+    "examples": [
+      {
+        "ja": "これはほんの一例にすぎない。",
+        "vi": "Đây chỉ là một ví dụ đơn thuần mà thôi."
+      },
+      {
+        "ja": "彼の発言は冗談にすぎなかった。",
+        "vi": "Lời nói của anh ấy chỉ là đùa thôi."
+      }
+    ],
+    "notes_vi": "Biểu thị rằng điều gì đó chỉ ở mức tối thiểu, không có ý nghĩa lớn hơn."
+  },
+  {
+    "pattern": "〜どころではない",
+    "explanation_vi": "Không phải lúc để..., không còn tâm trí để... (hoàn toàn không thể)",
+    "examples": [
+      {
+        "ja": "仕事が山積みで、旅行どころではない。",
+        "vi": "Công việc chất đống, không còn tâm trí để đi du lịch."
+      },
+      {
+        "ja": "病気で勉強どころではなかった。",
+        "vi": "Vì bệnh nên không thể học được."
+      }
+    ],
+    "notes_vi": "Biểu thị tình huống quá nghiêm trọng đến mức không thể làm điều khác. Khác với 〜どころか (mức độ ngạc nhiên)."
   }
 ]

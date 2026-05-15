@@ -635,5 +635,654 @@
         "meaning_vi": "số người"
       }
     ]
+  },
+  {
+    "character": "心",
+    "onyomi": [
+      "シン"
+    ],
+    "kunyomi": [
+      "こころ"
+    ],
+    "meaning_vi": "tim, tâm, trái tim",
+    "stroke_count": 4,
+    "vocab_examples": [
+      {
+        "word": "心配",
+        "reading": "しんぱい",
+        "meaning_vi": "lo lắng"
+      },
+      {
+        "word": "中心",
+        "reading": "ちゅうしん",
+        "meaning_vi": "trung tâm"
+      },
+      {
+        "word": "熱心",
+        "reading": "ねっしん",
+        "meaning_vi": "nhiệt tình"
+      }
+    ]
+  },
+  {
+    "character": "市",
+    "onyomi": [
+      "シ"
+    ],
+    "kunyomi": [
+      "いち"
+    ],
+    "meaning_vi": "thành phố, chợ",
+    "stroke_count": 5,
+    "vocab_examples": [
+      {
+        "word": "市",
+        "reading": "し",
+        "meaning_vi": "thành phố"
+      },
+      {
+        "word": "市場",
+        "reading": "いちば",
+        "meaning_vi": "chợ"
+      },
+      {
+        "word": "都市",
+        "reading": "とし",
+        "meaning_vi": "thành thị"
+      }
+    ]
+  },
+  {
+    "character": "種",
+    "onyomi": [
+      "シュ"
+    ],
+    "kunyomi": [
+      "たね"
+    ],
+    "meaning_vi": "hạt giống, loại, chủng loại",
+    "stroke_count": 14,
+    "vocab_examples": [
+      {
+        "word": "種類",
+        "reading": "しゅるい",
+        "meaning_vi": "loại, chủng loại"
+      },
+      {
+        "word": "種",
+        "reading": "たね",
+        "meaning_vi": "hạt giống"
+      },
+      {
+        "word": "人種",
+        "reading": "じんしゅ",
+        "meaning_vi": "chủng tộc"
+      }
+    ]
+  },
+  {
+    "character": "基",
+    "onyomi": [
+      "キ"
+    ],
+    "kunyomi": [
+      "もと",
+      "もとい"
+    ],
+    "meaning_vi": "cơ sở, nền tảng",
+    "stroke_count": 11,
+    "vocab_examples": [
+      {
+        "word": "基本",
+        "reading": "きほん",
+        "meaning_vi": "cơ bản"
+      },
+      {
+        "word": "基礎",
+        "reading": "きそ",
+        "meaning_vi": "nền tảng"
+      },
+      {
+        "word": "基準",
+        "reading": "きじゅん",
+        "meaning_vi": "tiêu chuẩn"
+      }
+    ]
+  },
+  {
+    "character": "加",
+    "onyomi": [
+      "カ"
+    ],
+    "kunyomi": [
+      "くわ.える",
+      "くわ.わる"
+    ],
+    "meaning_vi": "thêm vào, cộng, gia nhập",
+    "stroke_count": 5,
+    "vocab_examples": [
+      {
+        "word": "加える",
+        "reading": "くわえる",
+        "meaning_vi": "thêm vào"
+      },
+      {
+        "word": "参加",
+        "reading": "さんか",
+        "meaning_vi": "tham gia"
+      },
+      {
+        "word": "増加",
+        "reading": "ぞうか",
+        "meaning_vi": "tăng lên"
+      }
+    ]
+  },
+  {
+    "character": "判",
+    "onyomi": [
+      "ハン",
+      "バン"
+    ],
+    "kunyomi": [
+      "わか.る"
+    ],
+    "meaning_vi": "phán xét, con dấu, hiểu",
+    "stroke_count": 7,
+    "vocab_examples": [
+      {
+        "word": "判断",
+        "reading": "はんだん",
+        "meaning_vi": "phán đoán, quyết định"
+      },
+      {
+        "word": "判事",
+        "reading": "はんじ",
+        "meaning_vi": "thẩm phán"
+      },
+      {
+        "word": "批判",
+        "reading": "hihan",
+        "meaning_vi": "phê bình"
+      }
+    ]
+  },
+  {
+    "character": "告",
+    "onyomi": [
+      "コク"
+    ],
+    "kunyomi": [
+      "つ.げる"
+    ],
+    "meaning_vi": "báo cáo, thông báo",
+    "stroke_count": 7,
+    "vocab_examples": [
+      {
+        "word": "報告",
+        "reading": "ほうこく",
+        "meaning_vi": "báo cáo"
+      },
+      {
+        "word": "告げる",
+        "reading": "つげる",
+        "meaning_vi": "thông báo, báo tin"
+      },
+      {
+        "word": "広告",
+        "reading": "こうこく",
+        "meaning_vi": "quảng cáo"
+      }
+    ]
+  },
+  {
+    "character": "局",
+    "onyomi": [
+      "キョク"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "cục, bưu điện, đài",
+    "stroke_count": 7,
+    "vocab_examples": [
+      {
+        "word": "郵便局",
+        "reading": "ゆうびんきょく",
+        "meaning_vi": "bưu điện"
+      },
+      {
+        "word": "放送局",
+        "reading": "ほうそうきょく",
+        "meaning_vi": "đài phát thanh/truyền hình"
+      },
+      {
+        "word": "薬局",
+        "reading": "やっきょく",
+        "meaning_vi": "nhà thuốc"
+      }
+    ]
+  },
+  {
+    "character": "熱",
+    "onyomi": [
+      "ネツ"
+    ],
+    "kunyomi": [
+      "あつ.い"
+    ],
+    "meaning_vi": "nóng, nhiệt, sốt",
+    "stroke_count": 15,
+    "vocab_examples": [
+      {
+        "word": "熱い",
+        "reading": "あつい",
+        "meaning_vi": "nóng (vật)"
+      },
+      {
+        "word": "熱心",
+        "reading": "ねっしん",
+        "meaning_vi": "nhiệt tình, say mê"
+      },
+      {
+        "word": "発熱",
+        "reading": "はつねつ",
+        "meaning_vi": "sốt, sinh nhiệt"
+      }
+    ]
+  },
+  {
+    "character": "光",
+    "onyomi": [
+      "コウ"
+    ],
+    "kunyomi": [
+      "ひかり",
+      "ひか.る"
+    ],
+    "meaning_vi": "ánh sáng, chiếu sáng",
+    "stroke_count": 6,
+    "vocab_examples": [
+      {
+        "word": "光",
+        "reading": "ひかり",
+        "meaning_vi": "ánh sáng"
+      },
+      {
+        "word": "観光",
+        "reading": "かんこう",
+        "meaning_vi": "du lịch ngắm cảnh"
+      },
+      {
+        "word": "光る",
+        "reading": "ひかる",
+        "meaning_vi": "phát sáng, lấp lánh"
+      }
+    ]
+  },
+  {
+    "character": "積",
+    "onyomi": [
+      "セキ"
+    ],
+    "kunyomi": [
+      "つ.む",
+      "つ.もる"
+    ],
+    "meaning_vi": "tích lũy, chất đống",
+    "stroke_count": 16,
+    "vocab_examples": [
+      {
+        "word": "積む",
+        "reading": "つむ",
+        "meaning_vi": "chất, xếp, tích lũy"
+      },
+      {
+        "word": "面積",
+        "reading": "めんせき",
+        "meaning_vi": "diện tích"
+      },
+      {
+        "word": "積もる",
+        "reading": "つもる",
+        "meaning_vi": "tích tụ, đóng băng"
+      }
+    ]
+  },
+  {
+    "character": "商",
+    "onyomi": [
+      "ショウ"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "buôn bán, thương mại",
+    "stroke_count": 11,
+    "vocab_examples": [
+      {
+        "word": "商店",
+        "reading": "しょうてん",
+        "meaning_vi": "cửa hàng"
+      },
+      {
+        "word": "商品",
+        "reading": "しょうひん",
+        "meaning_vi": "sản phẩm, hàng hóa"
+      },
+      {
+        "word": "商売",
+        "reading": "しょうばい",
+        "meaning_vi": "buôn bán, kinh doanh"
+      }
+    ]
+  },
+  {
+    "character": "船",
+    "onyomi": [
+      "セン"
+    ],
+    "kunyomi": [
+      "ふね",
+      "ふな"
+    ],
+    "meaning_vi": "tàu thuyền",
+    "stroke_count": 11,
+    "vocab_examples": [
+      {
+        "word": "船",
+        "reading": "ふね",
+        "meaning_vi": "tàu, thuyền"
+      },
+      {
+        "word": "船長",
+        "reading": "せんちょう",
+        "meaning_vi": "thuyền trưởng"
+      },
+      {
+        "word": "汽船",
+        "reading": "きせん",
+        "meaning_vi": "tàu hơi nước"
+      }
+    ]
+  },
+  {
+    "character": "図",
+    "onyomi": [
+      "ズ",
+      "ト"
+    ],
+    "kunyomi": [
+      "はか.る"
+    ],
+    "meaning_vi": "hình vẽ, đồ thị, sơ đồ",
+    "stroke_count": 7,
+    "vocab_examples": [
+      {
+        "word": "地図",
+        "reading": "ちず",
+        "meaning_vi": "bản đồ"
+      },
+      {
+        "word": "図書館",
+        "reading": "としょかん",
+        "meaning_vi": "thư viện"
+      },
+      {
+        "word": "図表",
+        "reading": "ずひょう",
+        "meaning_vi": "biểu đồ"
+      }
+    ]
+  },
+  {
+    "character": "油",
+    "onyomi": [
+      "ユ"
+    ],
+    "kunyomi": [
+      "あぶら"
+    ],
+    "meaning_vi": "dầu, chất béo",
+    "stroke_count": 8,
+    "vocab_examples": [
+      {
+        "word": "油",
+        "reading": "あぶら",
+        "meaning_vi": "dầu, mỡ"
+      },
+      {
+        "word": "石油",
+        "reading": "せきゆ",
+        "meaning_vi": "dầu mỏ"
+      },
+      {
+        "word": "大豆油",
+        "reading": "だいずゆ",
+        "meaning_vi": "dầu đậu nành"
+      }
+    ]
+  },
+  {
+    "character": "湖",
+    "onyomi": [
+      "コ"
+    ],
+    "kunyomi": [
+      "みずうみ"
+    ],
+    "meaning_vi": "hồ",
+    "stroke_count": 12,
+    "vocab_examples": [
+      {
+        "word": "湖",
+        "reading": "みずうみ",
+        "meaning_vi": "hồ"
+      },
+      {
+        "word": "湖畔",
+        "reading": "こはん",
+        "meaning_vi": "bên hồ"
+      },
+      {
+        "word": "琵琶湖",
+        "reading": "びわこ",
+        "meaning_vi": "hồ Biwa"
+      }
+    ]
+  },
+  {
+    "character": "湯",
+    "onyomi": [
+      "トウ"
+    ],
+    "kunyomi": [
+      "ゆ"
+    ],
+    "meaning_vi": "nước nóng, suối nước nóng",
+    "stroke_count": 12,
+    "vocab_examples": [
+      {
+        "word": "お湯",
+        "reading": "おゆ",
+        "meaning_vi": "nước nóng"
+      },
+      {
+        "word": "温泉",
+        "reading": "おんせん",
+        "meaning_vi": "suối nước nóng"
+      },
+      {
+        "word": "湯船",
+        "reading": "ゆぶね",
+        "meaning_vi": "bồn tắm"
+      }
+    ]
+  },
+  {
+    "character": "浴",
+    "onyomi": [
+      "ヨク"
+    ],
+    "kunyomi": [
+      "あ.びる",
+      "あ.びせる"
+    ],
+    "meaning_vi": "tắm, tắm gội",
+    "stroke_count": 10,
+    "vocab_examples": [
+      {
+        "word": "入浴",
+        "reading": "にゅうよく",
+        "meaning_vi": "tắm"
+      },
+      {
+        "word": "浴室",
+        "reading": "よくしつ",
+        "meaning_vi": "phòng tắm"
+      },
+      {
+        "word": "シャワーを浴びる",
+        "reading": "しゃわーをあびる",
+        "meaning_vi": "tắm vòi sen"
+      }
+    ]
+  },
+  {
+    "character": "毛",
+    "onyomi": [
+      "モウ"
+    ],
+    "kunyomi": [
+      "け"
+    ],
+    "meaning_vi": "tóc, lông",
+    "stroke_count": 4,
+    "vocab_examples": [
+      {
+        "word": "毛",
+        "reading": "け",
+        "meaning_vi": "lông, tóc"
+      },
+      {
+        "word": "毛布",
+        "reading": "もうふ",
+        "meaning_vi": "chăn lông"
+      },
+      {
+        "word": "毛糸",
+        "reading": "けいと",
+        "meaning_vi": "len"
+      }
+    ]
+  },
+  {
+    "character": "皮",
+    "onyomi": [
+      "ヒ"
+    ],
+    "kunyomi": [
+      "かわ"
+    ],
+    "meaning_vi": "da, vỏ, bề mặt",
+    "stroke_count": 5,
+    "vocab_examples": [
+      {
+        "word": "皮",
+        "reading": "かわ",
+        "meaning_vi": "da, vỏ"
+      },
+      {
+        "word": "皮膚",
+        "reading": "ひふ",
+        "meaning_vi": "da (cơ thể)"
+      },
+      {
+        "word": "手袋",
+        "reading": "てぶくろ",
+        "meaning_vi": "găng tay"
+      }
+    ]
+  },
+  {
+    "character": "板",
+    "onyomi": [
+      "ハン",
+      "バン"
+    ],
+    "kunyomi": [
+      "いた"
+    ],
+    "meaning_vi": "tấm ván, bảng",
+    "stroke_count": 8,
+    "vocab_examples": [
+      {
+        "word": "板",
+        "reading": "いた",
+        "meaning_vi": "tấm ván, bảng gỗ"
+      },
+      {
+        "word": "黒板",
+        "reading": "こくばん",
+        "meaning_vi": "bảng đen"
+      },
+      {
+        "word": "掲示板",
+        "reading": "けいじばん",
+        "meaning_vi": "bảng thông báo"
+      }
+    ]
+  },
+  {
+    "character": "牧",
+    "onyomi": [
+      "ボク"
+    ],
+    "kunyomi": [
+      "まき"
+    ],
+    "meaning_vi": "chăn nuôi, đồng cỏ",
+    "stroke_count": 8,
+    "vocab_examples": [
+      {
+        "word": "牧場",
+        "reading": "ぼくじょう",
+        "meaning_vi": "trang trại, đồng cỏ"
+      },
+      {
+        "word": "牧師",
+        "reading": "ぼくし",
+        "meaning_vi": "mục sư"
+      },
+      {
+        "word": "放牧",
+        "reading": "ほうぼく",
+        "meaning_vi": "chăn thả"
+      }
+    ]
+  },
+  {
+    "character": "岡",
+    "onyomi": [
+      "コウ"
+    ],
+    "kunyomi": [
+      "おか"
+    ],
+    "meaning_vi": "đồi, gò cao",
+    "stroke_count": 8,
+    "vocab_examples": [
+      {
+        "word": "岡",
+        "reading": "おか",
+        "meaning_vi": "đồi, gò"
+      },
+      {
+        "word": "静岡",
+        "reading": "しずおか",
+        "meaning_vi": "Shizuoka"
+      },
+      {
+        "word": "福岡",
+        "reading": "ふくおか",
+        "meaning_vi": "Fukuoka"
+      }
+    ]
   }
 ]

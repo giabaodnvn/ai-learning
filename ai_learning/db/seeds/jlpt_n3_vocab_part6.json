@@ -627,5 +627,260 @@
       "health",
       "abstract"
     ]
+  },
+  {
+    "word": "体重",
+    "reading": "たいじゅう",
+    "romaji": "taijuu",
+    "meaning_vi": "cân nặng, trọng lượng cơ thể",
+    "part_of_speech": "noun",
+    "tags": [
+      "health",
+      "daily"
+    ]
+  },
+  {
+    "word": "心拍数",
+    "reading": "しんぱくすう",
+    "romaji": "shinpakusuu",
+    "meaning_vi": "nhịp tim",
+    "part_of_speech": "noun",
+    "tags": [
+      "health"
+    ]
+  },
+  {
+    "word": "海洋",
+    "reading": "かいよう",
+    "romaji": "kaiyou",
+    "meaning_vi": "đại dương, biển cả",
+    "part_of_speech": "noun",
+    "tags": [
+      "nature",
+      "environment"
+    ]
+  },
+  {
+    "word": "河川",
+    "reading": "かせん",
+    "romaji": "kasen",
+    "meaning_vi": "sông suối, hệ thống sông ngòi",
+    "part_of_speech": "noun",
+    "tags": [
+      "nature",
+      "environment"
+    ]
+  },
+  {
+    "word": "再利用",
+    "reading": "さいりよう",
+    "romaji": "sairiiyou",
+    "meaning_vi": "tái sử dụng, tái chế",
+    "part_of_speech": "noun",
+    "tags": [
+      "environment",
+      "daily"
+    ]
+  },
+  {
+    "word": "節電",
+    "reading": "せつでん",
+    "romaji": "setsuden",
+    "meaning_vi": "tiết kiệm điện",
+    "part_of_speech": "noun",
+    "tags": [
+      "environment",
+      "daily"
+    ]
+  },
+  {
+    "word": "救助",
+    "reading": "きゅうじょ",
+    "romaji": "kyuujo",
+    "meaning_vi": "cứu trợ, giải cứu",
+    "part_of_speech": "noun",
+    "tags": [
+      "safety",
+      "social"
+    ]
+  },
+  {
+    "word": "記事",
+    "reading": "きじ",
+    "romaji": "kiji",
+    "meaning_vi": "bài báo, bài viết",
+    "part_of_speech": "noun",
+    "tags": [
+      "media",
+      "communication"
+    ]
+  },
+  {
+    "word": "番組",
+    "reading": "ばんぐみ",
+    "romaji": "bangumi",
+    "meaning_vi": "chương trình (TV/radio)",
+    "part_of_speech": "noun",
+    "tags": [
+      "media"
+    ]
+  },
+  {
+    "word": "取材",
+    "reading": "しゅざい",
+    "romaji": "shuzai",
+    "meaning_vi": "đưa tin, phỏng vấn, thu thập tài liệu",
+    "part_of_speech": "noun",
+    "tags": [
+      "media",
+      "work"
+    ]
+  },
+  {
+    "word": "情報源",
+    "reading": "じょうほうげん",
+    "romaji": "jouhougen",
+    "meaning_vi": "nguồn thông tin",
+    "part_of_speech": "noun",
+    "tags": [
+      "media",
+      "research"
+    ]
+  },
+  {
+    "word": "視聴者",
+    "reading": "しちょうしゃ",
+    "romaji": "shichousha",
+    "meaning_vi": "khán giả, người xem",
+    "part_of_speech": "noun",
+    "tags": [
+      "media",
+      "social"
+    ]
+  },
+  {
+    "word": "読者",
+    "reading": "どくしゃ",
+    "romaji": "dokusha",
+    "meaning_vi": "độc giả, người đọc",
+    "part_of_speech": "noun",
+    "tags": [
+      "media",
+      "language"
+    ]
+  },
+  {
+    "word": "患者",
+    "reading": "かんじゃ",
+    "romaji": "kanja",
+    "meaning_vi": "bệnh nhân",
+    "part_of_speech": "noun",
+    "tags": [
+      "health"
+    ]
+  },
+  {
+    "word": "処方",
+    "reading": "しょほう",
+    "romaji": "shohou",
+    "meaning_vi": "đơn thuốc, kê đơn",
+    "part_of_speech": "noun",
+    "tags": [
+      "health"
+    ]
+  },
+  {
+    "word": "肥満",
+    "reading": "ひまん",
+    "romaji": "himan",
+    "meaning_vi": "béo phì, béo bệnh",
+    "part_of_speech": "noun",
+    "tags": [
+      "health"
+    ]
+  },
+  {
+    "word": "骨折",
+    "reading": "こっせつ",
+    "romaji": "kossetsu",
+    "meaning_vi": "gãy xương",
+    "part_of_speech": "noun",
+    "tags": [
+      "health"
+    ]
+  },
+  {
+    "word": "脱水",
+    "reading": "だっすい",
+    "romaji": "dassui",
+    "meaning_vi": "mất nước, thiếu nước",
+    "part_of_speech": "noun",
+    "tags": [
+      "health"
+    ]
+  },
+  {
+    "word": "花粉症",
+    "reading": "かふんしょう",
+    "romaji": "kafunshou",
+    "meaning_vi": "dị ứng phấn hoa",
+    "part_of_speech": "noun",
+    "tags": [
+      "health",
+      "nature"
+    ]
+  },
+  {
+    "word": "災害",
+    "reading": "さいがい",
+    "romaji": "saigai",
+    "meaning_vi": "thiên tai, thảm họa",
+    "part_of_speech": "noun",
+    "tags": [
+      "nature",
+      "safety"
+    ]
+  },
+  {
+    "word": "避難",
+    "reading": "ひなん",
+    "romaji": "hinan",
+    "meaning_vi": "sơ tán, thoát nạn",
+    "part_of_speech": "noun",
+    "tags": [
+      "safety"
+    ]
+  },
+  {
+    "word": "豪雨",
+    "reading": "ごうう",
+    "romaji": "gouu",
+    "meaning_vi": "mưa lớn, mưa xối xả",
+    "part_of_speech": "noun",
+    "tags": [
+      "nature",
+      "weather"
+    ]
+  },
+  {
+    "word": "砂漠",
+    "reading": "さばく",
+    "romaji": "sabaku",
+    "meaning_vi": "sa mạc",
+    "part_of_speech": "noun",
+    "tags": [
+      "nature",
+      "environment"
+    ]
+  },
+  {
+    "word": "噴火",
+    "reading": "ふんか",
+    "romaji": "funka",
+    "meaning_vi": "phun trào núi lửa",
+    "part_of_speech": "noun",
+    "tags": [
+      "nature"
+    ]
   }
 ]

@@ -439,5 +439,342 @@
     "tags": [
       "measurement"
     ]
+  },
+  {
+    "word": "相変わらず",
+    "reading": "あいかわらず",
+    "romaji": "aikawarazu",
+    "meaning_vi": "vẫn như thường lệ, vẫn vậy",
+    "part_of_speech": "adverb",
+    "tags": [
+      "adverb",
+      "manner"
+    ]
+  },
+  {
+    "word": "改めて",
+    "reading": "あらためて",
+    "romaji": "aratamete",
+    "meaning_vi": "một lần nữa, lại; chính thức",
+    "part_of_speech": "adverb",
+    "tags": [
+      "adverb",
+      "manner"
+    ]
+  },
+  {
+    "word": "いずれ",
+    "reading": "いずれ",
+    "romaji": "izure",
+    "meaning_vi": "rồi sẽ, cuối cùng cũng, sớm hay muộn",
+    "part_of_speech": "adverb",
+    "tags": [
+      "adverb",
+      "time"
+    ]
+  },
+  {
+    "word": "あいにく",
+    "reading": "あいにく",
+    "romaji": "ainiku",
+    "meaning_vi": "không may, tiếc là, thật không may",
+    "part_of_speech": "adverb",
+    "tags": [
+      "adverb",
+      "emotion"
+    ]
+  },
+  {
+    "word": "それなり",
+    "reading": "それなり",
+    "romaji": "sorenari",
+    "meaning_vi": "theo cách đó, phù hợp, tương xứng",
+    "part_of_speech": "adverb",
+    "tags": [
+      "adverb",
+      "degree"
+    ]
+  },
+  {
+    "word": "したがって",
+    "reading": "したがって",
+    "romaji": "shitagatte",
+    "meaning_vi": "do đó, vì vậy (văn viết trang trọng)",
+    "part_of_speech": "adverb",
+    "tags": [
+      "adverb",
+      "discourse",
+      "formal"
+    ]
+  },
+  {
+    "word": "ところが",
+    "reading": "ところが",
+    "romaji": "tokoroga",
+    "meaning_vi": "thế nhưng, tuy nhiên (kết quả bất ngờ)",
+    "part_of_speech": "adverb",
+    "tags": [
+      "adverb",
+      "contrast",
+      "discourse"
+    ]
+  },
+  {
+    "word": "そこで",
+    "reading": "そこで",
+    "romaji": "sokode",
+    "meaning_vi": "vì vậy, do đó (dẫn đến hành động)",
+    "part_of_speech": "adverb",
+    "tags": [
+      "adverb",
+      "consequence",
+      "discourse"
+    ]
+  },
+  {
+    "word": "そのため",
+    "reading": "そのため",
+    "romaji": "sonotame",
+    "meaning_vi": "vì lý do đó, do đó",
+    "part_of_speech": "adverb",
+    "tags": [
+      "adverb",
+      "reason",
+      "discourse"
+    ]
+  },
+  {
+    "word": "それでも",
+    "reading": "それでも",
+    "romaji": "soredemo",
+    "meaning_vi": "dù vậy, mặc dù thế",
+    "part_of_speech": "adverb",
+    "tags": [
+      "adverb",
+      "contrast",
+      "discourse"
+    ]
+  },
+  {
+    "word": "確かに",
+    "reading": "たしかに",
+    "romaji": "tashika ni",
+    "meaning_vi": "chắc chắn, đúng là, quả thật",
+    "part_of_speech": "adverb",
+    "tags": [
+      "adverb",
+      "certainty"
+    ]
+  },
+  {
+    "word": "明らかに",
+    "reading": "あきらかに",
+    "romaji": "akiraka ni",
+    "meaning_vi": "rõ ràng, hiển nhiên",
+    "part_of_speech": "adverb",
+    "tags": [
+      "adverb",
+      "degree"
+    ]
+  },
+  {
+    "word": "当然",
+    "reading": "とうぜん",
+    "romaji": "touzen",
+    "meaning_vi": "đương nhiên, tất nhiên",
+    "part_of_speech": "adverb",
+    "tags": [
+      "adverb",
+      "certainty"
+    ]
+  },
+  {
+    "word": "つまり",
+    "reading": "つまり",
+    "romaji": "tsumari",
+    "meaning_vi": "tức là, nói cách khác",
+    "part_of_speech": "adverb",
+    "tags": [
+      "adverb",
+      "discourse"
+    ]
+  },
+  {
+    "word": "要するに",
+    "reading": "ようするに",
+    "romaji": "yousuru ni",
+    "meaning_vi": "nói tóm lại, tóm lại là",
+    "part_of_speech": "adverb",
+    "tags": [
+      "adverb",
+      "discourse",
+      "formal"
+    ]
+  },
+  {
+    "word": "もっとも",
+    "reading": "もっとも",
+    "romaji": "mottomo",
+    "meaning_vi": "tuy nhiên, thật ra thì; hợp lý nhất",
+    "part_of_speech": "adverb",
+    "tags": [
+      "adverb",
+      "contrast"
+    ]
+  },
+  {
+    "word": "そもそも",
+    "reading": "そもそも",
+    "romaji": "somosomo",
+    "meaning_vi": "ban đầu, ngay từ đầu, căn bản",
+    "part_of_speech": "adverb",
+    "tags": [
+      "adverb",
+      "discourse"
+    ]
+  },
+  {
+    "word": "いわば",
+    "reading": "いわば",
+    "romaji": "iwaba",
+    "meaning_vi": "có thể nói là, nói theo nghĩa nào đó",
+    "part_of_speech": "adverb",
+    "tags": [
+      "adverb",
+      "discourse"
+    ]
+  },
+  {
+    "word": "あくまで",
+    "reading": "あくまで",
+    "romaji": "akumade",
+    "meaning_vi": "đến cùng, kiên định, bằng mọi giá",
+    "part_of_speech": "adverb",
+    "tags": [
+      "adverb",
+      "manner"
+    ]
+  },
+  {
+    "word": "いずれも",
+    "reading": "いずれも",
+    "romaji": "izuremo",
+    "meaning_vi": "tất cả đều, cả hai đều",
+    "part_of_speech": "adverb",
+    "tags": [
+      "adverb",
+      "quantity"
+    ]
+  },
+  {
+    "word": "正直に",
+    "reading": "しょうじきに",
+    "romaji": "shoujiki ni",
+    "meaning_vi": "thành thật mà nói, nói thật",
+    "part_of_speech": "adverb",
+    "tags": [
+      "adverb",
+      "manner"
+    ]
+  },
+  {
+    "word": "すなわち",
+    "reading": "すなわち",
+    "romaji": "sunawachi",
+    "meaning_vi": "tức là, nghĩa là (văn viết)",
+    "part_of_speech": "adverb",
+    "tags": [
+      "adverb",
+      "discourse",
+      "formal"
+    ]
+  },
+  {
+    "word": "いっぽう",
+    "reading": "いっぽう",
+    "romaji": "ippou",
+    "meaning_vi": "mặt khác, trong khi đó",
+    "part_of_speech": "adverb",
+    "tags": [
+      "adverb",
+      "contrast",
+      "discourse"
+    ]
+  },
+  {
+    "word": "匹",
+    "reading": "ひき",
+    "romaji": "hiki",
+    "meaning_vi": "(đếm động vật nhỏ: chó, mèo, cá)",
+    "part_of_speech": "noun",
+    "tags": [
+      "counter",
+      "animal"
+    ]
+  },
+  {
+    "word": "羽",
+    "reading": "わ",
+    "romaji": "wa",
+    "meaning_vi": "(đếm chim, thỏ)",
+    "part_of_speech": "noun",
+    "tags": [
+      "counter",
+      "animal"
+    ]
+  },
+  {
+    "word": "階",
+    "reading": "かい",
+    "romaji": "kai",
+    "meaning_vi": "(đếm tầng nhà)",
+    "part_of_speech": "noun",
+    "tags": [
+      "counter",
+      "building"
+    ]
+  },
+  {
+    "word": "番",
+    "reading": "ばん",
+    "romaji": "ban",
+    "meaning_vi": "số thứ tự, hạng",
+    "part_of_speech": "noun",
+    "tags": [
+      "counter",
+      "number"
+    ]
+  },
+  {
+    "word": "個",
+    "reading": "こ",
+    "romaji": "ko",
+    "meaning_vi": "(đếm vật nhỏ: táo, trứng, cục)",
+    "part_of_speech": "noun",
+    "tags": [
+      "counter"
+    ]
+  },
+  {
+    "word": "切れ",
+    "reading": "きれ",
+    "romaji": "kire",
+    "meaning_vi": "(đếm miếng, lát: thịt, bánh mì)",
+    "part_of_speech": "noun",
+    "tags": [
+      "counter",
+      "food"
+    ]
+  },
+  {
+    "word": "リットル",
+    "reading": "リットル",
+    "romaji": "rittoru",
+    "meaning_vi": "lít (đơn vị đo thể tích)",
+    "part_of_speech": "noun",
+    "tags": [
+      "measurement",
+      "katakana"
+    ]
   }
 ]

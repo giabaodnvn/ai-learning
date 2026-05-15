@@ -379,5 +379,346 @@
       "abstract",
       "academic"
     ]
+  },
+  {
+    "word": "個人的",
+    "reading": "こじんてき",
+    "romaji": "kojinteki",
+    "meaning_vi": "cá nhân, mang tính cá nhân",
+    "part_of_speech": "adjective",
+    "tags": [
+      "abstract",
+      "social"
+    ]
+  },
+  {
+    "word": "国際的",
+    "reading": "こくさいてき",
+    "romaji": "kokusaiteki",
+    "meaning_vi": "quốc tế, mang tính quốc tế",
+    "part_of_speech": "adjective",
+    "tags": [
+      "global",
+      "formal"
+    ]
+  },
+  {
+    "word": "世界的",
+    "reading": "せかいてき",
+    "romaji": "sekaiteki",
+    "meaning_vi": "toàn cầu, mang tầm thế giới",
+    "part_of_speech": "adjective",
+    "tags": [
+      "global",
+      "formal"
+    ]
+  },
+  {
+    "word": "全体的",
+    "reading": "ぜんたいてき",
+    "romaji": "zentaiteki",
+    "meaning_vi": "toàn diện, mang tính tổng thể",
+    "part_of_speech": "adjective",
+    "tags": [
+      "abstract",
+      "formal"
+    ]
+  },
+  {
+    "word": "否定的",
+    "reading": "ひていてき",
+    "romaji": "hiteiteki",
+    "meaning_vi": "phủ định, tiêu cực, phản đối",
+    "part_of_speech": "adjective",
+    "tags": [
+      "abstract",
+      "psychology"
+    ]
+  },
+  {
+    "word": "肯定的",
+    "reading": "こうていてき",
+    "romaji": "kouteiteki",
+    "meaning_vi": "khẳng định, tích cực, đồng ý",
+    "part_of_speech": "adjective",
+    "tags": [
+      "abstract",
+      "psychology"
+    ]
+  },
+  {
+    "word": "専門的",
+    "reading": "せんもんてき",
+    "romaji": "senmonteki",
+    "meaning_vi": "chuyên môn, mang tính chuyên nghiệp",
+    "part_of_speech": "adjective",
+    "tags": [
+      "work",
+      "academic"
+    ]
+  },
+  {
+    "word": "悲観的",
+    "reading": "ひかんてき",
+    "romaji": "hikanteki",
+    "meaning_vi": "bi quan, thất vọng",
+    "part_of_speech": "adjective",
+    "tags": [
+      "abstract",
+      "psychology"
+    ]
+  },
+  {
+    "word": "楽観的",
+    "reading": "らっかんてき",
+    "romaji": "rakkanteki",
+    "meaning_vi": "lạc quan, tích cực",
+    "part_of_speech": "adjective",
+    "tags": [
+      "abstract",
+      "psychology"
+    ]
+  },
+  {
+    "word": "表面的",
+    "reading": "ひょうめんてき",
+    "romaji": "hyoumenteki",
+    "meaning_vi": "bề mặt, hời hợt, bề ngoài",
+    "part_of_speech": "adjective",
+    "tags": [
+      "abstract",
+      "thinking"
+    ]
+  },
+  {
+    "word": "内面的",
+    "reading": "ないめんてき",
+    "romaji": "naimenteki",
+    "meaning_vi": "nội tâm, bên trong, tinh thần",
+    "part_of_speech": "adjective",
+    "tags": [
+      "abstract",
+      "psychology"
+    ]
+  },
+  {
+    "word": "全面的",
+    "reading": "ぜんめんてき",
+    "romaji": "zenmenteki",
+    "meaning_vi": "toàn diện, đầy đủ, toàn bộ",
+    "part_of_speech": "adjective",
+    "tags": [
+      "abstract",
+      "formal"
+    ]
+  },
+  {
+    "word": "部分的",
+    "reading": "ぶぶんてき",
+    "romaji": "bubunteki",
+    "meaning_vi": "một phần, từng phần",
+    "part_of_speech": "adjective",
+    "tags": [
+      "abstract",
+      "formal"
+    ]
+  },
+  {
+    "word": "平和的",
+    "reading": "へいわてき",
+    "romaji": "heiwateki",
+    "meaning_vi": "hòa bình, ôn hòa",
+    "part_of_speech": "adjective",
+    "tags": [
+      "abstract",
+      "social"
+    ]
+  },
+  {
+    "word": "連続的",
+    "reading": "れんぞくてき",
+    "romaji": "renzokuteki",
+    "meaning_vi": "liên tục, liền mạch",
+    "part_of_speech": "adjective",
+    "tags": [
+      "abstract",
+      "time"
+    ]
+  },
+  {
+    "word": "比較的",
+    "reading": "ひかくてき",
+    "romaji": "hikakuteki",
+    "meaning_vi": "tương đối, so sánh",
+    "part_of_speech": "adjective",
+    "tags": [
+      "abstract",
+      "academic"
+    ]
+  },
+  {
+    "word": "生産的",
+    "reading": "せいさんてき",
+    "romaji": "seisanteki",
+    "meaning_vi": "có năng suất, hiệu quả sản xuất",
+    "part_of_speech": "adjective",
+    "tags": [
+      "work",
+      "abstract"
+    ]
+  },
+  {
+    "word": "協力的",
+    "reading": "きょうりょくてき",
+    "romaji": "kyouryokuteki",
+    "meaning_vi": "hợp tác, sẵn lòng phối hợp",
+    "part_of_speech": "adjective",
+    "tags": [
+      "abstract",
+      "social"
+    ]
+  },
+  {
+    "word": "制度的",
+    "reading": "せいどてき",
+    "romaji": "seidoteki",
+    "meaning_vi": "mang tính thể chế, theo hệ thống",
+    "part_of_speech": "adjective",
+    "tags": [
+      "formal",
+      "abstract"
+    ]
+  },
+  {
+    "word": "自動的",
+    "reading": "じどうてき",
+    "romaji": "jidouteki",
+    "meaning_vi": "tự động",
+    "part_of_speech": "adjective",
+    "tags": [
+      "technology",
+      "abstract"
+    ]
+  },
+  {
+    "word": "強制的",
+    "reading": "きょうせいてき",
+    "romaji": "kyouseiteki",
+    "meaning_vi": "cưỡng bức, bắt buộc",
+    "part_of_speech": "adjective",
+    "tags": [
+      "abstract",
+      "law"
+    ]
+  },
+  {
+    "word": "人工的",
+    "reading": "じんこうてき",
+    "romaji": "jinkouteki",
+    "meaning_vi": "nhân tạo, do con người tạo ra",
+    "part_of_speech": "adjective",
+    "tags": [
+      "technology",
+      "abstract"
+    ]
+  },
+  {
+    "word": "機械的",
+    "reading": "きかいてき",
+    "romaji": "kikaiteki",
+    "meaning_vi": "máy móc, thiếu cảm xúc, tự động",
+    "part_of_speech": "adjective",
+    "tags": [
+      "technology",
+      "abstract"
+    ]
+  },
+  {
+    "word": "定期的",
+    "reading": "ていきてき",
+    "romaji": "teikiteki",
+    "meaning_vi": "định kỳ, thường xuyên, đều đặn",
+    "part_of_speech": "adjective",
+    "tags": [
+      "abstract",
+      "time"
+    ]
+  },
+  {
+    "word": "精神的",
+    "reading": "せいしんてき",
+    "romaji": "seishinteki",
+    "meaning_vi": "về mặt tinh thần, tâm lý",
+    "part_of_speech": "adjective",
+    "tags": [
+      "psychology",
+      "health"
+    ]
+  },
+  {
+    "word": "身体的",
+    "reading": "しんたいてき",
+    "romaji": "shintaiteki",
+    "meaning_vi": "về mặt thể chất, cơ thể",
+    "part_of_speech": "adjective",
+    "tags": [
+      "health",
+      "abstract"
+    ]
+  },
+  {
+    "word": "道徳的",
+    "reading": "どうとくてき",
+    "romaji": "doutokuteki",
+    "meaning_vi": "đạo đức, có tính đạo đức",
+    "part_of_speech": "adjective",
+    "tags": [
+      "abstract",
+      "social"
+    ]
+  },
+  {
+    "word": "限定的",
+    "reading": "げんていてき",
+    "romaji": "genteiteki",
+    "meaning_vi": "giới hạn, hạn chế",
+    "part_of_speech": "adjective",
+    "tags": [
+      "abstract",
+      "formal"
+    ]
+  },
+  {
+    "word": "意識的",
+    "reading": "いしきてき",
+    "romaji": "ishikiteki",
+    "meaning_vi": "có ý thức, chủ ý",
+    "part_of_speech": "adjective",
+    "tags": [
+      "abstract",
+      "psychology"
+    ]
+  },
+  {
+    "word": "補助的",
+    "reading": "ほじょてき",
+    "romaji": "hojoteki",
+    "meaning_vi": "hỗ trợ, phụ trợ",
+    "part_of_speech": "adjective",
+    "tags": [
+      "abstract",
+      "work"
+    ]
+  },
+  {
+    "word": "慢性的",
+    "reading": "まんせいてき",
+    "romaji": "manseiteki",
+    "meaning_vi": "mãn tính, kinh niên",
+    "part_of_speech": "adjective",
+    "tags": [
+      "health",
+      "abstract"
+    ]
   }
 ]

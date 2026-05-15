@@ -1,1 +1,591 @@
-[]
+[
+  {
+    "character": "帝",
+    "onyomi": ["テイ"],
+    "kunyomi": [],
+    "meaning_vi": "hoàng đế, thiên tử",
+    "stroke_count": 9,
+    "vocab_examples": [
+      { "word": "帝王", "reading": "ていおう", "meaning_vi": "hoàng đế, vua chúa" },
+      { "word": "帝国", "reading": "ていこく", "meaning_vi": "đế quốc" },
+      { "word": "皇帝", "reading": "こうてい", "meaning_vi": "hoàng đế" }
+    ]
+  },
+  {
+    "character": "璽",
+    "onyomi": ["ジ"],
+    "kunyomi": [],
+    "meaning_vi": "ngọc tỷ hoàng đế, ấn tín hoàng gia",
+    "stroke_count": 19,
+    "vocab_examples": [
+      { "word": "御璽", "reading": "ぎょじ", "meaning_vi": "ngọc tỷ (ấn thiên tử)" },
+      { "word": "国璽", "reading": "こくじ", "meaning_vi": "quốc ấn" },
+      { "word": "天皇御璽", "reading": "てんのうぎょじ", "meaning_vi": "ngọc tỷ của Thiên hoàng" }
+    ]
+  },
+  {
+    "character": "爵",
+    "onyomi": ["シャク"],
+    "kunyomi": [],
+    "meaning_vi": "tước vị quý tộc",
+    "stroke_count": 17,
+    "vocab_examples": [
+      { "word": "爵位", "reading": "しゃくい", "meaning_vi": "tước vị" },
+      { "word": "男爵", "reading": "だんしゃく", "meaning_vi": "nam tước" },
+      { "word": "公爵", "reading": "こうしゃく", "meaning_vi": "công tước" }
+    ]
+  },
+  {
+    "character": "侯",
+    "onyomi": ["コウ"],
+    "kunyomi": [],
+    "meaning_vi": "hầu tước, chư hầu, lãnh chúa phong kiến",
+    "stroke_count": 9,
+    "vocab_examples": [
+      { "word": "諸侯", "reading": "しょこう", "meaning_vi": "chư hầu, các lãnh chúa" },
+      { "word": "侯爵", "reading": "こうしゃく", "meaning_vi": "hầu tước" },
+      { "word": "王侯", "reading": "おうこう", "meaning_vi": "vương hầu" }
+    ]
+  },
+  {
+    "character": "卿",
+    "onyomi": ["ケイ", "キョウ"],
+    "kunyomi": [],
+    "meaning_vi": "khanh, quan đại thần, cách xưng hô kính trọng",
+    "stroke_count": 12,
+    "vocab_examples": [
+      { "word": "公卿", "reading": "くぎょう", "meaning_vi": "quý tộc cung đình (thời Heian)" },
+      { "word": "卿相", "reading": "けいしょう", "meaning_vi": "khanh tướng, quan lại cấp cao" }
+    ]
+  },
+  {
+    "character": "藩",
+    "onyomi": ["ハン"],
+    "kunyomi": [],
+    "meaning_vi": "phiên (lãnh địa phong kiến Nhật Bản)",
+    "stroke_count": 18,
+    "vocab_examples": [
+      { "word": "藩主", "reading": "はんしゅ", "meaning_vi": "lãnh chúa phiên" },
+      { "word": "廃藩置県", "reading": "はいはんちけん", "meaning_vi": "bãi phiên lập huyện (cải cách Minh Trị)" },
+      { "word": "藩政", "reading": "はんせい", "meaning_vi": "chính quyền phiên" }
+    ]
+  },
+  {
+    "character": "勲",
+    "onyomi": ["クン"],
+    "kunyomi": ["いさお"],
+    "meaning_vi": "công huân, huân chương, công lao",
+    "stroke_count": 15,
+    "vocab_examples": [
+      { "word": "勲章", "reading": "くんしょう", "meaning_vi": "huân chương" },
+      { "word": "叙勲", "reading": "じょくん", "meaning_vi": "được phong huân chương" },
+      { "word": "勲功", "reading": "くんこう", "meaning_vi": "công lao" }
+    ]
+  },
+  {
+    "character": "賜",
+    "onyomi": ["シ"],
+    "kunyomi": ["たまわ.る"],
+    "meaning_vi": "ban tặng từ bề trên, ân tứ",
+    "stroke_count": 15,
+    "vocab_examples": [
+      { "word": "恩賜", "reading": "おんし", "meaning_vi": "ân ban từ bề trên" },
+      { "word": "賜物", "reading": "たまもの", "meaning_vi": "ân tứ, của trời cho" },
+      { "word": "賜杯", "reading": "しはい", "meaning_vi": "cúp/chén thưởng" }
+    ]
+  },
+  {
+    "character": "謁",
+    "onyomi": ["エツ"],
+    "kunyomi": [],
+    "meaning_vi": "yết kiến, bái kiến người bề trên",
+    "stroke_count": 15,
+    "vocab_examples": [
+      { "word": "謁見", "reading": "えっけん", "meaning_vi": "yết kiến" },
+      { "word": "拝謁", "reading": "はいえつ", "meaning_vi": "bái yết (kính trọng)" },
+      { "word": "内謁", "reading": "ないえつ", "meaning_vi": "tiếp kiến riêng tư" }
+    ]
+  },
+  {
+    "character": "諮",
+    "onyomi": ["シ"],
+    "kunyomi": ["はか.る"],
+    "meaning_vi": "tham vấn, hỏi ý kiến chính thức",
+    "stroke_count": 16,
+    "vocab_examples": [
+      { "word": "諮問", "reading": "しもん", "meaning_vi": "tham vấn, tư vấn chính thức" },
+      { "word": "諮問委員会", "reading": "しもんいいんかい", "meaning_vi": "hội đồng tư vấn" }
+    ]
+  },
+  {
+    "character": "諫",
+    "onyomi": ["カン"],
+    "kunyomi": ["いさ.める"],
+    "meaning_vi": "can gián, khuyên can bề trên",
+    "stroke_count": 16,
+    "vocab_examples": [
+      { "word": "諫言", "reading": "かんげん", "meaning_vi": "lời can gián" },
+      { "word": "直諫", "reading": "ちょっかん", "meaning_vi": "can thẳng, nói thẳng" },
+      { "word": "諫止", "reading": "かんし", "meaning_vi": "can ngăn, ngăn cản" }
+    ]
+  },
+  {
+    "character": "諭",
+    "onyomi": ["ユ"],
+    "kunyomi": ["さと.す"],
+    "meaning_vi": "khuyên bảo, dạy bảo người bề dưới",
+    "stroke_count": 16,
+    "vocab_examples": [
+      { "word": "諭旨", "reading": "ゆし", "meaning_vi": "ý chỉ khuyên răn (hành chính)" },
+      { "word": "教諭", "reading": "きょうゆ", "meaning_vi": "giáo viên (cấp bậc chính thức)" },
+      { "word": "訓諭", "reading": "くんゆ", "meaning_vi": "huấn thị, lời dạy bảo chính thức" }
+    ]
+  },
+  {
+    "character": "劾",
+    "onyomi": ["ガイ"],
+    "kunyomi": [],
+    "meaning_vi": "đàn hặc, buộc tội quan lại",
+    "stroke_count": 8,
+    "vocab_examples": [
+      { "word": "弾劾", "reading": "だんがい", "meaning_vi": "đàn hặc, luận tội" },
+      { "word": "弾劾裁判", "reading": "だんがいさいばん", "meaning_vi": "tòa án đàn hặc" }
+    ]
+  },
+  {
+    "character": "遷",
+    "onyomi": ["セン"],
+    "kunyomi": ["うつ.る", "うつ.す"],
+    "meaning_vi": "dời, chuyển dịch, thay đổi (đặc biệt dời đô)",
+    "stroke_count": 15,
+    "vocab_examples": [
+      { "word": "遷都", "reading": "せんと", "meaning_vi": "dời đô" },
+      { "word": "変遷", "reading": "へんせん", "meaning_vi": "biến thiên, thay đổi theo thời gian" },
+      { "word": "左遷", "reading": "させん", "meaning_vi": "giáng chức, đổi đi nơi kém hơn" }
+    ]
+  },
+  {
+    "character": "封",
+    "onyomi": ["ホウ", "フウ"],
+    "kunyomi": [],
+    "meaning_vi": "phong kiến, niêm phong, lãnh địa được phong",
+    "stroke_count": 9,
+    "vocab_examples": [
+      { "word": "封建", "reading": "ほうけん", "meaning_vi": "phong kiến" },
+      { "word": "封印", "reading": "ふういん", "meaning_vi": "niêm phong, đóng dấu" },
+      { "word": "封鎖", "reading": "ふうさ", "meaning_vi": "phong tỏa, phong bế" }
+    ]
+  },
+  {
+    "character": "宦",
+    "onyomi": ["カン"],
+    "kunyomi": [],
+    "meaning_vi": "hoạn quan, quan lại trong triều đình cổ đại",
+    "stroke_count": 9,
+    "vocab_examples": [
+      { "word": "宦官", "reading": "かんがん", "meaning_vi": "hoạn quan" },
+      { "word": "宦途", "reading": "かんと", "meaning_vi": "con đường hoạn lộ" }
+    ]
+  },
+  {
+    "character": "宰",
+    "onyomi": ["サイ"],
+    "kunyomi": [],
+    "meaning_vi": "tể tướng, cai quản, chủ trì",
+    "stroke_count": 10,
+    "vocab_examples": [
+      { "word": "宰相", "reading": "さいしょう", "meaning_vi": "tể tướng, thủ tướng" },
+      { "word": "主宰", "reading": "しゅさい", "meaning_vi": "chủ trì, lãnh đạo" },
+      { "word": "宰領", "reading": "さいりょう", "meaning_vi": "cai quản, điều hành" }
+    ]
+  },
+  {
+    "character": "俸",
+    "onyomi": ["ホウ"],
+    "kunyomi": [],
+    "meaning_vi": "bổng lộc, lương quan lại",
+    "stroke_count": 10,
+    "vocab_examples": [
+      { "word": "俸給", "reading": "ほうきゅう", "meaning_vi": "lương bổng, thù lao" },
+      { "word": "薄俸", "reading": "はくほう", "meaning_vi": "lương thấp, bổng ít" },
+      { "word": "月俸", "reading": "げつぼう", "meaning_vi": "lương tháng" }
+    ]
+  },
+  {
+    "character": "禄",
+    "onyomi": ["ロク"],
+    "kunyomi": [],
+    "meaning_vi": "lộc, bổng lộc phong kiến, phúc lộc",
+    "stroke_count": 13,
+    "vocab_examples": [
+      { "word": "禄高", "reading": "ろくだか", "meaning_vi": "mức bổng lộc (thời phong kiến)" },
+      { "word": "家禄", "reading": "かろく", "meaning_vi": "lộc của gia tộc" },
+      { "word": "高禄", "reading": "こうろく", "meaning_vi": "bổng lộc cao" }
+    ]
+  },
+  {
+    "character": "懲",
+    "onyomi": ["チョウ"],
+    "kunyomi": ["こ.りる", "こ.らす"],
+    "meaning_vi": "trừng phạt, kỷ luật, cảnh tỉnh",
+    "stroke_count": 18,
+    "vocab_examples": [
+      { "word": "懲罰", "reading": "ちょうばつ", "meaning_vi": "trừng phạt" },
+      { "word": "懲役", "reading": "ちょうえき", "meaning_vi": "tù khổ sai" },
+      { "word": "懲戒", "reading": "ちょうかい", "meaning_vi": "kỷ luật, cảnh cáo" }
+    ]
+  },
+  {
+    "character": "弑",
+    "onyomi": ["シ"],
+    "kunyomi": ["しい.する"],
+    "meaning_vi": "giết vua hoặc cha mẹ (đại nghịch bất đạo)",
+    "stroke_count": 11,
+    "vocab_examples": [
+      { "word": "弑逆", "reading": "しぎゃく", "meaning_vi": "phản nghịch giết vua/chúa" },
+      { "word": "弑君", "reading": "しくん", "meaning_vi": "giết vua" }
+    ]
+  },
+  {
+    "character": "薨",
+    "onyomi": ["コウ"],
+    "kunyomi": ["こう.ずる"],
+    "meaning_vi": "băng hà, tử vong của người quyền quý",
+    "stroke_count": 16,
+    "vocab_examples": [
+      { "word": "薨去", "reading": "こうきょ", "meaning_vi": "băng hà (chết của người hoàng tộc)" },
+      { "word": "薨御", "reading": "こうご", "meaning_vi": "băng hà (kính ngữ cực trịnh trọng)" }
+    ]
+  },
+  {
+    "character": "鎧",
+    "onyomi": ["ガイ"],
+    "kunyomi": ["よろい"],
+    "meaning_vi": "giáp trụ, áo giáp chiến",
+    "stroke_count": 18,
+    "vocab_examples": [
+      { "word": "鎧兜", "reading": "よろいかぶと", "meaning_vi": "giáp trụ và mũ chiến đầy đủ" },
+      { "word": "鎧武者", "reading": "よろいむしゃ", "meaning_vi": "võ sĩ mặc giáp trụ" },
+      { "word": "甲鎧", "reading": "こうがい", "meaning_vi": "giáp trụ" }
+    ]
+  },
+  {
+    "character": "兜",
+    "onyomi": ["トウ"],
+    "kunyomi": ["かぶと"],
+    "meaning_vi": "mũ chiến, mũ giáp",
+    "stroke_count": 11,
+    "vocab_examples": [
+      { "word": "鎧兜", "reading": "よろいかぶと", "meaning_vi": "giáp trụ và mũ chiến" },
+      { "word": "兜を脱ぐ", "reading": "かぶとをぬぐ", "meaning_vi": "đầu hàng, chịu thua" },
+      { "word": "兜割", "reading": "かぶとわり", "meaning_vi": "chẻ mũ (chiêu kiếm)" }
+    ]
+  },
+  {
+    "character": "戎",
+    "onyomi": ["ジュウ"],
+    "kunyomi": ["えびす"],
+    "meaning_vi": "vũ khí, quân sự; man rợ (cổ ngữ)",
+    "stroke_count": 6,
+    "vocab_examples": [
+      { "word": "戎衣", "reading": "じゅうい", "meaning_vi": "quân phục" },
+      { "word": "戎器", "reading": "じゅうき", "meaning_vi": "vũ khí, khí giới" },
+      { "word": "西戎", "reading": "せいじゅう", "meaning_vi": "man rợ phương Tây (cổ đại)" }
+    ]
+  },
+  {
+    "character": "寇",
+    "onyomi": ["コウ"],
+    "kunyomi": ["あだ"],
+    "meaning_vi": "cướp phá, giặc xâm lược, kẻ địch",
+    "stroke_count": 11,
+    "vocab_examples": [
+      { "word": "倭寇", "reading": "わこう", "meaning_vi": "hải tặc Nhật Bản (lịch sử)" },
+      { "word": "外寇", "reading": "がいこう", "meaning_vi": "ngoại xâm, giặc ngoài" },
+      { "word": "入寇", "reading": "にゅうこう", "meaning_vi": "xâm nhập, cướp phá" }
+    ]
+  },
+  {
+    "character": "夷",
+    "onyomi": ["イ"],
+    "kunyomi": ["えびす"],
+    "meaning_vi": "man di, rợ (thuật ngữ cổ đại miệt thị)",
+    "stroke_count": 6,
+    "vocab_examples": [
+      { "word": "夷狄", "reading": "いてき", "meaning_vi": "man di, rợ rú (cổ ngữ)" },
+      { "word": "征夷", "reading": "せいい", "meaning_vi": "chinh phạt man di" },
+      { "word": "攘夷", "reading": "じょうい", "meaning_vi": "bài ngoại, đuổi người ngoại quốc" }
+    ]
+  },
+  {
+    "character": "硯",
+    "onyomi": ["ケン"],
+    "kunyomi": ["すずり"],
+    "meaning_vi": "nghiên mực, dụng cụ văn phòng truyền thống",
+    "stroke_count": 12,
+    "vocab_examples": [
+      { "word": "硯箱", "reading": "すずりばこ", "meaning_vi": "hộp đựng nghiên mực" },
+      { "word": "筆硯", "reading": "ひっけん", "meaning_vi": "bút và nghiên" },
+      { "word": "硯水", "reading": "けんすい", "meaning_vi": "nước mài mực" }
+    ]
+  },
+  {
+    "character": "篇",
+    "onyomi": ["ヘン"],
+    "kunyomi": [],
+    "meaning_vi": "thiên, bài thơ, quyển/chương sách",
+    "stroke_count": 15,
+    "vocab_examples": [
+      { "word": "詩篇", "reading": "しへん", "meaning_vi": "bài thơ, tập thơ" },
+      { "word": "長篇", "reading": "ちょうへん", "meaning_vi": "tác phẩm dài, tiểu thuyết dài" },
+      { "word": "前篇", "reading": "ぜんへん", "meaning_vi": "phần trước, tập trước" }
+    ]
+  },
+  {
+    "character": "謄",
+    "onyomi": ["トウ"],
+    "kunyomi": [],
+    "meaning_vi": "sao chép, chép lại tài liệu chính thức",
+    "stroke_count": 17,
+    "vocab_examples": [
+      { "word": "謄本", "reading": "とうほん", "meaning_vi": "bản sao chứng thực" },
+      { "word": "謄写", "reading": "とうしゃ", "meaning_vi": "sao chép" },
+      { "word": "戸籍謄本", "reading": "こせきとうほん", "meaning_vi": "bản sao hộ tịch" }
+    ]
+  },
+  {
+    "character": "翰",
+    "onyomi": ["カン"],
+    "kunyomi": [],
+    "meaning_vi": "bút lông; thư từ văn chương; lông vũ dài",
+    "stroke_count": 16,
+    "vocab_examples": [
+      { "word": "翰墨", "reading": "かんぼく", "meaning_vi": "bút mực, văn chương" },
+      { "word": "翰林", "reading": "かんりん", "meaning_vi": "hàn lâm viện" },
+      { "word": "鴻翰", "reading": "こうかん", "meaning_vi": "thư quý báu, bức thư trân trọng" }
+    ]
+  },
+  {
+    "character": "箋",
+    "onyomi": ["セン"],
+    "kunyomi": [],
+    "meaning_vi": "giấy thư, nhãn giấy, đơn thuốc",
+    "stroke_count": 14,
+    "vocab_examples": [
+      { "word": "処方箋", "reading": "しょほうせん", "meaning_vi": "đơn thuốc" },
+      { "word": "便箋", "reading": "びんせん", "meaning_vi": "giấy viết thư" },
+      { "word": "付箋", "reading": "ふせん", "meaning_vi": "nhãn dán, giấy ghi chú" }
+    ]
+  },
+  {
+    "character": "儒",
+    "onyomi": ["ジュ"],
+    "kunyomi": [],
+    "meaning_vi": "Nho giáo, nhà nho, học giả theo Khổng Tử",
+    "stroke_count": 16,
+    "vocab_examples": [
+      { "word": "儒教", "reading": "じゅきょう", "meaning_vi": "Nho giáo" },
+      { "word": "儒学", "reading": "じゅがく", "meaning_vi": "Nho học" },
+      { "word": "儒者", "reading": "じゅしゃ", "meaning_vi": "nhà nho, học giả Nho gia" }
+    ]
+  },
+  {
+    "character": "稽",
+    "onyomi": ["ケイ"],
+    "kunyomi": ["かんが.える"],
+    "meaning_vi": "suy xét, luyện tập; buồn cười, vô lý",
+    "stroke_count": 15,
+    "vocab_examples": [
+      { "word": "稽古", "reading": "けいこ", "meaning_vi": "luyện tập, diễn tập (võ thuật, nghệ thuật)" },
+      { "word": "滑稽", "reading": "こっけい", "meaning_vi": "hài hước, buồn cười, khôi hài" },
+      { "word": "稽首", "reading": "けいしゅ", "meaning_vi": "lạy đầu chạm đất (kính lễ cực trọng)" }
+    ]
+  },
+  {
+    "character": "韻",
+    "onyomi": ["イン"],
+    "kunyomi": [],
+    "meaning_vi": "vần điệu, thanh vận, dư âm",
+    "stroke_count": 19,
+    "vocab_examples": [
+      { "word": "押韻", "reading": "おういん", "meaning_vi": "gieo vần, hiệp vần" },
+      { "word": "韻文", "reading": "いんぶん", "meaning_vi": "văn vần, thơ ca" },
+      { "word": "余韻", "reading": "よいん", "meaning_vi": "dư âm, dư vị, dư hưởng" }
+    ]
+  },
+  {
+    "character": "菩",
+    "onyomi": ["ボ"],
+    "kunyomi": [],
+    "meaning_vi": "bồ (trong Bồ Tát), giác ngộ",
+    "stroke_count": 11,
+    "vocab_examples": [
+      { "word": "菩薩", "reading": "ぼさつ", "meaning_vi": "Bồ Tát" },
+      { "word": "菩提", "reading": "ぼだい", "meaning_vi": "Bồ Đề, giác ngộ" },
+      { "word": "菩提樹", "reading": "ぼだいじゅ", "meaning_vi": "cây Bồ Đề" }
+    ]
+  },
+  {
+    "character": "薩",
+    "onyomi": ["サツ", "サ"],
+    "kunyomi": [],
+    "meaning_vi": "tát (trong Bồ Tát); phiên âm Phạn ngữ",
+    "stroke_count": 17,
+    "vocab_examples": [
+      { "word": "菩薩", "reading": "ぼさつ", "meaning_vi": "Bồ Tát" },
+      { "word": "薩摩", "reading": "さつま", "meaning_vi": "Satsuma (tên phiên/địa danh cổ)" }
+    ]
+  },
+  {
+    "character": "尉",
+    "onyomi": ["イ", "ジョウ"],
+    "kunyomi": [],
+    "meaning_vi": "sĩ quan cấp thấp; an ủi",
+    "stroke_count": 11,
+    "vocab_examples": [
+      { "word": "大尉", "reading": "たいい", "meaning_vi": "đại úy" },
+      { "word": "少尉", "reading": "しょうい", "meaning_vi": "thiếu úy" },
+      { "word": "尉官", "reading": "いかん", "meaning_vi": "sĩ quan cấp thấp (thiếu/trung/đại úy)" }
+    ]
+  },
+  {
+    "character": "督",
+    "onyomi": ["トク"],
+    "kunyomi": [],
+    "meaning_vi": "đốc thúc, giám sát, tổng đốc",
+    "stroke_count": 13,
+    "vocab_examples": [
+      { "word": "監督", "reading": "かんとく", "meaning_vi": "giám đốc, đạo diễn, huấn luyện viên" },
+      { "word": "総督", "reading": "そうとく", "meaning_vi": "toàn quyền, tổng đốc" },
+      { "word": "督促", "reading": "とくそく", "meaning_vi": "thúc giục, đốc thúc" }
+    ]
+  },
+  {
+    "character": "款",
+    "onyomi": ["カン"],
+    "kunyomi": [],
+    "meaning_vi": "điều khoản, tình thân, khoản tiền",
+    "stroke_count": 12,
+    "vocab_examples": [
+      { "word": "条款", "reading": "じょうかん", "meaning_vi": "điều khoản" },
+      { "word": "落款", "reading": "らっかん", "meaning_vi": "chữ ký/ấn chương nghệ thuật" },
+      { "word": "款待", "reading": "かんたい", "meaning_vi": "tiếp đón nồng hậu, thết đãi" }
+    ]
+  },
+  {
+    "character": "冑",
+    "onyomi": ["チュウ"],
+    "kunyomi": ["かぶと", "よろい"],
+    "meaning_vi": "mũ giáp, giáp trụ; dòng dõi quý tộc",
+    "stroke_count": 9,
+    "vocab_examples": [
+      { "word": "甲冑", "reading": "かっちゅう", "meaning_vi": "giáp trụ đầy đủ" },
+      { "word": "冑裔", "reading": "ちゅうえい", "meaning_vi": "dòng dõi, hậu duệ" },
+      { "word": "貴冑", "reading": "きちゅう", "meaning_vi": "dòng dõi quý tộc" }
+    ]
+  },
+  {
+    "character": "衙",
+    "onyomi": ["ガ"],
+    "kunyomi": [],
+    "meaning_vi": "nha môn, công đường (văn phòng chính quyền cổ đại)",
+    "stroke_count": 13,
+    "vocab_examples": [
+      { "word": "官衙", "reading": "かんが", "meaning_vi": "công sở nhà nước" },
+      { "word": "衙門", "reading": "がもん", "meaning_vi": "cổng nha môn, dinh quan" }
+    ]
+  },
+  {
+    "character": "弼",
+    "onyomi": ["ヒツ"],
+    "kunyomi": ["たす.ける"],
+    "meaning_vi": "phụ tá vua chúa, trợ giúp bề trên",
+    "stroke_count": 12,
+    "vocab_examples": [
+      { "word": "輔弼", "reading": "ほひつ", "meaning_vi": "trợ giúp thiên tử, phụ tá" },
+      { "word": "弼成", "reading": "ひっせい", "meaning_vi": "hỗ trợ đạt thành tựu" }
+    ]
+  },
+  {
+    "character": "輔",
+    "onyomi": ["ホ", "フ"],
+    "kunyomi": ["たす.ける"],
+    "meaning_vi": "phụ trợ, giúp đỡ, cố vấn",
+    "stroke_count": 14,
+    "vocab_examples": [
+      { "word": "輔佐", "reading": "ほさ", "meaning_vi": "trợ lý, cố vấn" },
+      { "word": "輔弼", "reading": "ほひつ", "meaning_vi": "phụ tá thiên tử" },
+      { "word": "輔導", "reading": "ほどう", "meaning_vi": "hướng dẫn, kèm cặp" }
+    ]
+  },
+  {
+    "character": "檄",
+    "onyomi": ["ゲキ"],
+    "kunyomi": [],
+    "meaning_vi": "hịch văn, lời kêu gọi chiến đấu",
+    "stroke_count": 17,
+    "vocab_examples": [
+      { "word": "檄文", "reading": "げきぶん", "meaning_vi": "hịch văn, văn thư kêu gọi chiến đấu" },
+      { "word": "飛檄", "reading": "ひげき", "meaning_vi": "truyền hịch, tung hịch văn đi xa" }
+    ]
+  },
+  {
+    "character": "宸",
+    "onyomi": ["シン"],
+    "kunyomi": [],
+    "meaning_vi": "cung điện hoàng đế, thiên tử, bệ rồng",
+    "stroke_count": 10,
+    "vocab_examples": [
+      { "word": "宸翰", "reading": "しんかん", "meaning_vi": "bút tích của thiên tử" },
+      { "word": "宸筆", "reading": "しんぴつ", "meaning_vi": "ngự bút, bút thiên tử" },
+      { "word": "宸慮", "reading": "しんりょ", "meaning_vi": "ý kiến/ưu tư của thiên tử" }
+    ]
+  },
+  {
+    "character": "綸",
+    "onyomi": ["リン", "ロン"],
+    "kunyomi": [],
+    "meaning_vi": "chiếu chỉ thiên tử; sợi tơ, đường tơ",
+    "stroke_count": 14,
+    "vocab_examples": [
+      { "word": "綸言", "reading": "りんげん", "meaning_vi": "lời vua (nói không lấy lại được)" },
+      { "word": "綸旨", "reading": "りんじ", "meaning_vi": "chiếu chỉ thiên tử" }
+    ]
+  },
+  {
+    "character": "譜",
+    "onyomi": ["フ"],
+    "kunyomi": [],
+    "meaning_vi": "gia phả, bảng phổ; nhạc phổ",
+    "stroke_count": 19,
+    "vocab_examples": [
+      { "word": "楽譜", "reading": "がくふ", "meaning_vi": "nhạc phổ" },
+      { "word": "系譜", "reading": "けいふ", "meaning_vi": "gia phả, hệ thống phả" },
+      { "word": "家譜", "reading": "かふ", "meaning_vi": "gia phả" }
+    ]
+  },
+  {
+    "character": "諷",
+    "onyomi": ["フウ"],
+    "kunyomi": ["そら.んじる"],
+    "meaning_vi": "châm biếm, mỉa mai; ngâm thuộc lòng",
+    "stroke_count": 16,
+    "vocab_examples": [
+      { "word": "諷刺", "reading": "ふうし", "meaning_vi": "châm biếm, trào phúng" },
+      { "word": "諷詠", "reading": "ふうえい", "meaning_vi": "ngâm thơ, đọc thuộc lòng thơ" },
+      { "word": "諷意", "reading": "ふうい", "meaning_vi": "ý mỉa mai, ý châm biếm" }
+    ]
+  },
+  {
+    "character": "柵",
+    "onyomi": ["サク"],
+    "kunyomi": ["しがらみ", "さく"],
+    "meaning_vi": "hàng rào, rào chắn, pháo đài gỗ (lịch sử)",
+    "stroke_count": 9,
+    "vocab_examples": [
+      { "word": "鉄柵", "reading": "てつさく", "meaning_vi": "hàng rào sắt" },
+      { "word": "木柵", "reading": "もくさく", "meaning_vi": "hàng rào gỗ, thành gỗ" },
+      { "word": "柵列", "reading": "さくれつ", "meaning_vi": "hàng rào bảo vệ, hàng cọc phòng thủ" }
+    ]
+  }
+]

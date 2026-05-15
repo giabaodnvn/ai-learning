@@ -163,5 +163,215 @@
       }
     ],
     "notes_vi": "どのくらい = どれくらい = どれほど. Dùng với かかる (mất thời gian), ある (khoảng cách), など."
+  },
+  {
+    "pattern": "〜がかかります",
+    "explanation_vi": "Mất ~ (thời gian/tiền bạc): cụm 時間がかかります (mất thời gian) và お金がかかります (tốn tiền) rất thường gặp ở N5. Chủ thể thường là công việc hoặc quá trình, không phải người.",
+    "examples": [
+      {
+        "ja": "駅まで30分かかります。",
+        "vi": "Đến ga mất 30 phút."
+      },
+      {
+        "ja": "この修理には時間がかかります。",
+        "vi": "Việc sửa chữa này mất nhiều thời gian."
+      }
+    ],
+    "notes_vi": "時間がかかる (mất thời gian) / お金がかかる (tốn tiền). Chủ thể thường là sự việc (が), không phải người."
+  },
+  {
+    "pattern": "〜まま",
+    "explanation_vi": "Trong trạng thái ~, cứ để ~ như vậy: diễn đạt trạng thái không thay đổi hoặc hành động thực hiện mà không thay đổi điều kiện trước đó.",
+    "examples": [
+      {
+        "ja": "窓を開けたまま寝てしまいました。",
+        "vi": "Tôi ngủ quên với cửa sổ vẫn mở."
+      },
+      {
+        "ja": "靴を履いたまま入らないでください。",
+        "vi": "Xin đừng vào trong khi vẫn mang giày."
+      }
+    ],
+    "notes_vi": "V-た形 + まま (giữ nguyên trạng thái sau hành động). N + の + まま. Trạng thái tiếp diễn không mong muốn thường có sắc thái tiêu cực."
+  },
+  {
+    "pattern": "〜ことにします",
+    "explanation_vi": "Quyết định sẽ ~ (quyết định cá nhân, chủ động): diễn đạt quyết định của bản thân về hành động trong tương lai. Mang tính chủ động, tự nguyện hơn 〜ことになります.",
+    "examples": [
+      {
+        "ja": "毎朝運動することにしました。",
+        "vi": "Tôi đã quyết định tập thể dục mỗi sáng."
+      },
+      {
+        "ja": "タバコをやめることにします。",
+        "vi": "Tôi quyết định sẽ bỏ thuốc lá."
+      }
+    ],
+    "notes_vi": "V-辞書形 + ことにします (quyết định làm). V-ない + ことにします (quyết định không làm). Phân biệt: 〜ことになります = hoàn cảnh dẫn đến (không chủ động)."
+  },
+  {
+    "pattern": "〜ことになります",
+    "explanation_vi": "Sẽ ~ (do hoàn cảnh hoặc quyết định bên ngoài): diễn đạt một kết quả hay sắp xếp xảy ra do hoàn cảnh, quyết định của người khác, hoặc quy luật. Khác với 〜ことにします là chủ động.",
+    "examples": [
+      {
+        "ja": "来月から大阪で働くことになりました。",
+        "vi": "Từ tháng sau tôi sẽ làm việc ở Osaka (do sắp xếp)."
+      },
+      {
+        "ja": "山田さんが担当することになりました。",
+        "vi": "Anh Yamada sẽ phụ trách (theo quyết định)."
+      }
+    ],
+    "notes_vi": "V-辞書形 + ことになります (sắp xếp/hoàn cảnh). So sánh: ことにします (tự quyết), ことになります (được quyết/do hoàn cảnh)."
+  },
+  {
+    "pattern": "〜といいですね / 〜といいんですが",
+    "explanation_vi": "Tốt nhất là ~ / Mong rằng ~: diễn đạt mong muốn một điều gì đó xảy ra (thường vì lợi ích người khác hoặc chung). 〜といいですね bày tỏ hi vọng, 〜といいんですが thêm sắc thái băn khoăn.",
+    "examples": [
+      {
+        "ja": "早く元気になるといいですね。",
+        "vi": "Mong bạn mau khỏi bệnh nhé."
+      },
+      {
+        "ja": "明日晴れるといいですね。",
+        "vi": "Mong ngày mai nắng đẹp nhỉ."
+      }
+    ],
+    "notes_vi": "V-辞書形 / い-adj / な-adj + といいですね. Khác với 〜てほしいです (muốn ai đó làm gì)."
+  },
+  {
+    "pattern": "〜てよかったです",
+    "explanation_vi": "May mà đã ~, thật tốt khi đã ~ (bày tỏ sự nhẹ nhõm hoặc hài lòng về hành động đã làm): nhìn lại một hành động trong quá khứ và cảm thấy vui / hài lòng vì đã làm điều đó.",
+    "examples": [
+      {
+        "ja": "傘を持ってきてよかったです。",
+        "vi": "May mà đã mang theo ô."
+      },
+      {
+        "ja": "日本語を勉強してよかったと思います。",
+        "vi": "Tôi nghĩ thật tốt khi đã học tiếng Nhật."
+      }
+    ],
+    "notes_vi": "V-て形 + よかったです. Phủ định: V-なくて + よかったです (may mà đã không làm). Diễn đạt cảm xúc nhìn lại quá khứ."
+  },
+  {
+    "pattern": "〜ようにしています",
+    "explanation_vi": "Cố gắng ~ / Tập thói quen ~: diễn đạt nỗ lực duy trì hoặc xây dựng một thói quen, hành động lặp đi lặp lại. Mang sắc thái chủ động, cố gắng.",
+    "examples": [
+      {
+        "ja": "毎日野菜を食べるようにしています。",
+        "vi": "Tôi cố gắng ăn rau mỗi ngày."
+      },
+      {
+        "ja": "夜遅くまでゲームをしないようにしています。",
+        "vi": "Tôi cố không chơi game đến khuya."
+      }
+    ],
+    "notes_vi": "V-辞書形 + ようにしています (cố gắng làm). V-ない + ようにしています (cố gắng không làm). Thể hiện nỗ lực, thói quen đang cố xây dựng."
+  },
+  {
+    "pattern": "〜ごとに",
+    "explanation_vi": "Mỗi ~, cứ mỗi ~ (tần suất đều đặn): dùng để chỉ hành động xảy ra đều đặn theo từng đơn vị thời gian hoặc sau mỗi một đối tượng nhất định.",
+    "examples": [
+      {
+        "ja": "2時間ごとに休憩します。",
+        "vi": "Cứ mỗi 2 tiếng lại nghỉ một lần."
+      },
+      {
+        "ja": "駅ごとに人が乗り降りします。",
+        "vi": "Ở mỗi ga lại có người lên xuống."
+      }
+    ],
+    "notes_vi": "N(thời gian/số) + ごとに. Phân biệt: おきに (cách mỗi ~) vs ごとに (mỗi ~ đều). 1日おきに = cách một ngày. 毎日 = mỗi ngày."
+  },
+  {
+    "pattern": "〜のは〜です",
+    "explanation_vi": "Điều ~ là ~, Cái ~ là ~ (nhấn mạnh chủ đề bằng の): の thêm vào sau mệnh đề biến nó thành danh từ, rồi dùng は để nhấn mạnh. Cấu trúc tương tự tiếng Anh 'What ... is ...'",
+    "examples": [
+      {
+        "ja": "私が好きなのは音楽です。",
+        "vi": "Điều tôi thích là âm nhạc."
+      },
+      {
+        "ja": "一番難しいのは漢字です。",
+        "vi": "Điều khó nhất là chữ kanji."
+      }
+    ],
+    "notes_vi": "S(普通形) + のは + N + です. の thay thế こと trong văn nói. Dùng の cho điều cụ thể, こと cho điều trừu tượng."
+  },
+  {
+    "pattern": "〜さ（名詞化）",
+    "explanation_vi": "〜ness, mức độ ~: thêm さ vào sau tính từ い (bỏ い) hoặc tính từ な (bỏ な) để tạo danh từ chỉ mức độ hoặc tính chất. Khác với 〜み (cũng tạo danh từ nhưng cảm giác chủ quan hơn).",
+    "examples": [
+      {
+        "ja": "この山の高さはどのくらいですか。",
+        "vi": "Độ cao của ngọn núi này là bao nhiêu?"
+      },
+      {
+        "ja": "彼の親切さに感動しました。",
+        "vi": "Tôi cảm động trước sự tử tế của anh ấy."
+      }
+    ],
+    "notes_vi": "い-adj (bỏ い) + さ: 高さ、広さ、暖かさ. な-adj (bỏ な) + さ: 親切さ、便利さ. Khác: 〜み = 悲しみ、楽しみ (cảm xúc, chủ quan hơn)."
+  },
+  {
+    "pattern": "〜でしょうか",
+    "explanation_vi": "~ không biết có... không? (hỏi lịch sự, nhẹ nhàng): dạng câu hỏi của でしょう, lịch sự hơn 〜ですか. Thường dùng khi hỏi người lạ, bề trên, hoặc khi không chắc chắn.",
+    "examples": [
+      {
+        "ja": "もう少し安くなりませんでしょうか。",
+        "vi": "Liệu có thể rẻ hơn một chút không ạ?"
+      },
+      {
+        "ja": "明日、お時間はあるでしょうか。",
+        "vi": "Ngày mai anh/chị có thời gian không ạ?"
+      }
+    ],
+    "notes_vi": "〜でしょうか = lịch sự hơn 〜ですか. Thường dùng trong văn phòng, khi nói với khách hàng, người lớn tuổi. Rất lịch sự."
+  },
+  {
+    "pattern": "〜はずがありません",
+    "explanation_vi": "Không thể nào ~, không có chuyện ~ (phủ định mạnh về khả năng): diễn đạt sự chắc chắn tuyệt đối rằng một điều gì đó không thể xảy ra, dựa trên logic hoặc hiểu biết của người nói.",
+    "examples": [
+      {
+        "ja": "彼が嘘をつくはずがない。",
+        "vi": "Không thể nào anh ấy lại nói dối."
+      },
+      {
+        "ja": "そんなことがあるはずがありません。",
+        "vi": "Không thể nào có chuyện như vậy."
+      }
+    ],
+    "notes_vi": "V-辞書形 / い-adj / な-adj + はずがありません. So sánh: はずです (chắc là đúng) ↔ はずがありません (chắc chắn không). Mạnh hơn 〜ないでしょう."
+  },
+  {
+    "pattern": "〜はじめて",
+    "explanation_vi": "Lần đầu tiên ~: dùng はじめて (lần đầu tiên) như trạng từ, khác với 〜はじめます (bắt đầu làm). はじめて nhấn mạnh kinh nghiệm lần đầu.",
+    "examples": [
+      {
+        "ja": "はじめて飛行機に乗りました。",
+        "vi": "Tôi lần đầu tiên đi máy bay."
+      },
+      {
+        "ja": "日本に来たのははじめてです。",
+        "vi": "Đây là lần đầu tiên tôi đến Nhật."
+      }
+    ],
+    "notes_vi": "はじめて = lần đầu tiên (trạng từ). Phân biệt: はじめて (trạng từ, first time) vs はじめます/始める (bắt đầu)."
+  },
+  {
+    "pattern": "〜でも〜でもありません",
+    "explanation_vi": "Không phải ~ cũng không phải ~ (phủ định cả hai khả năng): nối hai danh từ hoặc tính từ với でも~でもありません để phủ định cả hai.",
+    "examples": [
+      {
+        "ja": "これは日本語でも中国語でもありません。",
+        "vi": "Đây không phải tiếng Nhật cũng không phải tiếng Trung."
+      },
+      {
+        "ja": "彼女は先生でも学生でもありません。",
+        "vi": "Cô ấy không phải giáo viên cũng không phải học sinh."
+      }
+    ],
+    "notes_vi": "N1 + でも + N2 + でもありません. Khẳng định: N1 + でも + N2 + でもあります (cả hai đều là / đều có thể). 〜も〜も + ない dùng cho số lượng."
   }
 ]

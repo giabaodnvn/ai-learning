@@ -253,5 +253,125 @@
       }
     ],
     "notes_vi": "Biểu thị sự kiện hoặc tình huống đóng vai trò là bước ngoặt, khởi điểm cho sự thay đổi."
+  },
+  {
+    "pattern": "〜につれて",
+    "explanation_vi": "Khi...thì..., cùng với sự thay đổi của... (tỷ lệ thuận)",
+    "examples": [
+      {
+        "ja": "年齢が上がるにつれて、体力が低下する。",
+        "vi": "Tuổi càng cao thì thể lực càng giảm."
+      },
+      {
+        "ja": "春になるにつれて、気温が上がってきた。",
+        "vi": "Khi mùa xuân đến, nhiệt độ dần tăng lên."
+      }
+    ],
+    "notes_vi": "Biểu thị sự thay đổi song song, tỷ lệ thuận giữa hai yếu tố. Vế trước thường là quá trình, vế sau là kết quả."
+  },
+  {
+    "pattern": "〜に伴って",
+    "explanation_vi": "Cùng với..., đi kèm với..., theo... (kèm theo biến đổi)",
+    "examples": [
+      {
+        "ja": "経済発展に伴って、環境問題も深刻化している。",
+        "vi": "Cùng với sự phát triển kinh tế, vấn đề môi trường cũng ngày càng nghiêm trọng."
+      },
+      {
+        "ja": "人口増加に伴い、住宅不足が生じている。",
+        "vi": "Theo đà tăng dân số, tình trạng thiếu nhà ở nảy sinh."
+      }
+    ],
+    "notes_vi": "Tương tự 〜につれて nhưng nhấn mạnh hơn vào sự đi kèm/hệ quả. Dạng 〜に伴い cũng thường gặp trong văn viết."
+  },
+  {
+    "pattern": "〜に応じて",
+    "explanation_vi": "Tùy theo..., phù hợp với..., đáp ứng... (thích ứng linh hoạt)",
+    "examples": [
+      {
+        "ja": "状況に応じて、対応を変える必要がある。",
+        "vi": "Cần thay đổi cách ứng phó tùy theo tình huống."
+      },
+      {
+        "ja": "能力に応じた仕事を与えてください。",
+        "vi": "Xin hãy giao việc phù hợp với năng lực."
+      }
+    ],
+    "notes_vi": "Biểu thị sự thích ứng hoặc điều chỉnh dựa theo một tiêu chí. Thường gặp trong văn phong trang trọng."
+  },
+  {
+    "pattern": "〜をめぐって",
+    "explanation_vi": "Xung quanh vấn đề..., về..., liên quan đến tranh luận... (chủ đề gây tranh cãi)",
+    "examples": [
+      {
+        "ja": "領土問題をめぐって、両国間で議論が続いている。",
+        "vi": "Xung quanh vấn đề lãnh thổ, tranh luận giữa hai nước vẫn tiếp tục."
+      },
+      {
+        "ja": "遺産をめぐり、家族間でトラブルが生じた。",
+        "vi": "Về vấn đề di sản, mâu thuẫn nảy sinh trong gia đình."
+      }
+    ],
+    "notes_vi": "Thường dùng khi có tranh luận, xung đột, hay nhiều quan điểm khác nhau về cùng một chủ đề."
+  },
+  {
+    "pattern": "〜を通して",
+    "explanation_vi": "Thông qua..., nhờ..., suốt... (phương tiện hoặc thời gian)",
+    "examples": [
+      {
+        "ja": "経験を通して、多くのことを学んだ。",
+        "vi": "Thông qua kinh nghiệm, tôi học được nhiều điều."
+      },
+      {
+        "ja": "一年を通して、毎日運動している。",
+        "vi": "Suốt cả năm, tôi tập thể dục mỗi ngày."
+      }
+    ],
+    "notes_vi": "Có hai nghĩa: (1) thông qua phương tiện/người trung gian, (2) suốt một khoảng thời gian. Tương đương 〜を通じて."
+  },
+  {
+    "pattern": "〜をもとに",
+    "explanation_vi": "Dựa trên..., lấy...làm cơ sở... (căn cứ, nền tảng)",
+    "examples": [
+      {
+        "ja": "実際のデータをもとに、報告書を作成した。",
+        "vi": "Dựa trên dữ liệu thực tế, tôi đã lập báo cáo."
+      },
+      {
+        "ja": "この映画は実話をもとにしている。",
+        "vi": "Bộ phim này dựa trên câu chuyện có thật."
+      }
+    ],
+    "notes_vi": "Biểu thị cơ sở hoặc nguồn gốc của hành động/sản phẩm. Thường dùng trong văn viết, học thuật."
+  },
+  {
+    "pattern": "〜として",
+    "explanation_vi": "Với tư cách là..., được xem là..., như... (vai trò, danh nghĩa)",
+    "examples": [
+      {
+        "ja": "医者として、患者の命を守るのが義務だ。",
+        "vi": "Với tư cách là bác sĩ, bảo vệ sinh mạng bệnh nhân là nghĩa vụ."
+      },
+      {
+        "ja": "この問題は、社会問題として取り上げられている。",
+        "vi": "Vấn đề này đang được đề cập với tư cách là một vấn đề xã hội."
+      }
+    ],
+    "notes_vi": "Biểu thị vai trò, danh nghĩa, hoặc cách nhìn nhận về ai/điều gì. Rất phổ biến trong văn N2."
+  },
+  {
+    "pattern": "〜はもとより",
+    "explanation_vi": "Không chỉ..., ...là chưa kể đến... (chưa cần nói đến cái này, cái kia cũng vậy)",
+    "examples": [
+      {
+        "ja": "彼は英語はもとより、フランス語も話せる。",
+        "vi": "Anh ấy không chỉ tiếng Anh mà còn nói được tiếng Pháp."
+      },
+      {
+        "ja": "この店は地元の人はもとより、観光客にも人気だ。",
+        "vi": "Quán này không chỉ người địa phương mà cả du khách cũng yêu thích."
+      }
+    ],
+    "notes_vi": "Nhấn mạnh rằng điều hiển nhiên đã vậy, điều ít hiển nhiên hơn cũng đúng. Trang trọng hơn 〜はもちろん."
   }
 ]

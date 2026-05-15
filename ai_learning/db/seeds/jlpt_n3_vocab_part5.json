@@ -662,5 +662,181 @@
       "character",
       "work"
     ]
+  },
+  {
+    "word": "課程",
+    "reading": "かてい",
+    "romaji": "katei",
+    "meaning_vi": "chương trình học, khóa học",
+    "part_of_speech": "noun",
+    "tags": [
+      "education",
+      "abstract"
+    ]
+  },
+  {
+    "word": "問題点",
+    "reading": "もんだいてん",
+    "romaji": "mondaiten",
+    "meaning_vi": "điểm vấn đề, điểm bất cập",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract",
+      "work"
+    ]
+  },
+  {
+    "word": "考慮",
+    "reading": "こうりょ",
+    "romaji": "kouryo",
+    "meaning_vi": "cân nhắc, xem xét",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract",
+      "thinking"
+    ]
+  },
+  {
+    "word": "推測",
+    "reading": "すいそく",
+    "romaji": "suisoku",
+    "meaning_vi": "suy đoán, phỏng đoán",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract",
+      "thinking"
+    ]
+  },
+  {
+    "word": "余裕",
+    "reading": "よゆう",
+    "romaji": "yoyuu",
+    "meaning_vi": "여유,여우; sự여유 있음,여유",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract",
+      "life"
+    ]
+  },
+  {
+    "word": "上昇",
+    "reading": "じょうしょう",
+    "romaji": "joushou",
+    "meaning_vi": "tăng lên, đi lên",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract",
+      "economy"
+    ]
+  },
+  {
+    "word": "共有",
+    "reading": "きょうゆう",
+    "romaji": "kyouyuu",
+    "meaning_vi": "chia sẻ, dùng chung",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract",
+      "social"
+    ]
+  },
+  {
+    "word": "促進",
+    "reading": "そくしん",
+    "romaji": "sokushin",
+    "meaning_vi": "thúc đẩy, xúc tiến",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract",
+      "work"
+    ]
+  },
+  {
+    "word": "選択",
+    "reading": "せんたく",
+    "romaji": "sentaku",
+    "meaning_vi": "lựa chọn, chọn lựa",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract",
+      "daily"
+    ]
+  },
+  {
+    "word": "想定",
+    "reading": "そうてい",
+    "romaji": "soutei",
+    "meaning_vi": "giả định, dự kiến trường hợp",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract",
+      "thinking"
+    ]
+  },
+  {
+    "word": "事態",
+    "reading": "じたい",
+    "romaji": "jitai",
+    "meaning_vi": "tình huống, sự việc",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract",
+      "social"
+    ]
+  },
+  {
+    "word": "主体",
+    "reading": "しゅたい",
+    "romaji": "shutai",
+    "meaning_vi": "chủ thể, chủ nhân",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract",
+      "social"
+    ]
+  },
+  {
+    "word": "固定観念",
+    "reading": "こていかんねん",
+    "romaji": "kotei kannen",
+    "meaning_vi": "định kiến, quan niệm cố hữu",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract",
+      "psychology"
+    ]
+  },
+  {
+    "word": "貢献",
+    "reading": "こうけん",
+    "romaji": "kouken",
+    "meaning_vi": "đóng góp, cống hiến",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract",
+      "social"
+    ]
+  },
+  {
+    "word": "主導",
+    "reading": "しゅどう",
+    "romaji": "shudou",
+    "meaning_vi": "chủ đạo, dẫn đầu",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract",
+      "work"
+    ]
+  },
+  {
+    "word": "普及",
+    "reading": "ふきゅう",
+    "romaji": "fukyuu",
+    "meaning_vi": "phổ biến, lan rộng",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract",
+      "social"
+    ]
   }
 ]

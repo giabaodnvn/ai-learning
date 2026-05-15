@@ -584,5 +584,313 @@
       "abstract",
       "thinking"
     ]
+  },
+  {
+    "word": "食べ放題",
+    "reading": "たべほうだい",
+    "romaji": "tabehoudai",
+    "meaning_vi": "ăn thả ga, buffet",
+    "part_of_speech": "noun",
+    "tags": [
+      "daily",
+      "food"
+    ]
+  },
+  {
+    "word": "定食",
+    "reading": "ていしょく",
+    "romaji": "teishoku",
+    "meaning_vi": "suất ăn cố định, set meal",
+    "part_of_speech": "noun",
+    "tags": [
+      "daily",
+      "food"
+    ]
+  },
+  {
+    "word": "外食",
+    "reading": "がいしょく",
+    "romaji": "gaishoku",
+    "meaning_vi": "ăn ngoài, ăn nhà hàng",
+    "part_of_speech": "noun",
+    "tags": [
+      "daily",
+      "food"
+    ]
+  },
+  {
+    "word": "自炊",
+    "reading": "じすい",
+    "romaji": "jisui",
+    "meaning_vi": "tự nấu ăn",
+    "part_of_speech": "noun",
+    "tags": [
+      "daily",
+      "food"
+    ]
+  },
+  {
+    "word": "調理法",
+    "reading": "ちょうりほう",
+    "romaji": "chouri hou",
+    "meaning_vi": "phương pháp nấu ăn, cách chế biến",
+    "part_of_speech": "noun",
+    "tags": [
+      "daily",
+      "food"
+    ]
+  },
+  {
+    "word": "盛り付け",
+    "reading": "もりつけ",
+    "romaji": "moritsuke",
+    "meaning_vi": "cách bày biện món ăn, trang trí đĩa",
+    "part_of_speech": "noun",
+    "tags": [
+      "daily",
+      "food"
+    ]
+  },
+  {
+    "word": "鍋料理",
+    "reading": "なべりょうり",
+    "romaji": "nabe ryouri",
+    "meaning_vi": "món lẩu, nấu nồi",
+    "part_of_speech": "noun",
+    "tags": [
+      "daily",
+      "food",
+      "japan"
+    ]
+  },
+  {
+    "word": "弁当",
+    "reading": "べんとう",
+    "romaji": "bentou",
+    "meaning_vi": "hộp cơm, bento",
+    "part_of_speech": "noun",
+    "tags": [
+      "daily",
+      "food",
+      "japan"
+    ]
+  },
+  {
+    "word": "お菓子",
+    "reading": "おかし",
+    "romaji": "okashi",
+    "meaning_vi": "bánh kẹo, đồ ngọt",
+    "part_of_speech": "noun",
+    "tags": [
+      "daily",
+      "food"
+    ]
+  },
+  {
+    "word": "恋愛",
+    "reading": "れんあい",
+    "romaji": "renai",
+    "meaning_vi": "tình yêu, tình cảm lãng mạn",
+    "part_of_speech": "noun",
+    "tags": [
+      "emotion",
+      "social"
+    ]
+  },
+  {
+    "word": "結婚",
+    "reading": "けっこん",
+    "romaji": "kekkon",
+    "meaning_vi": "kết hôn, hôn nhân",
+    "part_of_speech": "noun",
+    "tags": [
+      "family",
+      "social"
+    ]
+  },
+  {
+    "word": "婚約",
+    "reading": "こんやく",
+    "romaji": "konyaku",
+    "meaning_vi": "đính hôn, hôn ước",
+    "part_of_speech": "noun",
+    "tags": [
+      "family",
+      "social"
+    ]
+  },
+  {
+    "word": "離婚",
+    "reading": "りこん",
+    "romaji": "rikon",
+    "meaning_vi": "ly hôn, li dị",
+    "part_of_speech": "noun",
+    "tags": [
+      "family",
+      "social"
+    ]
+  },
+  {
+    "word": "親子",
+    "reading": "おやこ",
+    "romaji": "oyako",
+    "meaning_vi": "cha mẹ và con cái, quan hệ cha con",
+    "part_of_speech": "noun",
+    "tags": [
+      "family",
+      "social"
+    ]
+  },
+  {
+    "word": "兄弟",
+    "reading": "きょうだい",
+    "romaji": "kyoudai",
+    "meaning_vi": "anh chị em ruột",
+    "part_of_speech": "noun",
+    "tags": [
+      "family"
+    ]
+  },
+  {
+    "word": "異動",
+    "reading": "いどう",
+    "romaji": "idou",
+    "meaning_vi": "điều chuyển, thay đổi vị trí công tác",
+    "part_of_speech": "noun",
+    "tags": [
+      "work"
+    ]
+  },
+  {
+    "word": "人間関係",
+    "reading": "にんげんかんけい",
+    "romaji": "ningen kankei",
+    "meaning_vi": "quan hệ giữa người với người",
+    "part_of_speech": "noun",
+    "tags": [
+      "social",
+      "psychology"
+    ]
+  },
+  {
+    "word": "配慮",
+    "reading": "はいりょ",
+    "romaji": "hairyo",
+    "meaning_vi": "sự quan tâm, chu đáo, cân nhắc",
+    "part_of_speech": "noun",
+    "tags": [
+      "social",
+      "character"
+    ]
+  },
+  {
+    "word": "出世",
+    "reading": "しゅっせ",
+    "romaji": "shusse",
+    "meaning_vi": "thành đạt, thăng tiến trong cuộc đời",
+    "part_of_speech": "noun",
+    "tags": [
+      "work",
+      "life"
+    ]
+  },
+  {
+    "word": "期待",
+    "reading": "きたい",
+    "romaji": "kitai",
+    "meaning_vi": "kỳ vọng, mong đợi",
+    "part_of_speech": "noun",
+    "tags": [
+      "emotion",
+      "abstract"
+    ]
+  },
+  {
+    "word": "感謝",
+    "reading": "かんしゃ",
+    "romaji": "kansha",
+    "meaning_vi": "lòng biết ơn, cảm ơn",
+    "part_of_speech": "noun",
+    "tags": [
+      "emotion",
+      "social"
+    ]
+  },
+  {
+    "word": "悩み",
+    "reading": "なやみ",
+    "romaji": "nayami",
+    "meaning_vi": "mối băn khoăn, nỗi lo lắng",
+    "part_of_speech": "noun",
+    "tags": [
+      "emotion",
+      "psychology"
+    ]
+  },
+  {
+    "word": "遠慮",
+    "reading": "えんりょ",
+    "romaji": "enryo",
+    "meaning_vi": "dè dặt, khách khí, nhường nhịn",
+    "part_of_speech": "noun",
+    "tags": [
+      "social",
+      "japan"
+    ]
+  },
+  {
+    "word": "妥協",
+    "reading": "だきょう",
+    "romaji": "dakyou",
+    "meaning_vi": "thỏa hiệp, nhượng bộ",
+    "part_of_speech": "noun",
+    "tags": [
+      "social",
+      "abstract"
+    ]
+  },
+  {
+    "word": "自立",
+    "reading": "じりつ",
+    "romaji": "jiritsu",
+    "meaning_vi": "tự lập, độc lập",
+    "part_of_speech": "noun",
+    "tags": [
+      "character",
+      "life"
+    ]
+  },
+  {
+    "word": "緊張",
+    "reading": "きんちょう",
+    "romaji": "kinchou",
+    "meaning_vi": "căng thẳng, hồi hộp",
+    "part_of_speech": "noun",
+    "tags": [
+      "emotion",
+      "psychology"
+    ]
+  },
+  {
+    "word": "困惑",
+    "reading": "こんわく",
+    "romaji": "konwaku",
+    "meaning_vi": "bối rối, lúng túng",
+    "part_of_speech": "noun",
+    "tags": [
+      "emotion",
+      "psychology"
+    ]
+  },
+  {
+    "word": "役立つ",
+    "reading": "やくだつ",
+    "romaji": "yakudatsu",
+    "meaning_vi": "hữu ích, có ích",
+    "part_of_speech": "verb",
+    "tags": [
+      "action",
+      "abstract"
+    ]
   }
 ]

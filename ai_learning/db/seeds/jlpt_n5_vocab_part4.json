@@ -555,5 +555,242 @@
       "color",
       "katakana"
     ]
+  },
+  {
+    "word": "ありがとう",
+    "reading": "ありがとう",
+    "romaji": "arigatou",
+    "meaning_vi": "cảm ơn (thân mật)",
+    "part_of_speech": "expression",
+    "tags": [
+      "greeting",
+      "daily"
+    ]
+  },
+  {
+    "word": "すみません",
+    "reading": "すみません",
+    "romaji": "sumimasen",
+    "meaning_vi": "xin lỗi; xin phép (đa năng)",
+    "part_of_speech": "expression",
+    "tags": [
+      "greeting",
+      "polite"
+    ]
+  },
+  {
+    "word": "ごめんなさい",
+    "reading": "ごめんなさい",
+    "romaji": "gomen nasai",
+    "meaning_vi": "xin lỗi (thành thật xin lỗi)",
+    "part_of_speech": "expression",
+    "tags": [
+      "greeting",
+      "emotion"
+    ]
+  },
+  {
+    "word": "どうぞ",
+    "reading": "どうぞ",
+    "romaji": "douzo",
+    "meaning_vi": "mời; xin cứ tự nhiên; đây ạ",
+    "part_of_speech": "expression",
+    "tags": [
+      "greeting",
+      "polite"
+    ]
+  },
+  {
+    "word": "どういたしまして",
+    "reading": "どういたしまして",
+    "romaji": "douitashimashite",
+    "meaning_vi": "không có gì, không dám",
+    "part_of_speech": "expression",
+    "tags": [
+      "greeting",
+      "polite"
+    ]
+  },
+  {
+    "word": "おはよう",
+    "reading": "おはよう",
+    "romaji": "ohayou",
+    "meaning_vi": "chào buổi sáng (thân mật)",
+    "part_of_speech": "expression",
+    "tags": [
+      "greeting",
+      "daily"
+    ]
+  },
+  {
+    "word": "こんにちは",
+    "reading": "こんにちは",
+    "romaji": "konnichiwa",
+    "meaning_vi": "chào (buổi trưa/chiều); xin chào",
+    "part_of_speech": "expression",
+    "tags": [
+      "greeting",
+      "daily"
+    ]
+  },
+  {
+    "word": "こんばんは",
+    "reading": "こんばんは",
+    "romaji": "konbanwa",
+    "meaning_vi": "chào buổi tối",
+    "part_of_speech": "expression",
+    "tags": [
+      "greeting",
+      "daily"
+    ]
+  },
+  {
+    "word": "おやすみ",
+    "reading": "おやすみ",
+    "romaji": "oyasumi",
+    "meaning_vi": "chúc ngủ ngon (thân mật)",
+    "part_of_speech": "expression",
+    "tags": [
+      "greeting",
+      "daily"
+    ]
+  },
+  {
+    "word": "さようなら",
+    "reading": "さようなら",
+    "romaji": "sayounara",
+    "meaning_vi": "tạm biệt",
+    "part_of_speech": "expression",
+    "tags": [
+      "greeting",
+      "daily"
+    ]
+  },
+  {
+    "word": "はじめまして",
+    "reading": "はじめまして",
+    "romaji": "hajimemashite",
+    "meaning_vi": "rất vui được làm quen",
+    "part_of_speech": "expression",
+    "tags": [
+      "greeting",
+      "social"
+    ]
+  },
+  {
+    "word": "よろしく",
+    "reading": "よろしく",
+    "romaji": "yoroshiku",
+    "meaning_vi": "rất vui được quen (thân mật); nhờ bạn giúp đỡ",
+    "part_of_speech": "expression",
+    "tags": [
+      "greeting",
+      "social"
+    ]
+  },
+  {
+    "word": "いただきます",
+    "reading": "いただきます",
+    "romaji": "itadakimasu",
+    "meaning_vi": "xin phép ăn (nói trước bữa ăn)",
+    "part_of_speech": "expression",
+    "tags": [
+      "greeting",
+      "food",
+      "japan"
+    ]
+  },
+  {
+    "word": "ごちそうさま",
+    "reading": "ごちそうさま",
+    "romaji": "gochisousama",
+    "meaning_vi": "cảm ơn bữa ăn ngon (nói sau bữa ăn)",
+    "part_of_speech": "expression",
+    "tags": [
+      "greeting",
+      "food",
+      "japan"
+    ]
+  },
+  {
+    "word": "ただいま",
+    "reading": "ただいま",
+    "romaji": "tadaima",
+    "meaning_vi": "tôi về rồi (nói khi về nhà)",
+    "part_of_speech": "expression",
+    "tags": [
+      "greeting",
+      "daily",
+      "japan"
+    ]
+  },
+  {
+    "word": "おかえり",
+    "reading": "おかえり",
+    "romaji": "okaeri",
+    "meaning_vi": "chào mừng về nhà",
+    "part_of_speech": "expression",
+    "tags": [
+      "greeting",
+      "daily",
+      "japan"
+    ]
+  },
+  {
+    "word": "行ってきます",
+    "reading": "いってきます",
+    "romaji": "ittekimasu",
+    "meaning_vi": "tôi đi đây (nói trước khi rời nhà)",
+    "part_of_speech": "expression",
+    "tags": [
+      "greeting",
+      "daily",
+      "japan"
+    ]
+  },
+  {
+    "word": "行ってらっしゃい",
+    "reading": "いってらっしゃい",
+    "romaji": "itterasshai",
+    "meaning_vi": "đi cẩn thận nhé (đáp lại 行ってきます)",
+    "part_of_speech": "expression",
+    "tags": [
+      "greeting",
+      "daily",
+      "japan"
+    ]
+  },
+  {
+    "word": "お願いします",
+    "reading": "おねがいします",
+    "romaji": "onegaishimasu",
+    "meaning_vi": "làm ơn, xin hãy",
+    "part_of_speech": "expression",
+    "tags": [
+      "polite",
+      "daily"
+    ]
+  },
+  {
+    "word": "失礼します",
+    "reading": "しつれいします",
+    "romaji": "shitsurei shimasu",
+    "meaning_vi": "xin phép (khi vào/ra, điện thoại)",
+    "part_of_speech": "expression",
+    "tags": [
+      "polite",
+      "formal"
+    ]
+  },
+  {
+    "word": "大丈夫",
+    "reading": "だいじょうぶ",
+    "romaji": "daijoubu",
+    "meaning_vi": "không sao, ổn; có chắc không?",
+    "part_of_speech": "adjective",
+    "tags": [
+      "daily",
+      "expression"
+    ]
   }
 ]

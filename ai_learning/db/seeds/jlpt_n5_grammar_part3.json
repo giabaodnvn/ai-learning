@@ -291,5 +291,170 @@
       }
     ],
     "notes_vi": "Thể thông thường + と言いました. Thể lịch sự + と言いました cũng được."
+  },
+  {
+    "pattern": "〜すぎます",
+    "explanation_vi": "Quá ~, ~ quá mức: dùng để diễn đạt một hành động hoặc trạng thái vượt quá mức độ bình thường. Nối động từ (masu-stem) + すぎます, hoặc tính từ い (bỏ い) + すぎます, tính từ な (bỏ な) + すぎます.",
+    "examples": [
+      {
+        "ja": "食べすぎました。",
+        "vi": "Ăn quá nhiều rồi."
+      },
+      {
+        "ja": "この映画は難しすぎます。",
+        "vi": "Bộ phim này quá khó."
+      }
+    ],
+    "notes_vi": "V-masu + すぎます / い-adj (bỏ い) + すぎます / な-adj (bỏ な) + すぎます. Danh từ: 〜が多すぎます."
+  },
+  {
+    "pattern": "〜ぐらい / 〜くらい",
+    "explanation_vi": "Khoảng ~, chừng ~ (ước lượng số lượng, thời gian, mức độ): dùng để diễn đạt con số, thời gian hoặc mức độ xấp xỉ. Khác với ごろ dùng cho thời điểm, ぐらい dùng cho khoảng thời gian hoặc số lượng.",
+    "examples": [
+      {
+        "ja": "10分ぐらいかかります。",
+        "vi": "Mất khoảng 10 phút."
+      },
+      {
+        "ja": "りんごを5個ぐらい買いました。",
+        "vi": "Tôi mua khoảng 5 quả táo."
+      }
+    ],
+    "notes_vi": "ぐらい = くらい (hoàn toàn tương đương). Dùng cho số lượng, thời gian, khoảng cách. Cho thời điểm dùng ごろ."
+  },
+  {
+    "pattern": "〜方（かた）",
+    "explanation_vi": "Cách ~, phương pháp ~ (how to do something): kết hợp sau masu-stem của động từ để diễn đạt cách thức thực hiện hành động đó. 〜方 là danh từ, có thể đứng sau の, に, は, được v.v.",
+    "examples": [
+      {
+        "ja": "この漢字の読み方を教えてください。",
+        "vi": "Hãy dạy tôi cách đọc chữ kanji này."
+      },
+      {
+        "ja": "日本料理の作り方を習いたい。",
+        "vi": "Tôi muốn học cách làm món ăn Nhật."
+      }
+    ],
+    "notes_vi": "V-masu形 + 方. Ví dụ: 食べ方 (cách ăn), 書き方 (cách viết), 使い方 (cách dùng)."
+  },
+  {
+    "pattern": "〜なさい",
+    "explanation_vi": "Hãy làm ~ (mệnh lệnh lịch sự, thường từ trên xuống): dùng khi người trên (cha mẹ, giáo viên) ra lệnh cho người dưới (con cái, học sinh). Nhẹ nhàng hơn mệnh lệnh thể，thường gặp ở nhà và trường học.",
+    "examples": [
+      {
+        "ja": "早く起きなさい。",
+        "vi": "Hãy dậy sớm đi."
+      },
+      {
+        "ja": "宿題をしなさい。",
+        "vi": "Hãy làm bài tập đi."
+      }
+    ],
+    "notes_vi": "V-masu形 + なさい. Phủ định: V-ない形 + でください hoặc 〜てはいけません."
+  },
+  {
+    "pattern": "〜ばかり",
+    "explanation_vi": "Vừa mới ~ xong / Chỉ ~: hai nghĩa chính. (1) たばかり = vừa mới xong (hành động xảy ra không lâu); (2) 〜ばかり = chỉ, toàn là (số lượng hoặc hành động lặp đi lặp lại).",
+    "examples": [
+      {
+        "ja": "今起きたばかりです。",
+        "vi": "Tôi vừa mới thức dậy xong."
+      },
+      {
+        "ja": "ゲームばかりしないで！",
+        "vi": "Đừng có chỉ chơi game thôi!"
+      }
+    ],
+    "notes_vi": "た + ばかり = vừa mới làm xong. V-て形 + ばかりいます = cứ làm ~ mãi. N + ばかり = toàn là ~."
+  },
+  {
+    "pattern": "〜つもりです",
+    "explanation_vi": "Dự định sẽ ~, có ý định ~: diễn đạt ý định, kế hoạch của bản thân về tương lai. Mang tính chủ động, chắc chắn hơn 〜たいです (muốn). Thường dùng với động từ thể thông thường (辞書形).",
+    "examples": [
+      {
+        "ja": "来年、日本に行くつもりです。",
+        "vi": "Tôi dự định năm sau sẽ đi Nhật."
+      },
+      {
+        "ja": "今日は勉強するつもりです。",
+        "vi": "Hôm nay tôi định học bài."
+      }
+    ],
+    "notes_vi": "V-辞書形 + つもりです (khẳng định). Phủ định: Vない + つもりです = định không làm ~."
+  },
+  {
+    "pattern": "〜くなります / 〜になります",
+    "explanation_vi": "Trở nên ~, sẽ ~ (thay đổi trạng thái): diễn đạt sự thay đổi thành một trạng thái mới. Tính từ い dùng 〜くなります, tính từ な và danh từ dùng 〜になります.",
+    "examples": [
+      {
+        "ja": "だんだん暖かくなりました。",
+        "vi": "Trời dần dần trở nên ấm áp."
+      },
+      {
+        "ja": "日本語が上手になりたいです。",
+        "vi": "Tôi muốn tiếng Nhật giỏi hơn."
+      }
+    ],
+    "notes_vi": "い-adj (bỏ い) + くなります. な-adj / N + になります. Quá khứ: くなりました / になりました."
+  },
+  {
+    "pattern": "〜かどうか",
+    "explanation_vi": "Có ~ hay không (embedded question): dùng để nhúng một câu hỏi có/không vào trong câu khác. Khác với か đơn thuần, かどうか nhấn mạnh sự không chắc chắn giữa hai khả năng.",
+    "examples": [
+      {
+        "ja": "彼が来るかどうか知りません。",
+        "vi": "Tôi không biết anh ấy có đến không."
+      },
+      {
+        "ja": "試験に受かるかどうか心配です。",
+        "vi": "Tôi lo không biết có đỗ kỳ thi không."
+      }
+    ],
+    "notes_vi": "V/A 普通形 + かどうか + 動詞. Dùng với 知る, 分かる, 聞く, 考える, 心配する, など."
+  },
+  {
+    "pattern": "〜かな",
+    "explanation_vi": "Không biết có ~ không nhỉ (tự hỏi, nói một mình): diễn đạt sự băn khoăn, tự hỏi của bản thân. Giọng điệu nhẹ nhàng, thường dùng trong văn nói thân mật hoặc suy nghĩ nội tâm.",
+    "examples": [
+      {
+        "ja": "明日、雨が降るかな。",
+        "vi": "Không biết ngày mai có mưa không nhỉ."
+      },
+      {
+        "ja": "これでいいかな。",
+        "vi": "Thế này có được không nhỉ."
+      }
+    ],
+    "notes_vi": "V/A 普通形 + かな. Dạng lịch sự hơn: 〜かしら (dùng nhiều bởi phụ nữ). Dùng khi nói một mình hoặc hỏi nhẹ nhàng."
+  },
+  {
+    "pattern": "〜はじめます / 〜おわります",
+    "explanation_vi": "Bắt đầu ~ / Kết thúc ~ (V-masu + 始めます / 終わります): diễn đạt sự bắt đầu hoặc kết thúc của một hành động. 始める nhấn mạnh điểm khởi đầu, 終わる nhấn mạnh điểm kết thúc.",
+    "examples": [
+      {
+        "ja": "日本語を習い始めました。",
+        "vi": "Tôi bắt đầu học tiếng Nhật."
+      },
+      {
+        "ja": "やっと宿題を書き終わりました。",
+        "vi": "Cuối cùng tôi đã viết xong bài tập."
+      }
+    ],
+    "notes_vi": "V-masu形 + 始めます (bắt đầu) / 終わります (kết thúc). Cũng dùng: V-masu + 続けます (tiếp tục)."
+  },
+  {
+    "pattern": "〜どちら / 〜どっち",
+    "explanation_vi": "Cái nào, người nào (trong hai lựa chọn): hỏi về một trong hai lựa chọn. どちら là dạng lịch sự, どっち là dạng thân mật. Khác với どれ (trong ba lựa chọn trở lên).",
+    "examples": [
+      {
+        "ja": "コーヒーと紅茶、どちらがいいですか。",
+        "vi": "Cà phê hay trà, bạn thích cái nào?"
+      },
+      {
+        "ja": "どっちが好き？",
+        "vi": "Bạn thích cái nào? (thân mật)"
+      }
+    ],
+    "notes_vi": "どちら (lịch sự) = どっち (thân mật). どちらも〜ません = không cái nào cả. Hỏi nơi chốn: どちら = ở đâu (lịch sự)."
   }
 ]
