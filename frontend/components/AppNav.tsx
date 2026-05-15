@@ -13,6 +13,7 @@ const NAV_ITEMS = [
   { href: "/app/conversation",     label: "Hội thoại",   icon: "💬" },
   { href: "/app/vocabulary",       label: "Từ điển",     icon: "📚" },
   { href: "/app/kanji",            label: "Chữ Hán",     icon: "漢" },
+  { href: "/app/writing",          label: "Luyện viết",  icon: "📝" },
   { href: "/app/level-test",       label: "Kiểm tra",    icon: "🎯" },
 ];
 

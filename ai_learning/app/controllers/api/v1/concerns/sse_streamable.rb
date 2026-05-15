@@ -47,9 +47,10 @@ module Api
 
         # Write a single SSE event.
         # Format: data: {"delta":"...","done":false}\n\n
-        def write_sse(stream, delta:, done: false, error: nil)
+        def write_sse(stream, delta:, done: false, error: nil, extra: nil)
           payload = { delta: delta, done: done }
           payload[:error] = error if error
+          payload.merge!(extra) if extra.is_a?(Hash)
           stream.write("data: #{payload.to_json}\n\n")
         end
       end

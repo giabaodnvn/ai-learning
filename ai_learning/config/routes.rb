@@ -64,6 +64,8 @@ Rails.application.routes.draw do
       post "grammar/check",       to: "grammar#check"
       post "conversation/chat",   to: "conversation#chat"   # legacy stateless endpoint
       post "reading/generate",    to: "reading#generate"
+      post "writing/feedback",   to: "writing#feedback"
+      get  "writing/history",    to: "writing#history"
 
       # Reading passages (REST + cache-first + word lookup)
       resources :reading_passages, only: [:index, :show] do

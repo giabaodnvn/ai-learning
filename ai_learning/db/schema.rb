@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.2].define(version: 2026_05_05_000002) do
+ActiveRecord::Schema[7.2].define(version: 2026_05_14_000001) do
   create_table "ai_usage_logs", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.bigint "user_id"
     t.string "feature", null: false
@@ -232,6 +232,17 @@ ActiveRecord::Schema[7.2].define(version: 2026_05_05_000002) do
     t.index ["word"], name: "index_vocabularies_on_word"
   end
 
+  create_table "writing_submissions", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.text "text", null: false
+    t.text "feedback", null: false
+    t.string "topic"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id", "created_at"], name: "index_writing_submissions_on_user_id_and_created_at"
+    t.index ["user_id"], name: "index_writing_submissions_on_user_id"
+  end
+
   add_foreign_key "conversation_sessions", "users"
   add_foreign_key "listening_attempts", "listening_exercises"
   add_foreign_key "listening_attempts", "users"
@@ -239,4 +250,5 @@ ActiveRecord::Schema[7.2].define(version: 2026_05_05_000002) do
   add_foreign_key "user_card_progresses", "users"
   add_foreign_key "user_vocabulary_progresses", "users"
   add_foreign_key "user_vocabulary_progresses", "vocabularies"
+  add_foreign_key "writing_submissions", "users"
 end

@@ -19,6 +19,7 @@ class User < ApplicationRecord
   has_many :study_logs, dependent: :destroy
   has_many :level_test_attempts, dependent: :destroy
   has_many :listening_attempts, dependent: :destroy
+  has_many :writing_submissions, dependent: :destroy
 
   validates :name, length: { maximum: 100 }, allow_blank: true
   validates :jlpt_level, inclusion: { in: JLPT_LEVELS }
