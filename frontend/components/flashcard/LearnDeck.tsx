@@ -31,8 +31,9 @@ export function LearnDeck({ config, onFinish, onBack }: Props) {
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
       return { cards: (res.data.cards as any[]).map(mapRandomCard) };
     },
-    staleTime: 0,    // always re-randomise
+    staleTime: 0,           // always re-randomise on mount
     gcTime: 0,
+    refetchOnWindowFocus: false, // prevent mid-session re-randomise when tab returns
   });
 
   const cards = data?.cards ?? [];
