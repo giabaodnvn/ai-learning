@@ -12,6 +12,11 @@
         "word": "謙虚",
         "reading": "けんきょ",
         "meaning_vi": "khiêm tốn"
+      },
+      {
+        "word": "謙遜",
+        "reading": "けんそん",
+        "meaning_vi": "khiêm nhường"
       }
     ]
   },
@@ -49,6 +54,11 @@
         "word": "賭ける",
         "reading": "かける",
         "meaning_vi": "cá cược"
+      },
+      {
+        "word": "賭博",
+        "reading": "とばく",
+        "meaning_vi": "cờ bạc"
       }
     ]
   },
@@ -88,6 +98,11 @@
         "word": "赦免",
         "reading": "しゃめん",
         "meaning_vi": "tha thứ"
+      },
+      {
+        "word": "容赦",
+        "reading": "ようしゃ",
+        "meaning_vi": "khoan hồng, tha thứ"
       }
     ]
   },
@@ -104,6 +119,11 @@
         "word": "赫々",
         "reading": "かくかく",
         "meaning_vi": "nổi bật"
+      },
+      {
+        "word": "赫奕",
+        "reading": "かくやく",
+        "meaning_vi": "rực rỡ, lừng lẫy"
       }
     ]
   },
@@ -235,6 +255,11 @@
         "word": "周邊",
         "reading": "しゅうへん",
         "meaning_vi": "xung quanh"
+      },
+      {
+        "word": "邊り",
+        "reading": "あたり",
+        "meaning_vi": "khu vực xung quanh"
       }
     ]
   },
@@ -253,6 +278,11 @@
         "word": "邑",
         "reading": "むら",
         "meaning_vi": "làng"
+      },
+      {
+        "word": "都邑",
+        "reading": "とゆう",
+        "meaning_vi": "thành thị và làng mạc"
       }
     ]
   },
@@ -269,6 +299,11 @@
         "word": "郭",
         "reading": "かく",
         "meaning_vi": "thành phố"
+      },
+      {
+        "word": "城郭",
+        "reading": "じょうかく",
+        "meaning_vi": "tòa thành, lâu đài có tường bao"
       }
     ]
   },
@@ -356,6 +391,11 @@
         "word": "釜",
         "reading": "かま",
         "meaning_vi": "nồi"
+      },
+      {
+        "word": "茶釜",
+        "reading": "ちゃがま",
+        "meaning_vi": "ấm đun nước trà"
       }
     ]
   },
@@ -393,6 +433,11 @@
         "word": "錬金",
         "reading": "れんきん",
         "meaning_vi": "luyện kim"
+      },
+      {
+        "word": "鍛錬",
+        "reading": "たんれん",
+        "meaning_vi": "rèn luyện"
       }
     ]
   },
@@ -409,6 +454,11 @@
         "word": "鋲",
         "reading": "びょう",
         "meaning_vi": "đinh"
+      },
+      {
+        "word": "画鋲",
+        "reading": "がびょう",
+        "meaning_vi": "đinh ghim"
       }
     ]
   },
@@ -427,6 +477,11 @@
         "word": "鐘",
         "reading": "かね",
         "meaning_vi": "chuông"
+      },
+      {
+        "word": "除夜の鐘",
+        "reading": "じょやのかね",
+        "meaning_vi": "tiếng chuông đêm giao thừa"
       }
     ]
   },
@@ -445,6 +500,11 @@
         "word": "鐵",
         "reading": "くろがね",
         "meaning_vi": "sắt"
+      },
+      {
+        "word": "鐵道",
+        "reading": "てつどう",
+        "meaning_vi": "đường sắt"
       }
     ]
   },
@@ -463,6 +523,11 @@
         "word": "闇",
         "reading": "やみ",
         "meaning_vi": "bóng tối"
+      },
+      {
+        "word": "闇夜",
+        "reading": "やみよ",
+        "meaning_vi": "đêm tối tăm"
       }
     ]
   },
@@ -527,6 +592,11 @@
         "word": "雌",
         "reading": "め",
         "meaning_vi": "cái"
+      },
+      {
+        "word": "雌雄",
+        "reading": "しゆう",
+        "meaning_vi": "đực cái, thắng thua"
       }
     ]
   },
@@ -568,6 +638,11 @@
         "word": "霜",
         "reading": "しも",
         "meaning_vi": "sương"
+      },
+      {
+        "word": "霜降り",
+        "reading": "しもふり",
+        "meaning_vi": "thịt có vân mỡ (wagyu)"
       }
     ]
   },
@@ -577,7 +652,20 @@
       "ショウ"
     ],
     "kunyomi": [],
-    "meaning_vi": "sáng chiếu"
+    "meaning_vi": "sáng chiếu",
+    "stroke_count": 9,
+    "vocab_examples": [
+      {
+        "word": "昭和",
+        "reading": "しょうわ",
+        "meaning_vi": "thời Chiêu Hòa (1926-1989)"
+      },
+      {
+        "word": "昭和時代",
+        "reading": "しょうわじだい",
+        "meaning_vi": "thời đại Chiêu Hòa"
+      }
+    ]
   },
   {
     "character": "唯",
@@ -585,6 +673,19 @@
       "ユイ"
     ],
     "kunyomi": [],
-    "meaning_vi": "chỉ"
+    "meaning_vi": "chỉ",
+    "stroke_count": 11,
+    "vocab_examples": [
+      {
+        "word": "唯一",
+        "reading": "ゆいいつ",
+        "meaning_vi": "duy nhất"
+      },
+      {
+        "word": "唯物論",
+        "reading": "ゆいぶつろん",
+        "meaning_vi": "chủ nghĩa duy vật"
+      }
+    ]
   }
 ]

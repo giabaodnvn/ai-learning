@@ -6,6 +6,10 @@
       {
         "ja": "社会的責任があってのことながら、企業は倫理的に行動すべきだ。",
         "vi": "Nhất là vì có trách nhiệm xã hội, các công ty nên hành động theo đạo đức."
+      },
+      {
+        "ja": "皆さんの支援があってのことながら、このプロジェクトは完成に至った。",
+        "vi": "Đặc biệt là nhờ có sự ủng hộ của mọi người, dự án này mới đi đến hoàn thành được."
       }
     ],
     "notes_vi": "Nhấn mạnh rằng điều đã nói là kết quả tự nhiên của hoàn cảnh."
@@ -17,6 +21,10 @@
       {
         "ja": "名前からして、外国人だと分かる。",
         "vi": "Chỉ từ cái tên đã có thể thấy rõ ràng rằng người đó là người nước ngoài."
+      },
+      {
+        "ja": "態度からして、彼は今回の会議に乗り気ではないようだ。",
+        "vi": "Chỉ từ thái độ thôi đã thấy rằng anh ấy có vẻ không mấy hứng thú với cuộc họp lần này."
       }
     ],
     "notes_vi": "Biểu thị rằng từ thứ gì đó sơ khai đã có thể phán đoán/suy ra được."
@@ -28,6 +36,10 @@
       {
         "ja": "この仕事は彼をおいて他にできる人はいない。",
         "vi": "Công việc này ngoài anh ấy ra không có ai khác làm được."
+      },
+      {
+        "ja": "この難局を打開できる人材は、田中部長をおいて他にはいないだろう。",
+        "vi": "Người có thể giải quyết được tình huống khó khăn này chắc chắn không ai khác ngoài trưởng phòng Tanaka."
       }
     ],
     "notes_vi": "Nhấn mạnh tính duy nhất, không có lựa chọn thay thế. Rất hình thức."
@@ -39,6 +51,10 @@
       {
         "ja": "医者は患者の秘密を洩らすべからず。",
         "vi": "Bác sĩ tuyệt đối không được lộ bí mật của bệnh nhân."
+      },
+      {
+        "ja": "この区域では、いかなる理由があれども喫煙すべからず。",
+        "vi": "Trong khu vực này, dù có lý do gì đi nữa cũng tuyệt đối không được hút thuốc."
       }
     ],
     "notes_vi": "Cấu trúc cổ điển/hình thức, biểu thị cấm đoán tuyệt đối."
@@ -50,6 +66,10 @@
       {
         "ja": "反対にしろ贊成にしろ、意見を述べるべきだ。",
         "vi": "Dù là phản đối hay đồng ý, nên nêu ý kiến."
+      },
+      {
+        "ja": "成功するにしろ失敗するにしろ、全力で挑戦することに意義がある。",
+        "vi": "Dù thành công hay thất bại, việc thử thách hết mình mới là điều có ý nghĩa."
       }
     ],
     "notes_vi": "Biểu thị rằng kết quả/kết luận là như nhau bất kể điều kiện nào."
@@ -61,6 +81,10 @@
       {
         "ja": "こんなこと、許せるものか！",
         "vi": "Làm sao mà có thể tha thứ được điều này!"
+      },
+      {
+        "ja": "あれほど裏切られたのに、また信じられるものか。",
+        "vi": "Đã bị phản bội đến như vậy mà làm sao có thể tin lại được nữa."
       }
     ],
     "notes_vi": "Biểu thị sự phủ định mạnh mẽ, không chấp nhận."
@@ -72,6 +96,10 @@
       {
         "ja": "私の知識のかぎりでは、そのような話は聞いたことがない。",
         "vi": "Trong giới hạn kiến thức của tôi, tôi chưa bao giờ nghe nói như vậy."
+      },
+      {
+        "ja": "調査したかぎりでは、この地域に古代遺跡は存在しないとみられる。",
+        "vi": "Trong phạm vi đã điều tra, có vẻ như không tồn tại di tích cổ đại nào ở khu vực này."
       }
     ],
     "notes_vi": "Biểu thị ranh giới/giới hạn của phạm vi nói/hiểu."
@@ -83,6 +111,10 @@
       {
         "ja": "仕事中のところを、電話がかかってきた。",
         "vi": "Đúng lúc đang làm việc mà điện thoại rung."
+      },
+      {
+        "ja": "お忙しいところを、ご足労いただき誠にありがとうございます。",
+        "vi": "Mặc dù đang bận rộn mà vẫn vất vả đến đây, tôi thực sự rất cảm ơn."
       }
     ],
     "notes_vi": "Biểu thị sự xen vào/can thiệp không mong muốn vào hoàn cảnh."
@@ -94,6 +126,10 @@
       {
         "ja": "努力なくして成功はない。",
         "vi": "Không có nỗ lực thì không có thành công."
+      },
+      {
+        "ja": "相互理解なくして、真の国際協力は実現しない。",
+        "vi": "Nếu không có sự hiểu biết lẫn nhau, hợp tác quốc tế thực sự sẽ không thể thực hiện được."
       }
     ],
     "notes_vi": "Nhấn mạnh điều kiện tiên quyết. Thường đi kèm phủ định. Rất hình thức."
@@ -105,6 +141,10 @@
       {
         "ja": "健康な限りは、仕事を続けたい。",
         "vi": "Chỉ khi còn khỏe mạnh, tôi muốn tiếp tục làm việc."
+      },
+      {
+        "ja": "このチームの一員である限りは、規則に従う義務がある。",
+        "vi": "Chừng nào còn là thành viên của đội này, có nghĩa vụ phải tuân thủ quy tắc."
       }
     ],
     "notes_vi": "Biểu thị điều kiện/giới hạn của phạm vi áp dụng."
@@ -116,6 +156,10 @@
       {
         "ja": "他の学生に漏れず、彼も勉強に励んだ。",
         "vi": "Không ngoại lệ so với các học sinh khác, anh ấy cũng chăm chỉ học tập."
+      },
+      {
+        "ja": "例に漏れず、この地域でも少子化が深刻な問題となっている。",
+        "vi": "Không ngoại lệ, tình trạng giảm tỷ lệ sinh cũng đang trở thành vấn đề nghiêm trọng ở khu vực này."
       }
     ],
     "notes_vi": "Biểu thị rằng không có ngoại lệ, tất cả đều áp dụng."
@@ -127,6 +171,10 @@
       {
         "ja": "書面をもって通知します。",
         "vi": "Sẽ thông báo bằng văn bản."
+      },
+      {
+        "ja": "本日をもって、当店は閉店することになりました。",
+        "vi": "Kể từ hôm nay, cửa hàng chúng tôi sẽ chính thức đóng cửa."
       }
     ],
     "notes_vi": "Cấu trúc chính thức dùng trong tài liệu/công văn."
@@ -138,6 +186,10 @@
       {
         "ja": "年齢によらず、誰でも応募できます。",
         "vi": "Bất kể tuổi tác, ai cũng có thể đăng ký."
+      },
+      {
+        "ja": "経験の有無によらず、熱意のある方を歓迎します。",
+        "vi": "Bất kể có kinh nghiệm hay không, chúng tôi hoan nghênh những người có lòng nhiệt tình."
       }
     ],
     "notes_vi": "Biểu thị không phân biệt, áp dụng bình đẳng cho tất cả. Hình thức."
@@ -149,6 +201,10 @@
       {
         "ja": "東京を皮切りに、全国ツアーが始まった。",
         "vi": "Lấy Tokyo làm điểm khởi đầu, chuyến lưu diễn toàn quốc đã bắt đầu."
+      },
+      {
+        "ja": "この新製品の発売を皮切りに、会社の業績は急速に回復した。",
+        "vi": "Lấy việc ra mắt sản phẩm mới này làm điểm khởi đầu, kết quả kinh doanh của công ty đã phục hồi nhanh chóng."
       }
     ],
     "notes_vi": "Biểu thị điểm bắt đầu của một chuỗi sự kiện tiếp theo."
@@ -160,6 +216,10 @@
       {
         "ja": "知識がないゆえに、判断を誤った。",
         "vi": "Chính vì không có kiến thức nên đã phán đoán sai."
+      },
+      {
+        "ja": "彼は完璧主義者ゆえに、細部にまでこだわり過ぎる傾向がある。",
+        "vi": "Chính vì là người theo chủ nghĩa hoàn hảo nên anh ấy có xu hướng chú ý quá mức đến từng chi tiết nhỏ."
       }
     ],
     "notes_vi": "Cấu trúc rất chính thức, biểu thị nguyên nhân."
@@ -171,6 +231,10 @@
       {
         "ja": "連休とあって、観光地は人であふれた。",
         "vi": "Vì là kỳ nghỉ liên tiếp nên khu du lịch đông nghịt người."
+      },
+      {
+        "ja": "人気アーティストのライブとあって、チケットは発売直後に完売した。",
+        "vi": "Vì là buổi biểu diễn trực tiếp của nghệ sĩ nổi tiếng nên vé đã bán hết ngay sau khi mở bán."
       }
     ],
     "notes_vi": "Biểu thị nguyên nhân/bối cảnh đặc biệt tạo ra kết quả tự nhiên."
@@ -182,6 +246,10 @@
       {
         "ja": "その理由は好奇心ほかならない。",
         "vi": "Lý do chính là không gì khác hơn tò mò."
+      },
+      {
+        "ja": "彼が今日ここに来たのは、君に謝りたかったからほかならない。",
+        "vi": "Lý do anh ấy đến đây hôm nay không gì khác hơn là muốn xin lỗi bạn."
       }
     ],
     "notes_vi": "Nhấn mạnh rằng nguyên nhân duy nhất là cái gì đó."
@@ -193,6 +261,10 @@
       {
         "ja": "成功の秘訣は努力にほかならない。",
         "vi": "Bí quyết thành công chính là không gì khác hơn nỗ lực."
+      },
+      {
+        "ja": "彼女が長年研究を続けられたのは、純粋な学問への情熱にほかならない。",
+        "vi": "Điều giúp cô ấy tiếp tục nghiên cứu nhiều năm không gì khác hơn chính là niềm đam mê thuần túy với học thuật."
       }
     ],
     "notes_vi": "Phiên bản cực kỳ chính thức của 'ほかならない'."
@@ -204,6 +276,10 @@
       {
         "ja": "成功すべく努力する。",
         "vi": "Nỗ lực để có thể thành công."
+      },
+      {
+        "ja": "難関試験に合格すべく、毎朝五時に起きて猛勉強している。",
+        "vi": "Để vượt qua kỳ thi khó, mỗi sáng anh ấy dậy lúc năm giờ và học miệt mài."
       }
     ],
     "notes_vi": "Cấu trúc cổ điển, biểu thị mục đích/chuẩn bị."
@@ -215,6 +291,10 @@
       {
         "ja": "彼女の成功を願ってやまない。",
         "vi": "Tôi không ngừng cầu mong cho sự thành công của cô ấy."
+      },
+      {
+        "ja": "故郷の山河を愛してやまない彼は、都会に出ても常に帰ることを夢見ていた。",
+        "vi": "Mãi mãi yêu tha thiết núi sông quê hương, dù ra thành phố anh vẫn không ngừng mơ về ngày trở lại."
       }
     ],
     "notes_vi": "Diễn đạt cảm xúc hoặc mong muốn chân thành, không bao giờ thay đổi. Rất hình thức."
@@ -226,6 +306,10 @@
       {
         "ja": "知識を得んがために、毎日勉強している。",
         "vi": "Để có thể đạt được kiến thức, mỗi ngày tôi đều học tập."
+      },
+      {
+        "ja": "国を守らんがために、多くの若者が命を捧げた。",
+        "vi": "Để bảo vệ đất nước, nhiều người trẻ đã hiến dâng tính mạng."
       }
     ],
     "notes_vi": "Cấu trúc rất cổ điển, chỉ dùng trong văn học hoặc lịch sử."
@@ -237,6 +321,10 @@
       {
         "ja": "成功するかどうかともあれ、最善を尽くそう。",
         "vi": "Dù có thành công hay không, chúng ta hãy cố gắng hết sức."
+      },
+      {
+        "ja": "原因はともあれ、まず被害を受けた住民への支援を優先すべきだ。",
+        "vi": "Dù nguyên nhân là gì đi nữa, trước tiên phải ưu tiên hỗ trợ cho những người dân bị ảnh hưởng."
       }
     ],
     "notes_vi": "Biểu thị rằng kết quả không quan trọng bằng cách làm."
@@ -248,6 +336,10 @@
       {
         "ja": "彼の訃報を聞いて、悲しみにたえない。",
         "vi": "Nghe tin anh ấy qua đời, không nén được nỗi buồn."
+      },
+      {
+        "ja": "長年の研究がついに実を結んだと知り、喜びにたえない。",
+        "vi": "Biết tin rằng công trình nghiên cứu nhiều năm cuối cùng đã đơm hoa kết trái, không nén được niềm vui."
       }
     ],
     "notes_vi": "Biểu thị cảm xúc mạnh, không thể kiềm chế. Dùng với 感謝, 悲しみ, 遺憾 v.v."

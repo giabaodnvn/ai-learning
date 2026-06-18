@@ -6,6 +6,10 @@
       {
         "ja": "想像するだに恐ろしい。",
         "vi": "Chỉ nghĩ tới thôi cũng đã đáng sợ rồi."
+      },
+      {
+        "ja": "あの事故を思い出すだに、体が震える。",
+        "vi": "Chỉ nhớ lại vụ tai nạn đó thôi, người đã run lên."
       }
     ],
     "notes_vi": "Cấu trúc rất cổ điển, nhấn mạnh chỉ cần một hành động nhỏ đã đủ để gây ra cảm giác."
@@ -17,6 +21,10 @@
       {
         "ja": "言葉を言わずして、気持ちが伝わった。",
         "vi": "Mà không cần nói lời nào, tâm tình đã được truyền đạt."
+      },
+      {
+        "ja": "努力せずして成功を手に入れることはできない。",
+        "vi": "Không thể đạt được thành công mà không nỗ lực."
       }
     ],
     "notes_vi": "Biểu thị rằng điều gì đó xảy ra mà không cần điều kiện/phương tiện nào."
@@ -28,6 +36,10 @@
       {
         "ja": "金持ちたりとて、幸せとは限らない。",
         "vi": "Chỉ vì giàu có mà không phải là chắc chắn hạnh phúc."
+      },
+      {
+        "ja": "専門家たりとて、すべてを知っているわけではない。",
+        "vi": "Dù là chuyên gia cũng không có nghĩa là biết tất cả mọi thứ."
       }
     ],
     "notes_vi": "Cấu trúc cổ điển, biểu thị rằng một điều không đủ để kéo theo điều khác."
@@ -39,6 +51,10 @@
       {
         "ja": "人間が争う原因のゆえんのところは、利益の不一致にある。",
         "vi": "Lý do sâu xa của cuộc tranh chấp giữa con người là sự không trùng khớp lợi ích."
+      },
+      {
+        "ja": "彼が成功したゆえんのところは、諦めない精神にほかならない。",
+        "vi": "Nguyên nhân sâu xa khiến anh ấy thành công chính là tinh thần không bao giờ bỏ cuộc."
       }
     ],
     "notes_vi": "Cấu trúc rất hình thức, dùng để nêu ra nguyên nhân cơ bản."
@@ -50,6 +66,10 @@
       {
         "ja": "問題こそあれ、基本的な方針は正しい。",
         "vi": "Tuy có vấn đề, nhưng phương hướng cơ bản là đúng."
+      },
+      {
+        "ja": "多少の誤解こそあれ、二人の信頼関係は揺るがなかった。",
+        "vi": "Dù có chút hiểu lầm, nhưng mối quan hệ tin tưởng giữa hai người không hề lung lay."
       }
     ],
     "notes_vi": "Thừa nhận một điều nhưng hàm ý rằng điều đó không ảnh hưởng lớn đến kết luận chính."
@@ -61,6 +81,10 @@
       {
         "ja": "失敗することなく、成功した。",
         "vi": "Đã thành công mà không thất bại."
+      },
+      {
+        "ja": "彼は一度も休むことなく、プロジェクトを完遂させた。",
+        "vi": "Anh ấy đã hoàn thành dự án mà không nghỉ ngơi dù chỉ một lần."
       }
     ],
     "notes_vi": "Biểu thị sự vắng mặt/không xảy ra của một điều gì."
@@ -72,6 +96,10 @@
       {
         "ja": "規則を破ることはまかりならぬ。",
         "vi": "Không thể phá vỡ quy tắc."
+      },
+      {
+        "ja": "上司の許可なく機密情報を外部に漏らすことはまかりならぬ。",
+        "vi": "Tuyệt đối không được phép tiết lộ thông tin mật ra bên ngoài mà không có sự cho phép của cấp trên."
       }
     ],
     "notes_vi": "Cấu trúc cổ điển, biểu thị cấm đoán tuyệt đối."
@@ -83,6 +111,10 @@
       {
         "ja": "人間は自分のことばかり考えがちであり、ともすると他人を忘れてしまう。",
         "vi": "Con người thường chỉ suy nghĩ về bản thân, và dễ quên mất người khác."
+      },
+      {
+        "ja": "現代人はともすると便利さを追い求め、本来大切なものを見失いがちだ。",
+        "vi": "Người hiện đại dễ có xu hướng chạy theo sự tiện lợi mà đánh mất đi những điều thực sự quan trọng."
       }
     ],
     "notes_vi": "Biểu thị xu hướng tự nhiên, thường xảy ra."
@@ -94,6 +126,10 @@
       {
         "ja": "失敗を経験してこそ初めて成長できる。",
         "vi": "Mới khi trải qua thất bại mới có thể phát triển."
+      },
+      {
+        "ja": "現地に足を運んでにして初めて、その文化の奥深さが理解できる。",
+        "vi": "Chỉ khi đích thân đến nơi đó mới có thể thấu hiểu chiều sâu của nền văn hóa ấy."
       }
     ],
     "notes_vi": "Nhấn mạnh điều kiện cần thiết để đạt được kết quả."
@@ -105,6 +141,10 @@
       {
         "ja": "計画が本来の目的からたがってしまった。",
         "vi": "Kế hoạch đã lệch khỏi mục đích ban đầu."
+      },
+      {
+        "ja": "議論は次第に本筋からたがって、収拾がつかなくなった。",
+        "vi": "Cuộc tranh luận dần dần đi lệch khỏi chủ đề chính và trở nên không thể kiểm soát được."
       }
     ],
     "notes_vi": "Cấu trúc ít dùng trong tiếng Nhật hiện đại, xuất hiện trong văn học cũ."
@@ -116,6 +156,10 @@
       {
         "ja": "詐欺師の言葉にうかうかとだまされてしまった。",
         "vi": "Đã bất chú ý bị lừa bởi lời của kẻ lừa đảo."
+      },
+      {
+        "ja": "うかうかとしていたら、大切な締め切りを逃してしまった。",
+        "vi": "Do thiếu cẩn thận nên đã bỏ lỡ mất thời hạn quan trọng."
       }
     ],
     "notes_vi": "Biểu thị sự thiếu cảnh báo hoặc không chú ý."
@@ -127,6 +171,10 @@
       {
         "ja": "彼は泣かんばかりの表情で話した。",
         "vi": "Anh ấy nói với vẻ mặt như sắp khóc."
+      },
+      {
+        "ja": "観客は割れんばかりの拍手で演奏者を称えた。",
+        "vi": "Khán giả vỗ tay như sắp vỡ cả hội trường để tán dương người biểu diễn."
       }
     ],
     "notes_vi": "Biểu thị trạng thái gần sắp xảy ra nhưng chưa thật sự xảy ra."
@@ -138,6 +186,10 @@
       {
         "ja": "成功するかしないかは方法のいかんにかかっている。",
         "vi": "Thành công hay không phụ thuộc vào phương pháp."
+      },
+      {
+        "ja": "今後の対応のいかんによっては、契約を打ち切ることもありえる。",
+        "vi": "Tùy vào cách ứng phó từ đây về sau, việc hủy hợp đồng cũng hoàn toàn có thể xảy ra."
       }
     ],
     "notes_vi": "Biểu thị điều kiện/yếu tố quyết định kết quả."
@@ -149,6 +201,10 @@
       {
         "ja": "彼といえども、完璧ではない。",
         "vi": "Mặc dù là anh ấy, nhưng cũng không hoàn hảo."
+      },
+      {
+        "ja": "法の番人といえども、不正を働けば厳しく罰せられる。",
+        "vi": "Dù là người bảo vệ pháp luật, nếu làm điều phi pháp cũng sẽ bị trừng phạt nghiêm khắc."
       }
     ],
     "notes_vi": "Biểu thị sự nhượng bộ hoặc đối lập."
@@ -160,6 +216,10 @@
       {
         "ja": "雨のごとく降り注ぐ。",
         "vi": "Rơi xuống như mưa."
+      },
+      {
+        "ja": "先人が語りしごとく、誠実こそが人の道の根本である。",
+        "vi": "Như người xưa đã nói, sự chân thành chính là nền tảng của đạo làm người."
       }
     ],
     "notes_vi": "Cấu trúc chính thức để so sánh, thường dùng trong văn học."
@@ -171,6 +231,10 @@
       {
         "ja": "難しいとはいうものの、やはり挑戦する価値がある。",
         "vi": "Mặc dù khó, nhưng vẫn có giá trị thử thách."
+      },
+      {
+        "ja": "体に悪いとはいうものの、深夜の食事をやめられない自分がいる。",
+        "vi": "Dù biết là có hại cho sức khỏe, nhưng bản thân vẫn không thể bỏ thói quen ăn khuya."
       }
     ],
     "notes_vi": "Biểu thị sự nhượng bộ hoặc thừa nhận điều gì đó nhưng rồi lại có ý kiến khác."
@@ -182,6 +246,10 @@
       {
         "ja": "彼の演技には感動させるものがある。",
         "vi": "Trong diễn xuất của anh ấy có điều gì đó khiến người ta cảm động."
+      },
+      {
+        "ja": "この小説の文体には、読む者を引き込まずにはおかないものがある。",
+        "vi": "Văn phong của cuốn tiểu thuyết này có điều gì đó khiến người đọc không thể không bị cuốn vào."
       }
     ],
     "notes_vi": "Biểu thị cảm nhận chủ quan của người nói về đặc tính nổi bật nào đó."
@@ -193,6 +261,10 @@
       {
         "ja": "計画は良かったのところが、実行がうまくいかなかった。",
         "vi": "Kế hoạch tốt, nhưng thực thi không thành công."
+      },
+      {
+        "ja": "準備は万全だったのところが、当日になって突然の雨に見舞われた。",
+        "vi": "Mọi chuẩn bị đều hoàn hảo, thế nhưng đúng ngày hôm đó lại bị mưa bất ngờ ghé thăm."
       }
     ],
     "notes_vi": "Dùng để chỉ ra sự không trùng khớp/tranh chấp."
@@ -204,6 +276,10 @@
       {
         "ja": "子供さえも理解できる。",
         "vi": "Thậm chí cả trẻ con cũng có thể hiểu."
+      },
+      {
+        "ja": "長年の友人でさえ、彼の本心を見抜くことはできなかった。",
+        "vi": "Ngay cả người bạn thân nhiều năm cũng không thể nhìn thấu lòng thực của anh ấy."
       }
     ],
     "notes_vi": "Biểu thị sự mở rộng phạm vi, nhấn mạnh cực hạn."
@@ -215,6 +291,10 @@
       {
         "ja": "一度のミスならまだしも、何度も繰り返すのは問題だ。",
         "vi": "Nếu chỉ sai một lần thì còn chấp nhận được, nhưng lặp đi lặp lại nhiều lần thì thành vấn đề."
+      },
+      {
+        "ja": "冗談ならまだしも、本気でそんなことを言うのは非常識だ。",
+        "vi": "Nếu là đùa thì còn tạm được, nhưng nói điều đó một cách nghiêm túc thì thật là thiếu hiểu biết."
       }
     ],
     "notes_vi": "Biểu thị rằng một trường hợp ít nghiêm trọng có thể chấp nhận nhưng trường hợp nghiêm trọng hơn thì không."
@@ -226,6 +306,10 @@
       {
         "ja": "社長に代わりて、ご挨拶申し上げます。",
         "vi": "Thay mặt tổng giám đốc, tôi xin phép chào hỏi."
+      },
+      {
+        "ja": "病に伏した父に代わりて、長男が家業を取り仕切ることになった。",
+        "vi": "Thay cho người cha đang nằm bệnh, người con trai cả đảm nhận việc điều hành gia nghiệp."
       }
     ],
     "notes_vi": "Cấu trúc chính thức, dùng trong diễn thuyết/tuyên bố chính thức."
@@ -237,6 +321,10 @@
       {
         "ja": "夕方あたりに連絡します。",
         "vi": "Vào khoảng buổi chiều tôi sẽ liên lạc."
+      },
+      {
+        "ja": "来月あたりに新しいプロジェクトが始まる予定だ。",
+        "vi": "Dự kiến khoảng tháng sau sẽ bắt đầu dự án mới."
       }
     ],
     "notes_vi": "Biểu thị thời gian hoặc không gian không chính xác."
@@ -248,6 +336,10 @@
       {
         "ja": "初心者のこととて、失敗も多い。",
         "vi": "Chính vì là người mới nên cũng có nhiều thất bại."
+      },
+      {
+        "ja": "不慣れなこととて、ご迷惑をおかけしてしまい、誠に申し訳ございません。",
+        "vi": "Chính vì còn chưa quen việc mà đã gây phiền phức cho quý vị, tôi thành thật xin lỗi."
       }
     ],
     "notes_vi": "Cấu trúc cổ điển, biểu thị nguyên nhân."
@@ -259,6 +351,10 @@
       {
         "ja": "このプロジェクトに3ヶ月かかる。",
         "vi": "Dự án này mất 3 tháng."
+      },
+      {
+        "ja": "山頂まで登るのに相当な体力と時間がかかった。",
+        "vi": "Việc leo lên tới đỉnh núi đã tốn rất nhiều thể lực và thời gian."
       }
     ],
     "notes_vi": "Biểu thị chi phí (thời gian, tiền bạc, công sức) cần thiết."
@@ -270,6 +366,10 @@
       {
         "ja": "いくら頑張ったにしたって、失敗することがある。",
         "vi": "Dù có cố gắng bao nhiêu, cũng có thể thất bại."
+      },
+      {
+        "ja": "どんな理由があったにしたって、暴力は絶対に許されない。",
+        "vi": "Dù có lý do gì đi nữa, bạo lực cũng tuyệt đối không thể được chấp nhận."
       }
     ],
     "notes_vi": "Biểu thị nhượng bộ, rằng điều gì đó không đủ để thay đổi kết quả."

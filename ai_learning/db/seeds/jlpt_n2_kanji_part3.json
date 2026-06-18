@@ -12,6 +12,11 @@
         "word": "頑固",
         "reading": "がんこ",
         "meaning_vi": "cứng đầu"
+      },
+      {
+        "word": "頑丈",
+        "reading": "がんじょう",
+        "meaning_vi": "vững chắc, chắc chắn"
       }
     ]
   },
@@ -51,6 +56,11 @@
         "word": "頸部",
         "reading": "けいぶ",
         "meaning_vi": "vùng cổ"
+      },
+      {
+        "word": "頸椎",
+        "reading": "けいつい",
+        "meaning_vi": "đốt sống cổ"
       }
     ]
   },
@@ -249,6 +259,11 @@
         "word": "駒",
         "reading": "こま",
         "meaning_vi": "quân cờ"
+      },
+      {
+        "word": "持ち駒",
+        "reading": "もちごま",
+        "meaning_vi": "quân cờ trên tay"
       }
     ]
   },
@@ -299,6 +314,11 @@
         "word": "鬼",
         "reading": "おに",
         "meaning_vi": "quỷ"
+      },
+      {
+        "word": "鬼ごっこ",
+        "reading": "おにごっこ",
+        "meaning_vi": "trò chơi đuổi bắt"
       }
     ]
   },
@@ -317,6 +337,11 @@
         "word": "鮫",
         "reading": "さめ",
         "meaning_vi": "cá mập"
+      },
+      {
+        "word": "鮫肌",
+        "reading": "さめはだ",
+        "meaning_vi": "da sần như da cá mập"
       }
     ]
   },
@@ -358,6 +383,11 @@
         "word": "鶴",
         "reading": "つる",
         "meaning_vi": "cúc"
+      },
+      {
+        "word": "千羽鶴",
+        "reading": "せんばづる",
+        "meaning_vi": "ngàn con hạc giấy"
       }
     ]
   },
@@ -376,6 +406,11 @@
         "word": "鼓",
         "reading": "つづみ",
         "meaning_vi": "trống"
+      },
+      {
+        "word": "鼓動",
+        "reading": "こどう",
+        "meaning_vi": "tiếng đập (tim)"
       }
     ]
   },
@@ -394,6 +429,11 @@
         "word": "鼠",
         "reading": "ねずみ",
         "meaning_vi": "chuột"
+      },
+      {
+        "word": "鼠色",
+        "reading": "ねずみいろ",
+        "meaning_vi": "màu xám"
       }
     ]
   },
@@ -412,6 +452,11 @@
         "word": "龍",
         "reading": "りゅう",
         "meaning_vi": "rồng"
+      },
+      {
+        "word": "龍宮",
+        "reading": "りゅうぐう",
+        "meaning_vi": "cung Long Vương"
       }
     ]
   },
@@ -474,6 +519,11 @@
         "word": "拘束",
         "reading": "こうそく",
         "meaning_vi": "ràng buộc"
+      },
+      {
+        "word": "拘留",
+        "reading": "こうりゅう",
+        "meaning_vi": "giam giữ"
       }
     ]
   },
@@ -492,6 +542,11 @@
         "word": "拙",
         "reading": "つたない",
         "meaning_vi": "vụng"
+      },
+      {
+        "word": "拙速",
+        "reading": "せっそく",
+        "meaning_vi": "làm vội cẩu thả"
       }
     ]
   },
@@ -510,6 +565,11 @@
         "word": "拝む",
         "reading": "おがむ",
         "meaning_vi": "cúi lạy"
+      },
+      {
+        "word": "拝見",
+        "reading": "はいけん",
+        "meaning_vi": "xin được nhìn (khiêm tốn)"
       }
     ]
   },
@@ -526,6 +586,11 @@
         "word": "摩擦",
         "reading": "まさつ",
         "meaning_vi": "ma sát"
+      },
+      {
+        "word": "按摩",
+        "reading": "あんま",
+        "meaning_vi": "xoa bóp, massage"
       }
     ]
   },
@@ -542,6 +607,11 @@
         "word": "撫でる",
         "reading": "なでる",
         "meaning_vi": "vuốt"
+      },
+      {
+        "word": "撫でつける",
+        "reading": "なでつける",
+        "meaning_vi": "vuốt cho phẳng (tóc)"
       }
     ]
   },
@@ -558,6 +628,11 @@
         "word": "播種",
         "reading": "はしゅ",
         "meaning_vi": "gieo giống"
+      },
+      {
+        "word": "播磨",
+        "reading": "はりま",
+        "meaning_vi": "Harima (địa danh tỉnh Hyogo)"
       }
     ]
   },
@@ -576,6 +651,11 @@
         "word": "敦厚",
         "reading": "とんこう",
         "meaning_vi": "mao mao"
+      },
+      {
+        "word": "敦盛",
+        "reading": "あつもり",
+        "meaning_vi": "Atsumori (tên riêng lịch sử)"
       }
     ]
   },
@@ -594,6 +674,11 @@
         "word": "敢えて",
         "reading": "あえて",
         "meaning_vi": "dám"
+      },
+      {
+        "word": "勇敢",
+        "reading": "ゆうかん",
+        "meaning_vi": "dũng cảm"
       }
     ]
   },
@@ -610,6 +695,11 @@
         "word": "斤",
         "reading": "きん",
         "meaning_vi": "cân"
+      },
+      {
+        "word": "一斤",
+        "reading": "いっきん",
+        "meaning_vi": "một cân (đơn vị đo)"
       }
     ]
   },
@@ -626,6 +716,11 @@
         "word": "斥力",
         "reading": "せきりょく",
         "meaning_vi": "lực đẩy"
+      },
+      {
+        "word": "排斥",
+        "reading": "はいせき",
+        "meaning_vi": "tẩy chay, loại bỏ"
       }
     ]
   },
@@ -644,6 +739,11 @@
         "word": "斬首",
         "reading": "ざんしゅ",
         "meaning_vi": "chém đầu"
+      },
+      {
+        "word": "斬新",
+        "reading": "ざんしん",
+        "meaning_vi": "mới mẻ, độc đáo"
       }
     ]
   },
@@ -662,6 +762,11 @@
         "word": "斧",
         "reading": "おの",
         "meaning_vi": "rìu"
+      },
+      {
+        "word": "斧鉞",
+        "reading": "ふえつ",
+        "meaning_vi": "rìu và búa (hình phạt)"
       }
     ]
   },
@@ -701,6 +806,11 @@
         "word": "旋回",
         "reading": "せんかい",
         "meaning_vi": "xoay"
+      },
+      {
+        "word": "旋律",
+        "reading": "せんりつ",
+        "meaning_vi": "giai điệu"
       }
     ]
   },

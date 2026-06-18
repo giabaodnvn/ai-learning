@@ -501,6 +501,10 @@
       {
         "ja": "彼に聞くしかない。",
         "vi": "Chỉ có thể hỏi anh ấy mà thôi."
+      },
+      {
+        "ja": "電車が止まったから、歩いて帰るしかない。",
+        "vi": "Tàu điện đã ngừng chạy, nên chỉ còn cách đi bộ về thôi."
       }
     ],
     "notes_vi": "Biểu thị lựa chọn duy nhất."
@@ -512,6 +516,10 @@
       {
         "ja": "謝らずには済まない。",
         "vi": "Phải xin lỗi."
+      },
+      {
+        "ja": "こんな大きなミスをしたのだから、上司に報告せずには済まない。",
+        "vi": "Đã mắc sai lầm lớn như vậy, không thể không báo cáo với cấp trên."
       }
     ],
     "notes_vi": "Diễn đạt điều bắt buộc phải làm."
@@ -523,6 +531,10 @@
       {
         "ja": "ここで喫煙してはならない。",
         "vi": "Không được phép hút thuốc ở đây."
+      },
+      {
+        "ja": "人のものを勝手に使ってはならない。",
+        "vi": "Không được phép tự ý dùng đồ của người khác."
       }
     ],
     "notes_vi": "Biểu thị cấm đoán nghiêm ngặt."
@@ -534,6 +546,10 @@
       {
         "ja": "いつ来てもかまいません。",
         "vi": "Lúc nào đến cũng được."
+      },
+      {
+        "ja": "早めに帰っても構わないよ、今日は仕事が少ないから。",
+        "vi": "Về sớm cũng không sao đâu, vì hôm nay công việc ít."
       }
     ],
     "notes_vi": "Chỉ sự cho phép hoặc không quan tâm."
@@ -545,6 +561,10 @@
       {
         "ja": "毎日勉強しなければならない。",
         "vi": "Phải học tập hàng ngày."
+      },
+      {
+        "ja": "締め切りまでにレポートを提出しなければならない。",
+        "vi": "Phải nộp báo cáo trước hạn chót."
       }
     ],
     "notes_vi": "Diễn đạt sự bắt buộc, lệnh bổn phận."

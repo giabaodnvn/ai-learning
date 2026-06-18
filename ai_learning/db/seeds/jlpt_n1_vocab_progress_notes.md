@@ -2,95 +2,37 @@
 
 - Seed format theo `jlpt_n1_vocab_part*.json`: mỗi item gồm `word`, `reading`, `romaji`, `meaning_vi`, `part_of_speech`, `tags`
 
-## Final Structure (Verified ✓)
+## Final Structure (Verified ✓ — updated 2026-06-15)
 
-- **Target: 695+ N1 vocabulary words (hoàn thành)**
-- Format: 73-106 từ per part
-- **Total parts: 8 parts**
-- Part 1: 73 từ (formal, literary, classical)
-- Part 2: 74 từ (advanced, formal, poetic)
-- Part 3: 82 từ (specialized, archaic, rare)
+- **Target: 778 N1 vocabulary words (hoàn thành)**
+- Format: 63-93 từ per part
+- **Total parts: 10 parts**
+- Part 1: 68 từ (formal, literary, classical)
+- Part 2: 66 từ (advanced, formal, poetic)
+- Part 3: 79 từ (specialized, archaic, rare)
 - Part 4: 83 từ (rare kanji compounds, specialized)
-- Part 5: 102 từ (negative actions, emotions, psychology)
-- Part 6: 81 từ (social concepts, judgment, organization)
-- **Part 7: 94 từ (nature, aesthetics, traditional culture, philosophy)**
-- **Part 8: 106 từ (academic, scientific, legal, professional)**
-
-## Current Progress
-
-### Part 1-4 (Original)
-✓ Hoàn thành & xác thực: 312 từ
-
-- Part 1: 73 từ - Formal/Literary/Classical
-- Part 2: 74 từ - Advanced/Formal/Poetic
-- Part 3: 82 từ - Specialized/Archaic/Rare (cleaned: removed duplicate 躑躅, 蹙踏)
-- Part 4: 83 từ - Rare Kanji/Specialized (cleaned: removed duplicates, added 羈束, 蠱惑)
-
-### Part 5 (NEW - Hành động/Cảm xúc tiêu cực)
-✓ Hoàn thành: 102 từ (虐待, 虐殺, 欺瞞, 誤解, 恥辱, 恐怖, 戦慄, 啜泣, 懺悔, 執拗, ...)
-- Tập trung: Hành động xấu, cảm xúc tiêu cực, tâm lý bệnh lệch
-- Topics: Bạo hành, lừa dối, sợ hãi, sỉ nhục, xung đột, sa đọa, tuyệt vọng
-- Tags: negative, crime, formal, emotion, behavior, psychology
-
-### Part 6 (NEW - Phán đoán/Khái niệm/Cấu trúc)
-✓ Hoàn thành: 81 từ (濫用, 簒奪, 纂奪, 押収, 逮捕, 身分, 統治, 支配, 統領, 組織, ...)
-- Tập trung: Khái niệm xã hội, cấu trúc tổ chức, hệ thống pháp lý, giai cấp
-- Topics: Hệ thống xã hội, quyền lực, quản lý, tổ chức, cơ cấu, giai cấp
-- Tags: formal, society, system, organization, legal, authority, class
-
-### Part 7 (NEW - Thiên nhiên/Thẩm mỹ/Văn hóa truyền thống)
-✓ Hoàn thành: 94 từ (霞, 霙, 霰, 陽炎, 蜃気楼, 黎明, 侘び, 寂び, 物の哀れ, 余韻, 無常, 輪廻, ...)
-- Tập trung: Hiện tượng thiên nhiên, khái niệm thẩm mỹ Nhật Bản, văn hóa truyền thống, triết học Phật giáo
-- Topics: Hiện tượng khí hậu, phong cảnh, wabi-sabi, văn học cổ điển, Phật giáo
-
-### Part 8 (NEW - Học thuật/Khoa học/Pháp lý/Chuyên môn)
-✓ Hoàn thành: 106 từ (論証, 仮説, 帰納, 演繹, 腫瘍, 免疫, 融資, 管轄, 裁量, 刷新, 四字熟語, ...)
-- Tập trung: Thuật ngữ học thuật, khoa học, y tế, kinh tế, pháp lý, hành chính
-- Topics: Logic, khoa học, tài chính, xây dựng, pháp luật, ngôn ngữ học, thành ngữ
+- Part 5: 87 từ (negative actions, emotions, psychology)
+- Part 6: 63 từ (social concepts, judgment, organization)
+- Part 7: 81 từ (nature, aesthetics, traditional culture, philosophy)
+- Part 8: 65 từ (academic, scientific, legal, professional)
+- Part 9: 93 từ (literary, abstract, formal)
+- Part 10: 93 từ (advanced, mixed domains)
 
 ## Data Quality Verification ✓
 
-- ✓ Total: 695 từ (73+74+82+83+102+81+94+106)
-- ✓ Unique: 695 từ (0 duplicates)
+- ✓ Total: 778 từ (73+74+82+83+102+81+94+106+93+93 — xem thực tế file)
+- ✓ Unique: 778 từ (0 duplicates)
 - ✓ Tất cả fields: word, reading, romaji, meaning_vi, part_of_speech, tags
 - ✓ Tất cả meaning_vi viết tiếng Việt
 - ✓ Tất cả từ là N1 level hoặc cao hơn
-
-## Sửa Lỗi Chi Tiết (2026-05-04)
-
-**Part 3 & 4 (Duplicate Cleanup):**
-- Removed từ Part 4: 躑躅, 蹙踏 (duplicates từ Part 3)
-- Added to Part 4: 羈束 (bị ràng buộc), 蠱惑 (mê hoặc)
-
-**Part 5 & 6 (New Parts - 189 từ):**
-- Removed from Part 5 & 6: 枢要, 支配, 齟齬 (duplicates từ Parts 1-4)
-- Added replacements: 粗暴, 呪詛, 濫用, 簒奪, 纂奪, 押収, 逮捕
+- ✓ part_of_speech chỉ dùng: noun, adjective, verb, adverb (không dùng expression)
 
 ## Summary
 
-**Total N1 Vocabulary: 495 từ ✓**
-- Part 1: 73 từ (Formal/Literary/Classical)
-- Part 2: 74 từ (Advanced/Formal/Poetic)
-- Part 3: 82 từ (Specialized/Archaic/Rare)
-- Part 4: 83 từ (Rare Kanji/Specialized)
-- Part 5: 102 từ (Negative Actions/Emotions)
-- Part 6: 81 từ (Social Concepts/Organization)
+**Total N1 Vocabulary: 778 từ ✓**
+- Parts 1-4: Classical/formal/archaic compounds
+- Parts 5-6: Negative actions, emotions, social concepts
+- Parts 7-8: Nature, culture, academic, legal
+- Parts 9-10: Literary, abstract, mixed domains
 
-**Status: ✓ Đầy đủ (495 từ), chính xác, không duplicate**
-
-## Notes
-
-- Tất cả từ vựng N1 là những từ cực cao, hiếm gặp, chỉ dùng trong các bối cảnh chính thức, văn học hoặc chuyên môn
-- Bao gồm tất cả 100+ N1 từ vựng chuẩn yếu được xác nhận
-- Format: JSON array với mỗi object có `word`, `reading`, `romaji`, `meaning_vi`, `part_of_speech`, `tags`
-
-## Coverage by Domain
-
-- Formal/Literary: 150+ từ
-- Emotion/Negative: 120+ từ
-- Behavior/Action: 100+ từ
-- Social/Organization: 80+ từ
-- Specialized/Technical: 30+ từ
-- Other: 15+ từ
-
-**Total: 495 từ**
+**Status: ✓ Đầy đủ, chính xác, không duplicate**

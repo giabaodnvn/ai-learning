@@ -54,6 +54,11 @@
         "word": "广場",
         "reading": "ひろば",
         "meaning_vi": "quảng trường"
+      },
+      {
+        "word": "广大",
+        "reading": "こうだい",
+        "meaning_vi": "rộng lớn"
       }
     ]
   },
@@ -70,6 +75,11 @@
         "word": "廒禀",
         "reading": "こへい",
         "meaning_vi": "lúa dự trữ"
+      },
+      {
+        "word": "廒倉",
+        "reading": "こそう",
+        "meaning_vi": "kho lúa, kho thóc"
       }
     ]
   },
@@ -88,6 +98,11 @@
         "word": "廿日",
         "reading": "はつか",
         "meaning_vi": "ngày 20"
+      },
+      {
+        "word": "廿歳",
+        "reading": "はたち",
+        "meaning_vi": "hai mươi tuổi"
       }
     ]
   },
@@ -105,6 +120,11 @@
         "word": "廡下",
         "reading": "ぶか",
         "meaning_vi": "dưới hàng mái"
+      },
+      {
+        "word": "廡廊",
+        "reading": "ぶろう",
+        "meaning_vi": "hành lang có mái"
       }
     ]
   },
@@ -192,6 +212,11 @@
         "word": "豚彘",
         "reading": "とんてつ",
         "meaning_vi": "lợn"
+      },
+      {
+        "word": "彘肉",
+        "reading": "てつにく",
+        "meaning_vi": "thịt lợn (cổ)"
       }
     ]
   },
@@ -208,6 +233,11 @@
         "word": "鼎彝",
         "reading": "ていい",
         "meaning_vi": "bình cổ"
+      },
+      {
+        "word": "彝器",
+        "reading": "いき",
+        "meaning_vi": "đồ vật cúng tế cổ"
       }
     ]
   },
@@ -257,6 +287,11 @@
         "word": "彣脈",
         "reading": "ぶんみゃく",
         "meaning_vi": "vân lòng"
+      },
+      {
+        "word": "彣彰",
+        "reading": "ぶんしょう",
+        "meaning_vi": "họa tiết nổi bật"
       }
     ]
   },
@@ -273,6 +308,11 @@
         "word": "俊彥",
         "reading": "しゅんげん",
         "meaning_vi": "người tài giỏi"
+      },
+      {
+        "word": "彥士",
+        "reading": "げんし",
+        "meaning_vi": "hiền sĩ, người tài"
       }
     ]
   },
@@ -289,6 +329,11 @@
         "word": "彪悍",
         "reading": "ひょうかん",
         "meaning_vi": "dũng cảm"
+      },
+      {
+        "word": "彪炳",
+        "reading": "ひょうへい",
+        "meaning_vi": "rực rỡ, sáng chói"
       }
     ]
   },
@@ -305,6 +350,11 @@
         "word": "彯烈",
         "reading": "はいれつ",
         "meaning_vi": "sáng chói"
+      },
+      {
+        "word": "彯彯",
+        "reading": "はいはい",
+        "meaning_vi": "rực rỡ, tuyệt vời"
       }
     ]
   },
@@ -360,6 +410,11 @@
         "word": "彴橋",
         "reading": "しんきょう",
         "meaning_vi": "cầu nhỏ"
+      },
+      {
+        "word": "彴板",
+        "reading": "しんいた",
+        "meaning_vi": "ván cầu"
       }
     ]
   },
@@ -392,6 +447,11 @@
         "word": "彷徨",
         "reading": "ほうこう",
         "meaning_vi": "lang thang"
+      },
+      {
+        "word": "彷彿",
+        "reading": "ほうふつ",
+        "meaning_vi": "gợi lên, gợi nhớ"
       }
     ]
   },
@@ -448,6 +508,11 @@
         "word": "彽下",
         "reading": "ていか",
         "meaning_vi": "hạ thấp"
+      },
+      {
+        "word": "彽徊",
+        "reading": "ていかい",
+        "meaning_vi": "qua lại, bộ hành chậm chạp"
       }
     ]
   },
@@ -482,6 +547,11 @@
         "word": "徂徠",
         "reading": "そらい",
         "meaning_vi": "đi xa"
+      },
+      {
+        "word": "徂逝",
+        "reading": "そせい",
+        "meaning_vi": "qua đời, mất đi"
       }
     ]
   },
@@ -525,6 +595,11 @@
         "word": "徃古",
         "reading": "こうこ",
         "meaning_vi": "xưa kia"
+      },
+      {
+        "word": "徃来",
+        "reading": "おうらい",
+        "meaning_vi": "qua lại, giao thông"
       }
     ]
   },
@@ -543,6 +618,11 @@
         "word": "徇職",
         "reading": "じゅんしょく",
         "meaning_vi": "trung thành với công việc"
+      },
+      {
+        "word": "徇私",
+        "reading": "じゅんし",
+        "meaning_vi": "theo lợi ích riêng tư"
       }
     ]
   },
@@ -559,6 +639,11 @@
         "word": "徉步",
         "reading": "ようほ",
         "meaning_vi": "dạo bộ"
+      },
+      {
+        "word": "徜徉",
+        "reading": "しょうよう",
+        "meaning_vi": "dạo chơi thung dung"
       }
     ]
   },
@@ -575,6 +660,11 @@
         "word": "很路",
         "reading": "こうろ",
         "meaning_vi": "đường đi"
+      },
+      {
+        "word": "很道",
+        "reading": "こうどう",
+        "meaning_vi": "lối đi, tuyến đường"
       }
     ]
   },
@@ -612,6 +702,11 @@
         "word": "徘徊",
         "reading": "はいかい",
         "meaning_vi": "lang thang"
+      },
+      {
+        "word": "徘徊者",
+        "reading": "はいかいしゃ",
+        "meaning_vi": "người lang thang"
       }
     ]
   },
@@ -628,6 +723,11 @@
         "word": "徙遷",
         "reading": "しせん",
         "meaning_vi": "di chuyển"
+      },
+      {
+        "word": "遷徙",
+        "reading": "せんし",
+        "meaning_vi": "dời đi, di cư"
       }
     ]
   },
@@ -661,6 +761,11 @@
         "word": "徛立",
         "reading": "たつりつ",
         "meaning_vi": "đứng"
+      },
+      {
+        "word": "徛身",
+        "reading": "たつみ",
+        "meaning_vi": "đứng thẳng người"
       }
     ]
   },
@@ -678,6 +783,11 @@
         "word": "徜徉",
         "reading": "しょうよう",
         "meaning_vi": "dạo chơi"
+      },
+      {
+        "word": "徜佯",
+        "reading": "しょうよう",
+        "meaning_vi": "thong dong dạo bước"
       }
     ]
   },
@@ -694,6 +804,11 @@
         "word": "徝值",
         "reading": "ちち",
         "meaning_vi": "giá trị"
+      },
+      {
+        "word": "徝当",
+        "reading": "ちとう",
+        "meaning_vi": "tương đương, xứng đáng"
       }
     ]
   },
@@ -731,6 +846,11 @@
         "word": "徟走",
         "reading": "ぎそう",
         "meaning_vi": "chạy loạn"
+      },
+      {
+        "word": "徟行",
+        "reading": "ぎこう",
+        "meaning_vi": "đi khập khiễng"
       }
     ]
   },
@@ -747,6 +867,11 @@
         "word": "徠兮",
         "reading": "らいけい",
         "meaning_vi": "ở xa"
+      },
+      {
+        "word": "招徠",
+        "reading": "しょうらい",
+        "meaning_vi": "chiêu mộ, thu hút"
       }
     ]
   },
@@ -763,6 +888,11 @@
         "word": "御行",
         "reading": "きょうこう",
         "meaning_vi": "đi cùng"
+      },
+      {
+        "word": "御者",
+        "reading": "ぎょしゃ",
+        "meaning_vi": "người đánh xe ngựa"
       }
     ]
   },
@@ -780,6 +910,11 @@
         "word": "徢行",
         "reading": "とくこう",
         "meaning_vi": "hành động"
+      },
+      {
+        "word": "徢徢",
+        "reading": "とくとく",
+        "meaning_vi": "nhanh chóng"
       }
     ]
   },
@@ -796,6 +931,11 @@
         "word": "徣異",
         "reading": "きい",
         "meaning_vi": "lạ lùng"
+      },
+      {
+        "word": "徣怪",
+        "reading": "きかい",
+        "meaning_vi": "kỳ quái, kỳ lạ"
       }
     ]
   },
@@ -813,6 +953,11 @@
         "word": "徤者",
         "reading": "けんしゃ",
         "meaning_vi": "người khỏe"
+      },
+      {
+        "word": "徤壮",
+        "reading": "けんそう",
+        "meaning_vi": "khỏe mạnh, cường tráng"
       }
     ]
   },
@@ -829,6 +974,11 @@
         "word": "徥去",
         "reading": "たきょ",
         "meaning_vi": "bỏ đi"
+      },
+      {
+        "word": "徥遠",
+        "reading": "たえん",
+        "meaning_vi": "rời xa, bỏ lại phía sau"
       }
     ]
   },
@@ -845,6 +995,11 @@
         "word": "徦者",
         "reading": "しぼ",
         "meaning_vi": "kẻ giả"
+      },
+      {
+        "word": "徦称",
+        "reading": "しょう",
+        "meaning_vi": "mạo xưng, giả danh"
       }
     ]
   },
@@ -861,6 +1016,11 @@
         "word": "徧地",
         "reading": "へんち",
         "meaning_vi": "khắp nơi"
+      },
+      {
+        "word": "徧歴",
+        "reading": "へんれき",
+        "meaning_vi": "đi khắp nơi, du lịch"
       }
     ]
   },
@@ -877,6 +1037,11 @@
         "word": "徨徨",
         "reading": "こうこう",
         "meaning_vi": "loạn động"
+      },
+      {
+        "word": "彷徨",
+        "reading": "ほうこう",
+        "meaning_vi": "lang thang, phiêu bạt"
       }
     ]
   },

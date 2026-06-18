@@ -420,6 +420,11 @@
         "word": "初甫",
         "reading": "しょほ",
         "meaning_vi": "lần đầu"
+      },
+      {
+        "word": "甫田",
+        "reading": "ほでん",
+        "meaning_vi": "đồng ruộng lớn"
       }
     ]
   },
@@ -524,6 +529,11 @@
         "word": "辷る",
         "reading": "すべる",
         "meaning_vi": "trượt"
+      },
+      {
+        "word": "辷り台",
+        "reading": "すべりだい",
+        "meaning_vi": "cầu trượt"
       }
     ]
   },
@@ -656,6 +666,11 @@
         "word": "諺に言う",
         "reading": "ことわざにいう",
         "meaning_vi": "như tục ngữ nói"
+      },
+      {
+        "word": "諺",
+        "reading": "ことわざ",
+        "meaning_vi": "tục ngữ, thành ngữ"
       }
     ]
   },
@@ -693,6 +708,11 @@
         "word": "酒銚",
         "reading": "さけちょう",
         "meaning_vi": "bình rượu"
+      },
+      {
+        "word": "銚子",
+        "reading": "ちょうし",
+        "meaning_vi": "bình rót rượu sake"
       }
     ]
   },
@@ -746,6 +766,11 @@
         "word": "賡続",
         "reading": "こうぞく",
         "meaning_vi": "tiếp tục"
+      },
+      {
+        "word": "賡和",
+        "reading": "こうわ",
+        "meaning_vi": "xướng họa thơ văn"
       }
     ]
   },
@@ -784,6 +809,11 @@
         "word": "誑かす",
         "reading": "たぶらかす",
         "meaning_vi": "lừa"
+      },
+      {
+        "word": "誑言",
+        "reading": "きょうごん",
+        "meaning_vi": "lời nói dối"
       }
     ]
   },
@@ -821,6 +851,11 @@
         "word": "资财",
         "reading": "しざい",
         "meaning_vi": "tài sản"
+      },
+      {
+        "word": "貲産",
+        "reading": "しさん",
+        "meaning_vi": "tài sản, của cải"
       }
     ]
   },
@@ -860,6 +895,11 @@
         "word": "蹣跚",
         "reading": "まんさん",
         "meaning_vi": "đi khập khiễng"
+      },
+      {
+        "word": "跚跚",
+        "reading": "さんさん",
+        "meaning_vi": "bước đi loạng choạng"
       }
     ]
   },
@@ -876,6 +916,11 @@
         "word": "玉釵",
         "reading": "ぎょくさい",
         "meaning_vi": "trâm tóc ngọc"
+      },
+      {
+        "word": "金釵",
+        "reading": "きんさい",
+        "meaning_vi": "trâm tóc vàng"
       }
     ]
   },
@@ -892,6 +937,11 @@
         "word": "銹色",
         "reading": "しゅしょく",
         "meaning_vi": "màu gỉ"
+      },
+      {
+        "word": "銹鉄",
+        "reading": "しゅてつ",
+        "meaning_vi": "sắt gỉ"
       }
     ]
   }

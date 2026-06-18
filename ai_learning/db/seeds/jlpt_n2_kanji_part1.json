@@ -12,6 +12,16 @@
         "word": "都道府県",
         "reading": "とどうふけん",
         "meaning_vi": "tỉnh thành"
+      },
+      {
+        "word": "県庁",
+        "reading": "けんちょう",
+        "meaning_vi": "tòa tỉnh"
+      },
+      {
+        "word": "県道",
+        "reading": "けんどう",
+        "meaning_vi": "đường tỉnh"
       }
     ]
   },
@@ -202,6 +212,16 @@
         "word": "周辺",
         "reading": "しゅうへん",
         "meaning_vi": "xung quanh"
+      },
+      {
+        "word": "辺り",
+        "reading": "あたり",
+        "meaning_vi": "xung quanh, khu vực"
+      },
+      {
+        "word": "辺境",
+        "reading": "へんきょう",
+        "meaning_vi": "vùng biên giới"
       }
     ]
   },
@@ -375,6 +395,16 @@
         "word": "蔵書",
         "reading": "ぞうしょ",
         "meaning_vi": "sách lưu trữ"
+      },
+      {
+        "word": "貯蔵",
+        "reading": "ちょぞう",
+        "meaning_vi": "tích trữ"
+      },
+      {
+        "word": "冷蔵庫",
+        "reading": "れいぞうこ",
+        "meaning_vi": "tủ lạnh"
       }
     ]
   },
@@ -527,6 +557,16 @@
         "word": "中央",
         "reading": "ちゅうおう",
         "meaning_vi": "trung tâm"
+      },
+      {
+        "word": "震央",
+        "reading": "しんおう",
+        "meaning_vi": "tâm chấn động đất"
+      },
+      {
+        "word": "中央線",
+        "reading": "ちゅうおうせん",
+        "meaning_vi": "đường tàu Chuo"
       }
     ]
   },

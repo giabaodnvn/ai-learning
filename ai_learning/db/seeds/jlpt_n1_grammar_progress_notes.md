@@ -2,80 +2,66 @@
 
 - Seed format theo `jlpt_n1_grammar_part*.json`: mỗi item gồm `pattern`, `explanation_vi`, `examples` (ja + vi), `notes_vi`
 
-## Final Structure (Verified ✓)
+## Final Structure (Verified ✓ — updated 2026-06-15)
 
-- **Target: 134 grammar patterns N1 level (hoàn thành)**
-- Format: 30-38 patterns per part
-- **Total parts: 4 parts**
-- Part 1: 30 patterns (formal, literary, advanced logic)
-- Part 2: 31 patterns (archaic, nuanced, specialized)
-- Part 3: 38 patterns (contrast, concession, conditional)
-- Part 4: 35 patterns (extreme, emphasis, advanced conditional)
+- **Target: 150 grammar patterns N1 level (hoàn thành)**
+- Format: 23-27 patterns per part
+- **Total parts: 6 parts**
+- Part 1: 23 patterns (formal, literary, advanced logic)
+- Part 2: 25 patterns (archaic, nuanced, specialized)
+- Part 3: 24 patterns (contrast, concession, conditional)
+- Part 4: 24 patterns (extreme, emphasis, advanced conditional)
+- Part 5: 27 patterns (classical purpose, incidental action, formal negation)
+- Part 6: 27 patterns (negative listing, quantity emphasis, formal register)
 
 ## Current Progress
 
 ### Part 1 (N1 Grammar - Formal/Literary/Advanced Logic)
-✓ Hoàn thành & xác thực: 30 patterns (〜ばかりか, 〜ならではの, 〜をおいて, ... , 〜にたえない)
+✓ Hoàn thành & xác thực: 23 patterns (〜あってのことながら, 〜からして, 〜をおいて, ... , 〜にたえない)
 - Tập trung: Cấu trúc cực kỳ hình thức, văn học, logic cao cấp
-- Trạng thái: ✓ Đầy đủ & chính xác
+- Trạng thái: ✓ Đầy đủ, mỗi pattern có 2 examples
 
 ### Part 2 (N1 Grammar - Archaic/Nuanced/Specialized)
-✓ Hoàn thành & xác thực: 31 patterns (〜いかんによって, 〜だに, 〜ずして, ... , 〜にしたって)
+✓ Hoàn thành & xác thực: 25 patterns (〜だに, 〜ずして, 〜たりとて, ... , 〜にしたって)
 - Tập trung: Cấu trúc cổ điển, ý nghĩa tinh tế, chuyên biệt
-- Trạng thái: ✓ Đầy đủ & chính xác
+- Trạng thái: ✓ Đầy đủ, mỗi pattern có 2 examples
 
 ### Part 3 (N1 Grammar - Contrast/Concession/Conditional)
-✓ Hoàn thành & xác thực: 38 patterns (〜とはいえ, 〜ものの, 〜反面, 〜一方で, 〜をよそに, ... , 〜いわんや, 〜にかけて)
+✓ Hoàn thành & xác thực: 24 patterns (〜ものの, 〜反面, 〜一方で, 〜を踏まえて, ... , 〜いわんや)
 - Tập trung: Mệnh đề đối lập, nhượng bộ, điều kiện phức tạp
-- Trạng thái: ✓ Đầy đủ & chính xác
+- Trạng thái: ✓ Đầy đủ, mỗi pattern có 2 examples
 
 ### Part 4 (N1 Grammar - Extreme/Emphasis/Advanced Conditional)
-✓ Hoàn thành & xác thực: 35 patterns (〜おろか, 〜たりとも, 〜すら, 〜としたところで, ... , 〜につけ, 〜をものともせず)
+✓ Hoàn thành & xác thực: 24 patterns (〜おろか, 〜たりとも, 〜すら, 〜としたところで, ... , 〜をものともせず)
 - Tập trung: Nhấn mạnh cực độ, điều kiện cao cấp, phủ định tuyệt đối
-- Trạng thái: ✓ Đầy đủ & chính xác
+- Trạng thái: ✓ Đầy đủ, mỗi pattern có 2 examples
+
+### Part 5 (N1 Grammar - Classical Purpose/Incidental/Formal Negation)
+✓ Hoàn thành & xác thực: 27 patterns (〜んがため（に）, 〜ともなく, 〜なくしては, 〜んばかりに, ... )
+- Tập trung: Mục đích cổ điển, hành động vô ý, phủ định hình thức cao
+- Trạng thái: ✓ Đầy đủ, mỗi pattern có 2 examples
+
+### Part 6 (N1 Grammar - Register/Listing/Quantity)
+✓ Hoàn thành & xác thực: 27 patterns (〜だの〜だの, 〜からある/〜からする, 〜においても, ... , 〜ことと存じます)
+- Tập trung: Văn phong lịch sự cao, liệt kê với sắc thái, nhấn mạnh số lượng
+- Trạng thái: ✓ Đầy đủ, mỗi pattern có 2 examples
 
 ## Data Quality Verification ✓
 
-- ✓ Total: 134 patterns (không có duplicate)
+- ✓ Total: 150 patterns (không có duplicate)
 - ✓ Mỗi pattern có đầy đủ fields: pattern, explanation_vi, examples, notes_vi
 - ✓ Tất cả explanation_vi & notes_vi đều viết tiếng Việt
-- ✓ Mỗi pattern có ít nhất 1 examples với ja + vi
+- ✓ Mỗi pattern có ít nhất 2 examples với ja + vi
 - ✓ Tất cả là cấu trúc ngữ pháp thực sự (không lẫn adverb/conjunction đơn thuần)
-
-## Sửa Lỗi Chi Tiết (2026-05-04)
-
-### Part 1 (7 entries sửa):
-1. 〜もかくは (duplicate) → 〜をおいて (no one else but...)
-2. 〜そばから (duplicate) → 〜なくして (without, if it weren't for...)
-3. 〜ずいぶん (adverb, không phải grammar) → 〜によらず (regardless of)
-4. 〜さらに (adverb, không phải grammar) → 〜を皮切りに (starting with)
-5. 〜むしろ (adverb, không phải grammar) → 〜とあって (because/given that)
-6. 〜あるいは (conjunction, không phải grammar) → 〜てやまない (never stop feeling)
-7. 〜すべてが (noun phrase, không phải grammar) → 〜にたえない (fills one with emotion)
-
-### Part 2 (4 entries sửa):
-1. 〜そばから (duplicate) → 〜だに (just thinking about it...)
-2. 〜もかくは (duplicate) → 〜こそあれ (there may be... but)
-3. 〜むしろのこと (không chuẩn) → 〜ものがある (there's something about...)
-4. 〜たけ (sai form/level N5) → 〜ならまだしも (if it were X, ok, but...)
 
 ## Summary
 
-**Total N1 Grammar Patterns: 134 patterns ✓**
-- Part 1: 30 patterns (Formal/Literary/Advanced Logic) ✓
-- Part 2: 31 patterns (Archaic/Nuanced/Specialized) ✓
-- Part 3: 38 patterns (Contrast/Concession/Conditional) ✓
-- Part 4: 35 patterns (Extreme/Emphasis/Advanced Conditional) ✓
+**Total N1 Grammar Patterns: 150 patterns ✓**
+- Part 1: 23 patterns (Formal/Literary/Advanced Logic) ✓
+- Part 2: 25 patterns (Archaic/Nuanced/Specialized) ✓
+- Part 3: 24 patterns (Contrast/Concession/Conditional) ✓
+- Part 4: 24 patterns (Extreme/Emphasis/Advanced Conditional) ✓
+- Part 5: 27 patterns (Classical Purpose/Incidental/Formal Negation) ✓
+- Part 6: 27 patterns (Register/Listing/Quantity) ✓
 
-Status: ✓ **Đầy đủ, chính xác, không có duplicate**
-
-## Notes
-
-- Tất cả pattern N1 được xác nhận là cấu trúc ngữ pháp thực sự
-- Format chuẩn và consistency được kiểm tra
-- Tập trung vào:
-  - Cấu trúc cực kỳ hình thức (〜ばかりか, 〜ならではの, 〜べからず)
-  - Cấu trúc cổ điển (〜べく, 〜せんがために, 〜たりとて, 〜だに)
-  - Ý nghĩa tinh tế (〜かかる, 〜ぎみ, 〜こそあれ, 〜ものがある)
-  - Những cấu trúc chỉ dùng trong văn học/tài liệu pháp lý
-  - Pattern N1 đặc trưng: 〜をおいて, 〜なくして, 〜てやまない, 〜にたえない, 〜ならまだしも
+Status: ✓ **Đầy đủ, chính xác, không có duplicate, mỗi pattern có 2 examples**

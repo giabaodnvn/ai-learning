@@ -6,6 +6,10 @@
       {
         "ja": "留学したものの、語学力はあまり上がらなかった。",
         "vi": "Mặc dù đã đi du học, nhưng năng lực ngoại ngữ không cải thiện bao nhiêu."
+      },
+      {
+        "ja": "新しいプロジェクトを引き受けたものの、思った以上に困難で途方に暮れている。",
+        "vi": "Mặc dù đã nhận dự án mới, nhưng khó khăn hơn dự kiến và tôi đang bối rối không biết phải làm sao."
       }
     ],
     "notes_vi": "Phần trước thừa nhận thực tế, phần sau thường diễn đạt kết quả trái với kỳ vọng hoặc sự mâu thuẫn."
@@ -17,6 +21,10 @@
       {
         "ja": "この薬は効果が高い反面、副作用も強い。",
         "vi": "Loại thuốc này tuy hiệu quả cao, nhưng mặt khác tác dụng phụ cũng mạnh."
+      },
+      {
+        "ja": "都市生活は便利な反面、人間関係が希薄になりがちだ。",
+        "vi": "Cuộc sống đô thị tuy tiện lợi, nhưng mặt khác các mối quan hệ con người dễ trở nên mờ nhạt."
       }
     ],
     "notes_vi": "Dùng để nêu hai mặt tương phản của cùng một chủ thể hoặc tình huống."
@@ -28,6 +36,10 @@
       {
         "ja": "彼は研究を続ける一方で、教育にも力を入れている。",
         "vi": "Trong khi anh ấy tiếp tục nghiên cứu, mặt khác cũng đang đầu tư vào giáo dục."
+      },
+      {
+        "ja": "経済が発展する一方で、環境破壊が深刻化している。",
+        "vi": "Trong khi kinh tế phát triển, mặt khác tình trạng hủy hoại môi trường ngày càng trầm trọng."
       }
     ],
     "notes_vi": "Biểu thị hai hoạt động hoặc trạng thái xảy ra đồng thời ở cùng chủ thể."
@@ -39,6 +51,10 @@
       {
         "ja": "前回の失敗を踏まえて、今度は慎重に計画を立てた。",
         "vi": "Dựa trên thất bại lần trước, lần này tôi đã lên kế hoạch một cách thận trọng."
+      },
+      {
+        "ja": "アンケートの結果を踏まえて、サービスの改善策を検討することにした。",
+        "vi": "Căn cứ vào kết quả khảo sát, chúng tôi quyết định xem xét các biện pháp cải thiện dịch vụ."
       }
     ],
     "notes_vi": "Biểu thị rằng hành động ở vế sau được thực hiện có tính đến, xem xét cẩn thận nền tảng ở vế trước."
@@ -50,6 +66,10 @@
       {
         "ja": "法律に照らして、この行為は違法と判断される。",
         "vi": "Chiếu theo pháp luật, hành vi này được phán quyết là bất hợp pháp."
+      },
+      {
+        "ja": "会社の規定に照らして考えると、彼の行動は懲戒処分の対象となりうる。",
+        "vi": "Đối chiếu với quy định của công ty, hành động của anh ấy có thể là đối tượng bị kỷ luật."
       }
     ],
     "notes_vi": "Biểu thị việc dùng một tiêu chuẩn/quy tắc/nguyên tắc làm thước đo để đánh giá. Rất trang trọng."
@@ -61,6 +81,10 @@
       {
         "ja": "現実に即した政策を立案する必要がある。",
         "vi": "Cần phải xây dựng chính sách bám sát với thực tế."
+      },
+      {
+        "ja": "学習者のレベルに即した教材を選ぶことが効果的な指導につながる。",
+        "vi": "Việc chọn tài liệu phù hợp với trình độ của người học sẽ dẫn đến giảng dạy hiệu quả."
       }
     ],
     "notes_vi": "Biểu thị việc hành động phù hợp, tuân thủ sát với một tiêu chuẩn, thực tế hoặc quy định. Trang trọng, dùng trong văn viết."
@@ -72,6 +96,10 @@
       {
         "ja": "経験者の立場からすれば、その計画は無謀すぎる。",
         "vi": "Xét từ góc độ của người có kinh nghiệm, kế hoạch đó quá liều lĩnh."
+      },
+      {
+        "ja": "外国人の目からすれば、日本の電車のシステムは驚くほど複雑に見えるだろう。",
+        "vi": "Nhìn từ con mắt của người nước ngoài, hệ thống tàu điện của Nhật trông có vẻ phức tạp đến mức ngạc nhiên."
       }
     ],
     "notes_vi": "Biểu thị rằng nhận xét/phán đoán được đưa ra từ một quan điểm hoặc cơ sở cụ thể. Tương tự からすると."
@@ -83,6 +111,10 @@
       {
         "ja": "彼は家に入るやいなや、倒れてしまった。",
         "vi": "Vừa mới bước vào nhà, anh ấy đã ngã xuống ngay lập tức."
+      },
+      {
+        "ja": "新商品が発売されるやいなや、店頭から姿を消してしまった。",
+        "vi": "Ngay khi sản phẩm mới vừa được tung ra, nó đã biến mất khỏi các kệ hàng."
       }
     ],
     "notes_vi": "Hai hành động nối tiếp gần như cùng lúc. Phần trước dùng động từ dạng từ điển. Văn viết, trang trọng."
@@ -94,6 +126,10 @@
       {
         "ja": "ベルが鳴るが早いか、学生たちは一斉に立ち上がった。",
         "vi": "Ngay khi chuông vừa reo, học sinh đồng loạt đứng dậy."
+      },
+      {
+        "ja": "彼は名前を呼ばれるが早いか、舞台に飛び出した。",
+        "vi": "Ngay khi vừa được gọi tên, anh ấy đã nhảy ra sân khấu."
       }
     ],
     "notes_vi": "Nhấn mạnh hành động xảy ra cực nhanh sau hành động kích hoạt. Trong 3 mẫu (やいなや・なり・が早いか), cái này nhấn mạnh tốc độ nhất."
@@ -105,6 +141,10 @@
       {
         "ja": "この人に秘密を話したが最後、すぐに広まってしまう。",
         "vi": "Một khi đã nói bí mật với người này thì chắc chắn sẽ lan ra ngay."
+      },
+      {
+        "ja": "彼女に口論を仕掛けたが最後、何時間も言い争いが続くことになる。",
+        "vi": "Một khi đã gây sự cãi vã với cô ấy thì cuộc tranh luận sẽ kéo dài hàng tiếng đồng hồ."
       }
     ],
     "notes_vi": "Biểu thị rằng một khi điều kiện xảy ra thì hậu quả không thể tránh khỏi và thường tiêu cực."
@@ -116,6 +156,10 @@
       {
         "ja": "今日を限りに、タバコをやめる。",
         "vi": "Kể từ hôm nay, tôi sẽ bỏ thuốc lá."
+      },
+      {
+        "ja": "今シーズンを限りに、彼は現役選手を引退することを表明した。",
+        "vi": "Anh ấy tuyên bố rằng kể từ sau mùa giải này, anh ấy sẽ giải nghệ khỏi tư cách vận động viên thi đấu."
       }
     ],
     "notes_vi": "Biểu thị một mốc thời gian cụ thể là điểm kết thúc hoặc dứt điểm cho một điều gì đó."
@@ -127,6 +171,10 @@
       {
         "ja": "子供ではあるまいし、そんなことで泣かないでください。",
         "vi": "Không phải là trẻ con mà, đừng có khóc vì chuyện như vậy."
+      },
+      {
+        "ja": "初めてではあるまいし、いつまでも同じミスを繰り返さないでほしい。",
+        "vi": "Đâu phải lần đầu tiên, tôi mong anh đừng cứ lặp đi lặp lại cùng một sai lầm mãi như vậy."
       }
     ],
     "notes_vi": "Phủ nhận một điều kiện hiển nhiên (anh không phải X) để từ đó phê phán hoặc yêu cầu thay đổi hành vi."
@@ -138,6 +186,10 @@
       {
         "ja": "雨が降ろうが降るまいが、明日の試合は行われる。",
         "vi": "Dù có mưa hay không, trận đấu ngày mai vẫn diễn ra."
+      },
+      {
+        "ja": "誰が反対しようがしまいが、この決断を変えるつもりはない。",
+        "vi": "Dù có ai phản đối hay không, tôi không có ý định thay đổi quyết định này."
       }
     ],
     "notes_vi": "Biểu thị rằng kết quả ở vế sau không bị ảnh hưởng bởi điều kiện ở vế trước dù có hay không có."
@@ -149,6 +201,10 @@
       {
         "ja": "彼は信頼するに足る人物だ。",
         "vi": "Anh ấy là người đáng để tin tưởng."
+      },
+      {
+        "ja": "その証拠は裁判で採用するに足る十分な信憑性を持っていた。",
+        "vi": "Bằng chứng đó có đủ độ tin cậy để được chấp nhận trong phiên tòa."
       }
     ],
     "notes_vi": "Biểu thị rằng đối tượng đạt mức cần thiết để thực hiện hành động. Trang trọng, dùng trong văn viết."
@@ -160,6 +216,10 @@
       {
         "ja": "この映画は見るに値する傑作だ。",
         "vi": "Bộ phim này là kiệt tác xứng đáng để xem."
+      },
+      {
+        "ja": "彼女の長年にわたる研究は国際的な賞を受賞するに値するものだ。",
+        "vi": "Công trình nghiên cứu nhiều năm của cô ấy xứng đáng nhận được giải thưởng quốc tế."
       }
     ],
     "notes_vi": "Biểu thị sự đánh giá tích cực rằng đối tượng có đủ giá trị. Câu trước に値しない biểu thị không xứng đáng."
@@ -171,6 +231,10 @@
       {
         "ja": "災害の影響で、住民は避難を余儀なくされた。",
         "vi": "Do ảnh hưởng của thảm họa, cư dân bị buộc phải sơ tán."
+      },
+      {
+        "ja": "不祥事が発覚し、社長は辞任を余儀なくされた。",
+        "vi": "Khi vụ bê bối bị phát giác, tổng giám đốc bị buộc phải từ chức."
       }
     ],
     "notes_vi": "Biểu thị hành động bị ép buộc bởi hoàn cảnh bên ngoài, không phải do bản thân muốn."
@@ -182,6 +246,10 @@
       {
         "ja": "彼女の歌声を聞くと、涙を流さずにはいられない。",
         "vi": "Khi nghe giọng ca của cô ấy, tôi không thể không rơi nước mắt."
+      },
+      {
+        "ja": "その理不尽な扱いを目の当たりにして、抗議せずにはいられなかった。",
+        "vi": "Chứng kiến cách đối xử vô lý đó trước mắt, tôi không thể không lên tiếng phản đối."
       }
     ],
     "notes_vi": "Biểu thị cảm xúc hoặc hành động tự nhiên không thể kìm nén. Vế trước là điều kiện tạo ra cảm xúc đó."
@@ -193,6 +261,10 @@
       {
         "ja": "お世話になった方のお葬式には行かないわけにはいかない。",
         "vi": "Không thể không đến dự đám tang của người đã từng giúp đỡ mình."
+      },
+      {
+        "ja": "上司に直接指示されたのだから、この仕事を引き受けないわけにはいかない。",
+        "vi": "Vì cấp trên đã trực tiếp chỉ thị, nên không thể không nhận công việc này."
       }
     ],
     "notes_vi": "Biểu thị nghĩa vụ về mặt đạo đức hoặc xã hội. Có thể không muốn làm nhưng hoàn cảnh bắt buộc."
@@ -204,6 +276,10 @@
       {
         "ja": "買い物がてら、近所を散歩した。",
         "vi": "Tranh thủ đi mua sắm, tôi đã dạo bộ quanh khu phố."
+      },
+      {
+        "ja": "出張がてら、現地の取引先を訪問してくることにした。",
+        "vi": "Nhân dịp đi công tác, tôi quyết định ghé thăm đối tác địa phương luôn."
       }
     ],
     "notes_vi": "Hành động chính và hành động phụ xảy ra đồng thời. Hành động ở vế trước là dịp để thực hiện vế sau."
@@ -215,6 +291,10 @@
       {
         "ja": "彼女は涙ながらに事情を説明した。",
         "vi": "Cô ấy vừa khóc vừa giải thích hoàn cảnh."
+      },
+      {
+        "ja": "彼は生まれながらに優れた音楽の才能を持っていた。",
+        "vi": "Anh ấy có tài năng âm nhạc xuất sắc ngay từ khi sinh ra."
       }
     ],
     "notes_vi": "Thường dùng với các từ chỉ trạng thái như 涙, 生まれ để biểu thị trạng thái tự nhiên hay từ đầu đến cuối."
@@ -226,6 +306,10 @@
       {
         "ja": "申し訳ないと思いつつも、断らざるを得なかった。",
         "vi": "Dù cảm thấy có lỗi, nhưng vẫn phải từ chối."
+      },
+      {
+        "ja": "健康に悪いと分かりつつも、深夜のお菓子がやめられない。",
+        "vi": "Dù biết là có hại cho sức khỏe, nhưng vẫn không bỏ được thói quen ăn đồ ăn vặt lúc khuya."
       }
     ],
     "notes_vi": "Biểu thị mâu thuẫn giữa ý thức/cảm xúc và hành động thực tế. Trang trọng hơn ながらも."
@@ -237,6 +321,10 @@
       {
         "ja": "皆に宣言した手前、今さらやめるわけにはいかない。",
         "vi": "Vì đã tuyên bố trước mọi người, giờ không thể bỏ ngang được."
+      },
+      {
+        "ja": "部下に厳しく指導した手前、自分が同じミスをするわけにはいかない。",
+        "vi": "Vì đã chỉ đạo nghiêm khắc với cấp dưới, nên bản thân không thể phạm cùng một sai lầm."
       }
     ],
     "notes_vi": "Biểu thị ràng buộc bởi thể diện, lời cam kết hoặc hành động đã thực hiện trước người khác."
@@ -248,6 +336,10 @@
       {
         "ja": "かたや豊かな国、かたや貧しい国がある。",
         "vi": "Một bên là đất nước giàu có, một bên là đất nước nghèo khó."
+      },
+      {
+        "ja": "兄はかたや大企業に就職し、弟はかたや夢を追って起業した。",
+        "vi": "Người anh thì vào làm cho tập đoàn lớn, còn người em thì theo đuổi giấc mơ và khởi nghiệp."
       }
     ],
     "notes_vi": "Dùng để đối chiếu hai đối tượng hoàn toàn trái ngược nhau. Thường lặp lại cấu trúc かたや〜かたや."
@@ -259,6 +351,10 @@
       {
         "ja": "専門家でも解けない問題だ。いわんや、初心者においては言うまでもない。",
         "vi": "Đây là bài toán mà ngay cả chuyên gia cũng không giải được. Huống hồ gì đối với người mới bắt đầu."
+      },
+      {
+        "ja": "成人でさえ理解に苦しむ内容だ。いわんや子供においてはなおさらである。",
+        "vi": "Đây là nội dung mà ngay cả người lớn cũng khó hiểu. Huống hồ là đối với trẻ em thì lại càng như vậy."
       }
     ],
     "notes_vi": "Cấu trúc cổ điển, rất trang trọng. Nhấn mạnh rằng nếu trường hợp A đã như vậy thì trường hợp B còn hơn thế."
