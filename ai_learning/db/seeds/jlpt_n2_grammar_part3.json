@@ -345,21 +345,6 @@
     "notes_vi": "Biểu thị cơ sở hoặc nguồn gốc của hành động/sản phẩm. Thường dùng trong văn viết, học thuật."
   },
   {
-    "pattern": "〜として",
-    "explanation_vi": "Với tư cách là..., được xem là..., như... (vai trò, danh nghĩa)",
-    "examples": [
-      {
-        "ja": "医者として、患者の命を守るのが義務だ。",
-        "vi": "Với tư cách là bác sĩ, bảo vệ sinh mạng bệnh nhân là nghĩa vụ."
-      },
-      {
-        "ja": "この問題は、社会問題として取り上げられている。",
-        "vi": "Vấn đề này đang được đề cập với tư cách là một vấn đề xã hội."
-      }
-    ],
-    "notes_vi": "Biểu thị vai trò, danh nghĩa, hoặc cách nhìn nhận về ai/điều gì. Rất phổ biến trong văn N2."
-  },
-  {
     "pattern": "〜はもとより",
     "explanation_vi": "Không chỉ..., ...là chưa kể đến... (chưa cần nói đến cái này, cái kia cũng vậy)",
     "examples": [

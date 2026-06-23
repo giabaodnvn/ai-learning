@@ -225,34 +225,6 @@
     ]
   },
   {
-    "character": "縛",
-    "onyomi": [
-      "バク"
-    ],
-    "kunyomi": [
-      "しば.る"
-    ],
-    "meaning_vi": "trói buộc, ràng buộc",
-    "stroke_count": 16,
-    "vocab_examples": [
-      {
-        "word": "縛る",
-        "reading": "しばる",
-        "meaning_vi": "trói, buộc"
-      },
-      {
-        "word": "束縛",
-        "reading": "そくばく",
-        "meaning_vi": "ràng buộc, gò bó"
-      },
-      {
-        "word": "自縛",
-        "reading": "じばく",
-        "meaning_vi": "tự trói mình"
-      }
-    ]
-  },
-  {
     "character": "征",
     "onyomi": [
       "セイ"

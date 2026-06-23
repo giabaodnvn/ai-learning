@@ -225,21 +225,6 @@
     "notes_vi": "Cấu trúc: N + に関わる. Phân biệt với 〜に関して (về chủ đề/nội dung): 〜に関わる nhấn mạnh ảnh hưởng hoặc liên quan mật thiết hơn."
   },
   {
-    "pattern": "〜はもとより",
-    "explanation_vi": "Không chỉ... mà còn... / ...đã đành rồi, còn... Tương tự 〜はもちろん nhưng mang sắc thái trang trọng hơn. Dùng để nêu một điều hiển nhiên trước rồi bổ sung thêm điều đáng chú ý hơn.",
-    "examples": [
-      {
-        "ja": "この大学は国内はもとより、海外でも知名度が高い。",
-        "vi": "Trường đại học này nổi tiếng không chỉ trong nước mà còn cả ở nước ngoài."
-      },
-      {
-        "ja": "体力はもとより、精神力も鍛えなければならない。",
-        "vi": "Không chỉ thể lực, mà tinh thần cũng cần được rèn luyện."
-      }
-    ],
-    "notes_vi": "Mang sắc thái trang trọng hơn 〜はもちろん, thường dùng trong văn viết hoặc bài phát biểu."
-  },
-  {
     "pattern": "〜といっても",
     "explanation_vi": "Tuy nói là... nhưng thực ra... Dùng để đặt ra một hạn định hoặc điều chỉnh cho điều vừa nói, mang ý 'nói vậy nhưng không đến mức...'. Thường dùng để giải thích thực tế không quá như người ta tưởng.",
     "examples": [

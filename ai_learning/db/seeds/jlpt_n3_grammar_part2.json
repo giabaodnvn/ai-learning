@@ -105,21 +105,6 @@
     "notes_vi": "Nhấn mạnh điều hiển nhiên hoặc logic."
   },
   {
-    "pattern": "〜にすぎない",
-    "explanation_vi": "Chỉ là... mà thôi (giảm nhẹ)",
-    "examples": [
-      {
-        "ja": "それは冗談にすぎない。",
-        "vi": "Đó chỉ là đùa thôi."
-      },
-      {
-        "ja": "私の意見にすぎません。",
-        "vi": "Chỉ là ý kiến của tôi mà thôi."
-      }
-    ],
-    "notes_vi": "Giảm nhẹ tầm quan trọng hoặc giá trị."
-  },
-  {
     "pattern": "〜に限る",
     "explanation_vi": "Không gì bằng... / Tốt nhất là...",
     "examples": [
@@ -240,21 +225,6 @@
     "notes_vi": "Diễn đạt phủ định mạnh hoặc quyết tâm không làm."
   },
   {
-    "pattern": "〜につれて",
-    "explanation_vi": "Theo... / Khi... thì... (tỉ lệ thuận, thay đổi cùng nhau)",
-    "examples": [
-      {
-        "ja": "時間が経つにつれて、痛みが和らいできた。",
-        "vi": "Theo thời gian trôi qua, cơn đau dần dịu lại."
-      },
-      {
-        "ja": "練習するにつれて、上手になった。",
-        "vi": "Càng luyện tập thì càng tiến bộ."
-      }
-    ],
-    "notes_vi": "Diễn đạt hai thay đổi xảy ra song song theo cùng chiều hướng."
-  },
-  {
     "pattern": "〜ものだ",
     "explanation_vi": "Thường... / Lẽ ra phải... (thói quen hoặc quy tắc)",
     "examples": [
@@ -343,21 +313,6 @@
       }
     ],
     "notes_vi": "Diễn đạt sự không phân biệt hoặc bao gồm tất cả."
-  },
-  {
-    "pattern": "〜をめぐって",
-    "explanation_vi": "Về... / Xung quanh... (chủ đề tranh luận)",
-    "examples": [
-      {
-        "ja": "環境問題をめぐって、議論した。",
-        "vi": "Thảo luận xung quanh vấn đề môi trường."
-      },
-      {
-        "ja": "この問題をめぐって、意見が分かれた。",
-        "vi": "Xung quanh vấn đề này, ý kiến chia rẽ."
-      }
-    ],
-    "notes_vi": "Dùng cho chủ đề của cuộc thảo luận hoặc tranh cãi."
   },
   {
     "pattern": "〜をよそに",

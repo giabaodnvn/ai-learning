@@ -28,34 +28,6 @@
     ]
   },
   {
-    "character": "昇",
-    "onyomi": [
-      "ショウ"
-    ],
-    "kunyomi": [
-      "のぼ.る"
-    ],
-    "meaning_vi": "lên, thăng tiến",
-    "stroke_count": 8,
-    "vocab_examples": [
-      {
-        "word": "昇進",
-        "reading": "しょうしん",
-        "meaning_vi": "thăng chức"
-      },
-      {
-        "word": "上昇",
-        "reading": "じょうしょう",
-        "meaning_vi": "tăng lên, bay lên"
-      },
-      {
-        "word": "昇給",
-        "reading": "しょうきゅう",
-        "meaning_vi": "tăng lương"
-      }
-    ]
-  },
-  {
     "character": "給",
     "onyomi": [
       "キュウ"
@@ -264,8 +236,8 @@
         "meaning_vi": "hiệu suất"
       },
       {
-        "word": "割合",
-        "reading": "わりあい",
+        "word": "比率",
+        "reading": "ひりつ",
         "meaning_vi": "tỉ lệ"
       },
       {
@@ -358,32 +330,6 @@
         "word": "学費",
         "reading": "がくひ",
         "meaning_vi": "học phí"
-      }
-    ]
-  },
-  {
-    "character": "輸",
-    "onyomi": [
-      "ユ"
-    ],
-    "kunyomi": [],
-    "meaning_vi": "vận chuyển, xuất nhập",
-    "stroke_count": 17,
-    "vocab_examples": [
-      {
-        "word": "輸出",
-        "reading": "ゆしゅつ",
-        "meaning_vi": "xuất khẩu"
-      },
-      {
-        "word": "輸入",
-        "reading": "ゆにゅう",
-        "meaning_vi": "nhập khẩu"
-      },
-      {
-        "word": "輸送",
-        "reading": "ゆそう",
-        "meaning_vi": "vận chuyển"
       }
     ]
   },
@@ -866,35 +812,6 @@
     ]
   },
   {
-    "character": "踏",
-    "onyomi": [
-      "トウ"
-    ],
-    "kunyomi": [
-      "ふ.む",
-      "ふ.まえる"
-    ],
-    "meaning_vi": "giẫm, đạp",
-    "stroke_count": 15,
-    "vocab_examples": [
-      {
-        "word": "踏む",
-        "reading": "ふむ",
-        "meaning_vi": "giẫm lên"
-      },
-      {
-        "word": "踏まえる",
-        "reading": "ふまえる",
-        "meaning_vi": "dựa vào, căn cứ vào"
-      },
-      {
-        "word": "踏切",
-        "reading": "ふみきり",
-        "meaning_vi": "đường ngang qua đường sắt"
-      }
-    ]
-  },
-  {
     "character": "掛",
     "onyomi": [
       "カイ"
@@ -912,14 +829,14 @@
         "meaning_vi": "treo, đeo, gọi điện"
       },
       {
-        "word": "電話をかける",
-        "reading": "でんわをかける",
-        "meaning_vi": "gọi điện thoại"
+        "word": "掛け算",
+        "reading": "かけざん",
+        "meaning_vi": "phép nhân"
       },
       {
-        "word": "声をかける",
-        "reading": "こえをかける",
-        "meaning_vi": "bắt chuyện, gọi"
+        "word": "掛かる",
+        "reading": "かかる",
+        "meaning_vi": "bị treo; tốn (thời gian, tiền)"
       }
     ]
   },

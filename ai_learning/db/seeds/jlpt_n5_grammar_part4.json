@@ -180,21 +180,6 @@
     "notes_vi": "時間がかかる (mất thời gian) / お金がかかる (tốn tiền). Chủ thể thường là sự việc (が), không phải người."
   },
   {
-    "pattern": "〜まま",
-    "explanation_vi": "Trong trạng thái ~, cứ để ~ như vậy: diễn đạt trạng thái không thay đổi hoặc hành động thực hiện mà không thay đổi điều kiện trước đó.",
-    "examples": [
-      {
-        "ja": "窓を開けたまま寝てしまいました。",
-        "vi": "Tôi ngủ quên với cửa sổ vẫn mở."
-      },
-      {
-        "ja": "靴を履いたまま入らないでください。",
-        "vi": "Xin đừng vào trong khi vẫn mang giày."
-      }
-    ],
-    "notes_vi": "V-た形 + まま (giữ nguyên trạng thái sau hành động). N + の + まま. Trạng thái tiếp diễn không mong muốn thường có sắc thái tiêu cực."
-  },
-  {
     "pattern": "〜ことにします",
     "explanation_vi": "Quyết định sẽ ~ (quyết định cá nhân, chủ động): diễn đạt quyết định của bản thân về hành động trong tương lai. Mang tính chủ động, tự nguyện hơn 〜ことになります.",
     "examples": [
@@ -268,21 +253,6 @@
       }
     ],
     "notes_vi": "V-辞書形 + ようにしています (cố gắng làm). V-ない + ようにしています (cố gắng không làm). Thể hiện nỗ lực, thói quen đang cố xây dựng."
-  },
-  {
-    "pattern": "〜ごとに",
-    "explanation_vi": "Mỗi ~, cứ mỗi ~ (tần suất đều đặn): dùng để chỉ hành động xảy ra đều đặn theo từng đơn vị thời gian hoặc sau mỗi một đối tượng nhất định.",
-    "examples": [
-      {
-        "ja": "2時間ごとに休憩します。",
-        "vi": "Cứ mỗi 2 tiếng lại nghỉ một lần."
-      },
-      {
-        "ja": "駅ごとに人が乗り降りします。",
-        "vi": "Ở mỗi ga lại có người lên xuống."
-      }
-    ],
-    "notes_vi": "N(thời gian/số) + ごとに. Phân biệt: おきに (cách mỗi ~) vs ごとに (mỗi ~ đều). 1日おきに = cách một ngày. 毎日 = mỗi ngày."
   },
   {
     "pattern": "〜のは〜です",

@@ -64,3 +64,25 @@
 - Part 7: 50 kanji (Imperial/Feudal/Classical/Buddhism) ✓
 
 Status: ✓ **Đầy đủ, không có duplicate cross-level**
+
+## Update 2026-06-23 — Bổ sung (giữ nguyên data cũ, chỉ thêm mới)
+
+- Thêm Part 8: 61 kanji Jōyō rõ ràng N1 (該慨騰寡轄堪棺閑騎擬犠窮恭凝謹鯨傑弧顧娯肯溝衡拷傲獄墾懇唆栽斎債搾桟肢珠酬醜叔淑俊准殉叙償匠抄尚祥渉訟晶硝冗浄剰壌嬢錠拭嘱...).
+- Mỗi kanji có onyomi/kunyomi, meaning_vi, stroke_count, vocab_examples thật.
+- Dedup theo `character` toàn cục (key DB) — 0 trùng với mọi level.
+- **Tổng kanji toàn bộ level: 1978 (1917 + 61 mới).**
+- Lưu ý chưa xử lý: data cũ còn chứa kanji không thuộc Jōyō/JLPT (vd 忐忑忒 ở part3) và một số chữ sai level (忘/忙=N4, 応=N3) — theo yêu cầu "giữ nguyên, chỉ thêm mới", chưa sửa.
+
+## Update 2026-06-23 (lần 2) — Đã XÓA data rác kanji
+
+- Xóa 66 kanji rác khỏi N1: 47 chữ bịa (忐忑忒系列, bộ 心/彳 cổ TQ) + 19 chữ phồn thể/bộ thủ/Hán-TQ (广 縣 廣 彥 彘 彝 彣 彯 彴 彽 徂 韶 徝 徢 徣 徥 徦 徧 貲).
+- N1 kanji: 396 → 330. Global kanji: 1978 → 1912, 0 duplicate, tất cả file parse OK.
+- CÒN LẠI chưa xử lý (chữ thật nhưng entry sai/hiếm, cần quyết định): 御 忝 徠 蝗 怡 廿; và chữ sai level 忘/忙(N4) 応(N3) vẫn ở part3.
+
+## Update 2026-06-23 (lần 3) — Dọn nốt + sửa data
+
+- Xóa thêm: 忘 忙 応 (sai level → N4/N4/N3) + 忧 (giản thể TQ của 憂). N1 kanji: 330 → 326.
+- Sửa data 6 chữ thật bị ghi sai: 御(ギョ/ゴ), 徠(招徠), 廿(はつか), 蝗(いなご/蝗害), 忝(かたじけない), 怡(怡然).
+- Còn lại ở part3 (chưa xử lý, cần quyết): 徵 (dạng phồn thể của 徴), 怙 (hiếm). 循/忖/怜 là chữ thật, giữ.
+- Vocab: sửa 忧鬱→憂鬱 (từ thật viết sai chữ), xóa 邦土/国邦 (compound bịa). N1 vocab: 996 → 994.
+- Lưu ý: rà soát vocab bịa diện rộng KHÔNG làm tự động an toàn được (không có từ điển) → chỉ xóa phần xác minh chắc chắn, giữ phần còn lại để tránh xóa nhầm từ thật.

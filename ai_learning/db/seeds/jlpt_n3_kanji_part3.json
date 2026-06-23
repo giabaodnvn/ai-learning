@@ -122,9 +122,9 @@
     "stroke_count": 7,
     "vocab_examples": [
       {
-        "word": "関係",
-        "reading": "かんけい",
-        "meaning_vi": "quan hệ"
+        "word": "系統",
+        "reading": "けいとう",
+        "meaning_vi": "hệ thống, dòng dõi"
       },
       {
         "word": "太陽系",
@@ -1246,12 +1246,12 @@
       {
         "word": "処分",
         "reading": "しょぶん",
-        "meaning_vi": "xử lý,处分"
+        "meaning_vi": "xử phạt, xử lý"
       },
       {
-        "word": "住所",
-        "reading": "じゅうしょ",
-        "meaning_vi": "địa chỉ"
+        "word": "対処",
+        "reading": "たいしょ",
+        "meaning_vi": "ứng phó, xử lý"
       }
     ]
   },
@@ -2305,60 +2305,6 @@
         "word": "頂上",
         "reading": "ちょうじょう",
         "meaning_vi": "đỉnh cao"
-      }
-    ]
-  },
-  {
-    "character": "潮",
-    "onyomi": [
-      "チョウ"
-    ],
-    "kunyomi": [
-      "しお"
-    ],
-    "meaning_vi": "thủy triều, nước biển",
-    "stroke_count": 15,
-    "vocab_examples": [
-      {
-        "word": "潮",
-        "reading": "しお",
-        "meaning_vi": "thủy triều"
-      },
-      {
-        "word": "満潮",
-        "reading": "まんちょう",
-        "meaning_vi": "triều lên"
-      },
-      {
-        "word": "潮風",
-        "reading": "しおかぜ",
-        "meaning_vi": "gió biển"
-      }
-    ]
-  },
-  {
-    "character": "賃",
-    "onyomi": [
-      "チン"
-    ],
-    "kunyomi": [],
-    "meaning_vi": "tiền thuê, tiền công",
-    "stroke_count": 13,
-    "vocab_examples": [
-      {
-        "word": "家賃",
-        "reading": "やちん",
-        "meaning_vi": "tiền thuê nhà"
-      },
-      {
-        "word": "賃金",
-        "reading": "ちんぎん",
-        "meaning_vi": "tiền lương"
-      },
-      {
-        "word": "運賃",
-        "reading": "うんちん",
-        "meaning_vi": "cước phí vận chuyển"
       }
     ]
   },

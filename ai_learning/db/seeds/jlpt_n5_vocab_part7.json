@@ -1,0 +1,196 @@
+[
+  {
+    "word": "歌",
+    "reading": "うた",
+    "romaji": "uta",
+    "meaning_vi": "bài hát",
+    "part_of_speech": "noun",
+    "tags": [
+      "daily"
+    ]
+  },
+  {
+    "word": "奥さん",
+    "reading": "おくさん",
+    "romaji": "okusan",
+    "meaning_vi": "vợ (của người khác)",
+    "part_of_speech": "noun",
+    "tags": [
+      "daily",
+      "family"
+    ]
+  },
+  {
+    "word": "音",
+    "reading": "おと",
+    "romaji": "oto",
+    "meaning_vi": "âm thanh, tiếng",
+    "part_of_speech": "noun",
+    "tags": [
+      "daily"
+    ]
+  },
+  {
+    "word": "男",
+    "reading": "おとこ",
+    "romaji": "otoko",
+    "meaning_vi": "đàn ông, con trai",
+    "part_of_speech": "noun",
+    "tags": [
+      "daily"
+    ]
+  },
+  {
+    "word": "女",
+    "reading": "おんな",
+    "romaji": "onna",
+    "meaning_vi": "phụ nữ, con gái",
+    "part_of_speech": "noun",
+    "tags": [
+      "daily"
+    ]
+  },
+  {
+    "word": "北",
+    "reading": "きた",
+    "romaji": "kita",
+    "meaning_vi": "phía bắc",
+    "part_of_speech": "noun",
+    "tags": [
+      "daily",
+      "direction"
+    ]
+  },
+  {
+    "word": "毛",
+    "reading": "け",
+    "romaji": "ke",
+    "meaning_vi": "lông, tóc",
+    "part_of_speech": "noun",
+    "tags": [
+      "daily",
+      "body"
+    ]
+  },
+  {
+    "word": "声",
+    "reading": "こえ",
+    "romaji": "koe",
+    "meaning_vi": "giọng nói",
+    "part_of_speech": "noun",
+    "tags": [
+      "daily"
+    ]
+  },
+  {
+    "word": "先",
+    "reading": "さき",
+    "romaji": "saki",
+    "meaning_vi": "phía trước, trước tiên",
+    "part_of_speech": "noun",
+    "tags": [
+      "daily"
+    ]
+  },
+  {
+    "word": "自動車",
+    "reading": "じどうしゃ",
+    "romaji": "jidousha",
+    "meaning_vi": "xe ô tô",
+    "part_of_speech": "noun",
+    "tags": [
+      "daily"
+    ]
+  },
+  {
+    "word": "食堂",
+    "reading": "しょくどう",
+    "romaji": "shokudou",
+    "meaning_vi": "nhà ăn, căng tin",
+    "part_of_speech": "noun",
+    "tags": [
+      "daily"
+    ]
+  },
+  {
+    "word": "新聞",
+    "reading": "しんぶん",
+    "romaji": "shinbun",
+    "meaning_vi": "báo",
+    "part_of_speech": "noun",
+    "tags": [
+      "daily"
+    ]
+  },
+  {
+    "word": "浴びる",
+    "reading": "あびる",
+    "romaji": "abiru",
+    "meaning_vi": "tắm (vòi sen), dội",
+    "part_of_speech": "verb",
+    "tags": [
+      "daily"
+    ]
+  },
+  {
+    "word": "要る",
+    "reading": "いる",
+    "romaji": "iru",
+    "meaning_vi": "cần",
+    "part_of_speech": "verb",
+    "tags": [
+      "daily"
+    ]
+  },
+  {
+    "word": "歌う",
+    "reading": "うたう",
+    "romaji": "utau",
+    "meaning_vi": "hát",
+    "part_of_speech": "verb",
+    "tags": [
+      "daily"
+    ]
+  },
+  {
+    "word": "返す",
+    "reading": "かえす",
+    "romaji": "kaesu",
+    "meaning_vi": "trả lại",
+    "part_of_speech": "verb",
+    "tags": [
+      "daily"
+    ]
+  },
+  {
+    "word": "危ない",
+    "reading": "あぶない",
+    "romaji": "abunai",
+    "meaning_vi": "nguy hiểm",
+    "part_of_speech": "adjective",
+    "tags": [
+      "daily"
+    ]
+  },
+  {
+    "word": "薄い",
+    "reading": "うすい",
+    "romaji": "usui",
+    "meaning_vi": "mỏng, nhạt",
+    "part_of_speech": "adjective",
+    "tags": [
+      "daily"
+    ]
+  },
+  {
+    "word": "美味しい",
+    "reading": "おいしい",
+    "romaji": "oishii",
+    "meaning_vi": "ngon",
+    "part_of_speech": "adjective",
+    "tags": [
+      "daily",
+      "food"
+    ]
+  }
+]

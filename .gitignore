@@ -3,3 +3,5 @@
 .env.*.local
 claude-reviews/
 claude-kit/output/
+# claude-safe
+.claude-safe/

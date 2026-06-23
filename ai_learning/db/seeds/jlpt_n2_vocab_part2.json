@@ -436,7 +436,11 @@
     "romaji": "jouryuu",
     "meaning_vi": "chưng cất, cất chất",
     "part_of_speech": "noun",
-    "tags": ["distillation", "chemistry", "science"]
+    "tags": [
+      "distillation",
+      "chemistry",
+      "science"
+    ]
   },
   {
     "word": "解析",
@@ -444,7 +448,11 @@
     "romaji": "kaiseki",
     "meaning_vi": "phân tích, giải tích (kỹ thuật/toán học)",
     "part_of_speech": "noun",
-    "tags": ["analysis", "academic", "technical"]
+    "tags": [
+      "analysis",
+      "academic",
+      "technical"
+    ]
   },
   {
     "word": "事例",
@@ -452,7 +460,11 @@
     "romaji": "jirei",
     "meaning_vi": "trường hợp, ví dụ cụ thể",
     "part_of_speech": "noun",
-    "tags": ["example", "case", "academic"]
+    "tags": [
+      "example",
+      "case",
+      "academic"
+    ]
   },
   {
     "word": "指標",
@@ -460,7 +472,11 @@
     "romaji": "shihyou",
     "meaning_vi": "chỉ số, chỉ tiêu đánh giá",
     "part_of_speech": "noun",
-    "tags": ["indicator", "index", "measurement"]
+    "tags": [
+      "indicator",
+      "index",
+      "measurement"
+    ]
   },
   {
     "word": "枠組み",
@@ -468,7 +484,11 @@
     "romaji": "wakugumi",
     "meaning_vi": "khung sườn, khuôn khổ",
     "part_of_speech": "noun",
-    "tags": ["framework", "structure", "concept"]
+    "tags": [
+      "framework",
+      "structure",
+      "concept"
+    ]
   },
   {
     "word": "手法",
@@ -476,7 +496,11 @@
     "romaji": "shuhou",
     "meaning_vi": "phương pháp, kỹ thuật",
     "part_of_speech": "noun",
-    "tags": ["method", "technique", "academic"]
+    "tags": [
+      "method",
+      "technique",
+      "academic"
+    ]
   },
   {
     "word": "応用",
@@ -484,7 +508,11 @@
     "romaji": "ouyou",
     "meaning_vi": "ứng dụng, áp dụng thực tiễn",
     "part_of_speech": "noun",
-    "tags": ["application", "applied", "technical"]
+    "tags": [
+      "application",
+      "applied",
+      "technical"
+    ]
   },
   {
     "word": "概略",
@@ -492,7 +520,11 @@
     "romaji": "gairyaku",
     "meaning_vi": "khái quát, tóm tắt",
     "part_of_speech": "noun",
-    "tags": ["summary", "outline", "academic"]
+    "tags": [
+      "summary",
+      "outline",
+      "academic"
+    ]
   },
   {
     "word": "抽象",
@@ -500,7 +532,11 @@
     "romaji": "chuushou",
     "meaning_vi": "trừu tượng",
     "part_of_speech": "noun",
-    "tags": ["abstract", "concept", "academic"]
+    "tags": [
+      "abstract",
+      "concept",
+      "academic"
+    ]
   },
   {
     "word": "具体",
@@ -508,15 +544,11 @@
     "romaji": "gutai",
     "meaning_vi": "cụ thể, có thực",
     "part_of_speech": "noun",
-    "tags": ["concrete", "specific", "concept"]
-  },
-  {
-    "word": "手順",
-    "reading": "てじゅん",
-    "romaji": "tejun",
-    "meaning_vi": "trình tự, các bước thực hiện",
-    "part_of_speech": "noun",
-    "tags": ["procedure", "steps", "method"]
+    "tags": [
+      "concrete",
+      "specific",
+      "concept"
+    ]
   },
   {
     "word": "演算",
@@ -524,7 +556,11 @@
     "romaji": "enzan",
     "meaning_vi": "phép tính, tính toán (máy tính/toán học)",
     "part_of_speech": "noun",
-    "tags": ["computation", "operation", "math"]
+    "tags": [
+      "computation",
+      "operation",
+      "math"
+    ]
   },
   {
     "word": "近似",
@@ -532,7 +568,11 @@
     "romaji": "kinji",
     "meaning_vi": "xấp xỉ, gần đúng",
     "part_of_speech": "noun",
-    "tags": ["approximation", "math", "technical"]
+    "tags": [
+      "approximation",
+      "math",
+      "technical"
+    ]
   },
   {
     "word": "集計",
@@ -540,7 +580,11 @@
     "romaji": "shuukei",
     "meaning_vi": "tổng hợp, thống kê tổng",
     "part_of_speech": "noun",
-    "tags": ["aggregation", "statistics", "data"]
+    "tags": [
+      "aggregation",
+      "statistics",
+      "data"
+    ]
   },
   {
     "word": "化合物",
@@ -548,7 +592,11 @@
     "romaji": "kagoubutsu",
     "meaning_vi": "hợp chất (hóa học)",
     "part_of_speech": "noun",
-    "tags": ["compound", "chemistry", "science"]
+    "tags": [
+      "compound",
+      "chemistry",
+      "science"
+    ]
   },
   {
     "word": "代謝",
@@ -556,7 +604,11 @@
     "romaji": "taisha",
     "meaning_vi": "trao đổi chất, chuyển hóa",
     "part_of_speech": "noun",
-    "tags": ["metabolism", "biology", "science"]
+    "tags": [
+      "metabolism",
+      "biology",
+      "science"
+    ]
   },
   {
     "word": "形態",
@@ -564,7 +616,11 @@
     "romaji": "keitai",
     "meaning_vi": "hình thái, dạng thức",
     "part_of_speech": "noun",
-    "tags": ["form", "morphology", "academic"]
+    "tags": [
+      "form",
+      "morphology",
+      "academic"
+    ]
   },
   {
     "word": "模型",
@@ -572,7 +628,11 @@
     "romaji": "mokei",
     "meaning_vi": "mô hình, mẫu thu nhỏ",
     "part_of_speech": "noun",
-    "tags": ["model", "prototype", "technical"]
+    "tags": [
+      "model",
+      "prototype",
+      "technical"
+    ]
   },
   {
     "word": "模擬",
@@ -580,7 +640,11 @@
     "romaji": "mogi",
     "meaning_vi": "mô phỏng, thử nghiệm giả lập",
     "part_of_speech": "noun",
-    "tags": ["simulation", "mock", "academic"]
+    "tags": [
+      "simulation",
+      "mock",
+      "academic"
+    ]
   },
   {
     "word": "定量",
@@ -588,7 +652,11 @@
     "romaji": "teiryou",
     "meaning_vi": "định lượng, đo lường chính xác",
     "part_of_speech": "noun",
-    "tags": ["quantitative", "measurement", "science"]
+    "tags": [
+      "quantitative",
+      "measurement",
+      "science"
+    ]
   },
   {
     "word": "定性",
@@ -596,7 +664,11 @@
     "romaji": "teisei",
     "meaning_vi": "định tính, xác định tính chất",
     "part_of_speech": "noun",
-    "tags": ["qualitative", "measurement", "science"]
+    "tags": [
+      "qualitative",
+      "measurement",
+      "science"
+    ]
   },
   {
     "word": "精査",
@@ -604,7 +676,11 @@
     "romaji": "seisa",
     "meaning_vi": "kiểm tra tỉ mỉ, tra xét kỹ lưỡng",
     "part_of_speech": "noun",
-    "tags": ["detailed examination", "analysis", "formal"]
+    "tags": [
+      "detailed examination",
+      "analysis",
+      "formal"
+    ]
   },
   {
     "word": "算出",
@@ -612,7 +688,11 @@
     "romaji": "sanshutsu",
     "meaning_vi": "tính toán, tính ra",
     "part_of_speech": "noun",
-    "tags": ["calculation", "math", "technical"]
+    "tags": [
+      "calculation",
+      "math",
+      "technical"
+    ]
   },
   {
     "word": "換算",
@@ -620,7 +700,11 @@
     "romaji": "kansan",
     "meaning_vi": "quy đổi, chuyển đổi đơn vị",
     "part_of_speech": "noun",
-    "tags": ["conversion", "math", "technical"]
+    "tags": [
+      "conversion",
+      "math",
+      "technical"
+    ]
   },
   {
     "word": "試算",
@@ -628,7 +712,11 @@
     "romaji": "shisan",
     "meaning_vi": "ước tính, tính thử",
     "part_of_speech": "noun",
-    "tags": ["estimate", "trial calculation", "financial"]
+    "tags": [
+      "estimate",
+      "trial calculation",
+      "financial"
+    ]
   },
   {
     "word": "特定",
@@ -636,7 +724,11 @@
     "romaji": "tokutei",
     "meaning_vi": "xác định cụ thể, chuyên biệt",
     "part_of_speech": "noun",
-    "tags": ["specific", "identification", "academic"]
+    "tags": [
+      "specific",
+      "identification",
+      "academic"
+    ]
   },
   {
     "word": "著作",
@@ -644,7 +736,12 @@
     "romaji": "chosaku",
     "meaning_vi": "tác phẩm, công trình viết",
     "part_of_speech": "noun",
-    "tags": ["work", "writing", "academic", "literature"]
+    "tags": [
+      "work",
+      "writing",
+      "academic",
+      "literature"
+    ]
   },
   {
     "word": "導出",
@@ -652,7 +749,11 @@
     "romaji": "doushutsu",
     "meaning_vi": "suy ra, dẫn xuất (toán học/logic)",
     "part_of_speech": "noun",
-    "tags": ["derivation", "math", "academic"]
+    "tags": [
+      "derivation",
+      "math",
+      "academic"
+    ]
   },
   {
     "word": "実例",
@@ -660,7 +761,11 @@
     "romaji": "jitsurei",
     "meaning_vi": "ví dụ thực tế, trường hợp thực",
     "part_of_speech": "noun",
-    "tags": ["example", "practical", "academic"]
+    "tags": [
+      "example",
+      "practical",
+      "academic"
+    ]
   },
   {
     "word": "標本",
@@ -668,7 +773,12 @@
     "romaji": "hyouhon",
     "meaning_vi": "mẫu vật, mẫu đại diện",
     "part_of_speech": "noun",
-    "tags": ["specimen", "sample", "science", "statistics"]
+    "tags": [
+      "specimen",
+      "sample",
+      "science",
+      "statistics"
+    ]
   },
   {
     "word": "採取",
@@ -676,7 +786,11 @@
     "romaji": "saishu",
     "meaning_vi": "thu thập, lấy mẫu",
     "part_of_speech": "noun",
-    "tags": ["collection", "sampling", "science"]
+    "tags": [
+      "collection",
+      "sampling",
+      "science"
+    ]
   },
   {
     "word": "合成",
@@ -684,7 +798,11 @@
     "romaji": "gousei",
     "meaning_vi": "tổng hợp, pha chế",
     "part_of_speech": "noun",
-    "tags": ["synthesis", "chemistry", "technical"]
+    "tags": [
+      "synthesis",
+      "chemistry",
+      "technical"
+    ]
   },
   {
     "word": "分解",
@@ -692,7 +810,11 @@
     "romaji": "bunkai",
     "meaning_vi": "phân giải, tháo rã",
     "part_of_speech": "noun",
-    "tags": ["decomposition", "breakdown", "science"]
+    "tags": [
+      "decomposition",
+      "breakdown",
+      "science"
+    ]
   },
   {
     "word": "蒸発",
@@ -700,7 +822,11 @@
     "romaji": "jouhatsu",
     "meaning_vi": "bốc hơi, bay hơi",
     "part_of_speech": "noun",
-    "tags": ["evaporation", "physics", "chemistry"]
+    "tags": [
+      "evaporation",
+      "physics",
+      "chemistry"
+    ]
   },
   {
     "word": "凝縮",
@@ -708,7 +834,11 @@
     "romaji": "gyoushuku",
     "meaning_vi": "ngưng tụ, cô đặc",
     "part_of_speech": "noun",
-    "tags": ["condensation", "physics", "chemistry"]
+    "tags": [
+      "condensation",
+      "physics",
+      "chemistry"
+    ]
   },
   {
     "word": "流体",
@@ -716,7 +846,11 @@
     "romaji": "ryuutai",
     "meaning_vi": "chất lỏng/khí (lưu chất)",
     "part_of_speech": "noun",
-    "tags": ["fluid", "physics", "technical"]
+    "tags": [
+      "fluid",
+      "physics",
+      "technical"
+    ]
   },
   {
     "word": "混合物",
@@ -724,7 +858,11 @@
     "romaji": "kongoubutsu",
     "meaning_vi": "hỗn hợp",
     "part_of_speech": "noun",
-    "tags": ["mixture", "chemistry", "science"]
+    "tags": [
+      "mixture",
+      "chemistry",
+      "science"
+    ]
   },
   {
     "word": "対照",
@@ -732,7 +870,11 @@
     "romaji": "taishou",
     "meaning_vi": "đối chiếu, nhóm đối chứng",
     "part_of_speech": "noun",
-    "tags": ["contrast", "comparison", "academic"]
+    "tags": [
+      "contrast",
+      "comparison",
+      "academic"
+    ]
   },
   {
     "word": "有意",
@@ -740,7 +882,11 @@
     "romaji": "yuui",
     "meaning_vi": "có ý nghĩa thống kê, có nghĩa lý",
     "part_of_speech": "noun",
-    "tags": ["significant", "statistics", "academic"]
+    "tags": [
+      "significant",
+      "statistics",
+      "academic"
+    ]
   },
   {
     "word": "統計的",
@@ -748,7 +894,11 @@
     "romaji": "toukeiteki",
     "meaning_vi": "mang tính thống kê, về mặt thống kê",
     "part_of_speech": "adjective",
-    "tags": ["statistical", "statistics", "academic"]
+    "tags": [
+      "statistical",
+      "statistics",
+      "academic"
+    ]
   },
   {
     "word": "変量",
@@ -756,6 +906,10 @@
     "romaji": "henryou",
     "meaning_vi": "biến số, đại lượng biến thiên",
     "part_of_speech": "noun",
-    "tags": ["variable", "statistics", "math"]
+    "tags": [
+      "variable",
+      "statistics",
+      "math"
+    ]
   }
 ]

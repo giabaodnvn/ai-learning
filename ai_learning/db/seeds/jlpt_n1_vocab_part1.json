@@ -1,29 +1,5 @@
 [
   {
-    "word": "邦土",
-    "reading": "ほうど",
-    "romaji": "houdo",
-    "meaning_vi": "lãnh thổ, đất nước (cực kỳ chính thức)",
-    "part_of_speech": "noun",
-    "tags": [
-      "formal",
-      "political",
-      "classical"
-    ]
-  },
-  {
-    "word": "国邦",
-    "reading": "こくほう",
-    "romaji": "kokuhou",
-    "meaning_vi": "quốc gia, nước (cổ)",
-    "part_of_speech": "noun",
-    "tags": [
-      "formal",
-      "classical",
-      "political"
-    ]
-  },
-  {
     "word": "裏切り",
     "reading": "うらぎり",
     "romaji": "uragiri",

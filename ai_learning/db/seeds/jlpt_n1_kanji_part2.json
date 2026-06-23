@@ -23,46 +23,6 @@
     ]
   },
   {
-    "character": "巰",
-    "onyomi": [
-      "カ"
-    ],
-    "kunyomi": [],
-    "meaning_vi": "tia thiol (hóa học)",
-    "stroke_count": 8,
-    "vocab_examples": [
-      {
-        "word": "含巰基",
-        "reading": "がんかきそ",
-        "meaning_vi": "chứa nhóm thiol"
-      }
-    ]
-  },
-  {
-    "character": "广",
-    "onyomi": [
-      "コウ",
-      "アン"
-    ],
-    "kunyomi": [
-      "ひろい"
-    ],
-    "meaning_vi": "rộng (yếu tố gốc), hang động",
-    "stroke_count": 3,
-    "vocab_examples": [
-      {
-        "word": "广場",
-        "reading": "ひろば",
-        "meaning_vi": "quảng trường"
-      },
-      {
-        "word": "广大",
-        "reading": "こうだい",
-        "meaning_vi": "rộng lớn"
-      }
-    ]
-  },
-  {
     "character": "廒",
     "onyomi": [
       "コ"
@@ -88,21 +48,14 @@
     "onyomi": [
       "ニジュウ"
     ],
-    "kunyomi": [
-      "はたち"
-    ],
-    "meaning_vi": "hai mươi (cổ)",
+    "kunyomi": [],
+    "meaning_vi": "hai mươi (20)",
     "stroke_count": 4,
     "vocab_examples": [
       {
         "word": "廿日",
         "reading": "はつか",
-        "meaning_vi": "ngày 20"
-      },
-      {
-        "word": "廿歳",
-        "reading": "はたち",
-        "meaning_vi": "hai mươi tuổi"
+        "meaning_vi": "ngày 20; 20 ngày"
       }
     ]
   },
@@ -153,30 +106,6 @@
     ]
   },
   {
-    "character": "廣",
-    "onyomi": [
-      "コウ"
-    ],
-    "kunyomi": [
-      "ひろい",
-      "ひろ"
-    ],
-    "meaning_vi": "rộng, rộng rãi (cổ)",
-    "stroke_count": 15,
-    "vocab_examples": [
-      {
-        "word": "廣大",
-        "reading": "こうだい",
-        "meaning_vi": "rộng lớn"
-      },
-      {
-        "word": "廣場",
-        "reading": "こうば",
-        "meaning_vi": "quảng trường"
-      }
-    ]
-  },
-  {
     "character": "彙",
     "onyomi": [
       "イ"
@@ -194,125 +123,6 @@
         "word": "字彙",
         "reading": "じい",
         "meaning_vi": "từ vựng"
-      }
-    ]
-  },
-  {
-    "character": "彘",
-    "onyomi": [
-      "テツ"
-    ],
-    "kunyomi": [
-      "ぶた"
-    ],
-    "meaning_vi": "lợn, heo (cổ)",
-    "stroke_count": 13,
-    "vocab_examples": [
-      {
-        "word": "豚彘",
-        "reading": "とんてつ",
-        "meaning_vi": "lợn"
-      },
-      {
-        "word": "彘肉",
-        "reading": "てつにく",
-        "meaning_vi": "thịt lợn (cổ)"
-      }
-    ]
-  },
-  {
-    "character": "彝",
-    "onyomi": [
-      "イ"
-    ],
-    "kunyomi": [],
-    "meaning_vi": "bình đựng, bình lớn (cổ)",
-    "stroke_count": 14,
-    "vocab_examples": [
-      {
-        "word": "鼎彝",
-        "reading": "ていい",
-        "meaning_vi": "bình cổ"
-      },
-      {
-        "word": "彝器",
-        "reading": "いき",
-        "meaning_vi": "đồ vật cúng tế cổ"
-      }
-    ]
-  },
-  {
-    "character": "彠",
-    "onyomi": [
-      "セキ"
-    ],
-    "kunyomi": [],
-    "meaning_vi": "hộc tủ, thùng (cổ)",
-    "stroke_count": 16,
-    "vocab_examples": [
-      {
-        "word": "彠箱",
-        "reading": "せきばこ",
-        "meaning_vi": "hộp cổ"
-      }
-    ]
-  },
-  {
-    "character": "彡",
-    "onyomi": [
-      "ギョク"
-    ],
-    "kunyomi": [],
-    "meaning_vi": "lông (yếu tố gốc)",
-    "stroke_count": 3,
-    "vocab_examples": [
-      {
-        "word": "彡",
-        "reading": "ぎょく",
-        "meaning_vi": "biểu tượng"
-      }
-    ]
-  },
-  {
-    "character": "彣",
-    "onyomi": [
-      "モン",
-      "ブン"
-    ],
-    "kunyomi": [],
-    "meaning_vi": "họa tiết, vân (cổ)",
-    "stroke_count": 14,
-    "vocab_examples": [
-      {
-        "word": "彣脈",
-        "reading": "ぶんみゃく",
-        "meaning_vi": "vân lòng"
-      },
-      {
-        "word": "彣彰",
-        "reading": "ぶんしょう",
-        "meaning_vi": "họa tiết nổi bật"
-      }
-    ]
-  },
-  {
-    "character": "彥",
-    "onyomi": [
-      "ゲン"
-    ],
-    "kunyomi": [],
-    "meaning_vi": "anh hùng, người xuất sắc (cổ)",
-    "stroke_count": 12,
-    "vocab_examples": [
-      {
-        "word": "俊彥",
-        "reading": "しゅんげん",
-        "meaning_vi": "người tài giỏi"
-      },
-      {
-        "word": "彥士",
-        "reading": "げんし",
-        "meaning_vi": "hiền sĩ, người tài"
       }
     ]
   },
@@ -338,27 +148,6 @@
     ]
   },
   {
-    "character": "彯",
-    "onyomi": [
-      "ハイ"
-    ],
-    "kunyomi": [],
-    "meaning_vi": "hay nhất, tuyệt vời (cổ)",
-    "stroke_count": 12,
-    "vocab_examples": [
-      {
-        "word": "彯烈",
-        "reading": "はいれつ",
-        "meaning_vi": "sáng chói"
-      },
-      {
-        "word": "彯彯",
-        "reading": "はいはい",
-        "meaning_vi": "rực rỡ, tuyệt vời"
-      }
-    ]
-  },
-  {
     "character": "彰",
     "onyomi": [
       "ショウ"
@@ -376,61 +165,6 @@
         "word": "表彰",
         "reading": "ひょうしょう",
         "meaning_vi": "biểu dương"
-      }
-    ]
-  },
-  {
-    "character": "彳",
-    "onyomi": [
-      "チ"
-    ],
-    "kunyomi": [
-      "ぎょう"
-    ],
-    "meaning_vi": "đi bộ (yếu tố gốc)",
-    "stroke_count": 3,
-    "vocab_examples": [
-      {
-        "word": "行",
-        "reading": "ぎょう",
-        "meaning_vi": "hàng"
-      }
-    ]
-  },
-  {
-    "character": "彴",
-    "onyomi": [
-      "シンシャク"
-    ],
-    "kunyomi": [],
-    "meaning_vi": "cầu gỗ nhỏ (cổ)",
-    "stroke_count": 13,
-    "vocab_examples": [
-      {
-        "word": "彴橋",
-        "reading": "しんきょう",
-        "meaning_vi": "cầu nhỏ"
-      },
-      {
-        "word": "彴板",
-        "reading": "しんいた",
-        "meaning_vi": "ván cầu"
-      }
-    ]
-  },
-  {
-    "character": "彵",
-    "onyomi": [
-      "シン"
-    ],
-    "kunyomi": [],
-    "meaning_vi": "xác, nòi (cổ)",
-    "stroke_count": 12,
-    "vocab_examples": [
-      {
-        "word": "彵血",
-        "reading": "しんけつ",
-        "meaning_vi": "máu nòi"
       }
     ]
   },
@@ -456,22 +190,6 @@
     ]
   },
   {
-    "character": "彸",
-    "onyomi": [
-      "ヨウ"
-    ],
-    "kunyomi": [],
-    "meaning_vi": "sáng, rõ ràng (cổ)",
-    "stroke_count": 13,
-    "vocab_examples": [
-      {
-        "word": "彸彸",
-        "reading": "ようよう",
-        "meaning_vi": "sáng chói"
-      }
-    ]
-  },
-  {
     "character": "彼",
     "onyomi": [
       "ヒ"
@@ -492,66 +210,6 @@
         "word": "彼岸",
         "reading": "ひがん",
         "meaning_vi": "bên kia"
-      }
-    ]
-  },
-  {
-    "character": "彽",
-    "onyomi": [
-      "テイ"
-    ],
-    "kunyomi": [],
-    "meaning_vi": "thấp, hạ (cổ)",
-    "stroke_count": 12,
-    "vocab_examples": [
-      {
-        "word": "彽下",
-        "reading": "ていか",
-        "meaning_vi": "hạ thấp"
-      },
-      {
-        "word": "彽徊",
-        "reading": "ていかい",
-        "meaning_vi": "qua lại, bộ hành chậm chạp"
-      }
-    ]
-  },
-  {
-    "character": "彾",
-    "onyomi": [
-      "ベン"
-    ],
-    "kunyomi": [],
-    "meaning_vi": "nước chảy xiết, bồng bộng",
-    "stroke_count": 12,
-    "vocab_examples": [
-      {
-        "word": "彾彾",
-        "reading": "べんべん",
-        "meaning_vi": "chảy xiết"
-      }
-    ]
-  },
-  {
-    "character": "徂",
-    "onyomi": [
-      "ソ"
-    ],
-    "kunyomi": [
-      "ゆく"
-    ],
-    "meaning_vi": "đi, qua đi (cổ)",
-    "stroke_count": 9,
-    "vocab_examples": [
-      {
-        "word": "徂徠",
-        "reading": "そらい",
-        "meaning_vi": "đi xa"
-      },
-      {
-        "word": "徂逝",
-        "reading": "そせい",
-        "meaning_vi": "qua đời, mất đi"
       }
     ]
   },
@@ -669,27 +327,6 @@
     ]
   },
   {
-    "character": "韶",
-    "onyomi": [
-      "ショウ"
-    ],
-    "kunyomi": [],
-    "meaning_vi": "đẹp, thanh nhã, âm nhạc (cổ)",
-    "stroke_count": 14,
-    "vocab_examples": [
-      {
-        "word": "韶光",
-        "reading": "しょうこう",
-        "meaning_vi": "thời trẻ thanh xuân"
-      },
-      {
-        "word": "韶華",
-        "reading": "しょうか",
-        "meaning_vi": "tuổi trẻ"
-      }
-    ]
-  },
-  {
     "character": "徘",
     "onyomi": [
       "ハイ"
@@ -728,22 +365,6 @@
         "word": "遷徙",
         "reading": "せんし",
         "meaning_vi": "dời đi, di cư"
-      }
-    ]
-  },
-  {
-    "character": "徚",
-    "onyomi": [
-      "トク"
-    ],
-    "kunyomi": [],
-    "meaning_vi": "tốc độ, phải, có thể (cổ)",
-    "stroke_count": 10,
-    "vocab_examples": [
-      {
-        "word": "徚捷",
-        "reading": "とくしょう",
-        "meaning_vi": "nhanh"
       }
     ]
   },
@@ -788,27 +409,6 @@
         "word": "徜佯",
         "reading": "しょうよう",
         "meaning_vi": "thong dong dạo bước"
-      }
-    ]
-  },
-  {
-    "character": "徝",
-    "onyomi": [
-      "チ"
-    ],
-    "kunyomi": [],
-    "meaning_vi": "giá trị, đáng, cân (cổ)",
-    "stroke_count": 11,
-    "vocab_examples": [
-      {
-        "word": "徝值",
-        "reading": "ちち",
-        "meaning_vi": "giá trị"
-      },
-      {
-        "word": "徝当",
-        "reading": "ちとう",
-        "meaning_vi": "tương đương, xứng đáng"
       }
     ]
   },
@@ -860,82 +460,38 @@
       "ライ"
     ],
     "kunyomi": [],
-    "meaning_vi": "xa xôi, ở xa (cổ)",
-    "stroke_count": 12,
+    "meaning_vi": "đến; chiêu mời (đến)",
+    "stroke_count": 11,
     "vocab_examples": [
-      {
-        "word": "徠兮",
-        "reading": "らいけい",
-        "meaning_vi": "ở xa"
-      },
       {
         "word": "招徠",
         "reading": "しょうらい",
-        "meaning_vi": "chiêu mộ, thu hút"
+        "meaning_vi": "chiêu mời, thu hút (khách)"
       }
     ]
   },
   {
     "character": "御",
     "onyomi": [
-      "キョウ"
+      "ギョ",
+      "ゴ"
     ],
-    "kunyomi": [],
-    "meaning_vi": "cùng, cùng nhau (cổ)",
+    "kunyomi": [
+      "おん",
+      "お"
+    ],
+    "meaning_vi": "kính ngữ (tiền tố); điều khiển, chế ngự",
     "stroke_count": 12,
     "vocab_examples": [
       {
-        "word": "御行",
-        "reading": "きょうこう",
-        "meaning_vi": "đi cùng"
+        "word": "制御",
+        "reading": "せいぎょ",
+        "meaning_vi": "điều khiển, kiểm soát"
       },
       {
-        "word": "御者",
-        "reading": "ぎょしゃ",
-        "meaning_vi": "người đánh xe ngựa"
-      }
-    ]
-  },
-  {
-    "character": "徢",
-    "onyomi": [
-      "トク",
-      "チョク"
-    ],
-    "kunyomi": [],
-    "meaning_vi": "hành động, khoả (cổ)",
-    "stroke_count": 12,
-    "vocab_examples": [
-      {
-        "word": "徢行",
-        "reading": "とくこう",
-        "meaning_vi": "hành động"
-      },
-      {
-        "word": "徢徢",
-        "reading": "とくとく",
-        "meaning_vi": "nhanh chóng"
-      }
-    ]
-  },
-  {
-    "character": "徣",
-    "onyomi": [
-      "キ"
-    ],
-    "kunyomi": [],
-    "meaning_vi": "kỳ lạ, lạ (cổ)",
-    "stroke_count": 13,
-    "vocab_examples": [
-      {
-        "word": "徣異",
-        "reading": "きい",
-        "meaning_vi": "lạ lùng"
-      },
-      {
-        "word": "徣怪",
-        "reading": "きかい",
-        "meaning_vi": "kỳ quái, kỳ lạ"
+        "word": "御殿",
+        "reading": "ごてん",
+        "meaning_vi": "dinh thự, cung điện"
       }
     ]
   },
@@ -958,69 +514,6 @@
         "word": "徤壮",
         "reading": "けんそう",
         "meaning_vi": "khỏe mạnh, cường tráng"
-      }
-    ]
-  },
-  {
-    "character": "徥",
-    "onyomi": [
-      "タ"
-    ],
-    "kunyomi": [],
-    "meaning_vi": "rời bỏ, bỏ lại (cổ)",
-    "stroke_count": 13,
-    "vocab_examples": [
-      {
-        "word": "徥去",
-        "reading": "たきょ",
-        "meaning_vi": "bỏ đi"
-      },
-      {
-        "word": "徥遠",
-        "reading": "たえん",
-        "meaning_vi": "rời xa, bỏ lại phía sau"
-      }
-    ]
-  },
-  {
-    "character": "徦",
-    "onyomi": [
-      "シ"
-    ],
-    "kunyomi": [],
-    "meaning_vi": "giả, mạo danh (cổ)",
-    "stroke_count": 13,
-    "vocab_examples": [
-      {
-        "word": "徦者",
-        "reading": "しぼ",
-        "meaning_vi": "kẻ giả"
-      },
-      {
-        "word": "徦称",
-        "reading": "しょう",
-        "meaning_vi": "mạo xưng, giả danh"
-      }
-    ]
-  },
-  {
-    "character": "徧",
-    "onyomi": [
-      "ヘン"
-    ],
-    "kunyomi": [],
-    "meaning_vi": "phổ biến, khắp, toàn (cổ)",
-    "stroke_count": 13,
-    "vocab_examples": [
-      {
-        "word": "徧地",
-        "reading": "へんち",
-        "meaning_vi": "khắp nơi"
-      },
-      {
-        "word": "徧歴",
-        "reading": "へんれき",
-        "meaning_vi": "đi khắp nơi, du lịch"
       }
     ]
   },

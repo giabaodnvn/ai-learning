@@ -353,21 +353,6 @@
     "notes_vi": "V-masu形 + なさい. Phủ định: V-ない形 + でください hoặc 〜てはいけません."
   },
   {
-    "pattern": "〜ばかり",
-    "explanation_vi": "Vừa mới ~ xong / Chỉ ~: hai nghĩa chính. (1) たばかり = vừa mới xong (hành động xảy ra không lâu); (2) 〜ばかり = chỉ, toàn là (số lượng hoặc hành động lặp đi lặp lại).",
-    "examples": [
-      {
-        "ja": "今起きたばかりです。",
-        "vi": "Tôi vừa mới thức dậy xong."
-      },
-      {
-        "ja": "ゲームばかりしないで！",
-        "vi": "Đừng có chỉ chơi game thôi!"
-      }
-    ],
-    "notes_vi": "た + ばかり = vừa mới làm xong. V-て形 + ばかりいます = cứ làm ~ mãi. N + ばかり = toàn là ~."
-  },
-  {
     "pattern": "〜つもりです",
     "explanation_vi": "Dự định sẽ ~, có ý định ~: diễn đạt ý định, kế hoạch của bản thân về tương lai. Mang tính chủ động, chắc chắn hơn 〜たいです (muốn). Thường dùng với động từ thể thông thường (辞書形).",
     "examples": [
@@ -396,21 +381,6 @@
       }
     ],
     "notes_vi": "い-adj (bỏ い) + くなります. な-adj / N + になります. Quá khứ: くなりました / になりました."
-  },
-  {
-    "pattern": "〜かどうか",
-    "explanation_vi": "Có ~ hay không (embedded question): dùng để nhúng một câu hỏi có/không vào trong câu khác. Khác với か đơn thuần, かどうか nhấn mạnh sự không chắc chắn giữa hai khả năng.",
-    "examples": [
-      {
-        "ja": "彼が来るかどうか知りません。",
-        "vi": "Tôi không biết anh ấy có đến không."
-      },
-      {
-        "ja": "試験に受かるかどうか心配です。",
-        "vi": "Tôi lo không biết có đỗ kỳ thi không."
-      }
-    ],
-    "notes_vi": "V/A 普通形 + かどうか + 動詞. Dùng với 知る, 分かる, 聞く, 考える, 心配する, など."
   },
   {
     "pattern": "〜かな",

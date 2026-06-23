@@ -36,3 +36,12 @@
 - Parts 9-10: Literary, abstract, mixed domains
 
 **Status: ✓ Đầy đủ, chính xác, không duplicate**
+
+## Update 2026-06-23 — Bổ sung (giữ nguyên data cũ, chỉ thêm mới)
+
+- Thêm 3 part mới, tự tổng hợp (không dùng nguồn ngoài), dedup với toàn bộ vocab các level:
+  - Part 11: 69 từ (danh từ trừu tượng/trang trọng か〜さ)
+  - Part 12: 93 từ (động từ 和語, tính từ -na, trạng từ, dải さ〜わ)
+  - Part 13: 56 từ (kinh tế/luật/khoa học/cảm xúc)
+- romaji sinh tự động từ kana (Hepburn) → loại lỗi gõ tay.
+- **Tổng N1 vocab: 996 từ (0 duplicate trong level).**

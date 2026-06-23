@@ -1,0 +1,1015 @@
+[
+  {
+    "word": "操る",
+    "reading": "あやつる",
+    "romaji": "ayatsuru",
+    "meaning_vi": "điều khiển, thao túng, sai khiến",
+    "part_of_speech": "verb",
+    "tags": [
+      "abstract",
+      "formal"
+    ]
+  },
+  {
+    "word": "危ぶむ",
+    "reading": "あやぶむ",
+    "romaji": "ayabumu",
+    "meaning_vi": "lo ngại, e rằng (sẽ không ổn)",
+    "part_of_speech": "verb",
+    "tags": [
+      "formal",
+      "emotion"
+    ]
+  },
+  {
+    "word": "覆す",
+    "reading": "くつがえす",
+    "romaji": "kutsugaesu",
+    "meaning_vi": "lật đổ, đảo ngược (phán quyết, học thuyết)",
+    "part_of_speech": "verb",
+    "tags": [
+      "formal",
+      "abstract"
+    ]
+  },
+  {
+    "word": "損なう",
+    "reading": "そこなう",
+    "romaji": "sokonau",
+    "meaning_vi": "làm hỏng, làm tổn hại, gây hại",
+    "part_of_speech": "verb",
+    "tags": [
+      "formal",
+      "abstract"
+    ]
+  },
+  {
+    "word": "漂う",
+    "reading": "ただよう",
+    "romaji": "tadayou",
+    "meaning_vi": "phảng phất, trôi nổi, lảng vảng",
+    "part_of_speech": "verb",
+    "tags": [
+      "literary",
+      "abstract"
+    ]
+  },
+  {
+    "word": "司る",
+    "reading": "つかさどる",
+    "romaji": "tsukasadoru",
+    "meaning_vi": "cai quản, phụ trách, đảm nhiệm",
+    "part_of_speech": "verb",
+    "tags": [
+      "formal",
+      "literary"
+    ]
+  },
+  {
+    "word": "貫く",
+    "reading": "つらぬく",
+    "romaji": "tsuranuku",
+    "meaning_vi": "xuyên suốt, quán triệt, kiên trì đến cùng",
+    "part_of_speech": "verb",
+    "tags": [
+      "abstract",
+      "emotion"
+    ]
+  },
+  {
+    "word": "募る",
+    "reading": "つのる",
+    "romaji": "tsunoru",
+    "meaning_vi": "ngày càng tăng, chiêu mộ, kêu gọi",
+    "part_of_speech": "verb",
+    "tags": [
+      "abstract",
+      "formal"
+    ]
+  },
+  {
+    "word": "途絶える",
+    "reading": "とだえる",
+    "romaji": "todaeru",
+    "meaning_vi": "gián đoạn, đứt đoạn, ngừng bặt",
+    "part_of_speech": "verb",
+    "tags": [
+      "formal",
+      "abstract"
+    ]
+  },
+  {
+    "word": "和らぐ",
+    "reading": "やわらぐ",
+    "romaji": "yawaragu",
+    "meaning_vi": "dịu đi, lắng xuống, êm dịu lại",
+    "part_of_speech": "verb",
+    "tags": [
+      "abstract",
+      "emotion"
+    ]
+  },
+  {
+    "word": "催す",
+    "reading": "もよおす",
+    "romaji": "moyoosu",
+    "meaning_vi": "tổ chức (sự kiện), cảm thấy (buồn ngủ...)",
+    "part_of_speech": "verb",
+    "tags": [
+      "formal",
+      "social"
+    ]
+  },
+  {
+    "word": "免れる",
+    "reading": "まぬがれる",
+    "romaji": "manugareru",
+    "meaning_vi": "thoát khỏi, tránh được (tai họa)",
+    "part_of_speech": "verb",
+    "tags": [
+      "formal",
+      "abstract"
+    ]
+  },
+  {
+    "word": "惜しむ",
+    "reading": "おしむ",
+    "romaji": "oshimu",
+    "meaning_vi": "tiếc nuối, tiếc rẻ, quý trọng",
+    "part_of_speech": "verb",
+    "tags": [
+      "emotion",
+      "literary"
+    ]
+  },
+  {
+    "word": "怠る",
+    "reading": "おこたる",
+    "romaji": "okotaru",
+    "meaning_vi": "lơ là, chểnh mảng, bỏ bê",
+    "part_of_speech": "verb",
+    "tags": [
+      "formal",
+      "abstract"
+    ]
+  },
+  {
+    "word": "脅かす",
+    "reading": "おびやかす",
+    "romaji": "obiyakasu",
+    "meaning_vi": "đe dọa, uy hiếp (an toàn)",
+    "part_of_speech": "verb",
+    "tags": [
+      "formal",
+      "abstract"
+    ]
+  },
+  {
+    "word": "赴く",
+    "reading": "おもむく",
+    "romaji": "omomuku",
+    "meaning_vi": "đi đến, lên đường tới (nơi nào đó)",
+    "part_of_speech": "verb",
+    "tags": [
+      "formal",
+      "literary"
+    ]
+  },
+  {
+    "word": "偏る",
+    "reading": "かたよる",
+    "romaji": "katayoru",
+    "meaning_vi": "thiên lệch, nghiêng về một phía",
+    "part_of_speech": "verb",
+    "tags": [
+      "formal",
+      "abstract"
+    ]
+  },
+  {
+    "word": "交わす",
+    "reading": "かわす",
+    "romaji": "kawasu",
+    "meaning_vi": "trao đổi (lời nói), né tránh",
+    "part_of_speech": "verb",
+    "tags": [
+      "daily",
+      "formal"
+    ]
+  },
+  {
+    "word": "拒む",
+    "reading": "こばむ",
+    "romaji": "kobamu",
+    "meaning_vi": "cự tuyệt, từ chối, cản trở",
+    "part_of_speech": "verb",
+    "tags": [
+      "formal",
+      "emotion"
+    ]
+  },
+  {
+    "word": "凝らす",
+    "reading": "こらす",
+    "romaji": "korasu",
+    "meaning_vi": "tập trung (mắt), dồn (tâm trí), trau chuốt",
+    "part_of_speech": "verb",
+    "tags": [
+      "literary",
+      "abstract"
+    ]
+  },
+  {
+    "word": "遮る",
+    "reading": "さえぎる",
+    "romaji": "saegiru",
+    "meaning_vi": "ngắt lời, che khuất, chặn lại",
+    "part_of_speech": "verb",
+    "tags": [
+      "formal",
+      "daily"
+    ]
+  },
+  {
+    "word": "裁く",
+    "reading": "さばく",
+    "romaji": "sabaku",
+    "meaning_vi": "xét xử, phân xử",
+    "part_of_speech": "verb",
+    "tags": [
+      "legal",
+      "formal"
+    ]
+  },
+  {
+    "word": "強いる",
+    "reading": "しいる",
+    "romaji": "shiiru",
+    "meaning_vi": "ép buộc, cưỡng ép",
+    "part_of_speech": "verb",
+    "tags": [
+      "formal",
+      "abstract"
+    ]
+  },
+  {
+    "word": "退く",
+    "reading": "しりぞく",
+    "romaji": "shirizoku",
+    "meaning_vi": "rút lui, lùi bước, từ chức",
+    "part_of_speech": "verb",
+    "tags": [
+      "formal",
+      "abstract"
+    ]
+  },
+  {
+    "word": "萎びる",
+    "reading": "しなびる",
+    "romaji": "shinabiru",
+    "meaning_vi": "héo úa, tàn lụi",
+    "part_of_speech": "verb",
+    "tags": [
+      "literary",
+      "daily"
+    ]
+  },
+  {
+    "word": "円滑",
+    "reading": "えんかつ",
+    "romaji": "enkatsu",
+    "meaning_vi": "suôn sẻ, trơn tru, êm thấm",
+    "part_of_speech": "adjective",
+    "tags": [
+      "business",
+      "abstract"
+    ]
+  },
+  {
+    "word": "横柄",
+    "reading": "おうへい",
+    "romaji": "ouhei",
+    "meaning_vi": "ngạo mạn, hống hách",
+    "part_of_speech": "adjective",
+    "tags": [
+      "character",
+      "emotion"
+    ]
+  },
+  {
+    "word": "無造作",
+    "reading": "むぞうさ",
+    "romaji": "muzousa",
+    "meaning_vi": "tùy tiện, không cầu kỳ, giản dị",
+    "part_of_speech": "adjective",
+    "tags": [
+      "abstract"
+    ]
+  },
+  {
+    "word": "克明",
+    "reading": "こくめい",
+    "romaji": "kokumei",
+    "meaning_vi": "tỉ mỉ, kỹ lưỡng, chi tiết",
+    "part_of_speech": "adjective",
+    "tags": [
+      "formal",
+      "abstract"
+    ]
+  },
+  {
+    "word": "惰性",
+    "reading": "だせい",
+    "romaji": "dasei",
+    "meaning_vi": "quán tính, sự ì (thói quen)",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract"
+    ]
+  },
+  {
+    "word": "入念",
+    "reading": "にゅうねん",
+    "romaji": "nyuunen",
+    "meaning_vi": "kỹ lưỡng, cẩn thận chu đáo",
+    "part_of_speech": "adjective",
+    "tags": [
+      "formal",
+      "abstract"
+    ]
+  },
+  {
+    "word": "莫大",
+    "reading": "ばくだい",
+    "romaji": "bakudai",
+    "meaning_vi": "to lớn, khổng lồ (số lượng)",
+    "part_of_speech": "adjective",
+    "tags": [
+      "formal",
+      "abstract"
+    ]
+  },
+  {
+    "word": "半端",
+    "reading": "はんぱ",
+    "romaji": "hanpa",
+    "meaning_vi": "dở dang, lưng chừng, lẻ",
+    "part_of_speech": "adjective",
+    "tags": [
+      "daily",
+      "abstract"
+    ]
+  },
+  {
+    "word": "敏感",
+    "reading": "びんかん",
+    "romaji": "binkan",
+    "meaning_vi": "nhạy cảm, mẫn cảm",
+    "part_of_speech": "adjective",
+    "tags": [
+      "abstract",
+      "emotion"
+    ]
+  },
+  {
+    "word": "不可欠",
+    "reading": "ふかけつ",
+    "romaji": "fukaketsu",
+    "meaning_vi": "không thể thiếu, tất yếu",
+    "part_of_speech": "adjective",
+    "tags": [
+      "formal",
+      "abstract"
+    ]
+  },
+  {
+    "word": "不当",
+    "reading": "ふとう",
+    "romaji": "futou",
+    "meaning_vi": "bất công, phi lý, không thỏa đáng",
+    "part_of_speech": "adjective",
+    "tags": [
+      "formal",
+      "legal"
+    ]
+  },
+  {
+    "word": "膨大",
+    "reading": "ぼうだい",
+    "romaji": "boudai",
+    "meaning_vi": "đồ sộ, khổng lồ (khối lượng)",
+    "part_of_speech": "adjective",
+    "tags": [
+      "formal",
+      "abstract"
+    ]
+  },
+  {
+    "word": "朗らか",
+    "reading": "ほがらか",
+    "romaji": "hogaraka",
+    "meaning_vi": "vui tươi, hồn nhiên, cởi mở",
+    "part_of_speech": "adjective",
+    "tags": [
+      "character",
+      "emotion"
+    ]
+  },
+  {
+    "word": "円満",
+    "reading": "えんまん",
+    "romaji": "enman",
+    "meaning_vi": "viên mãn, hòa thuận, êm ấm",
+    "part_of_speech": "adjective",
+    "tags": [
+      "abstract",
+      "social"
+    ]
+  },
+  {
+    "word": "丹念",
+    "reading": "たんねん",
+    "romaji": "tannen",
+    "meaning_vi": "tỉ mỉ, cần mẫn, chăm chút",
+    "part_of_speech": "adjective",
+    "tags": [
+      "formal",
+      "abstract"
+    ]
+  },
+  {
+    "word": "健やか",
+    "reading": "すこやか",
+    "romaji": "sukoyaka",
+    "meaning_vi": "khỏe mạnh, lành mạnh",
+    "part_of_speech": "adjective",
+    "tags": [
+      "daily",
+      "literary"
+    ]
+  },
+  {
+    "word": "速やか",
+    "reading": "すみやか",
+    "romaji": "sumiyaka",
+    "meaning_vi": "nhanh chóng, mau lẹ",
+    "part_of_speech": "adjective",
+    "tags": [
+      "formal"
+    ]
+  },
+  {
+    "word": "是非とも",
+    "reading": "ぜひとも",
+    "romaji": "zehitomo",
+    "meaning_vi": "bằng mọi giá, nhất định (phải)",
+    "part_of_speech": "adverb",
+    "tags": [
+      "formal"
+    ]
+  },
+  {
+    "word": "あえて",
+    "reading": "あえて",
+    "romaji": "aete",
+    "meaning_vi": "cố tình, dám (làm dù khó)",
+    "part_of_speech": "adverb",
+    "tags": [
+      "formal"
+    ]
+  },
+  {
+    "word": "おのずと",
+    "reading": "おのずと",
+    "romaji": "onozuto",
+    "meaning_vi": "tự nhiên, tự khắc",
+    "part_of_speech": "adverb",
+    "tags": [
+      "literary",
+      "formal"
+    ]
+  },
+  {
+    "word": "かろうじて",
+    "reading": "かろうじて",
+    "romaji": "karoujite",
+    "meaning_vi": "vừa vặn, suýt soát, may mà",
+    "part_of_speech": "adverb",
+    "tags": [
+      "formal"
+    ]
+  },
+  {
+    "word": "ことごとく",
+    "reading": "ことごとく",
+    "romaji": "kotogotoku",
+    "meaning_vi": "tất thảy, hết thảy, toàn bộ",
+    "part_of_speech": "adverb",
+    "tags": [
+      "literary",
+      "formal"
+    ]
+  },
+  {
+    "word": "さも",
+    "reading": "さも",
+    "romaji": "samo",
+    "meaning_vi": "có vẻ như, ra vẻ",
+    "part_of_speech": "adverb",
+    "tags": [
+      "literary"
+    ]
+  },
+  {
+    "word": "しいて",
+    "reading": "しいて",
+    "romaji": "shiite",
+    "meaning_vi": "cố ép, gượng ép (nếu phải nói)",
+    "part_of_speech": "adverb",
+    "tags": [
+      "formal"
+    ]
+  },
+  {
+    "word": "ひいては",
+    "reading": "ひいては",
+    "romaji": "hiiteha",
+    "meaning_vi": "và hơn nữa, kéo theo đó",
+    "part_of_speech": "adverb",
+    "tags": [
+      "formal"
+    ]
+  },
+  {
+    "word": "もっぱら",
+    "reading": "もっぱら",
+    "romaji": "moppara",
+    "meaning_vi": "chuyên về, chủ yếu là",
+    "part_of_speech": "adverb",
+    "tags": [
+      "formal",
+      "literary"
+    ]
+  },
+  {
+    "word": "やむを得ず",
+    "reading": "やむをえず",
+    "romaji": "yamuoezu",
+    "meaning_vi": "bất đắc dĩ, không còn cách nào khác",
+    "part_of_speech": "adverb",
+    "tags": [
+      "formal"
+    ]
+  },
+  {
+    "word": "ひたすら",
+    "reading": "ひたすら",
+    "romaji": "hitasura",
+    "meaning_vi": "một mực, chỉ chăm chăm",
+    "part_of_speech": "adverb",
+    "tags": [
+      "emotion",
+      "literary"
+    ]
+  },
+  {
+    "word": "とっさに",
+    "reading": "とっさに",
+    "romaji": "tossani",
+    "meaning_vi": "ngay tức khắc, trong chớp nhoáng",
+    "part_of_speech": "adverb",
+    "tags": [
+      "daily",
+      "abstract"
+    ]
+  },
+  {
+    "word": "ひそかに",
+    "reading": "ひそかに",
+    "romaji": "hisokani",
+    "meaning_vi": "thầm lặng, lén lút",
+    "part_of_speech": "adverb",
+    "tags": [
+      "literary",
+      "emotion"
+    ]
+  },
+  {
+    "word": "怠慢",
+    "reading": "たいまん",
+    "romaji": "taiman",
+    "meaning_vi": "tắc trách, lơ là, biếng nhác",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "character"
+    ]
+  },
+  {
+    "word": "打撃",
+    "reading": "だげき",
+    "romaji": "dageki",
+    "meaning_vi": "đòn giáng, cú đánh, thiệt hại",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract",
+      "formal"
+    ]
+  },
+  {
+    "word": "弾劾",
+    "reading": "だんがい",
+    "romaji": "dangai",
+    "meaning_vi": "luận tội, đàn hặc (quan chức)",
+    "part_of_speech": "noun",
+    "tags": [
+      "legal",
+      "formal"
+    ]
+  },
+  {
+    "word": "断念",
+    "reading": "だんねん",
+    "romaji": "dannen",
+    "meaning_vi": "từ bỏ ý định, đành thôi",
+    "part_of_speech": "noun",
+    "tags": [
+      "emotion",
+      "formal"
+    ]
+  },
+  {
+    "word": "沈黙",
+    "reading": "ちんもく",
+    "romaji": "chinmoku",
+    "meaning_vi": "sự im lặng, trầm mặc",
+    "part_of_speech": "noun",
+    "tags": [
+      "literary",
+      "emotion"
+    ]
+  },
+  {
+    "word": "撤回",
+    "reading": "てっかい",
+    "romaji": "tekkai",
+    "meaning_vi": "rút lại, thu hồi (phát ngôn)",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "business"
+    ]
+  },
+  {
+    "word": "撤退",
+    "reading": "てったい",
+    "romaji": "tettai",
+    "meaning_vi": "rút lui, triệt thoái",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "business"
+    ]
+  },
+  {
+    "word": "徹底",
+    "reading": "てってい",
+    "romaji": "tettei",
+    "meaning_vi": "triệt để, thấu đáo",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "abstract"
+    ]
+  },
+  {
+    "word": "動揺",
+    "reading": "どうよう",
+    "romaji": "douyou",
+    "meaning_vi": "dao động, chao đảo (tâm lý)",
+    "part_of_speech": "noun",
+    "tags": [
+      "emotion",
+      "abstract"
+    ]
+  },
+  {
+    "word": "匿名",
+    "reading": "とくめい",
+    "romaji": "tokumei",
+    "meaning_vi": "ẩn danh, giấu tên",
+    "part_of_speech": "noun",
+    "tags": [
+      "social",
+      "abstract"
+    ]
+  },
+  {
+    "word": "途方",
+    "reading": "とほう",
+    "romaji": "tohou",
+    "meaning_vi": "cách thức, phương hướng (途方に暮れる: bí lối)",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract",
+      "emotion"
+    ]
+  },
+  {
+    "word": "派遣",
+    "reading": "はけん",
+    "romaji": "haken",
+    "meaning_vi": "cử đi, phái cử (nhân sự)",
+    "part_of_speech": "noun",
+    "tags": [
+      "business",
+      "formal"
+    ]
+  },
+  {
+    "word": "破綻",
+    "reading": "はたん",
+    "romaji": "hatan",
+    "meaning_vi": "đổ vỡ, phá sản, thất bại",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "abstract"
+    ]
+  },
+  {
+    "word": "発端",
+    "reading": "ほったん",
+    "romaji": "hottan",
+    "meaning_vi": "khởi đầu, đầu mối, manh nha",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "abstract"
+    ]
+  },
+  {
+    "word": "反映",
+    "reading": "はんえい",
+    "romaji": "hanei",
+    "meaning_vi": "phản ánh, phản chiếu",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract",
+      "formal"
+    ]
+  },
+  {
+    "word": "頻繁",
+    "reading": "ひんぱん",
+    "romaji": "hinpan",
+    "meaning_vi": "thường xuyên, liên tục",
+    "part_of_speech": "adjective",
+    "tags": [
+      "daily",
+      "abstract"
+    ]
+  },
+  {
+    "word": "不審",
+    "reading": "ふしん",
+    "romaji": "fushin",
+    "meaning_vi": "khả nghi, đáng ngờ",
+    "part_of_speech": "adjective",
+    "tags": [
+      "formal",
+      "social"
+    ]
+  },
+  {
+    "word": "赴任",
+    "reading": "ふにん",
+    "romaji": "funin",
+    "meaning_vi": "nhậm chức (nơi xa), đến nơi công tác",
+    "part_of_speech": "noun",
+    "tags": [
+      "business",
+      "formal"
+    ]
+  },
+  {
+    "word": "変遷",
+    "reading": "へんせん",
+    "romaji": "hensen",
+    "meaning_vi": "sự biến thiên, đổi thay theo thời gian",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "abstract"
+    ]
+  },
+  {
+    "word": "放棄",
+    "reading": "ほうき",
+    "romaji": "houki",
+    "meaning_vi": "từ bỏ, vứt bỏ (quyền lợi)",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "legal"
+    ]
+  },
+  {
+    "word": "膨張",
+    "reading": "ぼうちょう",
+    "romaji": "bouchou",
+    "meaning_vi": "sự giãn nở, phình to, bành trướng",
+    "part_of_speech": "noun",
+    "tags": [
+      "academic",
+      "abstract"
+    ]
+  },
+  {
+    "word": "発作",
+    "reading": "ほっさ",
+    "romaji": "hossa",
+    "meaning_vi": "cơn (bệnh) phát tác, lên cơn",
+    "part_of_speech": "noun",
+    "tags": [
+      "medical",
+      "daily"
+    ]
+  },
+  {
+    "word": "翻弄",
+    "reading": "ほんろう",
+    "romaji": "honrou",
+    "meaning_vi": "làm cho lao đao, vần vò, đùa giỡn (số phận)",
+    "part_of_speech": "noun",
+    "tags": [
+      "literary",
+      "emotion"
+    ]
+  },
+  {
+    "word": "満喫",
+    "reading": "まんきつ",
+    "romaji": "mankitsu",
+    "meaning_vi": "tận hưởng trọn vẹn",
+    "part_of_speech": "noun",
+    "tags": [
+      "daily",
+      "emotion"
+    ]
+  },
+  {
+    "word": "猛烈",
+    "reading": "もうれつ",
+    "romaji": "mouretsu",
+    "meaning_vi": "mãnh liệt, dữ dội",
+    "part_of_speech": "adjective",
+    "tags": [
+      "abstract",
+      "emotion"
+    ]
+  },
+  {
+    "word": "黙認",
+    "reading": "もくにん",
+    "romaji": "mokunin",
+    "meaning_vi": "ngầm cho phép, làm ngơ",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "social"
+    ]
+  },
+  {
+    "word": "優遇",
+    "reading": "ゆうぐう",
+    "romaji": "yuuguu",
+    "meaning_vi": "đãi ngộ ưu đãi, ưu đãi",
+    "part_of_speech": "noun",
+    "tags": [
+      "business",
+      "social"
+    ]
+  },
+  {
+    "word": "誘致",
+    "reading": "ゆうち",
+    "romaji": "yuuchi",
+    "meaning_vi": "thu hút, mời gọi (đầu tư, sự kiện)",
+    "part_of_speech": "noun",
+    "tags": [
+      "business",
+      "formal"
+    ]
+  },
+  {
+    "word": "癒着",
+    "reading": "ゆちゃく",
+    "romaji": "yuchaku",
+    "meaning_vi": "sự cấu kết, dính líu (tiêu cực); dính (y học)",
+    "part_of_speech": "noun",
+    "tags": [
+      "social",
+      "medical"
+    ]
+  },
+  {
+    "word": "擁護",
+    "reading": "ようご",
+    "romaji": "yougo",
+    "meaning_vi": "ủng hộ, bảo vệ, bênh vực",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "social"
+    ]
+  },
+  {
+    "word": "抑制",
+    "reading": "よくせい",
+    "romaji": "yokusei",
+    "meaning_vi": "ức chế, kìm hãm",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "abstract"
+    ]
+  },
+  {
+    "word": "乱用",
+    "reading": "らんよう",
+    "romaji": "ranyou",
+    "meaning_vi": "lạm dụng, dùng bừa",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "social"
+    ]
+  },
+  {
+    "word": "理屈",
+    "reading": "りくつ",
+    "romaji": "rikutsu",
+    "meaning_vi": "lý lẽ, lý sự (đôi khi ngụy biện)",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract",
+      "daily"
+    ]
+  },
+  {
+    "word": "隆盛",
+    "reading": "りゅうせい",
+    "romaji": "ryuusei",
+    "meaning_vi": "hưng thịnh, phồn vinh",
+    "part_of_speech": "noun",
+    "tags": [
+      "literary",
+      "formal"
+    ]
+  },
+  {
+    "word": "了承",
+    "reading": "りょうしょう",
+    "romaji": "ryoushou",
+    "meaning_vi": "chấp thuận, đồng ý, lượng thứ",
+    "part_of_speech": "noun",
+    "tags": [
+      "business",
+      "formal"
+    ]
+  },
+  {
+    "word": "累積",
+    "reading": "るいせき",
+    "romaji": "ruiseki",
+    "meaning_vi": "tích lũy, dồn lại",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "academic"
+    ]
+  },
+  {
+    "word": "劣悪",
+    "reading": "れつあく",
+    "romaji": "retsuaku",
+    "meaning_vi": "tồi tệ, kém cỏi (điều kiện)",
+    "part_of_speech": "adjective",
+    "tags": [
+      "formal",
+      "abstract"
+    ]
+  },
+  {
+    "word": "露骨",
+    "reading": "ろこつ",
+    "romaji": "rokotsu",
+    "meaning_vi": "lộ liễu, trắng trợn, công khai",
+    "part_of_speech": "adjective",
+    "tags": [
+      "emotion",
+      "social"
+    ]
+  }
+]

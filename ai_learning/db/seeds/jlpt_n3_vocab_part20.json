@@ -1,0 +1,652 @@
+[
+  {
+    "word": "基本",
+    "reading": "きほん",
+    "romaji": "kihon",
+    "meaning_vi": "cơ bản, nền tảng",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract",
+      "daily"
+    ]
+  },
+  {
+    "word": "機嫌",
+    "reading": "きげん",
+    "romaji": "kigen",
+    "meaning_vi": "tâm trạng, tính khí",
+    "part_of_speech": "noun",
+    "tags": [
+      "emotion",
+      "daily"
+    ]
+  },
+  {
+    "word": "興味",
+    "reading": "きょうみ",
+    "romaji": "kyoumi",
+    "meaning_vi": "hứng thú, sở thích",
+    "part_of_speech": "noun",
+    "tags": [
+      "emotion",
+      "daily"
+    ]
+  },
+  {
+    "word": "距離",
+    "reading": "きょり",
+    "romaji": "kyori",
+    "meaning_vi": "khoảng cách",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract",
+      "daily"
+    ]
+  },
+  {
+    "word": "計算",
+    "reading": "けいさん",
+    "romaji": "keisan",
+    "meaning_vi": "tính toán",
+    "part_of_speech": "noun",
+    "tags": [
+      "academic",
+      "daily"
+    ]
+  },
+  {
+    "word": "化粧",
+    "reading": "けしょう",
+    "romaji": "keshou",
+    "meaning_vi": "trang điểm",
+    "part_of_speech": "noun",
+    "tags": [
+      "daily"
+    ]
+  },
+  {
+    "word": "講演",
+    "reading": "こうえん",
+    "romaji": "kouen",
+    "meaning_vi": "diễn thuyết, bài giảng",
+    "part_of_speech": "noun",
+    "tags": [
+      "academic",
+      "social"
+    ]
+  },
+  {
+    "word": "交際",
+    "reading": "こうさい",
+    "romaji": "kousai",
+    "meaning_vi": "giao thiệp, hẹn hò",
+    "part_of_speech": "noun",
+    "tags": [
+      "social",
+      "emotion"
+    ]
+  },
+  {
+    "word": "工事",
+    "reading": "こうじ",
+    "romaji": "kouji",
+    "meaning_vi": "thi công, công trình",
+    "part_of_speech": "noun",
+    "tags": [
+      "daily",
+      "technical"
+    ]
+  },
+  {
+    "word": "行動",
+    "reading": "こうどう",
+    "romaji": "koudou",
+    "meaning_vi": "hành động",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract",
+      "social"
+    ]
+  },
+  {
+    "word": "混雑",
+    "reading": "こんざつ",
+    "romaji": "konzatsu",
+    "meaning_vi": "đông đúc, lộn xộn",
+    "part_of_speech": "noun",
+    "tags": [
+      "daily",
+      "social"
+    ]
+  },
+  {
+    "word": "作成",
+    "reading": "さくせい",
+    "romaji": "sakusei",
+    "meaning_vi": "lập, soạn thảo",
+    "part_of_speech": "noun",
+    "tags": [
+      "business",
+      "daily"
+    ]
+  },
+  {
+    "word": "削除",
+    "reading": "さくじょ",
+    "romaji": "sakujo",
+    "meaning_vi": "xóa, lược bỏ",
+    "part_of_speech": "noun",
+    "tags": [
+      "technical",
+      "business"
+    ]
+  },
+  {
+    "word": "参加",
+    "reading": "さんか",
+    "romaji": "sanka",
+    "meaning_vi": "tham gia",
+    "part_of_speech": "noun",
+    "tags": [
+      "daily",
+      "social"
+    ]
+  },
+  {
+    "word": "支度",
+    "reading": "したく",
+    "romaji": "shitaku",
+    "meaning_vi": "sự chuẩn bị, sửa soạn",
+    "part_of_speech": "noun",
+    "tags": [
+      "daily"
+    ]
+  },
+  {
+    "word": "実行",
+    "reading": "じっこう",
+    "romaji": "jikkou",
+    "meaning_vi": "thực hiện, thực thi",
+    "part_of_speech": "noun",
+    "tags": [
+      "business",
+      "abstract"
+    ]
+  },
+  {
+    "word": "指導",
+    "reading": "しどう",
+    "romaji": "shidou",
+    "meaning_vi": "chỉ đạo, hướng dẫn",
+    "part_of_speech": "noun",
+    "tags": [
+      "academic",
+      "business"
+    ]
+  },
+  {
+    "word": "芝居",
+    "reading": "しばい",
+    "romaji": "shibai",
+    "meaning_vi": "kịch, vở diễn",
+    "part_of_speech": "noun",
+    "tags": [
+      "art",
+      "daily"
+    ]
+  },
+  {
+    "word": "順番",
+    "reading": "じゅんばん",
+    "romaji": "junban",
+    "meaning_vi": "thứ tự, lần lượt",
+    "part_of_speech": "noun",
+    "tags": [
+      "daily"
+    ]
+  },
+  {
+    "word": "紹介",
+    "reading": "しょうかい",
+    "romaji": "shoukai",
+    "meaning_vi": "giới thiệu",
+    "part_of_speech": "noun",
+    "tags": [
+      "daily",
+      "social"
+    ]
+  },
+  {
+    "word": "商売",
+    "reading": "しょうばい",
+    "romaji": "shoubai",
+    "meaning_vi": "buôn bán, kinh doanh",
+    "part_of_speech": "noun",
+    "tags": [
+      "business",
+      "daily"
+    ]
+  },
+  {
+    "word": "勝負",
+    "reading": "しょうぶ",
+    "romaji": "shoubu",
+    "meaning_vi": "thắng thua, trận đấu",
+    "part_of_speech": "noun",
+    "tags": [
+      "daily",
+      "abstract"
+    ]
+  },
+  {
+    "word": "親戚",
+    "reading": "しんせき",
+    "romaji": "shinseki",
+    "meaning_vi": "họ hàng, người thân",
+    "part_of_speech": "noun",
+    "tags": [
+      "social",
+      "daily"
+    ]
+  },
+  {
+    "word": "身長",
+    "reading": "しんちょう",
+    "romaji": "shinchou",
+    "meaning_vi": "chiều cao (người)",
+    "part_of_speech": "noun",
+    "tags": [
+      "daily"
+    ]
+  },
+  {
+    "word": "信用",
+    "reading": "しんよう",
+    "romaji": "shinyou",
+    "meaning_vi": "tin dùng, tín nhiệm",
+    "part_of_speech": "noun",
+    "tags": [
+      "social",
+      "business"
+    ]
+  },
+  {
+    "word": "睡眠",
+    "reading": "すいみん",
+    "romaji": "suimin",
+    "meaning_vi": "giấc ngủ",
+    "part_of_speech": "noun",
+    "tags": [
+      "daily",
+      "medical"
+    ]
+  },
+  {
+    "word": "数字",
+    "reading": "すうじ",
+    "romaji": "suuji",
+    "meaning_vi": "con số, chữ số",
+    "part_of_speech": "noun",
+    "tags": [
+      "daily",
+      "academic"
+    ]
+  },
+  {
+    "word": "制服",
+    "reading": "せいふく",
+    "romaji": "seifuku",
+    "meaning_vi": "đồng phục",
+    "part_of_speech": "noun",
+    "tags": [
+      "daily"
+    ]
+  },
+  {
+    "word": "整理",
+    "reading": "せいり",
+    "romaji": "seiri",
+    "meaning_vi": "sắp xếp, dọn dẹp",
+    "part_of_speech": "noun",
+    "tags": [
+      "daily",
+      "business"
+    ]
+  },
+  {
+    "word": "責める",
+    "reading": "せめる",
+    "romaji": "semeru",
+    "meaning_vi": "trách móc, khiển trách",
+    "part_of_speech": "verb",
+    "tags": [
+      "emotion",
+      "social"
+    ]
+  },
+  {
+    "word": "接続",
+    "reading": "せつぞく",
+    "romaji": "setsuzoku",
+    "meaning_vi": "kết nối, đấu nối",
+    "part_of_speech": "noun",
+    "tags": [
+      "technical"
+    ]
+  },
+  {
+    "word": "説得",
+    "reading": "せっとく",
+    "romaji": "settoku",
+    "meaning_vi": "thuyết phục",
+    "part_of_speech": "noun",
+    "tags": [
+      "social",
+      "abstract"
+    ]
+  },
+  {
+    "word": "速度",
+    "reading": "そくど",
+    "romaji": "sokudo",
+    "meaning_vi": "tốc độ",
+    "part_of_speech": "noun",
+    "tags": [
+      "daily",
+      "technical"
+    ]
+  },
+  {
+    "word": "退屈",
+    "reading": "たいくつ",
+    "romaji": "taikutsu",
+    "meaning_vi": "buồn chán, tẻ nhạt",
+    "part_of_speech": "adjective",
+    "tags": [
+      "emotion",
+      "daily"
+    ]
+  },
+  {
+    "word": "体験",
+    "reading": "たいけん",
+    "romaji": "taiken",
+    "meaning_vi": "trải nghiệm",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract",
+      "daily"
+    ]
+  },
+  {
+    "word": "大量",
+    "reading": "たいりょう",
+    "romaji": "tairyou",
+    "meaning_vi": "số lượng lớn",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract",
+      "business"
+    ]
+  },
+  {
+    "word": "単語",
+    "reading": "たんご",
+    "romaji": "tango",
+    "meaning_vi": "từ vựng, từ đơn",
+    "part_of_speech": "noun",
+    "tags": [
+      "academic",
+      "daily"
+    ]
+  },
+  {
+    "word": "地球",
+    "reading": "ちきゅう",
+    "romaji": "chikyuu",
+    "meaning_vi": "trái đất",
+    "part_of_speech": "noun",
+    "tags": [
+      "academic",
+      "daily"
+    ]
+  },
+  {
+    "word": "知能",
+    "reading": "ちのう",
+    "romaji": "chinou",
+    "meaning_vi": "trí tuệ, trí năng",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract",
+      "academic"
+    ]
+  },
+  {
+    "word": "注文",
+    "reading": "ちゅうもん",
+    "romaji": "chuumon",
+    "meaning_vi": "đặt hàng, gọi món",
+    "part_of_speech": "noun",
+    "tags": [
+      "daily",
+      "business"
+    ]
+  },
+  {
+    "word": "追加",
+    "reading": "ついか",
+    "romaji": "tsuika",
+    "meaning_vi": "bổ sung, thêm vào",
+    "part_of_speech": "noun",
+    "tags": [
+      "business",
+      "daily"
+    ]
+  },
+  {
+    "word": "通学",
+    "reading": "つうがく",
+    "romaji": "tsuugaku",
+    "meaning_vi": "đi học (đến trường)",
+    "part_of_speech": "noun",
+    "tags": [
+      "daily"
+    ]
+  },
+  {
+    "word": "都合",
+    "reading": "つごう",
+    "romaji": "tsugou",
+    "meaning_vi": "sự thuận tiện, hoàn cảnh",
+    "part_of_speech": "noun",
+    "tags": [
+      "daily",
+      "social"
+    ]
+  },
+  {
+    "word": "徹夜",
+    "reading": "てつや",
+    "romaji": "tetsuya",
+    "meaning_vi": "thức trắng đêm",
+    "part_of_speech": "noun",
+    "tags": [
+      "daily"
+    ]
+  },
+  {
+    "word": "当日",
+    "reading": "とうじつ",
+    "romaji": "toujitsu",
+    "meaning_vi": "ngày hôm đó, đúng ngày",
+    "part_of_speech": "noun",
+    "tags": [
+      "daily",
+      "formal"
+    ]
+  },
+  {
+    "word": "登場",
+    "reading": "とうじょう",
+    "romaji": "toujou",
+    "meaning_vi": "xuất hiện, lên sân khấu",
+    "part_of_speech": "noun",
+    "tags": [
+      "art",
+      "social"
+    ]
+  },
+  {
+    "word": "年月",
+    "reading": "としつき",
+    "romaji": "toshitsuki",
+    "meaning_vi": "năm tháng, thời gian",
+    "part_of_speech": "noun",
+    "tags": [
+      "literary",
+      "abstract"
+    ]
+  },
+  {
+    "word": "年配",
+    "reading": "ねんぱい",
+    "romaji": "nenpai",
+    "meaning_vi": "lớn tuổi, đứng tuổi",
+    "part_of_speech": "noun",
+    "tags": [
+      "social",
+      "daily"
+    ]
+  },
+  {
+    "word": "熱中",
+    "reading": "ねっちゅう",
+    "romaji": "netchuu",
+    "meaning_vi": "say mê, mê mải",
+    "part_of_speech": "noun",
+    "tags": [
+      "emotion",
+      "daily"
+    ]
+  },
+  {
+    "word": "濃い",
+    "reading": "こい",
+    "romaji": "koi",
+    "meaning_vi": "đậm, đặc",
+    "part_of_speech": "adjective",
+    "tags": [
+      "daily"
+    ]
+  },
+  {
+    "word": "拝見",
+    "reading": "はいけん",
+    "romaji": "haiken",
+    "meaning_vi": "xem (khiêm nhường ngữ)",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "social"
+    ]
+  },
+  {
+    "word": "発見",
+    "reading": "はっけん",
+    "romaji": "hakken",
+    "meaning_vi": "phát hiện",
+    "part_of_speech": "noun",
+    "tags": [
+      "academic",
+      "daily"
+    ]
+  },
+  {
+    "word": "不満",
+    "reading": "ふまん",
+    "romaji": "fuman",
+    "meaning_vi": "bất mãn, không hài lòng",
+    "part_of_speech": "noun",
+    "tags": [
+      "emotion",
+      "social"
+    ]
+  },
+  {
+    "word": "平均",
+    "reading": "へいきん",
+    "romaji": "heikin",
+    "meaning_vi": "trung bình, bình quân",
+    "part_of_speech": "noun",
+    "tags": [
+      "academic",
+      "daily"
+    ]
+  },
+  {
+    "word": "満足",
+    "reading": "まんぞく",
+    "romaji": "manzoku",
+    "meaning_vi": "mãn nguyện, hài lòng",
+    "part_of_speech": "noun",
+    "tags": [
+      "emotion"
+    ]
+  },
+  {
+    "word": "迷惑",
+    "reading": "めいわく",
+    "romaji": "meiwaku",
+    "meaning_vi": "sự phiền toái, làm phiền",
+    "part_of_speech": "noun",
+    "tags": [
+      "social",
+      "emotion"
+    ]
+  },
+  {
+    "word": "文句",
+    "reading": "もんく",
+    "romaji": "monku",
+    "meaning_vi": "lời phàn nàn, lời than",
+    "part_of_speech": "noun",
+    "tags": [
+      "emotion",
+      "social"
+    ]
+  },
+  {
+    "word": "油断",
+    "reading": "ゆだん",
+    "romaji": "yudan",
+    "meaning_vi": "lơ là, mất cảnh giác",
+    "part_of_speech": "noun",
+    "tags": [
+      "emotion",
+      "daily"
+    ]
+  },
+  {
+    "word": "流行",
+    "reading": "りゅうこう",
+    "romaji": "ryuukou",
+    "meaning_vi": "sự thịnh hành, mốt",
+    "part_of_speech": "noun",
+    "tags": [
+      "social",
+      "daily"
+    ]
+  },
+  {
+    "word": "話題",
+    "reading": "わだい",
+    "romaji": "wadai",
+    "meaning_vi": "chủ đề, đề tài (nói chuyện)",
+    "part_of_speech": "noun",
+    "tags": [
+      "social",
+      "daily"
+    ]
+  }
+]

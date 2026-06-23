@@ -679,9 +679,9 @@
         "meaning_vi": "cái nóng"
       },
       {
-        "word": "真夏",
-        "reading": "まなつ",
-        "meaning_vi": "giữa hè"
+        "word": "残暑",
+        "reading": "ざんしょ",
+        "meaning_vi": "cái nóng cuối hè"
       }
     ]
   },
@@ -727,9 +727,9 @@
     "stroke_count": 6,
     "vocab_examples": [
       {
-        "word": "音楽",
-        "reading": "おんがく",
-        "meaning_vi": "âm nhạc"
+        "word": "作曲",
+        "reading": "さっきょく",
+        "meaning_vi": "sáng tác nhạc"
       },
       {
         "word": "曲がる",

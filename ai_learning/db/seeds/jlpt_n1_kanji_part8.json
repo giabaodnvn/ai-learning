@@ -1,0 +1,1296 @@
+[
+  {
+    "character": "該",
+    "onyomi": [
+      "ガイ"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "đó, nói trên, thuộc diện",
+    "stroke_count": 13,
+    "vocab_examples": [
+      {
+        "word": "該当",
+        "reading": "がいとう",
+        "meaning_vi": "tương ứng, thuộc diện"
+      },
+      {
+        "word": "当該",
+        "reading": "とうがい",
+        "meaning_vi": "liên quan, đương sự"
+      }
+    ]
+  },
+  {
+    "character": "慨",
+    "onyomi": [
+      "ガイ"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "than thở, cảm khái",
+    "stroke_count": 13,
+    "vocab_examples": [
+      {
+        "word": "感慨",
+        "reading": "かんがい",
+        "meaning_vi": "cảm khái, xúc động"
+      },
+      {
+        "word": "憤慨",
+        "reading": "ふんがい",
+        "meaning_vi": "phẫn nộ, công phẫn"
+      }
+    ]
+  },
+  {
+    "character": "騰",
+    "onyomi": [
+      "トウ"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "tăng vọt, dâng lên",
+    "stroke_count": 20,
+    "vocab_examples": [
+      {
+        "word": "高騰",
+        "reading": "こうとう",
+        "meaning_vi": "tăng vọt (giá)"
+      },
+      {
+        "word": "急騰",
+        "reading": "きゅうとう",
+        "meaning_vi": "tăng đột ngột"
+      }
+    ]
+  },
+  {
+    "character": "寡",
+    "onyomi": [
+      "カ"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "ít, đơn lẻ, góa",
+    "stroke_count": 14,
+    "vocab_examples": [
+      {
+        "word": "寡黙",
+        "reading": "かもく",
+        "meaning_vi": "ít nói, trầm lặng"
+      },
+      {
+        "word": "多寡",
+        "reading": "たか",
+        "meaning_vi": "nhiều ít, số lượng"
+      }
+    ]
+  },
+  {
+    "character": "轄",
+    "onyomi": [
+      "カツ"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "quản lý, cai quản",
+    "stroke_count": 17,
+    "vocab_examples": [
+      {
+        "word": "管轄",
+        "reading": "かんかつ",
+        "meaning_vi": "quản hạt, thẩm quyền"
+      },
+      {
+        "word": "所轄",
+        "reading": "しょかつ",
+        "meaning_vi": "thuộc quyền quản lý"
+      }
+    ]
+  },
+  {
+    "character": "堪",
+    "onyomi": [
+      "カン"
+    ],
+    "kunyomi": [
+      "たえる"
+    ],
+    "meaning_vi": "chịu đựng, kham nổi",
+    "stroke_count": 12,
+    "vocab_examples": [
+      {
+        "word": "堪忍",
+        "reading": "かんにん",
+        "meaning_vi": "nhẫn nhịn, tha thứ"
+      },
+      {
+        "word": "堪能",
+        "reading": "たんのう",
+        "meaning_vi": "thành thạo, thỏa mãn"
+      }
+    ]
+  },
+  {
+    "character": "棺",
+    "onyomi": [
+      "カン"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "quan tài",
+    "stroke_count": 12,
+    "vocab_examples": [
+      {
+        "word": "棺桶",
+        "reading": "かんおけ",
+        "meaning_vi": "quan tài"
+      },
+      {
+        "word": "出棺",
+        "reading": "しゅっかん",
+        "meaning_vi": "đưa quan (tang lễ)"
+      }
+    ]
+  },
+  {
+    "character": "閑",
+    "onyomi": [
+      "カン"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "nhàn rỗi, vắng lặng",
+    "stroke_count": 12,
+    "vocab_examples": [
+      {
+        "word": "閑静",
+        "reading": "かんせい",
+        "meaning_vi": "yên tĩnh, thanh vắng"
+      },
+      {
+        "word": "閑散",
+        "reading": "かんさん",
+        "meaning_vi": "vắng vẻ, ế ẩm"
+      }
+    ]
+  },
+  {
+    "character": "騎",
+    "onyomi": [
+      "キ"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "cưỡi ngựa",
+    "stroke_count": 18,
+    "vocab_examples": [
+      {
+        "word": "騎士",
+        "reading": "きし",
+        "meaning_vi": "kỵ sĩ"
+      },
+      {
+        "word": "騎馬",
+        "reading": "きば",
+        "meaning_vi": "cưỡi ngựa"
+      }
+    ]
+  },
+  {
+    "character": "擬",
+    "onyomi": [
+      "ギ"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "mô phỏng, giả",
+    "stroke_count": 17,
+    "vocab_examples": [
+      {
+        "word": "擬似",
+        "reading": "ぎじ",
+        "meaning_vi": "giả lập, mô phỏng"
+      },
+      {
+        "word": "模擬",
+        "reading": "もぎ",
+        "meaning_vi": "mô phỏng, thử nghiệm"
+      }
+    ]
+  },
+  {
+    "character": "犠",
+    "onyomi": [
+      "ギ"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "hy sinh, vật tế",
+    "stroke_count": 17,
+    "vocab_examples": [
+      {
+        "word": "犠牲",
+        "reading": "ぎせい",
+        "meaning_vi": "hy sinh"
+      },
+      {
+        "word": "犠打",
+        "reading": "ぎだ",
+        "meaning_vi": "cú đánh hy sinh (bóng chày)"
+      }
+    ]
+  },
+  {
+    "character": "窮",
+    "onyomi": [
+      "キュウ"
+    ],
+    "kunyomi": [
+      "きわまる",
+      "きわめる"
+    ],
+    "meaning_vi": "cùng quẫn, túng quẫn",
+    "stroke_count": 15,
+    "vocab_examples": [
+      {
+        "word": "窮地",
+        "reading": "きゅうち",
+        "meaning_vi": "tình thế khốn cùng"
+      },
+      {
+        "word": "困窮",
+        "reading": "こんきゅう",
+        "meaning_vi": "túng quẫn, bần cùng"
+      }
+    ]
+  },
+  {
+    "character": "恭",
+    "onyomi": [
+      "キョウ"
+    ],
+    "kunyomi": [
+      "うやうやしい"
+    ],
+    "meaning_vi": "cung kính, kính cẩn",
+    "stroke_count": 10,
+    "vocab_examples": [
+      {
+        "word": "恭順",
+        "reading": "きょうじゅん",
+        "meaning_vi": "cung thuận, phục tùng"
+      },
+      {
+        "word": "恭賀",
+        "reading": "きょうが",
+        "meaning_vi": "cung hạ, kính chúc"
+      }
+    ]
+  },
+  {
+    "character": "凝",
+    "onyomi": [
+      "ギョウ"
+    ],
+    "kunyomi": [
+      "こる",
+      "こらす"
+    ],
+    "meaning_vi": "đông cứng, chăm chú",
+    "stroke_count": 16,
+    "vocab_examples": [
+      {
+        "word": "凝固",
+        "reading": "ぎょうこ",
+        "meaning_vi": "đông đặc, ngưng kết"
+      },
+      {
+        "word": "凝視",
+        "reading": "ぎょうし",
+        "meaning_vi": "nhìn chằm chằm"
+      }
+    ]
+  },
+  {
+    "character": "謹",
+    "onyomi": [
+      "キン"
+    ],
+    "kunyomi": [
+      "つつしむ"
+    ],
+    "meaning_vi": "kính cẩn, thận trọng",
+    "stroke_count": 17,
+    "vocab_examples": [
+      {
+        "word": "謹慎",
+        "reading": "きんしん",
+        "meaning_vi": "cẩn trọng, kiểm điểm"
+      },
+      {
+        "word": "謹賀",
+        "reading": "きんが",
+        "meaning_vi": "kính chúc"
+      }
+    ]
+  },
+  {
+    "character": "鯨",
+    "onyomi": [
+      "ゲイ"
+    ],
+    "kunyomi": [
+      "くじら"
+    ],
+    "meaning_vi": "cá voi",
+    "stroke_count": 19,
+    "vocab_examples": [
+      {
+        "word": "捕鯨",
+        "reading": "ほげい",
+        "meaning_vi": "săn cá voi"
+      },
+      {
+        "word": "鯨油",
+        "reading": "げいゆ",
+        "meaning_vi": "dầu cá voi"
+      }
+    ]
+  },
+  {
+    "character": "傑",
+    "onyomi": [
+      "ケツ"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "kiệt xuất, hào kiệt",
+    "stroke_count": 13,
+    "vocab_examples": [
+      {
+        "word": "傑作",
+        "reading": "けっさく",
+        "meaning_vi": "kiệt tác"
+      },
+      {
+        "word": "豪傑",
+        "reading": "ごうけつ",
+        "meaning_vi": "hào kiệt"
+      }
+    ]
+  },
+  {
+    "character": "弧",
+    "onyomi": [
+      "コ"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "cung, vòng cung",
+    "stroke_count": 9,
+    "vocab_examples": [
+      {
+        "word": "円弧",
+        "reading": "えんこ",
+        "meaning_vi": "cung tròn"
+      },
+      {
+        "word": "括弧",
+        "reading": "かっこ",
+        "meaning_vi": "dấu ngoặc"
+      }
+    ]
+  },
+  {
+    "character": "顧",
+    "onyomi": [
+      "コ"
+    ],
+    "kunyomi": [
+      "かえりみる"
+    ],
+    "meaning_vi": "đoái hoài, nhìn lại",
+    "stroke_count": 21,
+    "vocab_examples": [
+      {
+        "word": "顧客",
+        "reading": "こきゃく",
+        "meaning_vi": "khách hàng"
+      },
+      {
+        "word": "回顧",
+        "reading": "かいこ",
+        "meaning_vi": "hồi tưởng"
+      }
+    ]
+  },
+  {
+    "character": "娯",
+    "onyomi": [
+      "ゴ"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "vui chơi, giải trí",
+    "stroke_count": 10,
+    "vocab_examples": [
+      {
+        "word": "娯楽",
+        "reading": "ごらく",
+        "meaning_vi": "giải trí, tiêu khiển"
+      },
+      {
+        "word": "娯遊",
+        "reading": "ごゆう",
+        "meaning_vi": "vui chơi"
+      }
+    ]
+  },
+  {
+    "character": "肯",
+    "onyomi": [
+      "コウ"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "chấp thuận, ưng",
+    "stroke_count": 8,
+    "vocab_examples": [
+      {
+        "word": "肯定",
+        "reading": "こうてい",
+        "meaning_vi": "khẳng định"
+      },
+      {
+        "word": "首肯",
+        "reading": "しゅこう",
+        "meaning_vi": "gật đầu đồng ý"
+      }
+    ]
+  },
+  {
+    "character": "溝",
+    "onyomi": [
+      "コウ"
+    ],
+    "kunyomi": [
+      "みぞ"
+    ],
+    "meaning_vi": "rãnh, mương; khoảng cách",
+    "stroke_count": 13,
+    "vocab_examples": [
+      {
+        "word": "排水溝",
+        "reading": "はいすいこう",
+        "meaning_vi": "rãnh thoát nước"
+      },
+      {
+        "word": "海溝",
+        "reading": "かいこう",
+        "meaning_vi": "rãnh đại dương"
+      }
+    ]
+  },
+  {
+    "character": "衡",
+    "onyomi": [
+      "コウ"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "cái cân, cân bằng",
+    "stroke_count": 16,
+    "vocab_examples": [
+      {
+        "word": "均衡",
+        "reading": "きんこう",
+        "meaning_vi": "cân bằng"
+      },
+      {
+        "word": "平衡",
+        "reading": "へいこう",
+        "meaning_vi": "thăng bằng"
+      }
+    ]
+  },
+  {
+    "character": "拷",
+    "onyomi": [
+      "ゴウ"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "tra tấn",
+    "stroke_count": 9,
+    "vocab_examples": [
+      {
+        "word": "拷問",
+        "reading": "ごうもん",
+        "meaning_vi": "tra tấn, dùng nhục hình"
+      }
+    ]
+  },
+  {
+    "character": "傲",
+    "onyomi": [
+      "ゴウ"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "ngạo mạn, kiêu căng",
+    "stroke_count": 13,
+    "vocab_examples": [
+      {
+        "word": "傲慢",
+        "reading": "ごうまん",
+        "meaning_vi": "ngạo mạn, kiêu ngạo"
+      },
+      {
+        "word": "傲然",
+        "reading": "ごうぜん",
+        "meaning_vi": "ngạo nghễ"
+      }
+    ]
+  },
+  {
+    "character": "獄",
+    "onyomi": [
+      "ゴク"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "ngục, nhà tù",
+    "stroke_count": 14,
+    "vocab_examples": [
+      {
+        "word": "地獄",
+        "reading": "じごく",
+        "meaning_vi": "địa ngục"
+      },
+      {
+        "word": "監獄",
+        "reading": "かんごく",
+        "meaning_vi": "nhà ngục"
+      }
+    ]
+  },
+  {
+    "character": "墾",
+    "onyomi": [
+      "コン"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "khai khẩn, vỡ hoang",
+    "stroke_count": 16,
+    "vocab_examples": [
+      {
+        "word": "開墾",
+        "reading": "かいこん",
+        "meaning_vi": "khai khẩn đất hoang"
+      }
+    ]
+  },
+  {
+    "character": "懇",
+    "onyomi": [
+      "コン"
+    ],
+    "kunyomi": [
+      "ねんごろ"
+    ],
+    "meaning_vi": "ân cần, thân tình",
+    "stroke_count": 17,
+    "vocab_examples": [
+      {
+        "word": "懇談",
+        "reading": "こんだん",
+        "meaning_vi": "trò chuyện thân mật"
+      },
+      {
+        "word": "懇親",
+        "reading": "こんしん",
+        "meaning_vi": "thân giao, gắn kết"
+      }
+    ]
+  },
+  {
+    "character": "唆",
+    "onyomi": [
+      "サ"
+    ],
+    "kunyomi": [
+      "そそのかす"
+    ],
+    "meaning_vi": "xúi giục, gợi ý",
+    "stroke_count": 10,
+    "vocab_examples": [
+      {
+        "word": "示唆",
+        "reading": "しさ",
+        "meaning_vi": "gợi ý, ám chỉ"
+      },
+      {
+        "word": "教唆",
+        "reading": "きょうさ",
+        "meaning_vi": "xúi giục, kích động"
+      }
+    ]
+  },
+  {
+    "character": "栽",
+    "onyomi": [
+      "サイ"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "trồng trọt",
+    "stroke_count": 10,
+    "vocab_examples": [
+      {
+        "word": "栽培",
+        "reading": "さいばい",
+        "meaning_vi": "trồng trọt, nuôi cấy"
+      },
+      {
+        "word": "盆栽",
+        "reading": "ぼんさい",
+        "meaning_vi": "cây cảnh bonsai"
+      }
+    ]
+  },
+  {
+    "character": "斎",
+    "onyomi": [
+      "サイ"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "trai giới, phòng (thư trai)",
+    "stroke_count": 11,
+    "vocab_examples": [
+      {
+        "word": "書斎",
+        "reading": "しょさい",
+        "meaning_vi": "phòng đọc sách"
+      },
+      {
+        "word": "斎場",
+        "reading": "さいじょう",
+        "meaning_vi": "nơi cử hành tang lễ"
+      }
+    ]
+  },
+  {
+    "character": "債",
+    "onyomi": [
+      "サイ"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "nợ, trái",
+    "stroke_count": 13,
+    "vocab_examples": [
+      {
+        "word": "債務",
+        "reading": "さいむ",
+        "meaning_vi": "nghĩa vụ nợ"
+      },
+      {
+        "word": "国債",
+        "reading": "こくさい",
+        "meaning_vi": "trái phiếu chính phủ"
+      }
+    ]
+  },
+  {
+    "character": "搾",
+    "onyomi": [
+      "サク"
+    ],
+    "kunyomi": [
+      "しぼる"
+    ],
+    "meaning_vi": "vắt, ép, bóc lột",
+    "stroke_count": 13,
+    "vocab_examples": [
+      {
+        "word": "搾取",
+        "reading": "さくしゅ",
+        "meaning_vi": "bóc lột"
+      },
+      {
+        "word": "圧搾",
+        "reading": "あっさく",
+        "meaning_vi": "ép, nén"
+      }
+    ]
+  },
+  {
+    "character": "桟",
+    "onyomi": [
+      "サン"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "thanh ngang, cầu tàu",
+    "stroke_count": 10,
+    "vocab_examples": [
+      {
+        "word": "桟橋",
+        "reading": "さんばし",
+        "meaning_vi": "cầu tàu, bến tàu"
+      },
+      {
+        "word": "桟敷",
+        "reading": "さじき",
+        "meaning_vi": "khán đài, chỗ ngồi cao"
+      }
+    ]
+  },
+  {
+    "character": "肢",
+    "onyomi": [
+      "シ"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "chi, tay chân",
+    "stroke_count": 8,
+    "vocab_examples": [
+      {
+        "word": "肢体",
+        "reading": "したい",
+        "meaning_vi": "thân thể, tứ chi"
+      },
+      {
+        "word": "選択肢",
+        "reading": "せんたくし",
+        "meaning_vi": "lựa chọn, phương án"
+      }
+    ]
+  },
+  {
+    "character": "珠",
+    "onyomi": [
+      "シュ"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "hạt ngọc, châu",
+    "stroke_count": 10,
+    "vocab_examples": [
+      {
+        "word": "真珠",
+        "reading": "しんじゅ",
+        "meaning_vi": "ngọc trai"
+      },
+      {
+        "word": "珠玉",
+        "reading": "しゅぎょく",
+        "meaning_vi": "châu ngọc, tinh hoa"
+      }
+    ]
+  },
+  {
+    "character": "酬",
+    "onyomi": [
+      "シュウ"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "đền đáp, thù lao",
+    "stroke_count": 13,
+    "vocab_examples": [
+      {
+        "word": "報酬",
+        "reading": "ほうしゅう",
+        "meaning_vi": "thù lao, tiền công"
+      },
+      {
+        "word": "応酬",
+        "reading": "おうしゅう",
+        "meaning_vi": "đối đáp, ăn miếng trả miếng"
+      }
+    ]
+  },
+  {
+    "character": "醜",
+    "onyomi": [
+      "シュウ"
+    ],
+    "kunyomi": [
+      "みにくい"
+    ],
+    "meaning_vi": "xấu xí, nhơ nhuốc",
+    "stroke_count": 17,
+    "vocab_examples": [
+      {
+        "word": "醜悪",
+        "reading": "しゅうあく",
+        "meaning_vi": "xấu xa, gớm ghiếc"
+      },
+      {
+        "word": "醜聞",
+        "reading": "しゅうぶん",
+        "meaning_vi": "tin đồn nhơ nhuốc, bê bối"
+      }
+    ]
+  },
+  {
+    "character": "叔",
+    "onyomi": [
+      "シュク"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "chú, cậu (em của cha mẹ)",
+    "stroke_count": 8,
+    "vocab_examples": [
+      {
+        "word": "叔父",
+        "reading": "おじ",
+        "meaning_vi": "chú, cậu"
+      },
+      {
+        "word": "叔母",
+        "reading": "おば",
+        "meaning_vi": "cô, dì"
+      }
+    ]
+  },
+  {
+    "character": "淑",
+    "onyomi": [
+      "シュク"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "hiền thục, đoan trang",
+    "stroke_count": 11,
+    "vocab_examples": [
+      {
+        "word": "淑女",
+        "reading": "しゅくじょ",
+        "meaning_vi": "quý bà, thục nữ"
+      },
+      {
+        "word": "貞淑",
+        "reading": "ていしゅく",
+        "meaning_vi": "trinh thục, nết na"
+      }
+    ]
+  },
+  {
+    "character": "俊",
+    "onyomi": [
+      "シュン"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "tài giỏi, tuấn kiệt",
+    "stroke_count": 9,
+    "vocab_examples": [
+      {
+        "word": "俊才",
+        "reading": "しゅんさい",
+        "meaning_vi": "nhân tài kiệt xuất"
+      },
+      {
+        "word": "俊敏",
+        "reading": "しゅんびん",
+        "meaning_vi": "nhanh nhẹn, tài trí"
+      }
+    ]
+  },
+  {
+    "character": "准",
+    "onyomi": [
+      "ジュン"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "chuẩn, phó",
+    "stroke_count": 10,
+    "vocab_examples": [
+      {
+        "word": "准教授",
+        "reading": "じゅんきょうじゅ",
+        "meaning_vi": "phó giáo sư"
+      },
+      {
+        "word": "批准",
+        "reading": "ひじゅん",
+        "meaning_vi": "phê chuẩn"
+      }
+    ]
+  },
+  {
+    "character": "殉",
+    "onyomi": [
+      "ジュン"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "tuẫn tiết, hy sinh theo",
+    "stroke_count": 10,
+    "vocab_examples": [
+      {
+        "word": "殉職",
+        "reading": "じゅんしょく",
+        "meaning_vi": "tử vong khi làm nhiệm vụ"
+      },
+      {
+        "word": "殉教",
+        "reading": "じゅんきょう",
+        "meaning_vi": "tử vì đạo"
+      }
+    ]
+  },
+  {
+    "character": "叙",
+    "onyomi": [
+      "ジョ"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "trần thuật, phong tặng",
+    "stroke_count": 9,
+    "vocab_examples": [
+      {
+        "word": "叙述",
+        "reading": "じょじゅつ",
+        "meaning_vi": "trần thuật, kể lại"
+      },
+      {
+        "word": "叙情",
+        "reading": "じょじょう",
+        "meaning_vi": "trữ tình"
+      }
+    ]
+  },
+  {
+    "character": "償",
+    "onyomi": [
+      "ショウ"
+    ],
+    "kunyomi": [
+      "つぐなう"
+    ],
+    "meaning_vi": "đền bù, bồi thường",
+    "stroke_count": 17,
+    "vocab_examples": [
+      {
+        "word": "賠償",
+        "reading": "ばいしょう",
+        "meaning_vi": "bồi thường"
+      },
+      {
+        "word": "弁償",
+        "reading": "べんしょう",
+        "meaning_vi": "đền bù thiệt hại"
+      }
+    ]
+  },
+  {
+    "character": "匠",
+    "onyomi": [
+      "ショウ"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "thợ lành nghề, bậc thầy",
+    "stroke_count": 6,
+    "vocab_examples": [
+      {
+        "word": "巨匠",
+        "reading": "きょしょう",
+        "meaning_vi": "bậc thầy lớn"
+      },
+      {
+        "word": "意匠",
+        "reading": "いしょう",
+        "meaning_vi": "thiết kế, kiểu dáng"
+      }
+    ]
+  },
+  {
+    "character": "抄",
+    "onyomi": [
+      "ショウ"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "trích lục, sao chép",
+    "stroke_count": 7,
+    "vocab_examples": [
+      {
+        "word": "抄録",
+        "reading": "しょうろく",
+        "meaning_vi": "bản trích lục"
+      },
+      {
+        "word": "抄本",
+        "reading": "しょうほん",
+        "meaning_vi": "bản sao trích lục"
+      }
+    ]
+  },
+  {
+    "character": "尚",
+    "onyomi": [
+      "ショウ"
+    ],
+    "kunyomi": [
+      "なお"
+    ],
+    "meaning_vi": "chuộng, hơn nữa, cao thượng",
+    "stroke_count": 8,
+    "vocab_examples": [
+      {
+        "word": "高尚",
+        "reading": "こうしょう",
+        "meaning_vi": "cao thượng, tao nhã"
+      },
+      {
+        "word": "尚早",
+        "reading": "しょうそう",
+        "meaning_vi": "còn quá sớm"
+      }
+    ]
+  },
+  {
+    "character": "祥",
+    "onyomi": [
+      "ショウ"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "điềm lành, tốt lành",
+    "stroke_count": 10,
+    "vocab_examples": [
+      {
+        "word": "不祥事",
+        "reading": "ふしょうじ",
+        "meaning_vi": "vụ bê bối"
+      },
+      {
+        "word": "発祥",
+        "reading": "はっしょう",
+        "meaning_vi": "phát tích, khởi nguồn"
+      }
+    ]
+  },
+  {
+    "character": "渉",
+    "onyomi": [
+      "ショウ"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "vượt qua, liên quan",
+    "stroke_count": 11,
+    "vocab_examples": [
+      {
+        "word": "交渉",
+        "reading": "こうしょう",
+        "meaning_vi": "đàm phán, thương lượng"
+      },
+      {
+        "word": "干渉",
+        "reading": "かんしょう",
+        "meaning_vi": "can thiệp"
+      }
+    ]
+  },
+  {
+    "character": "訟",
+    "onyomi": [
+      "ショウ"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "kiện tụng",
+    "stroke_count": 11,
+    "vocab_examples": [
+      {
+        "word": "訴訟",
+        "reading": "そしょう",
+        "meaning_vi": "tố tụng, kiện tụng"
+      }
+    ]
+  },
+  {
+    "character": "晶",
+    "onyomi": [
+      "ショウ"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "tinh thể, trong suốt",
+    "stroke_count": 12,
+    "vocab_examples": [
+      {
+        "word": "結晶",
+        "reading": "けっしょう",
+        "meaning_vi": "kết tinh, tinh thể"
+      },
+      {
+        "word": "水晶",
+        "reading": "すいしょう",
+        "meaning_vi": "thạch anh, pha lê"
+      }
+    ]
+  },
+  {
+    "character": "硝",
+    "onyomi": [
+      "ショウ"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "diêm tiêu, nitrat",
+    "stroke_count": 12,
+    "vocab_examples": [
+      {
+        "word": "硝酸",
+        "reading": "しょうさん",
+        "meaning_vi": "axit nitric"
+      },
+      {
+        "word": "硝煙",
+        "reading": "しょうえん",
+        "meaning_vi": "khói thuốc súng"
+      }
+    ]
+  },
+  {
+    "character": "冗",
+    "onyomi": [
+      "ジョウ"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "thừa, dài dòng, đùa",
+    "stroke_count": 4,
+    "vocab_examples": [
+      {
+        "word": "冗談",
+        "reading": "じょうだん",
+        "meaning_vi": "lời nói đùa"
+      },
+      {
+        "word": "冗長",
+        "reading": "じょうちょう",
+        "meaning_vi": "dài dòng, lê thê"
+      }
+    ]
+  },
+  {
+    "character": "浄",
+    "onyomi": [
+      "ジョウ"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "trong sạch, thanh tịnh",
+    "stroke_count": 9,
+    "vocab_examples": [
+      {
+        "word": "浄化",
+        "reading": "じょうか",
+        "meaning_vi": "thanh lọc"
+      },
+      {
+        "word": "清浄",
+        "reading": "せいじょう",
+        "meaning_vi": "sạch sẽ, thanh khiết"
+      }
+    ]
+  },
+  {
+    "character": "剰",
+    "onyomi": [
+      "ジョウ"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "dư thừa",
+    "stroke_count": 11,
+    "vocab_examples": [
+      {
+        "word": "過剰",
+        "reading": "かじょう",
+        "meaning_vi": "quá mức, dư thừa"
+      },
+      {
+        "word": "余剰",
+        "reading": "よじょう",
+        "meaning_vi": "thặng dư, dôi dư"
+      }
+    ]
+  },
+  {
+    "character": "壌",
+    "onyomi": [
+      "ジョウ"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "đất đai, thổ nhưỡng",
+    "stroke_count": 16,
+    "vocab_examples": [
+      {
+        "word": "土壌",
+        "reading": "どじょう",
+        "meaning_vi": "thổ nhưỡng, đất"
+      }
+    ]
+  },
+  {
+    "character": "嬢",
+    "onyomi": [
+      "ジョウ"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "tiểu thư, cô gái trẻ",
+    "stroke_count": 16,
+    "vocab_examples": [
+      {
+        "word": "令嬢",
+        "reading": "れいじょう",
+        "meaning_vi": "tiểu thư, ái nữ"
+      },
+      {
+        "word": "愛嬢",
+        "reading": "あいじょう",
+        "meaning_vi": "ái nữ"
+      }
+    ]
+  },
+  {
+    "character": "錠",
+    "onyomi": [
+      "ジョウ"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "ổ khóa; viên thuốc",
+    "stroke_count": 16,
+    "vocab_examples": [
+      {
+        "word": "錠剤",
+        "reading": "じょうざい",
+        "meaning_vi": "viên thuốc"
+      },
+      {
+        "word": "手錠",
+        "reading": "てじょう",
+        "meaning_vi": "còng tay"
+      }
+    ]
+  },
+  {
+    "character": "拭",
+    "onyomi": [
+      "ショク"
+    ],
+    "kunyomi": [
+      "ふく",
+      "ぬぐう"
+    ],
+    "meaning_vi": "lau, chùi",
+    "stroke_count": 9,
+    "vocab_examples": [
+      {
+        "word": "払拭",
+        "reading": "ふっしょく",
+        "meaning_vi": "xua tan, gột bỏ"
+      },
+      {
+        "word": "拭浄",
+        "reading": "しょくじょう",
+        "meaning_vi": "lau sạch"
+      }
+    ]
+  },
+  {
+    "character": "嘱",
+    "onyomi": [
+      "ショク"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "ủy thác, dặn dò",
+    "stroke_count": 15,
+    "vocab_examples": [
+      {
+        "word": "嘱託",
+        "reading": "しょくたく",
+        "meaning_vi": "ủy thác, nhân viên hợp đồng"
+      },
+      {
+        "word": "委嘱",
+        "reading": "いしょく",
+        "meaning_vi": "ủy thác, giao phó"
+      }
+    ]
+  }
+]

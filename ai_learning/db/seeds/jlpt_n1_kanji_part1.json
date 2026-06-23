@@ -158,30 +158,6 @@
     ]
   },
   {
-    "character": "溶",
-    "onyomi": [
-      "ヨウ"
-    ],
-    "kunyomi": [
-      "とける",
-      "とかす"
-    ],
-    "meaning_vi": "tan, hòa tan, nóng chảy",
-    "stroke_count": 13,
-    "vocab_examples": [
-      {
-        "word": "溶液",
-        "reading": "ようえき",
-        "meaning_vi": "dung dịch"
-      },
-      {
-        "word": "溶解",
-        "reading": "ようかい",
-        "meaning_vi": "hòa tan"
-      }
-    ]
-  },
-  {
     "character": "稿",
     "onyomi": [
       "コウ"
@@ -245,29 +221,6 @@
         "word": "綾纈",
         "reading": "りょうけち",
         "meaning_vi": "vải nhuộm trang trí"
-      }
-    ]
-  },
-  {
-    "character": "縣",
-    "onyomi": [
-      "ケン"
-    ],
-    "kunyomi": [
-      "かかる"
-    ],
-    "meaning_vi": "treo, lủng, quan huyện (cổ)",
-    "stroke_count": 13,
-    "vocab_examples": [
-      {
-        "word": "縣令",
-        "reading": "けんれい",
-        "meaning_vi": "quan huyện"
-      },
-      {
-        "word": "県",
-        "reading": "けん",
-        "meaning_vi": "tỉnh"
       }
     ]
   },
@@ -738,22 +691,6 @@
     ]
   },
   {
-    "character": "锞",
-    "onyomi": [
-      "ク"
-    ],
-    "kunyomi": [],
-    "meaning_vi": "Ku (ký hiệu hoá học)",
-    "stroke_count": 12,
-    "vocab_examples": [
-      {
-        "word": "锞",
-        "reading": "あきがね",
-        "meaning_vi": "đồng Ku"
-      }
-    ]
-  },
-  {
     "character": "賡",
     "onyomi": [
       "コウ"
@@ -779,19 +716,16 @@
     "onyomi": [
       "コウ"
     ],
-    "kunyomi": [],
-    "meaning_vi": "châu chấu, thầy bói (cổ)",
+    "kunyomi": [
+      "いなご"
+    ],
+    "meaning_vi": "châu chấu",
     "stroke_count": 15,
     "vocab_examples": [
       {
-        "word": "蝗虫",
-        "reading": "こうちゅう",
-        "meaning_vi": "châu chấu"
-      },
-      {
         "word": "蝗害",
         "reading": "こうがい",
-        "meaning_vi": "thiệt hại do châu chấu"
+        "meaning_vi": "nạn châu chấu phá hoại mùa màng"
       }
     ]
   },
@@ -835,27 +769,6 @@
         "word": "讒訴",
         "reading": "ざんそ",
         "meaning_vi": "tố cáo sai"
-      }
-    ]
-  },
-  {
-    "character": "貲",
-    "onyomi": [
-      "し"
-    ],
-    "kunyomi": [],
-    "meaning_vi": "tiền tài, tài sản (cổ)",
-    "stroke_count": 12,
-    "vocab_examples": [
-      {
-        "word": "资财",
-        "reading": "しざい",
-        "meaning_vi": "tài sản"
-      },
-      {
-        "word": "貲産",
-        "reading": "しさん",
-        "meaning_vi": "tài sản, của cải"
       }
     ]
   },

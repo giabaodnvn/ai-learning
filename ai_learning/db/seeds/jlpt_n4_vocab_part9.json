@@ -1,0 +1,441 @@
+[
+  {
+    "word": "打つ",
+    "reading": "うつ",
+    "romaji": "utsu",
+    "meaning_vi": "đánh, đập, gõ",
+    "part_of_speech": "verb",
+    "tags": [
+      "daily"
+    ]
+  },
+  {
+    "word": "起こす",
+    "reading": "おこす",
+    "romaji": "okosu",
+    "meaning_vi": "đánh thức, gây ra",
+    "part_of_speech": "verb",
+    "tags": [
+      "daily"
+    ]
+  },
+  {
+    "word": "行う",
+    "reading": "おこなう",
+    "romaji": "okonau",
+    "meaning_vi": "tiến hành, thực hiện",
+    "part_of_speech": "verb",
+    "tags": [
+      "formal",
+      "business"
+    ]
+  },
+  {
+    "word": "落とす",
+    "reading": "おとす",
+    "romaji": "otosu",
+    "meaning_vi": "làm rơi, đánh rớt",
+    "part_of_speech": "verb",
+    "tags": [
+      "daily"
+    ]
+  },
+  {
+    "word": "踊る",
+    "reading": "おどる",
+    "romaji": "odoru",
+    "meaning_vi": "nhảy, múa",
+    "part_of_speech": "verb",
+    "tags": [
+      "daily"
+    ]
+  },
+  {
+    "word": "飾る",
+    "reading": "かざる",
+    "romaji": "kazaru",
+    "meaning_vi": "trang trí",
+    "part_of_speech": "verb",
+    "tags": [
+      "daily"
+    ]
+  },
+  {
+    "word": "勝つ",
+    "reading": "かつ",
+    "romaji": "katsu",
+    "meaning_vi": "thắng",
+    "part_of_speech": "verb",
+    "tags": [
+      "daily"
+    ]
+  },
+  {
+    "word": "噛む",
+    "reading": "かむ",
+    "romaji": "kamu",
+    "meaning_vi": "cắn, nhai",
+    "part_of_speech": "verb",
+    "tags": [
+      "daily"
+    ]
+  },
+  {
+    "word": "暮らす",
+    "reading": "くらす",
+    "romaji": "kurasu",
+    "meaning_vi": "sinh sống",
+    "part_of_speech": "verb",
+    "tags": [
+      "daily"
+    ]
+  },
+  {
+    "word": "配る",
+    "reading": "くばる",
+    "romaji": "kubaru",
+    "meaning_vi": "phân phát",
+    "part_of_speech": "verb",
+    "tags": [
+      "daily"
+    ]
+  },
+  {
+    "word": "暮れる",
+    "reading": "くれる",
+    "romaji": "kureru",
+    "meaning_vi": "(trời) tối, (năm) tàn",
+    "part_of_speech": "verb",
+    "tags": [
+      "daily",
+      "literary"
+    ]
+  },
+  {
+    "word": "加える",
+    "reading": "くわえる",
+    "romaji": "kuwaeru",
+    "meaning_vi": "thêm vào",
+    "part_of_speech": "verb",
+    "tags": [
+      "abstract",
+      "daily"
+    ]
+  },
+  {
+    "word": "超す",
+    "reading": "こす",
+    "romaji": "kosu",
+    "meaning_vi": "vượt qua",
+    "part_of_speech": "verb",
+    "tags": [
+      "abstract",
+      "daily"
+    ]
+  },
+  {
+    "word": "下がる",
+    "reading": "さがる",
+    "romaji": "sagaru",
+    "meaning_vi": "hạ xuống, giảm",
+    "part_of_speech": "verb",
+    "tags": [
+      "daily"
+    ]
+  },
+  {
+    "word": "騒ぐ",
+    "reading": "さわぐ",
+    "romaji": "sawagu",
+    "meaning_vi": "ồn ào, làm ầm",
+    "part_of_speech": "verb",
+    "tags": [
+      "daily",
+      "emotion"
+    ]
+  },
+  {
+    "word": "沈む",
+    "reading": "しずむ",
+    "romaji": "shizumu",
+    "meaning_vi": "chìm, lặn (mặt trời)",
+    "part_of_speech": "verb",
+    "tags": [
+      "daily",
+      "literary"
+    ]
+  },
+  {
+    "word": "過ごす",
+    "reading": "すごす",
+    "romaji": "sugosu",
+    "meaning_vi": "trải qua (thời gian)",
+    "part_of_speech": "verb",
+    "tags": [
+      "daily"
+    ]
+  },
+  {
+    "word": "捨てる",
+    "reading": "すてる",
+    "romaji": "suteru",
+    "meaning_vi": "vứt bỏ",
+    "part_of_speech": "verb",
+    "tags": [
+      "daily"
+    ]
+  },
+  {
+    "word": "滑る",
+    "reading": "すべる",
+    "romaji": "suberu",
+    "meaning_vi": "trượt, trơn",
+    "part_of_speech": "verb",
+    "tags": [
+      "daily"
+    ]
+  },
+  {
+    "word": "戦う",
+    "reading": "たたかう",
+    "romaji": "tatakau",
+    "meaning_vi": "chiến đấu, đấu tranh",
+    "part_of_speech": "verb",
+    "tags": [
+      "abstract"
+    ]
+  },
+  {
+    "word": "立てる",
+    "reading": "たてる",
+    "romaji": "tateru",
+    "meaning_vi": "dựng, lập (kế hoạch)",
+    "part_of_speech": "verb",
+    "tags": [
+      "daily",
+      "abstract"
+    ]
+  },
+  {
+    "word": "試す",
+    "reading": "ためす",
+    "romaji": "tamesu",
+    "meaning_vi": "thử, kiểm tra",
+    "part_of_speech": "verb",
+    "tags": [
+      "daily"
+    ]
+  },
+  {
+    "word": "足りる",
+    "reading": "たりる",
+    "romaji": "tariru",
+    "meaning_vi": "đủ",
+    "part_of_speech": "verb",
+    "tags": [
+      "daily"
+    ]
+  },
+  {
+    "word": "捕まる",
+    "reading": "つかまる",
+    "romaji": "tsukamaru",
+    "meaning_vi": "bị bắt, bám vào",
+    "part_of_speech": "verb",
+    "tags": [
+      "daily"
+    ]
+  },
+  {
+    "word": "勤める",
+    "reading": "つとめる",
+    "romaji": "tsutomeru",
+    "meaning_vi": "làm việc (tại), phục vụ",
+    "part_of_speech": "verb",
+    "tags": [
+      "business",
+      "daily"
+    ]
+  },
+  {
+    "word": "積もる",
+    "reading": "つもる",
+    "romaji": "tsumoru",
+    "meaning_vi": "chất đống, (tuyết) phủ",
+    "part_of_speech": "verb",
+    "tags": [
+      "daily"
+    ]
+  },
+  {
+    "word": "釣る",
+    "reading": "つる",
+    "romaji": "tsuru",
+    "meaning_vi": "câu (cá)",
+    "part_of_speech": "verb",
+    "tags": [
+      "daily"
+    ]
+  },
+  {
+    "word": "連れる",
+    "reading": "つれる",
+    "romaji": "tsureru",
+    "meaning_vi": "dẫn theo, đưa đi",
+    "part_of_speech": "verb",
+    "tags": [
+      "daily"
+    ]
+  },
+  {
+    "word": "捕る",
+    "reading": "とる",
+    "romaji": "toru",
+    "meaning_vi": "bắt, tóm",
+    "part_of_speech": "verb",
+    "tags": [
+      "daily"
+    ]
+  },
+  {
+    "word": "亡くなる",
+    "reading": "なくなる",
+    "romaji": "nakunaru",
+    "meaning_vi": "qua đời, mất",
+    "part_of_speech": "verb",
+    "tags": [
+      "daily",
+      "emotion"
+    ]
+  },
+  {
+    "word": "殴る",
+    "reading": "なぐる",
+    "romaji": "naguru",
+    "meaning_vi": "đấm, đánh",
+    "part_of_speech": "verb",
+    "tags": [
+      "daily",
+      "emotion"
+    ]
+  },
+  {
+    "word": "慣れる",
+    "reading": "なれる",
+    "romaji": "nareru",
+    "meaning_vi": "quen với",
+    "part_of_speech": "verb",
+    "tags": [
+      "daily",
+      "abstract"
+    ]
+  },
+  {
+    "word": "盗む",
+    "reading": "ぬすむ",
+    "romaji": "nusumu",
+    "meaning_vi": "ăn trộm",
+    "part_of_speech": "verb",
+    "tags": [
+      "daily"
+    ]
+  },
+  {
+    "word": "残る",
+    "reading": "のこる",
+    "romaji": "nokoru",
+    "meaning_vi": "còn lại, ở lại",
+    "part_of_speech": "verb",
+    "tags": [
+      "daily",
+      "abstract"
+    ]
+  },
+  {
+    "word": "意外",
+    "reading": "いがい",
+    "romaji": "igai",
+    "meaning_vi": "ngoài dự đoán, bất ngờ",
+    "part_of_speech": "adjective",
+    "tags": [
+      "abstract",
+      "emotion"
+    ]
+  },
+  {
+    "word": "熱心",
+    "reading": "ねっしん",
+    "romaji": "nesshin",
+    "meaning_vi": "nhiệt tình, hăng hái",
+    "part_of_speech": "adjective",
+    "tags": [
+      "character",
+      "emotion"
+    ]
+  },
+  {
+    "word": "盛ん",
+    "reading": "さかん",
+    "romaji": "sakan",
+    "meaning_vi": "thịnh hành, sôi nổi",
+    "part_of_speech": "adjective",
+    "tags": [
+      "abstract",
+      "social"
+    ]
+  },
+  {
+    "word": "素敵",
+    "reading": "すてき",
+    "romaji": "suteki",
+    "meaning_vi": "tuyệt vời, đẹp",
+    "part_of_speech": "adjective",
+    "tags": [
+      "daily",
+      "emotion"
+    ]
+  },
+  {
+    "word": "急",
+    "reading": "きゅう",
+    "romaji": "kyuu",
+    "meaning_vi": "gấp, đột ngột, dốc",
+    "part_of_speech": "adjective",
+    "tags": [
+      "daily",
+      "abstract"
+    ]
+  },
+  {
+    "word": "固い",
+    "reading": "かたい",
+    "romaji": "katai",
+    "meaning_vi": "cứng, chắc",
+    "part_of_speech": "adjective",
+    "tags": [
+      "daily"
+    ]
+  },
+  {
+    "word": "一度",
+    "reading": "いちど",
+    "romaji": "ichido",
+    "meaning_vi": "một lần",
+    "part_of_speech": "noun",
+    "tags": [
+      "daily",
+      "time"
+    ]
+  },
+  {
+    "word": "受付",
+    "reading": "うけつけ",
+    "romaji": "uketsuke",
+    "meaning_vi": "quầy tiếp tân",
+    "part_of_speech": "noun",
+    "tags": [
+      "daily",
+      "place"
+    ]
+  }
+]

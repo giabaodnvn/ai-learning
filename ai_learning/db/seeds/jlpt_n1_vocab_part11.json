@@ -1,0 +1,758 @@
+[
+  {
+    "word": "斡旋",
+    "reading": "あっせん",
+    "romaji": "assen",
+    "meaning_vi": "môi giới, dàn xếp, làm trung gian",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "social"
+    ]
+  },
+  {
+    "word": "案の定",
+    "reading": "あんのじょう",
+    "romaji": "annojou",
+    "meaning_vi": "đúng như dự đoán, quả nhiên",
+    "part_of_speech": "adverb",
+    "tags": [
+      "formal"
+    ]
+  },
+  {
+    "word": "委託",
+    "reading": "いたく",
+    "romaji": "itaku",
+    "meaning_vi": "ủy thác, giao phó",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "business"
+    ]
+  },
+  {
+    "word": "一律",
+    "reading": "いちりつ",
+    "romaji": "ichiritsu",
+    "meaning_vi": "đồng loạt, nhất loạt, đồng đều",
+    "part_of_speech": "adjective",
+    "tags": [
+      "formal",
+      "abstract"
+    ]
+  },
+  {
+    "word": "一連",
+    "reading": "いちれん",
+    "romaji": "ichiren",
+    "meaning_vi": "một loạt, liên hoàn, một chuỗi",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract",
+      "formal"
+    ]
+  },
+  {
+    "word": "打診",
+    "reading": "だしん",
+    "romaji": "dashin",
+    "meaning_vi": "thăm dò (ý kiến), gõ chẩn",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "business"
+    ]
+  },
+  {
+    "word": "駆使",
+    "reading": "くし",
+    "romaji": "kushi",
+    "meaning_vi": "vận dụng thành thạo, sử dụng linh hoạt",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "abstract"
+    ]
+  },
+  {
+    "word": "干渉",
+    "reading": "かんしょう",
+    "romaji": "kanshou",
+    "meaning_vi": "can thiệp, xen vào",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "social"
+    ]
+  },
+  {
+    "word": "肝心",
+    "reading": "かんじん",
+    "romaji": "kanjin",
+    "meaning_vi": "cốt yếu, quan trọng nhất, then chốt",
+    "part_of_speech": "adjective",
+    "tags": [
+      "abstract",
+      "formal"
+    ]
+  },
+  {
+    "word": "簡素",
+    "reading": "かんそ",
+    "romaji": "kanso",
+    "meaning_vi": "giản dị, đơn giản, mộc mạc",
+    "part_of_speech": "adjective",
+    "tags": [
+      "formal",
+      "abstract"
+    ]
+  },
+  {
+    "word": "勘違い",
+    "reading": "かんちがい",
+    "romaji": "kanchigai",
+    "meaning_vi": "hiểu lầm, ngộ nhận",
+    "part_of_speech": "noun",
+    "tags": [
+      "daily",
+      "abstract"
+    ]
+  },
+  {
+    "word": "貫徹",
+    "reading": "かんてつ",
+    "romaji": "kantetsu",
+    "meaning_vi": "quán triệt, thực hiện đến cùng",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "abstract"
+    ]
+  },
+  {
+    "word": "陥る",
+    "reading": "おちいる",
+    "romaji": "ochiiru",
+    "meaning_vi": "rơi vào, sa vào (tình huống xấu)",
+    "part_of_speech": "verb",
+    "tags": [
+      "formal",
+      "abstract"
+    ]
+  },
+  {
+    "word": "概して",
+    "reading": "がいして",
+    "romaji": "gaishite",
+    "meaning_vi": "nói chung, đại thể",
+    "part_of_speech": "adverb",
+    "tags": [
+      "formal"
+    ]
+  },
+  {
+    "word": "画期的",
+    "reading": "かっきてき",
+    "romaji": "kakkiteki",
+    "meaning_vi": "mang tính bước ngoặt, đột phá",
+    "part_of_speech": "adjective",
+    "tags": [
+      "formal",
+      "abstract"
+    ]
+  },
+  {
+    "word": "拡充",
+    "reading": "かくじゅう",
+    "romaji": "kakujuu",
+    "meaning_vi": "mở rộng và tăng cường",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "business"
+    ]
+  },
+  {
+    "word": "覚悟",
+    "reading": "かくご",
+    "romaji": "kakugo",
+    "meaning_vi": "sự sẵn sàng (tinh thần), quyết tâm chịu đựng",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract",
+      "emotion"
+    ]
+  },
+  {
+    "word": "隔離",
+    "reading": "かくり",
+    "romaji": "kakuri",
+    "meaning_vi": "cách ly, tách biệt",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "medical"
+    ]
+  },
+  {
+    "word": "箇条書き",
+    "reading": "かじょうがき",
+    "romaji": "kajougaki",
+    "meaning_vi": "viết theo từng mục, liệt kê đầu dòng",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "business"
+    ]
+  },
+  {
+    "word": "勧誘",
+    "reading": "かんゆう",
+    "romaji": "kanyuu",
+    "meaning_vi": "mời mọc, chiêu mộ, lôi kéo",
+    "part_of_speech": "noun",
+    "tags": [
+      "social",
+      "business"
+    ]
+  },
+  {
+    "word": "企て",
+    "reading": "くわだて",
+    "romaji": "kuwadate",
+    "meaning_vi": "mưu đồ, kế hoạch (thường tiêu cực)",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "abstract"
+    ]
+  },
+  {
+    "word": "軌道",
+    "reading": "きどう",
+    "romaji": "kidou",
+    "meaning_vi": "quỹ đạo, đường ray",
+    "part_of_speech": "noun",
+    "tags": [
+      "academic",
+      "abstract"
+    ]
+  },
+  {
+    "word": "欺く",
+    "reading": "あざむく",
+    "romaji": "azamuku",
+    "meaning_vi": "lừa dối, đánh lừa",
+    "part_of_speech": "verb",
+    "tags": [
+      "formal"
+    ]
+  },
+  {
+    "word": "擬似",
+    "reading": "ぎじ",
+    "romaji": "giji",
+    "meaning_vi": "giả lập, mô phỏng, giả tựa",
+    "part_of_speech": "adjective",
+    "tags": [
+      "academic",
+      "abstract"
+    ]
+  },
+  {
+    "word": "犠牲",
+    "reading": "ぎせい",
+    "romaji": "gisei",
+    "meaning_vi": "hy sinh, sự thiệt thòi",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract",
+      "emotion"
+    ]
+  },
+  {
+    "word": "窮地",
+    "reading": "きゅうち",
+    "romaji": "kyuuchi",
+    "meaning_vi": "tình thế khốn cùng, bước đường cùng",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "abstract"
+    ]
+  },
+  {
+    "word": "享受",
+    "reading": "きょうじゅ",
+    "romaji": "kyouju",
+    "meaning_vi": "hưởng thụ, thụ hưởng",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "abstract"
+    ]
+  },
+  {
+    "word": "強制",
+    "reading": "きょうせい",
+    "romaji": "kyousei",
+    "meaning_vi": "cưỡng chế, ép buộc",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "social"
+    ]
+  },
+  {
+    "word": "脅迫",
+    "reading": "きょうはく",
+    "romaji": "kyouhaku",
+    "meaning_vi": "đe dọa, uy hiếp",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "legal"
+    ]
+  },
+  {
+    "word": "拒絶",
+    "reading": "きょぜつ",
+    "romaji": "kyozetsu",
+    "meaning_vi": "cự tuyệt, từ chối thẳng thừng",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "emotion"
+    ]
+  },
+  {
+    "word": "極端",
+    "reading": "きょくたん",
+    "romaji": "kyokutan",
+    "meaning_vi": "cực đoan, thái quá",
+    "part_of_speech": "adjective",
+    "tags": [
+      "abstract",
+      "formal"
+    ]
+  },
+  {
+    "word": "緊迫",
+    "reading": "きんぱく",
+    "romaji": "kinpaku",
+    "meaning_vi": "căng thẳng, cấp bách",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "abstract"
+    ]
+  },
+  {
+    "word": "駆動",
+    "reading": "くどう",
+    "romaji": "kudou",
+    "meaning_vi": "dẫn động, truyền động",
+    "part_of_speech": "noun",
+    "tags": [
+      "academic",
+      "technical"
+    ]
+  },
+  {
+    "word": "屈折",
+    "reading": "くっせつ",
+    "romaji": "kussetsu",
+    "meaning_vi": "khúc xạ, gấp khúc, méo mó (tâm lý)",
+    "part_of_speech": "noun",
+    "tags": [
+      "academic",
+      "abstract"
+    ]
+  },
+  {
+    "word": "工面",
+    "reading": "くめん",
+    "romaji": "kumen",
+    "meaning_vi": "xoay xở, thu xếp (tiền bạc)",
+    "part_of_speech": "noun",
+    "tags": [
+      "daily",
+      "formal"
+    ]
+  },
+  {
+    "word": "継承",
+    "reading": "けいしょう",
+    "romaji": "keishou",
+    "meaning_vi": "kế thừa, thừa kế",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "abstract"
+    ]
+  },
+  {
+    "word": "形勢",
+    "reading": "けいせい",
+    "romaji": "keisei",
+    "meaning_vi": "cục diện, tình thế",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "abstract"
+    ]
+  },
+  {
+    "word": "啓発",
+    "reading": "けいはつ",
+    "romaji": "keihatsu",
+    "meaning_vi": "khai sáng, giác ngộ, nâng cao nhận thức",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "abstract"
+    ]
+  },
+  {
+    "word": "経歴",
+    "reading": "けいれき",
+    "romaji": "keireki",
+    "meaning_vi": "lý lịch, quá trình công tác",
+    "part_of_speech": "noun",
+    "tags": [
+      "business",
+      "formal"
+    ]
+  },
+  {
+    "word": "結束",
+    "reading": "けっそく",
+    "romaji": "kessoku",
+    "meaning_vi": "đoàn kết, gắn kết",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract",
+      "social"
+    ]
+  },
+  {
+    "word": "傑作",
+    "reading": "けっさく",
+    "romaji": "kessaku",
+    "meaning_vi": "kiệt tác, tác phẩm xuất sắc",
+    "part_of_speech": "noun",
+    "tags": [
+      "art",
+      "formal"
+    ]
+  },
+  {
+    "word": "懸命",
+    "reading": "けんめい",
+    "romaji": "kenmei",
+    "meaning_vi": "hết sức, cật lực, dốc sức",
+    "part_of_speech": "adjective",
+    "tags": [
+      "abstract",
+      "emotion"
+    ]
+  },
+  {
+    "word": "倹約",
+    "reading": "けんやく",
+    "romaji": "kenyaku",
+    "meaning_vi": "tiết kiệm, dè sẻn",
+    "part_of_speech": "noun",
+    "tags": [
+      "daily",
+      "formal"
+    ]
+  },
+  {
+    "word": "顕著",
+    "reading": "けんちょ",
+    "romaji": "kencho",
+    "meaning_vi": "rõ rệt, nổi bật, hiển nhiên",
+    "part_of_speech": "adjective",
+    "tags": [
+      "formal",
+      "abstract"
+    ]
+  },
+  {
+    "word": "巧妙",
+    "reading": "こうみょう",
+    "romaji": "koumyou",
+    "meaning_vi": "khéo léo, tinh xảo, cao minh",
+    "part_of_speech": "adjective",
+    "tags": [
+      "formal",
+      "abstract"
+    ]
+  },
+  {
+    "word": "購読",
+    "reading": "こうどく",
+    "romaji": "koudoku",
+    "meaning_vi": "đặt mua (báo, tạp chí)",
+    "part_of_speech": "noun",
+    "tags": [
+      "daily",
+      "business"
+    ]
+  },
+  {
+    "word": "拘束",
+    "reading": "こうそく",
+    "romaji": "kousoku",
+    "meaning_vi": "ràng buộc, câu thúc, tạm giữ",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "legal"
+    ]
+  },
+  {
+    "word": "公然",
+    "reading": "こうぜん",
+    "romaji": "kouzen",
+    "meaning_vi": "công khai, ngang nhiên",
+    "part_of_speech": "adjective",
+    "tags": [
+      "formal",
+      "abstract"
+    ]
+  },
+  {
+    "word": "交錯",
+    "reading": "こうさく",
+    "romaji": "kousaku",
+    "meaning_vi": "đan xen, lẫn lộn",
+    "part_of_speech": "noun",
+    "tags": [
+      "literary",
+      "abstract"
+    ]
+  },
+  {
+    "word": "酷似",
+    "reading": "こくじ",
+    "romaji": "kokuji",
+    "meaning_vi": "giống hệt, rất giống",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "abstract"
+    ]
+  },
+  {
+    "word": "誇張",
+    "reading": "こちょう",
+    "romaji": "kochou",
+    "meaning_vi": "khoa trương, phóng đại",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "abstract"
+    ]
+  },
+  {
+    "word": "混乱",
+    "reading": "こんらん",
+    "romaji": "konran",
+    "meaning_vi": "hỗn loạn, rối loạn",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract",
+      "social"
+    ]
+  },
+  {
+    "word": "催促",
+    "reading": "さいそく",
+    "romaji": "saisoku",
+    "meaning_vi": "thúc giục, đòi (hối thúc)",
+    "part_of_speech": "noun",
+    "tags": [
+      "daily",
+      "business"
+    ]
+  },
+  {
+    "word": "細心",
+    "reading": "さいしん",
+    "romaji": "saishin",
+    "meaning_vi": "cẩn thận tỉ mỉ, thận trọng cao độ",
+    "part_of_speech": "adjective",
+    "tags": [
+      "formal",
+      "abstract"
+    ]
+  },
+  {
+    "word": "採択",
+    "reading": "さいたく",
+    "romaji": "saitaku",
+    "meaning_vi": "thông qua, lựa chọn (nghị quyết)",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "business"
+    ]
+  },
+  {
+    "word": "栽培",
+    "reading": "さいばい",
+    "romaji": "saibai",
+    "meaning_vi": "trồng trọt, gieo trồng, nuôi cấy",
+    "part_of_speech": "noun",
+    "tags": [
+      "academic",
+      "daily"
+    ]
+  },
+  {
+    "word": "錯覚",
+    "reading": "さっかく",
+    "romaji": "sakkaku",
+    "meaning_vi": "ảo giác, ngộ nhận",
+    "part_of_speech": "noun",
+    "tags": [
+      "academic",
+      "abstract"
+    ]
+  },
+  {
+    "word": "殺到",
+    "reading": "さっとう",
+    "romaji": "sattou",
+    "meaning_vi": "ùa đến, dồn dập kéo đến",
+    "part_of_speech": "noun",
+    "tags": [
+      "social",
+      "abstract"
+    ]
+  },
+  {
+    "word": "斬新",
+    "reading": "ざんしん",
+    "romaji": "zanshin",
+    "meaning_vi": "mới mẻ, tân kỳ, độc đáo",
+    "part_of_speech": "adjective",
+    "tags": [
+      "formal",
+      "art"
+    ]
+  },
+  {
+    "word": "暫定",
+    "reading": "ざんてい",
+    "romaji": "zantei",
+    "meaning_vi": "tạm thời, lâm thời",
+    "part_of_speech": "adjective",
+    "tags": [
+      "formal",
+      "business"
+    ]
+  },
+  {
+    "word": "時宜",
+    "reading": "じぎ",
+    "romaji": "jigi",
+    "meaning_vi": "đúng thời điểm, hợp thời",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "literary"
+    ]
+  },
+  {
+    "word": "自粛",
+    "reading": "じしゅく",
+    "romaji": "jishuku",
+    "meaning_vi": "tự kiềm chế, tự hạn chế",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "social"
+    ]
+  },
+  {
+    "word": "収束",
+    "reading": "しゅうそく",
+    "romaji": "shuusoku",
+    "meaning_vi": "lắng xuống, hội tụ, kết thúc dần",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "abstract"
+    ]
+  },
+  {
+    "word": "修復",
+    "reading": "しゅうふく",
+    "romaji": "shuufuku",
+    "meaning_vi": "tu sửa, khôi phục, hàn gắn",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "abstract"
+    ]
+  },
+  {
+    "word": "熟知",
+    "reading": "じゅくち",
+    "romaji": "jukuchi",
+    "meaning_vi": "am hiểu tường tận, thông thạo",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "abstract"
+    ]
+  },
+  {
+    "word": "循環",
+    "reading": "じゅんかん",
+    "romaji": "junkan",
+    "meaning_vi": "tuần hoàn, luân chuyển",
+    "part_of_speech": "noun",
+    "tags": [
+      "academic",
+      "abstract"
+    ]
+  },
+  {
+    "word": "傷害",
+    "reading": "しょうがい",
+    "romaji": "shougai",
+    "meaning_vi": "gây thương tích, tổn hại thân thể",
+    "part_of_speech": "noun",
+    "tags": [
+      "legal",
+      "formal"
+    ]
+  },
+  {
+    "word": "承諾",
+    "reading": "しょうだく",
+    "romaji": "shoudaku",
+    "meaning_vi": "chấp thuận, đồng ý",
+    "part_of_speech": "noun",
+    "tags": [
+      "formal",
+      "business"
+    ]
+  },
+  {
+    "word": "消去",
+    "reading": "しょうきょ",
+    "romaji": "shoukyo",
+    "meaning_vi": "xóa bỏ, loại trừ",
+    "part_of_speech": "noun",
+    "tags": [
+      "technical",
+      "abstract"
+    ]
+  }
+]

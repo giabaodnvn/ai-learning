@@ -1,20 +1,5 @@
 [
   {
-    "pattern": "〜ものの",
-    "explanation_vi": "Tuy là...nhưng, mặc dù...nhưng — thừa nhận một sự thật nhưng kết quả không như mong đợi",
-    "examples": [
-      {
-        "ja": "留学したものの、語学力はあまり上がらなかった。",
-        "vi": "Mặc dù đã đi du học, nhưng năng lực ngoại ngữ không cải thiện bao nhiêu."
-      },
-      {
-        "ja": "新しいプロジェクトを引き受けたものの、思った以上に困難で途方に暮れている。",
-        "vi": "Mặc dù đã nhận dự án mới, nhưng khó khăn hơn dự kiến và tôi đang bối rối không biết phải làm sao."
-      }
-    ],
-    "notes_vi": "Phần trước thừa nhận thực tế, phần sau thường diễn đạt kết quả trái với kỳ vọng hoặc sự mâu thuẫn."
-  },
-  {
     "pattern": "〜反面",
     "explanation_vi": "Mặt khác, trong khi đó, ngược lại — nêu mặt đối lập của cùng một đối tượng",
     "examples": [

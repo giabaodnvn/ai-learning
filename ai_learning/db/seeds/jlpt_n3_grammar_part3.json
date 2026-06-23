@@ -75,21 +75,6 @@
     "notes_vi": "Diễn đạt những gì đã được quy định hoặc được thỏa thuận."
   },
   {
-    "pattern": "〜に伴って",
-    "explanation_vi": "Cùng với... / Khi... thì... (thay đổi kèm theo)",
-    "examples": [
-      {
-        "ja": "経済発展に伴って、環境問題も深刻になった。",
-        "vi": "Cùng với sự phát triển kinh tế, vấn đề môi trường cũng trở nên nghiêm trọng hơn."
-      },
-      {
-        "ja": "人口増加に伴って、住宅不足が生じた。",
-        "vi": "Cùng với sự tăng dân số, tình trạng thiếu nhà ở đã xảy ra."
-      }
-    ],
-    "notes_vi": "Diễn đạt sự thay đổi xảy ra kèm theo một sự thay đổi khác."
-  },
-  {
     "pattern": "〜せいで",
     "explanation_vi": "Vì..., tại..., do lỗi của... (nguyên nhân tiêu cực)",
     "examples": [
@@ -103,21 +88,6 @@
       }
     ],
     "notes_vi": "Dùng để chỉ nguyên nhân không mong muốn hoặc tiêu cực."
-  },
-  {
-    "pattern": "〜をもとに",
-    "explanation_vi": "Dựa trên... / Căn cứ vào... (nguồn gốc, nền tảng)",
-    "examples": [
-      {
-        "ja": "この映画は実話をもとに作られた。",
-        "vi": "Bộ phim này được làm dựa trên câu chuyện có thật."
-      },
-      {
-        "ja": "アンケート結果をもとに、改善策を考えた。",
-        "vi": "Dựa trên kết quả khảo sát, chúng tôi đã nghĩ ra biện pháp cải thiện."
-      }
-    ],
-    "notes_vi": "Diễn đạt nền tảng hoặc nguồn gốc của hành động/sự việc."
   },
   {
     "pattern": "〜ばかりでなく",
@@ -253,51 +223,6 @@
       }
     ],
     "notes_vi": "Diễn đạt điều kiện hoặc bước tiên quyết."
-  },
-  {
-    "pattern": "〜において",
-    "explanation_vi": "Ở... / Trong... / Về mặt... (địa điểm, lĩnh vực, hoàn cảnh)",
-    "examples": [
-      {
-        "ja": "現代社会において、スマートフォンは欠かせない。",
-        "vi": "Trong xã hội hiện đại, điện thoại thông minh là không thể thiếu."
-      },
-      {
-        "ja": "スポーツにおいて、チームワークが重要だ。",
-        "vi": "Trong thể thao, tinh thần đồng đội là quan trọng."
-      }
-    ],
-    "notes_vi": "Diễn đạt địa điểm, lĩnh vực hoặc hoàn cảnh; thường dùng trong văn viết."
-  },
-  {
-    "pattern": "〜に関して",
-    "explanation_vi": "Về... / Liên quan đến... (chủ đề hoặc nội dung)",
-    "examples": [
-      {
-        "ja": "この件に関して、詳しく説明してください。",
-        "vi": "Về vấn đề này, xin hãy giải thích chi tiết."
-      },
-      {
-        "ja": "環境問題に関して、専門家が意見を述べた。",
-        "vi": "Về vấn đề môi trường, các chuyên gia đã phát biểu ý kiến."
-      }
-    ],
-    "notes_vi": "Diễn đạt chủ đề hoặc nội dung được đề cập; tương tự〜について nhưng trang trọng hơn."
-  },
-  {
-    "pattern": "〜に応じて",
-    "explanation_vi": "Tùy theo... / Phù hợp với... (điều chỉnh theo hoàn cảnh)",
-    "examples": [
-      {
-        "ja": "状況に応じて、計画を変更する。",
-        "vi": "Tùy theo tình huống, thay đổi kế hoạch."
-      },
-      {
-        "ja": "能力に応じた仕事を与えてください。",
-        "vi": "Xin hãy giao việc phù hợp với năng lực."
-      }
-    ],
-    "notes_vi": "Diễn đạt sự điều chỉnh hoặc phản ứng phù hợp với hoàn cảnh."
   },
   {
     "pattern": "〜にしたがって",

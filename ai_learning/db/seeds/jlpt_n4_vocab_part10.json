@@ -1,0 +1,420 @@
+[
+  {
+    "word": "作文",
+    "reading": "さくぶん",
+    "romaji": "sakubun",
+    "meaning_vi": "bài văn, tập làm văn",
+    "part_of_speech": "noun",
+    "tags": [
+      "academic",
+      "daily"
+    ]
+  },
+  {
+    "word": "島",
+    "reading": "しま",
+    "romaji": "shima",
+    "meaning_vi": "hòn đảo",
+    "part_of_speech": "noun",
+    "tags": [
+      "nature",
+      "daily"
+    ]
+  },
+  {
+    "word": "出席",
+    "reading": "しゅっせき",
+    "romaji": "shusseki",
+    "meaning_vi": "sự có mặt, tham dự",
+    "part_of_speech": "noun",
+    "tags": [
+      "daily",
+      "social"
+    ]
+  },
+  {
+    "word": "人形",
+    "reading": "にんぎょう",
+    "romaji": "ningyou",
+    "meaning_vi": "búp bê",
+    "part_of_speech": "noun",
+    "tags": [
+      "daily"
+    ]
+  },
+  {
+    "word": "水道",
+    "reading": "すいどう",
+    "romaji": "suidou",
+    "meaning_vi": "nước máy, đường ống nước",
+    "part_of_speech": "noun",
+    "tags": [
+      "daily"
+    ]
+  },
+  {
+    "word": "数学",
+    "reading": "すうがく",
+    "romaji": "suugaku",
+    "meaning_vi": "toán học",
+    "part_of_speech": "noun",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "word": "説明",
+    "reading": "せつめい",
+    "romaji": "setsumei",
+    "meaning_vi": "giải thích, thuyết minh",
+    "part_of_speech": "noun",
+    "tags": [
+      "daily",
+      "academic"
+    ]
+  },
+  {
+    "word": "世話",
+    "reading": "せわ",
+    "romaji": "sewa",
+    "meaning_vi": "sự chăm sóc, giúp đỡ",
+    "part_of_speech": "noun",
+    "tags": [
+      "social",
+      "emotion"
+    ]
+  },
+  {
+    "word": "建物",
+    "reading": "たてもの",
+    "romaji": "tatemono",
+    "meaning_vi": "tòa nhà, công trình",
+    "part_of_speech": "noun",
+    "tags": [
+      "daily",
+      "place"
+    ]
+  },
+  {
+    "word": "楽しみ",
+    "reading": "たのしみ",
+    "romaji": "tanoshimi",
+    "meaning_vi": "niềm vui, sự mong đợi",
+    "part_of_speech": "noun",
+    "tags": [
+      "emotion",
+      "daily"
+    ]
+  },
+  {
+    "word": "地理",
+    "reading": "ちり",
+    "romaji": "chiri",
+    "meaning_vi": "địa lý",
+    "part_of_speech": "noun",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "word": "注意",
+    "reading": "ちゅうい",
+    "romaji": "chuui",
+    "meaning_vi": "chú ý, lưu ý, nhắc nhở",
+    "part_of_speech": "noun",
+    "tags": [
+      "daily",
+      "social"
+    ]
+  },
+  {
+    "word": "中止",
+    "reading": "ちゅうし",
+    "romaji": "chuushi",
+    "meaning_vi": "hủy bỏ, đình chỉ",
+    "part_of_speech": "noun",
+    "tags": [
+      "business",
+      "daily"
+    ]
+  },
+  {
+    "word": "通知",
+    "reading": "つうち",
+    "romaji": "tsuuchi",
+    "meaning_vi": "thông báo",
+    "part_of_speech": "noun",
+    "tags": [
+      "business",
+      "daily"
+    ]
+  },
+  {
+    "word": "妻",
+    "reading": "つま",
+    "romaji": "tsuma",
+    "meaning_vi": "vợ",
+    "part_of_speech": "noun",
+    "tags": [
+      "family",
+      "daily"
+    ]
+  },
+  {
+    "word": "梅雨",
+    "reading": "つゆ",
+    "romaji": "tsuyu",
+    "meaning_vi": "mùa mưa",
+    "part_of_speech": "noun",
+    "tags": [
+      "weather",
+      "nature"
+    ]
+  },
+  {
+    "word": "定期",
+    "reading": "ていき",
+    "romaji": "teiki",
+    "meaning_vi": "định kỳ, vé tháng",
+    "part_of_speech": "noun",
+    "tags": [
+      "daily",
+      "business"
+    ]
+  },
+  {
+    "word": "停留所",
+    "reading": "ていりゅうじょ",
+    "romaji": "teiryuujo",
+    "meaning_vi": "trạm dừng (xe buýt)",
+    "part_of_speech": "noun",
+    "tags": [
+      "daily",
+      "place"
+    ]
+  },
+  {
+    "word": "点数",
+    "reading": "てんすう",
+    "romaji": "tensuu",
+    "meaning_vi": "điểm số",
+    "part_of_speech": "noun",
+    "tags": [
+      "academic",
+      "daily"
+    ]
+  },
+  {
+    "word": "道具",
+    "reading": "どうぐ",
+    "romaji": "dougu",
+    "meaning_vi": "dụng cụ, công cụ",
+    "part_of_speech": "noun",
+    "tags": [
+      "daily"
+    ]
+  },
+  {
+    "word": "特急",
+    "reading": "とっきゅう",
+    "romaji": "tokkyuu",
+    "meaning_vi": "tàu tốc hành",
+    "part_of_speech": "noun",
+    "tags": [
+      "daily"
+    ]
+  },
+  {
+    "word": "泥棒",
+    "reading": "どろぼう",
+    "romaji": "dorobou",
+    "meaning_vi": "kẻ trộm",
+    "part_of_speech": "noun",
+    "tags": [
+      "daily",
+      "social"
+    ]
+  },
+  {
+    "word": "仲",
+    "reading": "なか",
+    "romaji": "naka",
+    "meaning_vi": "mối quan hệ (tình cảm)",
+    "part_of_speech": "noun",
+    "tags": [
+      "social",
+      "emotion"
+    ]
+  },
+  {
+    "word": "人気",
+    "reading": "にんき",
+    "romaji": "ninki",
+    "meaning_vi": "sự nổi tiếng, được ưa chuộng",
+    "part_of_speech": "noun",
+    "tags": [
+      "social",
+      "daily"
+    ]
+  },
+  {
+    "word": "寝坊",
+    "reading": "ねぼう",
+    "romaji": "nebou",
+    "meaning_vi": "ngủ quên, ngủ nướng",
+    "part_of_speech": "noun",
+    "tags": [
+      "daily"
+    ]
+  },
+  {
+    "word": "歯医者",
+    "reading": "はいしゃ",
+    "romaji": "haisha",
+    "meaning_vi": "nha sĩ",
+    "part_of_speech": "noun",
+    "tags": [
+      "medical",
+      "job"
+    ]
+  },
+  {
+    "word": "花見",
+    "reading": "はなみ",
+    "romaji": "hanami",
+    "meaning_vi": "ngắm hoa anh đào",
+    "part_of_speech": "noun",
+    "tags": [
+      "daily",
+      "social"
+    ]
+  },
+  {
+    "word": "美術",
+    "reading": "びじゅつ",
+    "romaji": "bijutsu",
+    "meaning_vi": "mỹ thuật",
+    "part_of_speech": "noun",
+    "tags": [
+      "art",
+      "academic"
+    ]
+  },
+  {
+    "word": "非常",
+    "reading": "ひじょう",
+    "romaji": "hijou",
+    "meaning_vi": "khẩn cấp; vô cùng",
+    "part_of_speech": "adjective",
+    "tags": [
+      "abstract",
+      "daily"
+    ]
+  },
+  {
+    "word": "昼間",
+    "reading": "ひるま",
+    "romaji": "hiruma",
+    "meaning_vi": "ban ngày",
+    "part_of_speech": "noun",
+    "tags": [
+      "daily",
+      "time"
+    ]
+  },
+  {
+    "word": "漫画",
+    "reading": "まんが",
+    "romaji": "manga",
+    "meaning_vi": "truyện tranh",
+    "part_of_speech": "noun",
+    "tags": [
+      "daily",
+      "art"
+    ]
+  },
+  {
+    "word": "港",
+    "reading": "みなと",
+    "romaji": "minato",
+    "meaning_vi": "cảng, bến cảng",
+    "part_of_speech": "noun",
+    "tags": [
+      "daily",
+      "place"
+    ]
+  },
+  {
+    "word": "昔",
+    "reading": "むかし",
+    "romaji": "mukashi",
+    "meaning_vi": "ngày xưa",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract",
+      "time"
+    ]
+  },
+  {
+    "word": "息子",
+    "reading": "むすこ",
+    "romaji": "musuko",
+    "meaning_vi": "con trai",
+    "part_of_speech": "noun",
+    "tags": [
+      "family"
+    ]
+  },
+  {
+    "word": "娘",
+    "reading": "むすめ",
+    "romaji": "musume",
+    "meaning_vi": "con gái",
+    "part_of_speech": "noun",
+    "tags": [
+      "family"
+    ]
+  },
+  {
+    "word": "無理",
+    "reading": "むり",
+    "romaji": "muri",
+    "meaning_vi": "vô lý, quá sức",
+    "part_of_speech": "adjective",
+    "tags": [
+      "abstract",
+      "daily"
+    ]
+  },
+  {
+    "word": "用意",
+    "reading": "ようい",
+    "romaji": "youi",
+    "meaning_vi": "sự chuẩn bị",
+    "part_of_speech": "noun",
+    "tags": [
+      "daily"
+    ]
+  },
+  {
+    "word": "予習",
+    "reading": "よしゅう",
+    "romaji": "yoshuu",
+    "meaning_vi": "chuẩn bị bài trước",
+    "part_of_speech": "noun",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "word": "わがまま",
+    "reading": "わがまま",
+    "romaji": "wagamama",
+    "meaning_vi": "ích kỷ, tùy hứng",
+    "part_of_speech": "adjective",
+    "tags": [
+      "character",
+      "emotion"
+    ]
+  }
+]

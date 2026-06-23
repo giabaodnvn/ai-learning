@@ -1,0 +1,655 @@
+[
+  {
+    "word": "預かる",
+    "reading": "あずかる",
+    "romaji": "azukaru",
+    "meaning_vi": "giữ hộ, trông giúp",
+    "part_of_speech": "verb",
+    "tags": [
+      "daily"
+    ]
+  },
+  {
+    "word": "暴れる",
+    "reading": "あばれる",
+    "romaji": "abareru",
+    "meaning_vi": "quậy phá, lồng lộn",
+    "part_of_speech": "verb",
+    "tags": [
+      "daily",
+      "emotion"
+    ]
+  },
+  {
+    "word": "甘える",
+    "reading": "あまえる",
+    "romaji": "amaeru",
+    "meaning_vi": "nũng nịu, ỷ lại",
+    "part_of_speech": "verb",
+    "tags": [
+      "emotion",
+      "daily"
+    ]
+  },
+  {
+    "word": "余る",
+    "reading": "あまる",
+    "romaji": "amaru",
+    "meaning_vi": "thừa, dư ra",
+    "part_of_speech": "verb",
+    "tags": [
+      "daily"
+    ]
+  },
+  {
+    "word": "編む",
+    "reading": "あむ",
+    "romaji": "amu",
+    "meaning_vi": "đan, dệt",
+    "part_of_speech": "verb",
+    "tags": [
+      "daily"
+    ]
+  },
+  {
+    "word": "怪しい",
+    "reading": "あやしい",
+    "romaji": "ayashii",
+    "meaning_vi": "khả nghi, đáng ngờ",
+    "part_of_speech": "adjective",
+    "tags": [
+      "daily",
+      "emotion"
+    ]
+  },
+  {
+    "word": "荒れる",
+    "reading": "あれる",
+    "romaji": "areru",
+    "meaning_vi": "trở nên hoang tàn, dữ dội (thời tiết)",
+    "part_of_speech": "verb",
+    "tags": [
+      "daily",
+      "literary"
+    ]
+  },
+  {
+    "word": "活かす",
+    "reading": "いかす",
+    "romaji": "ikasu",
+    "meaning_vi": "tận dụng, phát huy",
+    "part_of_speech": "verb",
+    "tags": [
+      "abstract",
+      "business"
+    ]
+  },
+  {
+    "word": "威張る",
+    "reading": "いばる",
+    "romaji": "ibaru",
+    "meaning_vi": "kiêu căng, vênh váo",
+    "part_of_speech": "verb",
+    "tags": [
+      "character",
+      "emotion"
+    ]
+  },
+  {
+    "word": "浮かぶ",
+    "reading": "うかぶ",
+    "romaji": "ukabu",
+    "meaning_vi": "nổi lên; chợt nghĩ ra",
+    "part_of_speech": "verb",
+    "tags": [
+      "daily",
+      "abstract"
+    ]
+  },
+  {
+    "word": "動かす",
+    "reading": "うごかす",
+    "romaji": "ugokasu",
+    "meaning_vi": "làm chuyển động, vận hành",
+    "part_of_speech": "verb",
+    "tags": [
+      "daily",
+      "technical"
+    ]
+  },
+  {
+    "word": "写す",
+    "reading": "うつす",
+    "romaji": "utsusu",
+    "meaning_vi": "sao chép, chụp lại",
+    "part_of_speech": "verb",
+    "tags": [
+      "daily"
+    ]
+  },
+  {
+    "word": "奪う",
+    "reading": "うばう",
+    "romaji": "ubau",
+    "meaning_vi": "cướp, tước đoạt",
+    "part_of_speech": "verb",
+    "tags": [
+      "abstract",
+      "emotion"
+    ]
+  },
+  {
+    "word": "敬う",
+    "reading": "うやまう",
+    "romaji": "uyamau",
+    "meaning_vi": "kính trọng",
+    "part_of_speech": "verb",
+    "tags": [
+      "social",
+      "emotion"
+    ]
+  },
+  {
+    "word": "占う",
+    "reading": "うらなう",
+    "romaji": "uranau",
+    "meaning_vi": "bói, xem (vận mệnh)",
+    "part_of_speech": "verb",
+    "tags": [
+      "daily"
+    ]
+  },
+  {
+    "word": "恨む",
+    "reading": "うらむ",
+    "romaji": "uramu",
+    "meaning_vi": "oán hận, căm ghét",
+    "part_of_speech": "verb",
+    "tags": [
+      "emotion"
+    ]
+  },
+  {
+    "word": "羨む",
+    "reading": "うらやむ",
+    "romaji": "urayamu",
+    "meaning_vi": "ghen tị, ganh tị",
+    "part_of_speech": "verb",
+    "tags": [
+      "emotion"
+    ]
+  },
+  {
+    "word": "贈る",
+    "reading": "おくる",
+    "romaji": "okuru",
+    "meaning_vi": "tặng, biếu",
+    "part_of_speech": "verb",
+    "tags": [
+      "daily",
+      "social"
+    ]
+  },
+  {
+    "word": "収める",
+    "reading": "おさめる",
+    "romaji": "osameru",
+    "meaning_vi": "thu vào, đạt được, cất",
+    "part_of_speech": "verb",
+    "tags": [
+      "abstract",
+      "business"
+    ]
+  },
+  {
+    "word": "恐れる",
+    "reading": "おそれる",
+    "romaji": "osoreru",
+    "meaning_vi": "sợ hãi, e ngại",
+    "part_of_speech": "verb",
+    "tags": [
+      "emotion"
+    ]
+  },
+  {
+    "word": "驚かす",
+    "reading": "おどろかす",
+    "romaji": "odorokasu",
+    "meaning_vi": "làm giật mình, gây bất ngờ",
+    "part_of_speech": "verb",
+    "tags": [
+      "emotion",
+      "daily"
+    ]
+  },
+  {
+    "word": "緩い",
+    "reading": "ゆるい",
+    "romaji": "yurui",
+    "meaning_vi": "lỏng, chậm, nhẹ",
+    "part_of_speech": "adjective",
+    "tags": [
+      "daily"
+    ]
+  },
+  {
+    "word": "乏しい",
+    "reading": "とぼしい",
+    "romaji": "toboshii",
+    "meaning_vi": "thiếu thốn, nghèo nàn",
+    "part_of_speech": "adjective",
+    "tags": [
+      "abstract",
+      "formal"
+    ]
+  },
+  {
+    "word": "等しい",
+    "reading": "ひとしい",
+    "romaji": "hitoshii",
+    "meaning_vi": "bằng nhau, ngang bằng",
+    "part_of_speech": "adjective",
+    "tags": [
+      "abstract",
+      "academic"
+    ]
+  },
+  {
+    "word": "険しい",
+    "reading": "けわしい",
+    "romaji": "kewashii",
+    "meaning_vi": "hiểm trở, gắt gao (vẻ mặt)",
+    "part_of_speech": "adjective",
+    "tags": [
+      "daily",
+      "emotion"
+    ]
+  },
+  {
+    "word": "貧しい",
+    "reading": "まずしい",
+    "romaji": "mazushii",
+    "meaning_vi": "nghèo, nghèo khó",
+    "part_of_speech": "adjective",
+    "tags": [
+      "daily",
+      "social"
+    ]
+  },
+  {
+    "word": "惜しい",
+    "reading": "おしい",
+    "romaji": "oshii",
+    "meaning_vi": "tiếc, đáng tiếc",
+    "part_of_speech": "adjective",
+    "tags": [
+      "emotion",
+      "daily"
+    ]
+  },
+  {
+    "word": "頼もしい",
+    "reading": "たのもしい",
+    "romaji": "tanomoshii",
+    "meaning_vi": "đáng tin cậy, vững dạ",
+    "part_of_speech": "adjective",
+    "tags": [
+      "emotion",
+      "character"
+    ]
+  },
+  {
+    "word": "情けない",
+    "reading": "なさけない",
+    "romaji": "nasakenai",
+    "meaning_vi": "thảm hại, đáng xấu hổ",
+    "part_of_speech": "adjective",
+    "tags": [
+      "emotion"
+    ]
+  },
+  {
+    "word": "だらしない",
+    "reading": "だらしない",
+    "romaji": "darashinai",
+    "meaning_vi": "cẩu thả, lôi thôi",
+    "part_of_speech": "adjective",
+    "tags": [
+      "character",
+      "daily"
+    ]
+  },
+  {
+    "word": "おとなしい",
+    "reading": "おとなしい",
+    "romaji": "otonashii",
+    "meaning_vi": "hiền lành, ngoan",
+    "part_of_speech": "adjective",
+    "tags": [
+      "character",
+      "emotion"
+    ]
+  },
+  {
+    "word": "ずうずうしい",
+    "reading": "ずうずうしい",
+    "romaji": "zuuzuushii",
+    "meaning_vi": "trơ trẽn, mặt dày",
+    "part_of_speech": "adjective",
+    "tags": [
+      "character",
+      "emotion"
+    ]
+  },
+  {
+    "word": "みっともない",
+    "reading": "みっともない",
+    "romaji": "mittomonai",
+    "meaning_vi": "khó coi, mất mặt",
+    "part_of_speech": "adjective",
+    "tags": [
+      "emotion",
+      "daily"
+    ]
+  },
+  {
+    "word": "合図",
+    "reading": "あいず",
+    "romaji": "aizu",
+    "meaning_vi": "tín hiệu, dấu hiệu",
+    "part_of_speech": "noun",
+    "tags": [
+      "daily"
+    ]
+  },
+  {
+    "word": "空き",
+    "reading": "あき",
+    "romaji": "aki",
+    "meaning_vi": "chỗ trống, khoảng trống",
+    "part_of_speech": "noun",
+    "tags": [
+      "daily"
+    ]
+  },
+  {
+    "word": "悪化",
+    "reading": "あっか",
+    "romaji": "akka",
+    "meaning_vi": "sự xấu đi, trầm trọng thêm",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract",
+      "medical"
+    ]
+  },
+  {
+    "word": "圧力",
+    "reading": "あつりょく",
+    "romaji": "atsuryoku",
+    "meaning_vi": "áp lực",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract",
+      "technical"
+    ]
+  },
+  {
+    "word": "一種",
+    "reading": "いっしゅ",
+    "romaji": "isshu",
+    "meaning_vi": "một loại, một kiểu",
+    "part_of_speech": "noun",
+    "tags": [
+      "abstract",
+      "daily"
+    ]
+  },
+  {
+    "word": "一瞬",
+    "reading": "いっしゅん",
+    "romaji": "isshun",
+    "meaning_vi": "trong khoảnh khắc",
+    "part_of_speech": "noun",
+    "tags": [
+      "daily",
+      "abstract"
+    ]
+  },
+  {
+    "word": "一生",
+    "reading": "いっしょう",
+    "romaji": "isshou",
+    "meaning_vi": "cả đời, suốt đời",
+    "part_of_speech": "noun",
+    "tags": [
+      "daily",
+      "abstract"
+    ]
+  },
+  {
+    "word": "印刷",
+    "reading": "いんさつ",
+    "romaji": "insatsu",
+    "meaning_vi": "in ấn",
+    "part_of_speech": "noun",
+    "tags": [
+      "business",
+      "daily"
+    ]
+  },
+  {
+    "word": "飲食",
+    "reading": "いんしょく",
+    "romaji": "inshoku",
+    "meaning_vi": "ăn uống",
+    "part_of_speech": "noun",
+    "tags": [
+      "daily"
+    ]
+  },
+  {
+    "word": "運賃",
+    "reading": "うんちん",
+    "romaji": "unchin",
+    "meaning_vi": "cước phí, tiền vé",
+    "part_of_speech": "noun",
+    "tags": [
+      "daily",
+      "business"
+    ]
+  },
+  {
+    "word": "延長",
+    "reading": "えんちょう",
+    "romaji": "enchou",
+    "meaning_vi": "kéo dài, gia hạn",
+    "part_of_speech": "noun",
+    "tags": [
+      "daily",
+      "business"
+    ]
+  },
+  {
+    "word": "演説",
+    "reading": "えんぜつ",
+    "romaji": "enzetsu",
+    "meaning_vi": "diễn thuyết, bài phát biểu",
+    "part_of_speech": "noun",
+    "tags": [
+      "social",
+      "formal"
+    ]
+  },
+  {
+    "word": "温度",
+    "reading": "おんど",
+    "romaji": "ondo",
+    "meaning_vi": "nhiệt độ",
+    "part_of_speech": "noun",
+    "tags": [
+      "daily",
+      "academic"
+    ]
+  },
+  {
+    "word": "解説",
+    "reading": "かいせつ",
+    "romaji": "kaisetsu",
+    "meaning_vi": "giải thích, bình luận",
+    "part_of_speech": "noun",
+    "tags": [
+      "academic",
+      "daily"
+    ]
+  },
+  {
+    "word": "回数",
+    "reading": "かいすう",
+    "romaji": "kaisuu",
+    "meaning_vi": "số lần",
+    "part_of_speech": "noun",
+    "tags": [
+      "daily",
+      "abstract"
+    ]
+  },
+  {
+    "word": "外出",
+    "reading": "がいしゅつ",
+    "romaji": "gaishutsu",
+    "meaning_vi": "ra ngoài, đi ra ngoài",
+    "part_of_speech": "noun",
+    "tags": [
+      "daily"
+    ]
+  },
+  {
+    "word": "家事",
+    "reading": "かじ",
+    "romaji": "kaji",
+    "meaning_vi": "việc nhà",
+    "part_of_speech": "noun",
+    "tags": [
+      "daily"
+    ]
+  },
+  {
+    "word": "貸し出し",
+    "reading": "かしだし",
+    "romaji": "kashidashi",
+    "meaning_vi": "cho mượn, cho vay",
+    "part_of_speech": "noun",
+    "tags": [
+      "daily",
+      "business"
+    ]
+  },
+  {
+    "word": "活躍",
+    "reading": "かつやく",
+    "romaji": "katsuyaku",
+    "meaning_vi": "sự hoạt động tích cực, tỏa sáng",
+    "part_of_speech": "noun",
+    "tags": [
+      "social",
+      "business"
+    ]
+  },
+  {
+    "word": "感想",
+    "reading": "かんそう",
+    "romaji": "kansou",
+    "meaning_vi": "cảm tưởng, suy nghĩ",
+    "part_of_speech": "noun",
+    "tags": [
+      "emotion",
+      "daily"
+    ]
+  },
+  {
+    "word": "案外",
+    "reading": "あんがい",
+    "romaji": "angai",
+    "meaning_vi": "ngoài dự đoán, không ngờ",
+    "part_of_speech": "adverb",
+    "tags": [
+      "daily"
+    ]
+  },
+  {
+    "word": "一気に",
+    "reading": "いっきに",
+    "romaji": "ikkini",
+    "meaning_vi": "một mạch, liền một hơi",
+    "part_of_speech": "adverb",
+    "tags": [
+      "daily"
+    ]
+  },
+  {
+    "word": "いきなり",
+    "reading": "いきなり",
+    "romaji": "ikinari",
+    "meaning_vi": "đột ngột, bất thình lình",
+    "part_of_speech": "adverb",
+    "tags": [
+      "daily"
+    ]
+  },
+  {
+    "word": "一斉に",
+    "reading": "いっせいに",
+    "romaji": "isseini",
+    "meaning_vi": "đồng loạt, cùng lúc",
+    "part_of_speech": "adverb",
+    "tags": [
+      "formal",
+      "daily"
+    ]
+  },
+  {
+    "word": "うっかり",
+    "reading": "うっかり",
+    "romaji": "ukkari",
+    "meaning_vi": "lơ đãng, vô ý",
+    "part_of_speech": "adverb",
+    "tags": [
+      "daily",
+      "emotion"
+    ]
+  },
+  {
+    "word": "思い切り",
+    "reading": "おもいきり",
+    "romaji": "omoikiri",
+    "meaning_vi": "hết sức, thỏa thích",
+    "part_of_speech": "adverb",
+    "tags": [
+      "emotion",
+      "daily"
+    ]
+  },
+  {
+    "word": "各自",
+    "reading": "かくじ",
+    "romaji": "kakuji",
+    "meaning_vi": "mỗi người, từng người",
+    "part_of_speech": "adverb",
+    "tags": [
+      "formal",
+      "daily"
+    ]
+  },
+  {
+    "word": "必ずしも",
+    "reading": "かならずしも",
+    "romaji": "kanarazushimo",
+    "meaning_vi": "không hẳn là, chưa chắc",
+    "part_of_speech": "adverb",
+    "tags": [
+      "abstract",
+      "formal"
+    ]
+  }
+]

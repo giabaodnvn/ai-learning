@@ -653,7 +653,11 @@
     "romaji": "shougen",
     "meaning_vi": "lời khai, chứng từ",
     "part_of_speech": "noun",
-    "tags": ["testimony", "evidence", "legal"]
+    "tags": [
+      "testimony",
+      "evidence",
+      "legal"
+    ]
   },
   {
     "word": "告訴",
@@ -661,7 +665,11 @@
     "romaji": "kokuso",
     "meaning_vi": "khởi kiện, tố cáo ra tòa",
     "part_of_speech": "noun",
-    "tags": ["lawsuit", "complaint", "legal"]
+    "tags": [
+      "lawsuit",
+      "complaint",
+      "legal"
+    ]
   },
   {
     "word": "告発",
@@ -669,7 +677,11 @@
     "romaji": "kokuhatsu",
     "meaning_vi": "tố giác, vạch trần (tội ác)",
     "part_of_speech": "noun",
-    "tags": ["accusation", "exposure", "legal"]
+    "tags": [
+      "accusation",
+      "exposure",
+      "legal"
+    ]
   },
   {
     "word": "起訴",
@@ -677,7 +689,11 @@
     "romaji": "kiso",
     "meaning_vi": "khởi tố, truy tố",
     "part_of_speech": "noun",
-    "tags": ["indictment", "prosecution", "legal"]
+    "tags": [
+      "indictment",
+      "prosecution",
+      "legal"
+    ]
   },
   {
     "word": "弁護",
@@ -685,7 +701,11 @@
     "romaji": "bengo",
     "meaning_vi": "bào chữa, biện hộ",
     "part_of_speech": "noun",
-    "tags": ["defense", "advocacy", "legal"]
+    "tags": [
+      "defense",
+      "advocacy",
+      "legal"
+    ]
   },
   {
     "word": "裁判官",
@@ -693,7 +713,11 @@
     "romaji": "saibankan",
     "meaning_vi": "thẩm phán, quan tòa",
     "part_of_speech": "noun",
-    "tags": ["judge", "legal", "profession"]
+    "tags": [
+      "judge",
+      "legal",
+      "profession"
+    ]
   },
   {
     "word": "検察",
@@ -701,7 +725,11 @@
     "romaji": "kensatsu",
     "meaning_vi": "công tố, kiểm sát",
     "part_of_speech": "noun",
-    "tags": ["prosecution", "legal", "government"]
+    "tags": [
+      "prosecution",
+      "legal",
+      "government"
+    ]
   },
   {
     "word": "供述",
@@ -709,7 +737,11 @@
     "romaji": "kyoujutsu",
     "meaning_vi": "lời khai (với cơ quan điều tra)",
     "part_of_speech": "noun",
-    "tags": ["statement", "deposition", "legal"]
+    "tags": [
+      "statement",
+      "deposition",
+      "legal"
+    ]
   },
   {
     "word": "鑑定",
@@ -717,7 +749,11 @@
     "romaji": "kantei",
     "meaning_vi": "giám định, thẩm định",
     "part_of_speech": "noun",
-    "tags": ["appraisal", "expert assessment", "legal"]
+    "tags": [
+      "appraisal",
+      "expert assessment",
+      "legal"
+    ]
   },
   {
     "word": "仮処分",
@@ -725,7 +761,11 @@
     "romaji": "karishoubun",
     "meaning_vi": "lệnh tạm thời, biện pháp khẩn cấp (pháp lý)",
     "part_of_speech": "noun",
-    "tags": ["provisional order", "injunction", "legal"]
+    "tags": [
+      "provisional order",
+      "injunction",
+      "legal"
+    ]
   },
   {
     "word": "保釈",
@@ -733,7 +773,11 @@
     "romaji": "hoshaku",
     "meaning_vi": "tại ngoại, bảo lãnh",
     "part_of_speech": "noun",
-    "tags": ["bail", "release", "legal"]
+    "tags": [
+      "bail",
+      "release",
+      "legal"
+    ]
   },
   {
     "word": "執行猶予",
@@ -741,7 +785,11 @@
     "romaji": "shikkou yuuyo",
     "meaning_vi": "án treo, hoãn thi hành án",
     "part_of_speech": "noun",
-    "tags": ["suspended sentence", "probation", "legal"]
+    "tags": [
+      "suspended sentence",
+      "probation",
+      "legal"
+    ]
   },
   {
     "word": "刑事",
@@ -749,7 +797,11 @@
     "romaji": "keiji",
     "meaning_vi": "hình sự; thám tử, điều tra viên",
     "part_of_speech": "noun",
-    "tags": ["criminal", "detective", "legal"]
+    "tags": [
+      "criminal",
+      "detective",
+      "legal"
+    ]
   },
   {
     "word": "民事",
@@ -757,7 +809,10 @@
     "romaji": "minji",
     "meaning_vi": "dân sự (vụ kiện)",
     "part_of_speech": "noun",
-    "tags": ["civil", "legal"]
+    "tags": [
+      "civil",
+      "legal"
+    ]
   },
   {
     "word": "行政",
@@ -765,7 +820,11 @@
     "romaji": "gyousei",
     "meaning_vi": "hành chính, quản lý nhà nước",
     "part_of_speech": "noun",
-    "tags": ["administration", "government", "formal"]
+    "tags": [
+      "administration",
+      "government",
+      "formal"
+    ]
   },
   {
     "word": "立法",
@@ -773,7 +832,11 @@
     "romaji": "rippou",
     "meaning_vi": "lập pháp, làm luật",
     "part_of_speech": "noun",
-    "tags": ["legislation", "lawmaking", "government"]
+    "tags": [
+      "legislation",
+      "lawmaking",
+      "government"
+    ]
   },
   {
     "word": "司法",
@@ -781,7 +844,11 @@
     "romaji": "shihou",
     "meaning_vi": "tư pháp, ngành tòa án",
     "part_of_speech": "noun",
-    "tags": ["judiciary", "justice", "government"]
+    "tags": [
+      "judiciary",
+      "justice",
+      "government"
+    ]
   },
   {
     "word": "条例",
@@ -789,15 +856,12 @@
     "romaji": "jourei",
     "meaning_vi": "điều lệ, pháp quy địa phương",
     "part_of_speech": "noun",
-    "tags": ["ordinance", "bylaw", "legal", "government"]
-  },
-  {
-    "word": "許可",
-    "reading": "きょか",
-    "romaji": "kyoka",
-    "meaning_vi": "cho phép, chấp thuận",
-    "part_of_speech": "noun",
-    "tags": ["permission", "approval", "formal"]
+    "tags": [
+      "ordinance",
+      "bylaw",
+      "legal",
+      "government"
+    ]
   },
   {
     "word": "監督",
@@ -805,7 +869,11 @@
     "romaji": "kantoku",
     "meaning_vi": "giám sát, giám đốc, đạo diễn",
     "part_of_speech": "noun",
-    "tags": ["supervision", "management", "formal"]
+    "tags": [
+      "supervision",
+      "management",
+      "formal"
+    ]
   },
   {
     "word": "施策",
@@ -813,6 +881,10 @@
     "romaji": "shisaku",
     "meaning_vi": "biện pháp chính sách, kế hoạch thực hiện",
     "part_of_speech": "noun",
-    "tags": ["policy measure", "initiative", "government"]
+    "tags": [
+      "policy measure",
+      "initiative",
+      "government"
+    ]
   }
 ]

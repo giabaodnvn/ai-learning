@@ -1,63 +1,1362 @@
 [
-  {"character":"稲","onyomi":["トウ"],"kunyomi":["いね","いな"],"meaning_vi":"lúa, cây lúa","stroke_count":14,"vocab_examples":[{"word":"稲","reading":"いね","meaning_vi":"cây lúa"},{"word":"稲作","reading":"いなさく","meaning_vi":"canh tác lúa"}]},
-  {"character":"穂","onyomi":["スイ"],"kunyomi":["ほ"],"meaning_vi":"bông lúa, bông hoa","stroke_count":15,"vocab_examples":[{"word":"穂","reading":"ほ","meaning_vi":"bông lúa"},{"word":"稲穂","reading":"いなほ","meaning_vi":"bông lúa"}]},
-  {"character":"苗","onyomi":["ビョウ","ミョウ"],"kunyomi":["なえ","なわ"],"meaning_vi":"cây giống, mạ","stroke_count":8,"vocab_examples":[{"word":"苗","reading":"なえ","meaning_vi":"cây con, mầm cây"},{"word":"苗木","reading":"なえき","meaning_vi":"cây giống"}]},
-  {"character":"藻","onyomi":["ソウ"],"kunyomi":["も"],"meaning_vi":"tảo, rong biển","stroke_count":19,"vocab_examples":[{"word":"藻","reading":"も","meaning_vi":"tảo, rong"},{"word":"海藻","reading":"かいそう","meaning_vi":"rong biển, tảo biển"}]},
-  {"character":"栗","onyomi":["リツ"],"kunyomi":["くり"],"meaning_vi":"hạt dẻ","stroke_count":10,"vocab_examples":[{"word":"栗","reading":"くり","meaning_vi":"hạt dẻ"},{"word":"栗色","reading":"くりいろ","meaning_vi":"màu nâu hạt dẻ"}]},
-  {"character":"柿","onyomi":["シ"],"kunyomi":["かき"],"meaning_vi":"hồng, quả hồng","stroke_count":9,"vocab_examples":[{"word":"柿","reading":"かき","meaning_vi":"quả hồng"},{"word":"柿の木","reading":"かきのき","meaning_vi":"cây hồng"}]},
-  {"character":"杏","onyomi":["キョウ","アン"],"kunyomi":["あんず"],"meaning_vi":"mơ, hạnh đào","stroke_count":7,"vocab_examples":[{"word":"杏","reading":"あんず","meaning_vi":"quả mơ"},{"word":"杏仁","reading":"きょうにん","meaning_vi":"hạt hạnh nhân"}]},
-  {"character":"梨","onyomi":["リ"],"kunyomi":["なし"],"meaning_vi":"lê, quả lê","stroke_count":11,"vocab_examples":[{"word":"梨","reading":"なし","meaning_vi":"quả lê"},{"word":"梨園","reading":"なしぞの","meaning_vi":"vườn lê, giới kịch nghệ"}]},
-  {"character":"橙","onyomi":["トウ","ダイ"],"kunyomi":["だいだい"],"meaning_vi":"cam đắng, màu cam","stroke_count":16,"vocab_examples":[{"word":"橙","reading":"だいだい","meaning_vi":"quả cam đắng"},{"word":"橙色","reading":"だいだいいろ","meaning_vi":"màu cam"}]},
-  {"character":"柚","onyomi":["ユ","ユウ"],"kunyomi":["ゆず"],"meaning_vi":"yuzu, chanh vàng Nhật","stroke_count":9,"vocab_examples":[{"word":"柚子","reading":"ゆず","meaning_vi":"chanh yuzu"},{"word":"柚子茶","reading":"ゆずちゃ","meaning_vi":"trà yuzu"}]},
-  {"character":"苦","onyomi":["ク"],"kunyomi":["くる.しい","にが.い"],"meaning_vi":"đắng, đau khổ, khó khăn","stroke_count":8,"vocab_examples":[{"word":"苦しい","reading":"くるしい","meaning_vi":"đau khổ, khó khăn"},{"word":"苦労","reading":"くろう","meaning_vi":"vất vả, cực nhọc"}]},
-  {"character":"辛","onyomi":["シン"],"kunyomi":["から.い","つら.い"],"meaning_vi":"cay, gian khổ","stroke_count":7,"vocab_examples":[{"word":"辛い","reading":"からい","meaning_vi":"cay"},{"word":"辛口","reading":"からくち","meaning_vi":"khẩu vị cay"}]},
-  {"character":"渋","onyomi":["ジュウ"],"kunyomi":["しぶ","しぶ.い"],"meaning_vi":"chát, khó chịu, đứng đắn","stroke_count":11,"vocab_examples":[{"word":"渋い","reading":"しぶい","meaning_vi":"chát, kiêu, đứng đắn"},{"word":"渋滞","reading":"じゅうたい","meaning_vi":"tắc đường"}]},
-  {"character":"淡","onyomi":["タン"],"kunyomi":["あわ.い"],"meaning_vi":"nhạt, thanh đạm","stroke_count":11,"vocab_examples":[{"word":"淡い","reading":"あわい","meaning_vi":"nhạt, mờ nhạt"},{"word":"淡水","reading":"たんすい","meaning_vi":"nước ngọt"}]},
-  {"character":"丼","onyomi":["ドン","セイ"],"kunyomi":["どんぶり"],"meaning_vi":"tô cơm, cơm trộn","stroke_count":5,"vocab_examples":[{"word":"丼","reading":"どんぶり","meaning_vi":"tô cơm, cơm trộn"},{"word":"牛丼","reading":"ぎゅうどん","meaning_vi":"cơm thịt bò"}]},
-  {"character":"粥","onyomi":["シュク"],"kunyomi":["かゆ"],"meaning_vi":"cháo","stroke_count":12,"vocab_examples":[{"word":"粥","reading":"かゆ","meaning_vi":"cháo"},{"word":"お粥","reading":"おかゆ","meaning_vi":"cháo (kính ngữ)"}]},
-  {"character":"麺","onyomi":["メン"],"kunyomi":[],"meaning_vi":"mì, bún","stroke_count":16,"vocab_examples":[{"word":"麺","reading":"めん","meaning_vi":"sợi mì"},{"word":"ラーメン","reading":"らーめん","meaning_vi":"ramen, mì Nhật"}]},
-  {"character":"膳","onyomi":["ゼン"],"kunyomi":[],"meaning_vi":"khay, bữa ăn","stroke_count":16,"vocab_examples":[{"word":"膳","reading":"ぜん","meaning_vi":"khay, bữa ăn"},{"word":"お膳立て","reading":"おぜんだて","meaning_vi":"chuẩn bị, sắp xếp"}]},
-  {"character":"椀","onyomi":["ワン"],"kunyomi":[],"meaning_vi":"bát, tô gỗ","stroke_count":12,"vocab_examples":[{"word":"椀","reading":"わん","meaning_vi":"bát, tô"},{"word":"茶椀","reading":"ちゃわん","meaning_vi":"bát trà, chén cơm"}]},
-  {"character":"漬","onyomi":["シ"],"kunyomi":["つ.ける","つ.かる"],"meaning_vi":"ngâm, muối dưa","stroke_count":14,"vocab_examples":[{"word":"漬ける","reading":"つける","meaning_vi":"ngâm, muối"},{"word":"漬物","reading":"つけもの","meaning_vi":"đồ muối dưa"}]},
-  {"character":"醤","onyomi":["ショウ"],"kunyomi":["ひしお"],"meaning_vi":"tương, nước tương","stroke_count":17,"vocab_examples":[{"word":"醤油","reading":"しょうゆ","meaning_vi":"nước tương"},{"word":"味噌醤油","reading":"みそしょうゆ","meaning_vi":"miso và nước tương"}]},
-  {"character":"酢","onyomi":["サク","ス"],"kunyomi":["す"],"meaning_vi":"giấm","stroke_count":12,"vocab_examples":[{"word":"酢","reading":"す","meaning_vi":"giấm"},{"word":"酢飯","reading":"すめし","meaning_vi":"cơm giấm"}]},
-  {"character":"酵","onyomi":["コウ"],"kunyomi":[],"meaning_vi":"lên men, men","stroke_count":14,"vocab_examples":[{"word":"酵母","reading":"こうぼ","meaning_vi":"men, nấm men"},{"word":"発酵","reading":"はっこう","meaning_vi":"lên men"}]},
-  {"character":"糠","onyomi":["コウ"],"kunyomi":["ぬか"],"meaning_vi":"cám gạo","stroke_count":17,"vocab_examples":[{"word":"糠","reading":"ぬか","meaning_vi":"cám gạo"},{"word":"糠漬け","reading":"ぬかづけ","meaning_vi":"dưa muối cám"}]},
-  {"character":"醸","onyomi":["ジョウ"],"kunyomi":["かも.す"],"meaning_vi":"ủ, nấu rượu, tạo ra","stroke_count":20,"vocab_examples":[{"word":"醸造","reading":"じょうぞう","meaning_vi":"chưng cất, sản xuất rượu"},{"word":"醸す","reading":"かもす","meaning_vi":"ủ rượu, gây ra"}]},
-  {"character":"炊","onyomi":["スイ"],"kunyomi":["た.く"],"meaning_vi":"nấu cơm","stroke_count":8,"vocab_examples":[{"word":"炊く","reading":"たく","meaning_vi":"nấu cơm"},{"word":"炊飯","reading":"すいはん","meaning_vi":"nấu cơm"}]},
-  {"character":"燻","onyomi":["クン"],"kunyomi":["いぶ.す","くす.べる"],"meaning_vi":"hun khói, xông khói","stroke_count":17,"vocab_examples":[{"word":"燻す","reading":"いぶす","meaning_vi":"hun khói"},{"word":"燻製","reading":"くんせい","meaning_vi":"thực phẩm hun khói"}]},
-  {"character":"炙","onyomi":["シャ"],"kunyomi":["あぶ.る"],"meaning_vi":"nướng, hơ lửa","stroke_count":8,"vocab_examples":[{"word":"炙る","reading":"あぶる","meaning_vi":"nướng, hơ lửa"},{"word":"炙り","reading":"あぶり","meaning_vi":"đồ nướng"}]},
-  {"character":"炒","onyomi":["ソウ"],"kunyomi":["い.る","いた.める"],"meaning_vi":"chiên xào","stroke_count":8,"vocab_examples":[{"word":"炒める","reading":"いためる","meaning_vi":"xào"},{"word":"炒飯","reading":"チャーハン","meaning_vi":"cơm chiên"}]},
-  {"character":"煎","onyomi":["セン"],"kunyomi":["い.る","せん.じる"],"meaning_vi":"rang, sắc thuốc","stroke_count":13,"vocab_examples":[{"word":"煎る","reading":"いる","meaning_vi":"rang"},{"word":"煎茶","reading":"せんちゃ","meaning_vi":"trà xanh"}]},
-  {"character":"唄","onyomi":["バイ"],"kunyomi":["うた"],"meaning_vi":"bài hát dân ca","stroke_count":10,"vocab_examples":[{"word":"唄","reading":"うた","meaning_vi":"bài hát, dân ca"},{"word":"子守唄","reading":"こもりうた","meaning_vi":"bài hát ru"}]},
-  {"character":"渦","onyomi":["カ"],"kunyomi":["うず"],"meaning_vi":"xoáy nước, xoáy","stroke_count":12,"vocab_examples":[{"word":"渦","reading":"うず","meaning_vi":"xoáy nước"},{"word":"渦巻き","reading":"うずまき","meaning_vi":"hình xoắn ốc"}]},
-  {"character":"沼","onyomi":["ショウ"],"kunyomi":["ぬま"],"meaning_vi":"đầm lầy","stroke_count":8,"vocab_examples":[{"word":"沼","reading":"ぬま","meaning_vi":"đầm lầy"},{"word":"沼地","reading":"ぬまち","meaning_vi":"vùng đầm lầy"}]},
-  {"character":"岬","onyomi":["コウ"],"kunyomi":["みさき"],"meaning_vi":"mũi đất, mũi đất nhô ra biển","stroke_count":8,"vocab_examples":[{"word":"岬","reading":"みさき","meaning_vi":"mũi đất"},{"word":"岬の灯台","reading":"みさきのとうだい","meaning_vi":"ngọn hải đăng ở mũi đất"}]},
-  {"character":"崖","onyomi":["ガイ"],"kunyomi":["がけ"],"meaning_vi":"vách đá, vách núi","stroke_count":11,"vocab_examples":[{"word":"崖","reading":"がけ","meaning_vi":"vách đá"},{"word":"断崖","reading":"だんがい","meaning_vi":"vách đá dựng đứng"}]},
-  {"character":"洞","onyomi":["ドウ","トウ"],"kunyomi":["ほら"],"meaning_vi":"hang động, hốc","stroke_count":9,"vocab_examples":[{"word":"洞","reading":"ほら","meaning_vi":"hang động"},{"word":"洞窟","reading":"どうくつ","meaning_vi":"hang động"}]},
-  {"character":"泡","onyomi":["ホウ"],"kunyomi":["あわ"],"meaning_vi":"bọt, bong bóng","stroke_count":8,"vocab_examples":[{"word":"泡","reading":"あわ","meaning_vi":"bọt"},{"word":"泡立つ","reading":"あわだつ","meaning_vi":"nổi bọt"}]},
-  {"character":"雷","onyomi":["ライ"],"kunyomi":["かみなり"],"meaning_vi":"sấm, sét","stroke_count":13,"vocab_examples":[{"word":"雷","reading":"かみなり","meaning_vi":"sấm sét"},{"word":"雷雨","reading":"らいう","meaning_vi":"mưa dông"}]},
-  {"character":"凍","onyomi":["トウ"],"kunyomi":["こお.る","こご.える"],"meaning_vi":"đóng băng, lạnh cứng","stroke_count":10,"vocab_examples":[{"word":"凍る","reading":"こおる","meaning_vi":"đóng băng"},{"word":"冷凍","reading":"れいとう","meaning_vi":"đông lạnh"}]},
-  {"character":"砕","onyomi":["サイ"],"kunyomi":["くだ.く","くだ.ける"],"meaning_vi":"nghiền, đập vỡ","stroke_count":9,"vocab_examples":[{"word":"砕く","reading":"くだく","meaning_vi":"nghiền, đập vỡ"},{"word":"粉砕","reading":"ふんさい","meaning_vi":"nghiền nát"}]},
-  {"character":"裂","onyomi":["レツ"],"kunyomi":["さ.く","さ.ける"],"meaning_vi":"xé rách, nứt vỡ","stroke_count":12,"vocab_examples":[{"word":"裂く","reading":"さく","meaning_vi":"xé rách"},{"word":"分裂","reading":"ぶんれつ","meaning_vi":"phân liệt, chia rẽ"}]},
-  {"character":"磯","onyomi":["キ"],"kunyomi":["いそ"],"meaning_vi":"bờ đá, bãi đá ven biển","stroke_count":17,"vocab_examples":[{"word":"磯","reading":"いそ","meaning_vi":"bãi đá ven biển"},{"word":"磯釣り","reading":"いそづり","meaning_vi":"câu cá ven biển"}]},
-  {"character":"潟","onyomi":["セキ"],"kunyomi":["かた"],"meaning_vi":"đầm phá, bãi triều","stroke_count":15,"vocab_examples":[{"word":"潟","reading":"かた","meaning_vi":"đầm phá"},{"word":"新潟","reading":"にいがた","meaning_vi":"Niigata (tên địa danh)"}]},
-  {"character":"瀬","onyomi":["セ"],"kunyomi":["せ"],"meaning_vi":"thác nước nông, bãi cạn","stroke_count":19,"vocab_examples":[{"word":"瀬","reading":"せ","meaning_vi":"thác nước nông"},{"word":"瀬戸","reading":"せと","meaning_vi":"eo biển hẹp"}]},
-  {"character":"礁","onyomi":["ショウ"],"kunyomi":[],"meaning_vi":"rạn san hô, đá ngầm","stroke_count":17,"vocab_examples":[{"word":"暗礁","reading":"あんしょう","meaning_vi":"đá ngầm, vật cản"},{"word":"珊瑚礁","reading":"さんごしょう","meaning_vi":"rạn san hô"}]},
-  {"character":"珊","onyomi":["サン"],"kunyomi":[],"meaning_vi":"san hô","stroke_count":9,"vocab_examples":[{"word":"珊瑚","reading":"さんご","meaning_vi":"san hô"},{"word":"珊瑚礁","reading":"さんごしょう","meaning_vi":"rạn san hô"}]},
-  {"character":"瑚","onyomi":["コ"],"kunyomi":[],"meaning_vi":"san hô (loại đá quý)","stroke_count":13,"vocab_examples":[{"word":"珊瑚","reading":"さんご","meaning_vi":"san hô"},{"word":"瑚珀","reading":"こはく","meaning_vi":"hổ phách"}]},
-  {"character":"礫","onyomi":["レキ"],"kunyomi":["つぶて","こいし"],"meaning_vi":"sỏi, đá nhỏ","stroke_count":20,"vocab_examples":[{"word":"礫","reading":"つぶて","meaning_vi":"hòn sỏi, đá ném"},{"word":"砂礫","reading":"されき","meaning_vi":"sỏi, đá nhỏ"}]},
-  {"character":"狩","onyomi":["シュ"],"kunyomi":["か.る","かり"],"meaning_vi":"săn bắn","stroke_count":9,"vocab_examples":[{"word":"狩り","reading":"かり","meaning_vi":"săn bắn"},{"word":"狩猟","reading":"しゅりょう","meaning_vi":"săn bắn, săn thú"}]},
-  {"character":"掘","onyomi":["クツ"],"kunyomi":["ほ.る"],"meaning_vi":"đào, khai quật","stroke_count":11,"vocab_examples":[{"word":"掘る","reading":"ほる","meaning_vi":"đào đất"},{"word":"発掘","reading":"はっくつ","meaning_vi":"khai quật"}]},
-  {"character":"削","onyomi":["サク"],"kunyomi":["けず.る"],"meaning_vi":"cắt, bào, giảm","stroke_count":9,"vocab_examples":[{"word":"削る","reading":"けずる","meaning_vi":"bào, cắt xén"},{"word":"削減","reading":"さくげん","meaning_vi":"cắt giảm"}]},
-  {"character":"鋳","onyomi":["チュウ"],"kunyomi":["い.る"],"meaning_vi":"đúc kim loại","stroke_count":15,"vocab_examples":[{"word":"鋳る","reading":"いる","meaning_vi":"đúc (kim loại)"},{"word":"鋳造","reading":"ちゅうぞう","meaning_vi":"đúc, rèn"}]},
-  {"character":"鍛","onyomi":["タン"],"kunyomi":["きた.える"],"meaning_vi":"rèn luyện, tôi thép","stroke_count":17,"vocab_examples":[{"word":"鍛える","reading":"きたえる","meaning_vi":"rèn luyện"},{"word":"鍛冶","reading":"かじ","meaning_vi":"thợ rèn"}]},
-  {"character":"笛","onyomi":["テキ"],"kunyomi":["ふえ"],"meaning_vi":"sáo, còi","stroke_count":11,"vocab_examples":[{"word":"笛","reading":"ふえ","meaning_vi":"sáo, còi"},{"word":"横笛","reading":"よこぶえ","meaning_vi":"sáo ngang"}]},
-  {"character":"苑","onyomi":["エン","オン"],"kunyomi":["その"],"meaning_vi":"vườn, khu vực","stroke_count":8,"vocab_examples":[{"word":"苑","reading":"その","meaning_vi":"vườn"},{"word":"御苑","reading":"ぎょえん","meaning_vi":"vườn ngự uyển"}]},
-  {"character":"庭","onyomi":["テイ"],"kunyomi":["にわ"],"meaning_vi":"sân vườn, vườn","stroke_count":10,"vocab_examples":[{"word":"庭","reading":"にわ","meaning_vi":"sân vườn"},{"word":"庭園","reading":"ていえん","meaning_vi":"khu vườn"}]},
-  {"character":"庄","onyomi":["ショウ"],"kunyomi":[],"meaning_vi":"trang trại, làng","stroke_count":6,"vocab_examples":[{"word":"庄屋","reading":"しょうや","meaning_vi":"trưởng làng"},{"word":"庄園","reading":"しょうえん","meaning_vi":"trang viên"}]},
-  {"character":"亭","onyomi":["テイ"],"kunyomi":[],"meaning_vi":"đình, nhà nghỉ","stroke_count":9,"vocab_examples":[{"word":"亭主","reading":"ていしゅ","meaning_vi":"chủ nhà, chồng"},{"word":"料亭","reading":"りょうてい","meaning_vi":"nhà hàng truyền thống"}]},
-  {"character":"堂","onyomi":["ドウ"],"kunyomi":[],"meaning_vi":"tòa nhà, đường, điện","stroke_count":11,"vocab_examples":[{"word":"食堂","reading":"しょくどう","meaning_vi":"nhà ăn"},{"word":"講堂","reading":"こうどう","meaning_vi":"hội trường"}]},
-  {"character":"殿","onyomi":["デン","テン"],"kunyomi":["との","どの"],"meaning_vi":"điện, lâu đài, ngài","stroke_count":13,"vocab_examples":[{"word":"殿","reading":"との","meaning_vi":"điện, ngài"},{"word":"宮殿","reading":"きゅうでん","meaning_vi":"cung điện"}]},
-  {"character":"緋","onyomi":["ヒ"],"kunyomi":["ひ","あけ"],"meaning_vi":"màu đỏ tươi, đỏ thắm","stroke_count":14,"vocab_examples":[{"word":"緋色","reading":"ひいろ","meaning_vi":"màu đỏ tươi"},{"word":"緋鯉","reading":"ひごい","meaning_vi":"cá chép đỏ"}]}
+  {
+    "character": "稲",
+    "onyomi": [
+      "トウ"
+    ],
+    "kunyomi": [
+      "いね",
+      "いな"
+    ],
+    "meaning_vi": "lúa, cây lúa",
+    "stroke_count": 14,
+    "vocab_examples": [
+      {
+        "word": "稲",
+        "reading": "いね",
+        "meaning_vi": "cây lúa"
+      },
+      {
+        "word": "稲作",
+        "reading": "いなさく",
+        "meaning_vi": "canh tác lúa"
+      }
+    ]
+  },
+  {
+    "character": "穂",
+    "onyomi": [
+      "スイ"
+    ],
+    "kunyomi": [
+      "ほ"
+    ],
+    "meaning_vi": "bông lúa, bông hoa",
+    "stroke_count": 15,
+    "vocab_examples": [
+      {
+        "word": "穂",
+        "reading": "ほ",
+        "meaning_vi": "bông lúa"
+      },
+      {
+        "word": "稲穂",
+        "reading": "いなほ",
+        "meaning_vi": "bông lúa"
+      }
+    ]
+  },
+  {
+    "character": "苗",
+    "onyomi": [
+      "ビョウ",
+      "ミョウ"
+    ],
+    "kunyomi": [
+      "なえ",
+      "なわ"
+    ],
+    "meaning_vi": "cây giống, mạ",
+    "stroke_count": 8,
+    "vocab_examples": [
+      {
+        "word": "苗",
+        "reading": "なえ",
+        "meaning_vi": "cây con, mầm cây"
+      },
+      {
+        "word": "苗木",
+        "reading": "なえき",
+        "meaning_vi": "cây giống"
+      }
+    ]
+  },
+  {
+    "character": "藻",
+    "onyomi": [
+      "ソウ"
+    ],
+    "kunyomi": [
+      "も"
+    ],
+    "meaning_vi": "tảo, rong biển",
+    "stroke_count": 19,
+    "vocab_examples": [
+      {
+        "word": "藻",
+        "reading": "も",
+        "meaning_vi": "tảo, rong"
+      },
+      {
+        "word": "海藻",
+        "reading": "かいそう",
+        "meaning_vi": "rong biển, tảo biển"
+      }
+    ]
+  },
+  {
+    "character": "栗",
+    "onyomi": [
+      "リツ"
+    ],
+    "kunyomi": [
+      "くり"
+    ],
+    "meaning_vi": "hạt dẻ",
+    "stroke_count": 10,
+    "vocab_examples": [
+      {
+        "word": "栗",
+        "reading": "くり",
+        "meaning_vi": "hạt dẻ"
+      },
+      {
+        "word": "栗色",
+        "reading": "くりいろ",
+        "meaning_vi": "màu nâu hạt dẻ"
+      }
+    ]
+  },
+  {
+    "character": "柿",
+    "onyomi": [
+      "シ"
+    ],
+    "kunyomi": [
+      "かき"
+    ],
+    "meaning_vi": "hồng, quả hồng",
+    "stroke_count": 9,
+    "vocab_examples": [
+      {
+        "word": "柿",
+        "reading": "かき",
+        "meaning_vi": "quả hồng"
+      },
+      {
+        "word": "柿の木",
+        "reading": "かきのき",
+        "meaning_vi": "cây hồng"
+      }
+    ]
+  },
+  {
+    "character": "杏",
+    "onyomi": [
+      "キョウ",
+      "アン"
+    ],
+    "kunyomi": [
+      "あんず"
+    ],
+    "meaning_vi": "mơ, hạnh đào",
+    "stroke_count": 7,
+    "vocab_examples": [
+      {
+        "word": "杏",
+        "reading": "あんず",
+        "meaning_vi": "quả mơ"
+      },
+      {
+        "word": "杏仁",
+        "reading": "きょうにん",
+        "meaning_vi": "hạt hạnh nhân"
+      }
+    ]
+  },
+  {
+    "character": "梨",
+    "onyomi": [
+      "リ"
+    ],
+    "kunyomi": [
+      "なし"
+    ],
+    "meaning_vi": "lê, quả lê",
+    "stroke_count": 11,
+    "vocab_examples": [
+      {
+        "word": "梨",
+        "reading": "なし",
+        "meaning_vi": "quả lê"
+      },
+      {
+        "word": "梨園",
+        "reading": "なしぞの",
+        "meaning_vi": "vườn lê, giới kịch nghệ"
+      }
+    ]
+  },
+  {
+    "character": "橙",
+    "onyomi": [
+      "トウ",
+      "ダイ"
+    ],
+    "kunyomi": [
+      "だいだい"
+    ],
+    "meaning_vi": "cam đắng, màu cam",
+    "stroke_count": 16,
+    "vocab_examples": [
+      {
+        "word": "橙",
+        "reading": "だいだい",
+        "meaning_vi": "quả cam đắng"
+      },
+      {
+        "word": "橙色",
+        "reading": "だいだいいろ",
+        "meaning_vi": "màu cam"
+      }
+    ]
+  },
+  {
+    "character": "柚",
+    "onyomi": [
+      "ユ",
+      "ユウ"
+    ],
+    "kunyomi": [
+      "ゆず"
+    ],
+    "meaning_vi": "yuzu, chanh vàng Nhật",
+    "stroke_count": 9,
+    "vocab_examples": [
+      {
+        "word": "柚子",
+        "reading": "ゆず",
+        "meaning_vi": "chanh yuzu"
+      },
+      {
+        "word": "柚子茶",
+        "reading": "ゆずちゃ",
+        "meaning_vi": "trà yuzu"
+      }
+    ]
+  },
+  {
+    "character": "渋",
+    "onyomi": [
+      "ジュウ"
+    ],
+    "kunyomi": [
+      "しぶ",
+      "しぶ.い"
+    ],
+    "meaning_vi": "chát, khó chịu, đứng đắn",
+    "stroke_count": 11,
+    "vocab_examples": [
+      {
+        "word": "渋い",
+        "reading": "しぶい",
+        "meaning_vi": "chát, kiêu, đứng đắn"
+      },
+      {
+        "word": "渋滞",
+        "reading": "じゅうたい",
+        "meaning_vi": "tắc đường"
+      }
+    ]
+  },
+  {
+    "character": "淡",
+    "onyomi": [
+      "タン"
+    ],
+    "kunyomi": [
+      "あわ.い"
+    ],
+    "meaning_vi": "nhạt, thanh đạm",
+    "stroke_count": 11,
+    "vocab_examples": [
+      {
+        "word": "淡い",
+        "reading": "あわい",
+        "meaning_vi": "nhạt, mờ nhạt"
+      },
+      {
+        "word": "淡水",
+        "reading": "たんすい",
+        "meaning_vi": "nước ngọt"
+      }
+    ]
+  },
+  {
+    "character": "丼",
+    "onyomi": [
+      "ドン",
+      "セイ"
+    ],
+    "kunyomi": [
+      "どんぶり"
+    ],
+    "meaning_vi": "tô cơm, cơm trộn",
+    "stroke_count": 5,
+    "vocab_examples": [
+      {
+        "word": "丼",
+        "reading": "どんぶり",
+        "meaning_vi": "tô cơm, cơm trộn"
+      },
+      {
+        "word": "牛丼",
+        "reading": "ぎゅうどん",
+        "meaning_vi": "cơm thịt bò"
+      }
+    ]
+  },
+  {
+    "character": "粥",
+    "onyomi": [
+      "シュク"
+    ],
+    "kunyomi": [
+      "かゆ"
+    ],
+    "meaning_vi": "cháo",
+    "stroke_count": 12,
+    "vocab_examples": [
+      {
+        "word": "粥",
+        "reading": "かゆ",
+        "meaning_vi": "cháo"
+      },
+      {
+        "word": "お粥",
+        "reading": "おかゆ",
+        "meaning_vi": "cháo (kính ngữ)"
+      }
+    ]
+  },
+  {
+    "character": "麺",
+    "onyomi": [
+      "メン"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "mì, bún",
+    "stroke_count": 16,
+    "vocab_examples": [
+      {
+        "word": "麺",
+        "reading": "めん",
+        "meaning_vi": "sợi mì"
+      },
+      {
+        "word": "ラーメン",
+        "reading": "らーめん",
+        "meaning_vi": "ramen, mì Nhật"
+      }
+    ]
+  },
+  {
+    "character": "膳",
+    "onyomi": [
+      "ゼン"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "khay, bữa ăn",
+    "stroke_count": 16,
+    "vocab_examples": [
+      {
+        "word": "膳",
+        "reading": "ぜん",
+        "meaning_vi": "khay, bữa ăn"
+      },
+      {
+        "word": "お膳立て",
+        "reading": "おぜんだて",
+        "meaning_vi": "chuẩn bị, sắp xếp"
+      }
+    ]
+  },
+  {
+    "character": "椀",
+    "onyomi": [
+      "ワン"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "bát, tô gỗ",
+    "stroke_count": 12,
+    "vocab_examples": [
+      {
+        "word": "椀",
+        "reading": "わん",
+        "meaning_vi": "bát, tô"
+      },
+      {
+        "word": "茶椀",
+        "reading": "ちゃわん",
+        "meaning_vi": "bát trà, chén cơm"
+      }
+    ]
+  },
+  {
+    "character": "漬",
+    "onyomi": [
+      "シ"
+    ],
+    "kunyomi": [
+      "つ.ける",
+      "つ.かる"
+    ],
+    "meaning_vi": "ngâm, muối dưa",
+    "stroke_count": 14,
+    "vocab_examples": [
+      {
+        "word": "漬ける",
+        "reading": "つける",
+        "meaning_vi": "ngâm, muối"
+      },
+      {
+        "word": "漬物",
+        "reading": "つけもの",
+        "meaning_vi": "đồ muối dưa"
+      }
+    ]
+  },
+  {
+    "character": "醤",
+    "onyomi": [
+      "ショウ"
+    ],
+    "kunyomi": [
+      "ひしお"
+    ],
+    "meaning_vi": "tương, nước tương",
+    "stroke_count": 17,
+    "vocab_examples": [
+      {
+        "word": "醤油",
+        "reading": "しょうゆ",
+        "meaning_vi": "nước tương"
+      },
+      {
+        "word": "味噌醤油",
+        "reading": "みそしょうゆ",
+        "meaning_vi": "miso và nước tương"
+      }
+    ]
+  },
+  {
+    "character": "酢",
+    "onyomi": [
+      "サク",
+      "ス"
+    ],
+    "kunyomi": [
+      "す"
+    ],
+    "meaning_vi": "giấm",
+    "stroke_count": 12,
+    "vocab_examples": [
+      {
+        "word": "酢",
+        "reading": "す",
+        "meaning_vi": "giấm"
+      },
+      {
+        "word": "酢飯",
+        "reading": "すめし",
+        "meaning_vi": "cơm giấm"
+      }
+    ]
+  },
+  {
+    "character": "酵",
+    "onyomi": [
+      "コウ"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "lên men, men",
+    "stroke_count": 14,
+    "vocab_examples": [
+      {
+        "word": "酵母",
+        "reading": "こうぼ",
+        "meaning_vi": "men, nấm men"
+      },
+      {
+        "word": "発酵",
+        "reading": "はっこう",
+        "meaning_vi": "lên men"
+      }
+    ]
+  },
+  {
+    "character": "糠",
+    "onyomi": [
+      "コウ"
+    ],
+    "kunyomi": [
+      "ぬか"
+    ],
+    "meaning_vi": "cám gạo",
+    "stroke_count": 17,
+    "vocab_examples": [
+      {
+        "word": "糠",
+        "reading": "ぬか",
+        "meaning_vi": "cám gạo"
+      },
+      {
+        "word": "糠漬け",
+        "reading": "ぬかづけ",
+        "meaning_vi": "dưa muối cám"
+      }
+    ]
+  },
+  {
+    "character": "醸",
+    "onyomi": [
+      "ジョウ"
+    ],
+    "kunyomi": [
+      "かも.す"
+    ],
+    "meaning_vi": "ủ, nấu rượu, tạo ra",
+    "stroke_count": 20,
+    "vocab_examples": [
+      {
+        "word": "醸造",
+        "reading": "じょうぞう",
+        "meaning_vi": "chưng cất, sản xuất rượu"
+      },
+      {
+        "word": "醸す",
+        "reading": "かもす",
+        "meaning_vi": "ủ rượu, gây ra"
+      }
+    ]
+  },
+  {
+    "character": "炊",
+    "onyomi": [
+      "スイ"
+    ],
+    "kunyomi": [
+      "た.く"
+    ],
+    "meaning_vi": "nấu cơm",
+    "stroke_count": 8,
+    "vocab_examples": [
+      {
+        "word": "炊く",
+        "reading": "たく",
+        "meaning_vi": "nấu cơm"
+      },
+      {
+        "word": "炊飯",
+        "reading": "すいはん",
+        "meaning_vi": "nấu cơm"
+      }
+    ]
+  },
+  {
+    "character": "燻",
+    "onyomi": [
+      "クン"
+    ],
+    "kunyomi": [
+      "いぶ.す",
+      "くす.べる"
+    ],
+    "meaning_vi": "hun khói, xông khói",
+    "stroke_count": 17,
+    "vocab_examples": [
+      {
+        "word": "燻す",
+        "reading": "いぶす",
+        "meaning_vi": "hun khói"
+      },
+      {
+        "word": "燻製",
+        "reading": "くんせい",
+        "meaning_vi": "thực phẩm hun khói"
+      }
+    ]
+  },
+  {
+    "character": "炙",
+    "onyomi": [
+      "シャ"
+    ],
+    "kunyomi": [
+      "あぶ.る"
+    ],
+    "meaning_vi": "nướng, hơ lửa",
+    "stroke_count": 8,
+    "vocab_examples": [
+      {
+        "word": "炙る",
+        "reading": "あぶる",
+        "meaning_vi": "nướng, hơ lửa"
+      },
+      {
+        "word": "炙り",
+        "reading": "あぶり",
+        "meaning_vi": "đồ nướng"
+      }
+    ]
+  },
+  {
+    "character": "炒",
+    "onyomi": [
+      "ソウ"
+    ],
+    "kunyomi": [
+      "い.る",
+      "いた.める"
+    ],
+    "meaning_vi": "chiên xào",
+    "stroke_count": 8,
+    "vocab_examples": [
+      {
+        "word": "炒める",
+        "reading": "いためる",
+        "meaning_vi": "xào"
+      },
+      {
+        "word": "炒飯",
+        "reading": "チャーハン",
+        "meaning_vi": "cơm chiên"
+      }
+    ]
+  },
+  {
+    "character": "煎",
+    "onyomi": [
+      "セン"
+    ],
+    "kunyomi": [
+      "い.る",
+      "せん.じる"
+    ],
+    "meaning_vi": "rang, sắc thuốc",
+    "stroke_count": 13,
+    "vocab_examples": [
+      {
+        "word": "煎る",
+        "reading": "いる",
+        "meaning_vi": "rang"
+      },
+      {
+        "word": "煎茶",
+        "reading": "せんちゃ",
+        "meaning_vi": "trà xanh"
+      }
+    ]
+  },
+  {
+    "character": "唄",
+    "onyomi": [
+      "バイ"
+    ],
+    "kunyomi": [
+      "うた"
+    ],
+    "meaning_vi": "bài hát dân ca",
+    "stroke_count": 10,
+    "vocab_examples": [
+      {
+        "word": "唄",
+        "reading": "うた",
+        "meaning_vi": "bài hát, dân ca"
+      },
+      {
+        "word": "子守唄",
+        "reading": "こもりうた",
+        "meaning_vi": "bài hát ru"
+      }
+    ]
+  },
+  {
+    "character": "渦",
+    "onyomi": [
+      "カ"
+    ],
+    "kunyomi": [
+      "うず"
+    ],
+    "meaning_vi": "xoáy nước, xoáy",
+    "stroke_count": 12,
+    "vocab_examples": [
+      {
+        "word": "渦",
+        "reading": "うず",
+        "meaning_vi": "xoáy nước"
+      },
+      {
+        "word": "渦巻き",
+        "reading": "うずまき",
+        "meaning_vi": "hình xoắn ốc"
+      }
+    ]
+  },
+  {
+    "character": "沼",
+    "onyomi": [
+      "ショウ"
+    ],
+    "kunyomi": [
+      "ぬま"
+    ],
+    "meaning_vi": "đầm lầy",
+    "stroke_count": 8,
+    "vocab_examples": [
+      {
+        "word": "沼",
+        "reading": "ぬま",
+        "meaning_vi": "đầm lầy"
+      },
+      {
+        "word": "沼地",
+        "reading": "ぬまち",
+        "meaning_vi": "vùng đầm lầy"
+      }
+    ]
+  },
+  {
+    "character": "岬",
+    "onyomi": [
+      "コウ"
+    ],
+    "kunyomi": [
+      "みさき"
+    ],
+    "meaning_vi": "mũi đất, mũi đất nhô ra biển",
+    "stroke_count": 8,
+    "vocab_examples": [
+      {
+        "word": "岬",
+        "reading": "みさき",
+        "meaning_vi": "mũi đất"
+      },
+      {
+        "word": "岬の灯台",
+        "reading": "みさきのとうだい",
+        "meaning_vi": "ngọn hải đăng ở mũi đất"
+      }
+    ]
+  },
+  {
+    "character": "崖",
+    "onyomi": [
+      "ガイ"
+    ],
+    "kunyomi": [
+      "がけ"
+    ],
+    "meaning_vi": "vách đá, vách núi",
+    "stroke_count": 11,
+    "vocab_examples": [
+      {
+        "word": "崖",
+        "reading": "がけ",
+        "meaning_vi": "vách đá"
+      },
+      {
+        "word": "断崖",
+        "reading": "だんがい",
+        "meaning_vi": "vách đá dựng đứng"
+      }
+    ]
+  },
+  {
+    "character": "洞",
+    "onyomi": [
+      "ドウ",
+      "トウ"
+    ],
+    "kunyomi": [
+      "ほら"
+    ],
+    "meaning_vi": "hang động, hốc",
+    "stroke_count": 9,
+    "vocab_examples": [
+      {
+        "word": "洞",
+        "reading": "ほら",
+        "meaning_vi": "hang động"
+      },
+      {
+        "word": "洞窟",
+        "reading": "どうくつ",
+        "meaning_vi": "hang động"
+      }
+    ]
+  },
+  {
+    "character": "泡",
+    "onyomi": [
+      "ホウ"
+    ],
+    "kunyomi": [
+      "あわ"
+    ],
+    "meaning_vi": "bọt, bong bóng",
+    "stroke_count": 8,
+    "vocab_examples": [
+      {
+        "word": "泡",
+        "reading": "あわ",
+        "meaning_vi": "bọt"
+      },
+      {
+        "word": "泡立つ",
+        "reading": "あわだつ",
+        "meaning_vi": "nổi bọt"
+      }
+    ]
+  },
+  {
+    "character": "雷",
+    "onyomi": [
+      "ライ"
+    ],
+    "kunyomi": [
+      "かみなり"
+    ],
+    "meaning_vi": "sấm, sét",
+    "stroke_count": 13,
+    "vocab_examples": [
+      {
+        "word": "雷",
+        "reading": "かみなり",
+        "meaning_vi": "sấm sét"
+      },
+      {
+        "word": "雷雨",
+        "reading": "らいう",
+        "meaning_vi": "mưa dông"
+      }
+    ]
+  },
+  {
+    "character": "凍",
+    "onyomi": [
+      "トウ"
+    ],
+    "kunyomi": [
+      "こお.る",
+      "こご.える"
+    ],
+    "meaning_vi": "đóng băng, lạnh cứng",
+    "stroke_count": 10,
+    "vocab_examples": [
+      {
+        "word": "凍る",
+        "reading": "こおる",
+        "meaning_vi": "đóng băng"
+      },
+      {
+        "word": "冷凍",
+        "reading": "れいとう",
+        "meaning_vi": "đông lạnh"
+      }
+    ]
+  },
+  {
+    "character": "砕",
+    "onyomi": [
+      "サイ"
+    ],
+    "kunyomi": [
+      "くだ.く",
+      "くだ.ける"
+    ],
+    "meaning_vi": "nghiền, đập vỡ",
+    "stroke_count": 9,
+    "vocab_examples": [
+      {
+        "word": "砕く",
+        "reading": "くだく",
+        "meaning_vi": "nghiền, đập vỡ"
+      },
+      {
+        "word": "粉砕",
+        "reading": "ふんさい",
+        "meaning_vi": "nghiền nát"
+      }
+    ]
+  },
+  {
+    "character": "裂",
+    "onyomi": [
+      "レツ"
+    ],
+    "kunyomi": [
+      "さ.く",
+      "さ.ける"
+    ],
+    "meaning_vi": "xé rách, nứt vỡ",
+    "stroke_count": 12,
+    "vocab_examples": [
+      {
+        "word": "裂く",
+        "reading": "さく",
+        "meaning_vi": "xé rách"
+      },
+      {
+        "word": "分裂",
+        "reading": "ぶんれつ",
+        "meaning_vi": "phân liệt, chia rẽ"
+      }
+    ]
+  },
+  {
+    "character": "磯",
+    "onyomi": [
+      "キ"
+    ],
+    "kunyomi": [
+      "いそ"
+    ],
+    "meaning_vi": "bờ đá, bãi đá ven biển",
+    "stroke_count": 17,
+    "vocab_examples": [
+      {
+        "word": "磯",
+        "reading": "いそ",
+        "meaning_vi": "bãi đá ven biển"
+      },
+      {
+        "word": "磯釣り",
+        "reading": "いそづり",
+        "meaning_vi": "câu cá ven biển"
+      }
+    ]
+  },
+  {
+    "character": "潟",
+    "onyomi": [
+      "セキ"
+    ],
+    "kunyomi": [
+      "かた"
+    ],
+    "meaning_vi": "đầm phá, bãi triều",
+    "stroke_count": 15,
+    "vocab_examples": [
+      {
+        "word": "潟",
+        "reading": "かた",
+        "meaning_vi": "đầm phá"
+      },
+      {
+        "word": "新潟",
+        "reading": "にいがた",
+        "meaning_vi": "Niigata (tên địa danh)"
+      }
+    ]
+  },
+  {
+    "character": "瀬",
+    "onyomi": [
+      "セ"
+    ],
+    "kunyomi": [
+      "せ"
+    ],
+    "meaning_vi": "thác nước nông, bãi cạn",
+    "stroke_count": 19,
+    "vocab_examples": [
+      {
+        "word": "瀬",
+        "reading": "せ",
+        "meaning_vi": "thác nước nông"
+      },
+      {
+        "word": "瀬戸",
+        "reading": "せと",
+        "meaning_vi": "eo biển hẹp"
+      }
+    ]
+  },
+  {
+    "character": "礁",
+    "onyomi": [
+      "ショウ"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "rạn san hô, đá ngầm",
+    "stroke_count": 17,
+    "vocab_examples": [
+      {
+        "word": "暗礁",
+        "reading": "あんしょう",
+        "meaning_vi": "đá ngầm, vật cản"
+      },
+      {
+        "word": "珊瑚礁",
+        "reading": "さんごしょう",
+        "meaning_vi": "rạn san hô"
+      }
+    ]
+  },
+  {
+    "character": "珊",
+    "onyomi": [
+      "サン"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "san hô",
+    "stroke_count": 9,
+    "vocab_examples": [
+      {
+        "word": "珊瑚",
+        "reading": "さんご",
+        "meaning_vi": "san hô"
+      },
+      {
+        "word": "珊瑚礁",
+        "reading": "さんごしょう",
+        "meaning_vi": "rạn san hô"
+      }
+    ]
+  },
+  {
+    "character": "瑚",
+    "onyomi": [
+      "コ"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "san hô (loại đá quý)",
+    "stroke_count": 13,
+    "vocab_examples": [
+      {
+        "word": "珊瑚",
+        "reading": "さんご",
+        "meaning_vi": "san hô"
+      },
+      {
+        "word": "瑚珀",
+        "reading": "こはく",
+        "meaning_vi": "hổ phách"
+      }
+    ]
+  },
+  {
+    "character": "礫",
+    "onyomi": [
+      "レキ"
+    ],
+    "kunyomi": [
+      "つぶて",
+      "こいし"
+    ],
+    "meaning_vi": "sỏi, đá nhỏ",
+    "stroke_count": 20,
+    "vocab_examples": [
+      {
+        "word": "礫",
+        "reading": "つぶて",
+        "meaning_vi": "hòn sỏi, đá ném"
+      },
+      {
+        "word": "砂礫",
+        "reading": "されき",
+        "meaning_vi": "sỏi, đá nhỏ"
+      }
+    ]
+  },
+  {
+    "character": "狩",
+    "onyomi": [
+      "シュ"
+    ],
+    "kunyomi": [
+      "か.る",
+      "かり"
+    ],
+    "meaning_vi": "săn bắn",
+    "stroke_count": 9,
+    "vocab_examples": [
+      {
+        "word": "狩り",
+        "reading": "かり",
+        "meaning_vi": "săn bắn"
+      },
+      {
+        "word": "狩猟",
+        "reading": "しゅりょう",
+        "meaning_vi": "săn bắn, săn thú"
+      }
+    ]
+  },
+  {
+    "character": "掘",
+    "onyomi": [
+      "クツ"
+    ],
+    "kunyomi": [
+      "ほ.る"
+    ],
+    "meaning_vi": "đào, khai quật",
+    "stroke_count": 11,
+    "vocab_examples": [
+      {
+        "word": "掘る",
+        "reading": "ほる",
+        "meaning_vi": "đào đất"
+      },
+      {
+        "word": "発掘",
+        "reading": "はっくつ",
+        "meaning_vi": "khai quật"
+      }
+    ]
+  },
+  {
+    "character": "削",
+    "onyomi": [
+      "サク"
+    ],
+    "kunyomi": [
+      "けず.る"
+    ],
+    "meaning_vi": "cắt, bào, giảm",
+    "stroke_count": 9,
+    "vocab_examples": [
+      {
+        "word": "削る",
+        "reading": "けずる",
+        "meaning_vi": "bào, cắt xén"
+      },
+      {
+        "word": "削減",
+        "reading": "さくげん",
+        "meaning_vi": "cắt giảm"
+      }
+    ]
+  },
+  {
+    "character": "鋳",
+    "onyomi": [
+      "チュウ"
+    ],
+    "kunyomi": [
+      "い.る"
+    ],
+    "meaning_vi": "đúc kim loại",
+    "stroke_count": 15,
+    "vocab_examples": [
+      {
+        "word": "鋳る",
+        "reading": "いる",
+        "meaning_vi": "đúc (kim loại)"
+      },
+      {
+        "word": "鋳造",
+        "reading": "ちゅうぞう",
+        "meaning_vi": "đúc, rèn"
+      }
+    ]
+  },
+  {
+    "character": "鍛",
+    "onyomi": [
+      "タン"
+    ],
+    "kunyomi": [
+      "きた.える"
+    ],
+    "meaning_vi": "rèn luyện, tôi thép",
+    "stroke_count": 17,
+    "vocab_examples": [
+      {
+        "word": "鍛える",
+        "reading": "きたえる",
+        "meaning_vi": "rèn luyện"
+      },
+      {
+        "word": "鍛冶",
+        "reading": "かじ",
+        "meaning_vi": "thợ rèn"
+      }
+    ]
+  },
+  {
+    "character": "笛",
+    "onyomi": [
+      "テキ"
+    ],
+    "kunyomi": [
+      "ふえ"
+    ],
+    "meaning_vi": "sáo, còi",
+    "stroke_count": 11,
+    "vocab_examples": [
+      {
+        "word": "笛",
+        "reading": "ふえ",
+        "meaning_vi": "sáo, còi"
+      },
+      {
+        "word": "横笛",
+        "reading": "よこぶえ",
+        "meaning_vi": "sáo ngang"
+      }
+    ]
+  },
+  {
+    "character": "苑",
+    "onyomi": [
+      "エン",
+      "オン"
+    ],
+    "kunyomi": [
+      "その"
+    ],
+    "meaning_vi": "vườn, khu vực",
+    "stroke_count": 8,
+    "vocab_examples": [
+      {
+        "word": "苑",
+        "reading": "その",
+        "meaning_vi": "vườn"
+      },
+      {
+        "word": "御苑",
+        "reading": "ぎょえん",
+        "meaning_vi": "vườn ngự uyển"
+      }
+    ]
+  },
+  {
+    "character": "庭",
+    "onyomi": [
+      "テイ"
+    ],
+    "kunyomi": [
+      "にわ"
+    ],
+    "meaning_vi": "sân vườn, vườn",
+    "stroke_count": 10,
+    "vocab_examples": [
+      {
+        "word": "庭",
+        "reading": "にわ",
+        "meaning_vi": "sân vườn"
+      },
+      {
+        "word": "庭園",
+        "reading": "ていえん",
+        "meaning_vi": "khu vườn"
+      }
+    ]
+  },
+  {
+    "character": "庄",
+    "onyomi": [
+      "ショウ"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "trang trại, làng",
+    "stroke_count": 6,
+    "vocab_examples": [
+      {
+        "word": "庄屋",
+        "reading": "しょうや",
+        "meaning_vi": "trưởng làng"
+      },
+      {
+        "word": "庄園",
+        "reading": "しょうえん",
+        "meaning_vi": "trang viên"
+      }
+    ]
+  },
+  {
+    "character": "亭",
+    "onyomi": [
+      "テイ"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "đình, nhà nghỉ",
+    "stroke_count": 9,
+    "vocab_examples": [
+      {
+        "word": "亭主",
+        "reading": "ていしゅ",
+        "meaning_vi": "chủ nhà, chồng"
+      },
+      {
+        "word": "料亭",
+        "reading": "りょうてい",
+        "meaning_vi": "nhà hàng truyền thống"
+      }
+    ]
+  },
+  {
+    "character": "堂",
+    "onyomi": [
+      "ドウ"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "tòa nhà, đường, điện",
+    "stroke_count": 11,
+    "vocab_examples": [
+      {
+        "word": "食堂",
+        "reading": "しょくどう",
+        "meaning_vi": "nhà ăn"
+      },
+      {
+        "word": "講堂",
+        "reading": "こうどう",
+        "meaning_vi": "hội trường"
+      }
+    ]
+  },
+  {
+    "character": "殿",
+    "onyomi": [
+      "デン",
+      "テン"
+    ],
+    "kunyomi": [
+      "との",
+      "どの"
+    ],
+    "meaning_vi": "điện, lâu đài, ngài",
+    "stroke_count": 13,
+    "vocab_examples": [
+      {
+        "word": "殿",
+        "reading": "との",
+        "meaning_vi": "điện, ngài"
+      },
+      {
+        "word": "宮殿",
+        "reading": "きゅうでん",
+        "meaning_vi": "cung điện"
+      }
+    ]
+  },
+  {
+    "character": "緋",
+    "onyomi": [
+      "ヒ"
+    ],
+    "kunyomi": [
+      "ひ",
+      "あけ"
+    ],
+    "meaning_vi": "màu đỏ tươi, đỏ thắm",
+    "stroke_count": 14,
+    "vocab_examples": [
+      {
+        "word": "緋色",
+        "reading": "ひいろ",
+        "meaning_vi": "màu đỏ tươi"
+      },
+      {
+        "word": "緋鯉",
+        "reading": "ひごい",
+        "meaning_vi": "cá chép đỏ"
+      }
+    ]
+  }
 ]

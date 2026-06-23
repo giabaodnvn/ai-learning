@@ -276,27 +276,6 @@
     ]
   },
   {
-    "character": "賠",
-    "onyomi": [
-      "バイ"
-    ],
-    "kunyomi": [],
-    "meaning_vi": "bồi thường",
-    "stroke_count": 15,
-    "vocab_examples": [
-      {
-        "word": "賠償",
-        "reading": "ばいしょう",
-        "meaning_vi": "bồi thường"
-      },
-      {
-        "word": "損害賠償",
-        "reading": "そんがいばいしょう",
-        "meaning_vi": "bồi thường thiệt hại"
-      }
-    ]
-  },
-  {
     "character": "蝦",
     "onyomi": [
       "カ",
@@ -403,28 +382,6 @@
         "word": "誰か",
         "reading": "だれか",
         "meaning_vi": "ai đó"
-      }
-    ]
-  },
-  {
-    "character": "較",
-    "onyomi": [
-      "カク",
-      "コウ"
-    ],
-    "kunyomi": [],
-    "meaning_vi": "so sánh",
-    "stroke_count": 13,
-    "vocab_examples": [
-      {
-        "word": "比較",
-        "reading": "ひかく",
-        "meaning_vi": "so sánh"
-      },
-      {
-        "word": "比較的",
-        "reading": "ひかくてき",
-        "meaning_vi": "tương đối"
       }
     ]
   },
@@ -800,35 +757,6 @@
     ]
   },
   {
-    "character": "拠",
-    "onyomi": [
-      "キョ",
-      "コ"
-    ],
-    "kunyomi": [
-      "よ.る"
-    ],
-    "meaning_vi": "căn cứ, dựa vào",
-    "stroke_count": 8,
-    "vocab_examples": [
-      {
-        "word": "根拠",
-        "reading": "こんきょ",
-        "meaning_vi": "căn cứ, cơ sở"
-      },
-      {
-        "word": "拠点",
-        "reading": "きょてん",
-        "meaning_vi": "căn cứ địa"
-      },
-      {
-        "word": "証拠",
-        "reading": "しょうこ",
-        "meaning_vi": "bằng chứng"
-      }
-    ]
-  },
-  {
     "character": "据",
     "onyomi": [
       "キョ"
@@ -915,35 +843,6 @@
     ]
   },
   {
-    "character": "崩",
-    "onyomi": [
-      "ホウ"
-    ],
-    "kunyomi": [
-      "くず.れる",
-      "くず.す"
-    ],
-    "meaning_vi": "sụp đổ, tan vỡ",
-    "stroke_count": 11,
-    "vocab_examples": [
-      {
-        "word": "崩れる",
-        "reading": "くずれる",
-        "meaning_vi": "sụp đổ, đổ vỡ"
-      },
-      {
-        "word": "崩壊",
-        "reading": "ほうかい",
-        "meaning_vi": "sụp đổ, tan rã"
-      },
-      {
-        "word": "雪崩",
-        "reading": "なだれ",
-        "meaning_vi": "tuyết lở"
-      }
-    ]
-  },
-  {
     "character": "侵",
     "onyomi": [
       "シン"
@@ -968,85 +867,6 @@
         "word": "侵害",
         "reading": "しんがい",
         "meaning_vi": "xâm phạm"
-      }
-    ]
-  },
-  {
-    "character": "卑",
-    "onyomi": [
-      "ヒ"
-    ],
-    "kunyomi": [
-      "いや.しい",
-      "ひく.い"
-    ],
-    "meaning_vi": "hèn hạ, thấp kém",
-    "stroke_count": 9,
-    "vocab_examples": [
-      {
-        "word": "卑しい",
-        "reading": "いやしい",
-        "meaning_vi": "hèn hạ, thấp kém"
-      },
-      {
-        "word": "卑怯",
-        "reading": "ひきょう",
-        "meaning_vi": "hèn nhát, ti tiện"
-      },
-      {
-        "word": "卑劣",
-        "reading": "ひれつ",
-        "meaning_vi": "đê tiện, hèn mạt"
-      }
-    ]
-  },
-  {
-    "character": "謙",
-    "onyomi": [
-      "ケン"
-    ],
-    "kunyomi": [],
-    "meaning_vi": "khiêm tốn",
-    "stroke_count": 17,
-    "vocab_examples": [
-      {
-        "word": "謙虚",
-        "reading": "けんきょ",
-        "meaning_vi": "khiêm tốn"
-      },
-      {
-        "word": "謙遜",
-        "reading": "けんそん",
-        "meaning_vi": "khiêm nhường"
-      }
-    ]
-  },
-  {
-    "character": "虚",
-    "onyomi": [
-      "キョ",
-      "コ"
-    ],
-    "kunyomi": [
-      "むな.しい"
-    ],
-    "meaning_vi": "trống rỗng, hư không",
-    "stroke_count": 11,
-    "vocab_examples": [
-      {
-        "word": "虚偽",
-        "reading": "きょぎ",
-        "meaning_vi": "giả dối"
-      },
-      {
-        "word": "謙虚",
-        "reading": "けんきょ",
-        "meaning_vi": "khiêm tốn"
-      },
-      {
-        "word": "虚弱",
-        "reading": "きょじゃく",
-        "meaning_vi": "yếu đuối"
       }
     ]
   },
@@ -1108,64 +928,6 @@
     ]
   },
   {
-    "character": "憎",
-    "onyomi": [
-      "ゾウ"
-    ],
-    "kunyomi": [
-      "にく.む",
-      "にく.い"
-    ],
-    "meaning_vi": "ghét, thù hận",
-    "stroke_count": 14,
-    "vocab_examples": [
-      {
-        "word": "憎む",
-        "reading": "にくむ",
-        "meaning_vi": "ghét, thù"
-      },
-      {
-        "word": "憎しみ",
-        "reading": "にくしみ",
-        "meaning_vi": "sự thù hận"
-      },
-      {
-        "word": "憎悪",
-        "reading": "ぞうお",
-        "meaning_vi": "căm ghét, thù hận"
-      }
-    ]
-  },
-  {
-    "character": "惜",
-    "onyomi": [
-      "セキ"
-    ],
-    "kunyomi": [
-      "お.しい",
-      "お.しむ"
-    ],
-    "meaning_vi": "tiếc, quý tiếc",
-    "stroke_count": 11,
-    "vocab_examples": [
-      {
-        "word": "惜しい",
-        "reading": "おしい",
-        "meaning_vi": "tiếc, đáng tiếc"
-      },
-      {
-        "word": "惜しむ",
-        "reading": "おしむ",
-        "meaning_vi": "tiếc, quý tiếc"
-      },
-      {
-        "word": "惜別",
-        "reading": "せきべつ",
-        "meaning_vi": "lưu luyến khi chia tay"
-      }
-    ]
-  },
-  {
     "character": "辛",
     "onyomi": [
       "シン"
@@ -1195,147 +957,6 @@
     ]
   },
   {
-    "character": "渋",
-    "onyomi": [
-      "ジュウ"
-    ],
-    "kunyomi": [
-      "しぶ.い",
-      "しぶ.る"
-    ],
-    "meaning_vi": "chát, trầm lắng, ngần ngại",
-    "stroke_count": 11,
-    "vocab_examples": [
-      {
-        "word": "渋い",
-        "reading": "しぶい",
-        "meaning_vi": "chát, trầm tĩnh"
-      },
-      {
-        "word": "渋滞",
-        "reading": "じゅうたい",
-        "meaning_vi": "tắc đường, ùn tắc"
-      },
-      {
-        "word": "渋る",
-        "reading": "しぶる",
-        "meaning_vi": "ngần ngại, do dự"
-      }
-    ]
-  },
-  {
-    "character": "淡",
-    "onyomi": [
-      "タン"
-    ],
-    "kunyomi": [
-      "あわ.い"
-    ],
-    "meaning_vi": "nhạt, loãng",
-    "stroke_count": 11,
-    "vocab_examples": [
-      {
-        "word": "淡い",
-        "reading": "あわい",
-        "meaning_vi": "nhạt, mờ"
-      },
-      {
-        "word": "淡水",
-        "reading": "たんすい",
-        "meaning_vi": "nước ngọt"
-      },
-      {
-        "word": "淡白",
-        "reading": "たんぱく",
-        "meaning_vi": "nhạt nhẽo, thanh đạm"
-      }
-    ]
-  },
-  {
-    "character": "蛍",
-    "onyomi": [
-      "ケイ"
-    ],
-    "kunyomi": [
-      "ほたる"
-    ],
-    "meaning_vi": "đom đóm",
-    "stroke_count": 11,
-    "vocab_examples": [
-      {
-        "word": "蛍",
-        "reading": "ほたる",
-        "meaning_vi": "đom đóm"
-      },
-      {
-        "word": "蛍光",
-        "reading": "けいこう",
-        "meaning_vi": "huỳnh quang"
-      },
-      {
-        "word": "蛍光灯",
-        "reading": "けいこうとう",
-        "meaning_vi": "đèn huỳnh quang"
-      }
-    ]
-  },
-  {
-    "character": "艶",
-    "onyomi": [
-      "エン"
-    ],
-    "kunyomi": [
-      "つや"
-    ],
-    "meaning_vi": "óng ánh, quyến rũ",
-    "stroke_count": 19,
-    "vocab_examples": [
-      {
-        "word": "艶",
-        "reading": "つや",
-        "meaning_vi": "độ bóng, vẻ óng ánh"
-      },
-      {
-        "word": "艶やか",
-        "reading": "あでやか",
-        "meaning_vi": "quyến rũ, lộng lẫy"
-      },
-      {
-        "word": "艶消し",
-        "reading": "つやけし",
-        "meaning_vi": "làm mờ bề mặt"
-      }
-    ]
-  },
-  {
-    "character": "霜",
-    "onyomi": [
-      "ソウ"
-    ],
-    "kunyomi": [
-      "しも"
-    ],
-    "meaning_vi": "sương muối, băng giá",
-    "stroke_count": 17,
-    "vocab_examples": [
-      {
-        "word": "霜",
-        "reading": "しも",
-        "meaning_vi": "sương muối"
-      },
-      {
-        "word": "霜柱",
-        "reading": "しもばしら",
-        "meaning_vi": "cột băng do sương đóng"
-      },
-      {
-        "word": "霜降り",
-        "reading": "しもふり",
-        "meaning_vi": "thịt có vân mỡ (wagyu)"
-      }
-    ]
-  },
-  {
     "character": "峠",
     "onyomi": [],
     "kunyomi": [
@@ -1353,86 +974,6 @@
         "word": "峠を越える",
         "reading": "とうげをこえる",
         "meaning_vi": "vượt qua đèo, qua giai đoạn khó khăn nhất"
-      }
-    ]
-  },
-  {
-    "character": "崖",
-    "onyomi": [
-      "ガイ"
-    ],
-    "kunyomi": [
-      "がけ"
-    ],
-    "meaning_vi": "vách đá, vách núi",
-    "stroke_count": 11,
-    "vocab_examples": [
-      {
-        "word": "崖",
-        "reading": "がけ",
-        "meaning_vi": "vách đá"
-      },
-      {
-        "word": "断崖",
-        "reading": "だんがい",
-        "meaning_vi": "vách đứng"
-      },
-      {
-        "word": "崖崩れ",
-        "reading": "がけくずれ",
-        "meaning_vi": "sạt lở vách đá"
-      }
-    ]
-  },
-  {
-    "character": "洞",
-    "onyomi": [
-      "ドウ"
-    ],
-    "kunyomi": [
-      "ほら"
-    ],
-    "meaning_vi": "hang động",
-    "stroke_count": 9,
-    "vocab_examples": [
-      {
-        "word": "洞窟",
-        "reading": "どうくつ",
-        "meaning_vi": "hang động"
-      },
-      {
-        "word": "洞察",
-        "reading": "どうさつ",
-        "meaning_vi": "thấu hiểu, nhìn thấu"
-      },
-      {
-        "word": "洞穴",
-        "reading": "ほらあな",
-        "meaning_vi": "hang"
-      }
-    ]
-  },
-  {
-    "character": "渓",
-    "onyomi": [
-      "ケイ"
-    ],
-    "kunyomi": [
-      "たに",
-      "たにがわ"
-    ],
-    "meaning_vi": "khe suối, thung lũng",
-    "stroke_count": 11,
-    "vocab_examples": [
-      {
-        "word": "渓谷",
-        "reading": "けいこく",
-        "meaning_vi": "thung lũng hẹp"
-      },
-      {
-        "word": "渓流",
-        "reading": "けいりゅう",
-        "meaning_vi": "suối khe"
       }
     ]
   },
@@ -1465,62 +1006,6 @@
     ]
   },
   {
-    "character": "棚",
-    "onyomi": [
-      "ホウ"
-    ],
-    "kunyomi": [
-      "たな"
-    ],
-    "meaning_vi": "kệ, giá để đồ",
-    "stroke_count": 12,
-    "vocab_examples": [
-      {
-        "word": "棚",
-        "reading": "たな",
-        "meaning_vi": "kệ, giá"
-      },
-      {
-        "word": "本棚",
-        "reading": "ほんだな",
-        "meaning_vi": "giá sách"
-      },
-      {
-        "word": "棚上げ",
-        "reading": "たなあげ",
-        "meaning_vi": "gác lại, tạm hoãn"
-      }
-    ]
-  },
-  {
-    "character": "沼",
-    "onyomi": [
-      "ショウ"
-    ],
-    "kunyomi": [
-      "ぬま"
-    ],
-    "meaning_vi": "đầm lầy, ao hồ",
-    "stroke_count": 8,
-    "vocab_examples": [
-      {
-        "word": "沼",
-        "reading": "ぬま",
-        "meaning_vi": "đầm lầy"
-      },
-      {
-        "word": "沼地",
-        "reading": "ぬまち",
-        "meaning_vi": "vùng đầm lầy"
-      },
-      {
-        "word": "泥沼",
-        "reading": "どろぬま",
-        "meaning_vi": "vũng bùn lầy"
-      }
-    ]
-  },
-  {
     "character": "錆",
     "onyomi": [
       "ショウ"
@@ -1549,81 +1034,6 @@
     ]
   },
   {
-    "character": "萎",
-    "onyomi": [
-      "イ"
-    ],
-    "kunyomi": [
-      "しぼ.む",
-      "な.える"
-    ],
-    "meaning_vi": "tàn héo, teo tóp",
-    "stroke_count": 11,
-    "vocab_examples": [
-      {
-        "word": "萎む",
-        "reading": "しぼむ",
-        "meaning_vi": "tàn héo, xẹp xuống"
-      },
-      {
-        "word": "萎える",
-        "reading": "なえる",
-        "meaning_vi": "yếu đi, tê liệt"
-      },
-      {
-        "word": "萎縮",
-        "reading": "いしゅく",
-        "meaning_vi": "teo lại, thu nhỏ"
-      }
-    ]
-  },
-  {
-    "character": "憐",
-    "onyomi": [
-      "レン"
-    ],
-    "kunyomi": [
-      "あわ.れむ"
-    ],
-    "meaning_vi": "thương hại, trắc ẩn",
-    "stroke_count": 15,
-    "vocab_examples": [
-      {
-        "word": "憐れむ",
-        "reading": "あわれむ",
-        "meaning_vi": "thương xót"
-      },
-      {
-        "word": "憐憫",
-        "reading": "れんびん",
-        "meaning_vi": "lòng trắc ẩn"
-      }
-    ]
-  },
-  {
-    "character": "潟",
-    "onyomi": [
-      "セキ"
-    ],
-    "kunyomi": [
-      "かた"
-    ],
-    "meaning_vi": "đầm phá, lagoon",
-    "stroke_count": 15,
-    "vocab_examples": [
-      {
-        "word": "干潟",
-        "reading": "ひがた",
-        "meaning_vi": "bãi triều"
-      },
-      {
-        "word": "新潟",
-        "reading": "にいがた",
-        "meaning_vi": "Niigata"
-      }
-    ]
-  },
-  {
     "character": "蓄",
     "onyomi": [
       "チク"
@@ -1648,60 +1058,6 @@
         "word": "貯蓄",
         "reading": "ちょちく",
         "meaning_vi": "tiết kiệm, tích lũy"
-      }
-    ]
-  },
-  {
-    "character": "彫",
-    "onyomi": [
-      "チョウ"
-    ],
-    "kunyomi": [
-      "ほ.る"
-    ],
-    "meaning_vi": "điêu khắc, chạm trổ",
-    "stroke_count": 11,
-    "vocab_examples": [
-      {
-        "word": "彫る",
-        "reading": "ほる",
-        "meaning_vi": "điêu khắc, chạm"
-      },
-      {
-        "word": "彫刻",
-        "reading": "ちょうこく",
-        "meaning_vi": "điêu khắc"
-      },
-      {
-        "word": "木彫り",
-        "reading": "きぼり",
-        "meaning_vi": "chạm gỗ"
-      }
-    ]
-  },
-  {
-    "character": "剛",
-    "onyomi": [
-      "ゴウ"
-    ],
-    "kunyomi": [],
-    "meaning_vi": "cứng rắn, mạnh mẽ",
-    "stroke_count": 10,
-    "vocab_examples": [
-      {
-        "word": "剛健",
-        "reading": "ごうけん",
-        "meaning_vi": "cường tráng, khỏe mạnh"
-      },
-      {
-        "word": "剛力",
-        "reading": "ごうりき",
-        "meaning_vi": "sức mạnh phi thường"
-      },
-      {
-        "word": "剛直",
-        "reading": "ごうちょく",
-        "meaning_vi": "cứng rắn, thẳng thắn"
       }
     ]
   },
@@ -1735,64 +1091,6 @@
     ]
   },
   {
-    "character": "柔",
-    "onyomi": [
-      "ジュウ",
-      "ニュウ"
-    ],
-    "kunyomi": [
-      "やわ.らか",
-      "やわ.らかい"
-    ],
-    "meaning_vi": "mềm mại, dịu dàng",
-    "stroke_count": 9,
-    "vocab_examples": [
-      {
-        "word": "柔らかい",
-        "reading": "やわらかい",
-        "meaning_vi": "mềm mại"
-      },
-      {
-        "word": "柔道",
-        "reading": "じゅうどう",
-        "meaning_vi": "judo"
-      },
-      {
-        "word": "柔軟",
-        "reading": "じゅうなん",
-        "meaning_vi": "mềm dẻo, linh hoạt"
-      }
-    ]
-  },
-  {
-    "character": "鍛",
-    "onyomi": [
-      "タン"
-    ],
-    "kunyomi": [
-      "きた.える"
-    ],
-    "meaning_vi": "tôi luyện, rèn giũa",
-    "stroke_count": 17,
-    "vocab_examples": [
-      {
-        "word": "鍛える",
-        "reading": "きたえる",
-        "meaning_vi": "rèn luyện, tôi luyện"
-      },
-      {
-        "word": "鍛冶",
-        "reading": "かじ",
-        "meaning_vi": "rèn kim loại"
-      },
-      {
-        "word": "鍛錬",
-        "reading": "たんれん",
-        "meaning_vi": "rèn luyện, tu luyện"
-      }
-    ]
-  },
-  {
     "character": "苦",
     "onyomi": [
       "ク"
@@ -1818,34 +1116,6 @@
         "word": "苦手",
         "reading": "にがて",
         "meaning_vi": "điều không giỏi, điểm yếu"
-      }
-    ]
-  },
-  {
-    "character": "頻",
-    "onyomi": [
-      "ヒン"
-    ],
-    "kunyomi": [
-      "しき.りに"
-    ],
-    "meaning_vi": "thường xuyên, liên tục",
-    "stroke_count": 17,
-    "vocab_examples": [
-      {
-        "word": "頻繁",
-        "reading": "ひんぱん",
-        "meaning_vi": "thường xuyên, liên tục"
-      },
-      {
-        "word": "頻度",
-        "reading": "ひんど",
-        "meaning_vi": "tần suất"
-      },
-      {
-        "word": "頻発",
-        "reading": "ひんぱつ",
-        "meaning_vi": "xảy ra liên tiếp"
       }
     ]
   }
