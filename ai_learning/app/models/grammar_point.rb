@@ -5,7 +5,7 @@ class GrammarPoint < ApplicationRecord
 
   after_initialize { self.examples ||= [] }
 
-  validates :pattern,        presence: true
+  validates :pattern,        presence: true, uniqueness: { scope: :jlpt_level }
   validates :explanation_vi, presence: true
   validates :jlpt_level,     presence: true, inclusion: { in: JLPT_LEVELS }
 

@@ -110,7 +110,7 @@ module Prompts
             new_words:      Array(data["new_words"]),
             translation_vi: data["translation_vi"].presence,
           }
-        rescue JSON::ParseError
+        rescue JSON::ParserError
           # fall through
         end
       end

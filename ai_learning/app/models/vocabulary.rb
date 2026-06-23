@@ -6,10 +6,7 @@ class Vocabulary < ApplicationRecord
 
   after_initialize { self.tags ||= [] }
 
-  has_many :user_vocabulary_progresses, dependent: :destroy
-  has_many :users, through: :user_vocabulary_progresses
-
-  validates :word,           presence: true
+  validates :word,           presence: true, uniqueness: { scope: :jlpt_level }
   validates :reading,        presence: true
   validates :meaning_vi,     presence: true
   validates :jlpt_level,     presence: true, inclusion: { in: JLPT_LEVELS }

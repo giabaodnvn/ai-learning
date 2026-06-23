@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
+import { streamSSE } from "@/lib/sse";
 
 interface Message {
   role: "user" | "assistant";
@@ -37,56 +38,24 @@ export default function AskAI({ grammarPointId, pattern }: AskAIProps) {
   }
 
   async function triggerAsk(msgs: Message[]) {
-    // Use a manual SSE fetch with POST instead of useSSE (which does GET).
-    // We replicate the SSE reading here for POST support.
-    const { getSession } = await import("next-auth/react");
-    const session = await getSession();
-    const API_BASE = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:3003";
-
     let accumulated = "";
 
     try {
-      const res = await fetch(
-        `${API_BASE}/api/v1/grammar_points/${grammarPointId}/ask`,
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            Authorization: `Bearer ${(session as any)?.accessToken ?? ""}`,
-          },
-          body: JSON.stringify({ messages: msgs }),
-        }
-      );
-
-      if (!res.ok || !res.body) throw new Error("Lỗi kết nối");
-
-      const reader  = res.body.getReader();
-      const decoder = new TextDecoder();
-      let buffer    = "";
-
       // Show typing indicator while streaming
       setMessages([...msgs, { role: "assistant", content: "" }]);
 
-      while (true) {
-        const { value, done: readDone } = await reader.read();
-        if (readDone) break;
-
-        buffer += decoder.decode(value, { stream: true });
-        const lines = buffer.split("\n");
-        buffer = lines.pop() ?? "";
-
-        for (const line of lines) {
-          if (!line.startsWith("data: ")) continue;
-          let payload: { delta?: string; done?: boolean; error?: string };
-          try { payload = JSON.parse(line.slice(6)); } catch { continue; }
+      await streamSSE(
+        `/api/v1/grammar_points/${grammarPointId}/ask`,
+        { method: "POST", body: { messages: msgs } },
+        (payload) => {
           if (payload.error) throw new Error(payload.error);
           if (payload.delta) {
             accumulated += payload.delta;
             setMessages([...msgs, { role: "assistant", content: accumulated }]);
           }
-          if (payload.done) return;
-        }
-      }
+          if (payload.done) return true;
+        },
+      );
     } catch (err) {
       const msg = err instanceof Error ? err.message : "Lỗi không xác định";
       setMessages([...msgs, { role: "assistant", content: `⚠️ ${msg}` }]);

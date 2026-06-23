@@ -30,11 +30,14 @@ module Api
                             .group(:jlpt_level)
                             .count
 
+        vocab_by_level   = Vocabulary.group(:jlpt_level).count
+        kanji_by_level   = Kanji.group(:jlpt_level).count
+        grammar_by_level = GrammarPoint.group(:jlpt_level).count
+
         User::JLPT_LEVELS.each do |lvl|
-          total_vocab   = Vocabulary.where(jlpt_level: lvl).count
-          total_kanji   = Kanji.where(jlpt_level: lvl).count
-          total_grammar = GrammarPoint.where(jlpt_level: lvl).count
-          level_totals[lvl] = total_vocab + total_kanji + total_grammar
+          level_totals[lvl] = vocab_by_level.fetch(lvl, 0) +
+                              kanji_by_level.fetch(lvl, 0) +
+                              grammar_by_level.fetch(lvl, 0)
         end
 
         jlpt_progress = User::JLPT_LEVELS.each_with_object({}) do |lvl, h|

@@ -118,11 +118,11 @@ module Api
 
         avg_score = (attempts.sum(:score).to_f / attempts.sum(:total_questions)).round(2)
 
-        by_speed = {}
-        attempts.group(:speech_rate).each do |rate, group_attempts|
-          total_correct = group_attempts.sum(:score)
-          total_questions = group_attempts.sum(:total_questions)
-          by_speed[rate.to_s] = (total_correct.to_f / total_questions).round(2)
+        correct_by_rate = attempts.group(:speech_rate).sum(:score)
+        total_by_rate   = attempts.group(:speech_rate).sum(:total_questions)
+        by_speed = correct_by_rate.each_with_object({}) do |(rate, correct), h|
+          total = total_by_rate[rate].to_f
+          h[rate.to_s] = total.zero? ? 0.0 : (correct.to_f / total).round(2)
         end
 
         render json: {

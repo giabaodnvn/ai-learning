@@ -12,35 +12,22 @@ import { FlashcardFront } from "./FlashcardFront";
 import { FlashcardBack } from "./FlashcardBack";
 import { GradeButtons } from "./GradeButtons";
 import { SessionSummary } from "./SessionSummary";
-
-const BASE_URL = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:3003";
+import { streamSSE } from "@/lib/sse";
 
 // Background prefetch: buffer a vocabulary SSE explain stream.
 async function fetchVocabExplainBuffered(
   vocabId: number,
   token: string
 ): Promise<string> {
-  const res = await fetch(`${BASE_URL}/api/v1/vocabularies/${vocabId}/explain`, {
-    headers: { Authorization: `Bearer ${token}` },
-  });
-  if (!res.body) return "";
-
-  const reader = res.body.getReader();
-  const decoder = new TextDecoder();
   let result = "";
-
-  outer: while (true) {
-    const { done, value } = await reader.read();
-    if (done) break;
-    const text = decoder.decode(value, { stream: true });
-    for (const line of text.split("\n")) {
-      if (!line.startsWith("data: ")) continue;
-      let payload: { delta?: string; done?: boolean; error?: string };
-      try { payload = JSON.parse(line.slice(6)); } catch { continue; }
-      if (payload.error || payload.done) break outer;
+  await streamSSE(
+    `/api/v1/vocabularies/${vocabId}/explain`,
+    { token },
+    (payload) => {
+      if (payload.error || payload.done) return true;
       result += payload.delta ?? "";
-    }
-  }
+    },
+  );
   return result;
 }
 

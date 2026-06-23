@@ -1,10 +1,9 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { useSession } from "next-auth/react";
 import { useQueryClient } from "@tanstack/react-query";
-
-const BASE_URL = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:3003";
+import { streamSSE } from "@/lib/sse";
 
 interface Props {
   vocabId: number;
@@ -18,7 +17,6 @@ export function ExplainPanel({ vocabId, word, open, onClose }: Props) {
   const queryClient = useQueryClient();
   const [content, setContent] = useState("");
   const [loading, setLoading] = useState(false);
-  const readerRef = useRef<ReadableStreamDefaultReader<Uint8Array> | null>(null);
 
   useEffect(() => {
     if (!open) return;
@@ -34,53 +32,33 @@ export function ExplainPanel({ vocabId, word, open, onClose }: Props) {
     setContent("");
     setLoading(true);
     let buffer = "";
-    let cancelled = false;
+    const ctrl = new AbortController();
 
     (async () => {
       try {
-        const res = await fetch(`${BASE_URL}/api/v1/vocabularies/${vocabId}/explain`, {
-          headers: { Authorization: `Bearer ${session?.accessToken ?? ""}` },
-        });
-        if (!res.body) throw new Error("no body");
-
-        const reader = res.body.getReader();
-        readerRef.current = reader;
-        const decoder = new TextDecoder();
-
-        outer: while (true) {
-          const { done, value } = await reader.read();
-          if (done || cancelled) break;
-
-          const text = decoder.decode(value, { stream: true });
-          for (const line of text.split("\n")) {
-            if (!line.startsWith("data: ")) continue;
-            let payload: { delta?: string; done?: boolean; error?: string };
-            try {
-              payload = JSON.parse(line.slice(6));
-            } catch {
-              continue;
-            }
-            if (payload.error || payload.done) break outer;
+        await streamSSE(
+          `/api/v1/vocabularies/${vocabId}/explain`,
+          { token: session?.accessToken, signal: ctrl.signal },
+          (payload) => {
+            if (payload.error || payload.done) return true;
             buffer += payload.delta ?? "";
             setContent(buffer);
-          }
-        }
+          },
+        );
 
         // Populate React Query cache so re-opens are instant
-        if (!cancelled && buffer) {
+        if (buffer) {
           queryClient.setQueryData(["vocab-explain", vocabId], buffer);
         }
       } catch {
         // Ignore abort / network errors
       } finally {
         setLoading(false);
-        readerRef.current = null;
       }
     })();
 
     return () => {
-      cancelled = true;
-      readerRef.current?.cancel().catch(() => {});
+      ctrl.abort();
     };
   }, [open, vocabId]); // eslint-disable-line react-hooks/exhaustive-deps
 

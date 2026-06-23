@@ -4,6 +4,7 @@ import { useState, useEffect, useRef, useCallback } from "react";
 import { useParams, useRouter } from "next/navigation";
 import { useSession } from "next-auth/react";
 import { MessageBubble, type Message } from "@/components/conversation/MessageBubble";
+import { streamSSE } from "@/lib/sse";
 
 const BASE_URL = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:3003";
 
@@ -85,31 +86,10 @@ export default function ConversationChatPage() {
     let accumulated = "";
 
     try {
-      const res = await fetch(`${BASE_URL}/api/v1/conversations/${id}/send_message`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `Bearer ${session.accessToken}`,
-        },
-        body: JSON.stringify({ content: text }),
-      });
-
-      if (!res.ok) throw new Error("Lỗi kết nối server.");
-      if (!res.body) throw new Error("Không có dữ liệu.");
-
-      const reader  = res.body.getReader();
-      const decoder = new TextDecoder();
-
-      while (true) {
-        const { done, value } = await reader.read();
-        if (done) break;
-
-        const chunk = decoder.decode(value, { stream: true });
-        for (const line of chunk.split("\n")) {
-          if (!line.startsWith("data: ")) continue;
-          let payload: any;
-          try { payload = JSON.parse(line.slice(6)); } catch { continue; }
-
+      await streamSSE(
+        `/api/v1/conversations/${id}/send_message`,
+        { method: "POST", token: session.accessToken, body: { content: text } },
+        (payload) => {
           // Legacy error format from SseStreamable
           if (payload.error) throw new Error(payload.error);
 
@@ -128,17 +108,17 @@ export default function ConversationChatPage() {
               updated[updated.length - 1] = {
                 role:           "assistant",
                 content:        payload.content ?? accumulated,  // parsed clean content from backend
-                corrections:    payload.corrections,
-                new_words:      payload.new_words,
+                corrections:    payload.corrections as Message["corrections"],
+                new_words:      payload.new_words as Message["new_words"],
                 translation_vi: payload.translation_vi,
               };
               return updated;
             });
           } else if (payload.type === "done") {
-            break;
+            return true;
           }
-        }
-      }
+        },
+      );
     } catch (err: unknown) {
       setError(err instanceof Error ? err.message : "Có lỗi xảy ra.");
       // Remove the streaming placeholder

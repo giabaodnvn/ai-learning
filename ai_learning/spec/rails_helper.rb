@@ -4,9 +4,25 @@ ENV['RAILS_ENV'] ||= 'test'
 require_relative '../config/environment'
 # Prevent database truncation if the environment is production
 abort("The Rails environment is running in production mode!") if Rails.env.production?
-# Uncomment the line below in case you have `--require rails_helper` in the `.rspec` file
-# that will avoid rails generators crashing because migrations haven't been run yet
-# return unless Rails.env.test?
+
+# ── SAFETY GUARD ─────────────────────────────────────────────────────────────
+# In this project DATABASE_URL is hardcoded to *_development for every
+# environment, so a stray db:test:* (or maintain_test_schema! below) would
+# WIPE the development database. Abort hard unless we are really pointed at a
+# dedicated *_test database.
+#
+# Run the suite with an explicit test database, e.g.:
+#   DATABASE_URL="mysql2://root:password@db/ai_learning_test" RAILS_ENV=test bundle exec rspec
+_test_db = ActiveRecord::Base.connection_db_config.database.to_s
+unless _test_db.match?(/_test\z/)
+  abort(<<~MSG)
+    ABORT: refusing to run tests — connected to "#{_test_db}", which is not a *_test database.
+    This would destroy non-test data. Re-run with a test database, e.g.:
+      DATABASE_URL="mysql2://root:password@db/ai_learning_test" RAILS_ENV=test bundle exec rspec
+  MSG
+end
+# ─────────────────────────────────────────────────────────────────────────────
+
 require 'rspec/rails'
 # Add additional requires below this line. Rails is not loaded until this point!
 

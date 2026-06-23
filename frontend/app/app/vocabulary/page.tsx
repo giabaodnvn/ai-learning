@@ -4,8 +4,7 @@ import { useState } from "react";
 import { useSession } from "next-auth/react";
 import { useCurrentUser } from "@/hooks/useCurrentUser";
 import VocabularyGrid from "@/components/vocabulary/VocabularyGrid";
-
-const BASE_URL = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:3003";
+import { streamSSE } from "@/lib/sse";
 
 type Tab = "list" | "explain";
 
@@ -29,39 +28,23 @@ export default function VocabularyPage() {
     setExplanation("");
 
     try {
-      const res = await fetch(`${BASE_URL}/api/v1/vocabulary/explain`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `Bearer ${session?.accessToken}`,
+      await streamSSE(
+        "/api/v1/vocabulary/explain",
+        {
+          method: "POST",
+          token:  session?.accessToken,
+          body: {
+            word:       word.trim(),
+            reading:    reading.trim() || word.trim(),
+            user_level: user?.jlpt_level ?? "n5",
+          },
         },
-        body: JSON.stringify({
-          word:       word.trim(),
-          reading:    reading.trim() || word.trim(),
-          user_level: user?.jlpt_level ?? "n5",
-        }),
-      });
-
-      if (!res.ok)   throw new Error("Không thể kết nối tới server.");
-      if (!res.body) throw new Error("Không có dữ liệu trả về.");
-
-      const reader  = res.body.getReader();
-      const decoder = new TextDecoder();
-
-      while (true) {
-        const { done, value } = await reader.read();
-        if (done) break;
-
-        const text = decoder.decode(value, { stream: true });
-        for (const line of text.split("\n")) {
-          if (!line.startsWith("data: ")) continue;
-          let payload: any;
-          try { payload = JSON.parse(line.slice(6)); } catch { continue; }
+        (payload) => {
           if (payload.error) throw new Error(payload.error);
-          if (payload.done) break;
-          setExplanation((prev) => prev + payload.delta);
-        }
-      }
+          if (payload.done) return true;
+          if (payload.delta) setExplanation((prev) => prev + payload.delta);
+        },
+      );
     } catch (err: unknown) {
       setError(err instanceof Error ? err.message : "Có lỗi xảy ra.");
     } finally {

@@ -1,9 +1,7 @@
 "use client";
 
 import { useState, useRef } from "react";
-import { getSession } from "next-auth/react";
-
-const API_BASE = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:3003";
+import { streamSSE } from "@/lib/sse";
 
 const TOPICS = [
   "Tự giới thiệu bản thân",
@@ -90,60 +88,32 @@ export function WritingEditor({ onSaved }: Props = {}) {
     setStreaming(true);
 
     try {
-      const session = await getSession();
-      const res = await fetch(`${API_BASE}/api/v1/writing/feedback`, {
-        method:  "POST",
-        headers: {
-          "Content-Type":  "application/json",
-          "Authorization": `Bearer ${(session as any)?.accessToken ?? ""}`,
-        },
-        body:   JSON.stringify({ text: text.trim(), topic: topic || undefined }),
-        signal: ctrl.signal,
-      });
-
-      if (!res.ok || !res.body) {
-        const json = await res.json().catch(() => ({}));
-        setError(json.error ?? "Không thể kết nối AI. Vui lòng thử lại.");
-        setStreaming(false);
-        return;
-      }
-
-      const reader  = res.body.getReader();
-      const decoder = new TextDecoder();
-      let buffer    = "";
       let accumulated = "";
 
-      while (true) {
-        const { value, done } = await reader.read();
-        if (done) break;
-
-        buffer += decoder.decode(value, { stream: true });
-        const lines = buffer.split("\n");
-        buffer = lines.pop() ?? "";
-
-        for (const line of lines) {
-          if (!line.startsWith("data: ")) continue;
-          let payload: { delta?: string; done?: boolean; error?: string };
-          try { payload = JSON.parse(line.slice(6)); } catch { continue; }
-
+      await streamSSE(
+        "/api/v1/writing/feedback",
+        {
+          method: "POST",
+          body:   { text: text.trim(), topic: topic || undefined },
+          signal: ctrl.signal,
+        },
+        (payload) => {
           if (payload.error) {
             setError("AI gặp lỗi. Vui lòng thử lại.");
-            setStreaming(false);
-            return;
+            return true;
           }
           if (payload.delta) {
             accumulated += payload.delta;
             setFeedback(accumulated);
           }
           if (payload.done) {
-            setStreaming(false);
             onSaved?.();
-            return;
+            return true;
           }
-        }
-      }
-    } catch (err: any) {
-      if (err?.name !== "AbortError") setError("Mất kết nối. Vui lòng thử lại.");
+        },
+      );
+    } catch (err) {
+      if ((err as Error)?.name !== "AbortError") setError("Mất kết nối. Vui lòng thử lại.");
     } finally {
       setStreaming(false);
     }
