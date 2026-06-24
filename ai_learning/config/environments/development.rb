@@ -31,8 +31,25 @@ Rails.application.configure do
   # Store uploaded files on the local file system (see config/storage.yml for options).
   config.active_storage.service = :local
 
-  # Don't care if the mailer can't send.
-  config.action_mailer.raise_delivery_errors = false
+  # Mailer: when SMTP_* env vars are set, send for real over SMTP; otherwise
+  # write outgoing mail to tmp/mails/<address> for local inspection.
+  if ENV["SMTP_ADDRESS"].present?
+    config.action_mailer.delivery_method       = :smtp
+    config.action_mailer.raise_delivery_errors = true
+    config.action_mailer.smtp_settings = {
+      address:              ENV.fetch("SMTP_ADDRESS"),
+      port:                 ENV.fetch("SMTP_PORT", 587).to_i,
+      user_name:            ENV.fetch("SMTP_USERNAME"),
+      password:             ENV.fetch("SMTP_PASSWORD"),
+      domain:               ENV.fetch("SMTP_DOMAIN", "gmail.com"),
+      authentication:       :login,
+      enable_starttls_auto: true,
+    }
+  else
+    config.action_mailer.delivery_method       = :file
+    config.action_mailer.file_settings         = { location: Rails.root.join("tmp", "mails") }
+    config.action_mailer.raise_delivery_errors = false
+  end
 
   # Disable caching for Action Mailer templates even if Action Controller
   # caching is enabled.
@@ -54,6 +71,9 @@ Rails.application.configure do
 
   # Highlight code that triggered database queries in logs.
   config.active_record.verbose_query_logs = true
+
+  # Run background jobs (incl. ActionMailer deliver_later) through Sidekiq.
+  config.active_job.queue_adapter = :sidekiq
 
   # Highlight code that enqueued background job in logs.
   config.active_job.verbose_enqueue_logs = true

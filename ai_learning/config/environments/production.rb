@@ -64,12 +64,25 @@ Rails.application.configure do
   # config.cache_store = :mem_cache_store
 
   # Use a real queuing backend for Active Job (and separate queues per environment).
-  # config.active_job.queue_adapter = :resque
+  config.active_job.queue_adapter = :sidekiq
   # config.active_job.queue_name_prefix = "ai_learning_production"
 
   # Disable caching for Action Mailer templates even if Action Controller
   # caching is enabled.
   config.action_mailer.perform_caching = false
+  config.action_mailer.delivery_method     = :smtp
+  config.action_mailer.perform_deliveries  = true
+  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.default_url_options = { host: ENV.fetch("APP_HOST", "localhost"), protocol: "https" }
+  config.action_mailer.smtp_settings = {
+    address:              ENV.fetch("SMTP_ADDRESS"),
+    port:                 ENV.fetch("SMTP_PORT", 587).to_i,
+    user_name:            ENV.fetch("SMTP_USERNAME"),
+    password:             ENV.fetch("SMTP_PASSWORD"),
+    domain:               ENV.fetch("SMTP_DOMAIN", ENV.fetch("APP_HOST", "localhost")),
+    authentication:       :login,
+    enable_starttls_auto: true,
+  }
 
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.

@@ -2,7 +2,7 @@
 
 module Admin
   class UsersController < Admin::BaseController
-    before_action :set_user, only: [:show, :update, :toggle_block, :reset_vip]
+    before_action :set_user, only: [:show, :update, :toggle_block, :reset_vip, :reset_password]
 
     # GET /admin/users
     def index
@@ -56,6 +56,18 @@ module Admin
     def reset_vip
       @user.update_columns(vip_level: 0, vip_expires_at: nil)
       redirect_to admin_user_path(@user), notice: "Đã reset VIP cho #{@user.email}."
+    end
+
+    # POST /admin/users/:id/reset_password
+    # Generates a temporary password, saves it, and emails it to the user.
+    def reset_password
+      temp = SecureRandom.alphanumeric(10)
+      if @user.update(password: temp)
+        UserMailer.password_reset_by_admin(@user, temp).deliver_later
+        redirect_to admin_user_path(@user), notice: "Đã đặt lại mật khẩu và gửi email tới #{@user.email}."
+      else
+        redirect_to admin_user_path(@user), alert: @user.errors.full_messages.to_sentence
+      end
     end
 
     private

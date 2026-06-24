@@ -93,6 +93,10 @@
               reset_vip_admin_user_path(@user), method: :delete,
               data: { confirm: "Reset VIP của #{@user.email}?" },
               class: "w-full rounded-lg border border-gray-300 px-4 py-2 text-sm font-medium text-gray-600 hover:bg-gray-50 transition" %>
+        <%= button_to "Đặt lại mật khẩu & gửi email",
+              reset_password_admin_user_path(@user), method: :post,
+              data: { confirm: "Đặt lại mật khẩu của #{@user.email} và gửi qua email?" },
+              class: "w-full rounded-lg border border-amber-300 px-4 py-2 text-sm font-medium text-amber-700 hover:bg-amber-50 transition" %>
       </div>
     </div>
   </div>

@@ -90,6 +90,45 @@ export default function ProfilePage() {
     },
   });
 
+  const [currentPassword, setCurrentPassword] = useState("");
+  const [newPassword, setNewPassword]         = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
+  const [pwSuccess, setPwSuccess] = useState(false);
+  const [pwError, setPwError]     = useState<string | null>(null);
+
+  const passwordMutation = useMutation({
+    mutationFn: async (payload: { current_password: string; new_password: string }) => {
+      const res = await api.patch("/api/v1/auth/password", payload);
+      return res.data;
+    },
+    onSuccess: () => {
+      setPwSuccess(true);
+      setPwError(null);
+      setCurrentPassword("");
+      setNewPassword("");
+      setConfirmPassword("");
+      setTimeout(() => setPwSuccess(false), 3000);
+    },
+    onError: (err: { response?: { data?: { error?: string; errors?: string[] } } }) => {
+      const data = err.response?.data;
+      setPwError(data?.error ?? data?.errors?.join(", ") ?? "Có lỗi xảy ra.");
+    },
+  });
+
+  function handleChangePassword() {
+    setPwSuccess(false);
+    setPwError(null);
+    if (newPassword.length < 6) {
+      setPwError("Mật khẩu mới phải có ít nhất 6 ký tự.");
+      return;
+    }
+    if (newPassword !== confirmPassword) {
+      setPwError("Xác nhận mật khẩu không khớp.");
+      return;
+    }
+    passwordMutation.mutate({ current_password: currentPassword, new_password: newPassword });
+  }
+
   if (isLoading) {
     return (
       <div className="max-w-2xl space-y-4 animate-pulse">
@@ -299,6 +338,64 @@ export default function ProfilePage() {
             className="w-full rounded-xl bg-indigo-700 px-4 py-2.5 text-sm font-semibold text-white hover:bg-indigo-800 transition-colors disabled:opacity-40 disabled:cursor-not-allowed shadow-sm shadow-indigo-200"
           >
             {updateMutation.isPending ? "Đang lưu..." : "Lưu thay đổi"}
+          </button>
+        </div>
+      </div>
+
+      {/* ── Change password ────────────────────────────────── */}
+      <div className="rounded-2xl border border-zinc-200 bg-white shadow-sm p-6">
+        <h2 className="text-sm font-semibold text-zinc-800 mb-5">Đổi mật khẩu</h2>
+
+        {pwSuccess && (
+          <div className="mb-4 rounded-xl bg-green-50 border border-green-200 px-4 py-3 text-sm text-green-700">
+            Đổi mật khẩu thành công.
+          </div>
+        )}
+        {pwError && (
+          <div className="mb-4 rounded-xl bg-red-50 border border-red-200 px-4 py-3 text-sm text-red-700">
+            {pwError}
+          </div>
+        )}
+
+        <div className="space-y-4">
+          <div>
+            <label className="block text-xs font-medium text-zinc-600 mb-1.5">Mật khẩu hiện tại</label>
+            <input
+              type="password"
+              value={currentPassword}
+              onChange={(e) => setCurrentPassword(e.target.value)}
+              autoComplete="current-password"
+              className="w-full rounded-xl border border-zinc-200 bg-white px-4 py-2.5 text-sm outline-none focus:border-indigo-400 focus:ring-2 focus:ring-indigo-100 transition-all"
+            />
+          </div>
+          <div>
+            <label className="block text-xs font-medium text-zinc-600 mb-1.5">Mật khẩu mới</label>
+            <input
+              type="password"
+              value={newPassword}
+              onChange={(e) => setNewPassword(e.target.value)}
+              autoComplete="new-password"
+              className="w-full rounded-xl border border-zinc-200 bg-white px-4 py-2.5 text-sm outline-none focus:border-indigo-400 focus:ring-2 focus:ring-indigo-100 transition-all"
+            />
+            <p className="mt-1 text-xs text-zinc-400">Tối thiểu 6 ký tự.</p>
+          </div>
+          <div>
+            <label className="block text-xs font-medium text-zinc-600 mb-1.5">Xác nhận mật khẩu mới</label>
+            <input
+              type="password"
+              value={confirmPassword}
+              onChange={(e) => setConfirmPassword(e.target.value)}
+              autoComplete="new-password"
+              className="w-full rounded-xl border border-zinc-200 bg-white px-4 py-2.5 text-sm outline-none focus:border-indigo-400 focus:ring-2 focus:ring-indigo-100 transition-all"
+            />
+          </div>
+
+          <button
+            onClick={handleChangePassword}
+            disabled={!currentPassword || !newPassword || !confirmPassword || passwordMutation.isPending}
+            className="w-full rounded-xl bg-indigo-700 px-4 py-2.5 text-sm font-semibold text-white hover:bg-indigo-800 transition-colors disabled:opacity-40 disabled:cursor-not-allowed shadow-sm shadow-indigo-200"
+          >
+            {passwordMutation.isPending ? "Đang đổi..." : "Đổi mật khẩu"}
           </button>
         </div>
       </div>

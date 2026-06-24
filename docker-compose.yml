@@ -19,6 +19,13 @@ services:
       DEVISE_JWT_SECRET_KEY: ${DEVISE_JWT_SECRET_KEY}
       GEMINI_API_KEY: ${GEMINI_API_KEY}
       FRONTEND_URL: ${FRONTEND_URL:-http://localhost:3000}
+      SMTP_ADDRESS:  ${SMTP_ADDRESS}
+      SMTP_PORT:     ${SMTP_PORT:-587}
+      SMTP_USERNAME: ${SMTP_USERNAME}
+      SMTP_PASSWORD: ${SMTP_PASSWORD}
+      SMTP_DOMAIN:   ${SMTP_DOMAIN}
+      MAIL_FROM:     ${MAIL_FROM}
+      APP_HOST:      ${APP_HOST}
     command: bash -lc "cd \"$APP_NAME\" && (bundle check || bundle install) && bin/rails db:prepare && bin/rails server -b 0.0.0.0"
     depends_on:
       db:
@@ -66,6 +73,14 @@ services:
       DB_PASSWORD: ${DB_PASSWORD:-password}
       DATABASE_URL: mysql2://root:${DB_PASSWORD:-password}@db/${DB_NAME:-ai_learning_development}
       REDIS_URL: redis://redis:6379/0
+      GEMINI_API_KEY: ${GEMINI_API_KEY}
+      SMTP_ADDRESS:  ${SMTP_ADDRESS}
+      SMTP_PORT:     ${SMTP_PORT:-587}
+      SMTP_USERNAME: ${SMTP_USERNAME}
+      SMTP_PASSWORD: ${SMTP_PASSWORD}
+      SMTP_DOMAIN:   ${SMTP_DOMAIN}
+      MAIL_FROM:     ${MAIL_FROM}
+      APP_HOST:      ${APP_HOST}
     command: bash -lc "cd \"$APP_NAME\" && (bundle check || bundle install) && bundle exec sidekiq"
     depends_on:
       db:

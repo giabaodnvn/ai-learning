@@ -26,8 +26,11 @@ Rails.application.routes.draw do
       member do
         patch  :toggle_block
         delete :reset_vip
+        post   :reset_password
       end
     end
+
+    resource :account, only: [:edit, :update], controller: "accounts"
 
     get "ai_costs", to: "ai_costs#index", as: :ai_costs
   end
@@ -46,11 +49,15 @@ Rails.application.routes.draw do
           sessions: "api/v1/auth/sessions",
           registrations: "api/v1/auth/registrations"
         },
+        # Devise's recoverable routes pointed at a non-existent controller; the
+        # app uses its own password endpoints below instead.
+        skip: [:passwords],
         defaults: { format: :json }
 
       namespace :auth do
         get   "me", to: "profiles#show"
         patch "me", to: "profiles#update"
+        patch "password", to: "passwords#update"
         post "sign_out", to: "sessions#destroy"
       end
 
