@@ -126,11 +126,12 @@ module Api
 
       def serialize_kanji(k)
         return nil unless k
+        onyomi = k.onyomi.is_a?(String) ? JSON.parse(k.onyomi) : Array(k.onyomi)
         {
           kanji: {
             id:         k.id,
             character:  k.character,
-            reading_on: k.reading_on,
+            reading_on: onyomi.join("、"),
             meaning_vi: k.meaning_vi,
             jlpt_level: k.jlpt_level
           }

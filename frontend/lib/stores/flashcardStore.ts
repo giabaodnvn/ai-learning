@@ -17,9 +17,7 @@ interface FlashcardState {
   currentIndex: number;
   revealed: boolean;
   sessionStats: SessionStats;
-  sessionConfig: SessionConfig | null;
 
-  setSessionConfig: (config: SessionConfig) => void;
   initSession: (cards: FlashCard[]) => void;
   flip: () => void;
   recordAndAdvance: (grade: number) => void;
@@ -31,9 +29,6 @@ export const useFlashcardStore = create<FlashcardState>((set) => ({
   currentIndex: 0,
   revealed: false,
   sessionStats: { grades: [] },
-  sessionConfig: null,
-
-  setSessionConfig: (config) => set({ sessionConfig: config }),
 
   initSession: (cards) =>
     set({
@@ -58,6 +53,5 @@ export const useFlashcardStore = create<FlashcardState>((set) => ({
       currentIndex: 0,
       revealed: false,
       sessionStats: { grades: [] },
-      sessionConfig: null,
     }),
 }));

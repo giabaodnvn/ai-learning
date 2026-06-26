@@ -1,7 +1,8 @@
 # frozen_string_literal: true
 
 # Stores per-request AI API usage for cost tracking and auditing.
-# Written asynchronously via AiUsageLog.record_async so it never blocks requests.
+# Written asynchronously via AiUsageLog.record_async (enqueues RecordAiUsageJob)
+# so it never blocks requests.
 class AiUsageLog < ApplicationRecord
   self.ignored_columns += [] # no timestamps column (created_at only)
 
@@ -23,23 +24,22 @@ class AiUsageLog < ApplicationRecord
 
   DEFAULT_COST = { input: 0.000_1, output: 0.000_4 }.freeze
 
-  # Non-blocking fire-and-forget write.
+  # Non-blocking write: enqueue a Sidekiq job (persistent + retried) instead of
+  # spawning an unbounded thread. Capture the timestamp now so the record
+  # reflects when the AI call happened, not when the job runs.
   def self.record_async(feature:, model:, input_tokens:, output_tokens:, user_id: nil, cached: false)
-    Thread.new do
-      ActiveRecord::Base.connection_pool.with_connection do
-        create!(
-          user_id:       user_id,
-          feature:       feature,
-          model:         model,
-          input_tokens:  input_tokens,
-          output_tokens: output_tokens,
-          cached:        cached,
-          created_at:    Time.current
-        )
-      end
-    rescue => e
-      Rails.logger.warn "[AiUsageLog] Failed to record: #{e.message}"
-    end
+    RecordAiUsageJob.perform_async(
+      "feature"       => feature,
+      "model"         => model,
+      "input_tokens"  => input_tokens,
+      "output_tokens" => output_tokens,
+      "user_id"       => user_id,
+      "cached"        => cached,
+      "created_at"    => Time.current.iso8601
+    )
+  rescue => e
+    # Logging must never break the request path (e.g. Redis unavailable).
+    Rails.logger.warn "[AiUsageLog] enqueue failed: #{e.message}"
   end
 
   # Returns estimated cost in USD for a record's token counts.
