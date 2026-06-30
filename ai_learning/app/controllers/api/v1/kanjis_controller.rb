@@ -3,19 +3,18 @@
 module Api
   module V1
     class KanjisController < BaseController
+      include Api::V1::Concerns::Paginatable
+
       # GET /api/v1/kanjis?level=n3&page=1&per_page=30
       def index
-        level   = params[:level].presence&.downcase
-        page    = [(params[:page].presence || 1).to_i, 1].max
-        per     = [[(params[:per_page].presence || 30).to_i, 1].max, 50].min
+        level = params[:level].presence&.downcase
+        scope = level ? Kanji.by_level(level) : Kanji.all
 
-        scope  = level ? Kanji.by_level(level) : Kanji.all
-        total  = scope.count
-        kanjis = scope.order(:id).offset((page - 1) * per).limit(per)
+        kanjis, meta = paginate(scope, order: :id, default_per: 30, max_per: 50)
 
         render json: {
           data: KanjiSerializer.new(kanjis).serializable_hash[:data],
-          meta: { total: total, page: page, per_page: per, pages: (total.to_f / per).ceil }
+          meta: meta
         }
       end
 

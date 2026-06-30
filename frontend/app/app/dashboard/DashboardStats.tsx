@@ -32,6 +32,7 @@ export function DashboardStats() {
   const [stats,   setStats]   = useState<DashboardData | null>(null);
   const [report,  setReport]  = useState<WeeklyReportData | null>(null);
   const [loading, setLoading] = useState(true);
+  const [error,   setError]   = useState(false);
 
   useEffect(() => {
     Promise.all([
@@ -42,7 +43,7 @@ export function DashboardStats() {
         setStats(statsRes.data);
         setReport(reportRes.data);
       })
-      .catch(() => {/* silent — user sees skeletons */})
+      .catch(() => setError(true))
       .finally(() => setLoading(false));
   }, []);
 
@@ -56,6 +57,14 @@ export function DashboardStats() {
         <Skeleton className="h-36" />
         <Skeleton className="h-44" />
         <Skeleton className="h-36" />
+      </div>
+    );
+  }
+
+  if (error && !stats) {
+    return (
+      <div className="rounded-xl border border-amber-200 bg-amber-50 p-4 text-sm text-amber-700">
+        Không thể tải dữ liệu trang chủ. Vui lòng tải lại trang.
       </div>
     );
   }

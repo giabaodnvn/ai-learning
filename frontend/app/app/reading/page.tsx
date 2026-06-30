@@ -9,16 +9,12 @@ import { QuizSection } from "@/components/reading/QuizSection";
 import { ResultScreen } from "@/components/reading/ResultScreen";
 import { ErrorBoundary } from "@/components/ErrorBoundary";
 import { AIStreamFallback } from "@/components/AIStreamFallback";
+import { BackButton } from "@/components/BackButton";
+import type { AnswerResult } from "@/types/quiz";
 
 // ---------------------------------------------------------------------------
 // Types
 // ---------------------------------------------------------------------------
-
-interface AnswerResult {
-  correct: boolean;
-  correct_index: number;
-  explanation_vi: string;
-}
 
 type View = "list" | "reading" | "quiz" | "result";
 
@@ -317,20 +313,5 @@ export default function ReadingPage() {
         </div>
       )}
     </div>
-  );
-}
-
-// ---------------------------------------------------------------------------
-// Small helper component
-// ---------------------------------------------------------------------------
-
-function BackButton({ onClick, label }: { onClick: () => void; label: string }) {
-  return (
-    <button
-      onClick={onClick}
-      className="flex items-center gap-1 text-sm text-zinc-500 hover:text-zinc-800 transition-colors"
-    >
-      ← {label}
-    </button>
   );
 }

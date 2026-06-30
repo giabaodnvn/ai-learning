@@ -4,22 +4,20 @@ module Api
   module V1
     class GrammarPointsController < BaseController
       include Api::V1::Concerns::SseStreamable
+      include Api::V1::Concerns::Paginatable
 
       EXERCISE_TTL = 7 * 24 * 3600 # 7 days
 
       # GET /api/v1/grammar_points?level=n5&page=1&per_page=20
       def index
-        level   = params[:level].presence&.downcase
-        page    = [(params[:page].presence || 1).to_i, 1].max
-        per     = [[(params[:per_page].presence || 20).to_i, 1].max, 50].min
+        level = params[:level].presence&.downcase
+        scope = level ? GrammarPoint.by_level(level) : GrammarPoint.all
 
-        scope  = level ? GrammarPoint.by_level(level) : GrammarPoint.all
-        total  = scope.count
-        points = scope.order(:id).offset((page - 1) * per).limit(per)
+        points, meta = paginate(scope, order: :id, default_per: 20, max_per: 50)
 
         render json: {
           data: GrammarPointSerializer.new(points).serializable_hash[:data],
-          meta: { total: total, page: page, per_page: per, pages: (total.to_f / per).ceil }
+          meta: meta
         }
       end
 

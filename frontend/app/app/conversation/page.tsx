@@ -89,11 +89,16 @@ export default function ConversationPage() {
     e.preventDefault();
     e.stopPropagation();
     if (!session?.accessToken) return;
-    await fetch(`${BASE_URL}/api/v1/conversations/${id}`, {
-      method: "DELETE",
-      headers: { Authorization: `Bearer ${session.accessToken}` },
-    });
-    setHistory((prev) => prev.filter((s) => s.id !== id));
+    try {
+      const res = await fetch(`${BASE_URL}/api/v1/conversations/${id}`, {
+        method: "DELETE",
+        headers: { Authorization: `Bearer ${session.accessToken}` },
+      });
+      if (!res.ok) throw new Error("Không thể xoá phiên hội thoại.");
+      setHistory((prev) => prev.filter((s) => s.id !== id));
+    } catch (err) {
+      console.error(err);
+    }
   }
 
   return (

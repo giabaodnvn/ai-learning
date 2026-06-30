@@ -17,7 +17,7 @@ module Admin
           "SUM(cached = 1)    AS cached_hits"
         )
         .map do |r|
-          cost = estimate_cost(r.model, r.total_input.to_i, r.total_output.to_i)
+          cost = AiUsageLog.cost_for(model: r.model, input_tokens: r.total_input.to_i, output_tokens: r.total_output.to_i).round(6)
           { feature: r.feature, model: r.model, requests: r.requests.to_i,
             cached_hits: r.cached_hits.to_i, input: r.total_input.to_i,
             output: r.total_output.to_i, cost: cost }
@@ -35,16 +35,6 @@ module Admin
         h[:requests] += r[:requests]; h[:input] += r[:input]
         h[:output]   += r[:output];   h[:cost]  += r[:cost]
       end
-    end
-
-    private
-
-    PRICING = AiUsageLog::COST_PER_1K
-    DEFAULT  = AiUsageLog::DEFAULT_COST
-
-    def estimate_cost(model, input, output)
-      p = PRICING.find { |k, _| model.to_s.include?(k) }&.last || DEFAULT
-      ((input / 1000.0 * p[:input]) + (output / 1000.0 * p[:output])).round(6)
     end
   end
 end

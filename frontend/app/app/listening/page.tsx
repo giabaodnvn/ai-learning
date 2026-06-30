@@ -9,16 +9,12 @@ import { ListeningQuiz } from "@/components/listening/ListeningQuiz";
 import { ListeningResult } from "@/components/listening/ListeningResult";
 import { ErrorBoundary } from "@/components/ErrorBoundary";
 import { AIStreamFallback } from "@/components/AIStreamFallback";
+import { BackButton } from "@/components/BackButton";
+import type { AnswerResult } from "@/types/quiz";
 
 // ---------------------------------------------------------------------------
 // Types
 // ---------------------------------------------------------------------------
-
-interface AnswerResult {
-  correct: boolean;
-  correct_index: number;
-  explanation_vi: string;
-}
 
 type View = "list" | "player" | "quiz" | "result";
 
@@ -347,20 +343,5 @@ export default function ListeningPage() {
         </div>
       )}
     </div>
-  );
-}
-
-// ---------------------------------------------------------------------------
-// Small helper component
-// ---------------------------------------------------------------------------
-
-function BackButton({ onClick, label }: { onClick: () => void; label: string }) {
-  return (
-    <button
-      onClick={onClick}
-      className="flex items-center gap-1 text-sm text-zinc-500 hover:text-zinc-800 transition-colors"
-    >
-      ← {label}
-    </button>
   );
 }

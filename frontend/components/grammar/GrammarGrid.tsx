@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { useQuery } from "@tanstack/react-query";
 import { api } from "@/lib/api";
+import { Pagination } from "@/components/Pagination";
 
 const LEVELS = ["n5", "n4", "n3", "n2", "n1"] as const;
 type Level = (typeof LEVELS)[number];
@@ -122,27 +123,7 @@ export default function GrammarGrid() {
       )}
 
       {/* Pagination */}
-      {data && data.meta.pages > 1 && (
-        <div className="flex items-center justify-center gap-2">
-          <button
-            onClick={() => setPage((p) => Math.max(1, p - 1))}
-            disabled={page === 1}
-            className="rounded-lg border border-zinc-300 px-3 py-1.5 text-sm font-medium text-zinc-600 hover:bg-zinc-50 disabled:opacity-40 transition-colors"
-          >
-            ← Trước
-          </button>
-          <span className="text-sm text-zinc-500">
-            {page} / {data.meta.pages}
-          </span>
-          <button
-            onClick={() => setPage((p) => Math.min(data.meta.pages, p + 1))}
-            disabled={page === data.meta.pages}
-            className="rounded-lg border border-zinc-300 px-3 py-1.5 text-sm font-medium text-zinc-600 hover:bg-zinc-50 disabled:opacity-40 transition-colors"
-          >
-            Sau →
-          </button>
-        </div>
-      )}
+      {data && <Pagination page={page} pages={data.meta.pages} onChange={setPage} />}
     </div>
   );
 }

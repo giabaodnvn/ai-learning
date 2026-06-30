@@ -25,7 +25,7 @@ module Api
             )
 
           by_feature = rows.map do |r|
-            cost = estimate_cost(r.model, r.total_input.to_i, r.total_output.to_i)
+            cost = AiUsageLog.cost_for(model: r.model, input_tokens: r.total_input.to_i, output_tokens: r.total_output.to_i)
             {
               feature:      r.feature,
               model:        r.model,
@@ -65,16 +65,6 @@ module Api
           }
         end
 
-        private
-
-        PRICING = AiUsageLog::COST_PER_1K
-        DEFAULT  = AiUsageLog::DEFAULT_COST
-
-        def estimate_cost(model, input_tokens, output_tokens)
-          pricing = PRICING.find { |k, _| model.to_s.include?(k) }&.last || DEFAULT
-          (input_tokens  / 1000.0 * pricing[:input]) +
-          (output_tokens / 1000.0 * pricing[:output])
-        end
       end
     end
   end

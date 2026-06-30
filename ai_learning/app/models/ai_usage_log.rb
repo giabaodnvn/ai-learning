@@ -42,10 +42,15 @@ class AiUsageLog < ApplicationRecord
     Rails.logger.warn "[AiUsageLog] enqueue failed: #{e.message}"
   end
 
-  # Returns estimated cost in USD for a record's token counts.
-  def estimated_cost
+  # Estimated cost in USD for a given model name + token counts.
+  def self.cost_for(model:, input_tokens:, output_tokens:)
     pricing = COST_PER_1K.find { |k, _| model.to_s.include?(k) }&.last || DEFAULT_COST
     (input_tokens  / 1000.0 * pricing[:input]) +
     (output_tokens / 1000.0 * pricing[:output])
+  end
+
+  # Returns estimated cost in USD for a record's token counts.
+  def estimated_cost
+    self.class.cost_for(model: model, input_tokens: input_tokens, output_tokens: output_tokens)
   end
 end

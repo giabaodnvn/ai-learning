@@ -3,12 +3,7 @@
 import React, { useState } from "react";
 import { api } from "@/lib/api";
 import type { ExerciseData } from "./ExerciseCard";
-
-interface AnswerResult {
-  correct: boolean;
-  correct_index: number;
-  explanation_vi: string;
-}
+import type { AnswerResult } from "@/types/quiz";
 
 interface QuizState {
   selectedIndex: number | null;
