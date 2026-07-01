@@ -1,3 +1,5 @@
+"use client";
+
 interface BackButtonProps {
   onClick: () => void;
   label: string;

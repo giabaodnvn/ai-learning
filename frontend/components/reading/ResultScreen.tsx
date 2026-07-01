@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import type { PassageData, Question } from "./PassageCard";
 import type { AnswerResult } from "@/types/quiz";

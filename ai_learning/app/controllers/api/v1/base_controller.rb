@@ -28,6 +28,10 @@ module Api
         @current_user
       end
 
+      def redis
+        @redis ||= Redis.new(url: ENV.fetch("REDIS_URL", "redis://localhost:6379/0"))
+      end
+
       # Gemini often wraps JSON in markdown code fences or adds preamble text.
       # Try multiple strategies to extract valid JSON.
       def parse_ai_json(raw)

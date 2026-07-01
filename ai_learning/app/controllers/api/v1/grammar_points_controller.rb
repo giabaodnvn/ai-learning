@@ -40,18 +40,22 @@ module Api
         cache_key = "grammar_check:#{Digest::SHA256.hexdigest(sentence + point.id.to_s)}"
         cached    = redis.get(cache_key)
 
-        result = if cached
-          JSON.parse(cached)
-        else
+        parsed_cache = begin
+          JSON.parse(cached) if cached
+        rescue JSON::ParserError
+          nil
+        end
+
+        result = parsed_cache || begin
           prompt = Prompts::GrammarCheckerPrompt.build(
             sentence:       sentence,
             target_grammar: point.pattern,
             user_level:     level
           )
-          raw    = ClaudeService.complete(prompt: prompt)
-          parsed = parse_ai_json(raw)
-          redis.setex(cache_key, AiCacheService::TTL, parsed.to_json)
-          parsed
+          raw  = ClaudeService.complete(prompt: prompt)
+          data = parse_ai_json(raw)
+          redis.setex(cache_key, AiCacheService::TTL, data.to_json)
+          data
         end
 
         render json: result
@@ -62,7 +66,8 @@ module Api
       rescue ClaudeService::TimeoutError
         render json: { error: "timeout" }, status: :request_timeout
       rescue ClaudeService::ServiceError => e
-        render json: { error: e.message }, status: :service_unavailable
+        Rails.logger.error "[GrammarPointsController] service error: #{e.message}"
+        render json: { error: "service_unavailable" }, status: :service_unavailable
       end
 
       # POST /api/v1/grammar_points/:id/generate_exercise
@@ -75,18 +80,22 @@ module Api
         cache_key = "grammar_exercise:#{point.id}:#{level}"
         cached    = redis.get(cache_key)
 
-        result = if cached
-          JSON.parse(cached)
-        else
+        parsed_cache = begin
+          JSON.parse(cached) if cached
+        rescue JSON::ParserError
+          nil
+        end
+
+        result = parsed_cache || begin
           prompt = Prompts::ExerciseGeneratorPrompt.build(
             pattern:        point.pattern,
             explanation_vi: point.explanation_vi,
             user_level:     level
           )
-          raw    = ClaudeService.complete(prompt: prompt)
-          parsed = parse_ai_json(raw)
-          redis.setex(cache_key, EXERCISE_TTL, parsed.to_json)
-          parsed
+          raw  = ClaudeService.complete(prompt: prompt)
+          data = parse_ai_json(raw)
+          redis.setex(cache_key, EXERCISE_TTL, data.to_json)
+          data
         end
 
         render json: result
@@ -97,7 +106,8 @@ module Api
       rescue ClaudeService::TimeoutError
         render json: { error: "timeout" }, status: :request_timeout
       rescue ClaudeService::ServiceError => e
-        render json: { error: e.message }, status: :service_unavailable
+        Rails.logger.error "[GrammarPointsController] service error: #{e.message}"
+        render json: { error: "service_unavailable" }, status: :service_unavailable
       end
 
       # POST /api/v1/grammar_points/:id/ask  (SSE streaming)
@@ -157,7 +167,8 @@ module Api
       rescue ClaudeService::TimeoutError
         render json: { error: "timeout" }, status: :request_timeout
       rescue ClaudeService::ServiceError => e
-        render json: { error: e.message }, status: :service_unavailable
+        Rails.logger.error "[GrammarPointsController] service error: #{e.message}"
+        render json: { error: "service_unavailable" }, status: :service_unavailable
       end
 
       # POST /api/v1/grammar_points/:id/complete_set
@@ -233,10 +244,6 @@ module Api
 
       private
 
-      def redis
-        @redis ||= Redis.new(url: ENV.fetch("REDIS_URL", "redis://localhost:6379/0"))
-      end
-
       def grammar_streak_key(user_id, point_id)
         "grammar_streak:#{user_id}:#{point_id}"
       end
@@ -245,6 +252,8 @@ module Api
         raw = redis.get(grammar_streak_key(user_id, point_id))
         return { count: 0, last_date: nil } unless raw
         JSON.parse(raw, symbolize_names: true)
+      rescue JSON::ParserError
+        { count: 0, last_date: nil }
       end
 
       def update_grammar_streak!(user_id, point_id)
@@ -258,7 +267,7 @@ module Api
                       1                          # streak reset
                     end
         new_streak = { count: new_count, last_date: today }
-        redis.setex(grammar_streak_key(user_id, point_id), 48 * 3600, new_streak.to_json)
+        redis.setex(grammar_streak_key(user_id, point_id), 30 * 24 * 3600, new_streak.to_json)
         new_streak
       end
     end

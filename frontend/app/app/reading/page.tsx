@@ -11,14 +11,13 @@ import { ErrorBoundary } from "@/components/ErrorBoundary";
 import { AIStreamFallback } from "@/components/AIStreamFallback";
 import { BackButton } from "@/components/BackButton";
 import type { AnswerResult } from "@/types/quiz";
+import { JLPT_LEVELS } from "@/types/quiz";
 
 // ---------------------------------------------------------------------------
 // Types
 // ---------------------------------------------------------------------------
 
 type View = "list" | "reading" | "quiz" | "result";
-
-const JLPT_LEVELS = ["n5", "n4", "n3", "n2", "n1"] as const;
 const TOPICS = [
   { label: "Sinh hoạt hằng ngày",  value: "日常生活" },
   { label: "Thực phẩm & ẩm thực",  value: "食べ物と料理" },
@@ -42,6 +41,7 @@ export default function ReadingPage() {
   const [selected,      setSelected]      = useState<PassageData | null>(null);
   const [quizResults,   setQuizResults]   = useState<AnswerResult[]>([]);
 
+  const [errorKey,      setErrorKey]      = useState(0);
   const [loadingList,   setLoadingList]   = useState(false);
   const [generating,    setGenerating]    = useState(false);
   const [listError,     setListError]     = useState<string | null>(null);
@@ -155,12 +155,15 @@ export default function ReadingPage() {
     return (
       <div className="space-y-4">
         <BackButton onClick={() => setView("reading")} label="Quay lại bài đọc" />
-        <ErrorBoundary fallback={
-          <AIStreamFallback
-            errorMessage="Không thể tải câu hỏi. Vui lòng thử lại."
-            onRetry={() => setView("quiz")}
-          />
-        }>
+        <ErrorBoundary
+          key={errorKey}
+          fallback={
+            <AIStreamFallback
+              errorMessage="Không thể tải câu hỏi. Vui lòng thử lại."
+              onRetry={() => setErrorKey((k) => k + 1)}
+            />
+          }
+        >
           <QuizSection passage={selected} onFinish={finishQuiz} />
         </ErrorBoundary>
       </div>
@@ -172,12 +175,15 @@ export default function ReadingPage() {
     return (
       <div className="space-y-4">
         <BackButton onClick={goToList} label="Danh sách bài đọc" />
-        <ErrorBoundary fallback={
-          <AIStreamFallback
-            errorMessage="Không thể tải bài đọc. Vui lòng thử lại."
-            onRetry={() => { setSelected(null); setView("reading"); setSelected(selected); }}
-          />
-        }>
+        <ErrorBoundary
+          key={errorKey}
+          fallback={
+            <AIStreamFallback
+              errorMessage="Không thể tải bài đọc. Vui lòng thử lại."
+              onRetry={() => setErrorKey((k) => k + 1)}
+            />
+          }
+        >
           <ReaderView passage={selected} onStartQuiz={startQuiz} />
         </ErrorBoundary>
       </div>

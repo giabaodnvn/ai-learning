@@ -79,8 +79,7 @@ export default function ConversationPage() {
       if (!res.ok) throw new Error("Không thể tạo phiên hội thoại.");
       const data = await res.json();
       router.push(`/app/conversation/${data.id}`);
-    } catch (err) {
-      console.error(err);
+    } catch {
       setStarting(false);
     }
   }
@@ -96,8 +95,8 @@ export default function ConversationPage() {
       });
       if (!res.ok) throw new Error("Không thể xoá phiên hội thoại.");
       setHistory((prev) => prev.filter((s) => s.id !== id));
-    } catch (err) {
-      console.error(err);
+    } catch {
+      // silently ignore delete failure — item stays in list
     }
   }
 

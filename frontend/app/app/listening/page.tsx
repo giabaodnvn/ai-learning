@@ -11,14 +11,13 @@ import { ErrorBoundary } from "@/components/ErrorBoundary";
 import { AIStreamFallback } from "@/components/AIStreamFallback";
 import { BackButton } from "@/components/BackButton";
 import type { AnswerResult } from "@/types/quiz";
+import { JLPT_LEVELS } from "@/types/quiz";
 
 // ---------------------------------------------------------------------------
 // Types
 // ---------------------------------------------------------------------------
 
 type View = "list" | "player" | "quiz" | "result";
-
-const JLPT_LEVELS = ["n5", "n4", "n3", "n2", "n1"] as const;
 const TOPICS = [
   { label: "Thông báo ga tàu", value: "駅でのアナウンス" },
   { label: "Hội thoại quán cà phê", value: "カフェでの会話" },
@@ -44,6 +43,7 @@ export default function ListeningPage() {
   const [speechRate, setSpeechRate] = useState(1.0);
   const [quizScore, setQuizScore] = useState(0);
   const [quizTotal, setQuizTotal] = useState(0);
+  const [errorKey,  setErrorKey]  = useState(0);
 
   const [loadingList, setLoadingList] = useState(false);
   const [generating, setGenerating] = useState(false);
@@ -164,10 +164,11 @@ export default function ListeningPage() {
       <div className="space-y-4">
         <BackButton onClick={() => setView("player")} label="Quay lại nghe" />
         <ErrorBoundary
+          key={errorKey}
           fallback={
             <AIStreamFallback
               errorMessage="Không thể tải câu hỏi. Vui lòng thử lại."
-              onRetry={() => setView("quiz")}
+              onRetry={() => setErrorKey((k) => k + 1)}
             />
           }
         >
@@ -187,14 +188,11 @@ export default function ListeningPage() {
       <div className="space-y-4">
         <BackButton onClick={goToList} label="Danh sách bài luyện nghe" />
         <ErrorBoundary
+          key={errorKey}
           fallback={
             <AIStreamFallback
               errorMessage="Không thể tải bài luyện nghe. Vui lòng thử lại."
-              onRetry={() => {
-                setSelected(null);
-                setView("player");
-                setSelected(selected);
-              }}
+              onRetry={() => setErrorKey((k) => k + 1)}
             />
           }
         >

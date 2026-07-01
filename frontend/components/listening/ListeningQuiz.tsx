@@ -22,7 +22,6 @@ export function ListeningQuiz({ exercise, speechRate, onFinish }: Props) {
   const [quizStates, setQuizStates] = useState<QuizState[]>(
     exercise.questions.map(() => ({ selectedIndex: null, result: null, loading: false }))
   );
-  const [allResults, setAllResults] = useState<AnswerResult[]>([]);
   const [submitError, setSubmitError] = useState<string | null>(null);
 
   const question = exercise.questions[currentIndex];
@@ -78,11 +77,6 @@ export function ListeningQuiz({ exercise, speechRate, onFinish }: Props) {
     setQuizStates((prev) =>
       prev.map((s, i) => (i === currentIndex ? { ...s, result, loading: false } : s))
     );
-    setAllResults((prev) => {
-      const next = [...prev];
-      next[currentIndex] = result;
-      return next;
-    });
   }
 
   function handleNext() {
@@ -126,7 +120,7 @@ export function ListeningQuiz({ exercise, speechRate, onFinish }: Props) {
         {question.options.map((opt, oi) => {
           const isSelected = state.selectedIndex === oi;
           const answered = state.result !== null;
-          const isCorrect = answered && oi === state.result!.correct_index;
+          const isCorrect = answered && oi === state.result?.correct_index;
           const isWrong = answered && isSelected && !isCorrect;
 
           return (

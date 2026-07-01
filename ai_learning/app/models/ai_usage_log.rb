@@ -4,8 +4,6 @@
 # Written asynchronously via AiUsageLog.record_async (enqueues RecordAiUsageJob)
 # so it never blocks requests.
 class AiUsageLog < ApplicationRecord
-  self.ignored_columns += [] # no timestamps column (created_at only)
-
   belongs_to :user, optional: true
 
   validates :feature,       presence: true
@@ -52,5 +50,57 @@ class AiUsageLog < ApplicationRecord
   # Returns estimated cost in USD for a record's token counts.
   def estimated_cost
     self.class.cost_for(model: model, input_tokens: input_tokens, output_tokens: output_tokens)
+  end
+
+  # Aggregated usage grouped by feature + model for a given time window.
+  # Returns array sorted by cost descending.
+  def self.aggregate_by_feature(from:)
+    where("created_at >= ?", from)
+      .group(:feature, :model)
+      .select(
+        "feature", "model",
+        "SUM(input_tokens)  AS total_input",
+        "SUM(output_tokens) AS total_output",
+        "COUNT(*)           AS requests",
+        "SUM(cached = 1)    AS cached_hits"
+      )
+      .map do |r|
+        cost = cost_for(model: r.model, input_tokens: r.total_input.to_i, output_tokens: r.total_output.to_i)
+        {
+          feature:            r.feature,
+          model:              r.model,
+          requests:           r.requests.to_i,
+          cached_hits:        r.cached_hits.to_i,
+          input_tokens:       r.total_input.to_i,
+          output_tokens:      r.total_output.to_i,
+          estimated_cost_usd: cost.round(6)
+        }
+      end
+      .sort_by { |r| -r[:estimated_cost_usd] }
+  end
+
+  # Daily token + request breakdown for a given time window, sorted by date.
+  def self.daily_breakdown(from:)
+    where("created_at >= ?", from)
+      .group("DATE(created_at)")
+      .select(
+        "DATE(created_at) AS day",
+        "SUM(input_tokens + output_tokens) AS total_tokens",
+        "COUNT(*) AS requests"
+      )
+      .map { |r| { date: r.day.to_s, total_tokens: r.total_tokens.to_i, requests: r.requests.to_i } }
+      .sort_by { |r| r[:date] }
+  end
+
+  # Sums requests, tokens, and cost across a by_feature array.
+  def self.totals_from(rows)
+    rows
+      .each_with_object({ requests: 0, input_tokens: 0, output_tokens: 0, cost_usd: 0.0 }) do |r, h|
+        h[:requests]      += r[:requests]
+        h[:input_tokens]  += r[:input_tokens]
+        h[:output_tokens] += r[:output_tokens]
+        h[:cost_usd]      += r[:estimated_cost_usd]
+      end
+      .tap { |h| h[:cost_usd] = h[:cost_usd].round(6) }
   end
 end

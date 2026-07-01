@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { useQuery } from "@tanstack/react-query";
 import { api } from "@/lib/api";
+import { Pagination } from "@/components/Pagination";
 
 const LEVELS = ["n5", "n4", "n3", "n2", "n1"] as const;
 type Level = (typeof LEVELS)[number];
@@ -51,8 +52,6 @@ export default function KanjiGrid() {
     setLevel(l);
     setPage(1);
   }
-
-  const meta = LEVEL_META[level];
 
   return (
     <div className="space-y-5">
@@ -142,27 +141,7 @@ export default function KanjiGrid() {
       )}
 
       {/* Pagination */}
-      {data && data.meta.pages > 1 && (
-        <div className="flex items-center justify-center gap-3 pt-2">
-          <button
-            onClick={() => setPage((p) => Math.max(1, p - 1))}
-            disabled={page === 1}
-            className={`rounded-full border px-4 py-1.5 text-sm font-medium transition-colors disabled:opacity-30 ${meta.inactiveClass}`}
-          >
-            ← Trước
-          </button>
-          <span className="text-sm text-zinc-500 tabular-nums">
-            {page} / {data.meta.pages}
-          </span>
-          <button
-            onClick={() => setPage((p) => Math.min(data.meta.pages, p + 1))}
-            disabled={page === data.meta.pages}
-            className={`rounded-full border px-4 py-1.5 text-sm font-medium transition-colors disabled:opacity-30 ${meta.inactiveClass}`}
-          >
-            Sau →
-          </button>
-        </div>
-      )}
+      {data && <Pagination page={page} pages={data.meta.pages} onChange={setPage} />}
     </div>
   );
 }

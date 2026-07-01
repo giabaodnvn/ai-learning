@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import type { ExerciseData } from "./ExerciseCard";
 import type { AnswerResult } from "@/types/quiz";
@@ -19,7 +21,7 @@ export function ListeningResult({
   onListenAgain,
   onNewExercise,
 }: Props) {
-  const percent = Math.round((score / total) * 100);
+  const percent = total > 0 ? Math.round((score / total) * 100) : 0;
   const emoji =
     percent === 100 ? "🏆" : percent >= 75 ? "🎉" : percent >= 50 ? "😊" : "📚";
 

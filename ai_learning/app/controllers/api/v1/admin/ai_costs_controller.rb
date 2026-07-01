@@ -11,57 +11,16 @@ module Api
           range = params[:range].presence || "week"
           from  = range == "month" ? 30.days.ago : 7.days.ago
 
-          # Raw aggregation by feature + model
-          rows = AiUsageLog
-            .where("created_at >= ?", from)
-            .group(:feature, :model)
-            .select(
-              "feature",
-              "model",
-              "SUM(input_tokens)  AS total_input",
-              "SUM(output_tokens) AS total_output",
-              "COUNT(*)           AS requests",
-              "SUM(cached = 1)    AS cached_hits"
-            )
-
-          by_feature = rows.map do |r|
-            cost = AiUsageLog.cost_for(model: r.model, input_tokens: r.total_input.to_i, output_tokens: r.total_output.to_i)
-            {
-              feature:      r.feature,
-              model:        r.model,
-              requests:     r.requests.to_i,
-              cached_hits:  r.cached_hits.to_i,
-              input_tokens: r.total_input.to_i,
-              output_tokens: r.total_output.to_i,
-              estimated_cost_usd: cost.round(6)
-            }
-          end
-
-          # Daily breakdown (last 30 days max)
-          daily = AiUsageLog
-            .where("created_at >= ?", from)
-            .group("DATE(created_at)")
-            .select(
-              "DATE(created_at) AS day",
-              "SUM(input_tokens + output_tokens) AS total_tokens",
-              "COUNT(*) AS requests"
-            )
-            .map { |r| { date: r.day.to_s, total_tokens: r.total_tokens.to_i, requests: r.requests.to_i } }
-
-          totals = by_feature.each_with_object({ requests: 0, input_tokens: 0, output_tokens: 0, cost_usd: 0.0 }) do |r, h|
-            h[:requests]      += r[:requests]
-            h[:input_tokens]  += r[:input_tokens]
-            h[:output_tokens] += r[:output_tokens]
-            h[:cost_usd]      += r[:estimated_cost_usd]
-          end
-          totals[:cost_usd] = totals[:cost_usd].round(6)
+          by_feature = AiUsageLog.aggregate_by_feature(from: from)
+          daily      = AiUsageLog.daily_breakdown(from: from)
+          totals     = AiUsageLog.totals_from(by_feature)
 
           render json: {
-            range:       range,
-            from:        from.to_date.to_s,
-            by_feature:  by_feature,
-            daily:       daily,
-            totals:      totals
+            range:      range,
+            from:       from.to_date.to_s,
+            by_feature: by_feature,
+            daily:      daily,
+            totals:     totals
           }
         end
 

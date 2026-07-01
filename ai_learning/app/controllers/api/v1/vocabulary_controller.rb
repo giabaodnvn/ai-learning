@@ -14,7 +14,7 @@ module Api
         scope = Vocabulary.all
         scope = scope.by_level(level) if level
         if search
-          like = "%#{search}%"
+          like = "%#{ActiveRecord::Base.sanitize_sql_like(search)}%"
           scope = scope.where("word LIKE ? OR reading LIKE ? OR meaning_vi LIKE ?", like, like, like)
         end
 
@@ -30,7 +30,8 @@ module Api
       def explain
         word       = params.require(:word)
         reading    = params[:reading].presence || word
-        user_level = params[:user_level].presence || current_user.jlpt_level
+        raw_level  = params[:user_level].presence
+        user_level = %w[n1 n2 n3 n4 n5].include?(raw_level) ? raw_level : current_user.jlpt_level
 
         prompt = Prompts::VocabExplainerPrompt.build(
           word: word, reading: reading, user_level: user_level
@@ -91,12 +92,6 @@ module Api
         end
       rescue ActiveRecord::RecordNotFound
         render_not_found("Vocabulary")
-      end
-
-      private
-
-      def redis
-        @redis ||= Redis.new(url: ENV.fetch("REDIS_URL", "redis://localhost:6379/0"))
       end
     end
   end

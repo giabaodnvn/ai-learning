@@ -101,7 +101,7 @@ export function QuizSection({ passage, onFinish }: Props) {
         {question.options.map((opt, oi) => {
           const isSelected = state.selectedIndex === oi;
           const answered   = state.result !== null;
-          const isCorrect  = answered && oi === state.result!.correct_index;
+          const isCorrect  = answered && oi === state.result?.correct_index;
           const isWrong    = answered && isSelected && !isCorrect;
 
           return (
