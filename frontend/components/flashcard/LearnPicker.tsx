@@ -2,12 +2,11 @@
 
 import { useState } from "react";
 import type { LearnConfig } from "@/lib/flashcard-utils";
+import { JLPT_LEVELS } from "@/types/quiz";
 
 interface Props {
   onStart: (config: LearnConfig) => void;
 }
-
-const JLPT_LEVELS = ["n5", "n4", "n3", "n2", "n1"];
 
 interface CountInputProps {
   label: string;

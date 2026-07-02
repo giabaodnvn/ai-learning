@@ -3,8 +3,7 @@
 import { useState, useEffect, useCallback } from "react";
 import { api } from "@/lib/api";
 import type { TestSummary, AttemptSummary } from "./types";
-
-const JLPT_LEVELS = ["n5", "n4", "n3", "n2", "n1"] as const;
+import { JLPT_LEVELS } from "@/types/quiz";
 const LEVEL_LABELS: Record<string, string> = {
   n5: "N5 — Sơ cấp",
   n4: "N4 — Sơ trung cấp",

@@ -5,9 +5,7 @@ import Link from "next/link";
 import { useQuery } from "@tanstack/react-query";
 import { api } from "@/lib/api";
 import { Pagination } from "@/components/Pagination";
-
-const LEVELS = ["n5", "n4", "n3", "n2", "n1"] as const;
-type Level = (typeof LEVELS)[number];
+import { JLPT_LEVELS as LEVELS, type JlptLevel as Level } from "@/types/quiz";
 
 const LEVEL_LABELS: Record<Level, string> = {
   n5: "N5 — Sơ cấp",

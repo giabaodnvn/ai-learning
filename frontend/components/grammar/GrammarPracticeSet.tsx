@@ -97,38 +97,34 @@ export function GrammarPracticeSet({ grammarPointId, pattern }: Props) {
   }
 
   function handleMarkTranslateCorrect() {
-    setAllResults((prev) => {
-      const next = [...prev];
-      next[currentIndex] = true;
-      return next;
-    });
-    proceedToNext();
+    const next = [...allResults];
+    next[currentIndex] = true;
+    setAllResults(next);
+    proceedToNext(next);
   }
 
   function handleMarkTranslateWrong() {
-    setAllResults((prev) => {
-      const next = [...prev];
-      next[currentIndex] = false;
-      return next;
-    });
-    proceedToNext();
+    const next = [...allResults];
+    next[currentIndex] = false;
+    setAllResults(next);
+    proceedToNext(next);
   }
 
-  async function proceedToNext() {
+  async function proceedToNext(results: boolean[]) {
     if (isLast) {
       // Submit the set
-      submitSet();
+      submitSet(results);
     } else {
       setCurrentIndex((i) => i + 1);
       setTranslateInput("");
     }
   }
 
-  async function submitSet() {
+  async function submitSet(results: boolean[]) {
     setLoading(true);
     setError(null);
     try {
-      const score = correctCount;
+      const score = results.filter((r) => r).length;
       await api.post(`/api/v1/grammar_points/${grammarPointId}/complete_set`, {
         score,
         total: exercises.length,
@@ -411,7 +407,7 @@ export function GrammarPracticeSet({ grammarPointId, pattern }: Props) {
         <button
           onClick={() => {
             if (isLast) {
-              submitSet();
+              submitSet(allResults);
             } else {
               setCurrentIndex((i) => i + 1);
             }

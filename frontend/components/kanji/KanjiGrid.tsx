@@ -5,9 +5,7 @@ import Link from "next/link";
 import { useQuery } from "@tanstack/react-query";
 import { api } from "@/lib/api";
 import { Pagination } from "@/components/Pagination";
-
-const LEVELS = ["n5", "n4", "n3", "n2", "n1"] as const;
-type Level = (typeof LEVELS)[number];
+import { JLPT_LEVELS as LEVELS, type JlptLevel as Level } from "@/types/quiz";
 
 const LEVEL_META: Record<Level, { label: string; jp: string; activeClass: string; inactiveClass: string }> = {
   n5: { label: "N5", jp: "初級",   activeClass: "bg-emerald-600 text-white border-emerald-600 shadow-sm shadow-emerald-200", inactiveClass: "border-emerald-200 text-emerald-700 hover:bg-emerald-50" },

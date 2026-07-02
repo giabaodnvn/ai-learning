@@ -5,8 +5,7 @@ import { useParams, useRouter } from "next/navigation";
 import { useSession } from "next-auth/react";
 import { MessageBubble, type Message } from "@/components/conversation/MessageBubble";
 import { streamSSE } from "@/lib/sse";
-
-const BASE_URL = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:3003";
+import { api } from "@/lib/api";
 
 const ROLE_META: Record<string, { label: string; icon: string }> = {
   tutor:                   { label: "Gia sư tiếng Nhật",    icon: "👩‍🏫" },
@@ -50,13 +49,11 @@ export default function ConversationChatPage() {
   const loadSession = useCallback(async () => {
     if (!session?.accessToken) return;
     try {
-      const res = await fetch(`${BASE_URL}/api/v1/conversations/${id}`, {
-        headers: { Authorization: `Bearer ${session.accessToken}` },
-      });
-      if (!res.ok) { router.replace("/app/conversation"); return; }
-      const data: SessionDetail = await res.json();
-      setChatSession(data);
-      setMessages(data.messages);
+      const res = await api.get<SessionDetail>(`/api/v1/conversations/${id}`);
+      setChatSession(res.data);
+      setMessages(res.data.messages);
+    } catch {
+      router.replace("/app/conversation");
     } finally {
       setLoading(false);
     }

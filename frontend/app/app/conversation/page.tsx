@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import { useSession } from "next-auth/react";
 import { useCurrentUser } from "@/hooks/useCurrentUser";
 import { api } from "@/lib/api";
+import { JLPT_LEVELS as LEVELS } from "@/types/quiz";
 
 const ROLES = [
   { value: "tutor",                   label: "Gia sư tiếng Nhật",     icon: "👩‍🏫", desc: "Luyện tập tự do với gia sư kiên nhẫn" },
@@ -14,8 +15,6 @@ const ROLES = [
   { value: "hotel_staff",             label: "Khách sạn",             icon: "🏨", desc: "Check-in, hỏi thông tin tại khách sạn" },
   { value: "airport_staff",           label: "Sân bay",               icon: "✈️", desc: "Làm thủ tục, hỏi đường tại sân bay" },
 ] as const;
-
-const LEVELS = ["n5", "n4", "n3", "n2", "n1"] as const;
 
 interface SessionSummary {
   id: number;

@@ -1,43 +1,12 @@
 "use client";
 
-import React, { useState } from "react";
+import { useState } from "react";
+import { renderMarkdown } from "@/lib/markdown";
 
 interface Props {
   report:      string | null;
   generatedAt: string | null;
   studiedDays: number; // days studied in last 7
-}
-
-/** Very lightweight inline markdown renderer (bold + headings + lists) */
-function renderMarkdown(text: string): React.ReactNode[] {
-  return text.split("\n").map((line, i) => {
-    // Heading: ## or ###
-    if (/^###\s/.test(line)) {
-      return <h4 key={i} className="font-semibold text-zinc-800 mt-3 mb-1">{line.replace(/^###\s/, "")}</h4>;
-    }
-    if (/^##\s/.test(line)) {
-      return <h3 key={i} className="font-bold text-zinc-900 mt-4 mb-1">{line.replace(/^##\s/, "")}</h3>;
-    }
-    // List item
-    if (/^[-*]\s/.test(line)) {
-      const content = parseBold(line.replace(/^[-*]\s/, ""));
-      return <li key={i} className="ml-4 list-disc text-zinc-700">{content}</li>;
-    }
-    // Empty line → spacing
-    if (line.trim() === "") {
-      return <div key={i} className="h-2" />;
-    }
-    // Regular paragraph
-    return <p key={i} className="text-zinc-700 leading-relaxed">{parseBold(line)}</p>;
-  });
-}
-
-function parseBold(text: string): React.ReactNode {
-  const parts = text.split(/\*\*(.*?)\*\*/g);
-  if (parts.length === 1) return text;
-  return parts.map((p, i) =>
-    i % 2 === 1 ? <strong key={i} className="font-semibold text-zinc-900">{p}</strong> : p
-  );
 }
 
 export function WeeklyReport({ report, generatedAt, studiedDays }: Props) {

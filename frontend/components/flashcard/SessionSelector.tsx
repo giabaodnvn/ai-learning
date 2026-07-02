@@ -5,12 +5,11 @@ import { useQuery } from "@tanstack/react-query";
 import { api } from "@/lib/api";
 import type { SessionMode } from "@/lib/flashcard-utils";
 import type { SessionConfig } from "@/lib/stores/flashcardStore";
+import { JLPT_LEVELS } from "@/types/quiz";
 
 interface Props {
   onStart: (config: SessionConfig) => void;
 }
-
-const JLPT_LEVELS = ["n5", "n4", "n3", "n2", "n1"];
 
 const MODES: {
   mode: SessionMode;
