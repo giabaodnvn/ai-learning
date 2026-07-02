@@ -46,7 +46,7 @@
   {
     "word": "サプライチェーン",
     "reading": "さぷらいちぇーん",
-    "romaji": "supuraicheen",
+    "romaji": "sapuraicheen",
     "meaning_vi": "chuỗi cung ứng, supply chain",
     "part_of_speech": "noun",
     "tags": [
@@ -123,7 +123,7 @@
   {
     "word": "プロモーション",
     "reading": "ぷろもーしょん",
-    "romaji": "puromoshon",
+    "romaji": "puromooshon",
     "meaning_vi": "quảng cáo, chương trình khuyến mãi",
     "part_of_speech": "noun",
     "tags": [
@@ -134,7 +134,7 @@
   {
     "word": "需要調査",
     "reading": "じゅようちょうさ",
-    "romaji": "juyouchosa",
+    "romaji": "juyouchousa",
     "meaning_vi": "khảo sát nhu cầu",
     "part_of_speech": "noun",
     "tags": [
@@ -222,7 +222,7 @@
   {
     "word": "在庫管理",
     "reading": "ざいここうり",
-    "romaji": "zaiko-kanri",
+    "romaji": "zaikokouri",
     "meaning_vi": "quản lý hàng tồn, inventory",
     "part_of_speech": "noun",
     "tags": [
@@ -393,7 +393,7 @@
   {
     "word": "試験的導入",
     "reading": "しけんてきどうにゅう",
-    "romaji": "shikentekidounyu",
+    "romaji": "shikentekidounyuu",
     "meaning_vi": "thí điểm, triển khai thử nghiệm",
     "part_of_speech": "noun",
     "tags": [
@@ -426,7 +426,7 @@
   {
     "word": "経営効率",
     "reading": "けいえいこうりつ",
-    "romaji": "keieikooritsu",
+    "romaji": "keieikouritsu",
     "meaning_vi": "hiệu quả kinh doanh",
     "part_of_speech": "noun",
     "tags": [
@@ -437,7 +437,7 @@
   {
     "word": "売上原価",
     "reading": "うりあげげんか",
-    "romaji": "uriagenka",
+    "romaji": "uriagegenka",
     "meaning_vi": "giá vốn hàng bán",
     "part_of_speech": "noun",
     "tags": [
@@ -502,7 +502,7 @@
   {
     "word": "ROI",
     "reading": "あーるおーあい",
-    "romaji": "aaru-o-ai",
+    "romaji": "aaruooai",
     "meaning_vi": "lợi suất đầu tư, return on investment",
     "part_of_speech": "noun",
     "tags": [
@@ -512,7 +512,7 @@
   {
     "word": "KPI",
     "reading": "けーぴーあい",
-    "romaji": "kee-pee-ai",
+    "romaji": "keepiiai",
     "meaning_vi": "chỉ số hiệu suất, key performance indicator",
     "part_of_speech": "noun",
     "tags": [
@@ -554,7 +554,7 @@
   {
     "word": "顧客満足度",
     "reading": "こきゃくまんぞくど",
-    "romaji": "kokyaku-manzokuど",
+    "romaji": "kokyakumanzokudo",
     "meaning_vi": "độ hài lòng khách hàng, customer satisfaction",
     "part_of_speech": "noun",
     "tags": [
@@ -575,7 +575,7 @@
   {
     "word": "リピート",
     "reading": "りぴーと",
-    "romaji": "ripīto",
+    "romaji": "ripiito",
     "meaning_vi": "lặp lại, khách hàng quay lại",
     "part_of_speech": "noun",
     "tags": [
@@ -595,7 +595,7 @@
   {
     "word": "コンバージョン",
     "reading": "こんばーじょん",
-    "romaji": "konbajon",
+    "romaji": "konbaajon",
     "meaning_vi": "chuyển đổi, conversion",
     "part_of_speech": "noun",
     "tags": [
@@ -606,7 +606,7 @@
   {
     "word": "エンゲージメント",
     "reading": "えんげーじめんと",
-    "romaji": "engejimento",
+    "romaji": "engeejimento",
     "meaning_vi": "mức độ tương tác, engagement",
     "part_of_speech": "noun",
     "tags": [
@@ -682,7 +682,7 @@
   {
     "word": "ソルベンシー",
     "reading": "そるべんしー",
-    "romaji": "sorubenshī",
+    "romaji": "sorubenshii",
     "meaning_vi": "khả năng thanh toán, solvency",
     "part_of_speech": "noun",
     "tags": [
@@ -724,7 +724,7 @@
   {
     "word": "IPO",
     "reading": "あいぴーおー",
-    "romaji": "aipīo",
+    "romaji": "aipiioo",
     "meaning_vi": "phát hành cổ phiếu lần đầu, initial public offering",
     "part_of_speech": "noun",
     "tags": [
@@ -777,7 +777,7 @@
   {
     "word": "レイオフ",
     "reading": "れいおふ",
-    "romaji": "reiofü",
+    "romaji": "reiofu",
     "meaning_vi": "sa thải tạm thời, lay off",
     "part_of_speech": "noun",
     "tags": [
@@ -787,7 +787,7 @@
   {
     "word": "アウトソーシング",
     "reading": "あうとそーしんぐ",
-    "romaji": "autososhingu",
+    "romaji": "autosooshingu",
     "meaning_vi": "thuê ngoài, outsourcing",
     "part_of_speech": "noun",
     "tags": [
@@ -818,7 +818,7 @@
   {
     "word": "オートメーション",
     "reading": "おーとめーしょん",
-    "romaji": "otomeshon",
+    "romaji": "ootomeeshon",
     "meaning_vi": "tự động hóa, automation",
     "part_of_speech": "noun",
     "tags": [
@@ -851,7 +851,7 @@
   {
     "word": "IoT",
     "reading": "あいおーてぃー",
-    "romaji": "aiotiī",
+    "romaji": "aiootii",
     "meaning_vi": "Internet of Things",
     "part_of_speech": "noun",
     "tags": [
@@ -861,7 +861,7 @@
   {
     "word": "クラウドコンピューティング",
     "reading": "くらうどこんぴゅーてぃんぐ",
-    "romaji": "kuraudo-konpyūtingu",
+    "romaji": "kuraudokonpyuutingu",
     "meaning_vi": "điện toán đám mây",
     "part_of_speech": "noun",
     "tags": [
@@ -872,7 +872,7 @@
   {
     "word": "ブロックチェーン",
     "reading": "ぶろっくちぇーん",
-    "romaji": "burokuochēn",
+    "romaji": "burokkucheen",
     "meaning_vi": "blockchain, chuỗi khối",
     "part_of_speech": "noun",
     "tags": [

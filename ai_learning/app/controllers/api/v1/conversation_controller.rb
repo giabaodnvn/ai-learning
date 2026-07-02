@@ -15,8 +15,7 @@ module Api
 
         system_prompt = Prompts::ConversationTutorPrompt.build(
           role:       role,
-          user_level: user_level,
-          history:    messages[0..-2] # exclude last user message
+          user_level: user_level
         )
 
         stream_sse do |stream|

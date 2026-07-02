@@ -26,7 +26,7 @@
   {
     "word": "陽炎",
     "reading": "かげろう",
-    "romaji": "kagerō",
+    "romaji": "kagerou",
     "meaning_vi": "sóng nhiệt, ảo ảnh do nhiệt (trên mặt đường nóng)",
     "part_of_speech": "noun",
     "tags": [
@@ -39,7 +39,7 @@
   {
     "word": "蜃気楼",
     "reading": "しんきろう",
-    "romaji": "shinkirō",
+    "romaji": "shinkirou",
     "meaning_vi": "ảo ảnh (hiện tượng quang học trên biển hoặc sa mạc)",
     "part_of_speech": "noun",
     "tags": [
@@ -114,7 +114,7 @@
   {
     "word": "夕凪",
     "reading": "ゆうなぎ",
-    "romaji": "yūnagi",
+    "romaji": "yuunagi",
     "meaning_vi": "lúc chiều biển lặng, gió lặng buổi chiều",
     "part_of_speech": "noun",
     "tags": [
@@ -241,7 +241,7 @@
   {
     "word": "薄氷",
     "reading": "うすごおり",
-    "romaji": "usugōri",
+    "romaji": "usugoori",
     "meaning_vi": "lớp băng mỏng; tình huống nguy hiểm (nghĩa bóng)",
     "part_of_speech": "noun",
     "tags": [
@@ -279,7 +279,7 @@
   {
     "word": "幽谷",
     "reading": "ゆうこく",
-    "romaji": "yūkoku",
+    "romaji": "yuukoku",
     "meaning_vi": "thung lũng sâu u tịch",
     "part_of_speech": "noun",
     "tags": [
@@ -316,7 +316,7 @@
   {
     "word": "夕映え",
     "reading": "ゆうばえ",
-    "romaji": "yūbae",
+    "romaji": "yuubae",
     "meaning_vi": "ánh hoàng hôn, màu trời đỏ lúc chiều tà",
     "part_of_speech": "noun",
     "tags": [
@@ -392,7 +392,7 @@
   {
     "word": "風流",
     "reading": "ふうりゅう",
-    "romaji": "fūryū",
+    "romaji": "fuuryuu",
     "meaning_vi": "sự phong lưu, phong nhã; thú vui nghệ thuật tao nhã",
     "part_of_speech": "noun",
     "tags": [
@@ -418,7 +418,7 @@
   {
     "word": "格調",
     "reading": "かくちょう",
-    "romaji": "kakuchō",
+    "romaji": "kakuchou",
     "meaning_vi": "phong cách cao quý, đẳng cấp, phẩm cách",
     "part_of_speech": "noun",
     "tags": [
@@ -454,7 +454,7 @@
   {
     "word": "抒情",
     "reading": "じょじょう",
-    "romaji": "jojō",
+    "romaji": "jojou",
     "meaning_vi": "trữ tình, biểu đạt cảm xúc cá nhân",
     "part_of_speech": "noun",
     "tags": [
@@ -477,7 +477,7 @@
   {
     "word": "情操",
     "reading": "じょうそう",
-    "romaji": "jōsō",
+    "romaji": "jousou",
     "meaning_vi": "tình cảm phong phú, cảm xúc tinh tế; đạo đức tình cảm",
     "part_of_speech": "noun",
     "tags": [
@@ -525,7 +525,7 @@
   {
     "word": "慕情",
     "reading": "ぼじょう",
-    "romaji": "bojō",
+    "romaji": "bojou",
     "meaning_vi": "nỗi nhớ thương, tình cảm yêu mến da diết",
     "part_of_speech": "noun",
     "tags": [
@@ -537,7 +537,7 @@
   {
     "word": "憧憬",
     "reading": "どうけい",
-    "romaji": "dōkei",
+    "romaji": "doukei",
     "meaning_vi": "khát vọng, mơ ước; sự ngưỡng mộ tha thiết",
     "part_of_speech": "noun",
     "tags": [
@@ -549,7 +549,7 @@
   {
     "word": "憂愁",
     "reading": "ゆうしゅう",
-    "romaji": "yūshū",
+    "romaji": "yuushuu",
     "meaning_vi": "ưu sầu, tâm trạng u uất sâu xa",
     "part_of_speech": "noun",
     "tags": [
@@ -561,7 +561,7 @@
   {
     "word": "幽静",
     "reading": "ゆうせい",
-    "romaji": "yūsei",
+    "romaji": "yuusei",
     "meaning_vi": "yên tĩnh và u tịch, tĩnh mịch sâu xa",
     "part_of_speech": "noun",
     "tags": [
@@ -573,7 +573,7 @@
   {
     "word": "清澄",
     "reading": "せいちょう",
-    "romaji": "seichō",
+    "romaji": "seichou",
     "meaning_vi": "trong sáng thanh khiết (không khí, nước, âm thanh)",
     "part_of_speech": "noun",
     "tags": [
@@ -708,7 +708,7 @@
   {
     "word": "屏風",
     "reading": "びょうぶ",
-    "romaji": "byōbu",
+    "romaji": "byoubu",
     "meaning_vi": "bình phong gấp khúc trang trí",
     "part_of_speech": "noun",
     "tags": [
@@ -818,7 +818,7 @@
   {
     "word": "反芻",
     "reading": "はんすう",
-    "romaji": "hansū",
+    "romaji": "hansuu",
     "meaning_vi": "nhai lại (động vật); suy nghĩ đi suy nghĩ lại, nghiền ngẫm",
     "part_of_speech": "noun",
     "tags": [
@@ -854,7 +854,7 @@
   {
     "word": "諷喩",
     "reading": "ふうゆ",
-    "romaji": "fūyu",
+    "romaji": "fuuyu",
     "meaning_vi": "ẩn dụ bóng gió, ngụ ngôn châm biếm",
     "part_of_speech": "noun",
     "tags": [
@@ -866,7 +866,7 @@
   {
     "word": "余情",
     "reading": "よじょう",
-    "romaji": "yojō",
+    "romaji": "yojou",
     "meaning_vi": "dư vị cảm xúc, tình cảm còn lại sau khi trải qua",
     "part_of_speech": "noun",
     "tags": [
@@ -890,7 +890,7 @@
   {
     "word": "奥義",
     "reading": "おうぎ",
-    "romaji": "ōgi",
+    "romaji": "ougi",
     "meaning_vi": "bí quyết sâu xa, tinh hoa ẩn sâu của một nghệ thuật",
     "part_of_speech": "noun",
     "tags": [
@@ -903,7 +903,7 @@
   {
     "word": "境地",
     "reading": "きょうち",
-    "romaji": "kyōchi",
+    "romaji": "kyouchi",
     "meaning_vi": "cảnh giới, trạng thái tâm linh đạt được",
     "part_of_speech": "noun",
     "tags": [
@@ -915,7 +915,7 @@
   {
     "word": "境涯",
     "reading": "きょうがい",
-    "romaji": "kyōgai",
+    "romaji": "kyougai",
     "meaning_vi": "hoàn cảnh sống, tình huống cuộc đời",
     "part_of_speech": "noun",
     "tags": [
@@ -939,7 +939,7 @@
   {
     "word": "無常",
     "reading": "むじょう",
-    "romaji": "mujō",
+    "romaji": "mujou",
     "meaning_vi": "vô thường, sự không trường cửu của vạn vật",
     "part_of_speech": "noun",
     "tags": [
@@ -964,7 +964,7 @@
   {
     "word": "業",
     "reading": "ごう",
-    "romaji": "gō",
+    "romaji": "gou",
     "meaning_vi": "nghiệp, karma (hành động và quả báo)",
     "part_of_speech": "noun",
     "tags": [

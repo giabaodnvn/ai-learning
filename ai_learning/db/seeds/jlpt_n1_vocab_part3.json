@@ -2,7 +2,7 @@
   {
     "word": "崇高",
     "reading": "すうこう",
-    "romaji": "suukō",
+    "romaji": "suukou",
     "meaning_vi": "cao cả, vĩ đại, cao quý",
     "part_of_speech": "adjective",
     "tags": [
@@ -24,7 +24,7 @@
   {
     "word": "傍観",
     "reading": "ぼうかん",
-    "romaji": "bōkan",
+    "romaji": "boukan",
     "meaning_vi": "đứng ngoài nhìn, thờ ơ",
     "part_of_speech": "noun",
     "tags": [
@@ -57,7 +57,7 @@
   {
     "word": "幽玄",
     "reading": "ゆうげん",
-    "romaji": "yūgen",
+    "romaji": "yuugen",
     "meaning_vi": "thâm sâu, ẩn sâu, tinh tế (trong mỹ học Nhật)",
     "part_of_speech": "noun",
     "tags": [
@@ -80,7 +80,7 @@
   {
     "word": "蕭然",
     "reading": "しょうぜん",
-    "romaji": "shōzen",
+    "romaji": "shouzen",
     "meaning_vi": "hoang vắng, cô độc, im tĩnh",
     "part_of_speech": "adjective",
     "tags": [
@@ -92,7 +92,7 @@
   {
     "word": "窮乏",
     "reading": "きゅうぼう",
-    "romaji": "kyūbō",
+    "romaji": "kyuubou",
     "meaning_vi": "cơn khốn cùng, nghèo khó",
     "part_of_speech": "noun",
     "tags": [
@@ -114,7 +114,7 @@
   {
     "word": "渋滞",
     "reading": "じゅうたい",
-    "romaji": "jūtai",
+    "romaji": "juutai",
     "meaning_vi": "ùn tắc, tắc nghẽn, chậm",
     "part_of_speech": "noun",
     "tags": [
@@ -125,7 +125,7 @@
   {
     "word": "奪取",
     "reading": "だっしゅ",
-    "romaji": "dasshū",
+    "romaji": "dasshu",
     "meaning_vi": "chiếm đoạt, cưỡi ngựa",
     "part_of_speech": "verb",
     "tags": [
@@ -158,7 +158,7 @@
   {
     "word": "融和",
     "reading": "ゆうわ",
-    "romaji": "yūwa",
+    "romaji": "yuuwa",
     "meaning_vi": "hòa hợp, hòa dung, gần gũi",
     "part_of_speech": "noun",
     "tags": [
@@ -169,7 +169,7 @@
   {
     "word": "逸脱",
     "reading": "いつだつ",
-    "romaji": "ittsudatsu",
+    "romaji": "itsudatsu",
     "meaning_vi": "thoát khỏi, lệch lạc",
     "part_of_speech": "verb",
     "tags": [
@@ -191,7 +191,7 @@
   {
     "word": "哂笑",
     "reading": "しんしょう",
-    "romaji": "shinshō",
+    "romaji": "shinshou",
     "meaning_vi": "cười nhạo, mỉa mai",
     "part_of_speech": "verb",
     "tags": [
@@ -224,7 +224,7 @@
   {
     "word": "鬱蒼",
     "reading": "うっそう",
-    "romaji": "ussō",
+    "romaji": "ussou",
     "meaning_vi": "rậm rạp, tối tăm, ủ dột",
     "part_of_speech": "adjective",
     "tags": [
@@ -246,7 +246,7 @@
   {
     "word": "振興",
     "reading": "しんこう",
-    "romaji": "shinkō",
+    "romaji": "shinkou",
     "meaning_vi": "phát triển, thúc đẩy",
     "part_of_speech": "noun",
     "tags": [
@@ -268,7 +268,7 @@
   {
     "word": "杳然",
     "reading": "ようぜん",
-    "romaji": "yōzen",
+    "romaji": "youzen",
     "meaning_vi": "mờ tối, không biết tung tích",
     "part_of_speech": "adjective",
     "tags": [
@@ -301,7 +301,7 @@
   {
     "word": "妄執",
     "reading": "もうしゅう",
-    "romaji": "mōshū",
+    "romaji": "moushuu",
     "meaning_vi": "sự bám víu, ám ảnh",
     "part_of_speech": "noun",
     "tags": [
@@ -323,7 +323,7 @@
   {
     "word": "莊重",
     "reading": "そうじゅう",
-    "romaji": "sōjū",
+    "romaji": "soujuu",
     "meaning_vi": "trang trọng, nghiêm trang",
     "part_of_speech": "adjective",
     "tags": [
@@ -356,7 +356,7 @@
   {
     "word": "紛糾",
     "reading": "ふんきゅう",
-    "romaji": "funkyū",
+    "romaji": "funkyuu",
     "meaning_vi": "rối loạn, bối rối",
     "part_of_speech": "verb",
     "tags": [
@@ -367,7 +367,7 @@
   {
     "word": "砲撃",
     "reading": "ほうげき",
-    "romaji": "hōgeki",
+    "romaji": "hougeki",
     "meaning_vi": "pháo kích, tấn công",
     "part_of_speech": "verb",
     "tags": [
@@ -389,7 +389,7 @@
   {
     "word": "竦然",
     "reading": "しょうぜん",
-    "romaji": "shōzen",
+    "romaji": "shouzen",
     "meaning_vi": "sợ hãi, run sợ",
     "part_of_speech": "adjective",
     "tags": [
@@ -400,7 +400,7 @@
   {
     "word": "懷疑",
     "reading": "かいぎ",
-    "romaji": "kaiǧi",
+    "romaji": "kaigi",
     "meaning_vi": "nghi ngờ, tỏ nghi",
     "part_of_speech": "verb",
     "tags": [
@@ -422,7 +422,7 @@
   {
     "word": "浩瀚",
     "reading": "こうかん",
-    "romaji": "kōkan",
+    "romaji": "koukan",
     "meaning_vi": "rộng lớn, mênh mông",
     "part_of_speech": "adjective",
     "tags": [
@@ -433,7 +433,7 @@
   {
     "word": "黙考",
     "reading": "もくこう",
-    "romaji": "mokukō",
+    "romaji": "mokukou",
     "meaning_vi": "suy tư im lặng",
     "part_of_speech": "verb",
     "tags": [
@@ -466,7 +466,7 @@
   {
     "word": "眇小",
     "reading": "びょうしょう",
-    "romaji": "byōshō",
+    "romaji": "byoushou",
     "meaning_vi": "rất nhỏ, tồn tại",
     "part_of_speech": "adjective",
     "tags": [
@@ -477,7 +477,7 @@
   {
     "word": "冷峭",
     "reading": "れいしょう",
-    "romaji": "reishō",
+    "romaji": "reishou",
     "meaning_vi": "lạnh lẽo, cứng cỏi, lạnh lùng",
     "part_of_speech": "adjective",
     "tags": [
@@ -488,7 +488,7 @@
   {
     "word": "轇轕",
     "reading": "こうかい",
-    "romaji": "kōkai",
+    "romaji": "koukai",
     "meaning_vi": "rối loạn, lộn xộn",
     "part_of_speech": "noun",
     "tags": [
@@ -543,7 +543,7 @@
   {
     "word": "憬悚",
     "reading": "けいしょう",
-    "romaji": "keishō",
+    "romaji": "keishou",
     "meaning_vi": "kinh sợ, run sợ",
     "part_of_speech": "verb",
     "tags": [
@@ -554,7 +554,7 @@
   {
     "word": "臧否",
     "reading": "ぞうひ",
-    "romaji": "zōhi",
+    "romaji": "zouhi",
     "meaning_vi": "phê bình, đánh giá",
     "part_of_speech": "noun",
     "tags": [
@@ -565,7 +565,7 @@
   {
     "word": "蹊蹬",
     "reading": "けいとう",
-    "romaji": "keitō",
+    "romaji": "keitou",
     "meaning_vi": "đi không đường, lạc lối",
     "part_of_speech": "verb",
     "tags": [
@@ -576,7 +576,7 @@
   {
     "word": "嘔吐",
     "reading": "おうと",
-    "romaji": "ōto",
+    "romaji": "outo",
     "meaning_vi": "buồn nôn, nôn ói",
     "part_of_speech": "verb",
     "tags": [
@@ -587,7 +587,7 @@
   {
     "word": "醇厚",
     "reading": "じゅんこう",
-    "romaji": "junko",
+    "romaji": "junkou",
     "meaning_vi": "đặc, nguyên chất, chân thành",
     "part_of_speech": "adjective",
     "tags": [
@@ -598,7 +598,7 @@
   {
     "word": "竦愕",
     "reading": "しょうがく",
-    "romaji": "shōgaku",
+    "romaji": "shougaku",
     "meaning_vi": "kinh hoàng, sửng sốt",
     "part_of_speech": "verb",
     "tags": [
@@ -620,7 +620,7 @@
   {
     "word": "耨耕",
     "reading": "どうこう",
-    "romaji": "dōkō",
+    "romaji": "doukou",
     "meaning_vi": "cái quốc cung, canh tác",
     "part_of_speech": "verb",
     "tags": [
@@ -642,7 +642,7 @@
   {
     "word": "衽蒙",
     "reading": "じんもう",
-    "romaji": "jinmō",
+    "romaji": "jinmou",
     "meaning_vi": "che phủ, bao phủ",
     "part_of_speech": "verb",
     "tags": [
@@ -664,7 +664,7 @@
   {
     "word": "讎恤",
     "reading": "しゅうじゅつ",
-    "romaji": "shūjutsu",
+    "romaji": "shuujutsu",
     "meaning_vi": "báo thù và cứu tế",
     "part_of_speech": "noun",
     "tags": [
@@ -675,7 +675,7 @@
   {
     "word": "翕然",
     "reading": "きゅうぜん",
-    "romaji": "kyūzen",
+    "romaji": "kyuuzen",
     "meaning_vi": "đồng ý thống nhất",
     "part_of_speech": "adverb",
     "tags": [
@@ -686,7 +686,7 @@
   {
     "word": "臠割",
     "reading": "りょうかつ",
-    "romaji": "ryōkatsu",
+    "romaji": "ryoukatsu",
     "meaning_vi": "cắt lìa từng mảnh",
     "part_of_speech": "verb",
     "tags": [
@@ -697,7 +697,7 @@
   {
     "word": "蕤茸",
     "reading": "ずいじょう",
-    "romaji": "zuijō",
+    "romaji": "zuijou",
     "meaning_vi": "mấu nọc, đầu đỏ",
     "part_of_speech": "noun",
     "tags": [
@@ -708,7 +708,7 @@
   {
     "word": "廿四",
     "reading": "じゅうしく",
-    "romaji": "jūushiku",
+    "romaji": "juushiku",
     "meaning_vi": "hai mươi bốn (cổ)",
     "part_of_speech": "noun",
     "tags": [
@@ -730,7 +730,7 @@
   {
     "word": "勾引",
     "reading": "こういん",
-    "romaji": "kōin",
+    "romaji": "kouin",
     "meaning_vi": "lôi kéo, cám dỗ",
     "part_of_speech": "verb",
     "tags": [
@@ -741,7 +741,7 @@
   {
     "word": "蹙踏",
     "reading": "しゅくとう",
-    "romaji": "shukutō",
+    "romaji": "shukutou",
     "meaning_vi": "giẫm đạp, khinh rẻ",
     "part_of_speech": "verb",
     "tags": [
@@ -752,7 +752,7 @@
   {
     "word": "杂沓",
     "reading": "ざっとう",
-    "romaji": "zattō",
+    "romaji": "zattou",
     "meaning_vi": "lộn xộn, ồn ào",
     "part_of_speech": "adjective",
     "tags": [
@@ -763,7 +763,7 @@
   {
     "word": "滏滢",
     "reading": "ふぎょう",
-    "romaji": "fugyō",
+    "romaji": "fugyou",
     "meaning_vi": "nước trong sạch, limpid",
     "part_of_speech": "adjective",
     "tags": [
@@ -774,7 +774,7 @@
   {
     "word": "彷徨",
     "reading": "ほうこう",
-    "romaji": "hōkō",
+    "romaji": "houkou",
     "meaning_vi": "lênh đênh, lang thang",
     "part_of_speech": "verb",
     "tags": [
@@ -807,7 +807,7 @@
   {
     "word": "縻娄",
     "reading": "びろう",
-    "romaji": "birō",
+    "romaji": "birou",
     "meaning_vi": "trói buộc, ràng buộc",
     "part_of_speech": "verb",
     "tags": [
@@ -818,7 +818,7 @@
   {
     "word": "蘘荷",
     "reading": "みょうが",
-    "romaji": "myōga",
+    "romaji": "myouga",
     "meaning_vi": "cây hành tím (thực vật)",
     "part_of_speech": "noun",
     "tags": [
@@ -829,7 +829,7 @@
   {
     "word": "螻蛄",
     "reading": "ろうこ",
-    "romaji": "rōko",
+    "romaji": "rouko",
     "meaning_vi": "côn trùng khủng khiếp",
     "part_of_speech": "noun",
     "tags": [
@@ -862,7 +862,7 @@
   {
     "word": "蟻壤",
     "reading": "ぎようよう",
-    "romaji": "giyōyō",
+    "romaji": "giyouyou",
     "meaning_vi": "đất kiến (địa ngục), thế giới hạ phẩm",
     "part_of_speech": "noun",
     "tags": [

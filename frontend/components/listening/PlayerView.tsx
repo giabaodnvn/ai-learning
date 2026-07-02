@@ -9,16 +9,16 @@ interface Props {
   onStartQuiz: (speechRate: number) => void;
 }
 
+const SPEED_OPTIONS = [
+  { rate: 0.75, label: "Chậm" },
+  { rate: 1.0,  label: "Bình thường" },
+  { rate: 1.25, label: "Nhanh" },
+];
+
 export function PlayerView({ exercise, onStartQuiz }: Props) {
   const [showScript, setShowScript] = useState(false);
   const [showTranslation, setShowTranslation] = useState(false);
   const [hasPlayed, setHasPlayed] = useState(false);
-
-  const SPEED_OPTIONS = [
-    { rate: 0.75, label: "Chậm" },
-    { rate: 1.0, label: "Bình thường" },
-    { rate: 1.25, label: "Nhanh" },
-  ];
 
   const tts = useTextToSpeech(exercise.script_ja);
 

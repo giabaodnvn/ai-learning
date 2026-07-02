@@ -32,7 +32,7 @@ class AiCacheService
     private
 
     def redis
-      @redis ||= Redis.new(url: ENV.fetch("REDIS_URL", "redis://localhost:6379/0"))
+      Thread.current[:ai_cache_redis] ||= Redis.new(url: ENV.fetch("REDIS_URL", "redis://localhost:6379/0"))
     end
   end
 end

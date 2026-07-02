@@ -39,10 +39,16 @@ module Api
 
         # ?type=all returns new cards across all three types (respects per-type limits)
         if type == "all"
-          all_cards  = []
-          total_new  = 0
+          all_cards = []
+          total_new = 0
+
+          studied_by_type = current_user.user_card_progresses
+                                        .pluck(:card_type, :card_id)
+                                        .group_by { |t, _| t }
+                                        .transform_values { |pairs| pairs.map { |_, id| id } }
+
           UserCardProgress::CARD_TYPES.each do |t|
-            studied = current_user.user_card_progresses.where(card_type: t).pluck(:card_id)
+            studied = studied_by_type.fetch(t, [])
             lim     = UserCardProgress::NEW_PER_DAY.fetch(t, 10)
             model   = source_model(t)
             scope   = model.by_level(level).where.not(id: studied).order(:id)
@@ -359,7 +365,7 @@ module Api
       def parse_json(value)
         return value if value.is_a?(Array) || value.is_a?(Hash)
         JSON.parse(value.to_s)
-      rescue JSON::ParseError
+      rescue JSON::ParserError
         []
       end
 

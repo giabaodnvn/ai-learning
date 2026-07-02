@@ -59,21 +59,14 @@ export function GrammarPracticeSet({ grammarPointId, pattern }: Props) {
     }
   }
 
-  async function handleAnswerFillBlank(optionIndex: number) {
+  function handleAnswerMCQ(optionIndex: number) {
     if (currentState.selectedIndex !== null || currentState.loading) return;
 
-    setQuizStates((prev) =>
-      prev.map((s, i) => (i === currentIndex ? { ...s, selectedIndex: optionIndex, loading: true } : s))
-    );
-
     const correct = optionIndex === currentExercise.answer_index;
-    const result = {
-      correct,
-      explanation_vi: currentExercise.explanation_vi,
-    };
+    const result = { correct, explanation_vi: currentExercise.explanation_vi };
 
     setQuizStates((prev) =>
-      prev.map((s, i) => (i === currentIndex ? { ...s, result, loading: false } : s))
+      prev.map((s, i) => (i === currentIndex ? { ...s, selectedIndex: optionIndex, result } : s))
     );
     setAllResults((prev) => {
       const next = [...prev];
@@ -82,30 +75,7 @@ export function GrammarPracticeSet({ grammarPointId, pattern }: Props) {
     });
   }
 
-  async function handleAnswerChoice(optionIndex: number) {
-    if (currentState.selectedIndex !== null || currentState.loading) return;
-
-    setQuizStates((prev) =>
-      prev.map((s, i) => (i === currentIndex ? { ...s, selectedIndex: optionIndex, loading: true } : s))
-    );
-
-    const correct = optionIndex === currentExercise.answer_index;
-    const result = {
-      correct,
-      explanation_vi: currentExercise.explanation_vi,
-    };
-
-    setQuizStates((prev) =>
-      prev.map((s, i) => (i === currentIndex ? { ...s, result, loading: false } : s))
-    );
-    setAllResults((prev) => {
-      const next = [...prev];
-      next[currentIndex] = correct;
-      return next;
-    });
-  }
-
-  async function handleTranslateSubmit() {
+  function handleTranslateSubmit() {
     if (!translateInput.trim() || currentState.loading) return;
 
     setQuizStates((prev) =>
@@ -289,7 +259,7 @@ export function GrammarPracticeSet({ grammarPointId, pattern }: Props) {
               return (
                 <button
                   key={idx}
-                  onClick={() => handleAnswerFillBlank(idx)}
+                  onClick={() => handleAnswerMCQ(idx)}
                   disabled={answered}
                   className={`rounded-lg border px-4 py-3 text-sm font-medium text-left transition-colors ${
                     answered && isCorrect
@@ -329,7 +299,7 @@ export function GrammarPracticeSet({ grammarPointId, pattern }: Props) {
               return (
                 <button
                   key={idx}
-                  onClick={() => handleAnswerChoice(idx)}
+                  onClick={() => handleAnswerMCQ(idx)}
                   disabled={answered}
                   className={`w-full text-left rounded-xl border px-4 py-3 text-sm transition-colors ${
                     answered && isCorrect

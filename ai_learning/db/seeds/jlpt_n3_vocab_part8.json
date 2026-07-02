@@ -47,7 +47,7 @@
   {
     "word": "設備",
     "reading": "せつび",
-    "romaji": "setubbi",
+    "romaji": "setsubi",
     "meaning_vi": "thiết bị, cơ sở vật chất",
     "part_of_speech": "noun",
     "tags": [
@@ -70,7 +70,7 @@
   {
     "word": "乗り換え",
     "reading": "のりかえ",
-    "romaji": "norikaeri",
+    "romaji": "norikae",
     "meaning_vi": "chuyển tàu/xe, đổi tuyến",
     "part_of_speech": "noun",
     "tags": [
@@ -653,7 +653,7 @@
   {
     "word": "低くなる",
     "reading": "ひくくなる",
-    "romaji": "hikukuinaru",
+    "romaji": "hikukunaru",
     "meaning_vi": "hạ thấp, giảm xuống",
     "part_of_speech": "verb",
     "tags": [
@@ -675,7 +675,7 @@
   {
     "word": "縮む",
     "reading": "ちぢむ",
-    "romaji": "chidjimu",
+    "romaji": "chijimu",
     "meaning_vi": "co lại, nhỏ lại",
     "part_of_speech": "verb",
     "tags": [

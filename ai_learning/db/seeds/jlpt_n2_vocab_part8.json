@@ -86,7 +86,7 @@
   {
     "word": "籾",
     "reading": "もみ",
-    "romaji": "kome",
+    "romaji": "momi",
     "meaning_vi": "cơm lúa",
     "part_of_speech": "noun",
     "tags": [
@@ -158,7 +158,7 @@
   {
     "word": "畜肉",
     "reading": "ちくにく",
-    "romaji": "niku",
+    "romaji": "chikuniku",
     "meaning_vi": "thịt gia súc",
     "part_of_speech": "noun",
     "tags": [
@@ -170,7 +170,7 @@
   {
     "word": "白身魚",
     "reading": "しろみざかな",
-    "romaji": "sakana",
+    "romaji": "shiromizakana",
     "meaning_vi": "cá trắng",
     "part_of_speech": "noun",
     "tags": [
@@ -193,8 +193,8 @@
   },
   {
     "word": "根菜",
-    "reading": "ねやさい",
-    "romaji": "yasai",
+    "reading": "こんさい",
+    "romaji": "konsai",
     "meaning_vi": "rau cải gốc",
     "part_of_speech": "noun",
     "tags": [
@@ -230,7 +230,7 @@
   {
     "word": "ヨーグルト",
     "reading": "よーぐると",
-    "romaji": "yoogurutol",
+    "romaji": "yooguruto",
     "meaning_vi": "sữa chua",
     "part_of_speech": "noun",
     "tags": [
@@ -242,7 +242,7 @@
   {
     "word": "鶏卵",
     "reading": "けいらん",
-    "romaji": "tamago",
+    "romaji": "keiran",
     "meaning_vi": "trứng gà",
     "part_of_speech": "noun",
     "tags": [
@@ -266,7 +266,7 @@
   {
     "word": "焼成食",
     "reading": "しょうせいしょく",
-    "romaji": "pan",
+    "romaji": "shouseishoku",
     "meaning_vi": "thức ăn nướng",
     "part_of_speech": "noun",
     "tags": [
@@ -278,7 +278,7 @@
   {
     "word": "製麺",
     "reading": "せいめん",
-    "romaji": "men",
+    "romaji": "seimen",
     "meaning_vi": "chế biến mì",
     "part_of_speech": "noun",
     "tags": [
@@ -362,7 +362,7 @@
   {
     "word": "アイスクリーム",
     "reading": "あいすくりーむ",
-    "romaji": "aisukrimu",
+    "romaji": "aisukuriimu",
     "meaning_vi": "kem",
     "part_of_speech": "noun",
     "tags": [
@@ -398,7 +398,7 @@
   {
     "word": "湯",
     "reading": "ゆ",
-    "romaji": "mizu",
+    "romaji": "yu",
     "meaning_vi": "nước nóng",
     "part_of_speech": "noun",
     "tags": [
@@ -470,7 +470,7 @@
   {
     "word": "咀嚼",
     "reading": "そしゃく",
-    "romaji": "taberu",
+    "romaji": "soshaku",
     "meaning_vi": "nhai",
     "part_of_speech": "verb",
     "tags": [
@@ -482,7 +482,7 @@
   {
     "word": "嚥下",
     "reading": "えんか",
-    "romaji": "nomu",
+    "romaji": "enka",
     "meaning_vi": "nuốt",
     "part_of_speech": "verb",
     "tags": [
@@ -494,7 +494,7 @@
   {
     "word": "喝す",
     "reading": "かつす",
-    "romaji": "katssu",
+    "romaji": "katsusu",
     "meaning_vi": "uống sạch",
     "part_of_speech": "verb",
     "tags": [
@@ -614,7 +614,7 @@
   {
     "word": "キッチン",
     "reading": "きっちん",
-    "romaji": "kichin",
+    "romaji": "kitchin",
     "meaning_vi": "bếp",
     "part_of_speech": "noun",
     "tags": [
@@ -710,7 +710,7 @@
   {
     "word": "廉価",
     "reading": "れんか",
-    "romaji": "yasui",
+    "romaji": "renka",
     "meaning_vi": "giá rẻ",
     "part_of_speech": "adjective",
     "tags": [
@@ -722,7 +722,7 @@
   {
     "word": "高額",
     "reading": "こうがく",
-    "romaji": "takai",
+    "romaji": "kougaku",
     "meaning_vi": "giá cao",
     "part_of_speech": "adjective",
     "tags": [
@@ -878,7 +878,7 @@
   {
     "word": "通帳",
     "reading": "つうちょう",
-    "romaji": "tuuchou",
+    "romaji": "tsuuchou",
     "meaning_vi": "sổ tiết kiệm",
     "part_of_speech": "noun",
     "tags": [
@@ -926,7 +926,7 @@
   {
     "word": "ストーブ",
     "reading": "すとーぶ",
-    "romaji": "sutoobuu",
+    "romaji": "sutoobu",
     "meaning_vi": "lò sưởi",
     "part_of_speech": "noun",
     "tags": [

@@ -84,7 +84,7 @@
   {
     "word": "会社員",
     "reading": "かいしゃいん",
-    "romaji": "kaishaiin",
+    "romaji": "kaishain",
     "meaning_vi": "nhân viên công ty",
     "part_of_speech": "noun",
     "tags": [
@@ -263,7 +263,7 @@
   },
   {
     "word": "敷金",
-    "reading": "しきん",
+    "reading": "しききん",
     "romaji": "shikikin",
     "meaning_vi": "tiền đặt cọc (thuê nhà)",
     "part_of_speech": "noun",
@@ -402,7 +402,7 @@
   {
     "word": "処方箋",
     "reading": "しょほうせん",
-    "romaji": "shohōsen",
+    "romaji": "shohousen",
     "meaning_vi": "đơn thuốc",
     "part_of_speech": "noun",
     "tags": [
@@ -660,7 +660,7 @@
   {
     "word": "仕方ない",
     "reading": "しかたない",
-    "romaji": "shikataanai",
+    "romaji": "shikatanai",
     "meaning_vi": "không có cách nào, đành chịu",
     "part_of_speech": "adjective",
     "tags": [
@@ -922,7 +922,7 @@
   {
     "word": "気づく",
     "reading": "きづく",
-    "romaji": "kiduku",
+    "romaji": "kizuku",
     "meaning_vi": "nhận ra, để ý, nhận thức",
     "part_of_speech": "verb",
     "tags": [

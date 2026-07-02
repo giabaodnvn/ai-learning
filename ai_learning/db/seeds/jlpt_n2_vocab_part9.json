@@ -326,7 +326,7 @@
   {
     "word": "温室効果ガス",
     "reading": "おんしつこうかがす",
-    "romaji": "onshitsukoukagas",
+    "romaji": "onshitsukoukagasu",
     "meaning_vi": "khí nhà kính",
     "part_of_speech": "noun",
     "tags": [
@@ -338,7 +338,7 @@
   {
     "word": "大気汚染",
     "reading": "たいきおせん",
-    "romaji": "taikiosен",
+    "romaji": "taikiosen",
     "meaning_vi": "ô nhiễm không khí",
     "part_of_speech": "noun",
     "tags": [
@@ -374,7 +374,7 @@
   {
     "word": "核物質",
     "reading": "かくぶっしつ",
-    "romaji": "kakubutsushitsu",
+    "romaji": "kakubusshitsu",
     "meaning_vi": "chất hạt nhân",
     "part_of_speech": "noun",
     "tags": [
@@ -410,7 +410,7 @@
   {
     "word": "太陽エネルギー",
     "reading": "たいようえねるぎー",
-    "romaji": "taiyouenerugi",
+    "romaji": "taiyouenerugii",
     "meaning_vi": "năng lượng mặt trời",
     "part_of_speech": "noun",
     "tags": [
@@ -602,7 +602,7 @@
   {
     "word": "還元",
     "reading": "かんげん",
-    "romaji": "kangens",
+    "romaji": "kangen",
     "meaning_vi": "khử",
     "part_of_speech": "noun",
     "tags": [
@@ -710,7 +710,7 @@
   {
     "word": "阻害",
     "reading": "そがい",
-    "romaji": "teikou",
+    "romaji": "sogai",
     "meaning_vi": "cản trở, xấu đi",
     "part_of_speech": "noun",
     "tags": [
@@ -734,7 +734,7 @@
   {
     "word": "絶縁体",
     "reading": "ぜつえんたい",
-    "romaji": "zetsuентай",
+    "romaji": "zetsuentai",
     "meaning_vi": "chất cách điện",
     "part_of_speech": "noun",
     "tags": [
@@ -758,7 +758,7 @@
   {
     "word": "トランジスタ",
     "reading": "とらんじすた",
-    "romaji": "torannjisuta",
+    "romaji": "toranjisuta",
     "meaning_vi": "transistor",
     "part_of_speech": "noun",
     "tags": [
@@ -818,7 +818,7 @@
   {
     "word": "CPU",
     "reading": "しーぴーゆー",
-    "romaji": "shiipiiyu",
+    "romaji": "shiipiiyuu",
     "meaning_vi": "CPU",
     "part_of_speech": "noun",
     "tags": [
@@ -854,7 +854,7 @@
   {
     "word": "HDD",
     "reading": "えいちでぃーでぃー",
-    "romaji": "eichidii",
+    "romaji": "eichidiidii",
     "meaning_vi": "ổ cứng",
     "part_of_speech": "noun",
     "tags": [
@@ -866,7 +866,7 @@
   {
     "word": "GPU",
     "reading": "じーぴーゆー",
-    "romaji": "jiipiiyu",
+    "romaji": "jiipiiyuu",
     "meaning_vi": "GPU",
     "part_of_speech": "noun",
     "tags": [
@@ -890,7 +890,7 @@
   {
     "word": "スキャナー",
     "reading": "すきゃなー",
-    "romaji": "sukyana",
+    "romaji": "sukyanaa",
     "meaning_vi": "máy quét",
     "part_of_speech": "noun",
     "tags": [
@@ -962,7 +962,7 @@
   {
     "word": "ウェブカメラ",
     "reading": "うぇぶかめら",
-    "romaji": "webuкamera",
+    "romaji": "webukamera",
     "meaning_vi": "webcam",
     "part_of_speech": "noun",
     "tags": [
@@ -986,7 +986,7 @@
   {
     "word": "モデム",
     "reading": "もでむ",
-    "romaji": "moderum",
+    "romaji": "modemu",
     "meaning_vi": "modem",
     "part_of_speech": "noun",
     "tags": [
@@ -998,7 +998,7 @@
   {
     "word": "USB",
     "reading": "ゆーえすびー",
-    "romaji": "yuuesubi",
+    "romaji": "yuuesubii",
     "meaning_vi": "USB",
     "part_of_speech": "noun",
     "tags": [
@@ -1022,7 +1022,7 @@
   {
     "word": "ブルートゥース",
     "reading": "ぶるーとぅーす",
-    "romaji": "burutoousu",
+    "romaji": "buruutuusu",
     "meaning_vi": "Bluetooth",
     "part_of_speech": "noun",
     "tags": [

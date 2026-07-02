@@ -62,7 +62,7 @@
   {
     "word": "勤続年数",
     "reading": "きんぞくねんすう",
-    "romaji": "kinzokunensu",
+    "romaji": "kinzokunensuu",
     "meaning_vi": "năm công tác liên tục",
     "part_of_speech": "noun",
     "tags": [
@@ -74,7 +74,7 @@
   {
     "word": "昇給",
     "reading": "しょうきゅう",
-    "romaji": "shoukyu",
+    "romaji": "shoukyuu",
     "meaning_vi": "tăng lương",
     "part_of_speech": "noun",
     "tags": [
@@ -86,7 +86,7 @@
   {
     "word": "減給",
     "reading": "げんきゅう",
-    "romaji": "genkyu",
+    "romaji": "genkyuu",
     "meaning_vi": "giảm lương",
     "part_of_speech": "noun",
     "tags": [
@@ -194,7 +194,7 @@
   {
     "word": "病休",
     "reading": "びょうきゅう",
-    "romaji": "byoukyu",
+    "romaji": "byoukyuu",
     "meaning_vi": "nghỉ ốm",
     "part_of_speech": "noun",
     "tags": [
@@ -506,7 +506,7 @@
   {
     "word": "経営危機",
     "reading": "けいえいきき",
-    "romaji": "keieiкiki",
+    "romaji": "keieikiki",
     "meaning_vi": "khủng hoảng kinh doanh",
     "part_of_speech": "noun",
     "tags": [
@@ -542,7 +542,7 @@
   {
     "word": "コンプライアンス",
     "reading": "こんぷらいあんす",
-    "romaji": "konpuraiannsu",
+    "romaji": "konpuraiansu",
     "meaning_vi": "tuân thủ quy tắc",
     "part_of_speech": "noun",
     "tags": [
@@ -554,7 +554,7 @@
   {
     "word": "コーポレート",
     "reading": "こーぽれーと",
-    "romaji": "koorporeeto",
+    "romaji": "kooporeeto",
     "meaning_vi": "công ty, công ty",
     "part_of_speech": "noun",
     "tags": [
@@ -614,7 +614,7 @@
   {
     "word": "ストレス",
     "reading": "すとれす",
-    "romaji": "sutoress",
+    "romaji": "sutoresu",
     "meaning_vi": "áp lực, căng thẳng",
     "part_of_speech": "noun",
     "tags": [
@@ -698,7 +698,7 @@
   {
     "word": "効率",
     "reading": "こうりつ",
-    "romaji": "kouritu",
+    "romaji": "kouritsu",
     "meaning_vi": "hiệu quả, hiệu suất",
     "part_of_speech": "noun",
     "tags": [
@@ -710,7 +710,7 @@
   {
     "word": "利益率",
     "reading": "りえきりつ",
-    "romaji": "riekiristu",
+    "romaji": "riekiritsu",
     "meaning_vi": "tỷ suất lợi nhuận",
     "part_of_speech": "noun",
     "tags": [
@@ -734,7 +734,7 @@
   {
     "word": "資金繰り",
     "reading": "しきんくり",
-    "romaji": "yuushi",
+    "romaji": "shikinkuri",
     "meaning_vi": "quản lý dòng tiền, tài chính",
     "part_of_speech": "noun",
     "tags": [
@@ -794,7 +794,7 @@
   {
     "word": "ベンチャー",
     "reading": "べんちゃー",
-    "romaji": "bencha",
+    "romaji": "benchaa",
     "meaning_vi": "doanh nghiệp rủi ro",
     "part_of_speech": "noun",
     "tags": [
@@ -806,7 +806,7 @@
   {
     "word": "フランチャイズ",
     "reading": "ふらんちゃいず",
-    "romaji": "furancharizu",
+    "romaji": "furanchaizu",
     "meaning_vi": "nhượng quyền",
     "part_of_speech": "noun",
     "tags": [

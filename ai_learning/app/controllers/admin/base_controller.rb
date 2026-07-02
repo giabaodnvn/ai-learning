@@ -17,7 +17,7 @@ module Admin
     end
 
     def require_admin_login!
-      unless current_admin&.admin? && !current_admin&.blocked?
+      unless current_admin&.admin? && !current_admin.blocked?
         session.delete(:admin_user_id)
         redirect_to admin_login_path, alert: "Vui lòng đăng nhập với tài khoản admin."
       end

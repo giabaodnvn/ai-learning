@@ -90,7 +90,7 @@
   {
     "word": "鼂時",
     "reading": "ちょうじ",
-    "romaji": "chōji",
+    "romaji": "chouji",
     "meaning_vi": "thời sáng sớm, bình minh",
     "part_of_speech": "noun",
     "tags": [
@@ -101,7 +101,7 @@
   {
     "word": "汝兄",
     "reading": "なんきょう",
-    "romaji": "nankyō",
+    "romaji": "nankyou",
     "meaning_vi": "người anh em (cổ)",
     "part_of_speech": "noun",
     "tags": [
@@ -112,7 +112,7 @@
   {
     "word": "徵調",
     "reading": "ちょうちょう",
-    "romaji": "chōchō",
+    "romaji": "chouchou",
     "meaning_vi": "vẽ tranh, âm nhạc (cổ)",
     "part_of_speech": "noun",
     "tags": [
@@ -134,7 +134,7 @@
   {
     "word": "廖輩",
     "reading": "りょうはい",
-    "romaji": "ryōhai",
+    "romaji": "ryouhai",
     "meaning_vi": "thế hệ, những người cùng loại",
     "part_of_speech": "noun",
     "tags": [
@@ -145,7 +145,7 @@
   {
     "word": "陵谷",
     "reading": "りょうこく",
-    "romaji": "ryōkoku",
+    "romaji": "ryoukoku",
     "meaning_vi": "sự thay đổi địa hình, mô phỏng",
     "part_of_speech": "noun",
     "tags": [
@@ -189,7 +189,7 @@
   {
     "word": "烒灼",
     "reading": "こうしゃく",
-    "romaji": "kōshaku",
+    "romaji": "koushaku",
     "meaning_vi": "cháy nóng, nhiệt độ cao",
     "part_of_speech": "verb",
     "tags": [
@@ -200,7 +200,7 @@
   {
     "word": "濞泞",
     "reading": "ひぎょう",
-    "romaji": "higyō",
+    "romaji": "higyou",
     "meaning_vi": "bùn lầy, sình bùn",
     "part_of_speech": "noun",
     "tags": [
@@ -233,7 +233,7 @@
   {
     "word": "踀踁",
     "reading": "りょうりゃ",
-    "romaji": "ryōrya",
+    "romaji": "ryourya",
     "meaning_vi": "bước đi khập khiễng",
     "part_of_speech": "verb",
     "tags": [
@@ -255,7 +255,7 @@
   {
     "word": "棬棆",
     "reading": "けいきょう",
-    "romaji": "keikyō",
+    "romaji": "keikyou",
     "meaning_vi": "cửa sổ, khung cửa",
     "part_of_speech": "noun",
     "tags": [
@@ -266,7 +266,7 @@
   {
     "word": "糇粮",
     "reading": "こうりょう",
-    "romaji": "kōryō",
+    "romaji": "kouryou",
     "meaning_vi": "đồ ăn khô cho cuộc hành quân",
     "part_of_speech": "noun",
     "tags": [
@@ -299,7 +299,7 @@
   {
     "word": "翝翞",
     "reading": "りゅうりゃ",
-    "romaji": "ryūrya",
+    "romaji": "ryuurya",
     "meaning_vi": "bay trên trời, lượn bay",
     "part_of_speech": "verb",
     "tags": [
@@ -310,7 +310,7 @@
   {
     "word": "臝",
     "reading": "だっ",
-    "romaji": "datt",
+    "romaji": "da",
     "meaning_vi": "trần truồng, khỏa thân",
     "part_of_speech": "adjective",
     "tags": [
@@ -321,7 +321,7 @@
   {
     "word": "膾炙",
     "reading": "かいしゃ",
-    "romaji": "kaisya",
+    "romaji": "kaisha",
     "meaning_vi": "nổi tiếng, được yêu thích (cổ)",
     "part_of_speech": "adjective",
     "tags": [
@@ -376,7 +376,7 @@
   {
     "word": "蓊鬱",
     "reading": "うっぎゃく",
-    "romaji": "uttigyaku",
+    "romaji": "uggyaku",
     "meaning_vi": "rậm rạp, tối tăm, ủ dột",
     "part_of_speech": "adjective",
     "tags": [
@@ -431,7 +431,7 @@
   {
     "word": "衂血",
     "reading": "びつけつ",
-    "romaji": "bitsukketsu",
+    "romaji": "bitsuketsu",
     "meaning_vi": "chảy máu ở mũi",
     "part_of_speech": "noun",
     "tags": [
@@ -453,7 +453,7 @@
   {
     "word": "衒衒",
     "reading": "ぎょうぎょう",
-    "romaji": "gyōgyō",
+    "romaji": "gyougyou",
     "meaning_vi": "khoe khoang, khoa tính",
     "part_of_speech": "verb",
     "tags": [
@@ -519,7 +519,7 @@
   {
     "word": "訰註",
     "reading": "こうこう",
-    "romaji": "kōkō",
+    "romaji": "koukou",
     "meaning_vi": "nói chuyện, trao đổi ý kiến",
     "part_of_speech": "verb",
     "tags": [
@@ -530,7 +530,7 @@
   {
     "word": "詬詈",
     "reading": "こうり",
-    "romaji": "kōri",
+    "romaji": "kouri",
     "meaning_vi": "chửi rủa, lăng mạ",
     "part_of_speech": "verb",
     "tags": [
@@ -552,7 +552,7 @@
   {
     "word": "誦習",
     "reading": "しょうしゅう",
-    "romaji": "shōshū",
+    "romaji": "shoushuu",
     "meaning_vi": "đọc to, học thuộc",
     "part_of_speech": "verb",
     "tags": [
@@ -596,7 +596,7 @@
   {
     "word": "贋造",
     "reading": "がんぞう",
-    "romaji": "ganzō",
+    "romaji": "ganzou",
     "meaning_vi": "giả tạo, làm giả",
     "part_of_speech": "verb",
     "tags": [
@@ -684,7 +684,7 @@
   {
     "word": "踰踊",
     "reading": "ゆうよう",
-    "romaji": "yūyō",
+    "romaji": "yuuyou",
     "meaning_vi": "nhảy vọt, vượt qua",
     "part_of_speech": "verb",
     "tags": [
@@ -728,7 +728,7 @@
   {
     "word": "蹰蹜",
     "reading": "ちょうちゃく",
-    "romaji": "chōchaku",
+    "romaji": "chouchaku",
     "meaning_vi": "dừng lại, ngần ngừ",
     "part_of_speech": "verb",
     "tags": [
@@ -739,7 +739,7 @@
   {
     "word": "蹲蹂",
     "reading": "そんじゅ",
-    "romaji": "sonjuu",
+    "romaji": "sonju",
     "meaning_vi": "khuỵ tọa, giẫm đạp",
     "part_of_speech": "verb",
     "tags": [
@@ -761,7 +761,7 @@
   {
     "word": "躐躋",
     "reading": "りょうしょう",
-    "romaji": "ryōshō",
+    "romaji": "ryoushou",
     "meaning_vi": "bước lên, tiến lên",
     "part_of_speech": "verb",
     "tags": [
@@ -772,7 +772,7 @@
   {
     "word": "躔躕",
     "reading": "せんきゅう",
-    "romaji": "senkyū",
+    "romaji": "senkyuu",
     "meaning_vi": "quay vòng, chần chừ",
     "part_of_speech": "verb",
     "tags": [
@@ -783,7 +783,7 @@
   {
     "word": "躘躙",
     "reading": "とうとう",
-    "romaji": "tōtō",
+    "romaji": "toutou",
     "meaning_vi": "giẫm đạp, xuyên qua",
     "part_of_speech": "verb",
     "tags": [
@@ -794,7 +794,7 @@
   {
     "word": "躩躪",
     "reading": "きゅうりょう",
-    "romaji": "kyūryō",
+    "romaji": "kyuuryou",
     "meaning_vi": "thoái lui, lui bại",
     "part_of_speech": "verb",
     "tags": [
@@ -805,7 +805,7 @@
   {
     "word": "軏軓",
     "reading": "ろうろう",
-    "romaji": "rōrō",
+    "romaji": "rourou",
     "meaning_vi": "bánh xe xe ngựa, phương tiện",
     "part_of_speech": "noun",
     "tags": [
@@ -860,7 +860,7 @@
   {
     "word": "轀轇",
     "reading": "どうこう",
-    "romaji": "dōkō",
+    "romaji": "doukou",
     "meaning_vi": "lâu xe, xe san",
     "part_of_speech": "noun",
     "tags": [
@@ -871,7 +871,7 @@
   {
     "word": "轑轖",
     "reading": "しょうちぇ",
-    "romaji": "shooche",
+    "romaji": "shouche",
     "meaning_vi": "xe bằng lâu, xe truyền",
     "part_of_speech": "noun",
     "tags": [

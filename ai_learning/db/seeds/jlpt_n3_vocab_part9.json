@@ -35,7 +35,7 @@
   {
     "word": "塩漬けにする",
     "reading": "しおづけにする",
-    "romaji": "shiodzuke-ni-suru",
+    "romaji": "shiozukenisuru",
     "meaning_vi": "muối chua, ướp muối",
     "part_of_speech": "verb",
     "tags": [
@@ -80,7 +80,7 @@
   {
     "word": "チーム",
     "reading": "ちーむ",
-    "romaji": "chimu",
+    "romaji": "chiimu",
     "meaning_vi": "đội, nhóm",
     "part_of_speech": "noun",
     "tags": [
@@ -146,7 +146,7 @@
   {
     "word": "コース",
     "reading": "こーす",
-    "romaji": "kosu",
+    "romaji": "koosu",
     "meaning_vi": "khóa học, lộ trình, đường chạy",
     "part_of_speech": "noun",
     "tags": [
@@ -198,7 +198,7 @@
   {
     "word": "インストール",
     "reading": "いんすとーる",
-    "romaji": "insutaoru",
+    "romaji": "insutooru",
     "meaning_vi": "cài đặt, cài",
     "part_of_speech": "noun",
     "tags": [
@@ -239,7 +239,7 @@
   {
     "word": "パスワード",
     "reading": "ぱすわーど",
-    "romaji": "pasuwado",
+    "romaji": "pasuwaado",
     "meaning_vi": "mật khẩu",
     "part_of_speech": "noun",
     "tags": [
@@ -280,7 +280,7 @@
   {
     "word": "データベース",
     "reading": "でーたべーす",
-    "romaji": "databesu",
+    "romaji": "deetabeesu",
     "meaning_vi": "cơ sở dữ liệu, database",
     "part_of_speech": "noun",
     "tags": [
@@ -290,7 +290,7 @@
   {
     "word": "アカウント",
     "reading": "あかうんと",
-    "romaji": "akaunuto",
+    "romaji": "akaunto",
     "meaning_vi": "tài khoản, account",
     "part_of_speech": "noun",
     "tags": [
@@ -311,7 +311,7 @@
   {
     "word": "フォーム",
     "reading": "ふぉーむ",
-    "romaji": "fuoomu",
+    "romaji": "foomu",
     "meaning_vi": "biểu mẫu, form",
     "part_of_speech": "noun",
     "tags": [
@@ -321,7 +321,7 @@
   {
     "word": "キーボード",
     "reading": "きーぼーど",
-    "romaji": "kiibodo",
+    "romaji": "kiiboodo",
     "meaning_vi": "bàn phím",
     "part_of_speech": "noun",
     "tags": [
@@ -470,7 +470,7 @@
   {
     "word": "通す",
     "reading": "とおす",
-    "romaji": "tosu",
+    "romaji": "toosu",
     "meaning_vi": "cho qua, thông qua",
     "part_of_speech": "verb",
     "tags": [
@@ -524,7 +524,7 @@
   },
   {
     "word": "溶ける",
-    "reading": "ときる",
+    "reading": "とける",
     "romaji": "tokeru",
     "meaning_vi": "tan, rã ra",
     "part_of_speech": "verb",
@@ -666,7 +666,7 @@
   {
     "word": "温かい",
     "reading": "あたたかい",
-    "romaji": "atakakai",
+    "romaji": "atatakai",
     "meaning_vi": "ấm áp, ấm",
     "part_of_speech": "adjective",
     "tags": [

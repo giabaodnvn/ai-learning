@@ -8,7 +8,7 @@ class GrammarPointSerializer
   attribute :examples do |gp|
     ex = gp.examples
     ex.is_a?(String) ? JSON.parse(ex) : Array(ex)
-  rescue JSON::ParseError
+  rescue JSON::ParserError
     []
   end
 end

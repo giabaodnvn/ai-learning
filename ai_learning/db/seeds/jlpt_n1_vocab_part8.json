@@ -2,7 +2,7 @@
   {
     "word": "実証",
     "reading": "じっしょう",
-    "romaji": "jisshō",
+    "romaji": "jisshou",
     "meaning_vi": "chứng minh thực tế, xác minh bằng bằng chứng",
     "part_of_speech": "noun",
     "tags": [
@@ -14,7 +14,7 @@
   {
     "word": "立証",
     "reading": "りっしょう",
-    "romaji": "risshō",
+    "romaji": "risshou",
     "meaning_vi": "lập chứng, chứng minh điều gì đó là đúng",
     "part_of_speech": "noun",
     "tags": [
@@ -38,7 +38,7 @@
   {
     "word": "提唱",
     "reading": "ていしょう",
-    "romaji": "teishō",
+    "romaji": "teishou",
     "meaning_vi": "đề xướng, đưa ra và ủng hộ một ý tưởng",
     "part_of_speech": "noun",
     "tags": [
@@ -61,7 +61,7 @@
   {
     "word": "総合",
     "reading": "そうごう",
-    "romaji": "sōgō",
+    "romaji": "sougou",
     "meaning_vi": "tổng hợp, kết hợp nhiều yếu tố thành một",
     "part_of_speech": "noun",
     "tags": [
@@ -96,7 +96,7 @@
   {
     "word": "抄録",
     "reading": "しょうろく",
-    "romaji": "shōroku",
+    "romaji": "shouroku",
     "meaning_vi": "tóm tắt, trích lục tóm gọn",
     "part_of_speech": "noun",
     "tags": [
@@ -108,7 +108,7 @@
   {
     "word": "引証",
     "reading": "いんしょう",
-    "romaji": "inshō",
+    "romaji": "inshou",
     "meaning_vi": "trích dẫn chứng cứ, dẫn chứng",
     "part_of_speech": "noun",
     "tags": [
@@ -132,7 +132,7 @@
   {
     "word": "炎症",
     "reading": "えんしょう",
-    "romaji": "enshō",
+    "romaji": "enshou",
     "meaning_vi": "viêm, phản ứng viêm của cơ thể",
     "part_of_speech": "noun",
     "tags": [
@@ -144,7 +144,7 @@
   {
     "word": "腫瘍",
     "reading": "しゅよう",
-    "romaji": "shuyō",
+    "romaji": "shuyou",
     "meaning_vi": "khối u, bướu",
     "part_of_speech": "noun",
     "tags": [
@@ -168,7 +168,7 @@
   {
     "word": "縫合",
     "reading": "ほうごう",
-    "romaji": "hōgō",
+    "romaji": "hougou",
     "meaning_vi": "khâu vá vết thương, khâu nối",
     "part_of_speech": "noun",
     "tags": [
@@ -213,7 +213,7 @@
   {
     "word": "恐慌",
     "reading": "きょうこう",
-    "romaji": "kyōkō",
+    "romaji": "kyoukou",
     "meaning_vi": "khủng hoảng kinh tế, sự hoảng loạn",
     "part_of_speech": "noun",
     "tags": [
@@ -224,7 +224,7 @@
   {
     "word": "高騰",
     "reading": "こうとう",
-    "romaji": "kōtō",
+    "romaji": "koutou",
     "meaning_vi": "tăng vọt, leo thang mạnh (giá cả)",
     "part_of_speech": "noun",
     "tags": [
@@ -235,7 +235,7 @@
   {
     "word": "暴落",
     "reading": "ぼうらく",
-    "romaji": "bōraku",
+    "romaji": "bouraku",
     "meaning_vi": "sụt giảm đột ngột, sụp đổ giá",
     "part_of_speech": "noun",
     "tags": [
@@ -247,7 +247,7 @@
   {
     "word": "竣工",
     "reading": "しゅんこう",
-    "romaji": "shunkō",
+    "romaji": "shunkou",
     "meaning_vi": "hoàn công, hoàn thành xây dựng",
     "part_of_speech": "noun",
     "tags": [
@@ -258,7 +258,7 @@
   {
     "word": "施工",
     "reading": "せこう",
-    "romaji": "sekō",
+    "romaji": "sekou",
     "meaning_vi": "thi công, thực hiện công trình xây dựng",
     "part_of_speech": "noun",
     "tags": [
@@ -269,7 +269,7 @@
   {
     "word": "補修",
     "reading": "ほしゅう",
-    "romaji": "hoshū",
+    "romaji": "hoshuu",
     "meaning_vi": "sửa chữa, tu bổ",
     "part_of_speech": "noun",
     "tags": [
@@ -280,7 +280,7 @@
   {
     "word": "稼働",
     "reading": "かどう",
-    "romaji": "kadō",
+    "romaji": "kadou",
     "meaning_vi": "vận hành, hoạt động (máy móc, nhà máy)",
     "part_of_speech": "noun",
     "tags": [
@@ -292,7 +292,7 @@
   {
     "word": "試行",
     "reading": "しこう",
-    "romaji": "shikō",
+    "romaji": "shikou",
     "meaning_vi": "thử nghiệm, thực hiện thử",
     "part_of_speech": "noun",
     "tags": [
@@ -304,7 +304,7 @@
   {
     "word": "執行",
     "reading": "しっこう",
-    "romaji": "shikkō",
+    "romaji": "shikkou",
     "meaning_vi": "thi hành, thực thi (pháp luật, lệnh)",
     "part_of_speech": "noun",
     "tags": [
@@ -365,7 +365,7 @@
   {
     "word": "施行",
     "reading": "しこう",
-    "romaji": "shikō",
+    "romaji": "shikou",
     "meaning_vi": "thi hành, áp dụng (luật pháp)",
     "part_of_speech": "noun",
     "tags": [
@@ -377,7 +377,7 @@
   {
     "word": "答申",
     "reading": "とうしん",
-    "romaji": "tōshin",
+    "romaji": "toushin",
     "meaning_vi": "báo cáo kết quả tư vấn, trả lời tư vấn cho cơ quan cao hơn",
     "part_of_speech": "noun",
     "tags": [
@@ -447,7 +447,7 @@
   {
     "word": "憂慮",
     "reading": "ゆうりょ",
-    "romaji": "yūryo",
+    "romaji": "yuuryo",
     "meaning_vi": "lo âu, lo lắng sâu xa",
     "part_of_speech": "noun",
     "tags": [
@@ -468,7 +468,7 @@
   {
     "word": "焦点",
     "reading": "しょうてん",
-    "romaji": "shōten",
+    "romaji": "shouten",
     "meaning_vi": "trọng tâm, điểm tập trung chú ý",
     "part_of_speech": "noun",
     "tags": [
@@ -479,7 +479,7 @@
   {
     "word": "争点",
     "reading": "そうてん",
-    "romaji": "sōten",
+    "romaji": "souten",
     "meaning_vi": "điểm tranh cãi, vấn đề gây tranh luận",
     "part_of_speech": "noun",
     "tags": [
@@ -491,7 +491,7 @@
   {
     "word": "帰趨",
     "reading": "きすう",
-    "romaji": "kisū",
+    "romaji": "kisuu",
     "meaning_vi": "kết cục, xu hướng cuối cùng",
     "part_of_speech": "noun",
     "tags": [
@@ -524,7 +524,7 @@
   {
     "word": "一石二鳥",
     "reading": "いっせきにちょう",
-    "romaji": "isseki nichō",
+    "romaji": "issekinichou",
     "meaning_vi": "một mũi tên trúng hai đích, lợi cả hai",
     "part_of_speech": "noun",
     "tags": [
@@ -597,7 +597,7 @@
   {
     "word": "語法",
     "reading": "ごほう",
-    "romaji": "gohō",
+    "romaji": "gohou",
     "meaning_vi": "ngữ pháp, cách dùng từ ngữ",
     "part_of_speech": "noun",
     "tags": [
@@ -609,7 +609,7 @@
   {
     "word": "修辞",
     "reading": "しゅうじ",
-    "romaji": "shūji",
+    "romaji": "shuuji",
     "meaning_vi": "tu từ, nghệ thuật sử dụng ngôn ngữ",
     "part_of_speech": "noun",
     "tags": [
@@ -633,7 +633,7 @@
   {
     "word": "論調",
     "reading": "ろんちょう",
-    "romaji": "ronchō",
+    "romaji": "ronchou",
     "meaning_vi": "giọng điệu lập luận, phong cách tranh luận",
     "part_of_speech": "noun",
     "tags": [
@@ -657,7 +657,7 @@
   {
     "word": "描写",
     "reading": "びょうしゃ",
-    "romaji": "byōsha",
+    "romaji": "byousha",
     "meaning_vi": "miêu tả, diễn đạt bằng lời hoặc hình ảnh",
     "part_of_speech": "noun",
     "tags": [
@@ -680,7 +680,7 @@
   {
     "word": "伝承",
     "reading": "でんしょう",
-    "romaji": "denshō",
+    "romaji": "denshou",
     "meaning_vi": "truyền thừa, truyền thống được lưu giữ qua các thế hệ",
     "part_of_speech": "noun",
     "tags": [
@@ -704,7 +704,7 @@
   {
     "word": "習俗",
     "reading": "しゅうぞく",
-    "romaji": "shūzoku",
+    "romaji": "shuuzoku",
     "meaning_vi": "phong tục tập quán",
     "part_of_speech": "noun",
     "tags": [
@@ -715,7 +715,7 @@
   {
     "word": "慣習",
     "reading": "かんしゅう",
-    "romaji": "kanshū",
+    "romaji": "kanshuu",
     "meaning_vi": "thói quen, tập quán đã ăn sâu",
     "part_of_speech": "noun",
     "tags": [
@@ -727,7 +727,7 @@
   {
     "word": "旧弊",
     "reading": "きゅうへい",
-    "romaji": "kyūhei",
+    "romaji": "kyuuhei",
     "meaning_vi": "tệ nạn cũ, thói quen xấu cổ hủ",
     "part_of_speech": "noun",
     "tags": [
@@ -750,7 +750,7 @@
   {
     "word": "急進",
     "reading": "きゅうしん",
-    "romaji": "kyūshin",
+    "romaji": "kyuushin",
     "meaning_vi": "cấp tiến, thay đổi nhanh và căn bản",
     "part_of_speech": "noun",
     "tags": [

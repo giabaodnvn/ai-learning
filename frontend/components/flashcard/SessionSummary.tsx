@@ -1,6 +1,5 @@
 "use client";
 
-import { useQueryClient } from "@tanstack/react-query";
 import { useFlashcardStore } from "@/lib/stores/flashcardStore";
 
 interface Props {
@@ -16,7 +15,6 @@ const GRADE_LABELS = [
 ] as const;
 
 export function SessionSummary({ onRestart, onBack }: Props) {
-  const queryClient = useQueryClient();
   const { sessionStats } = useFlashcardStore();
 
   const total    = sessionStats.grades.length;
@@ -30,7 +28,6 @@ export function SessionSummary({ onRestart, onBack }: Props) {
     "Cần luyện thêm！もっと頑張れ！";
 
   function handleRestart() {
-    queryClient.invalidateQueries({ queryKey: ["flashcards-due"] });
     onRestart();
   }
 

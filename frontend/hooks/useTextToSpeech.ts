@@ -97,7 +97,7 @@ export function useTextToSpeech(text: string): UseTextToSpeechReturn {
   // If voices load asynchronously (Chrome), re-bind voice on next play
   useEffect(() => {
     if (typeof window === "undefined") return;
-    window.speechSynthesis.onvoiceschanged = () => {}; // trigger re-render on voice load
+    window.speechSynthesis.onvoiceschanged = () => {}; // ensure voices list is initialized before first play()
   }, []);
 
   const pause = useCallback(() => {

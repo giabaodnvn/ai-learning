@@ -23,7 +23,7 @@
   {
     "word": "類義語",
     "reading": "るいぎご",
-    "romaji": "ruigiigo",
+    "romaji": "ruigigo",
     "meaning_vi": "từ đồng nghĩa, từ cùng loại",
     "part_of_speech": "noun",
     "tags": [
@@ -33,7 +33,7 @@
   {
     "word": "対義語",
     "reading": "たいぎご",
-    "romaji": "taigiigo",
+    "romaji": "taigigo",
     "meaning_vi": "từ trái nghĩa, từ đối lập",
     "part_of_speech": "noun",
     "tags": [
@@ -43,7 +43,7 @@
   {
     "word": "同音異義語",
     "reading": "どうおんいぎご",
-    "romaji": "douonigiigo",
+    "romaji": "douonigigo",
     "meaning_vi": "từ đồng âm khác nghĩa",
     "part_of_speech": "noun",
     "tags": [
@@ -128,7 +128,7 @@
   {
     "word": "アイロニー",
     "reading": "あいろにー",
-    "romaji": "aironi",
+    "romaji": "aironii",
     "meaning_vi": "mỉa mai, châm biếm",
     "part_of_speech": "noun",
     "tags": [
@@ -216,7 +216,7 @@
   {
     "word": "大笑い",
     "reading": "おおわらい",
-    "romaji": "owarai",
+    "romaji": "oowarai",
     "meaning_vi": "cười to, cười tươi",
     "part_of_speech": "noun",
     "tags": [
@@ -281,7 +281,7 @@
   {
     "word": "しかめっ面",
     "reading": "しかめつら",
-    "romaji": "shikametura",
+    "romaji": "shikametsura",
     "meaning_vi": "nhăn mặt, cau mày",
     "part_of_speech": "noun",
     "tags": [
@@ -358,7 +358,7 @@
   {
     "word": "憐れむ",
     "reading": "あわれむ",
-    "romaji": "awaremù",
+    "romaji": "awaremu",
     "meaning_vi": "thương cảm, xót thương",
     "part_of_speech": "verb",
     "tags": [
@@ -629,7 +629,7 @@
   {
     "word": "ぬめぬめ",
     "reading": "ぬめぬめ",
-    "romaji": "numenuме",
+    "romaji": "numenume",
     "meaning_vi": "trơn trượt, nhúc nhích",
     "part_of_speech": "adverb",
     "tags": [
@@ -649,7 +649,7 @@
   {
     "word": "つるつる",
     "reading": "つるつる",
-    "romaji": "tsurutsuру",
+    "romaji": "tsurutsuru",
     "meaning_vi": "trơn trẻo, mượt mà",
     "part_of_speech": "adverb",
     "tags": [
@@ -732,7 +732,7 @@
   {
     "word": "ぽかぽか",
     "reading": "ぽかぽか",
-    "romaji": "pokапoka",
+    "romaji": "pokapoka",
     "meaning_vi": "ấm áp, phủ phục",
     "part_of_speech": "adverb",
     "tags": [

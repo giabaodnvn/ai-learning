@@ -156,7 +156,7 @@
   {
     "word": "誤謬",
     "reading": "ごびゅう",
-    "romaji": "gobyu",
+    "romaji": "gobyuu",
     "meaning_vi": "sai lầm, nhầm lẫn logic",
     "part_of_speech": "noun",
     "tags": [
@@ -188,7 +188,7 @@
   {
     "word": "相関性",
     "reading": "そうかんせい",
-    "romaji": "soukansen",
+    "romaji": "soukansei",
     "meaning_vi": "tương quan, liên hệ",
     "part_of_speech": "noun",
     "tags": [
@@ -199,7 +199,7 @@
   {
     "word": "データ分析",
     "reading": "でーたぶんせき",
-    "romaji": "data-bunseki",
+    "romaji": "deetabunseki",
     "meaning_vi": "phân tích dữ liệu",
     "part_of_speech": "noun",
     "tags": [
@@ -250,7 +250,7 @@
   {
     "word": "P値",
     "reading": "ぴーち",
-    "romaji": "pīchi",
+    "romaji": "piichi",
     "meaning_vi": "p-value, giá trị p",
     "part_of_speech": "noun",
     "tags": [
@@ -324,7 +324,7 @@
   {
     "word": "平均値",
     "reading": "へいきんち",
-    "romaji": "hekinchi",
+    "romaji": "heikinchi",
     "meaning_vi": "giá trị trung bình, mean",
     "part_of_speech": "noun",
     "tags": [
@@ -397,7 +397,7 @@
   {
     "word": "カテゴリー",
     "reading": "かてごりー",
-    "romaji": "kategoriī",
+    "romaji": "kategorii",
     "meaning_vi": "loại, danh mục",
     "part_of_speech": "noun",
     "tags": [
@@ -451,7 +451,7 @@
   {
     "word": "不等式",
     "reading": "ふとうしき",
-    "romaji": "futōshiki",
+    "romaji": "futoushiki",
     "meaning_vi": "bất đẳng thức",
     "part_of_speech": "noun",
     "tags": [
@@ -517,7 +517,7 @@
   {
     "word": "最小値",
     "reading": "さいしょうち",
-    "romaji": "saishouchiı",
+    "romaji": "saishouchi",
     "meaning_vi": "giá trị nhỏ nhất, minimum",
     "part_of_speech": "noun",
     "tags": [

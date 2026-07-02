@@ -8,7 +8,7 @@ class VocabularySerializer
   attribute :tags do |v|
     t = v.tags
     t.is_a?(String) ? JSON.parse(t) : Array(t)
-  rescue JSON::ParseError
+  rescue JSON::ParserError
     []
   end
 end

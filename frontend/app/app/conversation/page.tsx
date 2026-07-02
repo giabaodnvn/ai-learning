@@ -4,16 +4,15 @@ import { useState, useEffect, useCallback } from "react";
 import { useRouter } from "next/navigation";
 import { useSession } from "next-auth/react";
 import { useCurrentUser } from "@/hooks/useCurrentUser";
-
-const BASE_URL = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:3003";
+import { api } from "@/lib/api";
 
 const ROLES = [
-  { value: "tutor",                  label: "Gia sư tiếng Nhật",    icon: "👩‍🏫", desc: "Luyện tập tự do với gia sư kiên nhẫn" },
-  { value: "convenience_store_clerk", label: "Cửa hàng tiện lợi",   icon: "🏪", desc: "Mua sắm tại コンビニ Nhật Bản" },
-  { value: "restaurant_staff",        label: "Nhà hàng Nhật",        icon: "🍜", desc: "Đặt bàn, gọi món tại nhà hàng" },
+  { value: "tutor",                   label: "Gia sư tiếng Nhật",     icon: "👩‍🏫", desc: "Luyện tập tự do với gia sư kiên nhẫn" },
+  { value: "convenience_store_clerk", label: "Cửa hàng tiện lợi",     icon: "🏪", desc: "Mua sắm tại コンビニ Nhật Bản" },
+  { value: "restaurant_staff",        label: "Nhà hàng Nhật",         icon: "🍜", desc: "Đặt bàn, gọi món tại nhà hàng" },
   { value: "office_colleague",        label: "Đồng nghiệp văn phòng", icon: "💼", desc: "Giao tiếp nơi làm việc tại Nhật" },
-  { value: "hotel_staff",             label: "Khách sạn",            icon: "🏨", desc: "Check-in, hỏi thông tin tại khách sạn" },
-  { value: "airport_staff",           label: "Sân bay",              icon: "✈️", desc: "Làm thủ tục, hỏi đường tại sân bay" },
+  { value: "hotel_staff",             label: "Khách sạn",             icon: "🏨", desc: "Check-in, hỏi thông tin tại khách sạn" },
+  { value: "airport_staff",           label: "Sân bay",               icon: "✈️", desc: "Làm thủ tục, hỏi đường tại sân bay" },
 ] as const;
 
 const LEVELS = ["n5", "n4", "n3", "n2", "n1"] as const;
@@ -48,13 +47,8 @@ export default function ConversationPage() {
   const fetchHistory = useCallback(async () => {
     if (!session?.accessToken) return;
     try {
-      const res = await fetch(`${BASE_URL}/api/v1/conversations`, {
-        headers: { Authorization: `Bearer ${session.accessToken}` },
-      });
-      if (res.ok) {
-        const data = await res.json();
-        setHistory(data);
-      }
+      const res = await api.get("/api/v1/conversations");
+      setHistory(res.data);
     } finally {
       setLoadingHistory(false);
     }
@@ -68,17 +62,11 @@ export default function ConversationPage() {
     if (!session?.accessToken || starting) return;
     setStarting(true);
     try {
-      const res = await fetch(`${BASE_URL}/api/v1/conversations`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `Bearer ${session.accessToken}`,
-        },
-        body: JSON.stringify({ role: selectedRole, jlpt_level: selectedLevel }),
+      const res = await api.post("/api/v1/conversations", {
+        role: selectedRole,
+        jlpt_level: selectedLevel,
       });
-      if (!res.ok) throw new Error("Không thể tạo phiên hội thoại.");
-      const data = await res.json();
-      router.push(`/app/conversation/${data.id}`);
+      router.push(`/app/conversation/${res.data.id}`);
     } catch {
       setStarting(false);
     }
@@ -89,11 +77,7 @@ export default function ConversationPage() {
     e.stopPropagation();
     if (!session?.accessToken) return;
     try {
-      const res = await fetch(`${BASE_URL}/api/v1/conversations/${id}`, {
-        method: "DELETE",
-        headers: { Authorization: `Bearer ${session.accessToken}` },
-      });
-      if (!res.ok) throw new Error("Không thể xoá phiên hội thoại.");
+      await api.delete(`/api/v1/conversations/${id}`);
       setHistory((prev) => prev.filter((s) => s.id !== id));
     } catch {
       // silently ignore delete failure — item stays in list

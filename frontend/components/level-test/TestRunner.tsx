@@ -21,6 +21,7 @@ export function TestRunner({ testId, onResult, onCancel }: Props) {
   const [error,       setError]       = useState<string | null>(null);
   const [confirmQuit, setConfirmQuit] = useState(false);
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
+  const handleAutoSubmitRef = useRef<() => void>(() => {});
 
   // Load test
   useEffect(() => {
@@ -40,7 +41,7 @@ export function TestRunner({ testId, onResult, onCancel }: Props) {
       setTimeLeft((t) => {
         if (t <= 1) {
           clearInterval(timerRef.current!);
-          handleAutoSubmit();
+          handleAutoSubmitRef.current();
           return 0;
         }
         return t - 1;
@@ -63,6 +64,10 @@ export function TestRunner({ testId, onResult, onCancel }: Props) {
       setSubmitting(false);
     }
   }, [test, answers, onResult]);
+
+  useEffect(() => {
+    handleAutoSubmitRef.current = handleAutoSubmit;
+  }, [handleAutoSubmit]);
 
   async function handleSubmit() {
     if (!test) return;

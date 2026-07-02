@@ -333,7 +333,7 @@
   {
     "word": "吸水",
     "reading": "きゅうすい",
-    "romaji": "kyuusuі",
+    "romaji": "kyuusui",
     "meaning_vi": "hút nước, thấm nước",
     "part_of_speech": "noun",
     "tags": [
@@ -344,7 +344,7 @@
   {
     "word": "保水",
     "reading": "ほすい",
-    "romaji": "hosuі",
+    "romaji": "hosui",
     "meaning_vi": "giữ nước, giữ độ ẩm",
     "part_of_speech": "noun",
     "tags": [
@@ -496,7 +496,7 @@
   },
   {
     "word": "トマト",
-    "reading": "ときまと",
+    "reading": "とまと",
     "romaji": "tomato",
     "meaning_vi": "cà chua, tomatô",
     "part_of_speech": "noun",
@@ -648,7 +648,7 @@
   {
     "word": "アルカリ性土壌",
     "reading": "あるかりせいどじょう",
-    "romaji": "alukari-sei-dojou",
+    "romaji": "arukariseidojou",
     "meaning_vi": "đất kiềm, đất碱",
     "part_of_speech": "noun",
     "tags": [
@@ -733,7 +733,7 @@
   {
     "word": "石灰岩",
     "reading": "せっかいがん",
-    "romaji": "sekkaigun",
+    "romaji": "sekkaigan",
     "meaning_vi": "đá vôi, limestone",
     "part_of_speech": "noun",
     "tags": [
@@ -854,7 +854,7 @@
   {
     "word": "スモッグ",
     "reading": "すもっぐ",
-    "romaji": "sumogu",
+    "romaji": "sumoggu",
     "meaning_vi": "sương khí, smog",
     "part_of_speech": "noun",
     "tags": [
@@ -864,7 +864,7 @@
   {
     "word": "PM2.5",
     "reading": "ぴーえむにてんご",
-    "romaji": "pīem-niten-go",
+    "romaji": "piiemunitengo",
     "meaning_vi": "bụi siêu mịn PM2.5",
     "part_of_speech": "noun",
     "tags": [
@@ -875,7 +875,7 @@
   {
     "word": "光化学スモッグ",
     "reading": "こうかがくすもっぐ",
-    "romaji": "koukakagaku-sumogu",
+    "romaji": "koukagakusumoggu",
     "meaning_vi": "sương khí quang hóa",
     "part_of_speech": "noun",
     "tags": [
@@ -886,7 +886,7 @@
   {
     "word": "ヒートアイランド",
     "reading": "ひーとあいらんど",
-    "romaji": "hīto-airndo",
+    "romaji": "hiitoairando",
     "meaning_vi": "đảo nhiệt, heat island",
     "part_of_speech": "noun",
     "tags": [
@@ -897,7 +897,7 @@
   {
     "word": "エルニーニョ",
     "reading": "えるにーにょ",
-    "romaji": "eruniīnyo",
+    "romaji": "eruniinyo",
     "meaning_vi": "El Niño",
     "part_of_speech": "noun",
     "tags": [
@@ -908,7 +908,7 @@
   {
     "word": "ラニーニャ",
     "reading": "らにーにゃ",
-    "romaji": "raniīnya",
+    "romaji": "raniinya",
     "meaning_vi": "La Niña",
     "part_of_speech": "noun",
     "tags": [
@@ -952,7 +952,7 @@
   {
     "word": "ダウンバースト",
     "reading": "だうんばーすと",
-    "romaji": "daunbāsuto",
+    "romaji": "daunbaasuto",
     "meaning_vi": "gió hướng xuống, downburst",
     "part_of_speech": "noun",
     "tags": [
@@ -984,7 +984,7 @@
   {
     "word": "結露",
     "reading": "けつろ",
-    "romaji": "ketsuро",
+    "romaji": "ketsuro",
     "meaning_vi": "nước ngưng tụ, sương ngưng",
     "part_of_speech": "noun",
     "tags": [

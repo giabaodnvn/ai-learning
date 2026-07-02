@@ -23,6 +23,9 @@ module Api
           )
           render json: [serialize_passage(passage)]
         end
+      rescue JSON::ParserError
+        render json: { error: "AI trả về dữ liệu không hợp lệ. Vui lòng thử lại." },
+               status: :unprocessable_entity
       rescue ClaudeService::RateLimitError
         render json: { error: "Đã đạt giới hạn yêu cầu AI. Vui lòng thử lại sau." }, status: :too_many_requests
       rescue ClaudeService::TimeoutError
