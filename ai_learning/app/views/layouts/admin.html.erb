@@ -5,57 +5,105 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title><%= content_for?(:title) ? yield(:title) + " — " : "" %>AI Learning Admin</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
   <script>
     tailwind.config = {
-      theme: { extend: { colors: { brand: { 50:'#eff6ff',500:'#3b82f6',600:'#2563eb',700:'#1d4ed8',900:'#1e3a8a' } } } }
+      theme: {
+        extend: {
+          fontFamily: {
+            sans:    ['Quicksand', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+            display: ['"Baloo 2"', 'Quicksand', 'sans-serif'],
+          },
+          boxShadow: {
+            soft: '0 1px 2px rgba(85,70,45,.05), 0 12px 30px -18px rgba(85,70,45,.28)',
+          },
+          colors: {
+            // Ghibli-inspired warm palette (overrides defaults so every view is re-themed)
+            brand:  { 50:'#eef6fb',100:'#d5e9f4',400:'#5aa3cc',500:'#3d8cbb',600:'#317aa6',700:'#2a6389',900:'#20455f' },
+            gray:   { 50:'#f7f4ee',100:'#efe9dd',200:'#e4dccb',300:'#d0c5b0',400:'#ab9d84',500:'#8b7d64',600:'#6c5f49',700:'#524734',800:'#3b3326',900:'#2b2419' },
+            blue:   { 50:'#eef6fb',100:'#d5e9f4',200:'#b3d6ea',300:'#86bcdb',400:'#5aa3cc',500:'#3d8cbb',600:'#317aa6',700:'#2a6389',900:'#20455f' },
+            green:  { 50:'#eef4ea',100:'#dbe9d3',200:'#bcd6ac',300:'#95bd80',400:'#74a45c',500:'#5c8f46',600:'#4b7739',700:'#3b5e2e' },
+            red:    { 50:'#fbeeea',100:'#f5dcd4',200:'#ebbdb0',300:'#db9a8a',400:'#cd7862',500:'#bd5c45',600:'#a54833',700:'#853829' },
+            yellow: { 50:'#f9f3df',100:'#f4e9c4',600:'#b28a26',700:'#8f6c17' },
+            amber:  { 50:'#f9f1dd',100:'#f2e3bd',300:'#e3bd76',400:'#d7a24f',700:'#96701d' },
+            orange: { 50:'#fbf0e6',100:'#f7ddc4',400:'#e2965a',500:'#d7803f',600:'#bd6630' },
+            purple: { 50:'#f1eef7',100:'#e5def0',600:'#7a68a0',700:'#63537f' },
+          },
+        }
+      }
     }
   </script>
+  <style>
+    body { font-family: 'Quicksand', ui-sans-serif, system-ui, sans-serif;
+           background:
+             radial-gradient(1200px 500px at 100% -5%, #eaf4f1 0%, rgba(234,244,241,0) 55%),
+             radial-gradient(900px 500px at -5% 0%, #f4efe0 0%, rgba(244,239,224,0) 50%),
+             linear-gradient(180deg, #f5f1e6 0%, #eef3f1 100%);
+           background-attachment: fixed; }
+    /* Soft painterly shadow on every card, without touching each view */
+    main .rounded-xl, main .rounded-2xl { box-shadow: 0 1px 2px rgba(85,70,45,.05), 0 12px 30px -18px rgba(85,70,45,.28); }
+    .font-display { font-family: '"Baloo 2"', 'Quicksand', sans-serif; }
+  </style>
 </head>
-<body class="bg-gray-50 text-gray-900 min-h-screen">
+<body class="text-gray-900 min-h-screen">
 
 <% if defined?(current_admin) && current_admin %>
 <%# ── Sidebar ──────────────────────────────────────────────────────────── %>
 <div class="flex min-h-screen">
-  <aside class="w-56 bg-gray-900 text-gray-100 flex flex-col shrink-0">
-    <div class="px-5 py-5 border-b border-gray-700">
-      <span class="text-sm font-bold tracking-widest text-brand-500 uppercase">AI Learning</span>
-      <p class="text-xs text-gray-400 mt-0.5">Admin Panel</p>
+  <aside class="w-60 shrink-0 flex flex-col text-white relative overflow-hidden
+                bg-gradient-to-b from-[#33564a] via-[#3c6157] to-[#2e4a4d]">
+    <%# soft canopy glow %>
+    <div class="pointer-events-none absolute -top-16 -right-10 w-48 h-48 rounded-full bg-[#a7d3b6]/20 blur-2xl"></div>
+    <div class="pointer-events-none absolute bottom-10 -left-10 w-40 h-40 rounded-full bg-[#7fb7cf]/20 blur-2xl"></div>
+
+    <div class="relative px-5 py-6">
+      <div class="flex items-center gap-2.5">
+        <span class="grid place-items-center w-10 h-10 rounded-2xl bg-white/15 ring-1 ring-white/25 text-xl shadow-inner">🌿</span>
+        <div>
+          <span class="block font-display text-lg font-bold leading-none tracking-wide">AI Learning</span>
+          <span class="block text-[11px] text-white/60 mt-1">Admin Panel</span>
+        </div>
+      </div>
     </div>
 
-    <nav class="flex-1 py-4 space-y-0.5 px-2">
-      <%= nav_link "🏠  Dashboard",    admin_root_path %>
-      <%= nav_link "👥  Người dùng",   admin_users_path %>
-      <%= nav_link "💰  Chi phí AI",   admin_ai_costs_path %>
-      <%= nav_link "🔑  Đổi mật khẩu", edit_admin_account_path %>
-      <div class="my-3 border-t border-gray-700"></div>
+    <nav class="relative flex-1 py-2 space-y-1 px-3">
+      <%= nav_link "🏠　Dashboard",    admin_root_path %>
+      <%= nav_link "👥　Người dùng",   admin_users_path %>
+      <%= nav_link "💰　Chi phí AI",   admin_ai_costs_path %>
+      <%= nav_link "🔑　Đổi mật khẩu", edit_admin_account_path %>
+      <div class="my-3 mx-1 border-t border-white/15"></div>
       <a href="/sidekiq" target="_blank"
-         class="flex items-center gap-2 rounded-lg px-3 py-2 text-sm text-gray-400 hover:bg-gray-800 hover:text-white transition">
-        ⚙️  Sidekiq Jobs
+         class="flex items-center gap-2.5 rounded-xl px-3.5 py-2.5 text-sm font-medium text-white/70 hover:bg-white/10 hover:text-white transition">
+        ⚙️　Sidekiq Jobs
       </a>
     </nav>
 
-    <div class="px-4 py-4 border-t border-gray-700">
-      <p class="text-xs text-gray-400 truncate"><%= current_admin.email %></p>
+    <div class="relative px-4 py-4 m-3 rounded-2xl bg-white/10 ring-1 ring-white/15">
+      <p class="text-xs text-white/80 truncate">🍃 <%= current_admin.email %></p>
       <%= button_to "Đăng xuất", admin_logout_path, method: :delete,
-            class: "mt-2 w-full text-xs text-gray-400 hover:text-red-400 text-left transition" %>
+            class: "mt-2 w-full text-xs text-white/60 hover:text-white text-left transition" %>
     </div>
   </aside>
 
   <%# ── Main content ─────────────────────────────────────────────────── %>
   <div class="flex-1 flex flex-col min-w-0">
-    <header class="bg-white border-b border-gray-200 px-6 py-3 flex items-center justify-between">
-      <h1 class="text-base font-semibold text-gray-700"><%= yield(:page_title) || "Admin" %></h1>
-      <span class="text-xs text-gray-400"><%= Date.current.strftime("%d/%m/%Y") %></span>
+    <header class="sticky top-0 z-10 bg-white/70 backdrop-blur-md border-b border-gray-200/70 px-6 py-3.5 flex items-center justify-between">
+      <h1 class="font-display text-lg font-bold text-gray-800"><%= yield(:page_title) || "Admin" %></h1>
+      <span class="text-xs font-medium text-gray-500 bg-white/70 rounded-full px-3 py-1 ring-1 ring-gray-200/70">
+        ☀️ <%= Date.current.strftime("%d/%m/%Y") %>
+      </span>
     </header>
 
     <%# Flash messages %>
     <% if flash[:notice] %>
-      <div class="mx-6 mt-4 rounded-lg bg-green-50 border border-green-200 px-4 py-3 text-sm text-green-700 flex items-center gap-2">
+      <div class="mx-6 mt-4 rounded-2xl bg-green-50 border border-green-200 px-4 py-3 text-sm text-green-700 flex items-center gap-2 shadow-soft">
         ✓ <%= flash[:notice] %>
       </div>
     <% end %>
     <% if flash[:alert] %>
-      <div class="mx-6 mt-4 rounded-lg bg-red-50 border border-red-200 px-4 py-3 text-sm text-red-700 flex items-center gap-2">
+      <div class="mx-6 mt-4 rounded-2xl bg-red-50 border border-red-200 px-4 py-3 text-sm text-red-700 flex items-center gap-2 shadow-soft">
         ⚠ <%= flash[:alert] %>
       </div>
     <% end %>
@@ -69,12 +117,12 @@
 <% else %>
 <%# ── No sidebar (login page) ────────────────────────────────────────── %>
 <% if flash[:notice] %>
-  <div class="fixed top-4 left-1/2 -translate-x-1/2 rounded-lg bg-green-50 border border-green-200 px-4 py-3 text-sm text-green-700 shadow">
+  <div class="fixed top-4 left-1/2 -translate-x-1/2 z-20 rounded-2xl bg-green-50 border border-green-200 px-4 py-3 text-sm text-green-700 shadow-soft">
     ✓ <%= flash[:notice] %>
   </div>
 <% end %>
 <% if flash[:alert] %>
-  <div class="fixed top-4 left-1/2 -translate-x-1/2 rounded-lg bg-red-50 border border-red-200 px-4 py-3 text-sm text-red-700 shadow">
+  <div class="fixed top-4 left-1/2 -translate-x-1/2 z-20 rounded-2xl bg-red-50 border border-red-200 px-4 py-3 text-sm text-red-700 shadow-soft">
     ⚠ <%= flash[:alert] %>
   </div>
 <% end %>

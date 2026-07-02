@@ -1,41 +1,58 @@
 <% content_for :title, "Đăng nhập" %>
 
-<div class="min-h-screen bg-gray-900 flex items-center justify-center px-4">
-  <div class="w-full max-w-sm">
-    <div class="text-center mb-8">
-      <span class="text-3xl">🎌</span>
-      <h1 class="mt-3 text-2xl font-bold text-white">AI Learning</h1>
-      <p class="text-gray-400 text-sm mt-1">Admin Panel</p>
+<div class="min-h-screen relative flex items-center justify-center px-4 overflow-hidden"
+     style="background: linear-gradient(180deg,#bfe3ee 0%, #d9eee6 45%, #eef3e2 100%);">
+
+  <%# ── Ghibli scenery (pure CSS) ──────────────────────────────────────── %>
+  <div class="pointer-events-none absolute inset-0">
+    <%# sun %>
+    <div class="absolute top-16 right-24 w-24 h-24 rounded-full"
+         style="background: radial-gradient(circle,#fff6d8 0%,#ffe9a8 60%,rgba(255,233,168,0) 72%); box-shadow:0 0 80px 30px rgba(255,241,196,.6);"></div>
+    <%# clouds %>
+    <div class="absolute top-24 left-16 w-40 h-12 rounded-full bg-white/70 blur-md"></div>
+    <div class="absolute top-32 left-40 w-28 h-10 rounded-full bg-white/60 blur-md"></div>
+    <div class="absolute top-20 right-1/3 w-32 h-10 rounded-full bg-white/55 blur-md"></div>
+    <%# rolling hills %>
+    <div class="absolute -bottom-24 -left-24 w-[70%] h-72 rounded-[50%]" style="background:#8bbf7a;"></div>
+    <div class="absolute -bottom-28 right-[-10%] w-[70%] h-80 rounded-[50%]" style="background:#7bb06d;"></div>
+    <div class="absolute -bottom-16 left-1/4 w-[60%] h-64 rounded-[50%]" style="background:#9ccb86;"></div>
+  </div>
+
+  <div class="relative w-full max-w-sm">
+    <div class="text-center mb-7">
+      <span class="inline-grid place-items-center w-16 h-16 rounded-3xl bg-white/70 ring-1 ring-white/80 text-3xl shadow-lg backdrop-blur">🌿</span>
+      <h1 class="mt-4 font-display text-3xl font-bold text-[#2f4a3f] drop-shadow-sm">AI Learning</h1>
+      <p class="text-[#4f6b5c] text-sm mt-1 font-medium">Admin Panel</p>
     </div>
 
-    <div class="bg-white rounded-2xl shadow-xl p-8">
+    <div class="bg-white/85 backdrop-blur-md rounded-3xl shadow-xl ring-1 ring-white/60 p-8">
       <% if flash.now[:alert] %>
-        <div class="mb-4 rounded-lg bg-red-50 border border-red-200 px-4 py-3 text-sm text-red-700">
+        <div class="mb-4 rounded-xl bg-red-50 border border-red-200 px-4 py-3 text-sm text-red-700">
           <%= flash.now[:alert] %>
         </div>
       <% end %>
 
       <%= form_with url: admin_login_path, method: :post, local: true, class: "space-y-5" do |f| %>
         <div>
-          <label class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+          <label class="block text-sm font-semibold text-gray-700 mb-1">Email</label>
           <%= f.email_field :email,
                 placeholder: "admin@example.com",
                 required: true,
-                class: "w-full rounded-lg border border-gray-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500" %>
+                class: "w-full rounded-xl border border-gray-300 bg-white/80 px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-brand-500 transition" %>
         </div>
 
         <div>
-          <label class="block text-sm font-medium text-gray-700 mb-1">Mật khẩu</label>
+          <label class="block text-sm font-semibold text-gray-700 mb-1">Mật khẩu</label>
           <%= f.password_field :password,
                 placeholder: "••••••••",
                 required: true,
-                class: "w-full rounded-lg border border-gray-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500" %>
+                class: "w-full rounded-xl border border-gray-300 bg-white/80 px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-brand-500 transition" %>
         </div>
 
-        <%= f.submit "Đăng nhập",
-              class: "w-full rounded-lg bg-blue-600 px-4 py-2.5 text-sm font-semibold text-white hover:bg-blue-700 transition cursor-pointer" %>
+        <%= f.submit "Đăng nhập →",
+              class: "w-full rounded-xl bg-gradient-to-r from-brand-500 to-brand-600 px-4 py-2.5 text-sm font-semibold text-white shadow-md hover:from-brand-600 hover:to-brand-700 active:scale-[.99] transition cursor-pointer" %>
       <% end %>
     </div>
-    <p class="text-center text-xs text-gray-500 mt-4">Chỉ dành cho tài khoản có quyền Admin</p>
+    <p class="text-center text-xs text-[#4f6b5c] mt-4">Chỉ dành cho tài khoản có quyền Admin 🍃</p>
   </div>
 </div>
