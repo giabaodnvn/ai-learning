@@ -1,0 +1,198 @@
+<%# ── Ghibli ambient effects: dust, soot sprites, sakura, rain/storm, snow, strolling Totoro ── %>
+<div id="ghibli-fx" aria-hidden="true"></div>
+<div id="wx-flash" aria-hidden="true"></div>
+
+<style>
+  #ghibli-fx, #wx-flash { position: fixed; inset: 0; pointer-events: none; overflow: hidden; z-index: 55; }
+  #wx-flash { background: #eaf2ff; opacity: 0; z-index: 54; transition: opacity .12s ease; }
+  #ghibli-fx .fx { position: absolute; top: -8vh; }
+
+  .fx-drop  { width: 2px; height: 16px; border-radius: 2px;
+              background: linear-gradient(to bottom, rgba(120,170,200,0), rgba(90,150,190,.55)); }
+  .fx-dust  { width: 6px; height: 6px; border-radius: 50%;
+              background: radial-gradient(circle, #fff7d6 0%, #ffe9a6 70%, rgba(255,233,166,0) 72%); opacity: 0; }
+  .fx-leaf, .fx-petal, .fx-soot, .fx-snow { line-height: 1; }
+  .fx-snow  { color: #fff; text-shadow: 0 0 4px rgba(180,210,235,.9); }
+
+  @keyframes fx-fall      { to { transform: translate3d(var(--dx,0), 118vh, 0); } }
+  @keyframes fx-leaffall  { to { transform: translate3d(var(--dx,40px), 118vh, 0) rotate(var(--rot,360deg)); } }
+  @keyframes fx-drift     { 0%{transform:translateY(0) translateX(0);opacity:0} 15%{opacity:.5} 85%{opacity:.5}
+                            100%{transform:translateY(-70vh) translateX(30px);opacity:0} }
+  @keyframes fx-petal     { 0%{transform:translate(0,0) rotate(0)} 50%{transform:translate(var(--sx,30px),58vh) rotate(200deg)}
+                            100%{transform:translate(calc(var(--sx,30px) * -.6),120vh) rotate(420deg)} }
+  @keyframes fx-sway      { 0%{transform:translate(0,0)} 33%{transform:translate(var(--sx,14px),40vh)}
+                            66%{transform:translate(calc(var(--sx,14px) * -1),80vh)} 100%{transform:translate(0,120vh)} }
+
+  /* Totoro */
+  #totoro { position: fixed; bottom: 6px; left: -150px; z-index: 56; pointer-events: none;
+            filter: drop-shadow(0 8px 7px rgba(50,60,55,.28)); will-change: transform; }
+  #totoro img { display: block; width: 96px; height: auto; }
+  #totoro .bob { animation: totoro-bob .52s ease-in-out infinite; transform-origin: 50% 100%; }
+  @keyframes totoro-bob { 0%,100%{transform:translateY(0) rotate(-1.4deg)} 50%{transform:translateY(-6px) rotate(1.4deg)} }
+  @keyframes totoro-walk-r { from{transform:translateX(0)} to{transform:translateX(calc(100vw + 170px))} }
+  @keyframes totoro-walk-l { from{transform:translateX(0)} to{transform:translateX(calc(-100vw - 320px)) scaleX(-1)} }
+
+  @media (prefers-reduced-motion: reduce) { #ghibli-fx, #totoro, #wx-flash { display: none !important; } }
+</style>
+
+<template id="totoro-tpl">
+  <div id="totoro"><img class="bob" src="/totoro.png" alt="Totoro" draggable="false"></div>
+</template>
+
+<script>
+(function () {
+  if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+  var fx    = document.getElementById("ghibli-fx");
+  var flash = document.getElementById("wx-flash");
+  var btn   = document.getElementById("wx-toggle");
+  var STATES = ["clear", "spring", "rain", "storm", "winter", "off"];
+  var ICON   = { clear: "☀️", spring: "🌸", rain: "🌧️", storm: "⛈️", winter: "❄️", off: "🚫" };
+  var LEAVES = ["🍃", "🍂"];
+  var state  = localStorage.getItem("admin-wx");
+  if (STATES.indexOf(state) < 0) state = "clear";
+
+  var rnd = function (a, b) { return a + Math.random() * (b - a); };
+
+  // Generic particle spawner. html = optional innerHTML (svg/emoji).
+  function spawn(cls, anim, opts) {
+    opts = opts || {};
+    if (fx.childElementCount > 80) return null;   // hard cap: never let particles pile up
+    var el = document.createElement("div");
+    el.className = "fx " + cls;
+    el.style.left = rnd(-4, 100) + "vw";
+    if (opts.vars) for (var k in opts.vars) el.style.setProperty(k, opts.vars[k]);
+    if (opts.html) el.innerHTML = opts.html;
+    if (opts.text) el.textContent = opts.text;
+    if (opts.css)  for (var p in opts.css) el.style[p] = opts.css[p];
+    el.style.animation = anim;
+    fx.appendChild(el);
+    el.addEventListener("animationend", function () { el.remove(); });
+    return el;
+  }
+
+  // ── SVG particles ──
+  function sootSVG() {
+    return '<svg width="100%" height="100%" viewBox="0 0 44 44">' +
+      '<path fill="#1d1d1f" d="M22 2 l3.4 6 6.4-2.6 -1 6.9 6.9 .9 -4.4 5.4 5.6 4.1 -6.6 2.1 2.2 6.6 -6.3-2.9 -1.9 6.7 -3.6-5.9 -3.6 5.9 -1.9-6.7 -6.3 2.9 2.2-6.6 -6.6-2.1 5.6-4.1 -4.4-5.4 6.9-.9 -1-6.9 6.4 2.6z"/>' +
+      '<circle cx="16.5" cy="21" r="4.4" fill="#fff"/><circle cx="27.5" cy="21" r="4.4" fill="#fff"/>' +
+      '<circle cx="16.5" cy="21" r="1.7" fill="#111"/><circle cx="27.5" cy="21" r="1.7" fill="#111"/></svg>';
+  }
+  function petalSVG(c) {
+    return '<svg width="100%" height="100%" viewBox="0 0 22 22">' +
+      '<path d="M11 21 C 3 15, 3 6, 9 1 C 10 4, 12 4, 13 1 C 19 6, 19 15, 11 21 Z" fill="' + c + '"/></svg>';
+  }
+
+  // ── spawners per particle ──
+  function makeRain() {
+    if (state !== "rain" && state !== "storm") return;
+    var storm = state === "storm";
+    var el = spawn("fx-drop", "fx-fall " + rnd(storm ? .45 : .8, storm ? .9 : 1.25) + "s linear forwards",
+                   { vars: { "--dx": (storm ? rnd(90,140) : rnd(30,70)) + "px" } });
+    if (!el) return;
+    el.style.height = (storm ? rnd(20,30) : rnd(12,22)) + "px";
+    el.style.opacity = storm ? .9 : .7;
+  }
+  function makeLeaf() {
+    var storm = state === "storm";
+    spawn("fx-leaf", "fx-leaffall " + rnd(storm ? 3 : 6, storm ? 6 : 10) + "s linear forwards",
+      { vars: { "--dx": (storm ? rnd(220,340) : rnd(60,180)) + "px",
+                "--rot": (Math.random() > .5 ? 1 : -1) * rnd(360, 1080) + "deg" },
+        text: LEAVES[Math.random() * LEAVES.length | 0], css: { fontSize: rnd(14,24) + "px", opacity: .85 } });
+  }
+  function makeDust() {
+    spawn("fx-dust", "fx-drift " + rnd(7,13) + "s linear forwards", { css: { top: "auto", bottom: "-2vh" } });
+  }
+  function makeSoot() {
+    var s = rnd(16, 30);
+    spawn("fx-soot", "fx-sway " + rnd(8,13) + "s linear forwards",
+      { vars: { "--sx": rnd(10,26) + "px" }, html: sootSVG(),
+        css: { width: s + "px", height: s + "px", opacity: .92 } });
+  }
+  function makeSnow() {
+    var flake = Math.random() < .35;
+    var s = rnd(6, 14);
+    if (flake) {
+      spawn("fx-snow", "fx-sway " + rnd(7,13) + "s linear forwards",
+        { vars: { "--sx": rnd(12,34) + "px" }, text: "❄", css: { fontSize: rnd(12,22) + "px", opacity: .9 } });
+    } else {
+      var el = spawn("fx-snow", "fx-sway " + rnd(7,13) + "s linear forwards", { vars: { "--sx": rnd(10,30) + "px" } });
+      if (!el) return;
+      el.style.width = el.style.height = s + "px";
+      el.style.borderRadius = "50%";
+      el.style.background = "radial-gradient(circle,#fff 55%,rgba(255,255,255,.5) 100%)";
+      el.style.opacity = rnd(.6, .95);
+    }
+  }
+  var SAKURA = ["#f9c9dc", "#f7b6cd", "#fcdbe7", "#f4a9c4"];
+  function makeSakura() {
+    var s = rnd(12, 22);
+    spawn("fx-petal", "fx-petal " + rnd(6,11) + "s linear forwards",
+      { vars: { "--sx": rnd(50,150) + "px" }, html: petalSVG(SAKURA[Math.random() * SAKURA.length | 0]),
+        css: { width: s + "px", height: s + "px", opacity: .9 } });
+  }
+
+  // ── loops (every recurring timer is tracked so we can pause them when the tab is hidden) ──
+  var timers = [], tpl = document.getElementById("totoro-tpl");
+  function every(ms, fn) { timers.push(setInterval(fn, ms)); }
+  function stopAll() { timers.forEach(clearInterval); timers = []; }
+
+  function lightning() {
+    if (state !== "storm") return;
+    var seq = [.55, 0, .4, 0], i = 0;
+    (function pulse() { if (i >= seq.length) return; flash.style.opacity = seq[i++]; setTimeout(pulse, rnd(80,170)); })();
+  }
+
+  function totoroStroll() {
+    if (state === "off" || document.getElementById("totoro") || document.hidden) return;
+    var node = tpl.content.firstElementChild.cloneNode(true);
+    var toLeft = Math.random() < .5, dur = rnd(15, 23);
+    if (toLeft) { node.style.left = "auto"; node.style.right = "-170px"; }
+    node.style.animation = (toLeft ? "totoro-walk-l" : "totoro-walk-r") + " " + dur + "s linear forwards";
+    document.body.appendChild(node);
+    node.addEventListener("animationend", function () { node.remove(); });
+  }
+
+  function startAll() {
+    stopAll();
+    if (state === "off") {                 // clear everything immediately, spawn nothing
+      fx.innerHTML = "";
+      var t = document.getElementById("totoro"); if (t) t.remove();
+      return;
+    }
+    if (state === "rain" || state === "storm") {
+      every(state === "storm" ? 55 : 95, makeRain);
+      every(state === "storm" ? 850 : 2600, function () { if (Math.random() < (state === "storm" ? .95 : .3)) makeLeaf(); });
+      if (state === "storm") every(6000, function () { if (Math.random() < .6) lightning(); });
+    } else if (state === "winter") {
+      every(340, makeSnow);
+    } else if (state === "spring") {
+      every(620, makeSakura);
+    } else { // clear → soot sprites + a rare leaf
+      every(1300, makeSoot);
+      every(5200, function () { if (Math.random() < .4) makeLeaf(); });
+    }
+    every(2400,  function () { if (Math.random() < .5) makeDust(); });      // ambient dust (all seasons)
+    every(24000, function () { if (Math.random() < .5) totoroStroll(); });  // Totoro stroll
+  }
+
+  // Pause every timer when the tab is backgrounded → ~zero cost when not looking at it.
+  document.addEventListener("visibilitychange", function () {
+    if (document.hidden) stopAll(); else startAll();
+  });
+
+  // ── toggle ──
+  function apply() {
+    if (btn) btn.textContent = ICON[state];
+    flash.style.opacity = 0;
+    startAll();
+  }
+  if (btn) btn.addEventListener("click", function () {
+    state = STATES[(STATES.indexOf(state) + 1) % STATES.length];
+    localStorage.setItem("admin-wx", state);
+    apply();
+  });
+  apply();
+  setTimeout(totoroStroll, 4000);
+})();
+</script>
