@@ -7,6 +7,10 @@ class ApplicationController < ActionController::API
     render json: { error: "Unauthorized" }, status: :unauthorized
   end
 
+  def render_forbidden(message = "Forbidden")
+    render json: { error: message }, status: :forbidden
+  end
+
   def render_not_found(resource = "Resource")
     render json: { error: "#{resource} not found" }, status: :not_found
   end

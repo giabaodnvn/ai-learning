@@ -38,6 +38,8 @@ module Api
       def show
         session = find_session
         render json: session_detail(session)
+      rescue ActiveRecord::RecordNotFound
+        render_not_found("Conversation")
       end
 
       # POST /api/v1/conversations/:id/send_message  (SSE)
@@ -66,7 +68,8 @@ module Api
           ClaudeService.chat(
             messages:   ai_messages,
             system:     system_prompt,
-            model:      ClaudeService::CONVERSATION_MODEL
+            model:      ClaudeService::CONVERSATION_MODEL,
+            log_usage:  { feature: "conversation", user_id: current_user.id }
           ) do |delta|
             full_response << delta
             stream.write("data: #{({ type: "delta", content: delta }).to_json}\n\n")
@@ -89,12 +92,16 @@ module Api
                                     translation_vi: parsed[:translation_vi] }).to_json}\n\n")
           stream.write("data: #{({ type: "done" }).to_json}\n\n")
         end
+      rescue ActiveRecord::RecordNotFound
+        render_not_found("Conversation")
       end
 
       # DELETE /api/v1/conversations/:id
       def destroy
         find_session.destroy!
         head :no_content
+      rescue ActiveRecord::RecordNotFound
+        render_not_found("Conversation")
       end
 
       private

@@ -141,7 +141,11 @@ module Api
         )
 
         raw = AiCacheService.fetch(prompt, skip_cache: true) do
-          ClaudeService.complete(prompt: prompt, max_tokens: 2048)
+          ClaudeService.complete(
+            prompt:     prompt,
+            max_tokens: 2048,
+            log_usage:  { feature: "listening_generate", user_id: current_user.id }
+          )
         end
         data = parse_ai_json(raw)
 

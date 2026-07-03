@@ -36,6 +36,18 @@ class Rack::Attack
     end
   end
 
+  # Admin login (session-based, highest-privilege): 5 attempts per 20s per IP
+  throttle("admin-logins/ip", limit: 5, period: 20.seconds) do |req|
+    req.ip if req.path == "/admin/login" && req.post?
+  end
+
+  # Admin login: 5 attempts per 20 seconds per email
+  throttle("admin-logins/email", limit: 5, period: 20.seconds) do |req|
+    if req.path == "/admin/login" && req.post?
+      req.params["email"].to_s.downcase.gsub(/\s+/, "").presence
+    end
+  end
+
   # ── Per-user AI throttle (by JWT sub claim) ──────────────────────────────
 
   # 20 AI requests/min per authenticated user

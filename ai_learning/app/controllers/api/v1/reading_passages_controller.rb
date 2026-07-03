@@ -94,7 +94,11 @@ module Api
         else
           prompt = Prompts::WordLookupPrompt.build(word: word)
           raw    = AiCacheService.fetch(prompt) do
-            ClaudeService.complete(prompt: prompt, max_tokens: 512)
+            ClaudeService.complete(
+              prompt:     prompt,
+              max_tokens: 512,
+              log_usage:  { feature: "reading_word_lookup", user_id: current_user.id }
+            )
           end
           result = parse_ai_json(raw)
           render json: result
@@ -118,7 +122,11 @@ module Api
         )
 
         raw  = AiCacheService.fetch(prompt, skip_cache: true) do
-          ClaudeService.complete(prompt: prompt, max_tokens: 4096)
+          ClaudeService.complete(
+            prompt:     prompt,
+            max_tokens: 4096,
+            log_usage:  { feature: "reading_generate", user_id: current_user.id }
+          )
         end
         data = parse_ai_json(raw)
 

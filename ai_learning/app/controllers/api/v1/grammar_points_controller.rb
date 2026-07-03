@@ -52,7 +52,10 @@ module Api
             target_grammar: point.pattern,
             user_level:     level
           )
-          raw  = ClaudeService.complete(prompt: prompt)
+          raw  = ClaudeService.complete(
+            prompt:    prompt,
+            log_usage: { feature: "grammar_check", user_id: current_user.id }
+          )
           data = parse_ai_json(raw)
           redis.setex(cache_key, AiCacheService::TTL, data.to_json)
           data
@@ -92,7 +95,10 @@ module Api
             explanation_vi: point.explanation_vi,
             user_level:     level
           )
-          raw  = ClaudeService.complete(prompt: prompt)
+          raw  = ClaudeService.complete(
+            prompt:    prompt,
+            log_usage: { feature: "grammar_exercise", user_id: current_user.id }
+          )
           data = parse_ai_json(raw)
           redis.setex(cache_key, EXERCISE_TTL, data.to_json)
           data
@@ -127,9 +133,10 @@ module Api
 
         stream_sse do |stream|
           ClaudeService.chat(
-            messages: messages,
-            system:   system_prompt,
-            model:    ClaudeService::CONVERSATION_MODEL
+            messages:  messages,
+            system:    system_prompt,
+            model:     ClaudeService::CONVERSATION_MODEL,
+            log_usage: { feature: "grammar_ask", user_id: current_user.id }
           ) do |delta|
             write_sse(stream, delta: delta)
           end
@@ -213,12 +220,14 @@ module Api
           last_reviewed_at: Time.current,
           learned:          grade >= 2 ? true : progress.learned
         )
-        progress.save!
 
-        StudyLog.record!(user_id: current_user.id, correct: grade >= 2)
-        current_user.record_study_session!
+        ActiveRecord::Base.transaction do
+          progress.save!
+          StudyLog.record!(user_id: current_user.id, correct: grade >= 2)
+          current_user.record_study_session!
+        end
 
-        # Update Redis streak
+        # Update Redis streak (outside the DB transaction — Redis isn't transactional)
         streak = update_grammar_streak!(current_user.id, point.id)
 
         render json: {

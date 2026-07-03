@@ -17,7 +17,10 @@ module Api
         )
 
         raw = AiCacheService.fetch(prompt, skip_cache: true) do
-          ClaudeService.complete(prompt: prompt)
+          ClaudeService.complete(
+            prompt:    prompt,
+            log_usage: { feature: "grammar_check", user_id: current_user.id }
+          )
         end
 
         result = parse_ai_json(raw)

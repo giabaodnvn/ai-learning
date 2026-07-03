@@ -119,12 +119,14 @@ module Api
           last_reviewed_at: Time.current,
           learned:          grade >= 2 ? true : progress.learned  # grade 2-3 marks as learned; 0-1 leaves unchanged
         )
-        progress.save!
-
-        # Track daily activity & streak
+        # Track daily activity & streak — all writes atomic so SRS progress and
+        # streak/study-log never diverge if a later step fails.
         correct = grade >= 2
-        StudyLog.record!(user_id: current_user.id, correct: correct)
-        current_user.record_study_session!
+        ActiveRecord::Base.transaction do
+          progress.save!
+          StudyLog.record!(user_id: current_user.id, correct: correct)
+          current_user.record_study_session!
+        end
 
         cards_remaining = current_user.user_card_progresses
                                       .where("due_date <= ?", Date.current)

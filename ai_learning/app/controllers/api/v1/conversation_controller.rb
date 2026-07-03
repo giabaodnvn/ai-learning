@@ -22,7 +22,8 @@ module Api
           ClaudeService.chat(
             messages:   messages,
             system:     system_prompt,
-            model:      ClaudeService::CONVERSATION_MODEL
+            model:      ClaudeService::CONVERSATION_MODEL,
+            log_usage:  { feature: "conversation", user_id: current_user.id }
           ) do |delta|
             write_sse(stream, delta: delta)
           end

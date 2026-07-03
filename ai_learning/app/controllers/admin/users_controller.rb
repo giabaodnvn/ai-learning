@@ -47,7 +47,11 @@ module Admin
         return redirect_to admin_user_path(@user), alert: "Không thể tự khóa tài khoản của mình."
       end
 
-      @user.update_column(:blocked, !@user.blocked)
+      now_blocked = !@user.blocked
+      # Rotate jti when blocking so any active JWT is revoked immediately.
+      updates = { blocked: now_blocked }
+      updates[:jti] = SecureRandom.uuid if now_blocked
+      @user.update_columns(updates)
       status = @user.blocked? ? "khóa" : "mở khóa"
       redirect_to admin_user_path(@user), notice: "Đã #{status} tài khoản #{@user.email}."
     end

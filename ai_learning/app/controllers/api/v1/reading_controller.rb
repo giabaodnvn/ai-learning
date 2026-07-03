@@ -15,7 +15,11 @@ module Api
         )
 
         raw = AiCacheService.fetch(prompt) do
-          ClaudeService.complete(prompt: prompt, max_tokens: 4096)
+          ClaudeService.complete(
+            prompt:     prompt,
+            max_tokens: 4096,
+            log_usage:  { feature: "reading_generate", user_id: current_user.id }
+          )
         end
 
         result = parse_ai_json(raw)

@@ -3,8 +3,10 @@ require "sidekiq/web"
 # Protect Sidekiq Web UI — only admin users (verified via JWT cookie/header)
 # For simplicity in API-only mode: use HTTP Basic Auth backed by env vars.
 Sidekiq::Web.use(Rack::Auth::Basic, "Sidekiq") do |user, pass|
-  expected_user = ENV.fetch("SIDEKIQ_WEB_USER", "admin")
-  expected_pass = ENV.fetch("SIDEKIQ_WEB_PASSWORD", "changeme")
+  # In production these MUST be set: if missing, the auth check raises and the
+  # request is rejected (no weak default). Dev keeps a convenient default.
+  expected_user = ENV.fetch("SIDEKIQ_WEB_USER") { Rails.env.production? ? raise("SIDEKIQ_WEB_USER not set") : "admin" }
+  expected_pass = ENV.fetch("SIDEKIQ_WEB_PASSWORD") { Rails.env.production? ? raise("SIDEKIQ_WEB_PASSWORD not set") : "changeme" }
   ActiveSupport::SecurityUtils.secure_compare(user, expected_user) &&
     ActiveSupport::SecurityUtils.secure_compare(pass, expected_pass)
 end

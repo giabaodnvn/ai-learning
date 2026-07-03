@@ -8,10 +8,11 @@ class StudyLog < ApplicationRecord
   validates :correct_count,  numericality: { greater_than_or_equal_to: 0 }
 
   # Upsert a daily review event for the user.
-  # Thread-safe: uses find_or_create_by then increments.
+  # Race-safe: create_or_find_by! relies on the unique index (user_id, studied_on)
+  # so concurrent first-of-day requests can't create duplicate rows.
   def self.record!(user_id:, correct:)
     today = Date.current
-    log   = find_or_create_by!(user_id: user_id, studied_on: today) do |l|
+    log   = create_or_find_by!(user_id: user_id, studied_on: today) do |l|
       l.cards_reviewed = 0
       l.correct_count  = 0
     end

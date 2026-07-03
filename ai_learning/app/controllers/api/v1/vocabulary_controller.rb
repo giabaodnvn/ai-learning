@@ -46,8 +46,9 @@ module Api
           else
             buffer = +""
             ClaudeService.chat(
-              messages: [ { role: "user", content: prompt } ],
-              model:    ClaudeService::DEFAULT_MODEL
+              messages:  [ { role: "user", content: prompt } ],
+              model:     ClaudeService::DEFAULT_MODEL,
+              log_usage: { feature: "vocabulary_explain", user_id: current_user.id }
             ) do |delta|
               buffer << delta
               write_sse(stream, delta: delta)
@@ -80,8 +81,9 @@ module Api
           else
             buffer = +""
             ClaudeService.chat(
-              messages: [ { role: "user", content: prompt } ],
-              model:    ClaudeService::DEFAULT_MODEL
+              messages:  [ { role: "user", content: prompt } ],
+              model:     ClaudeService::DEFAULT_MODEL,
+              log_usage: { feature: "vocabulary_explain", user_id: current_user.id }
             ) do |delta|
               buffer << delta
               write_sse(stream, delta: delta)

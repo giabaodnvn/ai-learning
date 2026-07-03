@@ -55,18 +55,19 @@ module Api
           grade:       grade
         )
 
-        progress.update!(
-          interval:         result[:new_interval],
-          ease_factor:      result[:new_ease_factor],
-          repetitions:      result[:new_repetitions],
-          due_date:         result[:due_date],
-          last_reviewed_at: Time.current,
-          learned:          grade >= 2 ? true : progress.learned
-        )
-
         correct = grade >= 2
-        StudyLog.record!(user_id: current_user.id, correct: correct)
-        current_user.record_study_session!
+        ActiveRecord::Base.transaction do
+          progress.update!(
+            interval:         result[:new_interval],
+            ease_factor:      result[:new_ease_factor],
+            repetitions:      result[:new_repetitions],
+            due_date:         result[:due_date],
+            last_reviewed_at: Time.current,
+            learned:          grade >= 2 ? true : progress.learned
+          )
+          StudyLog.record!(user_id: current_user.id, correct: correct)
+          current_user.record_study_session!
+        end
 
         render json: {
           next_due:    progress.due_date,

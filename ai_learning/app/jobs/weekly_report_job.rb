@@ -56,7 +56,11 @@ class WeeklyReportJob
     }
 
     prompt = Prompts::WeeklyReportPrompt.build(data: data)
-    report = ClaudeService.complete(prompt: prompt, max_tokens: 1024)
+    report = ClaudeService.complete(
+      prompt:     prompt,
+      max_tokens: 1024,
+      log_usage:  { feature: "weekly_report", user_id: user.id }
+    )
 
     user.update_columns(
       latest_weekly_report:        report,
