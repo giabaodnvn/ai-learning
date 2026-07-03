@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module AdminHelper
   def stat_card(label, value, color = "blue")
     content_tag(:div, class: "bg-white rounded-2xl border border-gray-200/70 p-5 shadow-soft transition hover:-translate-y-0.5") do

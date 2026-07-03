@@ -22,11 +22,5 @@ module Admin
         redirect_to admin_login_path, alert: "Vui lòng đăng nhập với tài khoản admin."
       end
     end
-
-    def set_flash_and_redirect(path, notice: nil, alert: nil)
-      flash[:notice] = notice if notice
-      flash[:alert]  = alert  if alert
-      redirect_to path
-    end
   end
 end

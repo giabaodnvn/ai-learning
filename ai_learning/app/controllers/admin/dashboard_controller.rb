@@ -12,11 +12,12 @@ module Admin
         blocked_users:  User.where(blocked: true).count
       }
 
-      @ai_today = AiUsageLog.where("created_at >= ?", Date.current.beginning_of_day)
+      today  = AiUsageLog.aggregate_by_feature(from: Date.current.beginning_of_day)
+      totals = AiUsageLog.totals_from(today)
       @ai_stats = {
-        requests_today: @ai_today.count,
-        tokens_today:   @ai_today.sum("input_tokens + output_tokens"),
-        cost_today:     @ai_today.sum("input_tokens * 0.0000001 + output_tokens * 0.0000004").round(4)
+        requests_today: totals[:requests],
+        tokens_today:   totals[:input_tokens] + totals[:output_tokens],
+        cost_today:     totals[:cost_usd].round(4)
       }
 
       @recent_users = User.order(created_at: :desc).limit(8)
