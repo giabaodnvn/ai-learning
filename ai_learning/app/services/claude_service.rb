@@ -154,9 +154,11 @@ class ClaudeService
 
     def handle_error_status!(code)
       case code
+      when 200..299 then nil
       when 429 then raise RateLimitError, "Gemini rate limit reached (429)"
       when 408, 504 then raise TimeoutError, "Gemini timeout (#{code})"
       when 500..599 then raise ServiceError, "Gemini server error (#{code})"
+      else raise ServiceError, "Gemini error (#{code})"
       end
     end
   end

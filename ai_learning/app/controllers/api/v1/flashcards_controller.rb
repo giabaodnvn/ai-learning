@@ -92,40 +92,51 @@ module Api
           return render json: { error: "grade phải từ 0 đến 3" }, status: :unprocessable_entity
         end
 
-        progress = current_user.user_card_progresses
-                               .find_or_initialize_by(card_type: card_type, card_id: card_id)
+        # Race-safe: concurrent first-review submissions (double-tap / retry) both
+        # see new_record?, both INSERT, and the loser hits the uq_user_card unique
+        # index. Retry re-finds the now-persisted row and stacks SRS on top of it —
+        # identical to two sequential requests, instead of an unhandled 500.
+        attempts = 0
+        begin
+          progress = current_user.user_card_progresses
+                                 .find_or_initialize_by(card_type: card_type, card_id: card_id)
 
-        if progress.new_record?
-          card_record = source_model(card_type).find_by(id: card_id)
-          return render_not_found(card_type.capitalize) unless card_record
+          if progress.new_record?
+            card_record = source_model(card_type).find_by(id: card_id)
+            return render_not_found(card_type.capitalize) unless card_record
+
+            progress.assign_attributes(
+              SrsService.initial_state.merge(jlpt_level: card_record.jlpt_level)
+            )
+          end
+
+          result = SrsService.calculate_next_review(
+            ease_factor: progress.ease_factor.to_f,
+            interval:    progress.interval,
+            repetitions: progress.repetitions,
+            grade:       grade
+          )
 
           progress.assign_attributes(
-            SrsService.initial_state.merge(jlpt_level: card_record.jlpt_level)
+            interval:         result[:new_interval],
+            ease_factor:      result[:new_ease_factor],
+            repetitions:      result[:new_repetitions],
+            due_date:         result[:due_date],
+            last_reviewed_at: Time.current,
+            learned:          grade >= 2 ? true : progress.learned  # grade 2-3 marks as learned; 0-1 leaves unchanged
           )
-        end
-
-        result = SrsService.calculate_next_review(
-          ease_factor: progress.ease_factor.to_f,
-          interval:    progress.interval,
-          repetitions: progress.repetitions,
-          grade:       grade
-        )
-
-        progress.assign_attributes(
-          interval:         result[:new_interval],
-          ease_factor:      result[:new_ease_factor],
-          repetitions:      result[:new_repetitions],
-          due_date:         result[:due_date],
-          last_reviewed_at: Time.current,
-          learned:          grade >= 2 ? true : progress.learned  # grade 2-3 marks as learned; 0-1 leaves unchanged
-        )
-        # Track daily activity & streak — all writes atomic so SRS progress and
-        # streak/study-log never diverge if a later step fails.
-        correct = grade >= 2
-        ActiveRecord::Base.transaction do
-          progress.save!
-          StudyLog.record!(user_id: current_user.id, correct: correct)
-          current_user.record_study_session!
+          # Track daily activity & streak — all writes atomic so SRS progress and
+          # streak/study-log never diverge if a later step fails.
+          correct = grade >= 2
+          ActiveRecord::Base.transaction do
+            progress.save!
+            StudyLog.record!(user_id: current_user.id, correct: correct)
+            current_user.record_study_session!
+          end
+        rescue ActiveRecord::RecordNotUnique
+          attempts += 1
+          retry if attempts < 2
+          raise
         end
 
         cards_remaining = current_user.user_card_progresses

@@ -52,6 +52,10 @@ module Api
 
         # Strategy 3: parse as-is
         JSON.parse(text.strip)
+      rescue JSON::ParserError => e
+        # Malformed LLM output — surface as a ServiceError so controllers reuse
+        # their existing ClaudeService::ServiceError rescue (503) instead of 500.
+        raise ClaudeService::ServiceError, "AI returned unparseable JSON: #{e.message}"
       end
     end
   end

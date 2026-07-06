@@ -11,13 +11,23 @@ class WeeklyReportJob
   sidekiq_options retry: 1, queue: "default"
 
   def perform(user_id = nil)
-    users = user_id ? User.where(id: user_id) : User.all
-
-    users.find_each do |user|
-      generate_for(user)
-    rescue => e
-      Rails.logger.error "[WeeklyReportJob] Failed for user #{user.id}: #{e.message}"
+    # No-arg run = dispatcher: fan out one job per user so a failure/retry only
+    # re-processes that single user (never re-sends emails / re-bills everyone).
+    unless user_id
+      User.find_each { |user| self.class.perform_async(user.id) }
+      return
     end
+
+    user = User.find_by(id: user_id)
+    return unless user
+
+    # Idempotent: a retry (or duplicate enqueue) must not re-bill the AI call or
+    # re-send the email for a report already produced this run. The job runs
+    # weekly, so "generated within the last 3 days" reliably distinguishes this
+    # run from last week's. Transient failures still raise → Sidekiq retries.
+    return if user.weekly_report_generated_at&.after?(3.days.ago)
+
+    generate_for(user)
   end
 
   private

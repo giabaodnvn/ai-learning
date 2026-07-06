@@ -4,6 +4,8 @@ class Rack::Attack
   AI_PATHS = %w[
     /api/v1/conversation
     /api/v1/vocabulary
+    /api/v1/vocabularies/
+    /api/v1/writing/feedback
     /api/v1/grammar
     /api/v1/reading
     /api/v1/reading_passages

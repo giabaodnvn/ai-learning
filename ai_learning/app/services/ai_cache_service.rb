@@ -16,7 +16,7 @@ class AiCacheService
     return cached if cached
 
     result = block.call
-    redis.setex(key, TTL, result)
+    redis.setex(key, TTL, result) if result.present?
     result
   end
 

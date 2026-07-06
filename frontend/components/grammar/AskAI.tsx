@@ -18,11 +18,15 @@ export default function AskAI({ grammarPointId, pattern }: AskAIProps) {
   const [input,    setInput]    = useState("");
   const [pending,  setPending]  = useState<Message[] | null>(null);
   const bottomRef = useRef<HTMLDivElement>(null);
+  const abortRef  = useRef<AbortController | null>(null);
 
   // Scroll to bottom on new content
   useEffect(() => {
     bottomRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages]);
+
+  // Abort any in-flight stream on unmount
+  useEffect(() => () => abortRef.current?.abort(), []);
 
   function handleSend(e: React.FormEvent) {
     e.preventDefault();
@@ -38,6 +42,9 @@ export default function AskAI({ grammarPointId, pattern }: AskAIProps) {
   }
 
   async function triggerAsk(msgs: Message[]) {
+    abortRef.current?.abort();
+    const ctrl = new AbortController();
+    abortRef.current = ctrl;
     let accumulated = "";
 
     try {
@@ -46,7 +53,7 @@ export default function AskAI({ grammarPointId, pattern }: AskAIProps) {
 
       await streamSSE(
         `/api/v1/grammar_points/${grammarPointId}/ask`,
-        { method: "POST", body: { messages: msgs } },
+        { method: "POST", body: { messages: msgs }, signal: ctrl.signal },
         (payload) => {
           if (payload.error) throw new Error(payload.error);
           if (payload.delta) {
@@ -57,6 +64,7 @@ export default function AskAI({ grammarPointId, pattern }: AskAIProps) {
         },
       );
     } catch (err) {
+      if ((err as Error)?.name === "AbortError") return;
       const msg = err instanceof Error ? err.message : "Lỗi không xác định";
       setMessages([...msgs, { role: "assistant", content: `⚠️ ${msg}` }]);
     } finally {

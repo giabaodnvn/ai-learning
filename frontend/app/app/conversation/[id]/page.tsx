@@ -39,11 +39,15 @@ export default function ConversationChatPage() {
 
   const bottomRef  = useRef<HTMLDivElement>(null);
   const textareaRef = useRef<HTMLTextAreaElement>(null);
+  const abortRef   = useRef<AbortController | null>(null);
 
   // Scroll to bottom whenever messages change
   useEffect(() => {
     bottomRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages]);
+
+  // Abort any in-flight stream on unmount
+  useEffect(() => () => abortRef.current?.abort(), []);
 
   // Load session
   const loadSession = useCallback(async () => {
@@ -80,12 +84,16 @@ export default function ConversationChatPage() {
     setMessages((prev) => [...prev, aiPlaceholder]);
     setStreaming(true);
 
+    abortRef.current?.abort();
+    const ctrl = new AbortController();
+    abortRef.current = ctrl;
+
     let accumulated = "";
 
     try {
       await streamSSE(
         `/api/v1/conversations/${id}/send_message`,
-        { method: "POST", token: session.accessToken, body: { content: text } },
+        { method: "POST", token: session.accessToken, body: { content: text }, signal: ctrl.signal },
         (payload) => {
           // Legacy error format from SseStreamable
           if (payload.error) throw new Error(payload.error);
@@ -117,6 +125,7 @@ export default function ConversationChatPage() {
         },
       );
     } catch (err: unknown) {
+      if ((err as Error)?.name === "AbortError") return;
       setError(err instanceof Error ? err.message : "Có lỗi xảy ra.");
       // Remove the streaming placeholder
       setMessages((prev) => prev.slice(0, -1));
