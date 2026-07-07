@@ -209,23 +209,28 @@ module Api
             )
           end
 
-          result = SrsService.calculate_next_review(
-            ease_factor: progress.ease_factor.to_f,
-            interval:    progress.interval,
-            repetitions: progress.repetitions,
-            grade:       grade
-          )
-
-          progress.assign_attributes(
-            interval:         result[:new_interval],
-            ease_factor:      result[:new_ease_factor],
-            repetitions:      result[:new_repetitions],
-            due_date:         result[:due_date],
-            last_reviewed_at: Time.current,
-            learned:          grade >= 2 ? true : progress.learned
-          )
-
+          # Lock an existing row and re-read the persisted SRS state inside the
+          # transaction so concurrent submits stack instead of both computing
+          # from the same base and losing one update.
           ActiveRecord::Base.transaction do
+            progress.lock! unless progress.new_record?
+
+            result = SrsService.calculate_next_review(
+              ease_factor: progress.ease_factor.to_f,
+              interval:    progress.interval,
+              repetitions: progress.repetitions,
+              grade:       grade
+            )
+
+            progress.assign_attributes(
+              interval:         result[:new_interval],
+              ease_factor:      result[:new_ease_factor],
+              repetitions:      result[:new_repetitions],
+              due_date:         result[:due_date],
+              last_reviewed_at: Time.current,
+              learned:          grade >= 2 ? true : progress.learned
+            )
+
             progress.save!
             StudyLog.record!(user_id: current_user.id, correct: grade >= 2)
             current_user.record_study_session!

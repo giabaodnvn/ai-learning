@@ -47,9 +47,6 @@ module Api
 
         exercise = generate_and_save!(jlpt_level: jlpt_level, topic: topic)
         render json: serialize_exercise(exercise), status: :created
-      rescue JSON::ParserError
-        render json: { error: "AI trả về dữ liệu không hợp lệ. Vui lòng thử lại." },
-               status: :unprocessable_entity
       rescue ClaudeService::RateLimitError
         render json: { error: "Đã đạt giới hạn yêu cầu AI. Vui lòng thử lại sau." }, status: :too_many_requests
       rescue ClaudeService::TimeoutError
@@ -116,7 +113,8 @@ module Api
           }
         end
 
-        avg_score = (attempts.sum(:score).to_f / attempts.sum(:total_questions)).round(2)
+        total_questions = attempts.sum(:total_questions)
+        avg_score = total_questions.zero? ? 0.0 : (attempts.sum(:score).to_f / total_questions).round(2)
 
         correct_by_rate = attempts.group(:speech_rate).sum(:score)
         total_by_rate   = attempts.group(:speech_rate).sum(:total_questions)

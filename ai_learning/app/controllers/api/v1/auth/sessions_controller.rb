@@ -9,6 +9,10 @@ module Api
           user = User.find_by(email: params.dig(:user, :email)&.downcase)
 
           if user&.valid_password?(params.dig(:user, :password))
+            if user.blocked?
+              return render json: { error: "Tài khoản đã bị khóa." }, status: :forbidden
+            end
+
             token, _payload = Warden::JWTAuth::UserEncoder.new.call(user, :user, nil)
             response.set_header("Authorization", "Bearer #{token}")
 

@@ -1,5 +1,5 @@
 import axios from "axios";
-import { getSession } from "next-auth/react";
+import { getSession, signOut } from "next-auth/react";
 
 const BASE_URL = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:3003";
 const SERVER_BASE_URL =
@@ -23,6 +23,18 @@ api.interceptors.request.use(async (config) => {
   }
   return config;
 });
+
+// On 401 (expired/revoked JWT), sign out and redirect to login instead of
+// leaving the user stuck on a dead screen.
+api.interceptors.response.use(
+  (response) => response,
+  (error) => {
+    if (typeof window !== "undefined" && error.response?.status === 401) {
+      signOut({ callbackUrl: "/login" });
+    }
+    return Promise.reject(error);
+  }
+);
 
 // Server-side helper: create an api instance with an explicit token
 export function serverApi(token: string) {

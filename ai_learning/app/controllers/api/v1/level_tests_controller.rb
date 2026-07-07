@@ -92,8 +92,6 @@ module Api
         render json: { error: "timeout" }, status: :request_timeout
       rescue ClaudeService::ServiceError => e
         render json: { error: e.message }, status: :service_unavailable
-      rescue JSON::ParserError
-        render json: { error: "AI trả về định dạng không hợp lệ. Vui lòng thử lại." }, status: :unprocessable_entity
       end
 
       # POST /api/v1/level_tests/:id/submit

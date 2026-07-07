@@ -23,9 +23,6 @@ module Api
           )
           render json: [serialize_passage(passage)]
         end
-      rescue JSON::ParserError
-        render json: { error: "AI trả về dữ liệu không hợp lệ. Vui lòng thử lại." },
-               status: :unprocessable_entity
       rescue ClaudeService::RateLimitError
         render json: { error: "Đã đạt giới hạn yêu cầu AI. Vui lòng thử lại sau." }, status: :too_many_requests
       rescue ClaudeService::TimeoutError
@@ -42,9 +39,6 @@ module Api
 
         passage = generate_and_save!(jlpt_level: jlpt_level, topic: topic)
         render json: serialize_passage(passage), status: :created
-      rescue JSON::ParserError
-        render json: { error: "AI trả về dữ liệu không hợp lệ. Vui lòng thử lại." },
-               status: :unprocessable_entity
       rescue ClaudeService::RateLimitError
         render json: { error: "Đã đạt giới hạn yêu cầu AI. Vui lòng thử lại sau." }, status: :too_many_requests
       rescue ClaudeService::TimeoutError
@@ -105,8 +99,6 @@ module Api
         end
       rescue ActiveRecord::RecordNotFound
         render_not_found("Bài đọc")
-      rescue JSON::ParserError
-        render json: { error: "Không thể tra cứu từ này." }, status: :unprocessable_entity
       rescue ClaudeService::RateLimitError
         render json: { error: "Đã đạt giới hạn yêu cầu AI." }, status: :too_many_requests
       rescue ClaudeService::ServiceError

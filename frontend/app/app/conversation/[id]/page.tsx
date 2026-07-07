@@ -28,7 +28,7 @@ interface SessionDetail {
 export default function ConversationChatPage() {
   const { id } = useParams<{ id: string }>();
   const router  = useRouter();
-  const { data: session } = useSession();
+  const { data: session, status } = useSession();
 
   const [chatSession, setChatSession] = useState<SessionDetail | null>(null);
   const [messages, setMessages]       = useState<Message[]>([]);
@@ -51,7 +51,11 @@ export default function ConversationChatPage() {
 
   // Load session
   const loadSession = useCallback(async () => {
-    if (!session?.accessToken) return;
+    if (status === "loading") return; // session still resolving — keep spinner
+    if (!session?.accessToken) {
+      setLoading(false); // resolved without a token — stop the spinner
+      return;
+    }
     try {
       const res = await api.get<SessionDetail>(`/api/v1/conversations/${id}`);
       setChatSession(res.data);
@@ -61,7 +65,7 @@ export default function ConversationChatPage() {
     } finally {
       setLoading(false);
     }
-  }, [id, session?.accessToken, router]);
+  }, [id, status, session?.accessToken, router]);
 
   useEffect(() => {
     loadSession();
