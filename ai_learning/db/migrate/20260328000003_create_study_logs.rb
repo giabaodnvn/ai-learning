@@ -8,7 +8,7 @@ class CreateStudyLogs < ActiveRecord::Migration[7.2]
       t.timestamps
     end
 
-    add_index :study_logs, [:user_id, :studied_on], unique: true
+    add_index :study_logs, [ :user_id, :studied_on ], unique: true
     add_index :study_logs, :studied_on
     add_foreign_key :study_logs, :users
   end

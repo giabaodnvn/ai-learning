@@ -97,7 +97,7 @@ export default function KanjiDetailPage() {
         {/* On'yomi */}
         {kanji.onyomi.length > 0 && (
           <div className="rounded-2xl border border-zinc-200 bg-white p-5">
-            <p className="text-sm font-semibold text-zinc-600 mb-3">音読み (On'yomi)</p>
+            <p className="text-sm font-semibold text-zinc-600 mb-3">音読み (On&apos;yomi)</p>
             <div className="flex flex-wrap gap-2">
               {kanji.onyomi.map((reading, idx) => (
                 <span
@@ -114,7 +114,7 @@ export default function KanjiDetailPage() {
         {/* Kun'yomi */}
         {kanji.kunyomi.length > 0 && (
           <div className="rounded-2xl border border-zinc-200 bg-white p-5">
-            <p className="text-sm font-semibold text-zinc-600 mb-3">訓読み (Kun'yomi)</p>
+            <p className="text-sm font-semibold text-zinc-600 mb-3">訓読み (Kun&apos;yomi)</p>
             <div className="flex flex-wrap gap-2">
               {kanji.kunyomi.map((reading, idx) => (
                 <span

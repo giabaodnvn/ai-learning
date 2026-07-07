@@ -15,7 +15,7 @@ class CreateListeningExercises < ActiveRecord::Migration[7.2]
     end
 
     add_index :listening_exercises, :jlpt_level
-    add_index :listening_exercises, [:jlpt_level, :topic]
+    add_index :listening_exercises, [ :jlpt_level, :topic ]
     add_index :listening_exercises, :ai_generated
   end
 end

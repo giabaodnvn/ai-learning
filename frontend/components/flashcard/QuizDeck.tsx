@@ -52,7 +52,7 @@ function QuizSummary({ results, onRetry, onBack }: QuizSummaryProps) {
       })}
 
       <div className="rounded-xl bg-blue-50 border border-blue-200 px-4 py-3 text-xs text-blue-700 text-left">
-        Trạng thái "Đã thuộc / Chưa thuộc" đã được cập nhật dựa trên kết quả kiểm tra.
+        Trạng thái &quot;Đã thuộc / Chưa thuộc&quot; đã được cập nhật dựa trên kết quả kiểm tra.
       </div>
 
       <div className="flex gap-2">

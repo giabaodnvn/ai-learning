@@ -2,14 +2,14 @@
 
 module Admin
   class UsersController < Admin::BaseController
-    before_action :set_user, only: [:show, :update, :toggle_block, :reset_vip, :reset_password]
+    before_action :set_user, only: [ :show, :update, :toggle_block, :reset_vip, :reset_password ]
 
     # GET /admin/users
     def index
       @q      = params[:q].to_s.strip
       @role   = params[:role].presence
       @vip    = params[:vip].presence
-      @page   = [params[:page].to_i, 1].max
+      @page   = [ params[:page].to_i, 1 ].max
       per     = 20
 
       scope = User.all

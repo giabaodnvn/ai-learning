@@ -3,7 +3,6 @@
 module Api
   module V1
     class ReadingController < BaseController
-
       # POST /api/v1/reading/generate
       def generate
         topic      = params.require(:topic)

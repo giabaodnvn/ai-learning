@@ -141,7 +141,7 @@ export function GrammarPracticeSet({ grammarPointId, pattern }: Props) {
   if (exercises.length === 0 && !fetching) {
     return (
       <div className="flex flex-col items-center gap-4 py-8">
-        <p className="text-sm text-zinc-500">Bộ luyện tập 10 câu hỏi về "{pattern}"</p>
+        <p className="text-sm text-zinc-500">Bộ luyện tập 10 câu hỏi về &quot;{pattern}&quot;</p>
         <button
           onClick={loadExerciseSet}
           disabled={fetching}

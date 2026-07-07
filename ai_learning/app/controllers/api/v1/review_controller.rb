@@ -3,7 +3,6 @@
 module Api
   module V1
     class ReviewController < BaseController
-
       # GET /api/v1/review/queue
       # Returns cards due today from user_card_progresses (all types or ?type=vocabulary).
       # Previously used legacy user_vocabulary_progresses (always empty — migrated).
@@ -42,7 +41,7 @@ module Api
         progress = current_user.user_card_progresses.find(params.require(:progress_id))
         quality  = Integer(params.require(:quality))
 
-        unless [0, 3, 4, 5].include?(quality)
+        unless [ 0, 3, 4, 5 ].include?(quality)
           return render json: { error: "quality phải là 0, 3, 4 hoặc 5" }, status: :unprocessable_entity
         end
 
@@ -75,10 +74,10 @@ module Api
 
       def serialize_progress(p, vocabs, kanjis, grammars)
         content = case p.card_type
-                  when "vocabulary"   then serialize_vocab(vocabs[p.card_id])
-                  when "kanji"        then serialize_kanji(kanjis[p.card_id])
-                  when "grammar_point" then serialize_grammar(grammars[p.card_id])
-                  end
+        when "vocabulary"   then serialize_vocab(vocabs[p.card_id])
+        when "kanji"        then serialize_kanji(kanjis[p.card_id])
+        when "grammar_point" then serialize_grammar(grammars[p.card_id])
+        end
         return nil unless content
 
         {

@@ -21,7 +21,7 @@ function parseSegments(html: string): { segments: Segment[]; plainText: string }
   let plain = "";
 
   // Strip <p> tags and their content, keeping inner text + line breaks
-  let cleaned = html
+  const cleaned = html
     .replace(/<p>\s*/g, "")
     .replace(/\s*<\/p>/g, "<br/>");
 
@@ -96,9 +96,6 @@ export function ReaderView({ passage, onStartQuiz }: Props) {
 
   // TTS
   const tts = useTextToSpeech(plainText);
-
-  // Determine which segment is currently highlighted by TTS
-  const highlightedStart = tts.currentCharIndex;
 
   // Word tap handler
   const handleWordTap = useCallback(

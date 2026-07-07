@@ -6,7 +6,7 @@ namespace :kanji do
        "    bundle exec rails kanji:import          # N5 (default)\n" \
        "    bundle exec rails kanji:import[n4]      # N4\n" \
        "    bundle exec rails kanji:import[n5,true] # dry-run"
-  task :import, [:level, :dry_run] => :environment do |_t, args|
+  task :import, [ :level, :dry_run ] => :environment do |_t, args|
     level   = (args[:level].presence || "n5").downcase
     dry_run = args[:dry_run].to_s == "true"
 

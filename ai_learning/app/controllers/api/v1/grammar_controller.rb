@@ -3,7 +3,6 @@
 module Api
   module V1
     class GrammarController < BaseController
-
       # POST /api/v1/grammar/check
       def check
         sentence       = params.require(:sentence)

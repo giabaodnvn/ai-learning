@@ -22,7 +22,7 @@ module Api
         return render_unauthorized if @current_user.jti != payload["jti"]
 
         # Blocked accounts lose API access immediately
-        return render_forbidden("Tài khoản đã bị khóa.") if @current_user.blocked?
+        render_forbidden("Tài khoản đã bị khóa.") if @current_user.blocked?
       rescue JWT::DecodeError, JWT::ExpiredSignature, ActiveRecord::RecordNotFound
         render_unauthorized
       end

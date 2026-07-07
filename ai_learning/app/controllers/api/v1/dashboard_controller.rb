@@ -3,7 +3,6 @@
 module Api
   module V1
     class DashboardController < BaseController
-
       # GET /api/v1/dashboard
       def index
         user  = current_user

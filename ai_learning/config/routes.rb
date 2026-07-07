@@ -24,7 +24,7 @@ Rails.application.routes.draw do
 
     root to: "dashboard#index"
 
-    resources :users, only: [:index, :show, :update] do
+    resources :users, only: [ :index, :show, :update ] do
       member do
         patch  :toggle_block
         delete :reset_vip
@@ -32,7 +32,7 @@ Rails.application.routes.draw do
       end
     end
 
-    resource :account, only: [:edit, :update], controller: "accounts"
+    resource :account, only: [ :edit, :update ], controller: "accounts"
 
     get "ai_costs", to: "ai_costs#index", as: :ai_costs
   end
@@ -53,7 +53,7 @@ Rails.application.routes.draw do
         },
         # Devise's recoverable routes pointed at a non-existent controller; the
         # app uses its own password endpoints below instead.
-        skip: [:passwords],
+        skip: [ :passwords ],
         defaults: { format: :json }
 
       namespace :auth do
@@ -77,7 +77,7 @@ Rails.application.routes.draw do
       get  "writing/history",    to: "writing#history"
 
       # Reading passages (REST + cache-first + word lookup)
-      resources :reading_passages, only: [:index, :show] do
+      resources :reading_passages, only: [ :index, :show ] do
         collection do
           post :generate
         end
@@ -88,7 +88,7 @@ Rails.application.routes.draw do
       end
 
       # Listening exercises (REST + generate + submit + stats)
-      resources :listening_exercises, only: [:index, :show] do
+      resources :listening_exercises, only: [ :index, :show ] do
         collection do
           post :generate
           get  :stats
@@ -99,7 +99,7 @@ Rails.application.routes.draw do
       end
 
       # Level-up tests (JLPT mini exam)
-      resources :level_tests, only: [:index, :show] do
+      resources :level_tests, only: [ :index, :show ] do
         collection { post :generate }
         member     { post :submit   }
       end
@@ -112,7 +112,7 @@ Rails.application.routes.draw do
       post "review/submit",       to: "review#submit"
 
       # Conversation sessions (REST + SSE)
-      resources :conversations, only: [:index, :create, :show, :destroy] do
+      resources :conversations, only: [ :index, :create, :show, :destroy ] do
         member do
           post :send_message
         end
@@ -123,7 +123,7 @@ Rails.application.routes.draw do
       get  "vocabularies/:id/explain",          to: "vocabulary#explain_by_id"
 
       # Grammar points CRUD + AI actions
-      resources :grammar_points, only: [:index, :show] do
+      resources :grammar_points, only: [ :index, :show ] do
         member do
           post :check_sentence
           post :generate_exercise
@@ -135,7 +135,7 @@ Rails.application.routes.draw do
       end
 
       # Kanji list + detail
-      resources :kanjis, only: [:index, :show]
+      resources :kanjis, only: [ :index, :show ]
 
       # Flashcard / SRS  (universal — vocabulary + kanji + grammar_point)
       get  "flashcards/due",                    to: "flashcards#due"

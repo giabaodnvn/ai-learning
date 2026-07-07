@@ -99,7 +99,7 @@ function useCardCounts(apiType: string, level?: string) {
 }
 
 function ModeCard({
-  mode, label, desc, icon, apiType,
+  label, desc, icon, apiType,
   gradient, selectedBorder, selectedBg, countClass,
   selected, level, onSelect,
 }: (typeof MODES)[number] & { selected: boolean; level?: string; onSelect: () => void }) {

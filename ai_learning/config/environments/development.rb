@@ -43,7 +43,7 @@ Rails.application.configure do
       password:             ENV.fetch("SMTP_PASSWORD"),
       domain:               ENV.fetch("SMTP_DOMAIN", "gmail.com"),
       authentication:       :login,
-      enable_starttls_auto: true,
+      enable_starttls_auto: true
     }
   else
     config.action_mailer.delivery_method       = :file

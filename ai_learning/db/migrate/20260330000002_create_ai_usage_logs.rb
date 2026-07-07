@@ -13,6 +13,6 @@ class CreateAiUsageLogs < ActiveRecord::Migration[7.2]
     add_index :ai_usage_logs, :user_id
     add_index :ai_usage_logs, :feature
     add_index :ai_usage_logs, :created_at
-    add_index :ai_usage_logs, [:feature, :created_at], name: "idx_ai_logs_feature_date"
+    add_index :ai_usage_logs, [ :feature, :created_at ], name: "idx_ai_logs_feature_date"
   end
 end

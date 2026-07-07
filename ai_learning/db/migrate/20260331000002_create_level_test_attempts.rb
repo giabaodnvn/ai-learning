@@ -16,7 +16,7 @@ class CreateLevelTestAttempts < ActiveRecord::Migration[7.2]
 
     add_index :level_test_attempts, :user_id
     add_index :level_test_attempts, :level_test_id
-    add_index :level_test_attempts, [:user_id, :jlpt_level]
+    add_index :level_test_attempts, [ :user_id, :jlpt_level ]
     add_index :level_test_attempts, :passed
   end
 end

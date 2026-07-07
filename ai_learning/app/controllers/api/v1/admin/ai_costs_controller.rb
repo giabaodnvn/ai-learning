@@ -23,7 +23,6 @@ module Api
             totals:     totals
           }
         end
-
       end
     end
   end

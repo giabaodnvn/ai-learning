@@ -3,7 +3,6 @@
 module Api
   module V1
     class FlashcardsController < BaseController
-
       # GET /api/v1/flashcards/due
       # ?type=all|vocabulary|kanji|grammar_point  (default: all)
       # ?level=n5|n4|...                          (optional)
@@ -152,7 +151,7 @@ module Api
         cards = [
           *vocab_cards.map   { |c| random_card_json("vocabulary",    c, learned_set) },
           *kanji_cards.map   { |c| random_card_json("kanji",         c, learned_set) },
-          *grammar_cards.map { |c| random_card_json("grammar_point", c, learned_set) },
+          *grammar_cards.map { |c| random_card_json("grammar_point", c, learned_set) }
         ].shuffle
 
         render json: { level: level, cards: cards }
@@ -184,9 +183,9 @@ module Api
             .uniq
             .first(3)
 
-          wrong += ["—"] * (3 - wrong.size) if wrong.size < 3
+          wrong += [ "—" ] * (3 - wrong.size) if wrong.size < 3
 
-          options = ([correct_text] + wrong).shuffle
+          options = ([ correct_text ] + wrong).shuffle
 
           {
             card_type:     ct,
@@ -366,7 +365,7 @@ module Api
       end
 
       def clamp_count(val, max)
-        [[val.to_i, 1].max, max].min
+        [ [ val.to_i, 1 ].max, max ].min
       end
 
       # Short answer string used as correct MCQ option

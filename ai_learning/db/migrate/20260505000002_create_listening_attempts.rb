@@ -12,6 +12,6 @@ class CreateListeningAttempts < ActiveRecord::Migration[7.2]
       t.timestamps
     end
 
-    add_index :listening_attempts, [:user_id, :created_at]
+    add_index :listening_attempts, [ :user_id, :created_at ]
   end
 end

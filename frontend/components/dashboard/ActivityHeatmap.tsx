@@ -52,7 +52,7 @@ function buildGrid(data: DayData[]): {
   const weeks: Array<Array<{ date: string; count: number; future: boolean }>> = [];
   const monthPositions: Array<{ label: string; colIndex: number }> = [];
 
-  let cur         = new Date(start);
+  const cur         = new Date(start);
   let weekIndex   = 0;
   let lastMonth   = -1;
 

@@ -42,7 +42,7 @@ class LevelTest < ApplicationRecord
   # Returns { score:, total:, passed:, per_section: }
   def grade(answers)
     answer_map = answers.each_with_object({}) do |a, h|
-      h[[a["section_index"].to_i, a["question_id"].to_i]] = a["answer_index"].to_i
+      h[[ a["section_index"].to_i, a["question_id"].to_i ]] = a["answer_index"].to_i
     end
 
     correct      = 0
@@ -50,7 +50,7 @@ class LevelTest < ApplicationRecord
       sec_correct = 0
       (sec["questions"] || []).each do |q|
         qid = q["id"].to_i
-        if answer_map[[si, qid]] == q["answer_index"].to_i
+        if answer_map[[ si, qid ]] == q["answer_index"].to_i
           correct     += 1
           sec_correct += 1
         end

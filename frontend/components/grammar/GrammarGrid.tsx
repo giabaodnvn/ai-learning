@@ -7,14 +7,6 @@ import { api } from "@/lib/api";
 import { Pagination } from "@/components/Pagination";
 import { JLPT_LEVELS as LEVELS, type JlptLevel as Level } from "@/types/quiz";
 
-const LEVEL_LABELS: Record<Level, string> = {
-  n5: "N5 — Sơ cấp",
-  n4: "N4 — Sơ trung",
-  n3: "N3 — Trung cấp",
-  n2: "N2 — Trung cao",
-  n1: "N1 — Cao cấp",
-};
-
 interface GrammarPoint {
   id: string;
   attributes: {

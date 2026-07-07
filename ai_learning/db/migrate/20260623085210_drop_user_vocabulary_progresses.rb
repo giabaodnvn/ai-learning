@@ -10,10 +10,10 @@ class DropUserVocabularyProgresses < ActiveRecord::Migration[7.2]
       t.datetime :last_reviewed_at
       t.datetime :created_at, null: false
       t.datetime :updated_at, null: false
-      t.index [:user_id, :due_date], name: "index_user_vocabulary_progresses_on_user_id_and_due_date"
-      t.index [:user_id, :vocabulary_id], name: "index_uvp_on_user_id_and_vocabulary_id", unique: true
-      t.index [:user_id], name: "index_user_vocabulary_progresses_on_user_id"
-      t.index [:vocabulary_id], name: "index_user_vocabulary_progresses_on_vocabulary_id"
+      t.index [ :user_id, :due_date ], name: "index_user_vocabulary_progresses_on_user_id_and_due_date"
+      t.index [ :user_id, :vocabulary_id ], name: "index_uvp_on_user_id_and_vocabulary_id", unique: true
+      t.index [ :user_id ], name: "index_user_vocabulary_progresses_on_user_id"
+      t.index [ :vocabulary_id ], name: "index_user_vocabulary_progresses_on_vocabulary_id"
     end
   end
 end

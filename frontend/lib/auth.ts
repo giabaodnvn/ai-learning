@@ -41,10 +41,11 @@ export const authOptions: NextAuthOptions = {
   callbacks: {
     async jwt({ token, user }) {
       if (user) {
-        token.accessToken = (user as any).accessToken;
+        const u = user as unknown as { accessToken: string; jlpt_level: string; role: string };
+        token.accessToken = u.accessToken;
         token.id = user.id;
-        token.jlptLevel = (user as any).jlpt_level;
-        token.role = (user as any).role;
+        token.jlptLevel = u.jlpt_level;
+        token.role = u.role;
       }
       return token;
     },

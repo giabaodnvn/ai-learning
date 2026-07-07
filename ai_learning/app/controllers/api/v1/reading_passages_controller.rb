@@ -3,7 +3,6 @@
 module Api
   module V1
     class ReadingPassagesController < BaseController
-
       # GET /api/v1/reading_passages?level=n5&topic=daily_life
       # Returns cached DB passages first; generates one if none exist.
       def index
@@ -21,7 +20,7 @@ module Api
             jlpt_level: level,
             topic:      topic || "日常生活"
           )
-          render json: [serialize_passage(passage)]
+          render json: [ serialize_passage(passage) ]
         end
       rescue ClaudeService::RateLimitError
         render json: { error: "Đã đạt giới hạn yêu cầu AI. Vui lòng thử lại sau." }, status: :too_many_requests

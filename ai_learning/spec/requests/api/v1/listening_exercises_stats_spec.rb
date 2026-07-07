@@ -13,7 +13,7 @@ RSpec.describe "Api::V1::ListeningExercises stats", type: :request do
     ListeningExercise.create!(
       jlpt_level: "n5", topic: "daily", title: "Test",
       script_ja: "テスト", script_vi: "kiem tra",
-      questions: [{ "q" => "a", "answer_index" => 0 }]
+      questions: [ { "q" => "a", "answer_index" => 0 } ]
     )
   end
 

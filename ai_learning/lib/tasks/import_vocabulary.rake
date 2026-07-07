@@ -8,7 +8,7 @@ namespace :vocab do
        "    bundle exec rails vocab:import[n5,true]     # dry-run (no DB writes)\n\n" \
        "  JSON file path: db/seeds/jlpt_<level>_vocab.json\n" \
        "  Each entry: { word, reading, romaji, meaning_vi, part_of_speech, tags }"
-  task :import, [:level, :dry_run] => :environment do |_t, args|
+  task :import, [ :level, :dry_run ] => :environment do |_t, args|
     level   = (args[:level].presence || "n5").downcase
     dry_run = args[:dry_run].to_s == "true"
 
@@ -31,7 +31,7 @@ namespace :vocab do
     existing_pairs = Vocabulary
       .where(jlpt_level: level)
       .pluck(:word, :reading)
-      .map { |w, r| [w, r] }
+      .map { |w, r| [ w, r ] }
       .to_set
 
     now         = Time.current
@@ -49,7 +49,7 @@ namespace :vocab do
         next
       end
 
-      if existing_pairs.include?([word, reading])
+      if existing_pairs.include?([ word, reading ])
         skipped += 1
         next
       end
@@ -67,7 +67,7 @@ namespace :vocab do
       }
 
       # Mark as seen so duplicates within the same file are also caught.
-      existing_pairs.add([word, reading])
+      existing_pairs.add([ word, reading ])
     end
 
     imported = to_insert.size

@@ -3,7 +3,6 @@
 module Api
   module V1
     class ListeningExercisesController < BaseController
-
       # GET /api/v1/listening_exercises?level=n3&topic=カフェでの会話
       # Returns cached DB exercises first; generates one if none exist.
       def index
@@ -21,7 +20,7 @@ module Api
             jlpt_level: level,
             topic:      topic || "日常会話"
           )
-          render json: [serialize_exercise(exercise)]
+          render json: [ serialize_exercise(exercise) ]
         end
       rescue ClaudeService::RateLimitError
         render json: { error: "Đã đạt giới hạn yêu cầu AI. Vui lòng thử lại sau." }, status: :too_many_requests

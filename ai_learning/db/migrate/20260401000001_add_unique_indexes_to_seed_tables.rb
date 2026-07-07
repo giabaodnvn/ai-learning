@@ -12,7 +12,7 @@ class AddUniqueIndexesToSeedTables < ActiveRecord::Migration[7.2]
         AND v1.id > v2.id
     SQL
 
-    add_index :vocabularies, [:jlpt_level, :word], unique: true,
+    add_index :vocabularies, [ :jlpt_level, :word ], unique: true,
               name: "idx_vocabularies_level_word_unique"
 
     # grammar_points: unique on (pattern, jlpt_level)
@@ -26,13 +26,13 @@ class AddUniqueIndexesToSeedTables < ActiveRecord::Migration[7.2]
         AND g1.id > g2.id
     SQL
 
-    add_index :grammar_points, [:pattern, :jlpt_level], unique: true,
+    add_index :grammar_points, [ :pattern, :jlpt_level ], unique: true,
               name: "idx_grammar_points_pattern_level_unique"
   end
 
   def down
     remove_index :vocabularies, name: "idx_vocabularies_level_word_unique", if_exists: true
-    add_index :vocabularies, [:jlpt_level, :word], name: "idx_vocabularies_level_word"
+    add_index :vocabularies, [ :jlpt_level, :word ], name: "idx_vocabularies_level_word"
 
     remove_index :grammar_points, name: "idx_grammar_points_pattern_level_unique", if_exists: true
     add_index :grammar_points, :pattern, name: "index_grammar_points_on_pattern"

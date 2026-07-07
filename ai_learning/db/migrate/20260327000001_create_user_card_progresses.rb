@@ -14,11 +14,11 @@ class CreateUserCardProgresses < ActiveRecord::Migration[7.2]
       t.timestamps
     end
 
-    add_index :user_card_progresses, [:user_id, :card_type, :card_id],
+    add_index :user_card_progresses, [ :user_id, :card_type, :card_id ],
               unique: true, name: "uq_user_card"
-    add_index :user_card_progresses, [:user_id, :due_date],
+    add_index :user_card_progresses, [ :user_id, :due_date ],
               name: "idx_user_due"
-    add_index :user_card_progresses, [:user_id, :card_type, :jlpt_level],
+    add_index :user_card_progresses, [ :user_id, :card_type, :jlpt_level ],
               name: "idx_user_type_level"
   end
 end

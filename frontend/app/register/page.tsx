@@ -42,8 +42,8 @@ export default function RegisterPage() {
       } else {
         router.push("/app/dashboard");
       }
-    } catch (err: any) {
-      const messages = err?.response?.data?.errors;
+    } catch (err) {
+      const messages = (err as { response?: { data?: { errors?: string[] } } })?.response?.data?.errors;
       setError(Array.isArray(messages) ? messages.join(", ") : "Đăng ký thất bại.");
     } finally {
       setLoading(false);

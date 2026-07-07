@@ -151,7 +151,7 @@ export function LevelTestLobby({ userLevel, onStartTest }: Props) {
             {data.tests.length === 0 ? (
               <div className="rounded-2xl border border-dashed border-zinc-300 p-8 text-center">
                 <p className="text-sm text-zinc-500">
-                  Chưa có bài test nào. Nhấn "+ Tạo bài test mới" để bắt đầu!
+                  Chưa có bài test nào. Nhấn &quot;+ Tạo bài test mới&quot; để bắt đầu!
                 </p>
               </div>
             ) : (

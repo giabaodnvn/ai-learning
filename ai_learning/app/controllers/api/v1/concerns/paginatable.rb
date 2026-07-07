@@ -13,14 +13,14 @@ module Api
         private
 
         def paginate(scope, order:, default_per:, max_per:)
-          page = [(params[:page].presence || 1).to_i, 1].max
-          per  = [[(params[:per_page].presence || default_per).to_i, 1].max, max_per].min
+          page = [ (params[:page].presence || 1).to_i, 1 ].max
+          per  = [ [ (params[:per_page].presence || default_per).to_i, 1 ].max, max_per ].min
 
           total   = scope.count
           records = scope.order(order).offset((page - 1) * per).limit(per)
           meta    = { total: total, page: page, per_page: per, pages: (total.to_f / per).ceil }
 
-          [records, meta]
+          [ records, meta ]
         end
       end
     end

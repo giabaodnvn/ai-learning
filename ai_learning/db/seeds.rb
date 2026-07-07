@@ -15,7 +15,7 @@ def seed_files(level, type)
 
   # Fallback: single file for levels not yet split
   single = File.join(SEED_DIR, "jlpt_#{level}_#{type}.json")
-  File.exist?(single) ? [single] : []
+  File.exist?(single) ? [ single ] : []
 end
 
 # ── Vocabulary ──────────────────────────────────────────────────────────────

@@ -189,11 +189,11 @@ module Api
 
         # Map score % → SRS grade (0-3 SM-2 scale)
         grade = case pct
-                when 0.9..Float::INFINITY then 3   # easy (≥90%)
-                when 0.7...0.9            then 2   # good (≥70%)
-                when 0.5...0.7            then 1   # hard (≥50%)
-                else 0                             # again (<50%)
-                end
+        when 0.9..Float::INFINITY then 3   # easy (≥90%)
+        when 0.7...0.9            then 2   # good (≥70%)
+        when 0.5...0.7            then 1   # hard (≥50%)
+        else 0                             # again (<50%)
+        end
 
         progress = current_user.user_card_progresses
                                .find_or_initialize_by(card_type: "grammar_point", card_id: point.id)
@@ -249,11 +249,11 @@ module Api
         today  = Date.current.to_s
         new_count = if streak[:last_date] == today
                       streak[:count]             # already practiced today
-                    elsif streak[:last_date] == (Date.current - 1).to_s
+        elsif streak[:last_date] == (Date.current - 1).to_s
                       streak[:count] + 1        # consecutive day
-                    else
+        else
                       1                          # streak reset
-                    end
+        end
         new_streak = { count: new_count, last_date: today }
         redis.setex(grammar_streak_key(user_id, point_id), 30 * 24 * 3600, new_streak.to_json)
         new_streak
