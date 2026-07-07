@@ -1,6 +1,6 @@
 "use client";
 
-import { getSession } from "next-auth/react";
+import { resolveToken } from "@/lib/api";
 
 const API_BASE = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:3003";
 
@@ -39,7 +39,7 @@ export async function streamSSE(
   options: StreamSSEOptions,
   onEvent: (payload: SSEPayload) => boolean | void,
 ): Promise<void> {
-  const token = options.token ?? (await getSession())?.accessToken ?? "";
+  const token = options.token ?? (await resolveToken()) ?? "";
 
   const res = await fetch(`${API_BASE}${path}`, {
     method: options.method ?? "GET",

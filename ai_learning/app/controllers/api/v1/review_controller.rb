@@ -48,26 +48,7 @@ module Api
 
         grade = quality_to_grade(quality)
 
-        result = SrsService.calculate_next_review(
-          ease_factor: progress.ease_factor.to_f,
-          interval:    progress.interval,
-          repetitions: progress.repetitions,
-          grade:       grade
-        )
-
-        correct = grade >= 2
-        ActiveRecord::Base.transaction do
-          progress.update!(
-            interval:         result[:new_interval],
-            ease_factor:      result[:new_ease_factor],
-            repetitions:      result[:new_repetitions],
-            due_date:         result[:due_date],
-            last_reviewed_at: Time.current,
-            learned:          grade >= 2 ? true : progress.learned
-          )
-          StudyLog.record!(user_id: current_user.id, correct: correct)
-          current_user.record_study_session!
-        end
+        progress = SrsReviewService.apply!(user: current_user, progress: progress, grade: grade)
 
         render json: {
           next_due:    progress.due_date,
