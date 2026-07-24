@@ -31,7 +31,7 @@ module Api
 
           if token
             begin
-              payload = JWT.decode(token, ENV.fetch("DEVISE_JWT_SECRET_KEY"), true, algorithms: [ "HS256" ]).first
+              payload = JwtDecoder.decode(token)
               user = User.find_by(id: payload["sub"])
               user&.update_column(:jti, SecureRandom.uuid)
               render json: { message: "Logged out successfully." }, status: :ok

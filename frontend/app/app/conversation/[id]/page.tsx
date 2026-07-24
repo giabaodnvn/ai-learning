@@ -6,15 +6,7 @@ import { useSession } from "next-auth/react";
 import { MessageBubble, type Message } from "@/components/conversation/MessageBubble";
 import { streamSSE } from "@/lib/sse";
 import { api } from "@/lib/api";
-
-const ROLE_META: Record<string, { label: string; icon: string }> = {
-  tutor:                   { label: "Gia sư tiếng Nhật",    icon: "👩‍🏫" },
-  convenience_store_clerk: { label: "Cửa hàng tiện lợi",   icon: "🏪" },
-  restaurant_staff:        { label: "Nhà hàng Nhật",        icon: "🍜" },
-  office_colleague:        { label: "Đồng nghiệp văn phòng", icon: "💼" },
-  hotel_staff:             { label: "Khách sạn",            icon: "🏨" },
-  airport_staff:           { label: "Sân bay",              icon: "✈️" },
-};
+import { ROLE_META } from "@/lib/roles";
 
 interface SessionDetail {
   id: number;
@@ -41,10 +33,12 @@ export default function ConversationChatPage() {
   const textareaRef = useRef<HTMLTextAreaElement>(null);
   const abortRef   = useRef<AbortController | null>(null);
 
-  // Scroll to bottom whenever messages change
+  // Keep pinned to the bottom. While streaming, each delta mutates the last
+  // message — use an instant scroll so the smooth animation isn't restarted
+  // (and visibly stuttered) on every token; animate only for whole new messages.
   useEffect(() => {
-    bottomRef.current?.scrollIntoView({ behavior: "smooth" });
-  }, [messages]);
+    bottomRef.current?.scrollIntoView({ behavior: streaming ? "auto" : "smooth" });
+  }, [messages, streaming]);
 
   // Abort any in-flight stream on unmount
   useEffect(() => () => abortRef.current?.abort(), []);

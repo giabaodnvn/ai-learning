@@ -5,18 +5,7 @@ import { redirect }         from "next/navigation";
 import Image                from "next/image";
 import { DashboardStats }   from "./DashboardStats";
 import bannerImage          from "@/app/images/7.webp";
-
-const JLPT_LABELS: Record<string, string> = {
-  n5: "N5 – Sơ cấp",
-  n4: "N4 – Sơ trung",
-  n3: "N3 – Trung cấp",
-  n2: "N2 – Trung cao",
-  n1: "N1 – Cao cấp",
-};
-
-const JLPT_JP: Record<string, string> = {
-  n5: "初級", n4: "初中級", n3: "中級", n2: "中上級", n1: "上級",
-};
+import { LEVEL_LABEL_VI, LEVEL_JP } from "@/lib/levels";
 
 const QUICK_LINKS = [
   { label: "Từ vựng",       href: "/app/vocabulary",       kanji: "語", from: "from-blue-600",    to: "to-indigo-700"  },
@@ -65,8 +54,8 @@ export default async function DashboardPage() {
           </h1>
           <div className="mt-2 flex items-center gap-2 flex-wrap">
             <span className="inline-flex items-center gap-1.5 rounded-full bg-white/15 px-3 py-1 text-xs font-semibold text-white ring-1 ring-white/20 backdrop-blur-sm">
-              <span className="text-indigo-300">{JLPT_JP[user.jlpt_level]}</span>
-              {JLPT_LABELS[user.jlpt_level] ?? user.jlpt_level}
+              <span className="text-indigo-300">{LEVEL_JP[user.jlpt_level]}</span>
+              {LEVEL_LABEL_VI[user.jlpt_level] ?? user.jlpt_level}
             </span>
             {user.streak_count > 0 && (
               <span className="inline-flex items-center gap-1 rounded-full bg-amber-400/20 px-3 py-1 text-xs font-semibold text-amber-200 ring-1 ring-amber-400/30 backdrop-blur-sm">

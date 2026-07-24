@@ -1,10 +1,11 @@
 "use client";
 
 import { useState } from "react";
-import { useQuery } from "@tanstack/react-query";
+import { useQuery, keepPreviousData } from "@tanstack/react-query";
 import { api } from "@/lib/api";
 import { Pagination } from "@/components/Pagination";
-import { JLPT_LEVELS as LEVELS, type JlptLevel as Level } from "@/types/quiz";
+import { LevelTabs } from "@/components/shared/LevelTabs";
+import { type JlptLevel as Level } from "@/types/quiz";
 
 const POS_LABELS: Record<string, string> = {
   noun:       "Danh từ",
@@ -59,6 +60,7 @@ export default function VocabularyGrid() {
   const { data, isLoading, isError } = useQuery({
     queryKey: ["vocabularies", level, page, query],
     queryFn:  () => fetchVocabulary(level, page, query),
+    placeholderData: keepPreviousData,
   });
 
   function handleLevelChange(l: Level) {
@@ -106,23 +108,7 @@ export default function VocabularyGrid() {
       </form>
 
       {/* Level tabs */}
-      {!query && (
-        <div className="flex gap-2 flex-wrap">
-          {LEVELS.map((l) => (
-            <button
-              key={l}
-              onClick={() => handleLevelChange(l)}
-              className={`rounded-full px-4 py-1.5 text-sm font-medium transition-colors ${
-                level === l
-                  ? "bg-zinc-900 text-white"
-                  : "border border-zinc-300 bg-white text-zinc-600 hover:bg-zinc-50"
-              }`}
-            >
-              {l.toUpperCase()}
-            </button>
-          ))}
-        </div>
-      )}
+      {!query && <LevelTabs value={level} onChange={handleLevelChange} />}
 
       {/* Meta */}
       {data && (

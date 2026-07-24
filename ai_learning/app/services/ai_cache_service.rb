@@ -20,6 +20,24 @@ class AiCacheService
     result
   end
 
+  # Fetch a cached JSON value under an explicit key, or compute, cache and
+  # return it. The block must return a JSON-serialisable object; a corrupt or
+  # unparseable cache entry is treated as a miss and recomputed.
+  def self.fetch_json(key, ttl: TTL)
+    cached = redis.get(key)
+    if cached
+      begin
+        return JSON.parse(cached)
+      rescue JSON::ParserError
+        # Corrupt entry — fall through and recompute.
+      end
+    end
+
+    result = yield
+    redis.setex(key, ttl, result.to_json) if result
+    result
+  end
+
   def self.invalidate(prompt)
     redis.del(cache_key(prompt))
   end

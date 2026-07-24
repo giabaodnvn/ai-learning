@@ -23,4 +23,12 @@ class UserCardProgress < ApplicationRecord
   scope :for_level,    ->(level) { where(jlpt_level: level) }
   scope :learned,      -> { where(learned: true) }
   scope :not_learned,  -> { where(learned: false) }
+
+  # Find the user's progress row for a card, or build a new (unsaved) one
+  # pre-populated with the initial SRS state at the given JLPT level.
+  def self.find_or_build_for(user, card_type:, card_id:, jlpt_level:)
+    progress = user.user_card_progresses.find_or_initialize_by(card_type: card_type, card_id: card_id)
+    progress.assign_attributes(SrsService.initial_state.merge(jlpt_level: jlpt_level)) if progress.new_record?
+    progress
+  end
 end

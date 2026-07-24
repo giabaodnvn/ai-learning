@@ -3,6 +3,8 @@
 module Api
   module V1
     class ReadingPassagesController < BaseController
+      self.not_found_label = "Bài đọc"
+
       # GET /api/v1/reading_passages?level=n5&topic=daily_life
       # Returns cached DB passages first; generates one if none exist.
       def index
@@ -22,12 +24,6 @@ module Api
           )
           render json: [ serialize_passage(passage) ]
         end
-      rescue ClaudeService::RateLimitError
-        render json: { error: "Đã đạt giới hạn yêu cầu AI. Vui lòng thử lại sau." }, status: :too_many_requests
-      rescue ClaudeService::TimeoutError
-        render json: { error: "AI phản hồi quá lâu. Vui lòng thử lại." }, status: :gateway_timeout
-      rescue ClaudeService::ServiceError
-        render json: { error: "Lỗi kết nối AI. Vui lòng thử lại." }, status: :service_unavailable
       end
 
       # POST /api/v1/reading_passages/generate
@@ -38,12 +34,6 @@ module Api
 
         passage = generate_and_save!(jlpt_level: jlpt_level, topic: topic)
         render json: serialize_passage(passage), status: :created
-      rescue ClaudeService::RateLimitError
-        render json: { error: "Đã đạt giới hạn yêu cầu AI. Vui lòng thử lại sau." }, status: :too_many_requests
-      rescue ClaudeService::TimeoutError
-        render json: { error: "AI phản hồi quá lâu. Vui lòng thử lại." }, status: :gateway_timeout
-      rescue ClaudeService::ServiceError
-        render json: { error: "Lỗi kết nối AI. Vui lòng thử lại." }, status: :service_unavailable
       end
 
       # POST /api/v1/reading_passages/:id/answer
@@ -58,15 +48,13 @@ module Api
 
         correct_index  = question["answer_index"].to_i
         correct        = correct_index == answer_index
-        correct_option = question["options"][correct_index]
+        correct_option = Array(question["options"])[correct_index]
 
         render json: {
           correct:        correct,
           correct_index:  correct_index,
           explanation_vi: correct ? "Chính xác! 🎉" : "Đáp án đúng là: #{correct_option}"
         }
-      rescue ActiveRecord::RecordNotFound
-        render_not_found("Bài đọc")
       end
 
       # GET /api/v1/reading_passages/:id/word_lookup?word=食べる
@@ -96,12 +84,6 @@ module Api
           result = parse_ai_json(raw)
           render json: result
         end
-      rescue ActiveRecord::RecordNotFound
-        render_not_found("Bài đọc")
-      rescue ClaudeService::RateLimitError
-        render json: { error: "Đã đạt giới hạn yêu cầu AI." }, status: :too_many_requests
-      rescue ClaudeService::ServiceError
-        render json: { error: "Lỗi kết nối AI." }, status: :service_unavailable
       end
 
       private
@@ -130,6 +112,11 @@ module Api
           vocabulary_highlights: data["vocabulary_highlights"] || [],
           ai_generated:         true
         )
+      rescue ActiveRecord::RecordInvalid => e
+        # AI returned syntactically valid JSON but with missing/blank fields.
+        # Surface as a ServiceError so it reuses the AI-error rescue (503)
+        # instead of leaking as a 500.
+        raise ClaudeService::ServiceError, "AI returned incomplete passage data: #{e.message}"
       end
 
       def serialize_passage(passage)

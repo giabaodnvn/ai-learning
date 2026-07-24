@@ -41,8 +41,25 @@ module Api
         rescue ClaudeService::ServiceError => e
           response.stream.write("data: #{({ delta: '', done: true, error: 'server_error' }).to_json}\n\n") rescue nil
           Rails.logger.error "[SSE] Service error: #{e.message}"
+        rescue => e
+          # A non-AI error raised after streaming started (e.g. a failed DB
+          # create!, a Redis outage). The response is already committed, so we
+          # cannot render an error status — emit a terminal error event instead
+          # so the client stops waiting rather than silently truncating.
+          response.stream.write("data: #{({ delta: '', done: true, error: 'server_error' }).to_json}\n\n") rescue nil
+          Rails.logger.error "[SSE] Unexpected #{e.class}: #{e.message}"
         ensure
           response.stream.close
+        end
+
+        # Stream a plain-text AI reply: forward each delta as an SSE event, then
+        # emit the terminal done event. `chat_kwargs` are passed straight to
+        # ClaudeService.chat (messages:, system:, model:, log_usage:, ...).
+        def stream_ai_reply(stream, **chat_kwargs)
+          ClaudeService.chat(**chat_kwargs) do |delta|
+            write_sse(stream, delta: delta)
+          end
+          write_sse(stream, delta: "", done: true)
         end
 
         # Write a single SSE event.

@@ -3,6 +3,8 @@
 module Api
   module V1
     class ListeningExercisesController < BaseController
+      self.not_found_label = "Bài luyện nghe"
+
       # GET /api/v1/listening_exercises?level=n3&topic=カフェでの会話
       # Returns cached DB exercises first; generates one if none exist.
       def index
@@ -22,20 +24,12 @@ module Api
           )
           render json: [ serialize_exercise(exercise) ]
         end
-      rescue ClaudeService::RateLimitError
-        render json: { error: "Đã đạt giới hạn yêu cầu AI. Vui lòng thử lại sau." }, status: :too_many_requests
-      rescue ClaudeService::TimeoutError
-        render json: { error: "AI phản hồi quá lâu. Vui lòng thử lại." }, status: :gateway_timeout
-      rescue ClaudeService::ServiceError
-        render json: { error: "Lỗi kết nối AI. Vui lòng thử lại." }, status: :service_unavailable
       end
 
       # GET /api/v1/listening_exercises/:id
       def show
         exercise = ListeningExercise.find(params[:id])
         render json: serialize_exercise(exercise)
-      rescue ActiveRecord::RecordNotFound
-        render_not_found("Bài luyện nghe")
       end
 
       # POST /api/v1/listening_exercises/generate
@@ -46,12 +40,6 @@ module Api
 
         exercise = generate_and_save!(jlpt_level: jlpt_level, topic: topic)
         render json: serialize_exercise(exercise), status: :created
-      rescue ClaudeService::RateLimitError
-        render json: { error: "Đã đạt giới hạn yêu cầu AI. Vui lòng thử lại sau." }, status: :too_many_requests
-      rescue ClaudeService::TimeoutError
-        render json: { error: "AI phản hồi quá lâu. Vui lòng thử lại." }, status: :gateway_timeout
-      rescue ClaudeService::ServiceError
-        render json: { error: "Lỗi kết nối AI. Vui lòng thử lại." }, status: :service_unavailable
       end
 
       # POST /api/v1/listening_exercises/:id/submit
@@ -71,7 +59,7 @@ module Api
 
           correct_index = question["correct_index"].to_i
           correct = correct_index == answer_index
-          correct_option = question["options"][correct_index]
+          correct_option = Array(question["options"])[correct_index]
 
           {
             correct: correct,
@@ -82,22 +70,21 @@ module Api
 
         # Save attempt for stats
         score = results.count { |r| r[:correct] }
+        total = exercise.questions.size
         ListeningAttempt.create!(
           user: current_user,
           listening_exercise: exercise,
           score: score,
-          total_questions: exercise.questions.size,
+          total_questions: total,
           speech_rate: speech_rate
         )
 
         render json: {
           results: results,
           score: score,
-          total: exercise.questions.size,
-          percentage: ((score.to_f / exercise.questions.size) * 100).round(1)
+          total: total,
+          percentage: total.zero? ? 0.0 : ((score.to_f / total) * 100).round(1)
         }
-      rescue ActiveRecord::RecordNotFound
-        render_not_found("Bài luyện nghe")
       end
 
       # GET /api/v1/listening_exercises/stats
@@ -155,6 +142,11 @@ module Api
           questions:   data["questions"] || [],
           ai_generated: true
         )
+      rescue ActiveRecord::RecordInvalid => e
+        # AI returned syntactically valid JSON but with missing/blank fields.
+        # Surface as a ServiceError so it reuses the AI-error rescue (503)
+        # instead of leaking as a 500.
+        raise ClaudeService::ServiceError, "AI returned incomplete exercise data: #{e.message}"
       end
 
       def serialize_exercise(exercise)

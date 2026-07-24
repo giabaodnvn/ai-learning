@@ -1,6 +1,7 @@
 "use client";
 
-import { useState, useEffect, useCallback } from "react";
+import { useState } from "react";
+import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import { api } from "@/lib/api";
 import { useCurrentUser } from "@/hooks/useCurrentUser";
 import { ExerciseCard, type ExerciseData } from "@/components/listening/ExerciseCard";
@@ -35,20 +36,15 @@ const TOPICS = [
 
 export default function ListeningPage() {
   const { user } = useCurrentUser();
+  const queryClient = useQueryClient();
 
   const [view, setView] = useState<View>("list");
-  const [exercises, setExercises] = useState<ExerciseData[]>([]);
   const [selected, setSelected] = useState<ExerciseData | null>(null);
   const [quizResults, setQuizResults] = useState<AnswerResult[]>([]);
   const [speechRate, setSpeechRate] = useState(1.0);
   const [quizScore, setQuizScore] = useState(0);
   const [quizTotal, setQuizTotal] = useState(0);
   const [errorKey,  setErrorKey]  = useState(0);
-
-  const [loadingList, setLoadingList] = useState(false);
-  const [generating, setGenerating] = useState(false);
-  const [listError, setListError] = useState<string | null>(null);
-  const [genError, setGenError] = useState<string | null>(null);
 
   // Generate form state
   const [topic, setTopic] = useState("");
@@ -58,53 +54,47 @@ export default function ListeningPage() {
   const effectiveLevel = jlptLevel || user?.jlpt_level || "n5";
 
   // -------------------------------------------------------------------------
-  // Load exercises on mount / level change
+  // Exercise list — keyed on level so a slow earlier response can't overwrite
+  // a newer one (the previous manual fetch had that race).
   // -------------------------------------------------------------------------
-  const loadExercises = useCallback(async (level: string) => {
-    setLoadingList(true);
-    setListError(null);
-    try {
-      const res = await api.get("/api/v1/listening_exercises", {
-        params: { level },
-      });
-      setExercises(res.data);
-    } catch {
-      setListError("Không thể tải danh sách bài luyện nghe.");
-    } finally {
-      setLoadingList(false);
-    }
-  }, []);
-
-  useEffect(() => {
-    if (view === "list") loadExercises(effectiveLevel);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [effectiveLevel, view]);
+  const { data: exercises = [], isLoading: loadingList, isError } = useQuery<ExerciseData[]>({
+    queryKey: ["listeningExercises", effectiveLevel],
+    queryFn: async () => {
+      const res = await api.get("/api/v1/listening_exercises", { params: { level: effectiveLevel } });
+      return res.data;
+    },
+    enabled: view === "list",
+  });
+  const listError = isError ? "Không thể tải danh sách bài luyện nghe." : null;
 
   // -------------------------------------------------------------------------
   // Generate new exercise
   // -------------------------------------------------------------------------
-  async function handleGenerate(e: React.FormEvent) {
-    e.preventDefault();
-    const finalTopic = customTopic.trim() || topic;
-    if (!finalTopic) return;
-
-    setGenerating(true);
-    setGenError(null);
-
-    try {
+  const generateMutation = useMutation({
+    mutationFn: async (finalTopic: string) => {
       const res = await api.post("/api/v1/listening_exercises/generate", {
         jlpt_level: effectiveLevel,
         topic: finalTopic,
       });
-      const newExercise: ExerciseData = res.data;
-      setExercises((prev) => [newExercise, ...prev]);
+      return res.data as ExerciseData;
+    },
+    onSuccess: (newExercise) => {
+      queryClient.setQueryData<ExerciseData[]>(
+        ["listeningExercises", effectiveLevel],
+        (old) => [newExercise, ...(old ?? [])],
+      );
       setSelected(newExercise);
       setView("player");
-    } catch {
-      setGenError("Không thể tạo bài luyện nghe. Vui lòng thử lại.");
-    } finally {
-      setGenerating(false);
-    }
+    },
+  });
+  const generating = generateMutation.isPending;
+  const genError = generateMutation.isError ? "Không thể tạo bài luyện nghe. Vui lòng thử lại." : null;
+
+  function handleGenerate(e: React.FormEvent) {
+    e.preventDefault();
+    const finalTopic = customTopic.trim() || topic;
+    if (!finalTopic) return;
+    generateMutation.mutate(finalTopic);
   }
 
   // -------------------------------------------------------------------------

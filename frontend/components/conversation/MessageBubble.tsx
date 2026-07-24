@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, Fragment } from "react";
+import { useState, Fragment, memo } from "react";
 
 export interface Correction {
   original: string;
@@ -59,7 +59,7 @@ interface Props {
   isStreaming?: boolean;
 }
 
-export function MessageBubble({ message, isStreaming = false }: Props) {
+function MessageBubbleComponent({ message, isStreaming = false }: Props) {
   const [showTranslation, setShowTranslation] = useState(false);
   const [showCorrections, setShowCorrections] = useState(false);
 
@@ -187,3 +187,7 @@ export function MessageBubble({ message, isStreaming = false }: Props) {
     </div>
   );
 }
+
+// Memoized: during streaming only the last message object changes reference,
+// so unchanged bubbles skip re-rendering on every token.
+export const MessageBubble = memo(MessageBubbleComponent);

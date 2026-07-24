@@ -23,15 +23,6 @@ module Api
 
         result = parse_ai_json(raw)
         render json: result, status: :ok
-      rescue ClaudeService::RateLimitError
-        render json: { error: "Đã đạt giới hạn yêu cầu AI. Vui lòng thử lại sau." },
-               status: :too_many_requests
-      rescue ClaudeService::TimeoutError
-        render json: { error: "AI phản hồi quá lâu. Vui lòng thử lại." },
-               status: :gateway_timeout
-      rescue ClaudeService::ServiceError
-        render json: { error: "Lỗi kết nối AI. Vui lòng thử lại." },
-               status: :service_unavailable
       end
     end
   end

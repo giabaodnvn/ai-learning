@@ -4,20 +4,9 @@ import { useState } from "react";
 import { useQueryClient, useMutation } from "@tanstack/react-query";
 import { useCurrentUser } from "@/hooks/useCurrentUser";
 import { api } from "@/lib/api";
+import { LEVELS_META, LEVEL_JP } from "@/lib/levels";
 import Image from "next/image";
 import coverImage from "@/app/images/4.jpg";
-
-const JLPT_LEVELS = [
-  { value: "n5", label: "N5 – Sơ cấp" },
-  { value: "n4", label: "N4 – Sơ trung" },
-  { value: "n3", label: "N3 – Trung cấp" },
-  { value: "n2", label: "N2 – Trung cao" },
-  { value: "n1", label: "N1 – Cao cấp" },
-];
-
-const JLPT_JP: Record<string, string> = {
-  n5: "初級", n4: "初中級", n3: "中級", n2: "中上級", n1: "上級",
-};
 
 const VIP_CONFIG: Record<number, {
   label: string; desc: string;
@@ -187,7 +176,7 @@ export default function ProfilePage() {
         {/* Stats row */}
         <div className="px-6 py-4 flex flex-wrap gap-3">
           <div className="flex items-center gap-2 rounded-xl bg-indigo-50 border border-indigo-100 px-4 py-2.5">
-            <span className="text-lg leading-none">{JLPT_JP[user.jlpt_level]}</span>
+            <span className="text-lg leading-none">{LEVEL_JP[user.jlpt_level]}</span>
             <div>
               <p className="text-[10px] text-indigo-400 leading-none">Trình độ</p>
               <p className="text-sm font-bold text-indigo-700 leading-tight">
@@ -315,8 +304,8 @@ export default function ProfilePage() {
               disabled
               className="w-full rounded-xl border border-zinc-200 bg-zinc-50 px-4 py-2.5 text-sm text-zinc-400 cursor-not-allowed appearance-none"
             >
-              {JLPT_LEVELS.map(({ value, label }) => (
-                <option key={value} value={value}>{label}</option>
+              {LEVELS_META.map(({ value, labelVi }) => (
+                <option key={value} value={value}>{labelVi}</option>
               ))}
             </select>
             <p className="mt-1 text-xs text-zinc-400">Trình độ được cập nhật qua bài kiểm tra cấp độ.</p>

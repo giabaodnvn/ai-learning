@@ -1,5 +1,6 @@
 "use client";
 
+import { signOut } from "next-auth/react";
 import { resolveToken } from "@/lib/api";
 
 const API_BASE = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:3003";
@@ -50,6 +51,13 @@ export async function streamSSE(
     body: options.body !== undefined ? JSON.stringify(options.body) : undefined,
     signal: options.signal,
   });
+
+  // Mirror the axios 401 interceptor: an expired/revoked JWT during a stream
+  // must sign the user out, not just surface a generic connection error.
+  if (res.status === 401) {
+    if (typeof window !== "undefined") signOut({ callbackUrl: "/login" });
+    throw new Error("Phiên đăng nhập đã hết hạn");
+  }
 
   if (!res.ok || !res.body) throw new Error("Lỗi kết nối");
 

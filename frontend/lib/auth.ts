@@ -31,7 +31,10 @@ export const authOptions: NextAuthOptions = {
 
           return { ...data, accessToken: token };
         } catch (err) {
-          console.error("[NextAuth] authorize error:", err);
+          // Log only the status — the axios error object carries `config.data`
+          // which contains the submitted email + password. Never log it.
+          const status = axios.isAxiosError(err) ? err.response?.status : "unknown";
+          console.error("[NextAuth] authorize failed:", status);
           return null;
         }
       },

@@ -111,7 +111,13 @@ export default function ReviewPage() {
   async function handleRate(quality: number) {
     if (!current) return;
 
-    await submitMutation.mutateAsync({ progressId: current.id, quality });
+    try {
+      await submitMutation.mutateAsync({ progressId: current.id, quality });
+    } catch {
+      // Keep the current card so the user can retry; the failure is surfaced
+      // via submitMutation.isError below instead of an unhandled rejection.
+      return;
+    }
 
     setSessionResults((prev) => [...prev, { quality }]);
     setRevealed(false);
@@ -269,6 +275,11 @@ export default function ReviewPage() {
               </button>
             ))}
           </div>
+          {submitMutation.isError && (
+            <p className="text-xs text-center text-red-600 mt-2">
+              Không lưu được kết quả. Vui lòng thử lại.
+            </p>
+          )}
           <p className="text-xs text-center text-zinc-400 mt-2">
             Lần ôn #{current.repetitions + 1} · Interval hiện tại: {current.interval} ngày
           </p>

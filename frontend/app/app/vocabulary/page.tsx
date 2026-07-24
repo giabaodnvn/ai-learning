@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useSession } from "next-auth/react";
 import { useCurrentUser } from "@/hooks/useCurrentUser";
 import VocabularyGrid from "@/components/vocabulary/VocabularyGrid";
-import { streamSSE } from "@/lib/sse";
+import { useSSEStream } from "@/hooks/useSSEStream";
 
 type Tab = "list" | "explain";
 
@@ -13,43 +13,23 @@ export default function VocabularyPage() {
   const { user } = useCurrentUser();
   const [tab, setTab] = useState<Tab>("list");
 
-  const [word,        setWord]        = useState("");
-  const [reading,     setReading]     = useState("");
-  const [explanation, setExplanation] = useState("");
-  const [loading,     setLoading]     = useState(false);
-  const [error,       setError]       = useState<string | null>(null);
+  const [word,    setWord]    = useState("");
+  const [reading, setReading] = useState("");
+  const { content: explanation, streaming: loading, error, start } = useSSEStream();
 
   async function handleExplain(e: React.FormEvent) {
     e.preventDefault();
     if (!word.trim()) return;
 
-    setLoading(true);
-    setError(null);
-    setExplanation("");
-
-    try {
-      await streamSSE(
-        "/api/v1/vocabulary/explain",
-        {
-          method: "POST",
-          token:  session?.accessToken,
-          body: {
-            word:       word.trim(),
-            reading:    reading.trim() || word.trim(),
-            user_level: user?.jlpt_level ?? "n5",
-          },
-        },
-        (payload) => {
-          if (payload.error) throw new Error(payload.error);
-          if (payload.done) return true;
-          if (payload.delta) setExplanation((prev) => prev + payload.delta);
-        },
-      );
-    } catch (err: unknown) {
-      setError(err instanceof Error ? err.message : "Có lỗi xảy ra.");
-    } finally {
-      setLoading(false);
-    }
+    await start("/api/v1/vocabulary/explain", {
+      method: "POST",
+      token:  session?.accessToken,
+      body: {
+        word:       word.trim(),
+        reading:    reading.trim() || word.trim(),
+        user_level: user?.jlpt_level ?? "n5",
+      },
+    });
   }
 
   return (

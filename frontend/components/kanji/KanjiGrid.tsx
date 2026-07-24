@@ -2,18 +2,11 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { useQuery } from "@tanstack/react-query";
+import { useQuery, keepPreviousData } from "@tanstack/react-query";
 import { api } from "@/lib/api";
 import { Pagination } from "@/components/Pagination";
-import { JLPT_LEVELS as LEVELS, type JlptLevel as Level } from "@/types/quiz";
-
-const LEVEL_META: Record<Level, { label: string; jp: string; activeClass: string; inactiveClass: string }> = {
-  n5: { label: "N5", jp: "初級",   activeClass: "bg-emerald-600 text-white border-emerald-600 shadow-sm shadow-emerald-200", inactiveClass: "border-emerald-200 text-emerald-700 hover:bg-emerald-50" },
-  n4: { label: "N4", jp: "初中級", activeClass: "bg-blue-600 text-white border-blue-600 shadow-sm shadow-blue-200",         inactiveClass: "border-blue-200 text-blue-700 hover:bg-blue-50" },
-  n3: { label: "N3", jp: "中級",   activeClass: "bg-amber-500 text-white border-amber-500 shadow-sm shadow-amber-200",      inactiveClass: "border-amber-200 text-amber-700 hover:bg-amber-50" },
-  n2: { label: "N2", jp: "中上級", activeClass: "bg-violet-600 text-white border-violet-600 shadow-sm shadow-violet-200",   inactiveClass: "border-violet-200 text-violet-700 hover:bg-violet-50" },
-  n1: { label: "N1", jp: "上級",   activeClass: "bg-rose-600 text-white border-rose-600 shadow-sm shadow-rose-200",         inactiveClass: "border-rose-200 text-rose-700 hover:bg-rose-50" },
-};
+import { LevelTabs } from "@/components/shared/LevelTabs";
+import { type JlptLevel as Level } from "@/types/quiz";
 
 interface Kanji {
   id: string;
@@ -44,6 +37,7 @@ export default function KanjiGrid() {
   const { data, isLoading, isError } = useQuery({
     queryKey: ["kanjis", level, page],
     queryFn: () => fetchKanjis(level, page),
+    placeholderData: keepPreviousData,
   });
 
   function handleLevelChange(l: Level) {
@@ -55,30 +49,12 @@ export default function KanjiGrid() {
     <div className="space-y-5">
 
       {/* Level tabs */}
-      <div className="flex gap-2 flex-wrap items-center">
-        {LEVELS.map((l) => {
-          const m = LEVEL_META[l];
-          return (
-            <button
-              key={l}
-              onClick={() => handleLevelChange(l)}
-              className={`rounded-full border px-4 py-1.5 text-sm font-semibold transition-all duration-150 ${
-                level === l ? m.activeClass : m.inactiveClass
-              }`}
-            >
-              {m.label}
-              <span className={`ml-1.5 text-xs font-normal ${level === l ? "opacity-80" : "opacity-60"}`}>
-                {m.jp}
-              </span>
-            </button>
-          );
-        })}
-        {data && (
-          <span className="ml-auto text-xs text-zinc-400">
-            {data.meta.total} chữ
-          </span>
-        )}
-      </div>
+      <LevelTabs
+        value={level}
+        onChange={handleLevelChange}
+        variant="colored"
+        right={data && <span className="ml-auto text-xs text-zinc-400">{data.meta.total} chữ</span>}
+      />
 
       {/* Loading skeleton */}
       {isLoading && (

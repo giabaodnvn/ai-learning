@@ -1,16 +1,11 @@
 "use client";
 
-import { useState, useEffect, useCallback } from "react";
+import { useState } from "react";
+import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import { api } from "@/lib/api";
 import type { TestSummary, AttemptSummary } from "./types";
 import { JLPT_LEVELS } from "@/types/quiz";
-const LEVEL_LABELS: Record<string, string> = {
-  n5: "N5 — Sơ cấp",
-  n4: "N4 — Sơ trung cấp",
-  n3: "N3 — Trung cấp",
-  n2: "N2 — Thượng trung cấp",
-  n1: "N1 — Cao cấp",
-};
+import { LEVEL_LABEL_VI } from "@/lib/levels";
 
 interface LobbyData {
   level: string;
@@ -27,40 +22,36 @@ interface Props {
 }
 
 export function LevelTestLobby({ userLevel, onStartTest }: Props) {
+  const queryClient = useQueryClient();
   const [selectedLevel, setSelectedLevel] = useState(userLevel);
-  const [data,          setData]          = useState<LobbyData | null>(null);
-  const [loading,       setLoading]       = useState(false);
-  const [generating,    setGenerating]    = useState(false);
-  const [error,         setError]         = useState<string | null>(null);
 
-  const loadData = useCallback(async (level: string) => {
-    setLoading(true);
-    setError(null);
-    try {
-      const res = await api.get("/api/v1/level_tests", { params: { level } });
-      setData(res.data);
-    } catch {
-      setError("Không thể tải dữ liệu. Vui lòng thử lại.");
-    } finally {
-      setLoading(false);
-    }
-  }, []);
+  // Keyed on the level so switching levels can't let a slow earlier response
+  // overwrite a newer one (the previous manual fetch had that race).
+  const { data, isLoading, isError } = useQuery<LobbyData>({
+    queryKey: ["levelTests", selectedLevel],
+    queryFn: async () => {
+      const res = await api.get("/api/v1/level_tests", { params: { level: selectedLevel } });
+      return res.data;
+    },
+  });
 
-  useEffect(() => {
-    loadData(selectedLevel);
-  }, [selectedLevel, loadData]);
-
-  async function handleGenerate() {
-    setGenerating(true);
-    setError(null);
-    try {
+  const generateMutation = useMutation({
+    mutationFn: async () => {
       await api.post("/api/v1/level_tests/generate", { level: selectedLevel });
-      await loadData(selectedLevel);
-    } catch {
-      setError("Không thể tạo bài test. Vui lòng thử lại.");
-    } finally {
-      setGenerating(false);
-    }
+    },
+    onSuccess: () => queryClient.invalidateQueries({ queryKey: ["levelTests", selectedLevel] }),
+  });
+
+  const loading = isLoading;
+  const generating = generateMutation.isPending;
+  const error = isError
+    ? "Không thể tải dữ liệu. Vui lòng thử lại."
+    : generateMutation.isError
+      ? "Không thể tạo bài test. Vui lòng thử lại."
+      : null;
+
+  function handleGenerate() {
+    generateMutation.mutate();
   }
 
   return (
@@ -114,7 +105,7 @@ export function LevelTestLobby({ userLevel, onStartTest }: Props) {
           <div className="rounded-2xl border border-zinc-200 bg-white p-5 flex items-center justify-between flex-wrap gap-4">
             <div>
               <div className="text-sm font-semibold text-zinc-700">
-                {LEVEL_LABELS[selectedLevel] ?? selectedLevel.toUpperCase()}
+                {LEVEL_LABEL_VI[selectedLevel] ?? selectedLevel.toUpperCase()}
               </div>
               {data.next_level ? (
                 <div className="text-xs text-zinc-500 mt-0.5">

@@ -22,6 +22,17 @@ module Api
 
           [ records, meta ]
         end
+
+        # Paginate `scope`, serialize with `serializer`, and render the standard
+        # `{ data:, meta: }` list response. Collapses the identical index-action
+        # boilerplate across the vocabulary/kanji/grammar list endpoints.
+        def render_paginated(scope, serializer:, order:, default_per:, max_per:)
+          records, meta = paginate(scope, order: order, default_per: default_per, max_per: max_per)
+          render json: {
+            data: serializer.new(records).serializable_hash[:data],
+            meta: meta
+          }
+        end
       end
     end
   end

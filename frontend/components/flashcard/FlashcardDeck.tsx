@@ -17,12 +17,13 @@ import { streamSSE } from "@/lib/sse";
 // Background prefetch: buffer a vocabulary SSE explain stream.
 async function fetchVocabExplainBuffered(
   vocabId: number,
-  token: string
+  token: string,
+  signal?: AbortSignal
 ): Promise<string> {
   let result = "";
   await streamSSE(
     `/api/v1/vocabularies/${vocabId}/explain`,
-    { token },
+    { token, signal },
     (payload) => {
       if (payload.error || payload.done) return true;
       result += payload.delta ?? "";
@@ -107,16 +108,19 @@ export function FlashcardDeck({ config, onBack }: Props) {
   // ── Prefetch AI explain for upcoming vocabulary cards ─────────────────────
   useEffect(() => {
     if (!session?.accessToken || queue.length === 0) return;
+    const ctrl = new AbortController();
     const upcoming = queue.slice(currentIndex + 1, currentIndex + 6);
     upcoming
       .filter((c): c is Extract<FlashCard, { cardType: "vocabulary" }> => c.cardType === "vocabulary")
       .forEach((card) => {
         queryClient.prefetchQuery({
           queryKey: ["vocab-explain", card.cardId],
-          queryFn: () => fetchVocabExplainBuffered(card.cardId, session.accessToken),
+          queryFn: () => fetchVocabExplainBuffered(card.cardId, session.accessToken, ctrl.signal),
           staleTime: 30 * 60 * 1000,
         });
       });
+    // Cancel in-flight prefetch streams when the card advances or the deck unmounts.
+    return () => ctrl.abort();
   }, [currentIndex, queue, session?.accessToken]); // eslint-disable-line react-hooks/exhaustive-deps
 
   // ── Grade handler ─────────────────────────────────────────────────────────

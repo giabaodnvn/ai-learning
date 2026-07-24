@@ -3,6 +3,8 @@
 module Api
   module V1
     class ReviewController < BaseController
+      self.not_found_label = "Progress"
+
       # GET /api/v1/review/queue
       # Returns cards due today from user_card_progresses (all types or ?type=vocabulary).
       # Previously used legacy user_vocabulary_progresses (always empty — migrated).
@@ -54,8 +56,6 @@ module Api
           interval:    progress.interval,
           ease_factor: progress.ease_factor.to_f
         }
-      rescue ActiveRecord::RecordNotFound
-        render_not_found("Progress")
       rescue ArgumentError
         render json: { error: "quality không hợp lệ" }, status: :unprocessable_entity
       end

@@ -1,8 +1,8 @@
 "use client";
 
-import { useState, useRef } from "react";
-import { streamSSE } from "@/lib/sse";
+import { useState } from "react";
 import { renderMarkdown } from "@/lib/markdown";
+import { useSSEStream } from "@/hooks/useSSEStream";
 
 const TOPICS = [
   "Tự giới thiệu bản thân",
@@ -20,12 +20,12 @@ interface Props {
 }
 
 export function WritingEditor({ onSaved }: Props = {}) {
-  const [text,      setText]      = useState("");
-  const [topic,     setTopic]     = useState("");
-  const [feedback,  setFeedback]  = useState("");
-  const [streaming, setStreaming] = useState(false);
-  const [error,     setError]     = useState<string | null>(null);
-  const abortRef = useRef<AbortController | null>(null);
+  const [text,  setText]  = useState("");
+  const [topic, setTopic] = useState("");
+  const { content: feedback, streaming, error, start, reset } = useSSEStream({
+    onDone:       () => onSaved?.(),
+    errorMessage: () => "AI gặp lỗi. Vui lòng thử lại.",
+  });
 
   const charCount  = text.length;
   const MAX_CHARS  = 2000;
@@ -36,51 +36,14 @@ export function WritingEditor({ onSaved }: Props = {}) {
     e.preventDefault();
     if (!canSubmit) return;
 
-    abortRef.current?.abort();
-    const ctrl = new AbortController();
-    abortRef.current = ctrl;
-
-    setFeedback("");
-    setError(null);
-    setStreaming(true);
-
-    try {
-      let accumulated = "";
-
-      await streamSSE(
-        "/api/v1/writing/feedback",
-        {
-          method: "POST",
-          body:   { text: text.trim(), topic: topic || undefined },
-          signal: ctrl.signal,
-        },
-        (payload) => {
-          if (payload.error) {
-            setError("AI gặp lỗi. Vui lòng thử lại.");
-            return true;
-          }
-          if (payload.delta) {
-            accumulated += payload.delta;
-            setFeedback(accumulated);
-          }
-          if (payload.done) {
-            onSaved?.();
-            return true;
-          }
-        },
-      );
-    } catch (err) {
-      if ((err as Error)?.name !== "AbortError") setError("Mất kết nối. Vui lòng thử lại.");
-    } finally {
-      setStreaming(false);
-    }
+    await start("/api/v1/writing/feedback", {
+      method: "POST",
+      body:   { text: text.trim(), topic: topic || undefined },
+    });
   }
 
   function handleReset() {
-    abortRef.current?.abort();
-    setFeedback("");
-    setError(null);
-    setStreaming(false);
+    reset();
     setText("");
     setTopic("");
   }

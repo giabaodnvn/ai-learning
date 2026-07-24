@@ -215,13 +215,7 @@ module Api
         card = source_model(card_type).find_by(id: card_id)
         return render json: { error: "#{card_type} not found" }, status: :not_found unless card
 
-        progress = current_user.user_card_progresses.find_or_initialize_by(
-          card_type: card_type, card_id: card_id
-        )
-        if progress.new_record?
-          progress.assign_attributes(SrsService.initial_state.merge(jlpt_level: card.jlpt_level))
-        end
-        progress.update!(learned: learned)
+        progress = set_learned!(card_type, card_id, card, learned)
 
         render json: { learned: progress.learned }
       end
@@ -241,13 +235,7 @@ module Api
           card = source_model(ct).find_by(id: cid)
           next unless card
 
-          progress = current_user.user_card_progresses.find_or_initialize_by(
-            card_type: ct, card_id: cid
-          )
-          if progress.new_record?
-            progress.assign_attributes(SrsService.initial_state.merge(jlpt_level: card.jlpt_level))
-          end
-          progress.update!(learned: learned)
+          progress = set_learned!(ct, cid, card, learned)
           { card_type: ct, card_id: cid, learned: progress.learned }
         end
 
@@ -255,6 +243,25 @@ module Api
       end
 
       private
+
+      # Set the learned flag on a card's progress row, creating it with the
+      # initial SRS state if absent. Retries once on a concurrent first-insert
+      # collision (uq_user_card unique index) — mirrors SrsReviewService.apply!
+      # — so two simultaneous writes stack instead of raising a 500.
+      def set_learned!(card_type, card_id, card, learned)
+        attempts = 0
+        begin
+          progress = UserCardProgress.find_or_build_for(
+            current_user, card_type: card_type, card_id: card_id, jlpt_level: card.jlpt_level
+          )
+          progress.update!(learned: learned)
+          progress
+        rescue ActiveRecord::RecordNotUnique
+          attempts += 1
+          raise if attempts >= 2
+          retry
+        end
+      end
 
       # ── Model helpers ────────────────────────────────────────────────────────
 

@@ -1,9 +1,8 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import { useSession } from "next-auth/react";
+import { useEffect } from "react";
 import { useQueryClient } from "@tanstack/react-query";
-import { streamSSE } from "@/lib/sse";
+import { useSSEStream } from "@/hooks/useSSEStream";
 
 interface Props {
   vocabId: number;
@@ -12,57 +11,38 @@ interface Props {
   onClose: () => void;
 }
 
+const EXPLAIN_ERROR = "Không tải được giải thích. Vui lòng thử lại.";
+
 export function ExplainPanel({ vocabId, word, open, onClose }: Props) {
-  const { data: session } = useSession();
   const queryClient = useQueryClient();
-  const [content, setContent] = useState("");
-  const [loading, setLoading] = useState(false);
+
+  const { content, streaming, error, start, reset } = useSSEStream({
+    onDone: (full) => {
+      // Populate React Query cache so re-opens are instant.
+      if (full) queryClient.setQueryData(["vocab-explain", vocabId], full);
+    },
+    errorMessage: () => EXPLAIN_ERROR,
+    networkError: EXPLAIN_ERROR,
+  });
+
+  // Prefetched / cached explanation for this word, if any — read (not
+  // subscribed) so an instant re-open doesn't re-stream. Not in the effect deps
+  // on purpose: onDone writes this cache, and we don't want that write to
+  // re-run the effect and reset the just-streamed content.
+  const cached = queryClient.getQueryData<string>(["vocab-explain", vocabId]);
 
   useEffect(() => {
     if (!open) return;
+    if (queryClient.getQueryData<string>(["vocab-explain", vocabId])) return;
 
-    // Use prefetched / cached data if available — instant display
-    const cached = queryClient.getQueryData<string>(["vocab-explain", vocabId]);
-    if (cached) {
-      setContent(cached);
-      return;
-    }
-
-    // Stream fresh from server
-    setContent("");
-    setLoading(true);
-    let buffer = "";
-    const ctrl = new AbortController();
-
-    (async () => {
-      try {
-        await streamSSE(
-          `/api/v1/vocabularies/${vocabId}/explain`,
-          { token: session?.accessToken, signal: ctrl.signal },
-          (payload) => {
-            if (payload.error || payload.done) return true;
-            buffer += payload.delta ?? "";
-            setContent(buffer);
-          },
-        );
-
-        // Populate React Query cache so re-opens are instant
-        if (buffer) {
-          queryClient.setQueryData(["vocab-explain", vocabId], buffer);
-        }
-      } catch {
-        // Ignore abort / network errors
-      } finally {
-        setLoading(false);
-      }
-    })();
-
-    return () => {
-      ctrl.abort();
-    };
-  }, [open, vocabId]); // eslint-disable-line react-hooks/exhaustive-deps
+    start(`/api/v1/vocabularies/${vocabId}/explain`);
+    return () => reset();
+  }, [open, vocabId, start, reset, queryClient]);
 
   if (!open) return null;
+
+  const displayContent = cached ?? content;
+  const loading = streaming;
 
   return (
     <div className="fixed inset-0 z-50 flex flex-col justify-end">
@@ -107,7 +87,12 @@ export function ExplainPanel({ vocabId, word, open, onClose }: Props) {
 
         {/* Scrollable content */}
         <div className="flex-1 overflow-y-auto px-5 py-4 min-h-0">
-          {loading && !content && (
+          {error && !displayContent && (
+            <p className="rounded-lg border border-red-200 bg-red-50 px-3 py-2 text-sm text-red-700">
+              {error}
+            </p>
+          )}
+          {loading && !displayContent && (
             <div className="space-y-2.5 py-2">
               {[...Array(7)].map((_, i) => (
                 <div
@@ -118,9 +103,9 @@ export function ExplainPanel({ vocabId, word, open, onClose }: Props) {
               ))}
             </div>
           )}
-          {content && (
+          {displayContent && (
             <div className="text-sm leading-relaxed text-zinc-700 whitespace-pre-wrap pb-6">
-              {content}
+              {displayContent}
             </div>
           )}
         </div>

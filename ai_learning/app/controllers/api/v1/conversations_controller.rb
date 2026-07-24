@@ -5,6 +5,8 @@ module Api
     class ConversationsController < BaseController
       include Api::V1::Concerns::SseStreamable
 
+      self.not_found_label = "Conversation"
+
       # GET /api/v1/conversations
       # Returns the 20 most-recently-updated sessions for the current user.
       def index
@@ -38,8 +40,6 @@ module Api
       def show
         session = find_session
         render json: session_detail(session)
-      rescue ActiveRecord::RecordNotFound
-        render_not_found("Conversation")
       end
 
       # POST /api/v1/conversations/:id/send_message  (SSE)
@@ -92,16 +92,12 @@ module Api
                                     translation_vi: parsed[:translation_vi] }).to_json}\n\n")
           stream.write("data: #{({ type: "done" }).to_json}\n\n")
         end
-      rescue ActiveRecord::RecordNotFound
-        render_not_found("Conversation")
       end
 
       # DELETE /api/v1/conversations/:id
       def destroy
         find_session.destroy!
         head :no_content
-      rescue ActiveRecord::RecordNotFound
-        render_not_found("Conversation")
       end
 
       private

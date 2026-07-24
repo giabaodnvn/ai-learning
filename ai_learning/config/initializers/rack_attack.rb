@@ -57,19 +57,7 @@ class Rack::Attack
     next unless AI_PATHS.any? { |prefix| req.path.start_with?(prefix) }
 
     token = req.get_header("HTTP_AUTHORIZATION")&.split(" ")&.last
-    next unless token
-
-    begin
-      payload = JWT.decode(
-        token,
-        ENV.fetch("DEVISE_JWT_SECRET_KEY"),
-        true,
-        algorithms: [ "HS256" ]
-      ).first
-      payload["sub"]
-    rescue JWT::DecodeError
-      nil
-    end
+    JwtDecoder.decode_safe(token)&.dig("sub")
   end
 
   # ── Throttled response with Retry-After + exponential backoff headers ─────

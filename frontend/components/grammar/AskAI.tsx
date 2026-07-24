@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
-import { streamSSE } from "@/lib/sse";
+import { useSSEStream } from "@/hooks/useSSEStream";
 
 interface Message {
   role: "user" | "assistant";
@@ -16,60 +16,31 @@ interface AskAIProps {
 export default function AskAI({ grammarPointId, pattern }: AskAIProps) {
   const [messages, setMessages] = useState<Message[]>([]);
   const [input,    setInput]    = useState("");
-  const [pending,  setPending]  = useState<Message[] | null>(null);
   const bottomRef = useRef<HTMLDivElement>(null);
-  const abortRef  = useRef<AbortController | null>(null);
 
-  // Scroll to bottom on new content
+  const { content, streaming, error, start } = useSSEStream({
+    onDone: (full) => setMessages((prev) => [...prev, { role: "assistant", content: full }]),
+    errorMessage: () => "Đã có lỗi khi hỏi AI. Vui lòng thử lại.",
+    networkError: "Mất kết nối. Vui lòng thử lại.",
+  });
+
+  // Scroll to bottom as the conversation (and the streaming reply) grows.
   useEffect(() => {
     bottomRef.current?.scrollIntoView({ behavior: "smooth" });
-  }, [messages]);
-
-  // Abort any in-flight stream on unmount
-  useEffect(() => () => abortRef.current?.abort(), []);
+  }, [messages, content, streaming]);
 
   function handleSend(e: React.FormEvent) {
     e.preventDefault();
     const trimmed = input.trim();
-    if (!trimmed || pending !== null) return;
+    if (!trimmed || streaming) return;
 
-    const userMsg: Message = { role: "user", content: trimmed };
-    const nextMessages = [...messages, userMsg];
-
-    setPending(nextMessages);
+    const nextMessages: Message[] = [...messages, { role: "user", content: trimmed }];
+    setMessages(nextMessages);
     setInput("");
-    triggerAsk(nextMessages);
-  }
-
-  async function triggerAsk(msgs: Message[]) {
-    abortRef.current?.abort();
-    const ctrl = new AbortController();
-    abortRef.current = ctrl;
-    let accumulated = "";
-
-    try {
-      // Show typing indicator while streaming
-      setMessages([...msgs, { role: "assistant", content: "" }]);
-
-      await streamSSE(
-        `/api/v1/grammar_points/${grammarPointId}/ask`,
-        { method: "POST", body: { messages: msgs }, signal: ctrl.signal },
-        (payload) => {
-          if (payload.error) throw new Error(payload.error);
-          if (payload.delta) {
-            accumulated += payload.delta;
-            setMessages([...msgs, { role: "assistant", content: accumulated }]);
-          }
-          if (payload.done) return true;
-        },
-      );
-    } catch (err) {
-      if ((err as Error)?.name === "AbortError") return;
-      const msg = err instanceof Error ? err.message : "Lỗi không xác định";
-      setMessages([...msgs, { role: "assistant", content: `⚠️ ${msg}` }]);
-    } finally {
-      setPending(null);
-    }
+    start(`/api/v1/grammar_points/${grammarPointId}/ask`, {
+      method: "POST",
+      body: { messages: nextMessages },
+    });
   }
 
   return (
@@ -94,8 +65,16 @@ export default function AskAI({ grammarPointId, pattern }: AskAIProps) {
                   : "bg-zinc-100 text-zinc-800"
               }`}
             >
-              {msg.content === "" ? (
-                /* Typing indicator */
+              {msg.content}
+            </div>
+          </div>
+        ))}
+
+        {/* Live streaming reply — typing indicator until the first delta. */}
+        {streaming && (
+          <div className="flex justify-start">
+            <div className="max-w-[85%] rounded-2xl px-4 py-2 text-sm leading-relaxed bg-zinc-100 text-zinc-800">
+              {content === "" ? (
                 <span className="flex gap-1 items-center py-1">
                   {[0, 1, 2].map((n) => (
                     <span
@@ -106,11 +85,19 @@ export default function AskAI({ grammarPointId, pattern }: AskAIProps) {
                   ))}
                 </span>
               ) : (
-                msg.content
+                content
               )}
             </div>
           </div>
-        ))}
+        )}
+
+        {error && !streaming && (
+          <div className="flex justify-start">
+            <div className="max-w-[85%] rounded-2xl px-4 py-2 text-sm leading-relaxed bg-zinc-100 text-zinc-800">
+              ⚠️ {error}
+            </div>
+          </div>
+        )}
 
         <div ref={bottomRef} />
       </div>
@@ -121,12 +108,12 @@ export default function AskAI({ grammarPointId, pattern }: AskAIProps) {
           value={input}
           onChange={(e) => setInput(e.target.value)}
           placeholder="Hỏi về ngữ pháp này..."
-          disabled={pending !== null}
+          disabled={streaming}
           className="flex-1 rounded-lg border border-zinc-300 px-3 py-2 text-sm outline-none focus:border-zinc-500 focus:ring-1 focus:ring-zinc-500 disabled:opacity-50"
         />
         <button
           type="submit"
-          disabled={!input.trim() || pending !== null}
+          disabled={!input.trim() || streaming}
           className="rounded-lg bg-zinc-900 px-4 py-2 text-sm font-medium text-white hover:bg-zinc-700 disabled:opacity-50 transition-colors"
         >
           Gửi

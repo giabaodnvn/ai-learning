@@ -6,15 +6,7 @@ import { useSession } from "next-auth/react";
 import { useCurrentUser } from "@/hooks/useCurrentUser";
 import { api } from "@/lib/api";
 import { JLPT_LEVELS as LEVELS } from "@/types/quiz";
-
-const ROLES = [
-  { value: "tutor",                   label: "Gia sư tiếng Nhật",     icon: "👩‍🏫", desc: "Luyện tập tự do với gia sư kiên nhẫn" },
-  { value: "convenience_store_clerk", label: "Cửa hàng tiện lợi",     icon: "🏪", desc: "Mua sắm tại コンビニ Nhật Bản" },
-  { value: "restaurant_staff",        label: "Nhà hàng Nhật",         icon: "🍜", desc: "Đặt bàn, gọi món tại nhà hàng" },
-  { value: "office_colleague",        label: "Đồng nghiệp văn phòng", icon: "💼", desc: "Giao tiếp nơi làm việc tại Nhật" },
-  { value: "hotel_staff",             label: "Khách sạn",             icon: "🏨", desc: "Check-in, hỏi thông tin tại khách sạn" },
-  { value: "airport_staff",           label: "Sân bay",               icon: "✈️", desc: "Làm thủ tục, hỏi đường tại sân bay" },
-] as const;
+import { CONVERSATION_ROLES as ROLES } from "@/lib/roles";
 
 interface SessionSummary {
   id: number;
@@ -48,6 +40,10 @@ export default function ConversationPage() {
     try {
       const res = await api.get("/api/v1/conversations");
       setHistory(res.data);
+    } catch {
+      // Non-401 failure (401 is handled globally by the api interceptor).
+      // Leave the history empty rather than throwing an unhandled rejection.
+      setHistory([]);
     } finally {
       setLoadingHistory(false);
     }

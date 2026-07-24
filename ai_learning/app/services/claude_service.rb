@@ -66,6 +66,7 @@ class ClaudeService
   rescue Net::ReadTimeout
     raise TimeoutError, "Gemini request timed out"
   rescue => e
+    log_unexpected(e)
     raise ServiceError, "Gemini error: #{e.message}"
   end
 
@@ -99,6 +100,7 @@ class ClaudeService
   rescue Net::ReadTimeout
     raise TimeoutError, "Gemini request timed out"
   rescue => e
+    log_unexpected(e)
     raise ServiceError, "Gemini error: #{e.message}"
   end
 
@@ -111,6 +113,16 @@ class ClaudeService
 
     def api_key
       ENV.fetch("GEMINI_API_KEY")
+    end
+
+    # An unexpected (non-network) error is almost always a bug in our own code
+    # or a malformed upstream response. Log it before it is masked as a generic
+    # ServiceError (503) so it stays diagnosable instead of silently vanishing.
+    def log_unexpected(error)
+      Rails.logger.error(
+        "[ClaudeService] unexpected #{error.class}: #{error.message}\n" \
+        "#{Array(error.backtrace).first(5).join("\n")}"
+      )
     end
 
     # Persist token usage asynchronously (non-blocking).

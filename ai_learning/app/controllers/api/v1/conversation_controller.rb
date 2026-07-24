@@ -19,15 +19,13 @@ module Api
         )
 
         stream_sse do |stream|
-          ClaudeService.chat(
+          stream_ai_reply(
+            stream,
             messages:   messages,
             system:     system_prompt,
             model:      ClaudeService::CONVERSATION_MODEL,
             log_usage:  { feature: "conversation", user_id: current_user.id }
-          ) do |delta|
-            write_sse(stream, delta: delta)
-          end
-          write_sse(stream, delta: "", done: true)
+          )
         end
       end
     end

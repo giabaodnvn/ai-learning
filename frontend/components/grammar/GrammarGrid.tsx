@@ -2,10 +2,11 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { useQuery } from "@tanstack/react-query";
+import { useQuery, keepPreviousData } from "@tanstack/react-query";
 import { api } from "@/lib/api";
 import { Pagination } from "@/components/Pagination";
-import { JLPT_LEVELS as LEVELS, type JlptLevel as Level } from "@/types/quiz";
+import { LevelTabs } from "@/components/shared/LevelTabs";
+import { type JlptLevel as Level } from "@/types/quiz";
 
 interface GrammarPoint {
   id: string;
@@ -36,6 +37,7 @@ export default function GrammarGrid() {
   const { data, isLoading, isError } = useQuery({
     queryKey: ["grammar_points", level, page],
     queryFn:  () => fetchGrammarPoints(level, page),
+    placeholderData: keepPreviousData,
   });
 
   function handleLevelChange(l: Level) {
@@ -46,21 +48,7 @@ export default function GrammarGrid() {
   return (
     <div className="space-y-6">
       {/* Level tabs */}
-      <div className="flex gap-2 flex-wrap">
-        {LEVELS.map((l) => (
-          <button
-            key={l}
-            onClick={() => handleLevelChange(l)}
-            className={`rounded-full px-4 py-1.5 text-sm font-medium transition-colors ${
-              level === l
-                ? "bg-zinc-900 text-white"
-                : "border border-zinc-300 bg-white text-zinc-600 hover:bg-zinc-50"
-            }`}
-          >
-            {l.toUpperCase()}
-          </button>
-        ))}
-      </div>
+      <LevelTabs value={level} onChange={handleLevelChange} />
 
       {/* Meta */}
       {data && (

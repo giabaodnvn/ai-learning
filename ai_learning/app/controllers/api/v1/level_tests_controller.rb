@@ -3,6 +3,8 @@
 module Api
   module V1
     class LevelTestsController < BaseController
+      self.not_found_label = "LevelTest"
+
       NEXT_LEVEL = LevelTest::LEVEL_UP_MAP
 
       # GET /api/v1/level_tests?level=n5
@@ -48,8 +50,6 @@ module Api
           time_limit_min:  test.time_limit_min,
           sections:        sections_without_answers
         }
-      rescue ActiveRecord::RecordNotFound
-        render_not_found("LevelTest")
       end
 
       # POST /api/v1/level_tests/generate
@@ -85,13 +85,11 @@ module Api
         )
 
         render json: test_summary(test).merge(id: test.id), status: :created
-
-      rescue ClaudeService::RateLimitError
-        render json: { error: "rate_limit" }, status: :too_many_requests
-      rescue ClaudeService::TimeoutError
-        render json: { error: "timeout" }, status: :request_timeout
-      rescue ClaudeService::ServiceError => e
-        render json: { error: e.message }, status: :service_unavailable
+      rescue ActiveRecord::RecordInvalid => e
+        # AI returned syntactically valid JSON but with missing/blank fields
+        # (e.g. empty sections → total_questions 0). Surface as a ServiceError so
+        # it reuses the AI-error rescue (503) instead of leaking as a 500.
+        raise ClaudeService::ServiceError, "AI returned incomplete test data: #{e.message}"
       end
 
       # POST /api/v1/level_tests/:id/submit
@@ -143,9 +141,6 @@ module Api
           level_up:      level_up_info,
           sections:      sections_with_answers
         }
-
-      rescue ActiveRecord::RecordNotFound
-        render_not_found("LevelTest")
       end
 
       private

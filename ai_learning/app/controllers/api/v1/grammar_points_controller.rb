@@ -6,6 +6,8 @@ module Api
       include Api::V1::Concerns::SseStreamable
       include Api::V1::Concerns::Paginatable
 
+      self.not_found_label = "GrammarPoint"
+
       EXERCISE_TTL = 7 * 24 * 3600 # 7 days
 
       # GET /api/v1/grammar_points?level=n5&page=1&per_page=20
@@ -13,20 +15,13 @@ module Api
         level = params[:level].presence&.downcase
         scope = level ? GrammarPoint.by_level(level) : GrammarPoint.all
 
-        points, meta = paginate(scope, order: :id, default_per: 20, max_per: 50)
-
-        render json: {
-          data: GrammarPointSerializer.new(points).serializable_hash[:data],
-          meta: meta
-        }
+        render_paginated(scope, serializer: GrammarPointSerializer, order: :id, default_per: 20, max_per: 50)
       end
 
       # GET /api/v1/grammar_points/:id
       def show
         point = GrammarPoint.find(params[:id])
         render json: GrammarPointSerializer.new(point).serializable_hash
-      rescue ActiveRecord::RecordNotFound
-        render_not_found("GrammarPoint")
       end
 
       # POST /api/v1/grammar_points/:id/check_sentence
@@ -38,39 +33,21 @@ module Api
         level    = current_user.jlpt_level
 
         cache_key = "grammar_check:#{Digest::SHA256.hexdigest("#{sentence}:#{point.id}:#{level}")}"
-        cached    = redis.get(cache_key)
 
-        parsed_cache = begin
-          JSON.parse(cached) if cached
-        rescue JSON::ParserError
-          nil
-        end
-
-        result = parsed_cache || begin
+        result = AiCacheService.fetch_json(cache_key) do
           prompt = Prompts::GrammarCheckerPrompt.build(
             sentence:       sentence,
             target_grammar: point.pattern,
             user_level:     level
           )
-          raw  = ClaudeService.complete(
+          raw = ClaudeService.complete(
             prompt:    prompt,
             log_usage: { feature: "grammar_check", user_id: current_user.id }
           )
-          data = parse_ai_json(raw)
-          redis.setex(cache_key, AiCacheService::TTL, data.to_json)
-          data
+          parse_ai_json(raw)
         end
 
         render json: result
-      rescue ActiveRecord::RecordNotFound
-        render_not_found("GrammarPoint")
-      rescue ClaudeService::RateLimitError
-        render json: { error: "rate_limit" }, status: :too_many_requests
-      rescue ClaudeService::TimeoutError
-        render json: { error: "timeout" }, status: :request_timeout
-      rescue ClaudeService::ServiceError => e
-        Rails.logger.error "[GrammarPointsController] service error: #{e.message}"
-        render json: { error: "service_unavailable" }, status: :service_unavailable
       end
 
       # POST /api/v1/grammar_points/:id/generate_exercise
@@ -81,39 +58,21 @@ module Api
         level = current_user.jlpt_level
 
         cache_key = "grammar_exercise:#{point.id}:#{level}"
-        cached    = redis.get(cache_key)
 
-        parsed_cache = begin
-          JSON.parse(cached) if cached
-        rescue JSON::ParserError
-          nil
-        end
-
-        result = parsed_cache || begin
+        result = AiCacheService.fetch_json(cache_key, ttl: EXERCISE_TTL) do
           prompt = Prompts::ExerciseGeneratorPrompt.build(
             pattern:        point.pattern,
             explanation_vi: point.explanation_vi,
             user_level:     level
           )
-          raw  = ClaudeService.complete(
+          raw = ClaudeService.complete(
             prompt:    prompt,
             log_usage: { feature: "grammar_exercise", user_id: current_user.id }
           )
-          data = parse_ai_json(raw)
-          redis.setex(cache_key, EXERCISE_TTL, data.to_json)
-          data
+          parse_ai_json(raw)
         end
 
         render json: result
-      rescue ActiveRecord::RecordNotFound
-        render_not_found("GrammarPoint")
-      rescue ClaudeService::RateLimitError
-        render json: { error: "rate_limit" }, status: :too_many_requests
-      rescue ClaudeService::TimeoutError
-        render json: { error: "timeout" }, status: :request_timeout
-      rescue ClaudeService::ServiceError => e
-        Rails.logger.error "[GrammarPointsController] service error: #{e.message}"
-        render json: { error: "service_unavailable" }, status: :service_unavailable
       end
 
       # POST /api/v1/grammar_points/:id/ask  (SSE streaming)
@@ -132,18 +91,14 @@ module Api
         )
 
         stream_sse do |stream|
-          ClaudeService.chat(
+          stream_ai_reply(
+            stream,
             messages:  messages,
             system:    system_prompt,
             model:     ClaudeService::CONVERSATION_MODEL,
             log_usage: { feature: "grammar_ask", user_id: current_user.id }
-          ) do |delta|
-            write_sse(stream, delta: delta)
-          end
-          write_sse(stream, delta: "", done: true)
+          )
         end
-      rescue ActiveRecord::RecordNotFound
-        render_not_found("GrammarPoint")
       end
 
       # POST /api/v1/grammar_points/:id/generate_set
@@ -167,15 +122,6 @@ module Api
         data = parse_ai_json(raw)
 
         render json: { exercises: Array(data), grammar_point_id: point.id }
-      rescue ActiveRecord::RecordNotFound
-        render_not_found("GrammarPoint")
-      rescue ClaudeService::RateLimitError
-        render json: { error: "rate_limit" }, status: :too_many_requests
-      rescue ClaudeService::TimeoutError
-        render json: { error: "timeout" }, status: :request_timeout
-      rescue ClaudeService::ServiceError => e
-        Rails.logger.error "[GrammarPointsController] service error: #{e.message}"
-        render json: { error: "service_unavailable" }, status: :service_unavailable
       end
 
       # POST /api/v1/grammar_points/:id/complete_set
@@ -195,14 +141,9 @@ module Api
         else 0                             # again (<50%)
         end
 
-        progress = current_user.user_card_progresses
-                               .find_or_initialize_by(card_type: "grammar_point", card_id: point.id)
-
-        if progress.new_record?
-          progress.assign_attributes(
-            SrsService.initial_state.merge(jlpt_level: point.jlpt_level)
-          )
-        end
+        progress = UserCardProgress.find_or_build_for(
+          current_user, card_type: "grammar_point", card_id: point.id, jlpt_level: point.jlpt_level
+        )
 
         progress = SrsReviewService.apply!(user: current_user, progress: progress, grade: grade)
 
@@ -216,8 +157,6 @@ module Api
           total:         total,
           percentage:    (pct * 100).round(1)
         }
-      rescue ActiveRecord::RecordNotFound
-        render_not_found("GrammarPoint")
       end
 
       # GET /api/v1/grammar_points/:id/streak_info
@@ -226,8 +165,6 @@ module Api
         point = GrammarPoint.find(params[:id])
         streak = get_grammar_streak(current_user.id, point.id)
         render json: { streak_count: streak[:count], last_practiced: streak[:last_date] }
-      rescue ActiveRecord::RecordNotFound
-        render_not_found("GrammarPoint")
       end
 
       private
