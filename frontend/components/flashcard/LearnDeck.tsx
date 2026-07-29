@@ -7,6 +7,7 @@ import { mapRandomCard } from "@/lib/flashcard-utils";
 import type { LearnConfig, RandomCard } from "@/lib/flashcard-utils";
 import { FlashcardFront } from "./FlashcardFront";
 import { FlashcardBack } from "./FlashcardBack";
+import { LoadingCard } from "@/components/shared/LoadingCard";
 
 interface Props {
   config: LearnConfig;
@@ -50,9 +51,7 @@ export function LearnDeck({ config, onFinish, onBack }: Props) {
 
   if (isLoading) {
     return (
-      <div className="rounded-2xl border border-zinc-200 bg-white p-12 flex items-center justify-center">
-        <div className="h-8 w-8 animate-spin rounded-full border-2 border-zinc-300 border-t-zinc-800" />
-      </div>
+      <LoadingCard />
     );
   }
 

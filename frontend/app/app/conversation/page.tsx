@@ -1,8 +1,8 @@
 "use client";
 
-import { useState, useEffect, useCallback } from "react";
+import { useState } from "react";
 import { useRouter } from "next/navigation";
-import { useSession } from "next-auth/react";
+import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { useCurrentUser } from "@/hooks/useCurrentUser";
 import { api } from "@/lib/api";
 import { JLPT_LEVELS as LEVELS } from "@/types/quiz";
@@ -19,64 +19,50 @@ interface SessionSummary {
   preview: string | null;
 }
 
+const HISTORY_KEY = ["conversations"];
+
 export default function ConversationPage() {
-  const { data: session } = useSession();
   const { user } = useCurrentUser();
   const router = useRouter();
+  const queryClient = useQueryClient();
 
   const [selectedRole, setSelectedRole] = useState<string>("tutor");
-  const [selectedLevel, setSelectedLevel] = useState<string>("n5");
-  const [starting, setStarting] = useState(false);
-  const [history, setHistory] = useState<SessionSummary[]>([]);
-  const [loadingHistory, setLoadingHistory] = useState(true);
+  // null = follow the account level, which may still be loading.
+  const [levelOverride, setLevelOverride] = useState<string | null>(null);
+  const selectedLevel = levelOverride ?? user?.jlpt_level ?? "n5";
 
-  // Sync level with user's JLPT level once loaded
-  useEffect(() => {
-    if (user?.jlpt_level) setSelectedLevel(user.jlpt_level);
-  }, [user?.jlpt_level]);
-
-  const fetchHistory = useCallback(async () => {
-    if (!session?.accessToken) return;
-    try {
+  const { data: history = [], isLoading: loadingHistory } = useQuery<SessionSummary[]>({
+    queryKey: HISTORY_KEY,
+    queryFn: async () => {
       const res = await api.get("/api/v1/conversations");
-      setHistory(res.data);
-    } catch {
-      // Non-401 failure (401 is handled globally by the api interceptor).
-      // Leave the history empty rather than throwing an unhandled rejection.
-      setHistory([]);
-    } finally {
-      setLoadingHistory(false);
-    }
-  }, [session?.accessToken]);
+      return res.data;
+    },
+  });
 
-  useEffect(() => {
-    fetchHistory();
-  }, [fetchHistory]);
-
-  async function handleStart() {
-    if (!session?.accessToken || starting) return;
-    setStarting(true);
-    try {
+  const startMutation = useMutation({
+    mutationFn: async () => {
       const res = await api.post("/api/v1/conversations", {
         role: selectedRole,
         jlpt_level: selectedLevel,
       });
-      router.push(`/app/conversation/${res.data.id}`);
-    } catch {
-      setStarting(false);
-    }
-  }
+      return res.data as { id: number };
+    },
+    onSuccess: (created) => router.push(`/app/conversation/${created.id}`),
+  });
 
-  async function handleDelete(id: number, e: React.MouseEvent) {
+  const deleteMutation = useMutation({
+    mutationFn: (id: number) => api.delete(`/api/v1/conversations/${id}`),
+    onSuccess: (_res, id) => {
+      queryClient.setQueryData<SessionSummary[]>(HISTORY_KEY, (old) =>
+        (old ?? []).filter((s) => s.id !== id),
+      );
+    },
+  });
+
+  function handleDelete(id: number, e: React.MouseEvent) {
     e.preventDefault();
     e.stopPropagation();
-    if (!session?.accessToken) return;
-    try {
-      await api.delete(`/api/v1/conversations/${id}`);
-      setHistory((prev) => prev.filter((s) => s.id !== id));
-    } catch {
-      // silently ignore delete failure — item stays in list
-    }
+    deleteMutation.mutate(id);
   }
 
   return (
@@ -119,7 +105,7 @@ export default function ConversationPage() {
           {LEVELS.map((lv) => (
             <button
               key={lv}
-              onClick={() => setSelectedLevel(lv)}
+              onClick={() => setLevelOverride(lv)}
               className={`rounded-lg px-3 py-1 text-xs font-semibold transition-colors ${
                 selectedLevel === lv
                   ? "bg-zinc-900 text-white"
@@ -132,11 +118,11 @@ export default function ConversationPage() {
         </div>
 
         <button
-          onClick={handleStart}
-          disabled={starting}
+          onClick={() => startMutation.mutate()}
+          disabled={startMutation.isPending}
           className="w-full rounded-lg bg-zinc-900 px-4 py-2.5 text-sm font-medium text-white hover:bg-zinc-700 disabled:opacity-50 transition-colors"
         >
-          {starting ? "Đang tạo..." : "Bắt đầu hội thoại"}
+          {startMutation.isPending ? "Đang tạo..." : "Bắt đầu hội thoại"}
         </button>
       </div>
 

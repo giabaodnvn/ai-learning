@@ -6,6 +6,19 @@ module Api
       module SseStreamable
         extend ActiveSupport::Concern
 
+        # Failure → the `error` code the client receives, and how loudly to log.
+        # Order matters: the first matching class wins.
+        ERROR_CODES = [
+          [ ClaudeService::RateLimitError, "rate_limit",   :warn  ],
+          [ ClaudeService::TimeoutError,   "timeout",      :warn  ],
+          [ ClaudeService::ServiceError,   "server_error", :error ]
+        ].freeze
+
+        # Anything else raised after streaming started (a failed create!, a
+        # Redis outage): the response is already committed so no status can be
+        # sent, only a terminal error event.
+        FALLBACK_ERROR = [ nil, "server_error", :error ].freeze
+
         included do
           include ActionController::Live
         end
@@ -32,24 +45,24 @@ module Api
           yield response.stream
         rescue ActionController::Live::ClientDisconnected
           # Client navigated away — normal, not an error
-        rescue ClaudeService::RateLimitError => e
-          response.stream.write("data: #{({ delta: '', done: true, error: 'rate_limit' }).to_json}\n\n") rescue nil
-          Rails.logger.warn "[SSE] Rate limit: #{e.message}"
-        rescue ClaudeService::TimeoutError => e
-          response.stream.write("data: #{({ delta: '', done: true, error: 'timeout' }).to_json}\n\n") rescue nil
-          Rails.logger.warn "[SSE] Timeout: #{e.message}"
-        rescue ClaudeService::ServiceError => e
-          response.stream.write("data: #{({ delta: '', done: true, error: 'server_error' }).to_json}\n\n") rescue nil
-          Rails.logger.error "[SSE] Service error: #{e.message}"
         rescue => e
-          # A non-AI error raised after streaming started (e.g. a failed DB
-          # create!, a Redis outage). The response is already committed, so we
-          # cannot render an error status — emit a terminal error event instead
-          # so the client stops waiting rather than silently truncating.
-          response.stream.write("data: #{({ delta: '', done: true, error: 'server_error' }).to_json}\n\n") rescue nil
-          Rails.logger.error "[SSE] Unexpected #{e.class}: #{e.message}"
+          emit_stream_error(e)
         ensure
           response.stream.close
+        end
+
+        # Tell the client the stream is over and why, so it stops waiting
+        # instead of seeing a silently truncated response.
+        def emit_stream_error(error)
+          _klass, code, level = ERROR_CODES.find { |klass, _, _| error.is_a?(klass) } || FALLBACK_ERROR
+
+          begin
+            write_sse(response.stream, delta: "", done: true, error: code)
+          rescue StandardError
+            # The socket is already gone; the log below is all we can do.
+          end
+
+          Rails.logger.public_send(level, "[SSE] #{error.class}: #{error.message}")
         end
 
         # Stream a plain-text AI reply: forward each delta as an SSE event, then
@@ -62,12 +75,19 @@ module Api
           write_sse(stream, delta: "", done: true)
         end
 
-        # Write a single SSE event.
+        # Write a single SSE event with the plain-text streaming shape.
         # Format: data: {"delta":"...","done":false}\n\n
         def write_sse(stream, delta:, done: false, error: nil, extra: nil)
           payload = { delta: delta, done: done }
           payload[:error] = error if error
           payload.merge!(extra) if extra.is_a?(Hash)
+          write_event(stream, payload)
+        end
+
+        # Write an arbitrary JSON payload as one SSE event. Used by endpoints
+        # that speak a typed protocol ({type: "delta"|"correction"|"done"})
+        # rather than the delta/done shape above.
+        def write_event(stream, payload)
           stream.write("data: #{payload.to_json}\n\n")
         end
       end

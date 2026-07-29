@@ -1,25 +1,23 @@
 "use client";
 
 import { useState } from "react";
-import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
-import { api } from "@/lib/api";
 import { useCurrentUser } from "@/hooks/useCurrentUser";
+import { useGeneratedContent } from "@/hooks/useGeneratedContent";
 import { ExerciseCard, type ExerciseData } from "@/components/listening/ExerciseCard";
 import { PlayerView } from "@/components/listening/PlayerView";
 import { ListeningQuiz } from "@/components/listening/ListeningQuiz";
 import { ListeningResult } from "@/components/listening/ListeningResult";
-import { ErrorBoundary } from "@/components/ErrorBoundary";
-import { AIStreamFallback } from "@/components/AIStreamFallback";
-import { BackButton } from "@/components/BackButton";
+import { StageView } from "@/components/shared/StageView";
+import { CardSkeletonGrid } from "@/components/shared/CardSkeletonGrid";
+import { GenerateForm, type TopicOption } from "@/components/shared/GenerateForm";
+import { LevelTabs } from "@/components/shared/LevelTabs";
 import type { AnswerResult } from "@/types/quiz";
-import { JLPT_LEVELS } from "@/types/quiz";
-
-// ---------------------------------------------------------------------------
-// Types
-// ---------------------------------------------------------------------------
+import { ErrorBanner } from "@/components/shared/ErrorBanner";
+import { EmptyState } from "@/components/shared/EmptyState";
 
 type View = "list" | "player" | "quiz" | "result";
-const TOPICS = [
+
+const TOPICS: TopicOption[] = [
   { label: "Thông báo ga tàu", value: "駅でのアナウンス" },
   { label: "Hội thoại quán cà phê", value: "カフェでの会話" },
   { label: "Hội thoại điện thoại", value: "電話での会話" },
@@ -30,76 +28,32 @@ const TOPICS = [
   { label: "Du lịch", value: "旅行" },
 ];
 
-// ---------------------------------------------------------------------------
-// Page
-// ---------------------------------------------------------------------------
-
 export default function ListeningPage() {
   const { user } = useCurrentUser();
-  const queryClient = useQueryClient();
 
-  const [view, setView] = useState<View>("list");
-  const [selected, setSelected] = useState<ExerciseData | null>(null);
+  const [view,        setView]        = useState<View>("list");
+  const [selected,    setSelected]    = useState<ExerciseData | null>(null);
   const [quizResults, setQuizResults] = useState<AnswerResult[]>([]);
-  const [speechRate, setSpeechRate] = useState(1.0);
-  const [quizScore, setQuizScore] = useState(0);
-  const [quizTotal, setQuizTotal] = useState(0);
-  const [errorKey,  setErrorKey]  = useState(0);
-
-  // Generate form state
-  const [topic, setTopic] = useState("");
-  const [customTopic, setCustomTopic] = useState("");
-  const [jlptLevel, setJlptLevel] = useState("");
+  const [speechRate,  setSpeechRate]  = useState(1.0);
+  const [quizScore,   setQuizScore]   = useState(0);
+  const [quizTotal,   setQuizTotal]   = useState(0);
+  const [jlptLevel,   setJlptLevel]   = useState("");
 
   const effectiveLevel = jlptLevel || user?.jlpt_level || "n5";
 
-  // -------------------------------------------------------------------------
-  // Exercise list — keyed on level so a slow earlier response can't overwrite
-  // a newer one (the previous manual fetch had that race).
-  // -------------------------------------------------------------------------
-  const { data: exercises = [], isLoading: loadingList, isError } = useQuery<ExerciseData[]>({
-    queryKey: ["listeningExercises", effectiveLevel],
-    queryFn: async () => {
-      const res = await api.get("/api/v1/listening_exercises", { params: { level: effectiveLevel } });
-      return res.data;
-    },
-    enabled: view === "list",
-  });
-  const listError = isError ? "Không thể tải danh sách bài luyện nghe." : null;
-
-  // -------------------------------------------------------------------------
-  // Generate new exercise
-  // -------------------------------------------------------------------------
-  const generateMutation = useMutation({
-    mutationFn: async (finalTopic: string) => {
-      const res = await api.post("/api/v1/listening_exercises/generate", {
-        jlpt_level: effectiveLevel,
-        topic: finalTopic,
-      });
-      return res.data as ExerciseData;
-    },
-    onSuccess: (newExercise) => {
-      queryClient.setQueryData<ExerciseData[]>(
-        ["listeningExercises", effectiveLevel],
-        (old) => [newExercise, ...(old ?? [])],
-      );
-      setSelected(newExercise);
+  const exercises = useGeneratedContent<ExerciseData>({
+    resource: "listeningExercises",
+    path: "/api/v1/listening_exercises",
+    level: effectiveLevel,
+    listEnabled: view === "list",
+    onGenerated: (exercise) => {
+      setSelected(exercise);
       setView("player");
     },
+    listErrorMessage: "Không thể tải danh sách bài luyện nghe.",
+    generateErrorMessage: "Không thể tạo bài luyện nghe. Vui lòng thử lại.",
   });
-  const generating = generateMutation.isPending;
-  const genError = generateMutation.isError ? "Không thể tạo bài luyện nghe. Vui lòng thử lại." : null;
 
-  function handleGenerate(e: React.FormEvent) {
-    e.preventDefault();
-    const finalTopic = customTopic.trim() || topic;
-    if (!finalTopic) return;
-    generateMutation.mutate(finalTopic);
-  }
-
-  // -------------------------------------------------------------------------
-  // Navigation helpers
-  // -------------------------------------------------------------------------
   function openExercise(exercise: ExerciseData) {
     setSelected(exercise);
     setQuizResults([]);
@@ -123,79 +77,59 @@ export default function ListeningPage() {
     setView("list");
   }
 
-  function listenAgain() {
-    setView("player");
-  }
-
-  // -------------------------------------------------------------------------
-  // Render
-  // -------------------------------------------------------------------------
-
   // --- Result screen ---
   if (view === "result" && selected) {
     return (
-      <div className="space-y-4">
-        <BackButton onClick={goToList} label="Danh sách bài luyện nghe" />
+      <StageView
+        backLabel="Danh sách bài luyện nghe"
+        onBack={goToList}
+        errorMessage="Không thể hiển thị kết quả. Vui lòng thử lại."
+      >
         <ListeningResult
           exercise={selected}
           results={quizResults}
           score={quizScore}
           total={quizTotal}
-          onListenAgain={listenAgain}
+          onListenAgain={() => setView("player")}
           onNewExercise={goToList}
         />
-      </div>
+      </StageView>
     );
   }
 
   // --- Quiz screen ---
   if (view === "quiz" && selected) {
     return (
-      <div className="space-y-4">
-        <BackButton onClick={() => setView("player")} label="Quay lại nghe" />
-        <ErrorBoundary
-          key={errorKey}
-          fallback={
-            <AIStreamFallback
-              errorMessage="Không thể tải câu hỏi. Vui lòng thử lại."
-              onRetry={() => setErrorKey((k) => k + 1)}
-            />
-          }
-        >
-          <ListeningQuiz
-            exercise={selected}
-            speechRate={speechRate}
-            onFinish={finishQuiz}
-          />
-        </ErrorBoundary>
-      </div>
+      <StageView
+        backLabel="Quay lại nghe"
+        onBack={() => setView("player")}
+        errorMessage="Không thể tải câu hỏi. Vui lòng thử lại."
+      >
+        <ListeningQuiz
+          exercise={selected}
+          speechRate={speechRate}
+          onFinish={finishQuiz}
+        />
+      </StageView>
     );
   }
 
   // --- Player screen ---
   if (view === "player" && selected) {
     return (
-      <div className="space-y-4">
-        <BackButton onClick={goToList} label="Danh sách bài luyện nghe" />
-        <ErrorBoundary
-          key={errorKey}
-          fallback={
-            <AIStreamFallback
-              errorMessage="Không thể tải bài luyện nghe. Vui lòng thử lại."
-              onRetry={() => setErrorKey((k) => k + 1)}
-            />
-          }
-        >
-          <PlayerView exercise={selected} onStartQuiz={startQuiz} />
-        </ErrorBoundary>
-      </div>
+      <StageView
+        backLabel="Danh sách bài luyện nghe"
+        onBack={goToList}
+        errorMessage="Không thể tải bài luyện nghe. Vui lòng thử lại."
+      >
+        <PlayerView exercise={selected} onStartQuiz={startQuiz} />
+      </StageView>
     );
   }
 
   // --- List screen ---
   return (
     <div className="space-y-6">
-      {/* Header */}
       <div>
         <h1 className="text-xl font-bold text-zinc-900">Nghe hiểu</h1>
         <p className="mt-1 text-sm text-zinc-500">
@@ -203,129 +137,43 @@ export default function ListeningPage() {
         </p>
       </div>
 
-      {/* Generate form */}
-      <form
-        onSubmit={handleGenerate}
-        className="rounded-2xl border border-zinc-200 bg-white p-5 space-y-4"
-      >
-        <h2 className="text-sm font-semibold text-zinc-700">Tạo bài luyện nghe mới</h2>
+      <GenerateForm
+        title="Tạo bài luyện nghe mới"
+        topics={TOPICS}
+        customPlaceholder="e.g. 仕事の会議、医者との会話..."
+        level={jlptLevel}
+        onLevelChange={setJlptLevel}
+        accountLevel={user?.jlpt_level}
+        submitting={exercises.generating}
+        submitLabel="Tạo bài luyện nghe"
+        submittingLabel="Đang tạo bài luyện nghe…"
+        error={exercises.generateError}
+        onSubmit={exercises.generate}
+      />
 
-        <div className="grid grid-cols-1 gap-3 sm:grid-cols-3">
-          {/* Topic preset */}
-          <div>
-            <label className="block text-xs font-medium text-zinc-600 mb-1">
-              Chủ đề
-            </label>
-            <select
-              value={topic}
-              onChange={(e) => setTopic(e.target.value)}
-              className="w-full rounded-lg border border-zinc-300 px-3 py-2 text-sm bg-white outline-none focus:border-zinc-500"
-            >
-              <option value="">-- Chọn chủ đề --</option>
-              {TOPICS.map((t) => (
-                <option key={t.value} value={t.value}>
-                  {t.label}
-                </option>
-              ))}
-            </select>
-          </div>
+      <LevelTabs
+        value={effectiveLevel}
+        size="sm"
+        label="Lọc theo trình độ:"
+        onChange={(l) => setJlptLevel(l === effectiveLevel && jlptLevel ? "" : l)}
+      />
 
-          {/* Custom topic */}
-          <div>
-            <label className="block text-xs font-medium text-zinc-600 mb-1">
-              Hoặc nhập tự do
-            </label>
-            <input
-              type="text"
-              value={customTopic}
-              onChange={(e) => setCustomTopic(e.target.value)}
-              placeholder="e.g. 仕事の会議、医者との会話..."
-              className="w-full rounded-lg border border-zinc-300 px-3 py-2 text-sm outline-none focus:border-zinc-500"
-            />
-          </div>
-
-          {/* Level */}
-          <div>
-            <label className="block text-xs font-medium text-zinc-600 mb-1">
-              Trình độ
-            </label>
-            <select
-              value={jlptLevel}
-              onChange={(e) => setJlptLevel(e.target.value)}
-              className="w-full rounded-lg border border-zinc-300 px-3 py-2 text-sm bg-white outline-none focus:border-zinc-500"
-            >
-              <option value="">
-                Theo tài khoản ({user?.jlpt_level?.toUpperCase() ?? "N5"})
-              </option>
-              {JLPT_LEVELS.map((l) => (
-                <option key={l} value={l}>
-                  {l.toUpperCase()}
-                </option>
-              ))}
-            </select>
-          </div>
-        </div>
-
-        {genError && <p className="text-sm text-red-600">{genError}</p>}
-
-        <button
-          type="submit"
-          disabled={generating || (!topic && !customTopic.trim())}
-          className="w-full rounded-xl bg-zinc-900 py-2.5 text-sm font-semibold text-white hover:bg-zinc-700 disabled:opacity-50 transition-colors"
-        >
-          {generating ? "Đang tạo bài luyện nghe…" : "Tạo bài luyện nghe"}
-        </button>
-      </form>
-
-      {/* Level filter for list */}
-      <div className="flex items-center gap-2 flex-wrap">
-        <span className="text-xs text-zinc-500">Lọc theo trình độ:</span>
-        {JLPT_LEVELS.map((l) => (
-          <button
-            key={l}
-            onClick={() => setJlptLevel(l === effectiveLevel && jlptLevel ? "" : l)}
-            className={`rounded-full px-3 py-1 text-xs font-semibold uppercase transition-colors ${
-              effectiveLevel === l
-                ? "bg-zinc-900 text-white"
-                : "border border-zinc-300 text-zinc-600 hover:bg-zinc-50"
-            }`}
-          >
-            {l}
-          </button>
-        ))}
-      </div>
-
-      {listError && (
-        <div className="rounded-xl border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700">
-          {listError}
-        </div>
+      {exercises.listError && (
+        <ErrorBanner>
+          {exercises.listError}
+        </ErrorBanner>
       )}
 
-      {/* Exercise list */}
-      {loadingList ? (
-        <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
-          {[...Array(4)].map((_, i) => (
-            <div
-              key={i}
-              className="rounded-2xl border border-zinc-200 bg-white p-5 space-y-2"
-            >
-              <div className="h-4 w-3/4 animate-pulse rounded bg-zinc-100" />
-              <div className="h-3 w-1/3 animate-pulse rounded bg-zinc-100" />
-              <div className="h-3 w-full animate-pulse rounded bg-zinc-100" />
-            </div>
-          ))}
-        </div>
-      ) : exercises.length === 0 ? (
-        <div className="rounded-2xl border border-dashed border-zinc-300 p-10 text-center">
-          <p className="text-sm text-zinc-500">
-            Chưa có bài luyện nghe nào cho trình độ {effectiveLevel.toUpperCase()}.
-            <br />
-            Hãy tạo bài luyện nghe mới ở trên!
-          </p>
-        </div>
+      {exercises.loading ? (
+        <CardSkeletonGrid />
+      ) : exercises.items.length === 0 ? (
+        <EmptyState
+          title={`Chưa có bài luyện nghe nào cho trình độ ${effectiveLevel.toUpperCase()}.`}
+          subtitle="Hãy tạo bài luyện nghe mới ở trên!"
+        />
       ) : (
         <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
-          {exercises.map((e) => (
+          {exercises.items.map((e) => (
             <ExerciseCard key={e.id} exercise={e} onClick={openExercise} />
           ))}
         </div>

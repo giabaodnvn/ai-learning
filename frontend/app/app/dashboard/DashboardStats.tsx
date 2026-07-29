@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useQuery } from "@tanstack/react-query";
 import { api } from "@/lib/api";
 import { StreakBadge }      from "@/components/dashboard/StreakBadge";
 import { VocabStats }       from "@/components/dashboard/VocabStats";
@@ -29,25 +29,19 @@ function Skeleton({ className }: { className: string }) {
 }
 
 export function DashboardStats() {
-  const [stats,   setStats]   = useState<DashboardData | null>(null);
-  const [report,  setReport]  = useState<WeeklyReportData | null>(null);
-  const [loading, setLoading] = useState(true);
-  const [error,   setError]   = useState(false);
+  // The two panels load independently: a failing weekly report must not take
+  // the stats down with it, which is what the single Promise.all did.
+  const { data: stats, isLoading, isError } = useQuery<DashboardData>({
+    queryKey: ["dashboard"],
+    queryFn: async () => (await api.get("/api/v1/dashboard")).data,
+  });
 
-  useEffect(() => {
-    Promise.all([
-      api.get("/api/v1/dashboard"),
-      api.get("/api/v1/dashboard/weekly_report"),
-    ])
-      .then(([statsRes, reportRes]) => {
-        setStats(statsRes.data);
-        setReport(reportRes.data);
-      })
-      .catch(() => setError(true))
-      .finally(() => setLoading(false));
-  }, []);
+  const { data: report } = useQuery<WeeklyReportData>({
+    queryKey: ["dashboard", "weeklyReport"],
+    queryFn: async () => (await api.get("/api/v1/dashboard/weekly_report")).data,
+  });
 
-  if (loading) {
+  if (isLoading) {
     return (
       <div className="space-y-4">
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
@@ -61,7 +55,7 @@ export function DashboardStats() {
     );
   }
 
-  if (error && !stats) {
+  if (isError && !stats) {
     return (
       <div className="rounded-xl border border-amber-200 bg-amber-50 p-4 text-sm text-amber-700">
         Không thể tải dữ liệu trang chủ. Vui lòng tải lại trang.

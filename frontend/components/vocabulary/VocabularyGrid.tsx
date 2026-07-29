@@ -1,10 +1,10 @@
 "use client";
 
 import { useState } from "react";
-import { useQuery, keepPreviousData } from "@tanstack/react-query";
-import { api } from "@/lib/api";
 import { Pagination } from "@/components/Pagination";
 import { LevelTabs } from "@/components/shared/LevelTabs";
+import { ErrorBanner } from "@/components/shared/ErrorBanner";
+import { useLevelPagedList } from "@/hooks/useLevelPagedList";
 import { type JlptLevel as Level } from "@/types/quiz";
 
 const POS_LABELS: Record<string, string> = {
@@ -39,45 +39,28 @@ interface VocabItem {
   };
 }
 
-interface VocabResponse {
-  data: VocabItem[];
-  meta: { total: number; page: number; per_page: number; pages: number };
-}
-
-async function fetchVocabulary(level: Level, page: number, search: string): Promise<VocabResponse> {
-  const res = await api.get("/api/v1/vocabularies", {
-    params: { level, page, per_page: 30, ...(search ? { search } : {}) },
-  });
-  return res.data;
-}
-
 export default function VocabularyGrid() {
-  const [level,  setLevel]  = useState<Level>("n5");
-  const [page,   setPage]   = useState(1);
   const [search, setSearch] = useState("");
   const [query,  setQuery]  = useState("");   // committed search term
 
-  const { data, isLoading, isError } = useQuery({
-    queryKey: ["vocabularies", level, page, query],
-    queryFn:  () => fetchVocabulary(level, page, query),
-    placeholderData: keepPreviousData,
-  });
-
-  function handleLevelChange(l: Level) {
-    setLevel(l);
-    setPage(1);
-  }
+  const { level, page, setPage, changeLevel, resetPage, data, isLoading, isError } =
+    useLevelPagedList<VocabItem>({
+      resource: "vocabularies",
+      path: "/api/v1/vocabularies",
+      perPage: 30,
+      params: query ? { search: query } : {},
+    });
 
   function handleSearch(e: React.FormEvent) {
     e.preventDefault();
     setQuery(search.trim());
-    setPage(1);
+    resetPage();
   }
 
   function clearSearch() {
     setSearch("");
     setQuery("");
-    setPage(1);
+    resetPage();
   }
 
   return (
@@ -108,7 +91,7 @@ export default function VocabularyGrid() {
       </form>
 
       {/* Level tabs */}
-      {!query && <LevelTabs value={level} onChange={handleLevelChange} />}
+      {!query && <LevelTabs value={level} onChange={changeLevel} />}
 
       {/* Meta */}
       {data && (
@@ -133,9 +116,7 @@ export default function VocabularyGrid() {
       )}
 
       {/* Error */}
-      {isError && (
-        <p className="text-sm text-red-600">Không thể tải dữ liệu. Vui lòng thử lại.</p>
-      )}
+      {isError && <ErrorBanner>Không thể tải dữ liệu. Vui lòng thử lại.</ErrorBanner>}
 
       {/* Table */}
       {data && data.data.length > 0 && (

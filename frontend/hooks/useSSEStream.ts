@@ -1,14 +1,12 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
-import { streamSSE, type StreamSSEOptions } from "@/lib/sse";
-
-const DEFAULT_NETWORK_ERROR = "Mất kết nối. Vui lòng thử lại.";
+import { DEFAULT_SSE_ERROR, sseErrorMessage, streamSSE, type StreamSSEOptions } from "@/lib/sse";
 
 export interface UseSSEStreamOptions {
   /** Called once when the stream finishes cleanly, with the full accumulated text. */
   onDone?: (content: string) => void;
-  /** Map a server `error` payload code to a user-facing message. */
+  /** Map a server `error` payload code to a user-facing message. Defaults to `sseErrorMessage`. */
   errorMessage?: (code: string) => string;
   /** Message shown when the connection itself fails (non-abort fetch error). */
   networkError?: string;
@@ -66,7 +64,7 @@ export function useSSEStream(options: UseSSEStreamOptions = {}): UseSSEStreamRes
       await streamSSE(path, { ...streamOptions, signal: controller.signal }, (payload) => {
         if (payload.error) {
           const code = String(payload.error);
-          setError(optionsRef.current.errorMessage?.(code) ?? optionsRef.current.networkError ?? DEFAULT_NETWORK_ERROR);
+          setError(optionsRef.current.errorMessage?.(code) ?? sseErrorMessage(code));
           return true;
         }
         if (payload.delta) {
@@ -81,7 +79,7 @@ export function useSSEStream(options: UseSSEStreamOptions = {}): UseSSEStreamRes
     } catch (err) {
       // A newer stream (or unmount) aborted this one — not an error to show.
       if (err instanceof DOMException && err.name === "AbortError") return;
-      setError(optionsRef.current.networkError ?? DEFAULT_NETWORK_ERROR);
+      setError(optionsRef.current.networkError ?? DEFAULT_SSE_ERROR);
     } finally {
       // Only the most recent stream owns the streaming flag.
       if (abortRef.current === controller) setStreaming(false);

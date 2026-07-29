@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 
-export function middleware(req: NextRequest) {
+export function proxy(req: NextRequest) {
   // next-auth stores the session in these cookies
   const sessionToken =
     req.cookies.get("next-auth.session-token")?.value ||

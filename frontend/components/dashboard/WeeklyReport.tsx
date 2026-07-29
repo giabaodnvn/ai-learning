@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { renderMarkdown } from "@/lib/markdown";
+import { formatLongDate } from "@/lib/format";
 
 interface Props {
   report:      string | null;
@@ -16,11 +17,7 @@ export function WeeklyReport({ report, generatedAt, studiedDays }: Props) {
   const hasReport  = Boolean(report);
   const canUnlock  = studiedDays >= unlockDays;
 
-  const formattedDate = generatedAt
-    ? new Date(generatedAt).toLocaleDateString("vi-VN", {
-        weekday: "long", day: "numeric", month: "long",
-      })
-    : null;
+  const formattedDate = formatLongDate(generatedAt);
 
   return (
     <div className="rounded-2xl border border-zinc-200 bg-white p-5 space-y-3">

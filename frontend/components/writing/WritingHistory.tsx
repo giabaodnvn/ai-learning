@@ -4,6 +4,9 @@ import { useState } from "react";
 import { useQuery } from "@tanstack/react-query";
 import { api } from "@/lib/api";
 import { renderMarkdown } from "@/lib/markdown";
+import { ErrorBanner } from "@/components/shared/ErrorBanner";
+import { EmptyState } from "@/components/shared/EmptyState";
+import { formatDateTime } from "@/lib/format";
 
 interface Submission {
   id:         number;
@@ -16,10 +19,7 @@ interface Submission {
 function SubmissionCard({ s }: { s: Submission }) {
   const [expanded, setExpanded] = useState(false);
 
-  const date = new Date(s.created_at).toLocaleDateString("vi-VN", {
-    day: "numeric", month: "short", year: "numeric",
-    hour: "2-digit", minute: "2-digit",
-  });
+  const date = formatDateTime(s.created_at);
 
   return (
     <div className="rounded-2xl border border-zinc-200 bg-white overflow-hidden">
@@ -84,20 +84,21 @@ export function WritingHistory() {
 
   if (isError) {
     return (
-      <div className="rounded-xl border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700">
+      <ErrorBanner>
         Không thể tải lịch sử.{" "}
         <button onClick={() => refetch()} className="underline font-medium">Thử lại</button>
-      </div>
+        </ErrorBanner>
     );
   }
 
   if (!data || data.length === 0) {
     return (
-      <div className="rounded-2xl border border-dashed border-zinc-300 bg-zinc-50 px-4 py-10 text-center">
-        <p className="text-2xl mb-2">📝</p>
-        <p className="text-sm text-zinc-500">Chưa có bài viết nào được lưu.</p>
-        <p className="text-xs text-zinc-400 mt-1">Viết bài đầu tiên để bắt đầu lịch sử.</p>
-      </div>
+      <EmptyState
+        icon="📝"
+        title="Chưa có bài viết nào được lưu."
+        subtitle="Viết bài đầu tiên để bắt đầu lịch sử."
+        className="bg-zinc-50"
+      />
     );
   }
 

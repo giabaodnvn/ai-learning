@@ -60,8 +60,12 @@ Rails.application.configure do
   # want to log everything, set the level to "debug".
   config.log_level = ENV.fetch("RAILS_LOG_LEVEL", "info")
 
-  # Use a different cache store in production.
-  # config.cache_store = :mem_cache_store
+  # Redis is already a hard dependency (Sidekiq, AppRedis), so Rails.cache uses
+  # it too — the default file store is per-container and would not be shared
+  # between the web and Sidekiq processes.
+  # `url: nil` makes redis-rb read REDIS_URL itself, so this stays in step with
+  # AppRedis without referencing it (app/ is not autoloadable this early).
+  config.cache_store = :redis_cache_store, { url: ENV["REDIS_URL"] }
 
   # Use a real queuing backend for Active Job (and separate queues per environment).
   config.active_job.queue_adapter = :sidekiq

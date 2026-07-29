@@ -1,18 +1,21 @@
 "use client";
 
 import { useFlashcardStore } from "@/lib/stores/flashcardStore";
+import { GRADE_EMOJI, GRADE_LABELS, GRADE_TILE_COLORS } from "@/lib/flashcard-utils";
 
 interface Props {
   onRestart: () => void;
   onBack?: () => void;
 }
 
-const GRADE_LABELS = [
-  { label: "Quên",  color: "bg-red-50 border border-red-100 text-red-700",     grade: 0, emoji: "😰" },
-  { label: "Khó",   color: "bg-amber-50 border border-amber-100 text-amber-700", grade: 1, emoji: "😅" },
-  { label: "Ổn",    color: "bg-blue-50 border border-blue-100 text-blue-700",   grade: 2, emoji: "😊" },
-  { label: "Dễ",    color: "bg-emerald-50 border border-emerald-100 text-emerald-700", grade: 3, emoji: "🌟" },
-] as const;
+// A session can mix card types, so the breakdown uses the vocabulary wording as
+// the neutral one rather than a fourth private copy of the four grade labels.
+const BREAKDOWN = GRADE_LABELS.vocabulary.map(({ grade, vi }) => ({
+  grade,
+  label: vi,
+  emoji: GRADE_EMOJI[grade],
+  color: GRADE_TILE_COLORS[grade],
+}));
 
 export function SessionSummary({ onRestart, onBack }: Props) {
   const { sessionStats } = useFlashcardStore();
@@ -26,10 +29,6 @@ export function SessionSummary({ onRestart, onBack }: Props) {
     accuracy >= 80 ? "Xuất sắc！すごい！" :
     accuracy >= 50 ? "Tiến bộ tốt！頑張って！" :
     "Cần luyện thêm！もっと頑張れ！";
-
-  function handleRestart() {
-    onRestart();
-  }
 
   return (
     <div className="rounded-2xl border border-stone-200 bg-[#FAF7F2] overflow-hidden shadow-sm">
@@ -53,7 +52,7 @@ export function SessionSummary({ onRestart, onBack }: Props) {
 
         {/* Grade breakdown */}
         <div className="grid grid-cols-4 gap-2">
-          {GRADE_LABELS.map(({ label, color, grade, emoji }) => (
+          {BREAKDOWN.map(({ label, color, grade, emoji }) => (
             <div key={grade} className={`rounded-xl py-3.5 px-2 ${color}`}>
               <p className="text-lg">{emoji}</p>
               <p className="text-xl font-bold mt-0.5">
@@ -74,7 +73,7 @@ export function SessionSummary({ onRestart, onBack }: Props) {
             </button>
           )}
           <button
-            onClick={handleRestart}
+            onClick={onRestart}
             className="flex-1 rounded-xl bg-gradient-to-r from-indigo-700 to-indigo-600 px-4 py-2.5 text-sm font-bold text-white hover:from-indigo-800 hover:to-indigo-700 transition-all shadow-sm shadow-indigo-200"
           >
             Ôn tiếp →

@@ -3,6 +3,9 @@
 import { useState } from "react";
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import { api } from "@/lib/api";
+import { ErrorBanner } from "@/components/shared/ErrorBanner";
+import { GRADE_COLORS } from "@/lib/flashcard-utils";
+import { LoadingCard } from "@/components/shared/LoadingCard";
 
 interface ReviewCard {
   id: number;
@@ -68,12 +71,15 @@ function cardDisplay(card: ReviewCard) {
   };
 }
 
+// This screen posts the 0/3/4/5 quality scale the review endpoint expects;
+// the colours come from the shared per-grade palette so the buttons match the
+// flashcard deck's.
 const RATINGS = [
-  { quality: 0, label: "Quên",   color: "border-red-300 bg-red-50 text-red-700 hover:bg-red-100" },
-  { quality: 3, label: "Khó",    color: "border-amber-300 bg-amber-50 text-amber-700 hover:bg-amber-100" },
-  { quality: 4, label: "Ổn",     color: "border-blue-300 bg-blue-50 text-blue-700 hover:bg-blue-100" },
-  { quality: 5, label: "Dễ",     color: "border-green-300 bg-green-50 text-green-700 hover:bg-green-100" },
-];
+  { quality: 0, label: "Quên" },
+  { quality: 3, label: "Khó" },
+  { quality: 4, label: "Ổn" },
+  { quality: 5, label: "Dễ" },
+].map((r, grade) => ({ ...r, color: GRADE_COLORS[grade] }));
 
 export default function ReviewPage() {
   const queryClient = useQueryClient();
@@ -137,9 +143,7 @@ export default function ReviewPage() {
           <h1 className="text-xl font-bold text-zinc-900">Luyện tập SRS</h1>
           <p className="mt-1 text-sm text-zinc-500">Đang tải thẻ ôn tập...</p>
         </div>
-        <div className="rounded-2xl border border-zinc-200 bg-white p-12 flex items-center justify-center">
-          <div className="h-8 w-8 animate-spin rounded-full border-2 border-zinc-300 border-t-zinc-800" />
-        </div>
+        <LoadingCard />
       </div>
     );
   }
@@ -148,9 +152,9 @@ export default function ReviewPage() {
     return (
       <div className="space-y-6">
         <h1 className="text-xl font-bold text-zinc-900">Luyện tập SRS</h1>
-        <div className="rounded-lg border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700">
+        <ErrorBanner>
           Không thể tải thẻ ôn tập. Vui lòng thử lại.
-        </div>
+        </ErrorBanner>
       </div>
     );
   }

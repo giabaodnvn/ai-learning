@@ -7,30 +7,25 @@ module Api
 
       # GET /api/v1/reading_passages?level=n5&topic=daily_life
       # Returns cached DB passages first; generates one if none exist.
+      DEFAULT_TOPIC = "日常生活"
+
       def index
-        level = params[:level].presence || current_user.jlpt_level
+        level = level_param_or_user
         topic = params[:topic].presence
 
-        scope = ReadingPassage.ai_generated.by_level(level)
-        scope = scope.by_topic(topic) if topic
-        passages = scope.order(created_at: :desc).limit(12)
+        passages = ReadingPassage.recent_for(level, topic).to_a
+        # Nothing generated for this level yet — seed the list with one passage
+        # so the screen is never empty on first visit.
+        passages = [ generate_and_save!(jlpt_level: level, topic: topic || DEFAULT_TOPIC) ] if passages.empty?
 
-        if passages.any?
-          render json: passages.map { |p| serialize_passage(p) }
-        else
-          passage = generate_and_save!(
-            jlpt_level: level,
-            topic:      topic || "日常生活"
-          )
-          render json: [ serialize_passage(passage) ]
-        end
+        render json: passages.map { |p| serialize_passage(p) }
       end
 
       # POST /api/v1/reading_passages/generate
       # body: { jlpt_level, topic }
       def generate
         topic      = params.require(:topic)
-        jlpt_level = params[:jlpt_level].presence || current_user.jlpt_level
+        jlpt_level = level_param_or_user(:jlpt_level)
 
         passage = generate_and_save!(jlpt_level: jlpt_level, topic: topic)
         render json: serialize_passage(passage), status: :created
@@ -73,50 +68,38 @@ module Api
             example_vi: ""
           }
         else
-          prompt = Prompts::WordLookupPrompt.build(word: word)
-          raw    = AiCacheService.fetch(prompt) do
-            ClaudeService.complete(
-              prompt:     prompt,
-              max_tokens: 512,
-              log_usage:  { feature: "reading_word_lookup", user_id: current_user.id }
-            )
+          prompt    = Prompts::WordLookupPrompt.build(word: word)
+          log_usage = { feature: "reading_word_lookup", user_id: current_user.id }
+          # Cached: the same word is looked up by many readers.
+          raw       = AiCacheService.fetch(prompt, log_usage: log_usage) do
+            ClaudeService.complete(prompt: prompt, max_tokens: 512, log_usage: log_usage)
           end
-          result = parse_ai_json(raw)
-          render json: result
+
+          render json: AiJson.parse(raw)
         end
       end
 
       private
 
       def generate_and_save!(jlpt_level:, topic:)
-        prompt = Prompts::ReadingGeneratorPrompt.build(
-          topic:      topic,
-          jlpt_level: jlpt_level
+        data = AiJson.complete(
+          prompt:     Prompts::ReadingGeneratorPrompt.build(topic: topic, jlpt_level: jlpt_level),
+          feature:    "reading_generate",
+          user_id:    current_user.id,
+          max_tokens: 4096
         )
 
-        raw  = AiCacheService.fetch(prompt, skip_cache: true) do
-          ClaudeService.complete(
-            prompt:     prompt,
-            max_tokens: 4096,
-            log_usage:  { feature: "reading_generate", user_id: current_user.id }
+        create_from_ai!("passage data") do
+          ReadingPassage.create!(
+            title:                data["title"],
+            content:              data["content"],
+            jlpt_level:           jlpt_level,
+            topic:                topic,
+            questions:            data["questions"]             || [],
+            vocabulary_highlights: data["vocabulary_highlights"] || [],
+            ai_generated:         true
           )
         end
-        data = parse_ai_json(raw)
-
-        ReadingPassage.create!(
-          title:                data["title"],
-          content:              data["content"],
-          jlpt_level:           jlpt_level,
-          topic:                topic,
-          questions:            data["questions"]             || [],
-          vocabulary_highlights: data["vocabulary_highlights"] || [],
-          ai_generated:         true
-        )
-      rescue ActiveRecord::RecordInvalid => e
-        # AI returned syntactically valid JSON but with missing/blank fields.
-        # Surface as a ServiceError so it reuses the AI-error rescue (503)
-        # instead of leaking as a 500.
-        raise ClaudeService::ServiceError, "AI returned incomplete passage data: #{e.message}"
       end
 
       def serialize_passage(passage)

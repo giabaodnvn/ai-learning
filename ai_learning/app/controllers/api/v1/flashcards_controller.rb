@@ -2,77 +2,41 @@
 
 module Api
   module V1
+    # Universal SRS flashcards over vocabulary + kanji + grammar points.
+    # The queries live in DueCardsQuery / NewCardsQuery, the JSON shape in
+    # CardPayload and the quiz generation in FlashcardQuiz; these actions only
+    # read params and render.
     class FlashcardsController < BaseController
+      RANDOM_DEFAULTS = {
+        "vocabulary"    => { param: :vocab,   default: 10, max: 50 },
+        "kanji"         => { param: :kanji,   default: 5,  max: 30 },
+        "grammar_point" => { param: :grammar, default: 3,  max: 15 }
+      }.freeze
+
       # GET /api/v1/flashcards/due
       # ?type=all|vocabulary|kanji|grammar_point  (default: all)
       # ?level=n5|n4|...                          (optional)
       # Returns up to 20 cards due today from UserCardProgress.
       def due
-        type  = params[:type].presence || "all"
-        level = params[:level].presence&.downcase
+        result = DueCardsQuery.new(current_user, type: card_type_param("all"), level: level_param).call
+        cards  = result.each_card { |progress, card| CardPayload.from_progress(progress, card) }
 
-        scope = current_user.user_card_progresses
-                            .where("due_date <= ?", Date.current)
-                            .order(:due_date)
-
-        scope = scope.where(card_type: type) unless type == "all"
-        scope = scope.where(jlpt_level: level) if level
-
-        total      = scope.count
-        progresses = scope.limit(20).to_a
-        cards      = batch_load_cards(progresses)
-
-        render json: {
-          total_due: total,
-          cards:     progresses.filter_map { |p| serialize_progress(p, cards) }
-        }
+        render json: { total_due: result.total, cards: cards }
       end
 
       # GET /api/v1/flashcards/new
-      # ?type=vocabulary|kanji|grammar_point  (default: vocabulary)
-      # ?level=n5|n4|...                      (default: user's JLPT level)
-      # Returns new cards not yet in UserCardProgress.
+      # ?type=all|vocabulary|kanji|grammar_point  (default: vocabulary)
+      # ?level=n5|n4|...                          (default: user's JLPT level)
+      # Returns cards not yet in UserCardProgress, capped per type per day.
       def new_cards
-        type  = params[:type].presence || "vocabulary"
-        level = params[:level].presence&.downcase || current_user.jlpt_level
+        type = card_type_param("vocabulary")
+        return render_invalid_param("type") unless type == "all" || CardCatalog::TYPES.include?(type)
 
-        # ?type=all returns new cards across all three types (respects per-type limits)
-        if type == "all"
-          all_cards = []
-          total_new = 0
-
-          studied_by_type = current_user.user_card_progresses
-                                        .pluck(:card_type, :card_id)
-                                        .group_by { |t, _| t }
-                                        .transform_values { |pairs| pairs.map { |_, id| id } }
-
-          UserCardProgress::CARD_TYPES.each do |t|
-            studied = studied_by_type.fetch(t, [])
-            lim     = UserCardProgress::NEW_PER_DAY.fetch(t, 10)
-            model   = source_model(t)
-            scope   = model.by_level(level).where.not(id: studied).order(:id)
-            total_new  += scope.count
-            all_cards  += scope.limit(lim).map { |item| serialize_new_card(t, item) }
-          end
-          return render json: { total_new: total_new, cards: all_cards }
-        end
-
-        unless UserCardProgress::CARD_TYPES.include?(type)
-          return render json: { error: "type không hợp lệ" }, status: :unprocessable_entity
-        end
-
-        studied_ids = current_user.user_card_progresses
-                                  .where(card_type: type)
-                                  .pluck(:card_id)
-
-        limit     = UserCardProgress::NEW_PER_DAY.fetch(type, 10)
-        model     = source_model(type)
-        items     = model.by_level(level).where.not(id: studied_ids).order(:id).limit(limit)
-        total_new = model.by_level(level).where.not(id: studied_ids).count
+        result = NewCardsQuery.new(current_user, type: type, level: level_param_or_user).call
 
         render json: {
-          total_new: total_new,
-          cards:     items.map { |item| serialize_new_card(type, item) }
+          total_new: result.total,
+          cards:     result.cards.map { |card_type, card| CardPayload.for_new_card(card_type, card) }
         }
       end
 
@@ -84,40 +48,36 @@ module Api
         card_id   = params.require(:card_id).to_i
         grade     = Integer(params.require(:grade))
 
-        unless UserCardProgress::CARD_TYPES.include?(card_type)
-          return render json: { error: "card_type không hợp lệ" }, status: :unprocessable_entity
-        end
+        return render_invalid_param("card_type") unless CardCatalog::TYPES.include?(card_type)
         unless (0..3).include?(grade)
-          return render json: { error: "grade phải từ 0 đến 3" }, status: :unprocessable_entity
+          return render_unprocessable("grade phải từ 0 đến 3")
         end
 
         progress = current_user.user_card_progresses
                                .find_or_initialize_by(card_type: card_type, card_id: card_id)
 
+        # Only a brand-new row needs the content record (for its JLPT level).
+        # An existing row stays reviewable even if the card was since deleted.
         if progress.new_record?
-          card_record = source_model(card_type).find_by(id: card_id)
-          return render_not_found(card_type.capitalize) unless card_record
+          card = CardCatalog.model_for(card_type).find_by(id: card_id)
+          return render_not_found(card_type.capitalize) unless card
 
-          progress.assign_attributes(
-            SrsService.initial_state.merge(jlpt_level: card_record.jlpt_level)
-          )
+          progress.assign_attributes(SrsService.initial_state.merge(jlpt_level: card.jlpt_level))
         end
 
         progress = SrsReviewService.apply!(user: current_user, progress: progress, grade: grade)
-
-        cards_remaining = current_user.user_card_progresses
-                                      .where("due_date <= ?", Date.current)
-                                      .where.not(id: progress.id)
-                                      .count
 
         render json: {
           next_due:              progress.due_date,
           interval:              progress.interval,
           ease_factor:           progress.ease_factor.to_f,
-          cards_remaining_today: cards_remaining
+          cards_remaining_today: current_user.user_card_progresses
+                                             .due_today
+                                             .where.not(id: progress.id)
+                                             .count
         }
       rescue ArgumentError
-        render json: { error: "grade không hợp lệ" }, status: :unprocessable_entity
+        render_unprocessable("grade không hợp lệ")
       end
 
       # POST /api/v1/flashcards/:vocab_id/review  (legacy — vocabulary only)
@@ -128,115 +88,64 @@ module Api
         review
       end
 
-      # ── Learn mode (random pick) ──────────────────────────────────────────────
-
       # GET /api/v1/flashcards/random
       # ?level=n5  ?vocab=10  ?kanji=5  ?grammar=3
       # Returns a shuffled mix of random cards, with current learned status.
       def random
-        level   = (params[:level].presence || current_user.jlpt_level).downcase
-        v_count = clamp_count(params[:vocab].to_i.nonzero?   || 10, 50)
-        k_count = clamp_count(params[:kanji].to_i.nonzero?   || 5,  30)
-        g_count = clamp_count(params[:grammar].to_i.nonzero? || 3,  15)
+        level   = level_param_or_user
+        learned = learned_lookup(level)
 
-        vocab_cards   = Vocabulary.by_level(level).order("RAND()").limit(v_count)
-        kanji_cards   = Kanji.by_level(level).order("RAND()").limit(k_count)
-        grammar_cards = GrammarPoint.by_level(level).order("RAND()").limit(g_count)
+        cards = RANDOM_DEFAULTS.flat_map do |card_type, config|
+          scope = CardCatalog.model_for(card_type).by_level(level)
 
-        # Build learned lookup: "type:id" → true/false
-        learned_set = current_user.user_card_progresses
-          .where(jlpt_level: level, learned: true)
-          .each_with_object(Set.new) { |p, set| set << "#{p.card_type}:#{p.card_id}" }
+          CardCatalog.in_random_order(scope).limit(random_count(config)).map do |card|
+            CardPayload.for_new_card(card_type, card)
+                       .merge(learned: learned.include?("#{card_type}:#{card.id}"))
+          end
+        end
 
-        cards = [
-          *vocab_cards.map   { |c| random_card_json("vocabulary",    c, learned_set) },
-          *kanji_cards.map   { |c| random_card_json("kanji",         c, learned_set) },
-          *grammar_cards.map { |c| random_card_json("grammar_point", c, learned_set) }
-        ].shuffle
-
-        render json: { level: level, cards: cards }
+        render json: { level: level, cards: cards.shuffle }
       end
 
       # POST /api/v1/flashcards/quiz
       # body: { cards: [{card_type, card_id}, ...] }
-      # Returns MCQ question for each card with 4 shuffled options.
-      # The `correct` field (index 0-3) is included — this is intentional for a learning app.
+      # Returns an MCQ question per card with 4 shuffled options.
       def generate_quiz
-        items = params.require(:cards)
-
-        questions = items.filter_map do |item|
-          ct  = item[:card_type].to_s
-          cid = item[:card_id].to_i
-          next unless UserCardProgress::CARD_TYPES.include?(ct)
-
-          card = source_model(ct).find_by(id: cid)
-          next unless card
-
-          correct_text = quiz_answer(ct, card)
-
-          wrong = source_model(ct)
-            .where.not(id: cid)
-            .order("RAND()")
-            .limit(6)
-            .map  { |d| quiz_answer(ct, d) }
-            .reject { |w| w.blank? || w == correct_text }
-            .uniq
-            .first(3)
-
-          wrong += [ "—" ] * (3 - wrong.size) if wrong.size < 3
-
-          options = ([ correct_text ] + wrong).shuffle
-
-          {
-            card_type:     ct,
-            card_id:       cid,
-            question:      quiz_question(ct, card),
-            question_hint: quiz_hint(ct, card),
-            options:       options,
-            correct:       options.index(correct_text)
-          }
-        end
-
-        render json: { questions: questions }
+        render json: { questions: FlashcardQuiz.new(params.require(:cards)).call }
       end
 
       # POST /api/v1/flashcards/status
       # body: { card_type, card_id, learned: true/false }
-      # Updates the learned flag on an existing progress row, or creates one if absent.
       def update_status
         card_type = params.require(:card_type).to_s
-        card_id   = params.require(:card_id).to_i
-        learned   = params.require(:learned)
+        return render_invalid_param("card_type") unless CardCatalog::TYPES.include?(card_type)
 
-        unless UserCardProgress::CARD_TYPES.include?(card_type)
-          return render json: { error: "card_type không hợp lệ" }, status: :unprocessable_entity
-        end
+        card = CardCatalog.model_for(card_type).find_by(id: params.require(:card_id).to_i)
+        return render_not_found(card_type.capitalize) unless card
 
-        card = source_model(card_type).find_by(id: card_id)
-        return render json: { error: "#{card_type} not found" }, status: :not_found unless card
-
-        progress = set_learned!(card_type, card_id, card, learned)
+        progress = UserCardProgress.set_learned!(
+          current_user, card_type: card_type, card: card, learned: params.require(:learned)
+        )
 
         render json: { learned: progress.learned }
       end
 
       # POST /api/v1/flashcards/status/bulk
       # body: { results: [{card_type, card_id, learned}, ...] }
-      # Bulk-updates the learned flag after a quiz session.
+      # Bulk-updates the learned flag after a quiz session. Entries naming an
+      # unknown type or a deleted card are skipped, not failed.
       def bulk_update_status
-        results = params.require(:results)
+        updated = params.require(:results).filter_map do |entry|
+          card_type = entry[:card_type].to_s
+          next unless CardCatalog::TYPES.include?(card_type)
 
-        updated = results.filter_map do |r|
-          ct      = r[:card_type].to_s
-          cid     = r[:card_id].to_i
-          learned = r[:learned]
-          next unless UserCardProgress::CARD_TYPES.include?(ct)
-
-          card = source_model(ct).find_by(id: cid)
+          card = CardCatalog.model_for(card_type).find_by(id: entry[:card_id].to_i)
           next unless card
 
-          progress = set_learned!(ct, cid, card, learned)
-          { card_type: ct, card_id: cid, learned: progress.learned }
+          progress = UserCardProgress.set_learned!(
+            current_user, card_type: card_type, card: card, learned: entry[:learned]
+          )
+          { card_type: card_type, card_id: card.id, learned: progress.learned }
         end
 
         render json: { updated: updated.size, results: updated }
@@ -244,164 +153,23 @@ module Api
 
       private
 
-      # Set the learned flag on a card's progress row, creating it with the
-      # initial SRS state if absent. Retries once on a concurrent first-insert
-      # collision (uq_user_card unique index) — mirrors SrsReviewService.apply!
-      # — so two simultaneous writes stack instead of raising a 500.
-      def set_learned!(card_type, card_id, card, learned)
-        attempts = 0
-        begin
-          progress = UserCardProgress.find_or_build_for(
-            current_user, card_type: card_type, card_id: card_id, jlpt_level: card.jlpt_level
-          )
-          progress.update!(learned: learned)
-          progress
-        rescue ActiveRecord::RecordNotUnique
-          attempts += 1
-          raise if attempts >= 2
-          retry
-        end
+      def card_type_param(fallback)
+        params[:type].presence || fallback
       end
 
-      # ── Model helpers ────────────────────────────────────────────────────────
-
-      def source_model(type)
-        case type
-        when "vocabulary"    then Vocabulary
-        when "kanji"         then Kanji
-        when "grammar_point" then GrammarPoint
-        end
+      # "type:id" set of the cards the user has already marked learned at this
+      # level, so `random` can flag them without an N+1.
+      def learned_lookup(level)
+        current_user.user_card_progresses
+                    .for_level(level)
+                    .learned
+                    .pluck(:card_type, :card_id)
+                    .to_set { |type, id| "#{type}:#{id}" }
       end
 
-      # Batch-load all card records to avoid N+1 queries.
-      def batch_load_cards(progresses)
-        result = {}
-        progresses.group_by(&:card_type).each do |type, progs|
-          ids     = progs.map(&:card_id)
-          records = source_model(type).where(id: ids).index_by(&:id)
-          records.each { |id, rec| result["#{type}:#{id}"] = rec }
-        end
-        result
-      end
-
-      # ── Serialization ────────────────────────────────────────────────────────
-
-      def serialize_progress(progress, cards)
-        card = cards["#{progress.card_type}:#{progress.card_id}"]
-        return nil unless card
-
-        base_attrs(progress).merge(card_attrs(progress.card_type, card))
-      end
-
-      def serialize_new_card(type, card)
-        base = {
-          progress_id: nil,
-          card_type:   type,
-          card_id:     card.id,
-          jlpt_level:  card.jlpt_level,
-          due_date:    Date.current.to_s,
-          repetitions: 0,
-          interval:    1,
-          ease_factor: SrsService::DEFAULT_EASE
-        }
-        base.merge(card_attrs(type, card))
-      end
-
-      def base_attrs(progress)
-        {
-          progress_id: progress.id,
-          card_type:   progress.card_type,
-          card_id:     progress.card_id,
-          jlpt_level:  progress.jlpt_level,
-          due_date:    progress.due_date,
-          repetitions: progress.repetitions,
-          interval:    progress.interval,
-          ease_factor: progress.ease_factor.to_f
-        }
-      end
-
-      def card_attrs(type, card)
-        case type
-        when "vocabulary"
-          {
-            word:           card.word,
-            reading:        card.reading,
-            meaning_vi:     card.meaning_vi,
-            part_of_speech: card.part_of_speech
-          }
-        when "kanji"
-          {
-            character:      card.character,
-            onyomi:         parse_json(card.onyomi),
-            kunyomi:        parse_json(card.kunyomi),
-            meaning_vi:     card.meaning_vi,
-            stroke_count:   card.stroke_count,
-            vocab_examples: parse_json(card.vocab_examples)
-          }
-        when "grammar_point"
-          {
-            pattern:        card.pattern,
-            explanation_vi: card.explanation_vi,
-            examples:       parse_json(card.examples),
-            notes_vi:       card.notes_vi
-          }
-        end
-      end
-
-      def parse_json(value)
-        return value if value.is_a?(Array) || value.is_a?(Hash)
-        JSON.parse(value.to_s)
-      rescue JSON::ParserError
-        []
-      end
-
-      # ── Learn mode helpers ────────────────────────────────────────────────────
-
-      def random_card_json(type, card, learned_set)
-        {
-          progress_id: nil,
-          card_type:   type,
-          card_id:     card.id,
-          jlpt_level:  card.jlpt_level,
-          due_date:    Date.current.to_s,
-          repetitions: 0,
-          interval:    1,
-          ease_factor: SrsService::DEFAULT_EASE,
-          learned:     learned_set.include?("#{type}:#{card.id}")
-        }.merge(card_attrs(type, card))
-      end
-
-      def clamp_count(val, max)
-        [ [ val.to_i, 1 ].max, max ].min
-      end
-
-      # Short answer string used as correct MCQ option
-      def quiz_answer(card_type, card)
-        case card_type
-        when "vocabulary"    then card.meaning_vi.to_s.split(/[,、]/).first.strip
-        when "kanji"         then card.meaning_vi.to_s.split(/[,、]/).first.strip
-        when "grammar_point" then card.explanation_vi.to_s.truncate(60)
-        end.to_s
-      end
-
-      # What to show as the question (front of quiz card)
-      def quiz_question(card_type, card)
-        case card_type
-        when "vocabulary"    then card.word
-        when "kanji"         then card.character
-        when "grammar_point" then card.pattern
-        end
-      end
-
-      # Small hint shown under the question
-      def quiz_hint(card_type, card)
-        case card_type
-        when "vocabulary"    then card.reading
-        when "kanji"
-          onyomi = parse_json(card.onyomi).first
-          "#{card.stroke_count} nét#{onyomi ? " · #{onyomi}" : ""}"
-        when "grammar_point" then nil
-        end
+      def random_count(config)
+        requested = params[config[:param]].to_i.nonzero? || config[:default]
+        requested.clamp(1, config[:max])
       end
     end
   end

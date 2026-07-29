@@ -9,6 +9,8 @@ module Api
       # actions do NOT go through here: they handle these errors inside
       # `SseStreamable#stream_sse` (the response is already committed, so an
       # SSE error event is emitted instead of an HTTP status).
+      #
+      # The JSON extraction that feeds this path lives in AiJson.
       module AiErrorHandling
         extend ActiveSupport::Concern
 
@@ -19,6 +21,16 @@ module Api
         end
 
         private
+
+        # Persist a record whose attributes came from an LLM. The model
+        # validations are the only thing standing between syntactically valid
+        # JSON with missing/blank fields and a 500; re-raise as a ServiceError so
+        # the failure lands on the AI-error path (503, or an SSE error event).
+        def create_from_ai!(subject)
+          yield
+        rescue ActiveRecord::RecordInvalid => e
+          raise ClaudeService::ServiceError, "AI returned incomplete #{subject}: #{e.message}"
+        end
 
         def render_ai_rate_limit(_error)
           render json: { error: "Đã đạt giới hạn yêu cầu AI. Vui lòng thử lại sau." },

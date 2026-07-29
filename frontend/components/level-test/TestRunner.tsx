@@ -1,7 +1,10 @@
 "use client";
 
 import { useState, useEffect, useRef, useCallback } from "react";
+import { useQuery } from "@tanstack/react-query";
 import { api } from "@/lib/api";
+import { ErrorBanner } from "@/components/shared/ErrorBanner";
+import { LoadingCard } from "@/components/shared/LoadingCard";
 import type { LevelTestInfo, Answer, SubmitResult } from "./types";
 
 interface Props {
@@ -11,78 +14,84 @@ interface Props {
 }
 
 export function TestRunner({ testId, onResult, onCancel }: Props) {
-  const [test,        setTest]        = useState<LevelTestInfo | null>(null);
   const [answers,     setAnswers]     = useState<Map<string, Answer>>(new Map());
   const [sectionIdx,  setSectionIdx]  = useState(0);
   const [questionIdx, setQuestionIdx] = useState(0);
-  const [timeLeft,    setTimeLeft]    = useState(0);
-  const [loading,     setLoading]     = useState(true);
+  // null until the countdown's first tick; the header shows the full limit then.
+  const [timeLeft,    setTimeLeft]    = useState<number | null>(null);
   const [submitting,  setSubmitting]  = useState(false);
   const [error,       setError]       = useState<string | null>(null);
   const [confirmQuit, setConfirmQuit] = useState(false);
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
-  const handleAutoSubmitRef = useRef<() => void>(() => {});
+  // Wall-clock deadline rather than a decrementing counter: a backgrounded tab
+  // gets its intervals throttled, which made the old countdown drift slow.
+  const deadlineRef = useRef(0);
+  // One attempt per run: the timer expiring and the user pressing "Nộp bài" at
+  // the same moment must not create two LevelTestAttempt rows.
+  const submittedRef = useRef(false);
+  const submitRef = useRef<() => void>(() => {});
 
-  // Load test
-  useEffect(() => {
-    api.get(`/api/v1/level_tests/${testId}`)
-      .then((res) => {
-        setTest(res.data);
-        setTimeLeft(res.data.time_limit_min * 60);
-      })
-      .catch(() => setError("Không thể tải bài test."))
-      .finally(() => setLoading(false));
-  }, [testId]);
+  const { data: test, isLoading, isError } = useQuery<LevelTestInfo>({
+    queryKey: ["levelTest", testId],
+    queryFn: async () => {
+      const res = await api.get(`/api/v1/level_tests/${testId}`);
+      return res.data;
+    },
+    staleTime: Infinity,
+    retry: false,
+  });
 
-  // Countdown timer
-  useEffect(() => {
-    if (!test || timeLeft <= 0) return;
-    timerRef.current = setInterval(() => {
-      setTimeLeft((t) => {
-        if (t <= 1) {
-          clearInterval(timerRef.current!);
-          handleAutoSubmitRef.current();
-          return 0;
-        }
-        return t - 1;
-      });
-    }, 1000);
-    return () => clearInterval(timerRef.current!);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [test]);
+  // Coerced with a fallback: a response missing `time_limit_min` produced a NaN
+  // deadline, and a NaN countdown never reaches 0 — so the test never
+  // auto-submitted and the clock rendered "NaN:NaN".
+  const timeLimitMin = Number(test?.time_limit_min) || 0;
 
-  const handleAutoSubmit = useCallback(async () => {
-    if (!test) return;
+  const submit = useCallback(async () => {
+    if (!test || submittedRef.current) return;
+    submittedRef.current = true;
+
     setSubmitting(true);
+    if (timerRef.current) clearInterval(timerRef.current);
+
     try {
       const res = await api.post(`/api/v1/level_tests/${test.id}/submit`, {
         answers: Array.from(answers.values()),
       });
       onResult(res.data);
     } catch {
+      // Allow a retry: the attempt was never recorded.
+      submittedRef.current = false;
       setError("Nộp bài thất bại. Vui lòng thử lại.");
       setSubmitting(false);
     }
   }, [test, answers, onResult]);
 
+  // Read through a ref so answering a question (which changes `submit`'s
+  // identity) doesn't tear down and restart the countdown.
   useEffect(() => {
-    handleAutoSubmitRef.current = handleAutoSubmit;
-  }, [handleAutoSubmit]);
+    submitRef.current = submit;
+  }, [submit]);
 
-  async function handleSubmit() {
-    if (!test) return;
-    setSubmitting(true);
-    clearInterval(timerRef.current!);
-    try {
-      const res = await api.post(`/api/v1/level_tests/${test.id}/submit`, {
-        answers: Array.from(answers.values()),
-      });
-      onResult(res.data);
-    } catch {
-      setError("Nộp bài thất bại. Vui lòng thử lại.");
-      setSubmitting(false);
-    }
-  }
+  // Countdown. Auto-submit fires from the interval callback — not from an
+  // effect body, and not from inside a state updater, which React may invoke
+  // more than once per tick.
+  useEffect(() => {
+    if (!test || timeLimitMin <= 0) return;
+
+    // Set the deadline here rather than on load, so a remount starts a fresh
+    // clock and `timeLeft` is only ever written from the interval callback.
+    deadlineRef.current = Date.now() + timeLimitMin * 60_000;
+
+    timerRef.current = setInterval(() => {
+      const remaining = Math.max(0, Math.round((deadlineRef.current - Date.now()) / 1000));
+      setTimeLeft(remaining);
+      if (remaining === 0) submitRef.current();
+    }, 1000);
+
+    return () => {
+      if (timerRef.current) clearInterval(timerRef.current);
+    };
+  }, [test, timeLimitMin]);
 
   function answerKey(sectionIndex: number, questionId: number) {
     return `${sectionIndex}-${questionId}`;
@@ -99,18 +108,13 @@ export function TestRunner({ testId, onResult, onCancel }: Props) {
   // -------------------------------------------------------------------------
   // Loading / error
   // -------------------------------------------------------------------------
-  if (loading) {
-    return (
-      <div className="flex items-center justify-center h-64">
-        <div className="text-sm text-zinc-500">Đang tải bài test…</div>
-      </div>
-    );
-  }
+  if (isLoading) return <LoadingCard />;
 
-  if (error) {
+  const loadError = isError ? "Không thể tải bài test." : error;
+  if (loadError) {
     return (
-      <div className="rounded-2xl border border-red-200 bg-red-50 p-6 text-center space-y-3">
-        <p className="text-sm text-red-700">{error}</p>
+      <div className="space-y-3">
+        <ErrorBanner>{loadError}</ErrorBanner>
         <button onClick={onCancel} className="text-sm text-zinc-600 underline">Quay lại</button>
       </div>
     );
@@ -119,7 +123,32 @@ export function TestRunner({ testId, onResult, onCancel }: Props) {
   if (!test) return null;
 
   const section  = test.sections[sectionIdx];
-  const question = section.questions[questionIdx];
+  const question = section?.questions?.[questionIdx];
+
+  // The generator only guarantees a positive question count across the whole
+  // test, so an individual section can come back empty. Reading
+  // `question.options` blind crashed the runner on those.
+  if (!section || !question) {
+    return (
+      <div className="rounded-2xl border border-amber-200 bg-amber-50 p-6 text-center space-y-3">
+        <p className="text-sm text-amber-800">
+          Phần thi này không có câu hỏi nào. Vui lòng chọn phần khác hoặc tạo bài test mới.
+        </p>
+        <div className="flex justify-center gap-3">
+          {sectionIdx > 0 && (
+            <button
+              onClick={() => { setSectionIdx((i) => i - 1); setQuestionIdx(0); }}
+              className="text-sm text-zinc-600 underline"
+            >
+              Phần trước
+            </button>
+          )}
+          <button onClick={onCancel} className="text-sm text-zinc-600 underline">Quay lại</button>
+        </div>
+      </div>
+    );
+  }
+
   const totalQuestions = test.sections.reduce((s, sec) => s + sec.questions.length, 0);
   const answeredCount  = answers.size;
 
@@ -128,9 +157,10 @@ export function TestRunner({ testId, onResult, onCancel }: Props) {
   for (let si = 0; si < sectionIdx; si++) flatIndex += test.sections[si].questions.length;
   flatIndex += questionIdx;
 
-  const minutes = Math.floor(timeLeft / 60).toString().padStart(2, "0");
-  const seconds = (timeLeft % 60).toString().padStart(2, "0");
-  const timeWarning = timeLeft <= 120; // last 2 minutes
+  const remaining   = timeLeft ?? timeLimitMin * 60;
+  const minutes     = Math.floor(remaining / 60).toString().padStart(2, "0");
+  const seconds     = (remaining % 60).toString().padStart(2, "0");
+  const timeWarning = remaining <= 120; // last 2 minutes
 
   const currentAnswer = answers.get(answerKey(sectionIdx, question.id));
 
@@ -254,7 +284,7 @@ export function TestRunner({ testId, onResult, onCancel }: Props) {
 
         {isLast ? (
           <button
-            onClick={handleSubmit}
+            onClick={submit}
             disabled={submitting}
             className="rounded-xl bg-emerald-600 px-6 py-2 text-sm font-semibold text-white hover:bg-emerald-700 disabled:opacity-50 transition-colors"
           >
@@ -284,7 +314,7 @@ export function TestRunner({ testId, onResult, onCancel }: Props) {
               <button onClick={() => setConfirmQuit(false)} className="flex-1 rounded-xl border border-zinc-300 py-2 text-sm font-medium text-zinc-600 hover:bg-zinc-50">
                 Tiếp tục làm bài
               </button>
-              <button onClick={() => { clearInterval(timerRef.current!); onCancel(); }} className="flex-1 rounded-xl bg-red-600 py-2 text-sm font-semibold text-white hover:bg-red-700">
+              <button onClick={() => { if (timerRef.current) clearInterval(timerRef.current); onCancel(); }} className="flex-1 rounded-xl bg-red-600 py-2 text-sm font-semibold text-white hover:bg-red-700">
                 Thoát
               </button>
             </div>

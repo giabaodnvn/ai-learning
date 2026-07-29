@@ -5,6 +5,7 @@ import { useMutation, useQuery } from "@tanstack/react-query";
 import { api } from "@/lib/api";
 import type { RandomCard, QuizQuestion as QuizQuestionType, QuizResult } from "@/lib/flashcard-utils";
 import { QuizQuestion } from "./QuizQuestion";
+import { LoadingCard } from "@/components/shared/LoadingCard";
 
 interface Props {
   cards: RandomCard[];
@@ -136,10 +137,7 @@ export function QuizDeck({ cards, onFinish, onBack }: Props) {
 
   if (isLoading) {
     return (
-      <div className="rounded-2xl border border-zinc-200 bg-white p-12 flex flex-col items-center justify-center gap-3">
-        <div className="h-8 w-8 animate-spin rounded-full border-2 border-zinc-300 border-t-indigo-600" />
-        <p className="text-xs text-zinc-400">Đang tạo bài kiểm tra...</p>
-      </div>
+      <LoadingCard accent="indigo" message="Đang tạo bài kiểm tra..." />
     );
   }
 

@@ -2,6 +2,7 @@ module Api
   module V1
     class BaseController < ApplicationController
       include Api::V1::Concerns::AiErrorHandling
+      include Api::V1::Concerns::LevelScoped
 
       # Label used in the 404 message. Subclasses that deal with a single
       # resource type override it (e.g. `self.not_found_label = "Bài đọc"`),
@@ -41,30 +42,7 @@ module Api
       end
 
       def redis
-        @redis ||= Redis.new(url: ENV.fetch("REDIS_URL", "redis://localhost:6379/0"))
-      end
-
-      # Gemini often wraps JSON in markdown code fences or adds preamble text.
-      # Try multiple strategies to extract valid JSON.
-      def parse_ai_json(raw)
-        text = raw.to_s
-
-        # Strategy 1: extract from ```json ... ``` or ``` ... ```
-        if (m = text.match(/```(?:json)?\s*([\s\S]*?)\s*```/i))
-          return JSON.parse(m[1].strip)
-        end
-
-        # Strategy 2: find outermost { ... } block
-        start  = text.index("{")
-        finish = text.rindex("}")
-        return JSON.parse(text[start..finish]) if start && finish
-
-        # Strategy 3: parse as-is
-        JSON.parse(text.strip)
-      rescue JSON::ParserError => e
-        # Malformed LLM output — surface as a ServiceError so controllers reuse
-        # their existing ClaudeService::ServiceError rescue (503) instead of 500.
-        raise ClaudeService::ServiceError, "AI returned unparseable JSON: #{e.message}"
+        AppRedis.current
       end
     end
   end

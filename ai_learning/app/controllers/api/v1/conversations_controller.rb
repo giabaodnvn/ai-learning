@@ -19,14 +19,10 @@ module Api
       # Creates a new session and seeds it with the AI opening message.
       def create
         role  = params.require(:role).to_s
-        level = params[:jlpt_level].presence&.downcase || current_user.jlpt_level
+        level = level_param_or_user(:jlpt_level)
 
-        unless Prompts::ConversationTutorPrompt::ROLES.include?(role)
-          return render json: { error: "role không hợp lệ" }, status: :unprocessable_entity
-        end
-        unless ConversationSession::JLPT_LEVELS.include?(level)
-          return render json: { error: "jlpt_level không hợp lệ" }, status: :unprocessable_entity
-        end
+        return render_invalid_param("role")       unless ConversationSession::ROLES.include?(role)
+        return render_invalid_param("jlpt_level") unless valid_level?(level)
 
         session = current_user.conversation_sessions.create!(role: role, jlpt_level: level)
 
@@ -50,7 +46,7 @@ module Api
         user_content = params.require(:content).to_s.strip
 
         if user_content.blank?
-          return render json: { error: "Message không được rỗng" }, status: :unprocessable_entity
+          return render_unprocessable("Message không được rỗng")
         end
 
         session.add_message(role: "user", content: user_content)
@@ -72,7 +68,7 @@ module Api
             log_usage:  { feature: "conversation", user_id: current_user.id }
           ) do |delta|
             full_response << delta
-            stream.write("data: #{({ type: "delta", content: delta }).to_json}\n\n")
+            write_event(stream, type: "delta", content: delta)
           end
 
           parsed = Prompts::ConversationTutorPrompt.parse_response(full_response)
@@ -85,12 +81,12 @@ module Api
             translation_vi: parsed[:translation_vi]
           )
 
-          stream.write("data: #{({ type: "correction",
-                                    content:        parsed[:content],
-                                    corrections:    parsed[:corrections],
-                                    new_words:      parsed[:new_words],
-                                    translation_vi: parsed[:translation_vi] }).to_json}\n\n")
-          stream.write("data: #{({ type: "done" }).to_json}\n\n")
+          write_event(stream, type:           "correction",
+                              content:        parsed[:content],
+                              corrections:    parsed[:corrections],
+                              new_words:      parsed[:new_words],
+                              translation_vi: parsed[:translation_vi])
+          write_event(stream, type: "done")
         end
       end
 

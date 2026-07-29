@@ -19,10 +19,7 @@ module Api
               data: UserSerializer.new(resource).serializable_hash[:data][:attributes]
             }, status: :created
           else
-            render json: {
-              message: "Account creation failed.",
-              errors: resource.errors.full_messages
-            }, status: :unprocessable_entity
+            render_unprocessable(resource.errors.full_messages)
           end
         end
 

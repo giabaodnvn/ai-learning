@@ -2,6 +2,10 @@
 
 import { useState } from "react";
 import { api } from "@/lib/api";
+import { ScoreCard } from "@/components/shared/ScoreCard";
+import { ErrorBanner } from "@/components/shared/ErrorBanner";
+import { QuestionSteps } from "@/components/shared/QuestionSteps";
+import { ExerciseOptions } from "./ExerciseOptions";
 
 interface Exercise {
   type: "fill_blank" | "choice" | "translate";
@@ -17,12 +21,24 @@ interface Exercise {
 interface QuizState {
   selectedIndex: number | null;
   result: { correct: boolean; explanation_vi: string } | null;
-  loading: boolean;
 }
 
 interface Props {
   grammarPointId: number;
   pattern: string;
+}
+
+/** True when the exercise carries every field its renderer dereferences. */
+function isRenderable(ex: Exercise): boolean {
+  const hasOptions =
+    Array.isArray(ex.options) && ex.options.length > 0 && typeof ex.answer_index === "number";
+
+  switch (ex.type) {
+    case "fill_blank": return hasOptions && !!ex.sentence_with_blank;
+    case "choice":     return hasOptions && !!ex.question_vi;
+    case "translate":  return !!ex.prompt_vi;
+    default:           return false;
+  }
 }
 
 export function GrammarPracticeSet({ grammarPointId, pattern }: Props) {
@@ -47,8 +63,13 @@ export function GrammarPracticeSet({ grammarPointId, pattern }: Props) {
     setError(null);
     try {
       const res = await api.post(`/api/v1/grammar_points/${grammarPointId}/generate_set`);
-      setExercises(res.data.exercises);
-      setQuizStates(res.data.exercises.map(() => ({ selectedIndex: null, result: null, loading: false })));
+      // The set is LLM output: drop anything missing the fields its renderer
+      // dereferences, rather than crashing mid-quiz on `options.map`.
+      const usable = (res.data.exercises as Exercise[]).filter(isRenderable);
+      if (usable.length === 0) throw new Error("empty set");
+
+      setExercises(usable);
+      setQuizStates(usable.map(() => ({ selectedIndex: null, result: null })));
       setAllResults([]);
       setCurrentIndex(0);
       setShowResult(false);
@@ -60,7 +81,7 @@ export function GrammarPracticeSet({ grammarPointId, pattern }: Props) {
   }
 
   function handleAnswerMCQ(optionIndex: number) {
-    if (currentState.selectedIndex !== null || currentState.loading) return;
+    if (currentState.selectedIndex !== null) return;
 
     const correct = optionIndex === currentExercise.answer_index;
     const result = { correct, explanation_vi: currentExercise.explanation_vi };
@@ -75,25 +96,14 @@ export function GrammarPracticeSet({ grammarPointId, pattern }: Props) {
     });
   }
 
+  // Translations aren't graded automatically: recording a result switches the
+  // view to "correct answer + your answer", and the user then self-marks (which
+  // is what writes the real outcome into allResults).
   function handleTranslateSubmit() {
-    if (!translateInput.trim() || currentState.loading) return;
+    if (!translateInput.trim()) return;
 
-    setQuizStates((prev) =>
-      prev.map((s, i) => (i === currentIndex ? { ...s, loading: true } : s))
-    );
-
-    // For translation, user self-marks as correct/incorrect (show correct answer)
-    const result = {
-      correct: false, // User will visually compare with correct_answer
-      explanation_vi: currentExercise.explanation_vi,
-    };
-
-    setQuizStates((prev) =>
-      prev.map((s, i) => (i === currentIndex ? { ...s, result, loading: false } : s))
-    );
-
-    // User marks it manually in the UI
-    // For now, we'll show the correct answer and let them self-assess
+    const result = { correct: false, explanation_vi: currentExercise.explanation_vi };
+    setQuizStates((prev) => prev.map((s, i) => (i === currentIndex ? { ...s, result } : s)));
   }
 
   function handleMarkTranslateCorrect() {
@@ -110,9 +120,8 @@ export function GrammarPracticeSet({ grammarPointId, pattern }: Props) {
     proceedToNext(next);
   }
 
-  async function proceedToNext(results: boolean[]) {
+  function proceedToNext(results: boolean[]) {
     if (isLast) {
-      // Submit the set
       submitSet(results);
     } else {
       setCurrentIndex((i) => i + 1);
@@ -149,7 +158,7 @@ export function GrammarPracticeSet({ grammarPointId, pattern }: Props) {
         >
           Bắt đầu bộ luyện tập
         </button>
-        {error && <p className="text-sm text-red-600">{error}</p>}
+        {error && <ErrorBanner compact>{error}</ErrorBanner>}
       </div>
     );
   }
@@ -170,28 +179,9 @@ export function GrammarPracticeSet({ grammarPointId, pattern }: Props) {
 
   // Result screen
   if (showResult) {
-    const percent = Math.round((correctCount / exercises.length) * 100);
-    const emoji =
-      percent === 100 ? "🏆" : percent >= 75 ? "🎉" : percent >= 50 ? "😊" : "📚";
-
     return (
       <div className="space-y-5">
-        {/* Score card */}
-        <div className="rounded-2xl border border-zinc-200 bg-white p-8 text-center space-y-2">
-          <div className="text-4xl">{emoji}</div>
-          <p className="text-3xl font-bold text-zinc-900">
-            {correctCount} <span className="text-zinc-400 font-normal text-xl">/ {exercises.length}</span>
-          </p>
-          <p className="text-sm text-zinc-500">{percent}% câu trả lời đúng</p>
-          <div className="mt-3 h-2 rounded-full bg-zinc-100 overflow-hidden">
-            <div
-              className={`h-full rounded-full transition-all ${
-                percent >= 75 ? "bg-green-400" : percent >= 50 ? "bg-yellow-400" : "bg-red-400"
-              }`}
-              style={{ width: `${percent}%` }}
-            />
-          </div>
-        </div>
+        <ScoreCard score={correctCount} total={exercises.length} />
 
         {/* Actions */}
         <div className="flex gap-3">
@@ -216,24 +206,7 @@ export function GrammarPracticeSet({ grammarPointId, pattern }: Props) {
 
   return (
     <div className="space-y-4">
-      {/* Progress */}
-      <div className="flex items-center justify-between text-xs text-zinc-400">
-        <span>Câu {currentIndex + 1} / {exercises.length}</span>
-        <div className="flex gap-1">
-          {exercises.map((_, i) => (
-            <div
-              key={i}
-              className={`h-1.5 w-6 rounded-full ${
-                i < currentIndex
-                  ? "bg-green-400"
-                  : i === currentIndex
-                  ? "bg-zinc-900"
-                  : "bg-zinc-200"
-              }`}
-            />
-          ))}
-        </div>
-      </div>
+      <QuestionSteps current={currentIndex} total={exercises.length} />
 
       {/* Exercise content */}
       {currentExercise.type === "fill_blank" && (
@@ -241,40 +214,19 @@ export function GrammarPracticeSet({ grammarPointId, pattern }: Props) {
           {/* Sentence */}
           <div className="rounded-xl border border-zinc-200 bg-zinc-50 p-4">
             <p className="text-lg text-zinc-800 leading-relaxed">
-              {renderSentence(currentExercise.sentence_with_blank!)}
+              {renderSentence(currentExercise.sentence_with_blank ?? "")}
             </p>
           </div>
 
           {/* Options */}
-          <div className="grid grid-cols-2 gap-2">
-            {currentExercise.options!.map((opt, idx) => {
-              const isCorrect = idx === currentExercise.answer_index;
-              const isSelected = idx === currentState.selectedIndex;
-              const answered = currentState.result !== null;
-
-              return (
-                <button
-                  key={idx}
-                  onClick={() => handleAnswerMCQ(idx)}
-                  disabled={answered}
-                  className={`rounded-lg border px-4 py-3 text-sm font-medium text-left transition-colors ${
-                    answered && isCorrect
-                      ? "border-green-400 bg-green-50 text-green-800"
-                      : answered && isSelected
-                      ? "border-red-400 bg-red-50 text-red-800"
-                      : answered
-                      ? "border-zinc-200 bg-white text-zinc-400"
-                      : "border-zinc-300 bg-white hover:bg-zinc-50 hover:border-zinc-400 cursor-pointer"
-                  }`}
-                >
-                  <span className="mr-2 text-xs text-zinc-400">{String.fromCharCode(65 + idx)}.</span>
-                  {opt}
-                  {answered && isCorrect && " ✓"}
-                  {answered && isSelected && !isCorrect && " ✗"}
-                </button>
-              );
-            })}
-          </div>
+          <ExerciseOptions
+            options={currentExercise.options ?? []}
+            answerIndex={currentExercise.answer_index}
+            selectedIndex={currentState.selectedIndex}
+            answered={currentState.result !== null}
+            onSelect={handleAnswerMCQ}
+            layout="grid"
+          />
         </div>
       )}
 
@@ -286,35 +238,14 @@ export function GrammarPracticeSet({ grammarPointId, pattern }: Props) {
           </p>
 
           {/* Options */}
-          <div className="space-y-2">
-            {currentExercise.options!.map((opt, idx) => {
-              const isCorrect = idx === currentExercise.answer_index;
-              const isSelected = idx === currentState.selectedIndex;
-              const answered = currentState.result !== null;
-
-              return (
-                <button
-                  key={idx}
-                  onClick={() => handleAnswerMCQ(idx)}
-                  disabled={answered}
-                  className={`w-full text-left rounded-xl border px-4 py-3 text-sm transition-colors ${
-                    answered && isCorrect
-                      ? "border-green-400 bg-green-50 text-green-800"
-                      : answered && isSelected
-                      ? "border-red-400 bg-red-50 text-red-800"
-                      : answered
-                      ? "border-zinc-200 bg-white text-zinc-400"
-                      : "border-zinc-200 bg-white text-zinc-700 hover:border-zinc-300 hover:bg-zinc-50 cursor-pointer"
-                  }`}
-                >
-                  <span className="font-semibold mr-2">{String.fromCharCode(65 + idx)}.</span>
-                  {opt}
-                  {answered && isCorrect && " ✓"}
-                  {answered && isSelected && !isCorrect && " ✗"}
-                </button>
-              );
-            })}
-          </div>
+          <ExerciseOptions
+            options={currentExercise.options ?? []}
+            answerIndex={currentExercise.answer_index}
+            selectedIndex={currentState.selectedIndex}
+            answered={currentState.result !== null}
+            onSelect={handleAnswerMCQ}
+            layout="list"
+          />
         </div>
       )}
 
@@ -338,7 +269,7 @@ export function GrammarPracticeSet({ grammarPointId, pattern }: Props) {
               />
               <button
                 onClick={handleTranslateSubmit}
-                disabled={!translateInput.trim() || currentState.loading}
+                disabled={!translateInput.trim()}
                 className="w-full rounded-lg bg-zinc-900 text-white px-4 py-2 text-sm font-medium hover:bg-zinc-700 disabled:opacity-50 transition-colors"
               >
                 Xem đáp án
@@ -419,7 +350,7 @@ export function GrammarPracticeSet({ grammarPointId, pattern }: Props) {
         </button>
       )}
 
-      {error && <p className="text-sm text-red-600">{error}</p>}
+      {error && <ErrorBanner compact>{error}</ErrorBanner>}
     </div>
   );
 }

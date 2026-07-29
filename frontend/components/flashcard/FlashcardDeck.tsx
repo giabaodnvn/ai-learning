@@ -1,7 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
-import { useSession } from "next-auth/react";
+import { useEffect, useRef, useState } from "react";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { api } from "@/lib/api";
 import { mapApiCard } from "@/lib/flashcard-utils";
@@ -12,25 +11,10 @@ import { FlashcardFront } from "./FlashcardFront";
 import { FlashcardBack } from "./FlashcardBack";
 import { GradeButtons } from "./GradeButtons";
 import { SessionSummary } from "./SessionSummary";
-import { streamSSE } from "@/lib/sse";
-
-// Background prefetch: buffer a vocabulary SSE explain stream.
-async function fetchVocabExplainBuffered(
-  vocabId: number,
-  token: string,
-  signal?: AbortSignal
-): Promise<string> {
-  let result = "";
-  await streamSSE(
-    `/api/v1/vocabularies/${vocabId}/explain`,
-    { token, signal },
-    (payload) => {
-      if (payload.error || payload.done) return true;
-      result += payload.delta ?? "";
-    },
-  );
-  return result;
-}
+import { ProgressBar } from "@/components/shared/ProgressBar";
+import { bufferSSE } from "@/lib/sse";
+import { ErrorBanner } from "@/components/shared/ErrorBanner";
+import { LoadingCard } from "@/components/shared/LoadingCard";
 
 interface Props {
   config: SessionConfig;
@@ -38,9 +22,10 @@ interface Props {
 }
 
 export function FlashcardDeck({ config, onBack }: Props) {
-  const { data: session } = useSession();
   const queryClient = useQueryClient();
   const submittingRef = useRef(false);
+  const [gradeError, setGradeError] = useState(false);
+  const [restarting, setRestarting] = useState(false);
 
   const {
     queue,
@@ -92,11 +77,6 @@ export function FlashcardDeck({ config, onBack }: Props) {
   ];
   const totalCards = allCards.length;
 
-  function refetch() {
-    dueQuery.refetch();
-    newQuery.refetch();
-  }
-
   // Init session when both queries resolve and queue is empty (fresh start)
   useEffect(() => {
     if (!dueQuery.isLoading && !newQuery.isLoading && allCards.length > 0 && queue.length === 0) {
@@ -107,7 +87,7 @@ export function FlashcardDeck({ config, onBack }: Props) {
 
   // ── Prefetch AI explain for upcoming vocabulary cards ─────────────────────
   useEffect(() => {
-    if (!session?.accessToken || queue.length === 0) return;
+    if (queue.length === 0) return;
     const ctrl = new AbortController();
     const upcoming = queue.slice(currentIndex + 1, currentIndex + 6);
     upcoming
@@ -115,18 +95,19 @@ export function FlashcardDeck({ config, onBack }: Props) {
       .forEach((card) => {
         queryClient.prefetchQuery({
           queryKey: ["vocab-explain", card.cardId],
-          queryFn: () => fetchVocabExplainBuffered(card.cardId, session.accessToken, ctrl.signal),
+          queryFn: () => bufferSSE(`/api/v1/vocabularies/${card.cardId}/explain`, { signal: ctrl.signal }),
           staleTime: 30 * 60 * 1000,
         });
       });
     // Cancel in-flight prefetch streams when the card advances or the deck unmounts.
     return () => ctrl.abort();
-  }, [currentIndex, queue, session?.accessToken]); // eslint-disable-line react-hooks/exhaustive-deps
+  }, [currentIndex, queue]); // eslint-disable-line react-hooks/exhaustive-deps
 
   // ── Grade handler ─────────────────────────────────────────────────────────
   async function handleGrade(grade: number) {
     if (submittingRef.current) return;
     submittingRef.current = true;
+    setGradeError(false);
 
     const card = queue[currentIndex];
     try {
@@ -136,7 +117,11 @@ export function FlashcardDeck({ config, onBack }: Props) {
         grade,
       });
     } catch {
-      // Continue session even on network failure; server will self-correct next session
+      // Staying on the card is the only honest option: the review was not
+      // recorded, and advancing would silently drop it (the SRS state lives
+      // server-side, so nothing "self-corrects" later).
+      setGradeError(true);
+      return;
     } finally {
       submittingRef.current = false;
     }
@@ -144,10 +129,18 @@ export function FlashcardDeck({ config, onBack }: Props) {
     recordAndAdvance(grade);
   }
 
-  function handleRestart() {
-    reset();
-    queryClient.invalidateQueries({ queryKey });
-    refetch();
+  // Refetch first, then clear the queue: `reset()` empties it, which re-arms the
+  // init effect above — and if that fires while the refetch is still in flight
+  // it re-seeds the session from the cached (already-graded) cards.
+  async function handleRestart() {
+    setRestarting(true);
+    try {
+      const results = await Promise.all([dueQuery.refetch(), newQuery.refetch()]);
+      if (results.some((r) => r.isError)) return;
+      reset();
+    } finally {
+      setRestarting(false);
+    }
   }
 
   function handleBack() {
@@ -158,18 +151,12 @@ export function FlashcardDeck({ config, onBack }: Props) {
   // ── Loading / error states ────────────────────────────────────────────────
   if (isLoading) {
     return (
-      <div className="rounded-2xl border border-zinc-200 bg-white p-12 flex items-center justify-center">
-        <div className="h-8 w-8 animate-spin rounded-full border-2 border-zinc-300 border-t-zinc-800" />
-      </div>
+      <LoadingCard />
     );
   }
 
   if (error) {
-    return (
-      <div className="rounded-lg border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700">
-        Không thể tải thẻ ôn tập. Vui lòng thử lại.
-      </div>
-    );
+    return <ErrorBanner>Không thể tải thẻ ôn tập. Vui lòng thử lại.</ErrorBanner>;
   }
 
   // ── Session complete / no cards ───────────────────────────────────────────
@@ -194,7 +181,8 @@ export function FlashcardDeck({ config, onBack }: Props) {
             Quay lại
           </button>
           <button
-            onClick={() => { reset(); refetch(); }}
+            onClick={handleRestart}
+            disabled={restarting}
             className="rounded-lg border border-zinc-300 px-4 py-2 text-sm font-medium text-zinc-700 hover:bg-zinc-50 transition-colors"
           >
             Tải lại
@@ -234,12 +222,7 @@ export function FlashcardDeck({ config, onBack }: Props) {
         <span>{currentIndex + 1} / {queue.length} thẻ</span>
         <span>{queue.length - currentIndex - 1} còn lại</span>
       </div>
-      <div className="h-1.5 w-full rounded-full bg-zinc-100">
-        <div
-          className="h-1.5 rounded-full bg-indigo-500 transition-all duration-300"
-          style={{ width: `${progress}%` }}
-        />
-      </div>
+      <ProgressBar percent={progress} />
 
       {/* Front / Back */}
       {!revealed ? (
@@ -249,7 +232,14 @@ export function FlashcardDeck({ config, onBack }: Props) {
       )}
 
       {/* Grade buttons (after reveal) */}
-      {revealed && <GradeButtons cardType={card.cardType} onGrade={handleGrade} />}
+      {revealed && (
+        <>
+          <GradeButtons cardType={card.cardType} onGrade={handleGrade} />
+          {gradeError && (
+            <ErrorBanner>Không lưu được kết quả. Vui lòng chọn lại mức độ.</ErrorBanner>
+          )}
+        </>
+      )}
 
       {/* Flip button (before reveal) */}
       {!revealed && (

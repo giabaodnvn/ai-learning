@@ -122,28 +122,65 @@ export function mapRandomCard(raw: any): RandomCard {
   return { ...mapApiCard(raw), learned: raw.learned ?? false };
 }
 
-// ─── Grade label sets per card type ──────────────────────────────────────────
+// ─── Grade buttons ───────────────────────────────────────────────────────────
 
-export const GRADE_LABELS: Record<
-  FlashCard["cardType"],
-  { grade: number; ja: string; vi: string; color: string }[]
-> = {
+/**
+ * Button colour per SM-2 grade (0 = forgot … 3 = easy). Indexed by grade, so
+ * the review screen's 0/3/4/5 scale and the flashcard deck's 0-3 scale share
+ * one palette instead of four copies of the same four strings.
+ */
+export const GRADE_COLORS = [
+  "border-red-300 bg-red-50 text-red-700 hover:bg-red-100",
+  "border-amber-300 bg-amber-50 text-amber-700 hover:bg-amber-100",
+  "border-blue-300 bg-blue-50 text-blue-700 hover:bg-blue-100",
+  "border-green-300 bg-green-50 text-green-700 hover:bg-green-100",
+] as const;
+
+/**
+ * Emoji per grade, and the softer background used on the session summary
+ * (the deck's buttons want a hover state, the summary tiles do not).
+ */
+export const GRADE_EMOJI = [ "😰", "😅", "😊", "🌟" ] as const;
+
+export const GRADE_TILE_COLORS = [
+  "bg-red-50 border border-red-100 text-red-700",
+  "bg-amber-50 border border-amber-100 text-amber-700",
+  "bg-blue-50 border border-blue-100 text-blue-700",
+  "bg-emerald-50 border border-emerald-100 text-emerald-700",
+] as const;
+
+export interface GradeLabel {
+  grade: number;
+  ja: string;
+  vi: string;
+  color: string;
+}
+
+// Only the wording differs per card type; the grade order and colours do not.
+const GRADE_WORDING: Record<FlashCard["cardType"], { ja: string; vi: string }[]> = {
   vocabulary: [
-    { grade: 0, ja: "また",   vi: "Quên rồi", color: "border-red-300 bg-red-50 text-red-700 hover:bg-red-100" },
-    { grade: 1, ja: "難しい", vi: "Khó",      color: "border-amber-300 bg-amber-50 text-amber-700 hover:bg-amber-100" },
-    { grade: 2, ja: "良い",   vi: "Ổn",       color: "border-blue-300 bg-blue-50 text-blue-700 hover:bg-blue-100" },
-    { grade: 3, ja: "簡単",   vi: "Dễ",       color: "border-green-300 bg-green-50 text-green-700 hover:bg-green-100" },
+    { ja: "また", vi: "Quên rồi" },
+    { ja: "難しい", vi: "Khó" },
+    { ja: "良い", vi: "Ổn" },
+    { ja: "簡単", vi: "Dễ" },
   ],
   kanji: [
-    { grade: 0, ja: "また",   vi: "Quên",     color: "border-red-300 bg-red-50 text-red-700 hover:bg-red-100" },
-    { grade: 1, ja: "難しい", vi: "Khó nhớ",  color: "border-amber-300 bg-amber-50 text-amber-700 hover:bg-amber-100" },
-    { grade: 2, ja: "良い",   vi: "Nhớ",      color: "border-blue-300 bg-blue-50 text-blue-700 hover:bg-blue-100" },
-    { grade: 3, ja: "完璧",   vi: "Thuộc",    color: "border-green-300 bg-green-50 text-green-700 hover:bg-green-100" },
+    { ja: "また", vi: "Quên" },
+    { ja: "難しい", vi: "Khó nhớ" },
+    { ja: "良い", vi: "Nhớ" },
+    { ja: "完璧", vi: "Thuộc" },
   ],
   grammar_point: [
-    { grade: 0, ja: "また",   vi: "Quên",     color: "border-red-300 bg-red-50 text-red-700 hover:bg-red-100" },
-    { grade: 1, ja: "曖昧",   vi: "Lờ mờ",   color: "border-amber-300 bg-amber-50 text-amber-700 hover:bg-amber-100" },
-    { grade: 2, ja: "良い",   vi: "Nhớ",      color: "border-blue-300 bg-blue-50 text-blue-700 hover:bg-blue-100" },
-    { grade: 3, ja: "完璧",   vi: "Thuộc",    color: "border-green-300 bg-green-50 text-green-700 hover:bg-green-100" },
+    { ja: "また", vi: "Quên" },
+    { ja: "曖昧", vi: "Lờ mờ" },
+    { ja: "良い", vi: "Nhớ" },
+    { ja: "完璧", vi: "Thuộc" },
   ],
 };
+
+export const GRADE_LABELS: Record<FlashCard["cardType"], GradeLabel[]> = Object.fromEntries(
+  Object.entries(GRADE_WORDING).map(([cardType, wording]) => [
+    cardType,
+    wording.map((w, grade) => ({ grade, ...w, color: GRADE_COLORS[grade] })),
+  ])
+) as Record<FlashCard["cardType"], GradeLabel[]>;

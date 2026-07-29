@@ -3,6 +3,7 @@
 import { useEffect } from "react";
 import { useQueryClient } from "@tanstack/react-query";
 import { useSSEStream } from "@/hooks/useSSEStream";
+import { ErrorBanner } from "@/components/shared/ErrorBanner";
 
 interface Props {
   vocabId: number;
@@ -88,9 +89,7 @@ export function ExplainPanel({ vocabId, word, open, onClose }: Props) {
         {/* Scrollable content */}
         <div className="flex-1 overflow-y-auto px-5 py-4 min-h-0">
           {error && !displayContent && (
-            <p className="rounded-lg border border-red-200 bg-red-50 px-3 py-2 text-sm text-red-700">
-              {error}
-            </p>
+            <ErrorBanner>{error}</ErrorBanner>
           )}
           {loading && !displayContent && (
             <div className="space-y-2.5 py-2">

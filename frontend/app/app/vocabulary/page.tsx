@@ -5,6 +5,7 @@ import { useSession } from "next-auth/react";
 import { useCurrentUser } from "@/hooks/useCurrentUser";
 import VocabularyGrid from "@/components/vocabulary/VocabularyGrid";
 import { useSSEStream } from "@/hooks/useSSEStream";
+import { ErrorBanner } from "@/components/shared/ErrorBanner";
 
 type Tab = "list" | "explain";
 
@@ -104,11 +105,7 @@ export default function VocabularyPage() {
             </button>
           </form>
 
-          {error && (
-            <div className="rounded-lg border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700">
-              {error}
-            </div>
-          )}
+          {error && <ErrorBanner>{error}</ErrorBanner>}
 
           {(explanation || loading) && (
             <div className="rounded-2xl border border-zinc-200 bg-white p-6">

@@ -13,11 +13,11 @@ module Api
         topic = params[:topic].presence
 
         if text.blank?
-          return render json: { error: "Vui lòng nhập bài viết." }, status: :unprocessable_entity
+          return render_unprocessable("Vui lòng nhập bài viết.")
         end
 
         if text.length > 2000
-          return render json: { error: "Bài viết quá dài (tối đa 2000 ký tự)." }, status: :unprocessable_entity
+          return render_unprocessable("Bài viết quá dài (tối đa 2000 ký tự).")
         end
 
         prompt = Prompts::WritingFeedbackPrompt.build(

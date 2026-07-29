@@ -1,122 +1,16 @@
 "use client";
 
-import { useState } from "react";
-import { useQueryClient, useMutation } from "@tanstack/react-query";
 import { useCurrentUser } from "@/hooks/useCurrentUser";
-import { api } from "@/lib/api";
-import { LEVELS_META, LEVEL_JP } from "@/lib/levels";
+import { LEVEL_JP } from "@/lib/levels";
+import { VIP_TIERS, vipTier } from "@/lib/vip";
+import { formatBalance, formatDate } from "@/lib/format";
+import { ProfileForm } from "@/components/profile/ProfileForm";
+import { PasswordForm } from "@/components/profile/PasswordForm";
 import Image from "next/image";
 import coverImage from "@/app/images/4.jpg";
 
-const VIP_CONFIG: Record<number, {
-  label: string; desc: string;
-  headerClass: string; badgeClass: string; borderClass: string;
-}> = {
-  0: {
-    label: "Free",
-    desc: "Truy cập các tính năng học tập cơ bản.",
-    headerClass: "from-zinc-700 to-zinc-500",
-    badgeClass: "bg-zinc-100 text-zinc-700",
-    borderClass: "border-zinc-200",
-  },
-  1: {
-    label: "Basic",
-    desc: "Mở khóa thêm bài tập và lịch sử học tập.",
-    headerClass: "from-blue-700 to-blue-500",
-    badgeClass: "bg-blue-100 text-blue-700",
-    borderClass: "border-blue-200",
-  },
-  2: {
-    label: "Pro",
-    desc: "AI không giới hạn, tất cả bài kiểm tra cấp độ.",
-    headerClass: "from-purple-700 to-violet-500",
-    badgeClass: "bg-purple-100 text-purple-700",
-    borderClass: "border-purple-200",
-  },
-  3: {
-    label: "Premium",
-    desc: "Toàn quyền truy cập, ưu tiên hỗ trợ.",
-    headerClass: "from-amber-600 to-orange-400",
-    badgeClass: "bg-amber-100 text-amber-700",
-    borderClass: "border-amber-200",
-  },
-};
-
-function formatDate(iso: string | null) {
-  if (!iso) return "—";
-  return new Date(iso).toLocaleDateString("vi-VN", {
-    day: "2-digit", month: "2-digit", year: "numeric",
-  });
-}
-
-function formatBalance(raw: string) {
-  const n = parseFloat(raw);
-  return isNaN(n) ? "0₫" : n.toLocaleString("vi-VN") + "₫";
-}
-
 export default function ProfilePage() {
-  const queryClient = useQueryClient();
   const { user, isLoading } = useCurrentUser();
-
-  const [name, setName] = useState<string | null>(null);
-  const [saveSuccess, setSaveSuccess] = useState(false);
-  const [saveError, setSaveError] = useState<string | null>(null);
-
-  const updateMutation = useMutation({
-    mutationFn: async (payload: { name: string }) => {
-      const res = await api.patch("/api/v1/auth/me", { user: payload });
-      return res.data.data;
-    },
-    onSuccess: () => {
-      queryClient.invalidateQueries({ queryKey: ["currentUser"] });
-      setSaveSuccess(true);
-      setSaveError(null);
-      setTimeout(() => setSaveSuccess(false), 3000);
-    },
-    onError: (err: { response?: { data?: { errors?: string[] } } }) => {
-      const msg = err.response?.data?.errors?.join(", ") ?? "Có lỗi xảy ra.";
-      setSaveError(msg);
-    },
-  });
-
-  const [currentPassword, setCurrentPassword] = useState("");
-  const [newPassword, setNewPassword]         = useState("");
-  const [confirmPassword, setConfirmPassword] = useState("");
-  const [pwSuccess, setPwSuccess] = useState(false);
-  const [pwError, setPwError]     = useState<string | null>(null);
-
-  const passwordMutation = useMutation({
-    mutationFn: async (payload: { current_password: string; new_password: string }) => {
-      const res = await api.patch("/api/v1/auth/password", payload);
-      return res.data;
-    },
-    onSuccess: () => {
-      setPwSuccess(true);
-      setPwError(null);
-      setCurrentPassword("");
-      setNewPassword("");
-      setConfirmPassword("");
-      setTimeout(() => setPwSuccess(false), 3000);
-    },
-    onError: (err: { response?: { data?: { error?: string; errors?: string[] } } }) => {
-      const data = err.response?.data;
-      setPwError(data?.error ?? data?.errors?.join(", ") ?? "Có lỗi xảy ra.");
-    },
-  });
-
-  function handleChangePassword() {
-    setPwSuccess(false);
-    setPwError(null);
-    if (newPassword.length < 6) {
-      setPwError("Mật khẩu mới phải có ít nhất 6 ký tự.");
-      return;
-    }
-    if (newPassword !== confirmPassword) {
-      setPwError("Xác nhận mật khẩu không khớp.");
-      return;
-    }
-    passwordMutation.mutate({ current_password: currentPassword, new_password: newPassword });
-  }
 
   if (isLoading) {
     return (
@@ -130,16 +24,8 @@ export default function ProfilePage() {
 
   if (!user) return null;
 
-  const vip = VIP_CONFIG[user.vip_level] ?? VIP_CONFIG[0];
-  const displayName = name ?? user.name ?? "";
+  const vip = vipTier(user.vip_level);
   const initials = (user.name || user.email)[0].toUpperCase();
-  const isDirty = name !== null && name !== user.name;
-
-  function handleSave() {
-    setSaveSuccess(false);
-    setSaveError(null);
-    updateMutation.mutate({ name: displayName });
-  }
 
   return (
     <div className="max-w-2xl space-y-5 animate-slide-up">
@@ -237,16 +123,15 @@ export default function ProfilePage() {
 
           {/* Tier progress bar */}
           <div className="mt-5 flex gap-1.5">
-            {Object.entries(VIP_CONFIG).map(([lvl, cfg]) => {
-              const level = Number(lvl);
-              const active = level === user.vip_level;
-              const achieved = level < user.vip_level;
+            {VIP_TIERS.map((tier) => {
+              const active = tier.level === user.vip_level;
+              const achieved = tier.level < user.vip_level;
               return (
-                <div key={lvl} className="flex-1 text-center">
+                <div key={tier.level} className="flex-1 text-center">
                   <div
                     className={`h-1.5 rounded-full mb-1.5 ${
                       active
-                        ? `bg-gradient-to-r ${cfg.headerClass}`
+                        ? `bg-gradient-to-r ${tier.headerClass}`
                         : achieved
                         ? "bg-zinc-300"
                         : "bg-zinc-100"
@@ -255,7 +140,7 @@ export default function ProfilePage() {
                   <span className={`text-[10px] font-semibold ${
                     active ? "text-zinc-800" : achieved ? "text-zinc-400 line-through" : "text-zinc-300"
                   }`}>
-                    {cfg.label}
+                    {tier.label}
                   </span>
                 </div>
               );
@@ -270,124 +155,13 @@ export default function ProfilePage() {
         </div>
       </div>
 
-      {/* ── Edit form ──────────────────────────────────────── */}
-      <div className="rounded-2xl border border-zinc-200 bg-white shadow-sm p-6">
-        <h2 className="text-sm font-semibold text-zinc-800 mb-5">Chỉnh sửa thông tin</h2>
+      <ProfileForm
+        currentName={user.name}
+        email={user.email}
+        jlptLevel={user.jlpt_level}
+      />
 
-        {saveSuccess && (
-          <div className="mb-4 rounded-xl bg-green-50 border border-green-200 px-4 py-3 text-sm text-green-700">
-            Cập nhật thành công.
-          </div>
-        )}
-        {saveError && (
-          <div className="mb-4 rounded-xl bg-red-50 border border-red-200 px-4 py-3 text-sm text-red-700">
-            {saveError}
-          </div>
-        )}
-
-        <div className="space-y-4">
-          <div>
-            <label className="block text-xs font-medium text-zinc-600 mb-1.5">Tên hiển thị</label>
-            <input
-              type="text"
-              value={displayName}
-              onChange={(e) => setName(e.target.value)}
-              placeholder="Nhập tên của bạn"
-              className="w-full rounded-xl border border-zinc-200 bg-white px-4 py-2.5 text-sm outline-none focus:border-indigo-400 focus:ring-2 focus:ring-indigo-100 transition-all"
-            />
-          </div>
-
-          <div>
-            <label className="block text-xs font-medium text-zinc-600 mb-1.5">Trình độ JLPT</label>
-            <select
-              value={user.jlpt_level}
-              disabled
-              className="w-full rounded-xl border border-zinc-200 bg-zinc-50 px-4 py-2.5 text-sm text-zinc-400 cursor-not-allowed appearance-none"
-            >
-              {LEVELS_META.map(({ value, labelVi }) => (
-                <option key={value} value={value}>{labelVi}</option>
-              ))}
-            </select>
-            <p className="mt-1 text-xs text-zinc-400">Trình độ được cập nhật qua bài kiểm tra cấp độ.</p>
-          </div>
-
-          <div>
-            <label className="block text-xs font-medium text-zinc-600 mb-1.5">Email</label>
-            <input
-              type="email"
-              value={user.email}
-              disabled
-              className="w-full rounded-xl border border-zinc-200 bg-zinc-50 px-4 py-2.5 text-sm text-zinc-400 cursor-not-allowed"
-            />
-          </div>
-
-          <button
-            onClick={handleSave}
-            disabled={!isDirty || updateMutation.isPending}
-            className="w-full rounded-xl bg-indigo-700 px-4 py-2.5 text-sm font-semibold text-white hover:bg-indigo-800 transition-colors disabled:opacity-40 disabled:cursor-not-allowed shadow-sm shadow-indigo-200"
-          >
-            {updateMutation.isPending ? "Đang lưu..." : "Lưu thay đổi"}
-          </button>
-        </div>
-      </div>
-
-      {/* ── Change password ────────────────────────────────── */}
-      <div className="rounded-2xl border border-zinc-200 bg-white shadow-sm p-6">
-        <h2 className="text-sm font-semibold text-zinc-800 mb-5">Đổi mật khẩu</h2>
-
-        {pwSuccess && (
-          <div className="mb-4 rounded-xl bg-green-50 border border-green-200 px-4 py-3 text-sm text-green-700">
-            Đổi mật khẩu thành công.
-          </div>
-        )}
-        {pwError && (
-          <div className="mb-4 rounded-xl bg-red-50 border border-red-200 px-4 py-3 text-sm text-red-700">
-            {pwError}
-          </div>
-        )}
-
-        <div className="space-y-4">
-          <div>
-            <label className="block text-xs font-medium text-zinc-600 mb-1.5">Mật khẩu hiện tại</label>
-            <input
-              type="password"
-              value={currentPassword}
-              onChange={(e) => setCurrentPassword(e.target.value)}
-              autoComplete="current-password"
-              className="w-full rounded-xl border border-zinc-200 bg-white px-4 py-2.5 text-sm outline-none focus:border-indigo-400 focus:ring-2 focus:ring-indigo-100 transition-all"
-            />
-          </div>
-          <div>
-            <label className="block text-xs font-medium text-zinc-600 mb-1.5">Mật khẩu mới</label>
-            <input
-              type="password"
-              value={newPassword}
-              onChange={(e) => setNewPassword(e.target.value)}
-              autoComplete="new-password"
-              className="w-full rounded-xl border border-zinc-200 bg-white px-4 py-2.5 text-sm outline-none focus:border-indigo-400 focus:ring-2 focus:ring-indigo-100 transition-all"
-            />
-            <p className="mt-1 text-xs text-zinc-400">Tối thiểu 6 ký tự.</p>
-          </div>
-          <div>
-            <label className="block text-xs font-medium text-zinc-600 mb-1.5">Xác nhận mật khẩu mới</label>
-            <input
-              type="password"
-              value={confirmPassword}
-              onChange={(e) => setConfirmPassword(e.target.value)}
-              autoComplete="new-password"
-              className="w-full rounded-xl border border-zinc-200 bg-white px-4 py-2.5 text-sm outline-none focus:border-indigo-400 focus:ring-2 focus:ring-indigo-100 transition-all"
-            />
-          </div>
-
-          <button
-            onClick={handleChangePassword}
-            disabled={!currentPassword || !newPassword || !confirmPassword || passwordMutation.isPending}
-            className="w-full rounded-xl bg-indigo-700 px-4 py-2.5 text-sm font-semibold text-white hover:bg-indigo-800 transition-colors disabled:opacity-40 disabled:cursor-not-allowed shadow-sm shadow-indigo-200"
-          >
-            {passwordMutation.isPending ? "Đang đổi..." : "Đổi mật khẩu"}
-          </button>
-        </div>
-      </div>
+      <PasswordForm />
 
     </div>
   );

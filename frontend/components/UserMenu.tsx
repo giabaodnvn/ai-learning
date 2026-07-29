@@ -1,22 +1,27 @@
 "use client";
 
+import { useState } from "react";
 import Link from "next/link";
 import { signOut } from "next-auth/react";
 import { useCurrentUser } from "@/hooks/useCurrentUser";
+import { api } from "@/lib/api";
+import { vipTier } from "@/lib/vip";
 
-const JLPT_LABELS: Record<string, string> = {
-  n5: "N5", n4: "N4", n3: "N3", n2: "N2", n1: "N1",
-};
-
-const VIP_CONFIG: Record<number, { label: string; className: string }> = {
-  0: { label: "Free",    className: "bg-white/10 text-indigo-200" },
-  1: { label: "Basic",   className: "bg-blue-500/30 text-blue-200" },
-  2: { label: "Pro",     className: "bg-purple-500/30 text-purple-200" },
-  3: { label: "Premium", className: "bg-amber-500/30 text-amber-200" },
-};
+// Clearing the NextAuth cookie only ends the browser session — the Rails JWT it
+// carried stays valid until it expires (a full day). Rotate the user's jti
+// server-side first so a leaked token dies with the logout.
+async function logout() {
+  try {
+    await api.post("/api/v1/auth/sign_out");
+  } catch {
+    // Revocation is best-effort: never trap the user in a signed-in UI.
+  }
+  await signOut({ callbackUrl: "/login" });
+}
 
 export function UserMenu() {
   const { user, isLoading } = useCurrentUser();
+  const [loggingOut, setLoggingOut] = useState(false);
 
   if (isLoading) {
     return <div className="h-8 w-36 animate-pulse rounded-lg bg-white/10" />;
@@ -24,7 +29,7 @@ export function UserMenu() {
 
   if (!user) return null;
 
-  const vip = VIP_CONFIG[user.vip_level] ?? VIP_CONFIG[0];
+  const vip = vipTier(user.vip_level);
   const initials = (user.name || user.email)[0].toUpperCase();
 
   return (
@@ -45,10 +50,10 @@ export function UserMenu() {
       {/* Badges */}
       <div className="flex items-center gap-1">
         <span className="rounded-full bg-indigo-400/20 px-2 py-0.5 text-[10px] font-bold text-indigo-200 ring-1 ring-indigo-400/30">
-          {JLPT_LABELS[user.jlpt_level] ?? user.jlpt_level.toUpperCase()}
+          {user.jlpt_level.toUpperCase()}
         </span>
         {user.vip_level > 0 && (
-          <span className={`rounded-full px-2 py-0.5 text-[10px] font-bold ${vip.className}`}>
+          <span className={`rounded-full px-2 py-0.5 text-[10px] font-bold ${vip.headerBadgeClass}`}>
             {vip.label}
           </span>
         )}
@@ -56,10 +61,14 @@ export function UserMenu() {
 
       {/* Logout */}
       <button
-        onClick={() => signOut({ callbackUrl: "/login" })}
-        className="rounded-lg border border-white/15 bg-white/5 px-3 py-1.5 text-xs font-medium text-indigo-200 hover:bg-white/15 hover:text-white transition-all"
+        onClick={() => {
+          setLoggingOut(true);
+          void logout();
+        }}
+        disabled={loggingOut}
+        className="rounded-lg border border-white/15 bg-white/5 px-3 py-1.5 text-xs font-medium text-indigo-200 hover:bg-white/15 hover:text-white transition-all disabled:opacity-50"
       >
-        Đăng xuất
+        {loggingOut ? "Đang đăng xuất…" : "Đăng xuất"}
       </button>
     </div>
   );

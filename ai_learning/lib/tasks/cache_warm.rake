@@ -1,10 +1,13 @@
 # frozen_string_literal: true
 
+# The key layout, the TTL and the JSON extraction all belong to
+# AiCacheService / AiJson — this task must not carry its own copies, or a warmed
+# entry stops matching what GrammarPointsController#generate_exercise reads.
 namespace :cache do
   desc "Pre-warm AI exercise cache for top 50 grammar points (all JLPT levels)"
   task warm_grammar: :environment do
-    redis   = Redis.new(url: ENV.fetch("REDIS_URL", "redis://localhost:6379/0"))
-    levels  = GrammarPoint::JLPT_LEVELS
+    redis   = AppRedis.current
+    levels  = JlptLeveled::JLPT_LEVELS
     points  = GrammarPoint.order(:id).limit(50)
     total   = points.count * levels.size
     warmed  = 0
@@ -14,7 +17,7 @@ namespace :cache do
 
     points.each do |point|
       levels.each do |level|
-        cache_key = "grammar_exercise:#{point.id}:#{level}"
+        cache_key = AiCacheService.namespaced_key("grammar_exercise", point.id, level)
 
         if redis.exists?(cache_key) == 1
           skipped += 1
@@ -22,17 +25,16 @@ namespace :cache do
         end
 
         begin
-          prompt = Prompts::ExerciseGeneratorPrompt.build(
-            pattern:        point.pattern,
-            explanation_vi: point.explanation_vi,
-            user_level:     level
+          parsed = AiJson.complete(
+            prompt:  Prompts::ExerciseGeneratorPrompt.build(
+              pattern:        point.pattern,
+              explanation_vi: point.explanation_vi,
+              user_level:     level
+            ),
+            feature: "grammar_exercise_warm",
+            user_id: nil
           )
-          raw    = ClaudeService.complete(
-            prompt:    prompt,
-            log_usage: { feature: "grammar_exercise_warm", user_id: nil }
-          )
-          parsed = extract_json(raw)
-          redis.setex(cache_key, 7.days.to_i, parsed.to_json)
+          redis.setex(cache_key, AiCacheService::EXERCISE_TTL, parsed.to_json)
           warmed += 1
           print "."
           $stdout.flush
@@ -48,22 +50,9 @@ namespace :cache do
 
   desc "Clear all grammar exercise caches"
   task clear_grammar: :environment do
-    redis = Redis.new(url: ENV.fetch("REDIS_URL", "redis://localhost:6379/0"))
-    keys  = redis.keys("grammar_exercise:*")
+    redis = AppRedis.current
+    keys  = redis.keys(AiCacheService.namespaced_key("grammar_exercise", "*"))
     redis.del(*keys) if keys.any?
     puts "Cleared #{keys.size} grammar exercise cache entries."
-  end
-
-  private
-
-  def extract_json(raw)
-    text = raw.to_s
-    if (m = text.match(/```(?:json)?\s*([\s\S]*?)\s*```/i))
-      return JSON.parse(m[1].strip)
-    end
-    start  = text.index("{")
-    finish = text.rindex("}")
-    return JSON.parse(text[start..finish]) if start && finish
-    JSON.parse(text.strip)
   end
 end

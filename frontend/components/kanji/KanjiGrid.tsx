@@ -1,11 +1,10 @@
 "use client";
 
-import { useState } from "react";
 import Link from "next/link";
-import { useQuery, keepPreviousData } from "@tanstack/react-query";
-import { api } from "@/lib/api";
 import { Pagination } from "@/components/Pagination";
 import { LevelTabs } from "@/components/shared/LevelTabs";
+import { ErrorBanner } from "@/components/shared/ErrorBanner";
+import { useLevelPagedList } from "@/hooks/useLevelPagedList";
 import { type JlptLevel as Level } from "@/types/quiz";
 
 interface Kanji {
@@ -20,30 +19,9 @@ interface Kanji {
   };
 }
 
-interface KanjiResponse {
-  data: Kanji[];
-  meta: { total: number; page: number; per_page: number; pages: number };
-}
-
-async function fetchKanjis(level: Level, page: number): Promise<KanjiResponse> {
-  const res = await api.get("/api/v1/kanjis", { params: { level, page, per_page: 30 } });
-  return res.data;
-}
-
 export default function KanjiGrid() {
-  const [level, setLevel] = useState<Level>("n5");
-  const [page, setPage] = useState(1);
-
-  const { data, isLoading, isError } = useQuery({
-    queryKey: ["kanjis", level, page],
-    queryFn: () => fetchKanjis(level, page),
-    placeholderData: keepPreviousData,
-  });
-
-  function handleLevelChange(l: Level) {
-    setLevel(l);
-    setPage(1);
-  }
+  const { level, page, setPage, changeLevel, data, isLoading, isError } =
+    useLevelPagedList<Kanji>({ resource: "kanjis", path: "/api/v1/kanjis", perPage: 30 });
 
   return (
     <div className="space-y-5">
@@ -51,7 +29,7 @@ export default function KanjiGrid() {
       {/* Level tabs */}
       <LevelTabs
         value={level}
-        onChange={handleLevelChange}
+        onChange={changeLevel}
         variant="colored"
         right={data && <span className="ml-auto text-xs text-zinc-400">{data.meta.total} chữ</span>}
       />
@@ -65,9 +43,7 @@ export default function KanjiGrid() {
         </div>
       )}
 
-      {isError && (
-        <p className="text-sm text-red-500 text-center py-8">Không thể tải dữ liệu. Vui lòng thử lại.</p>
-      )}
+      {isError && <ErrorBanner>Không thể tải dữ liệu. Vui lòng thử lại.</ErrorBanner>}
 
       {/* Kanji grid */}
       {data && (

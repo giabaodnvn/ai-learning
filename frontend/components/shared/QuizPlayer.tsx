@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import type { AnswerResult } from "@/types/quiz";
+import { ErrorBanner } from "@/components/shared/ErrorBanner";
+import { QuestionSteps } from "@/components/shared/QuestionSteps";
 
 export interface QuizPlayerQuestion {
   text: string;
@@ -63,24 +65,7 @@ export function QuizPlayer({ questions, onFinish, submitError }: Props) {
 
   return (
     <div className="rounded-2xl border border-zinc-200 bg-white p-6 space-y-5">
-      {/* Progress */}
-      <div className="flex items-center justify-between text-xs text-zinc-400">
-        <span>Câu {currentIndex + 1} / {questions.length}</span>
-        <div className="flex gap-1">
-          {questions.map((_, i) => (
-            <div
-              key={i}
-              className={`h-1.5 w-6 rounded-full ${
-                i < currentIndex
-                  ? "bg-green-400"
-                  : i === currentIndex
-                  ? "bg-zinc-900"
-                  : "bg-zinc-200"
-              }`}
-            />
-          ))}
-        </div>
-      </div>
+      <QuestionSteps current={currentIndex} total={questions.length} />
 
       {/* Question */}
       <p className="text-sm font-medium text-zinc-800 leading-relaxed">{question.text}</p>
@@ -129,11 +114,7 @@ export function QuizPlayer({ questions, onFinish, submitError }: Props) {
       )}
 
       {/* Submit error */}
-      {submitError && (
-        <div className="rounded-xl px-4 py-3 text-sm bg-red-50 text-red-800 border border-red-200">
-          {submitError}
-        </div>
-      )}
+      {submitError && <ErrorBanner>{submitError}</ErrorBanner>}
 
       {/* Next / Finish */}
       {state.result && (

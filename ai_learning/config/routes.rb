@@ -51,16 +51,21 @@ Rails.application.routes.draw do
           sessions: "api/v1/auth/sessions",
           registrations: "api/v1/auth/registrations"
         },
-        # Devise's recoverable routes pointed at a non-existent controller; the
-        # app uses its own password endpoints below instead.
-        skip: [ :passwords ],
+        # Devise's recoverable routes pointed at a non-existent controller, and
+        # its session routes include `GET sign_in → sessions#new`, an action this
+        # API-only controller does not define (so that route 500s). Both are
+        # skipped; the endpoints the app actually serves are declared below.
+        skip: [ :passwords, :sessions ],
         defaults: { format: :json }
 
       namespace :auth do
         get   "me", to: "profiles#show"
         patch "me", to: "profiles#update"
         patch "password", to: "passwords#update"
-        post "sign_out", to: "sessions#destroy"
+        post   "sign_in",  to: "sessions#create"
+        # Both verbs: the client sends POST, Devise's own helpers assume DELETE.
+        post   "sign_out", to: "sessions#destroy"
+        delete "sign_out", to: "sessions#destroy"
       end
 
       # Admin endpoints (require admin role)
@@ -77,7 +82,9 @@ Rails.application.routes.draw do
       get  "writing/history",    to: "writing#history"
 
       # Reading passages (REST + cache-first + word lookup)
-      resources :reading_passages, only: [ :index, :show ] do
+      # No `show`: the index response already carries every passage in full, and
+      # the controller has never had that action — the route only produced a 500.
+      resources :reading_passages, only: [ :index ] do
         collection do
           post :generate
         end

@@ -47,11 +47,6 @@ class AiUsageLog < ApplicationRecord
     (output_tokens / 1000.0 * pricing[:output])
   end
 
-  # Returns estimated cost in USD for a record's token counts.
-  def estimated_cost
-    self.class.cost_for(model: model, input_tokens: input_tokens, output_tokens: output_tokens)
-  end
-
   # Aggregated usage grouped by feature + model for a given time window.
   # Returns array sorted by cost descending.
   def self.aggregate_by_feature(from:)

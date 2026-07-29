@@ -8,7 +8,7 @@ module Api
       # POST /api/v1/conversation/chat
       def chat
         role       = params[:role].presence || "free_talk"
-        user_level = params[:user_level].presence || current_user.jlpt_level
+        user_level = level_param_or_user(:user_level)
         messages   = Array(params[:messages]).map do |m|
           { role: m[:role], content: m[:content] }
         end

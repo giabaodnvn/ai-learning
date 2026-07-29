@@ -7,23 +7,18 @@ module Api
 
       # GET /api/v1/listening_exercises?level=n3&topic=カフェでの会話
       # Returns cached DB exercises first; generates one if none exist.
+      DEFAULT_TOPIC = "日常会話"
+
       def index
-        level = params[:level].presence || current_user.jlpt_level
+        level = level_param_or_user
         topic = params[:topic].presence
 
-        scope = ListeningExercise.ai_generated.by_level(level)
-        scope = scope.by_topic(topic) if topic
-        exercises = scope.order(created_at: :desc).limit(12)
+        exercises = ListeningExercise.recent_for(level, topic).to_a
+        # Nothing generated for this level yet — seed the list with one exercise
+        # so the screen is never empty on first visit.
+        exercises = [ generate_and_save!(jlpt_level: level, topic: topic || DEFAULT_TOPIC) ] if exercises.empty?
 
-        if exercises.any?
-          render json: exercises.map { |e| serialize_exercise(e) }
-        else
-          exercise = generate_and_save!(
-            jlpt_level: level,
-            topic:      topic || "日常会話"
-          )
-          render json: [ serialize_exercise(exercise) ]
-        end
+        render json: exercises.map { |e| serialize_exercise(e) }
       end
 
       # GET /api/v1/listening_exercises/:id
@@ -36,7 +31,7 @@ module Api
       # body: { topic, jlpt_level (optional) }
       def generate
         topic      = params.require(:topic)
-        jlpt_level = params[:jlpt_level].presence || current_user.jlpt_level
+        jlpt_level = level_param_or_user(:jlpt_level)
 
         exercise = generate_and_save!(jlpt_level: jlpt_level, topic: topic)
         render json: serialize_exercise(exercise), status: :created
@@ -89,64 +84,49 @@ module Api
 
       # GET /api/v1/listening_exercises/stats
       def stats
-        attempts = current_user.listening_attempts.includes(:listening_exercise)
+        attempts = current_user.listening_attempts
 
-        if attempts.empty?
-          return render json: {
-            total_attempts: 0,
-            avg_score: 0.0,
-            by_speed: {}
-          }
-        end
-
-        total_questions = attempts.sum(:total_questions)
-        avg_score = total_questions.zero? ? 0.0 : (attempts.sum(:score).to_f / total_questions).round(2)
-
+        # Three queries: the row count, then correct/total grouped by speed.
+        # The overall accuracy is derived from those groups rather than costing
+        # two more aggregate round-trips.
         correct_by_rate = attempts.group(:speech_rate).sum(:score)
         total_by_rate   = attempts.group(:speech_rate).sum(:total_questions)
-        by_speed = correct_by_rate.each_with_object({}) do |(rate, correct), h|
-          total = total_by_rate[rate].to_f
-          h[rate.to_s] = total.zero? ? 0.0 : (correct.to_f / total).round(2)
-        end
+
+        answered = total_by_rate.values.sum
+        correct  = correct_by_rate.values.sum
 
         render json: {
           total_attempts: attempts.count,
-          avg_score: avg_score,
-          by_speed: by_speed
+          avg_score:      ratio(correct, answered),
+          by_speed:       correct_by_rate.to_h { |rate, hits| [ rate.to_s, ratio(hits, total_by_rate[rate]) ] }
         }
       end
 
       private
 
+      # Accuracy as a 0.0–1.0 fraction; 0.0 when nothing has been answered.
+      def ratio(hits, total)
+        total.to_i.zero? ? 0.0 : (hits.to_f / total).round(2)
+      end
+
       def generate_and_save!(jlpt_level:, topic:)
-        prompt = Prompts::ListeningExercisePrompt.build(
-          topic:      topic,
-          jlpt_level: jlpt_level
+        data = AiJson.complete(
+          prompt:  Prompts::ListeningExercisePrompt.build(topic: topic, jlpt_level: jlpt_level),
+          feature: "listening_generate",
+          user_id: current_user.id
         )
 
-        raw = AiCacheService.fetch(prompt, skip_cache: true) do
-          ClaudeService.complete(
-            prompt:     prompt,
-            max_tokens: 2048,
-            log_usage:  { feature: "listening_generate", user_id: current_user.id }
+        create_from_ai!("exercise data") do
+          ListeningExercise.create!(
+            title:       data["title"],
+            script_ja:   data["script_ja"],
+            script_vi:   data["script_vi"],
+            jlpt_level:  jlpt_level,
+            topic:       topic,
+            questions:   data["questions"] || [],
+            ai_generated: true
           )
         end
-        data = parse_ai_json(raw)
-
-        ListeningExercise.create!(
-          title:       data["title"],
-          script_ja:   data["script_ja"],
-          script_vi:   data["script_vi"],
-          jlpt_level:  jlpt_level,
-          topic:       topic,
-          questions:   data["questions"] || [],
-          ai_generated: true
-        )
-      rescue ActiveRecord::RecordInvalid => e
-        # AI returned syntactically valid JSON but with missing/blank fields.
-        # Surface as a ServiceError so it reuses the AI-error rescue (503)
-        # instead of leaking as a 500.
-        raise ClaudeService::ServiceError, "AI returned incomplete exercise data: #{e.message}"
       end
 
       def serialize_exercise(exercise)

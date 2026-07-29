@@ -3,6 +3,7 @@
 import { useParams, useRouter } from "next/navigation";
 import { useQuery } from "@tanstack/react-query";
 import { api } from "@/lib/api";
+import { LEVEL_LABEL_VI } from "@/lib/levels";
 
 interface VocabExample {
   word: string;
@@ -57,13 +58,6 @@ export default function KanjiDetailPage() {
   }
 
   const kanji = data.attributes;
-  const LEVEL_LABELS: Record<string, string> = {
-    n5: "N5 — Sơ cấp",
-    n4: "N4 — Sơ trung",
-    n3: "N3 — Trung cấp",
-    n2: "N2 — Trung cao",
-    n1: "N1 — Cao cấp",
-  };
 
   return (
     <div className="space-y-6">
@@ -76,7 +70,7 @@ export default function KanjiDetailPage() {
               {kanji.jlpt_level.toUpperCase()}
             </span>
             <span className="text-xs text-zinc-500">
-              {LEVEL_LABELS[kanji.jlpt_level] || kanji.jlpt_level}
+              {LEVEL_LABEL_VI[kanji.jlpt_level] ?? kanji.jlpt_level}
             </span>
           </div>
         </div>

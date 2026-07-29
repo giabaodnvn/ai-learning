@@ -13,6 +13,23 @@ export interface StreamSSEOptions {
   signal?: AbortSignal;
 }
 
+/**
+ * Vietnamese message for the `error` codes SseStreamable emits
+ * ("rate_limit" | "timeout" | "server_error"). Without this the raw code leaks
+ * into the UI, which is what the chat screen used to show.
+ */
+const SSE_ERROR_MESSAGES: Record<string, string> = {
+  rate_limit:   "Đã đạt giới hạn yêu cầu AI. Vui lòng thử lại sau.",
+  timeout:      "AI phản hồi quá lâu. Vui lòng thử lại.",
+  server_error: "Lỗi kết nối AI. Vui lòng thử lại.",
+};
+
+export const DEFAULT_SSE_ERROR = "Mất kết nối. Vui lòng thử lại.";
+
+export function sseErrorMessage(code: string): string {
+  return SSE_ERROR_MESSAGES[code] ?? DEFAULT_SSE_ERROR;
+}
+
 /** A parsed `data:` JSON event. Common fields are typed; extras are `unknown`. */
 export interface SSEPayload {
   delta?: string;
@@ -88,4 +105,28 @@ export async function streamSSE(
   } finally {
     reader.cancel().catch(() => {});
   }
+}
+
+/**
+ * Consume a plain-text SSE endpoint and resolve with the whole reply.
+ *
+ * For background prefetching, where there is no UI to stream into. Rejects
+ * unless the stream ended with a `done` event, so a truncated or server-errored
+ * reply is never mistaken for a complete one and cached as such.
+ */
+export async function bufferSSE(path: string, options: StreamSSEOptions = {}): Promise<string> {
+  let result = "";
+  let complete = false;
+
+  await streamSSE(path, options, (payload) => {
+    if (payload.error) return true;
+    if (payload.done) {
+      complete = true;
+      return true;
+    }
+    result += payload.delta ?? "";
+  });
+
+  if (!complete) throw new Error("Stream kết thúc sớm");
+  return result;
 }

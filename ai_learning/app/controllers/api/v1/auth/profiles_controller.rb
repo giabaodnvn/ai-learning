@@ -19,7 +19,7 @@ module Api
               data: UserSerializer.new(current_user).serializable_hash[:data][:attributes]
             }, status: :ok
           else
-            render json: { errors: current_user.errors.full_messages }, status: :unprocessable_entity
+            render_unprocessable(current_user.errors.full_messages)
           end
         end
       end

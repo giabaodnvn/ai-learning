@@ -10,11 +10,9 @@ module Api
 
       # GET /api/v1/vocabularies?level=n5&page=1&per_page=30&search=たべる
       def index
-        level  = params[:level].presence&.downcase
         search = params[:search].presence
 
-        scope = Vocabulary.all
-        scope = scope.by_level(level) if level
+        scope = Vocabulary.by_level(level_param)
         if search
           like = "%#{ActiveRecord::Base.sanitize_sql_like(search)}%"
           scope = scope.where("word LIKE ? OR reading LIKE ? OR meaning_vi LIKE ?", like, like, like)
@@ -25,12 +23,12 @@ module Api
 
       # POST /api/v1/vocabulary/explain
       def explain
-        word       = params.require(:word)
-        reading    = params[:reading].presence || word
-        raw_level  = params[:user_level].presence
-        user_level = %w[n1 n2 n3 n4 n5].include?(raw_level) ? raw_level : current_user.jlpt_level
+        word    = params.require(:word)
+        reading = params[:reading].presence || word
 
-        stream_vocab_explanation(word: word, reading: reading, user_level: user_level)
+        stream_vocab_explanation(
+          word: word, reading: reading, user_level: valid_level_or_user(:user_level)
+        )
       end
 
       # GET /api/v1/vocabularies/:id/explain
@@ -54,24 +52,12 @@ module Api
           word: word, reading: reading, user_level: user_level
         )
 
-        cache_key = AiCacheService.cache_key(prompt)
-        cached    = redis.get(cache_key)
-
         stream_sse do |stream|
-          if cached
-            write_sse(stream, delta: cached)
-          else
-            buffer = +""
-            ClaudeService.chat(
-              messages:  [ { role: "user", content: prompt } ],
-              model:     ClaudeService::DEFAULT_MODEL,
-              log_usage: { feature: "vocabulary_explain", user_id: current_user.id }
-            ) do |delta|
-              buffer << delta
-              write_sse(stream, delta: delta)
-            end
-            redis.setex(cache_key, AiCacheService::TTL, buffer)
-          end
+          AiCacheService.stream(
+            prompt,
+            log_usage: { feature: "vocabulary_explain", user_id: current_user.id }
+          ) { |delta| write_sse(stream, delta: delta) }
+
           write_sse(stream, delta: "", done: true)
         end
       end

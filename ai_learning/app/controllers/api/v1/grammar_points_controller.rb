@@ -8,14 +8,10 @@ module Api
 
       self.not_found_label = "GrammarPoint"
 
-      EXERCISE_TTL = 7 * 24 * 3600 # 7 days
-
       # GET /api/v1/grammar_points?level=n5&page=1&per_page=20
       def index
-        level = params[:level].presence&.downcase
-        scope = level ? GrammarPoint.by_level(level) : GrammarPoint.all
-
-        render_paginated(scope, serializer: GrammarPointSerializer, order: :id, default_per: 20, max_per: 50)
+        render_paginated(GrammarPoint.by_level(level_param), serializer: GrammarPointSerializer,
+                         order: :id, default_per: 20, max_per: 50)
       end
 
       # GET /api/v1/grammar_points/:id
@@ -32,19 +28,16 @@ module Api
         sentence = params.require(:sentence).to_s.strip
         level    = current_user.jlpt_level
 
-        cache_key = "grammar_check:#{Digest::SHA256.hexdigest("#{sentence}:#{point.id}:#{level}")}"
+        cache_key = AiCacheService.hashed_key("grammar_check", sentence, point.id, level)
 
-        result = AiCacheService.fetch_json(cache_key) do
-          prompt = Prompts::GrammarCheckerPrompt.build(
-            sentence:       sentence,
-            target_grammar: point.pattern,
-            user_level:     level
+        result = AiCacheService.fetch_json(cache_key, log_usage: usage("grammar_check")) do
+          AiJson.complete(
+            prompt: Prompts::GrammarCheckerPrompt.build(
+              sentence: sentence, target_grammar: point.pattern, user_level: level
+            ),
+            feature: "grammar_check",
+            user_id: current_user.id
           )
-          raw = ClaudeService.complete(
-            prompt:    prompt,
-            log_usage: { feature: "grammar_check", user_id: current_user.id }
-          )
-          parse_ai_json(raw)
         end
 
         render json: result
@@ -57,19 +50,20 @@ module Api
         point = GrammarPoint.find(params[:id])
         level = current_user.jlpt_level
 
-        cache_key = "grammar_exercise:#{point.id}:#{level}"
+        cache_key = AiCacheService.namespaced_key("grammar_exercise", point.id, level)
 
-        result = AiCacheService.fetch_json(cache_key, ttl: EXERCISE_TTL) do
-          prompt = Prompts::ExerciseGeneratorPrompt.build(
-            pattern:        point.pattern,
-            explanation_vi: point.explanation_vi,
-            user_level:     level
+        result = AiCacheService.fetch_json(
+          cache_key,
+          ttl:       AiCacheService::EXERCISE_TTL,
+          log_usage: usage("grammar_exercise")
+        ) do
+          AiJson.complete(
+            prompt: Prompts::ExerciseGeneratorPrompt.build(
+              pattern: point.pattern, explanation_vi: point.explanation_vi, user_level: level
+            ),
+            feature: "grammar_exercise",
+            user_id: current_user.id
           )
-          raw = ClaudeService.complete(
-            prompt:    prompt,
-            log_usage: { feature: "grammar_exercise", user_id: current_user.id }
-          )
-          parse_ai_json(raw)
         end
 
         render json: result
@@ -108,20 +102,20 @@ module Api
         point = GrammarPoint.find(params[:id])
         level = current_user.jlpt_level
 
-        prompt = Prompts::GrammarSetPrompt.build(
-          pattern:        point.pattern,
-          explanation_vi: point.explanation_vi,
-          user_level:     level
+        data = AiJson.complete(
+          prompt: Prompts::GrammarSetPrompt.build(
+            pattern: point.pattern, explanation_vi: point.explanation_vi, user_level: level
+          ),
+          feature:    "grammar_set",
+          user_id:    current_user.id,
+          max_tokens: 3000
         )
 
-        raw  = ClaudeService.complete(
-          prompt:     prompt,
-          max_tokens: 3000,
-          log_usage:  { feature: "grammar_set", user_id: current_user.id }
-        )
-        data = parse_ai_json(raw)
+        # The prompt asks for a bare array, but a model that wraps it in
+        # {"exercises": [...]} shouldn't turn into `Array(hash)` → [[k, v], …].
+        exercises = data.is_a?(Hash) ? Array(data["exercises"]) : Array(data)
 
-        render json: { exercises: Array(data), grammar_point_id: point.id }
+        render json: { exercises: exercises, grammar_point_id: point.id }
       end
 
       # POST /api/v1/grammar_points/:id/complete_set
@@ -148,7 +142,7 @@ module Api
         progress = SrsReviewService.apply!(user: current_user, progress: progress, grade: grade)
 
         # Update Redis streak (outside the DB transaction — Redis isn't transactional)
-        streak = update_grammar_streak!(current_user.id, point.id)
+        streak = streak_service(point).record!
 
         render json: {
           streak_count:  streak[:count],
@@ -162,38 +156,20 @@ module Api
       # GET /api/v1/grammar_points/:id/streak_info
       # Returns: { streak_count, last_practiced }
       def streak_info
-        point = GrammarPoint.find(params[:id])
-        streak = get_grammar_streak(current_user.id, point.id)
+        point  = GrammarPoint.find(params[:id])
+        streak = streak_service(point).read
+
         render json: { streak_count: streak[:count], last_practiced: streak[:last_date] }
       end
 
       private
 
-      def grammar_streak_key(user_id, point_id)
-        "grammar_streak:#{user_id}:#{point_id}"
+      def usage(feature)
+        { feature: feature, user_id: current_user.id }
       end
 
-      def get_grammar_streak(user_id, point_id)
-        raw = redis.get(grammar_streak_key(user_id, point_id))
-        return { count: 0, last_date: nil } unless raw
-        JSON.parse(raw, symbolize_names: true)
-      rescue JSON::ParserError
-        { count: 0, last_date: nil }
-      end
-
-      def update_grammar_streak!(user_id, point_id)
-        streak = get_grammar_streak(user_id, point_id)
-        today  = Date.current.to_s
-        new_count = if streak[:last_date] == today
-                      streak[:count]             # already practiced today
-        elsif streak[:last_date] == (Date.current - 1).to_s
-                      streak[:count] + 1        # consecutive day
-        else
-                      1                          # streak reset
-        end
-        new_streak = { count: new_count, last_date: today }
-        redis.setex(grammar_streak_key(user_id, point_id), 30 * 24 * 3600, new_streak.to_json)
-        new_streak
+      def streak_service(point)
+        GrammarStreakService.new(current_user.id, point.id)
       end
     end
   end

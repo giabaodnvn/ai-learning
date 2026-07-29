@@ -15,17 +15,22 @@ module AdminHelper
     link_to label, path, class: "flex items-center gap-2.5 rounded-xl px-3.5 py-2.5 text-sm font-medium #{cls} transition"
   end
 
-  VIP_LABELS = { 0 => [ "Free", "gray" ], 1 => [ "Basic", "blue" ], 2 => [ "Pro", "purple" ], 3 => [ "Premium", "yellow" ] }.freeze
+  # Only the colour lives here — User::VIP_NAMES owns the labels.
+  VIP_COLORS  = { 0 => "gray", 1 => "blue", 2 => "purple", 3 => "yellow" }.freeze
   ROLE_LABELS = { "admin" => [ "Admin", "red" ], "student" => [ "Student", "green" ] }.freeze
 
   def vip_badge(level)
-    label, color = VIP_LABELS[level.to_i] || [ "?", "gray" ]
-    content_tag(:span, label,
-      class: "inline-flex items-center rounded-full px-2 py-0.5 text-xs font-medium bg-#{color}-100 text-#{color}-700")
+    badge(User::VIP_NAMES[level.to_i] || "?", VIP_COLORS[level.to_i] || "gray")
   end
 
   def role_badge(role)
     label, color = ROLE_LABELS[role.to_s] || [ role, "gray" ]
+    badge(label, color)
+  end
+
+  private
+
+  def badge(label, color)
     content_tag(:span, label,
       class: "inline-flex items-center rounded-full px-2 py-0.5 text-xs font-medium bg-#{color}-100 text-#{color}-700")
   end

@@ -9,7 +9,7 @@ module Api
         private
 
         def require_admin!
-          render json: { error: "Forbidden" }, status: :forbidden unless current_user&.admin?
+          render_forbidden unless current_user&.admin?
         end
       end
     end

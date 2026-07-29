@@ -4,7 +4,8 @@ import { useState, useEffect, useRef, useCallback } from "react";
 import { useParams, useRouter } from "next/navigation";
 import { useSession } from "next-auth/react";
 import { MessageBubble, type Message } from "@/components/conversation/MessageBubble";
-import { streamSSE } from "@/lib/sse";
+import { sseErrorMessage, streamSSE } from "@/lib/sse";
+import { ErrorBanner } from "@/components/shared/ErrorBanner";
 import { api } from "@/lib/api";
 import { ROLE_META } from "@/lib/roles";
 
@@ -93,8 +94,9 @@ export default function ConversationChatPage() {
         `/api/v1/conversations/${id}/send_message`,
         { method: "POST", token: session.accessToken, body: { content: text }, signal: ctrl.signal },
         (payload) => {
-          // Legacy error format from SseStreamable
-          if (payload.error) throw new Error(payload.error);
+          // Terminal error event from SseStreamable — the payload carries a
+          // code ("rate_limit" | "timeout" | …), not something to show as-is.
+          if (payload.error) throw new Error(sseErrorMessage(String(payload.error)));
 
           if (payload.type === "delta") {
             accumulated += payload.content ?? "";
@@ -206,9 +208,9 @@ export default function ConversationChatPage() {
 
       {/* Error */}
       {error && (
-        <div className="mb-2 flex-shrink-0 rounded-lg border border-red-200 bg-red-50 px-3 py-2 text-xs text-red-700">
+        <ErrorBanner compact className="mb-2 flex-shrink-0">
           {error}
-        </div>
+        </ErrorBanner>
       )}
 
       {/* Input */}

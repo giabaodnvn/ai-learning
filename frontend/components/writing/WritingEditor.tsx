@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { renderMarkdown } from "@/lib/markdown";
 import { useSSEStream } from "@/hooks/useSSEStream";
+import { ErrorBanner } from "@/components/shared/ErrorBanner";
 
 const TOPICS = [
   "Tự giới thiệu bản thân",
@@ -160,9 +161,7 @@ export function WritingEditor({ onSaved }: Props = {}) {
       )}
 
       {error && (
-        <p className="rounded-lg border border-red-200 bg-red-50 px-4 py-2.5 text-sm text-red-700">
-          {error}
-        </p>
+        <ErrorBanner>{error}</ErrorBanner>
       )}
     </div>
   );

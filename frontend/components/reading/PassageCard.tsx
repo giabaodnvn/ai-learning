@@ -1,4 +1,5 @@
 import React from "react";
+import { LevelBadge } from "@/components/shared/LevelBadge";
 
 export interface PassageData {
   id: number;
@@ -24,22 +25,12 @@ export interface VocabHighlight {
   meaning_vi: string;
 }
 
-const LEVEL_COLORS: Record<string, string> = {
-  n5: "bg-green-100 text-green-700",
-  n4: "bg-teal-100 text-teal-700",
-  n3: "bg-blue-100 text-blue-700",
-  n2: "bg-violet-100 text-violet-700",
-  n1: "bg-red-100 text-red-700",
-};
-
 interface Props {
   passage: PassageData;
   onClick: (passage: PassageData) => void;
 }
 
 export function PassageCard({ passage, onClick }: Props) {
-  const levelColor = LEVEL_COLORS[passage.jlpt_level] ?? "bg-zinc-100 text-zinc-700";
-
   // Preview: strip HTML tags for the snippet
   const preview = passage.content
     .replace(/<rt>.*?<\/rt>/g, "")
@@ -55,11 +46,7 @@ export function PassageCard({ passage, onClick }: Props) {
         <p className="font-semibold text-zinc-900 text-sm leading-snug line-clamp-2">
           {passage.title ?? "Bài đọc không có tiêu đề"}
         </p>
-        <span
-          className={`shrink-0 rounded-full px-2 py-0.5 text-xs font-bold uppercase ${levelColor}`}
-        >
-          {passage.jlpt_level}
-        </span>
+        <LevelBadge level={passage.jlpt_level} className="shrink-0" />
       </div>
 
       {passage.topic && (

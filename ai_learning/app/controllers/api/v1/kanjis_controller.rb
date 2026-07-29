@@ -9,10 +9,8 @@ module Api
 
       # GET /api/v1/kanjis?level=n3&page=1&per_page=30
       def index
-        level = params[:level].presence&.downcase
-        scope = level ? Kanji.by_level(level) : Kanji.all
-
-        render_paginated(scope, serializer: KanjiSerializer, order: :id, default_per: 30, max_per: 50)
+        render_paginated(Kanji.by_level(level_param), serializer: KanjiSerializer,
+                         order: :id, default_per: 30, max_per: 50)
       end
 
       # GET /api/v1/kanjis/:id

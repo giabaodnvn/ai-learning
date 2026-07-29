@@ -1,25 +1,23 @@
 "use client";
 
 import { useState } from "react";
-import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
-import { api } from "@/lib/api";
 import { useCurrentUser } from "@/hooks/useCurrentUser";
+import { useGeneratedContent } from "@/hooks/useGeneratedContent";
 import { PassageCard, PassageData } from "@/components/reading/PassageCard";
 import { ReaderView } from "@/components/reading/ReaderView";
 import { QuizSection } from "@/components/reading/QuizSection";
 import { ResultScreen } from "@/components/reading/ResultScreen";
-import { ErrorBoundary } from "@/components/ErrorBoundary";
-import { AIStreamFallback } from "@/components/AIStreamFallback";
-import { BackButton } from "@/components/BackButton";
+import { StageView } from "@/components/shared/StageView";
+import { CardSkeletonGrid } from "@/components/shared/CardSkeletonGrid";
+import { GenerateForm, type TopicOption } from "@/components/shared/GenerateForm";
+import { LevelTabs } from "@/components/shared/LevelTabs";
 import type { AnswerResult } from "@/types/quiz";
-import { JLPT_LEVELS } from "@/types/quiz";
-
-// ---------------------------------------------------------------------------
-// Types
-// ---------------------------------------------------------------------------
+import { ErrorBanner } from "@/components/shared/ErrorBanner";
+import { EmptyState } from "@/components/shared/EmptyState";
 
 type View = "list" | "reading" | "quiz" | "result";
-const TOPICS = [
+
+const TOPICS: TopicOption[] = [
   { label: "Sinh hoạt hằng ngày",  value: "日常生活" },
   { label: "Thực phẩm & ẩm thực",  value: "食べ物と料理" },
   { label: "Du lịch",              value: "旅行" },
@@ -30,81 +28,33 @@ const TOPICS = [
   { label: "Công việc",            value: "仕事" },
 ];
 
-// ---------------------------------------------------------------------------
-// Page
-// ---------------------------------------------------------------------------
-
 export default function ReadingPage() {
   const { user } = useCurrentUser();
-  const queryClient = useQueryClient();
 
-  const [view,          setView]          = useState<View>("list");
-  const [selected,      setSelected]      = useState<PassageData | null>(null);
-  const [quizResults,   setQuizResults]   = useState<AnswerResult[]>([]);
-  const [errorKey,      setErrorKey]      = useState(0);
-
-  // Generate form state
-  const [topic,      setTopic]      = useState("");
-  const [customTopic, setCustomTopic] = useState("");
-  const [jlptLevel,  setJlptLevel]  = useState("");
+  const [view,        setView]        = useState<View>("list");
+  const [selected,    setSelected]    = useState<PassageData | null>(null);
+  const [quizResults, setQuizResults] = useState<AnswerResult[]>([]);
+  const [jlptLevel,   setJlptLevel]   = useState("");
 
   const effectiveLevel = jlptLevel || user?.jlpt_level || "n5";
 
-  // -------------------------------------------------------------------------
-  // Passage list — keyed on level so a slow earlier response can't overwrite
-  // a newer one (the previous manual fetch had that race).
-  // -------------------------------------------------------------------------
-  const { data: passages = [], isLoading: loadingList, isError } = useQuery<PassageData[]>({
-    queryKey: ["readingPassages", effectiveLevel],
-    queryFn: async () => {
-      const res = await api.get("/api/v1/reading_passages", { params: { level: effectiveLevel } });
-      return res.data;
-    },
-    enabled: view === "list",
-  });
-  const listError = isError ? "Không thể tải danh sách bài đọc." : null;
-
-  // -------------------------------------------------------------------------
-  // Generate new passage
-  // -------------------------------------------------------------------------
-  const generateMutation = useMutation({
-    mutationFn: async (finalTopic: string) => {
-      const res = await api.post("/api/v1/reading_passages/generate", {
-        jlpt_level: effectiveLevel,
-        topic:      finalTopic,
-      });
-      return res.data as PassageData;
-    },
-    onSuccess: (newPassage) => {
-      queryClient.setQueryData<PassageData[]>(
-        ["readingPassages", effectiveLevel],
-        (old) => [newPassage, ...(old ?? [])],
-      );
-      setSelected(newPassage);
+  const passages = useGeneratedContent<PassageData>({
+    resource: "readingPassages",
+    path: "/api/v1/reading_passages",
+    level: effectiveLevel,
+    listEnabled: view === "list",
+    onGenerated: (passage) => {
+      setSelected(passage);
       setView("reading");
     },
+    listErrorMessage: "Không thể tải danh sách bài đọc.",
+    generateErrorMessage: "Không thể tạo bài đọc. Vui lòng thử lại.",
   });
-  const generating = generateMutation.isPending;
-  const genError = generateMutation.isError ? "Không thể tạo bài đọc. Vui lòng thử lại." : null;
 
-  function handleGenerate(e: React.FormEvent) {
-    e.preventDefault();
-    const finalTopic = customTopic.trim() || topic;
-    if (!finalTopic) return;
-    generateMutation.mutate(finalTopic);
-  }
-
-  // -------------------------------------------------------------------------
-  // Navigation helpers
-  // -------------------------------------------------------------------------
   function openPassage(passage: PassageData) {
     setSelected(passage);
     setQuizResults([]);
     setView("reading");
-  }
-
-  function startQuiz() {
-    setView("quiz");
   }
 
   function finishQuiz(results: AnswerResult[]) {
@@ -117,73 +67,53 @@ export default function ReadingPage() {
     setView("list");
   }
 
-  function readAgain() {
-    setView("reading");
-  }
-
-  // -------------------------------------------------------------------------
-  // Render
-  // -------------------------------------------------------------------------
-
   // --- Result screen ---
   if (view === "result" && selected) {
     return (
-      <div className="space-y-4">
-        <BackButton onClick={goToList} label="Danh sách bài đọc" />
+      <StageView
+        backLabel="Danh sách bài đọc"
+        onBack={goToList}
+        errorMessage="Không thể hiển thị kết quả. Vui lòng thử lại."
+      >
         <ResultScreen
           passage={selected}
           results={quizResults}
-          onReadAgain={readAgain}
+          onReadAgain={() => setView("reading")}
           onNewPassage={goToList}
         />
-      </div>
+      </StageView>
     );
   }
 
   // --- Quiz screen ---
   if (view === "quiz" && selected) {
     return (
-      <div className="space-y-4">
-        <BackButton onClick={() => setView("reading")} label="Quay lại bài đọc" />
-        <ErrorBoundary
-          key={errorKey}
-          fallback={
-            <AIStreamFallback
-              errorMessage="Không thể tải câu hỏi. Vui lòng thử lại."
-              onRetry={() => setErrorKey((k) => k + 1)}
-            />
-          }
-        >
-          <QuizSection passage={selected} onFinish={finishQuiz} />
-        </ErrorBoundary>
-      </div>
+      <StageView
+        backLabel="Quay lại bài đọc"
+        onBack={() => setView("reading")}
+        errorMessage="Không thể tải câu hỏi. Vui lòng thử lại."
+      >
+        <QuizSection passage={selected} onFinish={finishQuiz} />
+      </StageView>
     );
   }
 
   // --- Reader screen ---
   if (view === "reading" && selected) {
     return (
-      <div className="space-y-4">
-        <BackButton onClick={goToList} label="Danh sách bài đọc" />
-        <ErrorBoundary
-          key={errorKey}
-          fallback={
-            <AIStreamFallback
-              errorMessage="Không thể tải bài đọc. Vui lòng thử lại."
-              onRetry={() => setErrorKey((k) => k + 1)}
-            />
-          }
-        >
-          <ReaderView passage={selected} onStartQuiz={startQuiz} />
-        </ErrorBoundary>
-      </div>
+      <StageView
+        backLabel="Danh sách bài đọc"
+        onBack={goToList}
+        errorMessage="Không thể tải bài đọc. Vui lòng thử lại."
+      >
+        <ReaderView passage={selected} onStartQuiz={() => setView("quiz")} />
+      </StageView>
     );
   }
 
   // --- List screen ---
   return (
     <div className="space-y-6">
-      {/* Header */}
       <div>
         <h1 className="text-xl font-bold text-zinc-900">Đọc hiểu</h1>
         <p className="mt-1 text-sm text-zinc-500">
@@ -191,119 +121,43 @@ export default function ReadingPage() {
         </p>
       </div>
 
-      {/* Generate form */}
-      <form
-        onSubmit={handleGenerate}
-        className="rounded-2xl border border-zinc-200 bg-white p-5 space-y-4"
-      >
-        <h2 className="text-sm font-semibold text-zinc-700">Tạo bài đọc mới</h2>
+      <GenerateForm
+        title="Tạo bài đọc mới"
+        topics={TOPICS}
+        customPlaceholder="e.g. 桜の季節、通勤電車..."
+        level={jlptLevel}
+        onLevelChange={setJlptLevel}
+        accountLevel={user?.jlpt_level}
+        submitting={passages.generating}
+        submitLabel="Tạo bài đọc"
+        submittingLabel="Đang tạo bài đọc…"
+        error={passages.generateError}
+        onSubmit={passages.generate}
+      />
 
-        <div className="grid grid-cols-1 gap-3 sm:grid-cols-3">
-          {/* Topic preset */}
-          <div>
-            <label className="block text-xs font-medium text-zinc-600 mb-1">Chủ đề</label>
-            <select
-              value={topic}
-              onChange={(e) => setTopic(e.target.value)}
-              className="w-full rounded-lg border border-zinc-300 px-3 py-2 text-sm bg-white outline-none focus:border-zinc-500"
-            >
-              <option value="">-- Chọn chủ đề --</option>
-              {TOPICS.map((t) => (
-                <option key={t.value} value={t.value}>{t.label}</option>
-              ))}
-            </select>
-          </div>
+      <LevelTabs
+        value={effectiveLevel}
+        size="sm"
+        label="Lọc theo trình độ:"
+        onChange={(l) => setJlptLevel(l === effectiveLevel && jlptLevel ? "" : l)}
+      />
 
-          {/* Custom topic */}
-          <div>
-            <label className="block text-xs font-medium text-zinc-600 mb-1">
-              Hoặc nhập tự do
-            </label>
-            <input
-              type="text"
-              value={customTopic}
-              onChange={(e) => setCustomTopic(e.target.value)}
-              placeholder="e.g. 桜の季節、通勤電車..."
-              className="w-full rounded-lg border border-zinc-300 px-3 py-2 text-sm outline-none focus:border-zinc-500"
-            />
-          </div>
-
-          {/* Level */}
-          <div>
-            <label className="block text-xs font-medium text-zinc-600 mb-1">Trình độ</label>
-            <select
-              value={jlptLevel}
-              onChange={(e) => setJlptLevel(e.target.value)}
-              className="w-full rounded-lg border border-zinc-300 px-3 py-2 text-sm bg-white outline-none focus:border-zinc-500"
-            >
-              <option value="">Theo tài khoản ({user?.jlpt_level?.toUpperCase() ?? "N5"})</option>
-              {JLPT_LEVELS.map((l) => (
-                <option key={l} value={l}>{l.toUpperCase()}</option>
-              ))}
-            </select>
-          </div>
-        </div>
-
-        {genError && (
-          <p className="text-sm text-red-600">{genError}</p>
-        )}
-
-        <button
-          type="submit"
-          disabled={generating || (!topic && !customTopic.trim())}
-          className="w-full rounded-xl bg-zinc-900 py-2.5 text-sm font-semibold text-white hover:bg-zinc-700 disabled:opacity-50 transition-colors"
-        >
-          {generating ? "Đang tạo bài đọc…" : "Tạo bài đọc"}
-        </button>
-      </form>
-
-      {/* Level filter for list */}
-      <div className="flex items-center gap-2 flex-wrap">
-        <span className="text-xs text-zinc-500">Lọc theo trình độ:</span>
-        {JLPT_LEVELS.map((l) => (
-          <button
-            key={l}
-            onClick={() => setJlptLevel(l === effectiveLevel && jlptLevel ? "" : l)}
-            className={`rounded-full px-3 py-1 text-xs font-semibold uppercase transition-colors ${
-              effectiveLevel === l
-                ? "bg-zinc-900 text-white"
-                : "border border-zinc-300 text-zinc-600 hover:bg-zinc-50"
-            }`}
-          >
-            {l}
-          </button>
-        ))}
-      </div>
-
-      {listError && (
-        <div className="rounded-xl border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700">
-          {listError}
-        </div>
+      {passages.listError && (
+        <ErrorBanner>
+          {passages.listError}
+        </ErrorBanner>
       )}
 
-      {/* Passage list */}
-      {loadingList ? (
-        <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
-          {[...Array(4)].map((_, i) => (
-            <div key={i} className="rounded-2xl border border-zinc-200 bg-white p-5 space-y-2">
-              <div className="h-4 w-3/4 animate-pulse rounded bg-zinc-100" />
-              <div className="h-3 w-1/3 animate-pulse rounded bg-zinc-100" />
-              <div className="h-3 w-full animate-pulse rounded bg-zinc-100" />
-              <div className="h-3 w-2/3 animate-pulse rounded bg-zinc-100" />
-            </div>
-          ))}
-        </div>
-      ) : passages.length === 0 ? (
-        <div className="rounded-2xl border border-dashed border-zinc-300 p-10 text-center">
-          <p className="text-sm text-zinc-500">
-            Chưa có bài đọc nào cho trình độ {effectiveLevel.toUpperCase()}.
-            <br />
-            Hãy tạo bài đọc mới ở trên!
-          </p>
-        </div>
+      {passages.loading ? (
+        <CardSkeletonGrid lines={4} />
+      ) : passages.items.length === 0 ? (
+        <EmptyState
+          title={`Chưa có bài đọc nào cho trình độ ${effectiveLevel.toUpperCase()}.`}
+          subtitle="Hãy tạo bài đọc mới ở trên!"
+        />
       ) : (
         <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
-          {passages.map((p) => (
+          {passages.items.map((p) => (
             <PassageCard key={p.id} passage={p} onClick={openPassage} />
           ))}
         </div>

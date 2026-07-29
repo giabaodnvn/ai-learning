@@ -1,6 +1,7 @@
 "use client";
 
 import type { FlashCard, VocabCard, KanjiCard, GrammarCard } from "@/lib/flashcard-utils";
+import { LevelBadge } from "@/components/shared/LevelBadge";
 
 interface Props {
   card: FlashCard;
@@ -27,21 +28,6 @@ function SpeakerButton({ text }: { text: string }) {
         <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07" />
       </svg>
     </button>
-  );
-}
-
-function LevelBadge({ level }: { level: string }) {
-  const colors: Record<string, string> = {
-    n5: "bg-emerald-100 text-emerald-700",
-    n4: "bg-blue-100 text-blue-700",
-    n3: "bg-amber-100 text-amber-700",
-    n2: "bg-violet-100 text-violet-700",
-    n1: "bg-rose-100 text-rose-700",
-  };
-  return (
-    <span className={`rounded-full px-2.5 py-0.5 text-xs font-bold ${colors[level] ?? "bg-zinc-100 text-zinc-600"}`}>
-      {level.toUpperCase()}
-    </span>
   );
 }
 

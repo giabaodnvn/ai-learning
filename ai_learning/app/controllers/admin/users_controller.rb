@@ -13,7 +13,12 @@ module Admin
       per     = 20
 
       scope = User.all
-      scope = scope.where("email LIKE ? OR name LIKE ?", "%#{@q}%", "%#{@q}%") if @q.present?
+      if @q.present?
+        # Escape % and _ so a search for "a_b" doesn't match every "aXb"
+        # (matches how the vocabulary search builds its LIKE term).
+        like  = "%#{ActiveRecord::Base.sanitize_sql_like(@q)}%"
+        scope = scope.where("email LIKE ? OR name LIKE ?", like, like)
+      end
       scope = scope.where(role: @role)      if @role.present?
       scope = scope.where("vip_level > 0")  if @vip == "vip"
       scope = scope.where(blocked: true)    if @vip == "blocked"
@@ -31,6 +36,15 @@ module Admin
     # PATCH /admin/users/:id
     def update
       allowed = params.require(:user).permit(:role, :jlpt_level, :vip_level, :balance, :vip_expires_at, :name)
+
+      # `role` is an integer-backed enum, so assigning an unknown value raises
+      # ArgumentError (a 500) before any validation can turn it into a form
+      # error. Reject it here instead.
+      if allowed[:role].present? && !User.roles.key?(allowed[:role])
+        flash.now[:alert] = "Role không hợp lệ."
+        load_show_data
+        return render :show, status: :unprocessable_entity
+      end
 
       if @user.update(allowed)
         redirect_to admin_user_path(@user), notice: "Cập nhật thành công."

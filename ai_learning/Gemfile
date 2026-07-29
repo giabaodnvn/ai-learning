@@ -47,11 +47,9 @@ gem "devise-jwt"
 gem "rack-cors"
 gem "rack-attack"
 gem "jsonapi-serializer"
-gem "anthropic"
 gem "redis", ">= 4.0.1"
 gem "sidekiq"
 gem "sidekiq-cron"
-gem "kaminari"
 
 group :development do
   gem "bullet"  # N+1 query detection

@@ -1,11 +1,10 @@
 "use client";
 
-import { useState } from "react";
 import Link from "next/link";
-import { useQuery, keepPreviousData } from "@tanstack/react-query";
-import { api } from "@/lib/api";
 import { Pagination } from "@/components/Pagination";
 import { LevelTabs } from "@/components/shared/LevelTabs";
+import { ErrorBanner } from "@/components/shared/ErrorBanner";
+import { useLevelPagedList } from "@/hooks/useLevelPagedList";
 import { type JlptLevel as Level } from "@/types/quiz";
 
 interface GrammarPoint {
@@ -18,37 +17,18 @@ interface GrammarPoint {
   };
 }
 
-interface GrammarResponse {
-  data: GrammarPoint[];
-  meta: { total: number; page: number; per_page: number; pages: number };
-}
-
-async function fetchGrammarPoints(level: Level, page: number): Promise<GrammarResponse> {
-  const res = await api.get("/api/v1/grammar_points", {
-    params: { level, page, per_page: 20 },
-  });
-  return res.data;
-}
-
 export default function GrammarGrid() {
-  const [level, setLevel] = useState<Level>("n5");
-  const [page,  setPage]  = useState(1);
-
-  const { data, isLoading, isError } = useQuery({
-    queryKey: ["grammar_points", level, page],
-    queryFn:  () => fetchGrammarPoints(level, page),
-    placeholderData: keepPreviousData,
-  });
-
-  function handleLevelChange(l: Level) {
-    setLevel(l);
-    setPage(1);
-  }
+  const { level, page, setPage, changeLevel, data, isLoading, isError } =
+    useLevelPagedList<GrammarPoint>({
+      resource: "grammar_points",
+      path: "/api/v1/grammar_points",
+      perPage: 20,
+    });
 
   return (
     <div className="space-y-6">
       {/* Level tabs */}
-      <LevelTabs value={level} onChange={handleLevelChange} />
+      <LevelTabs value={level} onChange={changeLevel} />
 
       {/* Meta */}
       {data && (
@@ -71,9 +51,7 @@ export default function GrammarGrid() {
       )}
 
       {/* Error */}
-      {isError && (
-        <p className="text-sm text-red-600">Không thể tải dữ liệu. Vui lòng thử lại.</p>
-      )}
+      {isError && <ErrorBanner>Không thể tải dữ liệu. Vui lòng thử lại.</ErrorBanner>}
 
       {/* Grid */}
       {data && (

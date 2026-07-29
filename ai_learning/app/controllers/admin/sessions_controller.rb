@@ -4,7 +4,6 @@ module Admin
   class SessionsController < ActionController::Base
     protect_from_forgery with: :exception
     layout "admin"
-    include AdminHelper
 
     def new
       redirect_to admin_root_path if logged_in?
@@ -13,7 +12,7 @@ module Admin
     def create
       user = User.find_by(email: params[:email].to_s.strip.downcase)
 
-      if user&.valid_password?(params[:password]) && user.admin? && !user.blocked?
+      if user&.valid_password?(params[:password]) && user.admin_access?
         session[:admin_user_id] = user.id
         redirect_to admin_root_path, notice: "Đăng nhập thành công. Chào #{user.name || user.email}!"
       else
@@ -30,8 +29,7 @@ module Admin
     private
 
     def logged_in?
-      user = User.find_by(id: session[:admin_user_id])
-      user&.admin? && !user&.blocked?
+      User.find_by(id: session[:admin_user_id])&.admin_access?
     end
   end
 end

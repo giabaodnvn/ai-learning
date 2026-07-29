@@ -5,14 +5,13 @@ module Api
     class ReadingController < BaseController
       # POST /api/v1/reading/generate
       def generate
-        topic      = params.require(:topic)
-        jlpt_level = params[:jlpt_level].presence || current_user.jlpt_level
-
         prompt = Prompts::ReadingGeneratorPrompt.build(
-          topic:      topic,
-          jlpt_level: jlpt_level
+          topic:      params.require(:topic),
+          jlpt_level: level_param_or_user(:jlpt_level)
         )
 
+        # Cached, unlike reading_passages#generate: this endpoint returns the
+        # passage without persisting it, so the cache is the only reuse.
         raw = AiCacheService.fetch(prompt) do
           ClaudeService.complete(
             prompt:     prompt,
@@ -21,8 +20,7 @@ module Api
           )
         end
 
-        result = parse_ai_json(raw)
-        render json: result, status: :ok
+        render json: AiJson.parse(raw), status: :ok
       end
     end
   end

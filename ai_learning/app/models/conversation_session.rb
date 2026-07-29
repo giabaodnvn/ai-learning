@@ -1,18 +1,19 @@
 class ConversationSession < ApplicationRecord
-  JLPT_LEVELS  = %w[n5 n4 n3 n2 n1].freeze
-  ROLES        = %w[tutor convenience_store_clerk restaurant_staff office_colleague hotel_staff airport_staff].freeze
+  include JlptLeveled
+
+  # The prompt configs own the role list: each role needs a persona and an
+  # opening line to be usable at all. This used to be a second hand-maintained
+  # copy of those keys, so a role added to one list was rejected by the other.
+  ROLES        = Prompts::ConversationTutorPrompt::ROLES
   MAX_MESSAGES = 50  # keep last 50 turns (~25 user + 25 AI) per session
 
   belongs_to :user
 
   after_initialize { self.messages ||= [] }
 
-  validates :role,       presence: true, inclusion: { in: ROLES }
-  validates :jlpt_level, presence: true, inclusion: { in: JLPT_LEVELS }
+  validates :role, presence: true, inclusion: { in: ROLES }
 
-  scope :recent,   -> { order(updated_at: :desc) }
-  scope :by_level, ->(level) { where(jlpt_level: level) }
-  scope :by_role,  ->(role)  { where(role: role) }
+  scope :recent, -> { order(updated_at: :desc) }
 
   # Append a message. AI messages may carry structured metadata.
   def add_message(role:, content:, corrections: nil, new_words: nil, translation_vi: nil)

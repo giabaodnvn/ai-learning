@@ -1,64 +1,12 @@
 "use client";
 
 import React, { useMemo, useState, useCallback } from "react";
+import { useQuery } from "@tanstack/react-query";
 import { api } from "@/lib/api";
 import { useTextToSpeech } from "@/hooks/useTextToSpeech";
 import { WordPopup, WordInfo } from "./WordPopup";
 import type { PassageData, VocabHighlight } from "./PassageCard";
-
-// ---------------------------------------------------------------------------
-// Content parser: converts HTML with <ruby>/<rt> tags into typed segments
-// ---------------------------------------------------------------------------
-
-interface RubySegment { type: "ruby"; word: string; reading: string; plainStart: number }
-interface TextSegment { type: "text"; text: string; plainStart: number }
-interface BreakSegment { type: "break" }
-
-type Segment = RubySegment | TextSegment | BreakSegment;
-
-function parseSegments(html: string): { segments: Segment[]; plainText: string } {
-  const segments: Segment[] = [];
-  let plain = "";
-
-  // Strip <p> tags and their content, keeping inner text + line breaks
-  const cleaned = html
-    .replace(/<p>\s*/g, "")
-    .replace(/\s*<\/p>/g, "<br/>");
-
-  // Match <ruby>WORD<rt>READING</rt></ruby> or plain text (including \n)
-  const re = /<ruby>([\s\S]*?)<rt>([\s\S]*?)<\/rt><\/ruby>|([^<]+)|<br\s*\/?>/gi;
-  let match: RegExpExecArray | null;
-
-  while ((match = re.exec(cleaned)) !== null) {
-    if (match[1] !== undefined) {
-      // ruby group
-      const word    = match[1].replace(/<[^>]+>/g, ""); // strip nested tags
-      const reading = match[2];
-      segments.push({ type: "ruby", word, reading, plainStart: plain.length });
-      plain += word;
-    } else if (match[3] !== undefined) {
-      // plain text — split by newline
-      const raw   = match[3];
-      const lines = raw.split("\n");
-      lines.forEach((line, i) => {
-        if (i > 0) {
-          segments.push({ type: "break" });
-          plain += "\n";
-        }
-        if (line) {
-          segments.push({ type: "text", text: line, plainStart: plain.length });
-          plain += line;
-        }
-      });
-    } else {
-      // <br> tag
-      segments.push({ type: "break" });
-      plain += "\n";
-    }
-  }
-
-  return { segments, plainText: plain };
-}
+import { parseSegments } from "@/lib/furigana";
 
 // ---------------------------------------------------------------------------
 // TTS speed options
@@ -82,11 +30,8 @@ export function ReaderView({ passage, onStartQuiz }: Props) {
   const [showFurigana, setShowFurigana] = useState(true);
 
   // Word popup state
-  const [popupWord,   setPopupWord]   = useState<string | null>(null);
-  const [popupInfo,   setPopupInfo]   = useState<WordInfo | null>(null);
-  const [popupLoading, setPopupLoading] = useState(false);
-  const [popupError,  setPopupError]  = useState<string | null>(null);
-  const [anchorRect,  setAnchorRect]  = useState<DOMRect | null>(null);
+  const [popupWord,  setPopupWord]  = useState<string | null>(null);
+  const [anchorRect, setAnchorRect] = useState<DOMRect | null>(null);
 
   // Parse content once
   const { segments, plainText } = useMemo(
@@ -97,45 +42,39 @@ export function ReaderView({ passage, onStartQuiz }: Props) {
   // TTS
   const tts = useTextToSpeech(plainText);
 
-  // Word tap handler
-  const handleWordTap = useCallback(
-    async (word: string, rect: DOMRect) => {
-      if (!word.trim()) return;
+  // vocabulary_highlights already carries the meaning for the words the
+  // generator flagged — those need no API call at all.
+  const highlighted = popupWord
+    ? passage.vocabulary_highlights.find(
+        (v: VocabHighlight) => v.word === popupWord || v.reading === popupWord
+      )
+    : undefined;
 
-      setPopupWord(word);
-      setAnchorRect(rect);
-      setPopupInfo(null);
-      setPopupError(null);
-      setPopupLoading(true);
-
-      // Check vocabulary_highlights first (fast, no API call)
-      const cached = passage.vocabulary_highlights.find(
-        (v: VocabHighlight) => v.word === word || v.reading === word
+  // Keyed on the word, so tapping B while A is still in flight can no longer
+  // render A's meaning under B's heading — and re-tapping a word is a cache hit.
+  const lookup = useQuery<WordInfo>({
+    queryKey: ["wordLookup", passage.id, popupWord],
+    queryFn: async () => {
+      const res = await api.get(
+        `/api/v1/reading_passages/${passage.id}/word_lookup`,
+        { params: { word: popupWord } }
       );
-      if (cached) {
-        setPopupInfo({
-          word:       cached.word,
-          reading:    cached.reading,
-          meaning_vi: cached.meaning_vi,
-        });
-        setPopupLoading(false);
-        return;
-      }
-
-      try {
-        const res = await api.get(
-          `/api/v1/reading_passages/${passage.id}/word_lookup`,
-          { params: { word } }
-        );
-        setPopupInfo(res.data);
-      } catch {
-        setPopupError("Không tìm được nghĩa của từ này.");
-      } finally {
-        setPopupLoading(false);
-      }
+      return res.data;
     },
-    [passage.id, passage.vocabulary_highlights]
-  );
+    enabled: !!popupWord && !highlighted,
+    staleTime: Infinity,
+    retry: false,
+  });
+
+  const popupInfo: WordInfo | null = highlighted
+    ? { word: highlighted.word, reading: highlighted.reading, meaning_vi: highlighted.meaning_vi }
+    : lookup.data ?? null;
+
+  const handleWordTap = useCallback((word: string, rect: DOMRect) => {
+    if (!word.trim()) return;
+    setPopupWord(word);
+    setAnchorRect(rect);
+  }, []);
 
   return (
     <div className="space-y-4">
@@ -300,8 +239,8 @@ export function ReaderView({ passage, onStartQuiz }: Props) {
         <WordPopup
           word={popupWord}
           info={popupInfo}
-          loading={popupLoading}
-          error={popupError}
+          loading={lookup.isPending && !highlighted}
+          error={lookup.isError ? "Không tra được từ này." : null}
           anchorRect={anchorRect}
           onClose={() => setPopupWord(null)}
         />

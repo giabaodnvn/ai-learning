@@ -6,6 +6,9 @@ import { api } from "@/lib/api";
 import type { TestSummary, AttemptSummary } from "./types";
 import { JLPT_LEVELS } from "@/types/quiz";
 import { LEVEL_LABEL_VI } from "@/lib/levels";
+import { ErrorBanner } from "@/components/shared/ErrorBanner";
+import { EmptyState } from "@/components/shared/EmptyState";
+import { formatDate } from "@/lib/format";
 
 interface LobbyData {
   level: string;
@@ -85,9 +88,9 @@ export function LevelTestLobby({ userLevel, onStartTest }: Props) {
       </div>
 
       {error && (
-        <div className="rounded-xl border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700">
+        <ErrorBanner>
           {error}
-        </div>
+        </ErrorBanner>
       )}
 
       {loading ? (
@@ -140,11 +143,7 @@ export function LevelTestLobby({ userLevel, onStartTest }: Props) {
             </div>
 
             {data.tests.length === 0 ? (
-              <div className="rounded-2xl border border-dashed border-zinc-300 p-8 text-center">
-                <p className="text-sm text-zinc-500">
-                  Chưa có bài test nào. Nhấn &quot;+ Tạo bài test mới&quot; để bắt đầu!
-                </p>
-              </div>
+              <EmptyState title={'Chưa có bài test nào. Nhấn "+ Tạo bài test mới" để bắt đầu!'} />
             ) : (
               data.tests.map((test) => (
                 <TestCard key={test.id} test={test} onStart={() => onStartTest(test.id)} />
@@ -198,7 +197,7 @@ function TestCard({ test, onStart }: { test: TestSummary; onStart: () => void })
 
 function AttemptRow({ attempt, total }: { attempt: AttemptSummary; total: number }) {
   const pct = total > 0 ? Math.round((attempt.score / (attempt.total || total)) * 100) : attempt.accuracy;
-  const date = new Date(attempt.taken_at).toLocaleDateString("vi-VN");
+  const date = formatDate(attempt.taken_at);
   return (
     <div className="flex items-center justify-between px-4 py-3 text-sm">
       <div className="flex items-center gap-3">
