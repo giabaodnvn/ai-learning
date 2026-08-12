@@ -1,17 +1,36 @@
 # frozen_string_literal: true
 
 class Rack::Attack
-  AI_PATHS = %w[
-    /api/v1/conversation
-    /api/v1/vocabulary
-    /api/v1/vocabularies/
-    /api/v1/writing/feedback
-    /api/v1/grammar
-    /api/v1/reading
-    /api/v1/reading_passages
-    /api/v1/listening_exercises
-    /api/v1/level_tests
-  ].freeze
+  # The endpoints that can trigger a Gemini call, and so spend a slot in the
+  # per-user AI budget below.
+  #
+  # This was a list of path *prefixes*, three of which named routes that had
+  # already been deleted (/api/v1/conversation, /api/v1/grammar,
+  # /api/v1/reading — see the note in config/routes.rb). They kept working only
+  # because `start_with?` made each a prefix of the resource that replaced it,
+  # which also dragged in every sibling read: browsing the grammar list and
+  # opening nine grammar points is 19 requests against a 20/minute AI budget,
+  # so ordinary reading could 429 without a single AI call being made.
+  #
+  # Matching the whole path instead confines the budget to endpoints that
+  # actually cost tokens. The reads that dropped out are still covered by the
+  # 200/minute `req/ip` throttle above.
+  #
+  # spec/requests/rack_attack_ai_paths_spec.rb checks this against the real
+  # route table, so an AI endpoint added without being listed here fails.
+  AI_ENDPOINTS = %r{
+    \A/api/v1/(?:
+        vocabulary/explain
+      | vocabularies/\d+/explain
+      | writing/feedback
+      | reading_passages (?: /generate | /\d+/word_lookup )?     # index generates when the level is empty
+      | listening_exercises (?: /generate )?                     # ditto
+      | level_tests/generate
+      | conversations/\d+/send_message
+      | grammar_points/\d+/(?: check_sentence | generate_exercise | ask | generate_set )
+    )
+    (?:\.[A-Za-z0-9]+)? /? \z
+  }x
 
   # Allow all requests from localhost / Docker internal network in development
   safelist("allow-localhost") do |req|
@@ -54,7 +73,7 @@ class Rack::Attack
 
   # 20 AI requests/min per authenticated user
   throttle("ai/user", limit: 20, period: 1.minute) do |req|
-    next unless AI_PATHS.any? { |prefix| req.path.start_with?(prefix) }
+    next unless AI_ENDPOINTS.match?(req.path)
 
     token = req.get_header("HTTP_AUTHORIZATION")&.split(" ")&.last
     JwtDecoder.decode_safe(token)&.dig("sub")

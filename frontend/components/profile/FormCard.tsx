@@ -1,6 +1,7 @@
 "use client";
 
 import type { ReactNode } from "react";
+import { ErrorBanner } from "@/components/shared/ErrorBanner";
 
 interface Props {
   title: string;
@@ -22,11 +23,7 @@ export function FormCard({ title, success, error, children }: Props) {
           {success}
         </div>
       )}
-      {error && (
-        <div className="mb-4 rounded-xl bg-red-50 border border-red-200 px-4 py-3 text-sm text-red-700">
-          {error}
-        </div>
-      )}
+      {error && <ErrorBanner className="mb-4">{error}</ErrorBanner>}
 
       <div className="space-y-4">{children}</div>
     </div>

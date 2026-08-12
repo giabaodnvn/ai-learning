@@ -28,7 +28,7 @@ RSpec.describe "Api::V1::Auth password change", type: :request do
             params: { current_password: SecureRandom.uuid, new_password: new_pw },
             headers: auth_headers(user)
 
-      expect(response).to have_http_status(:unprocessable_entity)
+      expect(response).to have_http_status(:unprocessable_content)
       expect(user.reload.valid_password?(current_pw)).to be true
     end
 
@@ -37,7 +37,7 @@ RSpec.describe "Api::V1::Auth password change", type: :request do
             params: { current_password: current_pw, new_password: "x" * 3 },
             headers: auth_headers(user)
 
-      expect(response).to have_http_status(:unprocessable_entity)
+      expect(response).to have_http_status(:unprocessable_content)
     end
 
     it "requires authentication" do

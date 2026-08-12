@@ -30,7 +30,7 @@ module Api
 
         cache_key = AiCacheService.hashed_key("grammar_check", sentence, point.id, level)
 
-        result = AiCacheService.fetch_json(cache_key, log_usage: usage("grammar_check")) do
+        result = AiCacheService.fetch_json(cache_key, log_usage: ai_usage("grammar_check")) do
           AiJson.complete(
             prompt: Prompts::GrammarCheckerPrompt.build(
               sentence: sentence, target_grammar: point.pattern, user_level: level
@@ -55,7 +55,7 @@ module Api
         result = AiCacheService.fetch_json(
           cache_key,
           ttl:       AiCacheService::EXERCISE_TTL,
-          log_usage: usage("grammar_exercise")
+          log_usage: ai_usage("grammar_exercise")
         ) do
           AiJson.complete(
             prompt: Prompts::ExerciseGeneratorPrompt.build(
@@ -90,7 +90,7 @@ module Api
             messages:  messages,
             system:    system_prompt,
             model:     ClaudeService::CONVERSATION_MODEL,
-            log_usage: { feature: "grammar_ask", user_id: current_user.id }
+            log_usage: ai_usage("grammar_ask")
           )
         end
       end
@@ -163,10 +163,6 @@ module Api
       end
 
       private
-
-      def usage(feature)
-        { feature: feature, user_id: current_user.id }
-      end
 
       def streak_service(point)
         GrammarStreakService.new(current_user.id, point.id)

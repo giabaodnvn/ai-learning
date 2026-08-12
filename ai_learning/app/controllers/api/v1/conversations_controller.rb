@@ -65,7 +65,7 @@ module Api
             messages:   ai_messages,
             system:     system_prompt,
             model:      ClaudeService::CONVERSATION_MODEL,
-            log_usage:  { feature: "conversation", user_id: current_user.id }
+            log_usage:  ai_usage("conversation")
           ) do |delta|
             full_response << delta
             write_event(stream, type: "delta", content: delta)

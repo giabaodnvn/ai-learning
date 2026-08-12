@@ -5,8 +5,9 @@ import { useRouter } from "next/navigation";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { useCurrentUser } from "@/hooks/useCurrentUser";
 import { api } from "@/lib/api";
-import { JLPT_LEVELS as LEVELS } from "@/types/quiz";
 import { CONVERSATION_ROLES as ROLES } from "@/lib/roles";
+import { PageHeader } from "@/components/shared/PageHeader";
+import { LevelTabs } from "@/components/shared/LevelTabs";
 
 interface SessionSummary {
   id: number;
@@ -67,12 +68,10 @@ export default function ConversationPage() {
 
   return (
     <div className="space-y-8">
-      <div>
-        <h1 className="text-xl font-bold text-zinc-900">Hội thoại AI</h1>
-        <p className="mt-1 text-sm text-zinc-500">
-          Luyện nói tiếng Nhật qua các tình huống thực tế. Mỗi phiên được lưu lại để tiếp tục sau.
-        </p>
-      </div>
+      <PageHeader
+        title="Hội thoại AI"
+        description="Luyện nói tiếng Nhật qua các tình huống thực tế. Mỗi phiên được lưu lại để tiếp tục sau."
+      />
 
       {/* New session card */}
       <div className="rounded-2xl border border-zinc-200 bg-white p-6 space-y-5">
@@ -99,23 +98,12 @@ export default function ConversationPage() {
           ))}
         </div>
 
-        {/* Level picker */}
-        <div className="flex items-center gap-2 flex-wrap">
-          <span className="text-xs font-medium text-zinc-600">Trình độ:</span>
-          {LEVELS.map((lv) => (
-            <button
-              key={lv}
-              onClick={() => setLevelOverride(lv)}
-              className={`rounded-lg px-3 py-1 text-xs font-semibold transition-colors ${
-                selectedLevel === lv
-                  ? "bg-zinc-900 text-white"
-                  : "bg-zinc-100 text-zinc-600 hover:bg-zinc-200"
-              }`}
-            >
-              {lv.toUpperCase()}
-            </button>
-          ))}
-        </div>
+        <LevelTabs
+          value={selectedLevel}
+          size="sm"
+          label="Trình độ:"
+          onChange={setLevelOverride}
+        />
 
         <button
           onClick={() => startMutation.mutate()}

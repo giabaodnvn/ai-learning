@@ -2,16 +2,8 @@
 
 module Prompts
   class GrammarCheckerPrompt
-    LEVEL_GUIDANCE = {
-      "n5" => "N5 — sơ cấp",
-      "n4" => "N4 — sơ trung",
-      "n3" => "N3 — trung cấp",
-      "n2" => "N2 — trung cao",
-      "n1" => "N1 — cao cấp"
-    }.freeze
-
     def self.build(sentence:, target_grammar:, user_level:)
-      level_label = LEVEL_GUIDANCE.fetch(user_level.to_s.downcase, "N5 — sơ cấp")
+      level_label = LevelLabels.short(user_level)
 
       <<~PROMPT
         Bạn là giáo viên tiếng Nhật kiểm tra ngữ pháp cho người học Việt.

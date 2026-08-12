@@ -1,3 +1,5 @@
+import { LevelBadge } from "@/components/shared/LevelBadge";
+
 export interface ExerciseData {
   id: number;
   title: string;
@@ -25,9 +27,7 @@ export function ExerciseCard({ exercise, onClick }: Props) {
         <h3 className="font-semibold text-zinc-900 text-sm flex-1">
           {exercise.title}
         </h3>
-        <span className="rounded-full bg-zinc-100 px-2.5 py-1 text-xs font-medium text-zinc-500 uppercase shrink-0">
-          {exercise.jlpt_level}
-        </span>
+        <LevelBadge level={exercise.jlpt_level} className="shrink-0" />
       </div>
 
       <p className="text-xs text-zinc-500">

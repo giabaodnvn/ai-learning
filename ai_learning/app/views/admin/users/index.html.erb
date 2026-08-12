@@ -4,8 +4,7 @@
 <div class="bg-white rounded-xl border border-gray-200 p-4 mb-4 flex flex-wrap gap-3 items-end">
   <%= form_with url: admin_users_path, method: :get, local: true, class: "flex flex-wrap gap-3 items-end w-full" do |f| %>
     <div class="flex-1 min-w-48">
-      <%= f.search_field :q, value: @q, placeholder: "Tìm email, tên...",
-            class: "w-full rounded-lg border border-gray-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500" %>
+      <%= f.search_field :q, value: @q, placeholder: "Tìm email, tên...", class: AdminHelper::INPUT_CLASS %>
     </div>
     <div>
       <%= f.select :role, [["Tất cả role", ""], ["Admin", "admin"], ["Student", "student"]],
@@ -54,9 +53,7 @@
             <%= link_to u.email, admin_user_path(u), class: "text-blue-600 hover:underline font-medium" %>
           </td>
           <td class="px-5 py-3 text-gray-600"><%= u.name.presence || "—" %></td>
-          <td class="px-5 py-3">
-            <span class="font-mono uppercase text-xs bg-gray-100 px-2 py-0.5 rounded"><%= u.jlpt_level %></span>
-          </td>
+          <td class="px-5 py-3"><%= jlpt_badge(u.jlpt_level) %></td>
           <td class="px-5 py-3"><%= role_badge(u.role) %></td>
           <td class="px-5 py-3"><%= vip_badge(u.vip_level) %></td>
           <td class="px-5 py-3">
@@ -69,7 +66,7 @@
               <span class="inline-flex items-center rounded-full bg-green-100 px-2 py-0.5 text-xs font-medium text-green-700">Hoạt động</span>
             <% end %>
           </td>
-          <td class="px-5 py-3 text-gray-400 text-xs"><%= u.created_at.strftime("%d/%m/%Y") %></td>
+          <td class="px-5 py-3 text-gray-400 text-xs"><%= admin_date(u.created_at) %></td>
           <td class="px-5 py-3">
             <%= link_to "Chi tiết", admin_user_path(u), class: "text-xs text-blue-600 hover:underline" %>
           </td>
@@ -86,8 +83,7 @@
 <% if @pages > 1 %>
   <div class="flex justify-center gap-2 mt-4">
     <% ([1, @page - 1].max..[@pages, @page + 1].min).each do |p| %>
-      <%= link_to p, admin_users_path(q: @q, role: @role, vip: @vip, page: p),
-            class: "rounded-lg px-3 py-1.5 text-sm border #{p == @page ? 'bg-blue-600 text-white border-blue-600' : 'bg-white text-gray-600 border-gray-300 hover:bg-gray-50'}" %>
+      <%= pill_link p, admin_users_path(q: @q, role: @role, vip: @vip, page: p), active: p == @page %>
     <% end %>
   </div>
 <% end %>

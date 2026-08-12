@@ -6,6 +6,8 @@ import { ScoreCard } from "@/components/shared/ScoreCard";
 import { ErrorBanner } from "@/components/shared/ErrorBanner";
 import { QuestionSteps } from "@/components/shared/QuestionSteps";
 import { ExerciseOptions } from "./ExerciseOptions";
+import { BlankSentence } from "./BlankSentence";
+import { ExerciseSkeleton } from "./ExerciseSkeleton";
 
 interface Exercise {
   type: "fill_blank" | "choice" | "translate";
@@ -164,18 +166,7 @@ export function GrammarPracticeSet({ grammarPointId, pattern }: Props) {
   }
 
   // Loading state
-  if (isLoading) {
-    return (
-      <div className="space-y-3 py-4">
-        <div className="h-6 animate-pulse rounded bg-zinc-100 w-3/4" />
-        <div className="grid grid-cols-2 gap-2">
-          {[...Array(4)].map((_, i) => (
-            <div key={i} className="h-10 animate-pulse rounded-lg bg-zinc-100" />
-          ))}
-        </div>
-      </div>
-    );
-  }
+  if (isLoading) return <ExerciseSkeleton />;
 
   // Result screen
   if (showResult) {
@@ -211,12 +202,7 @@ export function GrammarPracticeSet({ grammarPointId, pattern }: Props) {
       {/* Exercise content */}
       {currentExercise.type === "fill_blank" && (
         <div className="space-y-4">
-          {/* Sentence */}
-          <div className="rounded-xl border border-zinc-200 bg-zinc-50 p-4">
-            <p className="text-lg text-zinc-800 leading-relaxed">
-              {renderSentence(currentExercise.sentence_with_blank ?? "")}
-            </p>
-          </div>
+          <BlankSentence text={currentExercise.sentence_with_blank ?? ""} />
 
           {/* Options */}
           <ExerciseOptions
@@ -353,16 +339,4 @@ export function GrammarPracticeSet({ grammarPointId, pattern }: Props) {
       {error && <ErrorBanner compact>{error}</ErrorBanner>}
     </div>
   );
-}
-
-function renderSentence(sentence: string) {
-  const parts = sentence.split("___");
-  return parts.map((part, i) => (
-    <span key={i}>
-      {part}
-      {i < parts.length - 1 && (
-        <span className="inline-block min-w-[60px] border-b-2 border-zinc-400 mx-1 align-bottom" />
-      )}
-    </span>
-  ));
 }

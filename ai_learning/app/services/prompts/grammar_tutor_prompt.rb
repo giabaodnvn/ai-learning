@@ -3,7 +3,7 @@
 module Prompts
   class GrammarTutorPrompt
     def self.build(pattern:, explanation_vi:, user_level:)
-      level_label = GrammarCheckerPrompt::LEVEL_GUIDANCE.fetch(user_level.to_s.downcase, "N5 — sơ cấp")
+      level_label = LevelLabels.short(user_level)
 
       <<~PROMPT
         Bạn là giáo viên tiếng Nhật chuyên giải thích ngữ pháp cho người học Việt Nam.

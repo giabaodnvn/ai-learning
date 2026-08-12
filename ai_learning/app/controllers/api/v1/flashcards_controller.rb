@@ -76,16 +76,10 @@ module Api
                                              .where.not(id: progress.id)
                                              .count
         }
-      rescue ArgumentError
+      # ArgumentError: a non-numeric string. TypeError: a nested object or array,
+      # which Integer() refuses to coerce — both are a bad param, not a 500.
+      rescue ArgumentError, TypeError
         render_unprocessable("grade không hợp lệ")
-      end
-
-      # POST /api/v1/flashcards/:vocab_id/review  (legacy — vocabulary only)
-      # Kept for backward compatibility. Delegates to the new review logic.
-      def review_legacy
-        params[:card_type] = "vocabulary"
-        params[:card_id]   = params[:vocab_id]
-        review
       end
 
       # GET /api/v1/flashcards/random

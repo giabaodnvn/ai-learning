@@ -14,10 +14,8 @@ module Api
             token, _payload = Warden::JWTAuth::UserEncoder.new.call(resource, :user, nil)
             response.set_header("Authorization", "Bearer #{token}")
 
-            render json: {
-              message: "Account created successfully.",
-              data: UserSerializer.new(resource).serializable_hash[:data][:attributes]
-            }, status: :created
+            render json: { message: "Account created successfully.", data: user_attributes(resource) },
+                   status: :created
           else
             render_unprocessable(resource.errors.full_messages)
           end

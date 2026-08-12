@@ -2,6 +2,7 @@
 
 import type { FlashCard, VocabCard, KanjiCard, GrammarCard } from "@/lib/flashcard-utils";
 import { LevelBadge } from "@/components/shared/LevelBadge";
+import { speakJapanese } from "@/lib/speech";
 
 interface Props {
   card: FlashCard;
@@ -11,11 +12,7 @@ interface Props {
 function SpeakerButton({ text }: { text: string }) {
   function handleTTS(e: React.MouseEvent) {
     e.stopPropagation();
-    if (typeof window === "undefined" || !window.speechSynthesis) return;
-    const utter = new SpeechSynthesisUtterance(text);
-    utter.lang = "ja-JP";
-    window.speechSynthesis.cancel();
-    window.speechSynthesis.speak(utter);
+    speakJapanese(text);
   }
   return (
     <button

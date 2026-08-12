@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Pagination } from "@/components/Pagination";
 import { LevelTabs } from "@/components/shared/LevelTabs";
 import { ErrorBanner } from "@/components/shared/ErrorBanner";
+import { LevelBadge } from "@/components/shared/LevelBadge";
 import { useLevelPagedList } from "@/hooks/useLevelPagedList";
 import { type JlptLevel as Level } from "@/types/quiz";
 
@@ -66,9 +67,7 @@ export default function GrammarGrid() {
                 <p className="font-semibold text-zinc-900 text-base leading-snug group-hover:text-zinc-700">
                   {gp.attributes.pattern}
                 </p>
-                <span className="flex-shrink-0 rounded-full bg-zinc-100 px-2 py-0.5 text-xs font-medium text-zinc-500">
-                  {gp.attributes.jlpt_level.toUpperCase()}
-                </span>
+                <LevelBadge level={gp.attributes.jlpt_level} className="flex-shrink-0" />
               </div>
               <p className="mt-1.5 text-sm text-zinc-500 line-clamp-2">
                 {gp.attributes.explanation_vi}

@@ -74,10 +74,15 @@ Rails.application.routes.draw do
       end
 
       # AI features
+      #
+      # Three sibling endpoints used to live here and were removed once nothing
+      # called them any more, each superseded by a route that does the same work
+      # against a stored record:
+      #   conversation/chat -> conversations/:id/send_message  (persists the turn)
+      #   reading/generate  -> reading_passages/generate       (persists the passage)
+      #   grammar/check     -> grammar_points/:id/check_sentence (caches, and
+      #                        takes the pattern from the grammar point)
       post "vocabulary/explain",  to: "vocabulary#explain"
-      post "grammar/check",       to: "grammar#check"
-      post "conversation/chat",   to: "conversation#chat"   # legacy stateless endpoint
-      post "reading/generate",    to: "reading#generate"
       post "writing/feedback",   to: "writing#feedback"
       get  "writing/history",    to: "writing#history"
 
@@ -148,7 +153,6 @@ Rails.application.routes.draw do
       get  "flashcards/due",                    to: "flashcards#due"
       get  "flashcards/new",                    to: "flashcards#new_cards"
       post "flashcards/review",                 to: "flashcards#review"
-      post "flashcards/:vocab_id/review",       to: "flashcards#review_legacy"
 
       # Flashcard — Learn mode (random pick + quiz)
       get  "flashcards/random",                 to: "flashcards#random"

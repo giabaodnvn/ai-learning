@@ -1,15 +1,12 @@
 # frozen_string_literal: true
 
 require "rails_helper"
-require_relative "../../../support/request_auth"
 
 # Characterization spec for flashcards learned-status endpoints.
 # Locks the success contract + row creation behaviour before refactoring the
 # duplicated find_or_initialize + SrsService.initial_state blocks and adding
 # RecordNotUnique race handling.
 RSpec.describe "Api::V1::Flashcards status", type: :request do
-  include RequestAuth
-
   let(:user)  { FactoryBot.create(:user) }
   let(:vocab) { FactoryBot.create(:vocabulary, jlpt_level: "n5") }
 

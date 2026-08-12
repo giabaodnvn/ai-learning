@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { api } from "@/lib/api";
-import { mapApiCard } from "@/lib/flashcard-utils";
+import { apiTypeFor, mapApiCard, SESSION_MODE_LABELS } from "@/lib/flashcard-utils";
 import type { FlashCard } from "@/lib/flashcard-utils";
 import { useFlashcardStore } from "@/lib/stores/flashcardStore";
 import type { SessionConfig } from "@/lib/stores/flashcardStore";
@@ -39,7 +39,7 @@ export function FlashcardDeck({ config, onBack }: Props) {
   } = useFlashcardStore();
 
   // Build query params from session config
-  const apiType = config.mode === "daily" ? "all" : config.mode;
+  const apiType = apiTypeFor(config.mode);
   const queryKey = ["flashcards-session", apiType, config.level ?? "all"];
 
   // ── Fetch due + new cards in parallel ────────────────────────────────────
@@ -196,11 +196,7 @@ export function FlashcardDeck({ config, onBack }: Props) {
   const card = queue[currentIndex];
   const progress = (currentIndex / queue.length) * 100;
 
-  const modeLabel =
-    config.mode === "daily"         ? "Hằng ngày" :
-    config.mode === "vocabulary"    ? "Từ vựng" :
-    config.mode === "kanji"         ? "Kanji" :
-    "Ngữ pháp";
+  const modeLabel = SESSION_MODE_LABELS[config.mode];
 
   return (
     <div className="space-y-4">

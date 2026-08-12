@@ -36,7 +36,7 @@ class User < ApplicationRecord
   # after the victim (or an admin, via the reset-password action) reacts to the
   # compromise. As a callback rather than three controller calls so no future
   # password-changing path can forget it.
-  after_update :revoke_issued_tokens!, if: :saved_change_to_encrypted_password?
+  after_update :revoke_tokens!, if: :saved_change_to_encrypted_password?
 
   def vip?        = vip_level.to_i > 0
   def vip_active? = vip? && (vip_expires_at.nil? || vip_expires_at > Time.current)
@@ -55,10 +55,13 @@ class User < ApplicationRecord
     update_columns(streak_count: new_streak, last_studied_at: Time.current)
   end
 
-  private
-
+  # Invalidate every JWT already issued to this user, by rotating the jti the
+  # JTIMatcher revocation strategy checks against. Sign-out and the admin's
+  # block action call it directly; the password callback above goes through it
+  # too, so "how a token is revoked" is decided in exactly one place.
+  #
   # update_column, not update!, so this never re-enters the callback chain.
-  def revoke_issued_tokens!
+  def revoke_tokens!
     update_column(:jti, self.class.generate_jti)
   end
 end

@@ -1,14 +1,11 @@
 # frozen_string_literal: true
 
 require "rails_helper"
-require_relative "../../../support/request_auth"
 
 # Characterization spec for the AI content-generation endpoints.
 # Locks the success contract (status + persisted record + response shape) before
 # refactoring the duplicated generate_and_save! + serializer methods.
 RSpec.describe "Api::V1 AI content generation", type: :request do
-  include RequestAuth
-
   let(:user) { FactoryBot.create(:user) }
 
   describe "POST /api/v1/listening_exercises/generate" do

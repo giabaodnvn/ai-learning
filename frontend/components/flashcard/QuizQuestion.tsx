@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import type { QuizQuestion as QuizQuestionType } from "@/lib/flashcard-utils";
+import { CARD_TYPE_LABELS, type QuizQuestion as QuizQuestionType } from "@/lib/flashcard-utils";
 
 interface Props {
   question: QuizQuestionType;
@@ -21,10 +21,7 @@ export function QuizQuestion({ question, index, total, onAnswer }: Props) {
     setSelected(i);
   }
 
-  const cardTypeLabel =
-    question.cardType === "vocabulary" ? "Từ vựng" :
-    question.cardType === "kanji"      ? "Kanji" :
-    "Ngữ pháp";
+  const cardTypeLabel = CARD_TYPE_LABELS[question.cardType];
 
   return (
     <div className="space-y-5">

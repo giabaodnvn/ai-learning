@@ -1,15 +1,12 @@
 # frozen_string_literal: true
 
 require "rails_helper"
-require_relative "../../../support/request_auth"
 
 # Locks the contract of Api::V1::Concerns::LevelScoped, which replaced the
 # per-controller copies of "read params[:level], downcase it, check it against
 # the JLPT list". Each controller used to spell one of those three steps
 # differently; these examples pin the behaviour the shared helpers must keep.
 RSpec.describe "JLPT level params", type: :request do
-  include RequestAuth
-
   let(:user) { FactoryBot.create(:user, jlpt_level: "n4") }
 
   describe "GET /api/v1/level_tests" do

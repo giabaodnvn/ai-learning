@@ -94,10 +94,12 @@ export function useTextToSpeech(text: string): UseTextToSpeechReturn {
     window.speechSynthesis.speak(utt);
   }, [text]);
 
-  // If voices load asynchronously (Chrome), re-bind voice on next play
+  // Chrome populates the voice list asynchronously and only starts loading it
+  // once something asks for it. This first call is what makes `getVoices()`
+  // inside `play()` return the ja-JP voice instead of an empty list.
   useEffect(() => {
     if (typeof window === "undefined") return;
-    window.speechSynthesis.onvoiceschanged = () => {}; // ensure voices list is initialized before first play()
+    window.speechSynthesis?.getVoices();
   }, []);
 
   const pause = useCallback(() => {

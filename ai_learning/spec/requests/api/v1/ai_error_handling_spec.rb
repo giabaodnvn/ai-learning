@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 require "rails_helper"
-require_relative "../../../support/request_auth"
 
 # Characterization spec: locks the HTTP contract returned when the AI service
 # raises RateLimit / Timeout / ServiceError. This must survive the refactor
@@ -13,8 +12,6 @@ require_relative "../../../support/request_auth"
 #   TimeoutError   -> 504, { error: <Vietnamese message> }
 #   ServiceError   -> 503, { error: <Vietnamese message> }
 RSpec.describe "Api::V1 AI error handling", type: :request do
-  include RequestAuth
-
   let(:user) { FactoryBot.create(:user) }
 
   shared_examples "maps AI errors to HTTP" do |perform|
@@ -40,18 +37,9 @@ RSpec.describe "Api::V1 AI error handling", type: :request do
     end
   end
 
-  describe "POST /api/v1/grammar/check" do
-    include_examples "maps AI errors to HTTP", -> {
-      post "/api/v1/grammar/check", params: { sentence: "これはペンです" }, headers: auth_headers(user)
-    }
-  end
-
-  describe "POST /api/v1/reading/generate" do
-    include_examples "maps AI errors to HTTP", -> {
-      post "/api/v1/reading/generate", params: { topic: "旅行" }, headers: auth_headers(user)
-    }
-  end
-
+  # `grammar/check` and `reading/generate` used to appear here too. Both were
+  # removed along with their (uncalled) endpoints; the shared handler they
+  # exercised is still covered by the four cases below.
   describe "POST /api/v1/reading_passages/generate" do
     include_examples "maps AI errors to HTTP", -> {
       post "/api/v1/reading_passages/generate", params: { topic: "旅行" }, headers: auth_headers(user)

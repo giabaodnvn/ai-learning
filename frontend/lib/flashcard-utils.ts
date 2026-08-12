@@ -41,6 +41,32 @@ export type FlashCard = VocabCard | KanjiCard | GrammarCard;
 
 export type SessionMode = "daily" | "vocabulary" | "kanji" | "grammar_point";
 
+/**
+ * Vietnamese name of each card type. Four screens carried their own
+ * `cardType === "vocabulary" ? "Từ vựng" : …` chain, so adding a type meant
+ * finding all four.
+ */
+export const CARD_TYPE_LABELS: Record<FlashCard["cardType"], string> = {
+  vocabulary:    "Từ vựng",
+  kanji:         "Kanji",
+  grammar_point: "Ngữ pháp",
+};
+
+/** Same, plus the "daily" session that mixes every type. */
+export const SESSION_MODE_LABELS: Record<SessionMode, string> = {
+  daily: "Hằng ngày",
+  ...CARD_TYPE_LABELS,
+};
+
+/**
+ * The `type` query param a session mode maps to: "daily" draws from every
+ * card type, the rest name themselves. The deck and the mode picker each had
+ * their own copy of this one-line mapping.
+ */
+export function apiTypeFor(mode: SessionMode): string {
+  return mode === "daily" ? "all" : mode;
+}
+
 // ─── Learn mode (random pick + quiz) ─────────────────────────────────────────
 
 export interface LearnConfig {

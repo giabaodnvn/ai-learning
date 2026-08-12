@@ -33,25 +33,36 @@ module Admin
       load_show_data
     end
 
+    # Everything on the edit form except `role`. Kept apart because `role` is
+    # the one attribute here that grants privilege, and Brakeman rightly flags
+    # sweeping it in through `permit` — an admin-only screen today is exactly
+    # the kind of thing that gets a new caller tomorrow.
+    EDITABLE_ATTRIBUTES = %i[jlpt_level vip_level balance vip_expires_at name].freeze
+
     # PATCH /admin/users/:id
     def update
-      allowed = params.require(:user).permit(:role, :jlpt_level, :vip_level, :balance, :vip_expires_at, :name)
+      attrs = params.require(:user).permit(*EDITABLE_ATTRIBUTES).to_h
 
-      # `role` is an integer-backed enum, so assigning an unknown value raises
-      # ArgumentError (a 500) before any validation can turn it into a form
-      # error. Reject it here instead.
-      if allowed[:role].present? && !User.roles.key?(allowed[:role])
-        flash.now[:alert] = "Role không hợp lệ."
-        load_show_data
-        return render :show, status: :unprocessable_entity
+      # `role` is validated and assigned by hand instead. It is an
+      # integer-backed enum, so an unknown value would raise ArgumentError (a
+      # 500) before validation could turn it into a form error.
+      role = params[:user][:role].presence
+      if role
+        unless User.roles.key?(role)
+          flash.now[:alert] = "Role không hợp lệ."
+          load_show_data
+          return render :show, status: :unprocessable_content
+        end
+
+        attrs[:role] = role
       end
 
-      if @user.update(allowed)
+      if @user.update(attrs)
         redirect_to admin_user_path(@user), notice: "Cập nhật thành công."
       else
         flash.now[:alert] = @user.errors.full_messages.to_sentence
         load_show_data
-        render :show, status: :unprocessable_entity
+        render :show, status: :unprocessable_content
       end
     end
 
@@ -64,7 +75,7 @@ module Admin
       now_blocked = !@user.blocked
       # Rotate jti when blocking so any active JWT is revoked immediately.
       updates = { blocked: now_blocked }
-      updates[:jti] = SecureRandom.uuid if now_blocked
+      updates[:jti] = User.generate_jti if now_blocked
       @user.update_columns(updates)
       status = @user.blocked? ? "khóa" : "mở khóa"
       redirect_to admin_user_path(@user), notice: "Đã #{status} tài khoản #{@user.email}."
@@ -101,8 +112,8 @@ module Admin
       @ai_logs    = AiUsageLog.where(user_id: @user.id).order(created_at: :desc).limit(10)
       @card_stats = {
         total:   @user.user_card_progresses.count,
-        learned: @user.user_card_progresses.where(learned: true).count,
-        due:     @user.user_card_progresses.where("due_date <= ?", Date.current).count
+        learned: @user.user_card_progresses.learned.count,
+        due:     @user.user_card_progresses.due_today.count
       }
     end
   end

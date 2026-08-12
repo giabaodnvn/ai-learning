@@ -2,10 +2,8 @@
 
 <%# ── Range selector ──────────────────────────────────────────────────────── %>
 <div class="flex gap-2 mb-5">
-  <%= link_to "7 ngày", admin_ai_costs_path(range: "week"),
-        class: "rounded-lg px-4 py-2 text-sm font-medium border transition #{@range == 'week' ? 'bg-blue-600 text-white border-blue-600' : 'bg-white text-gray-600 border-gray-300 hover:bg-gray-50'}" %>
-  <%= link_to "30 ngày", admin_ai_costs_path(range: "month"),
-        class: "rounded-lg px-4 py-2 text-sm font-medium border transition #{@range == 'month' ? 'bg-blue-600 text-white border-blue-600' : 'bg-white text-gray-600 border-gray-300 hover:bg-gray-50'}" %>
+  <%= pill_link "7 ngày",  admin_ai_costs_path(range: "week"),  active: @range == "week" %>
+  <%= pill_link "30 ngày", admin_ai_costs_path(range: "month"), active: @range == "month" %>
 </div>
 
 <%# ── Totals ───────────────────────────────────────────────────────────────── %>

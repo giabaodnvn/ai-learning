@@ -17,7 +17,7 @@ module Admin
         redirect_to admin_root_path, notice: "Đăng nhập thành công. Chào #{user.name || user.email}!"
       else
         flash.now[:alert] = "Email hoặc mật khẩu không đúng, hoặc tài khoản không có quyền admin."
-        render :new, status: :unprocessable_entity
+        render :new, status: :unprocessable_content
       end
     end
 

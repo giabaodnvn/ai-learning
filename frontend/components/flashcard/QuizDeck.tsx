@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { useMutation, useQuery } from "@tanstack/react-query";
 import { api } from "@/lib/api";
+import { CARD_TYPE_LABELS } from "@/lib/flashcard-utils";
 import type { RandomCard, QuizQuestion as QuizQuestionType, QuizResult } from "@/lib/flashcard-utils";
 import { QuizQuestion } from "./QuizQuestion";
 import { LoadingCard } from "@/components/shared/LoadingCard";
@@ -41,10 +42,9 @@ function QuizSummary({ results, onRetry, onBack }: QuizSummaryProps) {
         const subset = results.filter((r) => r.cardType === ct);
         if (subset.length === 0) return null;
         const ok = subset.filter((r) => r.learned).length;
-        const label = ct === "vocabulary" ? "Từ vựng" : ct === "kanji" ? "Kanji" : "Ngữ pháp";
         return (
           <div key={ct} className="flex items-center justify-between rounded-xl bg-zinc-50 px-4 py-2.5 text-sm">
-            <span className="text-zinc-600">{label}</span>
+            <span className="text-zinc-600">{CARD_TYPE_LABELS[ct]}</span>
             <span className={`font-semibold ${ok === subset.length ? "text-green-700" : "text-zinc-800"}`}>
               {ok}/{subset.length}
             </span>

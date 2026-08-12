@@ -8,12 +8,11 @@ import { PlayerView } from "@/components/listening/PlayerView";
 import { ListeningQuiz } from "@/components/listening/ListeningQuiz";
 import { ListeningResult } from "@/components/listening/ListeningResult";
 import { StageView } from "@/components/shared/StageView";
-import { CardSkeletonGrid } from "@/components/shared/CardSkeletonGrid";
+import { ContentCardGrid } from "@/components/shared/ContentCardGrid";
 import { GenerateForm, type TopicOption } from "@/components/shared/GenerateForm";
 import { LevelTabs } from "@/components/shared/LevelTabs";
+import { PageHeader } from "@/components/shared/PageHeader";
 import type { AnswerResult } from "@/types/quiz";
-import { ErrorBanner } from "@/components/shared/ErrorBanner";
-import { EmptyState } from "@/components/shared/EmptyState";
 
 type View = "list" | "player" | "quiz" | "result";
 
@@ -130,12 +129,10 @@ export default function ListeningPage() {
   // --- List screen ---
   return (
     <div className="space-y-6">
-      <div>
-        <h1 className="text-xl font-bold text-zinc-900">Nghe hiểu</h1>
-        <p className="mt-1 text-sm text-zinc-500">
-          Luyện nghe tiếng Nhật qua các bài hội thoại, kiểm tra hiểu nội dung.
-        </p>
-      </div>
+      <PageHeader
+        title="Nghe hiểu"
+        description="Luyện nghe tiếng Nhật qua các bài hội thoại, kiểm tra hiểu nội dung."
+      />
 
       <GenerateForm
         title="Tạo bài luyện nghe mới"
@@ -158,26 +155,14 @@ export default function ListeningPage() {
         onChange={(l) => setJlptLevel(l === effectiveLevel && jlptLevel ? "" : l)}
       />
 
-      {exercises.listError && (
-        <ErrorBanner>
-          {exercises.listError}
-        </ErrorBanner>
-      )}
-
-      {exercises.loading ? (
-        <CardSkeletonGrid />
-      ) : exercises.items.length === 0 ? (
-        <EmptyState
-          title={`Chưa có bài luyện nghe nào cho trình độ ${effectiveLevel.toUpperCase()}.`}
-          subtitle="Hãy tạo bài luyện nghe mới ở trên!"
-        />
-      ) : (
-        <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
-          {exercises.items.map((e) => (
-            <ExerciseCard key={e.id} exercise={e} onClick={openExercise} />
-          ))}
-        </div>
-      )}
+      <ContentCardGrid
+        items={exercises.items}
+        loading={exercises.loading}
+        error={exercises.listError}
+        emptyTitle={`Chưa có bài luyện nghe nào cho trình độ ${effectiveLevel.toUpperCase()}.`}
+        emptySubtitle="Hãy tạo bài luyện nghe mới ở trên!"
+        renderItem={(e) => <ExerciseCard key={e.id} exercise={e} onClick={openExercise} />}
+      />
     </div>
   );
 }

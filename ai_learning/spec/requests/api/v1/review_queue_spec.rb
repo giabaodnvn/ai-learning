@@ -1,13 +1,10 @@
 # frozen_string_literal: true
 
 require "rails_helper"
-require_relative "../../../support/request_auth"
 
 # Locks the review-queue JSON contract, which is built from the shared
 # CardCatalog batch loader but nests content under a per-type key.
 RSpec.describe "Api::V1::Review queue", type: :request do
-  include RequestAuth
-
   let(:user)  { FactoryBot.create(:user) }
   let(:vocab) { FactoryBot.create(:vocabulary, jlpt_level: "n5") }
   let(:kanji) do
@@ -21,6 +18,20 @@ RSpec.describe "Api::V1::Review queue", type: :request do
     )
     progress.update!(due_date: Date.current)
     progress
+  end
+
+  describe "POST /api/v1/review/submit" do
+    # Regression: Integer() raises TypeError (not ArgumentError) on a nested
+    # object, which was not rescued and surfaced as a 500.
+    it "rejects a non-scalar quality" do
+      progress = due_progress!("vocabulary", vocab.id)
+
+      post "/api/v1/review/submit",
+           params: { progress_id: progress.id, quality: { n: 4 } },
+           headers: auth_headers(user), as: :json
+
+      expect(response).to have_http_status(:unprocessable_content)
+    end
   end
 
   it "returns due vocabulary cards with the content nested under :vocabulary" do

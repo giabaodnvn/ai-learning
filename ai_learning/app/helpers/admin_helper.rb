@@ -28,6 +28,46 @@ module AdminHelper
     badge(label, color)
   end
 
+  # The level chip next to vip_badge / role_badge in both user tables. It was
+  # the one of the three still written out as raw markup, in two views.
+  def jlpt_badge(level)
+    content_tag(:span, level, class: "font-mono uppercase text-xs bg-gray-100 px-2 py-0.5 rounded")
+  end
+
+  # Selected/unselected pill, shared by the user-list pagination and the
+  # AI-cost range switch — three copies of the same two class strings.
+  def pill_link(label, url, active:)
+    state = if active
+      "bg-blue-600 text-white border-blue-600"
+    else
+      "bg-white text-gray-600 border-gray-300 hover:bg-gray-50"
+    end
+
+    link_to label, url, class: "rounded-lg px-4 py-2 text-sm font-medium border transition #{state}"
+  end
+
+  # Field styling, written out at eight call sites before. A text input is the
+  # select's styling plus a focus ring; spelling that relationship out is what
+  # keeps the two from drifting apart on the same form.
+  SELECT_CLASS = "w-full rounded-lg border border-gray-300 px-3 py-2 text-sm"
+  INPUT_CLASS  = "#{SELECT_CLASS} focus:outline-none focus:ring-2 focus:ring-blue-500"
+
+  # dd/mm/yyyy, the only date format the panel shows.
+  def admin_date(time)
+    time&.strftime("%d/%m/%Y")
+  end
+
+  # Flash strip. Rendered twice per message before — once for the page with the
+  # sidebar and once for the login page — so a wording or icon change had to be
+  # made in four places.
+  def flash_banner(kind, message, position:)
+    color, icon = kind.to_sym == :notice ? [ "green", "✓" ] : [ "red", "⚠" ]
+
+    content_tag(:div, "#{icon} #{message}",
+      class: "rounded-2xl bg-#{color}-50 border border-#{color}-200 px-4 py-3 " \
+             "text-sm text-#{color}-700 shadow-soft #{position}")
+  end
+
   private
 
   def badge(label, color)

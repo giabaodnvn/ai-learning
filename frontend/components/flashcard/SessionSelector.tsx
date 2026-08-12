@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { useQuery } from "@tanstack/react-query";
 import { api } from "@/lib/api";
-import type { SessionMode } from "@/lib/flashcard-utils";
+import { apiTypeFor, SESSION_MODE_LABELS, type SessionMode } from "@/lib/flashcard-utils";
 import type { SessionConfig } from "@/lib/stores/flashcardStore";
 import { JLPT_LEVELS } from "@/types/quiz";
 
@@ -11,12 +11,12 @@ interface Props {
   onStart: (config: SessionConfig) => void;
 }
 
+// Only what is specific to this picker. The Vietnamese name and the API `type`
+// are derived from the mode, so they cannot drift from the deck's.
 const MODES: {
   mode: SessionMode;
-  label: string;
   desc: string;
   icon: string;
-  apiType: string;
   gradient: string;
   selectedBorder: string;
   selectedBg: string;
@@ -24,10 +24,8 @@ const MODES: {
 }[] = [
   {
     mode: "daily",
-    label: "Hằng ngày",
     desc: "Tất cả loại thẻ",
     icon: "📅",
-    apiType: "all",
     gradient: "from-indigo-500 to-indigo-400",
     selectedBorder: "border-indigo-400",
     selectedBg: "bg-indigo-50",
@@ -35,10 +33,8 @@ const MODES: {
   },
   {
     mode: "vocabulary",
-    label: "Từ vựng",
     desc: "Chỉ từ vựng",
     icon: "📝",
-    apiType: "vocabulary",
     gradient: "from-blue-500 to-sky-400",
     selectedBorder: "border-blue-400",
     selectedBg: "bg-blue-50",
@@ -46,10 +42,8 @@ const MODES: {
   },
   {
     mode: "kanji",
-    label: "Kanji",
     desc: "Chỉ chữ Hán",
     icon: "漢",
-    apiType: "kanji",
     gradient: "from-rose-500 to-orange-400",
     selectedBorder: "border-rose-400",
     selectedBg: "bg-rose-50",
@@ -57,10 +51,8 @@ const MODES: {
   },
   {
     mode: "grammar_point",
-    label: "Ngữ pháp",
     desc: "Chỉ ngữ pháp",
     icon: "✏️",
-    apiType: "grammar_point",
     gradient: "from-violet-500 to-purple-400",
     selectedBorder: "border-violet-400",
     selectedBg: "bg-violet-50",
@@ -99,11 +91,12 @@ function useCardCounts(apiType: string, level?: string) {
 }
 
 function ModeCard({
-  label, desc, icon, apiType,
+  mode, desc, icon,
   gradient, selectedBorder, selectedBg, countClass,
   selected, level, onSelect,
 }: (typeof MODES)[number] & { selected: boolean; level?: string; onSelect: () => void }) {
-  const { due, newCount, total, loading } = useCardCounts(apiType, level);
+  const { due, newCount, total, loading } = useCardCounts(apiTypeFor(mode), level);
+  const label = SESSION_MODE_LABELS[mode];
 
   return (
     <button
@@ -145,8 +138,7 @@ export function SessionSelector({ onStart }: Props) {
   const [selectedLevel, setSelectedLevel] = useState<string>("");
 
   const level = selectedLevel || undefined;
-  const selectedApiType = MODES.find((m) => m.mode === selectedMode)?.apiType ?? "all";
-  const { total } = useCardCounts(selectedApiType, level);
+  const { total } = useCardCounts(apiTypeFor(selectedMode), level);
 
   return (
     <div className="space-y-6">

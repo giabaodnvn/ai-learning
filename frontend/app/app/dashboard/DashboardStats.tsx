@@ -28,6 +28,15 @@ function Skeleton({ className }: { className: string }) {
   return <div className={`animate-pulse rounded-2xl bg-zinc-100 ${className}`} />;
 }
 
+/** "This panel didn't load" notice — the page still renders without it. */
+function PanelUnavailable({ children }: { children: React.ReactNode }) {
+  return (
+    <div className="rounded-xl border border-amber-200 bg-amber-50 p-4 text-sm text-amber-700">
+      {children}
+    </div>
+  );
+}
+
 export function DashboardStats() {
   // The two panels load independently: a failing weekly report must not take
   // the stats down with it, which is what the single Promise.all did.
@@ -57,9 +66,7 @@ export function DashboardStats() {
 
   if (isError && !stats) {
     return (
-      <div className="rounded-xl border border-amber-200 bg-amber-50 p-4 text-sm text-amber-700">
-        Không thể tải dữ liệu trang chủ. Vui lòng tải lại trang.
-      </div>
+      <PanelUnavailable>Không thể tải dữ liệu trang chủ. Vui lòng tải lại trang.</PanelUnavailable>
     );
   }
 
@@ -98,9 +105,7 @@ export function DashboardStats() {
       {/* Weekly report — wrapped in ErrorBoundary since it renders AI markdown */}
       <ErrorBoundary
         fallback={
-          <div className="rounded-xl border border-amber-200 bg-amber-50 p-4 text-sm text-amber-700">
-            Không thể tải báo cáo tuần. Vui lòng tải lại trang.
-          </div>
+          <PanelUnavailable>Không thể tải báo cáo tuần. Vui lòng tải lại trang.</PanelUnavailable>
         }
       >
         <WeeklyReport

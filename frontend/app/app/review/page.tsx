@@ -6,69 +6,14 @@ import { api } from "@/lib/api";
 import { ErrorBanner } from "@/components/shared/ErrorBanner";
 import { GRADE_COLORS } from "@/lib/flashcard-utils";
 import { LoadingCard } from "@/components/shared/LoadingCard";
-
-interface ReviewCard {
-  id: number;
-  card_type: "vocabulary" | "kanji" | "grammar_point";
-  due_date: string;
-  repetitions: number;
-  interval: number;
-  ease_factor: number;
-  // Content fields depending on card_type:
-  vocabulary?: {
-    id: number;
-    word: string;
-    reading: string;
-    meaning_vi: string;
-    part_of_speech: string;
-    jlpt_level: string;
-  };
-  kanji?: {
-    id: number;
-    character: string;
-    reading_on: string;
-    meaning_vi: string;
-    jlpt_level: string;
-  };
-  grammar_point?: {
-    id: number;
-    pattern: string;
-    explanation_vi: string;
-    jlpt_level: string;
-  };
-}
+import { PageHeader } from "@/components/shared/PageHeader";
+import { ProgressBar } from "@/components/shared/ProgressBar";
+import { ReviewSummary } from "@/components/review/ReviewSummary";
+import { cardDisplay, ReviewCardFace, type ReviewCard } from "@/components/review/ReviewCard";
 
 interface ReviewQueue {
   cards: ReviewCard[];
   total_due: number;
-}
-
-function cardDisplay(card: ReviewCard) {
-  if (card.card_type === "kanji" && card.kanji) {
-    return {
-      front: card.kanji.character,
-      reading: card.kanji.reading_on,
-      meaning_vi: card.kanji.meaning_vi,
-      tag: "Kanji",
-      jlpt_level: card.kanji.jlpt_level,
-    };
-  }
-  if (card.card_type === "grammar_point" && card.grammar_point) {
-    return {
-      front: card.grammar_point.pattern,
-      reading: null as string | null,
-      meaning_vi: card.grammar_point.explanation_vi,
-      tag: "Ngữ pháp",
-      jlpt_level: card.grammar_point.jlpt_level,
-    };
-  }
-  return {
-    front: card.vocabulary?.word ?? "",
-    reading: card.vocabulary?.reading ?? "",
-    meaning_vi: card.vocabulary?.meaning_vi ?? "",
-    tag: card.vocabulary?.part_of_speech ?? null as string | null,
-    jlpt_level: card.vocabulary?.jlpt_level ?? "",
-  };
 }
 
 // This screen posts the 0/3/4/5 quality scale the review endpoint expects;
@@ -139,10 +84,7 @@ export default function ReviewPage() {
   if (isLoading) {
     return (
       <div className="space-y-6">
-        <div>
-          <h1 className="text-xl font-bold text-zinc-900">Luyện tập SRS</h1>
-          <p className="mt-1 text-sm text-zinc-500">Đang tải thẻ ôn tập...</p>
-        </div>
+        <PageHeader title="Luyện tập SRS" description="Đang tải thẻ ôn tập..." />
         <LoadingCard />
       </div>
     );
@@ -151,7 +93,7 @@ export default function ReviewPage() {
   if (error) {
     return (
       <div className="space-y-6">
-        <h1 className="text-xl font-bold text-zinc-900">Luyện tập SRS</h1>
+        <PageHeader title="Luyện tập SRS" />
         <ErrorBanner>
           Không thể tải thẻ ôn tập. Vui lòng thử lại.
         </ErrorBanner>
@@ -160,49 +102,21 @@ export default function ReviewPage() {
   }
 
   if (cards.length === 0 || done || !current) {
-    const correct = sessionResults.filter((r) => r.quality >= 3).length;
-    const total = sessionResults.length;
-
     return (
       <div className="space-y-6">
-        <h1 className="text-xl font-bold text-zinc-900">Luyện tập SRS</h1>
-        <div className="rounded-2xl border border-zinc-200 bg-white p-10 text-center space-y-4">
-          <p className="text-4xl">
-            {cards.length === 0 && !done ? "🎉" : total > 0 && correct / total >= 0.8 ? "🏆" : "💪"}
-          </p>
-          {cards.length === 0 && !done ? (
-            <>
-              <p className="text-lg font-bold text-zinc-900">
-                Không có thẻ nào cần ôn hôm nay!
-              </p>
-              <p className="text-sm text-zinc-500">Quay lại sau nhé.</p>
-            </>
-          ) : (
-            <>
-              <p className="text-lg font-bold text-zinc-900">Hoàn thành phiên ôn tập!</p>
-              <p className="text-sm text-zinc-500">
-                Đúng {correct}/{total} thẻ ({total > 0 ? Math.round((correct / total) * 100) : 0}%)
-              </p>
-              {(data?.total_due ?? 0) > total && (
-                <p className="text-sm text-amber-600 font-medium">
-                  Còn {(data?.total_due ?? 0) - total} thẻ đến hạn — nhấn &quot;Tiếp tục&quot; để ôn thêm.
-                </p>
-              )}
-            </>
-          )}
-          <button
-            onClick={() => {
-              setCurrentIndex(0);
-              setRevealed(false);
-              setSessionResults([]);
-              setDone(false);
-              queryClient.invalidateQueries({ queryKey: ["reviewQueue"] });
-            }}
-            className="rounded-lg border border-zinc-300 px-4 py-2 text-sm font-medium text-zinc-700 hover:bg-zinc-50 transition-colors"
-          >
-            {(data?.total_due ?? 0) > sessionResults.length ? "Tiếp tục ôn tập" : "Tải lại"}
-          </button>
-        </div>
+        <PageHeader title="Luyện tập SRS" />
+        <ReviewSummary
+          qualities={sessionResults.map((r) => r.quality)}
+          nothingDue={cards.length === 0 && !done}
+          totalDue={data?.total_due ?? 0}
+          onRestart={() => {
+            setCurrentIndex(0);
+            setRevealed(false);
+            setSessionResults([]);
+            setDone(false);
+            queryClient.invalidateQueries({ queryKey: ["reviewQueue"] });
+          }}
+        />
       </div>
     );
   }
@@ -213,53 +127,19 @@ export default function ReviewPage() {
 
   return (
     <div className="space-y-6">
-      <div className="flex items-center justify-between">
-        <div>
-          <h1 className="text-xl font-bold text-zinc-900">Luyện tập SRS</h1>
-          <p className="mt-1 text-sm text-zinc-500">
-            {currentIndex + 1} / {cards.length} thẻ
-          </p>
-        </div>
-        <span className="rounded-full bg-indigo-100 px-2 py-0.5 text-xs font-semibold text-indigo-700">
-          {display.jlpt_level.toUpperCase()}
-        </span>
-      </div>
+      <PageHeader
+        title="Luyện tập SRS"
+        description={`${currentIndex + 1} / ${cards.length} thẻ`}
+        right={
+          <span className="rounded-full bg-indigo-100 px-2 py-0.5 text-xs font-semibold text-indigo-700">
+            {display.jlpt_level.toUpperCase()}
+          </span>
+        }
+      />
 
-      {/* Progress bar */}
-      <div className="h-1.5 w-full rounded-full bg-zinc-100">
-        <div
-          className="h-1.5 rounded-full bg-indigo-500 transition-all duration-300"
-          style={{ width: `${progress}%` }}
-        />
-      </div>
+      <ProgressBar percent={progress} />
 
-      {/* Flashcard */}
-      <div
-        className="rounded-2xl border border-zinc-200 bg-white p-10 text-center cursor-pointer min-h-[220px] flex flex-col items-center justify-center gap-4 select-none hover:border-zinc-300 transition-colors"
-        onClick={() => !revealed && setRevealed(true)}
-      >
-        <p className="text-5xl font-bold text-zinc-900">
-          {display.front}
-        </p>
-
-        {!revealed ? (
-          <p className="text-sm text-zinc-400 mt-4">Nhấn để xem đáp án</p>
-        ) : (
-          <div className="space-y-2 mt-2">
-            {display.reading && (
-              <p className="text-lg text-zinc-600">{display.reading}</p>
-            )}
-            <p className="text-xl font-semibold text-zinc-800">
-              {display.meaning_vi}
-            </p>
-            {display.tag && (
-              <span className="inline-block rounded-full bg-zinc-100 px-2 py-0.5 text-xs text-zinc-500">
-                {display.tag}
-              </span>
-            )}
-          </div>
-        )}
-      </div>
+      <ReviewCardFace display={display} revealed={revealed} onReveal={() => setRevealed(true)} />
 
       {/* Rating buttons */}
       {revealed && (

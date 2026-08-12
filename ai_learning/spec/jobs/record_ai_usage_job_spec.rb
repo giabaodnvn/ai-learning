@@ -1,12 +1,14 @@
 # frozen_string_literal: true
 
 require "rails_helper"
-require "sidekiq/testing"
 
 RSpec.describe RecordAiUsageJob, type: :job do
   describe "AiUsageLog.record_async" do
+    # `Sidekiq.testing!` is the Sidekiq 8 entry point; it loads sidekiq/test_api
+    # itself. The old `require "sidekiq/testing"` shim warned on every suite run
+    # and goes away in Sidekiq 9.
     it "enqueues a RecordAiUsageJob instead of writing inline" do
-      Sidekiq::Testing.fake! do
+      Sidekiq.testing!(:fake) do
         RecordAiUsageJob.clear
         expect {
           AiUsageLog.record_async(

@@ -39,20 +39,20 @@
         <div>
           <label class="text-xs font-medium text-gray-600 block mb-1">Tên hiển thị</label>
           <%= f.text_field :name, value: @user.name, placeholder: "Tên người dùng",
-                class: "w-full rounded-lg border border-gray-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500",
+                class: AdminHelper::INPUT_CLASS,
                 name: "user[name]" %>
         </div>
         <div>
           <label class="text-xs font-medium text-gray-600 block mb-1">Role</label>
           <%= f.select :role, [["Student", "student"], ["Admin", "admin"]],
                 { selected: @user.role },
-                { class: "w-full rounded-lg border border-gray-300 px-3 py-2 text-sm", name: "user[role]" } %>
+                { class: AdminHelper::SELECT_CLASS, name: "user[role]" } %>
         </div>
         <div>
           <label class="text-xs font-medium text-gray-600 block mb-1">JLPT Level</label>
           <%= f.select :jlpt_level, [["N5","n5"],["N4","n4"],["N3","n3"],["N2","n2"],["N1","n1"]],
                 { selected: @user.jlpt_level },
-                { class: "w-full rounded-lg border border-gray-300 px-3 py-2 text-sm", name: "user[jlpt_level]" } %>
+                { class: AdminHelper::SELECT_CLASS, name: "user[jlpt_level]" } %>
         </div>
 
         <div class="pt-2 border-t border-gray-100">
@@ -61,12 +61,12 @@
           <%= f.select :vip_level,
                 [["Free (0)","0"],["Basic (1)","1"],["Pro (2)","2"],["Premium (3)","3"]],
                 { selected: @user.vip_level.to_s },
-                { class: "w-full rounded-lg border border-gray-300 px-3 py-2 text-sm", name: "user[vip_level]" } %>
+                { class: AdminHelper::SELECT_CLASS, name: "user[vip_level]" } %>
         </div>
         <div>
           <label class="text-xs font-medium text-gray-600 block mb-1">Số dư (VNĐ)</label>
           <%= f.number_field :balance, value: @user.balance, step: 1000, min: 0,
-                class: "w-full rounded-lg border border-gray-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500",
+                class: AdminHelper::INPUT_CLASS,
                 name: "user[balance]" %>
         </div>
         <div>
@@ -120,7 +120,7 @@
           <tbody class="divide-y divide-gray-100">
             <% @study_logs.each do |log| %>
               <tr>
-                <td class="py-2"><%= log.studied_on.strftime("%d/%m/%Y") %></td>
+                <td class="py-2"><%= admin_date(log.studied_on) %></td>
                 <td class="py-2 text-right"><%= log.cards_reviewed %></td>
                 <td class="py-2 text-right text-green-600"><%= log.correct_count %></td>
                 <td class="py-2 text-right">

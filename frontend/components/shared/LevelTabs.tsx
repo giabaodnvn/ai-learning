@@ -33,10 +33,15 @@ interface Props {
   label?: string;
   /** Optional node rendered at the end of the tab row (e.g. a result count). */
   right?: ReactNode;
+  /**
+   * Optional marker appended inside a pill — the level-test lobby uses it to
+   * flag which level is the user's own.
+   */
+  suffix?: (level: Level) => ReactNode;
 }
 
 /** JLPT level pills — the level selector shared by every list screen. */
-export function LevelTabs({ value, onChange, variant = "plain", size = "md", label, right }: Props) {
+export function LevelTabs({ value, onChange, variant = "plain", size = "md", label, right, suffix }: Props) {
   const sizing = SIZE_CLASSES[size];
 
   return (
@@ -71,6 +76,7 @@ export function LevelTabs({ value, onChange, variant = "plain", size = "md", lab
             className={`${sizing.base} ${active ? "bg-zinc-900 text-white" : sizing.inactive}`}
           >
             {l.toUpperCase()}
+            {suffix?.(l)}
           </button>
         );
       })}

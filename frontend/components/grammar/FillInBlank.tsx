@@ -2,6 +2,9 @@
 
 import { useState } from "react";
 import { api } from "@/lib/api";
+import { BlankSentence } from "./BlankSentence";
+import { ExerciseOptions } from "./ExerciseOptions";
+import { ExerciseSkeleton } from "./ExerciseSkeleton";
 
 interface Exercise {
   sentence_with_blank: string;
@@ -41,19 +44,6 @@ export default function FillInBlank({ grammarPointId }: FillInBlankProps) {
 
   const answered = selected !== null;
 
-  // Replace ___ in sentence with a styled blank indicator
-  function renderSentence(sentence: string) {
-    const parts = sentence.split("___");
-    return parts.map((part, i) => (
-      <span key={i}>
-        {part}
-        {i < parts.length - 1 && (
-          <span className="inline-block min-w-[60px] border-b-2 border-zinc-400 mx-1 align-bottom" />
-        )}
-      </span>
-    ));
-  }
-
   if (!exercise && !loading) {
     return (
       <div className="flex flex-col items-center gap-4 py-8">
@@ -68,18 +58,7 @@ export default function FillInBlank({ grammarPointId }: FillInBlankProps) {
     );
   }
 
-  if (loading) {
-    return (
-      <div className="space-y-3 py-4">
-        <div className="h-6 animate-pulse rounded bg-zinc-100 w-3/4" />
-        <div className="grid grid-cols-2 gap-2">
-          {[...Array(4)].map((_, i) => (
-            <div key={i} className="h-10 animate-pulse rounded-lg bg-zinc-100" />
-          ))}
-        </div>
-      </div>
-    );
-  }
+  if (loading) return <ExerciseSkeleton />;
 
   if (error) {
     return (
@@ -96,42 +75,16 @@ export default function FillInBlank({ grammarPointId }: FillInBlankProps) {
 
   return (
     <div className="space-y-4">
-      {/* Sentence */}
-      <div className="rounded-xl border border-zinc-200 bg-zinc-50 p-4">
-        <p className="text-lg text-zinc-800 leading-relaxed">{renderSentence(exercise.sentence_with_blank)}</p>
-      </div>
+      <BlankSentence text={exercise.sentence_with_blank} />
 
-      {/* Options */}
-      <div className="grid grid-cols-2 gap-2">
-        {exercise.options.map((opt, idx) => {
-          const isCorrect = idx === exercise.answer_index;
-          const isSelected = idx === selected;
-
-          let cls =
-            "rounded-lg border px-4 py-3 text-sm font-medium text-left transition-colors ";
-
-          if (!answered) {
-            cls += "border-zinc-300 bg-white hover:bg-zinc-50 hover:border-zinc-400 cursor-pointer";
-          } else if (isCorrect) {
-            cls += "border-green-400 bg-green-50 text-green-800";
-          } else if (isSelected) {
-            cls += "border-red-400 bg-red-50 text-red-800";
-          } else {
-            cls += "border-zinc-200 bg-white text-zinc-400";
-          }
-
-          return (
-            <button key={idx} className={cls} onClick={() => handleSelect(idx)} disabled={answered}>
-              <span className="mr-2 text-xs text-zinc-400">
-                {String.fromCharCode(65 + idx)}.
-              </span>
-              {opt}
-              {answered && isCorrect && " ✓"}
-              {answered && isSelected && !isCorrect && " ✗"}
-            </button>
-          );
-        })}
-      </div>
+      <ExerciseOptions
+        options={exercise.options}
+        answerIndex={exercise.answer_index}
+        selectedIndex={selected}
+        answered={answered}
+        onSelect={handleSelect}
+        layout="grid"
+      />
 
       {/* Explanation after answer */}
       {answered && (

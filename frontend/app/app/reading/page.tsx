@@ -8,12 +8,11 @@ import { ReaderView } from "@/components/reading/ReaderView";
 import { QuizSection } from "@/components/reading/QuizSection";
 import { ResultScreen } from "@/components/reading/ResultScreen";
 import { StageView } from "@/components/shared/StageView";
-import { CardSkeletonGrid } from "@/components/shared/CardSkeletonGrid";
+import { ContentCardGrid } from "@/components/shared/ContentCardGrid";
 import { GenerateForm, type TopicOption } from "@/components/shared/GenerateForm";
 import { LevelTabs } from "@/components/shared/LevelTabs";
+import { PageHeader } from "@/components/shared/PageHeader";
 import type { AnswerResult } from "@/types/quiz";
-import { ErrorBanner } from "@/components/shared/ErrorBanner";
-import { EmptyState } from "@/components/shared/EmptyState";
 
 type View = "list" | "reading" | "quiz" | "result";
 
@@ -114,12 +113,10 @@ export default function ReadingPage() {
   // --- List screen ---
   return (
     <div className="space-y-6">
-      <div>
-        <h1 className="text-xl font-bold text-zinc-900">Đọc hiểu</h1>
-        <p className="mt-1 text-sm text-zinc-500">
-          Luyện đọc tiếng Nhật kèm TTS, tra từ nhanh và kiểm tra hiểu bài.
-        </p>
-      </div>
+      <PageHeader
+        title="Đọc hiểu"
+        description="Luyện đọc tiếng Nhật kèm TTS, tra từ nhanh và kiểm tra hiểu bài."
+      />
 
       <GenerateForm
         title="Tạo bài đọc mới"
@@ -142,26 +139,15 @@ export default function ReadingPage() {
         onChange={(l) => setJlptLevel(l === effectiveLevel && jlptLevel ? "" : l)}
       />
 
-      {passages.listError && (
-        <ErrorBanner>
-          {passages.listError}
-        </ErrorBanner>
-      )}
-
-      {passages.loading ? (
-        <CardSkeletonGrid lines={4} />
-      ) : passages.items.length === 0 ? (
-        <EmptyState
-          title={`Chưa có bài đọc nào cho trình độ ${effectiveLevel.toUpperCase()}.`}
-          subtitle="Hãy tạo bài đọc mới ở trên!"
-        />
-      ) : (
-        <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
-          {passages.items.map((p) => (
-            <PassageCard key={p.id} passage={p} onClick={openPassage} />
-          ))}
-        </div>
-      )}
+      <ContentCardGrid
+        items={passages.items}
+        loading={passages.loading}
+        error={passages.listError}
+        skeletonLines={4}
+        emptyTitle={`Chưa có bài đọc nào cho trình độ ${effectiveLevel.toUpperCase()}.`}
+        emptySubtitle="Hãy tạo bài đọc mới ở trên!"
+        renderItem={(p) => <PassageCard key={p.id} passage={p} onClick={openPassage} />}
+      />
     </div>
   );
 }

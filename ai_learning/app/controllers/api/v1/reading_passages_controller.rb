@@ -3,6 +3,8 @@
 module Api
   module V1
     class ReadingPassagesController < BaseController
+      include Api::V1::Concerns::GeneratedContent
+
       self.not_found_label = "Bài đọc"
 
       # GET /api/v1/reading_passages?level=n5&topic=daily_life
@@ -10,13 +12,7 @@ module Api
       DEFAULT_TOPIC = "日常生活"
 
       def index
-        level = level_param_or_user
-        topic = params[:topic].presence
-
-        passages = ReadingPassage.recent_for(level, topic).to_a
-        # Nothing generated for this level yet — seed the list with one passage
-        # so the screen is never empty on first visit.
-        passages = [ generate_and_save!(jlpt_level: level, topic: topic || DEFAULT_TOPIC) ] if passages.empty?
+        passages = listed_content(ReadingPassage, default_topic: DEFAULT_TOPIC)
 
         render json: passages.map { |p| serialize_passage(p) }
       end
@@ -38,18 +34,10 @@ module Api
         question_index = params.require(:question_index).to_i
         answer_index   = params.require(:answer_index).to_i
 
-        question = passage.questions[question_index]
-        return render json: { error: "Câu hỏi không tồn tại" }, status: :not_found unless question
+        result = graded_answer(passage.questions[question_index], answer_index, answer_key: "answer_index")
+        return render_question_not_found unless result
 
-        correct_index  = question["answer_index"].to_i
-        correct        = correct_index == answer_index
-        correct_option = Array(question["options"])[correct_index]
-
-        render json: {
-          correct:        correct,
-          correct_index:  correct_index,
-          explanation_vi: correct ? "Chính xác! 🎉" : "Đáp án đúng là: #{correct_option}"
-        }
+        render json: result
       end
 
       # GET /api/v1/reading_passages/:id/word_lookup?word=食べる
@@ -69,7 +57,7 @@ module Api
           }
         else
           prompt    = Prompts::WordLookupPrompt.build(word: word)
-          log_usage = { feature: "reading_word_lookup", user_id: current_user.id }
+          log_usage = ai_usage("reading_word_lookup")
           # Cached: the same word is looked up by many readers.
           raw       = AiCacheService.fetch(prompt, log_usage: log_usage) do
             ClaudeService.complete(prompt: prompt, max_tokens: 512, log_usage: log_usage)
@@ -103,17 +91,11 @@ module Api
       end
 
       def serialize_passage(passage)
-        {
-          id:                    passage.id,
-          title:                 passage.title,
+        content_json(
+          passage,
           content:               passage.content,
-          jlpt_level:            passage.jlpt_level,
-          topic:                 passage.topic,
-          questions:             passage.questions,
-          vocabulary_highlights: passage.vocabulary_highlights,
-          ai_generated:          passage.ai_generated,
-          created_at:            passage.created_at
-        }
+          vocabulary_highlights: passage.vocabulary_highlights
+        )
       end
     end
   end

@@ -1,15 +1,12 @@
 # frozen_string_literal: true
 
 require "rails_helper"
-require_relative "../../../support/request_auth"
 
 # Characterization spec for the SSE streaming explain endpoint.
 # Locks the streamed event shape before extracting the duplicated
 # stream_sse + ClaudeService.chat block into a shared helper and merging
 # vocabulary#explain / #explain_by_id.
 RSpec.describe "Api::V1::Vocabulary explain (SSE)", type: :request do
-  include RequestAuth
-
   let(:user) { FactoryBot.create(:user) }
 
   def parse_sse(body)

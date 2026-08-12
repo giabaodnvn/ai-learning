@@ -18,81 +18,58 @@ def seed_files(level, type)
   File.exist?(single) ? [ single ] : []
 end
 
-# ── Vocabulary ──────────────────────────────────────────────────────────────
-%w[n5 n4 n3 n2 n1].each do |level|
-  files = seed_files(level, "vocab")
-  total = 0
+# Walk every level's part files for one content type, yielding each JSON entry
+# with its level. The three types carried a copy of this loop each — same
+# globbing, same running total, same two `puts`, and each re-spelled the level
+# list inline instead of using JlptLeveled::JLPT_LEVELS. Only the per-record
+# assignment actually differed.
+def seed_type(type, noun)
+  JlptLeveled::JLPT_LEVELS.each do |level|
+    files = seed_files(level, type)
+    total = 0
 
-  files.each do |path|
-    words      = JSON.parse(File.read(path))
-    part_label = File.basename(path, ".json")
-    puts "Seeding #{level.upcase} vocab — #{part_label} (#{words.size} words)..."
+    files.each do |path|
+      entries = JSON.parse(File.read(path))
+      puts "Seeding #{level.upcase} #{type} — #{File.basename(path, '.json')} (#{entries.size} #{noun})..."
 
-    words.each do |w|
-      v = Vocabulary.find_or_initialize_by(word: w["word"], jlpt_level: level)
-      v.reading        = w["reading"]
-      v.romaji         = w["romaji"]
-      v.meaning_vi     = w["meaning_vi"]
-      v.part_of_speech = w["part_of_speech"]
-      v.tags           = w["tags"] || []
-      v.save!
+      entries.each { |entry| yield(entry, level) }
+      total += entries.size
     end
 
-    total += words.size
+    puts "  → #{level.upcase} #{type}: #{files.size} part(s), #{total} items total"
   end
+end
 
-  puts "  → #{level.upcase} vocab: #{files.size} part(s), #{total} items total"
+# ── Vocabulary ──────────────────────────────────────────────────────────────
+seed_type("vocab", "words") do |w, level|
+  v = Vocabulary.find_or_initialize_by(word: w["word"], jlpt_level: level)
+  v.reading        = w["reading"]
+  v.romaji         = w["romaji"]
+  v.meaning_vi     = w["meaning_vi"]
+  v.part_of_speech = w["part_of_speech"]
+  v.tags           = w["tags"] || []
+  v.save!
 end
 
 # ── Kanji ────────────────────────────────────────────────────────────────────
-%w[n5 n4 n3 n2 n1].each do |level|
-  files = seed_files(level, "kanji")
-  total = 0
-
-  files.each do |path|
-    entries    = JSON.parse(File.read(path))
-    part_label = File.basename(path, ".json")
-    puts "Seeding #{level.upcase} kanji — #{part_label} (#{entries.size} kanji)..."
-
-    entries.each do |k|
-      kj = Kanji.find_or_initialize_by(character: k["character"])
-      kj.onyomi         = k["onyomi"] || []
-      kj.kunyomi        = k["kunyomi"] || []
-      kj.meaning_vi     = k["meaning_vi"]
-      kj.stroke_count   = k["stroke_count"]
-      kj.vocab_examples = k["vocab_examples"] || []
-      kj.jlpt_level     = level
-      kj.save!
-    end
-
-    total += entries.size
-  end
-
-  puts "  → #{level.upcase} kanji: #{files.size} part(s), #{total} items total"
+seed_type("kanji", "kanji") do |k, level|
+  kj = Kanji.find_or_initialize_by(character: k["character"])
+  kj.onyomi         = k["onyomi"] || []
+  kj.kunyomi        = k["kunyomi"] || []
+  kj.meaning_vi     = k["meaning_vi"]
+  kj.stroke_count   = k["stroke_count"]
+  kj.vocab_examples = k["vocab_examples"] || []
+  kj.jlpt_level     = level
+  kj.save!
 end
 
 # ── Grammar ──────────────────────────────────────────────────────────────────
-%w[n5 n4 n3 n2 n1].each do |level|
-  files = seed_files(level, "grammar")
-  total = 0
-
-  files.each do |path|
-    entries    = JSON.parse(File.read(path))
-    part_label = File.basename(path, ".json")
-    puts "Seeding #{level.upcase} grammar — #{part_label} (#{entries.size} patterns)..."
-
-    entries.each do |g|
-      gp = GrammarPoint.find_or_initialize_by(pattern: g["pattern"], jlpt_level: level)
-      gp.explanation_vi = g["explanation_vi"]
-      gp.examples       = g["examples"] || []
-      gp.notes_vi       = g["notes_vi"]
-      gp.save!
-    end
-
-    total += entries.size
-  end
-
-  puts "  → #{level.upcase} grammar: #{files.size} part(s), #{total} items total"
+seed_type("grammar", "patterns") do |g, level|
+  gp = GrammarPoint.find_or_initialize_by(pattern: g["pattern"], jlpt_level: level)
+  gp.explanation_vi = g["explanation_vi"]
+  gp.examples       = g["examples"] || []
+  gp.notes_vi       = g["notes_vi"]
+  gp.save!
 end
 
 puts "\nSeed complete!"

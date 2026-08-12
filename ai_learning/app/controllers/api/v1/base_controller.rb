@@ -41,6 +41,13 @@ module Api
         @current_user
       end
 
+      # The `log_usage:` hash ClaudeService and AiCacheService take. Six
+      # controllers spelled the same two keys out inline, and one of them kept
+      # a private copy of this helper.
+      def ai_usage(feature)
+        { feature: feature, user_id: current_user.id }
+      end
+
       def redis
         AppRedis.current
       end

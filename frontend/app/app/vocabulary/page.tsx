@@ -6,6 +6,7 @@ import { useCurrentUser } from "@/hooks/useCurrentUser";
 import VocabularyGrid from "@/components/vocabulary/VocabularyGrid";
 import { useSSEStream } from "@/hooks/useSSEStream";
 import { ErrorBanner } from "@/components/shared/ErrorBanner";
+import { PageHeader } from "@/components/shared/PageHeader";
 
 type Tab = "list" | "explain";
 
@@ -35,12 +36,10 @@ export default function VocabularyPage() {
 
   return (
     <div className="space-y-6">
-      <div>
-        <h1 className="text-xl font-bold text-zinc-900">Từ vựng</h1>
-        <p className="mt-1 text-sm text-zinc-500">
-          Duyệt danh sách từ vựng theo cấp JLPT hoặc tra cứu bất kỳ từ nào với AI.
-        </p>
-      </div>
+      <PageHeader
+        title="Từ vựng"
+        description="Duyệt danh sách từ vựng theo cấp JLPT hoặc tra cứu bất kỳ từ nào với AI."
+      />
 
       {/* Tab bar */}
       <div className="flex gap-0 rounded-xl border border-zinc-200 bg-zinc-50 p-1 w-fit">

@@ -41,7 +41,9 @@ module Api
           interval:    progress.interval,
           ease_factor: progress.ease_factor.to_f
         }
-      rescue ArgumentError
+      # ArgumentError: a non-numeric string. TypeError: a nested object or array,
+      # which Integer() refuses to coerce — both are a bad param, not a 500.
+      rescue ArgumentError, TypeError
         render_unprocessable("quality không hợp lệ")
       end
 

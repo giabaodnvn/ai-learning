@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { UserMenu } from "@/components/UserMenu";
 import { AppNav } from "@/components/AppNav";
 
@@ -9,7 +10,7 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
         <div className="mx-auto flex h-14 max-w-5xl items-center justify-between px-4">
 
           {/* Logo */}
-          <a href="/app/dashboard" className="flex items-center gap-2.5 group">
+          <Link href="/app/dashboard" className="flex items-center gap-2.5 group">
             <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-white/10 text-white font-bold text-base ring-1 ring-white/20 group-hover:bg-white/20 transition-all">
               日
             </div>
@@ -17,7 +18,7 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
               <p className="text-sm font-bold text-white tracking-wide">AI Learning</p>
               <p className="text-[10px] text-indigo-300 font-medium tracking-widest">日本語学習</p>
             </div>
-          </a>
+          </Link>
 
           <UserMenu />
         </div>

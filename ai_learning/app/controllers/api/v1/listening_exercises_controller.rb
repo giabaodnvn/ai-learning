@@ -3,6 +3,8 @@
 module Api
   module V1
     class ListeningExercisesController < BaseController
+      include Api::V1::Concerns::GeneratedContent
+
       self.not_found_label = "Bài luyện nghe"
 
       # GET /api/v1/listening_exercises?level=n3&topic=カフェでの会話
@@ -10,13 +12,7 @@ module Api
       DEFAULT_TOPIC = "日常会話"
 
       def index
-        level = level_param_or_user
-        topic = params[:topic].presence
-
-        exercises = ListeningExercise.recent_for(level, topic).to_a
-        # Nothing generated for this level yet — seed the list with one exercise
-        # so the screen is never empty on first visit.
-        exercises = [ generate_and_save!(jlpt_level: level, topic: topic || DEFAULT_TOPIC) ] if exercises.empty?
+        exercises = listed_content(ListeningExercise, default_topic: DEFAULT_TOPIC)
 
         render json: exercises.map { |e| serialize_exercise(e) }
       end
@@ -41,26 +37,22 @@ module Api
       # body: { answers: [{question_index, answer_index}, ...], speech_rate }
       def submit
         exercise = ListeningExercise.find(params[:id])
-        answers  = params.require(:answers)
+        # A scalar in the array (`answers: [1, 2]`) has no #to_unsafe_h and its
+        # `#[]` raises TypeError on a symbol key → 500; skip anything that isn't
+        # an object, as LevelTestsController#submit does.
+        answers  = params.require(:answers).filter_map { |a| a if a.respond_to?(:to_unsafe_h) }
         speech_rate = params[:speech_rate].to_f.clamp(0.5, 2.0)
 
         # Validate all answers
         results = answers.map do |a|
-          question_index = a[:question_index].to_i
-          answer_index = a[:answer_index].to_i
+          result = graded_answer(
+            exercise.questions[a[:question_index].to_i],
+            a[:answer_index].to_i,
+            answer_key: "correct_index"
+          )
+          return render_question_not_found unless result
 
-          question = exercise.questions[question_index]
-          return render json: { error: "Câu hỏi không tồn tại" }, status: :not_found unless question
-
-          correct_index = question["correct_index"].to_i
-          correct = correct_index == answer_index
-          correct_option = Array(question["options"])[correct_index]
-
-          {
-            correct: correct,
-            correct_index: correct_index,
-            explanation_vi: correct ? "Chính xác! 🎉" : "Đáp án đúng là: #{correct_option}"
-          }
+          result
         end
 
         # Save attempt for stats
@@ -130,17 +122,7 @@ module Api
       end
 
       def serialize_exercise(exercise)
-        {
-          id:            exercise.id,
-          title:         exercise.title,
-          script_ja:     exercise.script_ja,
-          script_vi:     exercise.script_vi,
-          jlpt_level:    exercise.jlpt_level,
-          topic:         exercise.topic,
-          questions:     exercise.questions,
-          ai_generated:  exercise.ai_generated,
-          created_at:    exercise.created_at
-        }
+        content_json(exercise, script_ja: exercise.script_ja, script_vi: exercise.script_vi)
       end
     end
   end

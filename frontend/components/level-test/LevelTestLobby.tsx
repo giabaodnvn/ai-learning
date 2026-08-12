@@ -4,10 +4,11 @@ import { useState } from "react";
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import { api } from "@/lib/api";
 import type { TestSummary, AttemptSummary } from "./types";
-import { JLPT_LEVELS } from "@/types/quiz";
 import { LEVEL_LABEL_VI } from "@/lib/levels";
 import { ErrorBanner } from "@/components/shared/ErrorBanner";
+import { LevelTabs } from "@/components/shared/LevelTabs";
 import { EmptyState } from "@/components/shared/EmptyState";
+import { PageHeader } from "@/components/shared/PageHeader";
 import { formatDate } from "@/lib/format";
 
 interface LobbyData {
@@ -59,33 +60,18 @@ export function LevelTestLobby({ userLevel, onStartTest }: Props) {
 
   return (
     <div className="space-y-6">
-      {/* Header */}
-      <div>
-        <h1 className="text-xl font-bold text-zinc-900">Kiểm tra trình độ</h1>
-        <p className="mt-1 text-sm text-zinc-500">
-          Làm bài test như kỳ thi JLPT thật. Pass 70% để thăng lên cấp tiếp theo.
-        </p>
-      </div>
+      <PageHeader
+        title="Kiểm tra trình độ"
+        description="Làm bài test như kỳ thi JLPT thật. Pass 70% để thăng lên cấp tiếp theo."
+      />
 
-      {/* Level tabs */}
-      <div className="flex gap-2 flex-wrap">
-        {JLPT_LEVELS.map((l) => (
-          <button
-            key={l}
-            onClick={() => setSelectedLevel(l)}
-            className={`rounded-full px-4 py-1.5 text-xs font-semibold uppercase transition-colors ${
-              selectedLevel === l
-                ? "bg-zinc-900 text-white"
-                : "border border-zinc-300 text-zinc-600 hover:bg-zinc-50"
-            }`}
-          >
-            {l.toUpperCase()}
-            {l === userLevel && (
-              <span className="ml-1 text-[10px] opacity-60">(bạn)</span>
-            )}
-          </button>
-        ))}
-      </div>
+      <LevelTabs
+        value={selectedLevel}
+        onChange={setSelectedLevel}
+        suffix={(l) =>
+          l === userLevel ? <span className="ml-1 text-[10px] opacity-60">(bạn)</span> : null
+        }
+      />
 
       {error && (
         <ErrorBanner>

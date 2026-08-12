@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useQueryClient } from "@tanstack/react-query";
 import { WritingEditor } from "@/components/writing/WritingEditor";
 import { WritingHistory } from "@/components/writing/WritingHistory";
+import { PageHeader } from "@/components/shared/PageHeader";
 
 type Tab = "editor" | "history";
 
@@ -18,12 +19,10 @@ export default function WritingPage() {
 
   return (
     <div className="space-y-5">
-      <div>
-        <h1 className="text-xl font-bold text-zinc-900">Luyện viết tiếng Nhật</h1>
-        <p className="mt-1 text-sm text-zinc-500">
-          Viết câu hoặc đoạn văn tiếng Nhật, AI sẽ chấm ngữ pháp và gợi ý cải thiện.
-        </p>
-      </div>
+      <PageHeader
+        title="Luyện viết tiếng Nhật"
+        description="Viết câu hoặc đoạn văn tiếng Nhật, AI sẽ chấm ngữ pháp và gợi ý cải thiện."
+      />
 
       {/* Tab bar */}
       <div className="flex border-b border-zinc-200">

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, Fragment, memo } from "react";
+import { speakJapanese } from "@/lib/speech";
 
 export interface Correction {
   original: string;
@@ -38,15 +39,6 @@ function renderFurigana(text: string): React.ReactNode {
     }
     return <Fragment key={i}>{seg}</Fragment>;
   });
-}
-
-function speakJapanese(text: string) {
-  if (typeof window === "undefined" || !window.speechSynthesis) return;
-  window.speechSynthesis.cancel();
-  const utterance = new SpeechSynthesisUtterance(text);
-  utterance.lang = "ja-JP";
-  utterance.rate = 0.9;
-  window.speechSynthesis.speak(utterance);
 }
 
 // Strip furigana markup for plain text (used for TTS)
@@ -101,7 +93,7 @@ function MessageBubbleComponent({ message, isStreaming = false }: Props) {
           <div className="flex items-center gap-2 px-1">
             {/* TTS */}
             <button
-              onClick={() => speakJapanese(stripFurigana(message.content))}
+              onClick={() => speakJapanese(stripFurigana(message.content), 0.9)}
               className="rounded p-1 text-zinc-400 hover:text-zinc-600 transition-colors"
               title="Nghe phát âm"
             >

@@ -48,7 +48,13 @@ export default function VocabularyGrid() {
       resource: "vocabularies",
       path: "/api/v1/vocabularies",
       perPage: 30,
-      params: query ? { search: query } : {},
+      // While searching, the level tabs are hidden and the result line reads
+      // "N kết quả cho …" — i.e. the whole dictionary. The request still sent
+      // the level, so a word only present at N1 came back empty from the (N5)
+      // tab the user could no longer see or change. A blank level is the API's
+      // "every level" (JlptLeveled#by_level skips a blank), and `params` is
+      // spread last, so this is what clears the filter.
+      params: query ? { search: query, level: "" } : {},
     });
 
   function handleSearch(e: React.FormEvent) {

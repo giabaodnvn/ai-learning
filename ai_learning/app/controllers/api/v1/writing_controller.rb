@@ -32,7 +32,7 @@ module Api
           ClaudeService.chat(
             messages:   [ { role: "user", content: prompt } ],
             max_tokens: 1500,
-            log_usage:  { feature: "writing_feedback", user_id: current_user.id }
+            log_usage:  ai_usage("writing_feedback")
           ) do |delta|
             full_feedback << delta
             write_sse(stream, delta: delta)

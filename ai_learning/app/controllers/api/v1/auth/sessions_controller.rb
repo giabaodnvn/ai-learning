@@ -16,10 +16,7 @@ module Api
             token, _payload = Warden::JWTAuth::UserEncoder.new.call(user, :user, nil)
             response.set_header("Authorization", "Bearer #{token}")
 
-            render json: {
-              message: "Logged in successfully.",
-              data: UserSerializer.new(user).serializable_hash[:data][:attributes]
-            }, status: :ok
+            render json: { message: "Logged in successfully.", data: user_attributes(user) }, status: :ok
           else
             render json: { error: "Invalid email or password." }, status: :unauthorized
           end
@@ -33,7 +30,7 @@ module Api
             begin
               payload = JwtDecoder.decode(token)
               user = User.find_by(id: payload["sub"])
-              user&.update_column(:jti, SecureRandom.uuid)
+              user&.revoke_tokens!
               render json: { message: "Logged out successfully." }, status: :ok
             rescue JWT::DecodeError
               render json: { message: "Logged out." }, status: :ok

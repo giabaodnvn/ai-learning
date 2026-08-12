@@ -80,10 +80,10 @@
             <%= link_to u.email, admin_user_path(u), class: "text-blue-600 hover:underline font-medium" %>
           </td>
           <td class="px-5 py-3 text-gray-600"><%= u.name.presence || "—" %></td>
-          <td class="px-5 py-3"><span class="font-mono uppercase text-xs bg-gray-100 px-2 py-0.5 rounded"><%= u.jlpt_level %></span></td>
+          <td class="px-5 py-3"><%= jlpt_badge(u.jlpt_level) %></td>
           <td class="px-5 py-3"><%= role_badge(u.role) %></td>
           <td class="px-5 py-3"><%= vip_badge(u.vip_level) %></td>
-          <td class="px-5 py-3 text-gray-400 text-xs"><%= u.created_at.strftime("%d/%m/%Y") %></td>
+          <td class="px-5 py-3 text-gray-400 text-xs"><%= admin_date(u.created_at) %></td>
         </tr>
       <% end %>
     </tbody>

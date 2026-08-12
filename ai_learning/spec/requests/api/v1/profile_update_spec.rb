@@ -1,11 +1,8 @@
 # frozen_string_literal: true
 
 require "rails_helper"
-require_relative "../../../support/request_auth"
 
 RSpec.describe "PATCH /api/v1/auth/me", type: :request do
-  include RequestAuth
-
   let(:user) { FactoryBot.create(:user, jlpt_level: "n5") }
 
   it "updates the JLPT level" do
@@ -22,7 +19,7 @@ RSpec.describe "PATCH /api/v1/auth/me", type: :request do
   it "rejects an unknown JLPT level with 422 instead of raising" do
     patch "/api/v1/auth/me", params: { user: { jlpt_level: "n9" } }, headers: auth_headers(user)
 
-    expect(response).to have_http_status(:unprocessable_entity)
+    expect(response).to have_http_status(:unprocessable_content)
     expect(user.reload.jlpt_level).to eq("n5")
   end
 end

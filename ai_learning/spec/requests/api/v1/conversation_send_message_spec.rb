@@ -1,13 +1,10 @@
 # frozen_string_literal: true
 
 require "rails_helper"
-require_relative "../../../support/request_auth"
 
 # Locks the typed SSE protocol of the chat endpoint ({type: "delta"} …
 # {type: "correction"} … {type: "done"}), which the chat page parses by `type`.
 RSpec.describe "POST /api/v1/conversations/:id/send_message (SSE)", type: :request do
-  include RequestAuth
-
   let(:user)    { FactoryBot.create(:user) }
   let(:session) { user.conversation_sessions.create!(role: "tutor", jlpt_level: "n5") }
 

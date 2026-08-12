@@ -55,7 +55,7 @@ module Api
         stream_sse do |stream|
           AiCacheService.stream(
             prompt,
-            log_usage: { feature: "vocabulary_explain", user_id: current_user.id }
+            log_usage: ai_usage("vocabulary_explain")
           ) { |delta| write_sse(stream, delta: delta) }
 
           write_sse(stream, delta: "", done: true)

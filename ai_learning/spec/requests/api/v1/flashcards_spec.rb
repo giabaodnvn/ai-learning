@@ -1,11 +1,8 @@
 # frozen_string_literal: true
 
 require "rails_helper"
-require_relative "../../../support/request_auth"
 
 RSpec.describe "Api::V1::Flashcards", type: :request do
-  include RequestAuth
-
   let(:user) { FactoryBot.create(:user, jlpt_level: "n5") }
 
   def kanji!(character, level: "n5")
@@ -193,6 +190,16 @@ RSpec.describe "Api::V1::Flashcards", type: :request do
            headers: auth_headers(user)
 
       expect(response).to have_http_status(:not_found)
+    end
+
+    # Regression: Integer() raises TypeError (not ArgumentError) on a nested
+    # object, which was not rescued and surfaced as a 500.
+    it "rejects a non-scalar grade" do
+      post "/api/v1/flashcards/review",
+           params: { card_type: "vocabulary", card_id: vocab.id, grade: { n: 1 } },
+           headers: auth_headers(user), as: :json
+
+      expect(response).to have_http_status(:unprocessable_content)
     end
   end
 end
